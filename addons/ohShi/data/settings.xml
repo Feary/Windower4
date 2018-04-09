@@ -1,0 +1,69 @@
+<?xml version="1.1" ?>
+<settings>
+    <global>
+        <bg>
+            <alpha>100</alpha>
+            <blue>0</blue>
+            <green>0</green>
+            <red>0</red>
+            <visible>true</visible>
+        </bg>
+        <bgalpha>200</bgalpha>
+        <bgblue>0</bgblue>
+        <bggreen>0</bggreen>
+        <bgred>0</bgred>
+        <dangerwords>
+            <spells>Blizzaja,Kaustra,Firaja,Thundaga IV,Stonega IV,Stoneja,Aeroga IV,Breakga,cure,Meteor,Death,Firaga IV,Blizzaga IV,Aeroja,Thundaja</spells>
+            <weaponskills>Nerve,Danse,Astral Flow,Oblivion&apos;s Mantle,Provenance Watcher starts,Extreme Purgitation,Fulmination,Pawn&apos;s Penumbra,Gates,Frog,Rancid Reflux,Thundris,Divesting Gale,Mandible Massacre,Zantetsuken,Chainspell,Raksha Stance,Arm Cannon,Slimy Proposal,Geirrothr,Eradicator,Ballistic Kick,Yama&apos;s,Gorge,Beastruction</weaponskills>
+        </dangerwords>
+        <duration>7</duration>
+        <flags>
+            <bold>false</bold>
+            <bottom>false</bottom>
+            <draggable>true</draggable>
+            <italic>false</italic>
+            <right>false</right>
+        </flags>
+        <moblist>
+            <abyssea>Alfard,Isgebind,Glavoid,Carabosse,Orthrus</abyssea>
+            <dangerous>Provenance Watcher,Apademak,Mandragora</dangerous>
+            <legion>Soaring,Paramount,Veiled,Mired,Lofty</legion>
+            <meebles>Goldwing,Samursk,Umagrhk,Grannus,Silagilith,Svaha,Izyx,Melisseus,Dreyruk,Surtr</meebles>
+            <other>Cerberus,Hydra,Enraged,Dvergr,Khimaira,Bloodthirsty,Odin,Tiamat,Khrysokhimaira</other>
+            <voidwatch>Provenance Watcher,Bismarck,Kaggen,Wazir,Sarbaz,Hahava,Kholomodumo,Asb,Ig-Alima,Taweret,Mellonia,Botulus Rex,Cherufe,Uptala,Pil,Rukh,Aello,Celaeno,Kalasutrax,Gugalanna,Gasha,Agathos,Belphoebe,Ocythoe,Akvan,Morta,Shah,Giltine,Gaunab,Qilin,Goji</voidwatch>
+        </moblist>
+        <padding>0</padding>
+        <pos>
+            <x>400</x>
+            <y>300</y>
+        </pos>
+        <posx>300</posx>
+        <posy>300</posy>
+        <selfrolls>false</selfrolls>
+        <showrolls>true</showrolls>
+        <staggeronly>false</staggeronly>
+        <text>
+            <alpha>255</alpha>
+            <blue>255</blue>
+            <font>Consolas</font>
+            <fonts>
+
+            </fonts>
+            <green>255</green>
+            <red>255</red>
+            <size>10</size>
+            <stroke>
+                <alpha>255</alpha>
+                <blue>0</blue>
+                <green>0</green>
+                <red>0</red>
+                <width>0</width>
+            </stroke>
+        </text>
+        <textblue>255</textblue>
+        <textfont>Arial</textfont>
+        <textgreen>255</textgreen>
+        <textred>255</textred>
+        <textsize>12</textsize>
+    </global>
+</settings>

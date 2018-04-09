@@ -1,0 +1,17 @@
+sets.exported={
+    main="Buramenk'ah",
+    sub="Aegis",
+    ammo="Staunch Tathlum",
+    head={ name="Carmine Mask +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    body="Tartarus Platemail",
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Loricate Torque",
+    waist="Windbuffet Belt +1",
+    left_ear="Odnowa Earring",
+    right_ear="Steelflash Earring",
+    left_ring="Moonbeam Ring",
+    right_ring="Defending Ring",
+    back={ name="Weard Mantle", augments={'VIT+1','DEX+1','Enmity+2','Phalanx +3',}},
+}

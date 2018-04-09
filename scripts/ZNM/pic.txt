@@ -1,0 +1,12 @@
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64
+input /item "Soultrapper" <t>;wait 64

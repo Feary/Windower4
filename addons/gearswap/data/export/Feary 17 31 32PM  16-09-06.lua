@@ -1,0 +1,17 @@
+ sets.exported={
+    main="Buramenk'ah",
+    sub="Ochain",
+    ammo="Hasty Pinion +1",
+    head="Sulevia's Mask +1",
+    body="Chev. Cuirass",
+    hands="Sulev. Gauntlets +1",
+    legs="Sulevi. Cuisses +1",
+    feet="Sulev. Leggings +1",
+    neck="Twilight Torque",
+    waist="Tempus Fugit",
+    left_ear="Bladeborn Earring",
+    right_ear="Steelflash Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring="Defending Ring",
+    back={ name="Rudianos's Mantle", augments={'HP+3','Accuracy+1 Attack+1','Enmity+1',}},
+}

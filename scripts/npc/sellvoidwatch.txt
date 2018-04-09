@@ -1,0 +1,51 @@
+sellnpc aeroja;wait 1
+sellnpc gain-agi;wait 1
+sellnpc gain-vit;wait 1
+sellnpc gain-mnd;wait 1
+sellnpc hi-potion;wait 1
+sellnpc hi-potion +2;wait 1
+sellnpc hi-potion +3;wait 1
+sellnpc x-potion +2;wait 1
+sellnpc x-potion +3;wait 1
+sellnpc pro-ether +1;wait 1
+sellnpc pro-ether;wait 1
+sellnpc super ether +2;wait 1
+sellnpc hi-elixir;wait 1
+sellnpc elixir;wait 1
+sellnpc vile elixir;wait 1
+sellnpc Strength Potion;wait 1
+sellnpc dexterity potion;wait 1
+sellnpc Charisma Potion;wait 1
+sellnpc Int. Potion;wait 1
+sellnpc Vitality Potion;wait 1
+sellnpc Mind Potion;wait 1
+sellnpc Agility Potion;wait 1
+sellnpc Emperor Fish;wait 1
+sellnpc Red Rock;wait 1
+sellnpc Yellow Rock;wait 1
+sellnpc white Rock;wait 1
+sellnpc translucent Rock;wait 1
+sellnpc blue rock;wait 1
+sellnpc green rock;wait 1
+sellnpc purple rock;wait 1
+sellnpc jadeite;wait 1
+sellnpc aquamarine;wait 1
+sellnpc Chrysoberyl;wait 1
+sellnpc painite;wait 1
+sellnpc moonstone;wait 1
+sellnpc sunstone;wait 1
+sellnpc zircon;wait 1
+sellnpc fluorite;wait 1
+sellnpc raxa;wait 1
+sellnpc pigeon's blood;wait 1
+sellnpc phil. stone;wait 1
+sellnpc wyvern tailskin;wait 1
+sellnpc flocon-de-mer;wait 1
+sellnpc anc. beast horn;wait 1
+sellnpc hydra scale;wait 1
+sellnpc imperial cermet;wait 1
+sellnpc kapor log;wait 1
+sellnpc beech log;wait 1
+
+
+

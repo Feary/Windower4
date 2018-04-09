@@ -1,0 +1,17 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    ammo="Staunch Tathlum",
+    head={ name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}},
+    body="Jhakri Robe +2",
+    hands={ name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +8',}},
+    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}},
+    feet={ name="Telchine Pigaches", augments={'Haste+2','Enh. Mag. eff. dur. +10',}},
+    neck="Loricate Torque",
+    waist="Flume Belt",
+    left_ear="Merman's Earring",
+    right_ear="Etiolation Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring="Defending Ring",
+    back="Moonbeam Cape",
+}

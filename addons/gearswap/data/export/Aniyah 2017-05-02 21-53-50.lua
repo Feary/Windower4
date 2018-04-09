@@ -1,0 +1,17 @@
+sets.exported={
+    main="Legato Dagger",
+    sub="Genbu's Shield",
+    range="Langeleik",
+    head="Inyanga Tiara",
+    body="Inyanga Jubbah",
+    hands="Inyanga Dastanas",
+    legs="Inyanga Shalwar",
+    feet="Inyanga Crackows",
+    neck="Twilight Torque",
+    waist="Witful Belt",
+    left_ear="Merman's Earring",
+    right_ear="Merman's Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -4%','Breath dmg. taken -4%',}},
+    right_ring={ name="Dark Ring", augments={'Spell interruption rate down -3%','Magic dmg. taken -4%',}},
+    back="Cheviot Cape",
+}

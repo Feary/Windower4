@@ -1,0 +1,8 @@
+<?xml version="1.1" ?>
+<settings>
+	<global>
+        <AutoItems>true</AutoItems>
+        <AutoNinjaTools>true</AutoNinjaTools>
+        <Delay>0.5</Delay>
+	</global>
+</settings>

@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Hatxiik", augments={'Occ. atk. twice+8','"Store TP"+5',}},
+    sub={ name="Hunahpu", augments={'Occ. atk. twice+8','Crit.hit rate+4',}},
+    ammo="Paeapua",
+    head="Twilight Helm",
+    body={ name="Taeon Tabard", augments={'Accuracy+15 Attack+15',}},
+    hands={ name="Taeon Gloves", augments={'Accuracy+16 Attack+16','"Triple Atk."+2',}},
+    legs={ name="Taeon Tights", augments={'Accuracy+25','"Dual Wield"+5',}},
+    feet="Iuitl Gaiters",
+    neck="Asperity Necklace",
+    waist="Patentia Sash",
+    left_ear="Brutal Earring",
+    right_ear="Suppanomimi",
+    left_ring="Rajas Ring",
+    right_ring="Epona's Ring",
+    back="Atheling Mantle",
+}

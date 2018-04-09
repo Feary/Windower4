@@ -1,0 +1,13 @@
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /lastsynth;wait 25;input /lastsynth;wait 25
+input /t watitdew woot

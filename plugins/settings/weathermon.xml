@@ -1,0 +1,46 @@
+<settings>
+    <global>
+        <enableIcon>true</enableIcon>
+        <enableIconTimer>true</enableIconTimer>
+        <enableReport>true</enableReport>
+        <enableSounds>true</enableSounds>
+        <xPos>378</xPos>
+        <yPos>53</yPos>
+        <xTextOffset>1</xTextOffset>
+        <yTextOffset>-7</yTextOffset>
+        <font>Arial</font>
+        <fontSize>7</fontSize>
+        <textA>255</textA>
+        <textR>255</textR>
+        <textG>255</textG>
+        <textB>255</textB>
+        <backgroundA>127</backgroundA>
+        <backgroundR>0</backgroundR>
+        <backgroundG>0</backgroundG>
+        <backgroundB>0</backgroundB>
+        <trackClear>false</trackClear>
+        <trackClearSound />
+        <trackSunshine>false</trackSunshine>
+        <trackSunshineSound />
+        <trackClouds>false</trackClouds>
+        <trackCloudsSound />
+        <trackFog>false</trackFog>
+        <trackFogSound />
+        <trackFire>false</trackFire>
+        <trackFireSound />
+        <trackWater>false</trackWater>
+        <trackWaterSound />
+        <trackEarth>false</trackEarth>
+        <trackEarthSound />
+        <trackWind>false</trackWind>
+        <trackWindSound />
+        <trackIce>false</trackIce>
+        <trackIceSound />
+        <trackThunder>false</trackThunder>
+        <trackThunderSound />
+        <trackLight>false</trackLight>
+        <trackLightSound />
+        <trackDark>false</trackDark>
+        <trackDarkSound></trackDarkSound>
+    </global>
+</settings>
