@@ -86,11 +86,11 @@ For full functionality my gearswap and init files do depend on a few other addon
 [Win+F10]	= Toggle job specific modes, different depending on jobs some examples:
 				Also sometimes Ctrl/Alt/Win + Grave/Tilde (` or ~) or even Backspace, Backslash, Delete, Dash or Equals.
 
-:Macro:		
+:Macro:
 Thf:		/console gs c toggle AmbushMode		(Equips Ambush gear on TP and non SA/TA WS)
 Blu:		/console gs c toggle LearningMode	(Locks learning gear in at all times.)
 Pld:		/console gs c toggle EquipShield	(Allows Weapon/Shield to swap with F10/F11)
-Brd:		/console gs c cycle ExtraSongsMode  (Your next song plays as a dummy song.) [Ctrl+~]
+Brd:		/console gs c cycle ExtraSongsMode   (Your next song plays as a dummy song.) [Ctrl+~]
 Blm:		/console gs c cycle RecoverMode		(Nukes in converts elemental damage to MP gear)
 Blm2:		/console gs c cycle MagicBurstMode	(Single makes your next spell burst, while lock keeps it bursting until you toggle again.) [Win+~]
 
