@@ -73,9 +73,7 @@
             <readies>false</readies>
             <casting>false</casting>
             <all>true</all>
-        </other_pets>
-		
-		
+        </other_pets>		
         <monsters> <!-- Monster is doing something with one of the below targets -->
 			<me> <!-- He's targeting you! -->
 				<melee>false</melee>

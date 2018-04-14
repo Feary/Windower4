@@ -4,9 +4,15 @@
         <autodecline>false</autodecline>
         <blacklist />
         <mode>whitelist</mode>
-        <whitelist />
+        <whitelist>Feary, Firetoplay, Aniyah, Derion</whitelist>
 	</global>
+	<aniyah>
+		<whitelist>Firetoplay, Derion, Feary</whitelist>
+	</aniyah>
+	<derion>
+		<whitelist>Firetoplay, Aniyah, Feary</whitelist>
+	</derion>
 	<feary>
-        <whitelist>Carrisa, Feary, Firetoplay, Fugiwara, Aniyah, Mitsura, Derion</whitelist>
+        <whitelist>Firetoplay, Aniyah, Derion</whitelist>
 	</feary>
 </settings>

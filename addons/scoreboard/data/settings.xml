@@ -66,6 +66,15 @@
     </global>
     <aniyah>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -74,6 +83,15 @@
     </aniyah>
     <casanoova>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -81,6 +99,20 @@
         <visible>false</visible>
     </casanoova>
     <derion>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </derion>
     <feary>
@@ -98,13 +130,35 @@
                 <size>10</size>
             </text>
         </display>
-        <visible>false</visible>
     </feary>
     <swagg>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </swagg>
     <watitdew>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -112,6 +166,20 @@
         <visible>false</visible>
     </watitdew>
     <worldkiller>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </worldkiller>
 </settings>
