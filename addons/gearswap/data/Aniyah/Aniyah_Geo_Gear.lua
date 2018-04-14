@@ -101,7 +101,7 @@ function init_gear_sets()
 		-- lring="Stikini Ring", rring="Stikini Ring",
 		body="Bagua Tunic", hands="Geomancy Mitaines", 
 		-- back=Nantosuelta's Cape"
-		legs="Bagua Pants", feet="Azimuth Gaiters"})
+		legs="Bagua Pants", feet="Azimuth Gaiters"}
 
 	--Extra Indi duration on any slot you can't get skill on here.
 	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {range="Dunna",
@@ -150,7 +150,7 @@ function init_gear_sets()
 		body="Jhakri Robe", hands="Jhakri Cuffs +1", lring="Shiva Ring", rring="Shiva Ring",
 		back="Toro Cape", waist="Demonry Sash", legs="Jhakri Slops", feet="Jhakri Pigaches +1"}		
 
-    sets.midcast['Elemental Magic'].Resistant = main={main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
+    sets.midcast['Elemental Magic'].Resistant = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		--  neck="Eddy Necklace" lear="Barkaro. Earring",
 		head="Jhakri Coronal +1", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
 		--  hands="Mallquis Cuffs +1",
@@ -191,7 +191,7 @@ function init_gear_sets()
 		-- lring="Stikini Ring", rring="Stikini Ring",
 		body="Jhakri Robe", hands="Jhakri Cuffs +1", 
 		--back=Aug.Cape.GEO.MACC, 
-		back="Ogapepo Cape", waist="Demonry Sash", legs="Jhakri Slops", feet="Jhakri Pigaches +1"})
+		back="Ogapepo Cape", waist="Demonry Sash", legs="Jhakri Slops", feet="Jhakri Pigaches +1"}
 
 	sets.midcast.Stun.Resistant = {--ammo="Hasty Pinion +1",
 		-- neck="Voltsurge Torque", rear="Enchntr. Earring +1",
@@ -199,7 +199,7 @@ function init_gear_sets()
 		-- lring="Stikini Ring", rring="Stikini Ring",
 		body="Jhakri Robe", hands="Jhakri Cuffs +1", 
 		--back=Aug.Cape.GEO.MACC, 
-		back="Ogapepo Cape", waist="Demonry Sash", legs="Jhakri Slops", feet="Jhakri Pigaches +1"})
+		back="Ogapepo Cape", waist="Demonry Sash", legs="Jhakri Slops", feet="Jhakri Pigaches +1"}
 
 		
 	sets.midcast.Impact = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
@@ -217,7 +217,7 @@ function init_gear_sets()
 		body="Jhakri Robe", hands="Jhakri Cuffs +1", lring="Perception ring", rring="Balrahn's ring",
 		back="Ogapepo Cape", waist="Demonry Sash", legs="Jhakri Slops", feet="Jhakri Pigaches +1"}
 
-	sets.midcast['Enfeebling Magic'].Resistant = main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
+	sets.midcast['Enfeebling Magic'].Resistant = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		-- neck="Eddy Necklace", lear="Lifestorm Earring", rear="Psystorm Earring",
 		head="Jhakri Coronal +1", 
 		-- Stikini Ring Stikini Ring
@@ -301,11 +301,11 @@ function init_gear_sets()
 		body="Jhakri Robe", hands="Bagua Mitaines",
 		legs="Assid. Pants +1", feet="Bagua Sandals"})
 
-	sets.idle.PDT.Pet = {main="Terra's Staff",sub="Umbra Strap",range="Dunna",
+	sets.idle.PDT.Pet = {main="Terra's Staff", sub="Umbra Strap", range="Dunna",
 		--head="Selenian Cap", 
 		lear="Merman's Earring", rear="Merman's Earring",
 		body="Jhakri Robe", hands="Bagua Mitaines",
-		legs="Assid. Pants +1", feet="Bagua Sandals"})
+		legs="Assid. Pants +1", feet="Bagua Sandals"}
 				
 	-- .Indi sets are for when an Indi-spell is active.
 	sets.idle.Indi = set_combine(sets.idle, {})
@@ -351,7 +351,7 @@ function init_gear_sets()
 	
 	sets.defense.GeoLock = sets.midcast.Geomancy.Indi
 
-	sets.Kiting = {feet="Herald's Gaiters"}
+	sets.Kiting = {feet="Geomancy Sandals"}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.DayIdle = {}
 	sets.NightIdle = {back="Umbra Cape"}

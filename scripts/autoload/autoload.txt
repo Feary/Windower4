@@ -41,7 +41,6 @@ lua load giltracker;
 lua load InfoReplacer;
 lua load instaLS;
 lua load itemizer;
-lua load Logger;
 lua load lottery;
 lua load ohShi;
 lua load Omen;

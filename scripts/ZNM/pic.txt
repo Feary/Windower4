@@ -1,3 +1,4 @@
+input /equip ammo "Blank Soulplate;wait 2
 input /item "Soultrapper" <t>;wait 64
 input /item "Soultrapper" <t>;wait 64
 input /item "Soultrapper" <t>;wait 64
