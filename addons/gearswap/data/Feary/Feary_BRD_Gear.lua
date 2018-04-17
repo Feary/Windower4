@@ -77,25 +77,25 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {
-		head="Aya. Zucchetto +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
+		head="Aya. Zucchetto +2",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Ilabrat Ring",ring2="Ramuh Ring +1",
 		back="Ground. Mantle +1",waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 	sets.precast.WS.Acc = {
-		head="Aya. Zucchetto +1", neck="Iqabi Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Rajas Ring", rring="Ramuh Ring +1",
 		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {
-			head="Aya. Zucchetto +1", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
+			head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
 			body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
 			back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"})
 	sets.precast.WS['Mercy Stroke'] = set_combine(sets.precast.WS, {
-			head="Aya. Zucchetto +1", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
+			head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
 			body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
 			back="Ground. Mantle +1", waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"})
 	sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {
-			head="Aya. Zucchetto +1", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
+			head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
 			body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
 			back="Ground. Mantle +1", waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"})
 	
@@ -158,7 +158,7 @@ function init_gear_sets()
 		-- Incanter's Torque
 		head="Bihu Roundlet +1", neck="Moonbow Whistle", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Ovate Rope", legs="Fili Rhingrave +1", feet="Inyan. Crackows +1"}
+		back="Intarabus's Cape", waist="Ovate Rope", legs="Fili Rhingrave +1", feet="Inyan. Crackows +2"}
 
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {
@@ -195,15 +195,15 @@ function init_gear_sets()
 	
 	sets.midcast['Enfeebling Magic'] = {
 		main={name="Mandau", priority=2}, sub={name="Genbu's Shield", priority=1}, 
-		head="Inyanga Tiara +1", neck="Moonbow Whistle", lear="Gwati Earring", rear="Enchntr. Earring +1",
+		head="Inyanga Tiara +2", neck="Moonbow Whistle", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {
 		main={name="Mandau", priority=2}, sub={name="Genbu's Shield", priority=1}, 
-		head="Inyanga Tiara +1", neck="Moonbow Whistle", lear="Gwati Earring", rear="Enchntr. Earring +1",
+		head="Inyanga Tiara +2", neck="Moonbow Whistle", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 		
 	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion +1",
 		--main="Serenity",sub="Fulcio Grip",
@@ -219,21 +219,21 @@ function init_gear_sets()
 		waist="Siegel Sash",})
 		
 	sets.midcast['Elemental Magic'] = {
-		head="Inyanga Tiara +1", neck="Moonbow Whistle", lear="Gwati Earring", rear="Enchntr. Earring +1",
+		head="Inyanga Tiara +2", neck="Moonbow Whistle", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 		
 	sets.midcast['Elemental Magic'].Resistant = {
-		head="Inyanga Tiara +1", neck="Moonbow Whistle", lear="Gwati Earring", rear="Enchntr. Earring +1",
+		head="Inyanga Tiara +2", neck="Moonbow Whistle", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 		
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Fodder
 		
 	-- Gear for specific elemental nukes.
-	sets.WindNuke = {main="Marin Staff +1"}
-	sets.IceNuke = {main="Ngqoqwanb"}
+	sets.WindNuke = {}--main="Marin Staff +1"
+	sets.IceNuke = {}--main="Ngqoqwanb"
 	
 	-- Sets to return to when not performing an action.
 	
@@ -247,28 +247,28 @@ function init_gear_sets()
 	
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
-		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Inyanga Tiara +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
 
 	sets.idle.Weak = {main={name="Mandau", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
-		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Assiduity Pants +1", feet="Aya. Gambieras +1"}
 	
 	sets.idle.PDT = {main={name="Mandau", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
-		head="Aya. Zucchetto +1", neck="Loricate Torque",  lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque",  lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 	
 	-- Defense sets
 	sets.defense.PDT = {main={name="Mandau", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
-		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 	
 	sets.defense.MDT = {main="Terra's Staff", sub="Umbra Strap",range="Gjallarhorn",
-		head="Inyanga Tiara +1",neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Inyanga Tiara +2",neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyanga Crackows +1"}
 
@@ -282,12 +282,12 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
 	sets.engaged = {main={name="Mandau", priority=2}, sub={name="Genbu's Shield", priority=1},ammo="Ginsen",
-		head="Aya. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
 		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.engaged.DW = {main={name="Mandau", priority=2}, sub={name="Genbu's Shield", priority=1},ammo="Ginsen",
-		head="Aya. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
 		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 end

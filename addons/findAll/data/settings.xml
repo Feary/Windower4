@@ -59,8 +59,8 @@
     <aniyah>
         <Tracker>
             <pos>
-                <x>16</x>
-                <y>1063</y>
+                <x>6</x>
+                <y>1061</y>
             </pos>
             <text>
                 <stroke>
@@ -111,7 +111,7 @@
     <feary>
         <Tracker>
             <pos>
-                <x>-1</x>
+                <x>5</x>
                 <y>1064</y>
             </pos>
             <text>

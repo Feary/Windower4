@@ -47,7 +47,6 @@
     <plugin>Sandbox</plugin>
     <plugin>Timers</plugin>
     <plugin>Tickle</plugin>
-    <plugin>StatusTimer</plugin>
     <plugin>FishingCrashFix</plugin>
     <plugin>DelayMeNot</plugin>
     <plugin>FFXIDB</plugin>
