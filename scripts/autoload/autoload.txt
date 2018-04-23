@@ -18,7 +18,6 @@ load IME;
 load Run;
 load Sandbox;
 load SSOrganizer;
-load StatusTimer;
 load Tickle;
 load Timers;
 lua load aecho;

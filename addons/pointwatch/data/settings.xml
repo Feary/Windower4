@@ -40,7 +40,7 @@
                 <red>255</red>
                 <size>11</size>
                 <stroke>
-                    <alpha>1.2485413254494e+036</alpha>
+                    <alpha>1.2485413254494e+36</alpha>
                     <blue>0</blue>
                     <green>0</green>
                     <red>0</red>
@@ -49,4 +49,12 @@
             </text>
         </text_box_settings>
     </global>
+    <feary>
+        <text_box_settings>
+            <pos>
+                <x>7</x>
+                <y>-2</y>
+            </pos>
+        </text_box_settings>
+    </feary>
 </settings>
