@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Carnwenhan", augments={'DMG:+4',}},
+    sub="Genbu's Shield",
+    range="Gjallarhorn",
+    head="Inyanga Tiara +2",
+    body="Inyanga Jubbah +2",
+    hands="Inyan. Dastanas +2",
+    legs="Assid. Pants +1",
+    feet="Fili Cothurnes +1",
+    neck="Loricate Torque",
+    waist="Flume Belt",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Inyanga Ring",
+    right_ring="Defending Ring",
+    back="Moonbeam Cape",
+}

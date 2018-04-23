@@ -304,7 +304,7 @@ function init_gear_sets()
 		--body-"Telchine Chas.", 
 		hands=gear_telchine_hands_Duration,
 		-- Theo. Duckbills +3
-		legs=gear_telchine_Legs_Duration, feet=gear_telchine_feet_Duration}
+		legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
 

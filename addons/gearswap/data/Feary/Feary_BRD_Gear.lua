@@ -224,10 +224,10 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion +1",
 		--main="Serenity",sub="Fulcio Grip",
 		--,neck="Voltsurge Torque",
-		head=gear_telchine_Head_Duration, ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
+		head=gear_telchine_head_Duration, ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		--body="Telchine Chas.",
-		hands=gear_telchine_Hands_Duration, lring="Prolix Ring",
-		back="Intarabus's Cape",waist="Witful Belt", legs=gear_telchine_Legs_Duration, feet=gear_telchine_Feet_Duration}
+		hands=gear_telchine_hands_Duration, lring="Prolix Ring",
+		back="Intarabus's Cape",waist="Witful Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
 		--neck="Nodens Gorget",ear2="Earthcry Earring",
