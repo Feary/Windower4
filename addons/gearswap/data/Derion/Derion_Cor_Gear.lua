@@ -311,12 +311,11 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapon Sets
-	sets.weapons = {}
-	sets.weapons.Default = {}--main="Fettering Blade",sub="Nusku Shield",range="Fomalhaut"
-	sets.weapons.DualWeapons = {}--main="Fettering Blade",sub="Blurred Knife +1",range="Fomalhaut"
-	sets.weapons.SavageWeapons = {}--main="Hep. Sapara +1",sub="Blurred Knife +1",range="Ataktos"
-	sets.weapons.DualRangedWeapons = {}--main="Fettering Blade",sub="Kustawi +1"
-	sets.weapons.LeadenWeapons = {}--main="Fettering Blade",sub="Atoyac",range="Fomalhaut"
+	sets.weapons.Default = {main="Atoyac",sub="Legion Scutum",range="Malison"}--main="Fettering Blade",sub="Nusku Shield",range="Fomalhaut"
+	sets.weapons.DualWeapons = {main="Demersal Degen",sub="Atoyac",range="Malison"}--main="Fettering Blade",sub="Blurred Knife +1",range="Fomalhaut"
+	sets.weapons.SavageWeapons = {main="Demersal Degen",sub="Atoyac",range="Malison"}--main="Hep. Sapara +1",sub="Blurred Knife +1",range="Ataktos"
+	sets.weapons.DualRangedWeapons = {main="Demersal Degen",sub="Atoyac",range="Malison"}--main="Fettering Blade",sub="Kustawi +1"
+	sets.weapons.LeadenWeapons = {main="Demersal Degen",sub="Atoyac",range="Malison"}--main="Fettering Blade",sub="Atoyac",range="Fomalhaut"
 
 	
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",}--body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"
