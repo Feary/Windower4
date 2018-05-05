@@ -26,6 +26,7 @@ gear_telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"
 
 -- Body
 gear_telchine_body_Duration = {}
+gear_telchine_body_Siphon = {}
 
 --Hands
 gear_telchine_hands_Cure = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +8',}}
@@ -33,6 +34,7 @@ gear_telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" poten
 
 -- Legs
 gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}}
+gear_telchine_legs_Siphon = {}
 
 -- Feet
 gear_telchine_feet_Song = { name="Telchine Pigaches", augments={'Mag. Acc.+20','Song spellcasting time -7%',}}

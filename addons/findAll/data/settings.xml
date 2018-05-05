@@ -108,6 +108,14 @@
             </text>
         </Tracker>
     </derion>
+    <drecien>
+        <Tracker>
+            <pos>
+                <x>19</x>
+                <y>1065</y>
+            </pos>
+        </Tracker>
+    </drecien>
     <feary>
         <Tracker>
             <pos>

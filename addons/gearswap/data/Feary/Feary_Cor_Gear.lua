@@ -71,7 +71,7 @@ function init_gear_sets()
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes "})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
@@ -247,32 +247,32 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Hajduk Ring",
+        body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Hajduk Ring",ring2="Hajduk Ring",
+        body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Hajduk Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 	
 	sets.midcast.RA.Armageddon = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Hajduk Ring",
+        body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
 
     sets.midcast.RA.Armageddon.Acc = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Hajduk Ring",ring2="Hajduk Ring",
+        body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Hajduk Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 	
 	sets.midcast.RA.Fomalhaut = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="K'ayres Ring",
+        body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="K'ayres Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
 
     sets.midcast.RA.Fomalhaut.Acc = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Hajduk Ring",ring2="Hajduk Ring",
+        body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Hajduk Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac"}

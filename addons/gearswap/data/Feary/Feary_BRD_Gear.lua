@@ -31,7 +31,7 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 	
-	sets.weapons.Default = {main="Carnwenhan",sub="Kali"}
+	sets.weapons.Default = {main="Carnwenhan",sub="Genbu's Shield"}
 	sets.weapons.DualWeapons = {main="Carnwenhan",sub="Mandau"}
 	sets.weapons.Swords = {main="Vampirism",sub="Vampirism"}
 	sets.weapons.NukeWeapons = {main="Malevolence",sub="Malevolence"}
@@ -56,13 +56,14 @@ function init_gear_sets()
 
 	sets.precast.FC.BardSong = {
 		-- Kali
-		main={name="Felibre's Dague", priority=1},
+		main="Felibre's Dague", sub="Genbu Shield", ranged="Gjallarhorn", ammo=empty,
 		head="Fili Calot +1", neck="Aoidos' Matinee", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Defending Ring",
         back="Intarabus's Cape", waist="Witful Belt", legs="Gende. Spats +1", feet=gear_telchine_Song_Feet}
 		
-	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong, {range="Marsyas"})
-
+	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
+	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	
 	sets.precast.FC.Daurdabla = set_combine(sets.precast.FC.BardSong, {range=info.ExtraSongInstrument})
 	sets.precast.DaurdablaDummy = sets.precast.FC.Daurdabla
 	
@@ -151,7 +152,6 @@ function init_gear_sets()
 	sets.midcast.Sirvente = {}
 	
 	-- For song buffs (Full Duration, AF3 set bonus, DT)
-	-- 
 	sets.midcast.SongEffect = {
 		-- Carn Ammurapi Shield
 		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
@@ -163,10 +163,10 @@ function init_gear_sets()
 	-- For song debuffs (duration primary, accuracy secondary)
 	-- Lullaby
 	sets.midcast.SongDebuff = {
-		-- Carn Ammurapi Shield
+		-- Ammurapi Shield
 		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
 		head="Fili Calot +1", neck="Aoidos' Matinee", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Stikini Ring", rring="Stikini Ring",
+		body="Fili Hongreline +1", hands="Fili 	Manchettes +1", lring="Stikini Ring", rring="Stikini Ring",
 		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +1"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
@@ -192,9 +192,9 @@ function init_gear_sets()
 
 	-- Other general spells and classes.
 	sets.midcast.Cure = {
-		main={name="Arka IV", priority=2}, sub={name="", priority=1},
+		main={name="Chatoyant Staff", priority=2}, sub={name=empty, priority=1},
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Gifted Earring", rear="Novia Earring",
-		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		--
 		back="Tempered Cape +1", waist="Bishop's Sash", legs="Aya. Cosciales +2", feet="Kaykaus Boots"}
 		
@@ -258,32 +258,34 @@ function init_gear_sets()
 	sets.RREar = {ear2="Reraise Earring"}
 	
 	-- Resting sets
-	sets.resting = {legs="Assid. Pants +1",feet="Chelona Boots +1"}
-	
+	sets.resting = {main={name="Chatoyant Staff", priority=2}, sub={name=empty, priority=1}, range="Gjallarhorn",
+		head="Inyanga Tiara +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
+		back="Moonbeam Cape", waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
 	
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+	sets.idle = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
 		head="Inyanga Tiara +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
 
-	sets.idle.Weak = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+	sets.idle.Weak = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Assiduity Pants +1", feet="Aya. Gambieras +1"}
 	
-	sets.idle.PDT = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+	sets.idle.PDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque",  lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 	
 	-- Defense sets
-	sets.defense.PDT = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+	sets.defense.PDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 	
-	sets.defense.MDT = {main="Terra's Staff", sub="Umbra Strap",range="Gjallarhorn",
+	sets.defense.MDT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +2",neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyanga Crackows +1"}

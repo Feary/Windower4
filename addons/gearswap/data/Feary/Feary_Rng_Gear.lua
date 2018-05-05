@@ -88,7 +88,7 @@ function init_gear_sets()
 		-- rear="Sherida Earring"
 		head="Adhemar Bonnet", neck="Fotia Gorget", lear="Moonshade Earring", rear="Enervating Earring",
 		-- Begruding Ring
-		body="Meg. Cuirie +2", hands="Mummu Wrists +2", lring="Mummu Ring", rring="Ifrit Ring +1",
+		body="Meg. Cuirie +2", hands="Mummu Wrists +2", lring="Rajas Ring", rring="Mummu Ring",
 		-- 	Darraigner's Brais
 		back=gear.crit_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +1", feet="Adhemar Gamashes"}
 

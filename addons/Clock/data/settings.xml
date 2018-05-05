@@ -160,6 +160,14 @@
         <Sort><![CDATA[None]]></Sort>
         <TimeZones>UTC,JST</TimeZones>
     </derion>
+    <drecien>
+        <Clock>
+            <pos>
+                <x>989</x>
+                <y>1</y>
+            </pos>
+        </Clock>
+    </drecien>
     <feary>
         <Clock>
             <pos>

@@ -381,7 +381,7 @@ function init_gear_sets()
 		head="Souveran Schaller +1",neck="Loricate Torque", ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Shadow Ring",ring2="Defending Ring",
 		-- legs="Chev. Cuisses +1", Shadow
-		back="Shadow Mantle",waist="Flume Belt",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
+		back="Moonbeam Cape",waist="Flume Belt",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
 	sets.idle.KiteTank = {ammo="Staunch Tathlum",
 		--head="Loess Barbuta +1",ear2="Thureous Earring",

@@ -46,11 +46,11 @@
         <BuffsTimerLimit>10</BuffsTimerLimit>
         <CustomTimerLimit>10</CustomTimerLimit>
         <RecastX>1550</RecastX>
-        <RecastY>750</RecastY>
+        <RecastY>650</RecastY>
         <BuffsX>1350</BuffsX>
-        <BuffsY>750</BuffsY>
-        <CustomX>380</CustomX>
-        <CustomY>350</CustomY>
+        <BuffsY>650</BuffsY>
+        <CustomX>1350</CustomX>
+        <CustomY>650</CustomY>
         <!--If true, only items on the recast/buff lists will be displayed-->
         <WhitelistMode>false</WhitelistMode>
         <!--List of ability names to display recasts for if in whitelistMode and to exclude otherwise-->

@@ -128,7 +128,7 @@ function init_gear_sets()
 
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
-	sets.midcast.Cure = {main={name="Arka IV", priority=2}, sub={name="Pole Grip", priority=1}, 
+	sets.midcast.Cure = {main={name="Ababinili", priority=2}, sub={name="Pole Grip", priority=1}, 
 		--
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		-- Theo Mitts +1
@@ -136,7 +136,7 @@ function init_gear_sets()
 		-- Alaunus Cape Bishop Sash kaykaus boots
 		back="Tempered Cape +1", waist="Salire Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
-	sets.midcast.CureSolace = {main={name="Arka IV", priority=2}, sub={name="Pole Grip", priority=1}, 
+	sets.midcast.CureSolace = {main={name="Ababinili", priority=2}, sub={name="Pole Grip", priority=1}, 
 		--
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		-- Theo Mitts +1
@@ -159,27 +159,27 @@ function init_gear_sets()
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
-	sets.midcast.LightDayCure = {main={name="Arka IV", priority=2}, sub={name="Pole Grip", priority=1},
+	sets.midcast.LightDayCure = {main={name="Ababinili", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
-	sets.midcast.Curaga = {main={name="Arka IV", priority=2}, sub={name="Pole Grip", priority=1},
+	sets.midcast.Curaga = {main={name="Ababinili", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Tempered Cape +1", waist="Salire Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
-	sets.midcast.LightWeatherCuraga = {main={name="Arka IV", priority=2}, sub={name="", priority=1},
+	sets.midcast.LightWeatherCuraga = {main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Novia Earring", rear="Orison Earring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
-	sets.midcast.LightDayCuraga = {main={name="Arka IV", priority=2}, sub={name="", priority=1},
+	sets.midcast.LightDayCuraga = {main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Novia Earring", rear="Orison Earring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
-	sets.midcast.Cure.DT = {main={name="Arka IV", priority=2}, sub={name="Pole Grip", priority=1}, 
+	sets.midcast.Cure.DT = {main={name="Ababinili", priority=2}, sub={name="Pole Grip", priority=1}, 
 		--
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		-- Theo Mitts +1
