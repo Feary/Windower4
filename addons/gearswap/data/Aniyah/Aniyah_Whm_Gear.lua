@@ -239,10 +239,11 @@ function init_gear_sets()
 		neck="Colossus's Torque",
 		--hands="Fanatic Gloves", rring="Haoma's Ring", rring="Haoma's Ring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",
-		-- back="Alaunus's Cape", legs="Theophany Pantaloons",
-		feet="Gende. Galoshes"}
+		--legs="Theophany Pantaloons",
+		back="Alaunus's Cape", feet="Gende. Galoshes"}
 
-	sets.midcast.StatusRemoval = {--main={name="Grioavolr", priority=2}, sub={name="Clemency Grip", priority=1}, ammo="Hasty Pinion +1",
+	sets.midcast.StatusRemoval = {ammo="Hasty Pinion",
+		--main={name="Grioavolr", priority=2}, sub={name="Clemency Grip", priority=1}, 
 		head="Ebers Cap",
 		--body="Hedera Cotehardie", 
 		hands="Orison Mitts +2",

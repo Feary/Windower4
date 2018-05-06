@@ -33,7 +33,8 @@ state.CancelStoneskin = M(true, 'Cancel Stone Skin') --Set this to false if you 
 ]]
 
 send_command('bind !@^f7 gs c toggle AutoWSMode') --Turns auto-ws mode on and off.
-send_command('bind !^f7 gs c toggle AutoFoodMode') --Turns AutoFoodMode mode on and off.
+send_command('bind !^f7 gs c toggle AutoFoodMode') --Turns auto-ws mode on and off.
+send_command('bind f7 gs c cycle Weapons') --Cycle through weapons sets.
 send_command('bind @f8 gs c toggle AutoNukeMode') --Turns auto-nuke mode on and off.
 send_command('bind ^f8 gs c toggle AutoStunMode') --Turns auto-stun mode off and on.
 send_command('bind !f8 gs c toggle AutoDefenseMode') --Turns auto-defense mode off and on.
@@ -56,19 +57,19 @@ send_command('bind @f12 gs c cycle IdleMode') --Changes your idle mode options s
 send_command('bind !f12 gs c reset DefenseMode') --Turns your defensive mode off.
 send_command('bind ^@!f12 gs reload') --Reloads gearswap.
 send_command('bind pause gs c update user') --Runs a quick check to make sure you have the right gear on and checks variables.
---send_command('bind ^@!pause gs org') --Runs organizer.
+send_command('bind ^@!pause gs org') --Runs organizer.
 send_command('bind ^@!backspace gs c buffup') --Buffup macro because buffs are love.
 send_command('bind ^- gs c toggle selectnpctargets') --Change targets automatically.
 send_command('bind ^= gs c cycle pctargetmode') --Change targets automatically.
-send_command('bind ^~r gs c weapons;gs c update') --Requips weapons and gear.
+send_command('bind ~r gs c weapons Default') --Requips weapons and gear.
 send_command('bind ^z gs c toggle Capacity') --Keeps capacity mantle on and uses capacity rings.
---send_command('bind ^y gs c toggle AutoCleanupMode') --Uses certain items and tries to clean up inventory.
 send_command('bind ^t gs c cycle treasuremode') --Toggles hitting htings with your treasure hunter set.
+--send_command('bind ^y gs c toggle AutoCleanupMode') --Uses certain items and tries to clean up inventory.
 send_command('bind !t input /target <bt>') --Targets the battle target.
 --send_command('bind ^o fillmode') --Lets you see through walls.
 send_command('bind @p gs equip sets.Sheltered') --Equip sheltered ring, for when being Pro/Shelled.
 send_command('bind !p gs equip sets.Cure_Received') --Equip Cure Potency Received set for when being cured.
-send_command('bind @m gs c mount Tulfaire') --Bird is the word.
+send_command('bind @m gs c mount Hippogryph')
 
 --Usable item binds.
 

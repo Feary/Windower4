@@ -456,7 +456,7 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {main="Bolelabunga",sub="Genbu's Shield",ammo="Hasty Pinion +1",
 		--head="Rawhide Mask",
-		head="Aya. Zucchetto +1", neck="Loricate Torque",ear1="Ethereal Earring", ear2="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque",ear1="Ethereal Earring", ear2="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Aya. Manopolas +1", ring1="Defending Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 
@@ -464,7 +464,7 @@ function init_gear_sets()
 	-- Refresh
 	sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		-- Rawhide Mask
-		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
 		-- 
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}		
@@ -472,7 +472,7 @@ function init_gear_sets()
 	sets.idle.Sphere = set_combine(sets.idle, {})--body="Mekosu. Harness"
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}			
 
@@ -481,17 +481,17 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield", ammo="Staunch Tathlum",
 		-- Genmei Shield Genmei Earring
-		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.defense.MDT = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}			
 
 	sets.defense.MEVA = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
-      	head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+      	head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}			
 
@@ -695,7 +695,7 @@ function init_gear_sets()
 		back="Engulfer Cape +1",waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.HighAcc.MDT = {ammo="Hasty Pinion +1",
-		head="Aya. Zucchetto +1",neck="Loricate Torque",ear1="Suppanomimi", ear2="Cessance Earring",
+		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Suppanomimi", ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Engulfer Cape +1",waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 

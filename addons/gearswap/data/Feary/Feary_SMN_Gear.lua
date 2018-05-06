@@ -216,7 +216,7 @@ function init_gear_sets()
 		-- waist="Incarnation Sash",legs="Apogee Slacks +1", feet="Con. Pigaches +3"
         back=gear.phys_jse_back,waist="Cimmerian Sash",legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
 
-    sets.midcast.Pet.MagicalBloodPactRage = {main="Gridarvor",sub="Elan Strap",ammo="Eminent Sachet",
+    sets.midcast.Pet.MagicalBloodPactRage = {main="Eminent Pole",sub="Elan Strap",ammo="Eminent Sachet",
         -- neck="Adad Amulet", ear2="Lugalbanda Earring",
 		head="Apogee Crown", ear1="Gelos Earring",
         --body="Con. Doublet +3",hands=gear.merlinic_magpact_hands,ring1="Varar Ring",ring2="Varar Ring",

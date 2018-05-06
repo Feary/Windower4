@@ -1,8 +1,11 @@
 <?xml version="1.1" ?>
 <settings>
-	<global>
+    <global>
+        <AutoActivate>true</AutoActivate>
+        <AutoDeusExAutomata>false</AutoDeusExAutomata>
         <autosets>
             <default>
+
             </default>
             <healer>
                 <frame>Stormwaker Frame</frame>
@@ -47,9 +50,11 @@
         <flags>
             <bold>false</bold>
             <bottom>false</bottom>
+            <draggable>true</draggable>
             <italic>false</italic>
             <right>false</right>
         </flags>
+        <maneuvertimers>true</maneuvertimers>
         <padding>0</padding>
         <pos>
             <x>1600</x>
@@ -60,11 +65,19 @@
             <blue>255</blue>
             <font>Consolas</font>
             <fonts>
+
             </fonts>
             <green>255</green>
             <red>255</red>
             <size>10</size>
+            <stroke>
+                <alpha>255</alpha>
+                <blue>0</blue>
+                <green>0</green>
+                <red>0</red>
+                <width>0</width>
+            </stroke>
         </text>
         <visible>false</visible>
-	</global>
+    </global>
 </settings>

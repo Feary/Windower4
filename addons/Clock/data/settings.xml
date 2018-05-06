@@ -167,6 +167,9 @@
                 <y>1</y>
             </pos>
         </Clock>
+        <Separator>\n</Separator>
+        <Sort><![CDATA[None]]></Sort>
+        <TimeZones>UTC,JST</TimeZones>
     </drecien>
     <feary>
         <Clock>

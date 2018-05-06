@@ -44,7 +44,7 @@ function init_gear_sets()
 
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Plunderer's Armlets +1",feet="Skulk. Poulaines"})
     sets.ExtraRegen = {}
-    sets.Kiting = {feet="Fajin Boots"}
+    sets.Kiting = {feet="Jute Boots"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {} -- head="Frenzy Sallet"
@@ -61,7 +61,7 @@ function init_gear_sets()
 	sets.Ambush = {} --body="Plunderer's Vest +1"
 
 	-- Weapons Sets
-	sets.weapons = {main="Mandau",sub="Taming Sari"}
+	sets.weapons.Default = {main="Mandau",sub="Taming Sari"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Throwing = {range="Raider's Bmrng."}
 	

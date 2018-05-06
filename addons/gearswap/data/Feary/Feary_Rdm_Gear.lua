@@ -337,7 +337,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
 		head="Vitiation Chapeau",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Jhakri Robe +2",hands="Aya. Manopolas +1",ring1="Defending Ring",ring2="Dark Ring",
+		body="Jhakri Robe +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 		
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
@@ -408,24 +408,24 @@ function init_gear_sets()
 --		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.engaged = {ammo="Ginsen",
-		head="Aya. Zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
+		head="Carmine Mask +1",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Rajas Ring",ring2="Ilabrat Ring",
 		back="Ground. Mantle +1",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.engaged.DW = {ammo="Ginsen",
-		head="Aya. Zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Petrov Ring",ring2="Ilabrat Ring",
+		head="Carmine Mask +1",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Suppanomimi",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Rajas Ring",ring2="Ramuh Ring +1",
 		back="Ground. Mantle +1",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 		
 	sets.engaged.PhysicalDef = {ammo="Ginsen",
-		head="Vitiation Chapeau",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Battlecast Gaiters"}
+		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Ayanmo Gambieras +1"}
 		
 	sets.engaged.MagicalDef = {ammo="Ginsen",
-		head="Vitiation Chapeau",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2=" Defending Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Battlecast Gaiters"}
+		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2="Defending Ring",
+		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Ayanmo Gambieras +1"}
 
 end
 
@@ -433,13 +433,17 @@ end
 -- Default macro set/book
 function select_default_macro_book()
 	if player.sub_job == 'DNC' then
-		set_macro_page(4, 8)
+		set_macro_page(5, 3)
 	elseif player.sub_job == 'NIN' then
-		set_macro_page(4, 8)
+		set_macro_page(3, 3)
 	elseif player.sub_job == 'BLM' then
-		set_macro_page(2, 8)
+		set_macro_page(2, 3)
+	elseif player.sub_job == 'SCH' then
+		set_macro_page(1, 3)
+	elseif player.sub_job == 'WHM' then
+		set_macro_page(4, 3)
 	else
-		set_macro_page(3, 8)
+		set_macro_page(1, 3)
 	end
 end
 
@@ -487,6 +491,7 @@ function user_job_self_command(commandArgs, eventArgs)
 			windower.chat.input('/ma "Shell V" <me>')
 		elseif not buffactive.Protect and spell_recasts[47] == 0 then
 			windower.chat.input('/ma "Protect V" <me>')
+		end
 	end
 	
 	if commandArgs[1]:lower() == 'buffup2' then		
