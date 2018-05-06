@@ -49,8 +49,8 @@ function init_gear_sets()
 	--------------------------------------
 	
     sets.Enmity = {ammo="Paeapua",
-		-- Loess Barbuta +1 lear="Trux Earring", rear="Cryptic Earring",
-		head="Souv. Schaller +1", neck="Moonbeam Necklace", 
+		-- Loess Barbuta +1 lear="Trux Earring", 
+		head="Souv. Schaller +1", neck="Moonbeam Necklace", rear="Cryptic Earring",
 		-- Yorium Gauntlets Apeile Ring +1 rring="Apeile Ring"
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Vengeful Ring", rring="Apeile Ring",
 		-- Obyssean Cuisses Eschite Greaves path A
