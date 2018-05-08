@@ -457,7 +457,7 @@ function init_gear_sets()
 	sets.resting = {main="Bolelabunga",sub="Genbu's Shield",ammo="Hasty Pinion +1",
 		--head="Rawhide Mask",
 		head="Aya. Zucchetto +2", neck="Loricate Torque",ear1="Ethereal Earring", ear2="Etiolation Earring",
-		body="Jhakri Robe +2", hands="Aya. Manopolas +1", ring1="Defending Ring",ring2="Defending Ring",
+		body="Jhakri Robe +2", hands="Aya. Manopolas +1", ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 
 	-- Idle sets

@@ -31,21 +31,24 @@ function init_gear_sets()
 	--------------------------------------
 	-- Precast Sets
 	
-    sets.Enmity = {}
+    sets.Enmity = {
+		head="Cizin Helm", neck="Atzintli Necklace",
+		body="Souveran Cuirass",hands="Souv. Handschuhs",
+		back="Phalangite Mantle",waist="Goading Belt", legs="Souveran Diechlings",feet="Souveran Schuhs"}
 	sets.Knockback = {}
 	sets.passive.Reraise = {head="Twilight Helm",body="Twilight Mail"}
 	
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Berserk'] = {back="Cichol's Mantle"}
-	sets.precast.JA['Warcry'] = {}
+	sets.precast.JA['Berserk'] = {body="Pummeler's Lorica", back="Cichol's Mantle", feet="Warrior's Calligae",}
+	sets.precast.JA['Warcry'] = {head="Warrior's Mask",}
 	sets.precast.JA['Defender'] = {}
-	sets.precast.JA['Aggressor'] = {}
-	sets.precast.JA['Mighty Strikes'] = {}
-	sets.precast.JA["Warrior's Charge"] = {}
-	sets.precast.JA['Tomahawk'] = {ammo="Thr. Tomahawk"}
-	sets.precast.JA['Retaliation'] = {}
-	sets.precast.JA['Restraint'] = {}
-	sets.precast.JA['Blood Rage'] = {}
+	sets.precast.JA['Aggressor'] = {body="Warrior's Lorica", head="Pummeler's Mask"}
+	sets.precast.JA['Mighty Strikes'] = {hands="Warrior's Mufflers"}
+	sets.precast.JA["Warrior's Charge"] = {legs="Warrior's Cuisses"}
+	sets.precast.JA['Tomahawk'] = {ammo="Thr. Tomahawk",feet="Warrior's Calligae"}
+	sets.precast.JA['Retaliation'] = {hands="Pummler's Mufflers",feet="Ravager's Calligae +2"}
+	sets.precast.JA['Restraint'] = {hands="Rvg. Mufflers +2"}
+	sets.precast.JA['Blood Rage'] = {body="Ravager's Lorica +2",}
 	sets.precast.JA['Brazen Rush'] = {}
 	sets.precast.JA['Provoke'] = set_combine(sets.Enmity,{})
                    
@@ -55,8 +58,10 @@ function init_gear_sets()
 	-- Don't need any special gear for Healing Waltz.
 	sets.precast.Waltz['Healing Waltz'] = {}
            
+	-- ACC
 	sets.precast.Step = {}
 	
+	--Macc
 	sets.precast.Flourish1 = {}
 		   
 	-- Fast cast sets for spells
@@ -1242,9 +1247,8 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Default = {main="Aizkora",sub="Pole Grip"}
 	sets.weapons.DualWeapons = {main="Mdomo Axe",sub="Ternion Dagger"}
-	sets.weapons.DualWeapons = {main="Mdomo Axe",sub="Ternion Dagger"}
 	sets.weapons.Greatsword = {main="Kaquljaan",sub="Pole Grip"}
-	sets.weapons.ProcDagger = {main="Ternion Dagger",sub=empty}
+	sets.weapons.ProcDagger = {main="Ternion Dagger",sub="Mdomo Axe"}
 	sets.weapons.ProcSword = {main="Demersal Degen",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Kaquljaan",sub=empty}
 	sets.weapons.ProcScythe = {main="Ark Scythe",sub=empty}
