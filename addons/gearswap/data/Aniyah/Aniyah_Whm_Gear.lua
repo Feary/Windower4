@@ -287,7 +287,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", 
 		-- Aug.Cape.WHM.Macc waist="Ovate Rope", Luminary Sash Chironic Hose Theo. Duckbills +3
-		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 		
 	sets.midcast['Elemental Magic'] = {-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -297,7 +297,7 @@ function init_gear_sets()
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- waist="Ovate Rope", Chironic Hose Chironic Slippers 
-		back="Toro Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Toro Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 
 	sets.midcast['Elemental Magic'].Resistant = {-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -307,7 +307,7 @@ function init_gear_sets()
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- waist="Ovate Rope", Chironic Hose Chironic Slippers 
-		back="Toro Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Toro Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 	sets.midcast['Divine Magic'] = {-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Lehbrailg +1",priority=2}, sub={name="Niobid Strap", priority=1},
@@ -316,7 +316,7 @@ function init_gear_sets()
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- waist="Ovate Rope", Chironic Hose Chironic Slippers 
-		back="Toro Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Toro Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 
 	sets.midcast['Dark Magic'] = {-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -326,7 +326,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", 
 		-- Aug.Cape.WHM.Macc waist="Ovate Rope", Luminary Sash Chironic Hose Theo. Duckbills +3
-		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 
     sets.midcast.Drain = {-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -336,7 +336,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", 
 		-- Aug.Cape.WHM.Macc waist="Ovate Rope", Luminary Sash Chironic Hose Theo. Duckbills +3
-		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 
     sets.midcast.Drain.Resistant = {-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -346,7 +346,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", 
 		-- Aug.Cape.WHM.Macc waist="Ovate Rope", Luminary Sash Chironic Hose Theo. Duckbills +3
-		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
@@ -358,7 +358,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", 
 		-- Aug.Cape.WHM.Macc waist="Ovate Rope", Luminary Sash Chironic Hose Theo. Duckbills +3
-		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 	sets.midcast.Stun.Resistant = {-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Lehbrailg +1",priority=2}, sub={name="Niobid Strap", priority=1},
@@ -367,7 +367,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", 
 		-- Aug.Cape.WHM.Macc waist="Ovate Rope", Luminary Sash Chironic Hose Theo. Duckbills +3
-		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 	sets.midcast['Enfeebling Magic'] = {-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Lehbrailg +1",priority=2}, sub={name="Niobid Strap", priority=1},
@@ -376,7 +376,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", 
 		-- Aug.Cape.WHM.Macc waist="Ovate Rope", Luminary Sash Chironic Hose Theo. Duckbills +3
-		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Lehbrailg +1",priority=2}, sub={name="Niobid Strap", priority=1},
@@ -385,7 +385,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", 
 		-- Aug.Cape.WHM.Macc waist="Ovate Rope", Luminary Sash Chironic Hose Theo. Duckbills +3
-		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Ogapepo Cape", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 		
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -409,24 +409,24 @@ function init_gear_sets()
 	sets.resting = {main="Iridal Staff",sub="Niobid Strap",
 		head="Orvail Corona +1",neck="Eidolon Pendant",ear1="Antivenom Earring",ear2="Relaxing Earring",
 		body="Ebers Bliaud",hands="Inyanga Dastanas +1", ring1="Vocane Ring",ring2="Defending Ring",
-		back="Felicitas Cape",waist="Austerity Belt",legs="Assid. Pants +1",feet="Inyanga Crackows +1"}
+		back="Felicitas Cape",waist="Austerity Belt",legs="Assid. Pants +1",feet="Inyan. Crackows +1"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
 		-- head="Aya. Zucchetto +1",
 		head="Inyanga Tiara +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		--  hands="Aya. Gambieras +1" 
-		body="Ayanmo Corazza +1", hands="Inyanga Dastanas +1", lring="Vocane Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Inyanga Dastanas +1", lring="Vocane Ring", rring="Defending Ring",
 		-- legs="Aya. Cosciales +1", feet="Aya. Gambieras +1"
-		back="Umbra Cape", waist="Austerity Belt", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Umbra Cape", waist="Austerity Belt", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
 		-- head="Aya. Zucchetto +1",
 		head="Inyanga Tiara +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- hands="Aya. Gambieras +1"
-		body="Ayanmo Corazza +1", hands="Inyanga Dastanas +1", lring="Vocane Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Inyanga Dastanas +1", lring="Vocane Ring", rring="Defending Ring",
 		-- legs="Aya. Cosciales +1", feet="Aya. Gambieras +1"
-		back="Umbra Cape", waist="Austerity Belt", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Umbra Cape", waist="Austerity Belt", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
@@ -434,9 +434,9 @@ function init_gear_sets()
 		-- head="Aya. Zucchetto +1",
 		head="Inyanga Tiara +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- hands="Aya. Gambieras +1"
-		body="Ayanmo Corazza +1", hands="Inyanga Dastanas +1", lring="Vocane Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Inyanga Dastanas +1", lring="Vocane Ring", rring="Defending Ring",
 		-- legs="Aya. Cosciales +1", feet="Aya. Gambieras +1"
-		back="Umbra Cape", waist="Austerity Belt", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Umbra Cape", waist="Austerity Belt", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 
     -- Defense sets
@@ -444,10 +444,10 @@ function init_gear_sets()
 	sets.defense.PDT = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
 		-- head="Aya. Zucchetto +1",
 		head="Inyanga Tiara +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		-- body="Ayanmo Corazza +1",  hands="Aya. Gambieras +1" Defending Ring
+		-- body="Ayanmo Corazza +2",  hands="Aya. Gambieras +1" Defending Ring
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", lring="Vocane Ring", rring="Defending Ring",
 		-- legs="Aya. Cosciales +1", feet="Aya. Gambieras +1"
-		back="Umbra Cape", waist="Austerity Belt", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}
+		back="Umbra Cape", waist="Austerity Belt", legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}
 
 	sets.defense.MDT = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
 		--
@@ -455,7 +455,7 @@ function init_gear_sets()
 		--
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", lring="Vocane Ring", rring="Shadow Ring",
 		--
-		back="Felicitas Cape", waist="Austerity Belt",  legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}			
+		back="Felicitas Cape", waist="Austerity Belt",  legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}			
 
     sets.defense.MEVA = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
 		--
@@ -463,7 +463,7 @@ function init_gear_sets()
 		--
 		body="Inyanga Jubbah", hands="Inyanga Dastanas +1", lring="Vocane Ring", rring="Shadow Ring",
 		--
-		back="Felicitas Cape", waist="Austerity Belt",  legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}			
+		back="Felicitas Cape", waist="Austerity Belt",  legs="Inyanga Shalwar", feet="Inyan. Crackows +1"}			
 
 		
 	-- Gear for specific elemental nukes.

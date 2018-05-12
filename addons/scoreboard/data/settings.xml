@@ -64,6 +64,12 @@
         <showfellow>true</showfellow>
         <visible>true</visible>
     </global>
+    <akili>
+        <visible>false</visible>
+    </akili>
+    <almonte>
+        <visible>false</visible>
+    </almonte>
     <aniyah>
         <display>
             <bg>
@@ -98,6 +104,12 @@
         </display>
         <visible>false</visible>
     </casanoova>
+    <dela>
+        <visible>false</visible>
+    </dela>
+    <denonie>
+        <visible>false</visible>
+    </denonie>
     <derion>
         <display>
             <bg>
@@ -115,6 +127,9 @@
         </display>
         <visible>false</visible>
     </derion>
+    <drecien>
+        <visible>false</visible>
+    </drecien>
     <feary>
         <display>
             <bg>
@@ -130,7 +145,38 @@
                 <size>10</size>
             </text>
         </display>
+        <visible>false</visible>
     </feary>
+    <fearyjunior>
+        <visible>false</visible>
+    </fearyjunior>
+    <gonzalo>
+        <visible>false</visible>
+    </gonzalo>
+    <kavita>
+        <visible>false</visible>
+    </kavita>
+    <luisito>
+        <visible>false</visible>
+    </luisito>
+    <mehany>
+        <visible>false</visible>
+    </mehany>
+    <midnightclam>
+        <visible>false</visible>
+    </midnightclam>
+    <most>
+        <visible>false</visible>
+    </most>
+    <olymoly>
+        <visible>false</visible>
+    </olymoly>
+    <ravindra>
+        <visible>false</visible>
+    </ravindra>
+    <seise>
+        <visible>false</visible>
+    </seise>
     <swagg>
         <display>
             <bg>

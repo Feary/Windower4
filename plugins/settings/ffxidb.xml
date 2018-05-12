@@ -9,7 +9,7 @@
         <ShowMob>true</ShowMob>
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
-        <Ranges></Ranges>
+        <Ranges />
     </global>
     <Aniyah>
         <X>1400</X>
@@ -93,4 +93,24 @@
         <X>1377</X>
         <Y>32</Y>
     </Drecien>
+    <Most>
+        <X>1390</X>
+        <Y>31</Y>
+    </Most>
+    <Ravindra>
+        <X>1368</X>
+        <Y>33</Y>
+    </Ravindra>
+    <Gonzalo>
+        <X>1364</X>
+        <Y>14</Y>
+    </Gonzalo>
+    <Denonie>
+        <X>1317</X>
+        <Y>24</Y>
+    </Denonie>
+    <Mehany>
+        <X>1370</X>
+        <Y>14</Y>
+    </Mehany>
 </settings>

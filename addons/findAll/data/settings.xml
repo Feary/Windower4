@@ -56,6 +56,14 @@
             </text>
         </Tracker>
     </akili>
+    <almonte>
+        <Tracker>
+            <pos>
+                <x>2</x>
+                <y>1064</y>
+            </pos>
+        </Tracker>
+    </almonte>
     <aniyah>
         <Tracker>
             <pos>
@@ -95,6 +103,14 @@
             </text>
         </Tracker>
     </dela>
+    <denonie>
+        <Tracker>
+            <pos>
+                <x>16</x>
+                <y>1063</y>
+            </pos>
+        </Tracker>
+    </denonie>
     <derion>
         <Tracker>
             <pos>
