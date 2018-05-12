@@ -178,12 +178,8 @@ function job_post_midcast(spell, spellMap, eventArgs)
 			equip(sets.IceNuke)
 		end
 
-		if state.RecoverMode.value == 'Always' then equip(sets.RecoverMP)
-		elseif state.RecoverMode.value == 'Never' then
-		elseif state.RecoverMode.value == '60%' then
-			if player.mpp <60 then equip(sets.RecoverMP) end
-		elseif state.RecoverMode.value == '35%' then
-			if player.mpp <35 then equip(sets.RecoverMP) end
+		if state.RecoverMode.value ~= 'Never' and (state.RecoverMode.value == 'Always' or tonumber(state.RecoverMode.value:sub(1, -2)) > player.mpp) then
+			equip(sets.RecoverMP)
 		end
     end
 end
@@ -407,16 +403,16 @@ end
 function check_song()
 	if state.AutoBuffMode.value and not moving and not areas.Cities:contains(world.area) then
 		if not buffactive.march then
-			windower.chat.input('/ma "Victory March" <me>')
-			tickdelay = 90
+			windower.chat.input('/ma "Honor March" <me>')
+			tickdelay = (framerate * 1.5)
 			return true
 		elseif not buffactive.madrigal then
 			windower.chat.input('/ma "Blade Madrigal" <me>')
-			tickdelay = 90
+			tickdelay = (framerate * 1.5)
 			return true
 		elseif not buffactive.minuet then
 			windower.send_command('gs c set ExtraSongsMode Dummy;input /ma "Valor Minuet V" <me>')
-			tickdelay = 90
+			tickdelay = (framerate * 1.5)
 			return true
 		else
 			return false

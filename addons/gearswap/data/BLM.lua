@@ -15,13 +15,16 @@ function job_setup()
     LowTierNukes = S{'Stone', 'Water', 'Aero', 'Fire', 'Blizzard', 'Thunder',
         'Stone II', 'Water II', 'Aero II', 'Fire II', 'Blizzard II', 'Thunder II',
         'Stonega', 'Waterga', 'Aeroga', 'Firaga', 'Blizzaga', 'Thundaga'}
+		
+    AutoManawellSpells = S{'Impact','Meteor','Thundaja','Blizzaja','Firaja','Thunder VI','Blizzard VI',}
 
 	state.DeathMode 	  = M{['description'] = 'Death Mode', 'Off', 'Single', 'Lock'}
+	state.AutoManawell = M(true, 'Auto Manawell Mode')
 	state.RecoverMode = M('35%', '60%', 'Always', 'Never')
 	autows = 'Vidohunir'
 	autofood = 'Pear Crepe'
 	
-	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoNukeMode","AutoWSMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","RecoverMode","ElementalMode","CastingMode","TreasureMode",})
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoNukeMode","AutoManawell","AutoWSMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","RecoverMode","ElementalMode","CastingMode","TreasureMode",})
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -54,8 +57,20 @@ function job_precast(spell, spellMap, eventArgs)
 			end
 		end
 		
+		if state.AutoManawell.value and AutoManawellSpells:contains(spell.english) then
+			local abil_recasts = windower.ffxi.get_ability_recasts()
+
+			if abil_recasts[35] == 0 and not buffactive['amnesia'] then
+				cancel_spell()
+				send_command('@input /ja "Manawell" <me>;wait 1;input /ma '..spell.english..' '..spell.target.raw..'')
+				return
+			end
+		end
+		
         if state.CastingMode.value == 'Proc' then
             classes.CustomClass = 'Proc'
+        elseif state.CastingMode.value == 'OccultAcumen' then
+            classes.CustomClass = 'OccultAcumen'
         end
         if state.DeathMode.value ~= 'Off' then
             classes.CustomClass = 'Death'
@@ -121,7 +136,7 @@ function job_post_midcast(spell, spellMap, eventArgs)
 				equip(sets.element[spell.element])
 			end
 			
-			if state.RecoverMode.value == 'Always' or (state.RecoverMode.value == '60%' and player.mpp < 60) or (state.RecoverMode.value == '35%' and player.mpp < 35) then
+			if state.RecoverMode.value ~= 'Never' and (state.RecoverMode.value == 'Always' or tonumber(state.RecoverMode.value:sub(1, -2)) > player.mpp) then
 				if state.MagicBurstMode.value ~= 'Off' and sets.RecoverBurst then
 					equip(sets.RecoverBurst)
 				else
@@ -143,9 +158,6 @@ function job_aftercast(spell, spellMap, eventArgs)
             send_command('@timers c "'..spell.english..' ['..spell.target.name..']" 60 down spells/00220.png')
         elseif spell.english == 'Sleep II' or spell.english == 'Sleepga II' then
             send_command('@timers c "'..spell.english..' ['..spell.target.name..']" 90 down spells/00220.png')
-        elseif spell.skill == 'Elemental Magic' and state.MagicBurstMode.value == 'Single' then
-            state.MagicBurstMode:reset()
-			if state.DisplayMode.value then update_job_states()	end
 		elseif spell.english == "Death" and state.DeathMode.value == 'Single' then
 			state.DeathMode:reset()
 			if state.DisplayMode.value then update_job_states()	end
@@ -251,7 +263,7 @@ function check_arts()
 
 		if abil_recasts[232] == 0 then
 			windower.chat.input('/ja "Dark Arts" <me>')
-			tickdelay = 30
+			tickdelay = (framerate * .5)
 			return true
 		end
 

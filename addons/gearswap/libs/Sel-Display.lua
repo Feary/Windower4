@@ -93,6 +93,8 @@ function update_job_states()
         HybridMode = "Hybrid",
         IdleMode = "Idle",
 		Passive = "Passive",
+		PetMode = "Pet Mode",
+		AutoManawell = "Auto Manawell",
         WeaponskillMode = "Weaponskill",
         CastingMode = "Casting",
         MainStep = "Main Step",
@@ -101,6 +103,7 @@ function update_job_states()
         TotalHaste = "Haste",
         DelayReduction = "Delay",
 		LearningMode = "Learning",
+		ElementalWheel = "Elemental Wheel",
 		MagicBurstMode = "Magic Burst",
 		RecoverMode = "Recover MP",
 		ElementalMode = "Element",
@@ -119,6 +122,7 @@ function update_job_states()
 		RngHelper = "RngHelper",
 		Capacity = "Capacity",
 		AutoTankMode = "Auto Tank",
+		CompensatorMode = "Compensator",
 		AutoRuneMode = "Auto Rune: "..state.RuneElement.value.."",
 		PhysicalDefenseMode = "Physical Defense",
 		MagicalDefenseMode = "Magical Defense",
@@ -149,6 +153,12 @@ function update_job_states()
 					stateBox:append(string.format("%sAuto Buff: Samba: %s%s", clr.w, clr.h, state.AutoSamba.value))
 				else
 					stateBox:append(string.format("%sAuto Buff%s", clr.h, clr.n))
+				end
+			elseif n == 'AutoWSMode' and state.AutoWSMode.value then
+				if state.RngHelper.value then
+					stateBox:append(string.format("%sAuto WS: "..rangedautows..": "..rangedautowstp.."%s", clr.h, clr.n))
+				else
+					stateBox:append(string.format("%sAuto WS: "..autows..": "..autowstp.."%s", clr.h, clr.n))
 				end
 			else
 				stateBox:append(clr.h..labels[n]..clr.n)
@@ -185,11 +195,11 @@ function update_job_states()
 			if state.DefenseMode.value ~= 'None' then
 				stateBox:append(string.format("%sDefense Active: ", clr.w))
 				if state.DefenseMode.value == 'Physical' then
-					stateBox:append(string.format("%s%s: %s%s", clr.h, state.DefenseMode.current, state.PhysicalDefenseMode.current, clr.s))
+					stateBox:append(string.format("%s%s: %s%s", clr.h, state.DefenseMode.current, state.PhysicalDefenseMode.current, clr.w))
 				elseif state.DefenseMode.value == 'Magical' then
-					stateBox:append(string.format("%s%s: %s%s", clr.h, state.DefenseMode.current, state.MagicalDefenseMode.current, clr.s))
+					stateBox:append(string.format("%s%s: %s%s", clr.h, state.DefenseMode.current, state.MagicalDefenseMode.current, clr.w))
 				elseif state.DefenseMode.value == 'Resist' then
-					stateBox:append(string.format("%s%s: %s%s", clr.h, state.DefenseMode.current, state.ResistDefenseMode.current, clr.s))
+					stateBox:append(string.format("%s%s: %s%s", clr.h, state.DefenseMode.current, state.ResistDefenseMode.current, clr.w))
 				end
 				if state.ExtraDefenseMode and state.ExtraDefenseMode.value ~= 'None' then
 					stateBox:append(string.format("%s / %s%s%s", clr.n, clr.h, state.ExtraDefenseMode.current, clr.n))
@@ -247,6 +257,10 @@ function update_job_states()
 		elseif n == 'LearningMode' then
 			if state.LearningMode.value and state.DefenseMode.value == 'None' then
 				stateBox:append(string.format("%sLearning Mode: %sOn", clr.w, clr.h))
+			end
+		elseif n == 'CompensatorMode' then
+			if state.CompensatorMode.value ~= 'Never' then
+				stateBox:append(string.format("%sCompensator: %s%s", clr.w, clr.h, state.CompensatorMode.value))
 			end
 		elseif n == 'ExtraSongsMode' then
 			if state.ExtraSongsMode.value ~= "None" then

@@ -6,6 +6,7 @@
 --You want the cap ring offset to be 899 or 900 the MOMENT after using your Capacity ring.
 --time_offset = -39601
 --time_test = true
+--framerate = 75
 
 --If this is set to true it will prevent you from casting shadows when you have more up than that spell would generate.
 conserveshadows = false
@@ -70,6 +71,7 @@ send_command('bind ^o fillmode') --Lets you see through walls.
 send_command('bind @p gs equip sets.Sheltered') --Equip sheltered ring, for when being Pro/Shelled.
 send_command('bind !p gs equip sets.Cure_Received') --Equip Cure Potency Received set for when being cured.
 send_command('bind @m gs c mount Omega')
+send_command('alias ambuseal gs c ambuseal')
 
 --Usable item binds.
 

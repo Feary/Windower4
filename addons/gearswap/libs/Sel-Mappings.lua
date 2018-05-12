@@ -143,7 +143,10 @@ mythic_weapons = S{'Conqueror','Glanzfaust','Yagrush','Laevateinn','Murgleis','V
 'Aymur','Carnwenhan','Gastraphetes','Kogarasumaru','Nagi','Ryunohige','Nirvana','Tizona','Death Penalty','Kenkonken',
 'Terpsichore','Tupsimati','Idris','Epeolatry'}
 
-elemental_obi_weaponskills = S{'Wildfire','Leaden Salute','Sanguine Blade','Aeolian Edge','Cataclysm','Trueflight','Tachi: Jinpu'}
+relic_weapons = S{'Spharai','Mandau','Excalibur','Ragnarok','Guttler','Bravura','Apocalypse',
+'Gungnir','Kikoku','Amanomurakumo','Mjollnir','Claustrum','Yoichinoyumi','Annihilator'}
+
+elemental_obi_weaponskills = S{'Wildfire','Leaden Salute','Sanguine Blade','Aeolian Edge','Cataclysm','Trueflight','Tachi: Jinpu','Flash Nova'}
 
 -------------------------------------------------------------------------------------------------------------------
 -- Spell mappings allow defining a general category or description that each of sets of related
@@ -245,6 +248,7 @@ unbridled_learning_set = {['Thunderbolt']=true,['Harden Shell']=true,['Absolute 
 
 mageJobs = S{'WHM','BLM','SCH','RDM','BRD','SMN','GEO'}
 meleeJobs = S{'WAR','MNK','THF','PLD','DRK','SAM','NIN','BLU','DNC','RUN','COR','PUP','PLD','DRK','BST'}
+dualWieldJobs = S{'THF','BLU','NIN','DNC'}
 	
 -- Item related Mappings.
 
@@ -388,7 +392,7 @@ areas.Cities = S{
     "Metalworks",
     "Aht Urhgan Whitegate",
 	"The Colosseum",
-    "Tavanazian Safehold",
+    "Tavnazian Safehold",
     "Nashmau",
     "Selbina",
     "Mhaura",

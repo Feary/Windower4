@@ -26,6 +26,7 @@ function job_setup()
 	autofood = 'Soy Ramen'
 
 	Breath_HPP = 60
+	
 	update_melee_groups()
 	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoJumpMode","AutoWSMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","TreasureMode",})
 end
@@ -72,7 +73,7 @@ end
 -- eventArgs is the same one used in job_midcast, in case information needs to be persisted.
 function job_post_midcast(spell, spellMap, eventArgs)
 
-	if spell.action_type == 'Magic' and player.hpp < Breath_HPP and pet.isvalid then
+	if spell.action_type == 'Magic' and player.hpp > 25 and player.hpp < Breath_HPP and pet.isvalid then
 		equip(sets.midcast.HB_Trigger)
 	end
 
@@ -81,18 +82,15 @@ end
 -- Runs when a pet initiates an action.
 -- Set eventArgs.handled to true if we don't want any automatic gear equipping to be done.
 function job_pet_midcast(spell, spellMap, eventArgs)
-	if spell.english:contains('Breath') then
-		if spell.english:startswith('Healing') or spell.english:startswith('Restoring') then
-			equip(sets.HealingBreath)
-		else 
-			equip(sets.SmitingBreath)
-		end
-	end
+
 end
 
 function job_aftercast(spell, spellMap, eventArgs)
 	if pet.isvalid then
-		if (spell.action_type == 'Magic' and player.hpp < Breath_HPP) or (spell.english == 'Restoring Breath' or spell.english == 'Smiting Breath') then
+		if (spell.action_type == 'Magic' and player.hpp < Breath_HPP) then
+			eventArgs.handled = true
+			equip(sets.HealingBreath)
+		elseif (spell.english == 'Restoring Breath' or spell.english == 'Smiting Breath' or spell.english == 'Steady Wing') then
 			eventArgs.handled = true
 		end
 	end
@@ -104,6 +102,7 @@ end
 
 function job_update(cmdParams, eventArgs)
     update_melee_groups()
+	find_breath_hpp()
 	
 	if player.sub_job ~= 'SAM' and state.Stance.value ~= "None" then
 		state.Stance:set("None")
@@ -159,11 +158,11 @@ function check_hasso()
 		
 		if state.Stance.value == 'Hasso' and abil_recasts[138] == 0 then
 			windower.chat.input('/ja "Hasso" <me>')
-			tickdelay = 110
+			tickdelay = (framerate * 1.8)
 			return true
 		elseif state.Stance.value == 'Seigan' and abil_recasts[139] == 0 then
 			windower.chat.input('/ja "Seigan" <me>')
-			tickdelay = 110
+			tickdelay = (framerate * 1.8)
 			return true
 		end
 	
@@ -179,15 +178,15 @@ function check_jump()
 		
 		if abil_recasts[158] == 0 then
 			windower.chat.input('/ja "Spirit Jump" <t>')
-			tickdelay = 110
+			tickdelay = (framerate * 1.8)
 			return true
 		elseif abil_recasts[159] == 0 then
 			windower.chat.input('/ja "Soul Jump" <t>')
-			tickdelay = 110
+			tickdelay = (framerate * 1.8)
 			return true
 		elseif abil_recasts[162] == 0 then
 			windower.chat.input('/ja "Spirit Link" <me>')
-			tickdelay = 110
+			tickdelay = (framerate * 1.8)
 			return true
 		else
 			return false
@@ -204,15 +203,15 @@ function check_buff()
 
 		if player.sub_job == 'DRK' and not buffactive['Last Resort'] and abil_recasts[87] == 0 then
 			windower.chat.input('/ja "Last Resort" <me>')
-			tickdelay = 110
+			tickdelay = (framerate * 1.8)
 			return true
 		elseif player.sub_job == 'WAR' and not buffactive.Berserk and abil_recasts[1] == 0 then
 			windower.chat.input('/ja "Berserk" <me>')
-			tickdelay = 110
+			tickdelay = (framerate * 1.8)
 			return true
 		elseif player.sub_job == 'WAR' and not buffactive.Aggressor and abil_recasts[4] == 0 then
 			windower.chat.input('/ja "Aggressor" <me>')
-			tickdelay = 110
+			tickdelay = (framerate * 1.8)
 			return true
 		else
 			return false
@@ -220,4 +219,20 @@ function check_buff()
 	end
 		
 	return false
+end
+
+function find_breath_hpp()
+	if S{'WHM','BLM','RDM','SMN','BLU','SCH','GEO'}:contains(player.sub_job) then
+		if sets.midcast.HB_Trigger and (sets.midcast.HB_Trigger.head:contains('Vishap') or sets.midcast.HB_Trigger.head:contains('Drachen')) then
+			Breath_HPP = 65
+		else
+			Breath_HPP = 45
+		end
+	elseif S{'PLD','DRK','BRD','NIN','RUN'}:contains(player.sub_job) then
+		if sets.midcast.HB_Trigger and (sets.midcast.HB_Trigger.head:contains('Vishap') or sets.midcast.HB_Trigger.head:contains('Drachen')) then
+			Breath_HPP = 45
+		else
+			Breath_HPP = 35
+		end
+	end
 end

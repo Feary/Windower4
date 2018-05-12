@@ -9,8 +9,6 @@ function user_setup()
 	state.ResistDefenseMode:options('MEVA')
     state.IdleMode:options('Normal', 'Reraise')
 	state.Weapons:options('Dojikiri','ProcWeapon','Bow')
-	
-    update_combat_form()
 
 	gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 	gear.stp_jse_back = {name="Smertrios's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
@@ -47,7 +45,7 @@ function init_gear_sets()
         back=gear.stp_jse_back,waist="Olseni Belt",legs="Wakido Haidate +3",feet="Founder's Greaves"}
     sets.precast.JA['Violent Flourish'] = {ammo="Pemphredo Tathlum",
         head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Moonshade Earring",
-        body="Flamma Korazin +1",hands="Flam. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+        body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.ws_jse_back,waist="Eschan Stone",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
 
     -- Waltz set (chr and vit)
@@ -120,12 +118,12 @@ function init_gear_sets()
 
     sets.precast.WS['Tachi: Ageha'] = {ammo="Pemphredo Tathlum",
         head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Moonshade Earring",
-        body="Flamma Korazin +1",hands="Flam. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+        body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.ws_jse_back,waist="Eschan Stone",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
 		
     sets.precast.WS['Tachi: Hobaku'] = {ammo="Pemphredo Tathlum",
         head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Moonshade Earring",
-        body="Flamma Korazin +1",hands="Flam. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+        body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.ws_jse_back,waist="Eschan Stone",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
 		
     sets.precast.WS['Tachi: Jinpu'] = set_combine(sets.precast.WS, {head=gear.valorous_magical_wsd_head,ear1="Friomisi Earring",body="Found. Breastplate",hands="Founder's Gauntlets",feet="Founder's Greaves"})
@@ -398,23 +396,23 @@ function check_trust()
 			
 				if spell_recasts[980] == 0 and not have_trust("Yoran-Oran") then
 					windower.send_command('input /ma "Yoran-Oran (UC)" <me>')
-					tickdelay = 250
+					tickdelay = (framerate * 3)
 					return true
 				elseif spell_recasts[952] == 0 and not have_trust("Koru-Moru") then
 					windower.send_command('input /ma "Koru-Moru" <me>')
-					tickdelay = 250
+					tickdelay = (framerate * 3)
 					return true
 				elseif spell_recasts[967] == 0 and not have_trust("Qultada") then
 					windower.send_command('input /ma "Qultada" <me>')
-					tickdelay = 250
+					tickdelay = (framerate * 3)
 					return true
 				elseif spell_recasts[914] == 0 and not have_trust("Ulmia") then
 					windower.send_command('input /ma "Ulmia" <me>')
-					tickdelay = 250
+					tickdelay = (framerate * 3)
 					return true
 				elseif spell_recasts[979] == 0 and not have_trust("Selh'teus") then
 					windower.send_command('input /ma "Selh\'teus" <me>')
-					tickdelay = 250
+					tickdelay = (framerate * 3)
 					return true
 				else
 					return false

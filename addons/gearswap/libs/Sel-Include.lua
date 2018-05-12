@@ -80,6 +80,7 @@ function init_include()
 	state.AutoTankMode 		  = M(false, 'Auto Tank Mode')
 	state.AutoNukeMode 		  = M(false, 'Auto Nuke Mode')
 	state.AutoRuneMode 		  = M(false, 'Auto Rune Mode')
+	state.AutoShadowMode 	  = M(false, 'Auto Shadow Mode')
 	state.AutoWSMode		  = M(false, 'Auto Weaponskill Mode')
 	state.AutoFoodMode		  = M(false, 'Auto Food Mode')
 	state.AutoSubMode 		  = M(false, 'Auto Sublimation Mode')
@@ -88,8 +89,10 @@ function init_include()
 	state.DisplayMode  	  	  = M(true, 'Display Mode')
 	state.UseCustomTimers 	  = M(true, 'Use Custom Timers')
 	state.CancelStoneskin	  = M(true, 'Stoneskin Cancel Mode')
+	state.RelicAftermath	  = M(true, 'Maintain Relic Aftermath')
 	state.Contradance		  = M(true, 'Auto Contradance Mode')
-
+	state.ElementalWheel 	  = M(false, 'Elemental Wheel Active')
+	
 	state.RuneElement 		  = M{['description'] = 'Rune Element','Ignis','Gelus','Flabra','Tellus','Sulpor','Unda','Lux','Tenebrae'}
 	state.ElementalMode 	  = M{['description'] = 'Elemental Mode', 'Fire','Ice','Wind','Earth','Lightning','Water','Light','Dark'}
 
@@ -152,9 +155,12 @@ function init_include()
 	-- Define and default variables for global functions that can be overwritten.
 	autonuke = 'Fire'
 	autows = ''
+	rangedautows = ''
 	autowstp = 1000
+	rangedautowstp = 1000
 	buffup = false
 	time_offset = -39601
+	framerate = 75
 	curecheat = false
 	
 	if time_offset then
@@ -225,6 +231,7 @@ function init_include()
     optional_include({'user-globals.lua'})
     optional_include({player.name..'-globals.lua'})
     optional_include({player.name..'-items.lua'})
+	optional_include({player.name..'_Crafting.lua'})
 
 	-- New Display functions, needs to come after globals for user settings.
 	include('Sel-Display.lua')
@@ -238,7 +245,7 @@ function init_include()
 	
 	-- Controls for handling our autmatic functions.
 	
-	tickdelay = 1350
+	tickdelay = (framerate * 20)
 	
 	-- General var initialization and setup.
     if job_setup then
@@ -292,7 +299,7 @@ function init_include()
 
 	-- Event register to prevent auto-modes from spamming after zoning.
 	windower.register_event('zone change', function()
-		tickdelay = 1350
+		tickdelay = (framerate * 20)
 		state.AutoBuffMode:reset()
 		state.AutoSubMode:reset()
 		state.AutoTrustMode:reset()
@@ -315,7 +322,7 @@ function init_include()
 
 		gearswap.refresh_globals(false)
 
-		if (player ~= nil) and (player.status == 'Idle' or player.status == 'Engaged') and not (midaction() or gearswap.cued_packet or moving or buffactive['Sneak'] or buffactive['Invisible'] or silent_check_disable()) then
+		if (player ~= nil) and (player.status == 'Idle' or player.status == 'Engaged') and not (midaction() or pet_midaction() or gearswap.cued_packet or moving or buffactive['Sneak'] or buffactive['Invisible'] or silent_check_disable()) then
 			if pre_tick then
 				if pre_tick() then return end
 			end
@@ -346,7 +353,7 @@ function init_include()
 			
 		end
 		
-		tickdelay = 30
+		tickdelay = (framerate / 2)
 
 	end)
 	
@@ -783,7 +790,7 @@ function default_post_precast(spell, spellMap, eventArgs)
 
 		elseif spell.type == 'WeaponSkill' then
 			
-			if not (state.WeaponskillMode.value == 'Proc') and elemental_obi_weaponskills:contains(spell.name) and spell.element and (spell.element == world.weather_element or spell.element == world.day_element) and item_available('Hachirin-no-Obi') then
+			if state.WeaponskillMode.value ~= 'Proc' and elemental_obi_weaponskills:contains(spell.name) and spell.element and (spell.element == world.weather_element or spell.element == world.day_element) and item_available('Hachirin-no-Obi') then
 				equip({waist="Hachirin-no-Obi"})
 			end
 			
@@ -919,10 +926,21 @@ end
 function default_aftercast(spell, spellMap, eventArgs)
 
 	if not spell.interrupted then
-		if is_nuke(spell, spellMap) and state.MagicBurstMode.value == 'Single' then
-			state.MagicBurstMode:reset()
+		if is_nuke(spell, spellMap) then
+			if state.MagicBurstMode.value == 'Single' then state.MagicBurstMode:reset() end
+			if state.ElementalWheel.value and (spell.skill == 'Elemental Magic' or spellMap:contains('ElementalNinjutsu')) then
+				state.ElementalMode:cycle()
+				if S{"Light","Dark"}:contains(state.ElementalMode.value) then
+					state.ElementalMode:cycle()
+				end
+				if S{"Light","Dark"}:contains(state.ElementalMode.value) then
+					state.ElementalMode:cycle()
+				end
+			end
+			if state.DisplayMode.value then update_job_states()	end
 		elseif spell.type == 'WeaponSkill' and state.SkillchainMode.value == 'Single' then
 			state.SkillchainMode:reset()
+			if state.DisplayMode.value then update_job_states()	end
 		elseif spell.english:startswith('Utsusemi') then
 			lastshadow = spell.english
 		end
@@ -1049,6 +1067,7 @@ function pre_tick()
 end
 
 function default_tick()
+	if check_shadows() then return true end
 	if check_sub() then return true end
 	if check_food() then return true end
 	if check_ws() then return true end
@@ -1859,16 +1878,19 @@ end
 -- Handle notifications of general state change.
 function state_change(stateField, newValue, oldValue)
     if stateField == 'Weapons' then
-			if sets.weapons[newValue] then
-				equip_weaponset(newValue)
-			elseif newValue == 'None' then
-				enable('main','sub','range','ammo')
-			else
-				state.Weapons:reset()
-				if sets.weapons[state.Weapons.value] then
-					equip_weaponset(state.Weapons.value)
-				end
+		if (newValue:contains('DW') or newValue:contains('Dual')) and not (dualWieldJobs:contains(player.main_job) or (player.sub_job == 'DNC' or player.sub_job == 'NIN')) then
+			state.Weapons:cycle()
+			handle_weapons({})
+		elseif sets.weapons[newValue] then
+			equip_weaponset(newValue)
+		elseif newValue == 'None' then
+			enable('main','sub','range','ammo')
+		else
+			state.Weapons:reset()
+			if sets.weapons[state.Weapons.value] then
+				equip_weaponset(state.Weapons.value)
 			end
+		end
 	elseif stateField == 'RngHelper' then
 		if newValue == true then
 			send_command('gs rh enable')
@@ -1890,12 +1912,12 @@ function state_change(stateField, newValue, oldValue)
 	end
 	
 	if stateField == 'Rune Element' then
-		send_command('wait .1;gs c DisplayRune')
+		send_command('wait .001;gs c DisplayRune')
 	elseif stateField == 'Elemental Mode' then
 		if player.main_job == 'COR' then
-			send_command('wait .1;gs c DisplayShot')
+			send_command('wait .001;gs c DisplayShot')
 		else
-			send_command('wait .1;gs c DisplayElement')
+			send_command('wait .001;gs c DisplayElement')
 		end
 	elseif stateField:contains('Auto') then
 		tickdelay = 0

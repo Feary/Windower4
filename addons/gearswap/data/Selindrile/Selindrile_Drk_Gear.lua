@@ -65,12 +65,12 @@ function init_gear_sets()
  
 	sets.midcast['Dark Magic'] = {ammo="Pemphredo Tathlum",
 		head="Carmine Mask +1",neck="Erra Pendant",ear1="Gwati Earring",ear2="Digni. Earring",
-		body="Flamma Korazin +1",hands="Flam. Manopolas +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Toro Cape",waist="Eschan Stone",legs="Eschite Cuisses",feet="Flam. Gambieras +2"}
            
 	sets.midcast['Enfeebling Magic'] = {ammo="Pemphredo Tathlum",
 		head="Carmine Mask +1",neck="Erra Pendant",ear1="Gwati Earring",ear2="Digni. Earring",
-		body="Flamma Korazin +1",hands="Flam. Manopolas +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Toro Cape",waist="Eschan Stone",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
 		   
 	sets.midcast['Dread Spikes'] = set_combine(sets.midcast['Dark Magic'], {})
@@ -78,7 +78,7 @@ function init_gear_sets()
            
 	sets.midcast.Stun = {ammo="Pemphredo Tathlum",
 		head="Carmine Mask +1",neck="Erra Pendant",ear1="Gwati Earring",ear2="Digni. Earring",
-		body="Flamma Korazin +1",hands="Flam. Manopolas +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Toro Cape",waist="Eschan Stone",legs="Eschite Cuisses",feet="Flam. Gambieras +2"}
                    
 	sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {ring1="Evanescence Ring",ring2="Archon Ring",back="Niht Mantle"})
@@ -111,6 +111,12 @@ function init_gear_sets()
     sets.precast.WS['Catastrophe'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Catastrophe'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.precast.WS['Catastrophe'].Fodder = set_combine(sets.precast.WS.Fodder, {})
+	
+    sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Torcleaver'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
+    sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS.Acc, {})
+    sets.precast.WS['Torcleaver'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
+    sets.precast.WS['Torcleaver'].Fodder = set_combine(sets.precast.WS.Fodder, {})
 
     sets.precast.WS['Entropy'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Entropy'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})

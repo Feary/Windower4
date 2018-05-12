@@ -28,8 +28,10 @@ function job_setup()
 	
 	utsusemi_ni_cancel_delay = .1
 	
+	state.ElementalMode = M{['description'] = 'Elemental Mode','Fire','Water','Lightning','Earth','Wind','Ice','Light','Dark',}
+	
 	update_melee_groups()
-	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","ElementalMode","CastingMode","TreasureMode",})
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode","AutoBuffMode","ElementalWheel",},{"Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","ElementalMode","CastingMode","TreasureMode",})
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -122,8 +124,10 @@ function job_aftercast(spell, spellMap, eventArgs)
 	if spell.interrupted then return
 	elseif spell.english == "Migawari: Ichi" then
         state.Buff.Migawari = true
-	elseif spellMap == 'ElementalNinjutsu' and state.MagicBurstMode.value == 'Single' then
-            state.MagicBurstMode:reset()
+	elseif spellMap == 'ElementalNinjutsu' then
+            if state.MagicBurstMode.value == 'Single' then
+				state.MagicBurstMode:reset()
+			end
 			if state.DisplayMode.value then update_job_states()	end
     end
 end
@@ -257,6 +261,7 @@ end
 
 function job_tick()
 	if check_stance() then return true end
+	if check_buff() then return true end
 	return false
 end
 
@@ -366,16 +371,37 @@ function check_stance()
 		
 		if state.Stance.value == 'Innin' and abil_recasts[147] == 0 then
 			windower.chat.input('/ja "Innin" <me>')
-			tickdelay = 240
+			tickdelay = framerate
 			return true
 		elseif state.Stance.value == 'Yonin' and abil_recasts[146] == 0 then
 			windower.chat.input('/ja "Yonin" <me>')
-			tickdelay = 240
+			tickdelay = framerate
 			return true
 		else
 			return false
 		end
 	end
 
+	return false
+end
+
+function check_buff()
+	if state.AutoBuffMode.value and player.in_combat then
+		local spell_recasts = windower.ffxi.get_spell_recasts()
+		local abil_recasts = windower.ffxi.get_ability_recasts()
+
+		if player.sub_job == 'WAR' and not buffactive.Berserk and not is_defensive() and abil_recasts[1] == 0 then
+			windower.chat.input('/ja "Berserk" <me>')
+			tickdelay = (framerate * 1.8)
+			return true
+		elseif player.sub_job == 'WAR' and not buffactive.Aggressor and not is_defensive() and abil_recasts[4] == 0 then
+			windower.chat.input('/ja "Aggressor" <me>')
+			tickdelay = (framerate * 1.8)
+			return true
+		else
+			return false
+		end
+	end
+		
 	return false
 end

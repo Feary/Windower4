@@ -22,6 +22,7 @@ function job_setup()
 	moonshade_ws = S{'Jishnu\'s Radiance','Empyreal Arrow','Last Stand'}
 	
 	autows = "Last Stand"
+	rangedautows = "Last Stand"
 	autofood = 'Soy Ramen'
 	ammostock = 200
 	
@@ -116,7 +117,10 @@ function job_buff_change(buff, gain)
 	end
 	
 	if player.equipment.Ranged and buff:contains('Aftermath') then
-		if (player.equipment.Ranged == 'Armageddon' and (buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath: Lv.3'])) or (player.equipment.Ranged == "Annihilator" and state.Buff['Aftermath']) or (player.equipment.Ranged == "Yoichinoyumi" and state.Buff['Aftermath']) then
+		if (player.equipment.Ranged == 'Armageddon' and (buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath: Lv.3']))
+		or (player.equipment.Ranged == 'Gandiva' and (buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath: Lv.3']))
+		or (player.equipment.Ranged == "Annihilator" and state.Buff['Aftermath'])
+		or (player.equipment.Ranged == "Yoichinoyumi" and state.Buff['Aftermath']) then
 			classes.CustomRangedGroups:append('AM')
 		end
 	end
@@ -198,47 +202,47 @@ function job_tick()
 end
 
 function check_ammo_makers()
-	if state.AutoAmmoMode.value and player.equipment.range then
+	if state.AutoAmmoMode.value and player.equipment.range and not world.in_mog_house then
 			if player.equipment.range == 'Fomalhaut' and get_item_next_use(player.equipment.range).usable then
 				if count_total_ammo('Chrono Bullet') < ammostock then
 					windower.chat.input('/item "Fomalhaut" <me>')
 					add_to_chat(217,"You're low on Chrono Bullets, using Fomalhaut.")
-					tickdelay = 120
+					tickdelay = (framerate * 2)
 					return true
 				end
 			elseif player.equipment.range == 'Fail-Not' and get_item_next_use(player.equipment.range).usable then
 				if count_total_ammo('Chrono Arrow') < ammostock then
 					windower.chat.input('/item "Fail-Not" <me>')
 					add_to_chat(217,"You're low on Chrono Arrows, using Fail-Not.")
-					tickdelay = 120
+					tickdelay = (framerate * 2)
 					return true
 				end
 			elseif player.equipment.range == 'Gandiva' and get_item_next_use(player.equipment.range).usable then
 				if count_total_ammo("Artemis's Arrow") < ammostock then
 					windower.chat.input('/item "Gandiva" <me>')
 					add_to_chat(217,"You're low on Artemis's Arrows, using Gandiva.")
-					tickdelay = 120
+					tickdelay = (framerate * 2)
 					return true
 				end
 			elseif player.equipment.range == 'Yoichinoyumi' and get_item_next_use(player.equipment.range).usable then
 				if count_total_ammo("Yoichi's Arrow") < ammostock then
 					windower.chat.input('/item "Yoichinoyumi" <me>')
 					add_to_chat(217,"You're low on Yoichi's Arrows, using Yoichinoyumi.")
-					tickdelay = 120
+					tickdelay = (framerate * 2)
 					return true
 				end
 			elseif player.equipment.range == 'Annihilator' and get_item_next_use(player.equipment.range).usable then
 				if count_total_ammo("Eradicating Bullet") < ammostock then
 					windower.chat.input('/item "Annihilator" <me>')
 					add_to_chat(217,"You're low on Eradicating Bullets, using Annihilator.")
-					tickdelay = 120
+					tickdelay = (framerate * 2)
 					return true
 				end
 			elseif player.equipment.range == 'Armageddon' and get_item_next_use(player.equipment.range).usable then
 				if count_total_ammo("Devastating Bullet") < ammostock then
 					windower.chat.input('/item "Armageddon" <me>')
 					add_to_chat(217,"You're low on Devastating Bullets, using Armageddon.")
-					tickdelay = 120
+					tickdelay = (framerate * 2)
 					return true
 				end
 			end

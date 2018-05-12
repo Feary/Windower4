@@ -1,27 +1,6 @@
 -------------------------------------------------------------------------------------------------------------------
--- Last Revised: May 7th, 2015 (Added a 'PetOnly' Mode - 'Windows Key'+F8 cycles Pet Modes.
--- And a new rule for equipping TP Bonus Hands for TP-based moves.)
---
--- alt+F8 cycles through designated Jug Pets
--- ctrl+F8 toggles Monster Correlation between Neutral and Favorable
--- 'Windows Key'+F8 switches between Pet stances for Master/Pet hybrid gearsets
--- alt+= cycles through Pet Food types
--- ctrl+= can swap in the usage of Chaac Belt for Treasure Hunter on common subjob abilities.
--- ctrl+F11 cycles between Magical Defense Modes
---
--- General Gearswap Commands:
--- F9 cycles Accuracy modes
--- ctrl+F9 cycles Hybrid modes
--- 'Windows Key'+F9 cycles Weapon Skill modes
--- F10 equips Physical Defense
--- alt+F10 toggles Kiting on or off
--- ctrl+F10 cycles Physical Defense modes
--- F11 equips Magical Defense
--- alt+F12 turns off Defense modes
--- ctrl+F12 cycles Idle modes
---
--- Keep in mind that any time you Change Jobs/Subjobs, your Pet/Pet Food/etc. reset to default options.
--- F12 will list your current options.
+-- Much credit goes to Falkirk of Quetzalcoatl for providing a lot of the concepts and
+-- code in this file, as well as, always, Motenten/Kinematics.
 -------------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------------
@@ -88,6 +67,40 @@ function job_setup()
 	abilities_to_check = S{'Feral Howl','Quickstep','Box Step','Stutter Step','Desperate Flourish','Violent Flourish',
         'Animated Flourish','Provoke','Dia','Dia II','Flash','Bio','Bio II','Sleep','Sleep II',
         'Drain','Aspir','Dispel','Steal','Mug'}
+
+	pet_info = {['FunguarFamiliar']="Funguar, Plantoid, Warrior",['CourierCarrie']="Crab, Aquan, Paladin",
+				['AmigoSabotender']="Cactuar, Plantoid, Warrior",['NurseryNazuna']="Sheep, Beast, Warrior",
+				['CraftyClyvonne']="Coeurl, Beast, Warrior",['FleetReinhard']="Raptor, Lizard, Warrior",
+				['PrestoJulio']="Flytrap, Plantoid, Warrior",['SwiftSieghard']="Raptor, Lizard, Warrior",
+				['MailbusterCetas']="Fly, Vermin, Warrior",['AudaciousAnna']="Lizard, Lizard, Warrior",
+				['TurbidToloi']="Pugil, Aquan, Warrior",['SlipperySilas']="Toad, Aquan, Warrior",
+				['LuckyLulush']="Rabbit, Beast, Warrior",['DipperYuly']="Ladybug, Vermin, Thief",
+				['FlowerpotMerle']="Mandragora, Plantoid, Monk",['DapperMac']="Apkallu, Bird, Monk",
+				['DiscreetLouise']="Funguar, Plantoid, Warrior",['FatsoFargann']="Leech, Amorph, Warrior",
+				['FaithfulFalcorr']="Hippogryph, Bird, Thief",['BugeyedBroncha']="Eft, Lizard, Warrior",
+				['BloodclawShasra']="Lynx, Beast, Warrior",['GorefangHobs']="Tiger, Beast, Warrior",
+				['GooeyGerard']="Slug, Amorph, Warrior",['CrudeRaphie']="Adamantoise, Lizard, Paladin",
+				['DroopyDortwin']="Rabbit, Beast, Warrior",['PonderingPeter']="HQ Rabbit, Beast, Warrior",
+				['SunburstMalfik']="Crab, Aquan, Paladin",['AgedAngus']="HQ Crab, Aquan, Paladin",
+				['WarlikePatrick']="Lizard, Lizard, Warrior",['MosquitoFamiliar']="Mosquito, Vermin, Dark Knight",
+				['Left-HandedYoko']="Mosquito, Vermin, Dark Knight",['ScissorlegXerin']="Chapuli, Vermin, Warrior",
+				['BouncingBertha']="HQ Chapuli, Vermin, Warrior",['RhymingShizuna']="Sheep, Beast, Warrior",
+				['AttentiveIbuki']="Tulfaire, Bird, Warrior",['SwoopingZhivago']="HQ Tulfaire, Bird, Warrior",
+				['BrainyWaluis']="Funguar, Plantoid, Warrior",['SuspiciousAlice']="Eft, Lizard, Warrior",			
+				['HeadbreakerKen']="Fly, Vermin, Warrior",['RedolentCandi']="Snapweed, Plantoid, Warrior",
+				['AlluringHoney']="HQ Snapweed, Plantoid, Warrior",['CaringKiyomaro']="Raaz, Beast, Monk",
+				['SurgingStorm']="Apkallu, Bird, Monk",['SubmergedIyo']="Apkallu, Bird, Monk",
+				['CursedAnnabelle']="Antlion, Vermin, Warrior",['AnklebiterJedd']="Diremite, Vermin, Dark Knight",
+				['VivaciousVickie']="HQ Raaz, Beast, Monk",['HurlerPercival']="Beetle, Vermin, Paladin",
+				['BlackbeardRandy']="Tiger, Beast, Warrior",['GenerousArthur']="Slug, Amorph, Warrior",
+				['ThreestarLynn']="Ladybug, Vermin, Thief",['BraveHeroGlenn']="Frog, Aquan, Warrior",
+				['SharpwitHermes']="Mandragora, Plantoid, Monk",['ColibriFamiliar']="Colibri, Bird, Red Mage",
+				['ChoralLeera']="HQ Colibri, Bird, Red Mage",['SpiderFamiliar']="Spider, Vermin, Warrior",
+				['GussyHachirobe']="HQ Spider, Vermin, Warrior",['AcuexFamiliar']="Acuex, Amorph, Black Mage",
+				['ChoralLeera']="HQ Colibri, Bird, Red Mage",['SpiderFamiliar']="Spider, Vermin, Warrior",
+				['AmiableRoche']="Pugil, Aquan, Warrior",['HeraldHenry']="Crab, Aquan, Paladin",
+				['FluffyBredo']="HQ Acuex, Amorph, Black Mage",
+				}
 
 	ready_moves = {}
 	ready_moves.default =  {['DroopyDortwin']='Foot Kick',['PonderingPeter']='Foot Kick',['HeraldHenry']='Big Scissors',['CourierCarrie']='Big Scissors',
@@ -157,6 +170,7 @@ function job_setup()
 	state.AutoFightMode = M(true, 'Auto Fight Mode')
 	state.AutoReadyMode = M(false, 'Auto Ready Mode')
 	state.AutoCallPet = M(false, 'Auto Call Pet')
+	state.PetMode = M{['description']='Pet Mode','Tank','DD'}
 	state.RewardMode = M{['description']='Reward Mode', 'Theta', 'Zeta', 'Eta'}
     state.JugMode = M{['description']='Jug Mode', 'ScissorlegXerin', 'BlackbeardRandy', 'AttentiveIbuki', 'AgedAngus',
                 'RedolentCandi','DroopyDortwin','WarlikePatrick','HeraldHenry','AlluringHoney','SwoopingZhivago','AcuexFamiliar'}
@@ -167,8 +181,9 @@ function job_setup()
 	autows = 'Cloudsplitter'
 	autofood = 'Akamochi'
 
+	update_pet_groups()
 	update_melee_groups()
-	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoReadyMode","AutoBuffMode",},{"Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","JugMode","RewardMode","TreasureMode",})
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoReadyMode","AutoBuffMode",},{"Weapons","OffenseMode","WeaponskillMode","PetMode","IdleMode","Passive","RuneElement","JugMode","RewardMode","TreasureMode",})
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -204,24 +219,18 @@ function job_precast(spell, spellMap, eventArgs)
 
 		elseif spell.english == 'Reward' then
 			equip(sets.precast.JA.Reward[state.RewardMode.value])
-
-			if state.PetMode.value == 'PetOnly' then
-				if player.sub_job == 'NIN' or player.sub_job == 'DNC' then
-					equip(sets.RewardAxesDW)
-				else
-					equip(sets.RewardAxe)
-				end
+			if player.sub_job == 'NIN' or player.sub_job == 'DNC' then
+				equip(sets.RewardAxesDW)
+			else
+				equip(sets.RewardAxe)
 			end
 
 		elseif spell.english == 'Spur' then
 			equip(sets.precast.JA.Spur)
-
-			if state.PetMode.value == 'PetOnly' then
-				if player.sub_job == 'NIN' or player.sub_job == 'DNC' then
-					equip(sets.SpurAxesDW)
-				else
-					equip(sets.SpurAxe)
-				end
+			if player.sub_job == 'NIN' or player.sub_job == 'DNC' then
+				equip(sets.SpurAxesDW)
+			else
+				equip(sets.SpurAxe)
 			end
 
 		elseif spell.english == 'Bestial Loyalty' then
@@ -257,10 +266,10 @@ function job_precast(spell, spellMap, eventArgs)
 -- Define class for Sic and Ready moves.
         elseif spell.type == 'Monster' then
                 classes.CustomClass = "WS"
-                if state.PetMode.Value == 'PetOnly' and (player.sub_job == 'NIN' or player.sub_job == 'DNC') then
-                         equip(sets.midcast.Pet.ReadyRecastNE)
+                if player.sub_job == 'NIN' or player.sub_job == 'DNC' then
+					equip(sets.midcast.Pet.ReadyRecastDW)
                 else
-                         equip(sets.midcast.Pet.ReadyRecast)
+					equip(sets.midcast.Pet.ReadyRecast)
                 end
         end
 end
@@ -311,30 +320,18 @@ function job_post_precast(spell, spellMap, eventArgs)
 end
 
 function job_pet_midcast(spell, spellMap, eventArgs)
-        if state.PetMode.value == 'PetOnly' then
-                if state.OffenseMode.value:contains('Acc') then
-                        equip(sets.midcast.Pet.ReadyNE.Acc)
-                elseif state.OffenseMode.value == 'FullAcc' then
-                        equip(sets.midcast.Pet.FullAcc)
-                else
-                        equip(set_combine(sets.midcast.Pet.ReadyNE, sets.midcast.Pet[state.CorrelationMode.value]))
-                end
-        else
-                if state.OffenseMode.value:contains('Acc') then
-                        equip(sets.midcast.Pet.Acc)
-                elseif state.OffenseMode.value == 'FullAcc' then
-                        equip(sets.midcast.Pet.ReadyNE.Acc)
-                else
-                        equip(set_combine(sets.midcast.Pet.WS, sets.midcast.Pet[state.CorrelationMode.value]))
-                end
-        end
-
         if magic_ready_moves:contains(spell.name) then
-                if state.PetMode.value == 'PetOnly' then
-                        equip(sets.midcast.Pet.MagicReadyNE)
-                else
-                        equip(sets.midcast.Pet.MagicReady)
-                end
+			if sets.midcast.Pet.MagicReady[state.OffenseMode.value] then
+				equip(sets.midcast.Pet.MagicReady[state.OffenseMode.value])
+			else
+				equip(sets.midcast.Pet.MagicReady)
+			end
+        else
+			if sets.midcast.Pet[state.OffenseMode.value] then
+				equip(sets.midcast.Pet[state.OffenseMode.value])
+			else
+				equip(sets.midcast.Pet.WS)
+			end
         end
 
         -- If Pet TP, before bonuses, is less than a certain value then equip Nukumi Manoplas +1
@@ -374,12 +371,29 @@ end
 -------------------------------------------------------------------------------------------------------------------
 
 function job_customize_idle_set(idleSet)
-
-        if  state.PetMode.value == 'PetOnly' then
-           idleSet = set_combine(idleSet, sets.IdleAxesNE)
-        end
-
     return idleSet
+end
+
+function job_state_change(stateField, newValue, oldValue)
+	if stateField == 'PetMode' then
+		update_pet_groups()
+	end
+	
+	if 	pet_info[state.JugMode.value] then
+		send_command('wait .001;gs c DisplayPetInfo')
+	end
+end
+
+function job_pet_change(pet, gain)
+    update_pet_groups()
+end
+
+-- Update custom groups based on the current pet.
+function update_pet_groups()
+    classes.CustomIdleGroups:clear()
+    if pet.isvalid then
+        classes.CustomIdleGroups:append(state.PetMode.value)
+    end
 end
 
 -- Modify the default melee set after it was constructed.
@@ -405,20 +419,6 @@ function job_buff_change(buff, gain)
 	end
 end
 
-function job_state_change(stateField, newValue, oldValue)
-        if stateField == 'Correlation Mode' then
-                state.CorrelationMode:set(newValue)
-        elseif stateField == 'Reward Mode' then
-                state.RewardMode:set(newValue)
-        elseif stateField == 'Treasure Mode' then
-                state.TreasureMode:set(newValue)
-        elseif stateField == 'Pet Mode' then
-                state.CombatWeapon:set(newValue)
-        elseif stateField == 'Jug Mode' then
-                state.JugMode:set(newValue)
-        end
-end
-
 function job_status_change(newStatus, oldStatus, eventArgs)
 	if newStatus == "Engaged" and pet.isvalid and pet.status == "Idle" and player.target.type == "MONSTER" and state.AutoFightMode.value and player.target.distance < 20 then
 		windower.chat.input('/pet Fight <t>')
@@ -440,192 +440,8 @@ end
 -- Called by the 'update' self-command, for common needs.
 -- Set eventArgs.handled to true if we don't want automatic equipping of gear.
 function job_update(cmdParams, eventArgs)
+	update_pet_groups()
 	update_melee_groups()
-
-	if state.JugMode.value == 'FunguarFamiliar' then
-			PetInfo = "Funguar, Plantoid"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'CourierCarrie' then
-			PetInfo = "Crab, Aquan"
-			PetJob = 'Paladin'
-	elseif state.JugMode.value == 'AmigoSabotender' then
-			PetInfo = "Cactuar, Plantoid"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'NurseryNazuna' then
-			PetInfo = "Sheep, Beast"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'CraftyClyvonne' then
-			PetInfo = "Coeurl, Beast"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'FleetReinhard' then
-			PetInfo = "Raptor, Lizard"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'PrestoJulio' then
-			PetInfo = "Flytrap, Plantoid"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'SwiftSieghard' then
-			PetInfo = "Raptor, Lizard"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'MailbusterCetas' then
-			PetInfo = "Fly, Vermin"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'AudaciousAnna' then
-			PetInfo = "Lizard, Lizard"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'TurbidToloi' then
-			PetInfo = "Pugil, Aquan"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'SlipperySilas' then
-			PetInfo = "Toad, Aquan"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'LuckyLulush' then
-			PetInfo = "Rabbit, Beast"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'DipperYuly' then
-			PetInfo = "Ladybug, Vermin"
-			PetJob = 'Thief'
-	elseif state.JugMode.value == 'FlowerpotMerle' then
-			PetInfo = "Mandragora, Plantoid"
-			PetJob = 'Monk'
-	elseif state.JugMode.value == 'DapperMac' then
-			PetInfo = "Apkallu, Bird"
-			PetJob = 'Monk'
-	elseif state.JugMode.value == 'DiscreetLouise' then
-			PetInfo = "Funguar, Plantoid"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'FatsoFargann' then
-			PetInfo = "Leech, Amorph"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'FaithfulFalcorr' then
-			PetInfo = "Hippogryph, Bird"
-			PetJob = 'Thief'
-	elseif state.JugMode.value == 'BugeyedBroncha' then
-			PetInfo = "Eft, Lizard"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'BloodclawShasra' then
-			PetInfo = "Lynx, Beast"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'GorefangHobs' then
-			PetInfo = "Tiger, Beast"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'GooeyGerard' then
-			PetInfo = "Slug, Amorph"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'CrudeRaphie' then
-			PetInfo = "Adamantoise, Lizard"
-			PetJob = 'Paladin'
-	elseif state.JugMode.value == 'DroopyDortwin' then
-			PetInfo = "Rabbit, Beast"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'PonderingPeter' then
-			PetInfo = "HQ Rabbit, Beast"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'SunburstMalfik' then
-			PetInfo = "Crab, Aquan"
-			PetJob = 'Paladin'
-	elseif state.JugMode.value == 'AgedAngus' then
-			PetInfo = "HQ Crab, Aquan"
-			PetJob = 'Paladin'
-	elseif state.JugMode.value == 'WarlikePatrick' then
-			PetInfo = "Lizard, Lizard"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'MosquitoFamiliar' then
-			PetInfo = "Mosquito, Vermin"
-			PetJob = 'Dark Knight'
-	elseif state.JugMode.value == 'Left-HandedYoko' then
-			PetInfo = "Mosquito, Vermin"
-			PetJob = 'Dark Knight'
-	elseif state.JugMode.value == 'ScissorlegXerin' then
-			PetInfo = "Chapuli, Vermin"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'BouncingBertha' then
-			PetInfo = "HQ Chapuli, Vermin"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'RhymingShizuna' then
-			PetInfo = "Sheep, Beast"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'AttentiveIbuki' then
-			PetInfo = "Tulfaire, Bird"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'SwoopingZhivago' then
-			PetInfo = "HQ Tulfaire, Bird"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'AmiableRoche' then
-			PetInfo = "Pugil, Aquan"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'HeraldHenry' then
-			PetInfo = "Crab, Aquan"
-			PetJob = 'Paladin'
-	elseif state.JugMode.value == 'BrainyWaluis' then
-			PetInfo = "Funguar, Plantoid"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'SuspiciousAlice' then
-			PetInfo = "Eft, Lizard"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'HeadbreakerKen' then
-			PetInfo = "Fly, Vermin"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'RedolentCandi' then
-			PetInfo = "Snapweed, Plantoid"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'AlluringHoney' then
-			PetInfo = "HQ Snapweed, Plantoid"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'CaringKiyomaro' then
-			PetInfo = "Raaz, Beast"
-			PetJob = 'Monk'
-	elseif state.JugMode.value == 'SurgingStorm' then
-			PetInfo = "Apkallu, Bird"
-			PetJob = 'Monk'
-	elseif state.JugMode.value == 'SubmergedIyo' then
-			PetInfo = "Apkallu, Bird"
-			PetJob = 'Monk'
-	elseif state.JugMode.value == 'CursedAnnabelle' then
-			PetInfo = "Antlion, Vermin"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'AnklebiterJedd' then
-			PetInfo = "Diremite, Vermin"
-			PetJob = 'Dark Knight'
-	elseif state.JugMode.value == 'VivaciousVickie' then
-			PetInfo = "HQ Raaz, Beast"
-			PetJob = 'Monk'
-	elseif state.JugMode.value == 'HurlerPercival' then
-			PetInfo = "Beetle, Vermin"
-			PetJob = 'Paladin'
-	elseif state.JugMode.value == 'BlackbeardRandy' then
-			PetInfo = "Tiger, Beast"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'GenerousArthur' then
-			PetInfo = "Slug, Amorph"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'ThreestarLynn' then
-			PetInfo = "Ladybug, Vermin"
-			PetJob = 'Thief'
-	elseif state.JugMode.value == 'BraveHeroGlenn' then
-			PetInfo = "Frog, Aquan"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'SharpwitHermes' then
-			PetInfo = "Mandragora, Plantoid"
-			PetJob = 'Monk'
-	elseif state.JugMode.value == 'ColibriFamiliar' then
-			PetInfo = "Colibri, Bird"
-			PetJob = 'Red Mage'
-	elseif state.JugMode.value == 'ChoralLeera' then
-			PetInfo = "HQ Colibri, Bird"
-			PetJob = 'Red Mage'
-	elseif state.JugMode.value == 'SpiderFamiliar' then
-			PetInfo = "Spider, Vermin"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'GussyHachirobe' then
-			PetInfo = "HQ Spider, Vermin"
-			PetJob = 'Warrior'
-	elseif state.JugMode.value == 'AcuexFamiliar' then
-			PetInfo = "Acuex, Amorph"
-			PetJob = 'Black Mage'
-	elseif state.JugMode.value == 'FluffyBredo' then
-			PetInfo = "HQ Acuex, Amorph"
-			PetJob = 'Black Mage'
-	end
 end
 
 -- Set eventArgs.handled to true if we don't want the automatic display to be run.
@@ -658,10 +474,6 @@ function display_current_job_state(eventArgs)
 
     msg = msg .. ', Reward: '..state.RewardMode.value..', Correlation: '..state.CorrelationMode.value
 
-    if state.JugMode.value ~= 'None' then
-        add_to_chat(8,'--- Jug Pet: '.. state.JugMode.value ..' --- ('.. PetInfo ..', '.. PetJob ..')')
-    end
-
     add_to_chat(122, msg)
 
     eventArgs.handled = true
@@ -685,6 +497,8 @@ function job_self_command(commandArgs, eventArgs)
 		if commandArgs[1]:lower() == 'showcharge' then
 			add_to_chat(204, '~~~Current Ready Charges Available: ['..get_current_ready_count()..']~~~')
 
+		elseif commandArgs[1]:lower() == 'displaypetinfo' then
+			add_to_chat(8,''..state.JugMode.value..': '..pet_info[state.JugMode.value]..'')
 		elseif commandArgs[1]:lower() == 'unleashlock' then
 			if UnleashLock == true then
 				UnleashLock = false
@@ -720,7 +534,7 @@ function check_pet()
 			if abil_recasts[103] == 0 and not (buffactive.amnesia or buffactive.impairment) then
 				if item_available('Pet Food '..state.RewardMode.value..'') then
 					windower.chat.input('/ja "Reward" <me>')
-					tickdelay = 30
+					tickdelay = (framerate * .5)
 					return true
 				else
 					return false
@@ -731,11 +545,11 @@ function check_pet()
 		local abil_recasts = windower.ffxi.get_ability_recasts()
 		if abil_recasts[94] == 0 then
 			send_command('@input /ja "Bestial Loyalty" <me>')
-			tickdelay = 30
+			tickdelay = (framerate * .5)
 			return true
 		elseif abil_recasts[104] == 0 then
 			send_command('@input /ja "Call Beast" <me>')
-			tickdelay = 30
+			tickdelay = (framerate * .5)
 			return true
 		else
 			return false
@@ -751,11 +565,11 @@ function check_ready()
 		if pet.isvalid then
 			if pet.status == "Engaged" and get_current_ready_count() > 0 then
 				windower.send_command('gs c ready')
-				tickdelay = 85
+				tickdelay = (framerate * 2)
 				return true
 			elseif pet.status == "Idle" and player.target.type == "MONSTER" then
 				windower.chat.input('/pet Fight <t>')
-				tickdelay = 60
+				tickdelay = framerate
 				return true
 			else
 				return false
@@ -837,17 +651,25 @@ function get_ready_charge_timer()
 		chargetimer = chargetimer - 5
 	end
 
-	if state.PetMode.Value == 'PetOnly' and (player.sub_job == 'NIN' or player.sub_job == 'DNC') then
-		if sets.midcast.Pet.ReadyRecastNE.sub and sets.midcast.Pet.ReadyRecastNE.sub == "Charmer's Merlin" then
+	if state.Weapons.Value == 'None' then
+		if (player.sub_job == 'NIN' or player.sub_job == 'DNC') then
+			if sets.midcast.Pet.ReadyRecastDW.sub and sets.midcast.Pet.ReadyRecastDW.sub == "Charmer's Merlin" then
+				chargetimer = chargetimer - 5
+			end
+
+		elseif sets.midcast.Pet.ReadyRecast.main and sets.midcast.Pet.ReadyRecast.main == "Charmer's Merlin" then
 			chargetimer = chargetimer - 5
 		end
-		if sets.midcast.Pet.ReadyRecastNE.legs and sets.midcast.Pet.ReadyRecastNE.legs == "Desultor Tassets" then
+	end
+	
+	if (player.sub_job == 'NIN' or player.sub_job == 'DNC') then
+		if sets.midcast.Pet.ReadyRecastDW.legs and sets.midcast.Pet.ReadyRecastDW.legs == "Desultor Tassets" then
 			chargetimer = chargetimer - 5
 		end
 	else
 		if sets.midcast.Pet.ReadyRecast.legs and sets.midcast.Pet.ReadyRecast.legs == "Desultor Tassets" then
 			chargetimer = chargetimer - 5
-		end
+		end	
 	end
 
 	return chargetimer

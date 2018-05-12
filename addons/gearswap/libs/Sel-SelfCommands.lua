@@ -312,7 +312,10 @@ end
 
 function handle_weapons(cmdParams)
 	if cmdParams[1] == nil then
-		equip_weaponset(state.Weapons.value)
+		if sets.weapons[state.Weapons.value] then
+			equip_weaponset(state.Weapons.value)
+		end
+	elseif cmdParams[1] == 'None' then
 	elseif cmdParams[1]:lower() == 'default' then
 		if (player.sub_job == 'DNC' or player.sub_job == 'NIN') and state.Weapons:contains('DualWeapons') and sets.weapons.DualWeapons then
 			if state.Weapons.value ~= 'DualWeapons' then
@@ -323,6 +326,8 @@ function handle_weapons(cmdParams)
 			state.Weapons:reset()
 			if sets.weapons[state.Weapons.value] then
 				equip_weaponset(state.Weapons.value)
+			else
+				enable('main','sub','range','ammo')
 			end
 		end
 	elseif sets.weapons[cmdParams[1]] then
@@ -332,7 +337,9 @@ function handle_weapons(cmdParams)
 		equip_weaponset(cmdParams[1])
 	else
 		add_to_chat(123,"Error: A weapons set for ["..cmdParams[1].."] does not exist.")
-		equip_weaponset(state.Weapons.value)
+		if sets.weapons[state.Weapons.value] then
+			equip_weaponset(state.Weapons.value)
+		end
 	end
 	
 	if state.DisplayMode.value then update_job_states()	end
@@ -348,7 +355,7 @@ function equip_weaponset(cmdParams)
 	if state.Weapons.value ~= 'None' then
 		if player.main_job == 'BRD' then
 			disable('main','sub')
-		elseif player.main_job ~= 'BST' then
+		else
 			disable('main','sub','range')
 			if sets.weapons[state.Weapons.value] and sets.weapons[state.Weapons.value].ammo then
 				disable('ammo')
@@ -360,13 +367,16 @@ end
 function handle_showset(cmdParams)
     enable('main','sub','range','ammo','head','neck','lear','rear','body','hands','lring','rring','back','waist','legs','feet')
 	
+	equip_weaponset(state.Weapons.value)
+
 	if cmdParams[1] ~= nil then
-	
-	local key_list = parse_set_to_keys(cmdParams)
-	local set = get_set_from_keys(key_list)
+		local key_list = parse_set_to_keys(cmdParams)
+		local set = get_set_from_keys(key_list)
 	
 		equip(set)
 		disable('main','sub','range','ammo','head','neck','lear','rear','body','hands','lring','rring','back','waist','legs','feet')
+	else
+		handle_update({'auto'})
 	end
 end
 
@@ -417,6 +427,16 @@ end
 function handle_autows(cmdParams)
 	if #cmdParams == 0 then
 		add_to_chat(122,'Your must specify a ws to auto-weaponskill with.')
+	elseif state.RngHelper.value then
+		if cmdParams[1] == 'tp' then
+			rangedautowstp = tonumber(cmdParams[2])
+			add_to_chat(122,'Your ranged autows tp value is set to '..rangedautowstp..'.')
+			if state.DisplayMode.value then update_job_states()	end
+		else
+			rangedautows = table.concat(cmdParams, ' '):ucfirst()
+			add_to_chat(122,'Your ranged autows weaponskill is set to '..rangedautows..'.')
+			if state.DisplayMode.value then update_job_states()	end
+		end
 	elseif cmdParams[1] == 'tp' then
 		autowstp = tonumber(cmdParams[2])
 		add_to_chat(122,'Your autows tp value is set to '..autowstp..'.')
@@ -529,11 +549,23 @@ function handle_curecheat(cmdParams)
     if sets.HPDown then
         curecheat = true
 		equip(sets.HPDown)
-        send_command('@wait 1;input /ma "Cure IV" <me>')
+		if player.main_job == 'BLU' then
+			send_command('@wait 1;input /ma "Magic Fruit" <me>')
+		elseif player.main_job == 'WHM' then
+			send_command('@wait 1;input /ma "Cure III" <me>')
+		else
+			send_command('@wait 1;input /ma "Cure IV" <me>')
+		end
 	--If we only have an HighHP set, we assume that this is sufficient.
 	elseif sets.HPCure then
 		curecheat = true
-        windower.chat.input('/ma "Cure IV" <me>')
+		if player.main_job == 'BLU' then
+			windower.chat.input('/ma "Magic Fruit" <me>')
+		elseif player.main_job == 'WHM' then
+			windower.chat.input('/ma "Cure III" <me>')
+		else
+			windower.chat.input('/ma "Cure IV" <me>')
+		end
     else
         add_to_chat(123,"You don't have a sets.HPDown nor a sets.HPCure to cheat with.")
     end
