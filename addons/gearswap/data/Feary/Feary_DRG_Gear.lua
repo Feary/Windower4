@@ -67,7 +67,24 @@ function init_gear_sets()
 	sets.precast.JA['Call Wyvern'] = {body="Pteroslaver Mail"} 
 	sets.precast.JA['Deep Breathing'] = {head="Ptero. Armet"}
 	sets.precast.JA['Spirit Surge'] = {body="Pteroslaver Mail"}
-
+	sets.precast.JA['Steady Wing'] = {
+		neck="Chanoix's Gorget", lear="Lancer's Earring",rear="Anastasi Earring",
+		body="Emicho Haubert", hands="Despair Fin. Gauntlets",
+		back="Updraft Mantle", legs="Vishap Brais", feet="Ptero. Greaves"}
+	
+	-- Breath sets
+	sets.precast.JA['Restoring Breath'] = {back="Brigantia's Mantle"}
+	sets.precast.JA['Smiting Breath'] = {back="Brigantia's Mantle"}
+	sets.HealingBreath = {
+		head="Ptero. Armet", neck="Lancer's Torque", lear="Lancer's Earring", rear="Anastasi Earring",
+		body="Acro Surcoat", hands="Acro Gauntlets",		
+		back="Updraft Mantle", waist="Glassblower's Belt", legs="Vishap Brais", feet="Ptero Greaves"}
+	
+	sets.SmitingBreath = {	
+		head="Ptero. Armet", neck="Lancer's Torque", lear="Lancer's Earring", rear="Anastasi Earring",
+		body="Acro Surcoat", hands="Acro Gauntlets",		
+		back="Updraft Mantle", waist="Glassblower's Belt", legs="Acro Breeches", feet="Acro Leggings"}
+	
 	-- Fast cast sets for spells	
 	sets.precast.FC = {ammo="Impatiens",
 		--neck="Voltsurge Torque",

@@ -7,6 +7,7 @@ function user_setup()
     state.IdleMode:options('Normal', 'PDT', 'Refresh')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
 	state.Weapons:options('Default','DualWeapons','SavageWeapons','DualRangedWeapons','LeadenWeapons','None')
+	state.CompensatorMode:options('300','1000','Never','Always')
 	
     gear.RAbullet = "Adlivun Bullet"
     gear.WSbullet = "Adlivun Bullet"

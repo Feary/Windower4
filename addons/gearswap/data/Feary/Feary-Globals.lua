@@ -6,9 +6,10 @@
 --You want the cap ring offset to be 899 or 900 the MOMENT after using your Capacity ring.
 --time_offset = -39601
 --time_test = true
+--framerate = 75
 
 --If this is set to true it will prevent you from casting shadows when you have more up than that spell would generate.
-conserveshadows = true
+conserveshadows = false
 
 --Display related settings.
 state.DisplayMode = M(true, 'Display Mode') --Set this to false if you don't want to display modes at the bottom of your screen.
@@ -71,6 +72,7 @@ send_command('bind !t input /target <bt>') --Targets the battle target.
 send_command('bind @p gs equip sets.Sheltered') --Equip sheltered ring, for when being Pro/Shelled.
 send_command('bind !p gs equip sets.Cure_Received') --Equip Cure Potency Received set for when being cured.
 send_command('bind @m gs c mount Fenrir')
+send_command('alias ambuseal gs c ambuseal')
 
 --Usable item binds.
 

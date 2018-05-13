@@ -1,7 +1,7 @@
 function user_setup()
 
 	-- Options: Override default values
-    state.OffenseMode:options('None', 'Normal','DualWield')
+    state.OffenseMode:options('Normal')
 	state.CastingMode:options('Normal', 'Resistant', 'Fodder', 'Proc')
     state.IdleMode:options('Normal', 'PDT', 'TPEat')
 	state.PhysicalDefenseMode:options('PDT', 'NukeLock', 'GeoLock', 'PetPDT')
@@ -108,7 +108,7 @@ function init_gear_sets()
 		back="Lifestream Cape", waist="Austerity Belt", legs="Bagua Pants", feet="Azimuth Gaiters"}
 
 
-	--Extra Indi duration on any slot you can't get skill on here.
+	--Extra Indi duration. As long as you can keep your 900 skill cap
 	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {back="Lifestream Cape",legs="Bagua Pants",feet="Azimuth Gaiters"})
 		
     sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",ammo="Hasty Pinion +1",
@@ -329,7 +329,7 @@ function init_gear_sets()
 		body="Jhakri Robe +2",hands="Geomancy Mitaines",ring1="Rajas Ring",ring2="Ramuh Ring +1",
 		back="Moonbeam Cape",waist="Witful Belt",legs="Assid. Pants +1",feet="Jhakri Pigaches +1"}
 		
-	sets.engaged.DualWield = {ammo="Hasty Pinion +1",
+	sets.engaged.DW = {ammo="Hasty Pinion +1",
 		head="Jhakri Coronal +1",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Jhakri Robe +2",hands="Geomancy Mitaines",ring1="Rajas Ring",ring2="Ramuh Ring +1",
 		back="Moonbeam Cape",waist="Witful Belt",legs="Assid. Pants +1",feet="Jhakri Pigaches +1"}

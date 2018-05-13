@@ -196,19 +196,22 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {
 		-- lear="Bladeborn Earring", rear="Steelflash Earring",
 		head="Carmine Mask", neck="Fotia Gorget", lear="Brutal Earring", rear="Ghillie Earring +1",
+		-- Abnoba 
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Rajas Ring", rring="Ramuh Ring",
 		--gear.wsd_jse_back
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses", feet="Carmine Greaves"})
 	sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {	
 		--  lear="Bladeborn Earring", rear="Steelflash Earring",
 		head="Carmine Mask", neck="Fotia Gorget", lear="Brutal Earring", rear="Ghillie Earring +1",
+		-- Abnoba 
 		body="Adhemar Jacket", hands="Jhakri Cuffs +1", lring="Rajas Ring", rring="Ramuh Ring",
 		--gear.wsd_jse_back
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses", feet="Carmine Greaves"})
 
 	sets.precast.WS['Chant du Cygne'].FullAcc = set_combine(sets.precast.WS.FullAcc, {	
-		--  lear="Bladeborn Earring", rear="Steelflash Earring",
+		-- lear="Bladeborn Earring", rear="Steelflash Earring",
 		head="Carmine Mask", neck="Fotia Gorget", lear="Brutal Earring", rear="Ghillie Earring +1",
+		-- Abnoba 
 		body="Adhemar Jacket", hands="Jhakri Cuffs +1", lring="Rajas Ring", rring="Ramuh Ring",
 		--gear.wsd_jse_back
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses", feet="Carmine Greaves"})
@@ -216,6 +219,7 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'].Fodder = set_combine(sets.precast.WS['Chant du Cygne'], { 
 		-- lear="Bladeborn Earring", rear="Steelflash Earring",
 		head="Carmine Mask", neck="Fotia Gorget", lear="Brutal Earring", rear="Ghillie Earring +1",
+		-- Abnoba 
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Rajas Ring", rring="Ramuh Ring",
 		--gear.wsd_jse_back
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses", feet="Carmine Greaves"})
@@ -713,23 +717,23 @@ function check_trust()
 
 				if spell_recasts[980] == 0 and not have_trust("Yoran-Oran") then
 					windower.chat.input('/ma "Yoran-Oran (UC)" <me>')
-					tickdelay = 250
+					(framerate * 3)
 					return true
 				elseif spell_recasts[952] == 0 and not have_trust("Koru-Moru") then
 					windower.chat.input('/ma "Koru-Moru" <me>')
-					tickdelay = 250
+					(framerate * 3)
 					return true
 				elseif spell_recasts[967] == 0 and not have_trust("Qultada") then
 					windower.chat.input('/ma "Qultada" <me>')
-					tickdelay = 250
+					(framerate * 3)
 					return true
 				elseif spell_recasts[914] == 0 and not have_trust("Ulmia") then
 					windower.chat.input('/ma "Ulmia" <me>')
-					tickdelay = 250
+					(framerate * 3)
 					return true
 				elseif spell_recasts[979] == 0 and not have_trust("Selh'teus") then
 					windower.chat.input('/ma "Selh\'teus" <me>')
-					tickdelay = 250
+					(framerate * 3)
 					return true
 				else
 					return false
