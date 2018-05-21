@@ -83,7 +83,7 @@ function init_gear_sets()
     -- add mnd for Chivalry
     sets.precast.JA['Chivalry'] = {
 		--ear1="Nourish. Earring",
-		head="Carmine Mask +1",neck="Phalaina Locket",ear1="Nourish. Earring +1",
+		head="Carmine Mask +1",neck="Phalaina Locket",ear2="Nourish. Earring +1",
 		body="Cab. Surcoat +1",hands="Cab. Gauntlets +1",ring1="Stikini Ring",ring2="Rufescent Ring",
 		back=gear.enmity_jse_back,waist="Salire Belt",legs="Mes'yohi Slacks",feet="Carmine Greaves +1"}
 
@@ -148,7 +148,7 @@ function init_gear_sets()
 	
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {
 		--neck="Diemer Gorget",ear1="Nourish. Earring",
-		ear1="Nourish. Earring +1",
+		ear2="Nourish. Earring +1",
 		body="Jumalik Mail"})
   
     -- Weaponskill sets

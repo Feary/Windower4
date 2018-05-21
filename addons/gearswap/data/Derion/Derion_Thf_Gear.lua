@@ -216,37 +216,37 @@ function init_gear_sets()
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
 		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
-		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes"})
+		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS.Acc, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
 		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
-		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes"})
+		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
 	sets.precast.WS['Evisceration'].FullAcc = set_combine(sets.precast.WS.FullAcc, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
 		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
-		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes"})
+		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
 	sets.precast.WS['Evisceration'].Fodder = set_combine(sets.precast.WS['Evisceration'], {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
 		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
-		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes"})
+		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
     sets.precast.WS['Evisceration'].SA = set_combine(sets.precast.WS['Evisceration'].Fodder, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
 		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
-		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes"})
+		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
     sets.precast.WS['Evisceration'].TA = set_combine(sets.precast.WS['Evisceration'].Fodder, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
 		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
-		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes"})
+		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
     sets.precast.WS['Evisceration'].SATA = set_combine(sets.precast.WS['Evisceration'].Fodder, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
 		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
-		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes"})
+		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
 
     sets.precast.WS['Last Stand'] = {}
 
@@ -284,12 +284,12 @@ function init_gear_sets()
     sets.midcast.RA = {
         head="Mummu Bonnet", neck="Peacock Amulet",
         body="Mummu Jacket +1",hands="Mummu Wrists",
-		waist="Chaac Belt",legs="Mummu Kecks",feet="Mummu Gamashes"}
+		waist="Chaac Belt",legs="Mummu Kecks",feet="Mummu Gamashes +1"}
 
     sets.midcast.RA.Acc = {
         head="Mummu Bonnet",
         body="Mummu Jacket +1",hands="Mummu Wrists",
-		waist="Chaac Belt",legs="Mummu Kecks",feet="Mummu Gamashes"}
+		waist="Chaac Belt",legs="Mummu Kecks",feet="Mummu Gamashes +1"}
 
     --------------------------------------
     -- Idle/resting/defense sets
@@ -302,7 +302,7 @@ function init_gear_sets()
 
     sets.idle = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
 		-- Flume Belt
 		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
@@ -316,20 +316,21 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
-		-- Flume Belt
+		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		-- Flume Belt  Mummu Kecks +2
 		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
     sets.defense.MDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		--  lring="Shadow Ring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
-		back="Engulfer Cape", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Inyanga Ring", rring="Defending Ring",
+		-- Mummu Kecks +2
+		back="Engulfer Cape", legs="Mummu Kecks", feet="Meg. Jam. +1"}
 
 	sets.defense.MEVA = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		--  lring="Shadow Ring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Inyanga Ring", rring="Defending Ring",
 		back="Engulfer Cape", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
 
@@ -339,51 +340,52 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {ranged="Raider's Bmrng.",
-		head="Meghanada Visor +1", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Epona's Ring",
+		head="Mummu Bonnet", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		-- Adhemar Jacket 
+		body="Mummu Jacket +1", hands="Mummu Wrists +1", lring="Rajas Ring", rring="Epona's Ring",
 		-- Aug.Cape.THF.STP
-		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Mummu Gamash. +1"}
 
  	sets.engaged.Acc = {ranged="Raider's Bmrng.",
-		head="Meghanada Visor +1", neck="Peacock Amulet", lear="Brutal Earring", rear="Suppanomimi",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Epona's Ring",
+		head="Mummu Bonnet", neck="Peacock Amulet", lear="Brutal Earring", rear="Suppanomimi",
+		body="Mummu Jacket +1", hands="Mummu Wrists +1", lring="Rajas Ring", rring="Epona's Ring",
 		--Aug.Cape.THF.STP
 		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
     sets.engaged.FullAcc = {ranged="Raider's Bmrng.",
-		head="Meghanada Visor +1", neck="Peacock Amulet", lear="Brutal Earring", rear="Suppanomimi",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Epona's Ring",
+		head="Mummu Bonnet", neck="Peacock Amulet", lear="Brutal Earring", rear="Suppanomimi",
+		body="Mummu Jacket +1", hands="Mummu Wrists +1", lring="Rajas Ring", rring="Epona's Ring",
 		--Aug.Cape.THF.STP
 		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
     sets.engaged.Fodder = {ranged="Raider's Bmrng.",
-		head="Meghanada Visor +1", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Epona's Ring",
+		head="Mummu Bonnet", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		body="Mummu Jacket +1", hands="Mummu Wrists +1", lring="Rajas Ring", rring="Epona's Ring",
 		-- Aug.Cape.THF.STP
-		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Mummu Gamash. +1"}
 
     sets.engaged.PDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
-		-- Flume Belt
+		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		-- Flume Belt Mummu Kecks +2
 		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
     sets.engaged.Acc.PDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
-		-- Flume Belt
+		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		-- Flume Belt Mummu Kecks +2
 		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
     sets.engaged.FullAcc.PDT = {
         head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
-		-- Flume Belt
+		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		-- Flume Belt Mummu Kecks +2
 		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
     sets.engaged.Fodder.PDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
-		-- Flume Belt
+		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		-- Flume Belt Mummu Kecks +2
 		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
 end

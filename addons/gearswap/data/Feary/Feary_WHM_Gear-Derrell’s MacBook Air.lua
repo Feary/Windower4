@@ -105,8 +105,8 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Cessance Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring="Stikini Ring", rring="Stikini Ring",
-		waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		body="Ayanmo Corazza +2", hands="Aya. Gambieras +1", lring="Stikini Ring", rring="Stikini Ring",
+		waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     --sets.precast.WS['Flash Nova'] = {}
 
@@ -146,6 +146,7 @@ function init_gear_sets()
 		back="Swith Cape +1",waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
 		
     -- Cure sets
+
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
 	sets.midcast.Cure = {
@@ -286,7 +287,7 @@ function init_gear_sets()
 		-- Ebers Bliaud +1 lring="Haoma's Ring", rring="Haoma's Ring",
 		body="Ebers Bliaud", hands="Fanatic Gloves", lring="Sirona's Ring",
 		-- Theo. Pantaloons +3
-		back=gear.fastcast_jse_back, waist="Bishop's Sash", legs="Theo. Pantaloons", feet="Gende. Galosh. +1"}
+		back="Alaunus's Cape", waist="Bishop's Sash", legs="Theo. Pantaloons", feet="Gende. Galosh. +1"}
 
 	sets.midcast.StatusRemoval = {
 		--main={name="Grioavolr", priority=2}, sub={name="Clemency Grip", priority=1}, 
@@ -487,9 +488,9 @@ function init_gear_sets()
 		-- Befouled Crown
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring="Dark Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Gambieras +1", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
-		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
 
@@ -497,9 +498,9 @@ function init_gear_sets()
 		-- Befouled Crown
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring="Dark Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Gambieras +1", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
-		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     -- Defense sets
 
@@ -507,9 +508,9 @@ function init_gear_sets()
 		-- Befouled Crown
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring="Dark Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Gambieras +1", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
-		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.defense.MDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", ear1="Ethereal Earring",ear2="Etiolation Earring",
@@ -537,30 +538,30 @@ function init_gear_sets()
 	sets.engaged = {ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Gambieras +1", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
-		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     sets.engaged.Acc = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Gambieras +1", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
-		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     sets.engaged.DW = {ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Gambieras +1", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
-		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     sets.engaged.DW.Acc = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Gambieras +1", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
-		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 		-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Divine Caress'] = {hands="Ebers Mitts",back="Mending Cape"}

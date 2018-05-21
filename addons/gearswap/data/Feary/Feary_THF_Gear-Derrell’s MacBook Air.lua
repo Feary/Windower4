@@ -407,7 +407,7 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Staunch Tathlum",
-        head="Meghanada Visor +2",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Sanare Earring",
+        head="Meghanada Visor +1",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 
@@ -421,17 +421,17 @@ function init_gear_sets()
     -- Defense sets
 
     sets.defense.PDT = {ammo="Staunch Tathlum",
-        head="Meghanada Visor +2",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Sanare Earring",
+        head="Meghanada Visor +1",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-       	head="Meghanada Visor +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+       	head="Meghanada Visor +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		back="Engulfer Cape +1", waist="Flume Belt", legs="Mummu Kecks +1", feet="Meg. Jam. +2"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		head="Meghanada Visor +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		back="Engulfer Cape +1", waist="Flume Belt", legs="Mummu Kecks +1", feet="Meg. Jam. +2"}
 

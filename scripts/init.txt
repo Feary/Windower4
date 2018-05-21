@@ -29,6 +29,8 @@ drawdistance set 10
 lua load partybuffs
 lua load chatman
 lua load sellnpc
+lua load equipviewer
+lua load checkparam
 partybuffs size 20
 
 //Bind keys

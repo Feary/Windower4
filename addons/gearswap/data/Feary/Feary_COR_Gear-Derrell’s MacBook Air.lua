@@ -7,7 +7,6 @@ function user_setup()
     state.IdleMode:options('Normal', 'PDT', 'Refresh')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
 	state.Weapons:options('Default','DualWeapons','SavageWeapons','DualRangedWeapons','LeadenWeapons','None')
-	state.CompensatorMode:options('300','1000','Never','Always')
 	
     gear.RAbullet = "Adlivun Bullet"
     gear.WSbullet = "Adlivun Bullet"
@@ -95,7 +94,7 @@ function init_gear_sets()
 	
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
 		-- Sanctity Necklace 
-		head="Meghanada Visor +2", neck="Iqabi Necklace", lear="Enchntr. Earring +1", rear="Gwati Earring",
+		head="Meghanada Visor +1", neck="Iqabi Necklace", lear="Enchntr. Earring +1", rear="Gwati Earring",
 		-- Mirke Wadecors  Arvina Ringlet +1
 		body="Lanun Frac", hands="Chasseur's Gants", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone 
@@ -141,7 +140,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
 	-- Melee
     sets.precast.WS = {
-        head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Cessance Earring",
+        head="Meghanada Visor +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Cessance Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Ifrit Ring +1",
         back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 		
@@ -174,12 +173,12 @@ function init_gear_sets()
 	-- Ranged WS
 	-- Last Stand
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
-        head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Enervating Earring",
+        head="Meghanada Visor +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Enervating Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="K'ayres Ring",
         back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
-        head="Meghanada Visor +2",neck="Gaudryi Necklace",ear1="Moonshade Earring",ear2="Enervating Earring",
+        head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Moonshade Earring",ear2="Enervating Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Dingir Ring",
         back=gear.ranger_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 		
@@ -222,7 +221,7 @@ function init_gear_sets()
 		
 	--Because omen skillchains.
     sets.precast.WS['Burning Blade'] = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Loricate Torque",ear1="Moonshade Earring",ear2="Cessance Earring",
+        head="Meghanada Visor +1",neck="Loricate Torque",ear1="Moonshade Earring",ear2="Cessance Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 	
@@ -247,32 +246,32 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
+        head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
         body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
+        head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
         body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Hajduk Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 	
 	sets.midcast.RA.Armageddon = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
+        head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
         body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
 
     sets.midcast.RA.Armageddon.Acc = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
+        head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
         body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Hajduk Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 	
 	sets.midcast.RA.Fomalhaut = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
+        head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
         body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="K'ayres Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
 
     sets.midcast.RA.Fomalhaut.Acc = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
+        head="Meghanada Visor +1",neck="Gaudryi Necklace",ear1="Neritic Earring",ear2="Enervating Earring",
         body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Hajduk Ring",ring2="Hajduk Ring",
         back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 		
@@ -290,7 +289,7 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
+        head="Meghanada Visor +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Meg. Jam. +2"}
 		
@@ -301,17 +300,17 @@ function init_gear_sets()
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.defense.MDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.defense.MEVA = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +1", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 

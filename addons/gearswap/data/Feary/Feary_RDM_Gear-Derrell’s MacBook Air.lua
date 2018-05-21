@@ -293,7 +293,7 @@ function init_gear_sets()
 		--body="Atrophy Tabard +3",hands="Leth. Gantherots +1",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Stikini Ring",ring2="Stikini Ring",
 		--waist="Luminary Sash",legs="Psycloth Lappas",feet=gear.merlinic_nuke_feet
-		back=gear.Cape_Macc,waist="Ovate Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.Cape_Macc,waist="Ovate Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 
     sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",
         --head="Pixie Hairpin +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Digni. Earring",
@@ -301,7 +301,7 @@ function init_gear_sets()
         -- Shango Robe 
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Stikini Ring",ring2="Stikini Ring",
         --back=gear.Cape_Macc, waist="Fucho-no-obi",legs="Chironic Hose",feet=gear.chironic_nuke_feet
-		back=gear.Cape_Macc,waist="Ovate Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.Cape_Macc,waist="Ovate Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 
 	sets.midcast.Aspir = sets.midcast.Drain
 		
@@ -310,12 +310,12 @@ function init_gear_sets()
 		--body="Zendik Robe",
 		body="Ayanmo Corazza +2", hands="Gende. Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		--legs="Psycloth Lappas",feet=gear.merlinic_aspir_feet}
-		back=gear.Cape_Macc, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back=gear.Cape_Macc, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 	sets.midcast.Stun.Resistant = {main="Serenity",sub="Enki Strap",ammo="Regal Gem",
 		head="Carmine Mask +1", neck="Voltsurge Torque", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		--body="Zendik Robe",
 		body="Ayanmo Corazza +2", hands="Gende. Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
-		back=gear.Cape_Macc,waist="Ovate Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.Cape_Macc,waist="Ovate Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 
 	-- Sets for special buff conditions on spells.
 		
@@ -331,30 +331,30 @@ function init_gear_sets()
 	sets.resting = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
 		head="Vitiation Chapeau",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 	
 
 	-- Idle sets
 	sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
 		head="Vitiation Chapeau",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 		
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 		
 	sets.idle.MDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Shadow Ring",ring2="Defending Ring",
-		back="Engulfer Cape +1",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Engulfer Cape +1",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 		
 	sets.idle.Weak = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 	
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {back="Moonbeam Cape",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 	
@@ -362,7 +362,7 @@ function init_gear_sets()
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Dark Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 
 	sets.defense.NukeLock = sets.midcast['Elemental Magic']
 		
@@ -370,13 +370,13 @@ function init_gear_sets()
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Shadow Ring",ring2="Defending Ring",
-		back="Engulfer Cape +1",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Engulfer Cape +1",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 		
     sets.defense.MEVA = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Shadow Ring",ring2="Defending Ring",
-		back="Engulfer Cape +1",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Engulfer Cape +1",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 

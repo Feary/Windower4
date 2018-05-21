@@ -266,6 +266,14 @@
         <Sort><![CDATA[None]]></Sort>
         <TimeZones>UTC,JST</TimeZones>
     </olymoly>
+    <ravindra>
+        <Clock>
+            <pos>
+                <x>1000</x>
+                <y>2</y>
+            </pos>
+        </Clock>
+    </ravindra>
     <sikend>
         <Clock>
             <pos>

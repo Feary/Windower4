@@ -13,6 +13,18 @@ function user_setup()
 	gear.phys_jse_back = {name="Campestres's Cape",augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Haste+10',}}
 	gear.FC_jse_back = {name="Campestres's Cape",augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Haste+10',}}
 	
+	--[[Global binds you may want to change.
+	Bind special characters.
+	@ = Windows Key
+	% = Works only when text bar not up.
+	$ = Works only when text bar is up.
+	^ = Control Key
+	! = Alt Key
+	~ = Shift Key
+	# = Apps Key
+	]]
+	
+	-- Additional Binds
     send_command('bind !` input /ja "Release" <me>')
 	send_command('bind @` gs c cycle MagicBurst')
 	send_command('bind ^` gs c toggle PactSpamMode')

@@ -5,6 +5,10 @@ function user_setup()
 	state.IdleMode:options('Normal', 'PDT', 'TPEat','DTHippo')
 	state.Weapons:options('None','NukeWeapons')
 	
+	--Jse Capes
+	gear.fastcast_jse_back = {name="Taranus's Cape", augments={'MP+30','Mag. Acc+16 /Mag. Dmg.+16','"Fast Cast"+9',}}		
+	gear.Macc_jse_back = {name="Taranus's Cape", augments={'MP+30','Mag. Acc+16 /Mag. Dmg.+16','"Fast Cast"+9',}}
+
 	gear.obi_cure_waist = "Witful Belt"
 	gear.obi_low_nuke_waist = "Sekhmet Corset"
 	gear.obi_high_nuke_waist = "Refoccilation Stone"
@@ -12,7 +16,7 @@ function user_setup()
 		-- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode')
 	send_command('bind !\\\\ input /ja "Manawell" <me>')
-	send_command('bind !` input /ma "Aspir III" <t>')
+	send_command('bind !` input /ma "Aspir II" <t>')
 	send_command('bind @` gs c cycle MagicBurstMode')
 	send_command('bind @f10 gs c cycle RecoverMode')
 	send_command('bind @f9 gs c cycle DeathMode')

@@ -8,13 +8,30 @@ function user_setup()
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('None','MeleeWeapons','DualWeapons')
 
+	-- Augmented Capes
+	--{name="Alaunus's Cape", augments={'"Fast Cast"+10',}}
+	gear.fastcast_jse_back = "Swith Cape"
+	gear.Cure_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%',}}
+	gear.Macc_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%',}}
+	
 	gear.obi_cure_waist = "Austerity Belt"
 	gear.obi_cure_back = "Alaunus's Cape"
 
 	gear.obi_nuke_waist = "Sekhmet Corset"
 	gear.obi_nuke_back = "Toro Cape"
+	
+	--[[Global binds you may want to change.
+	Bind special characters.
+	@ = Windows Key
+	% = Works only when text bar not up.
+	$ = Works only when text bar is up.
+	^ = Control Key
+	! = Alt Key
+	~ = Shift Key
+	# = Apps Key
+	]]
 
-		-- Additional local binds
+	-- Additional local binds
 	send_command('bind ^` input /ma "Arise" <t>')
 	send_command('bind !` input /ja "Penury" <me>')
 	send_command('bind @` gs c cycle MagicBurstMode')
@@ -29,7 +46,7 @@ function user_setup()
 	send_command('bind @delete input /ja "Manifestation" <me>')
 	send_command('bind ^\\\\ input /ma "Protectra V" <me>')
 	send_command('bind @\\\\ input /ma "Shellra V" <me>')
-	send_command('bind !\\\\ input /ma "Reraise IV" <me>')
+	send_command('bind !\\\\ input /ma "Reraise III" <me>')
 
     select_default_macro_book()
 end
@@ -51,14 +68,13 @@ function init_gear_sets()
 		head="Haruspex Hat", neck="Orison Locket", lear="Loquac. Earring",
 		-- lring="Prolix Ring",
 		body="Inyanga Jubbah", hands="Gendewitha Gages", 
-		back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona Boots"}
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona Boots"}
 
     sets.precast.FC.DT = {ammo="Incantor Stone",
 		head="Haruspex Hat", neck="Orison Locket", lear="Loquac. Earring",
 		-- lring="Prolix Ring",
 		body="Inyanga Jubbah", hands="Gendewitha Gages", lring="Vocane Ring", rring="Defending Ring",
-		back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona Boots"}
-
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona Boots"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
@@ -240,7 +256,7 @@ function init_gear_sets()
 		--hands="Fanatic Gloves", rring="Haoma's Ring", rring="Haoma's Ring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",
 		--legs="Theophany Pantaloons",
-		back="Alaunus's Cape", feet="Gende. Galoshes"}
+		back=gear.fastcast_jse_back, feet="Gende. Galoshes"}
 
 	sets.midcast.StatusRemoval = {ammo="Hasty Pinion",
 		--main={name="Grioavolr", priority=2}, sub={name="Clemency Grip", priority=1}, 

@@ -12,11 +12,10 @@ function user_setup()
 	state.Weapons:options('None','Default','MagicWeapons','MaccWeapons','HybridWeapons')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'MP','SuppaBrutal', 'DWEarrings','DWMax'}
-
+	-- 'DEX+20','Accuracy+20 Attack+20','"Dbl. Atk. +10',}}
 	gear.da_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	gear.stp_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
-	--{'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}
-	gear.crit_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}} 
+	gear.crit_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}} 
 	gear.wsd_jse_back = {name="Rosmerta's Cape",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 	gear.mab_jse_back = {name="Rosmerta's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
 	gear.FC_jse_back = {name="Rosmerta's Cape", augments={'"Fast Cast"+10',}}
@@ -458,7 +457,7 @@ function init_gear_sets()
 		--head="Rawhide Mask",
 		head="Aya. Zucchetto +2", neck="Loricate Torque",ear1="Ethereal Earring", ear2="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Aya. Manopolas +1", ring1="Dark Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +1"}
+		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
 	-- Idle sets
 	-- Refresh
@@ -467,14 +466,14 @@ function init_gear_sets()
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
 		-- 
-		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}		
+		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}		
 		
 	sets.idle.Sphere = set_combine(sets.idle, {})--body="Mekosu. Harness"
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}			
+		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",})--feet="Hippo. Socks +1"
 
@@ -483,17 +482,17 @@ function init_gear_sets()
 		-- Genmei Shield Genmei Earring
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
-		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	sets.defense.MDT = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}			
+		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
 	sets.defense.MEVA = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
       	head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}			
+		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
 	sets.defense.NukeLock = sets.midcast['Blue Magic'].Magical
 
@@ -724,3 +723,39 @@ function select_default_macro_book()
 	set_macro_page(10, 8)
 end
 
+--Job Specific Trust Overwrite
+function check_trust()
+	if not moving then
+		if state.AutoTrustMode.value and not areas.Cities:contains(world.area) and (buffactive['Elvorseal'] or buffactive['Reive Mark'] or not player.in_combat) then
+			local party = windower.ffxi.get_party()
+			if party.p5 == nil then
+				local spell_recasts = windower.ffxi.get_spell_recasts()
+
+				if spell_recasts[980] == 0 and not have_trust("Yoran-Oran") then
+					windower.chat.input('/ma "Yoran-Oran (UC)" <me>')
+					tickdelay = (framerate * 3)
+					return true
+				elseif spell_recasts[952] == 0 and not have_trust("Koru-Moru") then
+					windower.chat.input('/ma "Koru-Moru" <me>')
+					tickdelay = (framerate * 3)
+					return true
+				elseif spell_recasts[967] == 0 and not have_trust("Qultada") then
+					windower.chat.input('/ma "Qultada" <me>')
+					tickdelay = (framerate * 3)
+					return true
+				elseif spell_recasts[914] == 0 and not have_trust("Ulmia") then
+					windower.chat.input('/ma "Ulmia" <me>')
+					tickdelay = (framerate * 3)
+					return true
+				elseif spell_recasts[979] == 0 and not have_trust("Selh'teus") then
+					windower.chat.input('/ma "Selh\'teus" <me>')
+					tickdelay = (framerate * 3)
+					return true
+				else
+					return false
+				end
+			end
+		end
+	end
+	return false
+end
