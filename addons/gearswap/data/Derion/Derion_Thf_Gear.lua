@@ -118,7 +118,8 @@ function init_gear_sets()
     sets.precast.FC = {
 		-- neck=Voltsurge Torque rear="Enchntr. Earring +1
 		head="Haruspex Hat", lear="Loquac. Earring", 
-		-- body="Taeon Tabard", hands="Leyline Gloves",lring="Prolix Ring",
+		--hands="Leyline Gloves",lring="Prolix Ring",
+		body=gear_taeon_body_Fastcast,
 		-- legs="Enif Cosciales"
 		waist="Twilight Belt",}
 

@@ -58,7 +58,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 	
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
-    sets.precast.JA['Snake Eye'] = {legs="Lanun Culottes"}
+    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
@@ -114,7 +114,8 @@ function init_gear_sets()
     sets.precast.FC = {
 		-- head="Carmine Mask", neck="Voltsurge Torque", rear="Enchntr. Earring +1",
 		head="Haruspex Hat", lear="Loquac. Earring",  
-		-- body="Taeon Tabard", hands="Leyline Gloves", rring="Prolix Ring",				
+		--  hands="Leyline Gloves", rring="Prolix Ring",
+		body=gear_taeon_body_Fastcast,		
 		--back="Camulus's Mantle", legs="Taeon Tights", feet="Carmine Greaves"
 		waist="Twilight Belt"}
 
@@ -123,6 +124,7 @@ function init_gear_sets()
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
 
     sets.precast.RA = {ammo=gear.RAbullet,
+		-- head=gear_taeon_head_Snapshot
 		head="Chass. Tricorne", 
 		-- body="Skopos Jerkin",  
 		body="Ebon Jerkin", hands="Lanun Gants",

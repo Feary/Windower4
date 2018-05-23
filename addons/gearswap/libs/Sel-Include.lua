@@ -91,7 +91,7 @@ function init_include()
 	state.CancelStoneskin	  = M(true, 'Stoneskin Cancel Mode')
 	state.RelicAftermath	  = M(true, 'Maintain Relic Aftermath')
 	state.Contradance		  = M(true, 'Auto Contradance Mode')
-	state.ElementalWheel 	  = M(false, 'Elemental Wheel Active')
+	state.ElementalWheel 	  = M(false, 'Elemental Wheel')
 	
 	state.RuneElement 		  = M{['description'] = 'Rune Element','Ignis','Gelus','Flabra','Tellus','Sulpor','Unda','Lux','Tenebrae'}
 	state.ElementalMode 	  = M{['description'] = 'Elemental Mode', 'Fire','Ice','Wind','Earth','Lightning','Water','Light','Dark'}
@@ -930,11 +930,10 @@ function default_aftercast(spell, spellMap, eventArgs)
 			if state.MagicBurstMode.value == 'Single' then state.MagicBurstMode:reset() end
 			if state.ElementalWheel.value and (spell.skill == 'Elemental Magic' or spellMap:contains('ElementalNinjutsu')) then
 				state.ElementalMode:cycle()
-				if S{"Light","Dark"}:contains(state.ElementalMode.value) then
+				local startindex = state.ElementalMode.index
+				while S{"Light","Dark"}:contains(state.ElementalMode.value) do
 					state.ElementalMode:cycle()
-				end
-				if S{"Light","Dark"}:contains(state.ElementalMode.value) then
-					state.ElementalMode:cycle()
+					if startindex == state.ElementalMode.index then break end
 				end
 			end
 			if state.DisplayMode.value then update_job_states()	end
@@ -966,6 +965,8 @@ end
 --------------------------------------
 
 function filter_precast(spell, spellMap, eventArgs)
+	if check_rnghelper(spell, spellMap, eventArgs) then return end
+	if midaction() or pet_midaction() or gearswap.cued_packet then eventArgs.cancel = true return end
 	if check_disable(spell, spellMap, eventArgs) then return end
 	if check_doom(spell, spellMap, eventArgs) then return end
 	if check_amnesia(spell, spellMap, eventArgs) then return end
@@ -974,7 +975,6 @@ function filter_precast(spell, spellMap, eventArgs)
 	if check_targets(spell, spellMap, eventArgs) then return end
 	if check_recast(spell, spellMap, eventArgs) then return end
 	if check_cost(spell, spellMap, eventArgs) then return end
-	if check_rnghelper(spell, spellMap, eventArgs) then return end
 
 	if spellMap == 'Cure' or spellMap == 'Curaga' then
 		if spell.target.distance > 21 and spell.target.type == 'PLAYER' then
@@ -1869,7 +1869,7 @@ function status_change(newStatus, oldStatus)
     end
 
     -- Handle equipping default gear if the job didn't mark this as handled.
-    if not eventArgs.handled then
+    if not eventArgs.handled and not midaction() and not pet_midaction() then
         handle_equipping_gear(newStatus)
         display_breadcrumbs()
     end
@@ -1879,7 +1879,11 @@ end
 function state_change(stateField, newValue, oldValue)
     if stateField == 'Weapons' then
 		if (newValue:contains('DW') or newValue:contains('Dual')) and not (dualWieldJobs:contains(player.main_job) or (player.sub_job == 'DNC' or player.sub_job == 'NIN')) then
-			state.Weapons:cycle()
+			local startindex = state.Weapons.index
+			while (state.Weapons.value:contains('DW') or state.Weapons.value:contains('Dual')) and not (dualWieldJobs:contains(player.main_job) or (player.sub_job == 'DNC' or player.sub_job == 'NIN')) do
+				state.Weapons:cycle()
+				if startindex == state.Weapons.index then break end
+			end
 			handle_weapons({})
 		elseif sets.weapons[newValue] then
 			equip_weaponset(newValue)
@@ -2012,7 +2016,7 @@ function pet_change(pet, gain)
 
     -- Equip default gear if not handled by the job.
     if not eventArgs.handled then
-        if not midaction() then handle_equipping_gear(player.status) end
+        if not midaction() and not pet_midaction() then handle_equipping_gear(player.status) end
     end
 end
 
