@@ -136,6 +136,13 @@
         <Sort><![CDATA[None]]></Sort>
         <TimeZones>UTC,JST</TimeZones>
     </dapheney>
+    <dasmir>
+        <Clock>
+            <pos>
+                <x>1007</x>
+            </pos>
+        </Clock>
+    </dasmir>
     <dela>
         <Clock>
             <pos>

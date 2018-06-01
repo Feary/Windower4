@@ -135,14 +135,14 @@ function init_gear_sets()
 		-- Reverence Surcoat +3 lring="Kishar Ring",
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Prolix Ring",
 		-- FC Legs
-		back=gear.fastcast_jse_back, waist="Sanctuary Obi", legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
+		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
 
     sets.precast.FC.DT = {ammo="Staunch tathlum",
 		-- Odnowa Earring
 		head="Carmine Mask +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		-- Reverence Surcoat +3 lring="Kishar Ring",
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Prolix Ring",
-		back=gear.fastcast_jse_back, waist="Sanctuary Obi", legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
+		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
@@ -286,7 +286,7 @@ function init_gear_sets()
 		-- hands="Macabre Gaunt. +1"
 		body="Jumalik Mail", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="K'ayres Ring",
 		--  Solemnity Cape Rumination Sash  Odyssean Greaves
-		back=gear.Enmity_jse_back, waist="Sanctuary Obi", legs="Founder's Hose", feet="Souveran Schuhs +1"}
+		back=gear.Enmity_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Souveran Schuhs +1"}
 
     sets.midcast.Cure.DT = {ammo="Staunch Tathlum",
 		-- ear2="Odnowa Earring", 
@@ -307,7 +307,7 @@ function init_gear_sets()
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Nourish. Earring +1", rear="Knightly Earring",
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="K'ayres Ring",
 		--  Solemnity Cape Odyssean Greaves
-		back=gear.Enmity_jse_back, waist="Sanctuary Obi", legs="Founder's Hose", feet="Souveran Schuhs +1"}
+		back=gear.Enmity_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Souveran Schuhs +1"}
 		
 	sets.Self_Healing.DT = {ammo="Staunch Tathlum",
 		--ear2="Odnowa Earring",
@@ -337,7 +337,7 @@ function init_gear_sets()
 		-- body="Shabti Cuirass", Apeile Ring +1
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Vengeful Ring", rring="Apeile Ring",
 		-- Obyssean Cuisses Phalanx +5 
-		back="Weard Mantle", waist="Sanctuary Obi", legs="Carmine Cuisses +1", feet="Souveran Schuhs +1"})
+		back="Weard Mantle", waist="Rumination Sash", legs="Carmine Cuisses +1", feet="Souveran Schuhs +1"})
 
 	--------------------------------------
 	-- Idle/resting/defense/etc sets

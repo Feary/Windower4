@@ -20,8 +20,8 @@
             </flags>
             <padding>0</padding>
             <pos>
-                <x>0</x>
-                <y>0</y>
+                <x>2</x>
+                <y>1063</y>
             </pos>
             <text>
                 <alpha>255</alpha>
@@ -47,7 +47,6 @@
         <Tracker>
             <pos>
                 <x>16</x>
-                <y>1063</y>
             </pos>
             <text>
                 <stroke>
@@ -59,7 +58,6 @@
     <almonte>
         <Tracker>
             <pos>
-                <x>2</x>
                 <y>1064</y>
             </pos>
         </Tracker>
@@ -81,7 +79,6 @@
         <Tracker>
             <pos>
                 <x>16</x>
-                <y>1063</y>
             </pos>
             <text>
                 <stroke>
@@ -90,6 +87,13 @@
             </text>
         </Tracker>
     </casanoova>
+    <dasmir>
+        <Tracker>
+            <pos>
+                <x>16</x>
+            </pos>
+        </Tracker>
+    </dasmir>
     <dela>
         <Tracker>
             <pos>
@@ -107,16 +111,11 @@
         <Tracker>
             <pos>
                 <x>16</x>
-                <y>1063</y>
             </pos>
         </Tracker>
     </denonie>
     <derion>
         <Tracker>
-            <pos>
-                <x>2</x>
-                <y>1063</y>
-            </pos>
             <text>
                 <stroke>
                     <alpha>16516605</alpha>
@@ -162,7 +161,7 @@
         <Tracker>
             <pos>
                 <x>16</x>
-                <y>1063</y>
+                <y>1064</y>
             </pos>
             <text>
                 <stroke>
@@ -208,7 +207,6 @@
         <Tracker>
             <pos>
                 <x>23</x>
-                <y>1063</y>
             </pos>
             <text>
                 <stroke>

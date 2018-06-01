@@ -79,40 +79,40 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {
 		head="Aya. Zucchetto +2",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Ilabrat Ring",ring2="Ramuh Ring +1",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Ilabrat Ring",ring2="Ramuh Ring +1",
 		back="Ground. Mantle +1",waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 	sets.precast.WS.Acc = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Rajas Ring", rring="Ramuh Ring +1",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
 		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {
 			head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
-			body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
+			body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
 			back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"})
 	sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Ginsen",
 			-- Lustratio Cap +1
 			head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Brutal Earring",
 			-- Lustratio Gloves +1
-			body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Rajas Ring", rring="Ramuh Ring +1",
+			body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
 			-- Rancerous Mantle
 			back="Ground. Mantle +1", waist="Fotia Belt", legs="Lustr. Subligar +1", feet="Lustratio Leggings +1"})
 	sets.precast.WS['Mercy Stroke'] = set_combine(sets.precast.WS, {
 			head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
-			body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
+			body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
 			back="Ground. Mantle +1", waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"})
 	sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {
 			-- Lustratio Cap +1
 			head="Aya. Zucchetto +2", neck="Love Torque", lear="Moonshade Earring", rear="Brutal Earring",
 			-- Lustratio Gloves +1
-			body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Rajas Ring", rring="Ramuh Ring +1",
+			body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
 			--Vespid Mantle
 			back="Ground. Mantle +1", waist="Wanion Belt", legs="Lustr. Subligar +1", feet="Lustratio Leggings +1"})
 	sets.precast.WS["Mordant Rime"] = set_combine(sets.precast.WS, {
 			head="Aya. Zucchetto +2", neck="Moonbow Whistle", lear="Bladeborn Earring", rear="Steelflash Earring",
 			-- Bihu Jstcorps. +2  Carb. Ring +1
-			body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
+			body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
 			-- Vespid Mantle
 			back="Ground. Mantle +1", waist="Windbuffet Belt +1", legs="Bihu Cannions +1", feet="Aya. Gambieras +2"})
 	
@@ -271,18 +271,18 @@ function init_gear_sets()
 
 	sets.idle.Weak = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Assiduity Pants +1", feet="Aya. Gambieras +2"}
 	
 	sets.idle.PDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque",  lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 	
 	-- Defense sets
 	sets.defense.PDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 	sets.defense.MDT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
@@ -301,12 +301,12 @@ function init_gear_sets()
 	
 	sets.engaged = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},ammo="Ginsen",
 		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
 		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	sets.engaged.DW = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},ammo="Ginsen",
 		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Patricius Ring", rring="Ramuh Ring +1",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
 		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 end
 

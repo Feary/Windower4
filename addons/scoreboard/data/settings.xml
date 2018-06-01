@@ -65,9 +65,19 @@
         <visible>true</visible>
     </global>
     <akili>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </akili>
     <almonte>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </almonte>
     <aniyah>
@@ -104,10 +114,28 @@
         </display>
         <visible>false</visible>
     </casanoova>
+    <dasmir>
+        <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
+        </display>
+    </dasmir>
     <dela>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </dela>
     <denonie>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </denonie>
     <derion>
@@ -128,6 +156,11 @@
         <visible>false</visible>
     </derion>
     <drecien>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </drecien>
     <feary>
@@ -148,33 +181,83 @@
         <visible>false</visible>
     </feary>
     <fearyjunior>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </fearyjunior>
     <gonzalo>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </gonzalo>
     <kavita>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </kavita>
     <luisito>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </luisito>
     <mehany>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </mehany>
     <midnightclam>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </midnightclam>
     <most>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </most>
     <olymoly>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </olymoly>
     <ravindra>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </ravindra>
     <seise>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </seise>
     <swagg>

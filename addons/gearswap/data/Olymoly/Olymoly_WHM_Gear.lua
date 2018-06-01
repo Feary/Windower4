@@ -105,7 +105,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Cessance Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Stikini Ring", rring="Stikini Ring",
 		waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     --sets.precast.WS['Flash Nova'] = {}
@@ -487,7 +487,7 @@ function init_gear_sets()
 		-- Befouled Crown
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring="Dark Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
@@ -497,7 +497,7 @@ function init_gear_sets()
 		-- Befouled Crown
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring="Dark Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
@@ -507,7 +507,7 @@ function init_gear_sets()
 		-- Befouled Crown
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring="Dark Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
@@ -537,28 +537,28 @@ function init_gear_sets()
 	sets.engaged = {ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.Acc = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.DW = {ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.DW.Acc = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Gambieras +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
