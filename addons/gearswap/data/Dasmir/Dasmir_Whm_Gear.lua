@@ -55,13 +55,13 @@ function init_gear_sets()
     sets.precast.FC = {ammo="Incantor Stone",
 		head="Haruspex Hat", neck="Orison Locket", lear="Loquac. Earring",
 		--lring="Prolix Ring",
-		body="Inyanga Jubbah", hands="Gendewitha Gages", 
+		body="Inyanga Jubbah +2", hands="Gendewitha Gages", 
 		-- waist="Witful Belt",
 		back=gear.fastcast_jse_back, legs="Orvail Pants +1", feet="Regal Pumps"}
     sets.precast.FC.DT = {ammo="Incantor Stone",
 		head="Haruspex Hat", neck="Orison Locket", lear="Loquac. Earring",
 		--lring="Prolix Ring",
-		body="Inyanga Jubbah", hands="Gendewitha Gages", 
+		body="Inyanga Jubbah +2", hands="Gendewitha Gages", 
 		-- waist="Witful Belt",
 		back=gear.fastcast_jse_back, legs="Aya. Cosciales +2", feet="Regal Pumps"}
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
@@ -79,7 +79,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Cure.DT = {main={name="Beneficus", priority=2}, sub={name="Sors Shield", priority=1}, 	
 		head="Haruspex Hat",neck="Twilight Torque",lear="Nourish. Earring +1", rear="Nourish. Earring",
-		body="Inyanga Jubbah",hands="Gendewitha Gages",ring1="Dark Ring",ring2="Defending Ring",
+		body="Inyanga Jubbah +2",hands="Gendewitha Gages",ring1="Dark Ring",ring2="Defending Ring",
 		back="Cheviot Cape",waist="Witful Belt",legs="Ebers Pantaloons",feet="Hygieia Clogs"}
 
     sets.precast.FC.Curaga = sets.precast.FC.Cure
@@ -118,6 +118,7 @@ function init_gear_sets()
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.
 	
 	sets.ConserveMP = {ammo="Clarus Stone",
+		lear="Gwati Earring", rear="Calamitous Earring",
         back="Aurist's Cape", waist="Austerity Belt"}
 		
 	sets.midcast.Teleport = sets.ConserveMP
@@ -196,7 +197,7 @@ function init_gear_sets()
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		-- Theo Mitts +1
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Ephedra Ring",
-		-- Alaunus Cape Bishop Sash kaykaus boots
+		-- Bishop Sash kaykaus boots
 		back=gear.Cure_jse_back, waist="Salire Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 		
 	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud"})
@@ -247,7 +248,7 @@ function init_gear_sets()
 		-- lear="Andoaa Earring", 
 		neck="Colossus's Torque", 
 		-- body="Anhur Robe", 
-		hands="Inyanga Dastanas",
+		hands="Inyanga Dastanas +1",
 		--back="Merciful Cape", waist="Cascade Belt", 
 		legs="Cleric's Pantaln.", feet="Orsn. Duckbills +2"}
 
@@ -257,7 +258,7 @@ function init_gear_sets()
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {})--main="Vadose Rod",sub="Ammurapi Shield",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {hands="Orison Mitts +2",legs="Theo. Pantaloons",})
+	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {head="Inyanga Tiara +2",hands="Orison Mitts +2",legs="Theo. Pantaloons",})
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Cleric's Duckbills",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Cleric's Duckbills",ear1="Gifted Earring",waist="Sekhmet Corset"})
@@ -275,7 +276,7 @@ function init_gear_sets()
 		-- lear="Andoaa Earring", 
 		neck="Colossus's Torque", 
 		-- body="Anhur Robe", 
-		hands="Inyanga Dastanas",
+		hands="Inyanga Dastanas +1",
 		--back="Merciful Cape", waist="Cascade Belt", 
 		legs="Cleric's Pantaln.", feet="Orsn. Duckbills +2"}
 
@@ -283,7 +284,7 @@ function init_gear_sets()
 		-- lear="Andoaa Earring", 
 		neck="Colossus's Torque", 
 		-- body="Anhur Robe", 
-		hands="Inyanga Dastanas",
+		hands="Inyanga Dastanas +1",
 		--back="Merciful Cape", waist="Cascade Belt", 
 		legs="Cleric's Pantaln.", feet="Orsn. Duckbills +2"}
 
@@ -293,7 +294,7 @@ function init_gear_sets()
 		-- Chironic Hat Erra Pendant neck="Voltsurge Torque", Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Aya. Zucchetto +1", lear="Lifestorm Earring", rear="Psystorm Earring",
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Perception Ring", rring="Mediator's Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Perception Ring", rring="Mediator's Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -301,9 +302,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat neck="Eddy Necklace",
-		head="Inyanga Tiara", lear="Moldavite Earring", rear="Hecate's Earring",
+		head="Inyanga Tiara +2", lear="Novio Earring", rear="Hecate's Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Shiva Ring", rring="Shiva Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- Chironic Hose Chironic Slippers 
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -311,9 +312,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat neck="Eddy Necklace",
-		head="Inyanga Tiara", lear="Moldavite Earring", rear="Hecate's Earring",
+		head="Inyanga Tiara +2", lear="Novio Earring", rear="Hecate's Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Shiva Ring", rring="Shiva Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- Chironic Hose Chironic Slippers 
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -321,9 +322,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat neck="Eddy Necklace",
-		head="Inyanga Tiara", lear="Moldavite Earring", rear="Hecate's Earring",
+		head="Inyanga Tiara +2", lear="Novio Earring", rear="Hecate's Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Shiva Ring", rring="Shiva Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- Chironic Hose Chironic Slippers 
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -331,9 +332,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		-- Chironic Hat Erra Pendant neck="Voltsurge Torque", Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Inyanga Tiara +2", lear="Lifestorm Earring", rear="Psystorm Earring",
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Perception Ring", rring="Mediator's Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Perception Ring", rring="Mediator's Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -341,9 +342,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		-- Chironic Hat Erra Pendant neck="Voltsurge Torque", Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Inyanga Tiara +2", lear="Lifestorm Earring", rear="Psystorm Earring",
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Perception Ring", rring="Mediator's Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Perception Ring", rring="Mediator's Ring",
 		-- gear.Macc_jse_back Luminary Sash Chironic Hose Theo. Duckbills +3
 		back="Ogapepo Cape", waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -351,9 +352,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		-- Chironic Hat Erra Pendant neck="Voltsurge Torque", Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Inyanga Tiara +2", lear="Lifestorm Earring", rear="Psystorm Earring",
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Perception Ring", rring="Mediator's Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Perception Ring", rring="Mediator's Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -364,9 +365,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		-- Chironic Hat Erra Pendant neck="Voltsurge Torque", Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Inyanga Tiara +2", lear="Lifestorm Earring", rear="Psystorm Earring",
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Perception Ring", rring="Mediator's Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Perception Ring", rring="Mediator's Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -374,9 +375,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		-- Chironic Hat Erra Pendant neck="Voltsurge Torque", Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Inyanga Tiara +2", lear="Lifestorm Earring", rear="Psystorm Earring",
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Perception Ring", rring="Mediator's Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Perception Ring", rring="Mediator's Ring",
 		-- gear.Macc_jse_back Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -384,9 +385,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		-- Chironic Hat Erra Pendant neck="Voltsurge Torque", Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Inyanga Tiara +2", lear="Lifestorm Earring", rear="Psystorm Earring",
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Perception Ring", rring="Mediator's Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Perception Ring", rring="Mediator's Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -394,9 +395,9 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		-- Chironic Hat Erra Pendant neck="Voltsurge Torque", Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Inyanga Tiara +2", lear="Lifestorm Earring", rear="Psystorm Earring",
 		-- Theo. Briault +3 lring="Stikini Ring", rring="Stikini Ring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Perception Ring", rring="Mediator's Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Perception Ring", rring="Mediator's Ring",
 		-- gear.Macc_jse_back Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyanga Crackows +1"}
 
@@ -418,20 +419,20 @@ function init_gear_sets()
     -- Sets to return to when not performing an action.
     -- Resting sets
 	sets.resting = {main="Boonwell Staff",
-		head="Inyanga Tiara", neck="Eidolon Pendant", lear="Merman's Earring", rear="Merman's Earring",
-		body="Ebers Bliaud", hands="Inyanga Dastanas", lring="Inyanga Ring", rring="Defending Ring",
+		head="Inyanga Tiara +2", neck="Eidolon Pendant", lear="Merman's Earring", rear="Merman's Earring",
+		body="Ebers Bliaud", hands="Inyanga Dastanas +1", lring="Inyanga Ring", rring="Defending Ring",
 		back="Felicitas Cape", waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyanga Crackows +1"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Bolelabunga", priority=2}, sub={name="Genbu's Shield", priority=1},		
-		head="Inyanga Tiara", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Inyanga Ring", rring="Defending Ring",
+		head="Inyanga Tiara +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Inyanga Ring", rring="Defending Ring",
 		back="Cheviot Cape", waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Inyanga Crackows +1"}
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
 		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		--hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Inyanga Dastanas", lring="Dark Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Inyanga Dastanas +1", lring="Dark Ring", rring="Defending Ring",
 		-- 
 		back="Cheviot Cape", waist="Fucho-no-Obi",  legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
@@ -452,16 +453,16 @@ function init_gear_sets()
 		back="Cheviot Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras"}
 
 	sets.defense.MDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Inyanga Tiara", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Dark Ring", rring="Defending Ring",
-		back="Engulfer Cape", waist="Austerity Belt", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}			
+		head="Inyanga Tiara +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Dark Ring", rring="Defending Ring",
+		back="Engulfer Cape", waist="Austerity Belt", legs="Inyanga Shalwar +1", feet="Inyanga Crackows +1"}			
 
     sets.defense.MEVA = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Inyanga Tiara", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Inyanga Tiara +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		--  
-		body="Inyanga Jubbah", hands="Inyanga Dastanas", lring="Dark Ring", rring="Defending Ring",
+		body="Inyanga Jubbah +2", hands="Inyanga Dastanas +1", lring="Dark Ring", rring="Defending Ring",
 		--
-		back="Engulfer Cape", waist="Fucho-no-Obi", legs="Inyanga Shalwar", feet="Inyanga Crackows +1"}	
+		back="Engulfer Cape", waist="Fucho-no-Obi", legs="Inyanga Shalwar +1", feet="Inyanga Crackows +1"}	
 		
 	-- Gear for specific elemental nukes.
 	sets.element.Wind = {}

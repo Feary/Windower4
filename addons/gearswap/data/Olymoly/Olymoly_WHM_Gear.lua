@@ -342,7 +342,7 @@ function init_gear_sets()
 		--main={name="Gada", priority=2},
 		-- Befouled Crown
 		head="Umuthi Hat", neck="Colossus's Torque", lear="Andoaa Earring", rear="Augment. Earring",
-		body="Anhur Robe", hands="Inyanga Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
+		body="Anhur Robe", hands="Inyanga Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Piety Pantaloons +1 Theo. Duckbills +3
 		back="Merciful Cape", waist="Olympus Sash", legs="Piety Pantaloons", feet="Ebers Duckbills"}
 			

@@ -4,15 +4,15 @@
         <autodecline>false</autodecline>
         <blacklist />
         <mode>whitelist</mode>
-        <whitelist>Feary, Firetoplay, Aniyah, Derion</whitelist>
+        <whitelist>Olymoly, Firetoplay, Aniyah, Dasmir</whitelist>
 	</global>
 	<aniyah>
-		<whitelist>Firetoplay, Derion, Feary</whitelist>
+		<whitelist>Firetoplay, Dasmir, Olymoly</whitelist>
 	</aniyah>
-	<derion>
-		<whitelist>Firetoplay, Aniyah, Feary</whitelist>
-	</derion>
-	<feary>
-        <whitelist>Firetoplay, Aniyah, Derion</whitelist>
-	</feary>
+	<Dasmir>
+		<whitelist>Firetoplay, Aniyah, Olymoly</whitelist>
+	</Dasmir>
+	<Olymoly>
+        <whitelist>Firetoplay, Aniyah, Dasmir</whitelist>
+	</Olymoly>
 </settings>

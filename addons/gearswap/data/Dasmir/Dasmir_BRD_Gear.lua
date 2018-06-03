@@ -138,9 +138,9 @@ function init_gear_sets()
 	-- For song buffs (Full Duration, AF3 set bonus, DT)
 	-- 
 	sets.midcast.SongEffect = {
-		-- Carn Ammurapi Shield
-		{main={name="Legato Dagger", priority=2}, sub={name="Genbu's Shield", priority=1},
-		-- Genmei Earring
+		-- Kali Ammurapi Shield
+		main={name="Legato Dagger", priority=2}, sub={name="Genbu's Shield", priority=1},
+		-- Genmei Earringn
 		head="Fili Calot +1", neck="Moonbow Whistle", lear="Musical Earring", rear="Etiolation Earring",
 		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Stikini Ring", rring="Defending Ring",
 		back="Harmony Cape", waist="Corvax Sash", legs="Inyanga Shalwar +2", feet="Brioso Slippers +1"}

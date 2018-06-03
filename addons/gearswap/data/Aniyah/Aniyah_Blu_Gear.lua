@@ -572,6 +572,7 @@ function init_gear_sets()
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket",waist="Reiki Yotai",legs="Carmine Cuisses"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.Assault = {ring1="Balrahn's Ring"}
+	
 	-- Weapons sets
 	sets.weapons.Default = {main="Tanmogayi +1",sub="Tanmogayi"}
 	sets.weapons.MeleeClubs = {main="Gabaxorea",sub="Tanmogayi +1"}
@@ -580,7 +581,7 @@ function init_gear_sets()
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets
-	sets.engaged =  {main="Tanmogayi +1",sub="Tanmogayi"}
+	sets.engaged =  {main="Tanmogayi +1", sub="Tanmogayi",
 		head="Carmine Mask", neck="Asperity Necklace", lear="Brutal Earring", rear="Ghillie Earring +1",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Rajas Ring", rring="Epona's Ring",
 		back=gear.da_jse_back, waist="Reiki Yotai", legs="Carmine Cuisses", feet="Carmine Greaves"}
@@ -678,13 +679,12 @@ function select_default_macro_book()
 end
 
 --Job Specific Trust Overwrite
-function check_trust()annn
+function check_trust()
 	if not moving then
 		if state.AutoTrustMode.value and not areas.Cities:contains(world.area) and (buffactive['Elvorseal'] or buffactive['Reive Mark'] or not player.in_combat) then
 			local party = windower.ffxi.get_party()
 			if party.p5 == nil then
 				local spell_recasts = windower.ffxi.get_spell_recasts()
-
 				if spell_recasts[980] == 0 and not have_trust("Yoran-Oran") then
 					windower.chat.input('/ma "Yoran-Oran (UC)" <me>')
 					tickdelay = (framerate * 3)

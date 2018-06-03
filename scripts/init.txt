@@ -27,7 +27,7 @@ drawdistance set 10
 
 //Plugins / Addons
 lua load partybuffs
-lua load chatman
+//lua load chatman
 lua load sellnpc
 lua load equipviewer
 lua load checkparam

@@ -20,27 +20,102 @@ gear_taeon_head_Snapshot = {name="Taeon Chapeau", augments={'Accuracy+19 Attack+
 gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'Accuracy+15 Attack+15','"Fast Cast"+4',}}
 
 -- Telchine
+-- Head 2
+-- Body 2
+-- Hands 3
+-- Legs 2
+-- Feet 3
+
 -- Head
 gear_telchine_head_Duration = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
 gear_telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
+gear_telchine_head_Pet = {name="Telchine Cap"}}
 
 -- Body
 gear_telchine_body_Duration = {}
 gear_telchine_body_Siphon = {}
+gear_telchine_body_Pet = {}
 
---Hands
+--Hands 
 gear_telchine_hands_Cure = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +8',}}
 gear_telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +8',}}
--- DRG Acro Hands STP 20/20 STR/DEX
-
+gear_telchine_hands_Siphon = { name="Telchine Gloves", augments={'"Elemental Siphon"+10',}}
+gear_telchine_hands_Pet = { name="Telchine Gloves"}}
 
 -- Legs
 gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}}
 gear_telchine_legs_Siphon = {}
+gear_telchine_legs_Pet = {}
 
 -- Feet
 gear_telchine_feet_Song = { name="Telchine Pigaches", augments={'Mag. Acc.+20','Song spellcasting time -7%',}}
 gear_telchine_feet_Duration = { name="Telchine Pigaches", augments={'Haste+2','Enh. Mag. eff. dur. +10',}}
+gear_telchine_feet_Regen = { name="Telchine Pigaches", augments={'Haste+2','Enh. Mag. eff. dur. +10',}}
+
+-- Acro
+-- Head 1
+-- Body 1
+-- Hands 2
+-- Legs 1
+-- Feet 1
+
+-- Head 
+-- Call Beast Delay Head/Legs
+-- Breathe+/macc 
+
+-- Body 
+-- Breathe+/macc 
+
+-- Hands 
+-- Breathe+/macc 
+-- DRG Acro Hands STP 20/20 STR/DEX
+
+-- Legs 
+-- Breathe+/macc 
+-- Call Beast Delay Head/Legs
+
+-- Feet 
+-- Breathe+/macc 
+
+
+-- Helios
+-- Head 
+-- Body 
+-- Hands 
+-- Legs 
+-- Feet
+
+-- Head 
+
+-- Body 
+-- Occult Acumen
+
+-- Hands
+-- Occult Acumen 
+-- Fastcast
+
+-- Legs 
+
+-- Feet
+--Occult Acumen
+
+-- Yorium 
+-- Head 
+-- Body 
+-- Hands 
+-- Legs 
+-- Feet
+
+-- Head 
+
+-- Body 
+
+-- Hands
+-- Yorium Gauntlets - Enmity+
+
+-- Legs 
+
+-- Feet
 
 ----gear_gada_enhancing_club = {name="Gada",augments={'Enh. Mag. eff. dur. +6','STR+3','Mag. Acc.+8','"Mag.Atk.Bns."+17','DMG:+7',}}
 ----gear_gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+11','"Mag.Atk.Bns."+13','DMG:+3',}}

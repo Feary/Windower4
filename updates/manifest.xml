@@ -166,7 +166,7 @@
     </plugin>
     <plugin>
       <name>WinControl</name>
-      <version>1.6.1.7</version>
+      <version>1.6.2.0</version>
       <description>
         Manually control window positioning.
       </description>

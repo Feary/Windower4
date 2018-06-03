@@ -121,6 +121,7 @@
                 <y>289</y>
             </pos>
         </display>
+        <visible>false</visible>
     </dasmir>
     <dela>
         <display>
@@ -260,6 +261,9 @@
         </display>
         <visible>false</visible>
     </seise>
+    <suede>
+        <visible>false</visible>
+    </suede>
     <swagg>
         <display>
             <bg>

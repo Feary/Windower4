@@ -52,6 +52,8 @@
     <plugin>FFXIDB</plugin>
     <plugin>Run</plugin>
     <plugin>SSOrganizer</plugin>
+    <plugin>ChatMon</plugin>
+    <plugin>AutoExec</plugin>
   </autoload>
   <profile name="">
     <consolekey>Insert</consolekey>
