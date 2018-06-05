@@ -1,7 +1,7 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
-        <AutoDrop>true</AutoDrop>
+        <AutoDrop>false</AutoDrop>
         <AutoStack>true</AutoStack>
         <Delay>0</Delay>
         <Drop>Hpemde Organ,Xzomit Organ,Rusty Bucket,Medusa&apos;s Armlet,Flan Meat,Aedold +1,Setae Ring,New Moon Armlets,Bedivere&apos;s Hose,Luminian Tissue,Iizamal +1,Phuabo Organ,Obl. Abjuration,Onion Staff,Yovra Organ,Fierce Belt</Drop>
@@ -48,8 +48,5 @@
     </watitdew>
     <worldkiller>
         <Drop>Hpemde Organ,Shrimp Lantern,Flan Meat,Aedold +1,Fierce Belt,Mannequin Head,Mannequin Hands,Bedivere&apos;s Hose,Obl. Abjuration,Mannequin Body,Rusty Bucket,Mannequin Feet,Yovra Organ,Setae Ring,New Moon Armlets,Onion Staff,Luminian Tissue,Iizamal +1,Medusa&apos;s Armlet,Goblin Mess Tin,Phuabo Organ,Mannequin Legs,Xzomit Organ</Drop>
-    </worldkiller>
-</settings>
-vere&apos;s Hose,Obl. Abjuration,Mannequin Body,Rusty Bucket,Mannequin Feet,Yovra Organ,Setae Ring,New Moon Armlets,Onion Staff,Luminian Tissue,Iizamal +1,Medusa&apos;s Armlet,Goblin Mess Tin,Phuabo Organ,Mannequin Legs,Xzomit Organ</Drop>
     </worldkiller>
 </settings>

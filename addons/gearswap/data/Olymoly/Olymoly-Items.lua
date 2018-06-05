@@ -29,7 +29,7 @@ gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'Accuracy+15 Attack+1
 -- Head
 gear_telchine_head_Duration = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
 gear_telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
-gear_telchine_head_Pet = {name="Telchine Cap"}}
+gear_telchine_head_Pet = {name="Telchine Cap"}
 
 -- Body
 gear_telchine_body_Duration = {}
@@ -40,7 +40,7 @@ gear_telchine_body_Pet = {}
 gear_telchine_hands_Cure = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +8',}}
 gear_telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +8',}}
 gear_telchine_hands_Siphon = { name="Telchine Gloves", augments={'"Elemental Siphon"+10',}}
-gear_telchine_hands_Pet = { name="Telchine Gloves"}}
+gear_telchine_hands_Pet = { name="Telchine Gloves"}
 
 -- Legs
 gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}}

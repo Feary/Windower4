@@ -10,6 +10,8 @@
 
 wait 5;
 load LuaCore;
+load AutoExec;
+load ChatMon;
 load DelayMeNot;
 load FFXIDB;
 load FishingCrashFix;

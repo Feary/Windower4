@@ -95,7 +95,8 @@ function init_gear_sets()
 		-- ammo="Impatiens", 
 		-- neck="Orunmila's Torque", rear="Enchantr. Earring +1",
 		head="Carmine Mask", lear="Loquac. Earring",
-		-- body="Luhlaza Jubbah", hands="Thaumas Gloves", rring="Prolix Ring",
+		-- body="Luhlaza Jubbah", rring="Prolix Ring",
+		hands="Leyline Gloves",
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Carmine Greaves"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})--body="Passion Jacket"

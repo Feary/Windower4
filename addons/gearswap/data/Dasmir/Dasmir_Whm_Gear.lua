@@ -136,7 +136,7 @@ function init_gear_sets()
 		--
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		-- Theo Mitts +1
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Ephedra Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Ephedra Ring",
 		-- Bishop Sash kaykaus boots
 		back=gear.Cure_jse_back, waist="Salire Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
@@ -144,50 +144,50 @@ function init_gear_sets()
 		--
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		-- Theo Mitts +1
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Ephedra Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Ephedra Ring",
 		-- Bishop Sash kaykaus boots
 		back=gear.Cure_jse_back, waist="Salire Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
 	sets.midcast.LightWeatherCure = {main={name="Iridal Staff", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
 	sets.midcast.LightWeatherCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 		
 	sets.midcast.LightDayCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
 	sets.midcast.LightDayCure = {main={name="Ababinili", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
 	sets.midcast.Curaga = {main={name="Ababinili", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back=gear.Cure_jse_back, waist="Salire Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
 	sets.midcast.LightWeatherCuraga = {main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Novia Earring", rear="Orison Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
 	sets.midcast.LightDayCuraga = {main={name="Ababinili", priority=2}, sub={name="", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Novia Earring", rear="Orison Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
 	sets.midcast.Cure.DT = {main={name="Ababinili", priority=2}, sub={name="Pole Grip", priority=1}, 
 		--
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		-- Theo Mitts +1
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Ephedra Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Ephedra Ring",
 		-- Alaunus Cape Bishop Sash kaykaus boots
 		back=gear.Cure_jse_back, waist="Salire Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
@@ -196,33 +196,33 @@ function init_gear_sets()
 		--
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		-- Theo Mitts +1
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Ephedra Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Ephedra Ring",
 		-- Bishop Sash kaykaus boots
 		back=gear.Cure_jse_back, waist="Salire Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 		
-	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud"})
+	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud +1"})
 	sets.midcast.MeleeLightWeatherCure = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightWeatherCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightDayCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightWeatherCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightDayCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeLightDayCure = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeCuraga = set_combine(sets.midcast.MeleeCure, {})
 	sets.midcast.MeleeLightWeatherCuraga = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeLightDayCuraga = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 
-	sets.midcast.CureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud"})
+	sets.midcast.CureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1"})
 	sets.midcast.LightWeatherCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
-	sets.midcast.LightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
-	sets.midcast.LightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
+	sets.midcast.LightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
+	sets.midcast.LightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
 	sets.midcast.LightDayCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.Curaga.DT = set_combine(sets.midcast.Cure.DT, {})
 	sets.midcast.LightWeatherCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.LightDayCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeCure.DT = set_combine(sets.midcast.Cure.DT, {})
 	
-	sets.midcast.MeleeCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud"})
+	sets.midcast.MeleeCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1"})
 	sets.midcast.MeleeLightWeatherCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeLightDayCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeCuraga.DT = set_combine(sets.midcast.Cure.DT, {})
 	sets.midcast.MeleeLightWeatherCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
@@ -232,7 +232,7 @@ function init_gear_sets()
 		--neck="Debilis Medallion",
 		neck="Colossus's Torque",
 		--hands="Fanatic Gloves", lring="Ephedra Ring",
-		body="Ebers Bliaud", hands="Theophany Mitts", rring="Sirona's Ring", rring="Ephedra Ring",
+		body="Ebers Bliaud +1", hands="Theophany Mitts", rring="Sirona's Ring", rring="Ephedra Ring",
 		--  legs="Theophany Pantaloons",
 		back=gear.fastcast_jse_back, feet="Gende. Galoshes"}
 
@@ -268,7 +268,7 @@ function init_gear_sets()
 	sets.midcast.BarElement = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--  lear="Andoaa Earring", 
 		head="Ebers Cap", neck="Colossus's Torque",
-		body="Ebers Bliaud", hands="Orison Mitts +2", 
+		body="Ebers Bliaud +1", hands="Orison Mitts +2", 
 		-- back="Merciful Cape", waist="Cascade Belt",
 		legs="Ebers Pantaloons", feet="Orsn. Duckbills +2"}
 
@@ -420,7 +420,7 @@ function init_gear_sets()
     -- Resting sets
 	sets.resting = {main="Boonwell Staff",
 		head="Inyanga Tiara +2", neck="Eidolon Pendant", lear="Merman's Earring", rear="Merman's Earring",
-		body="Ebers Bliaud", hands="Inyanga Dastanas +1", lring="Inyanga Ring", rring="Defending Ring",
+		body="Ebers Bliaud +1", hands="Inyanga Dastanas +1", lring="Inyanga Ring", rring="Defending Ring",
 		back="Felicitas Cape", waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyanga Crackows +1"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)

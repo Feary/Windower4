@@ -120,6 +120,9 @@
                 <x>1399</x>
                 <y>289</y>
             </pos>
+            <text>
+                <size>10</size>
+            </text>
         </display>
         <visible>false</visible>
     </dasmir>
@@ -131,6 +134,9 @@
         </display>
         <visible>false</visible>
     </dela>
+    <deliah>
+        <visible>false</visible>
+    </deliah>
     <denonie>
         <display>
             <text>
@@ -239,6 +245,10 @@
     </most>
     <olymoly>
         <display>
+            <pos>
+                <x>1328</x>
+                <y>401</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -262,6 +272,11 @@
         <visible>false</visible>
     </seise>
     <suede>
+        <display>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </suede>
     <swagg>
