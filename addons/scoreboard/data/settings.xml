@@ -64,6 +64,9 @@
         <showfellow>true</showfellow>
         <visible>true</visible>
     </global>
+    <akilee>
+        <visible>false</visible>
+    </akilee>
     <akili>
         <display>
             <text>
@@ -235,6 +238,9 @@
         </display>
         <visible>false</visible>
     </midnightclam>
+    <molyoly>
+        <visible>false</visible>
+    </molyoly>
     <most>
         <display>
             <text>

@@ -63,6 +63,7 @@ function init_gear_sets()
 		
 	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
 	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	sets.precast.FC.Lullaby = set_combine(sets.precast.FC.BardSong,{range="Daurdabla"})
 	
 	sets.precast.FC.Daurdabla = set_combine(sets.precast.FC.BardSong, {range=info.ExtraSongInstrument})
 	sets.precast.DaurdablaDummy = sets.precast.FC.Daurdabla

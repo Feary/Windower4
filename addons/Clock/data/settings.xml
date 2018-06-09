@@ -87,6 +87,9 @@
                 <y>3</y>
             </pos>
         </Clock>
+        <Separator>\n</Separator>
+        <Sort><![CDATA[None]]></Sort>
+        <TimeZones>UTC,JST</TimeZones>
     </almonte>
     <aniyah>
         <Clock>
@@ -142,6 +145,9 @@
                 <x>1007</x>
             </pos>
         </Clock>
+        <Separator>\n</Separator>
+        <Sort><![CDATA[None]]></Sort>
+        <TimeZones>UTC,JST</TimeZones>
     </dasmir>
     <dela>
         <Clock>
@@ -166,6 +172,9 @@
                 <y>2</y>
             </pos>
         </Clock>
+        <Separator>\n</Separator>
+        <Sort><![CDATA[None]]></Sort>
+        <TimeZones>UTC,JST</TimeZones>
     </denonie>
     <derion>
         <Clock>
@@ -280,6 +289,9 @@
                 <y>2</y>
             </pos>
         </Clock>
+        <Separator>\n</Separator>
+        <Sort><![CDATA[None]]></Sort>
+        <TimeZones>UTC,JST</TimeZones>
     </ravindra>
     <sikend>
         <Clock>

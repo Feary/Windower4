@@ -67,7 +67,7 @@ function init_gear_sets()
     sets.precast.FC = {ammo="Incantor Stone",
 		head="Haruspex Hat", neck="Orison Locket", lear="Loquac. Earring",
 		-- lring="Prolix Ring",
-		body="Inyanga Jubbah +2", hands="Gendewitha Gages", 
+		body="Inyanga Jubbah +2", hands="Gendewitha Gages", lring="Vocane Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Chelona Boots"}
 
     sets.precast.FC.DT = {ammo="Incantor Stone",
@@ -132,7 +132,7 @@ function init_gear_sets()
 		head="Orvail Corona +1", neck="Reti Pendant", rear="Gifted Earring",
 		-- body="Hedera Cotehardie", 
 		-- legs="Nares Trews", feet="Umbani Boots"
-		waist="Austerity Belt", }
+		waist="Austerity Belt", legs="Lengo Pants"}
 		
 	sets.midcast.Teleport = sets.ConserveMP
 	
@@ -149,12 +149,12 @@ function init_gear_sets()
 		head="Ebers Cap", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
 		-- rring="Levia. Ring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",
-		back="Tempered Cape", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 	sets.midcast.CureSolace = {main={name="Arka IV", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
 		-- rring="Levia. Ring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",
-		back="Tempered Cape", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 	sets.midcast.LightWeatherCure = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
 		-- rring="Levia. Ring",
@@ -165,25 +165,27 @@ function init_gear_sets()
 		head="Ebers Cap", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
 		-- rring="Levia. Ring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",
-		-- Light Obi Theophany Duckbills
+		-- Theophany Duckbills
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}	
 	sets.midcast.LightDayCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
 		-- rring="Levia. Ring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",  rring="Levia. Ring",
+		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Levia. Ring",
 		-- Theophany Duckbills
 		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
 	sets.midcast.LightDayCure = {main={name="Arka IV", priority=2}, sub={name="Pax Grip",priority=1},
-		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Glorious Earring",ear2="Nourish. Earring +1",
-		body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Lebeche Ring",
-		back="Alaunus's Cape",waist="Hachirin-no-Obi",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
-
+		head="Ebers Cap", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
+		-- rring="Levia. Ring",
+		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",
+		-- Theophany Duckbills
+		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}	
+		
 	sets.midcast.Curaga = {main={name="Arka IV", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap", neck="Colossus's Torque", ear1="Novia Earring",ear2="Nourish. Earring",
 		-- lring="Stikini Ring", rring="Stikini Ring",
 		body="Heka's Kalasiris", hands="Theophany Mitts", lring="Sirona's Ring", 
-		back="Tempered Cape", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 
 	sets.midcast.LightWeatherCuraga = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap", neck="Colossus's Torque", ear1="Novia Earring",ear2="Nourish. Earring",
@@ -208,7 +210,7 @@ function init_gear_sets()
 		head="Ebers Cap", neck="Colossus's Torque", ear1="Novia Earring",ear2="Nourish. Earring",
 		-- rring="Levia. Ring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",
-		back="Tempered Cape", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 		
 	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {})
 	sets.midcast.MeleeLightWeatherCure = set_combine(sets.midcast.MeleeCure, {})

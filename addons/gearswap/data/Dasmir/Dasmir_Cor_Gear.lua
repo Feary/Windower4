@@ -20,6 +20,7 @@ function user_setup()
 	
 	gear.tp_jse_back = {name="Camulus's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
+	gear.magic_QD_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	-- 'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}}
 
@@ -57,49 +58,55 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 	
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
-    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes"}
+    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +1"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
     
     sets.precast.CorsairRoll = {
-		head="Lanun Tricorne", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Chasseur's Gants", lring="Barataria Ring", rring="Luzaf's Ring",
-		--  legs="Desultor Tassets"
-		back="Camulus's Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		-- Regal Necklace Etiolation Earring Odndowa Earring Compensator 
+		head="Lanun Tricorne +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		-- dt herc?  lring="Luzaf's Ring",
+		body="Meg. Cuirie +2", hands="Chasseur's Gants +1", lring="Barataria Ring", rring="Luzaf's Ring",
+		-- waist="Flume Belt", legs="Desultor Tassets" -dt feet
+		back="Camulus's Mantle",  legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
-    sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
+    sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
-    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
+    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
     
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
 		--  neck="Stoicheion Medal",
-		head="Meghanada Visor +1", lear="Hecate's Earring", rear="Moldavite earring",
+		head="Meghanada Visor +1", lear="Hecate's Earring", rear="Novio Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Garuda Ring", rring="Garuda Ring",
-		-- waist="Aquiline Belt",
-		back="Toro Cape", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		-- Eschan Stone 
+		back=gear.magic_QD_jse_back, legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 		
     sets.precast.CorsairShot.Proc = {ammo=gear.RAbullet,
         --  neck="Stoicheion Medal",
 		head="Meghanada Visor +1", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Perception Ring", rring="Perception Ring",
 		-- waist="Aquiline Belt",
-		back="Navarch's Mantle",  legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back=gear.magic_QD_jse_back,  legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
+	-- Acc 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
-		--  neck="Stoicheion Medal",
+		--  neck="Sanctity Necklace",
 		head="Meghanada Visor +1", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Perception Ring", rring="Perception Ring",
 		-- waist="Aquiline Belt",
-		back="Navarch's Mantle",  legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back=gear.magic_QD_jse_back,  legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
+	-- for ws bonus
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes"})
+	
+	sets.precast.CorsairShot['Fire Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes"})
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {}
@@ -125,7 +132,7 @@ function init_gear_sets()
 
     sets.precast.RA = {ammo=gear.RAbullet,
 		-- head=gear_taeon_head_Snapshot
-		head="Chass. Tricorne", 
+		head="Chass. Tricorne +1", 
 		-- body="Skopos Jerkin",  
 		body="Ebon Jerkin", hands="Lanun Gants",
 		-- Camulus's Mantle waist="Impulse Belt",
@@ -197,7 +204,7 @@ function init_gear_sets()
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
 		--  Baetyl Pendant Pixie Earring +1 neck="Stoicheion Medal",  lear="Friomisi Earring",
-		head="Lanun Tricorne",  rear="Moonshade Earring",
+		head="Lanun Tricorne +1",  rear="Moonshade Earring",
 		-- Carmine Mail +1  Carmine Fin. Gauntlets +1 Arvina Ringlet +1
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- Eschan Stone Adhe. Gamashes +1
@@ -205,7 +212,7 @@ function init_gear_sets()
 
     sets.precast.WS['Leaden Salute'].Acc = {ammo=gear.MAbullet,
         --  Baetyl Pendant Pixie Earring +1 neck="Stoicheion Medal", lear="Friomisi Earring",
-		head="Lanun Tricorne",   rear="Moonshade Earring",
+		head="Lanun Tricorne +1",   rear="Moonshade Earring",
 		-- Carmine Mail +1  Carmine Fin. Gauntlets +1 Arvina Ringlet +1
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- Eschan Stone Adhe. Gamashes +1
@@ -263,7 +270,7 @@ function init_gear_sets()
 		-- waist="Buccaneer's Belt",
 		back=gear.tp_ranger_jse_back, legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 		
-	sets.buff['Triple Shot'] = {body="Chasseur's Frac"}
+	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
     
     -- Sets to return to when not performing an action.
 	

@@ -13,8 +13,8 @@
         <bggreen>0</bggreen>
         <bgred>0</bgred>
         <dangerwords>
-            <spells>Blizzaja,Kaustra,Thundaga IV,Firaja,Stonega IV,Stoneja,Aeroga IV,Breakga,cure,Meteor,Death,Firaga IV,Blizzaga IV,Aeroja,Thundaja</spells>
-            <weaponskills>Nerve,Danse,Astral Flow,Oblivion&apos;s Mantle,Provenance Watcher starts,Extreme Purgitation,Fulmination,Pawn&apos;s Penumbra,Gates,Frog,Rancid Reflux,Thundris,Divesting Gale,Mandible Massacre,Zantetsuken,Chainspell,Raksha Stance,Arm Cannon,Slimy Proposal,Geirrothr,Eradicator,Ballistic Kick,Yama&apos;s,Gorge,Beastruction</weaponskills>
+            <spells>Blizzaja,Kaustra,Firaja,Stonega IV,Aeroja,Stoneja,Aeroga IV,Breakga,Blizzaga IV,Meteor,Death,Firaga IV,cure,Thundaja,Thundaga IV</spells>
+            <weaponskills>Nerve,Danse,Astral Flow,Oblivion&apos;s Mantle,Provenance Watcher starts,Extreme Purgitation,Fulmination,Pawn&apos;s Penumbra,Gates,Frog,Rancid Reflux,Chainspell,Divesting Gale,Mandible Massacre,Zantetsuken,Thundris,Raksha Stance,Arm Cannon,Slimy Proposal,Ballistic Kick,Eradicator,Geirrothr,Yama&apos;s,Gorge,Beastruction</weaponskills>
         </dangerwords>
         <duration>7</duration>
         <flags>
@@ -30,7 +30,7 @@
             <legion>Soaring,Paramount,Veiled,Mired,Lofty</legion>
             <meebles>Goldwing,Samursk,Umagrhk,Grannus,Silagilith,Svaha,Izyx,Melisseus,Dreyruk,Surtr</meebles>
             <other>Cerberus,Hydra,Enraged,Dvergr,Khimaira,Bloodthirsty,Odin,Tiamat,Khrysokhimaira</other>
-            <voidwatch>Provenance Watcher,Bismarck,Asb,Wazir,Sarbaz,Hahava,Kholomodumo,Kaggen,Ig-Alima,Taweret,Mellonia,Botulus Rex,Cherufe,Uptala,Pil,Kalasutrax,Aello,Celaeno,Rukh,Gugalanna,Gasha,Agathos,Belphoebe,Ocythoe,Akvan,Morta,Shah,Giltine,Gaunab,Qilin,Goji</voidwatch>
+            <voidwatch>Provenance Watcher,Bismarck,Kaggen,Wazir,Goji,Hahava,Qilin,Kholomodumo,Ig-Alima,Taweret,Mellonia,Botulus Rex,Giltine,Uptala,Pil,Shah,Aello,Celaeno,Kalasutrax,Gugalanna,Gasha,Agathos,Ocythoe,Belphoebe,Akvan,Morta,Rukh,Cherufe,Asb,Gaunab,Sarbaz</voidwatch>
         </moblist>
         <padding>0</padding>
         <pos>

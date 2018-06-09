@@ -31,7 +31,13 @@
     <aniyah>
         <version>3.0.1.2</version>
     </aniyah>
+    <dasmir>
+        <version>3.0.1.2</version>
+    </dasmir>
     <feary>
         <version>3.0.1.2</version>
     </feary>
+    <olymoly>
+        <version>3.0.1.2</version>
+    </olymoly>
 </settings>
