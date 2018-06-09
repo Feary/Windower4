@@ -142,13 +142,11 @@ function init_gear_sets()
     sets.midcast.FastRecast = sets.precast.FC
 		
     -- Cure sets
-
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
 	sets.midcast.Cure = {main={name="Arka IV", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
-		-- rring="Levia. Ring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",
+		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
 	sets.midcast.CureSolace = {main={name="Arka IV", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",

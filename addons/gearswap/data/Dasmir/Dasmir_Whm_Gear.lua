@@ -269,7 +269,7 @@ function init_gear_sets()
 		-- neck="Incantor's Torque", lear="Andoaa Earring", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", 
 		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
-		--back="Merciful Cape", feet="Theophany Duckbills +3"
+		--back="Mending Cape", feet="Theophany Duckbills +3"
 		waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 
 	-- Set bonus
@@ -290,16 +290,16 @@ function init_gear_sets()
 		waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 
 	sets.midcast.BarStatus = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
-		-- lear="Andoaa Earring", 
+		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
+		-- neck="Incantor's Torque", lear="Andoaa Earring", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", 
-		-- Stikini Ring Stikini Ring
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
-		-- feet="Theophany Duckbills +3"
-		legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
+		-- back="Mending Cape", feet="Theophany Duckbills +3"
+		waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1",}
 	
 	sets.midcast.BarStatus.Lightarts = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
-		-- lear="Andoaa Earring", 
+		-- neck="Incantor's Torque", lear="Andoaa Earring", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", 
 		--
 		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
@@ -309,12 +309,11 @@ function init_gear_sets()
 	-- 500 Skill
 	sets.midcast.BoostStat = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
-		-- lear="Andoaa Earring", 
+		-- neck="Incantor's Torque", lear="Andoaa Earring", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", 
-		--
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
-		--  back="Merciful Cape", feet="Theophany Duckbills +3"
-		waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
+		-- back="Mending Cape", feet="Theophany Duckbills +3"
+		waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1",}
 
 	sets.midcast.BoostStat.Lightarts = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
