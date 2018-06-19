@@ -329,19 +329,19 @@ function init_gear_sets()
 	
 	-- Resting sets
 	sets.resting = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
-		head="Vitiation Chapeau",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Vitiation Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 	
 
 	-- Idle sets
 	sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
-		head="Vitiation Chapeau",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Vitiation Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
@@ -352,7 +352,7 @@ function init_gear_sets()
 		back="Engulfer Cape +1",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
 	sets.idle.Weak = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 	
@@ -360,7 +360,7 @@ function init_gear_sets()
 	
 	-- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
@@ -418,12 +418,12 @@ function init_gear_sets()
 		back="Ground. Mantle +1",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 		
 	sets.engaged.PhysicalDef = {ammo="Ginsen",
-		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Ayanmo Gambieras +1"}
 		
 	sets.engaged.MagicalDef = {ammo="Ginsen",
-		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Ayanmo Gambieras +1"}
 

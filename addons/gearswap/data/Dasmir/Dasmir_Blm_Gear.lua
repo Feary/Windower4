@@ -234,7 +234,7 @@ function init_gear_sets()
 		
 		-- Minimal damage gear, maximum recast gear for procs.
     sets.midcast['Elemental Magic'].Proc = {main=empty,sub=empty,ammo="Impatiens",
-        head="Nahtirah Hat",neck="Loricate Torque +1",ear1="Gifted Earring",ear2="Loquacious Earring",
+        head="Nahtirah Hat",neck="Loricate Torque +1 +1",ear1="Gifted Earring",ear2="Loquacious Earring",
         body="Spaekona's Coat +3",hands="Hagondes Cuffs +1",ring1="Kishar Ring",ring2="Prolix Ring",
         back="Swith Cape +1",waist="Witful Belt",legs="Assid. Pants +1",feet="Regal Pumps +1"}
 	
@@ -251,13 +251,13 @@ function init_gear_sets()
     
     -- Normal refresh idle set
     sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Befouled Crown",neck="Loricate Torque +1 +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
 		back="Umbra Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.merlinic_refresh_feet}
 
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
     sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",ammo="Staunch Tathlum",
-        head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
+        head="Hagondes Hat +1",neck="Loricate Torque +1 +1",ear1="Genmei Earring",ear2="Etiolation Earring",
         body="Vrikodara Jupon",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
         back="Shadow Mantle",waist="Flax Sash",legs="Assid. Pants +1",feet="Mallquis Clogs +1"}
 		
@@ -265,24 +265,24 @@ function init_gear_sets()
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {feet="Hippo. Socks +1"})
 
 	sets.idle.Death = {main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Staunch Tathlum",
-		head="Befouled Crown",neck="Loricate Torque +1",ear1="Gifted Earring",ear2="Etiolation Earring",
+		head="Befouled Crown",neck="Loricate Torque +1 +1",ear1="Gifted Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
 		back="Umbra Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet=gear.merlinic_refresh_feet}
 
     sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Befouled Crown",neck="Loricate Torque +1 +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
 		back="Umbra Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.merlinic_refresh_feet}
 
     -- Defense sets
 
     sets.defense.PDT = {main="Terra's Staff",sub="Umbra Strap",ammo="Staunch Tathlum",
-        head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
+        head="Hagondes Hat +1",neck="Loricate Torque +1 +1",ear1="Genmei Earring",ear2="Etiolation Earring",
         body="Mallquis Saio +1",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
         back="Shadow Mantle",waist="Flax Sash",legs="Hagondes Pants +1",feet="Mallquis Clogs +1"}
 
     sets.defense.MDT = {main="Terra's Staff",sub="Umbra Strap",ammo="Staunch Tathlum",
-        head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
+        head="Hagondes Hat +1",neck="Loricate Torque +1 +1",ear1="Genmei Earring",ear2="Etiolation Earring",
         body="Mallquis Saio +1",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Shadow Ring",
         back="Solemnity Cape",waist="Flax Sash",legs="Hagondes Pants +1",feet="Mallquis Clogs +1"}
 		

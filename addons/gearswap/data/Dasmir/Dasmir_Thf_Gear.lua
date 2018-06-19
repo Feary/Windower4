@@ -39,7 +39,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Plunderer's Armlets",feet="Skulk. Poulaines"})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Plunderer's Armlets",waist="Chaac Belt",feet="Skulk. Poulaines +1"})
     sets.ExtraRegen = {}
     sets.Kiting = {feet="Fajin Boots"}
 
@@ -49,7 +49,7 @@ function init_gear_sets()
     sets.buff['Sneak Attack'] = {
 		head="Meghanada Visor +1", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
-		-- Aug.Cape.THF.WS
+		-- gear.wsd_jse_back
 		back="Grounded Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
     sets.buff['Trick Attack'] = {
 		head="Meghanada Visor +1", neck="Houyi's Gorget", lear="Dudgeon Earring", rear="Bladeborn Earring",
@@ -65,7 +65,6 @@ function init_gear_sets()
 	sets.Ambush = {} --body="Plunderer's Vest +1"
 	
 	-- Weapon Sets
-	sets.weapons = {}
 	sets.weapons.None = {main="Ternion Dagger",sub="Jugo Kukri"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Throwing = {range="Raider's Bmrng."}
@@ -98,7 +97,7 @@ function init_gear_sets()
     sets.precast.JA['Conspirator'] = {} --body="Skulker's Vest"
     sets.precast.JA['Steal'] = {}--hands="Pill. Armlets +1"
 	sets.precast.JA['Mug'] = {}
-    sets.precast.JA['Despoil'] = {feet="Skulk. Poulaines"}--legs="Skulker's Culottes",
+    sets.precast.JA['Despoil'] = {feet="Skulk. Poulaines +1"}--legs="Skulker's Culottes",
     sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets"}
     sets.precast.JA['Feint'] = {} -- {legs="Assassin's Culottes +2"}
 

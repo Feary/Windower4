@@ -455,7 +455,7 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {main="Bolelabunga",sub="Genbu's Shield",ammo="Hasty Pinion +1",
 		--head="Rawhide Mask",
-		head="Aya. Zucchetto +2", neck="Loricate Torque",ear1="Ethereal Earring", ear2="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Aya. Manopolas +2", ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
@@ -463,7 +463,7 @@ function init_gear_sets()
 	-- Refresh
 	sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		-- Rawhide Mask
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- 
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}		
@@ -471,7 +471,7 @@ function init_gear_sets()
 	sets.idle.Sphere = set_combine(sets.idle, {})--body="Mekosu. Harness"
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
@@ -480,17 +480,17 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield", ammo="Staunch Tathlum",
 		-- Genmei Shield Genmei Earring
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	sets.defense.MDT = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
 	sets.defense.MEVA = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
-      	head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+      	head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
@@ -592,119 +592,119 @@ function init_gear_sets()
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.DTLite = {ammo="Ginsen",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		-- waist="Grunfeld Rope",
 		back=gear.da_jse_back,waist="Windbuffet Belt +1", legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.DTLite.AM = {ammo="Ginsen",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Cessance Earring",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.PDT = {ammo="Staunch Tathlum",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Brutal Earring",ear2="Suppanomimi", 
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Suppanomimi", 
 		-- 
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.MinAcc.DTLite = {ammo="Ginsen",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.MinAcc.PDT = {ammo="Hasty Pinion +1",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.SomeAcc.DTLite = {ammo="Ginsen",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.SomeAcc.PDT = {ammo="Ginsen",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.Acc.DTLite = {ammo="Hasty Pinion +1",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.Acc.PDT = {ammo="Hasty Pinion +1",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.HighAcc.DTLite = {ammo="Hasty Pinion +1",
-		head="Carmine Mask +1",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Carmine Mask +1",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Patricius Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.HighAcc.PDT = {ammo="Hasty Pinion +1",
-		head="Carmine Mask +1",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Carmine Mask +1",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.engaged.FullAcc.DTLite = {ammo="Hasty Pinion +1",
-		head="Carmine Mask +1",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Carmine Mask +1",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Patricius Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.FullAcc.PDT = {ammo="Hasty Pinion +1",
-		head="Carmine Mask +1",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Carmine Mask +1",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Patricius Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.engaged.Fodder.DTLite = {ammo="Ginsen",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.Fodder.DTLite.AM = {ammo="Ginsen",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Brutal Earring",ear2="Suppanomimi",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Suppanomimi",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.MDT = {ammo="Ginsen",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Dark Ring",ring2="Defending Ring",
 		back="Engulfer Cape +1",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.MinAcc.MDT = {ammo="Hasty Pinion +1",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi",ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Dark Ring",ring2="Defending Ring",
 		back="Engulfer Cape +1",waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.SomeAcc.MDT = {ammo="Hasty Pinion +1",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi", ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi", ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Dark Ring",ring2="Defending Ring",
 		back="Engulfer Cape +1",waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.Acc.MDT = {ammo="Hasty Pinion +1",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi", ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi", ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Engulfer Cape +1",waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.HighAcc.MDT = {ammo="Hasty Pinion +1",
-		head="Aya. Zucchetto +2",neck="Loricate Torque",ear1="Suppanomimi", ear2="Cessance Earring",
+		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Suppanomimi", ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Engulfer Cape +1",waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.engaged.FullAcc.MDT = {ammo="Hasty Pinion +1",
-		head="Carmine Mask +1",neck="Loricate Torque",ear1="Suppanomimi", ear2="Cessance Earring",
+		head="Carmine Mask +1",neck="Loricate Torque +1",ear1="Suppanomimi", ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.engaged.Fodder.MDT = {ammo="Ginsen",
-		head="Adhemar Bonnet",neck="Loricate Torque",ear1="Suppanomimi", ear2="Cessance Earring",
+		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Suppanomimi", ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Dark Ring",ring2="Defending Ring",
 		back="Engulfer Cape +1",waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 

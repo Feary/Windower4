@@ -301,12 +301,12 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
-		head="Sulevia's Mask +1",neck="Loricate Torque",ear1="Merman's Earring",ear2="Merman's Earring",
+		head="Sulevia's Mask +1",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Merman's Earring",
 		body="Tartarus Platemail",hands="Sulev. Gauntlets +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Sulev. Leggings +2"}
 		
 	sets.idle.Refresh = {ammo="Staunch Tathlum",
-		head="Jumalik Helm",neck="Loricate Torque",ear1="Merman's Earring",ear2="Merman's Earring",
+		head="Jumalik Helm",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Merman's Earring",
 		body="Jumalik Mail",hands="Sulev. Gauntlets +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Sulev. Leggings +2"}
 
@@ -316,7 +316,7 @@ function init_gear_sets()
 	
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum",
-		head="Sulevia's Mask +1",neck="Loricate Torque",ear1="Merman's Earring",ear2="Merman's Earring",
+		head="Sulevia's Mask +1",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Merman's Earring",
 		body="Tartarus Platemail",hands="Sulev. Gauntlets +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Flume Belt",legs="Sulevi. Cuisses +1",feet="Sulev. Leggings +2"}
 		
@@ -403,27 +403,27 @@ function init_gear_sets()
     
 	sets.engaged.PDT = {
 		ammo="Ginsen",
-		head="Sulevia's Mask +1",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Sulevia's Mask +1",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		--Niqmaddu Ring
 		body="Tartarus Platemail", hands="Sulev. Gauntlets +2", ring1="Rajas Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Sulev. Leggings +2"}
     sets.engaged.SomeAcc.PDT = {	ammo="Ginsen",
-		head="Sulevia's Mask +1",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Sulevia's Mask +1",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		--Niqmaddu Ring
 		body="Tartarus Platemail", hands="Sulev. Gauntlets +2", ring1="Rajas Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Sulev. Leggings +2"}
 	sets.engaged.Acc.PDT = {	ammo="Ginsen",
-		head="Sulevia's Mask +1",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Sulevia's Mask +1",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		--Niqmaddu Ring
 		body="Tartarus Platemail", hands="Sulev. Gauntlets +2", ring1="Rajas Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Sulev. Leggings +2"}
     sets.engaged.FullAcc.PDT = {	ammo="Ginsen",
-		head="Sulevia's Mask +1",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Sulevia's Mask +1",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		--Niqmaddu Ring
 		body="Tartarus Platemail", hands="Sulev. Gauntlets +2", ring1="Rajas Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Sulev. Leggings +2"}
     sets.engaged.Fodder.PDT = {	ammo="Ginsen",
-		head="Sulevia's Mask +1",neck="Loricate Torque",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Sulevia's Mask +1",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		--Niqmaddu Ring
 		body="Tartarus Platemail", hands="Sulev. Gauntlets +2", ring1="Rajas Ring",ring2="Defending Ring",
 		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Sulev. Leggings +2"}

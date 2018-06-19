@@ -65,10 +65,23 @@
         <visible>true</visible>
     </global>
     <akilee>
+        <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </akilee>
     <akili>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -77,6 +90,10 @@
     </akili>
     <almonte>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -131,6 +148,10 @@
     </dasmir>
     <dela>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -138,10 +159,23 @@
         <visible>false</visible>
     </dela>
     <deliah>
+        <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </deliah>
     <denonie>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -167,6 +201,10 @@
     </derion>
     <drecien>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -192,6 +230,10 @@
     </feary>
     <fearyjunior>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -200,6 +242,10 @@
     </fearyjunior>
     <gonzalo>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -208,6 +254,10 @@
     </gonzalo>
     <kavita>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -216,6 +266,10 @@
     </kavita>
     <luisito>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -224,6 +278,10 @@
     </luisito>
     <mehany>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -232,6 +290,10 @@
     </mehany>
     <midnightclam>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -239,10 +301,23 @@
         <visible>false</visible>
     </midnightclam>
     <molyoly>
+        <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </molyoly>
     <most>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -263,6 +338,10 @@
     </olymoly>
     <ravindra>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -271,6 +350,10 @@
     </ravindra>
     <seise>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>
@@ -279,6 +362,10 @@
     </seise>
     <suede>
         <display>
+            <pos>
+                <x>1399</x>
+                <y>289</y>
+            </pos>
             <text>
                 <size>10</size>
             </text>

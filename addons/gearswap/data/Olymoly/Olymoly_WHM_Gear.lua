@@ -55,7 +55,7 @@ function init_gear_sets()
     sets.precast.FC = {
 		--main={name="Grioavolr",priority=2}}, sub={name="Clerisy Strap",priority=1}, ammo="Impatiens",
 		-- neck="Voltsurge Torque",
-		head="Nahtirah Hat", neck="Loricate Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
+		head="Nahtirah Hat", neck="Loricate Torque +1", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		--  Kishar Ring
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Veneficium Ring",
 		-- Kaykaus Tights
@@ -64,7 +64,7 @@ function init_gear_sets()
     sets.precast.FC.DT = {
 		--main={name="Grioavolr",priority=2}}, sub={name="Clerisy Strap",priority=1}, ammo="Impatiens",
 		-- neck="Voltsurge Torque",
-		head="Nahtirah Hat", neck="Loricate Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
+		head="Nahtirah Hat", neck="Loricate Torque +1", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		--  Kishar Ring
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Defending Ring",
 		-- Kaykaus Tights
@@ -84,7 +84,7 @@ function init_gear_sets()
 	
 	sets.precast.FC.Cure.DT = {ammo="Incantor Stone",
 		main="Ababinili",sub="Achaq Grip",
-		head="Piety Cap",neck="Loricate Torque",ear1="Nourish. Earring +1",ear2="Enchntr. Earring +1",
+		head="Piety Cap",neck="Loricate Torque +1",ear1="Nourish. Earring +1",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands="Gende. Gages +1",ring1="Prolix Ring",ring2="Defending Ring",
 		back=gear.fastcast_jse_back,waist="Witful Belt",legs="Ebers Pantaloons",feet="Cure Clogs"}
 
@@ -473,19 +473,19 @@ function init_gear_sets()
 
     -- Resting sets
 	sets.resting = {main="Chatoyant Staff",sub="Oneiros Grip",ammo="Homiliary",
-		head="Inyanga Tiara +2",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2",ring1="Inyanga Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Austerity Belt",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
-		head="Inyanga Tiara +2", neck="Loricate Torque", ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		-- Befouled Crown
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
@@ -495,7 +495,7 @@ function init_gear_sets()
 
 	sets.idle.Weak = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		-- Befouled Crown
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
@@ -505,19 +505,19 @@ function init_gear_sets()
 
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		-- Befouled Crown
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	sets.defense.MDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque", ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
     sets.defense.MEVA = {main="Mafic Cudgel",sub="Genbu's Shield", ammo="Staunch Tathlum",
-		head="Inyanga Tiara +2", neck="Loricate Torque", ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
@@ -535,28 +535,28 @@ function init_gear_sets()
 
     -- Basic set for if no TP weapon is defined.
 	sets.engaged = {ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.Acc = {ammo="Hasty Pinion +1",
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.DW = {ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.DW.Acc = {ammo="Hasty Pinion +1",
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
@@ -564,6 +564,8 @@ function init_gear_sets()
 
 		-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Divine Caress'] = {hands="Ebers Mitts",back="Mending Cape"}
+	
+	sets.buff['Light Arts'] = {} 
 	
 	sets.HPDown = {}
 		

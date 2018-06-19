@@ -17,13 +17,13 @@
 	<!-- Ambuscade -->
 	<trigger match="*Ambuscade*whm*|*Ambuscade*heal*|*Ambuscade*healer*|*Ambuscade*BRD*" notmatch="*please*invite*me*" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Legion.wav"/>
 	<!-- Delve|Zone Boss -->
-	<trigger match="*Plasm*Farm*" notmatch="*please*invite*me*|*can*i*have*it*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\ZoneBoss.wav"/>
+	<trigger match="*Plasm*Farm*|*delve*spam*|" notmatch="*please*invite*me*|*can*i*have*it*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\ZoneBoss.wav"/>
 	<!-- Tales -->
 	<trigger match="*avatar*|*Ramuh*|" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\SealNM.wav"/>
 	<!-- Neo Nyzul -->
-	<trigger match="*Nyzul*|*NNI*" notmatch="" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\ZoneBoss.wav"/>
+	<trigger match="*Nyzul*Farm*|*NNI*Farm*|Token*farm*" notmatch="" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\ZoneBoss.wav"/>
 	<!--Unity-->	
-	<trigger match="*Sov/*Behe*" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Voidwatch.wav"/>
+	<trigger match="*Sov*Behe*" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Voidwatch.wav"/>
 	<!-- Abyssite -->
 	<trigger match="" notmatch="" from="Yell|Shout|Linkshell|Party|Tell|Say" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Abyssite.wav"/>
 	<!-- Exping --> 

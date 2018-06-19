@@ -112,6 +112,13 @@ function init_include()
     -- Non-mode vars that are used for state tracking.
     state.MaxWeaponskillDistance = 0
     state.Buff = {}
+	
+	--Tracking these here because required quick actions on multiple jobs.
+	state.Buff['Light Arts'] = buffactive['Light Arts'] or false
+	state.Buff['Addendum: White'] = buffactive['Addendum: White'] or false
+	state.Buff['Dark Arts'] = buffactive['Dark Arts'] or false
+	state.Buff['Addendum: Black'] = buffactive['Addendum: Black'] or false
+	state.Buff['Accession'] = buffactive['Accession'] or false
 
     -- Classes describe a 'type' of action.  They are similar to state, but
     -- may have any free-form value, or describe an entire table of mapped values.
@@ -153,6 +160,10 @@ function init_include()
     end
 	
 	-- Define and default variables for global functions that can be overwritten.
+	useItem = false
+	useItemName = ''
+	useItemSlot = ''
+	
 	autonuke = 'Fire'
 	autows = ''
 	rangedautows = ''
@@ -174,7 +185,7 @@ function init_include()
 	conserveshadows = true
 	
 	-- Buff tracking that buffactive can't detect
-	lastshadow = "Utsusemi: San"	
+	lastshadow = "Utsusemi: San"
 	lasthaste = 1
 	lastflurry = 1
 	
@@ -308,6 +319,9 @@ function init_include()
 		state.AutoFoodMode:reset()
 		state.AutoWSMode:reset()
 		state.AutoNukeMode:reset()
+		useItem = false
+		useItemName = ''
+		useItemSlot = ''
 		if state.DisplayMode.value then update_job_states()	end
 	end)
 
@@ -316,13 +330,10 @@ function init_include()
 		tickdelay = tickdelay - 1
 		
 		if not (tickdelay <= 0) then return end
-		
-		local in_action, tickspell = midaction()
-		if in_action and tickspell.action_type ~= 'Ranged Attack' then return end
 
 		gearswap.refresh_globals(false)
 
-		if (player ~= nil) and (player.status == 'Idle' or player.status == 'Engaged') and not (midaction() or pet_midaction() or gearswap.cued_packet or moving or buffactive['Sneak'] or buffactive['Invisible'] or silent_check_disable()) then
+		if (player ~= nil) and (player.status == 'Idle' or player.status == 'Engaged') and not (check_midaction() or moving or buffactive['Sneak'] or buffactive['Invisible'] or silent_check_disable()) then
 			if pre_tick then
 				if pre_tick() then return end
 			end
@@ -351,6 +362,7 @@ function init_include()
 				if extra_user_tick() then return end
 			end
 			
+			tickdelay = (framerate / 4)
 		end
 		
 		tickdelay = (framerate / 2)
@@ -677,29 +689,67 @@ end
 
 function default_filtered_action(spell, eventArgs)
 	if spell.english == 'Warp' then
-		windower.send_command('get "Warp Ring" satchel;wait 2;gs c forceequip Warp ring2;wait 11;input /item "Warp Ring" <me>;wait 20;gs c quietenable ring2;put "Warp Ring" satchel')
-		add_to_chat(217,"You can't cast warp, attempting to use Warp Ring instead.")
+		if (item_available('Warp Ring') or player.satchel['Warp Ring']) then
+			useItem = true
+			useItemName = 'Warp Ring'
+			useItemSlot = 'ring2'
+			add_to_chat(217,"You can't cast warp, attempting to use Warp Ring instead, /heal to cancel.")
+		elseif (item_available('Treat Staff') or player.satchel['Treat Staff']) then
+			useItem = true
+			useItemName = 'Treat Staff'
+			useItemSlot = 'main'
+		elseif (item_available('Warp Cudgel') or player.satchel['Warp Cudgel']) then
+			add_to_chat(217,"You can't cast warp, attempting to use Warp Cudgel instead, /heal to cancel.")
+			useItem = true
+			useItemName = 'Warp Cudgel'
+			useItemSlot = 'main'
+			add_to_chat(217,"You can't cast warp, attempting to use Warp Cudgel instead, /heal to cancel.")
+		elseif (item_available('Instant Warp') or player.satchel['Instant Warp']) then
+			useItem = true
+			useItemName = 'Instant Warp'
+			useItemSlot = 'item'
+			add_to_chat(217,"You can't cast warp, attempting to use a Warp Scroll instead, /heal to cancel.")
+		else
+			add_to_chat(122,'Warp unavailable and no warp items available.')
+		end
 		cancel_spell()
 		eventArgs.cancel = true
-		return
+	elseif spell.english == 'Retrace' then
+		if spell.target.type == 'SELF' and (item_available('Instant Retrace') or player.satchel['Instant Retrace']) then
+			useItem = true
+			useItemName = 'Instant Retrace'
+			useItemSlot = 'item'
+			add_to_chat(217,"You can't cast Retrace, attempting to use a Retrace Scroll instead, /heal to cancel.")
+			cancel_spell()
+			eventArgs.cancel = true
+		end
 	elseif spell.english == 'Teleport-Holla' then
-		windower.send_command('get "Dim. Ring (Holla)" satchel;wait 2;gs c forceequip HollaRing ring2;wait 11;input /item "Dim. Ring (Holla)" <me>;wait 20;gs c quietenable ring2;put "Dim. Ring (Holla)" satchel')
-		add_to_chat(217,"You can't cast Teleport-Holla, attempting to use Dimensional Ring (Holla) instead.")
-		cancel_spell()
-		eventArgs.cancel = true
-		return
+		if (item_available('Dim. Ring (Holla)') or player.satchel['Dim. Ring (Holla)']) then
+			useItem = true
+			useItemName = 'Dim. Ring (Holla)'
+			useItemSlot = 'ring2'
+			add_to_chat(217,"You can't cast Teleport-Holla, attempting to use Dimensional Ring instead, /heal to cancel.")
+			cancel_spell()
+			eventArgs.cancel = true
+		end
 	elseif spell.english == 'Teleport-Dem' then
-		windower.send_command('get "Dim. Ring (Dem)" satchel;wait 2;gs c forceequip DemRing ring2;wait 11;input /item "Dim. Ring (Dem)" <me>;wait 20;gs c quietenable ring2;put "Dim. Ring (Dem)" satchel')
-		add_to_chat(217,"You can't cast Teleport-Dem, attempting to use Dimensional Ring (Dem) instead.")
-		cancel_spell()
-		eventArgs.cancel = true
-		return
+		if (item_available('Dim. Ring (Dem)') or player.satchel['Dim. Ring (Dem)']) then
+			useItem = true
+			useItemName = 'Dim. Ring (Dem)'
+			useItemSlot = 'ring2'
+			add_to_chat(217,"You can't cast Teleport-Dem, attempting to use Dimensional Ring instead, /heal to cancel.")
+			cancel_spell()
+			eventArgs.cancel = true
+		end
 	elseif spell.english == 'Teleport-Mea' then
-		windower.send_command('get "Dim. Ring (Mea)" satchel;wait 2;gs c forceequip MeaRing ring2;wait 11;input /item "Dim. Ring (Mea)" <me>;wait 20;gs c quietenable ring2;put "Dim. Ring (Mea)" satchel')
-		add_to_chat(217,"You can't cast Teleport-Mea, attempting to use Dimensional Ring (Mea) instead.")
-		cancel_spell()
-		eventArgs.cancel = true
-		return
+		if (item_available('Dim. Ring (Mea)') or player.satchel['Dim. Ring (Mea)']) then
+			useItem = true
+			useItemName = 'Dim. Ring (Mea)'
+			useItemSlot = 'ring2'
+			add_to_chat(217,"You can't cast Teleport-Mea, attempting to use Dimensional Ring instead, /heal to cancel.")
+			cancel_spell()
+			eventArgs.cancel = true
+		end
 	elseif spell.english == 'Invisible' then
 		if player.main_job == 'DNC' or player.sub_job == 'DNC' then
 			windower.chat.input('/ja "Spectral Jig" <me>')
@@ -787,6 +837,12 @@ function default_post_precast(spell, spellMap, eventArgs)
 					equip(sets.precast.FC.Shadows)
 				end
 			end
+			
+		elseif spell.type == 'JobAbility' then
+		
+			if state.TreasureMode.value ~= 'None' and spell.target.type == 'MONSTER' and not info.tagged_mobs[spell.target.id] then
+				equip(sets.TreasureHunter)
+			end
 
 		elseif spell.type == 'WeaponSkill' then
 			
@@ -804,6 +860,10 @@ function default_post_precast(spell, spellMap, eventArgs)
 			
 			if state.Capacity.value == true then 
 				equip(sets.Capacity)
+			end
+			
+			if state.TreasureMode.value ~= 'None' and not info.tagged_mobs[spell.target.id] then
+				equip(sets.TreasureHunter)
 			end
 		end
 		
@@ -886,6 +946,10 @@ function default_post_midcast(spell, spellMap, eventArgs)
 			end
 		end
 		
+		if state.TreasureMode.value ~= 'None' and spell.target.type == 'MONSTER' and not info.tagged_mobs[spell.target.id] then
+			equip(sets.TreasureHunter)
+		end
+		
 		if state.DefenseMode.value ~= 'None' and spell.action_type == 'Magic' then
 			if sets.midcast[spell.english] and sets.midcast[spell.english].DT then
 				equip(sets.midcast[spell.english].DT)
@@ -926,6 +990,12 @@ end
 function default_aftercast(spell, spellMap, eventArgs)
 
 	if not spell.interrupted then
+		if state.TreasureMode.value ~= 'None' and state.DefenseMode.value == 'None' and spell.target.type == 'MONSTER' and not info.tagged_mobs[spell.target.id] then
+			info.tagged_mobs[spell.target.id] = os.time()
+			if player.target.id == spell.target.id and state.th_gear_is_locked then
+				unlock_TH()
+			end
+		end
 		if is_nuke(spell, spellMap) then
 			if state.MagicBurstMode.value == 'Single' then state.MagicBurstMode:reset() end
 			if state.ElementalWheel.value and (spell.skill == 'Elemental Magic' or spellMap:contains('ElementalNinjutsu')) then
@@ -942,6 +1012,27 @@ function default_aftercast(spell, spellMap, eventArgs)
 			if state.DisplayMode.value then update_job_states()	end
 		elseif spell.english:startswith('Utsusemi') then
 			lastshadow = spell.english
+		elseif spell.action_type == 'Item' and useItem and spell.english == useItemName then
+			useItem = false
+			if useItemSlot == 'item' then
+				windower.send_command('put '..useItemName..' satchel')
+			elseif useItemSlot == 'set' then
+				local slots = T{}
+				for slot,item in pairs(sets[useItemName]) do
+					slots:append(slot)
+				end
+				enable(slots)
+				if player.inventory[useItemName] then
+					windower.send_command('wait 1;put '..set_to_item(useItemName)..' satchel')
+				end
+			else 
+				enable(useItemSlot)
+				if player.inventory[useItemName] then
+					windower.send_command('wait 1;put '..useItemName..' satchel')
+				end
+			end
+			useItemName = ''
+			useItemSlot = ''
 		end
 	end
 
@@ -966,7 +1057,7 @@ end
 
 function filter_precast(spell, spellMap, eventArgs)
 	if check_rnghelper(spell, spellMap, eventArgs) then return end
-	if midaction() or pet_midaction() or gearswap.cued_packet then eventArgs.cancel = true return end
+	if check_midaction(spell, spellMap, eventArgs) then return end
 	if check_disable(spell, spellMap, eventArgs) then return end
 	if check_doom(spell, spellMap, eventArgs) then return end
 	if check_amnesia(spell, spellMap, eventArgs) then return end
@@ -1068,6 +1159,7 @@ end
 
 function default_tick()
 	if check_shadows() then return true end
+	if check_use_item() then return true end
 	if check_sub() then return true end
 	if check_food() then return true end
 	if check_ws() then return true end
@@ -1716,15 +1808,9 @@ end
 -- Function to add kiting gear on top of the base set if kiting state is true.
 -- @param baseSet : The gear set that the kiting gear will be applied on top of.
 function apply_kiting(baseSet)
-    if state.Kiting.value then
-        if sets.Kiting then
-            baseSet = set_combine(baseSet, sets.Kiting)
-        end
-	elseif player.status == 'Idle' and moving and state.DefenseMode.value == 'None' and state.Passive.value == 'None' and (state.IdleMode.value == 'Normal' or state.IdleMode.value == 'Sphere') then
-		if sets.Kiting then
+	if sets.Kiting and (state.Kiting.value or (player.status == 'Idle' and moving and state.DefenseMode.value == 'None' and state.Passive.value == 'None' and (state.IdleMode.value == 'Normal' or state.IdleMode.value == 'Sphere'))) then
 		baseSet = set_combine(baseSet, sets.Kiting)
-		end
-    end
+	end
 	
 	if user_customize_kiting_set then
 		baseSet = user_customize_kiting_set(baseSet)
@@ -1838,11 +1924,37 @@ function status_change(newStatus, oldStatus)
     local eventArgs = {handled = false}
     mote_vars.set_breadcrumbs:clear()
 
-	if newStatus == 2 or newStatus == 3 and state.RngHelper.value then
-		send_command('gs rh clear')
+	if not (newStatus == 'Idle' or newStatus == 'Engaged') then
+		if state.RngHelper.value then
+			send_command('gs rh clear')
+		end
+		
+		if useItem then
+			useItem = false
+			if useItemSlot == 'item' then
+				windower.send_command('put '..useItemName..' satchel')
+			elseif useItemSlot == 'set' then
+				local slots = T{}
+				for slot,item in pairs(sets[useItemName]) do
+					slots:append(slot)
+				end
+				enable(slots)
+				if player.inventory[useItemName] then
+					windower.send_command('wait 1;put '..set_to_item(useItemName)..' satchel')
+				end
+			else 
+				enable(useItemSlot)
+				if player.inventory[useItemName] then
+					windower.send_command('wait 1;put '..useItemName..' satchel')
+				end
+			end
+			add_to_chat(217,"Cancelling using "..useItemName..".")
+			useItemName = ''
+			useItemSlot = ''
+		end
 	end
 	
-    if newStatus == 1 then
+    if newStatus == 'Engaged' then
 		update_combat_form()
 	end
 	
@@ -2036,7 +2148,6 @@ function pet_status_change(newStatus, oldStatus)
 	
 	if not midaction() and not pet_midaction() then handle_equipping_gear(player.status) end
 end
-
 
 -------------------------------------------------------------------------------------------------------------------
 -- Debugging functions.

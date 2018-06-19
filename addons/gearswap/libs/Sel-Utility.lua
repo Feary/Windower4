@@ -641,6 +641,15 @@ function add_table_to_chat(table)
     end
 end
 
+function get_spell_table_by_name(spell_name)
+	for k in pairs(res.spells) do
+		if res.spells[k][language] == spell_name then
+			return res.spells[k]
+		end
+	end
+	return false
+end
+
 function silent_can_use(spellid)
 	local available_spells = windower.ffxi.get_spells()
 	local spell_jobs = copy_entry(res.spells[spellid].levels)
@@ -677,7 +686,29 @@ function can_use(spell)
                 add_to_chat(123,"Abort: You don't have access to ["..(spell[language] or spell.id).."].")
                 return false
             elseif not player.inventory[tool_map[spell.english][language]] and not (player.main_job_id == 13 and player.inventory[universal_tool_map[spell.english][language]]) then
-                add_to_chat(123,"Abort: You don't have the proper ninja tool available.")
+				if player.main_job == 'NIN' and player.satchel[universal_tool_map[spell.english][language]] then
+					windower.send_command('get "'..universal_tool_map[spell.english][language]..'" satchel 99')
+					windower.chat.input:schedule(1.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+				elseif player.satchel[tool_map[spell.english][language]] then
+					windower.send_command('get "'..tool_map[spell.english][language]..'" satchel 99')
+					windower.chat.input:schedule(1.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+				elseif player.main_job == 'NIN' and player.inventory[universal_toolbag_map[spell.english][language]] then
+					windower.chat.input('/item "'..universal_toolbag_map[spell.english][language]..'" <me>')
+					windower.chat.input:schedule(4,'/ma "'..spell.english..'" '..spell.target.raw..'')
+				elseif player.main_job == 'NIN' and player.satchel[universal_toolbag_map[spell.english][language]] then
+					windower.send_command('get "'..universal_toolbag_map[spell.english][language]..'" satchel 1')
+					windower.chat.input:schedule(2,'/item "'..universal_toolbag_map[spell.english][language]..'" <me>')
+					windower.chat.input:schedule(6,'/ma "'..spell.english..'" '..spell.target.raw..'')
+				elseif player.inventory[toolbag_map[spell.english][language]] then
+					windower.chat.input('/item "'..toolbag_map[spell.english][language]..'" <me>')
+					windower.chat.input:schedule(4,'/ma "'..spell.english..'" '..spell.target.raw..'')
+				elseif player.satchel[toolbag_map[spell.english][language]] then
+					windower.send_command('get "'..toolbag_map[spell.english][language]..'" satchel 1')
+					windower.chat.input:schedule(2,'/item "'..universal_toolbag_map[spell.english][language]..'" <me>')
+					windower.chat.input:schedule(6,'/ma "'..spell.english..'" '..spell.target.raw..'')
+				else
+					add_to_chat(123,"Abort: You don't have the proper ninja tool available.")
+				end
                 return false
             end
         -- Filter for spells that you know, but do not currently have access to
@@ -692,10 +723,38 @@ function can_use(spell)
             not (spell_jobs[player.sub_job_id] and spell_jobs[player.sub_job_id] <= player.sub_job_level) then
             
             if addendum_white[spell.id] then
-                add_to_chat(123,"Abort: Addendum: White required for ["..(res.spells[spell.id][language] or spell.id).."].")
+				if state.AutoArts.value and not buffactive["Addendum: White"] and not silent_check_amnesia() and get_current_strategem_count() > 0 then
+					if buffactive["Light Arts"] then
+						windower.chat.input('/ja "Addendum: White" <me>')
+						windower.chat.input:schedule(1.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+					else
+						local abil_recasts = windower.ffxi.get_ability_recasts()
+						if abil_recasts[228] == 0 then
+							windower.chat.input('/ja "Light Arts" <me>')
+							windower.chat.input:schedule(1.5,'/ja "Addendum: White" <me>')
+							windower.chat.input:schedule(3.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+						end
+					end
+				else
+					add_to_chat(123,"Abort: Addendum: White required for ["..(res.spells[spell.id][language] or spell.id).."].")
+				end
             end
             if addendum_black[spell.id] then
-                add_to_chat(123,"Abort: Addendum: Black required for ["..(res.spells[spell.id][language] or spell.id).."].")
+				if state.AutoArts.value and not buffactive["Addendum: Black"] and not silent_check_amnesia() and get_current_strategem_count() > 0 then
+					if buffactive["Dark Arts"] then
+						windower.chat.input('/ja "Addendum: Black" <me>')
+						windower.chat.input:schedule(1.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+					else
+						local abil_recasts = windower.ffxi.get_ability_recasts()
+						if abil_recasts[232] == 0 then
+							windower.chat.input('/ja "Dark Arts" <me>')
+							windower.chat.input:schedule(1.5,'/ja "Addendum: Black" <me>')
+							windower.chat.input:schedule(3.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+						end
+					end
+				else
+					add_to_chat(123,"Abort: Addendum: Black required for ["..(res.spells[spell.id][language] or spell.id).."].")
+				end
             end
             return false
         elseif player.sub_job_id == 20 and ((addendum_white[spell.id] and not buffactive[401] and not buffactive[416]) or
@@ -704,10 +763,38 @@ function can_use(spell)
             (spell_jobs[player.main_job_id] >= 100 and number_of_jps(player.job_points[__raw.lower(res.jobs[player.main_job_id].ens)]) >= spell_jobs[player.main_job_id]) ) ) then
                         
             if addendum_white[spell.id] then
-                add_to_chat(123,"Abort: Addendum: White required for ["..(res.spells[spell.id][language] or spell.id).."].")
+				if state.AutoArts.value and not buffactive["Addendum: White"] and not silent_check_amnesia() and get_current_strategem_count() > 0 then
+					if buffactive["Light Arts"] then
+						windower.chat.input('/ja "Addendum: White" <me>')
+						windower.chat.input:schedule(1.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+					else
+						local abil_recasts = windower.ffxi.get_ability_recasts()
+						if abil_recasts[228] == 0 then
+							windower.chat.input('/ja "Light Arts" <me>')
+							windower.chat.input:schedule(1.5,'/ja "Addendum: White" <me>')
+							windower.chat.input:schedule(3.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+						end
+					end
+				else
+					add_to_chat(123,"Abort: Addendum: White required for ["..(res.spells[spell.id][language] or spell.id).."].")
+				end
             end
             if addendum_black[spell.id] then
-                add_to_chat(123,"Abort: Addendum: Black required for ["..(res.spells[spell.id][language] or spell.id).."].")
+				if state.AutoArts.value and not buffactive["Addendum: Black"] and not silent_check_amnesia() and get_current_strategem_count() > 0 then
+					if buffactive["Dark Arts"] then
+						windower.chat.input('/ja "Addendum: Black" <me>')
+						windower.chat.input:schedule(1.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+					else
+						local abil_recasts = windower.ffxi.get_ability_recasts()
+						if abil_recasts[232] == 0 then
+							windower.chat.input('/ja "Dark Arts" <me>')
+							windower.chat.input:schedule(1.5,'/ja "Addendum: Black" <me>')
+							windower.chat.input:schedule(3.5,'/ma "'..spell.english..'" '..spell.target.raw..'')
+						end
+					end
+				else
+					add_to_chat(123,"Abort: Addendum: Black required for ["..(res.spells[spell.id][language] or spell.id).."].")
+				end
             end
             return false
         elseif spell.type == 'BlueMagic' and not ((player.main_job_id == 16 and table.contains(windower.ffxi.get_mjob_data().spells,spell.id)) 
@@ -891,6 +978,26 @@ function check_doom(spell, spellMap, eventArgs)
 
 end
 
+function check_midaction(spell, spellMap, eventArgs)
+	local in_action, midaction = midaction()
+
+	if eventArgs then
+		if (in_action and midaction.action_type == 'Magic') then
+			eventArgs.cancel = true
+			return true
+		else
+			return false
+		end
+	else
+		if (in_action and midaction.action_type ~= 'Ranged Attack') or pet_midaction() or gearswap.cued_packet then
+			return true
+		else
+			return false
+		end
+	end
+
+end
+
 function check_amnesia(spell, spellMap, eventArgs)
 
 	if spell.type == 'WeaponSkill' or spell.action_type == 'Ability' then
@@ -1054,55 +1161,55 @@ function check_abilities(spell, spellMap, eventArgs)
 	if spell.action_type == 'Ability' then
 		if spell.english == "Light Arts" and buffactive['Light Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Addendum: White" <me>')
+			windower.chat.input('/ja "Addendum: White" <me>')
 			return true
 		elseif spell.english == "Dark Arts" and buffactive['Dark Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Addendum: Black" <me>')
+			windower.chat.input('/ja "Addendum: Black" <me>')
 			return true
 		elseif spell.english == "Penury" and buffactive['Dark Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Parsimony" <me>')
+			windower.chat.input('/ja "Parsimony" <me>')
 			return true
 		elseif spell.english == "Parsimony" and buffactive['Light Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Penury" <me>')
+			windower.chat.input('/ja "Penury" <me>')
 			return true
 		elseif spell.english == "Celerity" and buffactive['Dark Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Alacrity" <me>')
+			windower.chat.input('/ja "Alacrity" <me>')
 			return true
 		elseif spell.english == "Alacrity" and buffactive['Light Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Celerity" <me>')
+			windower.chat.input('/ja "Celerity" <me>')
 			return true
 		elseif spell.english == "Accession" and buffactive['Dark Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Manifestation" <me>')
+			windower.chat.input('/ja "Manifestation" <me>')
 			return true
 		elseif spell.english == "Rapture" and buffactive['Dark Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Ebullience" <me>')
+			windower.chat.input('/ja "Ebullience" <me>')
 			return true
 		elseif spell.english == "Ebullience" and buffactive['Light Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Rapture" <me>')
+			windower.chat.input('/ja "Rapture" <me>')
 			return true
 		elseif spell.english == "Manifestation" and buffactive['Light Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Accession" <me>')
+			windower.chat.input('/ja "Accession" <me>')
 			return true
 		elseif spell.english == "Altruism" and buffactive['Dark Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Focalization" <me>')
+			windower.chat.input('/ja "Focalization" <me>')
 			return true
 		elseif spell.english == "Focalization" and buffactive['Light Arts'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Altruism" <me>')
+			windower.chat.input('/ja "Altruism" <me>')
 			return true
 		elseif spell.english == "Seigan" and buffactive['Seigan'] then
 			eventArgs.cancel = true
-			windower.send_command('@input /ja "Third Eye" <me>')
+			windower.chat.input('/ja "Third Eye" <me>')
 			return true
 		end
 	end
@@ -1113,55 +1220,55 @@ end
 function stepdown(spell, eventArgs)
 	if spell.english == "Aspir III" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Aspir II" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Aspir II" "'..spell.target.raw..'"')
 		return true
 	elseif spell.english == "Aspir II" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Aspir" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Aspir" "'..spell.target.raw..'"')
 		return true
 	elseif spell.english == "Sleepga II" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Sleepga" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Sleepga" "'..spell.target.raw..'"')
 		return true
 	elseif spell.english == "Sleep II" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Sleep" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Sleep" "'..spell.target.raw..'"')
 		return true
 	elseif spell.english == "Arise" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Raise III" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Raise III" "'..spell.target.raw..'"')
 		return true
 	elseif spell.english == "Raise III" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Raise II" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Raise II" "'..spell.target.raw..'"')
 		return true
 	elseif spell.english == "Raise II" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Raise" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Raise" "'..spell.target.raw..'"')
 		return true
 	elseif spell.english == "Reraise IV" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Reraise III" <me>')
+		windower.chat.input('/ma "Reraise III" <me>')
 		return true
 	elseif spell.english == "Reraise III" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Reraise II" <me>')
+		windower.chat.input('/ma "Reraise II" <me>')
 		return true
 	elseif spell.english == "Reraise II" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Reraise" <me>')
+		windower.chat.input('/ma "Reraise" <me>')
 		return true
 	elseif spell.english == "Gravity II" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Gravity" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Gravity" "'..spell.target.raw..'"')
 		return true
 	elseif spell.english == "Horde Lullaby II" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Horde Lullaby" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Horde Lullaby" "'..spell.target.raw..'"')
 		return true
 	elseif spell.english == "Foe Lullaby II" then 
 		eventArgs.cancel = true
-		windower.send_command('input /ma "Foe Lullaby" "'..spell.target.raw..'"')
+		windower.chat.input('/ma "Foe Lullaby" "'..spell.target.raw..'"')
 		return true
 	else
 		return false
@@ -1281,7 +1388,7 @@ function check_cleanup()
 			if player.inventory['Guide Beret'] then send_command('put "Guide Beret" satchel') moveditem = true end
 		end
 		
-		if moveditem then tickdelay = 100 return true end
+		if moveditem then tickdelay = (framerate * 2.3) return true end
 		
 		local shard_name = {'C. Ygg. Shard ','Z. Ygg. Shard ','A. Ygg. Shard ','P. Ygg. Shard '}
 		
@@ -1359,6 +1466,54 @@ function check_auto_tank_ws()
 			return false
 		end
 	end
+end
+
+function check_use_item()
+	if useItem then
+		local CurrentTime = (os.time(os.date('!*t')) + time_offset)
+		if useItemSlot == 'item' and player.inventory[useItemName] then
+			windower.chat.input('/item "'..useItemName..'" <me>')
+			tickdelay = (framerate * 2)
+			return true
+		elseif useItemSlot == 'set' then
+			if item_equipped(set_to_item(useItemName)) and get_item_next_use(set_to_item(useItemName)).usable then
+				windower.chat.input('/item "'..set_to_item(useItemName)..'" <me>')
+				tickdelay = (framerate * 3)
+				return true
+			elseif item_available(set_to_item(useItemName)) and ((get_item_next_use(set_to_item(useItemName)).next_use_time) - CurrentTime) < 10 then
+				windower.send_command('gs c forceequip '..useItemSlot..' '..useItemName..'')
+				tickdelay = (framerate * 2)
+				return true
+			elseif player.satchel[set_to_item(useItemName)] then
+				windower.send_command('get "'..set_to_item(useItemName)..'" satchel')
+				tickdelay = (framerate * 2)
+				return true
+			else
+				add_to_chat(123,''..set_to_item(useItemName)..' not available or ready for use.')
+				useItem = false
+				return false
+			end
+		elseif item_equipped(useItemName) and get_item_next_use(useItemName).usable then
+			windower.chat.input('/item "'..useItemName..'" <me>')
+			tickdelay = (framerate * 3)
+			return true
+		elseif item_available(useItemName) and ((get_item_next_use(useItemName).next_use_time) - CurrentTime) < 10 then
+			windower.send_command('gs c forceequip '..useItemSlot..' '..useItemName..'')
+			tickdelay = (framerate * 2)
+			return true
+		elseif player.satchel[useItemName] then
+			windower.send_command('get '..useItemName..'')
+			tickdelay = (framerate * 2)
+			return true
+		else
+			add_to_chat(123,''..useItemName..' not available or ready for use.')
+			useItem = false
+			return false
+		end
+	else
+		return false
+	end
+	return false
 end
 
 function check_food()
@@ -1738,49 +1893,48 @@ function face_target()
 	end
 end
 
-function check_shadows()
-	if not state.AutoShadowMode.value or moving or areas.Cities:contains(world.area) then return false end
-	local spell_recasts = windower.ffxi.get_spell_recasts()
+function check_ammo()
+	if state.AutoAmmoMode.value and player.equipment.range and not player.in_combat and not world.in_mog_house then
+		if rema_ranged_weapons:contains(player.equipment.range) and get_item_next_use(player.equipment.range).usable then
+			if count_total_ammo(rema_ranged_weapons_ammo[player.equipment.range]) < ammostock then
+				windower.chat.input('/item "'..player.equipment.range..'" <me>')
+				add_to_chat(217,"You're low on "..rema_ranged_weapons_ammo[player.equipment.range]..", using "..player.equipment.range..".")
+				tickdelay = (framerate * 2)
+				return true
+			end
+		end
+	end
+	return false
+end
+
+function count_available_ammo(ammo_name)
+	local ammo_count = 0
 	
-	if player.main_job == 'NIN' then
-		if not has_two_shadows() and player.job_points[(res.jobs[player.main_job_id].ens):lower()].jp_spent > 99 and spell_recasts[340] == 0 then
-			windower.chat.input('/ma "Utsusemi: San" <me>')
-			tickdelay = (framerate * 1.8)
-			return true
-		elseif not has_two_shadows() and spell_recasts[339] == 0 then
-			windower.chat.input('/ma "Utsusemi: Ni" <me>')
-			tickdelay = (framerate * 1.8)
-			return true
-		elseif not has_two_shadows() and spell_recasts[338] == 0 then
-			windower.chat.input('/ma "Utsusemi: Ichi" <me>')
-			tickdelay = (framerate * 2)
-			return true
-		else
-			return false
+    for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4",}) do
+		if player[n][ammo_name] then
+			ammo_count = ammo_count + player[n][ammo_name].count
 		end
-	elseif player.sub_job == 'NIN' then
-		if not has_two_shadows() and spell_recasts[339] == 0 then
-			windower.chat.input('/ma "Utsusemi: Ni" <me>')
-			tickdelay = (framerate * 1.8)
-			return true
-		elseif not has_two_shadows() and spell_recasts[338] == 0 then
-			windower.chat.input('/ma "Utsusemi: Ichi" <me>')
-			tickdelay = (framerate * 2)
-			return true
-		else
-			return false
+    end
+
+	return ammo_count
+end
+
+function count_total_ammo(ammo_name)
+	local ammo_count = 0
+	
+    for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","satchel","sack","case"}) do
+		if player[n][ammo_name] then
+			ammo_count = ammo_count + player[n][ammo_name].count
 		end
-	elseif not has_shadows() and silent_can_use(679) and spell_recasts[679] == 0 then
-		windower.chat.input('/ma "Occultation" <me>')
-		tickdelay = (framerate * 2)
-		return true
-	elseif not has_shadows() and silent_can_use(53) and spell_recasts[53] == 0 then
-		windower.chat.input('/ma "Blink" <me>')
-		tickdelay = (framerate * 2)
-		return true
-	elseif not has_shadows() and silent_can_use(647) and spell_recasts[647] == 0 then
-		windower.chat.input('/ma "Zephyr Mantle" <me>')
-		tickdelay = (framerate * 2)
+    end
+
+	return ammo_count
+end
+
+function check_shadows()
+	if not state.AutoShadowMode.value or moving or areas.Cities:contains(world.area) then 
+		return false
+	elseif handle_shadows() then
 		return true
 	else
 		return false
@@ -1866,6 +2020,24 @@ end
 
 function item_name_to_id(name)
     return (player.inventory[name] or player.wardrobe[name] or player.wardrobe2[name] or player.wardrobe3[name] or player.wardrobe4[name] or {}).id
+end
+
+function set_to_item(set)
+	for k, v in pairs(sets[set]) do
+		if v ~= empty then
+			return v
+		end
+	end
+	return false
+end
+
+function item_equipped(item)
+	for k, v in pairs(player.equipment) do
+		if v == item then
+			return true
+		end
+	end
+	return false
 end
 
 function get_current_strategem_count()

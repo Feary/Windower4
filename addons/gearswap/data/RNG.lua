@@ -15,6 +15,7 @@ function job_setup()
 	state.AutoAmmoMode = M(true,'Auto Ammo Mode')
 	state.Buff.Barrage = buffactive.Barrage or false
 	state.Buff.Camouflage = buffactive.Camouflage or false
+	state.Buff['Double Shot'] = buffactive['Double Shot'] or false
 	state.Buff['Unlimited Shot'] = buffactive['Unlimited Shot'] or false
 	state.Buff['Velocity Shot'] = buffactive['Velocity Shot'] or false
 	
@@ -24,7 +25,7 @@ function job_setup()
 	autows = "Last Stand"
 	rangedautows = "Last Stand"
 	autofood = 'Soy Ramen'
-	ammostock = 200
+	ammostock = 198
 	
 	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoFoodMode","RngHelper","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"Weapons","OffenseMode","RangedMode","WeaponskillMode","IdleMode","Passive","RuneElement","TreasureMode",})
 end
@@ -85,7 +86,14 @@ end
 -- Set eventArgs.handled to true if we don't want any automatic gear equipping to be done.
 function job_post_midcast(spell, spellMap, eventArgs)
 	if spell.action_type == 'Ranged Attack' then
-		if buffactive['Double Shot'] and sets.buff['Double Shot'] then
+		if state.Buff['Camouflage'] and sets.buff.Camouflage then
+			if sets.buff['Camouflage'][state.RangedMode.value] then
+				equip(sets.buff['Camouflage'][state.RangedMode.value])
+			else
+				equip(sets.buff['Camouflage'])
+			end
+		end
+		if state.Buff['Double Shot'] and sets.buff['Double Shot'] then
 			if sets.buff['Double Shot'][state.RangedMode.value] then
 				equip(sets.buff['Double Shot'][state.RangedMode.value])
 			else
@@ -107,21 +115,15 @@ end
 -- buff == buff gained or lost
 -- gain == true if the buff was gained, false if it was lost.
 function job_buff_change(buff, gain)
-	if buff == "Camouflage" then
-		if gain then
-			equip(sets.buff.Camouflage)
-			disable('body')
-		else
-			enable('body')
-		end
-	end
-	
-	if player.equipment.Ranged and buff:contains('Aftermath') then
-		if (player.equipment.Ranged == 'Armageddon' and (buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath: Lv.3']))
-		or (player.equipment.Ranged == 'Gandiva' and (buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath: Lv.3']))
-		or (player.equipment.Ranged == "Annihilator" and state.Buff['Aftermath'])
-		or (player.equipment.Ranged == "Yoichinoyumi" and state.Buff['Aftermath']) then
-			classes.CustomRangedGroups:append('AM')
+	if buff:contains('Aftermath') then
+		classes.CustomRangedGroups:clear()
+		if player.equipment.Ranged then
+			if (player.equipment.Ranged == 'Armageddon' and (buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath: Lv.3']))
+			or (player.equipment.Ranged == 'Gandiva' and (buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath: Lv.3']))
+			or (player.equipment.Ranged == "Annihilator" and state.Buff['Aftermath'])
+			or (player.equipment.Ranged == "Yoichinoyumi" and state.Buff['Aftermath']) then
+				classes.CustomRangedGroups:append('AM')
+			end
 		end
 	end
 end
@@ -189,101 +191,14 @@ function check_ammo(spell, action, spellMap, eventArgs)
 				add_to_chat(122,"Unable to determine default ammo for current weapon.  Leaving empty.")
 			end
 		else
-			if ammo_left() < 15 then
-				add_to_chat(122,"Ammo '"..player.inventory[player.equipment.ammo].shortname:ucfirst().."' running low: ("..ammo_left()..") remaining.")
+			if count_available_ammo(player.equipment.ammo) < 15 then
+				add_to_chat(122,"Ammo '"..player.equipment.ammo.."' running low: ("..count_available_ammo(player.equipment.ammo)..") remaining.")
 			end
 		end
 	end
 end
 
 function job_tick()
-	if check_ammo_makers() then return true end
+	if check_ammo() then return true end
 	return false
-end
-
-function check_ammo_makers()
-	if state.AutoAmmoMode.value and player.equipment.range and not world.in_mog_house then
-			if player.equipment.range == 'Fomalhaut' and get_item_next_use(player.equipment.range).usable then
-				if count_total_ammo('Chrono Bullet') < ammostock then
-					windower.chat.input('/item "Fomalhaut" <me>')
-					add_to_chat(217,"You're low on Chrono Bullets, using Fomalhaut.")
-					tickdelay = (framerate * 2)
-					return true
-				end
-			elseif player.equipment.range == 'Fail-Not' and get_item_next_use(player.equipment.range).usable then
-				if count_total_ammo('Chrono Arrow') < ammostock then
-					windower.chat.input('/item "Fail-Not" <me>')
-					add_to_chat(217,"You're low on Chrono Arrows, using Fail-Not.")
-					tickdelay = (framerate * 2)
-					return true
-				end
-			elseif player.equipment.range == 'Gandiva' and get_item_next_use(player.equipment.range).usable then
-				if count_total_ammo("Artemis's Arrow") < ammostock then
-					windower.chat.input('/item "Gandiva" <me>')
-					add_to_chat(217,"You're low on Artemis's Arrows, using Gandiva.")
-					tickdelay = (framerate * 2)
-					return true
-				end
-			elseif player.equipment.range == 'Yoichinoyumi' and get_item_next_use(player.equipment.range).usable then
-				if count_total_ammo("Yoichi's Arrow") < ammostock then
-					windower.chat.input('/item "Yoichinoyumi" <me>')
-					add_to_chat(217,"You're low on Yoichi's Arrows, using Yoichinoyumi.")
-					tickdelay = (framerate * 2)
-					return true
-				end
-			elseif player.equipment.range == 'Annihilator' and get_item_next_use(player.equipment.range).usable then
-				if count_total_ammo("Eradicating Bullet") < ammostock then
-					windower.chat.input('/item "Annihilator" <me>')
-					add_to_chat(217,"You're low on Eradicating Bullets, using Annihilator.")
-					tickdelay = (framerate * 2)
-					return true
-				end
-			elseif player.equipment.range == 'Armageddon' and get_item_next_use(player.equipment.range).usable then
-				if count_total_ammo("Devastating Bullet") < ammostock then
-					windower.chat.input('/item "Armageddon" <me>')
-					add_to_chat(217,"You're low on Devastating Bullets, using Armageddon.")
-					tickdelay = (framerate * 2)
-					return true
-				end
-			end
-	end
-	return false
-end
-
-function count_total_ammo(bullet_name)
-	local bullet_count = 0
-	
-	if player.inventory[bullet_name] then
-		bullet_count = bullet_count + player.inventory[bullet_name].count
-	end
-	
-	if player.wardrobe[bullet_name] then
-		bullet_count = bullet_count + player.wardrobe[bullet_name].count
-	end
-	
-	if player.wardrobe3[bullet_name] then
-		bullet_count = bullet_count + player.wardrobe3[bullet_name].count
-	end
-	
-	if player.wardrobe4[bullet_name] then
-		bullet_count = bullet_count + player.wardrobe4[bullet_name].count
-	end
-	
-	if player.wardrobe4[bullet_name] then
-		bullet_count = bullet_count + player.wardrobe4[bullet_name].count
-	end
-	
-	if player.satchel[bullet_name] then
-		bullet_count = bullet_count + player.satchel[bullet_name].count
-	end
-	
-	if player.sack[bullet_name] then
-		bullet_count = bullet_count + player.sack[bullet_name].count
-	end
-	
-	if player.case[bullet_name] then
-		bullet_count = bullet_count + player.case[bullet_name].count
-	end
-	
-	return bullet_count
 end

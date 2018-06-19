@@ -13,11 +13,9 @@ sets.precast.Item['Holy Water'] = {}
 
 -- Alluvion Skirmish Gear
 -- Taeon
--- Head
-gear_taeon_head_Snapshot = {name="Taeon Chapeau", augments={'Accuracy+19 Attack+19','"Snapshot"+3','"Snapshot"+2',}}
 
 -- Body
-gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'Accuracy+15 Attack+15','"Fast Cast"+4',}}
+gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'"Fast Cast"+4',}}
 
 -- Telchine
 -- Head
@@ -25,21 +23,18 @@ gear_telchine_head_Duration = { name="Telchine Cap", augments={'"Elemental Sipho
 gear_telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
 
 -- Body
-gear_telchine_body_Duration = {}
+gear_telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +7',}}
 gear_telchine_body_Siphon = {}
 
 --Hands
-gear_telchine_hands_Cure = "Telchine Gloves"
-gear_telchine_hands_Duration = "Telchine Gloves"
--- DRG Acro Hands STP 20/20 STR/DEX
-
+gear_telchine_hands_Cure =  { name="Telchine Gloves",  augments={'Enh. Mag. eff. dur. +5',}}
+gear_telchine_hands_Duration =  { name="Telchine Gloves",  augments={'Enh. Mag. eff. dur. +5',}}
 
 -- Legs
-gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}}
+gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +6',}}
 gear_telchine_legs_Siphon = {}
 
 -- Feet
-gear_telchine_feet_Song = { name="Telchine Pigaches", augments={'Mag. Acc.+20','Song spellcasting time -7%',}}
 gear_telchine_feet_Duration = { name="Telchine Pigaches", augments={'Haste+2','Enh. Mag. eff. dur. +10',}}
 
 ----gear_gada_enhancing_club = {name="Gada",augments={'Enh. Mag. eff. dur. +6','STR+3','Mag. Acc.+8','"Mag.Atk.Bns."+17','DMG:+7',}}

@@ -11,6 +11,35 @@ elements = {}
 
 elements.list = S{'Light','Dark','Fire','Ice','Wind','Earth','Lightning','Water'}
 
+elements.nuke = {['Fire']='Fire', ['Ice']='Blizzard', ['Wind']='Aero', ['Earth']='Stone',
+        ['Lightning']='Thunder', ['Water']='Water', ['Light']='Banish', ['Dark']='Bio',}
+		
+elements.enspell = {['Fire']='Fire', ['Ice']='Blizzard', ['Wind']='Aero', ['Earth']='Stone',
+        ['Lightning']='Thunder', ['Water']='Water', ['Light']='Light', ['Dark']='Dark',}
+		
+elements.ninnuke = {['Fire']='Katon', ['Ice']='Hyoton', ['Wind']='Huton', ['Earth']='Doton',
+        ['Lightning']='Raiton', ['Water']='Suiton', ['Dark']='Kurayami',}
+		
+elements.nukega = {['Fire']='Fira', ['Ice']='Blizza', ['Wind']='Aero', ['Earth']='Stone',
+        ['Lightning']='Thunda', ['Water']='Water', ['Light']='Banish', ['Dark']='Bio',}
+		
+elements.nukera = {['Fire']='Fi', ['Ice']='Blizza', ['Wind']='Ae', ['Earth']='Stone',
+        ['Lightning']='Thunda', ['Water']='Wate',}
+		
+elements.spikes = {['Fire']='Blaze',['Lightning']='Shock',['Ice']='Ice',['Dark']='Dread'}
+		
+elements.helix = {['Fire']='Pyro', ['Ice']='Cryo', ['Wind']='Anemo', ['Earth']='Geo',
+        ['Lightning']='Iono', ['Water']='Hydro', ['Light']='Lumino', ['Dark']='Nocto',}
+		
+elements.threnody = {['Fire']='Ice', ['Ice']='Wind', ['Wind']='Earth', ['Earth']='Ltng.',
+        ['Lightning']='Water', ['Water']='Fire', ['Light']='Dark', ['Dark']='Light',}
+		
+elements.ancient = {['Fire']='Flare', ['Ice']='Freeze', ['Wind']='Tornado', ['Earth']='Quake',
+        ['Lightning']='Burst', ['Water']='Flood', ['Light']='Holy', ['Dark']='Comet',}
+		
+elements.enfeeble = {['Fire']='Burn', ['Ice']='Frost', ['Wind']='Choke', ['Earth']='Rasp',
+        ['Lightning']='Shock', ['Water']='Drown', ['Light']='Dia II', ['Dark']='Bio II',}
+
 elements.weak_to = {['Light']='Dark', ['Dark']='Light', ['Fire']='Ice', ['Ice']='Wind', ['Wind']='Earth', ['Earth']='Lightning',
         ['Lightning']='Water', ['Water']='Fire'}
 
@@ -21,9 +50,7 @@ storms = S{"Aurorastorm", "Voidstorm", "Firestorm", "Sandstorm", "Rainstorm", "W
 		"Aurorastorm II", "Voidstorm II", "Firestorm II", "Sandstorm II", "Rainstorm II", "Windstorm II", "Hailstorm II", "Thunderstorm II"}
 
 elements.storm_of = {['Light']="Aurorastorm", ['Dark']="Voidstorm", ['Fire']="Firestorm", ['Earth']="Sandstorm",
-        ['Water']="Rainstorm", ['Wind']="Windstorm", ['Ice']="Hailstorm", ['Lightning']="Thunderstorm",['Light']="Aurorastorm II",
-		['Dark']="Voidstorm II", ['Fire']="Firestorm II", ['Earth']="Sandstorm II", ['Water']="Rainstorm II", ['Wind']="Windstorm II",
-		['Ice']="Hailstorm II", ['Lightning']="Thunderstorm II"}
+        ['Water']="Rainstorm", ['Wind']="Windstorm", ['Ice']="Hailstorm", ['Lightning']="Thunderstorm",}
 
 spirits = S{"LightSpirit", "DarkSpirit", "FireSpirit", "EarthSpirit", "WaterSpirit", "AirSpirit", "IceSpirit", "ThunderSpirit"}
 elements.spirit_of = {['Light']="Light Spirit", ['Dark']="Dark Spirit", ['Fire']="Fire Spirit", ['Earth']="Earth Spirit",
@@ -145,6 +172,15 @@ mythic_weapons = S{'Conqueror','Glanzfaust','Yagrush','Laevateinn','Murgleis','V
 
 relic_weapons = S{'Spharai','Mandau','Excalibur','Ragnarok','Guttler','Bravura','Apocalypse',
 'Gungnir','Kikoku','Amanomurakumo','Mjollnir','Claustrum','Yoichinoyumi','Annihilator'}
+
+rema_ranged_weapons = S{'Fomalhaut','Death Penalty','Armageddon','Fail-Not','Gandiva','Yoichinoyumi','Annihilator'}
+rema_ranged_weapons_ammo = {['Fomalhaut'] = 'Chrono Bullet',
+								['Death Penalty'] = 'Living Bullet',
+								['Armageddon'] = 'Devastating Bullet',
+								['Fail-Not'] = 'Chrono Arrow',
+								['Gandiva'] = "Artemis's Arrow",
+								['Yoichinoyumi'] = "Yoichi's Arrow",
+								['Annihilator'] = 'Eradicating Bullet'}
 
 elemental_obi_weaponskills = S{'Wildfire','Leaden Salute','Sanguine Blade','Aeolian Edge','Cataclysm','Trueflight','Tachi: Jinpu','Flash Nova'}
 
@@ -308,6 +344,54 @@ tool_map = {
         ['Gekka: Ichi'] = res.items[8803],
         ['Yain: Ichi'] = res.items[8804],
     }
+	
+toolbag_map = {
+        ['Katon: Ichi'] = res.items[5308],
+        ['Katon: Ni'] = res.items[5308],
+        ['Katon: San'] = res.items[5308],
+        ['Hyoton: Ichi'] = res.items[5309],
+        ['Hyoton: Ni'] = res.items[5309],
+        ['Hyoton: San'] = res.items[5309],
+        ['Huton: Ichi'] = res.items[5310],
+        ['Huton: Ni'] = res.items[5310],
+        ['Huton: San'] = res.items[5310],
+        ['Doton: Ichi'] = res.items[5311],
+        ['Doton: Ni'] = res.items[5311],
+        ['Doton: San'] = res.items[5311],
+        ['Raiton: Ichi'] = res.items[5312],
+        ['Raiton: Ni'] = res.items[5312],
+        ['Raiton: San'] = res.items[5312],
+        ['Suiton: Ichi'] = res.items[5313],
+        ['Suiton: Ni'] = res.items[5313],
+        ['Suiton: San'] = res.items[5313],
+        ['Utsusemi: Ichi'] = res.items[5314],
+        ['Utsusemi: Ni'] = res.items[5314],
+        ['Utsusemi: San'] = res.items[5314],
+        ['Jubaku: Ichi'] = res.items[5315],
+        ['Jubaku: Ni'] = res.items[5315],
+        ['Jubaku: San'] = res.items[5315],
+        ['Hojo: Ichi'] = res.items[5316],
+        ['Hojo: Ni'] = res.items[5316],
+        ['Hojo: San'] = res.items[5316],
+        ['Kurayami: Ichi'] = res.items[5317],
+        ['Kurayami: Ni'] = res.items[5317],
+        ['Kurayami: San'] = res.items[5317],
+        ['Dokumori: Ichi'] = res.items[5318],
+        ['Dokumori: Ni'] = res.items[5318],
+        ['Dokumori: San'] = res.items[5318],
+        ['Tonko: Ichi'] = res.items[5319],
+        ['Tonko: Ni'] = res.items[5319],
+        ['Tonko: San'] = res.items[5319],
+        ['Monomi: Ichi'] = res.items[5417],
+        ['Monomi: Ni'] = res.items[5417],
+        ['Aisha: Ichi'] = res.items[5734],
+        ['Myoshu: Ichi'] = res.items[5863],
+        ['Yurin: Ichi'] = res.items[5864],
+        ['Migawari: Ichi'] = res.items[5866],
+        ['Kakka: Ichi'] = res.items[5865],
+        ['Gekka: Ichi'] = res.items[6265],
+        ['Yain: Ichi'] = res.items[6266],
+    }
 
 universal_tool_map = {
         ['Katon: Ichi'] = res.items[2971],
@@ -331,29 +415,76 @@ universal_tool_map = {
         ['Utsusemi: Ichi'] = res.items[2972],
         ['Utsusemi: Ni'] = res.items[2972],
         ['Utsusemi: San'] = res.items[2972],
-        ['Jubaku: Ichi'] = res.items[2973],
-        ['Jubaku: Ni'] = res.items[2973],
-        ['Jubaku: San'] = res.items[2973],
-        ['Hojo: Ichi'] = res.items[2973],
-        ['Hojo: Ni'] = res.items[2973],
-        ['Hojo: San'] = res.items[2973],
-        ['Kurayami: Ichi'] = res.items[2973],
-        ['Kurayami: Ni'] = res.items[2973],
-        ['Kurayami: San'] = res.items[2973],
-        ['Dokumori: Ichi'] = res.items[2973],
-        ['Dokumori: Ni'] = res.items[2973],
-        ['Dokumori: San'] = res.items[2973],
+        ['Jubaku: Ichi'] = res.items[5869],
+        ['Jubaku: Ni'] = res.items[5869],
+        ['Jubaku: San'] = res.items[5869],
+        ['Hojo: Ichi'] = res.items[5869],
+        ['Hojo: Ni'] = res.items[5869],
+        ['Hojo: San'] = res.items[5869],
+        ['Kurayami: Ichi'] = res.items[5869],
+        ['Kurayami: Ni'] = res.items[5869],
+        ['Kurayami: San'] = res.items[5869],
+        ['Dokumori: Ichi'] = res.items[5869],
+        ['Dokumori: Ni'] = res.items[5869],
+        ['Dokumori: San'] = res.items[5869],
         ['Tonko: Ichi'] = res.items[2972],
         ['Tonko: Ni'] = res.items[2972],
         ['Tonko: San'] = res.items[2972],
         ['Monomi: Ichi'] = res.items[2972],
-        ['Aisha: Ichi'] = res.items[2973],
+        ['Aisha: Ichi'] = res.items[5869],
         ['Myoshu: Ichi'] = res.items[2972],
-        ['Yurin: Ichi'] = res.items[2973],
+        ['Yurin: Ichi'] = res.items[5869],
         ['Migawari: Ichi'] = res.items[2972],
         ['Kakka: Ichi'] = res.items[2972],
         ['Gekka: Ichi'] = res.items[2972],
         ['Yain: Ichi'] = res.items[2972],
+    }
+	
+universal_toolbag_map = {
+        ['Katon: Ichi'] = res.items[5867],
+        ['Katon: Ni'] = res.items[5867],
+        ['Katon: San'] = res.items[5867],
+        ['Hyoton: Ichi'] = res.items[5867],
+        ['Hyoton: Ni'] = res.items[5867],
+        ['Hyoton: San'] = res.items[5867],
+        ['Huton: Ichi'] = res.items[5867],
+        ['Huton: Ni'] = res.items[5867],
+        ['Huton: San'] = res.items[5867],
+        ['Doton: Ichi'] = res.items[5867],
+        ['Doton: Ni'] = res.items[5867],
+        ['Doton: San'] = res.items[5867],
+        ['Raiton: Ichi'] = res.items[5867],
+        ['Raiton: Ni'] = res.items[5867],
+        ['Raiton: San'] = res.items[5867],
+        ['Suiton: Ichi'] = res.items[5867],
+        ['Suiton: Ni'] = res.items[5867],
+        ['Suiton: San'] = res.items[5867],
+        ['Utsusemi: Ichi'] = res.items[5868],
+        ['Utsusemi: Ni'] = res.items[5868],
+        ['Utsusemi: San'] = res.items[5868],
+        ['Jubaku: Ichi'] = res.items[5869],
+        ['Jubaku: Ni'] = res.items[5869],
+        ['Jubaku: San'] = res.items[5869],
+        ['Hojo: Ichi'] = res.items[5869],
+        ['Hojo: Ni'] = res.items[5869],
+        ['Hojo: San'] = res.items[5869],
+        ['Kurayami: Ichi'] = res.items[5869],
+        ['Kurayami: Ni'] = res.items[5869],
+        ['Kurayami: San'] = res.items[5869],
+        ['Dokumori: Ichi'] = res.items[5869],
+        ['Dokumori: Ni'] = res.items[5869],
+        ['Dokumori: San'] = res.items[5869],
+        ['Tonko: Ichi'] = res.items[5868],
+        ['Tonko: Ni'] = res.items[5868],
+        ['Tonko: San'] = res.items[5868],
+        ['Monomi: Ichi'] = res.items[5868],
+        ['Aisha: Ichi'] = res.items[5869],
+        ['Myoshu: Ichi'] = res.items[5868],
+        ['Yurin: Ichi'] = res.items[5869],
+        ['Migawari: Ichi'] = res.items[5868],
+        ['Kakka: Ichi'] = res.items[5868],
+        ['Gekka: Ichi'] = res.items[5868],
+        ['Yain: Ichi'] = res.items[5868],
     }
 
 -- Command related mappings.

@@ -330,7 +330,6 @@ function init_gear_sets()
 			        back=gear.ElementalCape,waist=gear.ElementalObi,legs="Carmine Cuisses +1",feet="Medium's Sabots"}
 
 	-- Breath Spells --
-
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +1",neck="Mavi Scarf",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Assim. Jubbah +3",hands="Luh. Bazubands +1",ring1="Kunaji Ring",ring2="Meridian Ring",

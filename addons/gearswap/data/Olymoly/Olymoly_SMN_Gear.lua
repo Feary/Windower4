@@ -273,20 +273,20 @@ function init_gear_sets()
     
     -- Resting sets
     sets.resting = {main="Chatoyant Staff",ammo="Staunch Tathlum",
-        head="Inyanga Tiara +2",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
 		-- feet="Baayami Sabots"
         back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
     
     -- Idle sets
     sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
-        head="Inyanga Tiara +2",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
 		-- feet="Baayami Sabots"
         back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
     
     sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-        head="Inyanga Tiara +2",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Regal Belt",
         back="Moonbeam Cape",waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
@@ -320,7 +320,7 @@ function init_gear_sets()
 		back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches"}
 		
     sets.idle.PDT.Avatar = {main="Mafic Cudgel", sub="Genbu's Shield",ammo="Eminent Sachet",
-        head="Inyanga Tiara +2",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Evans Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
         -- waist="Regal Belt",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches"}
@@ -332,7 +332,7 @@ function init_gear_sets()
 		back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches"}
 		
     sets.idle.PDT.Spirit = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Eminent Sachet",
-        head="Inyanga Tiara +2",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Evans Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
         --waist="Lucidity Sash",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
@@ -363,19 +363,19 @@ function init_gear_sets()
     
     -- Defense sets
     sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Eminent Sachet",
-        head="Inyanga Tiara +2",neck="Loricate Torque",ear1="Handler's Earring +1",ear2="Handler's Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
         body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Regal Belt",
         back="Moonbeam Cape",waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.defense.MDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Eminent Sachet",
-        head="Inyanga Tiara +2",neck="Loricate Torque",ear1="Handler's Earring +1",ear2="Handler's Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
         body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Regal Belt",
         back="Moonbeam Cape",waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.defense.MEVA = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Eminent Sachet",
-        head="Inyanga Tiara +2",neck="Loricate Torque",ear1="Handler's Earring +1",ear2="Handler's Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
         body="Inyanga Jubbah +2",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Regal Belt",
         back="Moonbeam Cape",waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}

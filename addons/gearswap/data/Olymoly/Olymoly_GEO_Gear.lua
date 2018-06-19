@@ -238,19 +238,19 @@ function init_gear_sets()
 
 	-- Resting sets
 	sets.resting = {main="Chatoyant Staff",sub="Elder Grip +1",
-		head="Amalric Coif",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Amalric Coif",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Bagua Mitaines",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +1"}
 
 	-- Idle sets
 
 	sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Amalric Coif",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Amalric Coif",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Bagua Mitaines",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +1"}
 		
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Amalric Coif",neck="Loricate Torque",ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Amalric Coif",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Bagua Mitaines",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +1"}
 		
@@ -258,12 +258,12 @@ function init_gear_sets()
 
 	-- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {main="Mafic Cudgel",sub="Genbu's Shield",range="Dunna",
-		head="Azimuth Hood",neck="Loricate Torque",ear1="Handler's Earring +1",ear2="Handler's Earring",
+		head="Azimuth Hood",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
 		body="Jhakri Robe +2",hands="Geomancy Mitaines",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.idle_jse_back,waist="Isa Belt",legs="Assid. Pants +1",feet="Bagua Sandals"}
 
 	sets.idle.PDT.Pet = {main="Terra's Staff",sub="Umbra Strap",range="Dunna",
-		head="Azimuth Hood",neck="Loricate Torque",ear1="Handler's Earring",ear2="Handler's Earring +1",
+		head="Azimuth Hood",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
 		body="Jhakri Robe +2",hands="Geomancy Mitaines",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.idle_jse_back,waist="Isa Belt",legs="Assid. Pants +1",feet="Bagua Sandals"}
 
@@ -274,18 +274,18 @@ function init_gear_sets()
 	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {})
 
 	sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Amalric Coif",neck="Loricate Torque",ear1="Ethereal Earring",ear2=" Earring",
+		head="Amalric Coif",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2=" Earring",
 		body="Jhakri Robe +2",hands="Bagua Mitaines",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +1"}
 		
 	-- Defense sets	
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Azimuth Hood",neck="Loricate Torque",ear1="Handler's Earring +1",ear2="Etiolation Earring",
+		head="Azimuth Hood",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Etiolation Earring",
 		body="Mallquis Saio +1",hands="Geomancy Mitaines",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonbeam Cape",waist="Flax Sash",legs="Assid. Pants +1",feet="Azimuth Gaiters"}
 
 	sets.defense.MDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		head="Azimuth Hood",neck="Loricate Torque",ear1="Handler's Earring +1",ear2="Etiolation Earring",
+		head="Azimuth Hood",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Etiolation Earring",
 		body="Mallquis Saio +1",hands="Geomancy Mitaines",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flax Sash",legs="Assid. Pants +1",feet="Mallquis Clogs +1"}
 		

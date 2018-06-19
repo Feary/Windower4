@@ -314,6 +314,8 @@ function handle_weapons(cmdParams)
 	if cmdParams[1] == nil then
 		if sets.weapons[state.Weapons.value] then
 			equip_weaponset(state.Weapons.value)
+		elseif state.Weapons.value == 'None' then
+			enable('main','sub','range','ammo')
 		end
 	elseif cmdParams[1] == 'None' then
 	elseif cmdParams[1]:lower() == 'default' then
@@ -335,7 +337,7 @@ function handle_weapons(cmdParams)
 			state.Weapons:set(cmdParams[1])
 		end
 		equip_weaponset(cmdParams[1])
-	else
+	elseif cmdParams ~= 'None' then
 		add_to_chat(123,"Error: A weapons set for ["..cmdParams[1].."] does not exist.")
 		if sets.weapons[state.Weapons.value] then
 			equip_weaponset(state.Weapons.value)
@@ -349,17 +351,16 @@ function equip_weaponset(cmdParams)
 	enable('main','sub','range','ammo')
 	if sets.weapons[cmdParams] then
 		equip(sets.weapons[cmdParams])
-	else
+	elseif cmdParams ~= 'None' then
 		add_to_chat(123,'Error: A weapons set for ['..cmdParams..'] does not exist.')
 	end
 	if state.Weapons.value ~= 'None' then
-		if player.main_job == 'BRD' then
-			disable('main','sub')
-		else
-			disable('main','sub','range')
-			if sets.weapons[state.Weapons.value] and sets.weapons[state.Weapons.value].ammo then
-				disable('ammo')
-			end
+		disable('main','sub')
+		if sets.weapons[state.Weapons.value] and (sets.weapons[state.Weapons.value].range or sets.weapons[state.Weapons.value].ranged) then
+			disable('range')
+		end
+		if sets.weapons[state.Weapons.value] and sets.weapons[state.Weapons.value].ammo then
+			disable('ammo')
 		end
 	end
 end
@@ -380,19 +381,40 @@ function handle_showset(cmdParams)
 	end
 end
 
+function handle_useitem(cmdParams)
+	if cmdParams[1] ~= nil then
+		local equipslot = (table.remove(cmdParams, 1)):lower()
+		local useitem = table.concat(cmdParams, ' ')
+		useItem = true
+		if useItemName ~= useitem then
+			add_to_chat(217,"Using "..useitem..", /heal to cancel.")
+		end
+		useItemName = useitem
+		useItemSlot = equipslot
+	else
+		add_to_chat(122,'Syntax error with UseItem command - Use: gs c UseItem equipslot Item Name (Use item for non-equippable items).')
+	end
+end
+
 function handle_forceequip(cmdParams)
 	if cmdParams[1] ~= nil then
-		if cmdParams[2] == 'all' then
-			enable('main','sub','range','ammo','head','neck','lear','rear','body','hands','lring','rring','back','waist','legs','feet')
-			equip(cmdParams[1])
-			disable('main','sub','range','ammo','head','neck','lear','rear','body','hands','lring','rring','back','waist','legs','feet')
-		else
-			enable(cmdParams[2])
+		local equipslot = (table.remove(cmdParams, 1)):lower()
+		if equipslot == 'set' then
+			local slots = T{}
+			for slot,item in pairs(sets[cmdParams[1]]) do
+				slots:append(slot)
+			end
+			enable(slots)
 			equip(sets[cmdParams[1]])
-			disable(cmdParams[2])
+			disable(slots)
+		else
+			local gear = table.concat(cmdParams, ' ')
+			enable(equipslot)
+			equip({[equipslot]=gear})
+			disable(equipslot)
 		end
 	else
-		add_to_chat(122,'Syntax error with ForceEquip command - Use: gs c ForceEquip setname (slot or all).')
+		add_to_chat(122,'Syntax error with ForceEquip command - Use: gs c ForceEquip setname (slot or set).')
 	end
 end
 
@@ -421,6 +443,53 @@ function handle_autonuke(cmdParams)
 		autonuke = table.concat(cmdParams, ' '):ucfirst()
 		add_to_chat(122,'Your autonuke spell is set to '..autonuke..'.')
 		if state.DisplayMode.value then update_job_states()	end
+	end
+end
+
+function handle_shadows()
+	local spell_recasts = windower.ffxi.get_spell_recasts()
+	if player.main_job == 'NIN' then
+		if not has_two_shadows() and player.job_points[(res.jobs[player.main_job_id].ens):lower()].jp_spent > 99 and spell_recasts[340] == 0 then
+			windower.chat.input('/ma "Utsusemi: San" <me>')
+			tickdelay = (framerate * 1.8)
+			return true
+		elseif not has_two_shadows() and spell_recasts[339] == 0 then
+			windower.chat.input('/ma "Utsusemi: Ni" <me>')
+			tickdelay = (framerate * 1.8)
+			return true
+		elseif not has_two_shadows() and spell_recasts[338] == 0 then
+			windower.chat.input('/ma "Utsusemi: Ichi" <me>')
+			tickdelay = (framerate * 2)
+			return true
+		else
+			return false
+		end
+	elseif player.sub_job == 'NIN' then
+		if not has_two_shadows() and spell_recasts[339] == 0 then
+			windower.chat.input('/ma "Utsusemi: Ni" <me>')
+			tickdelay = (framerate * 1.8)
+			return true
+		elseif not has_two_shadows() and spell_recasts[338] == 0 then
+			windower.chat.input('/ma "Utsusemi: Ichi" <me>')
+			tickdelay = (framerate * 2)
+			return true
+		else
+			return false
+		end
+	elseif not has_shadows() and silent_can_use(679) and spell_recasts[679] == 0 then
+		windower.chat.input('/ma "Occultation" <me>')
+		tickdelay = (framerate * 2)
+		return true
+	elseif not has_shadows() and silent_can_use(53) and spell_recasts[53] == 0 then
+		windower.chat.input('/ma "Blink" <me>')
+		tickdelay = (framerate * 2)
+		return true
+	elseif not has_shadows() and silent_can_use(647) and spell_recasts[647] == 0 then
+		windower.chat.input('/ma "Zephyr Mantle" <me>')
+		tickdelay = (framerate * 2)
+		return true
+	else
+		return false
 	end
 end
 
@@ -572,59 +641,54 @@ function handle_curecheat(cmdParams)
 end
 
 function handle_smartcure()
+	local cureTarget = '<t>'
 	local missingHP
 	local spell_recasts = windower.ffxi.get_spell_recasts()
-	
 	-- If curing ourself, get our exact missing HP
-	if player.target.type == 'NONE' then
-		add_to_chat(123,'Abort: You have no target.')
-		return
-	elseif player.target.type == "SELF" then
+	if player.target.type == "SELF" or player.target.type == 'MONSTER' or player.target.type == 'NONE' then
 		missingHP = player.max_hp - player.hp
+		cureTarget = '<me>'
 	-- If curing someone in our alliance, we can estimate their missing HP
 	elseif player.target.isallymember then
 		local target = find_player_in_alliance(player.target.name)
 		local est_max_hp = target.hp / (target.hpp/100)
 		missingHP = math.floor(est_max_hp - target.hp)
-	elseif player.target.type == 'MONSTER' then
-		add_to_chat(123,'Abort: You are targetting a monster.')
-		return
 	else
 		if player.target.hpp > 95 then
 			if spell_recasts[1] == 0 then
-				windower.chat.input('/ma "Cure" <t>')
+				windower.chat.input('/ma "Cure" '..cureTarget..'')
 			elseif spell_recasts[2] == 0 then
-				windower.chat.input('/ma "Cure II" <t>')
+				windower.chat.input('/ma "Cure II" '..cureTarget..'')
 			else
 				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
 			end
 		elseif player.target.hpp > 85 then
 			if spell_recasts[2] == 0 then
-				windower.chat.input('/ma "Cure II" <t>')
+				windower.chat.input('/ma "Cure II" '..cureTarget..'')
 			elseif spell_recasts[3] == 0 then
-				windower.chat.input('/ma "Cure III" <t>')
+				windower.chat.input('/ma "Cure III" '..cureTarget..'')
 			elseif spell_recasts[1] == 0 then
-				windower.chat.input('/ma "Cure" <t>')
+				windower.chat.input('/ma "Cure" '..cureTarget..'')
 			else
 				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
 			end
 		elseif player.target.hpp > 70 then
 			if spell_recasts[3] == 0 then
-				windower.chat.input('/ma "Cure III" <t>')
+				windower.chat.input('/ma "Cure III" '..cureTarget..'')
 			elseif spell_recasts[4] == 0 then
-				windower.chat.input('/ma "Cure IV" <t>')
+				windower.chat.input('/ma "Cure IV" '..cureTarget..'')
 			elseif spell_recasts[2] == 0 then
-				windower.chat.input('/ma "Cure II" <t>')
+				windower.chat.input('/ma "Cure II" '..cureTarget..'')
 			else
 				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
 			end
 		else
 			if spell_recasts[4] == 0 then
-				windower.chat.input('/ma "Cure IV" <t>')
+				windower.chat.input('/ma "Cure IV" '..cureTarget..'')
 			elseif spell_recasts[3] == 0 then
-				windower.chat.input('/ma "Cure III" <t>')
+				windower.chat.input('/ma "Cure III" '..cureTarget..'')
 			elseif spell_recasts[2] == 0 then
-				windower.chat.input('/ma "Cure II" <t>')
+				windower.chat.input('/ma "Cure II" '..cureTarget..'')
 			else
 				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
 			end
@@ -634,39 +698,39 @@ function handle_smartcure()
 	
 	if missingHP < 170 then
 		if spell_recasts[1] == 0 then
-			windower.chat.input('/ma "Cure" <t>')
+			windower.chat.input('/ma "Cure" '..cureTarget..'')
 		elseif spell_recasts[2] == 0 then
-			windower.chat.input('/ma "Cure II" <t>')
+			windower.chat.input('/ma "Cure II" '..cureTarget..'')
 		else
 			add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
 		end
 	elseif missingHP < 350 then
 		if spell_recasts[2] == 0 then
-			windower.chat.input('/ma "Cure II" <t>')
+			windower.chat.input('/ma "Cure II" '..cureTarget..'')
 		elseif spell_recasts[3] == 0 then
-			windower.chat.input('/ma "Cure III" <t>')
+			windower.chat.input('/ma "Cure III" '..cureTarget..'')
 		elseif spell_recasts[1] == 0 then
-			windower.chat.input('/ma "Cure" <t>')
+			windower.chat.input('/ma "Cure" '..cureTarget..'')
 		else
 			add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
 		end
 	elseif missingHP < 700 then
 		if spell_recasts[3] == 0 then
-			windower.chat.input('/ma "Cure III" <t>')
+			windower.chat.input('/ma "Cure III" '..cureTarget..'')
 		elseif spell_recasts[4] == 0 then
-			windower.chat.input('/ma "Cure IV" <t>')
+			windower.chat.input('/ma "Cure IV" '..cureTarget..'')
 		elseif spell_recasts[2] == 0 then
-			windower.chat.input('/ma "Cure II" <t>')
+			windower.chat.input('/ma "Cure II" '..cureTarget..'')
 		else
 			add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
 		end
 	else
 		if spell_recasts[4] == 0 then
-			windower.chat.input('/ma "Cure IV" <t>')
+			windower.chat.input('/ma "Cure IV" '..cureTarget..'')
 		elseif spell_recasts[3] == 0 then
-			windower.chat.input('/ma "Cure III" <t>')
+			windower.chat.input('/ma "Cure III" '..cureTarget..'')
 		elseif spell_recasts[2] == 0 then
-			windower.chat.input('/ma "Cure II" <t>')
+			windower.chat.input('/ma "Cure II" '..cureTarget..'')
 		else
 			add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
 		end
@@ -907,6 +971,7 @@ selfCommandMaps = {
 	['stopping'] 		= handle_stopping,
     ['help']     		= handle_help,
     ['forceequip']  	= handle_forceequip,
+	['useitem']			= handle_useitem,
     ['quietenable'] 	= handle_quietenable,
 	['quietdisable']	= handle_quietdisable,
 	['autonuke'] 		= handle_autonuke,
@@ -921,4 +986,5 @@ selfCommandMaps = {
 	['curecheat'] 		= handle_curecheat,
 	['smartcure']		= handle_smartcure,
 	['mount'] 			= handle_mount,
+	['shadows']			= handle_shadows,
 	}

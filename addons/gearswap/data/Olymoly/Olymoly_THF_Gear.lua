@@ -407,7 +407,7 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Staunch Tathlum",
-        head="Meghanada Visor +2",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Sanare Earring",
+        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 
@@ -421,17 +421,17 @@ function init_gear_sets()
     -- Defense sets
 
     sets.defense.PDT = {ammo="Staunch Tathlum",
-        head="Meghanada Visor +2",neck="Loricate Torque",ear1="Etiolation Earring",ear2="Sanare Earring",
+        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-       	head="Meghanada Visor +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+       	head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		back="Engulfer Cape +1", waist="Flume Belt", legs="Mummu Kecks +1", feet="Meg. Jam. +2"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		head="Meghanada Visor +2", neck="Loricate Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		back="Engulfer Cape +1", waist="Flume Belt", legs="Mummu Kecks +1", feet="Meg. Jam. +2"}
 
@@ -467,27 +467,27 @@ function init_gear_sets()
         back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Meg. Jam. +2"}
 
     sets.engaged.PDT = {ammo="Staunch Tathlum",
-        head="Adhemar Bonnet",neck="Loricate Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+        head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 
     sets.engaged.SomeAcc.PDT = {ammo="Staunch Tathlum",
-        head="Adhemar Bonnet",neck="Loricate Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+        head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 		
     sets.engaged.Acc.PDT = {ammo="Staunch Tathlum",
-        head="Adhemar Bonnet",neck="Loricate Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+        head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 
     sets.engaged.FullAcc.PDT = {ammo="Staunch Tathlum",
-        head="Adhemar Bonnet",neck="Loricate Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+        head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Grunfeld Rope",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
 		
     sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum",
-        head="Adhemar Bonnet",neck="Loricate Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
+        head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +1",feet=gear.herculean_dt_feet}
 		

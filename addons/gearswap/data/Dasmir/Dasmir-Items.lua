@@ -20,6 +20,12 @@ gear_taeon_head_Snapshot = "Taeon Chapeau"
 gear_taeon_body_Fastcast = "Taeon Tabard"
 
 -- Telchine
+-- Head 2/2
+-- Body  2/2
+-- Hands 2/2
+-- Legs 3/2
+-- Feet 2/3
+
 -- Head
 gear_telchine_head_Duration = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}}
 gear_telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
@@ -30,12 +36,12 @@ gear_telchine_body_Siphon = {}
 
 --Hands
 -- dont need cure hands atm
-gear_telchine_hands_Cure = { name="Telchine Gloves",  augments={'Enh. Mag. eff. dur. +7',}}
-gear_telchine_hands_Duration = { name="Telchine Gloves",  augments={'Enh. Mag. eff. dur. +7',}}
--- DRG Acro Hands STP 20/20 STR/DEX
+gear_telchine_hands_Cure = { name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +7',}}
+gear_telchine_hands_Duration = { name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +7',}}
+
 
 -- Legs
-gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +6',}}
+gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
 gear_telchine_legs_Siphon = {}
 
 -- Feet

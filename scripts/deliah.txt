@@ -1,0 +1,12 @@
+put alexandrite locker all
+put pluton satchel all
+put beitetsu satchel all
+put Riftborn Boulder satchel all
+put Heavy Metal satchel all
+put H-P Bayld storage all
+put 100 byne bill satchel all
+put one byne bill satchel all
+put tukuku whiteshell satchel all
+put jade whiteshell satchel all
+put ordelle bronepiece satchel all
+put montiont silverpiece satchel all

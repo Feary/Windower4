@@ -260,34 +260,34 @@ function init_gear_sets()
 	
 	-- Resting sets
 	sets.resting = {main={name="Chatoyant Staff", priority=2}, sub={name=empty, priority=1}, range="Gjallarhorn",
-		head="Inyanga Tiara +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
 	
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
-		head="Inyanga Tiara +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
 
 	sets.idle.Weak = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Assiduity Pants +1", feet="Aya. Gambieras +2"}
 	
 	sets.idle.PDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
-		head="Aya. Zucchetto +2", neck="Loricate Torque",  lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1",  lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 	
 	-- Defense sets
 	sets.defense.PDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
-		head="Aya. Zucchetto +2", neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 	sets.defense.MDT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
-		head="Inyanga Tiara +2",neck="Loricate Torque", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Inyanga Tiara +2",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyanga Crackows +1"}
 
