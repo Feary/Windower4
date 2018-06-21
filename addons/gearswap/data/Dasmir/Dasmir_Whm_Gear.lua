@@ -100,26 +100,26 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Rajas Ring", rring="Ramuh Ring",
+		-- hands="Aya. Manopolas +2 +2",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.precast.WS['Hexa Strike'] = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Rajas Ring", rring="Ramuh Ring",
+		-- hands="Aya. Manopolas +2 +2",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 	
     sets.precast.WS['Flash Nova'] = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Rajas Ring", rring="Ramuh Ring",
+		-- hands="Aya. Manopolas +2 +2",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     sets.precast.WS['Mystic Boon'] = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Rajas Ring", rring="Ramuh Ring",
+		-- hands="Aya. Manopolas +2 +2",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     -- Midcast Sets
@@ -480,22 +480,20 @@ function init_gear_sets()
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
 		head="Aya. Zucchetto +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		--hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Inyan. Dastanas +2", lring="Dark Ring", rring="Defending Ring",
-		-- 
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2 +2", lring="Dark Ring", rring="Defending Ring",
 		back="Cheviot Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
 	sets.idle.Weak = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
 		head="Aya. Zucchetto +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Dark Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Cheviot Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     -- Defense sets
 	sets.defense.PDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
 		head="Aya. Zucchetto +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Dark Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Cheviot Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.defense.MDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
@@ -525,26 +523,26 @@ function init_gear_sets()
     -- Basic set for if no TP weapon is defined.
     sets.engaged = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Rajas Ring", rring="Ramuh Ring",
+		-- hands="Aya. Manopolas +2 +2",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
     sets.engaged.Acc = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Rajas Ring", rring="Ramuh Ring",
+		-- hands="Aya. Manopolas +2 +2",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
     sets.engaged.DW = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Rajas Ring", rring="Ramuh Ring",
+		-- hands="Aya. Manopolas +2 +2",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
     sets.engaged.DW.Acc = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas", lring="Rajas Ring", rring="Ramuh Ring",
+		-- hands="Aya. Manopolas +2 +2",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.

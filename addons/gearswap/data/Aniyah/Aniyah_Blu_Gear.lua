@@ -64,7 +64,7 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 	--
-	sets.buff['Burst Affinity'] = {legs="Magus Shalwar", feet="Hashishin Basmak"}
+	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar", feet="Hashishin Basmak"}
 	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk", feet="Luhlaza Charuqs +1"}
 	sets.buff.Convergence = {head="Luhlaza Keffiyeh"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
@@ -474,10 +474,10 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {main="Tanmogayi +1",sub="Tanmogayi"}
-		-- Herculean Head Twilight Torque
+		-- Herculean Head 
 		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest  Herculean Hands
-		body="Jhakri Robe +1", hands="Aya. Manopolas +1", lring="Vocane Ring", rring="Defending Ring",
+		body="Jhakri Robe +1", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		-- Herculean Boots 
 		back="Repulse Mantle", waist="Flume Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +1"}
 
@@ -485,34 +485,34 @@ function init_gear_sets()
 		-- Herculean Head 
 		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest Herculean Hands
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Vocane Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		-- Herculean Boots 
-		back="Repulse Mantle", waist="Flume Belt", legs="Jhakri Slops +2", feet="Aya. Gambieras +1"}
+		back="Repulse Mantle", waist="Flume Belt", legs="Jhakri Slops +2", feet="Aya. Gambieras +2"}
 
 	-- Defense sets
 	sets.defense.PDT = {main="Tanmogayi +1",sub="Tanmogayi"}
 		-- Herculean Head
 		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest Herculean Hands
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Vocane Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		-- Herculean Boots 
-		back="Repulse Mantle", waist="Flume Belt", legs="Jhakri Slops +2", feet="Aya. Gambieras +1"}
+		back="Repulse Mantle", waist="Flume Belt", legs="Jhakri Slops +2", feet="Aya. Gambieras +2"}
 
 	sets.defense.MDT = {main="Tanmogayi +1",sub="Tanmogayi"}
 		-- Herculean Head 
 		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest  Herculean Hands
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Vocane Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		--  Herculean Boots 
-		back="Felicitas Cape", waist="Flume Belt", legs="Jhakri Slops +2", feet="Aya. Gambieras +1"}			
+		back="Felicitas Cape", waist="Flume Belt", legs="Jhakri Slops +2", feet="Aya. Gambieras +2"}			
 
     sets.defense.MEVA = {main="Tanmogayi +1",sub="Tanmogayi"}	
 		-- Herculean Head
 		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest Herculean Hands
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Vocane Ring", rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		--  Herculean Boots 
-		back="Felicitas Cape", waist="Flume Belt", legs="Jhakri Slops +2", feet="Aya. Gambieras +1"}			
+		back="Felicitas Cape", waist="Flume Belt", legs="Jhakri Slops +2", feet="Aya. Gambieras +2"}			
 
 
 	sets.defense.NukeLock = sets.midcast['Blue Magic'].Magical
