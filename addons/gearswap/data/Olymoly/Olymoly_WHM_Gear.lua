@@ -82,8 +82,8 @@ function init_gear_sets()
 			main="Ababinili",sub="Achaq Grip",
 			lear="Nourish. Earring +1", feet="Cure Clogs"})
 	
-	sets.precast.FC.Cure.DT = {ammo="Incantor Stone",
-		main="Ababinili",sub="Achaq Grip",
+	sets.precast.FC.Cure.DT = {main="Ababinili",sub="Achaq Grip", ammo="Incantor Stone",
+		-- Voltsurge
 		head="Piety Cap",neck="Loricate Torque +1",ear1="Nourish. Earring +1",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands="Gende. Gages +1",ring1="Prolix Ring",ring2="Defending Ring",
 		back=gear.fastcast_jse_back,waist="Witful Belt",legs="Ebers Pantaloons",feet="Cure Clogs"}
@@ -175,7 +175,7 @@ function init_gear_sets()
 		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		--Ebers Pantaloons +1 
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCureSolace = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
@@ -184,7 +184,7 @@ function init_gear_sets()
 		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		--Ebers Pantaloons +1 
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
 	sets.midcast.LightDayCureSolace = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
@@ -193,7 +193,7 @@ function init_gear_sets()
 		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		--Ebers Pantaloons +1 
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
 	sets.midcast.LightDayCure = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
@@ -202,7 +202,7 @@ function init_gear_sets()
 		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		--Ebers Pantaloons +1 
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
 	sets.midcast.Curaga = {	
 		-- 
@@ -219,7 +219,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 Kaykaus Cuffs A
 		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		-- Ebers Pantaloons +1 
-		back="Twilight Cape", waist="Hachirin-no-Obi",  legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 		
 	sets.midcast.LightDayCuraga = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
@@ -228,7 +228,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 Kaykaus Cuffs A
 		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		-- Ebers Pantaloons +1 
-		back="Twilight Cape", waist="Hachirin-no-Obi",  legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 		
 	sets.midcast.Cure.DT = {
 		-- Queller Rod D
@@ -325,7 +325,7 @@ function init_gear_sets()
 		body="Ebers Bliaud", hands="Ebers Mitts", lring="Stikini Ring", rring="Stikini Ring",
 		back="Merciful Cape", waist="Olympus Sash", legs="Ebers Pantaloons", feet="Ebers Duckbills"}
 
-	-- Caps 500 /sch need 80 need 106 blm/rdm
+	-- Caps 500 /sch  need 106 blm/rdm
 	sets.midcast.BarStatus = {
 		-- Gada
 		main={name="Beneficus",priority=2}, sub={name="Sors Shield",priority=1},
@@ -336,7 +336,7 @@ function init_gear_sets()
 		-- Telchine Braconi  Piety Pantaloons +1 Theo. Duckbills +3
 		back="Merciful Cape", waist="Olympus Sash", legs="Piety Pantaloons", feet="Ebers Duckbills"}
 
-	-- Caps 500 to Cap - Need 106
+	-- Caps 500 to Cap - need 106 blm/rdm
 	-- Duration
 	sets.midcast.BoostStat = {
 		--main={name="Gada", priority=2},
@@ -488,7 +488,7 @@ function init_gear_sets()
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		-- Assid. Pants +1 Chironic Slippers DT
+		-- Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
@@ -508,7 +508,7 @@ function init_gear_sets()
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		-- Assid. Pants +1 Chironic Slippers DT
+		-- Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	sets.defense.MDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
@@ -522,9 +522,9 @@ function init_gear_sets()
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
 	-- Gear for specific elemental nukes.
-	sets.element.Wind = {main="Marin Staff +1"}
-	sets.element.Ice = {main="Ngqoqwanb"}
-	sets.element.Earth = {neck="Quanpur Necklace"}
+	sets.element.Wind = {}--main="Marin Staff +1"
+	sets.element.Ice = {}--main="Ngqoqwanb"
+	sets.element.Earth = {}--neck="Quanpur Necklace"
 
 		-- Engaged sets
 
@@ -537,28 +537,28 @@ function init_gear_sets()
 	sets.engaged = {ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.Acc = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.DW = {ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.DW.Acc = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=Aug.Darkring1, rring="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 

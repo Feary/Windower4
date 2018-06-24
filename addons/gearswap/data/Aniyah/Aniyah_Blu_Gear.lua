@@ -475,7 +475,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {main="Tanmogayi +1",sub="Tanmogayi"}
 		-- Herculean Head 
-		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest  Herculean Hands
 		body="Jhakri Robe +1", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		-- Herculean Boots 
@@ -483,7 +483,7 @@ function init_gear_sets()
 
 	sets.idle.PDT = {main="Tanmogayi +1",sub="Tanmogayi"}
 		-- Herculean Head 
-		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest Herculean Hands
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		-- Herculean Boots 
@@ -492,7 +492,7 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {main="Tanmogayi +1",sub="Tanmogayi"}
 		-- Herculean Head
-		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest Herculean Hands
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		-- Herculean Boots 
@@ -500,7 +500,7 @@ function init_gear_sets()
 
 	sets.defense.MDT = {main="Tanmogayi +1",sub="Tanmogayi"}
 		-- Herculean Head 
-		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest  Herculean Hands
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		--  Herculean Boots 
@@ -508,7 +508,7 @@ function init_gear_sets()
 
     sets.defense.MEVA = {main="Tanmogayi +1",sub="Tanmogayi"}	
 		-- Herculean Head
-		head="Aya. Zucchetto +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest Herculean Hands
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		--  Herculean Boots 

@@ -116,14 +116,14 @@ function init_gear_sets()
 		-- Vanya Hood
 		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Lifestorm Earring",
 		body="Heka's Kalasiris", hands=gear_telchine_Cure_Hands, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Geomancy Pants", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Geomancy Pants", feet="Rubeus Boots"}
 
 		--Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip", priority=1},
 		---- Vanya Hood
 		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Lifestorm Earring",
 		body="Heka's Kalasiris", hands=gear_telchine_Cure_Hands, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Geomancy Pants", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Geomancy Pants", feet="Rubeus Boots"}
     
 	sets.midcast.Curaga = {main={name="Arka IV", priority=2}, sub={name="Pax Grip", priority=1},
 		-- lear="Novia Earring", rear="Lifestorm Earring",
@@ -269,7 +269,7 @@ function init_gear_sets()
 
 	sets.idle = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
 		--head="Mallquis Chapeau +1",
-		head="Jhakri Coronal +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Jhakri Coronal +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- body="Mallquis Saio +1", hands="Mallquis Cuffs +1", 
 		body="Jhakri Robe +1", hands="Jhakri Cuffs +1", lring="Vocane Ring", rring="Defending Ring",
 		-- waist="Fucho-no-Obi", legs="Mallquis Trews +1", feet="Mallquis Clogs +1"
@@ -277,7 +277,7 @@ function init_gear_sets()
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
 		--head="Mallquis Chapeau +1",
-		head="Jhakri Coronal +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Jhakri Coronal +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- body="Mallquis Saio +1", hands="Mallquis Cuffs +1", 
 		body="Jhakri Robe +1", hands="Jhakri Cuffs +1", lring="Vocane Ring", rring="Defending Ring",
 		-- waist="Fucho-no-Obi", legs="Mallquis Trews +1", feet="Mallquis Clogs +1"
@@ -306,7 +306,7 @@ function init_gear_sets()
 
 	sets.idle.Weak = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
 		--head="Mallquis Chapeau +1",
-		head="Jhakri Coronal +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Jhakri Coronal +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		--hands="Mallquis Cuffs +1", 
 		body="Mallquis Saio +1", hands="Jhakri Cuffs +1", lring="Vocane Ring", rring="Defending Ring",
 		--  legs="Mallquis Trews +1", 
@@ -316,7 +316,7 @@ function init_gear_sets()
 	
 	sets.defense.PDT = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
 		--head="Mallquis Chapeau +1",
-		head="Jhakri Coronal +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Jhakri Coronal +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		-- hands="Mallquis Cuffs +1", 
 		body="Mallquis Saio +1", hands="Jhakri Cuffs +1", lring="Vocane Ring", rring="Defending Ring",
 		-- waist="Fucho-no-Obi", legs="Mallquis Trews +1", 
@@ -324,13 +324,13 @@ function init_gear_sets()
 
 
 	sets.defense.MDT = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
-		head="Jhakri Coronal +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Jhakri Coronal +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		body="Jhakri Robe +1", hands="Jhakri Cuffs +1",lring="Vocane Ring", rring="Shadow Ring", rring="Defending Ring",
 		waist="Fucho-no-Obi", legs="Jhakri Slops +2", feet="Mallquis Clogs +1"}
 
 	
     sets.defense.MEVA = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
-		head="Jhakri Coronal +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Jhakri Coronal +1", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		body="Jhakri Robe +1", hands="Jhakri Cuffs +1",lring="Vocane Ring", rring="Shadow Ring", rring="Defending Ring",
 		waist="Fucho-no-Obi", legs="Jhakri Slops +2", feet="Mallquis Clogs +1"}
 		

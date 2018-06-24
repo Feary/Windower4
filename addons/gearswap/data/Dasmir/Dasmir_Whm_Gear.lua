@@ -50,10 +50,9 @@ function init_gear_sets()
 	sets.weapons.DualWeapons = {main="Nehushtan",sub="Nehushtan"}
 	
     -- Precast Sets
-
     -- Fast cast sets for spells
     sets.precast.FC = {ammo="Incantor Stone",
-		head="Nahtirah Hat", neck="Orison Locket", lear="Loquac. Earring",
+		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring",
 		--lring="Prolix Ring",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", 
 		-- waist="Witful Belt",
@@ -79,7 +78,7 @@ function init_gear_sets()
 		legs="Ebers Pant. +1", feet="Hygieia Clogs"})
 
 	sets.precast.FC.Cure.DT = {main={name="Beneficus", priority=2}, sub={name="Sors Shield", priority=1}, 	
-		head="Nahtirah Hat",neck="Twilight Torque",lear="Nourish. Earring +1", rear="Nourish. Earring",
+		head="Nahtirah Hat",neck="Loricate Torque +1",lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Inyanga Jubbah +2",hands="Gende. Gages +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Cheviot Cape",waist="Witful Belt",legs="Ebers Pant. +1",feet="Hygieia Clogs"}
 
@@ -90,7 +89,7 @@ function init_gear_sets()
 	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 
     -- Precast sets to enhance JAs
-    sets.precast.JA.Benediction = {body="Piety Briault"}
+    sets.precast.JA.Benediction = {body="Piety Briault +1"}
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {}
@@ -100,25 +99,21 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +2 +2",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.precast.WS['Hexa Strike'] = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +2 +2",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 	
     sets.precast.WS['Flash Nova'] = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +2 +2",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     sets.precast.WS['Mystic Boon'] = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
-		-- hands="Aya. Manopolas +2 +2",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back="Cheviot Cape", waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
@@ -136,9 +131,7 @@ function init_gear_sets()
 
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.	
 	sets.ConserveMP = {ammo="Clarus Stone",
-		-- Telchine Cap
 		head="Telchine Cap", lear="Gwati Earring", rear="Calamitous Earring",
-		--
 		-- Lengo Pants 
         back="Aurist's Cape", waist="Austerity Belt", feet="Umbani Boots"}
 		
@@ -171,22 +164,22 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCure = {main={name="Iridal Staff", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theo. Mitts +1", lring="Sirona's Ring", rring="Stikini Ring",
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
 
 	sets.midcast.LightWeatherCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theo. Mitts +1", lring="Sirona's Ring", rring="Stikini Ring",
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pant. +1",feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1",feet="Piety Duckbills"}
 		
 	sets.midcast.LightDayCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theo. Mitts +1", lring="Sirona's Ring", rring="Stikini Ring",
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
 
 	sets.midcast.LightDayCure = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theo. Mitts +1", lring="Sirona's Ring", rring="Stikini Ring",
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pant. +1",feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1",feet="Piety Duckbills"}
 
 	sets.midcast.Curaga = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
@@ -196,12 +189,12 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCuraga = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Novia Earring", rear="Orison Earring",
 		body="Ebers Bliaud +1", hands="Theo. Mitts +1", lring="Sirona's Ring", rring="Stikini Ring",
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
 
 	sets.midcast.LightDayCuraga = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Novia Earring", rear="Orison Earring",
 		body="Ebers Bliaud +1", hands="Theo. Mitts +1", lring="Sirona's Ring", rring="Stikini Ring",
-		back="Twilight Cape", waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
 
 	sets.midcast.Cure.DT = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		--
@@ -330,7 +323,7 @@ function init_gear_sets()
 
 	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",
 		head="Inyanga Tiara +2",
-		body="Piety Briault", hands="Ebers Mitts +1",
+		body="Piety Briault +1", hands="Ebers Mitts +1",
 		legs="Theo. Pant. +1",feet=gear_telchine_feet_Regen})
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills",ear1="Gifted Earring",waist="Sekhmet Corset"})
@@ -340,16 +333,16 @@ function init_gear_sets()
 	
 	sets.midcast.Impact = {
 		-- Grioavolr Enki Strap Pemphredo Tathlum
-		-- Chironic Hat Erra Pendant neck="Voltsurge Torque", Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
+		-- Chironic Hat Erra Pendant  Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
 		main={name="Arasy Staff",priority=2}, sub={name="", priority=1},
-		head=empty, neck="Eddy Necklace", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head=empty, neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Twilight Cloak", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",		
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Salire Belt", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Elemental Magic'] = {	
 		-- Grioavolr Enki Strap Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="", priority=1},
+		main={name="Arasy Staff", priority=2}, sub={name="", priority=1},
 		-- Chironic Hat 
 		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Novio Earring", rear="Hecate's Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
@@ -474,35 +467,35 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Bolelabunga", priority=2}, sub={name="Genbu's Shield", priority=1},		
-		head="Inyanga Tiara +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back="Cheviot Cape", waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Aya. Zucchetto +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2 +2", lring="Dark Ring", rring="Defending Ring",
 		back="Cheviot Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
 	sets.idle.Weak = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Aya. Zucchetto +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Cheviot Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     -- Defense sets
 	sets.defense.PDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Aya. Zucchetto +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Cheviot Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.defense.MDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Inyanga Tiara +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Engulfer Cape", waist="Austerity Belt", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +2"}			
 
     sets.defense.MEVA = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Inyanga Tiara +2", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		--  
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Dark Ring", rring="Defending Ring",
 		--

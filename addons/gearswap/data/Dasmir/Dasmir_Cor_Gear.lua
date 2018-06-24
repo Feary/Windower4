@@ -66,7 +66,7 @@ function init_gear_sets()
     
     sets.precast.CorsairRoll = {
 		-- Regal Necklace Etiolation Earring Odndowa Earring Compensator 
-		head="Lanun Tricorne +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Lanun Tricorne +1", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		-- dt herc?  lring="Luzaf's Ring",
 		body="Meg. Cuirie +2", hands="Chasseur's Gants +1", lring="Barataria Ring", rring="Luzaf's Ring",
 		-- waist="Flume Belt", legs="Desultor Tassets" -dt feet
@@ -119,8 +119,8 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {
-		-- head="Carmine Mask", neck="Voltsurge Torque", rear="Enchntr. Earring +1",
-		head="Haruspex Hat", lear="Loquac. Earring",  
+		-- head="Carmine Mask",  rear="Enchntr. Earring +1",
+		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring",  
 		--  hands="Leyline Gloves", rring="Prolix Ring",
 		body=gear_taeon_body_Fastcast,		
 		--back="Camulus's Mantle", legs="Taeon Tights", feet="Carmine Greaves"
@@ -155,7 +155,7 @@ function init_gear_sets()
 		back=gear.ranger_wsd_jse_back, waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
     sets.precast.WS.Proc = {
-		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Meghanada Visor +1", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
 		back="Repulse Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
@@ -208,7 +208,7 @@ function init_gear_sets()
 		-- Carmine Mail +1  Carmine Fin. Gauntlets +1 Arvina Ringlet +1
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- Eschan Stone Adhe. Gamashes +1
-		back=gear.ranger_wsd_jse_back, waist="Salire Belt", legs="Lak. Trews", feet="Meg. Jam. +1"}
+		back=gear.ranger_wsd_jse_back, waist="Salire Belt", legs="Lak. Trews +1", feet="Meg. Jam. +1"}
 
     sets.precast.WS['Leaden Salute'].Acc = {ammo=gear.MAbullet,
         --  Baetyl Pendant Pixie Earring +1 neck="Stoicheion Medal", lear="Friomisi Earring",
@@ -216,7 +216,7 @@ function init_gear_sets()
 		-- Carmine Mail +1  Carmine Fin. Gauntlets +1 Arvina Ringlet +1
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Shiva Ring", rring="Shiva Ring",
 		-- Eschan Stone Adhe. Gamashes +1
-		back=gear.ranger_wsd_jse_back, waist="Salire Belt", legs="Lak. Trews", feet="Meg. Jam. +1"}
+		back=gear.ranger_wsd_jse_back, waist="Salire Belt", legs="Lak. Trews +1", feet="Meg. Jam. +1"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
 		--  neck="Stoicheion Medal",
@@ -285,33 +285,32 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
-        head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+        head="Meghanada Visor +1", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
 		-- waist="Flume Belt",
 		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 		
     sets.idle.Refresh = {ammo=gear.RAbullet,
-		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Meghanada Visor +1", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
 		-- waist="Flume Belt"
 		back="Engulfer Cape", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 	
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Meghanada Visor +1", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
 		-- waist="Flume Belt",
 		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
-
     sets.defense.MDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Meghanada Visor +1", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
 		-- waist="Flume Belt"
 		back="Engulfer Cape", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 	
     sets.defense.MEVA = {ammo=gear.RAbullet,
-		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Meghanada Visor +1", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Meghanada Ring", rring="Defending Ring",
 		-- waist="Flume Belt"
 		back="Engulfer Cape", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}

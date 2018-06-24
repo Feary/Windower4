@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<ChatMon>
+	<settings
+		DisableOnFocus="false"
+		TellSound="Tell"
+		ExamineSound="Examine"
+		EmoteSound="Emote"
+		TalkSound="Talk"
+		InviteSound="Invite"
+		SoundInterval="5"
+		DisableFilters="true"
+	/>
+	<!-- Add Triggers below. The line below is a comment for an example -->
+	<!-- Valid From entries: Say, Shout, Party, Linkshell, Tell, Invite, Emote, Examine, All -->
+	<!-- match should not be used for Emote. Examine matches to Examiners name, Invite matches to Inviters name. -->
+	<!-- <trigger match="*YourNickNameHere*" notmatch="*SomecommonMatch*" notfrom="Tell" from="Party|Linkshell" sound="Talk" /> -->
+	<!-- Ambuscade -->
+	<trigger match="*Ambuscade*whm*|*Ambuscade*heal*|*Ambuscade*BRD*|*ambuscade*looking*whm*|*ambuscade*looking*heal*" notmatch="*please*invite*me*" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\ambuscade.wav"/>
+	<!-- Delve|Zone Boss -->
+	<trigger match="*Plasm*Farm*" notmatch="*please*invite*me*|*can*i*have*it*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Delve.wav"/>
+	<!-- Vagary -->
+	<trigger match="*Vagary*" notmatch="*please*invite*me*|*can*i*have*it*|*shop*|*synth*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Vagary.wav"/>
+	<!-- Tales -->
+	<trigger match="*Tales*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
+	<trigger match="*avatar*|*Ramuh*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
+	<!-- Neo Nyzul -->
+	<trigger match="*Nyzul*|*NNI*" notmatch="" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Nyzul.wav"/>
+	<!--Unity-->	
+	<trigger match="*Sov*Behe*" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\unity.wav"/>
+	<!-- Exping --> 
+	<trigger match="*capacity*points*do*you*|capacity|cp" from="Shout|Yell|Linkshell" notmatch="" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\jonpoints.wav" />
+	<!-- Einherjar -->
+	<trigger match="*Einherjar*|*ichor*" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Einherjar.wav" />
+	<!-- <trigger match="*craft*|*woodworking*|*Smithing*|*Synergy*|" notfrom="Tell" from="Yell|Shout|Linkshell" sound="Examine" />-->
+	<!-- match should not be used for Emote. Examine matches to Examiners name, Invite matches to Inviters name. -->
+	<trigger match="*olymoly*|*oly*|*Das*|*Dasmir*|*Aniyah*|*Aniya|*Ani*" notfrom="Tell" from="Party|Linkshell" sound="Talk" /> -->
+	<trigger match="*" from="Tell" sound="Tell"/>
+</ChatMon>
