@@ -80,7 +80,7 @@ function init_gear_sets()
 	
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {})
 
-    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pantaloons"})
+    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pantaloons +1"})
 
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
@@ -136,61 +136,60 @@ function init_gear_sets()
 	
 	sets.midcast.Cure = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield",priority=1},
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}
 	sets.midcast.CureSolace =  {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield",priority=1},
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
-		-- 
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",
-		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}
 	sets.midcast.LightWeatherCure = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
 		--
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		-- Theophany Duckbills
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}
 	sets.midcast.LightWeatherCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
 		-- Theophany Duckbills
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}	
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}	
 	sets.midcast.LightDayCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",rring="Lebeche Ring",
 		-- Theophany Duckbills
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}
 
 	sets.midcast.LightDayCure =  {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield",priority=1},
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Novia Earring", rear="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
 		-- Theophany Duckbills
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}	
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}	
 		
 	sets.midcast.Curaga =  {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield",priority=1},
 		head="Ebers Cap +1", neck="Colossus's Torque", ear1="Novia Earring",ear2="Nourish. Earring",
 		body="Heka's Kalasiris", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}
 
 	sets.midcast.LightWeatherCuraga = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap +1", neck="Colossus's Torque", ear1="Novia Earring",ear2="Nourish. Earring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring",  rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}
 
 	sets.midcast.LightDayCuraga = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip",priority=1},
 		head="Ebers Cap +1", neck="Colossus's Torque", ear1="Novia Earring",ear2="Nourish. Earring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}
 
 	sets.midcast.Cure.DT = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip",priority=1},
-		head="Ebers Cap +1", neck="Colossus's Torque", ear1="Novia Earring",ear2="Nourish. Earring",
+		head="Ebers Cap +1", neck="Loricate Torque", ear1="Novia Earring",ear2="Nourish. Earring",
 		body="Ebers Bliaud", hands="Theophany Mitts", lring="Vocane Ring", rring="Defending Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}
 		
 	--Melee Curesets are used whenever your OffenseMode is set to anything but None.
 	sets.midcast.MeleeCure = {
 		head="Ebers Cap +1", neck="Colossus's Torque", ear1="Novia Earring",ear2="Nourish. Earring",
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons", feet="Rubeus Boots"}
+		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Ebers Pantaloons +1", feet="Rubeus Boots"}
 		
 	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {})
 	sets.midcast.MeleeLightWeatherCure = set_combine(sets.midcast.MeleeCure, {})
@@ -234,7 +233,7 @@ function init_gear_sets()
 		head="Ebers Cap +1",
 		-- body="Hedera Cotehardie", 
 		body="Witching Robe", hands="Ebers Mitts",
-		waist="Witful Belt", legs="Ebers Pantaloons", feet="Gende. Galosh. +1"}
+		waist="Witful Belt", legs="Ebers Pantaloons +1", feet="Gende. Galosh. +1"}
 
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
 	-- Duration

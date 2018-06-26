@@ -19,6 +19,9 @@ gear_taeon_head_Snapshot = "Taeon Chapeau"
 -- Body
 gear_taeon_body_Fastcast = "Taeon Tabard"
 
+--feet
+gear_taeon_feet_DW = "Taeon Boots"
+
 -- Telchine
 -- Head 2/2
 -- Body  2/2

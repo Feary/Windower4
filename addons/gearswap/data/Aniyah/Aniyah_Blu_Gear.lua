@@ -270,7 +270,7 @@ function init_gear_sets()
 		head="Carmine Mask", neck="Iqabi Necklace", lear="Zennaroi Earring", rear="Steelflash Earring",
 		-- Acc Body
 		body="Jhakri Robe +1", hands="Jhakri Cuffs +1", lring="Rajas Ring", rring="Ramuh Ring", 
-		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Carmine Cuisses", feet="Jhakri Pigaches +1"}
+		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Carmine Cuisses", feet="Carmine Greaves"}
 
 
 	sets.midcast['Blue Magic'].PhysicalAcc.Resistant = set_combine(sets.midcast['Blue Magic'].PhysicalAcc, {})

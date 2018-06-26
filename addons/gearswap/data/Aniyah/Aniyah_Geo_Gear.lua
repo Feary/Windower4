@@ -46,7 +46,7 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA.Bolster = {body="Bagua Tunic"}
+	sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
 	sets.precast.JA['Life Cycle'] = {body="Geomancy Tunic",back=gear.idle_jse_back}
 	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals"}
 	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants"}
@@ -96,14 +96,14 @@ function init_gear_sets()
 	sets.midcast.Geomancy = {range="Dunna",
 		-- neck="Incantor's Torque", rear="Calamutious Earring",
 		head="Azimuth Hood +1", neck="Reti Pendant",
-		body="Bagua Tunic", hands="Geo. Mitaines +1", lring="Stikini Ring", rring="Stikini Ring",
+		body="Bagua Tunic +1", hands="Geo. Mitaines +1", lring="Stikini Ring", rring="Stikini Ring",
 		back="Lifestream Cape", waist="Austerity Belt", legs="Bagua Pants", feet="Azimuth Gaiters"}
 
 	--Extra Indi duration on any slot you can't get skill on here.
 	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {range="Dunna",
 		-- neck="Incantor's Torque",
 		head="Azimuth Hood +1", neck="Reti Pendant",
-		body="Bagua Tunic", hands="Geo. Mitaines +1", lring="Stikini Ring", rring="Stikini Ring",
+		body="Bagua Tunic +1", hands="Geo. Mitaines +1", lring="Stikini Ring", rring="Stikini Ring",
 		back="Lifestream Cape", legs="Bagua Pants", feet="Azimuth Gaiters"})
 
     sets.midcast.Cure = {main={name="Arka IV", priority=2}, sub={name="Pax Grip", priority=1},
