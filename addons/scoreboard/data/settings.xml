@@ -88,6 +88,9 @@
         </display>
         <visible>false</visible>
     </akili>
+    <almontay>
+        <visible>false</visible>
+    </almontay>
     <almonte>
         <display>
             <pos>
@@ -146,6 +149,9 @@
         </display>
         <visible>false</visible>
     </dasmir>
+    <dayanna>
+        <visible>false</visible>
+    </dayanna>
     <dela>
         <display>
             <pos>
@@ -252,6 +258,9 @@
         </display>
         <visible>false</visible>
     </gonzalo>
+    <gonzaloo>
+        <visible>false</visible>
+    </gonzaloo>
     <kavita>
         <display>
             <pos>
@@ -300,6 +309,9 @@
         </display>
         <visible>false</visible>
     </midnightclam>
+    <midnightclamm>
+        <visible>false</visible>
+    </midnightclamm>
     <molyoly>
         <display>
             <pos>
@@ -324,6 +336,9 @@
         </display>
         <visible>false</visible>
     </most>
+    <mostmost>
+        <visible>false</visible>
+    </mostmost>
     <olymoly>
         <display>
             <pos>
@@ -336,6 +351,9 @@
         </display>
         <visible>false</visible>
     </olymoly>
+    <perseise>
+        <visible>false</visible>
+    </perseise>
     <ravindra>
         <display>
             <pos>
@@ -389,6 +407,9 @@
         </display>
         <visible>false</visible>
     </swagg>
+    <symbio>
+        <visible>false</visible>
+    </symbio>
     <watitdew>
         <display>
             <bg>

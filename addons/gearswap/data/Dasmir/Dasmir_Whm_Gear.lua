@@ -73,8 +73,7 @@ function init_gear_sets()
 	
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
 		main={name="Ababinili", priority=2}, sub={name="Pole Grip", priority=1}, 	
-		-- Piety Cap +1
-		lear="Nourish. Earring +1", rear="Nourish. Earring",
+		head="Piety Cap", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		legs="Ebers Pant. +1", feet="Hygieia Clogs"})
 
 	sets.precast.FC.Cure.DT = {main={name="Beneficus", priority=2}, sub={name="Sors Shield", priority=1}, 	

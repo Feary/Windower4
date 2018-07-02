@@ -70,7 +70,7 @@ function init_gear_sets()
 		-- dt herc?  lring="Luzaf's Ring",
 		body="Meg. Cuirie +2", hands="Chasseur's Gants +1", lring="Barataria Ring", rring="Luzaf's Ring",
 		-- waist="Flume Belt", legs="Desultor Tassets" -dt feet
-		back="Camulus's Mantle",  legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back=gear.tp_jse_back, legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     
@@ -82,32 +82,47 @@ function init_gear_sets()
     
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-		--  neck="Stoicheion Medal",
-		head="Meghanada Visor +1", lear="Hecate's Earring", rear="Novio Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Garuda Ring", rring="Garuda Ring",
+		-- Laksa. Tricorne +2 Sanctity Necklace/Baetyl Necklace Friomisi Earring Crematio Earring
+		head="Mummu Bonnet +1", lear="Hecate's Earring", rear="Novio Earring",
+		-- Carmine Fin. Gauntlets +1 Fenrir Ring +1 Fenrir Ring +1
+		body="Lanun Frac", hands="Meg. Gloves +1", lring="Garuda Ring", rring="Garuda Ring",
 		-- Eschan Stone 
-		back=gear.magic_QD_jse_back, legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
-		
-    sets.precast.CorsairShot.Proc = {ammo=gear.RAbullet,
-        --  neck="Stoicheion Medal",
-		head="Meghanada Visor +1", lear="Lifestorm Earring", rear="Psystorm Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Perception Ring", rring="Perception Ring",
-		-- waist="Aquiline Belt",
-		back=gear.magic_QD_jse_back,  legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back=gear.magic_QD_jse_back, legs="Mummu Kecks +1", feet="Mummu Gamash. +1"}
+	
+	-- STP 
+    sets.precast.CorsairShot.STP = {ammo=gear.QDbullet,
+		-- lear="Diginitary Earring", rear="Gwati Earring",
+		head="Mummu Bonnet +1", lear="Lifestorm Earring", rear="Psystorm Earring",
+		-- lring="Regal Ring"
+		body="Mummu Jacket +1", hands="Mummu Wrists +1", lring="Mummu Ring", rring="Stikini Ring",
+		-- waist="Kwahu Kachina Belt", feet="Lanun Boots +2"
+		back=gear.magic_QD_jse_back, legs="Mummu Kecks +1", feet="Mummu Gamash. +1"}
 
+	
 	-- Acc 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
-		--  neck="Sanctity Necklace",
-		head="Meghanada Visor +1", lear="Lifestorm Earring", rear="Psystorm Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Perception Ring", rring="Perception Ring",
-		-- waist="Aquiline Belt",
-		back=gear.magic_QD_jse_back,  legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		-- lear="Diginitary Earring", rear="Gwati Earring",
+		head="Mummu Bonnet +1", lear="Lifestorm Earring", rear="Psystorm Earring",
+		-- lring="Regal Ring"
+		body="Mummu Jacket +1", hands="Mummu Wrists +1", lring="Mummu Ring", rring="Stikini Ring",
+		-- waist="Kwahu Kachina Belt", feet="Lanun Boots +2"
+		back=gear.magic_QD_jse_back, legs="Mummu Kecks +1", feet="Mummu Gamash. +1"}
 
 	-- for ws bonus
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes +1"})
 	
 	sets.precast.CorsairShot['Fire Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes +1"})
+			
+	-- to Prevent Damage
+	sets.precast.CorsairShot.Proc = {ammo=gear.RAbullet,
+        -- Laksa. Tricorne +2 Sanctity Necklace/Baetyl Necklace Diginitary Earring
+		head="Mummu Bonnet +1", lear="Gwati Earring", rear="Novio Earring",
+		-- Carmine Fin. Gauntlets +1 Fenrir Ring +1 Fenrir Ring +1
+		body="Lanun Frac", hands="Meg. Gloves +1", lring="Perception Ring", rring="Perception Ring",
+		-- Eschan Stone
+		back=gear.magic_QD_jse_back,  legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
 
+	
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {}
 		

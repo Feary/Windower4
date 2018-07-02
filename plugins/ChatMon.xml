@@ -21,7 +21,7 @@
 	<!-- Vagary -->
 	<trigger match="*Vagary*|*Rancibus*|*Vagary*Feet*" notmatch="*please*invite*me*|*can*i*have*it*|*shop*|*synth*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Vagary.wav"/>
 	<!-- Tales -->
-	<trigger match="*Tales*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
+	<trigger match="*Tales*|*rem*ch*" Notmatch="*can*i*have*it" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<trigger match="*avatar*|*Ramuh*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<!-- Neo Nyzul -->
 	<trigger match="*Nyzul*|*NNI*" notmatch="" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Nyzul.wav"/>

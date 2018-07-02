@@ -309,6 +309,13 @@
         <Sort><![CDATA[None]]></Sort>
         <TimeZones>UTC,JST</TimeZones>
     </sikend>
+    <suede>
+        <Clock>
+            <pos>
+                <x>1006</x>
+            </pos>
+        </Clock>
+    </suede>
     <swagg>
         <Clock>
             <pos>

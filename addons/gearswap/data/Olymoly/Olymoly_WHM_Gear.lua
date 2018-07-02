@@ -52,41 +52,43 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {
+    sets.precast.FC = {ammo="Incantor Stone",
 		--main={name="Grioavolr",priority=2}}, sub={name="Clerisy Strap",priority=1}, ammo="Impatiens",
 		-- neck="Voltsurge Torque",
 		head="Nahtirah Hat", neck="Loricate Torque +1", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		--  Kishar Ring
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Veneficium Ring",
-		-- Kaykaus Tights
-		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Lengo Pants", feet="Chelona Boots +1"}
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Chelona Boots +1"}
 
-    sets.precast.FC.DT = {
+    sets.precast.FC.DT = set_combine(sets.precast.FC, {
 		--main={name="Grioavolr",priority=2}}, sub={name="Clerisy Strap",priority=1}, ammo="Impatiens",
 		-- neck="Voltsurge Torque",
 		head="Nahtirah Hat", neck="Loricate Torque +1", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		--  Kishar Ring
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Defending Ring",
 		-- Kaykaus Tights
-		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Chelona Boots +1"}
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Chelona Boots +1"})
  
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat", waist="Siegel Sash"})
 
-    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {head="Piety Cap", legs="Ebers Pantaloons"})
+	-- Healing
+    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pantaloons"})
 
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
-    sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {ammo="Incantor Stone",
-			main="Ababinili",sub="Achaq Grip",
-			lear="Nourish. Earring +1", feet="Cure Clogs"})
-	
-	sets.precast.FC.Cure.DT = {main="Ababinili",sub="Achaq Grip", ammo="Incantor Stone",
-		-- Voltsurge
-		head="Piety Cap",neck="Loricate Torque +1",ear1="Nourish. Earring +1",ear2="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2",hands="Gende. Gages +1",ring1="Prolix Ring",ring2="Defending Ring",
-		back=gear.fastcast_jse_back,waist="Witful Belt",legs="Ebers Pantaloons",feet="Cure Clogs"}
+    sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
+		main={name="Ababinili",priority=2}, sub={name="Achaq Grip",priority=1},
+		head="Piety Cap", lear="Nourish. Earring +1", rear="Mendi. Earring",
+		-- Kaykaus Tights Path B
+		feet="Cure Clogs"})
+
+	sets.precast.FC.Cure.DT =  set_combine(sets.precast.FC.Cure, {
+		main={name="Ababinili",priority=2}, sub={name="Achaq Grip",priority=1},
+		head="Piety Cap", neck="Loricate Torque +1", ear1="Nourish. Earring +1", rear="Mendi. Earring",
+		body="Inyanga Jubbah +2", hands="Gende. Gages +1", ring1="Prolix Ring", ring2="Defending Ring",
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Ebers Pantaloons", feet="Cure Clogs"})
 
     sets.precast.FC.Curaga = sets.precast.FC.Cure
 

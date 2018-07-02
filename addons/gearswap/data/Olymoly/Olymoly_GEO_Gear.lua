@@ -56,7 +56,6 @@ function init_gear_sets()
 	sets.buff.Entrust = {}
 	
 	-- Fast cast sets for spells
-
 	sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
 		body="Anhur Robe",hands="Magavan Mitts",ring1="Prolix Ring",
@@ -339,7 +338,8 @@ function init_gear_sets()
 	--------------------------------------
 	
 	-- Gear that converts elemental damage done to recover MP.	
-	sets.RecoverMP = {body="Seidr Cotehardie"}
+	sets.RecoverMP = {body="Seidr Cotehardie", feet="Mallquis Clogs +2" }
+	sets.DamageMP = {lear="Ethereal Earring", feet="Mallquis Clogs +2" }
 	
 	-- Gear for Magic Burst mode.
     sets.MagicBurst = {head="Ea Hat",neck="Mizu. Kubikazari",body="Ea Houppelande",hands="Ea Cuffs",ring1="Mujin Band",legs="Ea Slops",feet="Jhakri Pigaches +2"}

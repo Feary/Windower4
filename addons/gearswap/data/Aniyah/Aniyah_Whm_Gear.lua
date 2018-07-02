@@ -119,7 +119,7 @@ function init_gear_sets()
 
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.	
 	sets.ConserveMP = {ammo="Clarus Stone",
-		head="Orvail Corona +1", neck="Reti Pendant", rear="Gifted Earring",
+		head="Telchine Cap", neck="Reti Pendant", rear="Gifted Earring",
 		-- body="Hedera Cotehardie", 
 		-- feet="Umbani Boots"
 		waist="Austerity Belt", legs="Lengo Pants"}
@@ -242,8 +242,8 @@ function init_gear_sets()
 		-- neck="Incantor's Torque", lear="Andoaa Earring", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", 
 		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
-		--back="Mending Cape", feet="Theophany Duckbills +3"
-		waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		-- feet="Theophany Duckbills +3"
+		back="Mending Cape", waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 
 	sets.midcast.BarElement = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--sub="Ammurapi Shield",
@@ -265,8 +265,8 @@ function init_gear_sets()
 		-- neck="Incantor's Torque", lear="Andoaa Earring", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", 
 		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
-		-- back="Mending Cape", feet="Theophany Duckbills +3"
-		waist="Cascade Belt", legs="Piety Pantaloons", feet="Ebers Duckbills",}
+		--  feet="Theophany Duckbills +3"
+		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaloons", feet="Ebers Duckbills",}
 
 	sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
@@ -299,10 +299,14 @@ function init_gear_sets()
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {})
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {})
-	
-	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {feet="Cleric's Duckbills"})
-	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {feet="Cleric's Duckbills"})
+	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",
+		head="Inyanga Tiara +2",
+		body="Piety Briault", hands="Ebers Mitts",
+		-- feet=gear_telchine_feet_Regen
+		legs="Theo. Pantaloons",})
+		
+	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {feet="Piety Duckbills"})
+	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {feet="Piety Duckbills"})
 	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {legs="Piety Pantaloons"})
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {legs="Piety Pantaloons"})
 
@@ -433,7 +437,6 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Bolelabunga", priority=2}, sub={name="Genbu's Shield", priority=1},
-		-- head="Aya. Zucchetto +2",
 		head="Inyanga Tiara +2", neck="Loricate Torque", lear="Merman's Earring", rear="Merman's Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back="Umbra Cape", waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
