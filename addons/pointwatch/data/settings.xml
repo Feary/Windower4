@@ -49,4 +49,28 @@
             </text>
         </text_box_settings>
     </global>
+    <aniyah>
+        <text_box_settings>
+            <pos>
+                <x>-920</x>
+                <y>144</y>
+            </pos>
+        </text_box_settings>
+    </aniyah>
+    <dasmir>
+        <text_box_settings>
+            <pos>
+                <x>2</x>
+                <y>-4</y>
+            </pos>
+        </text_box_settings>
+    </dasmir>
+    <olymoly>
+        <text_box_settings>
+            <pos>
+                <x>15</x>
+                <y>4</y>
+            </pos>
+        </text_box_settings>
+    </olymoly>
 </settings>

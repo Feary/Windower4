@@ -1,0 +1,17 @@
+sets.exported={
+    main="Mafic Cudgel",
+    sub="Genbu's Shield",
+    range="Gjallarhorn",
+    head="Inyanga Tiara +2",
+    body="Inyanga Jubbah +2",
+    hands="Inyan. Dastanas +2",
+    legs="Assid. Pants +1",
+    feet="Fili Cothurnes +1",
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Inyanga Ring",
+    right_ring="Defending Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+40%','HP+18','Rng.Atk.+4','DEF+13',}},
+}

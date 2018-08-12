@@ -1,0 +1,17 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    ammo="Incantor Stone",
+    head={ name="Telchine Cap", augments={'Mag. Evasion+17','Pet: "Regen"+3','Pet: Damage taken -3%',}},
+    body={ name="Telchine Chas.", augments={'Mag. Evasion+25','Pet: "Regen"+3','Pet: Damage taken -4%',}},
+    hands={ name="Telchine Gloves", augments={'Mag. Evasion+15','Pet: "Regen"+3','Pet: Damage taken -3%',}},
+    legs={ name="Telchine Braconi", augments={'Mag. Evasion+25','Pet: "Regen"+3','Pet: Damage taken -3%',}},
+    feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}},
+    neck="Loricate Torque +1",
+    waist="Austerity Belt",
+    left_ear="Merman's Earring",
+    right_ear="Merman's Earring",
+    left_ring="Inyanga Ring",
+    right_ring="Defending Ring",
+    back="Umbra Cape",
+}

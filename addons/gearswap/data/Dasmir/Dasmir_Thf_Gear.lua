@@ -48,14 +48,14 @@ function init_gear_sets()
 	
     sets.buff['Sneak Attack'] = {
 		head="Meghanada Visor +1", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- gear.wsd_jse_back
-		back="Grounded Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Grounded Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
     sets.buff['Trick Attack'] = {
 		head="Meghanada Visor +1", neck="Houyi's Gorget", lear="Dudgeon Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Garuda Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Garuda Ring",
 		-- Aug.Cape.THF.WS
-		back="Vespid Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Vespid Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 		
     -- Extra Melee sets.  Apply these on top of melee sets.
     sets.Knockback = {back="Repulse Mantle"}
@@ -72,15 +72,15 @@ function init_gear_sets()
 	-- Actions we want to use to tag TH.
     sets.precast.Step = {ammo="Hasty Pinion +1",
 		head="Meghanada Visor +1", neck="Peacock Amulet", lear="Brutal Earring", rear="Suppanomimi",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		--Aug.Cape.THF.STP
-		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.precast.JA['Violent Flourish'] = {ammo="Hasty Pinion +1",
 		head="Meghanada Visor +1", neck="Peacock Amulet", lear="Brutal Earring", rear="Suppanomimi",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Epona's Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
 		--Aug.Cape.THF.STP
-		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
 	sets.precast.JA['Animated Flourish'] = sets.TreasureHunter
 	sets.precast.JA.Provoke = sets.TreasureHunter
@@ -127,73 +127,73 @@ function init_gear_sets()
 
 
     -- Ranged snapshot gear
-    sets.precast.RA = {feet="Meg. Jam. +1"}
+    sets.precast.RA = {feet="Meg. Jam. +2"}
 			
     -- Weaponskill sets
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Hasty Pinion +1",
 		head="Meghanada Visor +1", neck="Asperity Necklace", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Ifrit Ring", rring="Ifrit Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Ifrit Ring", rring="Ifrit Ring",
 		-- Aug.Cape.THF.WS
-		back="Atheling Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Atheling Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {
 		head="Meghanada Visor +1", neck="Asperity Necklace", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Ifrit Ring", rring="Ifrit Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Ifrit Ring", rring="Ifrit Ring",
 		-- Aug.Cape.THF.WS
-		back="Atheling Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"})
+		back="Atheling Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 	
 	sets.precast.WS.FullAcc = set_combine(sets.precast.WS.Acc, {
 		head="Meghanada Visor +1", neck="Asperity Necklace", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Ifrit Ring", rring="Ifrit Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Ifrit Ring", rring="Ifrit Ring",
 		-- Aug.Cape.THF.WS
-		back="Atheling Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"})
+		back="Atheling Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {ammo="Hasty Pinion +1",
 		head="Meghanada Visor +1",  neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS
-		back="Vespid Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"})
+		back="Vespid Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 		
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS.Acc, {
 		--
 		head="Meghanada Visor +1", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS
-		back="Vespid Mantle", waist="Prosilio Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"})
+		back="Vespid Mantle", waist="Prosilio Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 
 	sets.precast.WS["Rudra's Storm"].FullAcc = set_combine(sets.precast.WS.FullAcc, {
 		head="Meghanada Visor +1",  neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS
-		back="Vespid Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"})
+		back="Vespid Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 	
     sets.precast.WS["Rudra's Storm"].Fodder = set_combine(sets.precast.WS["Rudra's Storm"], {ammo="Hasty Pinion +1",
 		head="Meghanada Visor +1",  neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS
-		back="Vespid Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"})
+		back="Vespid Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 	
     sets.precast.WS["Rudra's Storm"].SA = set_combine(sets.precast.WS["Rudra's Storm"].Fodder, {
 		head="Meghanada Visor +1", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
-		back="Vespid Mantle",waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"})
+		back="Vespid Mantle",waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 	
     sets.precast.WS["Rudra's Storm"].TA = set_combine(sets.precast.WS["Rudra's Storm"].Fodder, {
 		head="Meghanada Visor +1", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS
-		back="Vespid Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"})
+		back="Vespid Mantle", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 		
     sets.precast.WS["Rudra's Storm"].SATA = set_combine(sets.precast.WS["Rudra's Storm"].Fodder, {
 		--ammo="Ginsen",
 		head="Meghanada Visor +1", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
-		back="Vespid Mantle",waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"})
+		back="Vespid Mantle",waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 	
     sets.precast.WS["Mandalic Stab"] = set_combine(sets.precast.WS, {})
     sets.precast.WS["Mandalic Stab"].Acc = set_combine(sets.precast.WS.Acc, {})
@@ -214,37 +214,37 @@ function init_gear_sets()
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {
 		--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Mummu Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
 		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS.Acc, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Mummu Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
 		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
 	sets.precast.WS['Evisceration'].FullAcc = set_combine(sets.precast.WS.FullAcc, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Mummu Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
 		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
 	sets.precast.WS['Evisceration'].Fodder = set_combine(sets.precast.WS['Evisceration'], {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Mummu Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
 		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
     sets.precast.WS['Evisceration'].SA = set_combine(sets.precast.WS['Evisceration'].Fodder, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Mummu Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
 		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
     sets.precast.WS['Evisceration'].TA = set_combine(sets.precast.WS['Evisceration'].Fodder, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Mummu Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
 		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
     sets.precast.WS['Evisceration'].SATA = set_combine(sets.precast.WS['Evisceration'].Fodder, {--ammo="Ginsen",
 		head="Mummu Bonnet", neck="Fotia Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
-		body="Mummu Jacket +1", hands="Meg. Gloves +1", lring="Rajas Ring", rring="Ramuh Ring",
+		body="Mummu Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		-- Aug.Cape.THF.WS 
 		back="Vespid Mantle", waist="Prosilio Belt", legs="Mummu Kecks", feet="Mummu Gamashes +1"})
 
@@ -254,9 +254,9 @@ function init_gear_sets()
 		-- lear="Crematio Earring",
 		head="Meghanada Visor +1", neck="Fotia Gorget", lear="Hecate's Earring", rear="Moldavite Earring",
 		--
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Shiva Ring", rring="Shiva Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Shiva Ring", rring="Shiva Ring",
 		--  back=Aug.Cape.THF.WS 
-		back="Toro Cape", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Toro Cape", waist="Wanion Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 		
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
@@ -302,9 +302,9 @@ function init_gear_sets()
 
     sets.idle = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		-- Flume Belt
-		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.idle.Sphere = set_combine(sets.idle, {})--body="Mekosu. Harness"
 
@@ -316,22 +316,22 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		-- Flume Belt  Mummu Kecks +2
-		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.defense.MDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		--  lring="Shadow Ring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Inyanga Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Inyanga Ring", rring="Defending Ring",
 		-- Mummu Kecks +2
-		back="Engulfer Cape", legs="Mummu Kecks", feet="Meg. Jam. +1"}
+		back="Engulfer Cape", legs="Mummu Kecks", feet="Meg. Jam. +2"}
 
 	sets.defense.MEVA = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
 		--  lring="Shadow Ring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Inyanga Ring", rring="Defending Ring",
-		back="Engulfer Cape", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Inyanga Ring", rring="Defending Ring",
+		back="Engulfer Cape", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
 
     --------------------------------------
@@ -350,13 +350,13 @@ function init_gear_sets()
 		head="Mummu Bonnet", neck="Peacock Amulet", lear="Brutal Earring", rear="Suppanomimi",
 		body="Mummu Jacket +1", hands="Mummu Wrists +1", lring="Rajas Ring", rring="Epona's Ring",
 		--Aug.Cape.THF.STP
-		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.FullAcc = {ranged="Raider's Bmrng.",
 		head="Mummu Bonnet", neck="Peacock Amulet", lear="Brutal Earring", rear="Suppanomimi",
 		body="Mummu Jacket +1", hands="Mummu Wrists +1", lring="Rajas Ring", rring="Epona's Ring",
 		--Aug.Cape.THF.STP
-		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Atheling Mantle", waist="Twilight Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.Fodder = {ranged="Raider's Bmrng.",
 		head="Mummu Bonnet", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
@@ -366,27 +366,27 @@ function init_gear_sets()
 
     sets.engaged.PDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		-- Flume Belt Mummu Kecks +2
-		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.Acc.PDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		-- Flume Belt Mummu Kecks +2
-		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.FullAcc.PDT = {
         head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		-- Flume Belt Mummu Kecks +2
-		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.Fodder.PDT = {
 		head="Meghanada Visor +1", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +1", lring="Dark Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		-- Flume Belt Mummu Kecks +2
-		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +1"}
+		back="Repulse Mantle", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
 end
 

@@ -155,8 +155,8 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		-- Ebers Pantaloons +1 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
@@ -165,8 +165,8 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		-- Ebers Pantaloons +1 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
@@ -174,8 +174,8 @@ function init_gear_sets()
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		--Ebers Pantaloons +1 
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
@@ -183,8 +183,8 @@ function init_gear_sets()
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		--Ebers Pantaloons +1 
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
@@ -192,8 +192,8 @@ function init_gear_sets()
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		--Ebers Pantaloons +1 
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
@@ -201,8 +201,8 @@ function init_gear_sets()
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		--Ebers Pantaloons +1 
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
@@ -237,8 +237,8 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		-- Ebers Pantaloons +1 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
@@ -248,34 +248,34 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
 		-- Ebers Pantaloons +1 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
 
-	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud"})
+	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud +1"})
 	sets.midcast.MeleeLightWeatherCure = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightWeatherCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightDayCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightWeatherCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightDayCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeLightDayCure = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeCuraga = set_combine(sets.midcast.MeleeCure, {})
 	sets.midcast.MeleeLightWeatherCuraga = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeLightDayCuraga = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 
-	sets.midcast.CureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud"})
+	sets.midcast.CureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1"})
 	sets.midcast.LightWeatherCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
-	sets.midcast.LightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
-	sets.midcast.LightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
+	sets.midcast.LightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
+	sets.midcast.LightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
 	sets.midcast.LightDayCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.Curaga.DT = set_combine(sets.midcast.Cure.DT, {})
 	sets.midcast.LightWeatherCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.LightDayCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeCure.DT = set_combine(sets.midcast.Cure.DT, {})
 	
-	sets.midcast.MeleeCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud"})
+	sets.midcast.MeleeCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1"})
 	sets.midcast.MeleeLightWeatherCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaud +1",waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeLightDayCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeCuraga.DT = set_combine(sets.midcast.Cure.DT, {})
 	sets.midcast.MeleeLightWeatherCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
@@ -285,8 +285,8 @@ function init_gear_sets()
 		-- main={name="Gada", priority=2}, sub={name="Sors Shield", priority=1},
 		-- Vanya Hood Healing skill neck="Debilis Medallion", rear="Healing Earring",
 		neck="Colossus's Torque", lear="Beatific Earring", 
-		-- Ebers Bliaud +1 lring="Haoma's Ring", rring="Haoma's Ring",
-		body="Ebers Bliaud", hands="Fanatic Gloves", lring="Sirona's Ring",
+		-- Ebers Bliaud +1 +1 lring="Haoma's Ring", rring="Haoma's Ring",
+		body="Ebers Bliaud +1", hands="Fanatic Gloves", lring="Sirona's Ring",
 		-- Theo. Pantaloons +3
 		back=gear.fastcast_jse_back, waist="Bishop's Sash", legs="Theo. Pantaloons", feet="Gende. Galosh. +1"}
 
@@ -324,7 +324,7 @@ function init_gear_sets()
 	sets.midcast.BarElement = {main={name="Beneficus",priority=2}, sub={name="Sors Shield",priority=1},
 		-- Incanter's Torque
 		head="Ebers Cap", neck="Colossus's Torque", lear="Andoaa Earring", rear="Augment. Earring",
-		body="Ebers Bliaud", hands="Ebers Mitts", lring="Stikini Ring", rring="Stikini Ring",
+		body="Ebers Bliaud +1", hands="Ebers Mitts", lring="Stikini Ring", rring="Stikini Ring",
 		back="Merciful Cape", waist="Olympus Sash", legs="Ebers Pantaloons", feet="Ebers Duckbills"}
 
 	-- Caps 500 /sch  need 106 blm/rdm
@@ -538,30 +538,22 @@ function init_gear_sets()
     -- Basic set for if no TP weapon is defined.
 	sets.engaged = {ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.Acc = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
-
+		
     sets.engaged.DW = {ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.DW.Acc = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		-- Assid. Pants +1 Chironic Slippers DT
 		back="Moonbeam Cape", waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 		-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.

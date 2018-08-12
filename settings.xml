@@ -42,6 +42,8 @@
     <addon>zonetimer</addon>
     <addon>VisibleFavor</addon>
     <addon>gametime</addon>
+    <addon>checkparam</addon>
+    <addon>Debuffed</addon>
     <plugin>Guildwork</plugin>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>

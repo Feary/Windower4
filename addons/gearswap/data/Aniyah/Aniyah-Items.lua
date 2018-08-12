@@ -1,7 +1,7 @@
 ----gearsets your character will use among multiple jobs.
 
 sets.Sheltered = {ring2="Sheltered Ring"}
-sets.Capacity = {back="Mecisto. Mantle"}
+sets.Capacity = {back="Aptitude Mantle +1"}
 
 sets.buff.Doom = {waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"}
 sets.TreasureHunter = {head="Wh. Rarab Cap +1", waist="Chaac Belt"}
@@ -19,23 +19,30 @@ gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'"Fast Cast"+4',}}
 
 -- Telchine
 -- Head
-gear_telchine_head_Duration = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
-gear_telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
+gear_telchine_head_Duration = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
+gear_telchine_head_Siphon = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
+-- Pet DT
+gear_telchine_head_Pet = { name="Telchine Cap", augments={'Mag. Evasion+17','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Body
 gear_telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +7',}}
 gear_telchine_body_Siphon = {}
+gear_telchine_body_Pet = { name="Telchine Chas.", augments={'Mag. Evasion+25','Pet: "Regen"+3','Pet: Damage taken -4%',}}
+
 
 --Hands
-gear_telchine_hands_Cure =  { name="Telchine Gloves",  augments={'Enh. Mag. eff. dur. +5',}}
-gear_telchine_hands_Duration =  { name="Telchine Gloves",  augments={'Enh. Mag. eff. dur. +5',}}
+gear_telchine_hands_Cure = { name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +5',}}
+gear_telchine_hands_Duration = { name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +5',}}
+gear_telchine_hands_Pet = { name="Telchine Gloves", augments={'Mag. Evasion+15','Pet: "Regen"+3','Pet: Damage taken -3%',}}
+
 
 -- Legs
 gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +6',}}
 gear_telchine_legs_Siphon = {}
+gear_telchine_legs_Pet = { name="Telchine Braconi", augments={'Mag. Evasion+25','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Feet
-gear_telchine_feet_Duration = { name="Telchine Pigaches", augments={'Haste+2','Enh. Mag. eff. dur. +10',}}
+gear_telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}}
 
 ----gear_gada_enhancing_club = {name="Gada",augments={'Enh. Mag. eff. dur. +6','STR+3','Mag. Acc.+8','"Mag.Atk.Bns."+17','DMG:+7',}}
 ----gear_gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+11','"Mag.Atk.Bns."+13','DMG:+3',}}

@@ -66,6 +66,11 @@
     </global>
     <akilee>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -78,6 +83,11 @@
     </akilee>
     <akili>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -89,10 +99,29 @@
         <visible>false</visible>
     </akili>
     <almontay>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </almontay>
     <almonte>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -139,6 +168,11 @@
     </casanoova>
     <dasmir>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -150,10 +184,29 @@
         <visible>false</visible>
     </dasmir>
     <dayanna>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </dayanna>
     <dela>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -166,6 +219,11 @@
     </dela>
     <deliah>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -178,6 +236,11 @@
     </deliah>
     <denonie>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -207,6 +270,11 @@
     </derion>
     <drecien>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -236,6 +304,11 @@
     </feary>
     <fearyjunior>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -248,6 +321,11 @@
     </fearyjunior>
     <gonzalo>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -259,10 +337,29 @@
         <visible>false</visible>
     </gonzalo>
     <gonzaloo>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </gonzaloo>
     <kavita>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -275,6 +372,11 @@
     </kavita>
     <luisito>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -287,6 +389,11 @@
     </luisito>
     <mehany>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -299,6 +406,11 @@
     </mehany>
     <midnightclam>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -310,10 +422,29 @@
         <visible>false</visible>
     </midnightclam>
     <midnightclamm>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </midnightclamm>
     <molyoly>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -326,6 +457,11 @@
     </molyoly>
     <most>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -337,12 +473,31 @@
         <visible>false</visible>
     </most>
     <mostmost>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </mostmost>
     <olymoly>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
-                <x>1328</x>
+                <x>1327</x>
                 <y>401</y>
             </pos>
             <text>
@@ -352,10 +507,29 @@
         <visible>false</visible>
     </olymoly>
     <perseise>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </perseise>
     <ravindra>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -368,6 +542,11 @@
     </ravindra>
     <seise>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -380,6 +559,11 @@
     </seise>
     <suede>
         <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
             <pos>
                 <x>1399</x>
                 <y>289</y>
@@ -408,6 +592,20 @@
         <visible>false</visible>
     </swagg>
     <symbio>
+        <display>
+            <bg>
+                <blue>30</blue>
+                <green>30</green>
+                <red>30</red>
+            </bg>
+            <pos>
+                <x>1436</x>
+                <y>521</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
         <visible>false</visible>
     </symbio>
     <watitdew>

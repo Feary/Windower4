@@ -15,20 +15,20 @@
 	<!-- match should not be used for Emote. Examine matches to Examiners name, Invite matches to Inviters name. -->
 	<!-- <trigger match="*YourNickNameHere*" notmatch="*SomecommonMatch*" notfrom="Tell" from="Party|Linkshell" sound="Talk" /> -->
 	<!-- Ambuscade -->
-	<trigger match="*Ambuscade*whm*|*Ambuscade*heal*|*Ambuscade*BRD*|*ambuscade*looking*whm*|*ambuscade*looking*heal*" notmatch="*please*invite*me*" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\ambuscade.wav"/>
-	<!-- Delve|Zone Boss -->
-	<trigger match="*Plasm*Farm*" notmatch="*please*invite*me*|*can*i*have*it*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Delve.wav"/>
+	<trigger match="*Ambuscade*1*VD*whm*|*Ambuscade*1*VD*heal*|*Ambuscade*1*VD*BRD*" notmatch="*please*invite*me*|*invite*to*join*party*" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\ambuscade.wav"/>
+	<!-- Delve -->
+	<trigger match="*Plasm*Farm*" notmatch="*please*invite*me*|*can*i*have*it*|*buy*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Delve.wav"/>
 	<!-- Vagary -->
-	<trigger match="*Vagary*|*Rancibus*|*Vagary*Feet*" notmatch="*please*invite*me*|*can*i*have*it*|*shop*|*synth*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Vagary.wav"/>
+	<trigger match="" notmatch="*please*invite*me*|*can*i*have*it*|*shop*|*synth*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Vagary.wav"/>
 	<!-- Tales -->
 	<trigger match="*Tales*|*rem*ch*" Notmatch="*can*i*have*it" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<trigger match="*avatar*|*Ramuh*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<!-- Neo Nyzul -->
-	<trigger match="*Nyzul*|*NNI*" notmatch="" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Nyzul.wav"/>
+	<trigger match="*Nyzul*|* NNI *" notmatch="" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Nyzul.wav"/>
 	<!--Unity-->	
-	<trigger match="*Sov*Behe*" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\unity.wav"/>
+	<trigger match="" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\unity.wav"/>
 	<!-- Exping --> 
-	<trigger match="*capacity*points*do*you*|capacity|cp|apex|dho*gates*" from="Shout|Yell|Linkshell" notmatch="" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\jobpoints.wav" />
+	<trigger match="*capacity*points*do*you*|capacity|cp|apex|dho*gates*" from="Shout|Yell|Linkshell" notmatch="*buy*" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\jobpoints.wav" />
 	<!-- Einherjar -->
 	<trigger match="*Einherjar*|*ichor*" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Einherjar.wav" />
 	<!-- <trigger match="*craft*|*woodworking*|*Smithing*|*Synergy*|" notfrom="Tell" from="Yell|Shout|Linkshell" sound="Examine" />-->

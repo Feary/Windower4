@@ -1,0 +1,17 @@
+sets.exported={
+    main="Earth Staff",
+    sub="Mensch Strap",
+    range="Dunna",
+    head="Mallquis Chapeau +1",
+    body="Jhakri Robe +2",
+    hands="Mallquis Cuffs +1",
+    legs="Assid. Pants +1",
+    feet="Geomancy Sandals",
+    neck="Loricate Torque +1",
+    waist="Fucho-no-Obi",
+    left_ear="Merman's Earring",
+    right_ear="Merman's Earring",
+    left_ring="Vocane Ring",
+    right_ring="Defending Ring",
+    back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},
+}

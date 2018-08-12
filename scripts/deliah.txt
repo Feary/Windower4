@@ -1,4 +1,4 @@
-put alexandrite locker all
+put alexandrite safe all
 put pluton satchel all
 put beitetsu satchel all
 put Riftborn Boulder satchel all

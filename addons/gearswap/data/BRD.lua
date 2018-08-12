@@ -32,8 +32,8 @@ end
 
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
-
-    state.ExtraSongsMode = M{['description']='Extra Songs','None','Dummy','Dummy Lock','Full Length','Full Length Lock'}
+	-- 'Dummy Lock','Full Length','Full Length Lock'
+    state.ExtraSongsMode = M{['description']='Extra Songs','None','Dummy','Dummy Lock',}
 
 	state.Buff['Aftermath: Lv.3'] = buffactive['Aftermath: Lv.3'] or false
     state.Buff['Pianissimo'] = buffactive['Pianissimo'] or false

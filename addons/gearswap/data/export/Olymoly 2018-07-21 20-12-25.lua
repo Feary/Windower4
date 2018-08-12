@@ -1,0 +1,17 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    ammo="Staunch Tathlum",
+    head={ name="Telchine Cap", augments={'Mag. Evasion+18','Pet: "Regen"+3','Pet: Damage taken -3%',}},
+    body={ name="Telchine Chas.", augments={'Mag. Evasion+21','Pet: "Regen"+3','Pet: Damage taken -3%',}},
+    hands={ name="Telchine Gloves", augments={'Mag. Evasion+15','Pet: "Regen"+3','Pet: Damage taken -4%',}},
+    legs={ name="Telchine Braconi", augments={'Mag. Evasion+24','Pet: "Regen"+3','Pet: Damage taken -3%',}},
+    feet="Geomancy Sandals",
+    neck="Loricate Torque +1",
+    waist="Fucho-no-Obi",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring="Defending Ring",
+    back="Moonbeam Cape",
+}

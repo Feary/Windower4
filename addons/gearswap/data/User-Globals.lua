@@ -3,10 +3,11 @@
 
 --Time Related Settings (Currently trying to automatically generate offset.)
 --Set time_test to true to see and test time settings, change offset to change the settings, requires a capacity ring with uses,
---You want the cap ring offset to be 899 or 900 the MOMENT after using your Capacity ring.
---time_offset = -39601
+--You want the cap ring offset to be 899 or 900 the MOMENT after using your Capacity ring. 36001
+--time_offset = 0
 --time_test = true
---framerate = 75
+
+framerate = 30
 
 --If this is set to true it will prevent you from casting shadows when you have more up than that spell would generate.
 conserveshadows = false

@@ -1,7 +1,7 @@
 ----gearsets your character will use among multiple jobs.
 
-sets.Sheltered = {}--ring2="Sheltered Ring"
-sets.Capacity = {back="Aptitude Mantle +1"}
+sets.Sheltered = {ring2="Sheltered Ring"}
+sets.Capacity = {back={name="Mecisto. Mantle", augments={'Cap. Point+40%','HP+18','Rng.Atk.+4','DEF+13',}}}
 
 sets.buff.Doom = {}--waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"
 sets.TreasureHunter = {waist="Chaac Belt"} --head="Wh. Rarab Cap +1", 
@@ -27,25 +27,26 @@ gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'Accuracy+15 Attack+1
 -- Feet 3
 
 -- Head
-gear_telchine_head_Duration = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
-gear_telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +7',}}
-gear_telchine_head_Pet = {name="Telchine Cap"}
+gear_telchine_head_Duration = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +10',}}
+gear_telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +10',}}
+-- Pet DT
+gear_telchine_head_Pet = {name="Telchine Cap", augments={'Mag. Evasion+18','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Body
-gear_telchine_body_Duration = {}
+gear_telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
 gear_telchine_body_Siphon = {}
-gear_telchine_body_Pet = {}
+gear_telchine_body_Pet = { name="Telchine Chas.", augments={'Mag. Evasion+21','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 --Hands 
-gear_telchine_hands_Cure = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +8',}}
-gear_telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +8',}}
+gear_telchine_hands_Cure = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +9',}}
+gear_telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +9',}}
 gear_telchine_hands_Siphon = { name="Telchine Gloves", augments={'"Elemental Siphon"+10',}}
-gear_telchine_hands_Pet = { name="Telchine Gloves"}
+gear_telchine_hands_Pet = { name="Telchine Gloves", augments={'Mag. Evasion+15','Pet: "Regen"+3','Pet: Damage taken -4%',}}
 
 -- Legs
 gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}}
 gear_telchine_legs_Siphon = {}
-gear_telchine_legs_Pet = {}
+gear_telchine_legs_Pet = { name="Telchine Braconi", augments={'Mag. Evasion+24','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Feet
 gear_telchine_feet_Song = { name="Telchine Pigaches", augments={'Mag. Acc.+20','Song spellcasting time -7%',}}
@@ -93,6 +94,7 @@ gear_telchine_feet_Regen = { name="Telchine Pigaches", augments={'Haste+2','Enh.
 -- Hands
 -- Occult Acumen 
 -- Fastcast
+gear_helios_hands_FC = { name="Helios Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3',}}
 
 -- Legs 
 
