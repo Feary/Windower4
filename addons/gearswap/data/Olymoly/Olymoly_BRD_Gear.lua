@@ -168,7 +168,7 @@ function init_gear_sets()
 		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Genmei Earring
 		head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		body="Bihu Jstcorps +3", hands="Fili Manchettes +1", lring="Stikini Ring", rring="Stikini Ring",
+		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Stikini Ring", rring="Stikini Ring",
 		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +1"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
@@ -176,7 +176,7 @@ function init_gear_sets()
 		-- Genmei Earring
 		-- Incanter's Torque
 		head="Bihu Roundlet +1", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		body="Bihu Jstcorps +3", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
 		back="Intarabus's Cape", waist="Ovate Rope", legs="Fili Rhingrave +1", feet="Inyan. Crackows +2"}
 
 	-- Song-specific recast reduction

@@ -55,11 +55,11 @@ function init_gear_sets()
     sets.precast.JA['Mana Cede'] = {hands="Caller's Bracers"}
 
     -- Pact delay reduction gear
-    sets.precast.BloodPactWard = {main="Gridarvor",sub="Vox Grip",ammo="Eminent Sachet",--ammo="Eminent Sachet",
+    sets.precast.BloodPactWard = {main="Gridarvor",sub="Vox Grip",ammo="Eminent Sachet",--ammo="Sancus Sachet +1",
 		-- neck="Incanter's Torque",
 		head="Beckoner's Horn",neck="Caller's Pendant",ear1="Andoaa Earring",ear2="Evans Earring",
         --body="Con. Doublet +3" ,hands="Baayami Cuffs",
-		body="Glyphic Doublet", hands="Glyphic Bracers",ring1="Evoker's Ring",ring2="Stikini Ring",
+		body="Con. Doublet", hands="Glyphic Bracers",ring1="Evoker's Ring",ring2="Stikini Ring",
         --waist="Kobo Obi",legs="Baayami Slops",feet="Baayami Sabots"
 		back="Conveyance Cape", waist="Cimmerian Sash", legs="Glyphic Spats", feet="Glyphic Pigaches"}
 

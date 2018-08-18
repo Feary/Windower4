@@ -52,16 +52,18 @@ function init_gear_sets()
     -- Precast Sets
     -- Fast cast sets for spells
     sets.precast.FC = {ammo="Incantor Stone",
+		-- Enchntr. Earring +1
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring",
-		--lring="Prolix Ring",
+		--lring="Prolix Ring", rring="Kishar Ring",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", 
 		-- waist="Witful Belt",
 		back=gear.fastcast_jse_back, legs="Orvail Pants +1", feet="Regal Pumps"}
     sets.precast.FC.DT = {ammo="Incantor Stone",
+		-- Enchntr. Earring +1
 		head="Nahtirah Hat", neck="Orison Locket", lear="Loquac. Earring",
-		--lring="Prolix Ring",
+		--lring="Prolix Ring",rring="Kishar Ring",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", 
-		-- waist="Witful Belt",
+		-- waist="Witful Belt", 
 		back=gear.fastcast_jse_back, legs="Aya. Cosciales +2", feet="Regal Pumps"}
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	

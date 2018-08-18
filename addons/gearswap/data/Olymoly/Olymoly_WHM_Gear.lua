@@ -361,7 +361,7 @@ function init_gear_sets()
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		-- Chironic Hose Chironic Slippers 
-		back="Toro Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back="Toro Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
 	sets.midcast['Elemental Magic'].Resistant = {
 		-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -371,7 +371,7 @@ function init_gear_sets()
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		-- Chironic Hose Chironic Slippers 
-		back="Toro Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back="Toro Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
 	sets.midcast['Divine Magic'] = {
 		-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -381,7 +381,7 @@ function init_gear_sets()
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		-- Chironic Hose Chironic Slippers 
-		back="Toro Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back="Toro Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
 	sets.midcast['Dark Magic'] = {
 		-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -391,7 +391,7 @@ function init_gear_sets()
 		-- Theo. Briault +3
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
     sets.midcast.Drain = {
 		-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -401,7 +401,7 @@ function init_gear_sets()
 		-- Theo. Briault +3
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Fucho-no-Obi", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back=gear.Macc_jse_back, waist="Fucho-no-Obi", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
     sets.midcast.Drain.Resistant = {
 		-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -411,7 +411,7 @@ function init_gear_sets()
 		-- Theo. Briault +3
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Fucho-no-Obi", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back=gear.Macc_jse_back, waist="Fucho-no-Obi", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
@@ -424,7 +424,7 @@ function init_gear_sets()
 		-- Theo. Briault +3
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
 	sets.midcast.Stun.Resistant = {
 		-- Grioavolr Enki Strap Pemphredo Tathlum
@@ -434,7 +434,7 @@ function init_gear_sets()
 		-- Theo. Briault +3
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
 	sets.midcast['Enfeebling Magic'] = {
 		-- Grioavolr Enki Strap Hyrdocera
@@ -444,7 +444,7 @@ function init_gear_sets()
 		-- Theo. Briault +3
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {
 		-- Grioavolr Enki Strap Hyrdocera
@@ -454,7 +454,7 @@ function init_gear_sets()
 		-- Theo. Briault +3
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +1"}
+		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)

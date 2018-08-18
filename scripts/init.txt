@@ -32,6 +32,7 @@ lua load sellnpc
 lua load equipviewer
 lua load checkparam
 partybuffs size 20
+lua load roller
 
 //Bind keys
 //Bind syntax is "bind <key> <up> <command>

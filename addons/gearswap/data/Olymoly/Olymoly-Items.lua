@@ -82,7 +82,7 @@ gear_telchine_feet_Regen = { name="Telchine Pigaches", augments={'Haste+2','Enh.
 -- Helios
 -- Head 
 -- Body 
--- Hands 
+-- Hands 1/1
 -- Legs 
 -- Feet
 

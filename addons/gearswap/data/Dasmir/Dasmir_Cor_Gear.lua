@@ -377,8 +377,8 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1" lear="Petrov Ring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
-		-- legs="Samnuha Tights", feet="Herculean Boots", TA
-		back=gear.tp_jse_back, waist="Windbuffet Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
+		--  feet="Herculean Boots", TA
+		back=gear.tp_jse_back, waist="Windbuffet Belt", legs="Samnuha Tights", feet="Meg. Jam. +2"}
 
     sets.engaged.Acc = {
 		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"

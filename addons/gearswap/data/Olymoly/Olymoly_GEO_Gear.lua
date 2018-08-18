@@ -60,7 +60,7 @@ function init_gear_sets()
 		--main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
 		-- neck="Voltsurge Torque",
 		head="Nahtirah Hat", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		body="Anhur Robe", hands=hands=gear_helios_hands_FC, ring1="Prolix Ring",
+		body="Anhur Robe", hands=gear_helios_hands_FC, ring1="Prolix Ring",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Geo. Pants +1", feet="Amalric Nails"}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {range="Dunna",ammo=empty})
@@ -138,7 +138,7 @@ function init_gear_sets()
 	sets.midcast.Geomancy = {main="Idris", sub="Genmei Shield", range="Dunna",
 		-- neck="Incantor's Torque",
 		head="Azimuth Hood +1", neck="Reti Pendant", lear="Merman's Earring", rear="Etiolation Earring",
-		body="Bagua Tunic +1", hands="Geo. Mitaines +1", lring="Stikini Ring", rring="Stikini Ring",
+		body="Bagua Tunic +1", hands="Shrieker's Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.FC_jse_back, waist="Austerity Belt", legs="Bagua Pants +1", feet="Azimuth Gaiters +1"}
 
 	--Extra Indi duration. As long as you can keep your 900 skill cap
@@ -183,8 +183,8 @@ function init_gear_sets()
 		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 
 	-- High Tier Nuke
-	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {main={
-		name="Idris", priority=2}, sub={name="Genbu's Shield", priority=1}, 
+	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
+		main={name="Idris", priority=2}, sub={name="Genbu's Shield", priority=1}, 
 		head="Mallquis Chapeau +2", neck="Eddy Necklace", lear="Barkaro. Earring", rear="Friomisi Earring",
 		body="Mallquis Saio +2", hands="Amalric Gages", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Wanion Belt", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"})
@@ -274,7 +274,7 @@ function init_gear_sets()
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Hood"})
 	
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
-		--main="Vadose Rod",sub="Genmei Shield",
+		--main="Vadose Rod", sub="Genmei Shield",
 		--head="Amalric Hood", hands="Regal Cuffs",
 		--waist="Emphatikos Rope", legs="Shedir Seraweels"
 		})
@@ -335,7 +335,7 @@ function init_gear_sets()
 	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {})
 
 	sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield", ammo="Staunch Tathlum",
-		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2=" Earring",
+		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
