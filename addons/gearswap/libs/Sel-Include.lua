@@ -92,9 +92,11 @@ function init_include()
 	state.RelicAftermath	  = M(true, 'Maintain Relic Aftermath')
 	state.Contradance		  = M(true, 'Auto Contradance Mode')
 	state.ElementalWheel 	  = M(false, 'Elemental Wheel')
+	state.MaintainDefense 	  = M(false, 'Maintain Defense')
 	
 	state.RuneElement 		  = M{['description'] = 'Rune Element','Ignis','Gelus','Flabra','Tellus','Sulpor','Unda','Lux','Tenebrae'}
 	state.ElementalMode 	  = M{['description'] = 'Elemental Mode', 'Fire','Ice','Wind','Earth','Lightning','Water','Light','Dark'}
+	state.AutoSambaMode 	  = M{['description']= 'Auto Samba Mode', 'Off', 'Haste Samba', 'Aspir Samba', 'Drain Samba II'}
 
 	state.MagicBurstMode 	  = M{['description'] = 'Magic Burst Mode', 'Off', 'Single', 'Lock'}
 	state.SkillchainMode 	  = M{['description'] = 'Skillchain Mode', 'Off', 'Single', 'Lock'}
@@ -170,15 +172,10 @@ function init_include()
 	autowstp = 1000
 	rangedautowstp = 1000
 	buffup = false
-	time_offset = -39601
+	time_offset = -39602
 	framerate = 75
 	curecheat = false
-	
-	if time_offset then
-		local t = os.time()
-		local offset = os.difftime(os.time(os.date('!*t', t)), t)
-		time_offset = offset - 61201
-	end
+	lastincombat = player.in_combat
 	
 	time_test = false
 	utsusemi_cancel_delay = .5
@@ -322,17 +319,19 @@ function init_include()
 		useItem = false
 		useItemName = ''
 		useItemSlot = ''
+		lastincombat = false
+		being_attacked = false
 		if state.DisplayMode.value then update_job_states()	end
 	end)
 
 	-- New implementation of tick.
 	windower.raw_register_event('prerender', function()
 		tickdelay = tickdelay - 1
-		
+
 		if not (tickdelay <= 0) then return end
 
 		gearswap.refresh_globals(false)
-
+		
 		if (player ~= nil) and (player.status == 'Idle' or player.status == 'Engaged') and not (check_midaction() or moving or buffactive['Sneak'] or buffactive['Invisible'] or silent_check_disable()) then
 			if pre_tick then
 				if pre_tick() then return end
@@ -341,11 +340,11 @@ function init_include()
 			if user_job_tick then
 				if user_job_tick() then return end
 			end
-			
+
 			if user_tick then
 				if user_tick() then return end
 			end
-			
+
 			if job_tick then
 				if job_tick() then return end
 			end
@@ -353,18 +352,26 @@ function init_include()
 			if default_tick then
 				if default_tick() then return end
 			end			
-		
+
 			if extra_user_job_tick then
 				if extra_user_job_tick() then return end
 			end
-		
+
 			if extra_user_tick then
 				if extra_user_tick() then return end
 			end
-			
+
 			tickdelay = (framerate / 4)
 		end
 		
+		if lastincombat == true and not player.in_combat and being_attacked then
+			being_attacked = false
+			if player.status == 'Idle' and not midaction() and not pet_midaction() then
+				handle_equipping_gear(player.status)
+			end
+		end			
+		lastincombat = player.in_combat
+
 		tickdelay = (framerate / 2)
 
 	end)
@@ -867,7 +874,7 @@ function default_post_precast(spell, spellMap, eventArgs)
 			end
 		end
 		
-		if state.DefenseMode.value ~= 'None' then
+		if state.DefenseMode.value ~= 'None' and (player.in_combat or being_attacked) then
 			if spell.action_type == 'Magic' then
 				if sets.precast.FC[spell.english] and sets.precast.FC[spell.english].DT then
 					equip(sets.precast.FC[spell.english].DT)
@@ -923,10 +930,12 @@ function default_post_midcast(spell, spellMap, eventArgs)
 						equip(sets.HPCure)
 					end
 					curecheat = false
-				elseif sets.Self_Healing then
+				elseif sets.Self_Healing and not (state.CastingMode.value:contains('SIRD') and (player.in_combat or being_attacked)) then
 					equip(sets.Self_Healing)
+				elseif sets.Self_Healing and sets.Self_Healing.SIRD and state.CastingMode.value:contains('SIRD') then
+					equip(sets.Self_Healing.SIRD)
 				end
-			elseif spellMap == 'Refresh' and sets.Self_Refresh then
+			elseif spellMap == 'Refresh' and sets.Self_Refresh and not (state.CastingMode.value:contains('SIRD') and (player.in_combat or being_attacked)) then
 				equip(sets.Self_Refresh)
 			end
 		end
@@ -950,7 +959,7 @@ function default_post_midcast(spell, spellMap, eventArgs)
 			equip(sets.TreasureHunter)
 		end
 		
-		if state.DefenseMode.value ~= 'None' and spell.action_type == 'Magic' then
+		if state.DefenseMode.value ~= 'None' and spell.action_type == 'Magic' and (player.in_combat or being_attacked) then
 			if sets.midcast[spell.english] and sets.midcast[spell.english].DT then
 				equip(sets.midcast[spell.english].DT)
 			elseif sets.midcast[spellMap] and sets.midcast[spellMap].DT then
@@ -988,7 +997,19 @@ function default_post_pet_midcast(spell, spellMap, eventArgs)
 end
 
 function default_aftercast(spell, spellMap, eventArgs)
-
+	
+	if spell.action_type == 'Magic' then
+		tickdelay = (framerate * 2.7)
+	elseif spell.action_type == 'Ability' then
+		tickdelay = (framerate * .5)
+	elseif spell.type == 'WeaponSkill' then
+		tickdelay = (framerate * 1.9)
+	elseif 	spell.action_type == 'Item' then
+		tickdelay = (framerate * 1.1)
+	elseif spell.action_type == 'Ranged Attack' then
+		tickdelay = (framerate * 1.1)
+	end
+	
 	if not spell.interrupted then
 		if state.TreasureMode.value ~= 'None' and state.DefenseMode.value == 'None' and spell.target.type == 'MONSTER' and not info.tagged_mobs[spell.target.id] then
 			info.tagged_mobs[spell.target.id] = os.time()
@@ -1034,6 +1055,7 @@ function default_aftercast(spell, spellMap, eventArgs)
 			useItemName = ''
 			useItemSlot = ''
 		end
+	else
 	end
 
 	if not eventArgs.handled then
@@ -1163,6 +1185,7 @@ function default_tick()
 	if check_sub() then return true end
 	if check_food() then return true end
 	if check_ws() then return true end
+	if check_samba() then return true end
 	if check_cpring_buff() then return true end
 	if check_cleanup() then return true end
 	if check_nuke() then return true end
@@ -1186,7 +1209,7 @@ end
 function handle_equipping_gear(playerStatus, petStatus)
     -- init a new eventArgs
     local eventArgs = {handled = false}
-
+	
     -- Allow jobs to override this code
     if job_handle_equipping_gear then
         job_handle_equipping_gear(playerStatus, eventArgs)
@@ -1258,8 +1281,6 @@ function get_idle_set(petStatus)
 
     if buffactive.weakness then
         idleScope = 'Weak'
-    elseif areas.Cities:contains(world.area) then
-        idleScope = 'Town'
     else
         idleScope = 'Field'
     end
@@ -1269,9 +1290,10 @@ function get_idle_set(petStatus)
         mote_vars.set_breadcrumbs:append(idleScope)
     end
 
-    if idleSet[state.IdleMode.current] then
-        idleSet = idleSet[state.IdleMode.current]
-        mote_vars.set_breadcrumbs:append(state.IdleMode.current)
+    if not (player.in_combat or being_attacked) and (state.IdleMode.current:contains('DT') or state.IdleMode.current:contains('Tank')) then
+	elseif idleSet[state.IdleMode.current] then
+		idleSet = idleSet[state.IdleMode.current]
+		mote_vars.set_breadcrumbs:append(state.IdleMode.current)
     end
 
     if (pet.isvalid or state.Buff.Pet) and idleSet.Pet then
@@ -1547,7 +1569,8 @@ function get_precast_set(spell, spellMap)
     -- Once we have a named base set, do checks for specialized modes (casting mode, weaponskill mode, etc).
     
     if spell.action_type == 'Magic' then
-        if equipSet[state.CastingMode.current] then
+		if (state.CastingMode.current:contains('SIRD') or state.CastingMode.current:contains('DT')) and not (player.in_combat or being_attacked) then
+        elseif equipSet[state.CastingMode.current] then
             equipSet = equipSet[state.CastingMode.current]
             mote_vars.set_breadcrumbs:append(state.CastingMode.current)
         end
@@ -1808,7 +1831,7 @@ end
 -- Function to add kiting gear on top of the base set if kiting state is true.
 -- @param baseSet : The gear set that the kiting gear will be applied on top of.
 function apply_kiting(baseSet)
-	if sets.Kiting and (state.Kiting.value or (player.status == 'Idle' and moving and state.DefenseMode.value == 'None' and state.Passive.value == 'None' and (state.IdleMode.value == 'Normal' or state.IdleMode.value == 'Sphere'))) then
+	if sets.Kiting and (state.Kiting.value or (player.status == 'Idle' and moving and state.DefenseMode.value == 'None' and state.Passive.value == 'None' and (state.IdleMode.value == 'Normal' or state.IdleMode.value == 'Sphere' or not (player.in_combat or being_attacked)))) then
 		baseSet = set_combine(baseSet, sets.Kiting)
 	end
 	
@@ -2081,8 +2104,26 @@ function buff_change(buff, gain)
 			
 			if time_test and player.equipment.left_ring == 'Capacity Ring' then
 				--local CurrentTime = (os.time(os.date("!*t", os.time())) + time_offset)
-				local CurrentTime = (os.time(os.date("!*t")) + time_offset)
-				windower.add_to_chat(123,"USED! ~ Capacity Ring Next Use: "..((get_item_next_use('Capacity Ring').next_use_time) - CurrentTime).."")
+				local CurrentTime = os.time(os.date("!*t"))
+				time_test = false
+				local CapacityOffset = ((get_item_next_use('Capacity Ring').next_use_time) - CurrentTime)
+				local NegativeCapacityOffset = ((get_item_next_use('Capacity Ring').next_use_time) - CurrentTime) * -1
+				local CapacityOffsetPlus = CapacityOffset + 900
+				local CapacityOffsetMinus = CapacityOffset - 900
+				local NegativeCapacityOffsetPlus =  NegativeCapacityOffset + 900
+				local NegativeCapacityOffsetMinus = NegativeCapacityOffset - 900
+				if ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + CapacityOffsetPlus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + CapacityOffsetPlus)) < 905 then
+					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..CapacityOffsetPlus.."")
+				elseif ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + CapacityOffsetMinus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + CapacityOffsetMinus)) < 905 then
+					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..CapacityOffsetMinus.."")
+				elseif ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetPlus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetPlus)) < 905 then
+					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..NegativeCapacityOffsetPlus.."")
+				elseif ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetMinus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetMinus)) < 905 then
+					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..CapacityOffsetPlus.."")
+				else
+					windower.add_to_chat(123,"Unable to automatically determine your offset")
+					time_test = true
+				end
 			end
 			
 		elseif gain and player.equipment.head == "Guide Beret" then

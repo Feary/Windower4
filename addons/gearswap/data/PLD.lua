@@ -16,7 +16,6 @@ function job_setup()
     state.Buff.Cover = buffactive.Cover or false
 	state.Stance = M{['description']='Stance','Hasso','Seigan','None'}
 
-	state.EquipShield = M(false, 'Shield Swapping Defense Mode')
 	state.CurrentStep = M{['description']='Current Step', 'Box Step', 'Quickstep'}
 
 	--List of which WS you plan to use TP bonus WS with. (Atonement uses but doesn't need to switch out.)
@@ -28,7 +27,7 @@ function job_setup()
 	autofood = 'Miso Ramen'
 	
 	update_melee_groups()
-	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoTankMode","AutoWSMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode","AutoBuffMode","EquipShield",},{"Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","PhysicalDefenseMode","MagicalDefenseMode","ResistDefenseMode","TreasureMode",})
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoTankMode","AutoWSMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode","AutoBuffMode"},{"AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","PhysicalDefenseMode","MagicalDefenseMode","ResistDefenseMode","CastingMode","TreasureMode",})
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -39,14 +38,20 @@ end
 
 function job_filtered_action(spell, eventArgs)
 	if spell.type == 'WeaponSkill' then
-        if player.equipment.main == 'Nibiru Cudgel' then
+		local available_ws = S(windower.ffxi.get_abilities().weapon_skills)
+		-- WS 172 is Flash Nova, meaning a Spear is equipped.
+		if available_ws:contains(172) then
             if spell.english == "Chant du Cygne" then
+				send_command('@input /ws "True Strike" '..spell.target.raw)
                 cancel_spell()
-				send_command('@input /ws "Realmrazer" '..spell.target.raw)
+				eventArgs.cancel = true
+            elseif spell.english == "Savage Blade" then
+                send_command('@input /ws "Realmrazer" '..spell.target.raw)
+                cancel_spell()
 				eventArgs.cancel = true
             elseif spell.english == "Sanguine Blade" then
+                send_command('@input /ws "Flash Nova" '..spell.target.raw)
                 cancel_spell()
-				send_command('@input /ws "Flash Nova" '..spell.target.raw)
 				eventArgs.cancel = true
             end
         end
@@ -136,11 +141,6 @@ end
 function job_state_change(stateField, newValue, oldValue)
     classes.CustomDefenseGroups:clear()
     classes.CustomDefenseGroups:append(state.ExtraDefenseMode.current)
-    if state.EquipShield.value == true then
-		enable('main','sub','range')
-        classes.CustomDefenseGroups:append(state.DefenseMode.current .. 'Shield')
-    end
-
     classes.CustomMeleeGroups:clear()
     classes.CustomMeleeGroups:append(state.ExtraDefenseMode.current)
 end
@@ -299,11 +299,7 @@ function job_customize_defense_set(defenseSet)
     if state.ExtraDefenseMode.value ~= 'None' then
         defenseSet = set_combine(defenseSet, sets[state.ExtraDefenseMode.value])
     end
-    
-    if state.EquipShield.value == true then
-        defenseSet = set_combine(defenseSet, sets[state.DefenseMode.current .. 'Shield'])
-    end
-    
+
     return defenseSet
 end
 
@@ -330,11 +326,7 @@ function display_current_job_state(eventArgs)
     if state.ExtraDefenseMode.value ~= 'None' then
         msg = msg .. ', Extra: ' .. state.ExtraDefenseMode.value
     end
-    
-    if state.EquipShield.value == true then
-        msg = msg .. ', Force Equip Shield'
-    end
-    
+   
     if state.Kiting.value == true then
         msg = msg .. ', Kiting'
     end

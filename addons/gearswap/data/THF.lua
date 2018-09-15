@@ -37,7 +37,7 @@ function job_setup()
 	autofood = 'Soy Ramen'
 	
 	update_melee_groups()
-	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","TreasureMode",})
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","TreasureMode",})
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -66,7 +66,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 		end
 	end
 	
-	if spell.english == 'Aeolian Edge' or spell.english == 'Cyclone' and state.TreasureMode.value ~= 'None' then
+	if (spell.english == 'Aeolian Edge' or spell.english == 'Cyclone') and state.TreasureMode.value ~= 'None' then
         equip(sets.TreasureHunter)
     elseif spell.english == 'Sneak Attack' or spell.english == 'Trick Attack' or spell.type == 'WeaponSkill' then
         if state.TreasureMode.value == 'SATA' or state.TreasureMode.value == 'Fulltime' then
@@ -154,7 +154,7 @@ end
 
 
 function job_customize_idle_set(idleSet)
-    if player.hpp < 80 then
+    if (state.IdleMode.value == 'Normal' or state.IdleMode.value == 'Sphere') and state.DefenseMode.value == 'None' and not (player.in_combat or being_attacked) and player.hpp < 80 then
         idleSet = set_combine(idleSet, sets.ExtraRegen)
     end
 

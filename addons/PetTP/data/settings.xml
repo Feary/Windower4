@@ -40,10 +40,16 @@
             </stroke>
         </text>
     </global>
+    <aniyah>
+        <pos>
+            <x>924</x>
+            <y>409</y>
+        </pos>
+    </aniyah>
     <olymoly>
         <pos>
-            <x>927</x>
-            <y>324</y>
+            <x>929</x>
+            <y>325</y>
         </pos>
     </olymoly>
 </settings>

@@ -52,12 +52,12 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 
-	sets.buff['Burst Affinity'] = {feet="Hashishin Basmak"} -- legs="Assim. Shalwar"
-	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs"} -- head="Hashishin Kavuk",
-	sets.buff.Convergence = {head="Luhlaza Keffiyeh"}
+	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +1", feet="Hashishin Basmak"}
+	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk", feet="Assim. Charuqs"}
+	sets.buff.Convergence = {head="Luh. Keffiyeh +1"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs"}
 	sets.buff.Enchainment = {}
-	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt"}
+	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +1"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 
 	-- used for omen objectives
@@ -91,8 +91,7 @@ function init_gear_sets()
 	sets.precast.FC = {--main="Vampirism",sub="Vampirism",ammo="Impatiens",
 		--neck="Voltsurge Torque",
 		head="Carmine Mask +1", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		--ring2="Kishar Ring",
-		body="Luhlaza Jubbah",hands="Leyline Gloves",ring1="Prolix Ring",
+		body="Luhlaza Jubbah",hands="Leyline Gloves",ring1="Prolix Ring", ring2="Kishar Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})--body="Passion Jacket"
@@ -266,22 +265,23 @@ function init_gear_sets()
 
 	-- Magical Spells --
 
-	sets.midcast['Blue Magic'].Magical = {ammo="Dosis Tathlum", --main="Nibiru Cudgel",sub="Nibiru Cudgel",
+	sets.midcast['Blue Magic'].Magical = {ammo="Dosis Tathlum", --sub="Nibiru Cudgel",
+		main="Nibiru Cudgel",
 		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Yamabuki-no-Obi
-		back=gear.mab_jse_back, waist="Wanion Belt", legs="Amalric Slops", feet="Amalric Nails"}
+		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops", feet="Amalric Nails"}
 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,{
 		--neck="Sanctity Necklace",
 		hands="Jhakri Cuffs +2",ring1="Stikini Ring", ring2="Stikini Ring",
 		legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 
-	sets.midcast['Blue Magic'].Magical.Fodder = {ammo="Dosis Tathlum",--main="Nibiru Cudgel",sub="Nibiru Cudgel",
+	sets.midcast['Blue Magic'].Magical.Fodder = {ammo="Dosis Tathlum", --sub="Nibiru Cudgel",
+		main="Nibiru Cudgel",
 		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Yamabuki-no-Obi
-		back=gear.mab_jse_back, waist="Wanion Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		-- 
+		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].MagicalMnd = set_combine(sets.midcast['Blue Magic'].Magical, {ring1="Stikini Ring",ring2="Stikini Ring",waist="Ovate Rope"})
 	sets.midcast['Blue Magic'].MagicalChr = set_combine(sets.midcast['Blue Magic'].Magical, {})
@@ -315,12 +315,11 @@ function init_gear_sets()
 
 	sets.midcast['Enhancing Magic'] = {--main="Vampirism", sub="Vampirism",
 		ammo="Hasty Pinion +1",
-		--head="Telchine Cap",neck="Incanter's Torque",
-		ear1="Andoaa Earring",ear2="Gifted Earring",
-		--body="Telchine Chas.",hands="Telchine Gloves",
-		ring1="Stikini Ring",ring2="Stikini Ring",
-		--back="Perimede Cape",legs="Telchine Braconi",feet="Telchine Pigaches"
-		waist="Olympus Sash",}
+		--neck="Incanter's Torque",
+		head=gear_telchine_head_Duration,  neck="Colossus's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
+		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, ring1="Stikini Ring",ring2="Stikini Ring",
+		--back="Perimede Cape",
+		waist="Olympus Sash",legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {})--head="Amalric Coif"
 
@@ -330,10 +329,10 @@ function init_gear_sets()
 
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})-- legs="Shedir Seraweels"
 	
-	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {})--ring2="Sheltered Ring"
-	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {})--ring2="Sheltered Ring"
-	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {})--ring2="Sheltered Ring"
-	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {})--ring2="Sheltered Ring"
+	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
+	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
+	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
+	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"}
 
 	sets.midcast['Divine Magic'] = {ammo="Dosis Tathlum",
 		--neck="Incanter's Torque",
@@ -341,29 +340,29 @@ function init_gear_sets()
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.mab_jse_back,waist="Wanion Belt",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
-	sets.midcast['Elemental Magic'] = {ammo="Dosis Tathlum",--main="Nibiru Cudgel",sub="Nibiru Cudgel",
+	sets.midcast['Elemental Magic'] = {ammo="Dosis Tathlum",
+		main="Nibiru Cudgel",sub="Vampirism",
 		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Yamabuki-no-Obi
-		back=gear.mab_jse_back, waist="Wanion Belt", legs="Amalric Slops", feet="Amalric Nails"}
+		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops", feet="Amalric Nails"}
 
-	sets.midcast['Elemental Magic'].Resistant = {ammo="Dosis Tathlum",--main="Nibiru Cudgel",sub="Nibiru Cudgel",
+	sets.midcast['Elemental Magic'].Resistant = {ammo="Dosis Tathlum",--
+		main="Nibiru Cudgel",
 		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Yamabuki-no-Obi
-		back=gear.mab_jse_back, waist="Wanion Belt", legs="Amalric Slops", feet="Amalric Nails"}
+		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops", feet="Amalric Nails"}
 
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Fodder
 
-	sets.element.Dark = {} -- head="Pixie Hairpin +1",ring2="Archon Ring"
+	sets.element.Dark = {head="Pixie Hairpin +1", ring2="Archon Ring"}
 	sets.element.Earth = {} -- neck="Quanpur Necklace"
 	sets.element.Light = {} --ring2="Weatherspoon Ring"
 
 	sets.midcast.Cure = {ammo="Dosis Tathlum",--main="Nibiru Cudgel",sub="Nibiru Cudgel",
 		head="Carmine Mask +1", neck="Phalaina Locket", lear="Lifestorm Earring", rear="Enchntr. Earring +1",
 		-- Vrikodata Jupon body="Telchine Chas.",
-		 hands="Telchine Gloves", lring="Stikini Ring", rring="Stikini Ring",
+		 hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash feet="Medium Sabots"
 		back=gear.cure_jse_back, waist=gear.ElementalObi, legs="Gyve Trousers"}
 
@@ -381,9 +380,8 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Stun = {ammo="Dosis Tathlum",
 		-- Erra Pendant Sanctity Necklace Regal Earring Diginitary
 		head="Carmine Mask +1", neck="Eddy Necklace", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		-- Jhakri Cuffs +2
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
-		-- Luminary Sash/Eschan Stone Jhakri Slops +2 Jhakri Pigaches +2
+		-- Luminary Sash/Eschan Stone 
 		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].Stun.Resistant = {ammo="Hasty Pinion +1",--main="Iris",sub="Iris",
@@ -393,7 +391,6 @@ function init_gear_sets()
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash/Eschan Stone 
 		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
-
 
 	sets.midcast['Blue Magic'].Stun.Fodder = sets.midcast['Blue Magic'].Stun
 
@@ -423,18 +420,18 @@ function init_gear_sets()
 	-- Occulation: Resulting in 12 shadows at 600 skill.
 	sets.midcast['Blue Magic'].SkillBasedBuff = {--main="Iris",sub="Iris",ammo="Mavi Tathlum",
 		-- Incanter's Torque 
-		head="Luhlaza Keffiyeh", lear="Gifted Earring", rear="Loquac. Earring",
+		head="Luh. Keffiyeh +1", lear="Gifted Earring", rear="Loquac. Earring",
 		-- Rawhide Gloves
 		body="Assimilator's Jubbah", lring="Stikini Ring", rring="Stikini Ring",
-		back="Cornflower Cape", waist="Witful Belt", legs="Hashishin Tayt", feet="Luhlaza Charuqs"}
+		back="Cornflower Cape", waist="Witful Belt", legs="Hashishin Tayt +1", feet="Luhlaza Charuqs"}
 	
 	-- Duration Gear?
 	sets.midcast['Blue Magic'].Buff = {--main="Vampirism",sub="Vampirism",ammo="Mavi Tathlum",
 		-- Incanter's Torque 
-		head="Luhlaza Keffiyeh", lear="Gifted Earring", rear="Loquac. Earring",
+		head="Luh. Keffiyeh +1", lear="Gifted Earring", rear="Loquac. Earring",
 		-- Rawhide Gloves
 		body="Assimilator's Jubbah", lring="Stikini Ring", rring="Stikini Ring",
-		back="Cornflower Cape", waist="Witful Belt", legs="Hashishin Tayt", feet="Luhlaza Charuqs"}
+		back="Cornflower Cape", waist="Witful Belt", legs="Hashishin Tayt +1", feet="Luhlaza Charuqs"}
 	
 	-- Refresh Received Gear
 	sets.midcast['Blue Magic']['Battery Charge'] = set_combine(sets.midcast['Blue Magic'].Buff, {})--head="Amalric Coif",back="Grapevine Cape",waist="Gishdubar Sash"
@@ -467,7 +464,7 @@ function init_gear_sets()
 		-- 
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}		
 		
-	sets.idle.Sphere = set_combine(sets.idle, {})--body="Mekosu. Harness"
+	sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})wwd
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
@@ -503,8 +500,8 @@ function init_gear_sets()
     sets.MP_Knockback = {}
 	sets.SuppaBrutal = {ear1="Brutal Earring", ear2="Suppanomimi"}
 	sets.DWEarrings = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
-	-- body="Adhemar Jacket +1",waist="Grunfeld Rope",
-	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",legs="Carmine Cuisses +1"}
+	-- waist="Grunfeld Rope",
+	sets.DWMax = {body="Adhemar Jacket +1",ear1="Dudgeon Earring",ear2="Heartseeker Earring",legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapon Set
@@ -512,15 +509,15 @@ function init_gear_sets()
 	sets.weapons.Default = {main="Tanmogayi +1",sub="Nibiru Blade"}
 	--sets.weapons.Almace = {main="Almace",sub="Tanmogayi +1"}
 	--sets.weapons.Sequence = {main="Sequence",sub="Almace"}		
-	sets.weapons.MagicWeapons = {main="Nibiru Cudgel", sub="Nibiru Cudgel"}
+	sets.weapons.MagicWeapons = {main="Nibiru Cudgel", sub="Vampirism"}
 	sets.weapons.MaccWeapons = {main="Iris", sub="Iris"}
 	sets.weapons.HybridWeapons = {main="Vampirism", sub="Vampirism"}
 
 	-- Engaged sets
 	sets.engaged = {main="Tanmogayi +1", sub="Nibiru Blade", ammo="Ginsen",
 		head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-		-- Adhemar Jacket +1 ring2="Petrov Ring",
-		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Rajas Ring",ring2="Epona's Ring",
+		--  ring2="Petrov Ring",
+		body="Adhemar Jacket +1",hands="Adhemar Wristbands",ring1="Rajas Ring",ring2="Epona's Ring",
 		-- Herc Boots
 		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 

@@ -7,17 +7,54 @@ function user_setup()
 	state.IdleMode:options('Normal','PDT','Refresh')
 	state.Weapons:options('None','Godhands','PetWeapons')
 
-    -- Default maneuvers 1, 2, 3 and 4 for each pet mode.
-    defaultManeuvers = {
-        ['Melee'] = {'Fire Maneuver','Thunder Maneuver','Wind Maneuver','Light Maneuver'},
-        ['Ranged'] = {'Wind Maneuver','Fire Maneuver','Light Maneuver','Thunder Maneuver'},
-        ['Tank'] = {'Earth Maneuver','Fire Maneuver', 'Light Maneuver','Dark Maneuver'},
-		['LightTank'] = {'Earth Maneuver','Fire Maneuver','Light Maneuver','Dark Maneuver'},
-        ['Magic'] = {'Ice Maneuver','Light Maneuver','Dark Maneuver','Earth Maneuver'},
-        ['Heal'] = {'Light Maneuver','Dark Maneuver','Water Maneuver','Earth Maneuver'},
-        ['Nuke'] = {'Ice Maneuver','Dark Maneuver', 'Light Maneuver','Earth Maneuver'}
-    }
+    -- Default/Automatic maneuvers for each pet mode.  Define at least 3.
+	defaultManeuvers = {
+		Melee = {
+			{Name='Fire Maneuver', 	  Amount=1},
+			{Name='Thunder Maneuver', Amount=1},
+			{Name='Wind Maneuver', 	  Amount=1},
+			{Name='Light Maneuver',	  Amount=0},
+		},
+		Ranged = {
+			{Name='Wind Maneuver', 	  Amount=1},
+			{Name='Fire Maneuver',	  Amount=1},
+			{Name='Light Maneuver',	  Amount=1},
+			{Name='Thunder Maneuver', Amount=0},
+		},
+		Tank = {
+			{Name='Earth Maneuver',	  Amount=1},
+			{Name='Fire Maneuver',	  Amount=1},
+			{Name='Light Maneuver',	  Amount=1},
+			{Name='Dark Maneuver',	  Amount=0},
+		},
+		LightTank = {
+			{Name='Earth Maneuver',	  Amount=1},
+			{Name='Fire Maneuver',	  Amount=1},
+			{Name='Light Maneuver',	  Amount=1},
+			{Name='Dark Maneuver',	  Amount=0},
+		},
+		Magic = {
+			{Name='Light Maneuver',	  Amount=1},
+			{Name='Ice Maneuver',	  Amount=1},
+			{Name='Dark Maneuver',	  Amount=1},
+			{Name='Earth Maneuver',	  Amount=0},
+		},
+		Heal = {
+			{Name='Light Maneuver',	  Amount=2},
+			{Name='Dark Maneuver',	  Amount=1},
+			{Name='Water Maneuver',	  Amount=0},
+			{Name='Earth Maneuver',	  Amount=0},
+		},
+		Nuke = {
+			{Name='Ice Maneuver',	  Amount=2},
+			{Name='Dark Maneuver',	  Amount=1},
+			{Name='Water Maneuver',	  Amount=0},
+			{Name='Earth Maneuver',	  Amount=0},
+		},
+	}
 
+	deactivatehpp = 85
+	
     select_default_macro_book()
 	
 	send_command('bind @` gs c cycle SkillchainMode')

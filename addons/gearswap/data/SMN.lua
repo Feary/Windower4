@@ -154,6 +154,7 @@ function job_filter_precast(spell, spellMap, eventArgs)
 			windower.chat.input('/ja Sublimation <me>')	
 		elseif player.sub_job == 'RDM' and abil_recasts[49] == 0 and player.mp > 0 and player.hp > 400 and state.AutoConvert.value then
 			add_to_chat(122,'Not enough MP to Pact while using Conduit, Converting!')
+			eventArgs.cancel = true
 			windower.chat.input('/ja Convert <me>')
 		end
 	end
@@ -372,9 +373,9 @@ function job_customize_idle_set(idleSet)
             idleSet = set_combine(idleSet, sets.idle.Avatar.Favor)
         end
         if pet.status == 'Engaged' then
-            idleSet = set_combine(idleSet, sets.idle.Avatar.Melee)
-			if sets.idle.Avatar.Melee[pet.name] then
-				idleSet = set_combine(idleSet, sets.idle.Avatar.Melee[pet.name])
+            idleSet = set_combine(idleSet, sets.idle.Avatar.Engaged)
+			if sets.idle.Avatar.Engaged[pet.name] then
+				idleSet = set_combine(idleSet, sets.idle.Avatar.Engaged[pet.name])
 			end
         end
     end

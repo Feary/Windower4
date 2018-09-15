@@ -1,11 +1,19 @@
 --Place you can overwrite specific functions and settings with your preferences.
 --Extra user functions to change how gearswap functions across jobs.
 
---Time Related Settings (Currently trying to automatically generate offset.)
---Set time_test to true to see and test time settings, change offset to change the settings, requires a capacity ring with uses,
---You want the cap ring offset to be 899 or 900 the MOMENT after using your Capacity ring.
---time_offset = -39601
+--Time Related Settings
+--To determine your offset the first time, uncomment time_offset and set time_test to true,
+--Also uncomment tickdelay and set to 0 to remove the delay from the clock starting.
+--Once you see delay numbers start spamming your chat, assuming you don't have the
+--Commitment or Dedication buffs then Equip to ring1 and use "Capacity Ring",
+--(Not a Trizek or Calibur ring, "specifically Capacity Ring") your time_offset should appear in chat.
+--Set time_offset to the number mentioned in your chat and reload.
+--If the number spammed in your chat matches up with the seconds remaining on
+--your Capacity Ring's recast, your time_offset is correct, set time_test to false and reload.
+
+--time_offset = 0
 --time_test = true
+--tickdelay = 0
 --framerate = 75
 
 --If this is set to true it will prevent you from casting shadows when you have more up than that spell would generate.
@@ -13,9 +21,21 @@ conserveshadows = false
 
 --Display related settings.
 state.DisplayMode = M(true, 'Display Mode') --Set this to false if you don't want to display modes at the bottom of your screen.
---Uncomment the settings below and change the numbers if you want to move the display to a custom location.
+--Uncomment the settings below and change the values to edit the display's look.
 --displayx = 3
 --displayy = 1062
+--displayfont = 'Arial'
+--displaysize = 12
+--displaybold = true
+--displaybg = 0
+--displaystroke = 2
+--displaytransparancy = 192
+--state.DisplayColors = {
+    -- h='\\cs(255, 0, 0)', -- Red for active booleans and non-default modals
+    -- w='\\cs(255,255,255)', -- White for labels and default modals
+    -- n='\\cs(192,192,192)', -- White for labels and default modals
+    -- s='\\cs(96,96,96)' -- Gray for inactive booleans
+--}
 
 --Options for automation.
 state.ReEquip = M(true, 'ReEquip Mode') --Set this to false if you don't want it to your current Weapon sets (sets.weapons by default) when you aren't wearing any weapons.
@@ -60,60 +80,13 @@ send_command('bind ^@!f12 gs reload') --Reloads gearswap.
 send_command('bind pause gs c update user') --Runs a quick check to make sure you have the right gear on and checks variables.
 send_command('bind ^@!pause gs org') --Runs organizer.
 send_command('bind ^@!backspace gs c buffup') --Buffup macro because buffs are love.
-send_command('bind ^- gs c toggle selectnpctargets') --Change targets automatically.
-send_command('bind ^= gs c cycle pctargetmode') --Change targets automatically.
 send_command('bind ^r gs c weapons Default') --Requips weapons and gear.
 send_command('bind ^z gs c toggle Capacity') --Keeps capacity mantle on and uses capacity rings.
 send_command('bind ^y gs c toggle AutoCleanupMode') --Uses certain items and tries to clean up inventory.
 send_command('bind ^t gs c cycle treasuremode') --Toggles hitting htings with your treasure hunter set.
 send_command('bind !t input /target <bt>') --Targets the battle target.
 send_command('bind ^o fillmode') --Lets you see through walls.
-send_command('bind @p gs equip sets.Sheltered') --Equip sheltered ring, for when being Pro/Shelled.
-send_command('bind !p gs equip sets.Cure_Received') --Equip Cure Potency Received set for when being cured.
 send_command('bind @m gs c mount Omega')
-send_command('alias ambuseal gs c ambuseal')
-
---Usable item binds.
-
---Warp ring binds.
-send_command('bind ^@!h get "Warp Ring" satchel')
-send_command('bind ^h gs c forceequip Warp ring2')
-send_command('bind !h input /item "Warp Ring" <me>')
-send_command('bind ^!h gs c quietenable ring2;put "Warp Ring" satchel')
-
---Nexus Cape binds.
-send_command('bind ^@!n get "Nexus Cape" satchel')
-send_command('bind ^n gs c forceequip Nexus back')
-send_command('bind !n input /item "Nexus Cape" <me>')
-send_command('bind ^!n gs c quietenable back;put "Nexus Cape" satchel')
-
---Dimensional Ring (Holla) binds.
-send_command('bind ^@!, get "Dim. Ring (Holla)" satchel')
-send_command('bind ^, gs c forceequip HollaRing ring2')
-send_command('bind !, input /item "Dim. Ring (Holla)" <me>')
-send_command('bind ^!, gs c quietenable ring2;put "Dim. Ring (Holla)" satchel')
-
---Dimensional Ring (Dem) binds.
-send_command('bind ^@!. get "Dim. Ring (Dem)" satchel')
-send_command('bind ^. gs c forceequip DemRing ring2')
-send_command('bind !. input /item "Dim. Ring (Dem)" <me>')
-send_command('bind ^!. gs c quietenable ring2;put "Dim. Ring (Dem)" satchel')
-
---Dimensional Ring (Mea) binds.
-send_command('bind ^@!/ get "Dim. Ring (Mea)" satchel')
-send_command('bind ^/ gs c forceequip MeaRing ring2')
-send_command('bind !/ input /item "Dim. Ring (Mea)" <me>')
-send_command('bind ^!/ gs c quietenable ring2;put "Dim. Ring (Mea)" satchel')
-
---Reraise Earring binds.
-send_command('bind ^@!u get "Reraise Earring" satchel')
-send_command('bind ^u gs c forceequip RREar ear2')
-send_command('bind !u input /item "Reraise Earring" <me>')
-send_command('bind ^!u gs c quietenable ear2;put "Reraise Earring" satchel')
-
---Capacity item binds.
-send_command('bind ^@!z get "Mecisto. Mantle" satchel;get "Capacity Ring" satchel;wait 1;get "Trizek Ring" satchel;wait 1;get "Vocation Ring" satchel;wait 1;get "Facility Ring" satchel')
-send_command('bind ^!z put "Mecisto. Mantle" satchel;put "Capacity Ring" satchel;wait 1;put "Trizek Ring" satchel;wait 1;put "Vocation Ring" satchel;wait 1;put "Facility Ring" satchel;wait 1;put "Guide Beret" satchel')
 
 --Place to override Tables and other definitions you may want to.
 

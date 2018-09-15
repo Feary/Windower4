@@ -32,8 +32,8 @@ end
 
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
-	-- 'Dummy Lock','Full Length','Full Length Lock'
-    state.ExtraSongsMode = M{['description']='Extra Songs','None','Dummy','Dummy Lock',}
+
+    state.ExtraSongsMode = M{['description']='Extra Songs','None','Dummy','Dummy Lock','Full Length','Full Length Lock'}
 
 	state.Buff['Aftermath: Lv.3'] = buffactive['Aftermath: Lv.3'] or false
     state.Buff['Pianissimo'] = buffactive['Pianissimo'] or false
@@ -46,10 +46,19 @@ function job_setup()
 	autows = "Rudra's Storm"
 	autofood = 'Pear Crepe'
 
+	-- Job points
+	-- 1200 Gift
+	JP_1200 = true
+	-- match the number of job points earned for each category
+	JP_Tenuto = 20
+	JP_Marcato = 20
+	JP_Clarion = 20
+	JP_Lullaby = 20
+	
     -- For tracking current recast timers via the Timers plugin.
     custom_timers = {}
 	update_melee_groups()
-	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoNukeMode","AutoWSMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","ExtraSongsMode","CastingMode","TreasureMode",})
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoNukeMode","AutoWSMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","ExtraSongsMode","CastingMode","TreasureMode",})
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -66,11 +75,22 @@ end
 
 function job_pretarget(spell, spellMap, eventArgs)
     if spell.type == 'BardSong' and not spell.targets.Enemy then
-		if spell.target.raw == '<t>' and (player.target.type == 'NONE' or player.target.type == "MONSTER") and not state.Buff['Pianissimo'] then
+		if state.Buff['Pianissimo'] and spell.target.raw == '<t>' and (player.target.type == 'NONE' or spell.target.type == 'MONSTER') then
+			eventArgs.cancel = true
+			windower.chat.input('/ma "'..spell.name..'" <stpt>')
+		elseif spell.target.raw == '<t>' and (player.target.type == 'NONE' or player.target.type == "MONSTER") and not state.Buff['Pianissimo'] then
 			change_target('<me>')
 			return
 		end
     end
+end
+
+function job_precast(spell, spellMap, eventArgs)
+	if spell.action_type == 'Magic' then
+		if not sets.precast.FC[spell.english] and (spell.type == 'BardSong' and spell.targets.Enemy) then
+			classes.CustomClass = 'SongDebuff'
+		end
+	end
 end
 
 function job_filter_precast(spell, spellMap, eventArgs)
@@ -82,7 +102,6 @@ function job_filter_precast(spell, spellMap, eventArgs)
             if spell_recasts[spell.recast_id] < 10 then
                 send_command('@input /ja "Pianissimo" <me>; wait 1.1; input /ma "'..spell.name..'" '..spell.target.name)
                 eventArgs.cancel = true
-                return
             end
         end
     end
@@ -94,8 +113,12 @@ function job_midcast(spell, spellMap, eventArgs)
         if spell.type == 'BardSong' then
             -- layer general gear on first, then let default handler add song-specific gear.
             local generalClass = get_song_class(spell)
-            if generalClass and sets.midcast[generalClass] then
-                equip(sets.midcast[generalClass])
+			if generalClass and sets.midcast[generalClass] then
+				if sets.midcast[generalClass][state.CastingMode.value] then
+					equip(sets.midcast[generalClass][state.CastingMode.value])
+				else
+					equip(sets.midcast[generalClass])
+				end
             end
         end
     end
@@ -109,17 +132,29 @@ function job_post_precast(spell, spellMap, eventArgs)
 		
 			-- Replicate midcast in precast for nightingale including layering.
             local generalClass = get_song_class(spell)
-            if generalClass and sets.midcast[generalClass] then
-                equip(sets.midcast[generalClass])
+			if generalClass and sets.midcast[generalClass] then
+				if sets.midcast[generalClass][state.CastingMode.value] then
+					equip(sets.midcast[generalClass][state.CastingMode.value])
+				else 
+					equip(sets.midcast[generalClass])
+				end
             end
 
 			if sets.midcast[spell.english] then
-				equip(sets.midcast[spell.english])
+				if sets.midcast[spell.english][state.CastingMode.value] then
+					equip(sets.midcast[spell.english][state.CastingMode.value])
+				else
+					equip(sets.midcast[spell.english])
+				end
 			elseif sets.midcast[get_spell_map(spell, default_spell_map)] then
-				equip(sets.midcast[get_spell_map(spell, default_spell_map)])
+				if sets.midcast[get_spell_map(spell, default_spell_map)][state.CastingMode.Value]
+					then equip(sets.midcast[get_spell_map(spell, default_spell_map)][state.CastingMode.Value])
+				else
+					equip(sets.midcast[get_spell_map(spell, default_spell_map)])
+				end
 			end
 			
-			if state.ExtraSongsMode.value == 'Full Length' or state.ExtraSongsMode.value == 'Full Length Lock' then
+			if not spell.targets.Enemy and (state.ExtraSongsMode.value == 'Full Length' or state.ExtraSongsMode.value == 'Full Length Lock') then
 				equip(sets.midcast.Daurdabla)
 			end
 		
@@ -233,12 +268,8 @@ end
 -- Determine the custom class to use for the given song.
 function get_song_class(spell)
     -- Can't use spell.targets:contains() because this is being pulled from resources
-    if set.contains(spell.targets, 'Enemy') then
-        if state.CastingMode.value == 'Resistant' then
-            return 'ResistantSongDebuff'
-        else
-            return 'SongDebuff'
-        end
+    if spell.targets.Enemy then
+		return 'SongDebuff'
     elseif state.ExtraSongsMode.value == 'Dummy' or state.ExtraSongsMode.value == 'Dummy Lock' then
         return 'DaurdablaDummy'
     else
@@ -326,29 +357,70 @@ end
 -- Called from adjust_timers(), which is only called on aftercast().
 function calculate_duration(spellName, spellMap)
     local mult = 1
-    if player.equipment.range == 'Daurdabla' then mult = mult + 0.3 end -- change to 0.25 with 90 Daur
+    if player.equipment.range == "Daurdabla" then mult = mult + 0.3 end -- change to 0.25 with 90 Daur
     if player.equipment.range == "Gjallarhorn" then mult = mult + 0.4 end -- change to 0.3 with 95 Gjall
+	if player.equipment.range == "Marsyas" then mult = mult + 0.5 end
+	if spellMap == "Lullaby" and player.equipment.range == "Blurred Harp" then mult = mult + 0.2 end
+	if spellMap == "Lullaby" and player.equipment.range == "Blurred Harp +1" then mult = mult + 0.4 end
 
-    if player.equipment.main == "Carnwenhan" then mult = mult + 0.1 end -- 0.1 for 75, 0.4 for 95, 0.5 for 99/119
+    if player.equipment.main == "Carnwenhan" then mult = mult + 0.5 end -- 0.1 for 75, 0.4 for 95, 0.5 for 99/119
     if player.equipment.main == "Legato Dagger" then mult = mult + 0.05 end
     if player.equipment.sub == "Legato Dagger" then mult = mult + 0.05 end
+	if player.equipment.main == "Kali" then mult = mult + 0.05 end
+	if player.equipment.sub == "Kali" then mult = mult + 0.05 end
     if player.equipment.neck == "Aoidos' Matinee" then mult = mult + 0.1 end
+	if player.equipment.neck == "Moonbow Whistle" then mult = mult + 0.2 end
+	if player.equipment.neck == "Mnbw. Whistle +1" then mult = mult + 0.3 end
     if player.equipment.body == "Aoidos' Hngrln. +2" then mult = mult + 0.1 end
+	if player.equipment.body == "Fili Hongreline" then mult = mult + 0.11 end
+	if player.equipment.body == "Fili Hongreline +1" then mult = mult + 0.12 end
     if player.equipment.legs == "Mdk. Shalwar +1" then mult = mult + 0.1 end
+	if player.equipment.legs == "Inyanga Shalwar" then mult = mult + 0.12 end
+	if player.equipment.legs == "Inyanga Shalwar +1" then mult = mult + 0.15 end
+	if player.equipment.legs == "Inyanga Shalwar +2" then mult = mult + 0.17 end
     if player.equipment.feet == "Brioso Slippers" then mult = mult + 0.1 end
     if player.equipment.feet == "Brioso Slippers +1" then mult = mult + 0.11 end
+	if player.equipment.feet == "Brioso Slippers +2" then mult = mult + 0.13 end
+	if player.equipment.feet == "Brioso Slippers +3" then mult = mult + 0.15 end
 
+	if spellMap == 'Etude' and player.equipment.head == "Mousai Turban" then mult = mult + 0.1 end
+	if spellMap == 'Etude' and player.equipment.head == "Mousai Turban +1" then mult = mult + 0.2 end
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet" then mult = mult + 0.1 end
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +1" then mult = mult + 0.1 end
+	if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +2" then mult = mult + 0.1 end
+	if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +3" then mult = mult + 0.2 end
     if spellMap == 'Madrigal' and player.equipment.head == "Aoidos' Calot +2" then mult = mult + 0.1 end
-    if spellMap == 'Minuet' and player.equipment.body == "Aoidos' Hngrln. +2" then mult = mult + 0.1 end
-    if spellMap == 'March' and player.equipment.hands == 'Ad. Mnchtte. +2' then mult = mult + 0.1 end
-    if spellMap == 'Ballad' and player.equipment.legs == "Aoidos' Rhing. +2" then mult = mult + 0.1 end
-    if spellName == "Sentinel's Scherzo" and player.equipment.feet == "Aoidos' Cothrn. +2" then mult = mult + 0.1 end
+	if spellMap == 'Madrigal' and player.equipment.head == "Fili Calot" then mult = mult + 0.1 end
+	if spellMap == 'Madrigal' and player.equipment.head == "Fili Calot +1" then mult = mult + 0.1 end
+	if spellMap == 'Threnody' and player.equipment.body == "Mousai Manteel" then mult = mult + 0.1 end
+	if spellMap == 'Threnody' and player.equipment.body == "Mou. Manteel +1" then mult = mult + 0.2 end
+	if spellMap == 'Minuet' and player.equipment.body == "Aoidos' Hngrln. +2" then mult = mult + 0.1 end
+	if spellMap == 'Minuet' and player.equipment.body == "Fili Hongreline" then mult = mult + 0.1 end
+	if spellMap == 'Minuet' and player.equipment.body == "Fili Hongreline +1" then mult = mult + 0.1 end
+    if spellMap == 'Carol' and player.equipment.hands == "Mousai Gages" then mult = mult + 0.1 end
+	if spellMap == 'Carol' and player.equipment.hands == "Mousai Gages +1" then mult = mult + 0.2 end
+	if spellMap == 'March' and player.equipment.hands == "Ad. Mnchtte. +2" then mult = mult + 0.1 end
+	if spellMap == 'March' and player.equipment.hands == "Fili Manchettes" then mult = mult + 0.1 end
+	if spellMap == 'March' and player.equipment.hands == "Fili Manchettes +1" then mult = mult + 0.1 end
+    if spellMap == 'Minne' and player.equipment.feet == "Mousai Seraweel" then mult = mult + 0.1 end
+	if spellMap == 'Minne' and player.equipment.feet == "Mou. Seraweel +1" then mult = mult + 0.2 end
+	if spellMap == 'Ballad' and player.equipment.legs == "Aoidos' Rhing. +2" then mult = mult + 0.1 end
+	if spellMap == 'Ballad' and player.equipment.legs == "Fili Rhingrave" then mult = mult + 0.1 end
+	if spellMap == 'Ballad' and player.equipment.legs == "Fili Rhingrave +1" then mult = mult + 0.1 end
+    if spellMap == 'Mambo' and player.equipment.feet == "Mousai Crackows" then mult = mult + 0.1 end
+	if spellMap == 'Mambo' and player.equipment.feet == "Mou. Crackows +1" then mult = mult + 0.2 end
+	if spellName == "Sentinel's Scherzo" and player.equipment.feet == "Aoidos' Cothrn. +2" then mult = mult + 0.1 end
+	if spellName == "Sentinel's Scherzo" and player.equipment.feet == "Fili Cothurnes" then mult = mult + 0.1 end
+	if spellName == "Sentinel's Scherzo" and player.equipment.feet == "Fili Cothurnes +1" then mult = mult + 0.1 end
 
+	if JP_1200 == true then
+		mult = mult + 0.05  --1200 Job Points 5% Duration 
+	end
+	
     if buffactive.Troubadour then
         mult = mult*2
     end
+	
     if spellName == "Sentinel's Scherzo" then
         if buffactive['Soul Voice'] then
             mult = mult*2
@@ -357,9 +429,66 @@ function calculate_duration(spellName, spellMap)
         end
     end
 
-    local totalDuration = math.floor(mult*120)
-
+    local generalClass = get_song_class(spell)
+   
+    --add_to_chat(8,'Info: Spell Name'..spell.name..' Spell Map:'..spellMap..' General Class:'..generalClass..' Multiplier:'..mult)
+   
+    if spell.name == "Foe Lullaby II" or spell.name == "Horde Lullaby II" then
+        base = 60
+    elseif spell.name == "Foe Lullaby" or spell.name == "Horde Lullaby" then
+        base = 30
+    elseif spell.name == "Carnage Elegy" then
+        base = 180
+    elseif spell.name == "Battlefield Elegy" then
+        base = 120
+    elseif spell.name == "Pining Nocturne" then
+        base = 120
+    elseif spell.name == "Maiden's Virelai" then
+        base = 20
+    end
+   
+    if generalClass == 'SongEffect' then
+        base = 120
+        totalDuration = math.floor(mult*base)      
+    end
+   
+    totalDuration = math.floor(mult*base)      
+   
+    if string.find(spell.name,'Lullaby') then
+        -- add_to_chat(8,'Adding 20 seconds to Timer for Lullaby Job Points')
+        totalDuration = totalDuration + JP_Lullaby
+    end
+   
+    if buffactive['Clarion Call'] then
+        if buffactive.Troubadour then
+            -- Troubadour Doubles Clarion Call
+            totalDuration = totalDuration + (JP_Clarion * 2 * 2)
+        else
+            -- add_to_chat(8,'Adding 20 seconds to Timer for Clarion Call Job Points')
+            totalDuration = totalDuration + JP_Clarion * 2
+        end
+    end
+   
+    if buffactive['Tenuto'] then
+        -- add_to_chat(8,'Adding 40 seconds to Timer for Tenuto Job Points')
+        totalDuration = totalDuration + JP_Tenuto * 2
+    end
+   
+    if buffactive['Marcato'] then
+        -- add_to_chat(8,'Adding 20 seconds to Timer for Marcato Job Points')
+        totalDuration = totalDuration + JP_Marcato
+    end
+   
+  
+	--if buffactive.Troubadour then
+		-- Assuming 20 seconds for capped Troubadour and you actually pre-cast with a Bihu Justaucorps.
+      --  totalDuration = totalDuration + 20  
+    --end
+  
+    add_to_chat(8,spell.name..' duration: '..totalDuration..' seconds')
+   
     return totalDuration
+	
 end
 
 
@@ -386,7 +515,7 @@ end
 windower.raw_register_event('zone change',reset_timers)
 windower.raw_register_event('logout',reset_timers)
 
-    -- Allow jobs to override this code
+-- Allow jobs to override this code
 function job_self_command(commandArgs, eventArgs)
 
 end

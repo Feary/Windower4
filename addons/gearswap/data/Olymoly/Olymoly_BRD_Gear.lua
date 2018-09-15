@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('None', 'Normal')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT')
-	state.Weapons:options('None','Default','DualWeapons','Swords','NukeWeapons')
+	state.Weapons:options('None','Default','DualWeapons')
 	
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = "Daurdabla"
@@ -15,12 +15,11 @@ function user_setup()
 	
 	-- Additional local binds
     send_command('bind ^` gs c cycle ExtraSongsMode')
-	send_command('bind !` input /ma "Chocobo Mazurka" <me>')
-	send_command('bind @` gs c cycle MagicBurst')
+	send_command('bind !` gs c cycle ExtraSongsMode')
+	send_command('bind @` gs c cycle ExtraSongsMode')
+	send_command('bind @!^` input /pcmd leave')
 	send_command('bind @f10 gs c cycle RecoverMode')
-	send_command('bind @f8 gs c toggle AutoNukeMode')
-	send_command('bind !q gs c weapons NukeWeapons;gs c update')
-	send_command('bind ^q gs c weapons Swords;gs c update')
+	send_command('bind @f8 gs c toggle AutoBuffMode')
 
 	select_default_macro_book()
 end
@@ -32,9 +31,7 @@ function init_gear_sets()
 	--------------------------------------
 	
 	sets.weapons.Default = {main="Carnwenhan", sub="Genbu's Shield"}
-	sets.weapons.DualWeapons = {main="Carnwenhan", sub="Mandau"}
-	sets.weapons.Swords = {main="Vampirism", sub="Vampirism"}
-	sets.weapons.NukeWeapons = {main="Malevolence",sub="Malevolence"}
+	sets.weapons.DualWeapons = {main="Carnwenhan", sub="Twashtar"}
 	
 	-- Precast Sets
 
@@ -42,8 +39,7 @@ function init_gear_sets()
 	sets.precast.FC = {	
 		-- neck="Voltsurge Torque",
 		head="Nahtirah Hat", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		-- Kisar Ring
-		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Defending Ring",
+		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
 		back="Intarabus's Cape", waist="Witful Belt", legs="Aya. Cosciales +2", feet="Chelona Boots +1"}
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {
@@ -55,9 +51,9 @@ function init_gear_sets()
 	sets.precast.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat"})
 
 	sets.precast.FC.BardSong = {
-		main="Kali", sub="Genbu Shield", ranged="Gjallarhorn", ammo=empty,
+		main="Kali", sub="Genbu's Shield", ranged="Gjallarhorn", ammo=empty,
 		head="Fili Calot +1", neck="Aoidos' Matinee", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Defending Ring",
+		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
         back="Intarabus's Cape", waist="Witful Belt", legs="Gende. Spats +1", feet=gear_telchine_feet_Song}
 		
 	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
@@ -66,9 +62,9 @@ function init_gear_sets()
 	sets.precast.DaurdablaDummy = sets.precast.FC.Daurdabla
 	
 	-- Precast sets to enhance JAs	
-	sets.precast.JA.Nightingale = {feet="Bihu Slippers"}
-	sets.precast.JA.Troubadour = {body="Bihu Jstcorps +3"}
-	sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions +1"}
+	sets.precast.JA.Nightingale = {feet="Bihu Slippers +3"}
+	sets.precast.JA.Troubadour = {body="Bihu Jstcorps. +3"}
+	sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions +3"}
 
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {}
@@ -77,42 +73,41 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {
 		head="Aya. Zucchetto +2",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
-		body="Bihu Jstcorps +3",hands="Aya. Manopolas +2",ring1="Ilabrat Ring",ring2="Ramuh Ring +1",
-		back="Ground. Mantle +1",waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		body="Bihu Jstcorps. +3",hands="Aya. Manopolas +2",ring1="Ilabrat Ring",ring2="Ramuh Ring +1",
+		back="Ground. Mantle +1",waist="Grunfeld Rope",legs="Aya. Cosciales +2",feet="Bihu Slippers +3"}
 	sets.precast.WS.Acc = {
 		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Bihu Jstcorps +3", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
-		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		body="Bihu Jstcorps. +3", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
+		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {
-			head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
-			body="Bihu Jstcorps +3", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
-			back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"})
+		head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
+		body="Bihu Jstcorps. +3", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
+		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"})
 	sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Ginsen",
-			-- Lustratio Cap +1
-			head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Brutal Earring",
-			-- Lustratio Gloves +1
-			body="Bihu Jstcorps +3", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
-			-- Rancerous Mantle
-			back="Ground. Mantle +1", waist="Fotia Belt", legs="Lustr. Subligar +1", feet="Lustratio Leggings +1"})
+		-- Lustratio Cap +1
+		head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Brutal Earring",
+		-- Lustratio Gloves +1
+		body="Bihu Jstcorps. +3", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
+		-- Rancerous Mantle
+		back="Ground. Mantle +1", waist="Fotia Belt", legs="Lustr. Subligar +1", feet="Lustratio Leggings +1"})
 	sets.precast.WS['Mercy Stroke'] = set_combine(sets.precast.WS, {
-			head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
-			body="Bihu Jstcorps +3", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
-			back="Ground. Mantle +1", waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"})
+		head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
+		body="Bihu Jstcorps. +3", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
+		back="Ground. Mantle +1", waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"})
 	sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {
-			-- Lustratio Cap +1
-			head="Aya. Zucchetto +2", neck="Love Torque", lear="Moonshade Earring", rear="Brutal Earring",
-			-- Lustratio Gloves +1
-			body="Bihu Jstcorps +3", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
-			--Vespid Mantle
-			back="Ground. Mantle +1", waist="Wanion Belt", legs="Lustr. Subligar +1", feet="Lustratio Leggings +1"})
+		-- Lustratio Cap +1
+		head="Aya. Zucchetto +2", neck="Love Torque", lear="Moonshade Earring", rear="Brutal Earring",
+		-- Lustratio Gloves +1
+		body="Bihu Jstcorps. +3", hands="Bihu Cuffs +3", lring="Rajas Ring", rring="Ramuh Ring +1",
+		--Vespid Mantle
+		back="Ground. Mantle +1", waist="Wanion Belt", legs="Bihu Cannions +3", feet="Bihu Slippers +3"})
 	sets.precast.WS["Mordant Rime"] = set_combine(sets.precast.WS, {
-			head="Aya. Zucchetto +2", neck="Moonbow Whistle +1", lear="Bladeborn Earring", rear="Steelflash Earring",
-			-- Bihu Jstcorps. +2  Carb. Ring +1
-			body="Bihu Jstcorps +3", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
-			-- Vespid Mantle
-			back="Ground. Mantle +1", waist="Windbuffet Belt +1", legs="Bihu Cannions +1", feet="Aya. Gambieras +2"})
+		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Bladeborn Earring", rear="Steelflash Earring",
+		-- Carb. Ring +1
+		body="Bihu Jstcorps. +3", hands="Bihu Cuffs +3", lring="Patricius Ring", rring="Ramuh Ring +1",
+		back="Ground. Mantle +1", waist="Windbuffet Belt +1", legs="Bihu Cannions +3", feet="Bihu Slippers +3"})
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {lear="Cessance Earring", rear="Brutal Earring",}
@@ -130,17 +125,17 @@ function init_gear_sets()
 
 	-- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
 	sets.midcast.Ballad = {legs="Fili Rhingrave +1"}
-	sets.midcast['Foe Lullaby'] = {body="Fili Hongreline +1", legs="Inyanga Shalwar +2"} --hands="Brioso Cuffs",
-	sets.midcast['Foe Lullaby II'] = {body="Fili Hongreline +1", legs="Inyanga Shalwar +2"} --hands="Brioso Cuffs",
-	sets.midcast['Horde Lullaby'] = {range="Blurred Harp +1", body="Fili Hongreline +1", legs="Inyanga Shalwar +2"} --hands="Brioso Cuffs",
-	sets.midcast['Horde Lullaby II'] = {range="Blurred Harp +1", body="Fili Hongreline +1", legs="Inyanga Shalwar +2"} --hands="Brioso Cuffs",
+	sets.midcast['Foe Lullaby'] = {body="Fili Hongreline +1", legs="Inyanga Shalwar +2"} --hands="Brioso Cuffs +3",
+	sets.midcast['Foe Lullaby II'] = {body="Fili Hongreline +1", legs="Inyanga Shalwar +2"} --hands="Brioso Cuffs +3",
+	sets.midcast['Horde Lullaby'] = {range="Blurred Harp +1", body="Fili Hongreline +1", legs="Inyanga Shalwar +2"} --hands="Brioso Cuffs +3",
+	sets.midcast['Horde Lullaby II'] = {range="Blurred Harp +1", body="Fili Hongreline +1", legs="Inyanga Shalwar +2"} --hands="Brioso Cuffs +3",
 	sets.midcast.Madrigal = {head="Fili Calot +1"}
-	sets.midcast.Paeon = {head="Brioso Roundlet"}
+	sets.midcast.Paeon = {head="Brioso Roundlet +1"}
 	sets.midcast.Etude = {} -- head="Mousai Turban"
 	sets.midcast.Mambo = {}	-- feet="Mousai Crackows"
 	sets.midcast.Minne = {} -- legs="Mousai Seraweels"
 	sets.midcast.Threnody = {} -- body="Mousai Manteel"
-	sets.midcast.Mazurka = {range="Blurred Harp +1"}	
+	sets.midcast.Mazurka = {range="Daurdabla"}	
 	sets.midcast.March = {hands="Fili Manchettes +1"}	
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March, {range="Marsyas"})	
 	sets.midcast.Minuet = {body="Fili Hongreline +1"}
@@ -154,30 +149,32 @@ function init_gear_sets()
 	
 	-- For song buffs (Full Duration, AF3 set bonus, DT)
 	sets.midcast.SongEffect = {
-		-- Ammurapi Shield
+		-- Genmei's Shield
 		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Genmei Earring
 		head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Musical Earring", rear="Etiolation Earring",
 		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Stikini Ring", rring="Defending Ring",
-		back="Intarabus's Cape", legs="Inyanga Shalwar +2", feet="Brioso Slippers +1"}
+		back="Intarabus's Cape", waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	-- For song debuffs (duration primary, accuracy secondary)
-	-- Lullaby
 	sets.midcast.SongDebuff = {
 		-- Ammurapi Shield
 		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
-		-- Genmei Earring
-		head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Stikini Ring", rring="Stikini Ring",
-		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +1"}
+		--Brioso Roundlet +3 Digni. Earring Regal Earring
+		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
+		-- Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
+		body="Fili Hongreline +1", hands="Inyanga Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		-- Luminary Sash Briso Slippers +3
+		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
 	sets.midcast.ResistantSongDebuff = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
-		-- Genmei Earring
-		-- Incanter's Torque
-		head="Bihu Roundlet +1", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Ovate Rope", legs="Fili Rhingrave +1", feet="Inyan. Crackows +2"}
+		-- Brioso Roundlet +3 Digni. Earring Regal Earring
+		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
+		-- Brioso Justau. +3 Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
+		body="Bihu Jstcorps. +3", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
+		-- Luminary Sash Brioso Cannions +3 Brioso Slippers +3
+		back="Intarabus's Cape", waist="Ovate Rope", legs="Bihu Cannions +3", feet="Brioso Slippers +2"}
 
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {
@@ -216,20 +213,20 @@ function init_gear_sets()
 		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1}, 
 		head="Inyanga Tiara +2", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
+		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {
 		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1}, 
 		head="Inyanga Tiara +2", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
+		-- Bihu Slippers +3 +3
+		back="Intarabus's Cape", waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 		
 	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion +1",
-		--main="Serenity",sub="Fulcio Grip",
-		--,neck="Voltsurge Torque",
+		--main="Carnwenhan",sub="Ammurapi Shield",
+		--neck="Voltsurge Torque",
 		head=gear_telchine_head_Duration, ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		--body="Telchine Chas.",
-		hands=gear_telchine_hands_Duration, lring="Prolix Ring",
+		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Prolix Ring",
 		back="Intarabus's Cape",waist="Witful Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
@@ -288,7 +285,7 @@ function init_gear_sets()
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
-	sets.defense.MDT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
+	sets.defense.MDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
 		head="Inyanga Tiara +2",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
@@ -304,16 +301,16 @@ function init_gear_sets()
 	
 	sets.engaged = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},ammo="Ginsen",
 		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
 		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.engaged.DW = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},ammo="Ginsen",
+	sets.engaged.DW = {main={name="Carnwenhan", priority=2}, sub={name="Mandau", priority=1},ammo="Ginsen",
 		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Patricius Ring", rring="Ramuh Ring +1",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring +1",
 		back="Ground. Mantle +1", waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-	set_macro_page(1, 4)
+	set_macro_page(8, 4)
 end

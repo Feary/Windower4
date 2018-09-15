@@ -59,18 +59,24 @@ function handle_set(cmdParams)
         return
     end
     
+	local toggleset
+	if cmdParams[1]:lower() == 'toggle' then
+		toggleset = true
+		table.remove(cmdParams, 1)
+	end
+	
     local state_var = get_state(cmdParams[1])
     
     if state_var then
         local oldVal = state_var.value
         state_var:set(cmdParams[2])
         local newVal = state_var.value
-
-		if state_var ~= state.DefenseMode and newVal == oldVal and not newVal == 'Single' then
+		
+		if toggleset and newVal == oldVal and newVal ~= 'Single' then
 			handle_reset(cmdParams)
 			return
 		end
-        
+		
         local descrip = state_var.description or cmdParams[1]
         if state_change then
             state_change(descrip, newVal, oldVal)
@@ -261,6 +267,10 @@ function handle_update(cmdParams)
         job_update(cmdParams, eventArgs)
     end
 
+	if state.AutoSambaMode.value ~= 'Off' and not (player.main_job == 'DNC' or player.sub_job == 'DNC') then
+		state.AutoSambaMode:set("Off")
+	end
+	
     if not eventArgs.handled then
         if handle_equipping_gear then
             handle_equipping_gear(player.status)
@@ -414,7 +424,7 @@ function handle_forceequip(cmdParams)
 			disable(equipslot)
 		end
 	else
-		add_to_chat(122,'Syntax error with ForceEquip command - Use: gs c ForceEquip setname (slot or set).')
+		handle_equipping_gear(player.status)
 	end
 end
 
@@ -449,15 +459,15 @@ end
 function handle_shadows()
 	local spell_recasts = windower.ffxi.get_spell_recasts()
 	if player.main_job == 'NIN' then
-		if not has_two_shadows() and player.job_points[(res.jobs[player.main_job_id].ens):lower()].jp_spent > 99 and spell_recasts[340] == 0 then
+		if has_shadows() < 3 and player.job_points[(res.jobs[player.main_job_id].ens):lower()].jp_spent > 99 and spell_recasts[340] == 0 then
 			windower.chat.input('/ma "Utsusemi: San" <me>')
 			tickdelay = (framerate * 1.8)
 			return true
-		elseif not has_two_shadows() and spell_recasts[339] == 0 then
+		elseif has_shadows() < 2 and spell_recasts[339] == 0 then
 			windower.chat.input('/ma "Utsusemi: Ni" <me>')
 			tickdelay = (framerate * 1.8)
 			return true
-		elseif not has_two_shadows() and spell_recasts[338] == 0 then
+		elseif has_shadows() < 2 and spell_recasts[338] == 0 then
 			windower.chat.input('/ma "Utsusemi: Ichi" <me>')
 			tickdelay = (framerate * 2)
 			return true
@@ -465,17 +475,21 @@ function handle_shadows()
 			return false
 		end
 	elseif player.sub_job == 'NIN' then
-		if not has_two_shadows() and spell_recasts[339] == 0 then
+		if has_shadows() < 2 and spell_recasts[339] == 0 then
 			windower.chat.input('/ma "Utsusemi: Ni" <me>')
 			tickdelay = (framerate * 1.8)
 			return true
-		elseif not has_two_shadows() and spell_recasts[338] == 0 then
+		elseif has_shadows() < 2 and spell_recasts[338] == 0 then
 			windower.chat.input('/ma "Utsusemi: Ichi" <me>')
 			tickdelay = (framerate * 2)
 			return true
 		else
 			return false
 		end
+	elseif not has_shadows() and player.main_job == 'SAM' and windower.ffxi.get_ability_recasts()[133] == 0 then
+		windower.chat.input('/ja "Third Eye" <me>')
+		tickdelay = (framerate * .7)
+		return true
 	elseif not has_shadows() and silent_can_use(679) and spell_recasts[679] == 0 then
 		windower.chat.input('/ma "Occultation" <me>')
 		tickdelay = (framerate * 2)
@@ -487,6 +501,10 @@ function handle_shadows()
 	elseif not has_shadows() and silent_can_use(647) and spell_recasts[647] == 0 then
 		windower.chat.input('/ma "Zephyr Mantle" <me>')
 		tickdelay = (framerate * 2)
+		return true
+	elseif not has_shadows() and player.sub_job == 'SAM' and windower.ffxi.get_ability_recasts()[133] == 0 then
+		windower.chat.input('/ja "Third Eye" <me>')
+		tickdelay = (framerate * .7)
 		return true
 	else
 		return false
@@ -675,7 +693,7 @@ function handle_smartcure()
 		elseif player.target.hpp > 70 then
 			if spell_recasts[3] == 0 then
 				windower.chat.input('/ma "Cure III" '..cureTarget..'')
-			elseif spell_recasts[4] == 0 then
+			elseif silent_can_use(4) and spell_recasts[4] == 0 then
 				windower.chat.input('/ma "Cure IV" '..cureTarget..'')
 			elseif spell_recasts[2] == 0 then
 				windower.chat.input('/ma "Cure II" '..cureTarget..'')
@@ -683,7 +701,7 @@ function handle_smartcure()
 				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
 			end
 		else
-			if spell_recasts[4] == 0 then
+			if silent_can_use(4) and spell_recasts[4] == 0 then
 				windower.chat.input('/ma "Cure IV" '..cureTarget..'')
 			elseif spell_recasts[3] == 0 then
 				windower.chat.input('/ma "Cure III" '..cureTarget..'')
@@ -751,22 +769,7 @@ function handle_mount(cmdParams)
 	end
 end
 
-function handle_moving(cmdParams)
-	if not midaction() and not pet_midaction() then
-		handle_equipping_gear(player.status)
-	end
-	
-	if state.RngHelper.value then
-		send_command('gs rh clear')
-	end
-end
-
-function handle_stopping(cmdParams)
-	if not midaction() and not pet_midaction() then
-		handle_equipping_gear(player.status)
-	end
-end
--------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 
 -- Get the state var that matches the requested name.
 -- Only returns mode vars.
@@ -967,8 +970,6 @@ selfCommandMaps = {
     ['naked']    		= handle_naked,
 	['weapons']  		= handle_weapons,
 	['showset']  		= handle_showset,
-	['moving']   		= handle_moving,
-	['stopping'] 		= handle_stopping,
     ['help']     		= handle_help,
     ['forceequip']  	= handle_forceequip,
 	['useitem']			= handle_useitem,

@@ -33,19 +33,20 @@ gear_telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"
 gear_telchine_head_Pet = {name="Telchine Cap", augments={'Mag. Evasion+18','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Body
+gear_telchine_body_CureRecieved = {}
 gear_telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
 gear_telchine_body_Siphon = {}
 gear_telchine_body_Pet = { name="Telchine Chas.", augments={'Mag. Evasion+21','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 --Hands 
-gear_telchine_hands_Cure = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +9',}}
-gear_telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +9',}}
+gear_telchine_hands_Cure = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
+gear_telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
 gear_telchine_hands_Siphon = { name="Telchine Gloves", augments={'"Elemental Siphon"+10',}}
 gear_telchine_hands_Pet = { name="Telchine Gloves", augments={'Mag. Evasion+15','Pet: "Regen"+3','Pet: Damage taken -4%',}}
 
 -- Legs
-gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}}
-gear_telchine_legs_Siphon = {}
+gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'"Elemental Siphon"+5','Enh. Mag. eff. dur. +10',}}
+gear_telchine_legs_Siphon = { name="Telchine Braconi", augments={'"Elemental Siphon"+5','Enh. Mag. eff. dur. +10',}}
 gear_telchine_legs_Pet = { name="Telchine Braconi", augments={'Mag. Evasion+24','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Feet

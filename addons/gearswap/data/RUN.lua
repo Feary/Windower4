@@ -32,7 +32,7 @@ function job_setup()
 	autofood = 'Miso Ramen'
 	
 	update_melee_groups()
-	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoTankMode","AutoWSMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","PhysicalDefenseMode","MagicalDefenseMode","ResistDefenseMode","TreasureMode",})
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoTankMode","AutoWSMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","PhysicalDefenseMode","MagicalDefenseMode","ResistDefenseMode","TreasureMode",})
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -380,8 +380,13 @@ function check_buff()
 	if state.AutoBuffMode.value and player.in_combat then
 		
 		local abil_recasts = windower.ffxi.get_ability_recasts()
-
-		if not buffactive['Swordplay'] and abil_recasts[24] == 0 then
+		local spell_recasts = windower.ffxi.get_spell_recasts()
+		
+		if not buffactive['Multi Strikes'] and not silent_check_silence() and spell_recasts [493] == 0 then
+			windower.chat.input('/ma "Temper" <me>')
+			tickdelay = (framerate * 2.2)
+			return true
+		elseif not buffactive['Swordplay'] and abil_recasts[24] == 0 then
 			windower.chat.input('/ja "Swordplay" <me>')
 			tickdelay = (framerate * 1.8)
 			return true

@@ -21,8 +21,8 @@ function job_setup()
 
 	autows = 'Realmrazer'
 	autofood = 'Miso Ramen'
-	indispell = 'Torpor'
-	geospell = 'Frailty'
+	autoindi = 'Torpor'
+	autogeo = 'Frailty'
 	last_indi = ''
 	last_geo = ''
 	
@@ -48,7 +48,7 @@ function job_filter_precast(spell, spellMap, eventArgs)
 
 	if spell.english:startswith('Geo-') and pet.isvalid then
 		eventArgs.cancel = true
-		windower.chat.input('/ja "Full-Circle" <me>')
+		windower.chat.input('/ja "Full Circle" <me>')
 		windower.chat.input:schedule(2,'/ma "'..spell.english..'" '..spell.target.raw..'')
 	end
 
@@ -98,6 +98,9 @@ function job_precast(spell, spellMap, eventArgs)
         if state.CastingMode.value == 'Proc' then
             classes.CustomClass = 'Proc'
         end
+	elseif buffactive.Bolster and (spell.english == 'Blaze of Glory' or spell.english == 'Ecliptic Attrition') then
+		eventArgs.cancel = true
+		add_to_chat(123,'Abort: Bolster maxes the strength of bubbles.')
     end
 end
 
@@ -271,12 +274,12 @@ end
 
 function job_self_command(commandArgs, eventArgs)
 		if commandArgs[1] == 'autoindi' and commandArgs[2] then
-			indispell = commandArgs[2]:ucfirst()
-			add_to_chat(122,'Your Auto Indi- spell is set to '..indispell..'.')
+			autoindi = commandArgs[2]:ucfirst()
+			add_to_chat(122,'Your Auto Indi- spell is set to '..autoindi..'.')
 			if state.DisplayMode.value then update_job_states()	end
 		elseif commandArgs[1] == 'autogeo' and commandArgs[2] then
-			geospell = commandArgs[2]:ucfirst()
-			add_to_chat(122,'Your Auto Geo- spell is set to '..geospell..'.')
+			autogeo = commandArgs[2]:ucfirst()
+			add_to_chat(122,'Your Auto Geo- spell is set to '..autogeo..'.')
 			if state.DisplayMode.value then update_job_states()	end
 		elseif commandArgs[1]:lower() == 'elemental' then
 			handle_elemental(commandArgs)
@@ -403,8 +406,8 @@ end
 
 function check_geo()
 	if state.AutoBuffMode.value and not moving and not areas.Cities:contains(world.area) then
-		if not player.indi and indispell ~= 'None' then
-			windower.chat.input('/ma "Indi-'..indispell..'" <me>')
+		if not player.indi and autoindi ~= 'None' then
+			windower.chat.input('/ma "Indi-'..autoindi..'" <me>')
 			tickdelay = (framerate * 2.1)
 			return true
 		elseif pet.isvalid then
@@ -416,8 +419,8 @@ function check_geo()
 			else
 				return false
 			end
-		elseif not pet.isvalid and geospell ~= 'None' and (windower.ffxi.get_mob_by_target('bt') or geo_buffs:contains(geospell)) then
-			windower.chat.input('/ma "Geo-'..geospell..'" <bt>')
+		elseif not pet.isvalid and autogeo ~= 'None' and (windower.ffxi.get_mob_by_target('bt') or geo_buffs:contains(autogeo)) then
+			windower.chat.input('/ma "Geo-'..autogeo..'" <bt>')
 			tickdelay = (framerate * 2)
 			return true
 		else
@@ -499,7 +502,7 @@ windower.raw_register_event('prerender', function()
     end
      
     luopan.value = luopan_txtbox
-    if state.ShowDistance.value and ((myluopan and geo_count ~= 0) or (buffactive['Colure Active'] and indi_count ~= 0)) then 
+    if state.ShowDistance and state.ShowDistance.value and ((myluopan and geo_count ~= 0) or (buffactive['Colure Active'] and indi_count ~= 0)) then 
         luopan:visible(true)
     else
         luopan:visible(false)

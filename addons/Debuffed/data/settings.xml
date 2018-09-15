@@ -44,6 +44,12 @@
         <timers>true</timers>
         <whitelist />
     </global>
+    <aniyah>
+        <pos>
+            <x>448</x>
+            <y>409</y>
+        </pos>
+    </aniyah>
     <dasmir>
         <pos>
             <x>511</x>
@@ -52,8 +58,8 @@
     </dasmir>
     <olymoly>
         <pos>
-            <x>616</x>
-            <y>232</y>
+            <x>683</x>
+            <y>455</y>
         </pos>
     </olymoly>
 </settings>

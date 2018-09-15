@@ -74,7 +74,7 @@ function init_gear_sets()
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat", waist="Siegel Sash"})
 
 	-- Healing
-    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pantaloons"})
+    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pantaloons +1"})
 
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
@@ -88,7 +88,7 @@ function init_gear_sets()
 		main={name="Ababinili",priority=2}, sub={name="Achaq Grip",priority=1},
 		head="Piety Cap", neck="Loricate Torque +1", ear1="Nourish. Earring +1", rear="Mendi. Earring",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", ring1="Prolix Ring", ring2="Defending Ring",
-		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Ebers Pantaloons", feet="Cure Clogs"})
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Ebers Pantaloons +1", feet="Cure Clogs"})
 
     sets.precast.FC.Curaga = sets.precast.FC.Cure
 
@@ -155,64 +155,64 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		-- Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		-- Theophany Mitts +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		-- 
+		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.CureSolace = {
 		-- Queller Rod D
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		-- Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		-- Theophany Mitts +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		-- 
+		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCure = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		--Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		-- Theophany Mitts +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		--
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCureSolace = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		--Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		--  Theophany Mitts +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		--
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightDayCureSolace = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		--Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		--  Theophany Mitts +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		--
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightDayCure = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
+		--  Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		--Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		--
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.Curaga = {	
 		-- 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Bliault +3 Theophany Mitts +3 Lebeche Ring
-		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
-		-- Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Lebeche Ring",
+		-- 
+		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCuraga = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
@@ -220,8 +220,8 @@ function init_gear_sets()
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
 		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
-		-- Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		-- 
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 		
 	sets.midcast.LightDayCuraga = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
@@ -229,18 +229,17 @@ function init_gear_sets()
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
 		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
-		-- Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		-- 
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 		
 	sets.midcast.Cure.DT = {
 		-- Queller Rod D
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		-- Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		-- Theophany Mitts +3
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	--Melee Curesets are used whenever your OffenseMode is set to anything but None.
 	sets.midcast.MeleeCure = {
@@ -248,10 +247,10 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Ebers Bliaud +1 Theophany Mitts +3 Lebeche Ring
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
-		-- Ebers Pantaloons +1 
-		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons", feet="Kaykaus Boots"}
+		-- Theophany Mitts +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		-- 
+		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud +1"})
 	sets.midcast.MeleeLightWeatherCure = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
@@ -285,25 +284,24 @@ function init_gear_sets()
 		-- main={name="Gada", priority=2}, sub={name="Sors Shield", priority=1},
 		-- Vanya Hood Healing skill neck="Debilis Medallion", rear="Healing Earring",
 		neck="Colossus's Torque", lear="Beatific Earring", 
-		-- Ebers Bliaud +1 +1 lring="Haoma's Ring", rring="Haoma's Ring",
+		-- lring="Haoma's Ring", rring="Haoma's Ring",
 		body="Ebers Bliaud +1", hands="Fanatic Gloves", lring="Sirona's Ring",
-		-- Theo. Pantaloons +3
-		back=gear.fastcast_jse_back, waist="Bishop's Sash", legs="Theo. Pantaloons", feet="Gende. Galosh. +1"}
+		-- Theo. Pant. +1 +3
+		back=gear.fastcast_jse_back, waist="Bishop's Sash", legs="Theo. Pant. +1", feet="Gende. Galosh. +1"}
 
 	sets.midcast.StatusRemoval = {
 		--main={name="Grioavolr", priority=2}, sub={name="Clemency Grip", priority=1}, 
 		ammo="Hasty Pinion +1",
-		head="Ebers Cap",
+		head="Ebers Cap +1",
 		hands="Ebers Mitts",
-		waist="Witful Belt", legs="Ebers Pantaloons", feet="Gende. Galosh +1"}
+		waist="Witful Belt", legs="Ebers Pantaloons +1", feet="Gende. Galosh +1"}
 
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
 	-- Duration
 	sets.midcast['Enhancing Magic'] = {
 		--main={name="Gada", priority=2}, sub={name="Ammurapi Shield", priority=1},
 		head=gear_telchine_head_Duration,
-		--body-"Telchine Chas.", 
-		hands=gear_telchine_hands_Duration,
+		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration,
 		-- Theo. Duckbills +3
 		legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 
@@ -313,7 +311,7 @@ function init_gear_sets()
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Ammurapi Shield",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"})
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {head="Inyanga Tiara +2", hands="Ebers Mitts", legs="Theo. Pantaloons",})
+	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {head="Inyanga Tiara +2", hands="Ebers Mitts", legs="Theo. Pant. +1",})
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills",ear1="Gifted Earring",waist="Sekhmet Corset"})
@@ -323,20 +321,26 @@ function init_gear_sets()
 	-- 438 Cap
 	sets.midcast.BarElement = {main={name="Beneficus",priority=2}, sub={name="Sors Shield",priority=1},
 		-- Incanter's Torque
-		head="Ebers Cap", neck="Colossus's Torque", lear="Andoaa Earring", rear="Augment. Earring",
+		head="Ebers Cap +1", neck="Colossus's Torque", lear="Andoaa Earring", rear="Augment. Earring",
 		body="Ebers Bliaud +1", hands="Ebers Mitts", lring="Stikini Ring", rring="Stikini Ring",
-		back="Merciful Cape", waist="Olympus Sash", legs="Ebers Pantaloons", feet="Ebers Duckbills"}
+		back="Merciful Cape", waist="Olympus Sash", legs="Ebers Pantaloons +1", feet="Ebers Duckbills"}
 
 	-- Caps 500 /sch  need 106 blm/rdm
 	sets.midcast.BarStatus = {
-		-- Gada
-		main={name="Beneficus",priority=2}, sub={name="Sors Shield",priority=1},
-		-- Telchine Cap Duration Incanter's Torque 
-		head="Umuthi Hat", neck="Colossus's Torque", lear="Andoaa Earring", rear="Augment. Earring",
-		-- Telchine Chas. Telchine Gloves 
-		lring="Stikini Ring", rring="Stikini Ring",
-		-- Telchine Braconi  Piety Pantaloons +1 Theo. Duckbills +3
-		back="Merciful Cape", waist="Olympus Sash", legs="Piety Pantaloons", feet="Ebers Duckbills"}
+		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
+		-- neck="Incantor's Torque",
+		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
+		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		--  feet="Theophany Duckbills +3"
+		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
+	
+	sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
+		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
+		-- neck="Incantor's Torque",
+		head=gear_telchine_head_Duration, neck="Colossus's Torque",  lear="Andoaa Earring", 
+		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		-- feet="Theophany Duckbills +3"
+		back="Mending Cape", waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 
 	-- Caps 500 to Cap - need 106 blm/rdm
 	-- Duration
