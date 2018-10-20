@@ -270,14 +270,8 @@ function init_gear_sets()
     sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
     sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 	
-	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {
-		main="Deacon Sword",
-		hands="Souv. Handsch. +1",
-		back="Weard Mantle", feet="Souveran Schuhs +1"})
-	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {
-		main="Deacon Sword",
-		hands="Souv. Handsch. +1",
-		back="Weard Mantle",feet="Souveran Schuhs +1"})
+	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {main="Deacon Sword",hands="Souv. Handsch. +1",back="Weard Mantle",feet="Souveran Schuhs +1"})
+	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {main="Deacon Sword",hands="Souv. Handsch. +1",back="Weard Mantle",feet="Souveran Schuhs +1"})
 
 	--------------------------------------
 	-- Idle/resting/defense/etc sets

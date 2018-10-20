@@ -49,8 +49,8 @@ gear_telchine_legs_Siphon = {}
 
 -- Feet
 gear_telchine_feet_Song = { name="Telchine Pigaches", augments={'Mag. Acc.+20','Song spellcasting time -7%',}}
-gear_telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +8',}}
-gear_telchine_feet_Regen = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +8',}}
+gear_telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}}
+gear_telchine_feet_Regen = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}}
 
 -- Helios 
 -- Head 0/1

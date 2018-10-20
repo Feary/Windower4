@@ -90,7 +90,7 @@ function init_gear_sets()
 		--neck="Sanctity Necklace"
         head="Beckoner's Horn",neck="Dualism Collar",ear1="Etiolation Earring",ear2="Gifted Earring",
         -- Con. Doublet +3 ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		body="Beckoner's Doublet",hands="Lamassu Mitts",ring1="Evoker's Ring",ring2="Prolix Ring",
+		body="Beck. Doublet +1",hands="Lamassu Mitts",ring1="Evoker's Ring",ring2="Prolix Ring",
         --waist="Luminary Sash",
 		back="Conveyance Cape", waist="Fucho-no-obi", legs="Beck. Spats +1", feet="Beck. Pigaches"}
 
@@ -197,7 +197,7 @@ function init_gear_sets()
         --neck="Incanter's Torque"
 		head="Beckoner's Horn",beck="Caller's Pendant",ear1="Andoaa Earring",ear2="Gifted Earring",
 		--hands="Baayami Cuffs",
-        body="Beckoner's Doublet",hands="Lamassu Mitts", ring1="Evoker's Ring",ring2="Stikini Ring",
+        body="Beck. Doublet +1",hands="Lamassu Mitts", ring1="Evoker's Ring",ring2="Stikini Ring",
         --waist="Kobo Obi" legs="Baayami Slops",feet="Baayami Sabots"
 		back="Conveyance Cape",waist="Cimmerian Sash",legs="Beck. Spats +1", feet="Rubeus Feet"}
 	
@@ -216,7 +216,7 @@ function init_gear_sets()
         -- neck="Shulmanu Collar", ear2="Lugalbanda Earring",
 		head="Apogee Crown", ear1="Gelos Earring",
         -- body="Con. Doublet +3", ring1="Varar Ring",ring2="Varar Ring",
-		body="Beckoner's Doublet",hands="Tali'ah Gages +1",
+		body="Beck. Doublet +1",hands="Tali'ah Gages +1",
 		-- waist="Incarnation Sash", legs="Apogee Slacks +1"  feet="Apogee Pumps +1"
         back=gear.phys_jse_back, waist="Cimmerian Sash", legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
 		
@@ -224,7 +224,7 @@ function init_gear_sets()
 		-- neck="Shulmanu Collar", ear2="Lugalbanda Earring",
         head="Apogee Crown", ear1="Gelos Earring",
         --body="Con. Doublet +3", ring1="Varar Ring",ring2="Varar Ring",
-		body="Beckoner's Doublet", hands="Tali'ah Gages +1", 
+		body="Beck. Doublet +1", hands="Tali'ah Gages +1", 
 		-- waist="Incarnation Sash",legs="Apogee Slacks +1", feet="Con. Pigaches +3"
         back=gear.phys_jse_back,waist="Cimmerian Sash",legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
 

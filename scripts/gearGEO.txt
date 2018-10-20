@@ -1,0 +1,41 @@
+get Jhakri Robe +2 case all
+get Lifestream Cape case all
+get Azimuth Hood +1 case all
+get Jhakri Pigaches +2 case all
+get Bagua Sandals +1 case all
+get Jhakri Cuffs +2 case all
+get Hagondes Coat +1 case all
+get Azimuth Tights +1 case all
+get Geo. Tunic +1 case all
+get Isa Belt case all
+get Jhakri Slops +2 case all
+get Barkaro. Earring case all
+get Bagua Tunic +1 case all
+get Amalric Gages case all
+get Handler's Earring +1 case all
+get Azimuth Gloves case all
+get Bagua Mitaines +1 case all
+get Geo. Galero +1 case all
+get Idris case all
+get Geo. Mitaines +2 case all
+get Rubicundity case all
+get Mall. Chapeau +2 case all
+get Jhakri Coronal +2 case all
+get Amalric Slops case all
+get Amalric Nails case all
+get Mallquis Trews +2 case all
+get Kirin's Pole case all
+get Dunna case all
+get Handler's Earring case all
+get Azimuth Coat case all
+get Bagua Galero +1 case all
+get Geo. Sandals +2 case all
+get Geomancy Pants +2 case all
+get Jhakri Ring case all
+get Mallquis Clogs +2 case all
+get Mallquis Saio +2 case all
+get Welkin Crown case all
+get Mallquis Cuffs +2 case all
+get Bagua Pants +1 case all
+get Azimuth Gaiters +1 case all
+get Nantosuelta's Cape case all

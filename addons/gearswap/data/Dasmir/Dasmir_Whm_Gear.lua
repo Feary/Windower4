@@ -312,7 +312,7 @@ function init_gear_sets()
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1",}
+		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})--neck="Nodens Gorget",ear2="Earthcry Earring",legs="Shedir Seraweels"
 
@@ -386,7 +386,7 @@ function init_gear_sets()
 		-- Theo. Briault +3 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- gear.Macc_jse_back Luminary Sash Chironic Hose Theo. Duckbills +3
-		back="Ogapepo Cape", waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
+		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
     sets.midcast.Drain.Resistant = {
 		main={name="Rubicundity", priority=2}, sub={name="Genbu's Shield", priority=1},
@@ -420,7 +420,7 @@ function init_gear_sets()
 		-- gear.Macc_jse_back Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
-	sets.midcast['Enfeebling Magic'] = {
+	sets.midcast['Enfeebling Magic'] = {ammo="Pemphredo Tathlum",
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Arasy Staff", priority=2}, sub={name="", priority=1},
 		-- Chironic Hat Erra Pendant Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",

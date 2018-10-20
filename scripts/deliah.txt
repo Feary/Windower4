@@ -6,7 +6,7 @@ put Heavy Metal satchel all
 put H-P Bayld storage all
 put 100 byne bill satchel all
 put one byne bill satchel all
-put	T. Whiteshell satchel all
+put T. Whiteshell satchel all
 put L. Jadeshell satchel all
 put ordelle bronzepiece satchel all
 put montiont silverpiece satchel all

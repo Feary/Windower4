@@ -49,4 +49,12 @@
             </text>
         </text_box_settings>
     </global>
+    <olymoly>
+        <text_box_settings>
+            <pos>
+                <x>60</x>
+                <y>-2</y>
+            </pos>
+        </text_box_settings>
+    </olymoly>
 </settings>

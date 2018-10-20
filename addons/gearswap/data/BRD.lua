@@ -33,7 +33,7 @@ end
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
 
-    state.ExtraSongsMode = M{['description']='Extra Songs','None','Dummy','Dummy Lock','Full Length','Full Length Lock'}
+    state.ExtraSongsMode = M{['description']='Extra Songs','None','Dummy','DummyLock','FullLength','FullLengthLock'}
 
 	state.Buff['Aftermath: Lv.3'] = buffactive['Aftermath: Lv.3'] or false
     state.Buff['Pianissimo'] = buffactive['Pianissimo'] or false
@@ -46,15 +46,6 @@ function job_setup()
 	autows = "Rudra's Storm"
 	autofood = 'Pear Crepe'
 
-	-- Job points
-	-- 1200 Gift
-	JP_1200 = true
-	-- match the number of job points earned for each category
-	JP_Tenuto = 20
-	JP_Marcato = 20
-	JP_Clarion = 20
-	JP_Lullaby = 20
-	
     -- For tracking current recast timers via the Timers plugin.
     custom_timers = {}
 	update_melee_groups()
@@ -154,7 +145,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 				end
 			end
 			
-			if not spell.targets.Enemy and (state.ExtraSongsMode.value == 'Full Length' or state.ExtraSongsMode.value == 'Full Length Lock') then
+			if not spell.targets.Enemy and state.ExtraSongsMode.value:contains('FullLength') then
 				equip(sets.midcast.Daurdabla)
 			end
 		
@@ -180,11 +171,19 @@ end
 
 function job_post_midcast(spell, spellMap, eventArgs)
     if spell.type == 'BardSong' then
-		if state.ExtraSongsMode.value == 'Full Length' or state.ExtraSongsMode.value == 'Full Length Lock' then
+		if spell.targets.Enemy then
+			if sets.midcast[spell.english] then
+				equip(sets.midcast[spell.english])
+			elseif sets.midcast[spellMap] then
+				equip(sets.midcast[spellMap])
+			end
+		end
+		
+		if state.ExtraSongsMode.value:contains('FullLength') then
             equip(sets.midcast.Daurdabla)
         end
 
-        if not (state.ExtraSongsMode.value == 'Dummy Lock' or state.ExtraSongsMode.value == 'Full Length Lock') then
+        if not state.ExtraSongsMode.value:contains('Lock') then
 			state.ExtraSongsMode:reset()
 		end
 
@@ -270,7 +269,7 @@ function get_song_class(spell)
     -- Can't use spell.targets:contains() because this is being pulled from resources
     if spell.targets.Enemy then
 		return 'SongDebuff'
-    elseif state.ExtraSongsMode.value == 'Dummy' or state.ExtraSongsMode.value == 'Dummy Lock' then
+    elseif state.ExtraSongsMode.value:contains('Dummy') then
         return 'DaurdablaDummy'
     else
         return 'SongEffect'
@@ -491,7 +490,6 @@ function calculate_duration(spellName, spellMap)
 	
 end
 
-
 -- Examine equipment to determine what our current TP weapon is.
 function update_melee_groups()
 	if player.equipment.main then
@@ -515,7 +513,7 @@ end
 windower.raw_register_event('zone change',reset_timers)
 windower.raw_register_event('logout',reset_timers)
 
--- Allow jobs to override this code
+    -- Allow jobs to override this code
 function job_self_command(commandArgs, eventArgs)
 
 end

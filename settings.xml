@@ -44,6 +44,16 @@
     <addon>gametime</addon>
     <addon>checkparam</addon>
     <addon>Debuffed</addon>
+    <addon>autoinvite</addon>
+    <addon>update</addon>
+    <addon>Trusts</addon>
+    <addon>stna</addon>
+    <addon>roe</addon>
+    <addon>remember</addon>
+    <addon>RAWR</addon>
+    <addon>Pouches</addon>
+    <addon>plasmon</addon>
+    <addon>DressUp</addon>
     <plugin>Guildwork</plugin>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>

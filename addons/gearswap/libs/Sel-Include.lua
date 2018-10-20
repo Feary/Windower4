@@ -81,6 +81,7 @@ function init_include()
 	state.AutoNukeMode 		  = M(false, 'Auto Nuke Mode')
 	state.AutoRuneMode 		  = M(false, 'Auto Rune Mode')
 	state.AutoShadowMode 	  = M(false, 'Auto Shadow Mode')
+	state.AutoHolyWaterMode   = M(true, 'Auto Holy Water Mode')
 	state.AutoWSMode		  = M(false, 'Auto Weaponskill Mode')
 	state.AutoFoodMode		  = M(false, 'Auto Food Mode')
 	state.AutoSubMode 		  = M(false, 'Auto Sublimation Mode')
@@ -1082,22 +1083,18 @@ function filter_precast(spell, spellMap, eventArgs)
 	if check_midaction(spell, spellMap, eventArgs) then return end
 	if check_disable(spell, spellMap, eventArgs) then return end
 	if check_doom(spell, spellMap, eventArgs) then return end
-	if check_amnesia(spell, spellMap, eventArgs) then return end
-	if check_abilities(spell, spellMap, eventArgs) then return end
-	if check_silence(spell, spellMap, eventArgs) then return end
-	if check_targets(spell, spellMap, eventArgs) then return end
 	if check_recast(spell, spellMap, eventArgs) then return end
-	if check_cost(spell, spellMap, eventArgs) then return end
-
-	if spellMap == 'Cure' or spellMap == 'Curaga' then
-		if spell.target.distance > 21 and spell.target.type == 'PLAYER' then
-			cancel_spell()
-			eventArgs.cancel = true
-			--Delete the next line and uncomment the line after, if you'd rather it send a tell if they're too far to heal.
-			add_to_chat(123,'Target out of range, too far to heal!')
-			--windower.send_command('input /tell '..spell.target.name..' !!! OUT OF RANGE !!! TOO FAR TO HEAL !!!')
-		end
+	
+	if spell.action_type == 'Magic' then
+		if check_silence(spell, spellMap, eventArgs) then return end
+		if check_spell_targets(spell, spellMap, eventArgs) then return end
+		if check_cost(spell, spellMap, eventArgs) then return end
+		if check_warps(spell, spellMap, eventArgs) then return end
+	elseif spell.action_type == 'Ability' or spell.type == 'WeaponSkill' then
+		if check_amnesia(spell, spellMap, eventArgs) then return end
+		if check_abilities(spell, spellMap, eventArgs) then return end
 	end
+
 end
 
 function filter_midcast(spell, spellMap, eventArgs)
@@ -2064,7 +2061,7 @@ function state_change(stateField, newValue, oldValue)
             enable("left_ring")
 	end
 	
-	if state.DisplayMode.value then update_job_states()	end
+	update_job_states()
 end
 
 -- Called when a player gains or loses a buff.
@@ -2099,7 +2096,7 @@ function buff_change(buff, gain)
 	end
 	
     if S{'Commitment','Dedication'}:contains(buff) then
-        if gain and cprings:contains(player.equipment.left_ring) then
+        if gain and (cprings:contains(player.equipment.left_ring) or xprings:contains(player.equipment.left_ring)) then
             enable("left_ring")
 			
 			if time_test and player.equipment.left_ring == 'Capacity Ring' then
@@ -2126,7 +2123,7 @@ function buff_change(buff, gain)
 				end
 			end
 			
-		elseif gain and player.equipment.head == "Guide Beret" then
+		elseif gain and (player.equipment.head == "Guide Beret" or player.equipment.head == "Sprout Beret") then
 			enable("head")
         end
     end

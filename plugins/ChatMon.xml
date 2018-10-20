@@ -21,10 +21,10 @@
 	<!-- Vagary -->
 	<trigger match="" notmatch="*please*invite*me*|*can*i*have*it*|*shop*|*synth*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Vagary.wav"/>
 	<!-- Tales -->
-	<trigger match="*Tales*|*rem*ch*" Notmatch="*can*i*have*it" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
+	<trigger match="*Tales*|*rem*ch*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
+	<trigger match="*Dawn*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<trigger match="*avatar*|*Ramuh*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<trigger match="*Omen*|*fu*|" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Omen.wav"/>
-	
 	<!-- Neo Nyzul -->
 	<!--Unity-->	
 	<trigger match="" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\unity.wav"/>
@@ -34,6 +34,6 @@
 	<trigger match="*Einherjar*|*ichor*" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Einherjar.wav" />
 	<!-- <trigger match="*craft*|*woodworking*|*Smithing*|*Synergy*|" notfrom="Tell" from="Yell|Shout|Linkshell" sound="Examine" />-->
 	<!-- match should not be used for Emote. Examine matches to Examiners name, Invite matches to Inviters name. -->
-	<trigger match="olymoly|oly|Das|Dasmir|Aniyah|Aniya|Ani" notfrom="Tell" from="Party|Linkshell" sound="Talk" /> -->
+	<trigger match="olymoly|* oly *|Das|Dasmir|Aniyah|Aniya|Ani" notfrom="Tell" from="Party|Linkshell" sound="Talk" /> -->
 	<trigger match="*" from="Tell" sound="Tell"/>
 </ChatMon>

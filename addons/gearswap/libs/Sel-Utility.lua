@@ -960,7 +960,7 @@ end
 -- Checks doom, returns true if we're going to cancel and use an item.
 function check_doom(spell, spellMap, eventArgs)
 
-	if buffactive.doom and not (spell.english == 'Cursna' or spell.name == 'Hallowed Water' or spell.name == 'Holy Water') then
+	if buffactive.doom and state.AutoHolyWaterMode.value and not (spell.english == 'Cursna' or spell.name == 'Hallowed Water' or spell.name == 'Holy Water') then
 		if player.inventory['Hallowed Water'] then
 			send_command('input /item "Hallowed Water" <me>')
 			add_to_chat(123,'Abort: You are doomed, using Hallowed Water instead.')
@@ -1079,7 +1079,7 @@ function silent_check_silence()
 end
 
 function check_recast(spell, spellMap, eventArgs)
-        if spell.action_type == 'Ability' and  spell.type ~= 'WeaponSkill' then
+        if spell.action_type == 'Ability' and spell.type ~= 'WeaponSkill' then
 			if spell.recast_id == 231 or spell.recast_id == 255 or spell.recast_id == 102 or spell.recast_id == 195 then return false end
             local abil_recasts = windower.ffxi.get_ability_recasts()
 			if not abil_recasts[spell.recast_id] then
@@ -1122,18 +1122,38 @@ function check_cost(spell, spellMap, eventArgs)
 	local spellCost = actual_cost(spell)
 	if spell.action_type == 'Magic' and player.mp < spellCost then
 		add_to_chat(123,'Abort: '..spell.english..' costs more MP. ('..player.mp..'/'..spellCost..')')
+		cancel_spell()
 		eventArgs.cancel = true
+		return true
 	elseif spell.type:startswith('BloodPact') and not buffactive['Astral Conduit'] and player.mp < spellCost then
 		add_to_chat(123,'Abort: '..spell.english..' costs more MP. ('..player.mp..'/'..spellCost..')')
+		cancel_spell()
 		eventArgs.cancel = true
+		return true
 	else
 		return false
 	end
 end
 
-function check_targets(spell, spellMap, eventArgs)
-	if spell.action_type == 'Magic' then
-		if spell.english:startswith('Curaga') and not spell.target.in_party then
+function check_warps(spell, spellMap, eventArgs)
+	if spell.target.type == 'SELF' and spell.english:contains('Warp') then
+		if world.area == 'Hazhalm Testing Grounds' and player.inventory['Glowing Lamp'] then
+			cancel_spell()
+			eventArgs.cancel = true
+			add_to_chat(123,"Abort: Drop your Glowing Lamp, you don't want to lose your plasm!")
+			return true
+		end
+	end
+	return false
+end
+
+function check_spell_targets(spell, spellMap, eventArgs)
+	if spellMap == 'Cure' or spellMap == 'Curaga' then
+		if spell.target.distance > 21 and spell.target.type == 'PLAYER' then
+			cancel_spell()
+			eventArgs.cancel = true
+			add_to_chat(123,'Target out of range, too far to heal!')
+		elseif spell.english:startswith('Curaga') and not spell.target.in_party then
 			if (buffactive['light arts'] or buffactive['addendum: white']) then
 				if get_current_strategem_count() > 0 then
 					local number = spell.name:match('Curaga ?%a*'):sub(7) or ''
@@ -1595,18 +1615,67 @@ function check_cpring()
 	local CurrentTime = (os.time(os.date('!*t')) + time_offset)
 	
 	if player.main_job_level < 99 then
-		if player.equipment.left_ring == 'Echad Ring' and get_item_next_use('Echad Ring').usable then
-			send_command('input /item "'..player.equipment.left_ring..'" <me>')
-			cp_delay = 0
-			return true
-		elseif item_available('Echad Ring') and ((get_item_next_use('Echad Ring').next_use_time) - CurrentTime) < 15 then
-			cp_ring_equip('Echad Ring')
-			cp_delay = 10
-			return true
-		else
-			cp_delay = 0
-			return false
-		end
+			if player.equipment.head and player.equipment.head == 'Sprout Beret' and get_item_next_use(player.equipment.head).usable then
+				send_command('input /item "'..player.equipment.head..'" <me>')
+				cp_delay = 0
+				return true
+			   
+			elseif item_available('Sprout Beret') and ((get_item_next_use('Sprout Beret').next_use_time) - CurrentTime) < 15 and (get_item_next_use('Sprout Beret').charges_remaining > 0) then
+				enable("head")
+				gearswap.equip_sets('equip_command',nil,{head="Sprout Beret"})
+				disable("head")
+				cp_delay = 10
+				return true
+			   
+			elseif player.equipment.left_ring == 'Echad Ring' and get_item_next_use('Echad Ring').usable then
+				send_command('input /item "'..player.equipment.left_ring..'" <me>')
+				cp_delay = 0
+				return true
+			elseif item_available('Echad Ring') and ((get_item_next_use('Echad Ring').next_use_time) - CurrentTime) < 15 then
+				cp_ring_equip('Echad Ring')
+				cp_delay = 10
+				return true
+			   
+			elseif player.equipment.left_ring == 'Caliber Ring' and get_item_next_use('Caliber Ring').usable then
+				send_command('input /item "'..player.equipment.left_ring..'" <me>')
+				cp_delay = 0
+				return true
+			elseif item_available('Caliber Ring') and ((get_item_next_use('Caliber Ring').next_use_time) - CurrentTime) < 15 then
+				cp_ring_equip('Caliber Ring')
+				cp_delay = 10
+				return true
+			   
+			elseif player.equipment.left_ring == 'Emperor Band' and get_item_next_use('Emperor Band').usable then
+				send_command('input /item "'..player.equipment.left_ring..'" <me>')
+				cp_delay = 0
+				return true
+			elseif item_available('Emperor Band') and ((get_item_next_use('Emperor Band').next_use_time) - CurrentTime) < 15 then
+				cp_ring_equip('Emperor Band')
+				cp_delay = 10
+				return true
+				
+			elseif player.equipment.left_ring == 'Empress Band' and get_item_next_use('Empress Band').usable then
+				send_command('input /item "'..player.equipment.left_ring..'" <me>')
+				cp_delay = 0
+				return true
+			elseif item_available('Empress Band') and ((get_item_next_use('Empress Band').next_use_time) - CurrentTime) < 15 then
+				cp_ring_equip('Empress Band')
+				cp_delay = 10
+				return true
+				
+			elseif player.equipment.left_ring == 'Resolution Ring' and get_item_next_use('Resolution Ring').usable then
+				send_command('input /item "'..player.equipment.left_ring..'" <me>')
+				cp_delay = 0
+				return true
+			elseif item_available('Resolution Ring') and ((get_item_next_use('Resolution Ring').next_use_time) - CurrentTime) < 15 then
+				cp_ring_equip('Resolution Ring')
+				cp_delay = 10
+				return true
+	 
+			else
+				cp_delay = 0
+				return false
+			end
 		
 	elseif cprings:contains(player.equipment.left_ring) and get_item_next_use(player.equipment.left_ring).usable then
 		send_command('input /item "'..player.equipment.left_ring..'" <me>')
@@ -1679,7 +1748,7 @@ function check_cpring_buff()-- returs true if you do not have the buff from xp c
 		if player.satchel['Vocation Ring'] then send_command('get "Vocation Ring" satchel') end
 		if player.satchel['Facility Ring'] then send_command('get "Facility Ring" satchel') end
 		if player.satchel['Guide Beret'] then send_command('get "Guide Beret" satchel') end
-		if player.satchel['Echad Ring'] and player.main_job_level < 99 then send_command('get "Guide Beret" satchel') end
+		if player.satchel['Echad Ring'] and player.main_job_level < 99 then send_command('get "Echad Ring" satchel') end
 	
 		if buffactive['Commitment'] then
 			return false

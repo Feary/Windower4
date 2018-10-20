@@ -279,7 +279,7 @@ function init_gear_sets()
     sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
         head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         --hands=gear.merlinic_refresh_hands
-		body="Shomonjijoe +1",,ring1="Dark Ring",ring2="Defending Ring",
+		body="Shomonjijoe +1",ring1="Dark Ring",ring2="Defending Ring",
 		--feet="Baayami Sabots"
         back="Umbra Cape",waist="Regal Belt",legs="Assid. Pants +1",}
 

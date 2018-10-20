@@ -142,7 +142,8 @@
     <dasmir>
         <Clock>
             <pos>
-                <x>1007</x>
+                <x>1023</x>
+                <y>1</y>
             </pos>
         </Clock>
         <Separator>\n</Separator>
