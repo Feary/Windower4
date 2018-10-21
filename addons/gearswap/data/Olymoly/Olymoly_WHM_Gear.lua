@@ -315,7 +315,8 @@ function init_gear_sets()
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1"})
 	
 	-- 438 Cap
-	sets.midcast.BarElement = {main={name="Beneficus",priority=2}, sub={name="Sors Shield",priority=1},
+	sets.midcast.BarElement = {
+		--main={name="Beneficus",priority=2}, sub={name="Sors Shield",priority=1},
 		-- Incanter's Torque
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Andoaa Earring", rear="Augment. Earring",
 		body="Ebers Bliaud +1", hands="Ebers Mitts +1", lring="Stikini Ring", rring="Stikini Ring",

@@ -182,7 +182,7 @@ function job_setup()
     }
 
 	update_melee_groups()
-	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","LearningMode","CastingMode","TreasureMode"})
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","LearningMode","CastingMode","TreasureMode"})
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -430,7 +430,7 @@ function check_arts()
 	
 		local abil_recasts = windower.ffxi.get_ability_recasts()
 
-		if abil_recasts[228] == 0 then
+		if abil_recasts[228] < latency then
 			send_command('@input /ja "Light Arts" <me>')
 			tickdelay = (framerate * .5)
 			return true

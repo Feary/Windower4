@@ -82,6 +82,7 @@ function init_include()
 	state.AutoRuneMode 		  = M(false, 'Auto Rune Mode')
 	state.AutoShadowMode 	  = M(false, 'Auto Shadow Mode')
 	state.AutoHolyWaterMode   = M(true, 'Auto Holy Water Mode')
+	state.AutoRemoveDoomMode  = M(true, 'Auto Remove Doom Mode')
 	state.AutoWSMode		  = M(false, 'Auto Weaponskill Mode')
 	state.AutoFoodMode		  = M(false, 'Auto Food Mode')
 	state.AutoSubMode 		  = M(false, 'Auto Sublimation Mode')
@@ -174,7 +175,9 @@ function init_include()
 	rangedautowstp = 1000
 	buffup = false
 	time_offset = -39602
-	framerate = 75
+	framerate = 60
+	latency = .75
+	spell_latency = nil
 	curecheat = false
 	lastincombat = player.in_combat
 	
@@ -254,7 +257,13 @@ function init_include()
 	
 	-- Controls for handling our autmatic functions.
 	
-	tickdelay = (framerate * 20)
+	if tickdelay ~= 0 then
+		tickdelay = (framerate * 20)
+	end
+	
+	if spell_latency == nil then
+		spell_latency = (latency + .05)
+	end
 	
 	-- General var initialization and setup.
     if job_setup then
@@ -1177,6 +1186,7 @@ function pre_tick()
 end
 
 function default_tick()
+	if check_doomed() then return true end
 	if check_shadows() then return true end
 	if check_use_item() then return true end
 	if check_sub() then return true end
@@ -2116,7 +2126,7 @@ function buff_change(buff, gain)
 				elseif ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetPlus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetPlus)) < 905 then
 					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..NegativeCapacityOffsetPlus.."")
 				elseif ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetMinus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetMinus)) < 905 then
-					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..CapacityOffsetPlus.."")
+					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..NegativeCapacityOffsetMinus.."")
 				else
 					windower.add_to_chat(123,"Unable to automatically determine your offset")
 					time_test = true
