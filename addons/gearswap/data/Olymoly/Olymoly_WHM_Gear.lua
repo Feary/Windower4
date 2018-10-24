@@ -152,8 +152,8 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +3 
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		-- Theophany Mitts +2 +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		-- 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
@@ -162,8 +162,8 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +3 
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		-- Theophany Mitts +2 +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		-- 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
@@ -171,8 +171,8 @@ function init_gear_sets()
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +3 
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		-- Theophany Mitts +2 +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		--
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
@@ -180,8 +180,8 @@ function init_gear_sets()
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		--  Theophany Mitts +3 
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		--  Theophany Mitts +2 +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		--
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
@@ -189,8 +189,8 @@ function init_gear_sets()
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		--  Theophany Mitts +3 
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		--  Theophany Mitts +2 +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		--
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
@@ -198,15 +198,15 @@ function init_gear_sets()
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		--  Theophany Mitts +3 
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Stikini Ring",
+		--  Theophany Mitts +2 +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
 		--
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.Curaga = {	
 		-- 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theo. Bliault +3 Theophany Mitts +3
+		-- Theo. Bliault +3 Theophany Mitts +2 +3
 		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
@@ -233,8 +233,8 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +3
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		-- Theophany Mitts +2 +3
+		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	--Melee Curesets are used whenever your OffenseMode is set to anything but None.
@@ -243,8 +243,8 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +3 
-		body="Ebers Bliaud +1", hands="Theophany Mitts", lring="Sirona's Ring", rring="Lebeche Ring",
+		-- Theophany Mitts +2 +3 
+		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		-- 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 

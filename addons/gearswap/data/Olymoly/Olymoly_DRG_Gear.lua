@@ -442,26 +442,27 @@ function init_gear_sets()
 	
 	-- Trishula
 	sets.engaged.Trishula = {ammo="Ginsen",
-		head="Flam. Zucchetto +1",neck="Ganesha's Mala",ear1="Brutal Earring",ear2="Cessance Earring",
-		-- Acro Hands STP 20/20 STR/DEX ring1="Rajas Ring",ring2="K'ayres Ring",
-		body="Peltast's Plackart",hands="Sulevia's Gauntlets +2", lring="Rajas Ring", rring="K'ayres Ring",
-		back="Brigantia's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
+		head="Flam. Zucchetto +1",neck="Anu Torque",ear1="Sherida Earring",ear2="Telos Earring",
+		-- Valorous Mail STR +7~10, Acc/Atk +15+, STP +7~8 Acro Hands STP 20/20 STR/DEX rring="Niqmaddu Ring"
+		body="Peltast's Plackart",hands="Sulevia's Gauntlets +2", lring="Petrov Ring", rring="Rajas Ring",
+		-- Valor. Hose STR +7~10, Acc/Atk +15+, STP +7~8
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
     sets.engaged.SomeAcc.Trishula = {ammo="Ginsen",
-		head="Flam. Zucchetto +1",neck="Shulmanu Collar",ear1="Brutal Earring",ear2="Sherida Earring",
+		head="Flam. Zucchetto +1",neck="Shulmanu Collar",ear1="Sherida Earring",ear2="Telos Earring",
 		body=gear.valorous_wsd_body,hands=gear.valorous_acc_hands,ring1="Regal Ring",ring2="K'ayres Ring",
-		back="Brigantia's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
 	sets.engaged.Acc.Trishula = {ammo="Ginsen",
-		head="Flam. Zucchetto +1",neck="Shulmanu Collar",ear1="Digni. Earring",ear2="Telos Earring",
+		head="Flam. Zucchetto +1",neck="Shulmanu Collar",ear1="Sherida Earring",ear2="Telos Earring",
 		body=gear.valorous_wsd_body,hands=gear.valorous_acc_hands,ring1="Ramuh Ring +1",ring2="K'ayres Ring",
-		back="Brigantia's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
     sets.engaged.FullAcc.Trishula = {ammo="Ginsen",
-		head="Flam. Zucchetto +1",neck="Shulmanu Collar",ear1="Zennaroi Earring",ear2="Telos Earring",
+		head="Flam. Zucchetto +1",neck="Shulmanu Collar",ear1="Sherida Earring",ear2="Telos Earring",
 		body=gear.valorous_wsd_body,hands=gear.valorous_acc_hands,ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Brigantia's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
     sets.engaged.Fodder.Trishula = {ammo="Ginsen",
-		head="Flam. Zucchetto +1",neck="Ganesha's Mala",ear1="Brutal Earring",ear2="Sherida Earring",
+		head="Flam. Zucchetto +1",neck="Ganesha's Mala",ear1="Sherida Earring",ear2="Telos Earring",
 		body=gear.valorous_wsd_body,hands=gear.valorous_acc_hands,ring1="Rajas Ring",ring2="K'ayres Ring",
-		back="Brigantia's Mantle",waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
+		back=gear.da_jse_back,waist="Ioskeha Belt",legs="Sulev. Cuisses +1",feet="Flam. Gambieras +1"}
 
     sets.engaged.AM.Trishula = {}
     sets.engaged.AM.SomeAcc.Trishula = {}

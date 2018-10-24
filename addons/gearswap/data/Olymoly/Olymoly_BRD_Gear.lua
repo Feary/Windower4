@@ -158,19 +158,18 @@ function init_gear_sets()
 		-- Ammurapi Shield
 		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--Brioso Roundlet +3
-		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
+		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
-		body="Fili Hongreline +1", hands="Inyanga Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
-		-- 
+		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		back="Intarabus's Cape", waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
 	sets.midcast.ResistantSongDebuff = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Brioso Roundlet +3 
-		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		-- Brioso Justau. +3 Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
-		body="Bihu Jstcorps. +3", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		-- Luminary Sash Brioso Cannions +3 
+		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
+		--Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
+		body="Brioso Justau. +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
+		-- Brioso Cannions +3 
 		back="Intarabus's Cape", waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 
 	-- Song-specific recast reduction
@@ -204,17 +203,17 @@ function init_gear_sets()
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})--main="Marin Staff +1",sub="Clemency Grip"
 	
 	sets.midcast['Enfeebling Magic'] = {
-		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1}, 
-		head="Inyanga Tiara +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"}
+		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
+		-- Stikini Ring +1 Stikini Ring +1
+		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
+		back="Intarabus's Cape", waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {
-		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1}, 
-		head="Inyanga Tiara +2", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		-- Bihu Slippers +3
-		back="Intarabus's Cape", waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"}
+		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
+		--Stikini Ring +1 Stikini Ring +1
+		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
+		-- Brioso Cannions +3 
+		back="Intarabus's Cape", waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 		
 	sets.midcast['Enhancing Magic'] = {
 		--main="Carnwenhan",sub="Ammurapi Shield",
@@ -228,14 +227,17 @@ function init_gear_sets()
 		waist="Siegel Sash",})
 		
 	sets.midcast['Elemental Magic'] = {
-		head="Inyanga Tiara +2", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
-		
+		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
+		-- Stikini Ring +1 Stikini Ring +1
+		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
+		-- Brioso Cannions +3 
+		back="Intarabus's Cape", waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 	sets.midcast['Elemental Magic'].Resistant = {
-		head="Inyanga Tiara +2", neck="Moonbow Whistle +1", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back="Intarabus's Cape", waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
+		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
+		-- Stikini Ring +1 Stikini Ring +1
+		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
+		-- Brioso Cannions +3 
+		back="Intarabus's Cape", waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 		
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Fodder
@@ -305,7 +307,11 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-	set_macro_page(8, 4)
+	if world.area:contains("Dynamis") then
+		set_macro_page(8, 4)
+	else
+		set_macro_page(1, 4)
+	end
 end
 
 function calculate_duration(spellName, spellMap)

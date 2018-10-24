@@ -9,10 +9,10 @@ function user_setup()
 	state.Weapons:options('Default','DualWeapons','SavageWeapons','DualRangedWeapons','LeadenWeapons','None')
 	state.CompensatorMode:options('300','1000','Never','Always')
 	
-    gear.RAbullet = "Adlivun Bullet"
-    gear.WSbullet = "Adlivun Bullet" -- Chrono Bullet  Divine Bullet
+    gear.RAbullet = "Eminent Bullet"
+    gear.WSbullet = "Eminent Bullet" -- Chrono Bullet  Divine Bullet
     gear.MAbullet = "Bullet" --For MAB WS, do not put single-use bullets here.
-    gear.QDbullet = "Omphalous Bullet" -- Living Bullet Animikii Bullet 
+    gear.QDbullet = "Animikii Bullet" -- Living Bullet  Omphalous Bullet 
     options.ammo_warning_limit = 15
 
 	-- Snapshot
@@ -360,7 +360,7 @@ function init_gear_sets()
 		-- body="Laksa. Frac +3",
         body="Mummu Jacket +2", hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- waist="K. Kachina Belt +1" legs="Laksa. Trews +3",
-        back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",,feet="Meg. Jam. +2"}
+        back=gear.ranger_wsd_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
 	
     sets.midcast.RA.Crit = {ammo=gear.RAbullet, 
         head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
@@ -484,11 +484,11 @@ function init_gear_sets()
 	-- Fencer Last Stand
 	sets.weapons.Default = {main="Fettering Blade",sub="Nusku Shield",range="Molybdosis"}--range="Fomalhaut"
 	-- Fencer Last Stand
-	sets.weapons.DualWeapons = {main="Fettering Blade",sub="Blurred Knife +1",range="Molybdosis"}--range="Fomalhaut"
-	sets.weapons.RollMeleeWeapons = {main="Hep. Sapara +1",sub="Blurred Knife +1",range="Compensator"}
-	sets.weapons.RollRangedWeapons = {main="Fettering Blade",sub="Kustawi +1",range="Compensator"}
+	sets.weapons.DualWeapons = {main="Fettering Blade",sub="Kustawi +1",range="Molybdosis"}-- sub="Blurred Knife +1",range="Fomalhaut"
+	sets.weapons.RollMeleeWeapons = {main="Hep. Sapara +1",sub="Kustawi +1",} --sub="Blurred Knife +1",range="Compensator"
+	sets.weapons.RollRangedWeapons = {main="Fettering Blade",sub="Kustawi +1",}--range="Compensator"
 	-- Savage Spam
-	sets.weapons.SavageWeapons = {main="Hep. Sapara +1",sub="Blurred Knife +1",range="Molybdosis"}--range="Ataktos"
+	sets.weapons.SavageWeapons = {main="Hep. Sapara +1",range="Molybdosis"}--sub="Blurred Knife +1",range="Ataktos"
 	-- Last Stand Dual Ranged
 	sets.weapons.DualRangedWeapons = {main="Fettering Blade",sub="Kustawi +1",range="Molybdosis"}--
 	-- Leaden/Wildfire
