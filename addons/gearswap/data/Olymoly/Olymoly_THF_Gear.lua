@@ -436,6 +436,7 @@ function init_gear_sets()
     -- Midcast sets
     --------------------------------------
     sets.midcast.FastRecast = {
+		-- Herculean Helm
         head="Haruspex Hat +1",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
         body="Taeon Tabard",hands="Leyline Gloves",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Tempus Fugit",legs="Mummu Kecks +1",feet="Mummu Gamash. +1"}
@@ -450,7 +451,6 @@ function init_gear_sets()
 	sets.midcast['Bio II'] = set_combine(sets.midcast.FastRecast, sets.TreasureHunter)
 
     -- Ranged gear
-
     sets.midcast.RA = {
         head="Mummu Bonnet +2",neck="Erudit. Necklace",ear1="Telos Earring",ear2="Neritic Earring",
         body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Garuda Ring +1",ring2="Garuda Ring +1",

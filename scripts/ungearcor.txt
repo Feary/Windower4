@@ -1,3 +1,4 @@
+gs equip naked
 put Hep. Sapara +1 sack all
 put Armageddon safe2 all
 put Herculean Gloves sack all
@@ -30,7 +31,7 @@ put Chas. Culottes +1 safe2 all
 put Mummu Jacket +2 sack all
 put Svelt. Gouriz +1 safe2 all
 put Regal Necklace safe2 all
-put Chasseur's Gants safe2 all
+put Chasseur's Gants +1 safe2 all
 put Meg. Chausses +2 sack all
 put Nusku Shield safe2 all
 put Mummu Kecks +1 sack all
@@ -52,7 +53,7 @@ put Adhemar Gamashes sack all
 put Carm. Sc. Mail +1 safe2 all
 put Camulus's Mantle safe2 all
 put Mummu Bonnet +2 sack all
-put Lanun Gants safe2 all
+put Lanun Gants +1 safe2 all
 put Lak. Frac +1 safe2 all
 put Lanun Tricorne +1 safe2 all
 put Desultor Tassets safe2 all
@@ -66,3 +67,4 @@ put Lak. Bottes safe2 all
 put Lak. Gants safe2 all
 put Adhemar Wrist. +1 sack all
 put Trump Card safe2 all
+put grunfeld rope sack all

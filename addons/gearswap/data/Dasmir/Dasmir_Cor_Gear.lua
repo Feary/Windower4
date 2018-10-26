@@ -83,7 +83,7 @@ function init_gear_sets()
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
-    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
+    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes +1"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
@@ -159,7 +159,7 @@ function init_gear_sets()
 		-- body="Skopos Jerkin",  
 		body="Ebon Jerkin", hands="Lanun Gants +1",
 		-- waist="Impulse Belt",
-		back=gear.snapshot_jse_back, waist="Yemaya Belt", legs="Chas. Culottes +1", feet="Meg. Jam. +2"}
+		back=gear.snapshot_jse_back, waist="Yemaya Belt", legs="Chas. Culottes +1 +1", feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {})
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {})
@@ -186,7 +186,7 @@ function init_gear_sets()
     -- Melee
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Leviathan Ring", rring="Epona's Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rufescent Ring", rring="Epona's Ring",
 		back=gear.str_wsd_jse_back, waist="Fotia Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"})
 
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
@@ -295,7 +295,7 @@ function init_gear_sets()
 		-- Laksa. Frac +3 lring="Hajduk Ring", rring="Regal Ring",
 		body="Mummu Jacket +2", hands="Meg. Gloves +2", lring="Meghanada Ring", rring="Cacoethic Ring",
 		-- legs="Adhemar Kecks +1", 
-		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +1", feet="Meg. Jam +2"}
+		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 	
 	sets.buff['Triple Shot'] = {
 		-- head="Oshosi Mask +1", 

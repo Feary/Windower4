@@ -162,7 +162,7 @@ function init_gear_sets()
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		-- legs="Amalric Slops" feet="Amalric Nails"
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +1"})
-	sets.midcast['Elemental Magic'].Resistant.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Resistant, {
+	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {
 		main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1},
 		-- head="Amalric Coif", neck="Incantor Torque", lear="Novio Earring",
 		head="Jhakri Coronal +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",

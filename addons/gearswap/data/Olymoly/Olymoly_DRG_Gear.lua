@@ -44,25 +44,25 @@ function init_gear_sets()
 	
 	sets.precast.JA['Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +1",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt", rring="Niqmaddu Ring"
+		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +3", rring="Niqmaddu Ring"
 		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Petrov Ring",ring2="K'ayres Ring",
 		-- waist="Ioskeha Belt +1",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Ptero. Brais +1",feet="Ostro Greaves"}
 	sets.precast.JA['High Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +1",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt", rring="Niqmaddu Ring"
+		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +3", rring="Niqmaddu Ring"
 		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Petrov Ring",ring2="K'ayres Ring",
 		-- waist="Ioskeha Belt +1",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Ptero. Brais +1",feet="Ostro Greaves"}
 	sets.precast.JA['Soul Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +1",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt", rring="Niqmaddu Ring"
+		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +3", rring="Niqmaddu Ring"
 		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Petrov Ring",ring2="K'ayres Ring",
 		-- waist="Ioskeha Belt +1",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Ptero. Brais +1",feet="Ostro Greaves"}
 	sets.precast.JA['Spirit Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +1",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt", rring="Niqmaddu Ring"
+		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +3", rring="Niqmaddu Ring"
 		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Petrov Ring",ring2="K'ayres Ring",
 		-- waist="Ioskeha Belt +1",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Ptero. Brais +1",feet="Ostro Greaves"}
