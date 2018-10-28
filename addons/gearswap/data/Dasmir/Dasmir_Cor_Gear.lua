@@ -419,7 +419,7 @@ function init_gear_sets()
 
     sets.engaged.DW = {
 		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Heartseeker Earring", rear="Dudgeon Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Cacoethic Ring", rring="Ramuh Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.DW_jse_back, waist="Kentarch Belt +1", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.DW.Acc = {

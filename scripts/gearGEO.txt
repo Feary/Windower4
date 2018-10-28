@@ -6,7 +6,7 @@ get Bagua Sandals +1 case all
 get Jhakri Cuffs +2 case all
 get Hagondes Coat +1 case all
 get Azimuth Tights +1 case all
-get Geo. Tunic +2 case all
+get Geomancy Tunic +2 case all
 get Isa Belt case all
 get Jhakri Slops +2 case all
 get Barkaro. Earring case all

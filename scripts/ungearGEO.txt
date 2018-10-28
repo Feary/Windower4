@@ -6,7 +6,7 @@ put Bagua Sandals +1 case all
 put Jhakri Cuffs +2 case all
 put Hagondes Coat +1 case all
 put Azimuth Tights +1 case all
-put Geo. Tunic +1 case all
+put Geomancy Tunic +2 case all
 put Isa Belt case all
 put Jhakri Slops +2 case all
 put Barkaro. Earring case all
@@ -15,7 +15,7 @@ put Amalric Gages case all
 put Handler's Earring +1 case all
 put Azimuth Gloves case all
 put Bagua Mitaines +1 case all
-put Geo. Galero +1 case all
+put Geo. Galero +2 case all
 put Idris case all
 put Geo. Mitaines +2 case all
 put Rubicundity case all

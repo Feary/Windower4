@@ -53,7 +53,7 @@ function init_gear_sets()
 		main="Kali", sub="Genbu's Shield", 
 		head="Fili Calot +1", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
-        back="Intarabus's Cape", waist="Witful Belt", legs="Gende. Spats +1", feet=gear_telchine_feet_Song}
+        back="Intarabus's Cape", waist="Witful Belt", legs="Aya. Cosciales +2", feet=gear_telchine_feet_Song}
 		
 	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
 	

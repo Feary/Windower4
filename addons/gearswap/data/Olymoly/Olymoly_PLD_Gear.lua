@@ -240,6 +240,7 @@ function init_gear_sets()
 		-- Founder/obyssean
 		head="Jumalik Helm", neck="Eddy Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Carmine Mail +1", hands="Founder's Gauntlets", lring="Shiva Ring +1", rring="Shiva Ring +1",
+		-- WSD Legs
 		back=gear.WS_jse_back, waist="Yamabuki-no-Obi", legs="Founder's Hose", feet="Sulev. Leggings +2"})
 		
 	-- Swap to these on Moonshade using WS if at 3000 TP

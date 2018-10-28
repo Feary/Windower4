@@ -45,13 +45,14 @@ function init_gear_sets()
 
 	-- Precast sets to enhance JAs
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Volte Bracers", waist="Chaac Belt"})
-	sets.precast.JA['Bounty Shot'] = set_combine(sets.TreasureHunter, {hands="Amini Glovelettes"})
+	sets.precast.JA['Bounty Shot'] = set_combine(sets.TreasureHunter, {hands="Amini Glove. +1"})
 	sets.precast.JA['Camouflage'] = {body="Orion Jerkin +1"}
 	sets.precast.JA['Scavenge'] = {feet="Orion Socks +1"}
 	sets.precast.JA['Shadowbind'] = {hands="Orion Bracers +1"}
 	sets.precast.JA['Sharpshot'] = {legs="Orion Braccae +1"}
 	sets.precast.JA['Double Shot'] = {back=gear.tp_ranger_jse_back}
-
+	--sets.precast.JA['Eagle Eye Shot'] = {legs="Arcadian Braccae +3"}
+	
 	-- Fast cast sets for spells
     sets.precast.FC = {
         head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
@@ -63,22 +64,25 @@ function init_gear_sets()
 	-- Ranged sets (snapshot)
 	-- Snapshot - Caps at 70 from any source.
 	sets.precast.RA = {
+		--neck="Scout's Gorget +2"
 		head=gear_taeon_head_Snapshot,
 		-- Oshosi Vest +1
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
 		back=gear.snapshot_ranger_jse_back, waist="Impulse Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {
+		-- head="Orion Beret +3", neck="Scout's Gorget +2"
 		head=gear_taeon_head_Snapshot,
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
 		-- Adhemar Kecks +1
 		back=gear.snapshot_ranger_jse_back, waist="Yemeya Belt", legs="Adhemar Kecks", feet="Meg. Jam. +2"})
 	
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {
+		-- head="Orion Beret +3", neck="Scout's Gorget +2"
 		head="Arcadian Beret +1",
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
+		-- legs="Adhemar Kecks +1", feet="Arcadian Socks +3"
 		back=gear.snapshot_ranger_jse_back, waist="Impulse Belt", legs="Adhemar Kecks", feet="Pursuer Gaiters"})
-
 
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
@@ -96,27 +100,27 @@ function init_gear_sets()
 	-- Jishnu's Ridiance
 	sets.precast.WS['Jishnu\'s Radiance'] = {
 		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Moonshade Earring", rear="Sherida Earring",
-		-- Begruding Ring
-		body="Meg. Cuirie +2", hands="Mummu Wrists +2", lring="Rajas Ring", rring="Mummu Ring",
+		-- lring="Begruding Ring" hands="Kobo Kote",
+		body="Meg. Cuirie +2", hands="Mummu Wrists +2", lring="Mummu Ring", ring2="Ilabrat Ring",
 		-- 	
 		back=gear.crit_ranger_jse_back, waist="Fotia Belt", legs="Darraigner's Brais", feet="Adhe. Gamashes +1"}
 
 	sets.precast.WS['Jishnu\'s Radiance'].Acc = {
 		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Moonshade Earring", rear="Sherida Earring",
-		-- Begruding Ring
+		-- lring="Begruding Ring" hands="Kobo Kote",
 		body="Meg. Cuirie +2", hands="Mummu Wrists +2", lring="Mummu Ring", ring2="Ilabrat Ring",
 		back=gear.crit_ranger_jse_back, waist="Fotia Belt", legs="Darraigner's Brais", feet="Adhe. Gamashes +1"}
 		
 	-- Namas Arrow			
 	sets.precast.WS['Namas Arrow'] = {
-		head="Arcadian Beret +1", neck="Fotia Gorget", lear="Vulcan's Pearl", rear="Enervating Earring",
-		body="Mummu Jacket +2", hands="Arc. Bracers +1", lring="Rajas Ring", ring2="Ilabrat Ring",
-		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Arcadian Socks +1"}
+		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Telos Earring", rear="Enervating Earring",
+		body="Mummu Jacket +2", hands="Adhe. Wrist. +1", lring="Regal Ring", ring2="Ilabrat Ring",
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Adhemar Kecks +1", feet="Adhe. Gamashes +1"}
 
 	sets.precast.WS['Namas Arrow'].Acc = {
-		head="Arcadian Beret +1", neck="Fotia Gorget", lear="Neritic Earring", rear="Enervating Earring",
-		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Hajduk Ring", rring="Hajduk Ring",
-		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Arcadian Socks +1"}
+		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Telos Earring", rear="Enervating Earring",
+		body="Mummu Jacket +2", hands="Adhe. Wrist. +1", lring="Regal Ring", ring2="Ilabrat Ring",
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Adhemar Kecks +1", feet="Adhe. Gamashes +1"}
 
 	-- Gun
 	-- Last Stand
@@ -141,20 +145,23 @@ function init_gear_sets()
 
 	-- Wildfire
     sets.precast.WS['Wildfire'] = {
-        head="Meghanada Visor +2",neck="Stoicheion Medal",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands="Carmine Fin. Ga. +1",lring="Garuda Ring +1", rring="Garuda Ring +1",
-        -- Eschan Stone
-		back=gear.wsd_ranger_jse_back, waist="Fotia Belt",legs="Gyve Trousers",feet="Adhe. Gamashes +1"}
-
-    sets.precast.WS['Wildfire'].Acc = {
-		
-        head="Meghanada Visor +2",neck="Stoicheion Medal",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Samnuha Coat",hands="Leyline Gloves", lring="Garuda Ring +1", rring="Garuda Ring +1",
-        back=gear.wsd_ranger_jse_back, waist="Fotia Belt",legs="Gyve Trousers",feet="Adhe. Gamashes +1"}
-	
+       -- Herc Helm AGI/Mab/wsd Baetyl Necklace
+		head=gear_herculean_nuke_head, neck="Stoicheion Medal", lear="Crematio Earring", rear="Friomisi Earring",
+		-- Lanun Frac +3 herc gloves agi/mab/wsd 
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
+		-- Eschan Stone Herc Trousers AGI/Macc/MAB Lanun Bottes +3
+		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Meg. Chausses +2", feet="Lanun Bottes +1"}
+    sets.precast.WS['Wildfire'].Acc = {		
+		-- Herc Helm AGI/Mab/wsd Baetyl Necklace
+		head=gear_herculean_nuke_head, neck="Stoicheion Medal", lear="Crematio Earring", rear="Friomisi Earring",
+		-- Lanun Frac +3 herc gloves agi/mab/wsd 
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
+		-- Eschan Stone Herc Trousers AGI/Macc/MAB Herculean Boots macc/mab
+		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Meg. Chausses +2", feet="Lanun Bottes +1"}
+	-- Crossbow
 	-- Trueflight
     sets.precast.WS['Trueflight'] = {
-		-- neck=Scout's Gorget +2
+		-- neck="Scout's Gorget +2" baetyl pendant
         head="Meghanada Visor +2",neck="Stoicheion Medal",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Carmine Mail +1",hands="Carmine Fin. Ga. +1",lring="Dingir Ring", rring="Garuda Ring +1",
         back=gear.wsd_ranger_jse_back, waist="Fotia Belt",legs="Gyve Trousers",feet="Adhe. Gamashes +1"}
@@ -323,23 +330,23 @@ function init_gear_sets()
     sets.idle = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +1",feet="Meg. Jam. +2"}
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +1",feet="Meg. Jam. +2"}
     
     sets.defense.MDT = {ammo=gear.RAbullet,
-       head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +1",feet="Meg. Jam. +2"}
     
     sets.defense.MEVA = {ammo=gear.RAbullet,
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +1",feet="Meg. Jam. +2"}
     
 	sets.Kiting = {feet="Jute Boots +1"}
 	sets.DayIdle = {}
@@ -364,7 +371,7 @@ function init_gear_sets()
     sets.engaged.Acc = {
 		head="Meghanada Visor +2", neck="Iqabi Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring +1",
-		back=gear.tp_jse_back, waist="Dynamic Belt +1",  legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back, waist="Dynamic Belt +1", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.engaged.DW = {
 		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
