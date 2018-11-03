@@ -93,7 +93,7 @@ function init_gear_sets()
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
 		-- herc helm agi/macc/mab Baetyl Pendant
-		head="Blood Mask", neck="Stoicheion Medal", lear="Friomisi Earring", rear="Crematio Earring",
+		head="Blood Mask", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Crematio Earring",
 		-- Lanun Frac +3  Fenrir Ring +1
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Shiva Ring +1",
 		--  Eschan Stone Heculean Trousers AGI/Macc/MAB Lanun Bottes +3
@@ -108,8 +108,8 @@ function init_gear_sets()
 		back=gear.magic_QD_jse_back, waist="Goading Belt", legs="Chas. Culottes +1", feet="Carmine Greaves +1"}
 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
-		-- Laksa. Tricone +3 Comm. Charm +2 Sanctity Necklace 
-		head="Mummu Bonnet +2", neck="Iqabi Necklace", lear="Digni. Earring", rear="Gwati Earring",
+		-- Laksa. Tricone +3 Comm. Charm +2  
+		head="Mummu Bonnet +2", neck="Sanctity Necklace", lear="Digni. Earring", rear="Gwati Earring",
 		-- Laksa. Gants +3 
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Regal Ring", rring="Stikini Ring",
 		--  Laksa. Bottes +3
@@ -122,7 +122,7 @@ function init_gear_sets()
 	-- Less damage
     sets.precast.CorsairShot.Proc = {ammo=gear.QDbullet,
          -- Baetyl Pendant
-		head="Blood Mask", neck="Stoicheion Medal", lear="Friomisi Earring", rear="Crematio Earring",
+		head="Blood Mask", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Crematio Earring",
 		-- Fenrir Ring +1 Fenrir Ring +1
 		body="Carm. Sc. Mail +1", hands="Leyline Gloves", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		--  Eschan Stone  
@@ -246,7 +246,7 @@ function init_gear_sets()
 	
 	sets.precast.WS['Aeolian Edge'] = {ammo=gear.MAbullet,
 		-- Herc Helm AGI/Mab/wsd 
-		head=gear_herculean_nuke_head, neck="Stoicheion Medal", lear="Moonshade Earring", rear="Friomisi Earring",
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 herc gloves agi/mab/wsd 
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
 		-- Eschan Stone Herc Trousers AGI/Macc/MAB Lanun Bottes +3
@@ -254,7 +254,7 @@ function init_gear_sets()
 
 	sets.precast.WS['Aeolian Edge'] = {ammo=gear.MAbullet,
 		-- Herc Helm AGI/Mab/wsd Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Stoicheion Medal", lear="Moonshade Earring", rear="Friomisi Earring",
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Shiva Ring +1",
 		-- Eschan Stone Herc Trousers AGI/Macc/MAB Lanun Bottes +3
@@ -307,7 +307,7 @@ function init_gear_sets()
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
 		-- Herc Helm AGI/Mab/wsd Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Stoicheion Medal", lear="Crematio Earring", rear="Friomisi Earring",
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 herc gloves agi/mab/wsd 
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
 		-- Eschan Stone Herc Trousers AGI/Macc/MAB Lanun Bottes +3
@@ -315,7 +315,7 @@ function init_gear_sets()
 
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
 		-- Herc Helm AGI/Mab/wsd Sanctity Necklace Hermetic Earring
-		head=gear_herculean_nuke_head, neck="Stoicheion Medal", lear="Crematio Earring", rear="Friomisi Earring",
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 herc gloves agi/mab/wsd  
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
 		-- Eschan Stone Herc Trousers AGI/Macc/MAB Lanun Bottes +3

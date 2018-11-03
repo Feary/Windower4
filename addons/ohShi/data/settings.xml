@@ -13,8 +13,8 @@
         <bggreen>0</bggreen>
         <bgred>0</bgred>
         <dangerwords>
-            <spells>Stonega IV,Kaustra,Thundaga IV,Thundaja,Aeroja,Stoneja,Aeroga IV,Breakga,Blizzaga IV,Meteor,Death,Firaga IV,cure,Blizzaja,Firaja</spells>
-            <weaponskills>Nerve,Danse,Astral Flow,Oblivion&apos;s Mantle,Provenance Watcher starts,Extreme Purgitation,Fulmination,Pawn&apos;s Penumbra,Gates,Frog,Rancid Reflux,Chainspell,Divesting Gale,Mandible Massacre,Zantetsuken,Thundris,Raksha Stance,Arm Cannon,Slimy Proposal,Ballistic Kick,Eradicator,Geirrothr,Yama&apos;s,Gorge,Beastruction</weaponskills>
+            <spells>Thundaja,Kaustra,Thundaga IV,Firaja,Blizzaja,Stoneja,Aeroga IV,Breakga,cure,Meteor,Death,Firaga IV,Blizzaga IV,Aeroja,Stonega IV</spells>
+            <weaponskills>Nerve,Danse,Astral Flow,Oblivion&apos;s Mantle,Provenance Watcher starts,Extreme Purgitation,Fulmination,Pawn&apos;s Penumbra,Gates,Frog,Rancid Reflux,Thundris,Divesting Gale,Mandible Massacre,Zantetsuken,Chainspell,Raksha Stance,Arm Cannon,Slimy Proposal,Geirrothr,Eradicator,Ballistic Kick,Yama&apos;s,Gorge,Beastruction</weaponskills>
         </dangerwords>
         <duration>7</duration>
         <flags>
@@ -26,11 +26,11 @@
         </flags>
         <moblist>
             <abyssea>Alfard,Isgebind,Glavoid,Carabosse,Orthrus</abyssea>
-            <dangerous>Apademak,Mandragora,Provenance Watcher</dangerous>
+            <dangerous>Mandragora,Provenance Watcher,Apademak</dangerous>
             <legion>Soaring,Paramount,Veiled,Mired,Lofty</legion>
             <meebles>Goldwing,Samursk,Umagrhk,Grannus,Silagilith,Svaha,Izyx,Melisseus,Dreyruk,Surtr</meebles>
             <other>Cerberus,Hydra,Enraged,Dvergr,Khimaira,Bloodthirsty,Odin,Tiamat,Khrysokhimaira</other>
-            <voidwatch>Provenance Watcher,Bismarck,Asb,Wazir,Goji,Hahava,Qilin,Gaunab,Ig-Alima,Taweret,Mellonia,Botulus Rex,Giltine,Uptala,Kholomodumo,Shah,Aello,Celaeno,Rukh,Gugalanna,Gasha,Agathos,Ocythoe,Belphoebe,Akvan,Morta,Kalasutrax,Cherufe,Kaggen,Pil,Sarbaz</voidwatch>
+            <voidwatch>Provenance Watcher,Bismarck,Asb,Wazir,Sarbaz,Hahava,Pil,Kaggen,Ig-Alima,Taweret,Mellonia,Botulus Rex,Cherufe,Uptala,Gaunab,Kalasutrax,Aello,Celaeno,Rukh,Gugalanna,Gasha,Agathos,Belphoebe,Ocythoe,Akvan,Morta,Shah,Giltine,Kholomodumo,Qilin,Goji</voidwatch>
         </moblist>
         <padding>0</padding>
         <pos>
@@ -66,4 +66,9 @@
         <textred>255</textred>
         <textsize>12</textsize>
     </global>
+    <olymoly>
+        <pos>
+            <y>301</y>
+        </pos>
+    </olymoly>
 </settings>

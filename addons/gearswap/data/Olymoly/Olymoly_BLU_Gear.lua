@@ -81,8 +81,7 @@ function init_gear_sets()
 		back=gear.da_jse_back,waist="Dynamic Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.precast.Flourish1 = {ammo="Hasty Pinion +1",
-		--neck="Sanctity Necklace"
-	   head="Jhakri Coronal +2",ear1="Gifted Earring",ear2="Enchntr. Earring +1",
+	   head="Jhakri Coronal +2", neck="Sanctity Necklace", ear1="Gifted Earring",ear2="Enchntr. Earring +1",
 	   body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
 	   back="Cornflower Cape",waist="Dynamic Belt +1",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
@@ -269,7 +268,7 @@ function init_gear_sets()
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops", feet="Amalric Nails"}
 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,{
-		--neck="Sanctity Necklace",
+		neck="Sanctity Necklace",
 		hands="Jhakri Cuffs +2",ring1="Stikini Ring", ring2="Stikini Ring",
 		legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 
@@ -286,22 +285,22 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
 	sets.midcast['Blue Magic'].MagicAccuracy = {ammo="Dosis Tathlum",--main="Iris",sub="Iris",
-		-- Assim +3 Sanctity Necklace
-		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Regal Earring",rear="Dignitary Earring",
+		-- Assim +3 
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring",rear="Dignitary Earring",
 		body="Carm. Sc. Mail +1", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone assim legs
 		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Enfeebling Magic'] = {ammo="Dosis Tathlum",--main="Nibiru Cudgel",sub="Nibiru Cudgel",
-		-- Assim +3 Sanctity Necklace Hermetic Earring
-		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Regal Earring",rear="Dignitary Earring",
+		-- Assim +3  Hermetic Earring
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring",rear="Dignitary Earring",
 		body="Carm. Sc. Mail +1", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone assim legs
 		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Dark Magic'] = {ammo="Dosis Tathlum",--main="Nibiru Cudgel",sub="Nibiru Cudgel",
-		-- Assim +3 Sanctity Necklace 
-		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Regal Earring",rear="Dignitary Earring",
+		-- Assim +3 
+		head="Jhakri Coronal +2",neck="Sanctity Necklace", lear="Regal Earring",rear="Dignitary Earring",
 		body="Carm. Sc. Mail +1", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone assim legs
 		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
@@ -360,8 +359,8 @@ function init_gear_sets()
 
 	-- Breath Spells --
 	sets.midcast['Blue Magic'].Breath = {--ammo="Mavi Tathlum",
-		-- Assim +3 Sanctity Necklace Hermetic Earring
-		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Regal Earring",rear="Dignitary Earring",
+		-- Assim +3 Hermetic Earring
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring",rear="Dignitary Earring",
 		-- 
 		body="Carm. Sc. Mail +1", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone Assim legs
@@ -370,13 +369,12 @@ function init_gear_sets()
 	-- Physical Added Effect Spells most notably "Stun" spells --
 
 	sets.midcast['Blue Magic'].Stun = {ammo="Dosis Tathlum",
-		--  Sanctity Necklace
-		head="Carmine Mask +1", neck="Erra Pendant", lear="Regal Earring", rear="Dignitary Earring",
+		head="Carmine Mask +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Dignitary Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.mab_jse_back, waist="Luminary Sash", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].Stun.Resistant = {ammo="Hasty Pinion +1",--main="Iris",sub="Iris",
-		head="Carmine Mask +1", neck="Erra Pendant", lear="Regal Earring", rear="Dignitary Earring",
+		head="Carmine Mask +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Dignitary Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.mab_jse_back, waist="Luminary Sash", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
@@ -384,7 +382,7 @@ function init_gear_sets()
 
 	-- Other Specific Spells --
 
-	sets.midcast['Blue Magic']['White Wind'] = {--ammo="Mavi Tathlum",
+	sets.midcast['Blue Magic']['White Wind'] = {ammo="Mavi Tathlum",
 		-- Despair Helm 
 		head="Carmine Mask +1", neck="Dualism Collar", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		-- Despair Mail
@@ -463,8 +461,8 @@ function init_gear_sets()
 
 	-- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield", ammo="Staunch Tathlum",
-		-- Genmei Shield Genmei Earring
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		-- Genmei Shield 
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Genmei Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
@@ -501,9 +499,9 @@ function init_gear_sets()
 	sets.weapons.HybridWeapons = {main="Vampirism", sub="Vampirism"}
 
 	-- Engaged sets
-	sets.engaged = {main="Tanmogayi +1", sub="Nibiru Blade", ammo="Ginsen",
+	sets.engaged = {ammo="Ginsen",
 		-- lear="Dedition Earring",
-		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
+		head="Adhemar Bonnet +1",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
 		-- ring2="Petrov Ring",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
 		-- waist="Reiki Yotai", feet="Herculean Boots", TA
@@ -599,7 +597,7 @@ function init_gear_sets()
 
 	sets.engaged.Fodder = {ammo="Ginsen",
 		-- lear="Dedition Earring",
-		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
+		head="Adhemar Bonnet +1",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
 		-- ring2="Petrov Ring",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
 		-- waist="Reiki Yotai", feet="Herculean Boots", TA

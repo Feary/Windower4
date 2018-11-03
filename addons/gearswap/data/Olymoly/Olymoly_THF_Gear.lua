@@ -62,7 +62,7 @@ function init_gear_sets()
 	sets.Ambush = {body="Plunderer's Vest +1"}
 
 	-- Weapons Sets
-	sets.weapons.Default = {main="Twashtar",sub="Taming Sari"}
+	sets.weapons.Default = {main="Twashtar",sub="Mandau"}
 	sets.weapons.Mandau = {main="Mandau",sub="Twashtar"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Throwing = {range="Raider's Bmrng."}

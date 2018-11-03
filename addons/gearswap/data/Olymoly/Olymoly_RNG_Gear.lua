@@ -146,14 +146,14 @@ function init_gear_sets()
 	-- Wildfire
     sets.precast.WS['Wildfire'] = {
        -- Herc Helm AGI/Mab/wsd Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Stoicheion Medal", lear="Crematio Earring", rear="Friomisi Earring",
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 herc gloves agi/mab/wsd 
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
 		-- Eschan Stone Herc Trousers AGI/Macc/MAB Lanun Bottes +3
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Meg. Chausses +2", feet="Lanun Bottes +1"}
     sets.precast.WS['Wildfire'].Acc = {		
 		-- Herc Helm AGI/Mab/wsd Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Stoicheion Medal", lear="Crematio Earring", rear="Friomisi Earring",
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 herc gloves agi/mab/wsd 
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
 		-- Eschan Stone Herc Trousers AGI/Macc/MAB Herculean Boots macc/mab
@@ -162,12 +162,12 @@ function init_gear_sets()
 	-- Trueflight
     sets.precast.WS['Trueflight'] = {
 		-- neck="Scout's Gorget +2" baetyl pendant
-        head="Meghanada Visor +2",neck="Stoicheion Medal",ear1="Crematio Earring",ear2="Friomisi Earring",
+        head="Meghanada Visor +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Carmine Mail +1",hands="Carmine Fin. Ga. +1",lring="Dingir Ring", rring="Garuda Ring +1",
         back=gear.wsd_ranger_jse_back, waist="Fotia Belt",legs="Gyve Trousers",feet="Adhe. Gamashes +1"}
 
     sets.precast.WS['Trueflight'].Acc = {
-        head="Meghanada Visor +2",neck="Stoicheion Medal",ear1="Crematio Earring",ear2="Friomisi Earring",
+        head="Meghanada Visor +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Samnuha Coat",hands="Leyline Gloves",lring="Garuda Ring +1", rring="Garuda Ring +1",
         back=gear.wsd_ranger_jse_back, waist="Fotia Belt",legs="Gyve Trousers",feet="Adhe. Gamashes +1"}
 		
