@@ -77,13 +77,13 @@ function init_gear_sets()
 	
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
 		main={name="Ababinili",priority=2}, sub={name="Achaq Grip",priority=1},
-		head="Piety Cap", lear="Nourish. Earring +1", rear="Mendi. Earring",
+		head="Piety Cap +1", lear="Nourish. Earring +1", rear="Mendi. Earring",
 		-- Kaykaus Tights Path B
 		feet="Cure Clogs"})
 
 	sets.precast.FC.Cure.DT =  set_combine(sets.precast.FC.Cure, {
 		main={name="Ababinili",priority=2}, sub={name="Achaq Grip",priority=1},
-		head="Piety Cap", neck="Loricate Torque +1", ear1="Nourish. Earring +1", rear="Mendi. Earring",
+		head="Piety Cap +1", neck="Loricate Torque +1", ear1="Nourish. Earring +1", rear="Mendi. Earring",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", ring1="Prolix Ring", ring2="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Ebers Pantaloons +1", feet="Cure Clogs"})
 

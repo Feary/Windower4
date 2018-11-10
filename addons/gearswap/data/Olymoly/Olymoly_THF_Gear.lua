@@ -57,8 +57,8 @@ function init_gear_sets()
     sets.Knockback = {}
 	sets.Suppa = {ear1="Suppanomimi", ear2="Cessance Earring"}
 	sets.DWEarrings = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
-	-- hands="Floral Gauntlets", waist="Reiki Yotai",
-	sets.DWMax = {body="Adhemar Jacket +1", waist="Patentia Sash", ear1="Dudgeon Earring", ear2="Heartseeker Earring"}
+	-- hands="Floral Gauntlets", 
+	sets.DWMax = {body="Adhemar Jacket +1", waist="Reiki Yotai", ear1="Dudgeon Earring", ear2="Heartseeker Earring"}
 	sets.Ambush = {body="Plunderer's Vest +1"}
 
 	-- Weapons Sets
@@ -508,72 +508,72 @@ function init_gear_sets()
 		head="Adhemar Bonnet",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3", rring="Hetairoi Ring", 
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring", ring2="Rajas Ring",
-		-- waist="Reiki Yotai", 
-        back=gear.stp_jse_back,waist="Patentia Sash", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
+		-- 
+        back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
 		
     sets.engaged.SomeAcc = {ammo="Yamarang",
 		head="Adhemar Bonnet",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3", rring="Hetairoi Ring", 
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring", ring2="Rajas Ring",
-		-- waist="Reiki Yotai", 
-        back=gear.stp_jse_back,waist="Patentia Sash", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
+		-- 
+        back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
 		
 	sets.engaged.Acc = {ammo="Yamarang",
 		head="Adhemar Bonnet",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3", rring="Hetairoi Ring", 
         body="Adhemar Jacket +1",hands="Adhemar Wristbands", ring1="Epona's Ring", ring2="Rajas Ring",
-		-- waist="Reiki Yotai", legs="Pill. Culottes +3", 
-        back=gear.stp_jse_back,waist="Patentia Sash", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
+		-- legs="Pill. Culottes +3", 
+        back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
 		
     sets.engaged.FullAcc = {ammo="Yamarang",
         head="Adhemar Bonnet",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3", rring="Hetairoi Ring", 
         body="Adhemar Jacket +1",hands="Adhemar Wristbands",ring1="Epona's Ring", ring2="Rajas Ring",
-		-- waist="Reiki Yotai", legs="Pill. Culottes +3", 
-        back=gear.stp_jse_back,waist="Patentia Sash", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
+		-- legs="Pill. Culottes +3", 
+        back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
 	
 	sets.engaged.Fodder = {ammo="Ginsen",
 		-- neck="Assassin's Gorget +2", rear="Dedition Earring",
         head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3", rring="Hetairoi Ring", 
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring", ring2="Rajas Ring",
-		-- waist="Reiki Yotai", 
-        back=gear.stp_jse_back,waist="Patentia Sash", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
+		-- 
+        back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +1"}
 	
     sets.engaged.PDT = {ammo="Staunch Tathlum",
         head="Adhemar Bonnet", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3", 
         body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Defending Ring",
-		-- waist="Reiki Yotai", feet="Plun. Poulaines +3"
-        back=gear.stp_jse_back, waist="Patentia Sash",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
+		-- feet="Plun. Poulaines +3"
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
 
     sets.engaged.SomeAcc.PDT = {ammo="Staunch Tathlum", 
         head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3",
         body="Meg. Cuirie +2", hands="Adhemar Wrist. +1", ring1="Epona's Ring", ring2="Defending Ring",
-		-- waist="Reiki Yotai", feet="Plun. Poulaines +3"
-        back=gear.stp_jse_back, waist="Patentia Sash",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
+		-- feet="Plun. Poulaines +3"
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
 
     sets.engaged.Acc.PDT = {ammo="Staunch Tathlum",
         head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3",
         body="Meg. Cuirie +2", hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Defending Ring",
-		-- waist="Reiki Yotai", feet="Plun. Poulaines +3"
-        back=gear.stp_jse_back, waist="Patentia Sash",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
+		-- feet="Plun. Poulaines +3"
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
 
     sets.engaged.FullAcc.PDT = {ammo="Staunch Tathlum",
 		head="Adhemar Bonnet", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3", 
         body="Meg. Cuirie +2", hands="Adhemar Wrist. +1", ring1="Epona's Ring",ring2="Defending Ring",
-		-- waist="Reiki Yotai", feet="Plun. Poulaines +3"
-        back=gear.stp_jse_back, waist="Patentia Sash",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
+		-- feet="Plun. Poulaines +3"
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
 
     sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum",
 		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Body="Pillager's Vest +3",
         body="Meg. Cuirie +2", hands="Adhemar Wrist. +1", ring1="Epona's Ring",ring2="Defending Ring",
-		-- waist="Reiki Yotai", feet="Plun. Poulaines +3"
-        back=gear.stp_jse_back, waist="Patentia Sash",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
+		-- feet="Plun. Poulaines +3"
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +1"}
 
 end
 

@@ -1,0 +1,79 @@
+<?xml version="1.1" ?>
+<settings>
+    <global>
+        <debug>false</debug>
+        <delay>0</delay>
+        <display>
+            <bg>
+                <alpha>192</alpha>
+                <blue>0</blue>
+                <green>0</green>
+                <red>0</red>
+                <visible>true</visible>
+            </bg>
+            <flags>
+                <bold>false</bold>
+                <bottom>false</bottom>
+                <draggable>true</draggable>
+                <italic>false</italic>
+                <right>false</right>
+            </flags>
+            <padding>3</padding>
+            <pos>
+                <x>568</x>
+                <y>393</y>
+            </pos>
+            <text>
+                <alpha>255</alpha>
+                <blue>255</blue>
+                <font>Consolas</font>
+                <fonts>
+
+                </fonts>
+                <green>255</green>
+                <red>255</red>
+                <size>10</size>
+                <stroke>
+                    <alpha>255</alpha>
+                    <blue>0</blue>
+                    <green>0</green>
+                    <red>0</red>
+                    <width>0</width>
+                </stroke>
+            </text>
+        </display>
+        <fern>true</fern>
+        <pellucid>true</pellucid>
+        <profiles>
+            <default>
+
+            </default>
+            <mab>
+                <1>
+                    <1>
+                        <name>magic accuracy</name>
+                        <val>15</val>
+                    </1>
+                    <2>
+                        <name>magic attack bonus</name>
+                        <val>15</val>
+                    </2>
+                </1>
+            </mab>
+            <ta>
+                <1>
+                    <1>
+                        <name>triple attack</name>
+                        <val>3</val>
+                    </1>
+                    <2>
+                        <name>accuracy</name>
+                        <val>15</val>
+                    </2>
+                </1>
+            </ta>
+        </profiles>
+        <style>magic</style>
+        <taupe>true</taupe>
+    </global>
+</settings>

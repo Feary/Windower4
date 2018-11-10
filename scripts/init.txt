@@ -33,6 +33,8 @@ lua load equipviewer
 lua load checkparam
 partybuffs size 20
 lua load roller
+lua load maga
+lua load repeater
 
 //Bind keys
 //Bind syntax is "bind <key> <up> <command>

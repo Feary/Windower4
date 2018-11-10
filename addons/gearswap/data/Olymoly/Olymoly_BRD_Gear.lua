@@ -20,7 +20,10 @@ function user_setup()
 	send_command('bind @!^` input /pcmd leave')
 	send_command('bind @f10 gs c cycle RecoverMode')
 	send_command('bind @f8 gs c toggle AutoBuffMode')
-
+	
+	send_command('alias azz input /pcmd leave;wait 1;input /tell Azzriel invite;')
+	send_command('alias nj input /pcmd leave;wait 1;input /tell Nurzejoy invite;')
+	
 	select_default_macro_book()
 end
 

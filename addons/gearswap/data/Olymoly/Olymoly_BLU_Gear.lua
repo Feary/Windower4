@@ -67,7 +67,7 @@ function init_gear_sets()
 	-- Precast Sets
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Azure Lore'] = {hands="Luhlaza Bazubands"}
+	sets.precast.JA['Azure Lore'] = {hands="Luh. Bazubands +1"}
 	
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {legs="Dashing Subligar"}
@@ -504,8 +504,8 @@ function init_gear_sets()
 		head="Adhemar Bonnet +1",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
 		-- ring2="Petrov Ring",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		--  TA
+		back=gear.stp_jse_back, waist="Reiki Yotai", legs="Samnuha Tights",feet=gear_herculean_ta_feet}
 
 	sets.engaged.AM = {ammo="Ginsen",
 		-- lear="Dedition Earring",
