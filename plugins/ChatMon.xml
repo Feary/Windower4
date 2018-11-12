@@ -29,7 +29,7 @@
 	<!--Unity-->	
 	<trigger match="" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\unity.wav"/>
 	<!-- Exping --> 
-	<trigger match="*capacity*points*do*you*|capacity|cp|apex|dho*gates*" from="Shout|Yell|Linkshell" notmatch="*buy*" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\jobpoints.wav" />
+	<trigger match="*aoe*cp*|*aoe*cap*|*capacity*points*do*you*|capacity|cp|apex|dho*gates*" from="Shout|Yell|Linkshell" notmatch="*buy*" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\jobpoints.wav" />
 	<!-- Einherjar -->
 	<trigger match="*Einherjar*|*ichor*" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Einherjar.wav" />
 	<!-- <trigger match="*craft*|*woodworking*|*Smithing*|*Synergy*|" notfrom="Tell" from="Yell|Shout|Linkshell" sound="Examine" />-->
