@@ -24,7 +24,7 @@
 	<trigger match="*Tales*|*rem*ch*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<trigger match="*Dawn*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<trigger match="*avatar*|*Ramuh*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
-	<trigger match="*Omen*|*fu*|" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Omen.wav"/>
+	<trigger match="*Omen*|*Kyou*|*kei*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Omen.wav"/>
 	<!-- Neo Nyzul -->
 	<!--Unity-->	
 	<trigger match="" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\unity.wav"/>

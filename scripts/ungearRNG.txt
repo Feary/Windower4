@@ -1,56 +1,59 @@
-put Amini Bottillons +1 safe2 all
+put Abnoba Kaftan sack all
+put Adhe. Gamashes +1 sack all
+put Adhemar Bonnet +1 sack all
 put Adhemar Bonnet sack all
 put Adhemar Gamashes sack all
-put Holliday safe2 all
-put Arcadian Socks +1 safe2 all
-put Mummu Kecks +1 sack all
-put Mummu Jacket +2 sack all
-put Armageddon safe2 all
-put Arc. Braccae +1 safe2 all
-put Yoichi's Arrow safe2 all
-put Meg. Gloves +2 sack all
-put Desultor Tassets safe2 all
-put Arc. Jerkin +1 safe2 all
-put Kustawi +1 safe2 all
-put Arc. Bracers +1 safe2 all
-put Amini Caban +1 safe2 all
-put Adhemar Kecks sack all
-put Yemaya Belt safe2 all
-put Kwahu Kachina Belt safe2 all
-put Meg. Jam. +2 sack all
-put Meg. Cuirie +2 sack all
-put Enervating Earring safe2 all
-put Bullet safe2 all
-put Mummu Ring sack all
-put Orion Socks +1 safe2 all
-put Amini Brague +1 safe2 all
-put Svelt. Gouriz +1 safe2 all
-put Adhemar Wrist. +1 sack all
-put Mummu Gamash. +1 sack all
-put Adhemar Kecks +1 sack all
-put Mummu Bonnet +2 sack all
-put Arcadian Beret +1 safe2 all
 put Adhemar Jacket +1 sack all
-put Adhe. Gamashes +1 sack all
-put Belenus's Cape safe2 all
-put Eminent Bullet safe2 all
-put Amini Gapette +1 safe2 all
-put Meg. Chausses +2 sack all
-put Adhemar Bonnet +1 sack all
-put Mummu Wrists +2 sack all
-put Carm. Sc. Mail +1 safe2 all
-put Perun +1 safe2 all
-put Darraigner's Brais sack all
+put Adhemar Kecks +1 sack all
+put Adhemar Kecks sack all
+put Adhemar Wrist. +1 sack all
 put Adhemar Wristbands sack all
-put Abnoba Kaftan sack all
-put Impulse Belt safe2 all
-put Pursuer's Gaiters safe2 all
-put Meghanada Visor +2 sack all
-put Grunfeld Rope sack all
-put Nusku Shield safe2 all
-put Orion Jerkin +1 safe2 all
-put Yoichinoyumi safe2 all
+put Amini Bottillons +1 safe2 all
+put Amini Brague +1 safe2 all
+put Amini Caban +1 safe2 all
+put Amini Gapette +1 safe2 all
 put Amini Glove. +1 safe2 all
+put Arc. Braccae +1 safe2 all
+put Arc. Bracers +1 safe2 all
+put Arc. Jerkin +1 safe2 all
+put Arcadian Beret +1 safe2 all
+put Arcadian Socks +1 safe2 all
+put Armageddon safe2 all
+put Belenus's Cape safe2 all
+put Bullet safe2 all
+put Carm. Sc. Mail +1 safe2 all
+put Darraigner's Brais sack all
+put Desultor Tassets safe2 all
+put Eminent Bullet safe2 all
+put Enervating Earring safe2 all
+put Grunfeld Rope sack all
+put Holliday safe2 all
+put Impulse Belt safe2 all
+put Kustawi +1 safe2 all
+put kobo kote safe2 all
+put Kwahu Kachina Belt safe2 all
+put Meg. Chausses +2 sack all
+put Meg. Cuirie +2 sack all
+put Meg. Gloves +2 sack all
+put Meg. Jam. +2 sack all
+put Meghanada Visor +2 sack all
+put Mummu Bonnet +2 sack all
+put Mummu Gamash. +2 sack all
+put Mummu Jacket +2 sack all
+put Mummu Kecks +2 sack all
+put Mummu Ring sack all
+put Mummu Wrists +2 sack all
+put Nusku Shield safe2 all
+put Orion Beret +1 safe2 all
 put Orion Braccae +1 safe2 all
 put Orion Bracers +1 safe2 all
-put Orion Beret +1 safe2 all
+put Orion Jerkin +1 safe2 all
+put Orion Socks +1 safe2 all
+put Perun +1 safe2 all
+put Pursuer's Gaiters safe2 all
+put Svelt. Gouriz +1 safe2 all
+put Yemaya Belt safe2 all
+put Yoichinoyumi safe2 all
+put Yoichi's Arrow safe2 all
+
+

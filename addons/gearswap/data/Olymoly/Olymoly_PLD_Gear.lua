@@ -49,36 +49,36 @@ function init_gear_sets()
 	--------------------------------------
 	
     sets.Enmity = {ammo="Paeapua",
-		-- Loess Barbuta +1 lear="Trux Earring", 
-		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Cryptic Earring",
+		--  lear="Trux Earring", 
+		head="Loess Barbuta +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Cryptic Earring",
 		-- Yorium Gauntlets Apeile Ring +1
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Supershear Ring", rring="Apeile Ring",
 		-- Obyssean Cuisses Eschite Greaves path A
 		back=gear.Enmity_jse_back, waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 
-    sets.Enmity.DT = { ammo="Paeapua",
+    sets.Enmity.DT = {ammo="Paeapua",
 		-- Loess Barbuta +1 lear="Trux Earring", 
-		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Cryptic Earring",
+		head="Loess Barbuta +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Cryptic Earring",
 		-- Yorium Gauntlets rring="Apeile Ring +1"
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Supershear Ring", rring="Apeile Ring",
 		-- Obyssean Cuisses Eschite Greaves path A
 		back=gear.Enmity_jse_back, waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 
     -- Precast sets to enhance JAs
-    sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches"})
+    sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1"})
     sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +1"})
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +1"})
-    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet"})
+    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +1"})
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1"})
-    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{}) -- feet="Chev. Sabatons +1"
+    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons"})
     sets.precast.JA['Cover'] = set_combine(sets.Enmity, {head="Rev. Coronet +1",body="Cab. Surcoat +1"})
 	
-	sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches"})
+	sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1"})
     sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +1"})
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +1"})
-    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet"})
+    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +1"})
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1"})
-    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{}) -- feet="Chev. Sabatons +1"
+    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons"})
    	
     -- Add MND for Chivalry
     sets.precast.JA['Chivalry'] = {
@@ -332,7 +332,7 @@ function init_gear_sets()
 		-- neck="Coatl Gorget +1",
 		head="Jumalik Helm", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Etiolation Earring",
 		body="Jumalik Mail",hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Sulev. Cuisses +1",feet="Souveran Schuhs +1"}
+		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Sulev. Cuisses +2",feet="Souveran Schuhs +1"}
 
     -- Idle sets
     sets.idle = {ammo="Homiliary",

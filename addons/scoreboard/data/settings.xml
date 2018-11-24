@@ -504,6 +504,7 @@
                 <size>10</size>
             </text>
         </display>
+        <visible>false</visible>
     </olymoly>
     <perseise>
         <display>

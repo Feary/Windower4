@@ -5,10 +5,10 @@
         <!-- He's targeting an alliance member -->
             <all>false</all>
             <casting>false</casting>
-            <damage>false</damage>
+            <damage>true</damage>
             <healing>false</healing>
             <items>false</items>
-            <melee>false</melee>
+            <melee>true</melee>
             <misses>false</misses>
             <ranged>false</ranged>
             <readies>false</readies>
@@ -35,9 +35,9 @@
             <!-- He's targeting an alliance member -->
                 <all>false</all>
                 <casting>false</casting>
-                <damage>false</damage>
+                <damage>true</damage>
                 <healing>false</healing>
-                <melee>false</melee>
+                <melee>true</melee>
                 <misses>false</misses>
                 <ranged>false</ranged>
                 <readies>false</readies>
@@ -89,9 +89,9 @@
             <!-- He's targeting someone else's pet -->
                 <all>false</all>
                 <casting>false</casting>
-                <damage>false</damage>
+                <damage>true</damage>
                 <healing>false</healing>
-                <melee>false</melee>
+                <melee>true</melee>
                 <misses>false</misses>
                 <ranged>false</ranged>
                 <readies>false</readies>
@@ -111,9 +111,9 @@
             <!-- He's targeting a party member -->
                 <all>false</all>
                 <casting>false</casting>
-                <damage>false</damage>
+                <damage>true</damage>
                 <healing>false</healing>
-                <melee>false</melee>
+                <melee>true</melee>
                 <misses>false</misses>
                 <ranged>false</ranged>
                 <readies>false</readies>
@@ -148,7 +148,7 @@
             <casting>false</casting>
             <damage>false</damage>
             <healing>false</healing>
-            <melee>false</melee>
+            <melee>true</melee>
             <misses>false</misses>
             <ranged>false</ranged>
             <readies>false</readies>
@@ -161,7 +161,7 @@
             <damage>false</damage>
             <healing>false</healing>
             <items>false</items>
-            <melee>false</melee>
+            <melee>true</melee>
             <misses>false</misses>
             <ranged>false</ranged>
             <readies>false</readies>
@@ -172,10 +172,10 @@
         <!-- He's targeting a party member -->
             <all>false</all>
             <casting>false</casting>
-            <damage>false</damage>
+            <damage>true</damage>
             <healing>false</healing>
             <items>false</items>
-            <melee>false</melee>
+            <melee>true</melee>
             <misses>false</misses>
             <ranged>false</ranged>
             <readies>false</readies>

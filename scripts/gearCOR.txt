@@ -29,7 +29,7 @@ get Regal Necklace all
 get Chasseur's Gants +1 all
 get Meg. Chausses +2 all
 get Nusku Shield all
-get Mummu Kecks +1 all
+get Mummu Kecks +2 all
 get Luzaf's Ring all
 get Enervating Earring all
 get Herculean Boots all
@@ -39,7 +39,7 @@ get Adhemar Jacket +1 all
 get Adhe. Gamashes +1 all
 get Bullet all
 get Eminent Bullet all
-get Mummu Gamash. +1 all
+get Mummu Gamash. +2 all
 get Meg. Gloves +2 all
 get Chass. Tricorne +1 all
 get Adhemar Gamashes all

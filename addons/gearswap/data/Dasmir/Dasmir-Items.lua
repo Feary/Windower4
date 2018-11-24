@@ -69,6 +69,7 @@ gear_helios_hands_FC = { name="Helios Gloves", augments={'"Fast Cast"+4',}}
 
 --gear.chironic_enfeeble_hands = {name="Chironic Gloves",augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','MND+10','Mag. Acc.+15',}}
 --gear.chironic_refresh_hands = {name="Chironic Gloves",augments={'Phys. dmg. taken -1%','STR+10','"Refresh"+1','Accuracy+12 Attack+12','Mag. Acc.+12 "Mag.Atk.Bns."+12',}}
+
 --gear.chironic_treasure_feet = {name="Chironic Slippers",augments={'"Occult Acumen"+8','MND+7','"Treasure Hunter"+2',}}
 --gear.chironic_nuke_feet = {name="Chironic Slippers",augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +10','CHR+6','"Mag.Atk.Bns."+15',}}
 --gear.chironic_refresh_feet = {name="Chironic Slippers",augments={'Pet: Mag. Acc.+18 Pet: "Mag.Atk.Bns."+18','Pet: Mag. Acc.+3','"Refresh"+1','Accuracy+13 Attack+13','Mag. Acc.+8 "Mag.Atk.Bns."+8',}}
@@ -78,7 +79,7 @@ gear_helios_hands_FC = { name="Helios Gloves", augments={'"Fast Cast"+4',}}
 --gear.herculean_dt_hands = {name="Herculean Gloves",augments={'Attack+4','Damage taken-4%',}}
 --gear.herculean_refresh_hands = {name="Herculean Gloves",augments={'Enmity+2','Pet: "Store TP"+4','"Refresh"+1',}}
 --gear.herculean_waltz_body = {name="Herculean Vest",augments={'Attack+26','"Waltz" potency +11%','AGI+4','Accuracy+5',}}
---gear.herculean_wsd_body = {name="Herculean Vest",augments={'Accuracy+11','Weapon skill damage +5%','DEX+7',}}
+gear.herculean_wsd_body = {name="Herculean Vest", augments={'INT+7','Pet: "Mag.Atk.Bns."+18','Weapon skill damage +5%','Accuracy+16 Attack+16','Mag. Acc.+4 "Mag.Atk.Bns."+4',}}
 --gear.herculean_waltz_hands = {name="Herculean Gloves",augments={'Rng.Acc.+16','"Waltz" potency +11%','AGI+1',}}
 --gear.herculean_dt_legs = {name="Herculean Trousers",augments={'Attack+15','Damage taken-4%','STR+3','Accuracy+12',}}
 --gear.herculean_wsd_legs = {name="Herculean Trousers",augments={'Weapon skill damage +5%','DEX+8','Accuracy+13','Attack+14',}}

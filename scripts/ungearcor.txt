@@ -13,10 +13,7 @@ put Mekosu. Harness sack all
 put Mummu Ring sack all
 put Meg. Jam. +2 sack all
 put Animikii Bullet safe2 all
-put Gunslinger's Cape safe2 all
-put Gaudryi Necklace safe2 all
 put Abnoba Kaftan sack all
-put Malison safe2 all
 put Lanun Frac +1 safe2 all
 put Darraigner's Brais sack all
 put Molybdosis safe2 all
@@ -34,7 +31,7 @@ put Regal Necklace safe2 all
 put Chasseur's Gants +1 safe2 all
 put Meg. Chausses +2 sack all
 put Nusku Shield safe2 all
-put Mummu Kecks +1 sack all
+put Mummu Kecks +2 sack all
 put Lak. Trews +1 safe2 all
 put Luzaf's Ring safe2 all
 put Enervating Earring safe2 all
@@ -46,7 +43,7 @@ put Adhe. Gamashes +1 sack all
 put Bullet safe2 all
 put Lak. Hat +1 safe2 all
 put Eminent Bullet safe2 all
-put Mummu Gamash. +1 sack all
+put Mummu Gamash. +2 sack all
 put Meg. Gloves +2 sack all
 put Chass. Tricorne +1 safe2 all
 put Adhemar Gamashes sack all
@@ -63,8 +60,6 @@ put Impulse Belt safe2 all
 put Adhemar Bonnet +1 sack all
 put Mummu Wrists +2 sack all
 put Herculean Vest sack all
-put Lak. Bottes safe2 all
-put Lak. Gants safe2 all
 put Adhemar Wrist. +1 sack all
 put Trump Card safe2 all
 put grunfeld rope sack all
