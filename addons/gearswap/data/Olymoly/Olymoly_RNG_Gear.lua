@@ -6,8 +6,8 @@ function user_setup()
 	state.IdleMode:options('Normal', 'PDT')
 	state.Weapons:options('Default','DualWeapons','DualMagicWeapons')
 	
-	DefaultAmmo = {['Fomalhaut'] = "Chrono Bullet",['Yoichinoyumi']="Yoichi's Arrow",['Armageddon']="Adlivun Bullet"}
-	U_Shot_Ammo = {['Fomalhaut'] = "Animkii Bullet",['Yoichinoyumi']="Yoichi's Arrow",['Armageddon']="Adlivun Bullet"}
+	DefaultAmmo = {['Fomalhaut'] = "Chrono Bullet",['Yoichinoyumi']="Yoichi's Arrow",['Armageddon']="Eminent Bullet"}
+	U_Shot_Ammo = {['Fomalhaut'] = "Animkii Bullet",['Yoichinoyumi']="Yoichi's Arrow",['Armageddon']="Eminent Bullet"}
 	ranged_Bow = T{"Yoichinoyumi", "Gandiva",}
 	ranged_Gun = T{"Annihilator", "Holliday", "Armageddon", "Fomalhaut", "Gastraphetes"}
 	
@@ -76,7 +76,7 @@ function init_gear_sets()
 		head=gear_taeon_head_Snapshot,
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
 		-- legs="Path D"
-		back=gear.snapshot_ranger_jse_back, waist="Yemeya Belt", legs="Adhemar Kecks", feet="Meg. Jam. +2"})
+		back=gear.snapshot_ranger_jse_back, waist="Yemaya Belt", legs="Adhemar Kecks", feet="Meg. Jam. +2"})
 	
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {
 		-- head="Orion Beret +3", neck="Scout's Gorget +2"
@@ -97,7 +97,7 @@ function init_gear_sets()
 		head=gear_taeon_head_Snapshot,
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
 		-- Adhemar Kecks +1
-		back=gear.snapshot_ranger_jse_back, waist="Yemeya Belt", legs="Adhemar Kecks", feet="Meg. Jam. +2"})
+		back=gear.snapshot_ranger_jse_back, waist="Yemaya Belt", legs="Adhemar Kecks", feet="Meg. Jam. +2"})
 	
 	sets.precast.RA.Gastraphetes.Flurry2 = set_combine(sets.precast.RA, {
 		-- head="Orion Beret +3", neck="Scout's Gorget +2"
@@ -122,7 +122,7 @@ function init_gear_sets()
 	-- Jishnu's Ridiance
 	sets.precast.WS['Jishnu\'s Radiance'] = {
 		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Moonshade Earring", rear="Sherida Earring",
-		body="Meg. Cuirie +2", hands="Kobo Kote", lring="Begruding Ring" ring2="Ilabrat Ring",
+		body="Meg. Cuirie +2", hands="Kobo Kote", lring="Begruding Ring", ring2="Ilabrat Ring",
 		back=gear.crit_ranger_jse_back, waist="Fotia Belt", legs="Darraigner's Brais", feet="Adhe. Gamashes +1"}
 
 	sets.precast.WS['Jishnu\'s Radiance'].Acc = {
@@ -395,23 +395,27 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		-- neck="Combantant's Necklace", 
+		head="Meghanada Visor +2", neck="Erudit. Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
 		back=gear.tp_jse_back, waist="Dynamic Belt +1", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.engaged.Acc = {
-		head="Meghanada Visor +2", neck="Iqabi Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring +1",
+		-- neck="Combantant's Necklace", 
+		head="Meghanada Visor +2", neck="Erudit. Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Ramuh Ring +1",
 		back=gear.tp_jse_back, waist="Dynamic Belt +1", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.engaged.DW = {
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		-- neck="Combantant's Necklace", 
+		head="Meghanada Visor +2", neck="Erudit. Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- Floral Gauntlets
-		body="Adhemar Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
+		body="Adhemar Jacket +1", hands="Meg. Gloves +2", lring="Regal Ring", rring="Epona's Ring",
 		back=gear.DW_jse_back, waist="Dynamic Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.DW.Acc = {
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		-- neck="Combantant's Necklace", 
+		head="Meghanada Visor +2", neck="Erudit. Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		--  Floral Gauntlets
 		body="Adhemar Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
 		back=gear.DW_jse_back, waist="Dynamic Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}

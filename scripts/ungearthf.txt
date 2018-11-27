@@ -19,7 +19,7 @@ put Mummu Kecks +2 sack all
 put Mummu Ring sack all 
 put Mummu Wrists +2 sack all 
 put Pill. Bonnet +1 sack all 
-put Pill. Culottes +2 sack all 
+put Pill. Culottes +3 sack all 
 put Pillager's Poulaines sack all 
 put Pillager's Vest +3 sack all 
 put Plun. Armlets +2 sack all 

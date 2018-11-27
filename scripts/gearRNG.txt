@@ -22,20 +22,24 @@ get Armageddon all
 get Belenus's Cape all
 get Blurred Knife +1 all
 get Bullet all
+get Carm. Sc. Mail +1 all
 get Darraigner's Brais all
 get Desultor Tassets all
+get Eminent Bullet all
 get Enervating Earring all
 get Erudit. Necklace all
+get Grunfeld Rope all
 get Hep. Rapier +1 all
 get Hep. Sapara +1 all
 get Herculean Boots all
 get Herculean Gloves all
 get Herculean Vest all
+put Holliday safe2 all
 get Impulse Belt all
 get Iskur Gorget all
 get Kustawi +1 all
-get Kwahu Kachina Belt all
 get kobo kote all
+get Kwahu Kachina Belt all
 get Meg. Chausses +2 all
 get Meg. Cuirie +2 all
 get Meg. Gloves +2 all
@@ -56,7 +60,7 @@ get Orion Socks +1 all
 get Perun +1 all
 get Pursuer's Gaiters all
 get Svelt. Gouriz +1 all
-get Taeon Chapeau all
+get Taeon Chapeau safe2 all
 get Yemaya Belt all
 get Yoichinoyumi all
 get Yoichi's Arrow all

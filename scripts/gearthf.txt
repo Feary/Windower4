@@ -1,8 +1,8 @@
 get Adhemar Bonnet +1 sack all 
 get Adhemar Bonnet sack all 
-get Adhemar Gamashes sack all 
+get Adhemar Gamashes safe2 all 
 get Adhemar Jacket +1 sack all 
-get Adhemar Kecks +1 sack all 
+get Adhemar Kecks +1 safe2 all 
 get Adhemar Wrist. +1 sack all 
 get Adhemar Wristbands sack all 
 get Grunfeld Rope sack all 
@@ -19,7 +19,7 @@ get Mummu Kecks +2 sack all
 get Mummu Ring sack all 
 get Mummu Wrists +2 sack all 
 get Pill. Bonnet +1 sack all 
-get Pill. Culottes +2 sack all 
+get Pill. Culottes +3 sack all 
 get Pillager's Poulaines sack all 
 get Pillager's Vest +3 sack all 
 get Plun. Armlets +2 sack all 
