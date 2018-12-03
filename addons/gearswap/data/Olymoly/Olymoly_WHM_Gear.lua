@@ -301,13 +301,16 @@ function init_gear_sets()
 		-- Theo. Duckbills +3
 		legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 
-	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
+	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash",})--neck="Nodens Gorget",ear2="Earthcry Earring",legs="Shedir Seraweels"
 
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'], {feet="Ebers Duckbills +1"})
 
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Ammurapi Shield",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"})
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {})--main="Vadose Rod",sub="Ammurapi Shield",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {head="Inyanga Tiara +2", hands="Ebers Mitts +1", legs="Theo. Pant. +1",})
+	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",
+		head="Inyanga Tiara +2", 
+		hands="Ebers Mitts +1", 
+		legs="Theo. Pant. +1",})
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1"})
@@ -358,7 +361,7 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap 
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", rear="Crematio Earring",
+		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Crematio Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		-- Chironic Hose Chironic Slippers 
@@ -368,7 +371,7 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", rear="Crematio Earring",
+		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Crematio Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		-- Chironic Hose Chironic Slippers 
@@ -378,7 +381,7 @@ function init_gear_sets()
 		-- Grioavolr Enki Strap
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", rear="Crematio Earring",
+		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Crematio Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		-- Chironic Hose Chironic Slippers 

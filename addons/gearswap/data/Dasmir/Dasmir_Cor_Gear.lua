@@ -285,15 +285,15 @@ function init_gear_sets()
 		--  neck="Iskur Gorget", lear="Telos Earring", lear="Neritic Earring", rear="Enervating Earring",
 		head="Meghanada Visor +2", neck="Ocachi Gorget", lear="Volley Earring",
 		-- Nisroch Jerkin  Adhemar Wristbands +1 lring="Dingir Ring", 
-		body="Mummu Jacket +2", hands="Meg. Gloves +2", lring="Meghanada Ring", rring="Cacoethic Ring",
+		body="Laksa. Frac +2", hands="Meg. Gloves +2", lring="Meghanada Ring", rring="Cacoethic Ring",
 		-- legs="Adhemar Kecks +1", Feet="Adhemar Gamashes +1" Path D
-		back=gear.tp_ranger_jse_back,  waist="Yemaya Belt", legs="Meg. Chausses +1", feet="Adhemar Gamashes"}
+		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +1", feet="Adhemar Gamashes"}
 	
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
 		--  neck="Iskur Gorget", lear="Telos Earring", lear="Neritic Earring", rear="Enervating Earring",
 		head="Meghanada Visor +2", neck="Ocachi Gorget",
 		-- Laksa. Frac +3 lring="Hajduk Ring", rring="Regal Ring",
-		body="Mummu Jacket +2", hands="Meg. Gloves +2", lring="Meghanada Ring", rring="Cacoethic Ring",
+		body="Laksa. Frac +2", hands="Meg. Gloves +2", lring="Meghanada Ring", rring="Cacoethic Ring",
 		-- legs="Adhemar Kecks +1", 
 		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +1", feet="Meg. Jam. +2"}
 	

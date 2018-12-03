@@ -36,9 +36,8 @@ put Herculean Gloves sack all
 put Herculean Vest all
 put Holliday safe2 all
 put Impulse Belt safe2 all
-put Iskur Gorget all
-put Kustawi +1 safe2 all
-put kobo kote safe2 all
+put Iskur Gorget sack all
+put Kobo Kote safe2 all
 put Kwahu Kachina Belt safe2 all
 put Meg. Chausses +2 sack all
 put Meg. Cuirie +2 sack all
