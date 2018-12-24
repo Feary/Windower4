@@ -199,30 +199,32 @@ function init_gear_sets()
 		back="Conveyance Cape",waist="Kobo Obi",legs="Beck. Spats +1", feet="Rubeus Feet"}
 	
 	-- Pet Macc/Skill
-    sets.midcast.Pet.DebuffBloodPactWard = {main="Gridarvor",sub="Vox Grip",ammo="Eminent Sachet",
+    sets.midcast.Pet.DebuffBloodPactWard = {main="Gridarvor",sub="Vox Grip", ammo="Eminent Sachet",
         head="Tali'ah Turban +1", neck="Adad Amulet", ear1="Andoaa Earring", ear2="Enmerkar Earring",
-        body="Tali'ah Manteel +1",hands="Tali'ah Gages +1",ring1="Evoker's Ring",ring2="Stikini Ring",
+        body="Tali'ah Manteel +1", hands="Tali'ah Gages +1",ring1="Evoker's Ring", ring2="Stikini Ring",
 		--waist="Incarnation Sash",
-        back=gear.magic_jse_back,waist="Ko Sash", legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
+        back=gear.magic_jse_back, waist="Kobo Sash", legs="Tali'ah Sera. +1", feet="Tali'ah Crackows +1"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
     
+	-- Physical 
     sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor",sub="Elan Strap",ammo="Eminent Sachet",
         -- ear2="Lugalbanda Earring",
 		head="Apogee Crown", neck="Shulmanu Collar", ear1="Gelos Earring",
         --ring1="Varar Ring",ring2="Varar Ring",
 		body="Con. Doublet +1", hands="Tali'ah Gages +1",
-		-- waist="Incarnation Sash", legs="Apogee Slacks +1"  feet="Apogee Pumps +1"
-        back=gear.phys_jse_back, waist="Kobo Obi", legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
+		--legs="Apogee Slacks +1"  feet="Apogee Pumps +1"
+        back=gear.phys_jse_back, waist="Incarnation Sash", legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
 		
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = {main="Gridarvor",sub="Elan Strap",ammo="Eminent Sachet",
 		-- ear2="Lugalbanda Earring",
         head="Apogee Crown", neck="Shulmanu Collar", ear1="Gelos Earring",
-        -- ring1="Varar Ring",ring2="Varar Ring",
+        -- ring1="Varar Ring", ring2="Varar Ring",
 		body="Con. Doublet +1", hands="Tali'ah Gages +1", 
-		-- waist="Incarnation Sash",legs="Apogee Slacks +1", feet="Con. Pigaches +3"
-        back=gear.phys_jse_back,waist="Kobo Obi",legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
-
+		-- legs="Apogee Slacks +1", feet="Con. Pigaches +3"
+        back=gear.phys_jse_back, waist="Incarnation Sash", legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
+ 
+	-- Magical 
     sets.midcast.Pet.MagicalBloodPactRage = {main="Eminent Pole",sub="Elan Strap",ammo="Eminent Sachet",
         -- ear2="Lugalbanda Earring",
 		head="Apogee Crown", neck="Adad Amulet", ear1="Gelos Earring",
@@ -233,16 +235,8 @@ function init_gear_sets()
 
     sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Con. Pigaches"}
 
-    -- Spirits cast magic spells, which can be identified in standard ways.
-    
-    sets.midcast.Pet.WhiteMagic = {} --legs="Gylphic's Spats"
-    
-    sets.midcast.Pet['Elemental Magic'] = set_combine(sets.midcast.Pet.MagicalBloodPactRage, {}) --legs="Summoner's Spats"
-
-    sets.midcast.Pet['Elemental Magic'].Resistant = {}
-    
 	sets.midcast.Pet['Flaming Crush'] = {main="Gridarvor",sub="Elan Strap",ammo="Eminent Sachet",
-        --  ear2="Lugalbanda Earring",
+        -- ear2="Lugalbanda Earring",
 		head="Apogee Crown", neck="Adad Amulet", ear1="Gelos Earring",
         --,ring1="Varar Ring",ring2="Varar Ring",
         body="Con. Doublet +1", hands=gear.merlinic_magpact_hands, 
@@ -250,7 +244,7 @@ function init_gear_sets()
 		back=gear.magic_jse_back, waist="Kobo Obi", legs="Enticer's Pants", feet="Tali'ah Crackows +1"}
 	
 	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Con. Pigaches"}
-
+   
 	sets.midcast.Pet['Mountain Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"})
 	sets.midcast.Pet['Mountain Buster'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {legs="Enticer's Pants"})
 	sets.midcast.Pet['Rock Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"})
@@ -262,6 +256,14 @@ function init_gear_sets()
 	sets.midcast.Pet['Blindside'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"})
 	sets.midcast.Pet['Blindside'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {legs="Enticer's Pants"})
 
+	 -- Spirits cast magic spells, which can be identified in standard ways.
+    
+    sets.midcast.Pet.WhiteMagic = {legs="Gylphic's Spats +1"}
+    
+    sets.midcast.Pet['Elemental Magic'] = set_combine(sets.midcast.Pet.MagicalBloodPactRage, {legs="Gylphic's Spats +1"})
+
+    sets.midcast.Pet['Elemental Magic'].Resistant = {}
+	
     --------------------------------------
     -- Idle/resting/defense/etc sets
     --------------------------------------

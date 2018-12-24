@@ -154,51 +154,51 @@ function init_gear_sets()
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		-- Theo. Mitts +3
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Ephedra Ring",
-		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.CureSolace = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		-- Vanya Hood
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Ephedra Ring",
 		-- kaykaus boots
-		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.LightWeatherCure = {main={name="Iridal Staff", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.LightWeatherCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1",feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1",feet="Piety Duckbills +1"}
 		
 	sets.midcast.LightDayCureSolace = {main={name="Tamaxchi", priority=2}, sub={name="Pole Grip", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.LightDayCure = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1",feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1",feet="Piety Duckbills +1"}
 
 	sets.midcast.Curaga = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Theo. Briault +3", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.LightWeatherCuraga = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Novia Earring",
 		body="Theo. Briault +3", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.LightDayCuraga = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		-- neck="Nuna Gorget +1", lear="Glorious Earring", 
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Novia Earring",
 		-- hands="Theo. Mitts +3",
 		body="Theo. Briault +3", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.Cure.DT = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, 
 		--
@@ -206,13 +206,13 @@ function init_gear_sets()
 		-- 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Ephedra Ring",
 		-- kaykaus boots
-		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
 	--Melee Curesets are used whenever your OffenseMode is set to anything but None.
 	sets.midcast.MeleeCure = {
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Ephedra Ring",
-		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills"}
+		back=gear.Cure_jse_back, waist="Bishop Sash", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 		
 	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud +1"})
 	sets.midcast.MeleeLightWeatherCure = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
@@ -324,8 +324,8 @@ function init_gear_sets()
 		body="Piety Briault +1", hands="Ebers Mitts +1",
 		legs="Theo. Pant. +1", feet=gear_telchine_feet_Regen})
 	
-	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	

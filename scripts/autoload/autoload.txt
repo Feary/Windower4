@@ -53,7 +53,6 @@ lua load PetTP;
 lua load plasmon;
 lua load pointwatch;
 lua load Pouches;
-lua load RAWR;
 lua load remember;
 lua load roe;
 lua load rolltracker;

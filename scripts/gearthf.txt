@@ -37,3 +37,4 @@ get Taming Sari sack all
 get Toutatis's Cape sack all 
 get Tsoa. Crossbow sack all 
 get Twashtar sack all 
+get Iskur Gorget all

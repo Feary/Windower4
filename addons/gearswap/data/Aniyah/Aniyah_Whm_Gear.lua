@@ -319,8 +319,7 @@ function init_gear_sets()
 		main={name="Arasy Staff",priority=2}, sub={name="Niobid Strap", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
-		-- Theo. Briault +3 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 		
@@ -355,8 +354,7 @@ function init_gear_sets()
 		main={name="Arasy Staff",priority=2}, sub={name="Niobid Strap", priority=1},
 		-- Chironic Hat neck="Sanctity Necklace",  lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Psystorm Earring",
-		-- Theo. Briault +3 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
@@ -364,8 +362,7 @@ function init_gear_sets()
 		main={name="Arasy Staff",priority=2}, sub={name="Niobid Strap", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Psystorm Earring",
-		-- Theo. Briault +3 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
@@ -373,8 +370,7 @@ function init_gear_sets()
 		main={name="Arasy Staff",priority=2}, sub={name="Niobid Strap", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
-		-- Theo. Briault +3 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +3, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
@@ -385,8 +381,7 @@ function init_gear_sets()
 		main={name="Arasy Staff",priority=2}, sub={name="Niobid Strap", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Psystorm Earring",
-		-- Theo. Briault +3 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
@@ -394,8 +389,7 @@ function init_gear_sets()
 		main={name="Arasy Staff",priority=2}, sub={name="Niobid Strap", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",   lear="Lifestorm Earring", rear="Psystorm Earring",
-		-- Theo. Briault +3 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
@@ -403,8 +397,7 @@ function init_gear_sets()
 		main={name="Arasy Staff",priority=2}, sub={name="Niobid Strap", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Psystorm Earring",
-		-- Theo. Briault +3
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
@@ -412,8 +405,7 @@ function init_gear_sets()
 		main={name="Arasy Staff",priority=2}, sub={name="Niobid Strap", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
-		-- Theo. Briault +3 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 	
@@ -443,7 +435,7 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Bolelabunga", priority=2}, sub={name="Genbu's Shield", priority=1},
 		head="Inyanga Tiara +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
+		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},

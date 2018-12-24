@@ -35,11 +35,11 @@
             <!-- He's targeting an alliance member -->
                 <all>false</all>
                 <casting>false</casting>
-                <damage>false</damage>
+                <damage>true</damage>
                 <healing>false</healing>
-                <melee>false</melee>
-                <misses>false</misses>
-                <ranged>false</ranged>
+                <melee>true</melee>
+                <misses>true</misses>
+                <ranged>true</ranged>
                 <readies>false</readies>
             </alliance>
             <me>
