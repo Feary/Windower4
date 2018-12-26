@@ -207,15 +207,15 @@ function init_gear_sets()
 
 	-- Macc
 	sets.precast.WS['Flat Blade'] = {ammo="Ginsen",
-		head="Flam. Zucchetto +1",neck="Sanctity Necklace",ear1="Gwati Earring", ear2="Digni. Earring",
+		head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Gwati Earring", ear2="Digni. Earring",
         body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Ramuh Ring +1",ring2="Stikini Ring",
-        back="Ground. Mantle +1",waist="Eschan Stone",legs="Flamma Dirs +1",feet="Flam. Gambieras +1"}
+        back="Ground. Mantle +1",waist="Eschan Stone",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
 	
 	sets.precast.WS['Flat Blade'].Acc = {ammo="Ginsen",
 		-- 
-        head="Flam. Zucchetto +1",neck="Sanctity Necklace",ear1="Gwati Earring", ear2="Digni. Earring",
+        head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Gwati Earring", ear2="Digni. Earring",
         body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Ramuh Ring +1",ring2="Stikini Ring",
-        back="Ground. Mantle +1",waist="Eschan Stone",legs="Flamma Dirs +1",feet="Flam. Gambieras +1"}
+        back="Ground. Mantle +1",waist="Eschan Stone",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
 	
 	-- MAB
     sets.precast.WS['Sanguine Blade'] = {ammo="Dosis Tathlum",
