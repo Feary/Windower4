@@ -1,0 +1,15 @@
+sets.exported={
+    ammo="Staunch Tathlum",
+    head={ name="Acro Helm", augments={'"Call Beast" ability delay -5',}},
+    body={ name="Acro Surcoat", augments={'Pet: Mag. Acc.+25','Pet: Breath+8',}},
+    hands={ name="Acro Gauntlets", augments={'Accuracy+20 Attack+20','"Store TP"+6','STR+6 DEX+6',}},
+    legs={ name="Acro Breeches", augments={'Pet: Mag. Acc.+23','Pet: Breath+8',}},
+    feet={ name="Acro Leggings", augments={'Pet: Mag. Acc.+21','Pet: Breath+8',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Merman's Earring",
+    right_ear="Etiolation Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring="Defending Ring",
+    back="Shadow Mantle",
+}

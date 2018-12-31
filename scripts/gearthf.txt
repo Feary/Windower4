@@ -33,6 +33,7 @@ get Skulk. Culottes +1 sack all
 get Skulk. Poulaines +1 sack all 
 get Skulker's Bonnet +1 sack all 
 get Skulker's Vest +1 sack all 
+get Samnuha Tights sack all
 get Taming Sari sack all 
 get Toutatis's Cape sack all 
 get Tsoa. Crossbow sack all 

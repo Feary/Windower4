@@ -1,0 +1,17 @@
+sets.exported={
+    main="Burtgang",
+    sub="Aegis",
+    ammo="Homiliary",
+    head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    hands={ name="Yorium Gauntlets", augments={'Accuracy+21','Enmity+6','Damage taken-3%',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Moonbeam Ring",
+    right_ring="Defending Ring",
+    back="Moonbeam Cape",
+}

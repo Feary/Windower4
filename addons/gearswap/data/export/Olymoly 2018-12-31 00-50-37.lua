@@ -1,0 +1,17 @@
+sets.exported={
+    main="Twashtar",
+    sub={ name="Taming Sari", augments={'STR+4','DEX+7','DMG:+8',}},
+    ammo="Staunch Tathlum",
+    head={ name="Taeon Chapeau", augments={'Accuracy+19 Attack+19','"Snapshot"+5','"Snapshot"+5',}},
+    body="Meg. Cuirie +2",
+    hands="Meg. Gloves +2",
+    legs="Mummu Kecks +2",
+    feet="Jute Boots +1",
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Merman's Earring",
+    right_ear="Etiolation Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring="Defending Ring",
+    back="Shadow Mantle",
+}

@@ -1,0 +1,17 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    ammo="Incantor Stone",
+    head={ name="Helios Band", augments={'Pet: Attack+26 Pet: Rng.Atk.+26','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}},
+    body="Councilor's Garb",
+    hands="Inyan. Dastanas +2",
+    legs="Assid. Pants +1",
+    feet="Herald's Gaiters",
+    neck="Loricate Torque +1",
+    waist="Fucho-no-Obi",
+    left_ear="Merman's Earring",
+    right_ear="Merman's Earring",
+    left_ring="Inyanga Ring",
+    right_ring="Defending Ring",
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Damage taken-5%',}},
+}

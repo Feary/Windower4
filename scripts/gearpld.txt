@@ -1,0 +1,18 @@
+get Cab. Coronet +1 Locker all
+get Chev. Gauntlets +1 Locker all
+get Rev. Leggings +1 Locker all
+get Cab. Leggings +1 Locker all
+get Cab. Surcoat +1 Locker all
+get Cab. Gauntlets +1 Locker all
+get Cab. Breeches +1 Locker all
+get Thureous Earring Locker all
+get Rev. Gauntlets +1 Locker all
+get Chev. Cuisses +1 Locker all
+get Creed Baudrier Locker all
+get Weard Mantle Locker all
+get Chev. Cuirass Locker all
+get Rev. Surcoat +1 Locker all
+get Chev. Sabatons Locker all
+get Chev. Armet +1 Locker all
+get Rudianos's Mantle Locker all
+get Knightly Earring Locker all

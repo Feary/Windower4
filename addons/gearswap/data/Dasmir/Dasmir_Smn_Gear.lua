@@ -360,11 +360,11 @@ function init_gear_sets()
         body="Shomonjijoe +1", hands="Inyan. Dastanas +2", ring1="Dark Ring",ring2="Defending Ring",
         back="Umbra Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Battlecast Gaiters"}
 		
-	sets.idle.TPEat.Avatar = set_combine(sets.idle.Avatar, {neck="Chrys. Torque"})
+	sets.idle.TPEat.Avatar = set_combine(sets.idle.Avatar, {})--neck="Chrys. Torque"
 		
 	--Favor always up and head is best in slot idle so no specific items here at the moment.
     sets.idle.Avatar.Favor = {head="Beckoner's Horn +1"}
-    sets.idle.Avatar.Engaged = {}
+    sets.idle.Avatar.Engaged = {head="Beckoner's Horn +1"}
 	
 	sets.idle.Avatar.Engaged.Carbuncle = {}
 	sets.idle.Avatar.Engaged['Cait Sith'] = {}

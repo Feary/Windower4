@@ -256,14 +256,14 @@ function init_gear_sets()
 		head="Ebers Cap +1", neck="Colossus's Torque",  lear="Andoaa Earring", 
 		body="Ebers Bliaud", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--back="Merciful Cape", 
-		waist="Cascade Belt", legs="Piety Pantaloons", feet="Ebers Duckbills"}
+		waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills"}
 	sets.midcast.BarElement['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--sub="Ammurapi Shield",
 		-- neck="Incantor's Torque", 
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Andoaa Earring", 
 		body="Ebers Bliaud", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--
-		back=gear.fastcast_jse_back, waist="Cascade Belt", legs="Piety Pantaloons", feet="Ebers Duckbills"}
+		back=gear.fastcast_jse_back, waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills"}
 		
 	sets.midcast.BarStatus = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
@@ -271,7 +271,7 @@ function init_gear_sets()
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaloons", feet="Ebers Duckbills",}
+		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills",}
 
 	sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
@@ -288,7 +288,7 @@ function init_gear_sets()
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaloons", feet="Ebers Duckbills",}
+		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills",}
 
 	sets.midcast.BoostStat['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
@@ -296,7 +296,7 @@ function init_gear_sets()
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaloons", feet="Ebers Duckbills",}
+		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills",}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {})
 
@@ -312,8 +312,8 @@ function init_gear_sets()
 		
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {feet="Piety Duckbills"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {feet="Piety Duckbills"})
-	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {legs="Piety Pantaloons"})
-	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {legs="Piety Pantaloons"})
+	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {legs="Piety Pantaln. +1"})
+	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {legs="Piety Pantaln. +1"})
 
 	sets.midcast.Impact = {-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Arasy Staff",priority=2}, sub={name="Niobid Strap", priority=1},

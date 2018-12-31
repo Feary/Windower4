@@ -60,7 +60,7 @@ function init_gear_sets()
         body=gear_telchine_body_Siphon, hands="Glyphic Bracers", ring1="Evoker's Ring", ring2="Stikini Ring",
         back="Conveyance Cape",waist="Kobo Obi", legs=gear_telchine_legs_Siphon,feet="Beck. Pigaches"}
 
-    sets.precast.JA['Mana Cede'] = {hands="Caller's Bracers"}
+    sets.precast.JA['Mana Cede'] = {hands="Beck. Bracers +1"}
 
     -- Pact delay reduction gear
 	-- 
@@ -214,7 +214,7 @@ function init_gear_sets()
 		-- hands="Apogee Mitts +1",
 		body="Con. Doublet +3",hands="Tali'ah Gages +1",ring1="Evoker's Ring",ring2="Stikini Ring",
 		-- waist="Regal Belt", legs="Convoker's Spats +3",     
-        back=gear.magic_jse_back,waist="Incarnation Sash", legs="Tali'ah Sera. +1",feet="Con. Pigaches"}
+        back=gear.magic_jse_back,waist="Incarnation Sash", legs="Tali'ah Sera. +1",feet="Con. Pigaches +2"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
     
@@ -231,7 +231,7 @@ function init_gear_sets()
         head="Apogee Crown", neck="Shulmanu Collar", ear1="Gelos Earring",
         -- hands=gear.merlinic_physpact_hands,
 		body="Con. Doublet +3",  ring1="Varar Ring +1",ring2="Varar Ring +1",
-		-- waist="Incarnation Sash",legs="Apogee Slacks +1", feet="Con. Pigaches +3"
+		-- waist="Incarnation Sash",legs="Apogee Slacks +1", feet="Con. Pigaches +2 +3"
         back=gear.phys_jse_back,waist="Kobo Obi",legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
 
     sets.midcast.Pet.MagicalBloodPactRage = {main="Eminent Pole",sub="Elan Strap +1",ammo=gear.avatar_ammo,
@@ -242,7 +242,7 @@ function init_gear_sets()
 		-- waist="Regal Belt", feet="Apogee Pumps +1"
 		back=gear.magic_jse_back, waist="Kobo Obi", legs="Enticer's Pants", feet="Inyan. Crackows +2"}
 
-    sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Con. Pigaches"}
+    sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Con. Pigaches +2"}
 
     -- Spirits cast magic spells, which can be identified in standard ways.
     
@@ -260,7 +260,7 @@ function init_gear_sets()
 		-- waist="Regal Belt", feet="Apogee Pumps +1"
 		back=gear.magic_jse_back, waist="Kobo Obi", legs="Apogee Slacks +1", feet="Tali'ah Crackows +1"}
 	
-	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Con. Pigaches"}
+	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Con. Pigaches +2"}
 
 	sets.midcast.Pet['Mountain Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"})
 	sets.midcast.Pet['Mountain Buster'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {legs="Enticer's Pants"})
@@ -280,7 +280,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {main="Chatoyant Staff",ammo="Staunch Tathlum",
 		-- Convoker's Horn +3
-		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
 		-- feet="Baayami Sabots"
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
@@ -288,7 +288,7 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {main="Gridarvor",sub="Vox Grip", ammo=gear.avatar_ammo,
 		-- Convoker's Horn +3
-        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
 		-- feet="Baayami Sabots"
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
@@ -316,34 +316,34 @@ function init_gear_sets()
     -- Glyphic Horn +1: -4
     -- Caller's Doublet +2/Glyphic Doublet: -4
     -- Evoker's Ring: -1
-    -- Con. Pigaches +1: -4
+    -- Con. Pigaches +2 +1: -4
     -- total: -18
     
     -- Can make due without either the head or the body, and use +refresh items in those slots.
     
     sets.idle.Avatar = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
-        head="Inyanga Tiara +2",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
+        head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Evoker's Ring",ring2="Defending Ring",
         --waist="Lucidity Sash",
-		back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches"}
+		back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches +2"}
 		
     sets.idle.PDT.Avatar = {main="Mafic Cudgel", sub="Genbu's Shield",ammo=gear.avatar_ammo,
-        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
+        head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
         -- waist="Regal Belt",
-		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches"}
+		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches +2"}
 
     sets.idle.Spirit = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
-        head="Inyanga Tiara +2",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Evoker's Ring",ring2="Sheltered Ring",
         --waist="Lucidity Sash",
-		back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches"}
+		back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches +2"}
 		
     sets.idle.PDT.Spirit = {main="Mafic Cudgel",sub="Genbu's Shield",ammo=gear.avatar_ammo,
-        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
+        head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Defending Ring",ring2="Inyanga Ring",
         --waist="Lucidity Sash",
-		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
+		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches +2"}
 		
 	sets.idle.TPEat.Avatar = set_combine(sets.idle.Avatar, {})--neck="Chrys. Torque"
 		

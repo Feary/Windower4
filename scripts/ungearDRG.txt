@@ -1,0 +1,32 @@
+put Acro Breeches locker all 
+put Acro Gauntlets locker all 
+put Acro Leggings locker all 
+put Acro Surcoat locker all 
+put Angon locker all 
+put Brigantia's Mantle locker all 
+put Ganesha's Mala locker all 
+put Habile Mazrak locker all 
+put Knobkierrie locker all 
+put Lancer's Torque locker all 
+put Ostro Greaves locker all 
+put Pel. Vambraces locker all 
+put Pelt. Plackart +1 locker all 
+put Pelt. Schynbalds locker all 
+put Peltast's Cuissots locker all 
+put Peltast's Mezail locker all 
+put Ptero. Armet +1 locker all 
+put Ptero. Brais +1 locker all 
+put Ptero. Fin. Gaunt. locker all 
+put Ptero. Greaves locker all 
+put Ptero. Mail +1 locker all 
+put Reienkyo locker all 
+put Rhongomiant locker all 
+put Utu Grip locker all 
+put Valor. Hose locker all 
+put Valorous Greaves locker all 
+put Valorous Mask locker all 
+put Vish. Fin. Gaunt locker all 
+put Vishap Armet locker all 
+put Vishap Brais +1 locker all 
+put Vishap Greaves locker all 
+put Vishap Mail +1 locker all 

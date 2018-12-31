@@ -1,8 +1,8 @@
 put Adhemar Bonnet +1 sack all 
 put Adhemar Bonnet sack all 
-put Adhemar Gamashes sack all 
+put Adhemar Gamashes safe2 all
 put Adhemar Jacket +1 sack all 
-put Adhemar Kecks +1 sack all 
+put Adhemar Kecks +1 safe2 all 
 put Adhemar Wrist. +1 sack all 
 put Adhemar Wristbands sack all 
 put Grunfeld Rope sack all 
@@ -28,6 +28,7 @@ put Plun. Culottes +1 sack all
 put Plun. Poulaines +3 sack all 
 put Plunderer's Vest +3 sack all 
 put Raider's Bmrng. sack all 
+put Samnuha Tights sack all
 put Shijo sack all 
 put Skulk. Culottes +1 sack all 
 put Skulk. Poulaines +1 sack all 
