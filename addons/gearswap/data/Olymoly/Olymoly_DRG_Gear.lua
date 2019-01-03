@@ -15,10 +15,7 @@ function user_setup()
     gear.da_jse_back = {name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 	gear.stp_jse_back = {name="Brigantia's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	-- stardiver
-	gear.wsd_jse_back = {name="Brigantia's Mantle",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
-	
-	
-	
+	gear.wsd_jse_back = {name="Brigantia's Mantle",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}	
 	-- drakes
 	gear.crit_jse_back = {name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
 	gear.breathe_back = {name="Brigantia's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20',}}	

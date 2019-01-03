@@ -101,7 +101,7 @@ function init_gear_sets()
 	-- STP 
     sets.precast.CorsairShot.STP = {ammo=gear.QDbullet,
 		-- lear="Diginitary Earring", rear="Gwati Earring",
-		head="Mummu Bonnet +2", neck="Voltsurge Necklace", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Mummu Bonnet +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Regal Ring", rring="Stikini Ring",
 		-- waist="Kwahu Kachina Belt", feet="Lanun Boots +2"
 		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +1"}
@@ -109,7 +109,7 @@ function init_gear_sets()
 	-- Acc 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
 		-- lear="Diginitary Earring", rear="Gwati Earring",
-		head="Mummu Bonnet +2", neck="Voltsurge Necklace", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Mummu Bonnet +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Regal Ring", rring="Stikini Ring",
 		-- waist="Kwahu Kachina Belt", feet="Lanun Boots +2"
 		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +1"}
@@ -122,7 +122,7 @@ function init_gear_sets()
 	-- to Prevent Damage overkill
 	sets.precast.CorsairShot.Proc = {ammo=gear.RAbullet,
         -- Laksa. Tricorne +2 Sanctity Necklace/Baetyl Necklace Diginitary Earring
-		head="Mummu Bonnet +2", neck="Voltsurge Necklace", lear="Gwati Earring", rear="Novio Earring",
+		head="Mummu Bonnet +2", neck="Voltsurge Torque", lear="Gwati Earring", rear="Novio Earring",
 		--  Fenrir Ring +1 Fenrir Ring +1
 		body="Lanun Frac +1", hands="Carmine Fin. Ga. +1", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone

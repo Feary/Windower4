@@ -4,6 +4,7 @@ function user_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT', 'TPEat')
 
+	-- Avatar Ammo - Sancus Sachet +1
 	gear.avatar_ammo = {name="Idaraaja"}
 	-- Staves
 	gear.perp_staff = {name="Gridarvor"}
@@ -12,6 +13,7 @@ function user_setup()
 	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10',}}
 	gear.phys_jse_back = {name="Campestres's Cape",augments={'Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Haste+10',}}
 	gear.FC_jse_back = {name="Campestres's Cape",augments={'"Fast Cast"+10',}}
+	gear.Cure_jse_back = {}
 	
 	gear.phys_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}}
 	gear.magic_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}}
@@ -28,7 +30,7 @@ function user_setup()
 	]]
 	
 	-- Additional Binds
-    send_command('bind !` input /ja "Release" <me>')
+    send_command('bind !` gs c toggle PactSpamMode')
 	send_command('bind @` gs c cycle MagicBurst')
 	send_command('bind ^` gs c toggle PactSpamMode')
 	send_command('bind !pause gs c toggle AutoSubMode') --Automatically uses sublimation.
@@ -336,19 +338,23 @@ function init_gear_sets()
     
     -- Can make due without either the head or the body, and use +refresh items in those slots.
     
-    sets.idle.Avatar = {main="Gridarvor",sub="Oneiros Grip",ammo=gear.avatar_ammo,
+    sets.idle.Avatar = {main=gear.perp_staff,ammo=gear.avatar_ammo,
+		-- Nirvana Oneiros Grip 
+		-- Con. Horn +3
         head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
 		--hands=gear.merlinic_refresh_hands,
         body="Beck. Doublet +1",ring1="Evoker's Ring",ring2="Defending Ring",
         back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
-    sets.idle.PDT.Avatar = {main="Terra's Staff",sub="Oneiros Grip",ammo=gear.avatar_ammo,
-        head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
+    sets.idle.PDT.Avatar = {main="Gridarvor",,ammo=gear.avatar_ammo,
+		-- Nirvana Oneiros Grip 
+		-- Con. Horn +3 
+        head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Rimeice Earring",ear2="Evans Earring",
 		-- hands=gear.merlinic_refresh_hands,
         body="Shomonjijoe +1", hands="Inyan. Dastanas +2",  ring1="Dark Ring",ring2="Defending Ring",
         back="Umbra Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 
-    sets.idle.Spirit = {main="Gridarvor",sub="Oneiros Grip",ammo=gear.avatar_ammo,
+    sets.idle.Spirit = {main=ammo=gear.avatar_ammo,sub="Oneiros Grip",ammo=gear.avatar_ammo,
         head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		-- hands=gear.merlinic_refresh_hands,
         body="Shomonjijoe +1", hands="Inyan. Dastanas +2", ring1="Evoker's Ring",ring2="Inyanga Ring",
