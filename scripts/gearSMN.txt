@@ -1,47 +1,44 @@
-get Ab.Abjuration: Ft. Storage all
-get Ab.Abjuration: Hd. Storage all
-get Ab.Abjuration: Hn. Storage all
-get Ab.Abjuration: Lg. Storage all
-get Adad Amulet Storage all
-get Apogee Crown Storage all
-get Beck. Doublet +1 Storage all
-get Beck. Pigaches Storage all
-get Beck. Spats +1 Storage all
-get Beckoner's Bracers Storage all
-get Beckoner's Horn +1 Storage all
-get Caller's Pendant Storage all
-get Campestres's Cape Storage all
-get Carbuncle Mitts Storage all
-get Con. Bracers Storage all
-get Con. Doublet +1 Storage all
-get Con. Horn +1 Storage all
-get Con. Pigaches Storage all
-get Con. Spats +1 Storage all
-get Conveyance Cape Storage all
-get Eminent Pole Storage all
-get Eminent Sachet Storage all
-get Enmerkar Earring Storage all
-get Enticer's Pants Storage all
-get Evans Earring Storage all
-get Evoker's Ring Storage all
-get Gelos Earring Storage all
-get Glyphic Bracers Storage all
-get Glyphic Doublet +1 Storage all
-get Glyphic Horn +1 Storage all
-get Glyphic Pigaches Storage all
-get Glyphic Spats +1 Storage all
-get Gridarvor Storage all
-get Kobo Obi Storage all
-get Lamassu Mitts Storage all
-get Merlinic Dastanas Storage all
-get Mujin Obi Storage all
-get Rimeice Earring Storage all
-get Sacrifice Torque Storage all
-get Shomonjijoe +1 Storage all
-get Tali'ah Crackows +1 Storage all
-get Tali'ah Gages +1 Storage all
-get Tali'ah Manteel +1 Storage all
-get Tali'ah Ring Storage all
-get Tali'ah Turban +1 Storage all
-get Vox Grip Storage all
-get Almaric Nails case all 
+put Adad Amulet Storage all
+put Apogee Crown Storage all
+put Beck. Doublet +1 Storage all
+put Beck. Pigaches Storage all
+put Beck. Spats +1 Storage all
+put Beckoner's Bracers Storage all
+put Beckoner's Horn +1 Storage all
+put Caller's Pendant Storage all
+put Campestres's Cape Storage all
+put Carbuncle Mitts Storage all
+put Con. Bracers Storage all
+put Con. Doublet +1 Storage all
+put Con. Horn +1 Storage all
+put Con. Pigaches Storage all
+put Con. Spats +1 Storage all
+put Conveyance Cape Storage all
+put Eminent Pole Storage all
+put Eminent Sachet Storage all
+put Enmerkar Earring Storage all
+put Enticer's Pants Storage all
+put Evans Earring Storage all
+put Evoker's Ring Storage all
+put Gelos Earring Storage all
+put Glyphic Bracers Storage all
+put Glyphic Doublet +1 Storage all
+put Glyphic Horn +1 Storage all
+put Glyphic Pigaches Storage all
+put Glyphic Spats +1 Storage all
+put Gridarvor Storage all
+put Helios Band Storage all
+put Incarnation Sash Storage all
+put Kobo Obi Storage all
+put Lamassu Mitts Storage all
+put Merlinic Dastanas Storage all
+put Rimeice Earring Storage all
+put Sacrifice Torque Storage all
+put Shomonjijoe +1 Storage all
+put Tali'ah Crackows +1 Storage all
+put Tali'ah Gages +1 Storage all
+put Tali'ah Manteel +1 Storage all
+put Tali'ah Ring Storage all
+put Tali'ah Sera. +1 Storage all
+put Tali'ah Turban +1 Storage all
+put Vox Grip Storage all

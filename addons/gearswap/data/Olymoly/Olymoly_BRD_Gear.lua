@@ -22,7 +22,10 @@ function user_setup()
 	send_command('bind @f8 gs c toggle AutoBuffMode')
 	
 	send_command('alias azz input /pcmd leave;wait 1;input /tell Azzriel invite;')
-	send_command('alias nj input /pcmd leave;wait 1;input /tell Nurzejoy invite;')
+	send_command('alias big input /pcmd leave;wait 1;input /tell Bigtymer invite;')
+	send_command('alias bt input /pcmd leave;wait 1;input /tell Bigtymer invite;')
+	send_command('alias p1 input /pcmd leave;wait 1;input /tell Azzriel invite;')
+	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 	
 	select_default_macro_book()
 end

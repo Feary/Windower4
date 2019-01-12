@@ -322,7 +322,7 @@ function init_gear_sets()
 		back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches"}
 		
 	sets.idle.PDT.Avatar = {main=gear.perp_staff, sub="Genbu's Shield",ammo=gear.avatar_ammo,
-        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ar1="Handler's Earring +1",ear2="Handler's Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Inyanga Ring",ring2="Defending  Ring",
         -- waist="Regal Belt",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Con. Pigaches"}
@@ -345,8 +345,8 @@ function init_gear_sets()
     sets.idle.Avatar.Favor = {head="Beckoner's Horn +1"}
     sets.idle.Avatar.Engaged = {head="Beckoner's Horn +1"}
 	
-	sets.idle.Avatar.Engaged.Carbuncle = {}
-	sets.idle.Avatar.Engaged['Cait Sith'] = {}
+	sets.idle.Avatar.Engaged.Carbuncle = {}--hands="Asteria Mitts"
+	sets.idle.Avatar.Engaged['Cait Sith'] = {}--hands="Lamassu Mitts"
         
     sets.perp = {}
     -- Caller's Bracer's halve the perp cost after other costs are accounted for.
@@ -396,6 +396,7 @@ function init_gear_sets()
 
 	-- Weapons sets
 	sets.weapons.Gridarvor = {main="Gridarvor", sub="Elan Strap +1"}
+	
     --------------------------------------
     -- Engaged sets
     --------------------------------------

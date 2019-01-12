@@ -89,7 +89,7 @@ gear_acro_hands_stp = {name="Acro Gauntlets", augments={'Accuracy+20 Attack+20',
 -- pet macc +1~25 Snoworb
 gear_acro_legs_breathe = { name="Acro Breeches", augments={'Pet: Mag. Acc.+23','Pet: Breath+8',}}
 -- Call Beast Delay Leaforb
-gear_acro_legs_CallBeast ={-name="Acro Breeches", augments={'"Call Beast" ability delay -5',}}
+gear_acro_legs_CallBeast ={name="Acro Breeches", augments={'"Call Beast" ability delay -5',}}
 
 -- Feet 
 -- Breathe+/macc Snoworb
