@@ -59,7 +59,7 @@ function init_gear_sets()
 	sets.precast.FC = {
 		--main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
 		head="Nahtirah Hat", neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		body="Anhur Robe", hands="Helios Gloves", ring1="Prolix Ring", ring2="Lebeche Ring",
+		body="Anhur Robe", hands=gear_helios_hands_FC, ring1="Prolix Ring", ring2="Lebeche Ring",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Geomancy Pants +2", feet="Amalric Nails"}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {main="Idris", sub="Genbu's Shield", range="Dunna",ammo=empty,
@@ -240,7 +240,7 @@ function init_gear_sets()
 		
     sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		-- Hirundinea Earring
-        head="Bagua Galero +1",neck="Erra Pendant",ear1="Digi. Earring",ear2="Regal Earring",
+        head="Bagua Galero +1",neck="Erra Pendant",ear1="Digni. Earring",ear2="Regal Earring",
 		-- Aspir body and hands Excelsis Ring Evanescence Ring
         body="Geomancy Tunic +2",hands="Geo. Mitaines +2",ring1="Stikini Ring",ring2="Stikini Ring",
         back="Perimede Cape",waist="Fucho-no-obi",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
@@ -264,13 +264,13 @@ function init_gear_sets()
 		body="Twilight Cloak", hands="Geo. Mitaines +2", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
 
-	sets.midcast['Enfeebling Magic'] = {main="Idris",sub="Ammurapi Shield", 
-		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digi. Earring", ear2="Regal Earring",
+	sets.midcast['Enfeebling Magic'] = {main="Idris",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digni. Earring", ear2="Regal Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", ring1="Stikini Ring", ring2="Kishar Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
 		
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Idris",sub="Ammurapi Shield", 
-		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digi. Earring", ear2="Regal Earring", 
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Idris",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digni. Earring", ear2="Regal Earring", 
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
 		
@@ -417,7 +417,7 @@ function init_gear_sets()
 	-- Normal melee group
 	sets.engaged = {
 		-- Combatant's Torque
-		head="Jhakri Coronal +2",neck="Asperity Necklace",ear1="Digi. Earring",ear2="Telos Earring",
+		head="Jhakri Coronal +2",neck="Asperity Necklace",ear1="Digni. Earring",ear2="Telos Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Rajas Ring",ring2="Ramuh Ring +1",
 		back="Moonbeam Cape",waist="Witful Belt",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		

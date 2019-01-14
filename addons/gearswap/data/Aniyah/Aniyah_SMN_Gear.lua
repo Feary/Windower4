@@ -220,8 +220,8 @@ function init_gear_sets()
 	-- Pet Macc/Skill
     sets.midcast.Pet.DebuffBloodPactWard = {main=gear.skill_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
 		-- Nirvana
-		-- head="Convoker's Horn +3", neck="Summoner's Collar +2", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
-        neck="Adad Amulet", 
+		-- head="Convoker's Horn +3", neck="Summoner's Collar +2",  ear2="Enmerkar Earring",
+        neck="Adad Amulet", ear1="Lugalbanda Earring",
 		-- hands="Apogee Mitts +1",
 		body="Con. Doublet +3",ring1="Evoker's Ring",ring2="Stikini Ring",
 		-- waist="Regal Belt", legs="Convoker's Spats +3",     
@@ -230,16 +230,16 @@ function init_gear_sets()
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
     
     sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
-        --  neck="Summoner's Collar +2", ear2="Lugalbanda Earring",
-		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring",
+        --  neck="Summoner's Collar +2", 
+		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
 		-- hands=gear.merlinic_physpact_hands,
 		body="Con. Doublet +3",  ring1="Varar Ring +1",ring2="Varar Ring +1",
 		--  legs="Apogee Slacks +1" Path D feet="Apogee Pumps +1"
         back=gear.phys_jse_back, waist="Incarnation Sash", legs="Tali'ah Sera. +1", feet="Con. Pigaches +2"}
 		
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
-		-- neck="Summoner's Collar +2", ear1="Kyrene's Earring", ear2="Lugalbanda Earring",
-        head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring",
+		-- neck="Summoner's Collar +2", ear1="Kyrene's Earring", 
+        head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         -- hands=gear.merlinic_physpact_hands,
 		body="Con. Doublet +3",  ring1="Varar Ring +1",ring2="Varar Ring +1",
 		-- legs="Apogee Slacks +1", Path D feet="Con. Pigaches +3"
@@ -248,8 +248,8 @@ function init_gear_sets()
 	-- Magical BloodPactRage
     sets.midcast.Pet.MagicalBloodPactRage = {main="Espiritus",sub="Elan Strap +1",ammo=gear.avatar_ammo,
 		-- Nirvana
-        -- head="Apogee Crown +1", Path A neck="Summoner's Collar +2", ear1="Gelos Earring", ear2="Lugalbanda Earring", 
-		head="Apogee Crown", neck="Adad Amulet", 
+        -- head="Apogee Crown +1", Path A neck="Summoner's Collar +2", ear1="Gelos Earring", 
+		head="Apogee Crown", neck="Adad Amulet", ear2="Lugalbanda Earring", 
          -- body="Apo. Dalmatica +1", Path A hands=gear.merlinic_magpact_hands,
         body="Con. Doublet +3", ring1="Varar Ring +1",ring2="Varar Ring +1",
 		-- waist="Regal Belt", feet="Apogee Pumps +1" Path A
@@ -259,18 +259,18 @@ function init_gear_sets()
 
     -- Spirits cast magic spells, which can be identified in standard ways.
     
-    sets.midcast.Pet.WhiteMagic = {legs="Summoner's Spats"}
+    sets.midcast.Pet.WhiteMagic = {legs="Glyphic Spats"}
     
-    sets.midcast.Pet['Elemental Magic'] = set_combine(sets.midcast.Pet.MagicalBloodPactRage, {legs="Summoner's Spats"})
+    sets.midcast.Pet['Elemental Magic'] = set_combine(sets.midcast.Pet.MagicalBloodPactRage, {legs="Glyphic Spats"})
 
     sets.midcast.Pet['Elemental Magic'].Resistant = {}
     
 	sets.midcast.Pet['Flaming Crush'] = {main="Espiritus",sub="Elan Strap +1",ammo=gear.avatar_ammo,
-        -- head="Apogee Crown +1", Path A neck="Summoner's Collar +2", ear2="Lugalbanda Earring",
-		head="Apogee Crown", neck="Adad Amulet", ear1="Gelos Earring",
+        -- head="Apogee Crown +1", Path A neck="Summoner's Collar +2", 
+		head="Apogee Crown", neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         -- hands=gear.merlinic_magpact_hands,
         body="Con. Doublet +3", ring1="Varar Ring +1",ring2="Varar Ring +1",
-		-- waist="Regal Belt", legs="Apogee Slacks +1", Path A feet="Apogee Pumps +1"  Path A 
+		-- waist="Regal Belt", legs="Apogee Slacks +1", Path A feet="Apogee Pumps +1" Path A 
 		back=gear.magic_jse_back, waist="Kobo Obi", legs="Apogee Slacks +1", feet="Con. Pigaches +2"}
 	
 	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Con. Pigaches +2"}

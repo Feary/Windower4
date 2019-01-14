@@ -76,7 +76,7 @@ function init_gear_sets()
 	sets.precast.Waltz['Healing Waltz'] = {}
 
 	sets.precast.Step = {ammo="Hasty Pinion +1",
-		head="Carmine Mask +1",neck="Iqabi Necklace",ear1="Odnowa Earring +1",ear2="Cessance Earring",
+		head="Carmine Mask +1",neck="Sanctity Necklace",ear1="Odnowa Earring +1",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Rajas Ring",ring2="Ramuh Ring +1",
 		back=gear.da_jse_back,waist="Dynamic Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
@@ -120,7 +120,7 @@ function init_gear_sets()
 		back=gear.da_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.precast.WS.FullAcc = {ammo="Mantoptera Eye",
-		head="Carmine Mask +1",neck="Iqabi Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
+		head="Carmine Mask +1",neck="Sanctity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Jhakri Cuffs +2",ring1="Rajas Ring",ring2="Ramuh Ring +1",
 		back=gear.da_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
@@ -174,12 +174,12 @@ function init_gear_sets()
 
 
 	sets.precast.WS['Sanguine Blade'] = {ammo="Dosis Tathlum",
-		 head="Jhakri Coronal +2",neck="Eddy Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
+		 head="Jhakri Coronal +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
 		 body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Archon Ring",
 		 back=gear.mab_jse_back,waist="Fotia Belt", legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"} -- test
 
 	sets.precast.WS['Flash Nova'] = {ammo="Dosis Tathlum",
-		 head="Jhakri Coronal +2",neck="Eddy Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
+		 head="Jhakri Coronal +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
 		 body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		 back=gear.mab_jse_back,waist="Fotia Belt",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
@@ -218,7 +218,7 @@ function init_gear_sets()
 		back=gear.wsd_jse_back, waist="Prosilio Belt +1", legs="Jhakri Slops +2", feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic'].PhysicalAcc = {ammo="Hasty Pinion +1",
-		head="Carmine Mask +1", neck="Iqabi Necklace", lear="Heartseeker Earring", rear="Steelflash Earring",
+		head="Carmine Mask +1", neck="Sanctity Necklace", lear="Heartseeker Earring", rear="Steelflash Earring",
 		-- Acc Body
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rajas Ring", rring="Ramuh Ring +1",
 		back=gear.wsd_jse_back, waist="Grunfeld Rope", legs="Carmine Cuisses +1", feet="Jhakri Pigaches +2"}		
@@ -263,7 +263,7 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Magical = {ammo="Dosis Tathlum", --sub="Nibiru Cudgel",
 		main="Nibiru Cudgel",
-		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Crematio Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops", feet="Amalric Nails"}
 
@@ -274,12 +274,12 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Magical.Fodder = {ammo="Dosis Tathlum", --sub="Nibiru Cudgel",
 		main="Nibiru Cudgel",
-		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Crematio Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		-- 
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
-	sets.midcast['Blue Magic'].MagicalMnd = set_combine(sets.midcast['Blue Magic'].Magical, {ring1="Stikini Ring",ring2="Stikini Ring",waist="Ovate Rope"})
+	sets.midcast['Blue Magic'].MagicalMnd = set_combine(sets.midcast['Blue Magic'].Magical, {ring1="Stikini Ring",ring2="Stikini Ring",waist="Luminary Sash"})
 	sets.midcast['Blue Magic'].MagicalChr = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalVit = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
@@ -289,21 +289,21 @@ function init_gear_sets()
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring",rear="Dignitary Earring",
 		body="Carm. Sc. Mail +1", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone assim legs
-		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		back=gear.mab_jse_back, waist="Luminary Sash", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Enfeebling Magic'] = {ammo="Dosis Tathlum",--main="Nibiru Cudgel",sub="Nibiru Cudgel",
 		-- Assim +3  Hermetic Earring
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring",rear="Dignitary Earring",
 		body="Carm. Sc. Mail +1", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone assim legs
-		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		back=gear.mab_jse_back, waist="Luminary Sash", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Dark Magic'] = {ammo="Dosis Tathlum",--main="Nibiru Cudgel",sub="Nibiru Cudgel",
 		-- Assim +3 
 		head="Jhakri Coronal +2",neck="Sanctity Necklace", lear="Regal Earring",rear="Dignitary Earring",
 		body="Carm. Sc. Mail +1", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone assim legs
-		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		back=gear.mab_jse_back, waist="Luminary Sash", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Enhancing Magic'] = {--main="Vampirism", sub="Vampirism",
 		ammo="Hasty Pinion +1",
@@ -333,13 +333,13 @@ function init_gear_sets()
 
 	sets.midcast['Elemental Magic'] = {ammo="Dosis Tathlum",
 		main="Nibiru Cudgel",sub="Vampirism",
-		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Crematio Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops", feet="Amalric Nails"}
 
 	sets.midcast['Elemental Magic'].Resistant = {ammo="Dosis Tathlum",--
 		main="Nibiru Cudgel",
-		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Crematio Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops", feet="Amalric Nails"}
 
@@ -351,7 +351,7 @@ function init_gear_sets()
 	sets.element.Light = {} --ring2="Weatherspoon Ring"
 
 	sets.midcast.Cure = {ammo="Dosis Tathlum",--main="Nibiru Cudgel",sub="Nibiru Cudgel",
-		head="Carmine Mask +1", neck="Phalaina Locket", lear="Lifestorm Earring", rear="Enchntr. Earring +1",
+		head="Carmine Mask +1", neck="Phalaina Locket", lear="Regal Earring", rear="Enchntr. Earring +1",
 		-- Vrikodata Jupon 
 		body=gear_telchine_body_CureRecieved, hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		-- feet="Medium Sabots"
@@ -386,14 +386,14 @@ function init_gear_sets()
 		-- Despair Helm 
 		head="Carmine Mask +1", neck="Dualism Collar", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		-- Despair Mail
-		body=gear_telchine_body_CureRecieved, hands="Telchine Gloves", lring="K'ayres Ring", rring="Meridian Ring",
+		body=gear_telchine_body_CureRecieved, hands="Telchine Gloves", lring="Ilabrat Ring", rring="Meridian Ring",
 		-- Oneiros Belt feet="Medium Sabots"
 		back=gear.cure_jse_back, waist=gear.ElementalObi, legs="Gyve Trousers", }
 
 	sets.midcast['Blue Magic']['Healing Breeze'] = sets.midcast['Blue Magic']['White Wind']
 
 	sets.midcast['Blue Magic'].Healing = {ammo="Staunch Tathlum", -- main="Nibiru Cudgel",sub="Nibiru Cudgel",
-		head="Carmine Mask +1", neck="Phalaina Locket", lear="Lifestorm Earring", rear="Enchntr. Earring +1",
+		head="Carmine Mask +1", neck="Phalaina Locket", lear="Regal Earring", rear="Enchntr. Earring +1",
 		-- Vrikodata Jupon 
 		gear_telchine_body_CureRecieved, hands="Telchine Gloves", lring="Stikini Ring", rring="Stikini Ring",
 		--feet="Medium Sabots"

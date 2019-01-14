@@ -12,6 +12,7 @@ get Assim. Charuqs +1 sack all
 get Assim. Jubbah +1 sack all
 get Assim. Keffiyeh +1 sack all
 get Assim. Shalwar +1 sack all
+get Carm. Sc. Mail +1 safe2
 get Cornflower Cape sack all
 get Grunfeld Rope sack all
 get Hashi. Bazubands sack all
@@ -33,5 +34,6 @@ get Mavi Tathlum sack all
 get Mekosu. Harness sack all
 get Nibiru Cudgel sack all
 get Rosmerta's Cape sack all
+get Samnuha Tights sack all
 get Tanmogayi sack all
 get Vampirism sack all

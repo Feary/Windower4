@@ -21,6 +21,7 @@ put Ptero. Greaves locker all
 put Ptero. Mail +1 locker all 
 put Reienkyo locker all 
 put Rhongomiant locker all 
+put Updraft Mantle Locker all
 put Utu Grip locker all 
 put Valor. Hose locker all 
 put Valorous Greaves locker all 
