@@ -85,12 +85,12 @@ function init_gear_sets()
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
-		head="Piety Cap", lear="Nourish. Earring", rear="Nourish. Earring +1",
+		head="Piety Cap +1", lear="Nourish. Earring", rear="Nourish. Earring +1",
 		feet="Cure Clogs"})
 	
 	sets.precast.FC.Cure.DT = {ammo="Incantor Stone",
 		-- rear="Enchntr. Earring +1",
-		head="Piety Cap", neck="Voltsurge Torque", lear="Loquac. Earring",
+		head="Piety Cap +1", neck="Voltsurge Torque", lear="Loquac. Earring",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Kishar Ring", rring="Lebeche Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Cure Clogs"}
 
@@ -102,8 +102,8 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
     sets.precast.JA.Benediction = {body="Piety Briault"}
-	sets.precast.JA.Devotion = {head="Piety Cap"}
-	sets.precast.JA.Martyr = {} -- hands="Piety Mitts"
+	sets.precast.JA.Devotion = {head="Piety Cap +1"}
+	sets.precast.JA.Martyr = {hands="Piety Mitts"}
 
 
     -- Waltz set (chr and vit)

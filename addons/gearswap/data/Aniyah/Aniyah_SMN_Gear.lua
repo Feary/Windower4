@@ -248,8 +248,8 @@ function init_gear_sets()
 	-- Magical BloodPactRage
     sets.midcast.Pet.MagicalBloodPactRage = {main="Espiritus",sub="Elan Strap +1",ammo=gear.avatar_ammo,
 		-- Nirvana
-        -- head="Apogee Crown +1", Path A neck="Summoner's Collar +2", ear1="Gelos Earring", 
-		head="Apogee Crown", neck="Adad Amulet", ear2="Lugalbanda Earring", 
+        -- head="Apogee Crown +1", Path A neck="Summoner's Collar +2", 
+		head="Apogee Crown", neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring", 
          -- body="Apo. Dalmatica +1", Path A hands=gear.merlinic_magpact_hands,
         body="Con. Doublet +3", ring1="Varar Ring +1",ring2="Varar Ring +1",
 		-- waist="Regal Belt", feet="Apogee Pumps +1" Path A

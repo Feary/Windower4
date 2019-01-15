@@ -229,38 +229,37 @@ function init_gear_sets()
 	-- Blood Pact Rage	
 	-- 
     sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor", sub="Elan Strap +1", ammo=gear.avatar_ammo,
-        --gear_helios_head_BP ear1="Gelos Earring",
-		head="Helios Band", neck="Shulmanu Collar", ear2="Lugalbanda Earring",
+		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3", hands=gear.merlinic_physpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
         --legs="Apogee Slacks +1", Path D feet=gear.phys_BP_feet
-		back=gear.phys_jse_back, waist="Incarnation Sash", feet="Convo. Pigaches +2"}
+		back=gear.phys_jse_back, waist="Incarnation Sash", feet="Convo. Pigaches +3"}
 		
 	 -- Used for all physical pacts when AccMode is true	
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage,{
-		feet="Convo. Pigaches +2"})
+		feet="Convo. Pigaches +3"})
 
 	sets.midcast.Pet.PhysicalBloodPactRage.AM = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {
 		head="Apogee Crown +1"})
 		
     sets.midcast.Pet.MagicalBloodPactRage = {main="Espiritus", sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		--main=gear.grioavolr_pet_staff,
-		--head="Apogee Crown +1" ear1="Gelos Earring",
-        neck="Adad Amulet", ear2="Lugalbanda Earring",
+		--head="Apogee Crown +1" neck="Summoner's Collar +2",
+        neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
         --waist="Regal Belt", legs="Enticer's Pants", feet=gear.phys_BP_feet
-		back=gear.magic_jse_back, feet="Convo. Pigaches +2"}
+		back=gear.magic_jse_back, feet="Convo. Pigaches +3"}
 
-    sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Convo. Pigaches +2"}
+    sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Convo. Pigaches +3"}
 
 	sets.midcast.Pet['Flaming Crush'] = {main="Espiritus", sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		--main=gear.grioavolr_pet_staff,
-		-- head="Apogee Crown +1", ear1="Gelos Earring",
-		neck="Adad Amulet", ear2="Lugalbanda Earring",
+		-- head="Apogee Crown +1",
+		neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
 		-- waist="Regal Belt", legs="Apogee Slacks +1", Path D
         back=gear.phys_jse_back, feet=gear.magic_BP_feet}
 		
-	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Convo. Pigaches +2"}
+	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Convo. Pigaches +3"}
 
 	 -- Physical pacts which benefit more from TP than Pet:DA (like single-hit BP)
 	sets.midcast.Pet['Mountain Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {})-- legs="Enticer's Pants"
@@ -299,7 +298,7 @@ function init_gear_sets()
         --hands=gear.merlinic_refresh_hands
 		body="Shomonjijoe +1", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		--waist="Regal Belt", feet="Baayami Sabots"
-        back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Convo. Pigaches +2"}
+        back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 
     sets.idle.PDT = {main="Earth Staff", 
 		--main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
@@ -333,7 +332,7 @@ function init_gear_sets()
     -- Glyphic Horn +1: -4
     -- Caller's Doublet +2/Glyphic Doublet: -4
     -- Evoker's Ring: -1
-    -- Convo. Pigaches +2: -4
+    -- Convo. Pigaches +3: -4
     -- total: -18
     
     -- Can make due without either the head or the body, and use +refresh items in those slots.
@@ -430,7 +429,7 @@ function init_gear_sets()
 		-- hands="Convo. Bracers +3"
         body="Con. Doublet +3", hands="Tali'ah Gages +1",ring1="Rajas Ring",ring2="Ramuh Ring",
 		-- legs="Convo. Spats +3", feet="Convo. Pigaches +3"
-        back=gear.phys_jse_back,waist="Olseni Belt",legs="Tali'ah Sera. +1",feet="Convo. Pigaches +2"}
+        back=gear.phys_jse_back,waist="Olseni Belt",legs="Tali'ah Sera. +1",feet="Convo. Pigaches +3"}
 end
 
 -- Select default macro book on initial load or subjob change.

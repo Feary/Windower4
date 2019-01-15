@@ -186,7 +186,7 @@ function init_gear_sets()
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +1"}
 
     sets.midcast.Drain = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
-		-- neck="Eddy Necklace", 
+		-- head="Bagua Galero +3", neck="Eddy Necklace", 
 		head="Jhakri Coronal +2", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +1"}
