@@ -18,19 +18,19 @@ function user_setup()
 	gear.snapshot_jse_back = {name="Camulus's Mantle", augments={'"Snapshot"+10',}}	
 	-- Ranged TP
 	gear.tp_ranger_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10','Damage taken-5%',}}
-	-- -Crit RA TP
-	gear.crit_ranger_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10','Damage taken-5%',}}
+	-- Crit RA TP
+	gear.crit_ranger_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','Crit.hit rate+10',}}
 	-- Last Stand
 	gear.ranger_wsd_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}}
 	-- Leaden/Wildfire
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}	
 	-- Melee TP
 	gear.tp_jse_back = {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
-	-- -DW
-	gear.DW_jse_back = {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	-- DW
+	gear.DW_jse_back = {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}}
 	-- Savage Blade
 	gear.str_wsd_jse_back = {name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	-- -Quick Draw
+	-- - Quick Draw
 	gear.magic_QD_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10','Damage taken-5%',}}
 	
     -- Additional local binds
@@ -96,7 +96,7 @@ function init_gear_sets()
 		-- Fenrir Ring +1 Fenrir Ring +1
 		body="Lanun Frac +1", hands="Carmine Fin. Ga. +1", lring="Regal Ring", rring="Garuda Ring",
 		-- Eschan Stone 
-		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +1"}
+		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +2"}
 	
 	-- STP 
     sets.precast.CorsairShot.STP = {ammo=gear.QDbullet,
@@ -104,7 +104,7 @@ function init_gear_sets()
 		head="Mummu Bonnet +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Regal Ring", rring="Stikini Ring",
 		-- waist="Kwahu Kachina Belt", feet="Lanun Boots +2"
-		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +1"}
+		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +2"}
 	
 	-- Acc 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
@@ -112,7 +112,7 @@ function init_gear_sets()
 		head="Mummu Bonnet +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Regal Ring", rring="Stikini Ring",
 		-- waist="Kwahu Kachina Belt", feet="Lanun Boots +2"
-		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +1"}
+		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +2"}
 
 	-- for ws bonus
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes +1"})

@@ -5,7 +5,6 @@ get Adhemar Jacket +1 sack all
 get Adhemar Kecks +1 safe2 all 
 get Adhemar Wrist. +1 sack all 
 get Adhemar Wristbands sack all 
-get Grunfeld Rope sack all 
 get Mandau sack all 
 get Meg. Chausses +2 sack all 
 get Meg. Cuirie +2 sack all 
@@ -18,13 +17,13 @@ get Mummu Jacket +2 sack all
 get Mummu Kecks +2 sack all 
 get Mummu Ring sack all 
 get Mummu Wrists +2 sack all 
-get Pill. Bonnet +1 sack all 
+get Pill. Bonnet +2 sack all 
 get Pill. Culottes +3 sack all 
-get Pillager's Poulaines sack all 
+get Pill. Poulaines +2 sack all 
 get Pillager's Vest +3 sack all 
-get Plun. Armlets +2 sack all 
-get Plun. Bonnet +1 sack all 
-get Plun. Culottes +1 sack all 
+get Plun. Armlets +3 sack all 
+get Plun. Bonnet +3 sack all 
+get Plun. Culottes +3 sack all 
 get Plun. Poulaines +3 sack all 
 get Plunderer's Vest +3 sack all 
 get Raider's Bmrng. sack all 

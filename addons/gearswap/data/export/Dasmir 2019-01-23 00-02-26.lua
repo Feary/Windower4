@@ -1,0 +1,17 @@
+sets.exported={
+    main="Fettering Blade",
+    sub="Nusku Shield",
+    range={ name="Holliday", augments={'Enmity-1','"Mag.Atk.Bns."+21','DMG:+11',}},
+    head="Meghanada Visor +2",
+    body="Meg. Cuirie +2",
+    hands="Meg. Gloves +2",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+17','Attack+11','"Dual Wield"+5',}},
+    feet="Meg. Jam. +2",
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Merman's Earring",
+    right_ear="Merman's Earring",
+    left_ring={ name="Dark Ring", augments={'Breath dmg. taken -4%','Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring="Defending Ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','Crit.hit rate+10',}},
+}

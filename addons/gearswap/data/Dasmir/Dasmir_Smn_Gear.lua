@@ -219,7 +219,8 @@ function init_gear_sets()
 	
 	-- Macc
     sets.midcast.Pet.DebuffBloodPactWard = {main="Espiritus",sub="Vox Grip",ammo=gear.avatar_ammo,
-        head="Tali'ah Turban +1", neck="Adad Amulet", ear1="Andoaa Earring",ear2="Enmerkar Earring",
+        -- ear2="Enmerkar Earring",
+		head="Tali'ah Turban +1", neck="Adad Amulet", ear1="Andoaa Earring",
         body="Con. Doublet +3", hands="Tali'ah Gages +1", ring1="Evoker's Ring",ring2="Stikini Ring",
 		back=gear.magic_jse_back, waist="Incarnation Sash", legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
         
@@ -231,8 +232,7 @@ function init_gear_sets()
     sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor", sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3", hands=gear.merlinic_physpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
-        --legs="Apogee Slacks +1", Path D feet=gear.phys_BP_feet
-		back=gear.phys_jse_back, waist="Incarnation Sash", feet="Convo. Pigaches +3"}
+		back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
 		
 	 -- Used for all physical pacts when AccMode is true	
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage,{
@@ -246,8 +246,7 @@ function init_gear_sets()
 		--head="Apogee Crown +1" neck="Summoner's Collar +2",
         neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
-        --waist="Regal Belt", legs="Enticer's Pants", feet=gear.phys_BP_feet
-		back=gear.magic_jse_back, feet="Convo. Pigaches +3"}
+		back=gear.magic_jse_back, waist="Regal Belt", legs="Enticer's Pants", feet=gear.magic_BP_feet}
 
     sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Convo. Pigaches +3"}
 
@@ -256,22 +255,21 @@ function init_gear_sets()
 		-- head="Apogee Crown +1",
 		neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
-		-- waist="Regal Belt", legs="Apogee Slacks +1", Path D
-        back=gear.phys_jse_back, feet=gear.magic_BP_feet}
+        back=gear.phys_jse_back,  waist="Regal Belt", legs="Apogee Slacks +1", feet=gear.magic_BP_feet}
 		
 	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Convo. Pigaches +3"}
 
 	 -- Physical pacts which benefit more from TP than Pet:DA (like single-hit BP)
-	sets.midcast.Pet['Mountain Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {})-- legs="Enticer's Pants"
-	sets.midcast.Pet['Mountain Buster'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {}) -- legs="Enticer's Pants"
-	sets.midcast.Pet['Rock Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {}) -- legs="Enticer's Pants"
-	sets.midcast.Pet['Rock Buster'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {}) -- legs="Enticer's Pants"
-	sets.midcast.Pet['Crescent Fang'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {}) -- legs="Enticer's Pants"
-	sets.midcast.Pet['Crescent Fang'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {}) -- legs="Enticer's Pants"
-	sets.midcast.Pet['Eclipse Bite'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {}) -- legs="Enticer's Pants"
-	sets.midcast.Pet['Eclipse Bite'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {}) -- legs="Enticer's Pants"
-	sets.midcast.Pet['Blindside'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {}) -- legs="Enticer's Pants"
-	sets.midcast.Pet['Blindside'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {}) -- legs="Enticer's Pants"
+	sets.midcast.Pet['Mountain Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"})
+	sets.midcast.Pet['Mountain Buster'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {legs="Enticer's Pants"}) 
+	sets.midcast.Pet['Rock Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"}) 
+	sets.midcast.Pet['Rock Buster'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {legs="Enticer's Pants"}) 
+	sets.midcast.Pet['Crescent Fang'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"}) 
+	sets.midcast.Pet['Crescent Fang'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {legs="Enticer's Pants"}) 
+	sets.midcast.Pet['Eclipse Bite'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"})
+	sets.midcast.Pet['Eclipse Bite'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {legs="Enticer's Pants"}) 
+	sets.midcast.Pet['Blindside'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"}) 
+	sets.midcast.Pet['Blindside'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {legs="Enticer's Pants"})
 
 	 -- Spirits cast magic spells, which can be identified in standard ways.
     
@@ -297,23 +295,23 @@ function init_gear_sets()
         head="Beckoner's Horn +1", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
         --hands=gear.merlinic_refresh_hands
 		body="Shomonjijoe +1", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
-		--waist="Regal Belt", feet="Baayami Sabots"
-        back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
+		-- feet="Baayami Sabots"
+        back=gear.FC_jse_back, waist="Regal Belt", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 
     sets.idle.PDT = {main="Earth Staff", 
 		--main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
         -- body="Udug Jacket",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
-        --waist="Regal Belt",
-		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
+        --
+		back=gear.FC_jse_back, waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
 	sets.idle.MDT = {main="Earth Staff", ammo="Staunch Tathlum",
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
         -- body="Udug Jacket",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
-        --waist="Regal Belt",
-		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
+        --
+		back=gear.FC_jse_back, waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
 	sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
@@ -337,7 +335,7 @@ function init_gear_sets()
     
     -- Can make due without either the head or the body, and use +refresh items in those slots.
     
-    sets.idle.Avatar = {main=gear.perp_staff,ammo=gear.avatar_ammo,
+    sets.idle.Avatar = {main=gear.perp_staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		-- Nirvana Oneiros Grip 
 		-- Con. Horn +3
         head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
@@ -396,7 +394,7 @@ function init_gear_sets()
         back="Umbra Cape",waist="Regal Belt",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 
     sets.defense.MDT = {main="Terra's Staff",sub="Umbra Strap",ammo=gear.avatar_ammo,
-        head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Lugalbanda Earring",
+        head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Enmerkar Earring",
         body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2", ring1="Dark Ring",ring2="Defending Ring",
         back="Umbra Cape",waist="Regal Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 

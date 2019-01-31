@@ -5,7 +5,6 @@ put Adhemar Jacket +1 sack all
 put Adhemar Kecks +1 safe2 all 
 put Adhemar Wrist. +1 sack all 
 put Adhemar Wristbands sack all 
-put Grunfeld Rope sack all 
 put Mandau sack all 
 put Meg. Chausses +2 sack all 
 put Meg. Cuirie +2 sack all 
@@ -18,13 +17,13 @@ put Mummu Jacket +2 sack all
 put Mummu Kecks +2 sack all 
 put Mummu Ring sack all 
 put Mummu Wrists +2 sack all 
-put Pill. Bonnet +1 sack all 
+put Pill. Bonnet +2 sack all 
 put Pill. Culottes +3 sack all 
-put Pillager's Poulaines sack all 
+put Pill. Poulaines +2 sack all 
 put Pillager's Vest +3 sack all 
-put Plun. Armlets +2 sack all 
-put Plun. Bonnet +1 sack all 
-put Plun. Culottes +1 sack all 
+put Plun. Armlets +3 sack all 
+put Plun. Bonnet +3 sack all 
+put Plun. Culottes +3 sack all 
 put Plun. Poulaines +3 sack all 
 put Plunderer's Vest +3 sack all 
 put Raider's Bmrng. sack all 

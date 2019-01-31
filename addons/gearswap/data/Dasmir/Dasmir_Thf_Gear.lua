@@ -94,7 +94,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA['Collaborator'] = {head="Skulker's Bonnet +1"}
     sets.precast.JA['Accomplice'] = {head="Skulker's Bonnet +1"}
-    sets.precast.JA['Flee'] = {feet="Pillager's Poulaines"}
+    sets.precast.JA['Flee'] = {feet="Pill. Poulaines +1"}
     sets.precast.JA['Hide'] = {body="Pillager's Vest +1"}
     sets.precast.JA['Conspirator'] = {body="Skulker's Vest"}
     sets.precast.JA['Steal'] = {}--hands="Pill. Armlets +1"
@@ -322,7 +322,7 @@ function init_gear_sets()
 		-- body="Pillager's Vest +3", hands="Adhemar Wrist. +1", lring="Epona's Ring", rring="Hetairoi Ring",
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Rajas Ring", rring="Epona's Ring",
 		-- waist="Reiki Yotai", feet="Plun. Poulaines +3"
-		back=gear.stp_jse_back, waist="Windbuffet Belt", legs="Samnuha Tights", feet="Mummu Gamash. +1"}
+		back=gear.stp_jse_back, waist="Windbuffet Belt", legs="Samnuha Tights", feet="Mummu Gamash. +2"}
 
  	sets.engaged.Acc = {ranged="Raider's Bmrng.",
 		head="Mummu Bonnet +2", neck="Lissome Necklace", lear="Sherida Earring", rear="Suppanomimi",
@@ -337,7 +337,7 @@ function init_gear_sets()
     sets.engaged.Fodder = {ranged="Raider's Bmrng.",
 		head="Mummu Bonnet +2", neck="Anu Torque", lear="Sherida Earring", rear="Suppanomimi",
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Rajas Ring", rring="Epona's Ring",
-		back=gear.stp_jse_back, waist="Windbuffet Belt", legs="Meg. Chausses +2", feet="Mummu Gamash. +1"}
+		back=gear.stp_jse_back, waist="Windbuffet Belt", legs="Meg. Chausses +2", feet="Mummu Gamash. +2"}
 
     sets.engaged.PDT = {
 		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Sherida Earring", rear="Suppanomimi",

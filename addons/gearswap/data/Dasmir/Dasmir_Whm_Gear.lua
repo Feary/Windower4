@@ -55,7 +55,7 @@ function init_gear_sets()
 		-- Enchntr. Earring +1
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Lebeche Ring", rring="Kishar Ring",
-		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Orvail Pants +1", feet="Regal Pumps"}
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Regal Pumps"}
     sets.precast.FC.DT = {ammo="Incantor Stone",
 		-- Enchntr. Earring +1
 		head="Nahtirah Hat", neck="Orison Locket", lear="Loquac. Earring",
@@ -245,15 +245,17 @@ function init_gear_sets()
 	sets.midcast.Cursna = {
 		--neck="Debilis Medallion",
 		neck="Colossus's Torque",
-		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Ephedra Ring", rring="Ephedra Ring",
-		back=gear.fastcast_jse_back, legs="Theo. Pant. +1", feet="Gende. Galoshes"}
+		-- Haoma Ring
+		body="Ebers Bliaud +1", hands="Fanatics Gloves", lring="Ephedra Ring", rring="Ephedra Ring",
+		-- Theo. Pants +3
+		back=gear.fastcast_jse_back, legs="Theo. Pant. +1", feet="Gende. Galosh. +1"}
 
 	sets.midcast.StatusRemoval = {ammo="Hasty Pinion +1",
 		--main={name="Grioavolr", priority=2}, sub={name="Clemency Grip", priority=1}, 
 		head="Ebers Cap +1",
 		--body="Hedera Cotehardie", 
 		hands="Ebers Mitts +1",
-		waist="Witful Belt", legs="Ebers Pant. +1", feet="Gende. Galoshes"}
+		waist="Witful Belt", legs="Ebers Pant. +1", feet="Gende. Galoshes +1"}
 
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
 	-- Duration
@@ -402,7 +404,7 @@ function init_gear_sets()
 	sets.midcast.Stun = {
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Arasy Staff", priority=2}, sub={name="", priority=1},
-		-- Chironic Hat Erra Pendant  Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
+		-- Chironic Hat  rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
 		-- Theo. Briault +3 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -412,18 +414,18 @@ function init_gear_sets()
 	sets.midcast.Stun.Resistant = {		
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Arasy Staff", priority=2}, sub={name="", priority=1},
-		-- Chironic Hat Erra Pendant  Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
+		-- Chironic Hat Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", rear="Regal Earring",
 		-- Theo. Briault +3
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- gear.Macc_jse_back Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
-	sets.midcast['Enfeebling Magic'] = {ammo="Pemphredo Tathlum",
-		-- Grioavolr Enki Strap Pemphredo Tathlum
-		main={name="Arasy Staff", priority=2}, sub={name="", priority=1},
-		-- Chironic Hat Erra Pendant Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
+	sets.midcast['Enfeebling Magic'] = {
+		-- Grioavolr Enki Strap 
+		main={name="Arasy Staff", priority=2}, sub={name="", priority=1}, ammo="Pemphredo Tathlum",
+		-- Chironic Hat  lear="Digni. Earring", 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
@@ -431,8 +433,8 @@ function init_gear_sets()
 	sets.midcast['Enfeebling Magic'].Resistant = {
 		-- Grioavolr Enki Strap Pemphredo Tathlum
 		main={name="Arasy Staff", priority=2}, sub={name="", priority=1},
-		-- Chironic Hat Erra Pendant  Digni. Earring lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Psystorm Earring",
+		-- Chironic Hat Digni. Earring 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}

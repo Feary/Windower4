@@ -33,8 +33,8 @@ function user_setup()
 	gear.crit_ranger_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Crit.hit rate+10',}}
 	-- 9Quick Draw
 	gear.magic_QD_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
-	-- 10fastcast
-	
+	-- 10-fastcast
+	gear.FC_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
 	
     -- Additional local binds
 	send_command('bind !f11 gs c cycle ExtraMeleeMode')

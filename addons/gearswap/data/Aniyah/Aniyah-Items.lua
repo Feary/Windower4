@@ -59,7 +59,7 @@ gear_telchine_feet_Regen = { name="Telchine Pigaches", augments={'"Regen" potenc
 -- Head occult Leafdim
 gear_helios_head_occult = { name="Helios Band", augments={'Pet: Attack+29 Pet: Rng.Atk.+29','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+7',}}
 -- Snoworb  Leaforb Duskorb
-gear_helios_head_BP = {name="Helios Band", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+7',}}
+gear_helios_head_BP = {name="Helios Band", augments={'Pet: Attack+29 Pet: Rng.Atk.+29','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+7',}}
 
 -- Body 
 -- Occult Acumen Leafdim

@@ -49,31 +49,30 @@ function init_gear_sets()
 	sets.precast.JA['Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +3", 
-		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Petrov Ring",rring="Niqmaddu Ring",
-		-- waist="Ioskeha Belt +1",
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
+		-- waist="Ioskeha Belt +1", feet="Pelt. Schyn. +1"
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Ptero. Brais +1",feet="Ostro Greaves"}
 	sets.precast.JA['High Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +3", 
-		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Petrov Ring",rring="Niqmaddu Ring",
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		-- waist="Ioskeha Belt +1",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Ptero. Brais +1",feet="Ostro Greaves"}
 	sets.precast.JA['Soul Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +3",
-		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Petrov Ring",rring="Niqmaddu Ring",
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		-- waist="Ioskeha Belt +1",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Ptero. Brais +1",feet="Ostro Greaves"}
 	sets.precast.JA['Spirit Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +3", 
-		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Petrov Ring",rring="Niqmaddu Ring",
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		-- waist="Ioskeha Belt +1",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Ptero. Brais +1",feet="Ostro Greaves"}
 	sets.precast.JA['Super Jump'] = {}
 	sets.precast.JA['Spirit Link'] = {
-		--lear="Pratik Earring",
-		head="Vishap Armet", 
+		head="Vishap Armet +1", lear="Pratik Earring",
 		hands="Pel. Vambraces",
 		feet="Ptero. Greaves"}
 	sets.precast.JA['Call Wyvern'] = {body="Ptero. Mail +1"} 
@@ -137,7 +136,7 @@ function init_gear_sets()
 		back="Moonbeam Cape",waist="Tempus Fugit",legs="Founder's Hose",feet="Carmine Greaves +1"}
 		
 	-- Put HP+ gear and the AF head to make healing breath trigger more easily with this set.
-	sets.midcast.HB_Trigger = set_combine(sets.midcast.FastRecast, {head="Vishap Armet"})
+	sets.midcast.HB_Trigger = set_combine(sets.midcast.FastRecast, {head="Vishap Armet +1"})
 	
 	-- Weaponskill sets
 
@@ -145,7 +144,7 @@ function init_gear_sets()
 	
 	sets.precast.WS = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Moonshade Earring",
-		body="Flamma Korazin +1",hands="Sulev. Gauntlets +2",ring1="Rajas Ring",ring2="Flamma Ring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2",ring1="Rajas Ring",ring2="Flamma Ring",
 		back=gear.da_jse_back,waist="Fotia Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"}
 		
 	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {})
@@ -158,141 +157,138 @@ function init_gear_sets()
 		-- Ptero. Armet +3
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Brutal Earring",
 		-- Valorous Mail STR ACC DA 
-		body="Flamma Korazin +1",hands="Sulev. Gauntlets +2", ring1="Regal Ring",rring="Niqmaddu Ring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2", ring1="Regal Ring",rring="Niqmaddu Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"})
 	sets.precast.WS['Stardiver'].SomeAcc = set_combine(sets.precast.WS.Acc, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Brutal Earring",
 		-- Valorous Mail STR ACC DA
-		body="Flamma Korazin +1",hands="Sulev. Gauntlets +2", ring1="Regal Ring",rring="Niqmaddu Ring",
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2", ring1="Regal Ring",rring="Niqmaddu Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"})
 	sets.precast.WS['Stardiver'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Ginsen",
 		-- head="Ptero. Armet +3",
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Moonshade Earring",
 		-- Dagon Breast. Valorous Mail STR ACC DA
-		body="Flamma Korazin +1", hands="Sulev. Gauntlets +2", ring1="Regal Ring",rring="Niqmaddu Ring",
-		--
+		body="Flamma Korazin +2", hands="Sulev. Gauntlets +2", ring1="Regal Ring",rring="Niqmaddu Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"})
 	sets.precast.WS['Stardiver'].Fodder = set_combine(sets.precast.WS.Fodder, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Moonshade Earring",
 		-- Valorous Mail STR ACC DA
-		body="Flamma Korazin +1",hands="Sulev. Gauntlets +2", ring1="Regal Ring",ring2="Niqmaddu Ring",
-		-- Peltast Cuissots +1
-		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"})
+		body="Flamma Korazin +2",hands="Sulev. Gauntlets +2", ring1="Regal Ring",ring2="Niqmaddu Ring",
+		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Peltast Cuissots +1",feet="Flam. Gambieras +2"})
 
 	sets.precast.WS['Drakesbane'] = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Moonshade Earring",		
-		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Begrudging Ring",ring2="Niqmaddu Ring",		
-		back=gear.crit_jse_back,waist="Windbuffet Belt +1",legs="Peltast Cuissots",feet="Sulev. Leggings +2"})
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Begrudging Ring",ring2="Niqmaddu Ring",		
+		back=gear.crit_jse_back,waist="Windbuffet Belt +1",legs="Peltast Cuissots +1",feet="Sulev. Leggings +2"})
 	sets.precast.WS['Drakesbane'].SomeAcc = set_combine(sets.precast.WS.Acc, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Moonshade Earring",	
-		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Begrudging Ring",ring2="Niqmaddu Ring",			
-		back=gear.crit_jse_back,waist="Windbuffet Belt +1",legs="Peltast Cuissots",feet="Sulev. Leggings +2"})
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Begrudging Ring",ring2="Niqmaddu Ring",			
+		back=gear.crit_jse_back,waist="Windbuffet Belt +1",legs="Peltast Cuissots +1",feet="Sulev. Leggings +2"})
 	sets.precast.WS['Drakesbane'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Moonshade Earring",		
-		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Begrudging Ring",ring2="Niqmaddu Ring",	
-		back=gear.crit_jse_back,waist="Windbuffet Belt +1",legs="Peltast Cuissots",feet="Sulev. Leggings +2"})
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Begrudging Ring",ring2="Niqmaddu Ring",	
+		back=gear.crit_jse_back,waist="Windbuffet Belt +1",legs="Peltast Cuissots +1",feet="Sulev. Leggings +2"})
 	sets.precast.WS['Drakesbane'].Fodder = set_combine(sets.precast.WS.Fodder, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Moonshade Earring",		
-		body="Flamma Korazin +1",hands="Flam. Manopolas +1",ring1="Begrudging Ring",ring2="Niqmaddu Ring",			
-		back=gear.crit_jse_back,waist="Windbuffet Belt +1",legs="Peltast Cuissots",feet="Sulev. Leggings +2"})
+		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Begrudging Ring",ring2="Niqmaddu Ring",			
+		back=gear.crit_jse_back,waist="Windbuffet Belt +1",legs="Peltast Cuissots +1",feet="Sulev. Leggings +2"})
 	
 	sets.precast.WS['Geirskogul'] = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Lustratio Cap +1 Path A 
 		head="", neck="Fotia Gorget", lear="Sherida Earring", rear="Ishvara Earring",
 		-- Emicho Haubert Ptero Fin. Gaunt. +3  
 		body="", hands="Sulev. Gauntlets +2", lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Lustr. Subligar +1", feet="Sulev. Leggings +2"})
 	sets.precast.WS['Geirskogul'].SomeAcc = set_combine(sets.precast.WS.Acc, {ammo="Knobkierrie",
 		--Lustratio Cap +1 Path A 
 		head="", neck="Fotia Gorget",lear="Sherida Earring", rear="Ishvara Earring",
 		-- Emicho Haubert Ptero Fin. Gaunt. +3  
 		body="", hands="Sulev. Gauntlets +2", lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Lustr. Subligar +1", feet="Sulev. Leggings +2"})
 	sets.precast.WS['Geirskogul'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Ginsen",
 		--Lustratio Cap +1 Path A
 		head="", neck="Fotia Gorget",lear="Sherida Earring", rear="Ishvara Earring",
 		-- Emicho Haubert Ptero Fin. Gaunt. +3 
 		body="", hands="Sulev. Gauntlets +2", lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Lustr. Subligar +1", feet="Sulev. Leggings +2"})
 	sets.precast.WS['Geirskogul'].Fodder = set_combine(sets.precast.WS.Fodder, {ammo="Knobkierrie",
 		-- Lustratio Cap +1 Path A
 		head="", neck="Fotia Gorget", lear="Sherida Earring", rear="Ishvara Earring",
 		-- Emicho Haubert Ptero Fin. Gaunt. +3 
 		body="", hands="Sulev. Gauntlets +2", lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Lustr. Subligar +1", feet="Sulev. Leggings +2"})
 	
 	sets.precast.WS["Camlann's Torment"] = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget",lear="Brutal Earring", rear="Sherida Earring",
 		-- Ptero Fin. Gaunt. +3
 		body="Sulevia's Plate. +2", hands="Sulev. Gauntlets +2", lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +2", feet="Sulev. Leggings +2"})
 	sets.precast.WS["Camlann's Torment"].SomeAcc = set_combine(sets.precast.WS.Acc, {ammo="Knobkierrie",
-		--  Utu Grip
 		head="Flam. Zucchetto +2", neck="Fotia Gorget",lear="Sherida Earring", rear="Brutal Earring",
 		-- Ptero Fin. Gaunt. +3
 		body="Sulevia's Plate. +2", hands="Sulev. Gauntlets +2",lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +2", feet="Sulev. Leggings +2"})
 	sets.precast.WS["Camlann's Torment"].Acc = set_combine(sets.precast.WS.Acc, {ammo="Ginsen",
 		--Knobkierrie  Earring 
 		head="Flam. Zucchetto +2", neck="Fotia Gorget",lear="Sherida Earring", rear="Cessance Earring",
 		-- Ptero Fin. Gaunt. +3
 		body="Sulevia's Plate. +2", hands="Sulev. Gauntlets +2",lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +2", feet="Sulev. Leggings +2"})
 	sets.precast.WS["Camlann's Torment"].Fodder = set_combine(sets.precast.WS.Fodder, {ammo="Knobkierrie",   
 		head="Flam. Zucchetto +2", neck="Fotia Gorget",lear="Sherida Earring", rear="Cessance Earring",
 		-- Ptero Fin. Gaunt. +3 
 		body="Sulevia's Plate. +2", hands="Sulev. Gauntlets +2",lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +2", feet="Sulev. Leggings +2"})
 
 	sets.precast.WS['Sonic Thrust'] = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget",lear="Sherida Earring", rear="Moonshade Earring",
 		-- Ptero Fin. Gaunt. +3 
 		body="Sulevia's Plate. +2", hands="Sulev. Gauntlets +2",lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +2", feet="Sulev. Leggings +2"})
 	sets.precast.WS['Sonic Thrust'].SomeAcc = set_combine(sets.precast.WS.Acc, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget",lear="Sherida Earring", rear="Moonshade Earring",
 		-- Ptero Fin. Gaunt. +3
 		body="Sulevia's Plate. +2", hands="Sulev. Gauntlets +2", lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +2", feet="Sulev. Leggings +2"})
 	sets.precast.WS['Sonic Thrust'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Ginsen",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget",lear="Sherida Earring", rear="Moonshade Earring",
 		-- Ptero Fin. Gaunt. +3
 		body="Sulevia's Plate. +2", hands="Sulev. Gauntlets +2", lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +2", feet="Sulev. Leggings +2"})
 	sets.precast.WS['Sonic Thrust'].Fodder = set_combine(sets.precast.WS.Fodder, {ammo="Knobkierrie",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget",lear="Sherida Earring", rear="Moonshade Earring",
 		-- Ptero Fin. Gaunt. +3
 		body="Sulevia's Plate. +2", hands="Sulev. Gauntlets +2",lring="Regal Ring", rring="Niqmaddu Ring",
-		-- Vishap Brais +1 +3
+		-- Vishap Brais +3
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +2", feet="Sulev. Leggings +2"})
 
 	sets.precast.WS['Leg Sweep'] = set_combine(sets.precast.WS, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget", lear="Digni. Earring", rear="Moonshade Earring",
-		body="Flamma Korazin +1", hands="Flam. Manopolas +1",lring="Stikini Ring", rring="Flamma Ring",
+		body="Flamma Korazin +2", hands="Flam. Manopolas +2",lring="Stikini Ring", rring="Flamma Ring",
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"})
 	sets.precast.WS['Leg Sweep'].SomeAcc = set_combine(sets.precast.WS.Acc, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget", lear="Digni. Earring", rear="Moonshade Earring",
-		body="Flamma Korazin +1", hands="Flam. Manopolas +1",lring="Stikini Ring", rring="Flamma Ring",
+		body="Flamma Korazin +2", hands="Flam. Manopolas +2", lring="Stikini Ring", rring="Flamma Ring",
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"})
 	sets.precast.WS['Leg Sweep'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2",  neck="Sanctity Necklace", lear="Digni. Earring", rear="Moonshade Earring",
-		body="Flamma Korazin +1", hands="Flam. Manopolas +1",lring="Stikini Ring", rring="Flamma Ring",
+		body="Flamma Korazin +2", hands="Flam. Manopolas +2",lring="Stikini Ring", rring="Flamma Ring",
 		-- waist="Eschan Stone",
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"})
 	sets.precast.WS['Leg Sweep'].Fodder = set_combine(sets.precast.WS.Fodder, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget", lear="Digni. Earring", rear="Moonshade Earring",
-		body="Flamma Korazin +1", hands="Flam. Manopolas +1",lring="Stikini Ring", rring="Flamma Ring",
+		body="Flamma Korazin +2", hands="Flam. Manopolas +2",lring="Stikini Ring", rring="Flamma Ring",
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"})
 	
 	-- Sets to return to when not performing an action.
@@ -368,7 +364,7 @@ function init_gear_sets()
 	sets.engaged = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Ganesha's Mala",ear1="Sherida Earring",ear2="Brutal Earring",
 		-- 
-		body="Pelt. Plackart +1", hands=gear_acro_hands_stp, ring1="Rajas Ring",ring2="Niqmaddu Ring",
+		body="Pelt. Plackart +1", hands=gear_acro_hands_stp, ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		--waist="Ioskeha Belt +1",
 		back=gear.da_jse_back, waist="Windbuffet Belt +1", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"}
     sets.engaged.SomeAcc = {ammo="Ginsen",
@@ -383,7 +379,7 @@ function init_gear_sets()
 		back=gear.da_jse_back, waist="Windbuffet Belt +1",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
     sets.engaged.FullAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Shulmanu Collar",ear1="Sherida Earring",ear2="Cessance Earring",
-		body="Pelt. Plackart +1", hands="Flam. Manopolas +1", ring1="Ramuh Ring +1", ring2="Niqmaddu Ring",
+		body="Pelt. Plackart +1", hands="Flam. Manopolas +2", ring1="Ramuh Ring +1", ring2="Niqmaddu Ring",
 		back=gear.da_jse_back, waist="Windbuffet Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
     sets.engaged.Fodder = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Ganesha's Mala",ear1="Sherida Earring",ear2="Cessance Earring",
@@ -448,7 +444,7 @@ function init_gear_sets()
     sets.engaged.Trishula.FullAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Shulmanu Collar",ear1="Sherida Earring",ear2="Telos Earring",		
 		--body=gear.valorous_wsd_body,
-		body="Pelt. Plackart +1",hands="Flam. Manopolas +1", ring1="Flamma Ring", rring="Niqmaddu Ring",
+		body="Pelt. Plackart +1",hands="Flam. Manopolas +2", ring1="Flamma Ring", rring="Niqmaddu Ring",
 		-- waist="Ioskeha Belt +1", legs="Pteroslaver Brais +3", 
 		back=gear.da_jse_back, waist="Windbuffet Belt +1", legs="Sulev. Cuisses +2",feet="Flam. Gambieras +2"}
     sets.engaged.Trishula.Fodder = {ammo="Ginsen",
@@ -495,7 +491,7 @@ function init_gear_sets()
 		back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
     sets.engaged.Ryunohige.FullAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Shulmanu Collar",ear1="Tripudio Earring",ear2="Cessance Earring",
-		body="Pelt. Plackart +1", hands="Flam. Manopolas +1", ring1="Ramuh Ring +1", ring2="Niqmaddu Ring",
+		body="Pelt. Plackart +1", hands="Flam. Manopolas +2", ring1="Ramuh Ring +1", ring2="Niqmaddu Ring",
 		back=gear.stp_jse_back,waist="Ioskeha Belt",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
     sets.engaged.Ryunohige.Fodder = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Ganesha's Mala",ear1="Brutal Earring",ear2="Cessance Earring",

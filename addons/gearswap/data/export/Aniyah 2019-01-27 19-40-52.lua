@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    sub="Elan Strap +1",
+    ammo="Idaraaja",
+    head={ name="Helios Band", augments={'Pet: Attack+29 Pet: Rng.Atk.+29','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+7',}},
+    body="Con. Doublet +3",
+    hands="Tali'ah Gages +1",
+    legs={ name="Apogee Slacks +1", augments={'Pet: STR+20','Blood Pact Dmg.+14','Pet: "Dbl. Atk."+4',}},
+    feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
+    neck="Shulmanu Collar",
+    waist="Incarnation Sash",
+    left_ear="Gelos Earring",
+    right_ear="Lugalbanda Earring",
+    left_ring="Varar Ring +1",
+    right_ring="Varar Ring +1",
+    back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+10 /Mag. Eva.+10','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},
+}

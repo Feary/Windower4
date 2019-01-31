@@ -84,7 +84,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Impact = {ammo="Impatiens",
 		head=empty,neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		body="Twilight Cloak",hands="Magavan Mitts", ring1="Prolix Ring",
+		body="Twilight Cloak",hands=gear_helios_hands_FC, ring1="Prolix Ring",
 		back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +2",feet="Amalric Nails"}
 	
 	sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {hands="Bagua Mitaines +1"})
@@ -146,8 +146,7 @@ function init_gear_sets()
 	sets.midcast.Geomancy = {main="Idris", sub="Genmei Shield", range="Dunna",
 		-- neck="Incantor's Torque",
 		head="Azimuth Hood +1", neck="Reti Pendant", lear="Merman's Earring", rear="Etiolation Earring",
-		-- Vedic Coat
-		body="Bagua Tunic +1", hands="Shrieker's Cuffs", lring="Stikini Ring", rring="Stikini Ring",
+		body="Vedic Coat", hands="Shrieker's Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- Feet Conserve MP
 		back=gear.FC_jse_back, waist="Austerity Belt", legs="Vanya Slops", feet="Azimuth Gaiters +1"}
 
