@@ -1,0 +1,17 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    ammo="Idaraaja",
+    head="Convoker's Horn +2",
+    body="Shomonjijoe +1",
+    hands="Inyan. Dastanas +2",
+    legs="Assid. Pants +1",
+    feet="Convo. Pigaches +3",
+    neck="Loricate Torque +1",
+    waist="Regal Belt",
+    left_ear="Ethereal Earring",
+    right_ear="Gifted Earring",
+    left_ring="Inyanga Ring",
+    right_ring="Defending Ring",
+    back={ name="Campestres's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}},
+}

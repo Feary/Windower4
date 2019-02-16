@@ -90,11 +90,14 @@ function init_include()
 	state.AutoCleanupMode  	  = M(false, 'Auto Cleanup Mode')
 	state.DisplayMode  	  	  = M(true, 'Display Mode')
 	state.UseCustomTimers 	  = M(true, 'Use Custom Timers')
-	state.CancelStoneskin	  = M(true, 'Stoneskin Cancel Mode')
+	state.CancelStoneskin	  = M(true, 'Auto Cancel Stoneskin')
+	state.BlockMidaction	  = M(true, 'Block Midaction')
 	state.RelicAftermath	  = M(true, 'Maintain Relic Aftermath')
 	state.Contradance		  = M(true, 'Auto Contradance Mode')
 	state.ElementalWheel 	  = M(false, 'Elemental Wheel')
 	state.MaintainDefense 	  = M(false, 'Maintain Defense')
+	state.SkipProcWeapons 	  = M(false, 'Skip Proc Weapons')
+	state.NotifyBuffs		  = M(false, 'Notify Buffs')
 	
 	state.RuneElement 		  = M{['description'] = 'Rune Element','Ignis','Gelus','Flabra','Tellus','Sulpor','Unda','Lux','Tenebrae'}
 	state.ElementalMode 	  = M{['description'] = 'Elemental Mode', 'Fire','Ice','Wind','Earth','Lightning','Water','Light','Dark'}
@@ -106,6 +109,8 @@ function init_include()
 	state.EquipStop           = M{['description'] = 'Stop Equipping Gear', 'off', 'precast', 'midcast', 'pet_midcast'}
 	state.CombatWeapon        = M{['description']='Combat Weapon', ['string']=''}
 	state.CombatForm          = M{['description']='Combat Form', ['string']=''}
+	
+	NotifyBuffs = S{}
 	
 	if mageJobs:contains(player.main_job) then
 		state.Weapons		  = M{['description'] = 'Weapons','None','Weapons'}
@@ -173,13 +178,15 @@ function init_include()
 	rangedautows = ''
 	autowstp = 1000
 	rangedautowstp = 1000
-	buffup = false
 	time_offset = -39602
 	framerate = 60
 	latency = .75
 	spell_latency = nil
+	buffup = ''
 	curecheat = false
 	lastincombat = player.in_combat
+	next_cast = 0
+	delayed_cast = ''
 	
 	time_test = false
 	utsusemi_cancel_delay = .5
@@ -312,6 +319,14 @@ function init_include()
 				end
 			end
 		end
+		
+		if user_job_target_change then
+			if user_job_target_change(target) then return end
+		end
+		
+		if user_target_change then
+			if user_job_target_change(target) then return end
+		end
 	end
 	windower.register_event('target change', target_change)
 
@@ -331,6 +346,13 @@ function init_include()
 		useItemSlot = ''
 		lastincombat = false
 		being_attacked = false
+		
+		if world.area:contains('Abyssea') or areas.ProcZones:contains(world.area) then
+			state.SkipProcWeapons:set('False')
+		else
+			state.SkipProcWeapons:reset()
+		end
+		
 		if state.DisplayMode.value then update_job_states()	end
 	end)
 
@@ -689,6 +711,7 @@ function aftercast(spell)
     if state.Buff[spell.english:ucfirst()] ~= nil and spell.target.type == 'SELF' then
         state.Buff[spell.english:ucfirst()] = not spell.interrupted or buffactive[spell.english] or false
     end
+	
     handle_actions(spell, 'aftercast')
 end
 
@@ -817,7 +840,9 @@ function default_filtered_action(spell, eventArgs)
 end
 
 function extra_default_filtered_action(spell, eventArgs)
-	if not can_use(spell) then
+	if spell.action_type == 'Item' and world.area == "Mog Garden" then
+		return
+	elseif not can_use(spell) then
 		cancel_spell()
 		eventArgs.cancel = true
 		return		
@@ -836,7 +861,21 @@ function default_precast(spell, spellMap, eventArgs)
 		cancel_spell()
 	else
 		equip(get_precast_set(spell, spellMap))
-	end	
+	end
+	
+	if spell.action_type == 'Magic' then
+		tickdelay = (framerate * 3)
+		next_cast = os.clock() + 3.5 - latency
+	elseif spell.type == 'WeaponSkill' then
+		tickdelay = (framerate * 2.4)
+		next_cast = os.clock() + 2.5 - latency
+	elseif 	spell.action_type == 'Item' then
+		tickdelay = (framerate * 1.5)
+		next_cast = os.clock() + 1.35 - latency
+	elseif spell.action_type == 'Ranged Attack' then
+		tickdelay = (framerate * 1.4)
+		next_cast = os.clock() + 1.05 - latency
+	end
 end
 
 function default_post_precast(spell, spellMap, eventArgs)
@@ -1005,20 +1044,35 @@ function default_post_pet_midcast(spell, spellMap, eventArgs)
 end
 
 function default_aftercast(spell, spellMap, eventArgs)
-	
-	if spell.action_type == 'Magic' then
-		tickdelay = (framerate * 2.7)
+	if spell.interrupted then
+		if spell.type:contains('Magic') then
+			tickdelay = (framerate * 2.5)
+			next_cast = os.clock() + 3 - latency
+		else
+			tickdelay = (framerate * 1)
+			next_cast = os.clock() + 1.75 - latency
+		end
+	elseif spell.action_type == 'Magic' then
+		tickdelay = (framerate * 2.95)
+		next_cast = os.clock() + 3.45 - latency
 	elseif spell.action_type == 'Ability' then
 		tickdelay = (framerate * .5)
+		next_cast = os.clock() + .85 - latency
 	elseif spell.type == 'WeaponSkill' then
 		tickdelay = (framerate * 1.9)
+		next_cast = os.clock() + 2 - latency
 	elseif 	spell.action_type == 'Item' then
-		tickdelay = (framerate * 1.1)
+		tickdelay = (framerate * .5)
+		next_cast = os.clock() + .85 - latency
 	elseif spell.action_type == 'Ranged Attack' then
 		tickdelay = (framerate * 1.1)
+		next_cast = os.clock() + .85 - latency
 	end
 	
 	if not spell.interrupted then
+		if delayed_cast == spell.english then
+			delayed_cast = '' 
+		end
 		if state.TreasureMode.value ~= 'None' and state.DefenseMode.value == 'None' and spell.target.type == 'MONSTER' and not info.tagged_mobs[spell.target.id] then
 			info.tagged_mobs[spell.target.id] = os.time()
 			if player.target.id == spell.target.id and state.th_gear_is_locked then
@@ -1041,7 +1095,7 @@ function default_aftercast(spell, spellMap, eventArgs)
 			if state.DisplayMode.value then update_job_states()	end
 		elseif spell.english:startswith('Utsusemi') then
 			lastshadow = spell.english
-		elseif spell.action_type == 'Item' and useItem and spell.english == useItemName then
+		elseif spell.action_type == 'Item' and useItem and (spell.english == useItemName or useItemSlot == 'set') then
 			useItem = false
 			if useItemSlot == 'item' then
 				windower.send_command('put '..useItemName..' satchel')
@@ -1090,7 +1144,6 @@ function filter_precast(spell, spellMap, eventArgs)
 	if check_midaction(spell, spellMap, eventArgs) then return end
 	if check_disable(spell, spellMap, eventArgs) then return end
 	if check_doom(spell, spellMap, eventArgs) then return end
-	if check_recast(spell, spellMap, eventArgs) then return end
 	
 	if spell.action_type == 'Magic' then
 		if check_silence(spell, spellMap, eventArgs) then return end
@@ -1102,6 +1155,7 @@ function filter_precast(spell, spellMap, eventArgs)
 		if check_abilities(spell, spellMap, eventArgs) then return end
 	end
 
+	if check_recast(spell, spellMap, eventArgs) then return end
 end
 
 function filter_midcast(spell, spellMap, eventArgs)
@@ -1457,6 +1511,10 @@ function get_melee_set()
 	
     if user_job_customize_melee_set then
         meleeSet = user_job_customize_melee_set(meleeSet)
+    end
+	
+    if state.ExtraMeleeMode and state.ExtraMeleeMode.value ~= 'None' then
+        meleeSet = set_combine(meleeSet, sets[state.ExtraMeleeMode.value])
     end
 	
 	meleeSet = apply_passive(meleeSet)
@@ -2018,9 +2076,9 @@ end
 -- Handle notifications of general state change.
 function state_change(stateField, newValue, oldValue)
     if stateField == 'Weapons' then
-		if (newValue:contains('DW') or newValue:contains('Dual')) and not (dualWieldJobs:contains(player.main_job) or (player.sub_job == 'DNC' or player.sub_job == 'NIN')) then
+		if ((newValue:contains('DW') or newValue:contains('Dual')) and not can_dual_wield()) or (newValue:contains('Proc') and state.SkipProcWeapons.value) then
 			local startindex = state.Weapons.index
-			while (state.Weapons.value:contains('DW') or state.Weapons.value:contains('Dual')) and not (dualWieldJobs:contains(player.main_job) or (player.sub_job == 'DNC' or player.sub_job == 'NIN')) do
+			while ((state.Weapons.value:contains('DW') or state.Weapons.value:contains('Dual')) and not can_dual_wield()) or (state.SkipProcWeapons.value and state.Weapons.value:contains('Proc')) do
 				state.Weapons:cycle()
 				if startindex == state.Weapons.index then break end
 			end
@@ -2098,12 +2156,14 @@ function buff_change(buff, gain)
     if user_job_buff_change then
         user_job_buff_change(buff, gain, eventArgs)
     end
-
-	if S{'sleep','Lullaby'}:contains(buff) and state.CancelStoneskin.value then
-		send_command('cancel stoneskin')
-	end
 	
-    if S{'Commitment','Dedication'}:contains(buff) then
+	if buff == 'Voidwatcher' then
+		state.SkipProcWeapons:set('False')
+	elseif S{'sleep','Lullaby'}:contains(buff) and state.CancelStoneskin.value then
+		send_command('cancel stoneskin')
+	elseif (S{'Blink','Third Eye'}:contains(buff) or buff:contains('Copy Image')) and not gain then
+		lastshadow = "None"
+    elseif S{'Commitment','Dedication'}:contains(buff) then
         if gain and (cprings:contains(player.equipment.left_ring) or xprings:contains(player.equipment.left_ring)) then
             enable("left_ring")
 			
@@ -2111,19 +2171,20 @@ function buff_change(buff, gain)
 				--local CurrentTime = (os.time(os.date("!*t", os.time())) + time_offset)
 				local CurrentTime = os.time(os.date("!*t"))
 				time_test = false
-				local CapacityOffset = ((get_item_next_use('Capacity Ring').next_use_time) - CurrentTime)
-				local NegativeCapacityOffset = ((get_item_next_use('Capacity Ring').next_use_time) - CurrentTime) * -1
+				local CapacityNextUse = get_item_next_use('Capacity Ring').next_use_time
+				local CapacityOffset = CapacityNextUse - CurrentTime
+				local NegativeCapacityOffset = (CapacityNextUse - CurrentTime) * -1
 				local CapacityOffsetPlus = CapacityOffset + 900
 				local CapacityOffsetMinus = CapacityOffset - 900
 				local NegativeCapacityOffsetPlus =  NegativeCapacityOffset + 900
 				local NegativeCapacityOffsetMinus = NegativeCapacityOffset - 900
-				if ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + CapacityOffsetPlus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + CapacityOffsetPlus)) < 905 then
+				if (CapacityNextUse - (CurrentTime + CapacityOffsetPlus)) > 895 and (CapacityNextUse - (CurrentTime + CapacityOffsetPlus)) < 905 then
 					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..CapacityOffsetPlus.."")
-				elseif ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + CapacityOffsetMinus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + CapacityOffsetMinus)) < 905 then
+				elseif (CapacityNextUse - (CurrentTime + CapacityOffsetMinus)) > 895 and (CapacityNextUse - (CurrentTime + CapacityOffsetMinus)) < 905 then
 					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..CapacityOffsetMinus.."")
-				elseif ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetPlus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetPlus)) < 905 then
+				elseif (CapacityNextUse - (CurrentTime + NegativeCapacityOffsetPlus)) > 895 and (CapacityNextUse - (CurrentTime + NegativeCapacityOffsetPlus)) < 905 then
 					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..NegativeCapacityOffsetPlus.."")
-				elseif ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetMinus)) > 895 and ((get_item_next_use('Capacity Ring').next_use_time) - (CurrentTime + NegativeCapacityOffsetMinus)) < 905 then
+				elseif (CapacityNextUse - (CurrentTime + NegativeCapacityOffsetMinus)) > 895 and (CapacityNextUse - (CurrentTime + NegativeCapacityOffsetMinus)) < 905 then
 					windower.add_to_chat(123,"Capacity Ring Used: Your offset is: "..NegativeCapacityOffsetMinus.."")
 				else
 					windower.add_to_chat(123,"Unable to automatically determine your offset")
@@ -2136,13 +2197,11 @@ function buff_change(buff, gain)
         end
     end
 
-	if (S{'Blink','Third Eye'}:contains(buff) or buff:contains('Copy Image')) and not gain then
-		lastshadow = "None"
-	end
-	
 	if not midaction() and not pet_midaction() then
 		handle_equipping_gear(player.status)
 	end
+	
+	notify_buffs(buff, gain)
 	
     if extra_user_buff_change then
         extra_user_buff_change(buff, gain, eventArgs)

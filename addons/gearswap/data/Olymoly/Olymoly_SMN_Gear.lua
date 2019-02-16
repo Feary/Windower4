@@ -6,13 +6,13 @@ function user_setup()
 	state.Weapons:options('None','Gridarvor')
 	
 	-- Avatar Ammo - Sancus Sachet +1
-	gear.avatar_ammo = {name="Idaraaja"}
+	gear.avatar_ammo = {name="Eminent Sachet"}
 	-- Staves
 	gear.perp_staff = {name="Gridarvor"}
 	gear.skill_staff = {name="Espiritus"}
 
-	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10',}}
-	gear.phys_jse_back = {name="Campestres's Cape",augments={'Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Haste+10',}}
+	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: "Regen"+10','Pet: "Regen"+5',}}
+	gear.phys_jse_back = {name="Campestres's Cape",augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Haste+10','Pet: Damage taken -5%',}}
 	gear.FC_jse_back = {name="Campestres's Cape",augments={'"Fast Cast"+10',}}
 	gear.Cure_jse_back = {}
 	
@@ -31,7 +31,7 @@ function user_setup()
 	]]
 	
 	-- Additional Binds
-   send_command('bind !` gs c toggle PactSpamMode')
+	send_command('bind !` gs c toggle PactSpamMode')
 	send_command('bind @` gs c cycle MagicBurst')
 	send_command('bind ^` gs c toggle PactSpamMode')
 	send_command('bind !pause gs c toggle AutoSubMode') --Automatically uses sublimation.
@@ -45,35 +45,35 @@ function init_gear_sets()
     -- Precast Sets
     --------------------------------------
     
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {feet=gear.merlinic_treasure_feet})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Volte Bracers"})
 	
     -- Precast sets to enhance JAs
     sets.precast.JA['Astral Flow'] = {head="Glyphic Horn +1"}
     
     sets.precast.JA['Elemental Siphon'] = {main="Gridarvor", sub="Vox Grip", ammo="Esper Stone +1",
-		--neck="Incanter's Torque"
+		-- neck="Incanter's Torque"
         head=gear_telchine_head_Siphon, neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",
 		-- hands="Baayami Cuffs"
         body=gear_telchine_body_Siphon, hands="Glyphic Bracers +1", ring1="Evoker's Ring", ring2="Stikini Ring",
         back="Conveyance Cape",waist="Kobo Obi", legs=gear_telchine_legs_Siphon,feet="Beck. Pigaches +1"}
 
-    sets.precast.JA['Mana Cede'] = {hands="Caller's Bracers"}
+    sets.precast.JA['Mana Cede'] = {hands="Beck. Bracers +1"}
 
     -- Pact delay reduction gear
 	-- 
     sets.precast.BloodPactWard = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,--ammo="Sancus Sachet +1",
 		-- neck="Incanter's Torque",
 		head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Andoaa Earring",ear2="Evans Earring",
-        --body="Con. Doublet +3" ,hands="Baayami Cuffs",
+        -- body="Con. Doublet +3", hands="Baayami Cuffs",
 		body="Con. Doublet +1", hands="Glyphic Bracers +1", ring1="Evoker's Ring",ring2="Stikini Ring",
-        --legs="Baayami Slops",feet="Baayami Sabots"
+        -- legs="Baayami Slops", feet="Baayami Sabots"
 		back="Conveyance Cape", waist="Kobo Obi", legs="Glyphic Spats +1", feet="Glyph. Pigaches +1"}
 
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
 
     -- Fast cast sets for spells    
     sets.precast.FC = {ammo="Impatiens",
-		--main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",
+		-- main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear_helios_hands_FC,ring1="Kishar Ring", ring2="Prolix Ring",
 		gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants", feet="Almaric Nails"}
@@ -212,39 +212,33 @@ function init_gear_sets()
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
     
 	-- Physical 
-    sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor",sub="Elan Strap",ammo=gear.avatar_ammo,
-        --
-		head="Apogee Crown", neck="Shulmanu Collar", ear1="Gelos Earring",  ear2="Lugalbanda Earring",
-        --ring1="Varar Ring +1",ring2="Varar Ring +1",
-		body="Con. Doublet +1", hands="Tali'ah Gages +1",
-		--legs="Apogee Slacks +1"  feet="Apogee Pumps +1"
-        back=gear.phys_jse_back, waist="Incarnation Sash", legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
+    sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring",  ear2="Lugalbanda Earring",
+		body="Con. Doublet +1", hands="Tali'ah Gages +1", ring1="Varar Ring +1",ring2="Varar Ring +1",
+		--  feet="Apogee Pumps +1"
+        back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
 		
-    sets.midcast.Pet.PhysicalBloodPactRage.Acc = {main="Gridarvor",sub="Elan Strap",ammo=gear.avatar_ammo,
-		-- ear2="Lugalbanda Earring",
-        head="Apogee Crown", neck="Shulmanu Collar", ear1="Gelos Earring",
-        -- ring1="Varar Ring +1", ring2="Varar Ring +1",
-		body="Con. Doublet +1", hands="Tali'ah Gages +1", 
+    sets.midcast.Pet.PhysicalBloodPactRage.Acc = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+        head="Apogee Crown", neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
+		body="Con. Doublet +1", hands="Tali'ah Gages +1",  ring1="Varar Ring +1", ring2="Varar Ring +1",
 		-- legs="Apogee Slacks +1", feet="Convo. Pigaches +3"
-        back=gear.phys_jse_back, waist="Incarnation Sash", legs="Tali'ah Sera. +1", feet="Inyan. Crackows +2"}
+        back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
  
 	-- Magical 
-    sets.midcast.Pet.MagicalBloodPactRage = {main="Eminent Pole",sub="Elan Strap",ammo=gear.avatar_ammo,
+    sets.midcast.Pet.MagicalBloodPactRage = {main="Eminent Pole",sub="Elan Strap +1",ammo=gear.avatar_ammo,
 		head="Apogee Crown", neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-        --body="Con. Doublet +3", ring1="Varar Ring +1",ring2="Varar Ring +1",
-        body="Con. Doublet +1", hands=gear.merlinic_magpact_hands, 
-		-- waist="Regal Belt", feet="Apogee Pumps +1"
-		back=gear.magic_jse_back, waist="Kobo Obi", legs="Enticer's Pants", feet="Inyan. Crackows +2"}
+        --body="Con. Doublet +3", 
+        body="Con. Doublet +1", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
+		--  feet="Apogee Pumps +1"
+		back=gear.magic_jse_back, waist="Regal Belt", legs="Enticer's Pants", feet=gear.magic_BP_feet}
 
     sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Con. Pigaches +1"}
 
-	sets.midcast.Pet['Flaming Crush'] = {main="Gridarvor",sub="Elan Strap",ammo=gear.avatar_ammo,
-        -- ear2="Lugalbanda Earring",
-		head="Apogee Crown", neck="Adad Amulet", ear1="Gelos Earring",
-        --,ring1="Varar Ring +1",ring2="Varar Ring +1",
-        body="Con. Doublet +1", hands=gear.merlinic_magpact_hands, 
-		-- waist="Regal Belt", feet="Apogee Pumps +1"
-		back=gear.magic_jse_back, waist="Kobo Obi", legs="Enticer's Pants", feet="Tali'ah Crackows +1"}
+	sets.midcast.Pet['Flaming Crush'] = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+		-- Apogee Crown +1
+		head="Apogee Crown", neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
+        body="Con. Doublet +1", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
+		back=gear.magic_jse_back, waist="Regal Belt", legs="Enticer's Pants", feet=gear.magic_BP_feet}
 	
 	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Con. Pigaches +1"}
    
@@ -261,9 +255,9 @@ function init_gear_sets()
 
 	 -- Spirits cast magic spells, which can be identified in standard ways.
     
-    sets.midcast.Pet.WhiteMagic = {legs="Gylphic's Spats +1"}
+    sets.midcast.Pet.WhiteMagic = {legs="Glyphic's Spats +1"}
     
-    sets.midcast.Pet['Elemental Magic'] = set_combine(sets.midcast.Pet.MagicalBloodPactRage, {legs="Gylphic's Spats +1"})
+    sets.midcast.Pet['Elemental Magic'] = set_combine(sets.midcast.Pet.MagicalBloodPactRage, {legs="Glyphic's Spats +1"})
 
     sets.midcast.Pet['Elemental Magic'].Resistant = {}
 	
@@ -288,8 +282,7 @@ function init_gear_sets()
     sets.idle.PDT = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
-		--waist="Regal Belt",
-        back="Moonbeam Cape",waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
+        back="Moonbeam Cape",waist="Regal Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {}) -- neck="Chrys. Torque"
 
@@ -325,8 +318,7 @@ function init_gear_sets()
 		-- Con. Horn +3
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ar1="Handler's Earring +1",ear2="Handler's Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Inyanga Ring",ring2="Defending Ring",
-        -- waist="Regal Belt",
-		back="Moonbeam Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Con. Pigaches +1"}
+		back="Moonbeam Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Con. Pigaches +1"}
 
     sets.idle.Spirit = {main=gear.perp_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
 		-- Con. Horn +3
@@ -368,20 +360,17 @@ function init_gear_sets()
     sets.defense.PDT = {ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
         body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
-		--waist="Regal Belt",
-        back="Moonbeam Cape",waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
+        back="Moonbeam Cape", waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.defense.MDT = {ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
         body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
-		--waist="Regal Belt",
-        back="Moonbeam Cape",waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
+        back="Moonbeam Cape", waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.defense.MEVA = {ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
         body="Inyanga Jubbah +2",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
-		--waist="Regal Belt",
-        back="Moonbeam Cape",waist="Fucho-no-obi", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
+        back="Moonbeam Cape", waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.Kiting = {feet="Herald's Gaiters"}
     sets.latent_refresh = {waist="Fucho-no-obi"}
@@ -396,14 +385,14 @@ function init_gear_sets()
 	sets.buff.Sleep = {neck="Sacrifice Torque"}
 
 	-- Weapons sets
-	sets.weapons.Gridarvor = {main="Gridarvor", sub="Elan Strap +1"}
+	sets.weapons.Gridarvor = {main="Gridarvor", sub="Elan Strap +1 +1"}
 	
     --------------------------------------
     -- Engaged sets
     --------------------------------------
     
     -- Normal melee group
-    sets.engaged = {main="Gridarvor",sub="Bloodrain Strap",ammo=gear.avatar_ammo,
+    sets.engaged = {main="Gridarvor",sub="Elan Strap +1 +1",ammo=gear.avatar_ammo,
         head="Tali'ah Turban +1", neck="Shulmanu Collar", ear1="Digni. Earring",ear2="Telos Earring",
         body="Tali'ah Manteel +1",hands="Tali'ah Gages +1",ring1="Rajas Ring",ring2="Ramuh Ring +1",
         --waist="Olseni Belt",

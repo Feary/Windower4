@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('None', 'Normal')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT')
-	state.Weapons:options('None','Default','DualWeapons')
+	state.Weapons:options('None','Default','Aeneas','DualWeapons','DualSwords','DualNukeWeapons')
 	
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = "Daurdabla"
@@ -44,7 +44,10 @@ function init_gear_sets()
 	--------------------------------------
 	
 	sets.weapons.Default = {main="Carnwenhan", sub="Twashtar"}
-	sets.weapons.DualWeapons = {main="Carnwenhan", sub="Twashtar"}
+	sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
+	sets.weapons.DualWeapons = {main="Aeneas",sub="Taming Sari"}
+	sets.weapons.DualSwords = {main="Vampirism",sub="Vampirism"}
+	sets.weapons.DualNukeWeapons = {main="Malevolence",sub="Malevolence"}
 	
 	-- Precast Sets
 
@@ -67,7 +70,18 @@ function init_gear_sets()
 		head="Fili Calot +1", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
         back="Intarabus's Cape", waist="Witful Belt", legs="Aya. Cosciales +2", feet=gear_telchine_feet_Song}
+	
+	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Gjallarhorn"})
+	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Gjallarhorn"})
+	sets.precast.FC['Magic Finale'] = set_combine(sets.precast.FC.BardSong,{range="Gjallarhorn"})
+	sets.precast.FC['Horde Lullaby'] = set_combine(sets.precast.FC.BardSong,{range="Blurred Harp +1"})
+	sets.precast.FC['Horde Lullaby'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Blurred Harp +1"})
+	sets.precast.FC['Horde Lullaby'].AoE = set_combine(sets.precast.FC.BardSong,{range="Blurred Harp +1"})
+	sets.precast.FC['Horde Lullaby II'] = set_combine(sets.precast.FC.BardSong,{range="Blurred Harp +1"})
+	sets.precast.FC['Horde Lullaby II'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Blurred Harp +1"})
+	sets.precast.FC['Horde Lullaby II'].AoE = set_combine(sets.precast.FC.BardSong,{range="Blurred Harp +1"})
 		
+	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Blurred Harp +1"})	
 	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
 	
 	sets.precast.FC.Daurdabla = set_combine(sets.precast.FC.BardSong, {range=info.ExtraSongInstrument})
@@ -117,10 +131,10 @@ function init_gear_sets()
 		back=gear.wsd_jse_back, waist="Grunfeld Rope", legs="Lustr. Subligar +1", feet="Lustra. Leggings +1"})
 		
 	sets.precast.WS["Mordant Rime"] = set_combine(sets.precast.WS, {ranged=gear.Instrument_wsd,
-		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Bladeborn Earring", rear="Steelflash Earring",
-		-- Carb. Ring +1
+		-- Bard's Charm +3
+		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Cessance Earring", rear="Regal Earring",
 		body="Bihu Jstcorps. +3", hands="Bihu Cuffs +3", lring="Epaminondas's Ring", rring="Ilabrat Ring",
-		back=gear.wsd_jse_back, waist="Windbuffet Belt +1", legs="Bihu Cannions +3", feet="Bihu Slippers +3"})
+		back=gear.wsd_jse_back, waist="Grunfeld Rope", legs="Bihu Cannions +3", feet="Bihu Slippers +3"})
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {lear="Cessance Earring", rear="Brutal Earring",}
@@ -141,7 +155,7 @@ function init_gear_sets()
 	sets.midcast['Horde Lullaby'] = {range="Blurred Harp +1", body="Fili Hongreline +1", hands="Brioso Cuffs +2", legs="Inyanga Shalwar +2"}
 	sets.midcast['Horde Lullaby II'] = {range="Blurred Harp +1", body="Fili Hongreline +1", hands="Brioso Cuffs +2", legs="Inyanga Shalwar +2"}
 	sets.midcast.Madrigal = {head="Fili Calot +1"}
-	sets.midcast.Paeon = {head="Brioso Roundlet +1"}
+	sets.midcast.Paeon = {head="Brioso Roundlet +2"}
 	sets.midcast.Etude = {} -- head="Mousai Turban"
 	sets.midcast.Mambo = {}	-- feet="Mousai Crackows"
 	sets.midcast.Minne = {} -- legs="Mousai Seraweels"
@@ -152,7 +166,7 @@ function init_gear_sets()
 	sets.midcast.Minuet = {body="Fili Hongreline +1"}
 	sets.midcast.Carol = {} -- hands="Mousai Gages"
 	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +1"}
-	sets.midcast['Magic Finale'] = {}
+	sets.midcast['Magic Finale'] = {range="Gjallarhorn"}
 	
 	-- Merited Songs
 	sets.midcast.Dirge = {}
@@ -166,6 +180,8 @@ function init_gear_sets()
 		head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Musical Earring", rear="Etiolation Earring",
 		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Stikini Ring", rring="Defending Ring",
 		back="Intarabus's Cape", waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"}
+
+	sets.midcast.SongEffect.DW = {}
 
 	-- For song debuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {
@@ -186,6 +202,8 @@ function init_gear_sets()
 		-- Brioso Cannions +3 
 		back="Intarabus's Cape", waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 
+	sets.midcast.SongDebuff.DW = {}
+	
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
@@ -308,15 +326,26 @@ function init_gear_sets()
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
-	sets.engaged = {main={name="Carnwenhan", priority=2}, sub={name="Twashtar", priority=1}, ranged=gear.Instrument_tp,
+	sets.engaged = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Sheild", priority=1}, ranged=gear.Instrument_tp,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
-
+	
+	sets.engaged.Acc = {main="Carnwenhan",sub="Genbu's Shield", ranged=gear.Instrument_tp,
+		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
+		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+	
 	sets.engaged.DW = {main={name="Carnwenhan", priority=2}, sub={name="Twashtar", priority=1}, ranged=gear.Instrument_tp,
 		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+	
+	sets.engaged.DW.Acc = {main="Carnwenhan",sub="Twashtar",ranged=gear.Instrument_tp,
+		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Telos Earring", rear="Suppanomimi",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
+		back=gear.tp_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+	
 end
 
 -- Select default macro book on initial load or subjob change.
@@ -359,7 +388,7 @@ function calculate_duration(spellName, spellMap)
 	if spellMap == 'Etude' and player.equipment.head == "Mousai Turban" then mult = mult + 0.1 end
 	if spellMap == 'Etude' and player.equipment.head == "Mousai Turban +1" then mult = mult + 0.2 end
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet" then mult = mult + 0.1 end
-    if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +1" then mult = mult + 0.1 end
+    if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +2" then mult = mult + 0.1 end
 	if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +2" then mult = mult + 0.1 end
 	if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +3" then mult = mult + 0.2 end
     if spellMap == 'Madrigal' and player.equipment.head == "Aoidos' Calot +2" then mult = mult + 0.1 end

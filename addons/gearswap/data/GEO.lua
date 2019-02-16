@@ -22,12 +22,15 @@ function job_setup()
 	autows = 'Realmrazer'
 	autofood = 'Miso Ramen'
 	autoindi = 'Torpor'
+	autoentrust = 'Fury'
+	autoentrustee = '<p1>'
 	autogeo = 'Frailty'
 	last_indi = ''
 	last_geo = ''
 	
 	state.ShowDistance = M(true, 'Show Geomancy Buff/Debuff distance')
 	state.AutoEntrust = M(false, 'AutoEntrust Mode')
+	state.CombatEntrustOnly = M(true, 'Combat Entrust Only Mode')
 	
     indi_timer = ''
     indi_duration = 180
@@ -302,6 +305,14 @@ function job_self_command(commandArgs, eventArgs)
 			autogeo = commandArgs[2]:ucfirst()
 			add_to_chat(122,'Your Auto Geo- spell is set to '..autogeo..'.')
 			if state.DisplayMode.value then update_job_states()	end
+		elseif commandArgs[1] == 'autoentrust' and commandArgs[2] then
+			autoentrust = commandArgs[2]:ucfirst()
+			add_to_chat(122,'Your Auto Entrust Indi- spell is set to '..autoentrust..'.')
+			if state.DisplayMode.value then update_job_states()	end
+		elseif commandArgs[1] == 'autoentrustee' and commandArgs[2] then
+			autoentrustee = commandArgs[2]:ucfirst()
+			add_to_chat(122,'Your Auto Entrustee target is set to '..autoentrustee..'.')
+			if state.DisplayMode.value then update_job_states()	end
 		elseif commandArgs[1]:lower() == 'elemental' then
 			handle_elemental(commandArgs)
 			eventArgs.handled = true
@@ -422,14 +433,20 @@ end
 
 function job_tick()
 	if check_geo() then return true end
+	if check_buff() then return true end
+	if check_buffup() then return true end
 	return false
 end
 
 function check_geo()
-	if state.AutoBuffMode.value and not moving and not areas.Cities:contains(world.area) then
+	if state.AutoBuffMode.value and not areas.Cities:contains(world.area) then
 		if not player.indi and autoindi ~= 'None' then
 			windower.chat.input('/ma "Indi-'..autoindi..'" <me>')
 			tickdelay = (framerate * 2.1)
+			return true
+		elseif autoentrust ~= 'None' and windower.ffxi.get_ability_recasts()[93] < latency and (player.in_combat or state.CombatEntrustOnly.value == false) then
+			send_command('@input /ja "Entrust" <me>; wait 1.1; input /ma "Indi-'..autoentrust..'" '..autoentrustee)
+			tickdelay = (framerate * 3.5)
 			return true
 		elseif pet.isvalid then
 			local pet = windower.ffxi.get_mob_by_target("pet")
@@ -442,7 +459,7 @@ function check_geo()
 			end
 		elseif not pet.isvalid and autogeo ~= 'None' and (windower.ffxi.get_mob_by_target('bt') or geo_buffs:contains(autogeo)) then
 			windower.chat.input('/ma "Geo-'..autogeo..'" <bt>')
-			tickdelay = (framerate * 2)
+			tickdelay = (framerate * 3.1)
 			return true
 		else
 			return false
@@ -530,3 +547,68 @@ windower.raw_register_event('prerender', function()
     end
      
 end)
+
+function check_buff()
+	if state.AutoBuffMode.value and not areas.Cities:contains(world.area) then
+		local spell_recasts = windower.ffxi.get_spell_recasts()
+		for i in pairs(buff_spell_lists['Auto']) do
+			if not buffactive[buff_spell_lists['Auto'][i].Buff] and (buff_spell_lists['Auto'][i].When == 'Always' or (buff_spell_lists['Auto'][i].When == 'Combat' and (player.in_combat or being_attacked)) or (buff_spell_lists['Auto'][i].When == 'Engaged' and player.status == 'Engaged') or (buff_spell_lists['Auto'][i].When == 'Idle' and player.status == 'Idle') or (buff_spell_lists['Auto'][i].When == 'OutOfCombat' and not (player.in_combat or being_attacked))) and spell_recasts[buff_spell_lists['Auto'][i].SpellID] < latency and silent_can_use(buff_spell_lists['Auto'][i].SpellID) then
+				windower.chat.input('/ma "'..buff_spell_lists['Auto'][i].Name..'" <me>')
+				tickdelay = (framerate * 2)
+				return true
+			end
+		end
+	else
+		return false
+	end
+end
+
+function check_buffup()
+	if buffup ~= '' then
+		local needsbuff = false
+		for i in pairs(buff_spell_lists[buffup]) do
+			if not buffactive[buff_spell_lists[buffup][i].Buff] and silent_can_use(buff_spell_lists[buffup][i].SpellID) then
+				needsbuff = true
+				break
+			end
+		end
+	
+		if not needsbuff then
+			add_to_chat(217, 'All '..buffup..' buffs are up!')
+			buffup = ''
+			return false
+		end
+		
+		local spell_recasts = windower.ffxi.get_spell_recasts()
+		
+		for i in pairs(buff_spell_lists[buffup]) do
+			if not buffactive[buff_spell_lists[buffup][i].Buff] and silent_can_use(buff_spell_lists[buffup][i].SpellID) and spell_recasts[buff_spell_lists[buffup][i].SpellID] < latency then
+				windower.chat.input('/ma "'..buff_spell_lists[buffup][i].Name..'" <me>')
+				tickdelay = (framerate * 2)
+				return true
+			end
+		end
+		
+		return false
+	else
+		return false
+	end
+end
+
+buff_spell_lists = {
+	Auto = {	
+		{Name='Haste',		Buff='Haste',		SpellID=57,		When='Always'},
+		{Name='Refresh',	Buff='Refresh',		SpellID=109,	When='Always'},
+		{Name='Stoneskin',	Buff='Stoneskin',	SpellID=54,		When='Always'},
+	},
+	
+	Default = {
+		{Name='Haste',		Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Refresh',	Buff='Refresh',		SpellID=109,	Reapply=false},
+		{Name='Aquaveil',	Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',	Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Blink',		Buff='Blink',		SpellID=53,		Reapply=false},
+		{Name='Regen',		Buff='Regen',		SpellID=108,	Reapply=false},
+		{Name='Phalanx',	Buff='Phalanx',		SpellID=106,	Reapply=false},
+	},
+}

@@ -4,7 +4,7 @@ sets.Sheltered = {ring2="Sheltered Ring"}
 sets.Capacity = {back={name="Mecisto. Mantle", augments={'Cap. Point+40%','HP+18','Rng.Atk.+4','DEF+13',}}}
 
 sets.buff.Doom = {}--waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"
-sets.TreasureHunter = {waist="Chaac Belt"} --head="Wh. Rarab Cap +1", 
+sets.TreasureHunter = {hands="Volte Bracers", waist="Chaac Belt"} --head="Wh. Rarab Cap +1", 
 
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}
@@ -36,7 +36,7 @@ gear_taeon_feet_Phalanx = {name="Taeon Boots", augments={'Accuracy+18 Attack+18'
 -- Body 3/3
 -- Hands 3/3
 -- Legs 2/2
--- 		Feet 2/3
+-- Feet 2/3
 
 -- Head
 gear_telchine_head_Duration = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +10',}}
@@ -169,7 +169,7 @@ gear_herculean_nuke_head = {name="Herculean Helm", augments={'Mag. Acc.+16 "Mag.
 gear_herculean_nuke_legs = {name="Herculean Trousers", augments={'"Snapshot"+4','Mag. Acc.+21','Accuracy+5 Attack+5','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
 
 --gear_herculean_acc_feet = {name="Herculean Boots",augments={'Accuracy+25 Attack+25','Crit. hit damage +1%','DEX+10','Accuracy+14','Attack+1',}}
-gear_herculean_ta_feet = {name="Herculean Boots",augments={'Accuracy+19 Attack+19','"Triple Atk."+4','DEX+5','Accuracy+8','Attack+11',}}
+gear_herculean_ta_feet = {name="Herculean Boots", augments={'Accuracy+28','"Triple Atk."+3','DEX+7',}}
 --gear_herculean_dt_feet = {name="Herculean Boots",augments={'Damage taken-4%','MND+7','Attack+6',}}
 --gear_herculean_wsd_feet = {name="Herculean Boots",augments={'Accuracy+23 Attack+23','Weapon skill damage +5%','DEX+10','Accuracy+10','Attack+1',}}
 --gear_herculean_waltz_feet = {name="Herculean Boots",augments={'Attack+10','"Waltz" potency +10%','AGI+4','Accuracy+9',}}
@@ -184,7 +184,7 @@ gear_herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23'
 --gear_merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'Attack+17','Pet: INT+5','"Refresh"+2','Accuracy+11 Attack+11',}}
 --gear_merlinic_magpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc.+27','Blood Pact Dmg.+10','Pet: DEX+8','Pet: "Mag.Atk.Bns."+13',}}
 --gear_merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Accuracy+28 Pet: Rng. Acc.+28','Blood Pact Dmg.+10','Pet: STR+7','Pet: Mag. Acc.+6',}}
---gear.merlinic_occult_hands = 
+--gear.merlinic_occult_hands 
 
 --gear_merlinic_nuke_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Conserve MP"+1','INT+11','Mag. Acc.+3','"Mag.Atk.Bns."+15',}}
 --gear_merlinic_aspir_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +10','Mag. Acc.+15',}}

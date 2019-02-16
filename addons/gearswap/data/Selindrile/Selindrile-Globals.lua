@@ -3,7 +3,6 @@
 
 --Time Related Settings
 --To determine your offset the first time, uncomment time_offset and set time_test to true,
---Also uncomment tickdelay and set to 0 to remove the delay from the clock starting.
 --Once you see delay numbers start spamming your chat, (Must be outside of town.)
 --(Also you can't have Commitment or Dedication Buffs) then Equip to ring1 and use "Capacity Ring",
 --(Not a Trizek or Calibur ring, "specifically Capacity Ring") your time_offset should appear in chat.
@@ -15,7 +14,6 @@
 time_test = false
 framerate = 75
 latency = .75
---tickdelay = 0
 
 --If this is set to true it will prevent you from casting shadows when you have more up than that spell would generate.
 conserveshadows = false
@@ -39,9 +37,11 @@ state.DisplayMode = M(true, 'Display Mode') --Set this to false if you don't wan
 --}
 
 --Options for automation.
-state.ReEquip = M(true, 'ReEquip Mode') --Set this to false if you don't want it to your current Weapon sets (sets.weapons by default) when you aren't wearing any weapons.
-state.AutoArts = M(true, 'AutoArts') --Set this to false if you don't want it to automatically try to keep up Solace/Arts.
-state.CancelStoneskin = M(true, 'Cancel Stone Skin') --Set this to false if you don't want it to automatically cancel stoneskin when you're slept.
+state.ReEquip 		  = M(true, 'ReEquip Mode')		 --Set this to false if you don't want to equip your current Weapon set when you aren't wearing any weapons.
+state.AutoArts 		  = M(true, 'AutoArts') 		 --Set this to false if you don't want to automatically try to keep up Solace/Arts.
+state.CancelStoneskin = M(true, 'Cancel Stone Skin') --Set this to false if you don't want to automatically cancel stoneskin when you're slept.
+state.SkipProcWeapons = M(true, 'Skip Proc Weapons') --Set this to false if you want to display weapon sets fulltime rather than just Aby/Voidwatch.
+state.NotifyBuffs	  = M(false, 'Notify Buffs') 	 --Set this to true if you want to notify your party when you recieve a specific buff/debuff. (List Below)
 
 --[[Global binds you may want to change.
 	Bind special characters.
@@ -73,6 +73,7 @@ send_command('bind !f10 gs c toggle Kiting') --Keeps your kiting gear on..
 send_command('bind f11 gs c set DefenseMode Magical') --Turns your magical defense set on.
 send_command('bind ^f11 gs c cycle MagicalDefenseMode') --Changes your magical defense set.
 send_command('bind @f11 gs c cycle CastingMode') --Changes your castingmode options such as magic accuracy.
+send_command('bind !f11 gs c cycle ExtraMeleeMode') --Adds another set layered on top of your engaged set.
 send_command('bind ^f12 gs c cycle ResistDefenseMode') --Changes your resist defense set.
 send_command('bind f12 gs c set DefenseMode Resist') --Turns your resist defense set on.
 send_command('bind @f12 gs c cycle IdleMode') --Changes your idle mode options such as refresh.
@@ -96,3 +97,5 @@ bayld_items = {'Tlalpoloani','Macoquetza','Camatlatia','Icoyoca','Tlamini','Suij
 'Chocaliztli Boots','Maochinoli','Xiutleato','Hatxiik','Kuakuakait','Azukinagamitsu','Atetepeyorg',
 'Kaquljaan','Ajjub Bow','Baqil Staff','Ixtab','Tamaxchi','Otomi Helm','Otomi Gloves','Kaabnax Hat',
 'Kaabnax Trousers','Ejekamal Mask','Ejekamal Boots','Quiahuiz Helm','Quiahuiz Trousers','Uk\'uxkaj Cap'}
+
+NotifyBuffs = S{'doom','petrification'}

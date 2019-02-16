@@ -1,0 +1,6 @@
+alias g15m2g1 /ma "paralyna" <p1>
+alias g15m2g2 /ma "paralyna" <p2>
+alias g15m2g3 /ma "paralyna" <p3>
+alias g15m2g4 /ma "paralyna" <p4>
+alias g15m2g5 /ma "paralyna" <p5>
+alias g15m2g6 /ma "paralyna" <p0>

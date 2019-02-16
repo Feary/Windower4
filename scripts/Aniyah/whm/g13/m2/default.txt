@@ -1,0 +1,29 @@
+alias g13m2g1 
+alias g13m2g2 
+alias g13m2g3 
+alias g13m2g4 
+alias g13m2g5 
+alias g13m2g6 
+alias g13m2g7 /ma "Esuna" <me>
+
+alias g13m2g8 
+alias g13m2g9  
+alias g13m2g10 
+alias g13m2g11 
+alias g13m2g12 
+alias g13m2g13 
+alias g13m2g14 /ma "Sacrifice" <stpc>
+ 
+alias g13m2g15 
+alias g13m2g16
+alias g13m2g17 
+alias g13m2g18 
+alias g13m2g19 
+
+alias g13m2g20 /ja "Divine Caress" <me>
+alias g13m2g21 /ja "Divine Seal" <me>
+alias g13m2g22 /ma "Erase" <stpc>
+ 
+alias g13m2g23 /ja "Afflatus Solace" <me>
+alias g13m2g24 /ja "Afflatus Misary" <me>
+

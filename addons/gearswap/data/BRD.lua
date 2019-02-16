@@ -170,9 +170,25 @@ function job_post_midcast(spell, spellMap, eventArgs)
     if spell.type == 'BardSong' then
 		if spell.targets.Enemy then
 			if sets.midcast[spell.english] then
-				equip(sets.midcast[spell.english])
+				if sets.midcast[spell.english][state.CastingMode.value] then
+					equip(sets.midcast[spell.english][state.CastingMode.value])
+				else
+					equip(sets.midcast[spell.english])
+				end
 			elseif sets.midcast[spellMap] then
-				equip(sets.midcast[spellMap])
+				if sets.midcast[spellMap][state.CastingMode.value] then
+					equip(sets.midcast[spellMap][state.CastingMode.value])
+				else
+					equip(sets.midcast[spellMap])
+				end
+			end
+			
+			if can_dual_wield() and sets.midcast.SongDebuff.DW then
+				equip(sets.midcast.SongDebuff.DW)
+			end
+		else
+			if can_dual_wield() and sets.midcast.SongEffect.DW then
+				equip(sets.midcast.SongEffect.DW)
 			end
 		end
 		

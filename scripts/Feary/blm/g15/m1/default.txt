@@ -1,0 +1,20 @@
+alias g15m1g1 
+alias g15m1g2 
+alias g15m1g3 
+alias g15m1g4 
+alias g15m1g5 
+alias g15m1g6 
+
+alias g15m1g7 
+alias g15m1g8 
+alias g15m1g9 
+alias g15m1g10 
+alias g15m1g11 
+alias g15m1g12 
+
+alias g15m1g13
+alias g15m1g14 
+alias g15m1g15 
+alias g15m1g16 
+alias g15m1g17 
+alias g15m1g18 

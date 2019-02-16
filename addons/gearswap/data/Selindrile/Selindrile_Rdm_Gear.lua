@@ -216,8 +216,8 @@ function init_gear_sets()
         back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 		
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {sub="Niobid Strap",ammo="Pemphredo Tathlum",ear1="Regal Earring"})
-	sets.midcast['Elemental Magic'].Resistant.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Resistant, {ear1="Regal Earring"})
-	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {sub="Alber Strap",ammo="Pemphredo Tathlum",ear1="Regal Earring"})
+	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {ear1="Regal Earring"})
+	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {sub="Alber Strap",ammo="Pemphredo Tathlum",ear1="Regal Earring"})
 		
 	sets.midcast.Impact = {main="Oranyan",sub="Enki Strap",ammo="Regal Gem",
 		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
@@ -366,65 +366,5 @@ function select_default_macro_book()
 		set_macro_page(2, 8)
 	else
 		set_macro_page(3, 8)
-	end
-end
-
-function user_job_self_command(commandArgs, eventArgs)
-	if commandArgs[1]:lower() == 'buffup' then
-		
-		if check_arts() then return end
-		
-		if buffactive.Composure and buffactive.Refresh and buffactive.Haste and buffactive.Regen and buffactive.Aquaveil and buffactive.Phalanx and buffactive.Stoneskin and buffactive.Blink and buffactive['INT Boost'] and buffactive.Shell and buffactive.Protect and buffactive['Shock Spikes'] and buffactive['Enthunder II'] and buffactive['Multi Strikes'] and buffactive.Barfire and buffactive.Barparalyze then
-			buffup = false
-			add_to_chat(217, 'All buffs are currently up!')
-			return
-		elseif not (player.status == 'Idle' or player.status == 'Engaged') then
-			buffup = false
-			return
-		end
-		
-		buffup = true
-		local spell_recasts = windower.ffxi.get_spell_recasts()
-
-		if not buffactive.Composure then
-			local abil_recasts = windower.ffxi.get_ability_recasts()
-			if abil_recasts[50] < latency then
-				windower.chat.input('/ja "Composure" <me>')
-			else
-				buffup = false
-				add_to_chat(123,'Abort: Composure not ready.')
-			end
-			return
-		elseif not buffactive.Refresh and spell_recasts[894] < spell_latency then
-			windower.chat.input('/ma "Refresh III" <me>')
-		elseif not buffactive.Haste and spell_recasts[511] < spell_latency then
-			windower.chat.input('/ma "Haste II" <me>')
-		elseif not buffactive.Regen and spell_recasts[110] < spell_latency then
-			windower.chat.input('/ma "Regen II" <me>')
-		elseif not buffactive.Aquaveil and spell_recasts[55] < spell_latency then
-			windower.chat.input('/ma "Aquaveil" <me>')
-		elseif not buffactive.Phalanx and spell_recasts[106] < spell_latency then
-			windower.chat.input('/ma "Phalanx" <me>')
-		elseif not buffactive.Stoneskin and spell_recasts[54] < spell_latency then
-			windower.chat.input('/ma "Stoneskin" <me>')
-		elseif not buffactive.Blink and spell_recasts[53] < spell_latency then
-			windower.chat.input('/ma "Blink" <me>')
-		elseif not buffactive['INT Boost'] and spell_recasts[490] < spell_latency then
-			windower.chat.input('/ma "Gain-INT" <me>')
-		elseif not buffactive.Shell and spell_recasts[52] < spell_latency then
-			windower.chat.input('/ma "Shell V" <me>')
-		elseif not buffactive.Protect and spell_recasts[47] < spell_latency then
-			windower.chat.input('/ma "Protect V" <me>')
-		elseif not buffactive['Shock Spikes'] and spell_recasts[251] < spell_latency then
-			windower.chat.input('/ma "Shock Spikes" <me>')
-		elseif not buffactive['Enthunder II'] and spell_recasts[316] < spell_latency then
-			windower.chat.input('/ma "Enthunder II" <me>')
-		elseif not buffactive['Multi Strikes'] and spell_recasts[895] < spell_latency then
-			windower.chat.input('/ma "Temper II" <me>')
-		elseif not buffactive.Barfire and spell_recasts[60] < spell_latency then
-			windower.chat.input('/ma "Barfire" <me>')
-		elseif not buffactive.Barparalyze and spell_recasts[74] < spell_latency then
-			windower.chat.input('/ma "Barparalyze" <me>')
-		end
 	end
 end

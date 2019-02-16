@@ -159,23 +159,29 @@ function update_job_states()
         if state[n].index then
 			if n == 'AutoBuffMode' then
 				if player.main_job == 'GEO' then
-					stateBox:append(string.format("%sAuto Buff: Indi-"..autoindi.." Geo-"..autogeo.."%s    ", clr.h, clr.n))
+					stateBox:append(string.format("%sAuto Buff: Indi-"..autoindi.." Geo-"..autogeo.."%s", clr.h, clr.n))
+					if autoentrust ~= 'None' then
+						stateBox:append(string.format("%s  Auto Entrust: "..autoentrust.."  Entrustee: "..autoentrustee.."%s", clr.h, clr.n))
+					end
 				else
-					stateBox:append(string.format("%sAuto Buff%s    ", clr.h, clr.n))
+					stateBox:append(string.format("%sAuto Buff%s", clr.h, clr.n))
 				end
+				stateBox:append(spc)
 			elseif n == 'AutoWSMode' and state.AutoWSMode.value then
 				if state.RngHelper.value then
-					stateBox:append(string.format("%sAuto WS: "..rangedautows..": "..rangedautowstp.."%s    ", clr.h, clr.n))
+					stateBox:append(string.format("%sAuto WS: "..rangedautows..": "..rangedautowstp.."%s", clr.h, clr.n))
 				else
-					stateBox:append(string.format("%sAuto WS: "..autows..": "..autowstp.."%s    ", clr.h, clr.n))
+					stateBox:append(string.format("%sAuto WS: "..autows..": "..autowstp.."%s", clr.h, clr.n))
 				end
+				stateBox:append(spc)
 			elseif n == 'AutoDefenseMode' then
 				if state.AutoDefenseMode.value then
 					if state.TankAutoDefense.value then
-						stateBox:append(string.format("%sAuto Defense: Tank%s    ", clr.h, clr.n))
+						stateBox:append(string.format("%sAuto Defense: Tank%s", clr.h, clr.n))
 					else
-						stateBox:append(string.format("%sAuto Defense%s    ", clr.h, clr.n))
+						stateBox:append(string.format("%sAuto Defense%s", clr.h, clr.n))
 					end
+					stateBox:append(spc)
 				end
 			else
 				stateBox:append(clr.h..labels[n]..clr.n)
@@ -230,7 +236,6 @@ function update_job_states()
 					else
 						stateBox:append(string.format("%s / %s%s%s", clr.n, clr.h, state.HybridMode.current, clr.n))
 					end
-					stateBox:append(spc)
 				end
 				if state.ExtraMeleeMode then
 					if state.ExtraMeleeMode.value == 'None' then
@@ -238,8 +243,8 @@ function update_job_states()
 					else
 						stateBox:append(string.format("%s / %s%s%s", clr.n, clr.h, state.ExtraMeleeMode.current, clr.n))
 					end
-					stateBox:append(spc)
 				end
+				stateBox:append(spc)
 			end
 		elseif n == 'AutoSambaMode' then
 			if state.AutoSambaMode.value ~= 'Off' then

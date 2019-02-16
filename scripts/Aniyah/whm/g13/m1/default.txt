@@ -1,0 +1,29 @@
+alias g13m1g1 
+alias g13m1g2 
+alias g13m1g3 
+alias g13m1g4 
+alias g13m1g5 
+alias g13m1g6 
+alias g13m1g7 /ja "Divine Caress" <me>
+
+alias g13m1g8 /ma "Erase"<p1>
+alias g13m1g9  /ma "Erase" <p2>
+alias g13m1g10 /ma "Erase" <p3>
+alias g13m1g11 /ma "Erase" <p3>
+alias g13m1g12 /ma "Erase" <p4>
+alias g13m1g13 /ma "Erase" <p5>
+alias g13m1g14 /ja "Divine Seal" <me>
+ 
+alias g13m1g15 /ma "Cure VI" <p1>
+alias g13m1g16 /ma "Cure VI" <p2>
+alias g13m1g17 /ma "Cure VI" <p3>
+alias g13m1g18 /ma "Cure VI" <p4>
+alias g13m1g19 /ma "Cure VI" <p5>
+
+alias g13m1g20 /ma "Regen IV" <stpc>
+alias g13m1g21 /ma "Haste" <stpc>
+alias g13m1g22 /ma "Erase" <stpc>
+ 
+alias g13m1g23 
+alias g13m1g24 
+

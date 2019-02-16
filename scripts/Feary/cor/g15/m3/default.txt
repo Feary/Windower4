@@ -1,0 +1,20 @@
+alias g15m3g1 /ja "Tactician's Roll" <stpc>
+alias g15m3g2 /ja "Miser's Roll" <stpc>
+alias g15m3g3 /ja "Samurai's Roll" <stpc>
+alias g15m3g4 /ja "Chaos Roll" <stpc>
+alias g15m3g5 /ja "Hunter's Roll" <stpc>
+alias g15m3g6 /ja "Blizter's Roll" <stpc>
+
+alias g15m3g7 /ja "Evoker's Roll" <stpc>
+alias g15m3g8 /ja "Scholar's Roll" <stpc>
+alias g15m3g9 /ja "Caster's Roll" <stpc>
+alias g15m3g10 /ja "Warlock's Roll" <stpc>
+alias g15m3g11 /ja "Wizard's Roll" <stpc>
+alias g15m3g12 /ja "Choral's Roll" <stpc>
+
+alias g15m3g13 /ja "Bolter's Roll" <stpc>
+alias g15m3g14 /ja "Dancer's Roll" <stpc>
+alias g15m3g15 
+alias g15m3g16 
+alias g15m3g17 
+alias g15m3g18

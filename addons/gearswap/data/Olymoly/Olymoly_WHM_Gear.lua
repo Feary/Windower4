@@ -152,7 +152,7 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +2 +3 
+		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		-- 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -207,7 +207,7 @@ function init_gear_sets()
 		-- 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Bliault +3 Theophany Mitts +2 +3
-		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Lebeche Ring",
+		body="Theo. Briault +2", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCuraga = {
@@ -215,7 +215,7 @@ function init_gear_sets()
 		-- Nuna Gorget +1 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
-		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +2", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		-- 
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 		
@@ -224,7 +224,7 @@ function init_gear_sets()
 		-- Nuna Gorget +1 
 		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
-		body="Heka's Kalasiris", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +2", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		-- 
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 		
@@ -486,7 +486,7 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Bolelabunga",sub="Genbu's Shield", ammo="Homiliary",
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
+		body="Theo. Briault +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",

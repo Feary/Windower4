@@ -1,0 +1,20 @@
+alias g15m1g1 //sc set Standard
+alias g15m1g2 //sc set TP
+alias g15m1g3 /ma "Utsusemi: Ni" <me>
+alias g15m1g4 //sc set PDT
+alias g15m1g5 /ja "Coumterstance" <me>
+alias g15m1g6 /ma "Utsusemi: Ichi <me>
+
+alias g15m1g7 /ja "Chakra" <me>
+alias g15m1g8 /ja "Focus" <me>
+alias g15m1g9 /ja "Perfect Counter" <me>
+alias g15m1g10 /ja "Impetus" <me>
+alias g15m1g11 /ja "Footwork" <me>
+alias g15m1g12 /ja "Formless Strikes" <me>
+
+alias g15m1g13 /ws "Ascetic's Fury" <t>
+alias g15m1g14 /ws "Asuran Fists" <t>
+alias g15m1g15 /ws "Tornado Kick" <t>
+alias g15m1g16 /ws "Dragon Kick" <t>
+alias g15m1g17 /ws "Howling Fist" <t>
+alias g15m1g18 /ws "Shoulder Tackle" <t>

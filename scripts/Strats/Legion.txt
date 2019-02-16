@@ -1,0 +1,173 @@
+input ------------------------------------------------------------------------
+wait 2; 
+input Everyone get RR. Get cheap one from signet NPC or field of valor book. 
+wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input ----Buffs (BRD)---- 
+wait 2; 
+input BRD1: Main-P2RNG(Min543) > P1Stunners(Marchx2 [Ballad3]) > P3Melee(Min32 BMad ) 
+wait 2; 
+input BRD2: Main-P3Melee(Marchx2 Min54) > P2RNG(Min2 Preludex2 Herculean) 
+wait 2; 
+input Redo your songs rotation through out the fights. Return to main when done. 
+wait 2; 
+input Make 2or3 /tell macros, 1 to each party leader for invites to sing. 
+wait 2; 
+input SV Night Trou for start of wave2 (Iron Giant) 
+wait 2; 
+input ----Buffs (COR)---- 
+wait 2; 
+input COR1: Chaos Courser 
+wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input ----Party Leader (BRD rotation)---- 
+wait 2; 
+input P1-Tank: Make a macro, to add BRD1 
+wait 2; 
+input P2-RNG: Make 2 macros, to add BRD1(your main BRD) and BRD2 
+wait 2; 
+input P3-Melee: Make 2 macros, to add BRD2(your main BRD) and BRD1 wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input ----Food---- 
+wait 2; 
+input ACC Food enough said 
+wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input ----Melee---- 
+wait 2; 
+input Bring 1 stack of Holy Water. Macro it. (Hahava and Gallu) 
+wait 2; 
+input STAY ALIVE is more important than short burst. 
+wait 2; 
+input Don't be afraid of running out if your hp drop too low. 15sec no dmg better than 5min. 
+wait 2; 
+input Use Hybrid (haste + PDT) or Full PDT gear for TP. (except when chainstun, 2nd giant) 
+wait 2; 
+input Avoid conal stack. Stand 60 degree from PLD, and not same cone with other melee. 
+wait 2; 
+input Be mindful where your mage is. They need to stay 20"+ away. 
+wait 2; 
+input WARs: Work out a tomahawk rotation amoung you. Giant/Hahava/Rex needs it. 
+wait 2; 
+input DRGs: Work out an angon rotation amoung you. wait 2; input 2hr at Botulus (3rd wave). 
+wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input ----RNG---- 
+wait 2; 
+input Decoy your PLD. Work out a decoy rotation if needed. 
+wait 2; 
+input Stay 20"+. Especially when behind PLD. 
+wait 2; 
+input Avoid taking dmg, your party have no fulltime healer. 
+wait 2; 
+input Run to PLD if you got hate and ask for cure spam. 
+wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input ----SCH/BLM/RDM (Stunners)---- 
+wait 2; 
+input Make a stun rotation with /tell macro. 
+wait 2; 
+input All TP move and spells should be stunned. Watch animation instead of log might be easier. 
+wait 2; 
+input Party2 & 3 stunners, you are double as healers for RNGs when not next on stun. 
+wait 2; 
+input RDM: Dia3, Refresh2 and cure party when not next on stun. Chainstun 2nd giant. 
+wait 2; 
+input RDM: Haste P2 Stunner (if they don't have a haster). 
+wait 2; 
+input 1 stunner (or BLM): Come with puller on pull in case open with bad TP (eg Death Propet). 
+wait 2; 
+input SCH embrava on start of wave3. 
+wait 2; 
+input RDM1 chainstun 2nd Irongiant (start of wave2), RDM2 chainstun Gallu (wave3) 
+wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input ----Kite group (PLD + heal)----
+wait 2; 
+input PLD: Kite in big loop around the 4 obstacles. 
+wait 2; 
+input PLD: Be mindful of double back mob, especially when they stop to cast or TP. 
+wait 2; 
+input PLD: AoE TP move does hurt. 
+wait 2; 
+input PLD: Tank the last mob in each wave (Harpy atm). 
+wait 2; 
+input Healer: suggested to stay close to middle for cure. Erase gravity/bind. 
+wait 2; 
+input Healer: Be mindful of drive-by nukes and TP. 
+wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input ----THF Puller---- 
+wait 2; 
+input Giant > Naraka > Mantis > Harpy 
+wait 2; 
+input Wave3: Botulus > Gallu 
+wait 2; 
+input TH, Feint, TA PLD, stay alive, (box step if have) 
+wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input ----Mob specific---- 
+wait 2; 
+input --------------------------------------- 
+wait 2; 
+input --IRONCLAD-- (high pdt) 
+wait 2; 
+input 2nd Ironclad has random hate. 
+wait 2; 
+input --------------------------------------- 
+wait 2; 
+input --NARAKA-- (high dmg, high pdt) 
+wait 2; 
+input Raksha = Good to zerg. (-50% magic) 
+wait 2; 
+input Yaksha = Bad to zerg (-50% phyiscal) 
+wait 2; 
+input Easy to remember: Yaksha as "Y weapon skill?" 
+wait 2; 
+input --------------------------------------- 
+wait 2; 
+input --MANTIS-- (high magic resis) 
+wait 2; 
+input **RESISTANT TO STUN**. Thunderstorm + Klimaform if you can. 
+wait 2; 
+input Stunner(BLM) and puller, get ready to range/stun Death propet opener. 
+wait 2; 
+input Melee, spread around more so. Death propet is conal. 
+wait 2; 
+input --------------------------------------- wait 2; 
+input --HARPY-- (very high dmg, high eva) 
+wait 2; 
+input High evasion and high dmg. Melee, get your PDT ready and run out as needed. 
+wait 2;
+input --------------------------------------- 
+wait 2; 
+input --Wave3: BOTULUS-- (Defensive NM) 
+wait 2; 
+input Tomahawk is the key. 
+wait 2; 
+input Astral Flow many times. Summon 8 avatars (~1000dmg each) at set positions through out the map. 
+wait 2; 
+input Everyone should have skin/shell/RR up for this. 
+wait 2; 
+input Zerg him down fast, and he won't use it. 
+wait 2; 
+input Slimy Proposal [30sec Charm + 30/tick dot], clear self status. 
+wait 2; 
+input -------------------------------------------------------------- 
+wait 2; 
+input --Wave3: GALLU-- (Offensive NM) 
+wait 2; 
+input Stunner, he has fast TP move, stun quickly. 
+wait 2; 
+input ------------------------------------------------------------------------ 
+wait 2; 
+input Send me /tell if you have question.

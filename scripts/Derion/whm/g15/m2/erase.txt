@@ -1,0 +1,7 @@
+alias g15m2g7 /ma "Erase" <p1>
+alias g15m2g8 /ma "Erase" <p2>
+alias g15m2g9 /ma "Erase" <p3>
+alias g15m2g10 /ma "Erase" <p4>
+alias g15m2g11 /ma "Erase" <p5>
+alias g15m2g12 /ma "Erase" <p0>
+

@@ -103,8 +103,7 @@ function init_gear_sets()
 	-- STR/MND
 	sets.precast.WS['Hexa Strike']= {  
 		head="Jhakri Coronal +2", neck="Caro Necklace", lear="Telos Earring", rear="Regal Earring",
-		-- lring="Begrudging Ring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rajas Ring", rring="Ifrit Ring +1",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Begrudging Ring", rring="Ifrit Ring +1",
 		back=gear.nuke_jse_back, waist="Prosilio Belt +1", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	sets.precast.WS['Flash Nova']= {  
 		-- Bagua Galero +2
@@ -241,7 +240,7 @@ function init_gear_sets()
 		-- Hirundinea Earring
         head="Bagua Galero +1",neck="Erra Pendant",ear1="Digni. Earring",ear2="Regal Earring",
 		-- Aspir body and hands Excelsis Ring Evanescence Ring
-        body="Geomancy Tunic +2",hands="Geo. Mitaines +2",ring1="Stikini Ring",ring2="Stikini Ring",
+        body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Stikini Ring",
         back="Perimede Cape",waist="Fucho-no-obi",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
     
     sets.midcast.Aspir = sets.midcast.Drain
@@ -249,28 +248,28 @@ function init_gear_sets()
 	sets.midcast.Stun = {main="Idris",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head="Geo. Galero +2",neck="Voltsurge Torque",ear1="Regal Earring",ear2="Enchntr. Earring +1",
         -- body="Zendik Robe",
-		body="Geomancy Tunic +2",hands="Geo. Mitaines +2",ring1="Stikini Ring",ring2="Kishar Ring",
+		body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Kishar Ring",
         back=gear.FC_jse_back,waist="Ninurta's Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
     
 	sets.midcast.Stun.Resistant = {main="Idris",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head="Geo. Galero +2",neck="Erra Pendant",ear1="Regal Earring",ear2="Enchntr. Earring +1",
 		-- body="Zendik Robe",
-		body="Geomancy Tunic +2",hands="Geo. Mitaines +2",ring1="Stikini Ring",ring2="Kishar Ring",
+		body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Kishar Ring",
 		back=gear.FC_jse_back,waist="Ninurta's Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
 	
 	sets.midcast.Impact = {main="Idris",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		head=empty, neck="Erra Pendant",ear1="Barkaro. Earring",ear2="Regal Earring",
-		body="Twilight Cloak", hands="Geo. Mitaines +2", ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Twilight Cloak", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
 
 	sets.midcast['Enfeebling Magic'] = {main="Idris",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digni. Earring", ear2="Regal Earring",
-		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", ring1="Stikini Ring", ring2="Kishar Ring",
+		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring", ring2="Kishar Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Idris",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digni. Earring", ear2="Regal Earring", 
-		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {ammo="Pemphredo Tathlum",back=gear.FC_jse_back})
@@ -353,7 +352,7 @@ function init_gear_sets()
 
 	sets.idle.PDT.Pet = {main="Idris",sub="Genbu's Shield",range="Dunna",
 		head=gear_telchine_head_Pet, neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body=gear_telchine_body_Pet, hands="Geo. Mitaines +2", ring1="Dark Ring", ring2="Defending Ring",
+		body=gear_telchine_body_Pet, hands="Geo. Mitaines +3", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.idle_jse_back, waist="Isa Belt", legs=gear_telchine_legs_Pet, feet="Bagua Sandals +1"}
 
 	--Indi sets are for when an Indi-spell is active.
@@ -371,12 +370,12 @@ function init_gear_sets()
 	-- Defense sets	
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Mallquis Saio +2",hands="Geo. Mitaines +2",ring1="Dark Ring",ring2="Defending Ring",
+		body="Mallquis Saio +2",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Azimuth Gaiters +1"}
 
 	sets.defense.MDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Mallquis Saio +2",hands="Geo. Mitaines +2",ring1="Dark Ring",ring2="Defending Ring",
+		body="Mallquis Saio +2",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
     sets.defense.MEVA = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",

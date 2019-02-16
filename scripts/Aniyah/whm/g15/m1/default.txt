@@ -1,0 +1,20 @@
+alias g15m1g1 /ma "Cure VI" <p0>
+alias g15m1g2 /ma "Cure VI" <p1>
+alias g15m1g3 /ma "Cure VI" <p2>
+alias g15m1g4 /ma "Cure VI" <p3>
+alias g15m1g5 /ma "Cure VI" <p4>
+alias g15m1g6 /ma "Cure VI" <p5>
+
+alias g15m1g7 /ma "Haste" <p1>
+alias g15m1g8 /ma "Haste" <p2>
+alias g15m1g9 /ma "Haste" <p3>
+alias g15m1g10 /ma "Haste" <p4>
+alias g15m1g11 /ma "Haste" <p5>
+alias g15m1g12 /ma "Haste" <p0>
+
+alias g15m1g13 /ma "Regen IV" <p1>
+alias g15m1g14 /ma "Regen VI" <p2>
+alias g15m1g15 /ma "Regen VI" <p3>
+alias g15m1g16 /ma "Regen VI" <p4>
+alias g15m1g17 /ma "Regen VI" <p5>
+alias g15m1g18 /ma "Regen VI" <p0>

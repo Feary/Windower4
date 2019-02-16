@@ -4,21 +4,21 @@ get Acro Leggings locker all
 get Acro Surcoat locker all 
 get Angon locker all 
 get Brigantia's Mantle locker all 
+get Emicho Haubert +1 Locker
 get Ganesha's Mala locker all 
 get Knobkierrie locker all 
 get Lancer's Torque locker all 
 get Ostro Greaves locker all 
 get Pel. Vambraces locker all 
 get Pelt. Plackart +1 locker all 
-get Pelt. Schynbalds locker all 
-get Pelt. Cuissots +1 locker all 
-get Peltast's Mezail locker all 
+get Pelt. Schynbalds + 1 locker all 
+get Pelt. Cuissots +1 locker all
 get Pratik Earring locker all
-get Ptero. Armet +1 locker all 
-get Ptero. Brais +1 locker all 
-get Ptero. Fin. Gaunt. locker all 
-get Ptero. Greaves locker all 
-get Ptero. Mail +1 locker all 
+get Ptero. Armet +3 locker all 
+get Ptero. Brais +3 locker all 
+get Ptero. Fin. G. +2 locker all 
+get Ptero. Greaves +3 locker all 
+get Ptero. Mail +3 locker all 
 get Reienkyo locker all 
 get Rhongomiant locker all 
 get Trishula locker all

@@ -4,21 +4,21 @@ put Acro Leggings locker all
 put Acro Surcoat locker all 
 put Angon locker all 
 put Brigantia's Mantle locker all 
+get Emicho Haubert +1 Locker
 put Ganesha's Mala locker all  
 put Knobkierrie locker all 
 put Lancer's Torque locker all 
 put Ostro Greaves locker all 
 put Pel. Vambraces locker all 
 put Pelt. Plackart +1 locker all 
-put Pelt. Schynbalds locker all 
+put Pelt. Schynbalds +1 locker all 
 put Pelt. Cuissots +1 locker all 
-put Peltast's Mezail locker all
 put Pratik Earring locker all 
-put Ptero. Armet +1 locker all 
-put Ptero. Brais +1 locker all 
-put Ptero. Fin. Gaunt. locker all 
-put Ptero. Greaves locker all 
-put Ptero. Mail +1 locker all 
+put Ptero. Armet +3 locker all 
+put Ptero. Brais +2 locker all 
+put Ptero. Fin. G. +2 locker all 
+put Ptero. Greaves +3 locker all 
+put Ptero. Mail +3 locker all 
 put Rhongomiant locker all 
 put Trishula locker all
 put Updraft Mantle Locker all

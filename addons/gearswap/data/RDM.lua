@@ -155,14 +155,6 @@ end
 
 function job_aftercast(spell, spellMap, eventArgs)
     if not spell.interrupted then
-	    if buffup then
-			if spell.english == 'Composure' or spell.english:endswith('Arts') or spell.english:startswith('Addendum') then
-				windower.send_command:schedule(1,'gs c buffup')
-			elseif spell.skill == 'Enhancing Magic' then
-				windower.send_command:schedule(3,'gs c buffup')
-			end
-		end
-	
         if state.UseCustomTimers.value and spell.english == 'Sleep' or spell.english == 'Sleepga' then
             send_command('@timers c "'..spell.english..' ['..spell.target.name..']" 60 down spells/00220.png')
         elseif state.UseCustomTimers.value and spell.english == 'Sleep II' then
@@ -353,33 +345,82 @@ function handle_elemental(cmdParams)
 end
 
 function job_tick()
-	if player.sub_job == 'SCH' and check_arts() then return true end
+	if check_arts() then return true end
+	if check_buff() then return true end
+	if check_buffup() then return true end
 	return false
 end
 
-function check_arts()
-	if state.AutoArts.value and not moving and not areas.Cities:contains(world.area) and player.in_combat then
-	
-		local abil_recasts = windower.ffxi.get_ability_recasts()
-		
-		if not buffactive.Composure then
-			local abil_recasts = windower.ffxi.get_ability_recasts()
-			if abil_recasts[50] < latency and player.in_combat then
-				tickdelay = (framerate * .5)
-				windower.chat.input('/ja "Composure" <me>')
+function check_arts()	
+	if buffup ~= '' or (not areas.Cities:contains(world.area) and ((state.AutoArts.value and player.in_combat) or state.AutoBuffMode.value)) then
+
+ 		local abil_recasts = windower.ffxi.get_ability_recasts()	
+
+ 		if not buffactive.Composure then	
+			local abil_recasts = windower.ffxi.get_ability_recasts()	
+			if abil_recasts[50] < latency then	
+				tickdelay = (framerate * 1)	
+				windower.chat.input('/ja "Composure" <me>')	
+				return true	
+			end	
+		end	
+
+ 		if player.sub_job == 'SCH' and not arts_active() and abil_recasts[228] < latency then	
+			send_command('@input /ja "Light Arts" <me>')	
+			tickdelay = (framerate * 1)	
+			return true	
+		end	
+
+ 	end	
+
+ 	return false	
+end
+
+function check_buff()
+	if state.AutoBuffMode.value and not areas.Cities:contains(world.area) then
+		local spell_recasts = windower.ffxi.get_spell_recasts()
+		for i in pairs(buff_spell_lists['Auto']) do
+			if not buffactive[buff_spell_lists['Auto'][i].Buff] and (buff_spell_lists['Auto'][i].When == 'Always' or (buff_spell_lists['Auto'][i].When == 'Combat' and (player.in_combat or being_attacked)) or (buff_spell_lists['Auto'][i].When == 'Engaged' and player.status == 'Engaged') or (buff_spell_lists['Auto'][i].When == 'Idle' and player.status == 'Idle') or (buff_spell_lists['Auto'][i].When == 'OutOfCombat' and not (player.in_combat or being_attacked))) and spell_recasts[buff_spell_lists['Auto'][i].SpellID] < latency and silent_can_use(buff_spell_lists['Auto'][i].SpellID) then
+				windower.chat.input('/ma "'..buff_spell_lists['Auto'][i].Name..'" <me>')
+				tickdelay = (framerate * 2)
 				return true
 			end
 		end
-
-		if not arts_active() and abil_recasts[228] < latency then
-			send_command('@input /ja "Light Arts" <me>')
-			tickdelay = (framerate * .5)
-			return true
-		end
-
+	else
+		return false
 	end
+end
+
+function check_buffup()
+	if buffup ~= '' then
+		local needsbuff = false
+		for i in pairs(buff_spell_lists[buffup]) do
+			if not buffactive[buff_spell_lists[buffup][i].Buff] and silent_can_use(buff_spell_lists[buffup][i].SpellID) then
+				needsbuff = true
+				break
+			end
+		end
 	
-	return false
+		if not needsbuff then
+			add_to_chat(217, 'All '..buffup..' buffs are up!')
+			buffup = ''
+			return false
+		end
+		
+		local spell_recasts = windower.ffxi.get_spell_recasts()
+		
+		for i in pairs(buff_spell_lists[buffup]) do
+			if not buffactive[buff_spell_lists[buffup][i].Buff] and silent_can_use(buff_spell_lists[buffup][i].SpellID) and spell_recasts[buff_spell_lists[buffup][i].SpellID] < latency then
+				windower.chat.input('/ma "'..buff_spell_lists[buffup][i].Name..'" <me>')
+				tickdelay = (framerate * 2)
+				return true
+			end
+		end
+		
+		return false
+	else
+		return false
+	end
 end
 
 function update_melee_groups()
@@ -391,3 +432,37 @@ function update_melee_groups()
 		end
 	end	
 end
+
+buff_spell_lists = {
+	Auto = {
+		{Name='Refresh III',	Buff='Refresh',		SpellID=894,	When='Always'},
+		{Name='Haste II',		Buff='Haste',		SpellID=511,	When='Always'},
+		{Name='Aurorastorm',	Buff='Aurorastorm',	SpellID=119,	When='Idle'},
+	},
+	
+	Default = {
+		{Name='Refresh III',	Buff='Refresh',		SpellID=894,	Reapply=false},
+		{Name='Haste II',		Buff='Haste',		SpellID=511,	Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Shell V',		Buff='Shell',		SpellID=52,		Reapply=false},
+		{Name='Protect V',		Buff='Protect',		SpellID=47,		Reapply=false},
+	},
+	
+	MeleeBuff = {
+		{Name='Refresh III',	Buff='Refresh',			SpellID=894,	Reapply=false},
+		{Name='Haste II',		Buff='Haste',			SpellID=511,	Reapply=false},
+		{Name='Regen II',		Buff='Regen',			SpellID=110,	Reapply=false},
+		{Name='Aquaveil',		Buff='Aquaveil',		SpellID=55,		Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',		SpellID=54,		Reapply=false},
+		{Name='Blink',			Buff='Blink',			SpellID=53,		Reapply=false},
+		{Name='Gain-INT',		Buff='INT Boost',		SpellID=490,	Reapply=false},
+		{Name='Shell V',		Buff='Shell',			SpellID=52,		Reapply=false},
+		{Name='Protect V',		Buff='Protect',			SpellID=47,		Reapply=false},
+		{Name='Shock Spikes',	Buff='Shock Spikes',	SpellID=251,	Reapply=false},
+		{Name='Enthunder II',	Buff='Enthunder II',	SpellID=316,	Reapply=false},
+		{Name='Temper II',		Buff='Multi Strikes',	SpellID=895,	Reapply=false},
+		{Name='Barfire',		Buff='Barfire',			SpellID=60,		Reapply=false},
+		{Name='Barparalyze',	Buff='Barparalyze',		SpellID=74,		Reapply=false},
+	},
+}
