@@ -6,7 +6,7 @@ function user_setup()
 	state.Weapons:options('None','Gridarvor')
 	
 	-- Avatar Ammo - Sancus Sachet +1
-	gear.avatar_ammo = {name="Eminent Sachet"}
+	gear.avatar_ammo = {name="Idaraaja"}
 	-- Staves
 	gear.perp_staff = {name="Gridarvor"}
 	gear.skill_staff = {name="Espiritus"}
@@ -55,7 +55,7 @@ function init_gear_sets()
         head=gear_telchine_head_Siphon, neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",
 		-- hands="Baayami Cuffs"
         body=gear_telchine_body_Siphon, hands="Glyphic Bracers +1", ring1="Evoker's Ring", ring2="Stikini Ring",
-        back="Conveyance Cape",waist="Kobo Obi", legs=gear_telchine_legs_Siphon,feet="Beck. Pigaches +1"}
+        back="Conveyance Cape",waist="Lucidity Sash", legs=gear_telchine_legs_Siphon,feet="Beck. Pigaches +1"}
 
     sets.precast.JA['Mana Cede'] = {hands="Beck. Bracers +1"}
 
@@ -67,7 +67,7 @@ function init_gear_sets()
         -- body="Con. Doublet +3", hands="Baayami Cuffs",
 		body="Con. Doublet +1", hands="Glyphic Bracers +1", ring1="Evoker's Ring",ring2="Stikini Ring",
         -- legs="Baayami Slops", feet="Baayami Sabots"
-		back="Conveyance Cape", waist="Kobo Obi", legs="Glyphic Spats +1", feet="Glyph. Pigaches +1"}
+		back="Conveyance Cape", waist="Lucidity Sash", legs="Glyphic Spats +1", feet="Glyph. Pigaches +1"}
 
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
 
@@ -201,27 +201,28 @@ function init_gear_sets()
 		--hands="Baayami Cuffs",
         body="Beck. Doublet +1",hands="Lamassu Mitts", ring1="Evoker's Ring",ring2="Stikini Ring",
         -- legs="Baayami Slops",feet="Baayami Sabots"
-		back="Conveyance Cape",waist="Kobo Obi",legs="Beck. Spats +1", feet="Rubeus Feet"}
+		back="Conveyance Cape",waist="Lucidity Sash",legs="Beck. Spats +1", feet="Rubeus Feet"}
 	
 	-- Pet Macc/Skill
     sets.midcast.Pet.DebuffBloodPactWard = {main="Gridarvor",sub="Vox Grip", ammo=gear.avatar_ammo,
-        head="Tali'ah Turban +1", neck="Adad Amulet", ear1="Andoaa Earring", ear2="Enmerkar Earring",
-        body="Tali'ah Manteel +1", hands="Tali'ah Gages +1",ring1="Evoker's Ring", ring2="Stikini Ring",
-        back=gear.magic_jse_back, waist="Incarnation Sash", legs="Tali'ah Sera. +1", feet="Tali'ah Crackows +1"}
+        head="Convoker's Horn +2", neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
+		-- Apogee Mitts +2 Path D
+        body="Con. Doublet +2", hands="Convo. Bracers +2",ring1="Evoker's Ring", ring2="Stikini Ring",
+        back=gear.magic_jse_back, waist="Regal Belt", legs="Convo. Spats +2", feet="Convo. Pigaches +2"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
     
 	-- Physical 
     sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
-		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring",  ear2="Lugalbanda Earring",
-		body="Con. Doublet +1", hands="Tali'ah Gages +1", ring1="Varar Ring +1",ring2="Varar Ring +1",
+		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
+		body="Con. Doublet +1", hands=gear_merlinic_physpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
 		--  feet="Apogee Pumps +1"
         back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
 		
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
         head="Apogee Crown", neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-		body="Con. Doublet +1", hands="Tali'ah Gages +1",  ring1="Varar Ring +1", ring2="Varar Ring +1",
-		-- legs="Apogee Slacks +1", feet="Convo. Pigaches +3"
+		body="Con. Doublet +1", hands=gear_merlinic_physpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
+		-- feet="Convo. Pigaches +3"
         back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
  
 	-- Magical 
@@ -232,7 +233,7 @@ function init_gear_sets()
 		--  feet="Apogee Pumps +1"
 		back=gear.magic_jse_back, waist="Regal Belt", legs="Enticer's Pants", feet=gear.magic_BP_feet}
 
-    sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Con. Pigaches +1"}
+    sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Con. Pigaches +2"}
 
 	sets.midcast.Pet['Flaming Crush'] = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
 		-- Apogee Crown +1
@@ -240,7 +241,7 @@ function init_gear_sets()
         body="Con. Doublet +1", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
 		back=gear.magic_jse_back, waist="Regal Belt", legs="Enticer's Pants", feet=gear.magic_BP_feet}
 	
-	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Con. Pigaches +1"}
+	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Con. Pigaches +2"}
    
 	sets.midcast.Pet['Mountain Buster'] = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {legs="Enticer's Pants"})
 	sets.midcast.Pet['Mountain Buster'].Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage.Acc, {legs="Enticer's Pants"})
@@ -281,7 +282,8 @@ function init_gear_sets()
     
     sets.idle.PDT = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
+        -- Udug Jacket
+		body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Regal Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {}) -- neck="Chrys. Torque"
@@ -301,34 +303,30 @@ function init_gear_sets()
     -- Glyphic Horn +1: -4
     -- Caller's Doublet +2/Glyphic Doublet: -4
     -- Evoker's Ring: -1
-    -- Con. Pigaches +1 +1: -4
+    -- Con. Pigaches +2 +1: -4
     -- total: -18
     
     -- Can make due without either the head or the body, and use +refresh items in those slots.
     
     sets.idle.Avatar = {main=gear.perp_staff, sub="Vox Grip",ammo=gear.avatar_ammo,
 		-- Nirvana Oneiros Grip 
-		-- Con. Horn +3
-        head="Inyanga Tiara +2",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
+        head="Convoker's Horn +2",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Evoker's Ring",ring2="Defending Ring",
-		back="Conveyance Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Con. Pigaches +1"}
+		back="Conveyance Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Con. Pigaches +2"}
 		
 	sets.idle.PDT.Avatar = {main=gear.perp_staff, sub="Genbu's Shield",ammo=gear.avatar_ammo,
 		-- Nirvana Oneiros Grip 
-		-- Con. Horn +3
-        head="Inyanga Tiara +2",neck="Loricate Torque +1",ar1="Handler's Earring +1",ear2="Handler's Earring",
+        head="Convoker's Horn +2",neck="Loricate Torque +1",ar1="Handler's Earring +1",ear2="Handler's Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Inyanga Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Con. Pigaches +1"}
+		back="Moonbeam Cape",waist="Regal Belt",legs="Assid. Pants +1",feet="Con. Pigaches +2"}
 
     sets.idle.Spirit = {main=gear.perp_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
-		-- Con. Horn +3
-        head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        head="Convoker's Horn +2",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Evoker's Ring",ring2="Sheltered Ring",
-		back="Conveyance Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Con. Pigaches +1"}
+		back="Conveyance Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Con. Pigaches +2"}
 		
     sets.idle.PDT.Spirit = {main="Mafic Cudgel",sub="Genbu's Shield",ammo=gear.avatar_ammo,
-        ---- Con. Horn +3
-		head="Beckoner's Horn +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
+		head="Convoker's Horn +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
         body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Inyanga Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 		
@@ -339,7 +337,7 @@ function init_gear_sets()
     sets.idle.Avatar.Engaged = {head="Beckoner's Horn +1"}
 	
 	sets.idle.Avatar.Engaged.Carbuncle = {}--hands="Asteria Mitts"
-	sets.idle.Avatar.Engaged['Cait Sith'] = {}--hands="Lamassu Mitts"
+	sets.idle.Avatar.Engaged['Cait Sith'] = {hands="Lamassu Mitts"}
         
     sets.perp = {}
     -- Caller's Bracer's halve the perp cost after other costs are accounted for.
@@ -349,7 +347,7 @@ function init_gear_sets()
     sets.perp.Day = {}
     sets.perp.Weather = {}
 	
-	sets.perp.Carbuncle = {}
+	sets.perp.Carbuncle = {}--hands="Asteria Mitts"
     sets.perp.Diabolos = {}
     sets.perp.Alexander = sets.midcast.Pet.BloodPactWard
 
@@ -359,17 +357,18 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
-        body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
+        -- Udug Jacket
+		body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape", waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.defense.MDT = {ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
-        body="Hagondes Coat +1",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
+        body="Inyanga Jubbah +2",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape", waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.defense.MEVA = {ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
-        body="Inyanga Jubbah +2",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
+        body="Inyanga Jubbah +2", hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape", waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.Kiting = {feet="Herald's Gaiters"}
@@ -385,24 +384,25 @@ function init_gear_sets()
 	sets.buff.Sleep = {neck="Sacrifice Torque"}
 
 	-- Weapons sets
-	sets.weapons.Gridarvor = {main="Gridarvor", sub="Elan Strap +1 +1"}
+	sets.weapons.Gridarvor = {main="Gridarvor", sub="Elan Strap +1"}
 	
     --------------------------------------
     -- Engaged sets
     --------------------------------------
     
     -- Normal melee group
-    sets.engaged = {main="Gridarvor",sub="Elan Strap +1 +1",ammo=gear.avatar_ammo,
-        head="Tali'ah Turban +1", neck="Shulmanu Collar", ear1="Digni. Earring",ear2="Telos Earring",
-        body="Tali'ah Manteel +1",hands="Tali'ah Gages +1",ring1="Rajas Ring",ring2="Ramuh Ring +1",
+    sets.engaged = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+        head="Convoker's Horn +2", neck="Shulmanu Collar", ear1="Digni. Earring", ear2="Telos Earring",
+        body="Convoker's Doublet +2", hands="Convo. Bracers +2",ring1="Rajas Ring",ring2="Ramuh Ring +1",
         --waist="Olseni Belt",
-		back=gear.phys_jse_back,waist="Windbuffet belt +1", legs="Assid. Pants +1",feet="Tali'ah Crackows +1"}
+		back=gear.phys_jse_back,waist="Windbuffet belt +1", legs="Convo. Spats +2",feet="Convo. Pigaches +2"}
 end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book(reset)
     if reset == 'reset' then
         -- lost pet, or tried to use pact when pet is gone
+		set_macro_page(1, 7)
     end
     
     -- Default macro set/book

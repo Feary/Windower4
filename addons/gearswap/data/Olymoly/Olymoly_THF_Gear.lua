@@ -9,7 +9,7 @@ function user_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Default','Relic','MagicWeapons','Throwing')
+	state.Weapons:options('Normal','Relic','MagicWeapons','Throwing')
 	
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 	state.AmbushMode = M(false, 'Ambush Mode')
@@ -60,7 +60,7 @@ function init_gear_sets()
 	sets.Ambush = {body="Plunderer's Vest +3"}
 
 	-- Weapons Sets
-	sets.weapons.Default = {main="Twashtar",sub="Taming Sari"}
+	sets.weapons.Normal = {main="Twashtar",sub="Taming Sari"}
 	sets.weapons.Relic = {main="Mandau",sub="Twashtar"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Throwing = {main="Twashtar",sub="Taming Sari", range="Raider's Bmrng."}

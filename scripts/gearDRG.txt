@@ -11,12 +11,12 @@ get Lancer's Torque locker all
 get Ostro Greaves locker all 
 get Pel. Vambraces locker all 
 get Pelt. Plackart +1 locker all 
-get Pelt. Schynbalds + 1 locker all 
+get Pelt. Schyn. + 1 locker all 
 get Pelt. Cuissots +1 locker all
 get Pratik Earring locker all
 get Ptero. Armet +3 locker all 
 get Ptero. Brais +3 locker all 
-get Ptero. Fin. G. +2 locker all 
+get Ptero. Fin. G. +3 locker all 
 get Ptero. Greaves +3 locker all 
 get Ptero. Mail +3 locker all 
 get Reienkyo locker all 

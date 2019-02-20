@@ -254,20 +254,20 @@ function init_gear_sets()
 	sets.precast.WS['Leg Sweep'] = set_combine(sets.precast.WS, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget", lear="Digni. Earring", rear="Moonshade Earring",
 		body="Flamma Korazin +2", hands="Flam. Manopolas +2",lring="Stikini Ring", rring="Flamma Ring",
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"})
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +2", feet="Flam. Gambieras +2"})
 	sets.precast.WS['Leg Sweep'].SomeAcc = set_combine(sets.precast.WS.Acc, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget", lear="Digni. Earring", rear="Moonshade Earring",
 		body="Flamma Korazin +2", hands="Flam. Manopolas +2", lring="Stikini Ring", rring="Flamma Ring",
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"})
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +2", feet="Flam. Gambieras +2"})
 	sets.precast.WS['Leg Sweep'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2", neck="Sanctity Necklace", lear="Digni. Earring", rear="Moonshade Earring",
 		body="Flamma Korazin +2", hands="Flam. Manopolas +2",lring="Stikini Ring", rring="Flamma Ring",
 		-- waist="Eschan Stone",
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"})
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +2", feet="Flam. Gambieras +2"})
 	sets.precast.WS['Leg Sweep'].Fodder = set_combine(sets.precast.WS.Fodder, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget", lear="Digni. Earring", rear="Moonshade Earring",
 		body="Flamma Korazin +2", hands="Flam. Manopolas +2",lring="Stikini Ring", rring="Flamma Ring",
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"})
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +2", feet="Flam. Gambieras +2"})
 	
 	-- Sets to return to when not performing an action.
 	
@@ -342,24 +342,24 @@ function init_gear_sets()
 	sets.engaged = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Ganesha's Mala",ear1="Sherida Earring",ear2="Brutal Earring",
 		body="Pelt. Plackart +1", hands=gear_acro_hands_stp, ring1="Petrov Ring",ring2="Niqmaddu Ring",
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2", feet="Flam. Gambieras +2"}
     sets.engaged.SomeAcc = {ammo="Ginsen",
 		-- neck="Combatant Torque
 		head="Flam. Zucchetto +2",neck="Shulmanu Collar",ear1="Sherida Earring",ear2="Cessance Earring",
 		body="Pelt. Plackart +1", hands=gear_acro_hands_stp, ring1="Regal Ring",ring2="Niqmaddu Ring",
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2", feet="Flam. Gambieras +2"}
 	sets.engaged.Acc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Shulmanu Collar", ear1="Sherida Earring",ear2="Cessance Earring",
 		body="Pelt. Plackart +1",hands=gear_acro_hands_stp,ring1="Regal Ring",ring2="Niqmaddu Ring",
-		back=gear.da_jse_back, waist="Ioskeha Belt +1",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1",legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.FullAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Shulmanu Collar",ear1="Sherida Earring",ear2="Cessance Earring",
 		body="Pelt. Plackart +1", hands="Flam. Manopolas +2", ring1="Ramuh Ring +1", ring2="Niqmaddu Ring",
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Fodder = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Ganesha's Mala",ear1="Sherida Earring",ear2="Cessance Earring",
 		body="Pelt. Plackart +1", hands=gear_acro_hands_stp, ring1="Petrov Ring",ring2="Niqmaddu Ring",
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
 	
 	sets.engaged.AM = {}
     sets.engaged.AM.SomeAcc = {}
@@ -452,24 +452,24 @@ function init_gear_sets()
 		-- 
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		--
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Ryunohige.SomeAcc = {ammo="Ginsen",
 		-- neck="Combatant Torque
 		head="Flam. Zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Rajas Ring",ring2="Niqmaddu Ring",
-		back=gear.stp_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1", feet="Flam. Gambieras +2"}
+		back=gear.stp_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2", feet="Flam. Gambieras +2"}
 	sets.engaged.Ryunohige.Acc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Shulmanu Collar", ear1="Tripudio Earring",ear2="Cessance Earring",
 		body="Pelt. Plackart +1",hands="Sulev. Gauntlets +2",ring1="Rajas Ring",ring2="Niqmaddu Ring",
-		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Ryunohige.FullAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Shulmanu Collar",ear1="Tripudio Earring",ear2="Cessance Earring",
 		body="Pelt. Plackart +1", hands="Flam. Manopolas +2", ring1="Ramuh Ring +1", ring2="Niqmaddu Ring",
-		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Ryunohige.Fodder = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Ganesha's Mala",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Rajas Ring",ring2="Niqmaddu Ring",
-		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back,waist="Ioskeha Belt +1",legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
 	
 	sets.engaged.Ryunohige.AM = {}
     sets.engaged.Ryunohige.AM.SomeAcc = {}
@@ -495,31 +495,31 @@ function init_gear_sets()
 		-- Dagon Beast. DBL attack Body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		--  DBL attack legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Rhongomiant.SomeAcc = {ammo="Focal Orb",
 		head="Flam. Zucchetto +2",neck="Ganesha Mala",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Dagon Beast. DBL attack Body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		--  DBL attack legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
 	sets.engaged.Rhongomiant.Acc = {ammo="Focal Orb",
 		head="Flam. Zucchetto +2",neck="Ganesha Mala",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Dagon Beast. DBL attack Body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		--  DBL attack legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Rhongomiant.FullAcc = {ammo="Focal Orb",
 		head="Flam. Zucchetto +2",neck="Ganesha Mala",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Dagon Beast. DBL attack Body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		--  DBL attack legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Rhongomiant.Fodder = {ammo="Focal Orb",
 		head="Flam. Zucchetto +2",neck="Ganesha Mala",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Dagon Beast. DBL attack Body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		--  DBL attack legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
 	
 	sets.engaged.Rhongomiant.AM = {}
     sets.engaged.Rhongomiant.AM.SomeAcc = {}
@@ -545,31 +545,31 @@ function init_gear_sets()
 		-- gear_valorous_wsd_body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		-- legs=gear_valorous_stp_legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Gungnir.SomeAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- gear_valorous_wsd_body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		-- legs=gear_valorous_stp_legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
 	sets.engaged.Gungnir.Acc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- gear_valorous_wsd_body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		-- legs=gear_valorous_stp_legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Gungnir.FullAcc = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- gear_valorous_wsd_body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		-- legs=gear_valorous_stp_legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Gungnir.Fodder = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- gear_valorous_wsd_body
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		-- legs=gear_valorous_stp_legs
-		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
 	
 	sets.engaged.Gungnir.AM = {}
     sets.engaged.Gungnir.AM.SomeAcc = {}

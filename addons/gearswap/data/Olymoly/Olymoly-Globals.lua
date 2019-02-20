@@ -10,8 +10,8 @@
 --If the number spammed in your chat matches up with the seconds remaining on
 --your Capacity Ring's recast, your time_offset is correct, set time_test to false and reload.
 
---time_offset = 0
---time_test = false
+time_offset = -36007
+time_test = false
 --framerate = 75
 --latency = .75
 

@@ -15,8 +15,8 @@ put Pelt. Schynbalds +1 locker all
 put Pelt. Cuissots +1 locker all 
 put Pratik Earring locker all 
 put Ptero. Armet +3 locker all 
-put Ptero. Brais +2 locker all 
-put Ptero. Fin. G. +2 locker all 
+put Ptero. Brais +3 locker all 
+put Ptero. Fin. G. +3 locker all 
 put Ptero. Greaves +3 locker all 
 put Ptero. Mail +3 locker all 
 put Rhongomiant locker all 

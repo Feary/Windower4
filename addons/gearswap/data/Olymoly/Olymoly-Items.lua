@@ -71,7 +71,7 @@ gear_telchine_feet_Regen = { name="Telchine Pigaches",  augments={'"Regen" poten
 -- Head 1/1
 -- Body 1/1
 -- Hands 2/2
---          Legs 1/2
+-- Legs 1/2
 -- Feet 1/1
 
 -- Head 
@@ -182,8 +182,8 @@ gear_herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23'
 --gear.merlinic_occult_body
 
 --gear_merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'Attack+17','Pet: INT+5','"Refresh"+2','Accuracy+11 Attack+11',}}
---gear_merlinic_magpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc.+27','Blood Pact Dmg.+10','Pet: DEX+8','Pet: "Mag.Atk.Bns."+13',}}
---gear_merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Accuracy+28 Pet: Rng. Acc.+28','Blood Pact Dmg.+10','Pet: STR+7','Pet: Mag. Acc.+6',}}
+gear_merlinic_magpact_hands = {name="Merlinic Dastanas",augments={'Pet: Accuracy+12 Pet: Rng. Acc.+12','Blood Pact Dmg.+9','Pet: Mag. Acc.+5','Pet: "Mag.Atk.Bns."+14',}}
+gear_merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Accuracy+12 Pet: Rng. Acc.+12','Blood Pact Dmg.+9','Pet: Mag. Acc.+5','Pet: "Mag.Atk.Bns."+14',}}
 --gear.merlinic_occult_hands 
 
 --gear_merlinic_nuke_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Conserve MP"+1','INT+11','Mag. Acc.+3','"Mag.Atk.Bns."+15',}}

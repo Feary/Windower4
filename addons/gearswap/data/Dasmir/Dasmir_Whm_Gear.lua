@@ -417,7 +417,7 @@ function init_gear_sets()
 
 	sets.midcast['Enfeebling Magic'] = {
 		-- Grioavolr Enki Strap 
-		main={name="Arasy Staff", priority=2}, sub={name="", priority=1}, ammo="Pemphredo Tathlum",
+		main={name="Arasy Staff", priority=2}, sub={name="Enki Strap", priority=1}, ammo="Pemphredo Tathlum",
 		-- Chironic Hat  lear="Digni. Earring", 
 		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -425,8 +425,8 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {
-		-- Grioavolr Enki Strap Pemphredo Tathlum
-		main={name="Arasy Staff", priority=2}, sub={name="", priority=1},
+		-- Grioavolr Pemphredo Tathlum
+		main={name="Arasy Staff", priority=2}, sub={name="Enki Strap", priority=1},
 		-- Chironic Hat Digni. Earring 
 		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -451,17 +451,22 @@ function init_gear_sets()
     -- Sets to return to when not performing an action.
     -- Resting sets
 	sets.resting = {main="Boonwell Staff",
-		head="Inyanga Tiara +2", neck="Eidolon Pendant", lear="Merman's Earring", rear="Merman's Earring",
-		body="Ebers Bliaud +1", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
+		head="Befouled Crown", neck="Eidolon Pendant", lear="Merman's Earring", rear="Merman's Earring",
+		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back="Felicitas Cape", waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Bolelabunga", priority=2}, sub={name="Genbu's Shield", priority=1},		
-		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+		head="Befouled Crown", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back=gear.Cure_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
+		back=gear.Cure_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+	
+	sets.idle.MDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.Cure_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}

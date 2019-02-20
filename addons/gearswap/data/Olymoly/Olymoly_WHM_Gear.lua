@@ -485,12 +485,11 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Bolelabunga",sub="Genbu's Shield", ammo="Homiliary",
-		head="Inyanga Tiara +2", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
+		head="Befouled Crown", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Theo. Briault +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		-- Befouled Crown
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Genmei Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
@@ -500,7 +499,6 @@ function init_gear_sets()
     sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
 
 	sets.idle.Weak = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		-- Befouled Crown
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
@@ -509,7 +507,6 @@ function init_gear_sets()
 
     -- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
-		-- Befouled Crown
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Genmei Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",

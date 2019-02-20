@@ -1,6 +1,5 @@
 get Adhemar Bonnet +1 sack all 
 get Adhemar Bonnet sack all 
-get Adhemar Gamashes safe2 all 
 get Adhemar Jacket +1 sack all 
 get Adhemar Kecks +1 safe2 all 
 get Adhemar Wrist. +1 sack all 
