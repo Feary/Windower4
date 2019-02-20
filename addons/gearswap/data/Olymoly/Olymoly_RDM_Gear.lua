@@ -184,7 +184,7 @@ function init_gear_sets()
 		--waist="Gishdubar Sash"
 		}
 	sets.Self_Refresh = {back="Grapevine Cape",}--waist="Gishdubar Sash"
-	sets.Self_Phalanx = {
+	sets.midcast.Phalanx = {
 		-- Incanter's Torque"
 		head=gear_taeon_head_Phalanx, neck="Colossus's Torque", ear1="Andoaa Earring", ear2="Gifted Earring", }
 		-- Stikini Ring +1 Stikini Ring +1
@@ -209,6 +209,15 @@ function init_gear_sets()
 		-- Atrophy Gloves +3 Stikini Ring +1 Stikini Ring +1
 		body="Lethargy Sayon", hands=gear_telchine_hands_Duration, ring1="Stikini Ring", ring2="Stikini Ring",
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Leth. Fuseau", feet="Leth. Houseaux"}
+	
+	-- Phalanx Potency
+	sets.midcast.Phalanx = {
+		-- Incanter's Torque"
+		head=gear_taeon_head_Phalanx, neck="Colossus's Torque", ear1="Andoaa Earring", ear2="Gifted Earring", }
+		-- Stikini Ring +1 Stikini Ring +1
+		body=gear_telchine_body_Duration, hands=gear_taeon_hands_Phalanx, ring1="Stikini Ring", ring2="Stikini Ring",
+		-- 
+		back="Ghostfyre Cape", waist="Olympus Sash", legs=gear_taeon_legs_Phalanx, feet=gear_taeon_feet_Phalanx}
 		
 	-- Enhancing Magic Skill set
 	sets.midcast.['Temper'] = {ammo="Hasty Pinion +1",
