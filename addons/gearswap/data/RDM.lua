@@ -359,7 +359,7 @@ function check_arts()
  		if not buffactive.Composure then	
 			local abil_recasts = windower.ffxi.get_ability_recasts()	
 			if abil_recasts[50] < latency then	
-				tickdelay = (framerate * 1)	
+				tickdelay = (framerate * 1.1)	
 				windower.chat.input('/ja "Composure" <me>')	
 				return true	
 			end	
@@ -367,7 +367,7 @@ function check_arts()
 
  		if player.sub_job == 'SCH' and not arts_active() and abil_recasts[228] < latency then	
 			send_command('@input /ja "Light Arts" <me>')	
-			tickdelay = (framerate * 1)	
+			tickdelay = (framerate * 1.1)
 			return true	
 		end	
 
@@ -446,6 +446,18 @@ buff_spell_lists = {
 		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		Reapply=false},
 		{Name='Shell V',		Buff='Shell',		SpellID=52,		Reapply=false},
 		{Name='Protect V',		Buff='Protect',		SpellID=47,		Reapply=false},
+	},
+
+	MageBuff = {
+		{Name='Refresh III',	Buff='Refresh',			SpellID=894,	Reapply=false},
+		{Name='Haste II',		Buff='Haste',			SpellID=511,	Reapply=false},
+		{Name='Aquaveil',		Buff='Aquaveil',		SpellID=55,		Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',		SpellID=54,		Reapply=false},
+		{Name='Blink',			Buff='Blink',			SpellID=53,		Reapply=false},
+		{Name='Gain-INT',		Buff='INT Boost',		SpellID=490,	Reapply=false},
+		{Name='Shell V',		Buff='Shell',			SpellID=52,		Reapply=false},
+		{Name='Protect V',		Buff='Protect',			SpellID=47,		Reapply=false},
 	},
 	
 	MeleeBuff = {

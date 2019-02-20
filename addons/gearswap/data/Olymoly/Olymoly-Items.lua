@@ -21,10 +21,12 @@ sets.precast.Item['Holy Water'] = {}
 
 -- Head 
 gear_taeon_head_Snapshot = {name="Taeon Chapeau", augments={'Accuracy+19 Attack+19','"Snapshot"+5','"Snapshot"+5',}}
+gear_taeon_head_Phalanx = {name="Taeon Chapeau", augments={'Accuracy+19 Attack+19','"Snapshot"+5','"Snapshot"+5',}}
 
 -- Body 
 gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'Accuracy+15 Attack+15','"Fast Cast"+4','Phalanx +3',}}
 gear_taeon_body_Phalanx = {name="Taeon Tabard", augments={'Accuracy+15 Attack+15','"Fast Cast"+4','Phalanx +3',}}
+
 gear_taeon_hands_Phalanx = {name="Taeon Gloves", augments={'Accuracy+16 Attack+16','"Triple Atk."+2','Phalanx +3',}}
 -- Duskdim
 gear_taeon_legs_Phalanx = {name="Taeon Tights", augments={'Accuracy+25','"Dual Wield"+5','Phalanx +3',}}
@@ -147,6 +149,8 @@ gear_gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+
 
 --gear_chironic_enfeeble_hands = {name="Chironic Gloves",augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','MND+10','Mag. Acc.+15',}}
 --gear_chironic_refresh_hands = {name="Chironic Gloves",augments={'Phys. dmg. taken -1%','STR+10','"Refresh"+1','Accuracy+12 Attack+12','Mag. Acc.+12 "Mag.Atk.Bns."+12',}}
+
+gear_chironic_macc_legs = {name="Chironic Hose"}
 
 --gear_chironic_treasure_feet = {name="Chironic Slippers",augments={'"Occult Acumen"+8','MND+7','"Treasure Hunter"+2',}}
 --gear_chironic_nuke_feet = {name="Chironic Slippers",augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +10','CHR+6','"Mag.Atk.Bns."+15',}}

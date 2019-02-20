@@ -111,22 +111,22 @@ function init_gear_sets()
 
     sets.midcast.Cure = {main="Serenity",sub="Curatio Grip",ammo="Hasty Pinion +1",
         head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Mendi. Earring",
-        body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Sirona's Ring",
+        body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Menelaus's Ring",
         back="Tempered Cape +1",waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Kaykaus Boots"}
 		
     sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Curatio Grip",ammo="Hasty Pinion +1",
         head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Mendi. Earring",
-        body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Sirona's Ring",
+        body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Menelaus's Ring",
         back="Twilight Cape",waist="Hachirin-no-Obi",legs="Carmine Cuisses +1",feet="Kaykaus Boots"}
 		
 		--Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {main="Serenity",sub="Curatio Grip",ammo="Hasty Pinion +1",
         head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Mendi. Earring",
-        body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Sirona's Ring",
+        body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Menelaus's Ring",
         back="Twilight Cape",waist="Hachirin-no-Obi",legs="Carmine Cuisses +1",feet="Kaykaus Boots"}
 		
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {neck="Debilis Medallion",hands="Hieros Mittens",
-		ring1="Haoma's Ring",ring2="Haoma's Ring",waist="Witful Belt",feet="Vanya Clogs"})
+		ring1="Haoma's Ring",ring2="Menelaus's Ring",waist="Witful Belt",feet="Vanya Clogs"})
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Oranyan",sub="Clemency Grip"})
 		
@@ -135,16 +135,27 @@ function init_gear_sets()
 	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
 
+	-- Enhancing Magic Duration
 	sets.midcast['Enhancing Magic'] = {main="Colada",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
 		body="Telchine Chas.",hands="Atrophy Gloves +3",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Sucellos's Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Leth. Houseaux +1"}
 
-	--Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
+	-- Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
 	sets.buff.ComposureOther = {head="Leth. Chappel +1",
 		body="Lethargy Sayon +1",
 		legs="Leth. Fuseau +1",feet="Leth. Houseaux +1"}
-		
+	
+	-- Enhancing Magic Skill
+	sets.midcast.['Temper'] = {main="Colada",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
+		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
+		body="Telchine Chas.",hands="Atrophy Gloves +3",ring1="Stikini Ring",ring2="Stikini Ring",
+		back="Sucellos's Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Leth. Houseaux +1"}
+	sets.midcast.['Temper II'] = {main="Colada",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
+		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
+		body="Telchine Chas.",hands="Atrophy Gloves +3",ring1="Stikini Ring",ring2="Stikini Ring",
+		back="Sucellos's Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Leth. Houseaux +1"}
+	
 	--Red Mage enhancing sets are handled in a different way from most, layered on due to the way Composure works
 	--Don't set combine a full set with these spells, they should layer on Enhancing Set > Composure (If Applicable) > Spell
 	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard +3",legs="Leth. Fuseau +1"}

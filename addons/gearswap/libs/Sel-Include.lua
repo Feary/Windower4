@@ -92,7 +92,7 @@ function init_include()
 	state.UseCustomTimers 	  = M(true, 'Use Custom Timers')
 	state.CancelStoneskin	  = M(true, 'Auto Cancel Stoneskin')
 	state.BlockMidaction	  = M(true, 'Block Midaction')
-	state.RelicAftermath	  = M(true, 'Maintain Relic Aftermath')
+	state.MaintainAftermath	  = M(true, 'Maintain Aftermath')
 	state.Contradance		  = M(true, 'Auto Contradance Mode')
 	state.ElementalWheel 	  = M(false, 'Elemental Wheel')
 	state.MaintainDefense 	  = M(false, 'Maintain Defense')
@@ -265,7 +265,7 @@ function init_include()
 	-- Controls for handling our autmatic functions.
 	
 	if tickdelay ~= 0 then
-		tickdelay = (framerate * 20)
+		tickdelay = (framerate * 3)
 	end
 	
 	if spell_latency == nil then
@@ -291,6 +291,16 @@ function init_include()
 	else
 		send_command('@wait 3;gs c weapons Default')
 	end
+	
+	-- Event register to watch incoming items.
+	windower.register_event('add item', function(bag, index, id, count)
+		if id == 4146 and world.area == "Ghoyu's Reverie" then --4146 Revitalizer ID
+			useItem = true
+			useItemName = 'Revitalizer'
+			useItemSlot = 'item'
+			add_to_chat(217,"Revitalizer added to inventory, using, /heal to cancel.")
+		end
+	end)
 	
 	-- Event register to make time variables track.
 	windower.register_event('time change', time_change)
@@ -332,7 +342,7 @@ function init_include()
 
 	-- Event register to prevent auto-modes from spamming after zoning.
 	windower.register_event('zone change', function()
-		tickdelay = (framerate * 20)
+		tickdelay = (framerate * 10)
 		state.AutoBuffMode:reset()
 		state.AutoSubMode:reset()
 		state.AutoTrustMode:reset()
@@ -842,6 +852,9 @@ end
 function extra_default_filtered_action(spell, eventArgs)
 	if spell.action_type == 'Item' and world.area == "Mog Garden" then
 		return
+	elseif not silent_can_use(spell.recast_id) and stepdown(spell, eventArgs) then
+		cancel_spell()
+		return
 	elseif not can_use(spell) then
 		cancel_spell()
 		eventArgs.cancel = true
@@ -864,40 +877,36 @@ function default_precast(spell, spellMap, eventArgs)
 	end
 	
 	if spell.action_type == 'Magic' then
-		tickdelay = (framerate * 3)
+		if tickdelay < (framerate * 3) then tickdelay = (framerate * 3) end
 		next_cast = os.clock() + 3.5 - latency
 	elseif spell.type == 'WeaponSkill' then
-		tickdelay = (framerate * 2.4)
+		if tickdelay < (framerate * 2.8) then tickdelay = (framerate * 2.8) end
 		next_cast = os.clock() + 2.5 - latency
-	elseif 	spell.action_type == 'Item' then
-		tickdelay = (framerate * 1.5)
+	elseif spell.action_type == 'Ability' then
+		if tickdelay < (framerate * .75) then tickdelay = (framerate * .75) end
+		next_cast = os.clock() + .75 - latency
+	elseif spell.action_type == 'Item' then
+		if tickdelay < (framerate * 1.5) then tickdelay = (framerate * 1.5) end
 		next_cast = os.clock() + 1.35 - latency
 	elseif spell.action_type == 'Ranged Attack' then
-		tickdelay = (framerate * 1.4)
+		if tickdelay < (framerate * 1.3) then tickdelay = (framerate * 1.3) end
 		next_cast = os.clock() + 1.05 - latency
+	end
+	
+	if areas.LaggyZones:contains(world.area) then
+		next_cast = next_cast - .25
 	end
 end
 
 function default_post_precast(spell, spellMap, eventArgs)
 	if not eventArgs.handled then
-		if spell.type == 'Waltz' then
-			if spell.target.type == 'SELF' and sets.Self_Waltz and not (spell.english == "Healing Waltz" or spell.english == "Divine Waltz" or spell.english == "Divine Waltz II") then
-				equip(sets.Self_Waltz)
-			end
-		
-		elseif spell.action_type == 'Magic' then
+		if spell.action_type == 'Magic' then
 			if spell.english:startswith('Utsusemi') then
 				if sets.precast.FC.Shadows and ((spell.english == 'Utsusemi: Ni' and player.main_job == 'NIN' and lastshadow == 'Utsusemi: San') or (spell.english == 'Utsusemi: Ichi' and lastshadow ~= 'Utsusemi: Ichi')) then
 					equip(sets.precast.FC.Shadows)
 				end
 			end
 			
-		elseif spell.type == 'JobAbility' then
-		
-			if state.TreasureMode.value ~= 'None' and spell.target.type == 'MONSTER' and not info.tagged_mobs[spell.target.id] then
-				equip(sets.TreasureHunter)
-			end
-
 		elseif spell.type == 'WeaponSkill' then
 			
 			if state.WeaponskillMode.value ~= 'Proc' and elemental_obi_weaponskills:contains(spell.name) and spell.element and (spell.element == world.weather_element or spell.element == world.day_element) and item_available('Hachirin-no-Obi') then
@@ -917,6 +926,15 @@ function default_post_precast(spell, spellMap, eventArgs)
 			end
 			
 			if state.TreasureMode.value ~= 'None' and not info.tagged_mobs[spell.target.id] then
+				equip(sets.TreasureHunter)
+			end
+			
+		elseif spell.action_type == 'Ability' then
+			if spell.type == 'Waltz' then
+				if spell.target.type == 'SELF' and sets.Self_Waltz and not (spell.english == "Healing Waltz" or spell.english == "Divine Waltz" or spell.english == "Divine Waltz II") then
+					equip(sets.Self_Waltz)
+				end
+			elseif state.TreasureMode.value ~= 'None' and spell.target.type == 'MONSTER' and not info.tagged_mobs[spell.target.id] then
 				equip(sets.TreasureHunter)
 			end
 		end
@@ -1046,27 +1064,31 @@ end
 function default_aftercast(spell, spellMap, eventArgs)
 	if spell.interrupted then
 		if spell.type:contains('Magic') then
-			tickdelay = (framerate * 2.5)
+			if tickdelay < (framerate * 2.5) then tickdelay = (framerate * 2.5) end
 			next_cast = os.clock() + 3 - latency
 		else
-			tickdelay = (framerate * 1)
+			if tickdelay < (framerate * 1) then tickdelay = (framerate * 1) end
 			next_cast = os.clock() + 1.75 - latency
 		end
 	elseif spell.action_type == 'Magic' then
-		tickdelay = (framerate * 2.95)
+		if tickdelay < (framerate * 2.95) then tickdelay = (framerate * 2.95) end
 		next_cast = os.clock() + 3.45 - latency
-	elseif spell.action_type == 'Ability' then
-		tickdelay = (framerate * .5)
-		next_cast = os.clock() + .85 - latency
 	elseif spell.type == 'WeaponSkill' then
-		tickdelay = (framerate * 1.9)
+		if tickdelay < (framerate * 2.7) then tickdelay = (framerate * 2.7) end
 		next_cast = os.clock() + 2 - latency
+	elseif spell.action_type == 'Ability' then
+		if tickdelay < (framerate * .75) then tickdelay = (framerate * .75) end
+		next_cast = os.clock() + .75 - latency
 	elseif 	spell.action_type == 'Item' then
-		tickdelay = (framerate * .5)
+		if tickdelay < (framerate * .5) then tickdelay = (framerate * .5) end
 		next_cast = os.clock() + .85 - latency
 	elseif spell.action_type == 'Ranged Attack' then
-		tickdelay = (framerate * 1.1)
+		if tickdelay < (framerate * 1) then tickdelay = (framerate * 1) end
 		next_cast = os.clock() + .85 - latency
+	end
+	
+	if areas.LaggyZones:contains(world.area) then
+		next_cast = next_cast - .25
 	end
 	
 	if not spell.interrupted then
@@ -1154,7 +1176,6 @@ function filter_precast(spell, spellMap, eventArgs)
 		if check_amnesia(spell, spellMap, eventArgs) then return end
 		if check_abilities(spell, spellMap, eventArgs) then return end
 	end
-
 	if check_recast(spell, spellMap, eventArgs) then return end
 end
 
@@ -1275,9 +1296,8 @@ function handle_equipping_gear(playerStatus, petStatus)
     end
 
 	if state.ReEquip.value and state.Weapons.value ~= 'None' then
-		if player.equipment.main == 'empty' and player.equipment.sub == 'empty' then
-			local commandArgs = {}
-			handle_weapons(commandArgs)
+		if player.equipment.main == 'empty' or player.equipment.sub == 'empty' then
+			handle_weapons()
 		end
 	end
 
@@ -2082,12 +2102,15 @@ function state_change(stateField, newValue, oldValue)
 				state.Weapons:cycle()
 				if startindex == state.Weapons.index then break end
 			end
-			handle_weapons({})
+			handle_weapons()
 		elseif sets.weapons[newValue] then
 			equip_weaponset(newValue)
 		elseif newValue == 'None' then
 			enable('main','sub','range','ammo')
 		else
+			if not sets.weapons[newValue] then
+				add_to_chat(123,"sets.weapons."..newValue.." does not exist, resetting weapon state.")
+			end
 			state.Weapons:reset()
 			if sets.weapons[state.Weapons.value] then
 				equip_weaponset(state.Weapons.value)
@@ -2121,8 +2144,6 @@ function state_change(stateField, newValue, oldValue)
 		else
 			send_command('wait .001;gs c DisplayElement')
 		end
-	elseif stateField:contains('Auto') then
-		tickdelay = 0
 	elseif stateField == 'Capacity' and newValue == 'false' and cprings:contains(player.equipment.left_ring) then
             enable("left_ring")
 	end
