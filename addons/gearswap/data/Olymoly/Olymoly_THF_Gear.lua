@@ -187,7 +187,6 @@ function init_gear_sets()
 	sets.precast.WS["Rudra's Storm"].TA = set_combine(sets.precast.WS["Rudra's Storm"].Fodder, {ammo="Yetshila",
         -- head="Pillager's Bonnet +3", neck="Assassin's Neck +2", 
 		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
-		-- Body="", 
         body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"})
     

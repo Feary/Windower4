@@ -307,7 +307,6 @@ function init_gear_sets()
 		back=gear.FC_jse_back,waist="Flax Sash",legs="Assid. Pants +1",feet=gear.merlinic_refresh_feet}
 
     -- Defense sets
-
     sets.defense.PDT = {main="Terra's Staff",sub="Umbra Strap",ammo="Staunch Tathlum",
         head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
         body="Mallquis Saio +2",hands="Hagondes Cuffs +1",ring1="Dark Ring",ring2="Defending Ring",

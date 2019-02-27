@@ -1,0 +1,23 @@
+put Amalric Gages case all
+put Amalric Nails case all
+put Amalric Slops case all
+put Arasy Staff case all
+put Carm. Sc. Mail +1 safe2 all
+put Ghostfyre Cape case all
+put Hagondes Coat +1 case all
+put Helios Boots case all
+put Helios Gloves case all
+put Jhakri Cuffs +2 case all
+put Jhakri Pigaches +2 case all
+put Jhakri Robe +2 case all
+put Jhakri Slops +2 case all
+put Mandau sack all
+put Medium's Sabots case all
+put Merlinic Crackows case all
+put Merlinic Hood case all
+put Mizu. Kubikazari case all
+put Regal Gem case all
+put Rubicundity case all
+put Skaoi Boots case all
+put Sucellos's Cape case all
+put Vampirism sack all

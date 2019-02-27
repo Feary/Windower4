@@ -150,7 +150,7 @@ gear_gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+
 --gear_chironic_enfeeble_hands = {name="Chironic Gloves",augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','MND+10','Mag. Acc.+15',}}
 --gear_chironic_refresh_hands = {name="Chironic Gloves",augments={'Phys. dmg. taken -1%','STR+10','"Refresh"+1','Accuracy+12 Attack+12','Mag. Acc.+12 "Mag.Atk.Bns."+12',}}
 
-gear_chironic_macc_legs = {name="Chironic Hose"}
+gear_chironic_macc_legs = {name="Chironic Hose", augments={'Mag. Acc.+24','"Cure" potency +11%','"Mag.Atk.Bns."+4',}}
 
 --gear_chironic_treasure_feet = {name="Chironic Slippers",augments={'"Occult Acumen"+8','MND+7','"Treasure Hunter"+2',}}
 --gear_chironic_nuke_feet = {name="Chironic Slippers",augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +10','CHR+6','"Mag.Atk.Bns."+15',}}
@@ -186,9 +186,9 @@ gear_herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23'
 --gear.merlinic_occult_body
 
 --gear_merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'Attack+17','Pet: INT+5','"Refresh"+2','Accuracy+11 Attack+11',}}
-gear_merlinic_magpact_hands = {name="Merlinic Dastanas",augments={'Pet: Accuracy+12 Pet: Rng. Acc.+12','Blood Pact Dmg.+9','Pet: Mag. Acc.+5','Pet: "Mag.Atk.Bns."+14',}}
-gear_merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Accuracy+12 Pet: Rng. Acc.+12','Blood Pact Dmg.+9','Pet: Mag. Acc.+5','Pet: "Mag.Atk.Bns."+14',}}
---gear.merlinic_occult_hands 
+gear_merlinic_magpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc.+21 Pet: "Mag.Atk.Bns."+21','Blood Pact Dmg.+10','Pet: DEX+4',}}
+gear_merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc.+25','Blood Pact Dmg.+10','Pet: STR+9','Pet: "Mag.Atk.Bns."+14',}}
+--gear.merlinic_occult_hands = {}
 
 --gear_merlinic_nuke_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Conserve MP"+1','INT+11','Mag. Acc.+3','"Mag.Atk.Bns."+15',}}
 --gear_merlinic_aspir_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +10','Mag. Acc.+15',}}

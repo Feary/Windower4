@@ -194,13 +194,13 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 		
 	sets.midcast.Stun = {--ammo="Hasty Pinion +1",
-		-- neck="Eddy Necklace", lear="Enchntr. Earring +1",
+		-- lear="Enchntr. Earring +1",
 		head="Geo. Galero +2", neck="Voltsurge Necklace", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
 
 	sets.midcast.Stun.Resistant = {--ammo="Hasty Pinion +1",
-		-- neck="Eddy Necklace", lear="Enchntr. Earring +1",
+		-- lear="Enchntr. Earring +1",
 		head="Geo. Galero +2", neck="Voltsurge Necklace", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}

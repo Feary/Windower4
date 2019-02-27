@@ -434,11 +434,10 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {main="Gridarvor",ammo=gear.avatar_ammo, --sub="Bloodrain Strap",
 		-- ear1="Digni. Earring",ear2="Telos Earring",
-        head="Convoker's Horn +3", neck="Shulmanu Collar", lear="Bladeborn Earring", rear="Steelflash Earring", 
-		-- hands="Tali'ah Gages +2", 
-		body="Con. Doublet +3", hands="Convoker's Bracers +1", ring1="Ramuh Ring", ring2="Ramuh Ring",
-        --waist="Olseni Belt", feet="Tali'ah Crackows +1
-		back=gear.phys_jse_back, waist="Windbuffet Belt", legs="Convoker's Spats +1", feet="Convo. Pigaches +3"}
+        head="Convoker's Horn +3", neck="Shulmanu Collar", 
+		body="Con. Doublet +3", hands="Convo. Bracers +2", ring1="Varar Ring +1", ring2="Varar Ring +1",
+        --waist="Olseni Belt", 
+		back=gear.phys_jse_back, waist="Windbuffet Belt", legs="Convo Spats +2", feet="Convo. Pigaches +3"}
 end
 
 -- Select default macro book on initial load or subjob change.

@@ -1,47 +1,52 @@
-get Ab.Abjuration: Ft. Storage all
-get Ab.Abjuration: Hd. Storage all
-get Ab.Abjuration: Hn. Storage all
-get Ab.Abjuration: Lg. Storage all
-get Adad Amulet Storage all
-get Apogee Crown Storage all
-get Beck. Doublet +1 Storage all
-get Beck. Pigaches Storage all
-get Beck. Spats +1 Storage all
-get Beckoner's Bracers Storage all
-get Beckoner's Horn +1 Storage all
-get Caller's Pendant Storage all
-get Campestres's Cape Storage all
-get Carbuncle Mitts Storage all
-get Con. Bracers Storage all
-get Con. Doublet +1 Storage all
-get Con. Horn +1 Storage all
-get Con. Pigaches Storage all
-get Con. Spats +1 Storage all
-get Conveyance Cape Storage all
-get Eminent Pole Storage all
-get Eminent Sachet Storage all
-get Enmerkar Earring Storage all
-get Enticer's Pants Storage all
-get Evans Earring Storage all
-get Evoker's Ring Storage all
-get Gelos Earring Storage all
-get Glyphic Bracers Storage all
-get Glyphic Doublet +1 Storage all
-get Glyphic Horn +1 Storage all
-get Glyphic Pigaches Storage all
-get Glyphic Spats +1 Storage all
-get Gridarvor Storage all
-get Kobo Obi Storage all
-get Lamassu Mitts Storage all
-get Merlinic Dastanas Storage all
-get Mujin Obi Storage all
-get Rimeice Earring Storage all
-get Sacrifice Torque Storage all
-get Shomonjijoe +1 Storage all
-get Tali'ah Crackows +1 Storage all
-get Tali'ah Gages +1 Storage all
-get Tali'ah Manteel +1 Storage all
-get Tali'ah Ring Storage all
-get Tali'ah Turban +1 Storage all
-get Vox Grip Storage all
-get Almaric Nails case all 
+put Adad Amulet Storage all
+put Apogee Crown +1 Storage all
+put Apogee Slacks +1 Storage all
+put Apogee Pumps +1 Storage all
+put Amalric Gages case all 
+put Amalric Slops case all 
+put Amalric Nails case all 
+put Beck. Doublet +1 Storage all
+put Beck. Pigaches Storage all
+put Beck. Spats +1 Storage all
+put Beck. Bracers +1 Storage all
+put Beckoner's Horn +1 Storage all
+put Caller's Pendant Storage all
+put Campestres's Cape Storage all
+put Carbuncle Mitts Storage all
+put Convo. Bracers +2 Storage all
+put Con. Doublet +2 Storage all
+put Convoker's Horn +2 Storage all
+put Convo. Pigaches +2 Storage all
+put Convo. Spats +2 Storage all
+put Conveyance Cape Storage all
+put Elan Strap +1 Storage all
+put Eminent Pole Storage all
+put Enmerkar Earring Storage all
+put Enticer's Pants Storage all
+put Evans Earring Storage all
+put Evoker's Ring Storage all
+put Gelos Earring Storage all
+put Glyphic Bracers +1 Storage all
+put Glyphic Doublet +1 Storage all
+put Glyphic Horn +1 Storage all
+put Glyph. Pigaches +1 Storage all
+put Glyphic Spats +1 Storage all
+put Gridarvor Storage all
+put Handler's Earring case all
+put Handler's Earring +1 case all
+put Helios Band Storage all
+put Idaraaja Storage all
+put Incarnation Sash Storage all
+put Lamassu Mitts Storage all
+put Lucidity Sash Storage all
+put Lugalbanda Earring Storage all
+put Regal Belt Storage all
+put Sancus Sachet +1 Storage all
+put Merlinic Dastanas Storage all
+put Rimeice Earring Storage all
+put Sacrifice Torque Storage all
+put Shomonjijoe +1 Storage all
+put Varar Ring +1 Storage all
+put Varar Ring +1 Storage all
+put Vox Grip Storage all
+

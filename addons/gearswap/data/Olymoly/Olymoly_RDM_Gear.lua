@@ -14,14 +14,15 @@ function user_setup()
 	-- Skill+ 10 Duration 10-20
 	gear.JSE_Cape = {name="Ghostfyre Cape"}
 	-- MND Macc M.DMG
-	gear.Cape_Macc = {name="Sucello's Cape"}
+	gear.Cape_Macc = {name="Sucellos's Cape"}
 	-- INT MACC M.DMG
-	gear.Cape_Nuke = {name="Sucello's Cape"}
+	gear.Cape_Nuke = {name="Sucellos's Cape"}
 	-- FC MP -dt 
-	gear.Cape_Fastcast = {name="Sucello's Cape"}
-	gear.Cape_Cure = {name="Sucello's Cape"}
-	gear.Cape_TP = {name="Sucello's Cape"}
-	gear.Cape_WS = {name="Sucello's Cape"}
+	gear.Cape_Fastcast = {name="Sucellos's Cape"}
+	gear.Cape_Cure = {name="Sucellos's Cape"}
+	
+	gear.Cape_TP = {name="Sucellos's Cape"}
+	gear.Cape_WS = {name="Sucellos's Cape"}
 	
 	-- Waist Replacements
 	gear.obi_cure_back = gear.Cape_Cure
@@ -109,7 +110,6 @@ function init_gear_sets()
 	sets.precast.WS['Sanguine Blade'] = {ammo="Pemphredo Tathlum",
 		head="Carmine Mask +1", neck="Fotia Gorget", lear="Crematio Earring", rear="Friomisi Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminodas's Ring", rring="Shiva Ring +1",
-		-- Aug.Cape.RDM.WS
 		back=gear.Cape_WS, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Carmine Greaves +1"}
 
 	-- Midcast Sets
@@ -186,7 +186,7 @@ function init_gear_sets()
 	sets.Self_Refresh = {back="Grapevine Cape",}--waist="Gishdubar Sash"
 	sets.midcast.Phalanx = {
 		-- Incanter's Torque"
-		head=gear_taeon_head_Phalanx, neck="Colossus's Torque", ear1="Andoaa Earring", ear2="Gifted Earring", }
+		head=gear_taeon_head_Phalanx, neck="Colossus's Torque", ear1="Andoaa Earring", ear2="Gifted Earring", 
 		-- Stikini Ring +1 Stikini Ring +1
 		body=gear_telchine_body_Duration, hands=gear_taeon_hands_Phalanx, ring1="Stikini Ring", ring2="Stikini Ring",
 		-- 
@@ -213,14 +213,14 @@ function init_gear_sets()
 	-- Phalanx Potency
 	sets.midcast.Phalanx = {
 		-- Incanter's Torque"
-		head=gear_taeon_head_Phalanx, neck="Colossus's Torque", ear1="Andoaa Earring", ear2="Gifted Earring", }
+		head=gear_taeon_head_Phalanx, neck="Colossus's Torque", ear1="Andoaa Earring", ear2="Gifted Earring", 
 		-- Stikini Ring +1 Stikini Ring +1
 		body=gear_telchine_body_Duration, hands=gear_taeon_hands_Phalanx, ring1="Stikini Ring", ring2="Stikini Ring",
 		-- 
 		back="Ghostfyre Cape", waist="Olympus Sash", legs=gear_taeon_legs_Phalanx, feet=gear_taeon_feet_Phalanx}
 		
 	-- Enhancing Magic Skill set
-	sets.midcast.['Temper'] = {ammo="Hasty Pinion +1",
+	sets.midcast['Temper'] = {ammo="Hasty Pinion +1",
 		--main="Pukulatmuj +1",sub="Arendsi Fleuret",		
 		--neck="Incanter's Torque" Duelist's Torque +2 rear="Augment. Earring"
 		head="Befouled Crown",neck="Colossus's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
@@ -228,7 +228,7 @@ function init_gear_sets()
 		body="Vitiation Tabard",hands="Vitiation Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- Atrophy Tights +3
 		back="Ghostfyre Cape",waist="Olympus Sash",legs="Atrophy Tights",feet="Leth. Houseaux"}
-	sets.midcast.['Temper II'] = {ammo="Hasty Pinion +1",
+	sets.midcast['Temper II'] = {ammo="Hasty Pinion +1",
 		--main="Pukulatmuj +1",sub="Arendsi Fleuret",		
 		--neck="Incanter's Torque" Duelist's Torque +2 rear="Augment. Earring"
 		head="Befouled Crown",neck="Colossus's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
@@ -339,9 +339,9 @@ function init_gear_sets()
 
     sets.midcast.Drain = {main="Rubicundity", ammo="Pemphredo Tathlum",
 		-- sub="Ammurapi Shield",
-		head="Pixie Hairpin +1". neck="Erra Pendant", ear1="Regal Earring",ear2="Digni. Earring",
+		head="Pixie Hairpin +1", neck="Erra Pendant", ear1="Regal Earring", ear2="Digni. Earring",
         -- Shango Robe 
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Stikini Ring", ring2="Stikini Ring",
         --feet=gear.chironic_nuke_feet
 		back=gear.Cape_Macc, waist="Fucho-no-obi", legs=gear_chironic_macc_legs,feet="Aya. Gambieras +2"}
 

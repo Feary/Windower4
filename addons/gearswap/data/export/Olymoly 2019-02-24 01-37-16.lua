@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Gridarvor", augments={'Pet: Accuracy+70','Pet: Attack+70','Pet: "Dbl. Atk."+15',}},
+    sub="Vox Grip",
+    ammo="Idaraaja",
+    head="Convoker's Horn +2",
+    body="Shomonjijoe +1",
+    hands={ name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+21 Pet: "Mag.Atk.Bns."+21','Blood Pact Dmg.+10','Pet: DEX+4',}},
+    legs="Assid. Pants +1",
+    feet="Herald's Gaiters",
+    neck="Loricate Torque +1",
+    waist="Fucho-no-Obi",
+    left_ear="Etiolation Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Inyanga Ring",
+    right_ring="Defending Ring",
+    back={ name="Campestres's Cape", augments={'"Fast Cast"+10',}},
+}
