@@ -48,7 +48,7 @@ function job_setup()
     state.MainStep = M{['description']='Main Step', 'Box Step','Quickstep','Feather Step','Stutter Step'}
     state.AltStep = M{['description']='Alt Step', 'Feather Step','Quickstep','Stutter Step','Box Step'}
     state.UseAltStep = M(true, 'Use Alt Step')
-	state.AutoPresto = M(true, 'AutoPresto')
+	state.AutoPrestoMode = M(true, 'Auto Presto Mode')
     state.SelectStepTarget = M(false, 'Select Step Target')
     state.IgnoreTargetting = M(false, 'Ignore Targetting')
 	state.DanceStance = M{['description']='Dance Stance','None','Saber Dance','Fan Dance'}
@@ -105,7 +105,7 @@ function job_precast(spell, spellMap, eventArgs)
 			windower.chat.input:schedule(1,'/ws "'..spell.english..'" '..spell.target.raw..'')
 			return
 		end
-    elseif spell.type == 'Step' and player.main_job_level >= 77 and state.AutoPresto.value and player.tp > 99 and player.status == 'Engaged' and under3FMs() then
+    elseif spell.type == 'Step' and player.main_job_level >= 77 and state.AutoPrestoMode.value and player.tp > 99 and player.status == 'Engaged' and under3FMs() then
         local abil_recasts = windower.ffxi.get_ability_recasts()
 
         if abil_recasts[236] < latency and abil_recasts[220] < latency then
@@ -117,25 +117,30 @@ function job_precast(spell, spellMap, eventArgs)
 end
 
 function job_post_precast(spell, spellMap, eventArgs)
-    if spell.type == "WeaponSkill" then
-        if state.Buff['Climactic Flourish'] then
+	if spell.type == 'WeaponSkill' then
+		local WSset = standardize_set(get_precast_set(spell, spellMap))
+		local wsacc = check_ws_acc()
+		
+		if (WSset.ear1 == "Moonshade Earring" or WSset.ear2 == "Moonshade Earring") then
+			-- Replace Moonshade Earring if we're at cap TP
+			if get_effective_player_tp(spell, WSset) > 3200 then
+				if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and sets.AccMaxTP then
+					equip(sets.AccMaxTP)
+				elseif sets.MaxTP then
+					equip(sets.MaxTP)
+				else
+				end
+			end
+		end
+--[[
+		if state.Buff['Building Flourish'] and sets.buff['Building Flourish'] then
+			equip(sets.buff['Building Flourish'])
+		end
+]]
+        if state.Buff['Climactic Flourish'] and sets.buff['Climactic Flourish'] then
             equip(sets.buff['Climactic Flourish'])
         end
-
-		-- Replace Moonshade Earring if we're at cap TP
-        if player.tp == 3000 and moonshade_ws:contains(spell.english) then
-			if check_ws_acc():contains('Acc') then
-				if sets.AccMaxTP then
-					equip(sets.AccMaxTP)
-				end
-						
-			elseif sets.MaxTP then
-					equip(sets.MaxTP)
-			end
-
-		end
-    end
-	
+	end
 end
 
 -- Return true if we handled the aftercast work.  Otherwise it will fall back
@@ -313,18 +318,18 @@ function check_buff()
 	
 		if not buffactive['Finishing Move 1'] and not buffactive['Finishing Move 2'] and not buffactive['Finishing Move 3'] and not buffactive['Finishing Move 4'] and not buffactive['Finishing Move 5'] and not buffactive['Finishing Move (6+)'] and abil_recasts[223] < latency then
 			windower.chat.input('/ja "No Foot Rise" <me>')
-			tickdelay = (framerate * 1.8)
+			tickdelay = os.clock() + 1.8
 			return true
 		end
 		
 		if player.in_combat then
 			if player.sub_job == 'WAR' and not buffactive.Berserk and abil_recasts[1] < latency then
 				windower.chat.input('/ja "Berserk" <me>')
-				tickdelay = (framerate * 1.8)
+				tickdelay = os.clock() + 1.8
 				return true
 			elseif player.sub_job == 'WAR' and not buffactive.Aggressor and abil_recasts[4] < latency then
 				windower.chat.input('/ja "Aggressor" <me>')
-				tickdelay = (framerate * 1.8)
+				tickdelay = os.clock() + 1.8
 				return true
 			else
 				return false
@@ -342,11 +347,11 @@ function check_dance()
 		
 		if state.DanceStance.value == 'Saber Dance' and abil_recasts[219] < latency then
 			windower.chat.input('/ja "Saber Dance" <me>')
-			tickdelay = (framerate * 1.8)
+			tickdelay = os.clock() + 1.8
 			return true
 		elseif state.DanceStance.value == 'Fan Dance' and abil_recasts[224] < latency then
 			windower.chat.input('/ja "Fan Dance" <me>')
-			tickdelay = (framerate * 1.8)
+			tickdelay = os.clock() + 1.8
 			return true
 		else
 			return false

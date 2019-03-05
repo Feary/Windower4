@@ -1,6 +1,0 @@
-alias g15m2g1 /ma "Poisona" <p1>
-alias g15m2g2 /ma "Poisona" <p2>
-alias g15m2g3 /ma "Poisona" <p3>
-alias g15m2g4 /ma "Poisona" <p4>
-alias g15m2g5 /ma "Poisona" <p5>
-alias g15m2g6 /ma "Poisona" <p0>

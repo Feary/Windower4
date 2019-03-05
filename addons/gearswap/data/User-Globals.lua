@@ -16,3 +16,5 @@ state.DisplayMode = M(true, 'Display Mode') --Set this to false if you don't wan
 --Uncomment the settings below and change the numbers if you want to move the display to a custom location.
 displayx = 480
 displayy = 750
+
+include('g15.lua')

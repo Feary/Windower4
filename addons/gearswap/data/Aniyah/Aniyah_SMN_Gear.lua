@@ -229,7 +229,7 @@ function init_gear_sets()
 		-- hands="Apogee Mitts +1", Path D
 		body="Con. Doublet +3", hands="Tali'ah Gages +2", ring1="Evoker's Ring",ring2="Stikini Ring",
 		-- legs="Convoker's Spats +3",     
-        back=gear.magic_jse_back,  waist="Regal Belt", legs="Convoker's Spats +1", feet="Convo. Pigaches +3"}
+        back=gear.magic_jse_back, waist="Regal Belt", legs="Convo. Spats +2", feet="Convo. Pigaches +3"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
     

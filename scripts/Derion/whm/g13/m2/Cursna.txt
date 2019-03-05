@@ -1,6 +1,0 @@
-alias g13m2g7 /ma "Cursna" <p1>
-alias g13m2g8 /ma "Cursna" <p2>
-alias g13m2g9 /ma "Cursna" <p3>
-alias g13m2g10 /ma "Cursna" <p4>
-alias g13m2g11 /ma "Cursna" <p5>
-alias g13m2g12 /ma "Cursna" <p0>

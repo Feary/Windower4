@@ -455,7 +455,6 @@ function init_gear_sets()
 		--head="Adhemar Bonnet", Path A neck="Assassin's Gorget +2",
 		head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar Wrist. +1",ring1="Epona's Ring", rring="Hetairoi Ring", 
-		-- 
         back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +3"}
 		
 	sets.engaged.Acc = {ammo="Yamarang",

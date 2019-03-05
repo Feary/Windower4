@@ -12,11 +12,11 @@ put Beck. Bracers +1 Storage all
 put Beckoner's Horn +1 Storage all
 put Caller's Pendant Storage all
 put Campestres's Cape Storage all
-put Carbuncle Mitts Storage all
+put Asteria Mitts +1 Storage all
 put Convo. Bracers +2 Storage all
-put Con. Doublet +2 Storage all
+put Con. Doublet +3 Storage all
 put Convoker's Horn +2 Storage all
-put Convo. Pigaches +2 Storage all
+put Convo. Pigaches +3 Storage all
 put Convo. Spats +2 Storage all
 put Conveyance Cape Storage all
 put Elan Strap +1 Storage all

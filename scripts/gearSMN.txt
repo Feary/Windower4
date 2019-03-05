@@ -12,11 +12,11 @@ get Beck. Bracers +1 Storage all
 get Beckoner's Horn +1 Storage all
 get Caller's Pendant Storage all
 get Campestres's Cape Storage all
-get Carbuncle Mitts Storage all
+get Asteria Mitts +1 Storage all
 get Convo. Bracers +2 Storage all
-get Con. Doublet +2 Storage all
+get Con. Doublet +3 Storage all
 get Convoker's Horn +2 Storage all
-get Convo. Pigaches +2 Storage all
+get Convo. Pigaches +3 Storage all
 get Convo. Spats +2 Storage all
 get Conveyance Cape Storage all
 get Elan Strap +1 Storage all

@@ -77,43 +77,40 @@ function job_precast(spell, spellMap, eventArgs)
 end
 
 function job_post_precast(spell, spellMap, eventArgs)
-
 	if spell.type == 'WeaponSkill' then
-	
-		local WSset = get_precast_set(spell, spellMap)
-		if not WSset.ear1 then WSset.ear1 = WSset.left_ear or '' end
-		if not WSset.ear2 then WSset.ear2 = WSset.right_ear or '' end
+
+		local WSset = standardize_set(get_precast_set(spell, spellMap))
 		local wsacc = check_ws_acc()
-        -- Replace Moonshade Earring if we're at cap TP
-		if player.tp > 2950 and (WSset.ear1 == "Moonshade Earring" or WSset.ear2 == "Moonshade Earring") then
-			if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and sets.AccMaxTP then
-				if not sets.AccMaxTP.ear1 then sets.AccMaxTP.ear1 = sets.AccMaxTP.left_ear or '' end
-				if not sets.AccMaxTP.ear2 then sets.AccMaxTP.ear2 = sets.AccMaxTP.right_ear or '' end
-				if (sets.AccMaxTP.ear1:startswith("Lugra Earring") or sets.AccMaxTP.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.AccDayMaxTPWSEars then
-					equip(sets.AccDayMaxTPWSEars)
+		
+		if (WSset.ear1 == "Moonshade Earring" or WSset.ear2 == "Moonshade Earring") then
+			-- Replace Moonshade Earring if we're at cap TP
+			if get_effective_player_tp(spell, WSset) > 3200 then
+				if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and sets.AccMaxTP then
+					local AccMaxTPset = standardize_set(sets.AccMaxTP)
+
+					if (AccMaxTPset.ear1:startswith("Lugra Earring") or AccMaxTPset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.AccDayMaxTPWSEars then
+						equip(sets.AccDayMaxTPWSEars)
+					else
+						equip(sets.AccMaxTP)
+					end
+				elseif sets.MaxTP then
+					local MaxTPset = standardize_set(sets.MaxTP)
+					if (MaxTPset.ear1:startswith("Lugra Earring") or MaxTPset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.DayMaxTPWSEars then
+						equip(sets.DayMaxTPWSEars)
+					else
+						equip(sets.MaxTP)
+					end
 				else
-					equip(sets.AccMaxTP)
-				end
-			elseif sets.MaxTP then
-				if not sets.MaxTP.ear1 then sets.MaxTP.ear1 = sets.MaxTP.left_ear or '' end
-				if not sets.MaxTP.ear2 then sets.MaxTP.ear2 = sets.MaxTP.right_ear or '' end
-				if (sets.MaxTP.ear1:startswith("Lugra Earring") or sets.MaxTP.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.DayMaxTPWSEars then
-					equip(sets.DayMaxTPWSEars)
-				else
-					equip(sets.MaxTP)
 				end
 			else
-			end
-		else
-			if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and (WSset.ear1:startswith("Lugra Earring") or WSset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.AccDayWSEars then
-				equip(sets.AccDayWSEars)
-			elseif (WSset.ear1:startswith("Lugra Earring") or WSset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.DayWSEars then
-				equip(sets.DayWSEars)
+				if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and (WSset.ear1:startswith("Lugra Earring") or WSset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.AccDayWSEars then
+					equip(sets.AccDayWSEars)
+				elseif (WSset.ear1:startswith("Lugra Earring") or WSset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.DayWSEars then
+					equip(sets.DayWSEars)
+				end
 			end
 		end
-		
 	end
-
 end
 
 function job_post_midcast(spell, spellMap, eventArgs)
@@ -371,11 +368,11 @@ function job_tick()
 	if check_hasso() then return true end
 	if check_buff() then return true end
 	if check_buffup() then return true end
-	if state.AutoTankMode.value and player.target.type == "MONSTER" and not moving then
+	if state.AutoTankMode.value and player.in_combat and player.target.type == "MONSTER" and not moving then
 		if check_flash() then return true
 		else 
 			windower.send_command('gs c SubJobEnmity')
-			tickdelay = (framerate * 1)
+			tickdelay = os.clock() + 1
 			return true
 		end
 	end
@@ -387,7 +384,7 @@ function check_flash()
 
 	if spell_recasts[112] < spell_latency then
 		send_command('input /ma "Flash" <t>')
-		tickdelay = (framerate * 2)
+		tickdelay = os.clock() + 2
 		return true
 	else
 		return false
@@ -411,11 +408,11 @@ function check_hasso()
 		
 		if state.Stance.value == 'Hasso' and abil_recasts[138] < latency then
 			windower.chat.input('/ja "Hasso" <me>')
-			tickdelay = (framerate * 1.8)
+			tickdelay = os.clock() + 1.8
 			return true
 		elseif state.Stance.value == 'Seigan' and abil_recasts[139] < latency then
 			windower.chat.input('/ja "Seigan" <me>')
-			tickdelay = (framerate * 1.8)
+			tickdelay = os.clock() + 1.8
 			return true
 		else
 			return false
@@ -431,7 +428,7 @@ function check_buff()
 		for i in pairs(buff_spell_lists['Auto']) do
 			if not buffactive[buff_spell_lists['Auto'][i].Buff] and (buff_spell_lists['Auto'][i].When == 'Always' or (buff_spell_lists['Auto'][i].When == 'Combat' and (player.in_combat or being_attacked)) or (buff_spell_lists['Auto'][i].When == 'Engaged' and player.status == 'Engaged') or (buff_spell_lists['Auto'][i].When == 'Idle' and player.status == 'Idle') or (buff_spell_lists['Auto'][i].When == 'OutOfCombat' and not (player.in_combat or being_attacked))) and spell_recasts[buff_spell_lists['Auto'][i].SpellID] < latency and silent_can_use(buff_spell_lists['Auto'][i].SpellID) then
 				windower.chat.input('/ma "'..buff_spell_lists['Auto'][i].Name..'" <me>')
-				tickdelay = (framerate * 2)
+				tickdelay = os.clock() + 2
 				return true
 			end
 		end
@@ -461,7 +458,7 @@ function check_buffup()
 		for i in pairs(buff_spell_lists[buffup]) do
 			if not buffactive[buff_spell_lists[buffup][i].Buff] and silent_can_use(buff_spell_lists[buffup][i].SpellID) and spell_recasts[buff_spell_lists[buffup][i].SpellID] < latency then
 				windower.chat.input('/ma "'..buff_spell_lists[buffup][i].Name..'" <me>')
-				tickdelay = (framerate * 2)
+				tickdelay = os.clock() + 2
 				return true
 			end
 		end

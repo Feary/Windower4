@@ -57,7 +57,7 @@ function init_gear_sets()
 		back=gear.Enmity_jse_back, waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 
     sets.Enmity.DT = {ammo="Paeapua",
-		-- Loess Barbuta +1 lear="Trux Earring", 
+		-- lear="Trux Earring", 
 		head="Loess Barbuta +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Cryptic Earring",
 		-- Yorium Gauntlets rring="Apeile Ring +1"
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Supershear Ring", rring="Apeile Ring",

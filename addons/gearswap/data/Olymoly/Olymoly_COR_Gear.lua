@@ -6,7 +6,7 @@ function user_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'Refresh')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
-	state.Weapons:options('Default','DualWeapons','RollMeleeWeapons', 'RollRangedWeapons', 'SavageWeapons','DualRangedWeapons','LeadenWeapons','None')
+	state.Weapons:options('Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
 	state.CompensatorMode:options('300','1000','Never','Always')
 	
     gear.RAbullet = "Eminent Bullet"
@@ -205,14 +205,14 @@ function init_gear_sets()
 		-- Herc Helm STR/Acc/WSD 
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
 		-- Laksa. Frac +3 rring="Shukuyu Ring"
-        body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Rufescent Ring",
+        body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Shukuyu Ring",
 		-- Herc Trousers STR/ACC/WSD feet="Lanun Bottes +3"
         back=gear.str_wsd_jse_back,waist="Prosilio Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-		-- Laksa. Frac +3 Shukuyu Ring
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",lring="Regal Ring", rring="Rufescent Ring",
+		-- Laksa. Frac +3
+        body="Meg. Cuirie +2",hands="Meg. Gloves +2",lring="Regal Ring", rring="Shukuyu Ring",
 		-- Herc Trousers STR/ACC/WSD Lanun Bottes +3
         back=gear.str_wsd_jse_back,waist="Grunfeld Rope",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 	
@@ -482,19 +482,20 @@ function init_gear_sets()
 	sets.DWMax = {body="Adhemar Jacket +1", waist="Reiki Yotai", ear1="Dudgeon Earring", ear2="Heartseeker Earring"}
 	
 	--Weapon Sets
-	-- Fencer Last Stand
-	sets.weapons.Default = {main="Fettering Blade",sub="Nusku Shield",range="Molybdosis"}--range="Fomalhaut"
-	-- Fencer Last Stand
-	sets.weapons.DualWeapons = {main="Fettering Blade",sub="Kustawi +1",range="Molybdosis"}-- sub="Blurred Knife +1",range="Fomalhaut"
-	-- Rolling
-	sets.weapons.RollMeleeWeapons = {main="Hep. Sapara +1",sub="Kustawi +1",range="Compensator"} --sub="Blurred Knife +1",
-	sets.weapons.RollRangedWeapons = {main="Fettering Blade",sub="Kustawi +1", range="Compensator"}
-	-- Savage Spam
-	sets.weapons.SavageWeapons = {main="Hep. Sapara +1",range="Molybdosis"}--sub="Blurred Knife +1",range="Ataktos"
+	--'Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
+	-- Fencer Last Stand Rostam
+	sets.weapons.Default = {main="Kustawi +1",sub="Nusku Shield",range="Molybdosis"}--range="Fomalhaut"
 	-- Last Stand Dual Ranged
-	sets.weapons.DualRangedWeapons = {main="Fettering Blade",sub="Kustawi +1",range="Molybdosis"}--
-	-- Leaden/Wildfire
-	sets.weapons.LeadenWeapons = {main="Fettering Blade",sub="Hep. Rapier +1",range="Molybdosis"}--range="Fomalhaut"
+	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Eletta Knife",range="Molybdosis"}
+	-- Fencer Savage 
+	sets.weapons.SavageWeapons = {main="Eletta Sword",sub="Nusku Shield", range="Molybdosis"}--range="Ataktos"
+	-- DW Savage
+	sets.weapons.DualWeapons = {main="Eletta Sword",sub="Blurred Knife +1",range="Molybdosis"}--range="Ataktos"
+	-- Leaden/Wildfire  Rostam Path A
+	sets.weapons.LeadenWeapons = {main="Eletta Sword",sub="Eletta Knife",range="Molybdosis"}--range="Fomalhaut"
+	-- Rolling
+	sets.weapons.RollMeleeWeapons = {main="Eletta Sword",sub="Blurred Knife +1",range="Compensator"} --sub="Blurred Knife +1",
+	sets.weapons.RollRangedWeapons = {main="Kustawi +1",sub="Nusku Shield", range="Compensator"}
 
     -- Engaged sets
 	

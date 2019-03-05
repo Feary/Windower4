@@ -1,0 +1,21 @@
+alias g15m1g1 /ma "Paralyze II" <stnpc>
+alias g15m1g2 /ma "Slow II" <stnpc>
+alias g15m1g3 /ma "Addle" <stnpc>
+alias g15m1g4 /ma "Silence" <stnpc>
+alias g15m1g5 /ma "Gravity" <stnpc
+alias g15m1g6 /ma "Bind" <stnpc>
+
+alias g15m1g7 /ma "haste" <p0>
+alias g15m1g8 /ma "haste" <p1>
+alias g15m1g9 /ma "haste" <p2>
+alias g15m1g10 /ma "haste" <p3>
+alias g15m1g11 /ma "haste" <p4>
+alias g15m1g12 /ma "haste" <p5>
+
+alias g15m1g13 /ma "Refresh II" <p0>
+alias g15m1g14 /ma "Refresh II" <p1>
+alias g15m1g15 /ma "Refresh II" <p2>
+alias g15m1g16 /ma "Refresh II" <p3>
+alias g15m1g17 /ma "Refresh II" <p4>
+alias g15m1g18 /ma "Refresh II" <p5>
+

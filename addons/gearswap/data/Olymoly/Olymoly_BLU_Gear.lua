@@ -88,7 +88,6 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 
 	sets.precast.FC = {--main="Vampirism",sub="Vampirism",ammo="Impatiens",
-		--
 		head="Carmine Mask +1", neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body="Luhlaza Jubbah +1",hands="Leyline Gloves",ring1="Prolix Ring", ring2="Kishar Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
@@ -199,22 +198,20 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Physical = {--ammo="Mavi Tathlum",
 		--  Tati Earring +1 Tati Earring +1
 		head="Jhakri Coronal +2", neck="Caro Necklace", lear="Vulcan's Pearl", rear="Vulcan's Pearl",
-		-- Shukuyu Ring 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Ifrit Ring +1",
+		--
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Shukuyu Ring",
 		back=gear.wsd_jse_back, waist="Grunfeld Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].Physical.Resistant = {ammo="Hasty Pinion +1",
 		-- Tati Earring +1 Tati Earring +1
 		head="Jhakri Coronal +2", neck="Caro Necklace", lear="Vulcan's Pearl", rear="Vulcan's Pearl",
-		-- Shukuyu Ring 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Ifrit Ring +1",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Shukuyu Ring",
 		back=gear.wsd_jse_back, waist="Grunfeld Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].Physical.Fodder = {--ammo="Mavi Tathlum",
 		--  Tati Earring +1 Tati Earring +1
 		head="Jhakri Coronal +2", neck="Caro Necklace", lear="Vulcan's Pearl", rear="Vulcan's Pearl",
-		-- Shukuyu Ring 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Ifrit Ring +1",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Shukuyu Ring",
 		back=gear.wsd_jse_back, waist="Prosilio Belt +1", legs="Jhakri Slops +2", feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic'].PhysicalAcc = {ammo="Hasty Pinion +1",
@@ -354,8 +351,7 @@ function init_gear_sets()
 		head="Carmine Mask +1", neck="Phalaina Locket", lear="Regal Earring", rear="Enchntr. Earring +1",
 		-- Vrikodata Jupon 
 		body=gear_telchine_body_CureRecieved, hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
-		-- feet="Medium Sabots"
-		back=gear.cure_jse_back, waist="Luminary Sash", legs="Gyve Trousers"}
+		back=gear.cure_jse_back, waist="Luminary Sash", legs="Gyve Trousers",feet="Medium Sabots"}
 
 	-- Breath Spells --
 	sets.midcast['Blue Magic'].Breath = {--ammo="Mavi Tathlum",
@@ -387,8 +383,8 @@ function init_gear_sets()
 		head="Carmine Mask +1", neck="Dualism Collar", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		-- Despair Mail
 		body=gear_telchine_body_CureRecieved, hands="Telchine Gloves", lring="Ilabrat Ring", rring="Meridian Ring",
-		-- Oneiros Belt feet="Medium Sabots"
-		back=gear.cure_jse_back, waist=gear.ElementalObi, legs="Gyve Trousers", }
+		-- Oneiros Belt 
+		back=gear.cure_jse_back, waist=gear.ElementalObi, legs="Gyve Trousers", feet="Medium Sabots"}
 
 	sets.midcast['Blue Magic']['Healing Breeze'] = sets.midcast['Blue Magic']['White Wind']
 
@@ -396,8 +392,7 @@ function init_gear_sets()
 		head="Carmine Mask +1", neck="Phalaina Locket", lear="Regal Earring", rear="Enchntr. Earring +1",
 		-- Vrikodata Jupon 
 		gear_telchine_body_CureRecieved, hands="Telchine Gloves", lring="Stikini Ring", rring="Stikini Ring",
-		--feet="Medium Sabots"
-		back=gear.cure_jse_back, waist="Luminary Sash", legs="Gyve Trousers", }
+		back=gear.cure_jse_back, waist="Luminary Sash", legs="Gyve Trousers", feet="Medium Sabots"}
 
 	--Overwrite certain spells with these pieces even if the day matches, because of resource inconsistencies.
 	sets.NonElementalCure = {back="Tempered Cape +1",waist="Chuq'aba Belt"}
@@ -490,8 +485,8 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Volte Bracers", waist="Chaac Belt"})
 	
 	-- Weapon Set
-	sets.weapons.None = {main="Tanmogayi +1",sub="Nibiru Blade"}
-	sets.weapons.Default = {main="Tanmogayi +1",sub="Nibiru Blade"}
+	sets.weapons.None = {main="Eletta Sword", sub="Tanmogayi +1",}
+	sets.weapons.Default = {main="Eletta Sword",sub="Tanmogayi +1"}
 	--sets.weapons.Almace = {main="Almace",sub="Tanmogayi +1"}
 	--sets.weapons.Sequence = {main="Sequence",sub="Almace"}		
 	sets.weapons.MagicWeapons = {main="Nibiru Cudgel", sub="Vampirism"}
@@ -502,106 +497,95 @@ function init_gear_sets()
 	sets.engaged = {ammo="Ginsen",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet +1",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring", ring2="Petrov Ring",
 		--  TA
 		back=gear.stp_jse_back, waist="Reiki Yotai", legs="Samnuha Tights",feet=gear_herculean_ta_feet}
 
 	sets.engaged.AM = {ammo="Ginsen",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Petrov Ring",
+		-- feet="Herculean Boots", TA
+		back=gear.stp_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.MinAcc = {ammo="Ginsen",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring", ring2="Petrov Ring",
+		--  feet="Herculean Boots", TA
+		back=gear.da_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 		
 	sets.engaged.MinAcc.AM = {ammo="Ginsen",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Petrov Ring",
+		--  feet="Herculean Boots", TA
+		back=gear.stp_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.SomeAcc = {ammo="Hasty Pinion +1",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring", ring2="Petrov Ring",
+		-- feet="Herculean Boots", TA
+		back=gear.stp_jse_back, waist="Reiki Yotai",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.SomeAcc.AM = {ammo="Ginsen",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring", ring2="Petrov Ring",
+		-- feet="Herculean Boots", TA
+		back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.Acc = {ammo="Hasty Pinion +1",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Petrov Ring",
+		-- feet="Herculean Boots", TA
+		back=gear.stp_jse_back, waist="Reiki Yotai",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.Acc.AM = {ammo="Hasty Pinion +1",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Petrov Ring",
+		--  feet="Herculean Boots", TA
+		back=gear.stp_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.HighAcc = {ammo="Hasty Pinion +1",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		--
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring", ring2="Petrov Ring",
+		--  feet="Herculean Boots", TA
+		back=gear.stp_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.HighAcc.AM = {ammo="Hasty Pinion +1",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		-- 
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Petrov Ring",
+		--feet="Herculean Boots", TA
+		back=gear.stp_jse_back, waist="Reiki Yotai", legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.FullAcc = {ammo="Hasty Pinion +1",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Digni. Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Petrov Ring",
+		--feet="Herculean Boots", TA
+		back=gear.stp_jse_back, waist="Reiki Yotai", legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.FullAcc.AM = {ammo="Hasty Pinion +1",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Petrov Ring",
+		-- feet="Herculean Boots", TA
+		back=gear.stp_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.Fodder = {ammo="Ginsen",
 		-- lear="Dedition Earring",
 		head="Adhemar Bonnet +1",neck="Lissome Necklace",ear1="Cessance Earring",ear2="Telos Earring",
-		-- ring2="Petrov Ring",
-		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		-- waist="Reiki Yotai", feet="Herculean Boots", TA
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Carmine Greaves +1"}
+		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring", ring2="Petrov Ring",
+		-- feet="Herculean Boots", TA
+		back=gear.stp_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.Fodder.AM = {ammo="Ginsen",
 		head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
@@ -611,7 +595,6 @@ function init_gear_sets()
 	sets.engaged.DTLite = {ammo="Ginsen",
 		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
-		-- 
 		back=gear.da_jse_back, waist="Grunfeld Rope", legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.engaged.DTLite.AM = {ammo="Ginsen",
@@ -621,7 +604,6 @@ function init_gear_sets()
 
 	sets.engaged.PDT = {ammo="Staunch Tathlum",
 		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Suppanomimi", 
-		-- 
 		body="Ayanmo Corazza +2",hands="Adhemar Wristbands",ring1="Patricius Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 

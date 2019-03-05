@@ -78,9 +78,11 @@ function init_include()
 	state.AutoTrustMode 	  = M(false, 'Auto Trust Mode')
 	state.RngHelper		 	  = M(false, 'RngHelper')
 	state.AutoTankMode 		  = M(false, 'Auto Tank Mode')
+	state.AutoAcceptRaiseMode = M(false, 'Auto Accept Raise Mode')
 	state.AutoNukeMode 		  = M(false, 'Auto Nuke Mode')
 	state.AutoRuneMode 		  = M(false, 'Auto Rune Mode')
 	state.AutoShadowMode 	  = M(false, 'Auto Shadow Mode')
+	state.AutoContradanceMode = M(true, 'Auto Contradance Mode')
 	state.AutoHolyWaterMode   = M(true, 'Auto Holy Water Mode')
 	state.AutoRemoveDoomMode  = M(true, 'Auto Remove Doom Mode')
 	state.AutoWSMode		  = M(false, 'Auto Weaponskill Mode')
@@ -93,7 +95,6 @@ function init_include()
 	state.CancelStoneskin	  = M(true, 'Auto Cancel Stoneskin')
 	state.BlockMidaction	  = M(true, 'Block Midaction')
 	state.MaintainAftermath	  = M(true, 'Maintain Aftermath')
-	state.Contradance		  = M(true, 'Auto Contradance Mode')
 	state.ElementalWheel 	  = M(false, 'Elemental Wheel')
 	state.MaintainDefense 	  = M(false, 'Maintain Defense')
 	state.SkipProcWeapons 	  = M(false, 'Skip Proc Weapons')
@@ -128,6 +129,7 @@ function init_include()
 	state.Buff['Dark Arts'] = buffactive['Dark Arts'] or false
 	state.Buff['Addendum: Black'] = buffactive['Addendum: Black'] or false
 	state.Buff['Accession'] = buffactive['Accession'] or false
+	state.Buff['Warcry'] = buffactive['Warcry'] or false
 
     -- Classes describe a 'type' of action.  They are similar to state, but
     -- may have any free-form value, or describe an entire table of mapped values.
@@ -187,6 +189,7 @@ function init_include()
 	lastincombat = player.in_combat
 	next_cast = 0
 	delayed_cast = ''
+	delayed_target = ''
 	
 	time_test = false
 	utsusemi_cancel_delay = .5
@@ -194,6 +197,7 @@ function init_include()
 	
 	-- Buff tracking that buffactive can't detect
 	lastshadow = "Utsusemi: San"
+	lastwarcry = ''
 	lasthaste = 1
 	lastflurry = 1
 	
@@ -247,10 +251,10 @@ function init_include()
     -- Load Sel-Globals first, followed by User-Globals, followed by <character>-Globals.
     -- Any functions re-defined in the later includes will overwrite the earlier versions.
     include('Sel-GlobalItems')
-    optional_include({'user-globals.lua'})
-    optional_include({player.name..'-globals.lua'})
-    optional_include({player.name..'-items.lua'})
-	optional_include({player.name..'_Crafting.lua'})
+    optional_include('user-globals.lua')
+    optional_include(player.name..'-globals.lua')
+    optional_include(player.name..'-items.lua')
+	optional_include(player.name..'_Crafting.lua')
 
 	-- New Display functions, needs to come after globals for user settings.
 	include('Sel-Display.lua')
@@ -259,14 +263,13 @@ function init_include()
     -- Global default binds
     global_on_load()
 
-    -- Load a sidecar file for the job (if it exists) that may re-define init_gear_sets and file_unload.
-    load_sidecar(player.main_job)
+    -- Load sidecar file
+	include(player.name..'_'..player.main_job..'_gear.lua')
+
 	
 	-- Controls for handling our autmatic functions.
 	
-	if tickdelay ~= 0 then
-		tickdelay = (framerate * 3)
-	end
+	tickdelay = os.clock() + 5
 	
 	if spell_latency == nil then
 		spell_latency = (latency + .05)
@@ -293,7 +296,7 @@ function init_include()
 	end
 	
 	-- Event register to watch incoming items.
-	windower.register_event('add item', function(bag, index, id, count)
+	windower.raw_register_event('add item', function(bag, index, id, count)
 		if id == 4146 and world.area == "Ghoyu's Reverie" then --4146 Revitalizer ID
 			useItem = true
 			useItemName = 'Revitalizer'
@@ -303,7 +306,7 @@ function init_include()
 	end)
 	
 	-- Event register to make time variables track.
-	windower.register_event('time change', time_change)
+	windower.raw_register_event('time change', time_change)
 
 	-- Event register to perform actions on new targets.
 	function target_change(new)
@@ -338,11 +341,11 @@ function init_include()
 			if user_job_target_change(target) then return end
 		end
 	end
-	windower.register_event('target change', target_change)
+	windower.raw_register_event('target change', target_change)
 
 	-- Event register to prevent auto-modes from spamming after zoning.
 	windower.register_event('zone change', function()
-		tickdelay = (framerate * 10)
+		tickdelay = os.clock() + 10
 		state.AutoBuffMode:reset()
 		state.AutoSubMode:reset()
 		state.AutoTrustMode:reset()
@@ -368,10 +371,8 @@ function init_include()
 
 	-- New implementation of tick.
 	windower.raw_register_event('prerender', function()
-		tickdelay = tickdelay - 1
-
-		if not (tickdelay <= 0) then return end
-
+		if not (os.clock() > tickdelay) then return end
+		
 		gearswap.refresh_globals(false)
 		
 		if (player ~= nil) and (player.status == 'Idle' or player.status == 'Engaged') and not (check_midaction() or moving or buffactive['Sneak'] or buffactive['Invisible'] or silent_check_disable()) then
@@ -402,9 +403,10 @@ function init_include()
 			if extra_user_tick then
 				if extra_user_tick() then return end
 			end
-
-			tickdelay = (framerate / 4)
+			
 		end
+
+		tickdelay = os.clock() + .5
 		
 		if lastincombat == true and not player.in_combat and being_attacked then
 			being_attacked = false
@@ -413,9 +415,6 @@ function init_include()
 			end
 		end			
 		lastincombat = player.in_combat
-
-		tickdelay = (framerate / 2)
-
 	end)
 	
     -- Load up all the gear sets.
@@ -852,7 +851,7 @@ end
 function extra_default_filtered_action(spell, eventArgs)
 	if spell.action_type == 'Item' and world.area == "Mog Garden" then
 		return
-	elseif not silent_can_use(spell.recast_id) and stepdown(spell, eventArgs) then
+	elseif spell.action_type == 'Magic' and not silent_can_use(spell.recast_id) and stepdown(spell, eventArgs) then
 		cancel_spell()
 		return
 	elseif not can_use(spell) then
@@ -877,25 +876,19 @@ function default_precast(spell, spellMap, eventArgs)
 	end
 	
 	if spell.action_type == 'Magic' then
-		if tickdelay < (framerate * 3) then tickdelay = (framerate * 3) end
 		next_cast = os.clock() + 3.5 - latency
 	elseif spell.type == 'WeaponSkill' then
-		if tickdelay < (framerate * 2.8) then tickdelay = (framerate * 2.8) end
 		next_cast = os.clock() + 2.5 - latency
 	elseif spell.action_type == 'Ability' then
-		if tickdelay < (framerate * .75) then tickdelay = (framerate * .75) end
 		next_cast = os.clock() + .75 - latency
 	elseif spell.action_type == 'Item' then
-		if tickdelay < (framerate * 1.5) then tickdelay = (framerate * 1.5) end
 		next_cast = os.clock() + 1.35 - latency
 	elseif spell.action_type == 'Ranged Attack' then
-		if tickdelay < (framerate * 1.3) then tickdelay = (framerate * 1.3) end
 		next_cast = os.clock() + 1.05 - latency
 	end
 	
-	if areas.LaggyZones:contains(world.area) then
-		next_cast = next_cast - .25
-	end
+	if tickdelay < next_cast then tickdelay = next_cast end
+	if areas.LaggyZones:contains(world.area) then next_cast = next_cast - .25 end
 end
 
 function default_post_precast(spell, spellMap, eventArgs)
@@ -908,9 +901,22 @@ function default_post_precast(spell, spellMap, eventArgs)
 			end
 			
 		elseif spell.type == 'WeaponSkill' then
-			
-			if state.WeaponskillMode.value ~= 'Proc' and elemental_obi_weaponskills:contains(spell.name) and spell.element and (spell.element == world.weather_element or spell.element == world.day_element) and item_available('Hachirin-no-Obi') then
-				equip({waist="Hachirin-no-Obi"})
+		
+			if state.WeaponskillMode.value ~= 'Proc' and elemental_obi_weaponskills:contains(spell.name) then
+				local orpheus_avail = item_available("Orpheus's Sash")
+				local hachirin_avail = item_available('Hachirin-no-Obi')
+				
+				if hachirin_avail and spell.element == world.weather_element and gearswap.res.weather[world.weather_id].intensity == 2 then
+					equip({waist="Hachirin-no-Obi"})
+				elseif orpheus_avail and spell.target.distance < (1.7 + spell.target.model_size) then
+					equip({waist="Orpheus's Sash"})
+				elseif hachirin_avail and spell.element and spell.element == world.weather_element then
+					equip({waist="Hachirin-no-Obi"})
+				elseif orpheus_avail and spell.target.distance < (8 + spell.target.model_size) then
+					equip({waist="Orpheus's Sash"})
+				elseif hachirin_avail and spell.element == world.day_element then
+					equip({waist="Hachirin-no-Obi"})
+				end
 			end
 			
 			if sets.Reive and buffactive['Reive Mark'] and sets.Reive.neck == "Ygnas's Resolve +1" then
@@ -1064,28 +1070,23 @@ end
 function default_aftercast(spell, spellMap, eventArgs)
 	if spell.interrupted then
 		if spell.type:contains('Magic') then
-			if tickdelay < (framerate * 2.5) then tickdelay = (framerate * 2.5) end
 			next_cast = os.clock() + 3 - latency
 		else
-			if tickdelay < (framerate * 1) then tickdelay = (framerate * 1) end
 			next_cast = os.clock() + 1.75 - latency
 		end
 	elseif spell.action_type == 'Magic' then
-		if tickdelay < (framerate * 2.95) then tickdelay = (framerate * 2.95) end
 		next_cast = os.clock() + 3.45 - latency
 	elseif spell.type == 'WeaponSkill' then
-		if tickdelay < (framerate * 2.7) then tickdelay = (framerate * 2.7) end
 		next_cast = os.clock() + 2 - latency
 	elseif spell.action_type == 'Ability' then
-		if tickdelay < (framerate * .75) then tickdelay = (framerate * .75) end
 		next_cast = os.clock() + .75 - latency
 	elseif 	spell.action_type == 'Item' then
-		if tickdelay < (framerate * .5) then tickdelay = (framerate * .5) end
 		next_cast = os.clock() + .85 - latency
 	elseif spell.action_type == 'Ranged Attack' then
-		if tickdelay < (framerate * 1) then tickdelay = (framerate * 1) end
 		next_cast = os.clock() + .85 - latency
 	end
+	
+	if tickdelay < next_cast then tickdelay = next_cast end
 	
 	if areas.LaggyZones:contains(world.area) then
 		next_cast = next_cast - .25
@@ -1093,7 +1094,8 @@ function default_aftercast(spell, spellMap, eventArgs)
 	
 	if not spell.interrupted then
 		if delayed_cast == spell.english then
-			delayed_cast = '' 
+			delayed_cast = ''
+			delayed_target = ''
 		end
 		if state.TreasureMode.value ~= 'None' and state.DefenseMode.value == 'None' and spell.target.type == 'MONSTER' and not info.tagged_mobs[spell.target.id] then
 			info.tagged_mobs[spell.target.id] = os.time()

@@ -75,7 +75,16 @@ function job_precast(spell, spellMap, eventArgs)
 end
 
 function job_post_precast(spell, spellMap, eventArgs)
-
+	if spell.type == 'WeaponSkill' then
+		local WSset = standardize_set(get_precast_set(spell, spellMap))
+		
+		if (WSset.ear1 == "Moonshade Earring" or WSset.ear2 == "Moonshade Earring") then
+			-- Replace Moonshade Earring if we're at cap TP
+			if spell.english == 'Myrkr' and get_effective_player_tp(spell, WSset) > 3200 and sets.MaxTPMyrkr then
+				equip(sets.MaxTPMyrkr)
+			end
+		end
+	end
 end
 
 function job_post_midcast(spell, spellMap, eventArgs)
@@ -357,12 +366,12 @@ function check_arts()
 
 		if abil_recasts[29] < latency and not state.Buff['Afflatus Solace'] and not state.Buff['Afflatus Misery'] then
 			send_command('@input /ja "Afflatus Solace" <me>')
-			tickdelay = (framerate * 1)
+			tickdelay = os.clock() + 1
 			return true
 
 		elseif player.sub_job == 'SCH' and not arts_active() and abil_recasts[228] < latency then
 			send_command('@input /ja "Light Arts" <me>')
-			tickdelay = (framerate * 1)
+			tickdelay = os.clock() + 1
 			return true
 		end
 		
@@ -454,7 +463,7 @@ function check_buff()
 		for i in pairs(buff_spell_lists['Auto']) do
 			if not buffactive[buff_spell_lists['Auto'][i].Buff] and (buff_spell_lists['Auto'][i].When == 'Always' or (buff_spell_lists['Auto'][i].When == 'Combat' and (player.in_combat or being_attacked)) or (buff_spell_lists['Auto'][i].When == 'Engaged' and player.status == 'Engaged') or (buff_spell_lists['Auto'][i].When == 'Idle' and player.status == 'Idle') or (buff_spell_lists['Auto'][i].When == 'OutOfCombat' and not (player.in_combat or being_attacked))) and spell_recasts[buff_spell_lists['Auto'][i].SpellID] < latency and silent_can_use(buff_spell_lists['Auto'][i].SpellID) then
 				windower.chat.input('/ma "'..buff_spell_lists['Auto'][i].Name..'" <me>')
-				tickdelay = (framerate * 2)
+				tickdelay = os.clock() + 2
 				return true
 			end
 		end
@@ -484,7 +493,7 @@ function check_buffup()
 		for i in pairs(buff_spell_lists[buffup]) do
 			if not buffactive[buff_spell_lists[buffup][i].Buff] and silent_can_use(buff_spell_lists[buffup][i].SpellID) and spell_recasts[buff_spell_lists[buffup][i].SpellID] < latency then
 				windower.chat.input('/ma "'..buff_spell_lists[buffup][i].Name..'" <me>')
-				tickdelay = (framerate * 2)
+				tickdelay = os.clock() + 2
 				return true
 			end
 		end

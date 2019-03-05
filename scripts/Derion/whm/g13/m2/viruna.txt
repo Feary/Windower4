@@ -1,7 +1,0 @@
-alias g13m2g7 /ma "Viruna" <p1>
-alias g13m2g8 /ma "Viruna" <p2>
-alias g13m2g9 /ma "Viruna" <p3>
-alias g13m2g10 /ma "Viruna" <p4>
-alias g13m2g11 /ma "Viruna" <p5>
-alias g13m2g12 /ma "Viruna" <p0>
- 

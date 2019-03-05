@@ -1,0 +1,22 @@
+alias g15m1g1 /equip range "Gjallarhorn";wait 1;/ma "Valor Minuet V"
+alias g15m1g2 /equip range "Gjallarhorn";wait 1;/ma "Valor Minuet IV"
+alias g15m1g3 /equip range "Daurdabla";wait 1;/ma "Valor Minuet III"
+alias g15m1g4 /equip range "Gjallarhorn";wait 1;/ma "Victory March"
+alias g15m1g5 /equip range "Gjallarhorn";wait 1;/ma "Advancing March"
+alias g15m1g6 /ja "Pianissimo" <me>
+
+alias g15m1g7 /equip range "Gjallarhorn";wait 1; /ma "Mage's Ballad III" 
+alias g15m1g8 /equip range "Gjallarhorn";wait 1; /ma "Mage's Ballad II"
+alias g15m1g9 /equip range "Gjallarhorn"; wait 1; /ma "Mage's Ballad"
+alias g15m1g10 /ma "Blade Madrigal" 
+alias g15m1g11 /ma "Sword Madrigal"
+alias g15m1g12 
+
+alias g15m1g13 
+alias g15m1g14 
+alias g15m1g15 
+alias g15m1g16 
+alias g15m1g17 
+alias g15m1g18 
+
+

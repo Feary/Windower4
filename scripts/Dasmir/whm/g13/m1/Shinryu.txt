@@ -1,0 +1,29 @@
+alias g13m1g1 /ma "Paralyna" <p1>
+alias g13m1g2 /ma "paralyna" <p2>
+alias g13m1g3 /ma "paralyna" <p3>
+alias g13m1g4 /ma "Paralyna" <p4>
+alias g13m1g5 /ma "Paralyna" <p5>
+alias g13m1g6 /ma "paralyna" <p0>
+alias g13m1g7 /ma "Esuna" <me>
+
+alias g13m1g8 /ma "Viruna" <p1>
+alias g13m1g9  /ma "Viruna" <p2>
+alias g13m1g10 /ma "Viruna" <p3>
+alias g13m1g11 /ma "Viruna" <p4>
+alias g13m1g12 /ma "Viruna" <p5>
+alias g13mg13 /ma "Viruna" <p0>
+alias g13m1g14 /ma "Sacrifice" <stpc>
+ 
+alias g13m1g15 /ma "cure IV" <p1>
+alias g13m1g16 /ma "cure IV" <p2>
+alias g13m1g17 /ma "cure IV" <p3>
+alias g13m1g18 /ma "cure IV" <p4>
+alias g13m1g19 /ma "cure IV" <p5>
+
+alias g13m1g20 /ja "Divine Caress" <me>
+alias g13m1g21 /ja "Divine Seal" <me>
+alias g13m1g22 /ma "Erase" <stpc>
+ 
+alias g13m1g23 /ja "Afflatus Solace" <me>
+alias g13m1g24 /ja "Afflatus Misary" <me>
+

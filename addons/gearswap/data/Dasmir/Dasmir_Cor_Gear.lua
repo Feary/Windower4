@@ -6,7 +6,7 @@ function user_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT','Refresh')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
-	state.Weapons:options('Default','DualWeapons','SavageWeapons','DualRangedWeapons','LeadenWeapons','None')
+	state.Weapons:options('Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
 	
     gear.RAbullet = "Eminent Bullet"
     gear.WSbullet = "Eminent Bullet"
@@ -348,19 +348,21 @@ function init_gear_sets()
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
-	-- Weapon Sets
-	-- Fencer Last Stand
-	sets.weapons.Default = {main="Fettering Blade",sub="Nusku Shield",range="Holliday"}--range="Fomalhaut"
-	-- Fencer Last Stand
-	sets.weapons.DualWeapons = {main="Fettering Blade",sub="Blurred Knife +1",range="Holliday"}--range="Fomalhaut"
-	sets.weapons.RollMeleeWeapons = {main="Hep. Sapara +1",sub="Blurred Knife +1",range="Compensator"}
-	sets.weapons.RollRangedWeapons = {main="Fettering Blade",sub="Kustawi +1",range="Compensator"}
-	-- Savage Spam
-	sets.weapons.SavageWeapons = {main="Hep. Sapara +1",sub="Blurred Knife +1",range="Holliday"}--range="Ataktos"
-	-- Ranged Shooting
-	sets.weapons.DualRangedWeapons = {main="Fettering Blade",sub="Kustawi +1",range="Holliday"}--
-	-- Leaden/Wildfire
-	sets.weapons.LeadenWeapons = {main="Fettering Blade",sub="Hep. Rapier +1",range="Holliday"}-- range="Fomalhaut"
+	--Weapon Sets
+	--'Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
+	-- Fencer Last Stand Rostam
+	sets.weapons.Default = {main="Kustawi +1",sub="Nusku Shield",range="Molybdosis"}--range="Fomalhaut"
+	-- Last Stand Dual Ranged
+	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Kaja Knife",range="Molybdosis"}
+	-- Fencer Savage 
+	sets.weapons.SavageWeapons = {main="Kaja Sword",sub="Nusku Shield", range="Molybdosis"}--range="Ataktos"
+	-- DW Savage
+	sets.weapons.DualWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Molybdosis"}--range="Ataktos"
+	-- Leaden/Wildfire  Rostam Path A
+	sets.weapons.LeadenWeapons = {main="Kaja Sword",sub="Kaja Knife",range="Molybdosis"}--range="Fomalhaut"
+	-- Rolling
+	sets.weapons.RollMeleeWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Compensator"}
+	sets.weapons.RollRangedWeapons = {main="Kustawi +1",sub="Nusku Shield", range="Compensator"}
 	
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",}--body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"
 

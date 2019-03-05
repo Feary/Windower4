@@ -1,0 +1,20 @@
+alias g15m3g1 input //send aniyah /ma "Cure V" Feary
+alias g15m3g2 input //send aniyah /ma "Cure V" Derion
+alias g15m3g3 input //send aniyah /ma "Cure V" Firetoplay
+alias g15m3g4 input //send aniyah /ma "Cure V" Feary
+alias g15m3g5 input //send aniyah /ma "Cure V" Derion
+alias g15m3g6 input //send aniyah /ma "Cure V" Firetoplay
+
+alias g15m3g7 input //send aniyah /ma "Haste" Feary
+alias g15m3g8 input //send aniyah /ma "Haste" Derion
+alias g15m3g9 input //send aniyah /ma "Haste" Firetoplay
+alias g15m3g10 input //send aniyah /ma "Haste" Feary
+alias g15m3g11 input //send aniyah /ma "Haste" Derion
+alias g15m3g12 input //send aniyah /ma "Haste" Firetoplay
+
+alias g15m3g13 input //send aniyah /ma "Erase" Feary
+alias g15m3g14 input //send aniyah /ma "Erase" Derion
+alias g15m3g15 input //send aniyah /ma "Erase" Firetoplay
+alias g15m3g16 input //send aniyah /ma "Erase" Feary
+alias g15m3g17 input //send aniyah /ma "Erase" Derion
+alias g15m3g18 input //send aniyah /ma "Erase" Firetoplay

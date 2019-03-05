@@ -94,8 +94,7 @@ function init_gear_sets()
 		-- ammo="Impatiens", 
 		-- neck="Orunmila's Torque", rear="Enchantr. Earring +1",
 		head="Carmine Mask", lear="Loquac. Earring",
-		-- rring="Prolix Ring",
-		body="Luhlaza Jubbah +1", hands="Leyline Gloves",
+		body="Luhlaza Jubbah +1", hands="Leyline Gloves", rring="Prolix Ring",
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Carmine Greaves"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})--body="Passion Jacket"
@@ -392,8 +391,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
 		-- neck="Incanter's Torque"
 		head="Luhlaza Keffiyeh", neck="Mavi Scarf", lear="Loquac. Earring", rear="Gifted Earring",
-		--ring1="Kishar Ring",
-		body="Assim. Jubbah +1", hands="Hashi. Bazubands", ring2="Defending Ring",
+		body="Assim. Jubbah +1", hands="Hashi. Bazubands", ring1="Kishar Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Lengo Pants",feet="Carmine Greaves"}
 
 	sets.midcast['Blue Magic']['Battery Charge'] = set_combine(sets.midcast['Blue Magic'].Buff, {})--head="Amalric Coif",back="Grapevine Cape",waist="Gishdubar Sash"
@@ -533,14 +531,14 @@ function init_gear_sets()
 	sets.Assault = {ring1="Balrahn's Ring"}
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Tanmogayi +1",sub="Tanmogayi"}
+	sets.weapons.Default = {main="Kaja Sword",sub="Tanmogayi +1"}
 	sets.weapons.MeleeClubs = {main="Gabaxorea",sub="Tanmogayi +1"}
-	sets.weapons.MagicWeapons = {main="Gabaxorea",sub="Tanmogayi +1"}
+	sets.weapons.MagicWeapons = {main="Kaja Sword",sub="Gabaxorea"}
 	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets
-	sets.engaged =  {main="Tanmogayi +1", sub="Tanmogayi",
+	sets.engaged =  {main="Kaja Sword", sub="Tanmogayi +1",
 		head="Carmine Mask", neck="Asperity Necklace", lear="Brutal Earring", rear="Ghillie Earring +1",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Rajas Ring", rring="Epona's Ring",
 		back=gear.da_jse_back, waist="Reiki Yotai", legs="Samnuha Tights", feet="Carmine Greaves"}
