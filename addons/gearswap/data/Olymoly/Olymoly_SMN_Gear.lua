@@ -36,6 +36,10 @@ function user_setup()
 	send_command('bind ^` gs c toggle PactSpamMode')
 	send_command('bind !pause gs c toggle AutoSubMode') --Automatically uses sublimation.
 	
+	send_command('alias fol send @others follow Olymoly')
+	send_command('alias aoe input /targetnpc;send @all /pet "Thunderspark" <t>')
+	send_command('alias stun input /targetnpc;send @all /pet "Thunderspark" <t>')
+	
     select_default_macro_book()
 end
 
