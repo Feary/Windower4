@@ -8,8 +8,12 @@ function user_setup()
 	-- Avatar Ammo - Sancus Sachet +1
 	gear.avatar_ammo = {name="Idaraaja"}
 	-- Staves
+	-- Nirvana
 	gear.perp_staff = {name="Gridarvor"}
 	gear.skill_staff = {name="Espiritus"}
+	ugear.phys_BP_Staff = {name="Gridarvor"}
+	-- Nirvana grioavolr
+	gear.magic_BP_Staff = {name="Gridarvor"}
 
 	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: "Regen"+10','Pet: "Regen"+5',}}
 	gear.phys_jse_back = {name="Campestres's Cape",augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Haste+10','Pet: Damage taken -5%',}}
@@ -37,8 +41,8 @@ function user_setup()
 	send_command('bind !pause gs c toggle AutoSubMode') --Automatically uses sublimation.
 	
 	send_command('alias fol send @others follow Olymoly')
-	send_command('alias aoe input /targetnpc;send @all /pet "Thunderspark" <t>')
-	send_command('alias stun input /targetnpc;send @all /pet "Thunderspark" <t>')
+	send_command('alias aoe input /targetnpc;send @all /ma "Thunderspark" <t>')
+	send_command('alias stun input /targetnpc;send @all /ma "Thunderspark" <t>')
 	
     select_default_macro_book()
 end
@@ -120,7 +124,7 @@ function init_gear_sets()
 		
 	sets.Self_Healing = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",}-- waist="Gishdubar Sash"
 	sets.Cure_Received = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",}--waist="Gishdubar Sash"
-	sets.Self_Refresh = {}--back="Grapevine Cape",waist="Gishdubar Sash",feet="Inspirited Boots"
+	sets.Self_Refresh = {back="Grapevine Cape",}--waist="Gishdubar Sash",feet="Inspirited Boots"
 		
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {
 		--neck="Debilis Medallion",
@@ -129,7 +133,7 @@ function init_gear_sets()
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})--main="Oranyan",sub="Clemency Grip"
 
-	sets.midcast['Elemental Magic'] = {main="Gridarvor",sub="Enki Strap",ammo="Dosis Tathlum",
+	sets.midcast['Elemental Magic'] = {main="Gridarvor",sub="Enki Strap",
         head="Inyanga Tiara +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Inyanga Jubbah +2",hands="Amalric Gages",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops",feet="Amalric Nails"}
@@ -139,7 +143,7 @@ function init_gear_sets()
         body="Inyanga Jubbah +2",hands="Amalric Gages",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops",feet="Amalric Nails"}
 
-    sets.midcast['Divine Magic'] = {main="Gridarvor",sub="Enki Strap",ammo="Dosis Tathlum",
+    sets.midcast['Divine Magic'] = {main="Gridarvor",sub="Enki Strap",
         head="Inyanga Tiara +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Inyanga Jubbah +2",hands="Amalric Gages",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops",feet="Amalric Nails"}
@@ -161,7 +165,7 @@ function init_gear_sets()
     sets.midcast.Stun = {main="Gridarvor",sub="Enki Strap",ammo="Hasty Pinion +1",
 		head="Inyanga Tiara +2",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands="Amalric Gages",ring1="Stikini Ring",ring2="Prolix Ring",
-		back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
+		back=gear.FC_jse_back,waist="Witful Belt",legs=gear_chironic_macc_legs,feet="Regal Pumps +1"}
 		
     sets.midcast.Stun.Resistant = {main="Gridarvor",sub="Enki Strap",ammo="Hasty Pinion +1",
 		head="Inyanga Tiara +2",neck="Voltsurge Torque",ear1="Gwati Earring",ear2="Enchntr. Earring +1",
@@ -268,14 +272,14 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {main="Chatoyant Staff",sub="Vox Grip",ammo="Staunch Tathlum",
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Inyanga Ring",ring2="Defending Ring",
+        body="Shomonjijoe +1",hands="Asteria Mitts +1",ring1="Inyanga Ring",ring2="Defending Ring",
 		-- feet="Baayami Sabots"
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
     
     -- Idle sets
     sets.idle = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
         head="Convoker's Horn +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Inyanga Ring",ring2="Defending Ring",
+        body="Shomonjijoe +1",hands="Asteria Mitts +1",ring1="Inyanga Ring",ring2="Defending Ring",
 		-- feet="Baayami Sabots"
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
     

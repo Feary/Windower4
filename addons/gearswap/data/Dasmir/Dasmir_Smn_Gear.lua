@@ -4,12 +4,16 @@ function user_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT', 'TPEat')
 
-	-- Avatar Ammo - Sancus Sachet +1
-	gear.avatar_ammo = {name="Idaraaja"}
+	-- Avatar Ammo - 
+	gear.avatar_ammo = {name="Sancus Sachet +1"}
 	-- Staves
+	-- Nirvana
 	gear.perp_staff = {name="Gridarvor"}
 	gear.skill_staff = {name="Espiritus"}
-
+	gear.phys_BP_Staff = {name="Gridarvor"}
+	-- Nirvana grioavolr
+	gear.magic_BP_Staff = {name="Gridarvor"}
+	
 	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: "Regen"+5',}}
 	gear.phys_jse_back = {name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','System: 1 ID: 1247 Val: 4',}}
 	gear.FC_jse_back = {name="Campestres's Cape",augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
@@ -363,7 +367,7 @@ function init_gear_sets()
 		-- Nirvana Oneiros Grip 
         head="Convoker's Horn +3",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
 		--hands=gear.merlinic_refresh_hands, ring1="Evoker's Ring",
-        body="Beck. Doublet +1", hands="Asteria Mitts +1", ring1="Inyanga Ring", ring2="Defending Ring",
+        body="Glyphic Doublet +3", hands="Asteria Mitts +1", ring1="Inyanga Ring", ring2="Defending Ring",
         back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
     sets.idle.PDT.Avatar = {main="Gridarvor", sub="Elan Strap +1", ammo=gear.avatar_ammo,
@@ -457,10 +461,9 @@ function init_gear_sets()
     sets.engaged = {main="Gridarvor", ammo=gear.avatar_ammo,
 		--  sub="Bloodrain Strap", ear1="Digni. Earring", ear2="Telos Earring",
         head="Tali'ah Turban +1", neck="Shulmanu Collar", lear="Bladeborn Earring", rear="Steelflash Earring",
-		-- hands="Convo. Bracers +3"
-        body="Con. Doublet +3", hands="Tali'ah Gages +1",ring1="Rajas Ring",ring2="Ramuh Ring",
-		-- waist="Olseni Belt", legs="Convo. Spats +3",
-        back=gear.phys_jse_back, legs="Tali'ah Sera. +1", feet="Convo. Pigaches +3"}
+        body="Con. Doublet +3", hands="Convo. Bracers +2", ring1="Rajas Ring", ring2="Ramuh Ring",
+		-- waist="Olseni Belt", 
+        back=gear.phys_jse_back, legs="Convo. Spats +2", feet="Convo. Pigaches +3"}
 end
 
 -- Select default macro book on initial load or subjob change.

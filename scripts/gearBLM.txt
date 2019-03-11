@@ -1,39 +1,42 @@
-put Amalric Gages Case all
-put Amalric Nails Case all
-put Amalric Slops Case all
-put Arasy Staff Case all
-put Arch. Coat Case all
-put Arch. Sabots Case all
-put Arch. Tonban Case all
-put Atinian Staff Case all
-put Bane Cape Case all
-put Barkaro. Earring Case all
-put Hagondes Coat +1 Case all
-put Hvergelmir Case all
-put Jhakri Coronal +2 Case all
-put Jhakri Cuffs +2 Case all
-put Jhakri Pigaches +2 Case all
-put Jhakri Robe +2 Case all
-put Jhakri Slops +2 Case all
-put Kirin's Pole Case all
-put Lathi Case all
-put Mall. Chapeau +2 Case all
-put Mallquis Clogs +2 Case all
-put Mallquis Cuffs +2 Case all
-put Mallquis Saio +2 Case all
-put Mallquis Trews +2 Case all
-put Merlinic Hood Case all
-put Rubicundity Case all
-put Sorcerer's Gloves Case all
-put Sorcerer's Petas. Case all
-put Spae. Petasos Case all
-put Spaekona's Coat Case all
-put Spaekona's Gloves Case all
-put Spaekona's Tonban Case all
-put Taranus's Cape Case all
-put Welkin Crown Case all
-put Wicce Chausses Case all
-put Wicce Coat Case all
-put Wicce Gloves Case all
-put Wicce Petasos Case all
-put Wicce Sabots Case all
+get Amalric Gages Case all
+get Amalric Nails Case all
+get Amalric Slops Case all
+get Arasy Staff Case all
+get Arch. Coat +1 Case all
+get Arch. Gloves +1 Case all
+get Arch. Petas. Case all
+get Arch. Sabots +1 Case all
+get Arch. Tonban +1 Case all
+get Atinian Staff Case all
+get Bane Cape Case all
+get Barkaro. Earring Case all
+get Hagondes Coat +1 Case all
+get Helios Gloves case all
+get Hvergelmir Case all
+get Jhakri Coronal +2 Case all
+get Jhakri Cuffs +2 Case all
+get Jhakri Pigaches +2 Case all
+get Jhakri Robe +2 Case all
+get Jhakri Slops +2 Case all
+get Kirin's Pole Case all
+get Lathi Case all
+get Mall. Chapeau +2 Case all
+get Mallquis Clogs +2 Case all
+get Mallquis Cuffs +2 Case all
+get Mallquis Saio +2 Case all
+get Mallquis Trews +2 Case all
+get Merlinic Hood Case all
+get Merlinic Crackows Case all
+get Mizu. Kubikazari Case all
+get Rubicundity Case all
+get Spae. Petasos Case all
+get Spaekona's Coat Case all
+get Spaekona's Gloves Case all
+get Spaekona's Tonban Case all
+get Taranus's Cape Case all
+get Welkin Crown Case all
+get Wicce Chausses Case all
+get Wicce Coat Case all
+get Wicce Gloves Case all
+get Wicce Petasos Case all
+get Wicce Sabots +1 Case all

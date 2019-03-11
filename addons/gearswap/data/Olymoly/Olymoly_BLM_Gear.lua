@@ -3,7 +3,7 @@ function user_setup()
 	state.CastingMode:options('Normal','Resistant','Fodder','Proc','OccultAcumen')
 	state.OffenseMode:options('Normal')
 	state.IdleMode:options('Normal', 'PDT', 'TPEat','DTHippo')
-	state.Weapons:options('None','NukeWeapons','Khatvanga','Malevolence')
+	state.Weapons:options('None','NukeWeapons') --'Khatvanga','Malevolence'
 
 	gear.obi_cure_waist = "Luminary Sash"
 	gear.obi_low_nuke_waist = "Yamabuki-no-Obi"
@@ -44,28 +44,29 @@ function init_gear_sets()
     --------------------------------------
 	
 	-- Weapons sets
-	sets.weapons.NukeWeapons = {main="Lathi",sub="Niobid Strap"}
+	sets.weapons.NukeWeapons = {main="Lathi",sub="Enki Strap"}
 	sets.weapons.Khatvanga = {main="Khatvanga",sub="Bloodrain Strap"}
-	sets.weapons.Malevolence = {main="Malevolence",sub="Ammurapi Shield"}
+	sets.weapons.Malevolence = {main="Malevolence",} --sub="Ammurapi Shield"
     
     ---- Precast Sets ----
     
     -- Precast sets to enhance JAs
-    sets.precast.JA['Mana Wall'] = {back=gear.nuke_jse_back,feet="Wicce Sabots"}
+    sets.precast.JA['Mana Wall'] = {back=gear.nuke_jse_back,feet="Wicce Sabots +1"}
 
-    sets.precast.JA.Manafont = {body="Arch. Coat"}
+    sets.precast.JA.Manafont = {body="Arch. Coat +1"}
     
     -- equip to maximize HP (for Tarus) and minimize MP loss before using convert
     sets.precast.JA.Convert = {}
 
 
     -- Fast cast sets for spells
-    sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
+    sets.precast.FC = {main="Oranyan",
+		-- main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
 		-- head="Amalric Coif +1",
 		head="Merlinic Hood", neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		-- body="Zendik Robe", hands="Volte Gloves"
-		body="Anhur Robe", hands=gear_helios_hands_FC, ring1="Kishar Ring",ring2="Lebeche Ring",
-		back="Perimede Cape",waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
+		body="Anhur Robe", hands=gear_helios_hands_FC, ring1="Kishar Ring",ring2="Prolix Ring",
+		back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
 		
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
@@ -340,7 +341,7 @@ function init_gear_sets()
 		back="Tempered Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Vanya Clogs"}
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-    sets.buff['Mana Wall'] = {back=gear.nuke_jse_back,feet="Wicce Sabots"}
+    sets.buff['Mana Wall'] = {back=gear.nuke_jse_back,feet="Wicce Sabots +1"}
 	
 	-- Gear that converts elemental damage done to recover MP.	
 	sets.RecoverMP = {body="Spaekona's Coat +3"}

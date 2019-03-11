@@ -2,13 +2,16 @@ put Amalric Gages Case all
 put Amalric Nails Case all
 put Amalric Slops Case all
 put Arasy Staff Case all
-put Arch. Coat Case all
-put Arch. Sabots Case all
-put Arch. Tonban Case all
+put Arch. Coat +1 Case all
+put Arch. Gloves +1 Case all
+put Arch. Petas. Case all
+put Arch. Sabots +1 Case all
+put Arch. Tonban +1 Case all
 put Atinian Staff Case all
 put Bane Cape Case all
 put Barkaro. Earring Case all
 put Hagondes Coat +1 Case all
+put Helios Gloves case all
 put Hvergelmir Case all
 put Jhakri Coronal +2 Case all
 put Jhakri Cuffs +2 Case all
@@ -23,9 +26,9 @@ put Mallquis Cuffs +2 Case all
 put Mallquis Saio +2 Case all
 put Mallquis Trews +2 Case all
 put Merlinic Hood Case all
+put Merlinic Crackows Case all
+put Mizu. Kubikazari Case all
 put Rubicundity Case all
-put Sorcerer's Gloves Case all
-put Sorcerer's Petas. Case all
 put Spae. Petasos Case all
 put Spaekona's Coat Case all
 put Spaekona's Gloves Case all
@@ -36,4 +39,4 @@ put Wicce Chausses Case all
 put Wicce Coat Case all
 put Wicce Gloves Case all
 put Wicce Petasos Case all
-put Wicce Sabots Case all
+put Wicce Sabots +1 Case all

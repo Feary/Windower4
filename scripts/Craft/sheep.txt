@@ -1,0 +1,5 @@
+get sheepskin 180
+get w*tea leaves 180
+get tanning vat 60
+get distilled water 60
+
