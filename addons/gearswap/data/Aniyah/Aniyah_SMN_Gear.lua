@@ -66,7 +66,7 @@ function init_gear_sets()
 		-- hands="Baayami Cuffs"
         body=gear_telchine_body_Siphon, hands="Glyphic Bracers +1", ring1="Evoker's Ring", ring2="Stikini Ring",
 		-- waist="Kobo Obi",
-		 back="Conveyance Cape", legs=gear_telchine_legs_Siphon, feet="Beck. Pigaches +1"}
+		back="Conveyance Cape", legs=gear_telchine_legs_Siphon, feet="Beck. Pigaches +1"}
 
     sets.precast.JA['Mana Cede'] = {hands="Beck. Bracers +1"}
 
@@ -78,7 +78,7 @@ function init_gear_sets()
         -- hands="Baayami Cuffs",
 		body="Con. Doublet +3", hands="Glyphic Bracers +1", ring1="Evoker's Ring",ring2="Stikini Ring",
         -- waist="Kobo Obi", legs="Baayami Slops", feet="Baayami Sabots"
-		 back="Conveyance Cape", legs="Glyphic Spats +1", feet="Glyphic Pigaches +1"}
+		back="Conveyance Cape", legs="Glyphic Spats +1", feet="Glyphic Pigaches +1"}
 
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
 
@@ -236,8 +236,7 @@ function init_gear_sets()
 		head="Convoker's Horn +3", neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
 		-- hands="Apogee Mitts +1", Path D
 		body="Con. Doublet +3", hands="Tali'ah Gages +2", ring1="Evoker's Ring",ring2="Stikini Ring",
-		-- legs="Convoker's Spats +3",     
-        back=gear.magic_jse_back, waist="Regal Belt", legs="Convo. Spats +2", feet="Convo. Pigaches +3"}
+        back=gear.magic_jse_back, waist="Regal Belt", legs="Convo. Spats +3", feet="Convo. Pigaches +3"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
     
@@ -442,7 +441,7 @@ function init_gear_sets()
         head="Convoker's Horn +3", neck="Shulmanu Collar", 
 		body="Con. Doublet +3", hands="Convo. Bracers +2", ring1="Varar Ring +1", ring2="Varar Ring +1",
         --waist="Olseni Belt", 
-		back=gear.phys_jse_back, waist="Windbuffet Belt", legs="Convo. Spats +2", feet="Convo. Pigaches +3"}
+		back=gear.phys_jse_back, waist="Windbuffet Belt", legs="Convo. Spats +3", feet="Convo. Pigaches +3"}
 end
 
 -- Select default macro book on initial load or subjob change.

@@ -27,7 +27,6 @@ lua load AnnounceTarget;
 lua load answeringmachine;
 lua load autocontrol;
 lua load autoinvite;
-lua load autojoin;
 lua load azureSets;
 lua load battlemod;
 lua load BLUAlert;
