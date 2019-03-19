@@ -19,13 +19,11 @@ get Ptero. Brais +3 locker all
 get Ptero. Fin. G. +3 locker all 
 get Ptero. Greaves +3 locker all 
 get Ptero. Mail +3 locker all 
-get Reienkyo locker all 
-get Rhongomiant locker all 
 get Trishula locker all
 get Updraft Mantle locker all
 get Utu Grip locker all 
 get Vish. Fin. Gaunt locker all 
 get Vishap Armet +1 locker all 
 get Vishap Brais +1 locker all 
-get Vishap Greaves locker all 
+get Vishap Greaves +1 locker all 
 get Vishap Mail +1 locker all 

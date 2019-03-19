@@ -1,15 +1,15 @@
-alias g15m1g1 /equip range "Gjallarhorn";wait 1;/ma "Valor Minuet V"
-alias g15m1g2 /equip range "Gjallarhorn";wait 1;/ma "Valor Minuet IV"
-alias g15m1g3 /equip range "Daurdabla";wait 1;/ma "Valor Minuet III"
-alias g15m1g4 /equip range "Gjallarhorn";wait 1;/ma "Victory March"
-alias g15m1g5 /equip range "Gjallarhorn";wait 1;/ma "Advancing March"
-alias g15m1g6 /ja "Pianissimo" <me>
+alias g15m1g1 input /ma "Honor March" 
+alias g15m1g2 input /ma "Victory March" 
+alias g15m1g3 input /ma "Blade Madrigal" 
+alias g15m1g4 input /ma "Sword Madrigal" 
+alias g15m1g5 input /ma "Honor March" 
+alias g15m1g6 input /ma "Honor March" 
 
-alias g15m1g7 /equip range "Gjallarhorn";wait 1; /ma "Mage's Ballad III" 
-alias g15m1g8 /equip range "Gjallarhorn";wait 1; /ma "Mage's Ballad II"
-alias g15m1g9 /equip range "Gjallarhorn"; wait 1; /ma "Mage's Ballad"
-alias g15m1g10 /ma "Blade Madrigal" 
-alias g15m1g11 /ma "Sword Madrigal"
+alias g15m1g7 gs c set ExtraSongsMode Dummy;wait 1;input /ma "Fowl Aubade"
+alias g15m1g8 
+alias g15m1g9 
+alias g15m1g10 
+alias g15m1g11 
 alias g15m1g12 
 
 alias g15m1g13 

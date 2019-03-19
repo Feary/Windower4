@@ -1,0 +1,22 @@
+alias g15m1g1 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g2 input /targetnpc;wait 1;input /ma "Geo-Malaise" <stnpc>
+alias g15m1g3 input /targetnpc;wait 1;input /ma "Geo-Refresh" <stnpc>
+alias g15m1g4 input /targetnpc;wait 1;input /ma "Indi-Torpor" 
+alias g15m1g5 input /targetnpc;wait 1;input /ma "Indi-Acumen" 
+alias g15m1g6 input /targetnpc;wait 1;input /ma "Indi-Fury" 
+
+alias g15m1g7 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g8 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g9 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g10 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g11 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g12 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+
+alias g15m1g13 input /targetnpc;wait 1;input /ma "Geo-Refresh" <stnpc>
+alias g15m1g14 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g15 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g16 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g17 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+alias g15m1g18 input /targetnpc;wait 1;input /ma "Geo-Frailty" <stnpc>
+
+

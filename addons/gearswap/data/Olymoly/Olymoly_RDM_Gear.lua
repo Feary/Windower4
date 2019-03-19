@@ -331,7 +331,7 @@ function init_gear_sets()
 	sets.midcast['Dark Magic'] = {main="Rubicundity",ammo="Pemphredo Tathlum",
 		--sub="Ammurapi Shield",
 		--head="Amalric Coif +1",neck="Incanter's Torque",
-		head="Appetence Crown", neck="Erra Pendant", ear1="Regal Earring",ear2="Digni. Earring",
+		head="Jhakri Coronal +2", neck="Erra Pendant", ear1="Regal Earring",ear2="Digni. Earring",
 		--body="Atrophy Tabard +3",hands="Leth. Gantherots +1",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Stikini Ring",ring2="Stikini Ring",
 		--legs="Psycloth Lappas",feet=gear.merlinic_nuke_feet

@@ -110,11 +110,11 @@ gear_helios_head_BP = {name="Helios Band",  augments={'Pet: Attack+24 Pet: Rng.A
 
 -- Body 
 -- Occult Acumen
-gear_helios_body_occult = {name="Helios Jacket", augments={''}}
+gear_helios_body_occult = {name="Helios Jacket", augments={}}
 
 -- Hands
 gear_helios_hands_Occult = {name="Helios Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Occult Acumen"+10',}}
--- Fastcast +1~5% 
+-- Fastcast +1~5%    add MP
 gear_helios_hands_FC = {name="Helios Gloves", augments={'"Fast Cast"+5',}}
 
 -- Legs 

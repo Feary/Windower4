@@ -3,8 +3,8 @@ get Amalric Nails Case all
 get Amalric Slops Case all
 get Arasy Staff Case all
 get Arch. Coat +1 Case all
-get Arch. Gloves +1 Case all
-get Arch. Petas. Case all
+get Arch. Gloves Case all
+get Arch. Petasos Case all
 get Arch. Sabots +1 Case all
 get Arch. Tonban +1 Case all
 get Atinian Staff Case all
@@ -12,6 +12,7 @@ get Bane Cape Case all
 get Barkaro. Earring Case all
 get Hagondes Coat +1 Case all
 get Helios Gloves case all
+get Helios Boots case all
 get Hvergelmir Case all
 get Jhakri Coronal +2 Case all
 get Jhakri Cuffs +2 Case all
@@ -28,11 +29,12 @@ get Mallquis Trews +2 Case all
 get Merlinic Hood Case all
 get Merlinic Crackows Case all
 get Mizu. Kubikazari Case all
-get Rubicundity Case all
+get Rubicundity Case alln
 get Spae. Petasos Case all
-get Spaekona's Coat Case all
+get Spae. Coat +1 Case all
 get Spaekona's Gloves Case all
 get Spaekona's Tonban Case all
+put Spaekona's Sabots Case all
 get Taranus's Cape Case all
 get Welkin Crown Case all
 get Wicce Chausses Case all

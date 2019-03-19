@@ -15,7 +15,7 @@ put Campestres's Cape Storage all
 put Asteria Mitts +1 Storage all
 put Convo. Bracers +2 Storage all
 put Con. Doublet +3 Storage all
-put Convoker's Horn +2 Storage all
+put Convoker's Horn +3 Storage all
 put Convo. Pigaches +3 Storage all
 put Convo. Spats +2 Storage all
 put Conveyance Cape Storage all

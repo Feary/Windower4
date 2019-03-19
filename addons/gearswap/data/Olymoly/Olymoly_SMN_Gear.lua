@@ -5,8 +5,8 @@ function user_setup()
     state.IdleMode:options('Normal', 'PDT','TPEat')
 	state.Weapons:options('None','Gridarvor')
 	
-	-- Avatar Ammo - Sancus Sachet +1
-	gear.avatar_ammo = {name="Idaraaja"}
+	-- Avatar Ammo 
+	gear.avatar_ammo = {name="Sancus Sachet +1"}
 	-- Staves
 	-- Nirvana
 	gear.perp_staff = {name="Gridarvor"}
@@ -58,21 +58,21 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA['Astral Flow'] = {head="Glyphic Horn +1"}
     
-    sets.precast.JA['Elemental Siphon'] = {main="Gridarvor", sub="Vox Grip", ammo="Esper Stone +1",
+    sets.precast.JA['Elemental Siphon'] = {main=gear.skill_staff, sub="Vox Grip", ammo="Esper Stone +1",
 		-- neck="Incanter's Torque"
         head=gear_telchine_head_Siphon, neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",
 		-- hands="Baayami Cuffs"
         body=gear_telchine_body_Siphon, hands="Glyphic Bracers +1", ring1="Evoker's Ring", ring2="Stikini Ring",
-        back="Conveyance Cape",waist="Lucidity Sash", legs=gear_telchine_legs_Siphon,feet="Beck. Pigaches"}
+        back="Conveyance Cape",waist="Lucidity Sash", legs=gear_telchine_legs_Siphon,feet="Beck. Pigaches +1"}
 
     sets.precast.JA['Mana Cede'] = {hands="Beck. Bracers +1"}
 
     -- Pact delay reduction gear
 	-- 
-    sets.precast.BloodPactWard = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,--ammo="Sancus Sachet +1",
+    sets.precast.BloodPactWard = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
 		-- neck="Incanter's Torque",
 		head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Andoaa Earring",ear2="Evans Earring",
-        -- body="Con. Doublet +3", hands="Baayami Cuffs",
+        -- hands="Baayami Cuffs",
 		body="Con. Doublet +3", hands="Glyphic Bracers +1", ring1="Evoker's Ring",ring2="Stikini Ring",
         -- legs="Baayami Slops", feet="Baayami Sabots"
 		back="Conveyance Cape", waist="Lucidity Sash", legs="Glyphic Spats +1", feet="Glyph. Pigaches +1"}
@@ -103,7 +103,7 @@ function init_gear_sets()
         head="Beckoner's Horn +1",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Gifted Earring",
         -- ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
 		body="Con. Doublet +3",hands="Lamassu Mitts",ring1="Evoker's Ring",ring2="Prolix Ring",
-		back="Conveyance Cape", waist="Luminary Sash", legs="Beck. Spats +1", feet="Beck. Pigaches"}
+		back="Conveyance Cape", waist="Luminary Sash", legs="Beck. Spats +1", feet="Beck. Pigaches +1"}
 
     
     --------------------------------------
@@ -132,7 +132,7 @@ function init_gear_sets()
 		--hands="Hieros Mittens", ring1="Haoma's Ring", ring2="Haoma's Ring", 
 		back=gear.Cure_jse_back,waist="Witful Belt"})
 		
-	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})--main="Oranyan",sub="Clemency Grip"
+	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Oranyan",})--sub="Clemency Grip"
 
 	sets.midcast['Elemental Magic'] = {main="Gridarvor",sub="Enki Strap",
         head="Inyanga Tiara +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",

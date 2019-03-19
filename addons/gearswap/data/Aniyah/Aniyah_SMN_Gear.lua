@@ -59,7 +59,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA['Astral Flow'] = {head="Glyphic Horn +1"}
     
-    sets.precast.JA['Elemental Siphon'] = {main="Gridarvor", sub="Vox Grip", 
+    sets.precast.JA['Elemental Siphon'] = {main=gear.skill_staff, sub="Vox Grip", 
 		-- ammo="Esper Stone +1",
 		--neck="Incanter's Torque"
         head=gear_telchine_head_Siphon, neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",

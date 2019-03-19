@@ -15,7 +15,7 @@ get Campestres's Cape Storage all
 get Asteria Mitts +1 Storage all
 get Convo. Bracers +2 Storage all
 get Con. Doublet +3 Storage all
-get Convoker's Horn +2 Storage all
+get Convoker's Horn +3 Storage all
 get Convo. Pigaches +3 Storage all
 get Convo. Spats +2 Storage all
 get Conveyance Cape Storage all

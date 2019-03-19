@@ -26,9 +26,9 @@
         <trackCloudsSound />
         <trackFog>false</trackFog>
         <trackFogSound />
-        <trackFire>false</trackFire>
+        <trackFire>true</trackFire>
         <trackFireSound />
-        <trackWater>false</trackWater>
+        <trackWater>true</trackWater>
         <trackWaterSound />
         <trackEarth>false</trackEarth>
         <trackEarthSound />
