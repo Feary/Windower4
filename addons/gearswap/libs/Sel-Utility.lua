@@ -964,7 +964,7 @@ end
 
 -- Checks doom, returns true if we're going to cancel and use an item.
 function check_doom(spell, spellMap, eventArgs)
-	if buffactive.doom and state.AutoRemoveDoomMode.value and not (spell.english == 'Cursna' or spell.english == 'Hallowed Water' or spell.english == "Light Arts" or spell.english "Addendum: White" or spell.english == 'Holy Water') then 
+	if buffactive.doom and state.AutoRemoveDoomMode.value and not (spell.english == 'Cursna' or spell.english == 'Hallowed Water' or spell.english == "Light Arts" or spell.english == "Addendum: White" or spell.english == 'Holy Water') then 
 	
 		if (buffactive.mute or buffactive.Omerta or buffactive.silence) or not (silent_can_use(20) and windower.ffxi.get_spell_recasts()[20] < spell_latency) then
 			if state.AutoHolyWaterMode.value and not buffactive.muddle then
@@ -1375,11 +1375,11 @@ function check_cleanup()
 	if state.AutoCleanupMode.value then
 		if player.inventory['Bead Pouch'] then
 			send_command('input /item "Bead Pouch" <me>')
-			tickdelay = os.clock() + 2
+			tickdelay = os.clock() + 2.4
 			return true
 		elseif player.inventory['Silt Pouch'] then
 			send_command('input /item "Silt Pouch" <me>')
-			tickdelay = os.clock() + 2
+			tickdelay = os.clock() + 2.4
 			return true
 		end
 

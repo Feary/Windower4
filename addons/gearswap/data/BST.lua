@@ -287,24 +287,24 @@ function job_post_precast(spell, spellMap, eventArgs)
 					local AccMaxTPset = standardize_set(sets.AccMaxTP)
 
 					if (AccMaxTPset.ear1:startswith("Lugra Earring") or AccMaxTPset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.AccDayMaxTPWSEars then
-						equip(sets.AccDayMaxTPWSEars)
+						equip(sets.AccDayMaxTPWSEars[spell.english] or sets.AccDayMaxTPWSEars)
 					else
-						equip(sets.AccMaxTP)
+						equip(sets.AccMaxTP[spell.english] or sets.AccMaxTP)
 					end
 				elseif sets.MaxTP then
 					local MaxTPset = standardize_set(sets.MaxTP)
 					if (MaxTPset.ear1:startswith("Lugra Earring") or MaxTPset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.DayMaxTPWSEars then
-						equip(sets.DayMaxTPWSEars)
+						equip(sets.DayMaxTPWSEars[spell.english] or sets.DayMaxTPWSEars)
 					else
-						equip(sets.MaxTP)
+						equip(sets.MaxTP[spell.english] or sets.MaxTP)
 					end
 				else
 				end
 			else
 				if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and (WSset.ear1:startswith("Lugra Earring") or WSset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.AccDayWSEars then
-					equip(sets.AccDayWSEars)
+					equip(sets.AccDayWSEars[spell.english] or sets.AccDayWSEars)
 				elseif (WSset.ear1:startswith("Lugra Earring") or WSset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.DayWSEars then
-					equip(sets.DayWSEars)
+					equip(sets.DayWSEars[spell.english] or sets.DayWSEars)
 				end
 			end
 		end
@@ -358,7 +358,10 @@ end
 -- Return true if we handled the aftercast work.  Otherwise it will fall back
 -- to the general aftercast() code in Mote-Include.
 function job_aftercast(spell, spellMap, eventArgs)
-	if pet_midaction() or (type(spell.type) == 'string' and (spell.type == 'Monster' or spell.english == "Bestial Loyalty" or spell.english == 'Call Beast')) then
+	if type(spell.type) == 'string' and spell.type == 'Monster' and state.DefenseMode.value == 'None' then
+		equip(get_pet_midcast_set(spell, spellMap))
+		eventArgs.handled = true
+	elseif pet_midaction() or spell.english == "Bestial Loyalty" or spell.english == 'Call Beast' then
 		eventArgs.handled = true
 	end
 end

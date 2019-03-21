@@ -123,11 +123,11 @@ end
 function job_aftercast(spell, spellMap, eventArgs)
     if spell.type == 'CorsairRoll' and not spell.interrupted then
 		if state.CompensatorMode.value ~= 'Never' then
-			if ((player.equipment.range and player.equipment.range == 'Compensator') or (player.equipment.ranged and player.equipment.ranged == 'Compensator')) and sets.weapons[state.Weapons.value] and sets.weapons[state.Weapons.value].range and sets.weapons[state.Weapons.value].range ~= 'Compensator' then
+			if (player.equipment.range and player.equipment.range == 'Compensator') and sets.weapons[state.Weapons.value] and sets.weapons[state.Weapons.value].range then
 				equip({range=sets.weapons[state.Weapons.value].range})
 				disable('range')
 			end
-			if (player.equipment.main and player.equipment.main == 'Rostam') and sets.weapons[state.Weapons.value] and sets.weapons[state.Weapons.value].main and sets.weapons[state.Weapons.value].main ~= sets.precast.CorsairRoll.main then
+			if sets.precast.CorsairRoll.main and sets.weapons[state.Weapons.value] and sets.weapons[state.Weapons.value].main then
 				equip({main=sets.weapons[state.Weapons.value].main})
 				disable('main')
 			end
@@ -179,23 +179,23 @@ function job_post_precast(spell, spellMap, eventArgs)
 			if get_effective_player_tp(spell, WSset) > 3200 then
 				if elemental_obi_weaponskills:contains(spell.english) then
 					if wsacc:contains('Acc') and sets.MagicalAccMaxTP then
-						equip(sets.MagicalAccMaxTP)
+						equip(sets.MagicalAccMaxTP[spell.english] or sets.MagicalAccMaxTP)
 					elseif sets.MagicalMaxTP then
-						equip(sets.MagicalMaxTP)
+						equip(sets.MagicalMaxTP[spell.english] or sets.MagicalMaxTP)
 					else
 					end
 				elseif spell.skill == 26 then
 					if wsacc:contains('Acc') and sets.RangedAccMaxTP then
-						equip(sets.RangedAccMaxTP)
+						equip(sets.RangedAccMaxTP[spell.english] or sets.RangedAccMaxTP)
 					elseif sets.RangedMaxTP then
-						equip(sets.RangedMaxTP)
+						equip(sets.RangedMaxTP[spell.english] or sets.RangedMaxTP)
 					else
 					end
 				else
 					if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and sets.AccMaxTP then
-						equip(sets.AccMaxTP)
+						equip(sets.AccMaxTP[spell.english] or sets.AccMaxTP)
 					elseif sets.MaxTP then
-						equip(sets.MaxTP)
+						equip(sets.MaxTP[spell.english] or sets.MaxTP)
 					else
 					end
 				end
@@ -222,8 +222,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 				enable('range')
 				equip({range="Compensator"})
 			end
-			local RollSet = standardize_set(sets.precast.CorsairRoll)
-			if RollSet.main == 'Rostam' then
+			if sets.precast.CorsairRoll.main and sets.precast.CorsairRoll.main ~= player.equipment.main then
 				enable('main')
 				equip({main=sets.precast.CorsairRoll.main})
 			end

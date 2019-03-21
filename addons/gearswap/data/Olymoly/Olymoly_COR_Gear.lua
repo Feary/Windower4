@@ -36,6 +36,8 @@ function user_setup()
 	-- 10-fastcast
 	gear.FC_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
 	
+	send_command('alias das send Dasmir /targetnpc;wait 1;send Dasmir Horde Lullaby;wait 1;send dasmir /follow olymoly')
+
     -- Additional local binds
 	send_command('bind !f11 gs c cycle ExtraMeleeMode')
 	send_command('bind ^` gs c cycle ElementalMode')
@@ -486,15 +488,15 @@ function init_gear_sets()
 	-- Fencer Last Stand Rostam
 	sets.weapons.Default = {main="Kustawi +1",sub="Nusku Shield",range="Molybdosis"}--range="Fomalhaut"
 	-- Last Stand Dual Ranged
-	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Eletta Knife",range="Molybdosis"}
+	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Kaja Knife",range="Molybdosis"}
 	-- Fencer Savage 
-	sets.weapons.SavageWeapons = {main="Eletta Sword",sub="Nusku Shield", range="Molybdosis"}--range="Ataktos"
+	sets.weapons.SavageWeapons = {main="Kaja Sword",sub="Nusku Shield", range="Molybdosis"}--range="Ataktos"
 	-- DW Savage
-	sets.weapons.DualWeapons = {main="Eletta Sword",sub="Blurred Knife +1",range="Molybdosis"}--range="Ataktos"
+	sets.weapons.DualWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Molybdosis"}--range="Ataktos"
 	-- Leaden/Wildfire  Rostam Path A
-	sets.weapons.LeadenWeapons = {main="Eletta Sword",sub="Eletta Knife",range="Molybdosis"}--range="Fomalhaut"
+	sets.weapons.LeadenWeapons = {main="Kaja Sword",sub="Kaja Knife",range="Molybdosis"}--range="Fomalhaut"
 	-- Rolling
-	sets.weapons.RollMeleeWeapons = {main="Eletta Sword",sub="Blurred Knife +1",range="Compensator"} --sub="Blurred Knife +1",
+	sets.weapons.RollMeleeWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Compensator"} --sub="Blurred Knife +1",
 	sets.weapons.RollRangedWeapons = {main="Kustawi +1",sub="Nusku Shield", range="Compensator"}
 
     -- Engaged sets

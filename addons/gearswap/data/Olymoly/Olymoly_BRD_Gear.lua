@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('None', 'Normal')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT')
-	state.Weapons:options('None','Default','Aeneas','DualWeapons','DualSwords','DualNukeWeapons')
+	state.Weapons:options('None','Default','Twashtar','DualWeapons','DualSwords','DualNukeWeapons')--'Aeneas',
 	
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = "Daurdabla"
@@ -44,7 +44,8 @@ function init_gear_sets()
 	--------------------------------------
 	
 	sets.weapons.Default = {main="Carnwenhan", sub="Twashtar"}
-	sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
+	sets.weapons.Twashtar = {main="Twashtar", sub="Kaja Knife"}
+	--sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
 	sets.weapons.DualWeapons = {main="Aeneas",sub="Taming Sari"}
 	sets.weapons.DualSwords = {main="Vampirism",sub="Vampirism"}
 	sets.weapons.DualNukeWeapons = {main="Malevolence",sub="Malevolence"}

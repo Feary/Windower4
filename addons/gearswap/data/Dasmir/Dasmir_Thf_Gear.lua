@@ -66,10 +66,9 @@ function init_gear_sets()
 	sets.Ambush = {body="Plunderer's Vest +1"}
 	
 	-- Weapon Sets
-	-- Taming Sari
-	sets.weapons.None = {main="Skinflayer",sub="Ternion Dagger"}
-	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
-	sets.weapons.Throwing = {main="Skinflayer",sub="Ternion Dagger", range="Raider's Bmrng."}
+	sets.weapons.None = {main="Kaja Knife",sub="Kaja Sword"}
+	sets.weapons.MagicWeapons = {main="Kaja Knife",sub="Kaja Sword"}
+	sets.weapons.Throwing = {main="Kaja Knife",sub="Kaja Sword", range="Raider's Bmrng."}
 	
 	-- Actions we want to use to tag TH.
     sets.precast.Step = {ammo="Hasty Pinion +1",
