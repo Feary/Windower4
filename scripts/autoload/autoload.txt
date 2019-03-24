@@ -10,7 +10,6 @@
 
 wait 5;
 load LuaCore;
-load AutoExec;
 load ChatMon;
 load DelayMeNot;
 load FFXIDB;
@@ -37,7 +36,6 @@ lua load ConsoleBG;
 lua load craft;
 lua load Debuffed;
 lua load DistancePlus;
-lua load DressUp;
 lua load findAll;
 lua load gametime;
 lua load GearSwap;

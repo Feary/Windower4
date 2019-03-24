@@ -253,7 +253,7 @@ function init_gear_sets()
         head="Convoker's Horn +2", neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
 		-- ring1="Evoker's Ring",
         body="Con. Doublet +3", hands="Convo. Bracers +2",ring1="Stikini Ring", ring2="Stikini Ring",
-        back=gear.magic_jse_back, waist="Regal Belt", legs="Convo. Spats +2", feet="Convo. Pigaches +3"}
+        back=gear.magic_jse_back, waist="Regal Belt", legs="Convo. Spats +3", feet="Convo. Pigaches +3"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard    
 	
@@ -463,7 +463,7 @@ function init_gear_sets()
         head="Tali'ah Turban +1", neck="Shulmanu Collar", lear="Bladeborn Earring", rear="Steelflash Earring",
         body="Con. Doublet +3", hands="Convo. Bracers +2", ring1="Rajas Ring", ring2="Ramuh Ring",
 		-- waist="Olseni Belt", 
-        back=gear.phys_jse_back, legs="Convo. Spats +2", feet="Convo. Pigaches +3"}
+        back=gear.phys_jse_back, legs="Convo. Spats +3", feet="Convo. Pigaches +3"}
 end
 
 -- Select default macro book on initial load or subjob change.

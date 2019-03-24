@@ -1,0 +1,103 @@
+<autoexec>
+  <!-- Town Gear-->
+  <register event="zone_Port_Jeuno">wait 10;sc set town;wait 1;ll profile default</register>
+  <register event="zone_*Adoulin">wait 10;sc set town;wait 1;ll profile default</register>
+  <!-- Plugins -->
+  <!--<register silent="true" event="login">drawdistance set 10</register>-->
+  <!-- Light Luggage -->
+  <!-- Dynamis -->
+  <register silent="true" event="Zone_Dynamis*">ll profile Feary_Dynamis;wait 7;input /echo Feary's Dynamis Profile Loaded</register>
+  <!-- HNM  Ground Kings-->
+  <register silent="true" event="Zone_Valley*">ll profile Feary_HNM;wait 7;input /echo Feary's HNM Profile Loaded</register>
+  <register silent="true" event="Zone_Dragon*">ll profile Feary_HNM;wait 7;input /echo Feary's HNM Profile Loaded</register>
+  <register silent="true" event="Zone_*Behemoth*">ll profile Feary_HNM;wait 7;input /echo Feary's HNM Profile Loaded</register>
+  <!-- Sky -->
+  <register silent="true" event="Zone_Ru'Aun_Gardens">ll profile Feary_Sky;wait 7;input /echo Feary's Sky Profile Loaded</register>
+  <register silent="true" event="Zone_The_Shrine_of_Ru'Avitau">ll profile Feary_Sky;wait 7;input /echo Feary's Sky Profile Loaded</register>
+  <!-- Sea -->
+  <register silent="true" event="Zone_Al'Taieu">ll profile Feary_Sea;wait 7;input /echo Feary's Sea Profile Loaded</register>
+  <register silent="true" event="Zone_Grand_Palace_of_Hu'Xzoi">ll profile Feary_Sea;wait 7;input /echo Feary's Sea Profile Loaded</register>
+  <register silent="true" event="Zone_The_Garden_of_Ru'Hmet">ll profile Feary_Sea;wait 7;input /echo Feary's Sea Profile Loaded</register>
+  <!-- Limbus-->
+  <register silent="true" event="Zone_Apollyon">ll profile Feary_Limbus;wait 7;input /echo Feary's Apolloyon Profile Loaded</register>
+  <register silent="true" event="Zone_Temenos">ll profile Feary_Limbus;wait 7;input /echo Feary's Temenos Profile Loaded</register>
+  <!--Neo Nyzul-->
+  <register silent="true" event="Zone_Nyzul*">ll profile Feary_Nyzul;wait 7;input /echo Feary's Nyzul Profile Loaded</register>
+  <!-- Salvage -->
+  <register silent="true" event="Zone_*Remnants">ll profile Feary_Salvage;wait 7;input /echo Feary's Salvage Profile Loaded</register>
+  <!-- Einherjar -->
+  <register silent="true" event="Zone_Hazhalm_Testing_Grounds">ll profile Feary_Einherjar;wait 7;input /echo Feary's Einherjar Profile Loaded</register>
+  <!-- Walk of Echoes -->
+  <register silent="true" event="Zone_Walk of Echoes">ll profile Feary_WalkofEchoes;wait 7;input /echo Feary's Walk of Echoes Profile Loaded</register>
+  <!--Abyssea-->
+  <register silent="true" event="Zone_Abyssea*">ll profile Feary_Abyssea;wait 7;input /echo Feary's Abyssea Profile Loaded</register>
+  <!-- VW Provenance -->
+  <register silent="true" event="Zone_Provenance">ll profile Feary_Provenance;wait 7;input /echo Feary's Provenance Profile Loaded</register>
+  <!-- Legion -->
+  <register silent="true" event="Zone_Maquette Abdhaljs-Legion">ll profile Feary_Legion;wait 7;input /echo Feary's Legion Profile Loaded</register>
+  <!-- Meebles Burrows -->
+  <register silent="true" event="Zone_Ghoyu's Reverie">ll profile Feary_Meebles;wait 7;input /echo Feary's Meebles Profile Loaded</register>
+  <register silent="true" event="Zone_Ruhotz Silvermines">ll profile Feary_Meebles;wait 7;input /echo Feary's Meebles Profile Loaded</register>
+  <register silent="true" event="Zone_Everbloom Hollow">ll profile Feary_Meebles;wait 7;input /echo Feary's Meebles Profile Loaded</register>
+  <!-- Delve -->
+  <register silent="true" event="Zone_Cirdas*Caverns*">ll profile Feary_Delve;wait 7;input /echo Feary's Delve Profile Loaded</register>
+  <!-- Skirmish -->
+  <register silent="true" event="Zone_Yorcia*">ll profile Feary_Skirmish;wait 7;input /echo Feary's Skirmish Profile Loaded</register>
+  <!-- Spellcast -->
+  <register silent="true" id="Day|DayWS" event="time_7.*|time_8.*|time_9.*|time_10.*|time_11.*|time_12.*|time_13.*|time_14.*|time_15.*|time_16.*|">sc var set NightOrDay Day</register>
+  <register silent="true" id="Night|NightWS" event="time_17.*|time_18.*|time_19.*|time_20.*|time_21.*|time_22.*|time_23.*|time_0.*|time_1.*|time_2.*|time_3.*|time_4.*|time_5.*|time_6.*">sc var set NightOrDay Night</register>
+  <register silent="true" id="Piercing" event="time_6.00">input /echo Piercing Time </register>
+  <register silent="true" id="Blunt" event="time_22.00">input /echo Blunt Time </register>
+  <register silent="true" id="Slashing" event="time_14.00">input /echo Slashing Time </register>
+  <!-- Job Related -->
+  <!-- MNK -->
+  <register silent="true" event="gainbuff_Formless Strikes">input /p ===== Formless Strikes On ======</register>
+  <register silent="true" event="losebuff_Formless Strikes">input /p ===== Formless Strikes Off ======</register>
+  <register silent="true" event="gainbuff_Max HP Boost">wait 1;input /p ===== Mantra On =====</register>
+  <register silent="true" event="losebuff_Max HP Boost">wait 1;input /p ===== Mantra Off =====</register>
+  <register silent="true" event="gainbuff_Inner Strength">wait 1;input /p ===== Inner Strength On =====</register>
+  <register silent="true" event="losebuff_Inner Strength">wait 1;input /p ===== Inner Strength Off =====</register>
+  <!-- THF -->
+  <!-- Fajin Boots after flee -->
+  <register silent="true" event="losebuff_flee">sc set evasion;wait 1;input /equip feet "Pillager's Poulaines"</register>
+  <register silent="true" event="losebuff_feint">sc set tp</register>
+  <register silent="true" event="losebuff_Sneak_Attack">sc set tp;wait 1;input /equip sub $SubDagger</register>
+  <register silent="true" event="losebuff_Trick_Attack">sc set tp;wait 1;input /equip sub $SubDagger</register>-->
+  <!-- RNG 
+  <register silent="true" event="losebuff_Barrage">sc set RATP</register>-->
+  <!-- BRD -->
+  <register silent="true" event="gainbuff_Nightingale">wait 15;input /p ===== Nightingale @ 45 =====;wait 15;input /p ==== Nightingale @ 30 ====;wait 15;input /p ==== Nightingale @ 15 ====;wait 10;input /p ==== Nightingale @ 5 ===</register>
+  <register silent="true" event="gainbuff_Troubadour">wait 15;input /p ===== Troubadour @ 45 =====;wait 15;input /p ==== Troubadour @ 30 ====;wait 15;input /p ==== Troubadour @ 15 ====;wait 10;input /p ==== Troubadour @ 5 ===</register>
+  <register silent="true" event="losebuff_Nightingale">input /p ==== Nightingale wore Off.</register>
+  <register silent="true" event="losebuff_Troubadour">input /p ==== Troubadour wore Off.</register>
+  <!-- SMN -->
+  <register silent="true" event="gainbuff_quickening">wait 1;input /equip feet "Herald's Gaiters"</register>
+  <!-- Status Effects -->
+  <register silent="true" event="gainbuff_Charm">input /p Charmed.</register>
+  <register silent="true" event="losebuff_Charm">input /p Uncharmed.</register>  
+  <register silent="true" event="Gainbuff_Transcendency">input /p my brew is on.</register>
+  <register silent="true" event="losebuff_Transcendency">input /p my brew is off.</register>
+  <register silent="true" event="gainbuff_Doom*">input /p Doomed</register>
+  <register silent="true" event="losebuff_Doom*">input /p No longer Doomed</register>
+  <register silent="true" event="losebuff_encumbrance">wait 1;sc set tp;wait 1;sc set weapon;wait 1;sc set weapon</register>
+  <!-- Job Changes -->
+  <!-- RMG -->
+  <register silent="true" event="jobchange_rng/*">autoexec register no_ammo input /echo no ammo</register>
+  <!-- Storm Elements -->
+  <register silent="true" event="Gainbuff_Firestorm">sc var set Stormelement Fire</register>
+  <register silent="true" event="Losebuff_Firestorm">sc var set Stormelement None</register>
+  <register silent="true" event="Gainbuff_Hailstorm">sc var set Stormelement Ice</register>
+  <register silent="true" event="Losebuff_Hailstorm">sc var set Stormelement None</register>
+  <register silent="true" event="Gainbuff_Windstorm">sc var set Stormelement Wind</register>
+  <register silent="true" event="Losebuff_Windstorm">sc var set Stormelement None</register>
+  <register silent="true" event="Gainbuff_Sandstorm">sc var set Stormelement Earth</register>
+  <register silent="true" event="Losebuff_Sandstorm">sc var set Stormelement None</register>
+  <register silent="true" event="Gainbuff_Thunderstorm">sc var set Stormelement Thunder</register>
+  <register silent="true" event="Losebuff_Thunderstorm">sc var set Stormelement None</register>
+  <register silent="true" event="Gainbuff_Rainstorm">sc var set Stormelement Water</register>
+  <register silent="true" event="Losebuff_Rainstorm">sc var set Stormelement None</register>
+  <register silent="true" event="Gainbuff_Aurorastorm">sc var set Stormelement Light</register>
+  <register silent="true" event="Losebuff_Aurorastorm">sc var set Stormelement None</register>
+  <register silent="true" event="Gainbuff_Voidstorm">sc var set Stormelement Dark</register>
+  <register silent="true" event="Losebuff_Voidstorm">sc var set Stormelement None</register>
+</autoexec>

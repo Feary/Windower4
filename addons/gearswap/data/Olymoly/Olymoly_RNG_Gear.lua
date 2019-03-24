@@ -69,6 +69,7 @@ function init_gear_sets()
 		head=gear_taeon_head_Snapshot,
 		-- Oshosi Vest +1
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
+		-- Orion Braccae +3
 		back=gear.snapshot_ranger_jse_back, waist="Impulse Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {
@@ -90,6 +91,7 @@ function init_gear_sets()
 		head=gear_taeon_head_Snapshot,
 		-- Oshosi Vest +1
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
+		-- Orion Braccae +3
 		back=gear.snapshot_ranger_jse_back, waist="Impulse Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Gastraphetes.Flurry = set_combine(sets.precast.RA, {
@@ -122,7 +124,7 @@ function init_gear_sets()
 	-- Jishnu's Ridiance
 	sets.precast.WS['Jishnu\'s Radiance'] = {
 		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Moonshade Earring", rear="Sherida Earring",
-		body="Meg. Cuirie +2", hands="Kobo Kote", lring="Begrudging Ring", ring2="Ilabrat Ring",
+		body="Meg. Cuirie +2", hands="Mummu Wrists +2", lring="Regal Ring", ring2="Begrudging Ring",
 		back=gear.crit_ranger_jse_back, waist="Fotia Belt", legs="Darraigner's Brais", feet="Adhe. Gamashes +1"}
 
 	sets.precast.WS['Jishnu\'s Radiance'].Acc = {
@@ -155,51 +157,61 @@ function init_gear_sets()
 	-- Gun
 	-- Last Stand
 	sets.precast.RA['Last Stand'] = {
-		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Enervating Earring",
-		body="Mummu Jacket +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Ilabrat Ring",
-		back=gear.wsd_ranger_jse_back, waist="Kwahu Kachina Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		-- Orion Beret +3 Scout's Gorget +2
+		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Ishvara Earring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminodas's Ring",
+		-- Arc. Braccae +3 Herc. Boots AGI/Ratk/WSD
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	sets.precast.RA['Last Stand'].Acc = {
-		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Enervating Earring",
-		body="Mummu Jacket +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Ilabrat Ring",
-		back=gear.wsd_ranger_jse_back, waist="Kwahu Kachina Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
-	
+		-- Orion Beret +3 Scout's Gorget +2
+		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Ishvara Earring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminodas's Ring",
+		-- Arc. Braccae +3 Herc. Boots AGI/Ratk/WSD
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	-- Coronach
 	sets.precast.RA['Coronach'] = {
-		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Enervating Earring",
-		body="Mummu Jacket +2", hands="Meg. Gloves +2", lring="Rajas Ring", ring2="Ilabrat Ring",
-		back=gear.wsd_ranger_jse_back, waist="Kwahu Kachina Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		-- Orion Beret +3 Scout's Neck +2
+		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Ishvara Earring", rear="Sherida Earring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminodas's Ring",
+		-- Arc. Braccae +3 Herc. Boots AGI/Ratk/WSD
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	sets.precast.RA['Coronach'].Acc = {
-		head="Meghanada Visor +2", neck="Fotia Gorget",  lear="Moonshade Earring", rear="Enervating Earring",
-		body="Mummu Jacket +2", hands="Meg. Gloves +2",  lring="Dingir Ring", rring="Ilabrat Ring",
-		back=gear.wsd_ranger_jse_back, waist="Kwahu Kachina Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		-- Orion Beret +3 Scout's Neck +2
+		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Ishvara Earring", rear="Sherida Earring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminodas's Ring",
+		-- Arc. Braccae +3 Herc. Boots AGI/Ratk/WSD
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 	-- Wildfire
     sets.precast.WS['Wildfire'] = {
 		-- Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
-		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
 		-- Eschan Stone 
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
     sets.precast.WS['Wildfire'].Acc = {		
 		-- Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
-		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
 		-- Eschan Stone 
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
-	
+
 	-- Crossbow
 	-- Trueflight
     sets.precast.WS['Trueflight'] = {
-		-- neck="Scout's Gorget +2" Baetyl Necklace
-        head="Meghanada Visor +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Carm. Sc. Mail +1",hands="Carmine Fin. Ga. +1",lring="Dingir Ring", rring="Regal Ring",
-        back=gear.wsd_ranger_jse_back, waist="Fotia Belt",legs="Gyve Trousers",feet="Adhe. Gamashes +1"}
+		-- Baetyl Necklace
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
+		-- Eschan Stone 
+		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
 
     sets.precast.WS['Trueflight'].Acc = {
-        head="Meghanada Visor +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Carm. Sc. Mail +1",hands="Carmine Fin. Ga. +1",lring="Dingir Ring", rring="Regal Ring",
-        back=gear.wsd_ranger_jse_back, waist="Fotia Belt",legs="Gyve Trousers",feet="Adhe. Gamashes +1"}
-		
+        -- Baetyl Necklace
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
+		-- Eschan Stone 
+		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
+
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Telos Earring",ear2="Sherida Earring",}
 	sets.AccMaxTP = {ear1="Telos Earring",ear2="Enervating Earring",}
@@ -332,7 +344,14 @@ function init_gear_sets()
 	sets.buff['Double Shot'] = {body="Arc. Jerkin +3", back=gear.tp_ranger_jse_back}
 	sets.buff['Double Shot'].Acc = {body="Arc. Jerkin +3", back=gear.tp_ranger_jse_back}
 	
-	sets.buff.Barrage = set_combine(sets.midcast.RA.Acc, {hands="Orion Bracers +1"})
+	sets.buff.Barrage = set_combine(sets.midcast.RA.Acc, 
+		-- head="Arcadian Beret +3",
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
+		-- body="Orion Jerkin +3" Orion Bracers +3 rring="Caooethic Ring +1",
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- Orion Socks +3
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"})
+	
 	sets.buff.Camouflage = {body="Orion Jerkin +1"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	

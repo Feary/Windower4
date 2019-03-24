@@ -1,0 +1,183 @@
+<autoexec>
+  <!-- Plugins -->
+  <register silent="true" event="login_Derion">drawdistance set 10</register>
+  <!-- Login -->
+  <register silent="true" event="login_Derion">wait 30;input /echo Welcome Derion;wait 3;input /yellsw off</register>
+  <register silent="true" event="invite_*">input /join;wait 15;input /p Thanks for the Invite.</register>
+  <!-- Light Luggage-->
+  <register silent="true" Event="Zone_Abyssea*">ll profile Derion_Abyssea;wait 7;input /echo Derion's Abyssea Profile</register>
+  <register silent="true" Event="Zone_Dynamis*">ll profile Derion_Dynamis;wait 7;input /echo Derion's Dynamis Profile</register>
+  <register silent="true" event="Zone_Nyzul*">ll profile Derion_Nyzul;wait 7;input /echo Derion's Nyzul Profile Loaded</register>
+  <!-- Add Limbus
+  <register silent="true" event="Zone_Apoll*">ll profile Feary_Limbus;wait 7;input /echo Feary's Limbus Profile Loaded</register>
+  <register silent="true" event="Zone_Temon*">ll profile Feary_Limbus;wait 7;input /echo Feary's Limbus Profile Loaded</register>
+  -->
+  <!--spellcast -->
+  <register silent="True" event="zone_abyssea-em*">exec Derion/whm/g13/m1/shinryu.txt;wait 1;input /echo Shinryu Profile</register>
+  <register event="zone_Port_Jeuno">wait 10;sc set town</register>
+  <register silent="true" id="Day|DayWS" event="time_7.*|time_8.*|time_9.*|time_10.*|time_11.*|time_12.*|time_13.*|time_14.*|time_15.*|time_16.*|">sc var set NightOrDay Day</register>
+  <register silent="true" id="Night|NightWS" event="time_17.*|time_18.*|time_19.*|time_20.*|time_21.*|time_22.*|time_23.*|time_0.*|time_1.*|time_2.*|time_3.*|time_4.*|time_5.*|time_6.*">sc var set NightOrDay Night</register>
+  <!-- Status Effects -->
+  <register silent="true" event="gainbuff_Charm">input /p Charmed.</register>
+  <register silent="true" event="losebuff_Charm">input /p Uncharmed.</register>
+  <register silent="true" event="Gainbuff_Transcendency">input /p my brew is on.</register>
+  <register silent="true" event="losebuff_Transcendency">input /p my brew is off.</register>
+  <register silent="true" event="gainbuff_Doom*">input /p Doomed</register>
+  <register silent="true" event="losebuff_Doom*">input /p Doom is Off</register>
+  <register silent="true" event="losebuff_encumbrance">wait 1;sc set tp;wait 1;sc set weapon</register>
+
+  <!-- Bard Hacks
+  <register silent="true" event="losebuff_Minuet">wait 5;input /ma "Valor Minuet" Derion</register>
+  <register silent="true" event="losebuff_Madrigal">wait 10:input /ma "Sword Madrigal" Derion</register>-->
+  <!-- Find Settings -->
+  <register silent="true" event="jobchange_*/nin">track add Shihei: ${INVENTORY:shihei};wait 1;track add Sneak Tools: ${ALL:Sanjaku-Tenugui};wait 1;track add Invisible Tools ${ALL:Shinobi-Tabi}</register>
+  <register silent="true" event="zone_abyssea*">track clear;wait 1;track add Keys: ${ALL:Forbidden Key}</register>
+  <!-- job changes/g15/g13 scripts -->
+  <!-- WHM -->
+  <register silent="true" event="jobchange_whm/rdm">track clear;input /macro book 1;exec Derion/whm/g15/m1/default.txt;exec Derion/whm/g15/m2/default.txt;exec Derion/whm/g15/m3/default.txt;exec Derion/whm/g13/m1/default.txt;exec Derion/whm/g13/m2/default.txt;exec Derion/whm/g13/m3/default.txt</register>
+  <register silent="true" event="jobchange_whm/sch">track clear;input /macro book 1;exec Derion/whm/g15/m1/default.txt;exec Derion/whm/g15/m2/default.txt;exec Derion/whm/g15/m3/default.txt;exec Derion/whm/g13/m1/default.txt;exec Derion/whm/g13/m2/default.txt;exec Derion/whm/g13/m3/sch_default.txt</register>
+  <register silent="true" event="jobchange_whm/blm">track clear;input /macro book 1;exec Derion/whm/g15/m1/default.txt;exec Derion/whm/g15/m2/default.txt;exec Derion/whm/g15/m3/default.txt;exec Derion/whm/g13/m1/default.txt;exec Derion/whm/g13/m2/default.txt;exec Derion/whm/g13/m3/default.txt</register>
+  <register silent="true" event="jobchange_whm/nin">track clear;input /macro book 1;exec Derion/whm/g15/m1/default.txt;exec Derion/whm/g15/m2/default.txt;exec Derion/whm/g15/m3/default.txt;exec Derion/whm/g13/m1/default.txt;exec Derion/whm/g13/m2/default.txt;exec Derion/whm/g13/m3/default.txt</register>
+  <!-- BLM -->
+  <register silent="true" id="23444" event="jobchange_blm/*">track clear;input /macro book 2;exec Derion/blm/g15/m1/default.txt;exec Derion/blm/g15/m2/default.txt;exec Derion/blm/g15/m3/default.txt;exec Derion/blm/g13/m1/default.txt;exec Derion/blm/g13/m2/default.txt;exec Derion/blm/g13/m3/default.txt</register>
+  <!-- RDM -->
+  <register silent="true" id="23445" event="jobchange_rdm/*">track clear;input /macro book 3;exec Derion/rdm/g15/m1/default.txt;exec Derion/rdm/g15/m2/default.txt;exec Derion/rdm/g15/m3/default.txt;exec Derion/rdm/g13/m1/default.txt;exec Derion/rdm/g13/m2/default.txt;exec Derion/rdm/g13/m3/default.txt</register>
+  <!-- BRD -->
+  <register silent="true" id="23450" event="jobchange_brd/*">track clear;input /macro book 4</register>
+  <!-- THF -->
+  <register silent="true" id="23446" event="jobchange_thf/*">track clear;input /macro book 5</register>
+
+  <register silent="true" id="23442" event="jobchange_mnk/*">track clear;input /macro book 6;exec Derion/mnk/g15/m1/default.txt;exec Derion/mnk/g15/m2/default.txt;exec Derion/mnk/g15/m3/default.txt;exec Derion/mnk/g13/m1/default.txt;exec Derion/mnk/g13/m2/default.txt;exec Derion/mnk/g13/m3/default.txt</register>
+  <register silent="true" id="23455" event="jobchange_smn/*">track clear;input /macro book 7</register>
+  <register silent="true" id="23456" event="jobchange_blu/*">track clear;input /macro book 8</register>
+  <register silent="true" id="23460" event="jobchange_sch/*">track clear;input /macro book 9</register>
+  <register silent="true" id="23457" event="jobchange_cor/*">track clear;input /macro book 10</register>
+  <register silent="true" id="23441" event="jobchange_war/*">track clear;input /macro book 11;exec Derion/war/g15/m1/default.txt;exec Derion/war/g15/m2/default.txt;exec Derion/war/g15/m3/default.txt;exec Derion/war/g13/m1/default.txt;exec Derion/war/g13/m2/default.txt;exec Derion/war/g13/m3/default.txt</register>
+  <register silent="true" id="23454" event="jobchange_drg/*">track clear;input /macro book 12</register>
+  <register silent="true" id="23451" event="jobchange_rng/*">track clear;input /macro book 13</register>
+  <register silent="true" id="23449" event="jobchange_bst/*">track clear;input /macro book 14</register>
+  <register silent="true" id="23448" event="jobchange_drk/*">track clear;input /macro book 15</register>
+  <register silent="true" id="23447" event="jobchange_pld/*">track clear;input /macro book 16</register>
+  <register silent="true" id="23452" event="jobchange_sam/*">track clear;input /macro book 17</register>
+  <register silent="true" id="23459" event="jobchange_dnc/*">track clear;input /macro book 18</register>
+  <register silent="true" id="23458" event="jobchange_pup/*">track clear;input /macro book 19</register>
+  <register silent="true" id="23453" event="jobchange_nin/*">track clear;input /macro book 20</register>
+  <!--- Weather Events --->
+  <register silent="true" event="weather_Thunder">wait 5; input /echo == Thunder ==</register>
+  <register silent="true" event="weather_Ice">wait 5; input /echo == Ice ==</register>
+  <register silent="true" event="weather_Fire">wait 5; input /echo == Fire ==</register>
+  <register silent="true" event="weather_Earth">wait 5; input /echo == Earth ==</register>
+  <register silent="true" event="weather_Wind">wait 5; input /echo == Wind ==</register>
+  <register silent="true" event="weather_Water">wait 5; input /echo == Water ==</register>
+  <register silent="true" event="weather_Light">wait 5; input /echo == Light ==</register>
+  <register silent="true" event="weather_Dark">wait 5; input /echo == Dark ==</register>
+  <register silent="true" event="weather_Clear">wait 5; input /echo == Clear ==</register>
+  <register silent="true" event="weather_Fog">wait 5; input /echo == Fog ==</register>
+  <register silent="true" event="weather_Clouds">wait 5; input /echo == Cloudy ==</register>
+  <register silent="true" event="weather_Sunshine">wait 5; input /echo == Sunny ==</register>
+  <!--- Vana Dy Events --->
+  <register silent="true" event="day_Firesday">wait5; input /echo == Fireday ==</register>
+  <register silent="true" event="day_Earthsday">wait5; input /echo == Earthsday ==</register>
+  <register silent="true" event="day_Watersday">wait5; input /echo == Watersday ==</register>
+  <register silent="true" event="day_Windsday">wait5; input /echo == Windsday ==</register>
+  <register silent="true" event="day_Iceday">wait5; input /echo == Iceday ==</register>
+  <register silent="true" event="day_Lightningday">wait5; input /echo == Lightningday ==</register>
+  <register silent="true" event="day_Lightsday">wait5; input /echo == Lightsday ==</register>
+  <register silent="true" event="day_Darksday">wait5; input /echo == Darksday ==</register>
+  <autoexec>
+    <!-- Plugins -->
+    <register silent="true" event="login_Aniyah">drawdistance set 10</register>
+    <!-- Login -->
+    <register silent="true" event="login_Aniyah">wait 30;input /echo Welcome Aniyah;wait 3;input /yellsw off</register>
+    <register silent="true" event="invite_*">input /join;wait 15;input /p Thanks for the Invite.</register>
+    <!-- Light Luggage-->
+    <register silent="true" Event="Zone_Abyssea*">ll profile Aniyah_Abyssea;wait 7;input /echo Aniyah's Abyssea Profile</register>
+    <register silent="true" Event="Zone_Dynamis*">ll profile Aniyah_Dynamis;wait 7;input /echo Aniyah's Dynamis Profile</register>
+    <register silent="true" event="Zone_Nyzul*">ll profile Aniyah_Nyzul;wait 7;input /echo Aniyah's Nyzul Profile Loaded</register>
+    <!--spellcast -->
+    <register silent="True" event="zone_abyssea-em*">exec Aniyah/whm/g13/m1/shinryu.txt</register>
+    <register event="zone_Port_Jeuno">wait 10;sc set town</register>
+    <register silent="true" id="Day|DayWS" event="time_7.*|time_8.*|time_10.*|time_12.*|time_14.*|time_16.*|">sc var set NightOrDay Day</register>
+    <register silent="true" id="Night|NightWS" event="time_17.*|time_18.*|time_19.*|time_20.*|time_21.*|time_22.*|time_23.*|time_0.*|time_1.*|time_2.*|time_3.*|time_4.*|time_5.*|time_6.*">sc var set NightOrDay Night</register>
+    <!-- Lose buffs -->
+    <register silent="true" event="losebuff_Transcendency">input /p my brew is off.</register>
+    <register silent="true" event="losebuff_Doom*">input /p Doom is Off</register>
+    <register silent="true" event="Gainbuff_Transcendency">input /p my brew is on.</register>
+    <!-- Bard Hacks
+  <register silent="true" event="losebuff_Minuet">wait 5;input /ma "Valor Minuet" Aniyah</register>
+  <register silent="true" event="losebuff_Madrigal">wait 10:input /ma "Sword Madrigal" Aniyah</register>-->
+    <!-- Find Settings -->
+    <register silent="true" event="jobchange_*/nin">track add Shihei: ${INVENTORY:shihei};wait 1;track add Sneak Tools: ${ALL:Sanjaku-Tenugui};wait 1;track add Invisible Tools ${ALL:Shinobi-Tabi}</register>
+    <register silent="true" event="zone_abyssea*">track clear;wait 1;track add Keys: ${ALL:Forbidden Key}</register>
+    <!-- job changes/g15/g13 scripts -->
+    <!-- WHM -->
+    <register silent="true" event="jobchange_whm/rdm">track clear;input /macro book 1;exec Aniyah/whm/g15/m1/default.txt;exec Aniyah/whm/g15/m2/default.txt;exec Aniyah/whm/g15/m3/default.txt;exec Aniyah/whm/g13/m1/default.txt;exec Aniyah/whm/g13/m2/default.txt;exec Aniyah/whm/g13/m3/default.txt</register>
+    <register silent="true" event="jobchange_whm/sch">track clear;input /macro book 1;exec Aniyah/whm/g15/m1/default.txt;exec Aniyah/whm/g15/m2/default.txt;exec Aniyah/whm/g15/m3/default.txt;exec Aniyah/whm/g13/m1/default.txt;exec Aniyah/whm/g13/m2/default.txt;exec Aniyah/whm/g13/m3/sch_default.txt</register>
+    <register silent="true" event="jobchange_whm/blm">track clear;input /macro book 1;exec Aniyah/whm/g15/m1/default.txt;exec Aniyah/whm/g15/m2/default.txt;exec Aniyah/whm/g15/m3/default.txt;exec Aniyah/whm/g13/m1/default.txt;exec Aniyah/whm/g13/m2/default.txt;exec Aniyah/whm/g13/m3/default.txt</register>
+    <register silent="true" event="jobchange_whm/nin">track clear;input /macro book 1;exec Aniyah/whm/g15/m1/default.txt;exec Aniyah/whm/g15/m2/default.txt;exec Aniyah/whm/g15/m3/default.txt;exec Aniyah/whm/g13/m1/default.txt;exec Aniyah/whm/g13/m2/default.txt;exec Aniyah/whm/g13/m3/default.txt</register>
+    <!-- BLM -->
+    <register silent="true" id="23444" event="jobchange_blm/*">track clear;input /macro book 2;exec Aniyah/blm/g15/m1/default.txt;exec Aniyah/blm/g15/m2/default.txt;exec Aniyah/blm/g15/m3/default.txt;exec Aniyah/blm/g13/m1/default.txt;exec Aniyah/blm/g13/m2/default.txt;exec Aniyah/blm/g13/m3/default.txt</register>
+    <!-- RDM -->
+    <register silent="true" id="23445" event="jobchange_rdm/*">track clear;input /macro book 3;exec Aniyah/rdm/g15/m1/default.txt;exec Aniyah/rdm/g15/m2/default.txt;exec Aniyah/rdm/g15/m3/default.txt;exec Aniyah/rdm/g13/m1/default.txt;exec Aniyah/rdm/g13/m2/default.txt;exec Aniyah/rdm/g13/m3/default.txt</register>
+    <!-- BRD -->
+    <register silent="true" id="23450" event="jobchange_brd/*">track clear;input /macro book 4</register>
+    <!-- THF -->
+    <register silent="true" id="23446" event="jobchange_thf/*">track clear;input /macro book 5</register>
+
+    <register silent="true" id="23442" event="jobchange_mnk/*">track clear;input /macro book 6;exec Aniyah/mnk/g15/m1/default.txt;exec Aniyah/mnk/g15/m2/default.txt;exec Aniyah/mnk/g15/m3/default.txt;exec Aniyah/mnk/g13/m1/default.txt;exec Aniyah/mnk/g13/m2/default.txt;exec Aniyah/mnk/g13/m3/default.txt</register>
+    <register silent="true" id="23455" event="jobchange_smn/*">track clear;input /macro book 7</register>
+    <register silent="true" id="23456" event="jobchange_blu/*">track clear;input /macro book 8</register>
+    <register silent="true" id="23460" event="jobchange_sch/*">track cl ear;input /macro book 9</register>
+    <register silent="true" id="23457" event="jobchange_cor/*">track clear;input /macro book 10</register>
+    <register silent="true" id="23441" event="jobchange_war/*">track clear;input /macro book 11;exec Aniyah/war/g15/m1/default.txt;exec Aniyah/war/g15/m2/default.txt;exec Aniyah/war/g15/m3/default.txt;exec Aniyah/war/g13/m1/default.txt;exec Aniyah/war/g13/m2/default.txt;exec Aniyah/war/g13/m3/default.txt</register>
+    <register silent="true" id="23454" event="jobchange_drg/*">track clear;input /macro book 12</register>
+    <register silent="true" id="23451" event="jobchange_rng/*">track clear;input /macro book 13</register>
+    <register silent="true" id="23449" event="jobchange_bst/*">track clear;input /macro book 14</register>
+    <register silent="true" id="23448" event="jobchange_drk/*">track clear;input /macro book 15</register>
+    <register silent="true" id="23447" event="jobchange_pld/*">track clear;input /macro book 16</register>
+    <register silent="true" id="23452" event="jobchange_sam/*">track clear;input /macro book 17</register>
+    <register silent="true" id="23459" event="jobchange_dnc/*">track clear;input /macro book 18</register>
+    <register silent="true" id="23458" event="jobchange_pup/*">track clear;input /macro book 19</register>
+    <register silent="true" id="23453" event="jobchange_nin/*">track clear;input /macro book 20</register>
+    <!--- Weather Events --->
+    <register silent="true" event="weather_Thunder">wait 5; input /echo == Thunder ==</register>
+    <register silent="true" event="weather_Ice">wait 5; input /echo == Ice ==</register>
+    <register silent="true" event="weather_Fire">wait 5; input /echo == Fire ==</register>
+    <register silent="true" event="weather_Earth">wait 5; input /echo == Earth ==</register>
+    <register silent="true" event="weather_Wind">wait 5; input /echo == Wind ==</register>
+    <register silent="true" event="weather_Water">wait 5; input /echo == Water ==</register>
+    <register silent="true" event="weather_Light">wait 5; input /echo == Light ==</register>
+    <register silent="true" event="weather_Dark">wait 5; input /echo == Dark ==</register>
+    <register silent="true" event="weather_Clear">wait 5; input /echo == Clear ==</register>
+    <register silent="true" event="weather_Fog">wait 5; input /echo == Fog ==</register>
+    <register silent="true" event="weather_Clouds">wait 5; input /echo == Cloudy ==</register>
+    <register silent="true" event="weather_Sunshine">wait 5; input /echo == Sunny ==</register>
+    <!--- Vana Dy Events --->
+    <register silent="true" event="day_Firesday">wait5; input /echo == Fireday ==</register>
+    <register silent="true" event="day_Earthsday">wait5; input /echo == Earthsday ==</register>
+    <register silent="true" event="day_Watersday">wait5; input /echo == Watersday ==</register>
+    <register silent="true" event="day_Windsday">wait5; input /echo == Windsday ==</register>
+    <register silent="true" event="day_Iceday">wait5; input /echo == Iceday ==</register>
+    <register silent="true" event="day_Lightningday">wait5; input /echo == Lightningday ==</register>
+    <register silent="true" event="day_Lightsday">wait5; input /echo == Lightsday ==</register>
+    <register silent="true" event="day_Darksday">wait5; input /echo == Darksday ==</register>
+    <!-- Storms -->
+    <register silent="true" event="Gainbuff_Firestorm">sc var set StormElement Fire</register>
+    <register silent="true" event="Losebuff_Firestorm">sc var set StormElement None</register>
+    <register silent="true" event="Gainbuff_Hailstorm">sc var set StormElement Ice</register>
+    <register silent="true" event="Losebuff_Hailstorm">sc var set StormElement None</register>
+    <register silent="true" event="Gainbuff_Windstorm">sc var set StormElement Wind</register>
+    <register silent="true" event="Losebuff_Windstorm">sc var set StormElement None</register>
+    <register silent="true" event="Gainbuff_Sandstorm">sc var set StormElement Earth</register>
+    <register silent="true" event="Losebuff_Sandstorm">sc var set StormElement None</register>
+    <register silent="true" event="Gainbuff_Thunderstorm">sc var set StormElement Thunder</register>
+    <register silent="true" event="Losebuff_Thunderstorm">sc var set StormElement None</register>
+    <register silent="true" event="Gainbuff_Rainstorm">sc var set StormElement Water</register>
+    <register silent="true" event="Losebuff_Rainstorm">sc var set StormElement None</register>
+    <register silent="true" event="Gainbuff_Aurorastorm">sc var set StormElement Light</register>
+    <register silent="true" event="Losebuff_Aurorastorm">sc var set StormElement None</register>
+    <register silent="true" event="Gainbuff_Voidstorm">sc var set StormElement Dark</register>
+    <register silent="true" event="Losebuff_Voidstorm">sc var set StormElement None</register>
+  </autoexec>
+
+</autoexec>

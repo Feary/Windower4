@@ -1,0 +1,48 @@
+<autoexec>
+  <!-- Town Gear-->
+  <register event="zone_Port_Jeuno">wait 10;sc set town;wait 1;ll profile none</register>
+  <!-- Auto join invites -->
+  <register event="invite_*">input /join;wait 15;input /p Thanks for The Invite.</register>
+  <!-- Plugins -->
+  <register silent="true" event="login">drawdistance set 10</register>
+  <!-- Light Luggage -->
+  <register silent="true" event="Zone_Abyssea*">ll profile Tetas_Abyssea;wait 7;input /echo Tetas's Abyssea Profile Loaded</register>
+  <register silent="true" event="Zone_Dynamis*">ll profile Tetas_Dynamis;wait 7;input /echo Tetas's Dynamis Profile Loaded</register>
+  <register silent="true" event="Zone_Nyzul*">ll profile Tetas_Nyzul;wait 7;input /echo Tetas's Nyzul Profile Loaded</register>
+  <!-- Spellcast -->
+  <register silent="true" id="Day|DayWS" event="time_7.*|time_8.*|time_10.*|time_12.*|time_14.*|time_16.*|">sc var set NightOrDay Day</register>
+  <register silent="true" id="Night|NightWS" event="time_17.*|time_18.*|time_19.*|time_20.*|time_21.*|time_22.*|time_23.*|time_0.*|time_1.*|time_2.*|time_3.*|time_4.*|time_5.*|time_6.*">sc var set NightOrDay Night</register>
+  <!-- Job Related-->
+  <!-- Job Changes -->
+  <!-- WHM -->
+  <register silent="true" event="jobchange_whm/*">input /macro book 1</register>
+  <!-- BLM -->
+  <register silent="true" event="jobchange_blm/*">input /macro book 2</register>
+  <!-- RDM -->
+  <register silent="true" event="jobchange_rdm/*">input /macro book 3</register>
+  <!-- SCH -->
+  <register silent="true" event="jobchange_sch/*">input /macro book 4</register>
+  <!--- Weather Events --->
+    <register silent="true" event="weather_Thunder">wait 5; input /echo == Thunder ==</register>
+    <register silent="true" event="weather_Ice">wait 5; input /echo == Ice ==</register>
+    <register silent="true" event="weather_Fire">wait 5; input /echo == Fire ==</register>
+    <register silent="true" event="weather_Earth">wait 5; input /echo == Earth ==</register>
+    <register silent="true" event="weather_Wind">wait 5; input /echo == Wind ==</register>
+    <register silent="true" event="weather_Water">wait 5; input /echo == Water ==</register>
+    <register silent="true" event="weather_Light">wait 5; input /echo == Light ==</register>
+    <register silent="true" event="weather_Dark">wait 5; input /echo == Dark ==</register>
+    <register silent="true" event="weather_Clear">wait 5; input /echo == Clear ==</register>
+    <register silent="true" event="weather_Fog">wait 5; input /echo == Fog ==</register>
+    <register silent="true" event="weather_Clouds">wait 5; input /echo == Cloudy ==</register>
+    <register silent="true" event="weather_Sunshine">wait 5; input /echo == Sunny ==</register>
+    <!--- Vana Dy Events --->
+    <register silent="true" event="day_Firesday">wait5; input /echo == Fireday ==</register>
+    <register silent="true" event="day_Earthsday">wait5; input /echo == Earthsday ==</register>
+    <register silent="true" event="day_Watersday">wait5; input /echo == Watersday ==</register>
+    <register silent="true" event="day_Windsday">wait5; input /echo == Windsday ==</register>
+    <register silent="true" event="day_Iceday">wait5; input /echo == Iceday ==</register>
+    <register silent="true" event="day_Lightningday">wait5; input /echo == Lightningday ==</register>
+    <register silent="true" event="day_Lightsday">wait5; input /echo == Lightsday ==</register>
+    <register silent="true" event="day_Darksday">wait5; input /echo == Darksday ==</register>
+
+</autoexec>

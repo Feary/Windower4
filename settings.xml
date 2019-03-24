@@ -50,7 +50,6 @@
     <addon>remember</addon>
     <addon>Pouches</addon>
     <addon>plasmon</addon>
-    <addon>DressUp</addon>
     <plugin>Guildwork</plugin>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>
@@ -62,10 +61,10 @@
     <plugin>Run</plugin>
     <plugin>SSOrganizer</plugin>
     <plugin>ChatMon</plugin>
-    <plugin>AutoExec</plugin>
   </autoload>
   <profile name="">
     <consolekey>Insert</consolekey>
     <uiscale>1</uiscale>
+    <hardwaremouse>false</hardwaremouse>
   </profile>
 </settings>

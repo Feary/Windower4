@@ -350,7 +350,7 @@ function init_gear_sets()
 
 	sets.idle.Tank = {ammo="Staunch Tathlum",
 		-- ear1="Creed Earring", 
-		head="Chev. Armet +1",neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Thureous Earring"
+		head="Chev. Armet +1",neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Thureous Earring",
 		body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Shadow Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Chev. Cuisses +1",feet="Souveran Schuhs +1"}
 		

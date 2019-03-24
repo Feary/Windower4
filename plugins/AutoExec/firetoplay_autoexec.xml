@@ -1,0 +1,104 @@
+<autoexec>
+  <!-- Town Gear-->
+  <register event="zone_Port_Jeuno">wait 10;sc set town;wait 1;ll profile none;wait 1;exec alias.txt</register>
+  <!-- Auto join invites -->
+  <register event="invite_*">input /join;wait 15;input /p Thanks for The Invite.</register>
+  <!-- Plugins -->
+  <!--<register silent="true" event="login">drawdistance set 10</register>-->
+  <!--<register silent="true" event="login_Firetoplay">race hume f;wait 1;face 4a</register>-->
+  <!-- Light Luggage -->
+  <register silent="true" event="Zone_Abyssea*">ll profile Firetoplay_Abyssea;wait 7;input /echo Firetoplay's Abyssea Profile Loaded</register>
+  <register silent="true" event="Zone_Dynamis*">ll profile Firetoplay_Dynamis;wait 7;input /echo Firetoplay's Dynamis Profile Loaded</register>
+  <register silent="true" event="Zone_Nyzul*">ll profile Firetoplay_Nyzul;wait 7;input /echo Firetoplay's Nyzul Profile Loaded</register>
+  <!-- Add Limbus
+  <register silent="true" event="Zone_Apoll*">ll profile Firetoplay_Limbus;wait 7;input /echo Firetoplay's Limbus Profile Loaded</register>
+  <register silent="true" event="Zone_Temon*">ll profile Firetoplay_Limbus;wait 7;input /echo Firetoplay's Limbus Profile Loaded</register>
+  -->
+  <!-- Spellcast -->
+  <register silent="true" id="Day|DayWS" event="time_7.*|time_8.*|time_9.*|time_10.*|time_11.*|time_12.*|time_13.*|time_14.*|time_15.*|time_16.*|">sc var set NightOrDay Day</register>
+  <register silent="true" id="Night|NightWS" event="time_17.*|time_18.*|time_19.*|time_20.*|time_21.*|time_22.*|time_23.*|time_0.*|time_1.*|time_2.*|time_3.*|time_4.*|time_5.*|time_6.*">sc var set NightOrDay Night</register>
+  <!-- Job Related -->
+  <!-- Trotter boots after flee-->
+  <register silent="true" event="losebuff_flee">sc set evasion;wait 1;input /equip feet "Trotter Boots"</register>
+  <register silent="true" event="losebuff_feint">sc set tp</register>
+  <register silent="true" event="losebuff_Sneak_Attack">sc set tp;wait 1;input /equip sub "Twashtar"</register>
+  <register silent="true" event="losebuff_Trick_Attack">sc set tp;wait 1;input /equip sub "Twashtar"</register>
+  <register silent="true" event="losebuff_Barrage">sc set tp</register>
+  <!-- Status Effects -->
+  <register silent="true" event="gainbuff_Charm">input /p Charmed.</register>
+  <register silent="true" event="losebuff_Charm">input /p Uncharmed.</register>
+  <register silent="true" event="Gainbuff_Transcendency">input /p my brew is on.</register>
+  <register silent="true" event="losebuff_Transcendency">input /p my brew is off.</register>
+  <register silent="true" event="gainbuff_Doom*">input /p Doomed</register>
+  <register silent="true" event="losebuff_Doom*">input /p Doom is Off</register>
+  <!-- No more NakidNess from ironclad-->
+  <register silent="true" event="losebuff_encumbrance">wait 1;sc set tp;wait 1;sc set weapon;wait 2;sc set weapon</register>
+  <!-- Job Changes -->
+  <!-- WHM -->
+  <register silent="true" event="jobchange_whm/*">track clear;input /macro book 1;exec firetoplay/whm/g15/m1/default.txt;exec firetoplay/whm/g15/m2/default.txt;exec firetoplay/whm/g15/m3/default.txt;exec firetoplay/whm/g13/m1/default.txt;exec firetoplay/whm/g13/m2/default.txt;exec firetoplay/whm/g13/m3/default.txt</register>
+  <!-- BLM -->
+  <register silent="true" event="jobchange_blm/*">track clear;input /macro book 2;exec firetoplay/blm/g15/m1/default.txt;exec firetoplay/blm/g15/m2/default.txt;exec firetoplay/blm/g15/m3/default.txt;exec firetoplay/blm/g13/m1/default.txt;exec firetoplay/blm/g13/m2/default.txt;exec firetoplay/blm/g13/m3/default.txt</register>
+  <!-- RDM -->
+  <register silent="true" event="jobchange_rdm/*">track clear;input /macro book 3;exec rdm/g15/m1/default.txt;exec rdm/g15/m2/default.txt;exec rdm/g15/m3/default.txt;exec rdm/g13/m1/default.txt;exec rdm/g13/m2/default.txt;exec rdm/g13/m3/default.txt</register>
+  <!-- BRD -->
+  <register silent="true" event="jobchange_brd/*">track clear;input /macro book 4;exec firetoplay/brd/g15/m1/default.txt;exec firetoplay/brd/g15/m2/default.txt;exec firetoplay/brd/g15/m3/default.txt;exec firetoplay/brd/g13/m1/default.txt;exec firetoplay/brd/g13/m2/default.txt;exec firetoplay/brd/g13/m3/default.txt</register>
+  <!-- THF -->
+  <register silent="true" event="jobchange_thf/nin">track clear;wait 1;track add Shihei: ${ALL:shihei};wait 1;track add Sneak Tools: ${ALL:Sanjaku-Tenugui};wait 1;track add Invisible Tools ${ALL:Shinobi-tabi};input /macro book 5;exec firetoplay/thf/g15/m1/default.txt;exec firetoplay/thf/g15/m2/default.txt;exec firetoplay/thf/g15/m3/default.txt;exec firetoplay/thf/g13/m1/default.txt;exec firetoplay/thf/g13/m2/default.txt;exec firetoplay/thf/g13/m3/default.txt</register>
+  <register silent="true" event="jobchange_thf/war">track clear;wait 1;input /macro book 5;exec firetoplay/thf/g15/m1/default.txt;exec firetoplay/thf/g15/m2/default.txt;exec firetoplay/thf/g15/m3/default.txt;exec firetoplay/thf/g13/m1/default.txt;exec firetoplay/thf/g13/m2/default.txt;exec firetoplay/thf/g13/m3/default.txt</register>
+  <!-- MNK -->
+  <register silent="true" event="jobchange_mnk/*">track clear;input /macro book 6;exec firetoplay/mnk/g15/m1/default.txt;exec firetoplay/mnk/g15/m2/default.txt;exec firetoplay/mnk/g15/m3/default.txt;exec firetoplay/mnk/g13/m1/default.txt;exec firetoplay/mnk/g13/m2/default.txt;exec firetoplay/mnk/g13/m3/default.txt</register>
+  <!-- SMN -->
+  <register silent="true" event="jobchange_smn/*">track clear;input /macro book 7;exec firetoplay/smn/g15/m1/default.txt;exec firetoplay/smn/g15/m2/default.txt;exec firetoplay/smn/g15/m3/default.txt;exec firetoplay/smn/g13/m1/default.txt;exec firetoplay/smn/g13/m2/default.txt;exec firetoplay/smn/g13/m3/default.txt</register>
+  <!-- BLU -->
+  <register silent="true" event="jobchange_blu/*">track clear;input /macro book 8;exec firetoplay/blu/g15/m1/default.txt;exec firetoplay/blu/g15/m2/default.txt;exec firetoplay/blu/g15/m3/default.txt;exec firetoplay/blu/g13/m1/default.txt;exec firetoplay/blu/g13/m2/default.txt;exec firetoplay/blu/g13/m3/default.txt</register>
+  <!-- SCH -->
+  <register silent="true" event="jobchange_sch/*">track clear;input /macro book 9;exec firetoplay/sch/g15/m1/default.txt;exec firetoplay/sch/g15/m2/default.txt;exec firetoplay/sch/g15/m3/default.txt;exec firetoplay/sch/g13/m1/default.txt;exec firetoplay/sch/g13/m2/default.txt;exec firetoplay/sch/g13/m3/default.txt</register>
+  <!-- COR -->
+  <register silent="true" event="jobchange_cor/*">track clear;input /macro book 10;exec firetoplay/cor/g15/m1/default.txt;exec firetoplay/cor/g15/m2/default.txt;exec firetoplay/cor/g15/m3/default.txt;exec firetoplay/cor/g13/m1/default.txt;exec firetoplay/cor/g13/m2/default.txt;exec firetoplay/cor/g13/m3/default.txt</register>
+  <!-- WAR -->
+  <register silent="true" event="jobchange_war/*">track clear;input /macro book 11;exec firetoplay/war/g15/m1/default.txt;exec firetoplay/war/g15/m2/default.txt;exec firetoplay/war/g15/m3/default.txt;exec firetoplay/war/g13/m1/default.txt;exec firetoplay/war/g13/m2/default.txt;exec firetoplay/war/g13/m3/default.txt</register>
+  <!-- DRG -->
+  <register silent="true" event="jobchange_drg/*">track clear;input /macro book 12;exec firetoplay/drg/g15/m1/default.txt;exec firetoplay/drg/g15/m2/default.txt;exec firetoplay/drg/g15/m3/default.txt;exec firetoplay/drg/g13/m1/default.txt;exec firetoplay/drg/g13/m2/default.txt;exec firetoplay/drg/g13/m3/default.txt</register>
+  <!-- RMG -->
+  <register silent="true" event="jobchange_rng/*">track clear;autoexec register no_ammo input /echo no ammo;wait 1;input /macro book 13;exec firetoplay/rng/g15/m1/default.txt;exec firetoplay/rng/g15/m2/default.txt;exec firetoplay/rng/g15/m3/default.txt;exec firetoplay/rng/g13/m1/default.txt;exec firetoplay/rng/g13/m2/default.txt;exec firetoplay/rng/g13/m3/default.txt</register>
+  <!-- BST -->
+  <register silent="true" event="jobchange_bst/*">track clear;input /macro book 14;exec bst/g15/m1/default.txt;exec bst/g15/m2/default.txt;exec bst/g15/m3/default.txt;exec bst/g13/m1/default.txt;exec bst/g13/m2/default.txt;exec bst/g13/m3/default.txt</register>
+  <!-- DRK -->
+  <register silent="true" event="jobchange_drk/*">track clear;input /macro book 15;exec firetoplay/drk/g15/m1/default.txt;exec firetoplay/drk/g15/m2/default.txt;exec firetoplay/drk/g15/m3/default.txt;exec firetoplay/drk/g13/m1/default.txt;exec firetoplay/drk/g13/m2/default.txt;exec firetoplay/drk/g13/m3/default.txt</register>
+  <!-- PLD -->
+  <register silent="true" event="jobchange_pld/*">track clear;input /macro book 16;exec pld/g15/m1/default.txt;exec pld/g15/m2/default.txt;exec pld/g15/m3/default.txt;exec pld/g13/m1/default.txt;exec pld/g13/m2/default.txt;exec pld/g13/m3/default.txt</register>
+  <!-- SAM -->
+  <register silent="true" event="jobchange_sam/*">track clear;input /macro book 17;exec firetoplay/sam/g15/m1/default.txt;exec firetoplay/sam/g15/m2/default.txt;exec firetoplay/sam/g15/m3/default.txt;exec firetoplay/sam/g13/m1/default.txt;exec firetoplay/sam/g13/m2/default.txt;exec firetoplay/sam/g13/m3/default.txt</register>
+  <!-- DNC -->
+  <register silent="true" event="jobchange_dnc/*">track clear;input /macro book 18;exec firetoplay/dnc/g15/m1/default.txt;exec firetoplay/dnc/g15/m2/default.txt;exec firetoplay/dnc/g15/m3/default.txt;exec firetoplay/dnc/g13/m1/default.txt;exec firetoplay/dnc/g13/m2/default.txt;exec firetoplay/dnc/g13/m3/default.txt</register>
+  <!-- PUP -->
+  <register silent="true" event="jobchange_pup/*">track clear;input /macro book 19;exec firetoplay/pup/g15/m1/default.txt;exec firetoplay/pup/g15/m2/default.txt;exec firetoplay/pup/g15/m3/default.txt;exec firetoplay/pup/g13/m1/default.txt;exec firetoplay/pup/g13/m2/default.txt;exec firetoplay/pup/g13/m3/default.txt</register>
+  <!-- NIN -->
+  <register silent="true" event="jobchange_nin/*">track clear;wait 1;track add Shikanofuda: ${INVENTORY:Shikanofuda};wait 1;track add Inoshishinofuda: ${INVENTORY:Inoshishinofuda};wait 1;track add Chonofuda: ${INVENTORY:Chonofuda};input /macro book 20;exec firetoplay/nin/g15/m1/default.txt;exec firetoplay/nin/g15/m2/default.txt;exec firetoplay/nin/g15/m3/default.txt;exec firetoplay/nin/g13/m1/default.txt;exec firetoplay/nin/g13/m2/default.txt;exec firetoplay/nin/g13/m3/default.txt</register>
+  <!-- Vana Dy Events -->
+  <register silent="true" event="day_Firesday">wait5; input /echo == Fireday ==</register>
+  <register silent="true" event="day_Earthsday">wait5; input /echo == Earthsday ==</register>
+  <register silent="true" event="day_Watersday">wait5; input /echo == Watersday ==</register>
+  <register silent="true" event="day_Windsday">wait5; input /echo == Windsday ==</register>
+  <register silent="true" event="day_Iceday">wait5; input /echo == Iceday ==</register>
+  <register silent="true" event="day_Lightningday">wait5; input /echo == Lightningday ==</register>
+  <register silent="true" event="day_Lightsday">wait5; input /echo == Lightsday ==</register>
+  <register silent="true" event="day_Darksday">wait5; input /echo == Darksday ==</register>
+  <!-- Storms -->
+  <register silent="true" event="Gainbuff_Firestorm">sc var set StormElement Fire</register>
+  <register silent="true" event="Losebuff_Firestorm">sc var set StormElement None</register>
+  <register silent="true" event="Gainbuff_Hailstorm">sc var set StormElement Ice</register>
+  <register silent="true" event="Losebuff_Hailstorm">sc var set StormElement None</register>
+  <register silent="true" event="Gainbuff_Windstorm">sc var set StormElement Wind</register>
+  <register silent="true" event="Losebuff_Windstorm">sc var set StormElement None</register>
+  <register silent="true" event="Gainbuff_Sandstorm">sc var set StormElement Earth</register>
+  <register silent="true" event="Losebuff_Sandstorm">sc var set StormElement None</register>
+  <register silent="true" event="Gainbuff_Thunderstorm">sc var set StormElement Thunder</register>
+  <register silent="true" event="Losebuff_Thunderstorm">sc var set StormElement None</register>
+  <register silent="true" event="Gainbuff_Rainstorm">sc var set StormElement Water</register>
+  <register silent="true" event="Losebuff_Rainstorm">sc var set StormElement None</register>
+  <register silent="true" event="Gainbuff_Aurorastorm">sc var set StormElement Light</register>
+  <register silent="true" event="Losebuff_Aurorastorm">sc var set StormElement None</register>
+  <register silent="true" event="Gainbuff_Voidstorm">sc var set StormElement Dark</register>
+  <register silent="true" event="Losebuff_Voidstorm">sc var set StormElement None</register>
+</autoexec>

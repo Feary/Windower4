@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<autoexec>
+  <!-- Auto join invites - input /join; -->
+  <register event="invite_Carrisa">wait 1;input /join</register>
+  <register event="invite_Mitsura">wait 1;input /join</register>
+  <register event="invite_Derion">wait 1;input /join</register>
+  <register event="invite_Aniyah">wait 1;input /join</register>
+  <register event="invite_Firetoplay">wait 1;input /join</register>
+  <!-- Spellcast -->
+  <register silent="true" id="Day|DayWS" event="time_7.*|time_8.*|time_9.*|time_10.*|time_11.*|time_12.*|time_13.*|time_14.*|time_15.*|time_16.*|">sc var set NightOrDay Day</register>
+  <register silent="true" id="Night|NightWS" event="time_17.*|time_18.*|time_19.*|time_20.*|time_21.*|time_22.*|time_23.*|time_0.*|time_1.*|time_2.*|time_3.*|time_4.*|time_5.*|time_6.*">sc var set NightOrDay Night</register>
+  <!-- Light Luggage -->
+  <!-- Dynamis -->
+  <register silent="true" event="Zone_Dynamis*">ll profile Carrisa_Dynamis;wait 7;input /echo Carrisa's Dynamis Profile Loaded</register>
+  <!-- HNM  Ground Kings-->
+  <register silent="true" event="Zone_Valley*">ll profile Carrisa_HNM;wait 7;input /echo Carrisa's HNM Profile Loaded</register>
+  <register silent="true" event="Zone_Dragon*">ll profile Carrisa_HNM;wait 7;input /echo Carrisa's HNM Profile Loaded</register>
+  <register silent="true" event="Zone_Behemoth*">ll profile Carrisa_HNM;wait 7;input /echo Carrisa's HNM Profile Loaded</register>
+  <!-- Sky -->
+  <register silent="true" event="Zone_Ru'Aun Gardens">ll profile Carrisa_Sky;wait 7;input /echo Carrisa's Sky Profile Loaded</register>
+  <register silent="true" event="Zone_The Shrine of Ru'Avitau">ll profile Carrisa_Sky;wait 7;input /echo Carrisa's Sky Profile Loaded</register>
+  <!-- Sea -->
+  <register silent="true" event="Zone_Al'Taieu">ll profile Carrisa_Sea;wait 7;input /echo Carrisa's Sea Profile Loaded</register>
+  <register silent="true" event="Zone_Grand Palace of Hu'Xzoi">ll profile Carrisa_Sea;wait 7;input /echo Carrisa's Sea Profile Loaded</register>
+  <register silent="true" event="Zone_The Garden of Ru'Hmet">ll profile Carrisa_Sea;wait 7;input /echo Carrisa's Sea Profile Loaded</register>
+  <!-- Limbus-->
+  <register silent="true" event="Zone_Apollyon">ll profile Carrisa_Limbus;wait 7;input /echo Carrisa's Apolloyon Profile Loaded</register>
+  <register silent="true" event="Zone_Temenos">ll profile Carrisa_Limbus;wait 7;input /echo Carrisa's Temenos Profile Loaded</register>
+  <!--Neo Nyzul-->
+  <register silent="true" event="Zone_Nyzul*">ll profile Carrisa_Nyzul;wait 7;input /echo Carrisa's Nyzul Profile Loaded</register>
+  <!-- Salvage -->
+  <register silent="true" event="Zone_*Remnants">ll profile Carrisa_Salvage;wait 7;input /echo Carrisa's Salvage Profile Loaded</register>
+  <!-- Einherjar -->
+  <register silent="true" event="Zone_Hazhalm Testing Grounds">ll profile Carrisa_Einherjar;wait 7;input /echo Carrisa's Einherjar Profile Loaded</register>
+  <!-- Walk of Echoes -->
+  <register silent="true" event="Zone_Walk of Echoes">ll profile Carrisa_WalkofEchoes;wait 7;input /echo Carrisa's Walk of Echoes Profile Loaded</register>
+  <!--Abyssea-->
+  <register silent="true" event="Zone_Abyssea*">ll profile Carrisa_Abyssea;wait 7;input /echo Carrisa's Abyssea Profile Loaded</register>
+  <!-- VW Provenance -->
+  <register silent="true" event="Zone_Provenance">ll profile Carrisa_Provenance;wait 7;input /echo Carrisa's Provenance Profile Loaded</register>
+  <!-- Legion -->
+  <register silent="true" event="Zone_Maquette Abdhaljs-Legion">ll profile Carrisa_Legion;wait 7;input /echo Carrisa's Legion Profile Loaded</register>
+  <!-- Meebles Burrows -->
+  <register silent="true" event="Zone_Ghoyu's Reverie">ll profile Carrisa_Meebles;wait 7;input /echo Carrisa's Meebles Profile Loaded</register>
+  <register silent="true" event="Zone_Ruhotz Silvermines">ll profile Carrisa_Meebles;wait 7;input /echo Carrisa's Meebles Profile Loaded</register>
+  <register silent="true" event="Zone_Everbloom Hollow">ll profile Carrisa_Meebles;wait 7;input /echo Carrisa's Meebles Profile Loaded</register>
+  <!-- Status Effects -->
+  <register silent="true" event="gainbuff_Charm">input /p Charmed.</register>
+  <register silent="true" event="losebuff_Charm">input /p Uncharmed.</register>
+  <register silent="true" event="Gainbuff_Transcendency">input /p my brew is on.</register>
+  <register silent="true" event="losebuff_Transcendency">input /p my brew is off.</register>
+  <register silent="true" event="gainbuff_Doom*">input /p Doomed</register>
+  <register silent="true" event="losebuff_Doom*">input /p No longer Doomed</register>
+  <register silent="true" event="losebuff_encumbrance">wait 1;sc set tp;wait 1;sc set weapon;wait 1;sc set weapon</register>
+  <!-- Abyssea -->
+  <register silent="true" id="Piercing" event="time_6.00">input /echo Piercing Time </register>
+  <register silent="true" id="Blunt" event="time_22.00">input /echo Blunt Time </register>
+  <register silent="true" id="Slashing" event="time_14.00">input /echo Slashing Time </register>
+  <!-- Status Effects -->
+  <register silent="true" event="gainbuff_Charm">input /p Charmed.</register>
+  <register silent="true" event="losebuff_Charm">input /p Uncharmed.</register>
+  <register silent="true" event="Gainbuff_Transcendency">input /p my brew is on.</register>
+  <register silent="true" event="losebuff_Transcendency">input /p my brew is off.</register>
+  <register silent="true" event="gainbuff_Doom*">input /p Doomed</register>
+  <register silent="true" event="losebuff_Doom*">input /p Doom is Off.</register>
+  <register silent="true" event="losebuff_encumbrance">wait 1;sc set Standard;wait 1;sc set Standard;wait 1;sc set Standard</register>
+  <!-- Weather Events -->
+  <register silent="true" event="weather_Thunder">wait 5; input /echo == Thunder ==</register>
+  <register silent="true" event="weather_Ice">wait 5; input /echo == Ice ==</register>
+  <register silent="true" event="weather_Fire">wait 5; input /echo == Fire ==</register>
+  <register silent="true" event="weather_Earth">wait 5; input /echo == Earth ==</register>
+  <register silent="true" event="weather_Wind">wait 5; input /echo == Wind ==</register>
+  <register silent="true" event="weather_Water">wait 5; input /echo == Water ==</register>
+  <register silent="true" event="weather_Light">wait 5; input /echo == Light ==</register>
+  <register silent="true" event="weather_Dark">wait 5; input /echo == Dark ==</register>
+  <register silent="true" event="weather_Clear">wait 5; input /echo == Clear ==</register>
+  <register silent="true" event="weather_Fog">wait 5; input /echo == Fog ==</register>
+  <register silent="true" event="weather_Clouds">wait 5; input /echo == Cloudy ==</register>
+  <register silent="true" event="weather_Sunshine">wait 5; input /echo == Sunny ==</register>
+  <!-- Vana Day Events -->
+  <register silent="true" event="day_Firesday">wait 5; input /echo == Fireday ==</register>
+  <register silent="true" event="day_Earthsday">wait 5; input /echo == Earthsday ==</register>
+  <register silent="true" event="day_Watersday">wait 5; input /echo == Watersday ==</register>
+  <register silent="true" event="day_Windsday">wait 5; input /echo == Windsday ==</register>
+  <register silent="true" event="day_Iceday">wait 5; input /echo == Iceday ==</register>
+  <register silent="true" event="day_Lightningday">wait 5; input /echo == Lightningday ==</register>
+  <register silent="true" event="day_Lightsday">wait 5; input /echo == Lightsday ==</register>
+  <register silent="true" event="day_Darksday">wait 5; input /echo == Darksday ==</register>
+</autoexec>

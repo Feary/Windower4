@@ -1,0 +1,5 @@
+<autoexec>
+  <!-- Bard Hacks-->
+  <register silent="true" event="losebuff_Minuet">wait 5;input /ma "Valor Minuet" Feary</register>
+  <register silent="true" event="losebuff_Madrigal">wait 10;input /ma "Sword Madrigal" Feary</register>
+</autoexec>
