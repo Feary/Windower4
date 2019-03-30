@@ -340,7 +340,7 @@ function init_gear_sets()
         -- Nirvana Oneiros Grip 
 		head="Convoker's Horn +3",neck="Caller's Pendant", ear1="Enmerkar Earring", ear2="Evans Earring",
 		-- Apo. Dalmatica +1 Path D ring2="Stinkini Ring +1",
-        body="Glyphic Doublet +3", hands="Asteria Mitts", ring1="Evoker's Ring",ring2="Defending Ring",
+        body="Glyphic Doublet +3", hands="Asteria Mitts +1", ring1="Evoker's Ring",ring2="Defending Ring",
         -- waist="Isa Belt", feet="Bayaami Sabots +1"
 		back=gear.magic_jse_back, waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
@@ -349,7 +349,7 @@ function init_gear_sets()
 		-- ear2="Handler's Earring +1",
 		head="Convoker's Horn +3",neck="Caller's Pendant", ear1="Enmerkar Earring", ear2="Evans Earring",
 		-- Apo. Dalmatica +1 Path D ring2="Stinkini Ring +1",
-        body="Glyphic Doublet +3",hands="Asteria Mitts",ring1="Evoker's Ring",ring2="Defending Ring",
+        body="Glyphic Doublet +3",hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Defending Ring",
         -- waist="Isa Belt", feet="Bayaami Sabots +1"
 		back=gear.magic_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 
@@ -357,7 +357,7 @@ function init_gear_sets()
 		-- Nirvana Oneiros Grip 
 		head="Convoker's Horn +3",neck="Caller's Pendant",  ear1="Enmerkar Earring", ear2="Evans Earring",
 		-- Apo. Dalmatica +1 Path D ring2="Stikini Ring +1",
-        body="Glyphic Doublet +3",hands="Asteria Mitts",ring1="Evoker's Ring",ring2="Defending Ring",
+        body="Glyphic Doublet +3",hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Defending Ring",
         -- feet="Bayaami Sabots +1"
 		back=gear.magic_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
@@ -366,7 +366,7 @@ function init_gear_sets()
 		-- ear2="Handler's Earring +1",
 		head="Convoker's Horn +3",neck="Caller's Pendant",ear1="Enmerkar Earring", ear2="Evans Earring",
 		-- Apo. Dalmatica +1 Path D ring2="Stinkini Ring +1",
-        body="Glyphic Doublet +3", hands="Asteria Mitts", ring1="Evoker's Ring",ring2="Defending Ring",
+        body="Glyphic Doublet +3", hands="Asteria Mitts +1", ring1="Evoker's Ring",ring2="Defending Ring",
         -- waist="Isa Belt" feet="Bayaami Sabots +1"
 		back=gear.magic_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 		

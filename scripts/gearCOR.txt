@@ -1,32 +1,34 @@
 get Abnoba Kaftan all
 get Adhe. Gamashes +1 all
+get Adhemar Bonnet +1 all
 get Adhemar Bonnet all
 get Adhemar Jacket +1 all
 get Adhemar Kecks +1 all
 get Adhemar Kecks all
 get Adhemar Wristbands all
 get Animikii Bullet all
-get Armageddon all
 get Blood Mask all
 get Bullet all
+get Blurred Knife +1 all
 get Chas. Culottes +1 all
 get Chasseur's Bottes all
 get Chasseur's Frac +1 all
 get Chasseur's Gants +1 all
 get Compensator all
 get Darraigner's Brais all
+get Eminent Bullet all
 get Enervating Earring all
-get Fettering Blade all
-get Hep. Rapier +1 all
-get Hep. Sapara +1 all
 get Herculean Boots all
-get Herculean Gloves all
+get Holliday all
 get Kustawi +1 all
 get Kwahu Kachina Belt all
 get Lanun Bottes +1 all
 get Lanun Frac +1 all
 get Lanun Trews +1 all
+get Lanun Gants +1 all
+get Lanun Tricorne +1 all
 get Luzaf's Ring all
+get Lak. Frac +1 all
 get Meg. Chausses +2 all
 get Meg. Cuirie +2 all
 get Meg. Jam. +2 all
@@ -37,5 +39,6 @@ get Mummu Kecks +2 all
 get Mummu Ring all
 get Nusku Shield all
 get Regal Necklace all
+get Rawhide Mask all
 get Svelt. Gouriz +1 all
 get Yemaya Belt all

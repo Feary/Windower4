@@ -1,41 +1,44 @@
-put Abnoba Kaftan sack all
-put Adhemar Bonnet sack all
-put Adhemar Jacket +1 sack all
-put Adhemar Kecks +1 sack all
-put Adhemar Kecks safe2 all
-put Adhemar Wristbands sack all
-put Animikii Bullet safe2 all
-put Armageddon safe2 all
-put Blood Mask safe2 all
-put Chas. Culottes +1 safe2 all
-put Chasseur's Bottes safe2 all
-put Chasseur's Frac +1 safe2 all
-put Chasseur's Gants +1 safe2 all
-put Compensator safe2 all
-put Darraigner's Brais sack all
-put Enervating Earring safe2 all
-put Fettering Blade safe2 all
-put Hep. Rapier +1 safe2 all
-put Hep. Sapara +1 sack all
-put Herculean Boots sack all
-put Herculean Gloves sack all
-put Holliday safe2 all
-put Kustawi +1 safe2 all
-put Kwahu Kachina Belt safe2 all
-put Lak. Trews +1 safe2 all
-put Lanun Bottes +1 safe2 all
-put Lanun Frac +1 safe2 all
-put Lanun Trews +1 safe2 all
-put Luzaf's Ring safe2 all
-put Meg. Chausses +2 sack all
-put Meg. Cuirie +2 sack all
-put Meg. Jam. +2 sack all
-put Mekosu. Harness sack all
-put Molybdosis safe2 all
-put Mummu Jacket +2 sack all
-put Mummu Kecks +2 sack all
-put Mummu Ring sack all
-put Nusku Shield safe2 all
-put Regal Necklace safe2 all
-put Svelt. Gouriz +1 safe2 all
-put Yemaya Belt safe2 all
+put Abnoba Kaftan all
+put Adhe. Gamashes +1 all
+put Adhemar Bonnet +1 all
+put Adhemar Bonnet all
+put Adhemar Jacket +1 all
+put Adhemar Kecks +1 all
+put Adhemar Kecks all
+put Adhemar Wristbands all
+put Animikii Bullet all
+put Blood Mask all
+put Bullet all
+put Blurred Knife +1 all
+put Chas. Culottes +1 all
+put Chasseur's Bottes all
+put Chasseur's Frac +1 all
+put Chasseur's Gants +1 all
+put Compensator all
+put Darraigner's Brais all
+put Eminent Bullet all
+put Enervating Earring all
+put Herculean Boots all
+put Holliday all
+put Kustawi +1 all
+put Kwahu Kachina Belt all
+put Lanun Bottes +1 all
+put Lanun Frac +1 all
+put Lanun Trews +1 all
+put Lanun Gants +1 all
+put Lanun Tricorne +1 all
+put Luzaf's Ring all
+put Lak. Frac +1 all
+put Meg. Chausses +2 all
+put Meg. Cuirie +2 all
+put Meg. Jam. +2 all
+put Mekosu. Harness all
+put Molybdosis all
+put Mummu Jacket +2 all
+put Mummu Kecks +2 all
+put Mummu Ring all
+put Nusku Shield all
+put Regal Necklace all
+put Rawhide Mask all
+put Svelt. Gouriz +1 all
+put Yemaya Belt all
