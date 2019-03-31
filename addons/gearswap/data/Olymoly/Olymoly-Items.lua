@@ -180,8 +180,8 @@ gear_herculean_ta_feet = {name="Herculean Boots", augments={'Accuracy+28','"Trip
 gear_herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23','Rng.Acc.+14','Phalanx +1','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
 --gear_herculean_refresh_feet = {name="Herculean Boots",augments={'CHR+8','Rng.Acc.+7','"Refresh"+1','Mag. Acc.+17 "Mag.Atk.Bns."+17',}}
 
---
---gear_merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','INT+15','Mag. Acc.+3','"Mag.Atk.Bns."+13',}}
+gear_merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+11 "Mag.Atk.Bns."+11','Mag. Acc.+9','"Mag.Atk.Bns."+4',}}
+
 --gear_merlinic_nuke_body = {name="Merlinic Jubbah",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Occult Acumen"+4','INT+10','Mag. Acc.+2','"Mag.Atk.Bns."+15',}}
 --gear.merlinic_occult_body
 
@@ -194,7 +194,7 @@ gear_merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Ac
 --gear_merlinic_aspir_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +10','Mag. Acc.+15',}}
 --gear_merlinic_treasure_feet = {name="Merlinic Crackows",augments={'Accuracy+5','"Snapshot"+2','"Treasure Hunter"+2','Mag. Acc.+11 "Mag.Atk.Bns."+11',}}
 --gear_merlinic_refresh_feet = {name="Merlinic Crackows", augments={'Pet: DEX+7','Pet: Mag. Acc.+7','"Refresh"+2','Accuracy+20 Attack+20',}}
---gear.merlinic_occult_feet
+--gear.merlinic_occult_feet = {name="Merlinic Crackows"}
 
 --
 --gear_odyssean_wsd_hands = { name="Odyssean Gauntlets", augments={'Accuracy+26','Weapon skill damage +4%','STR+6','Attack+14',}}

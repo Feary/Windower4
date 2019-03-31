@@ -4,10 +4,10 @@ input /ja "Nightingale";
 wait 2;
 input /ja "Troubadour";
 wait 3;
-input /ma "Blade Madrigal";
+input /ma "Honor March";
 wait 4;
 input /ma "Victory March";
 wait 5;
-input /ma "Honor March";
+input /ma "Blade Madrigal";
 wait 6;
 input /ma "Sword Madrigal"

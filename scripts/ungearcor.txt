@@ -1,44 +1,61 @@
-put Abnoba Kaftan all
-put Adhe. Gamashes +1 all
-put Adhemar Bonnet +1 all
-put Adhemar Bonnet all
-put Adhemar Jacket +1 all
-put Adhemar Kecks +1 all
-put Adhemar Kecks all
-put Adhemar Wristbands all
-put Animikii Bullet all
-put Blood Mask all
-put Bullet all
-put Blurred Knife +1 all
-put Chas. Culottes +1 all
-put Chasseur's Bottes all
-put Chasseur's Frac +1 all
-put Chasseur's Gants +1 all
-put Compensator all
-put Darraigner's Brais all
-put Eminent Bullet all
-put Enervating Earring all
-put Herculean Boots all
-put Holliday all
-put Kustawi +1 all
-put Kwahu Kachina Belt all
-put Lanun Bottes +1 all
-put Lanun Frac +1 all
-put Lanun Trews +1 all
-put Lanun Gants +1 all
-put Lanun Tricorne +1 all
-put Luzaf's Ring all
-put Lak. Frac +1 all
-put Meg. Chausses +2 all
-put Meg. Cuirie +2 all
-put Meg. Jam. +2 all
-put Mekosu. Harness all
-put Molybdosis all
-put Mummu Jacket +2 all
-put Mummu Kecks +2 all
-put Mummu Ring all
-put Nusku Shield all
-put Regal Necklace all
-put Rawhide Mask all
-put Svelt. Gouriz +1 all
-put Yemaya Belt all
+put Abnoba Kaftan sack all
+put Adhe. Gamashes +1 safe2 all
+put Adhemar Bonnet +1 sack all
+put Adhemar Bonnet sack all
+put Adhemar Jacket +1 sack all
+put Adhemar Kecks +1 safe2 all
+put Adhemar Kecks safe2 all
+put Adhemar Wristbands sack all
+put Adhemar Wrist. +1 sack all
+put Animikii Bullet safe2 all
+put Blood Mask safe2 all
+put Bullet safe2 all
+put Blurred Knife +1 safe2 all
+put Chas. Culottes +1 safe2 all
+put Chasseur's Bottes safe2 all
+put Chasseur's Frac +1 safe2 all
+put Chasseur's Gants +1 safe2 all
+put Chass. Tricorne +1 safe2 all
+put Carm. Sc. Mail +1 safe2 all
+put Camulus's Mantle safe2 all
+put Compensator safe2 all
+put Darraigner's Brais safe2 all
+put Eminent Bullet safe2 all
+put Enervating Earring safe2 all
+put Herculean Boots sack all
+put Holliday safe2 all
+put Impulse Belt safe2 all
+put Kaja Sword sack all
+put Kaja Knife sack all
+put Kustawi +1 safe2 all
+put Kwahu Kachina Belt safe2 all
+put Lanun Bottes +1 safe2 all
+put Lanun Frac +1 safe2 all
+put Lanun Trews +1 safe2 all
+put Lanun Gants +1 safe2 all
+put Lanun Tricorne +1 safe2 all
+put Luzaf's Ring safe2 all
+put Lak. Frac +1 safe2 all
+put Meg. Chausses +2 sack all
+put Meg. Gloves +2 sack all
+put Meg. Cuirie +2 sack all
+put Meg. Jam. +2 sack all
+put Meghanada Visor +2 sack all
+put Mekosu. Harness sack all
+put Molybdosis safe2 all
+put Mummu Bonnet +2 sack all
+put Mummu Wrists +2 sack all
+put Mummu Jacket +2 sack all
+put Mummu Kecks +2 sack all
+put Mummu Gamash. +2 sack all
+put Mummu Ring sack all
+put Nusku Shield safe2 all
+put Pursuer's Gaiters safe2 all
+put Regal Necklace safe2 all
+put Rawhide Mask sack all
+put Samnuha Tights sack all
+put Desultor Tassets safe2 all
+put Svelt. Gouriz +1 safe2 all
+put Taeon Chapeau safe2 all
+put Trump Card safe2 all
+put Yemaya Belt safe2 all

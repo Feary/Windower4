@@ -1,44 +1,36 @@
-get Amalric Gages Case all
-get Amalric Nails Case all
-get Amalric Slops Case all
-get Arasy Staff Case all
-get Arch. Coat +1 Case all
-get Arch. Gloves Case all
-get Arch. Petasos Case all
-get Arch. Sabots +1 Case all
-get Arch. Tonban +1 Case all
-get Atinian Staff Case all
-get Bane Cape Case all
-get Barkaro. Earring Case all
-get Hagondes Coat +1 Case all
-get Helios Gloves case all
-get Helios Boots case all
-get Hvergelmir Case all
-get Jhakri Coronal +2 Case all
-get Jhakri Cuffs +2 Case all
-get Jhakri Pigaches +2 Case all
-get Jhakri Robe +2 Case all
-get Jhakri Slops +2 Case all
-get Kirin's Pole Case all
-get Lathi Case all
-get Mall. Chapeau +2 Case all
-get Mallquis Clogs +2 Case all
-get Mallquis Cuffs +2 Case all
-get Mallquis Saio +2 Case all
-get Mallquis Trews +2 Case all
-get Merlinic Hood Case all
-get Merlinic Crackows Case all
-get Mizu. Kubikazari Case all
-get Rubicundity Case alln
-get Spae. Petasos Case all
-get Spae. Coat +1 Case all
-get Spaekona's Gloves Case all
-get Spaekona's Tonban Case all
-put Spaekona's Sabots Case all
-get Taranus's Cape Case all
-get Welkin Crown Case all
-get Wicce Chausses Case all
-get Wicce Coat Case all
-get Wicce Gloves Case all
-get Wicce Petasos Case all
-get Wicce Sabots +1 Case all
+get Amalric Gages +1 all
+get Amalric Nails +1 all
+get Amalric Slops +1 all
+get Amalric Coif +1 all
+get Amalric Doublet +1 all
+get Arch. Coat +1 all
+get Arch. Gloves all
+get Arch. Petasos +1 all
+get Arch. Sabots +1 all
+get Arch. Tonban +1 all
+get Bane Cape all
+get Barkaro. Earring all
+get Hagondes Coat +1 all
+get Helios Gloves all
+get Helios Boots all
+get Jhakri Cuffs +2 all
+get Jhakri Pigaches +2 all
+get Jhakri Robe +2 all
+get Lathi all
+get Mallquis Clogs +2 all
+get Mallquis Saio +2 all
+get Mallquis Trews +2 all
+get Merlinic Hood all
+get Merlinic Crackows all
+get Rubicundity all
+get Spae. Petasos all
+get Spae. Coat +1 all
+get Spaekona's Gloves all
+get Spaekona's Tonban all
+get Spaekona's Sabots all
+get Taranus's Cape all
+get Wicce Chausses all
+get Wicce Coat all
+get Wicce Gloves all
+get Wicce Petasos +1 all
+get Wicce Sabots +1 all
