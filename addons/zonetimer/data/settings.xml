@@ -51,6 +51,11 @@
             <y>-1</y>
         </pos>
     </dasmir>
+    <deliah>
+        <pos>
+            <x>1243</x>
+        </pos>
+    </deliah>
     <derion>
         <pos>
             <x>1027</x>
@@ -65,8 +70,7 @@
     </feary>
     <olymoly>
         <pos>
-            <x>1514</x>
-            <y>2</y>
+            <x>1273</x>
         </pos>
     </olymoly>
 </settings>

@@ -16,7 +16,7 @@ return {
     AMT2    = +04.00, -- Armenia Time
     ART     = -03.00, -- Argentina Time
     AST     = -04.00, -- Atlantic Standard Time
-    AST2    = +03.00, -- Arabia Standard Time
+    AST2    = +03.00, -- Arabia Standard Time/
     AWDT    = +09.00, -- Australian Western Daylight Time
     AWST    = +08.00, -- Australian Western Standard Time
     AZOST   = -01.00, -- Azores Standard Time

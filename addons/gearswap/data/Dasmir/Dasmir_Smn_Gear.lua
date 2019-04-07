@@ -107,8 +107,8 @@ function init_gear_sets()
     sets.precast.WS['Myrkr'] = {ammo=gear.avatar_ammo,
 		-- neck="Sanctity Necklace",
         head="Convoker's Horn +3", ear1="Etiolation Earring",ear2="Gifted Earring",
-		-- hands="Helios Gloves", ring1="Mephitas's Ring +1",
-        body="Con. Doublet +3",ring2="Mephitas's Ring",
+		-- hands="Helios Gloves", 
+        body="Con. Doublet +3",ring1="Mephitas's Ring +1", ring2="Mephitas's Ring",
 		--  back="Conveyance Cape", legs="Psycloth Lappas",
 		waist="Luminary Sash", feet="Beck. Pigaches +1"}
 
@@ -418,14 +418,14 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {main="Earth Staff",sub="Enki Strap",ammo=gear.avatar_ammo,
 		--ear1="Handler's Earring +1", ear2="Enmerkar Earring",
-		head="Inyanga Tiara +2", neck="Loricate Torque +1", ear1="Etiolation Earring",
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Ethereal Earring",
         -- Udug Jacket 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back, waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
     sets.defense.MDT = {main="Earth Staff",sub="Enki Strap",ammo=gear.avatar_ammo,
 		-- ear2="Enmerkar Earring",
-        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",
+        head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Ethereal Earring",
         body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2", ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back,waist="Regal Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
@@ -442,10 +442,10 @@ function init_gear_sets()
 	sets.NightIdle = {}
 
 	sets.HPDown = {
-		--  head="Apogee Crown +1", ear1="Mendicant's Earring",
-		ear2="Evans Earring",
-		--body="Seidr Cotehardie",hands="Hieros Mittens",ring1="Mephitas's Ring +1",
-		ring2="Mephitas's Ring",
+		-- head="Apogee Crown +1",  ear1="Mendicant's Earring",
+		 ear2="Evans Earring",
+		--body="Seidr Cotehardie",hands="Hieros Mittens",
+		ring1="Mephitas's Ring +1", ring2="Mephitas's Ring",
 		--back="Swith Cape +1",
 		legs="Apogee Slacks +1",feet="Apogee Pumps +1"}
 	

@@ -1,6 +1,8 @@
-get Amalric Gages case all
-get Amalric Nails case all
-get Amalric Slops case all
+get Amalric Gages +1 case all
+get Amalric Nails +1 case all
+get Amalric Slops +1 case all
+get Amalric Doublet +1 case all
+get Amalric Coif +1 case all
 get Azimuth Coat case all
 get Azimuth Gaiters +1 case all
 get Azimuth Gloves case all
@@ -23,17 +25,13 @@ get Handler's Earring +1 case all
 get Handler's Earring case all
 get Idris case all
 get Isa Belt case all
-get Jhakri Coronal +2 case all
 get Jhakri Cuffs +2 case all
 get Jhakri Pigaches +2 case all
 get Jhakri Robe +2 case all
-get Jhakri Slops +2 case all
-get Kirin's Pole case all
 get Lifestream Cape case all
-get Mall. Chapeau +2 case all
 get Mallquis Clogs +2 case all
-get Mallquis Cuffs +2 case all
 get Mallquis Saio +2 case all
 get Mallquis Trews +2 case all
+get Merlinic Crackows case all
 get Nantosuelta's Cape case all
 get Rubicundity case all

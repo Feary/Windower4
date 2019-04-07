@@ -1,6 +1,8 @@
-put Amalric Gages case all
-put Amalric Nails case all
-put Amalric Slops case all
+put Amalric Gages +1 case all
+put Amalric Nails +1 case all
+put Amalric Slops +1 case all
+put Amalric Doublet +1 case all
+put Amalric Coif +1 case all
 put Azimuth Coat case all
 put Azimuth Gaiters +1 case all
 put Azimuth Gloves case all
@@ -23,18 +25,13 @@ put Handler's Earring +1 case all
 put Handler's Earring case all
 put Idris case all
 put Isa Belt case all
-put Jhakri Coronal +2 case all
 put Jhakri Cuffs +2 case all
 put Jhakri Pigaches +2 case all
-put Jhakri Ring case all
 put Jhakri Robe +2 case all
-put Jhakri Slops +2 case all
-put Kirin's Pole case all
 put Lifestream Cape case all
-put Mall. Chapeau +2 case all
 put Mallquis Clogs +2 case all
-put Mallquis Cuffs +2 case all
 put Mallquis Saio +2 case all
 put Mallquis Trews +2 case all
+put Merlinic Crackows case all
 put Nantosuelta's Cape case all
 put Rubicundity case all

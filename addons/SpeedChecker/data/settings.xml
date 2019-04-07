@@ -50,6 +50,18 @@
             </stroke>
         </text>
     </casanoova>
+    <dasmir>
+        <pos>
+            <x>1304</x>
+            <y>-3</y>
+        </pos>
+    </dasmir>
+    <deliah>
+        <pos>
+            <x>1315</x>
+            <y>-1</y>
+        </pos>
+    </deliah>
     <derion>
         <pos>
             <x>1206</x>
@@ -67,6 +79,12 @@
             <y>21</y>
         </pos>
     </feary>
+    <olymoly>
+        <pos>
+            <x>1340</x>
+            <y>-1</y>
+        </pos>
+    </olymoly>
     <worldkiller>
         <pos>
             <x>1427</x>
