@@ -106,7 +106,7 @@ gear_acro_feet_breathe = {name="Acro Leggings", augments={'Pet: Mag. Acc.+21','P
 
 -- Head 
 -- name="Helios Band", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+7',}},
-gear_helios_head_BP = {name="Helios Band",  augments={'Pet: Attack+24 Pet: Rng.Atk.+24','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
+gear_helios_head_BP = {name="Helios Band", augments={'Pet: Attack+24 Pet: Rng.Atk.+24','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
 
 -- Body 
 -- Occult Acumen
@@ -151,6 +151,7 @@ gear_gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+
 --gear_chironic_refresh_hands = {name="Chironic Gloves",augments={'Phys. dmg. taken -1%','STR+10','"Refresh"+1','Accuracy+12 Attack+12','Mag. Acc.+12 "Mag.Atk.Bns."+12',}}
 
 gear_chironic_macc_legs = {name="Chironic Hose", augments={'Mag. Acc.+24','"Cure" potency +11%','"Mag.Atk.Bns."+4',}}
+gear_chironic_cure_legs = {name="Chironic Hose", augments={'Mag. Acc.+24','"Cure" potency +11%','"Mag.Atk.Bns."+4',}}
 
 --gear_chironic_treasure_feet = {name="Chironic Slippers",augments={'"Occult Acumen"+8','MND+7','"Treasure Hunter"+2',}}
 --gear_chironic_nuke_feet = {name="Chironic Slippers",augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +10','CHR+6','"Mag.Atk.Bns."+15',}}

@@ -1,44 +1,66 @@
-get Abnoba Kaftan all
-get Adhe. Gamashes +1 all
-get Adhemar Bonnet +1 all
-get Adhemar Bonnet all
-get Adhemar Jacket +1 all
-get Adhemar Kecks +1 all
-get Adhemar Kecks all
-get Adhemar Wristbands all
-get Animikii Bullet all
-get Blood Mask all
-get Bullet all
-get Blurred Knife +1 all
-get Chas. Culottes +1 all
-get Chasseur's Bottes all
-get Chasseur's Frac +1 all
-get Chasseur's Gants +1 all
-get Compensator all
-get Darraigner's Brais all
-get Eminent Bullet all
-get Enervating Earring all
-get Herculean Boots all
-get Holliday all
-get Kustawi +1 all
-get Kwahu Kachina Belt all
-get Lanun Bottes +1 all
-get Lanun Frac +1 all
-get Lanun Trews +1 all
-get Lanun Gants +1 all
-get Lanun Tricorne +1 all
-get Luzaf's Ring all
-get Lak. Frac +1 all
-get Meg. Chausses +2 all
-get Meg. Cuirie +2 all
-get Meg. Jam. +2 all
-get Mekosu. Harness all
-get Molybdosis all
-get Mummu Jacket +2 all
-get Mummu Kecks +2 all
-get Mummu Ring all
-get Nusku Shield all
-get Regal Necklace all
-get Rawhide Mask all
-get Svelt. Gouriz +1 all
-get Yemaya Belt all
+get Abnoba Kaftan sack all
+get Adhemar Gamashes safe2 all
+get Adhe. Gamashes +1 sack all
+get Adhemar Bonnet +1 sack all
+get Adhemar Bonnet sack all
+get Adhemar Jacket +1 sack all
+get Adhemar Kecks +1 safe2 all
+get Adhemar Kecks safe2 all
+get Adhemar Wristbands sack all
+get Adhemar Wrist. +1 sack all
+get Animikii Bullet safe2 all
+get Blood Mask safe2 all
+get Bullet safe2 all
+get Blurred Knife +1 safe2 all
+get Chas. Culottes +1 safe2 all
+get Chasseur's Bottes safe2 all
+get Chasseur's Frac +1 safe2 all
+get Chasseur's Gants +1 safe2 all
+get Chass. Tricorne +1 safe2 all
+get Carm. Sc. Mail +1 safe2 all
+get Camulus's Mantle safe2 all
+get Compensator safe2 all
+get Darraigner's Brais safe2 all
+get Eminent Bullet safe2 all
+get Enervating Earring safe2 all
+get Herculean Boots sack all
+get Holliday safe2 all
+get Impulse Belt safe2 all
+get Kaja Sword sack all
+get Kaja Knife sack all
+get Kustawi +1 safe2 all
+get Kwahu Kachina Belt safe2 all
+get Lanun Bottes +1 safe2 all
+get Lanun Frac +1 safe2 all
+get Lanun Trews +1 safe2 all
+get Lanun Gants +1 safe2 all
+get Lanun Tricorne +1 safe2 all
+get Luzaf's Ring safe2 all
+get Lak. Frac +1 safe2 all
+get Lak. Hat +1 safe2 all
+get Lak. Trews +1 safe2 all
+get Lak. Bottes safe2 all
+get Lak. Gants safe2 all
+get Meg. Chausses +2 sack all
+get Meg. Gloves +2 sack all
+get Meg. Cuirie +2 sack all
+get Meg. Jam. +2 sack all
+get Meghanada Visor +2 sack all
+get Mekosu. Harness sack all
+get Molybdosis safe2 all
+get Mummu Bonnet +2 sack all
+get Mummu Wrists +2 sack all
+get Mummu Jacket +2 sack all
+get Mummu Kecks +2 sack all
+get Mummu Gamash. +2 sack all
+get Mummu Ring sack all
+get Nusku Shield safe2 all
+get Pursuer's Gaiters safe2 all
+get Regal Necklace safe2 all
+get Rawhide Mask sack all
+get Samnuha Tights sack all
+get Desultor Tassets safe2 all
+get Svelt. Gouriz +1 safe2 all
+get Taeon Chapeau safe2 all
+get Trump Card safe2 all
+get Yemaya Belt safe2 all

@@ -1,0 +1,29 @@
+get Amalric Coif +1 case all
+get Amalric Doublet +1 case all
+get Amalric Gages +1 case all
+get Amalric Nails +1 case all
+get Amalric Slops +1 case all
+get Arbatel Bonnet case all
+get Arbatel Bracers case all
+get Arbatel Loafers case all
+get Arbatel Pants case all
+get Barkaro. Earring case all
+get Bookworm's Cape case all
+get Evans Earring storage all
+get Helios Boots case all
+get Helios Gloves case all
+get Jhakri Cuffs +2 case all
+get Jhakri Pigaches +2 case all
+get Jhakri Robe +2 case all
+get Kirin's Pole case all
+get Lugh's Cape case all
+get Mallquis Clogs +2 case all
+get Mallquis Saio +2 case all
+get Mallquis Trews +2 case all
+get Medium's Sabots case all
+get Merlinic Hood case all
+get Peda. Loafers case all
+get Pedagogy Pants case all
+get Rubicundity case all
+get Savant's Treatise case all
+get Skaoi Boots case all

@@ -1,0 +1,29 @@
+put Amalric Coif +1 case all
+put Amalric Doublet +1 case all
+put Amalric Gages +1 case all
+put Amalric Nails +1 case all
+put Amalric Slops +1 case all
+put Arbatel Bonnet case all
+put Arbatel Bracers case all
+put Arbatel Loafers case all
+put Arbatel Pants case all
+put Barkaro. Earring case all
+put Bookworm's Cape case all
+put Evans Earring storage all
+put Helios Boots case all
+put Helios Gloves case all
+put Jhakri Cuffs +2 case all
+put Jhakri Pigaches +2 case all
+put Jhakri Robe +2 case all
+put Kirin's Pole case all
+put Lugh's Cape case all
+put Mallquis Clogs +2 case all
+put Mallquis Saio +2 case all
+put Mallquis Trews +2 case all
+put Medium's Sabots case all
+put Merlinic Hood case all
+put Peda. Loafers case all
+put Pedagogy Pants case all
+put Rubicundity case all
+put Savant's Treatise case all
+put Skaoi Boots case all
