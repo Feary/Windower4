@@ -3,6 +3,7 @@ function user_setup()
     state.OffenseMode:options('None', 'Normal', 'Acc')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT', 'TPEat')
+	state.Weapons:options('None','Gridarvor')
 
 	-- Avatar Ammo - 
 	gear.avatar_ammo = {name="Sancus Sachet +1"}
@@ -12,7 +13,7 @@ function user_setup()
 	gear.skill_staff = {name="Espiritus"}
 	gear.phys_BP_Staff = {name="Gridarvor"}
 	-- Nirvana grioavolr
-	gear.magic_BP_Staff = {name="Gridarvor"}
+	gear.magic_BP_Staff = {name="Espiritus"}
 	
 	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: "Regen"+5',}}
 	gear.phys_jse_back = {name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','System: 1 ID: 1247 Val: 4',}}
@@ -22,7 +23,7 @@ function user_setup()
 	gear.phys_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}}
 	gear.magic_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}}
 	
-	--[[Global binds you may want to change.
+	--[[Global binds you may want to changnne.
 	Bind special characters.
 	@ = Windows Key
 	% = Works only when text bar not up.
@@ -72,7 +73,7 @@ function init_gear_sets()
     sets.precast.JA['Mana Cede'] = {hands="Beckoner's Bracers +1"}
 
     -- Pact delay reduction gear
-    sets.precast.BloodPactWard = {main="Espiritus",sub="Vox Grip",ammo=gear.avatar_ammo,
+    sets.precast.BloodPactWard = {main=gear.skill_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
 		-- neck="Incanter's Torque", 
 		head="Beckoner's Horn +1", neck="Caller's Pendant", ear1="Andoaa Earring", ear2="Evans Earring",
         -- hands="Baayami Cuffs",
@@ -117,8 +118,8 @@ function init_gear_sets()
     -- Midcast sets
     --------------------------------------
 
-    sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
-		--main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",
+    sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff,ammo="Hasty Pinion +1",
+		--sub="Clerisy Strap +1",
 		--ear2="Enchntr. Earring +1",
 		head="Amalric Coif", neck="Voltsurge Torque",ear1="Loquac. Earring",
 		body="Inyanga Jubbah +2", hands=gear_helios_hands_FC, ring1="Kishar Ring", ring2="Lebeche Ring",
@@ -239,7 +240,7 @@ function init_gear_sets()
 
     -- Avatar pact sets.  All pacts are Ability type.
     -- Skill - Goal 670
-    sets.midcast.Pet.BloodPactWard = {main="Espiritus",sub="Vox Grip",ammo=gear.avatar_ammo,
+    sets.midcast.Pet.BloodPactWard = {main=gear.skill_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
 		-- neck="Incanter's Torque",
         head="Beckoner's Horn +1", neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",
         -- hands="Baayami Cuffs",
@@ -248,7 +249,7 @@ function init_gear_sets()
         waist="Cimmerian Sash", legs="Beck. Spats +1", feet="Rubeus Boots"}
 	
 	-- Macc
-    sets.midcast.Pet.DebuffBloodPactWard = {main="Espiritus",sub="Vox Grip",ammo=gear.avatar_ammo,
+    sets.midcast.Pet.DebuffBloodPactWard = {main=gear.skill_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
       	-- Apogee Mitts +1 Path D
         head="Convoker's Horn +2", neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
 		-- ring1="Evoker's Ring",
@@ -259,7 +260,7 @@ function init_gear_sets()
 	
 	-- Blood Pact Rage	
 	-- 
-    sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor", sub="Elan Strap +1", ammo=gear.avatar_ammo,
+    sets.midcast.Pet.PhysicalBloodPactRage = {main=gear.phys_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3",  hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
 		back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
@@ -271,7 +272,7 @@ function init_gear_sets()
 	sets.midcast.Pet.PhysicalBloodPactRage.AM = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {
 		head="Apogee Crown +1"})
 		
-    sets.midcast.Pet.MagicalBloodPactRage = {main="Espiritus", sub="Elan Strap +1", ammo=gear.avatar_ammo,
+    sets.midcast.Pet.MagicalBloodPactRage = {main=gear.magic_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		--main=gear.grioavolr_pet_staff,
 		--head="Apogee Crown +1" neck="Summoner's Collar +2",
 		head=gear_helios_head_BP, neck="Adad Amulet", ear1="Gelos Earring", ear1="Gelos Earring", ear2="Lugalbanda Earring",
@@ -280,7 +281,7 @@ function init_gear_sets()
 
     sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Convo. Pigaches +3"}
 
-	sets.midcast.Pet['Flaming Crush'] = {main="Espiritus", sub="Elan Strap +1", ammo=gear.avatar_ammo,
+	sets.midcast.Pet['Flaming Crush'] = {main=gear.magic_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		--main=gear.grioavolr_pet_staff,
 		-- head="Apogee Crown +1", neck="Summoner's Collar +2",
 		head=gear_helios_head_BP, neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
@@ -452,7 +453,7 @@ function init_gear_sets()
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {}--neck="Sacrifice Torque"
 	
-	sets.weapons = {main="Gridarvor", sub="Elan Strap +1"}
+	sets.weapons.Gridarvor = {main="Gridarvor", sub="Elan Strap +1"}
     --------------------------------------
     -- Engaged sets
     --------------------------------------

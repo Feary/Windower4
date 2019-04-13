@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant')
     state.IdleMode:options('Normal', 'PDT','TPEat')
-	state.Weapons:options('None','Gridarvor')
+	state.Weapons:options('None','Gridarvor','Hvergelmir')
 	
 	-- Avatar Ammo 
 	gear.avatar_ammo = {name="Sancus Sachet +1"}
@@ -380,7 +380,7 @@ function init_gear_sets()
 	sets.DayIdle = {}
 	sets.NightIdle = {}
 
-	--[[sets.HPDown = {head="Apogee Crown +1 +1",ear1="Mendicant's Earring",ear2="Evans Earring",
+	--[[sets.HPDown = {head="Apogee Crown +1",ear1="Mendicant's Earring",ear2="Evans Earring",
 		body="Seidr Cotehardie",hands="Hieros Mittens",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
 		back=gear.FC_jse_back,legs="Apogee Slacks +1",feet="Apogee Pumps +1"]]
 	
@@ -389,6 +389,7 @@ function init_gear_sets()
 
 	-- Weapons sets
 	sets.weapons.Gridarvor = {main="Gridarvor", sub="Elan Strap +1"}
+	sets.weapons.Hvergelmir = {main="Hvergelmir", sub="Elan Strap +1"}
 	
     --------------------------------------
     -- Engaged sets
