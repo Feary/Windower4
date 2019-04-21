@@ -72,7 +72,7 @@ function init_gear_sets()
 
     -- Pact delay reduction gear
 	-- 
-    sets.precast.BloodPactWard = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
+    sets.precast.BloodPactWard = {main=gear.skill_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
 		-- neck="Incanter's Torque",
 		head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Andoaa Earring",ear2="Evans Earring",
         -- hands="Baayami Cuffs",
@@ -83,7 +83,7 @@ function init_gear_sets()
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
 
     -- Fast cast sets for spells    
-    sets.precast.FC = {main="Gridarvor",sub="Vox Grip", 
+    sets.precast.FC = {
 		--ammo="Impatiens",
 		--main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1", ear2="Enchntr. Earring +1",
 		head="Haruspex Hat",neck="Voltsurge Torque",ear1="Loquacious Earring", 
@@ -221,16 +221,16 @@ function init_gear_sets()
 
     -- Avatar pact sets.  All pacts are Ability type.
     -- Skill
-    sets.midcast.Pet.BloodPactWard = {main="Espiritus",sub="Vox Grip",ammo=gear.avatar_ammo,
+    sets.midcast.Pet.BloodPactWard = {main=gear.skill_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
         --neck="Incanter's Torque"
 		head="Beckoner's Horn +1",beck="Caller's Pendant",ear1="Andoaa Earring",ear2="Gifted Earring",
 		--hands="Baayami Cuffs", hands="Lamassu Mitts",
         body="Beck. Doublet +1", hands="Glyphic Bracers +1", ring1="Evoker's Ring", ring2="Stikini Ring",
-        -- waist="Lucidity Sash", legs="Baayami Slops", feet="Baayami Sabots"
+        --  legs="Baayami Slops", feet="Baayami Sabots"
 		back="Conveyance Cape", legs="Beck. Spats +1", feet="Rubeus Boots"}
 	
 	-- Pet Macc/Skill
-    sets.midcast.Pet.DebuffBloodPactWard = {main="Espiritus",sub="Vox Grip",ammo=gear.avatar_ammo,
+    sets.midcast.Pet.DebuffBloodPactWard = {main=gear.skill_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
 		-- Nirvana
 		-- neck="Summoner's Collar +2", 
 		head="Convoker's Horn +3", neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
@@ -240,24 +240,24 @@ function init_gear_sets()
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
     
-    sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor",sub="Elan Strap +1", ammo=gear.avatar_ammo,
+    sets.midcast.Pet.PhysicalBloodPactRage = {main=gear.phys_BP_Staff,sub="Elan Strap +1", ammo=gear.avatar_ammo,
         -- neck="Summoner's Collar +2", 
 		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
 		body="Con. Doublet +3", hands=gear.merlinic_physpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
 		
-    sets.midcast.Pet.PhysicalBloodPactRage.Acc = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+    sets.midcast.Pet.PhysicalBloodPactRage.Acc = {main=gear.phys_BP_Staff,sub="Elan Strap +1",ammo=gear.avatar_ammo,
 		-- neck="Summoner's Collar +2", ear1="Kyrene's Earring", 
         head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
 		body="Con. Doublet +3", hands=gear.merlinic_physpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet="Convo. Pigaches +3"}
 		
 	-- Magical BloodPactRage
-    sets.midcast.Pet.MagicalBloodPactRage = {main="Espiritus",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+    sets.midcast.Pet.MagicalBloodPactRage = {main=gear.magic_BP_Staff,sub="Elan Strap +1",ammo=gear.avatar_ammo,
 		-- Nirvana
         -- Path A neck="Summoner's Collar +2", 
 		head="Apogee Crown +1", neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring", 
-         -- body="Apo. Dalmatica +1", Path A
+        -- body="Apo. Dalmatica +1", Path A
         body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
 		back=gear.magic_jse_back, waist="Regal Belt", legs="Enticer's Pants", feet=gear.phys_BP_feet}
 
@@ -271,7 +271,7 @@ function init_gear_sets()
 
     sets.midcast.Pet['Elemental Magic'].Resistant = {}
     
-	sets.midcast.Pet['Flaming Crush'] = {main="Espiritus",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+	sets.midcast.Pet['Flaming Crush'] = {main=gear.phys_BP_Staff,sub="Elan Strap +1",ammo=gear.avatar_ammo,
         --  Path A neck="Summoner's Collar +2", 
 		head="Apogee Crown +1", neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3",hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",

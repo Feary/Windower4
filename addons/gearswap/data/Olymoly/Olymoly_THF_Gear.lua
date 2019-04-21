@@ -14,10 +14,10 @@ function user_setup()
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 	state.AmbushMode = M(false, 'Ambush Mode')
 	
-	gear.stp_jse_back = {name="Toutatis's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Phys. dmg. taken-10%',}}
-	gear.da_jse_back = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	gear.crit_jse_back = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
-	gear.wsd_jse_back = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
+	gear.stp_jse_back = 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Phys. dmg. taken-10%',}}
+	gear.da_jse_back =	 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	gear.crit_jse_back = 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
+	gear.wsd_jse_back = 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
 
     -- Additional local binds
     send_command('bind ^` input /ja "Flee" <me>')
@@ -446,8 +446,8 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {ammo="Ginsen",
-		--head="Adhemar Bonnet", Path A neck="Assassin's Gorget +2", rear="Dedition Earring",
-		head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
+		--head="Adhemar Bonnet", Path A neck="Assassin's Gorget +2", 
+		head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",rear="Dedition Earring",
         body="Pillager's Vest +3",hands="Adhemar Wrist. +1",ring1="Epona's Ring", rring="Hetairoi Ring", 
         back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +3"}
 		
@@ -470,8 +470,8 @@ function init_gear_sets()
         back=gear.stp_jse_back,waist="Reiki Yotai", legs="Pill. Culottes +3",  feet="Plun. Poulaines +3"}
 	
 	sets.engaged.Fodder = {ammo="Ginsen",
-		-- neck="Assassin's Gorget +2", rear="Dedition Earring",
-        head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
+		-- neck="Assassin's Gorget +2", 
+        head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",rear="Dedition Earring",
         body="Pillager's Vest +3",hands="Adhemar Wrist. +1",ring1="Epona's Ring", rring="Hetairoi Ring", 
         back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +3"}
 	

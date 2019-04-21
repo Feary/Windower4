@@ -18,7 +18,8 @@ function user_setup()
 	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: "Regen"+5',}}
 	gear.phys_jse_back = {name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','System: 1 ID: 1247 Val: 4',}}
 	gear.FC_jse_back = {name="Campestres's Cape",augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
-	gear.Cure_jse_back = {}
+	-- cure
+	gear.Cure_jse_back = {name="Campestres's Cape",augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
 	
 	gear.phys_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}}
 	gear.magic_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}}
@@ -147,77 +148,70 @@ function init_gear_sets()
 			
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})--main="Oranyan",sub="Clemency Grip"
 
-	sets.midcast['Elemental Magic'] = {
-		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
+	sets.midcast['Elemental Magic'] = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", 
 		-- Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 	sets.midcast['Elemental Magic'].Resistant = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", 
 		-- Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
-
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
     sets.midcast['Divine Magic'] = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", 
 		-- Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
-
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 		
     sets.midcast['Dark Magic'] = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", 
 		-- Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
-
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 	
 	sets.midcast.Drain = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", 
 		-- Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
-
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
     
     sets.midcast.Aspir = sets.midcast.Drain
 		
     sets.midcast.Stun = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Loquac. Earring",
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", 
 		-- Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
-
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 		
     sets.midcast.Stun.Resistant = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", 
 		-- Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
-
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 		
 	sets.midcast['Enfeebling Magic'] = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", 
 		-- Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",
-		head="Inyanga Tiara +2", neck="Eddy Necklace", lear="Friomisi Earring", 
+		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", 
 		-- Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
 		
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -273,7 +267,6 @@ function init_gear_sets()
 		head="Apogee Crown +1"})
 		
     sets.midcast.Pet.MagicalBloodPactRage = {main=gear.magic_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
-		--main=gear.grioavolr_pet_staff,
 		--head="Apogee Crown +1" neck="Summoner's Collar +2",
 		head=gear_helios_head_BP, neck="Adad Amulet", ear1="Gelos Earring", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
@@ -282,7 +275,6 @@ function init_gear_sets()
     sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Convo. Pigaches +3"}
 
 	sets.midcast.Pet['Flaming Crush'] = {main=gear.magic_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
-		--main=gear.grioavolr_pet_staff,
 		-- head="Apogee Crown +1", neck="Summoner's Collar +2",
 		head=gear_helios_head_BP, neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",

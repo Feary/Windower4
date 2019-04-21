@@ -74,7 +74,7 @@ function init_gear_sets()
 		
 	sets.precast.FC.Curaga = sets.precast.FC.Cure
 	
-    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
+    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {})--waist="Siegel Sash"
 
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {})
 
@@ -106,7 +106,7 @@ function init_gear_sets()
 		body="Bagua Tunic +1", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
 		back="Lifestream Cape", legs="Bagua Pants +1", feet="Azimuth Gaiters +1"})
 
-    sets.midcast.Cure = {main={name="Arka IV", priority=2}, sub={name="Pax Grip", priority=1},
+    sets.midcast.Cure = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1},
 		--Vanya Hood
 		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Lifestorm Earring",
 		body="Heka's Kalasiris", hands=gear_telchine_Cure_Hands, lring="Sirona's Ring", rring="Stikini Ring",
@@ -125,10 +125,10 @@ function init_gear_sets()
 		body="Heka's Kalasiris", hands=gear_telchine_Cure_Hands, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Geomancy Pants +2", feet="Rubeus Boots"}
     
-	sets.midcast.Curaga = {main={name="Arka IV", priority=2}, sub={name="Pax Grip", priority=1},
+	sets.midcast.Curaga = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1},
 		-- lear="Novia Earring", rear="Lifestorm Earring",
 		head="Haruspex Hat", neck="Colossus's Torque", 
-		body="Heka's Kalasiris", hands="Hagondes Cuffs", lring="Sirona's Ring", rring="Stikini Ring",
+		body="Heka's Kalasiris", hands=gear_telchine_Cure_Hands, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Geomancy Pants +2", feet="Rubeus Boots"}
 
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {})--neck="Debilis Medallion",ring1="Haoma's Ring",ring2="Haoma's Ring"
@@ -139,19 +139,19 @@ function init_gear_sets()
 		--  neck="Eddy Necklace", lear="Novio Earring",
 		head="Mall. Chapeau +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Mallquis Trew +1", feet="Mallquis Clogs +2"}		
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 
     sets.midcast['Elemental Magic'].Resistant = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		--  neck="Eddy Necklace", lear="Novio Earring",
 		head="Mall. Chapeau +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Mallquis Trew +1", feet="Mallquis Clogs +2"}		
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 
     sets.midcast['Elemental Magic'].Fodder = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1},
 		--  neck="Eddy Necklace", lear="Novio Earring",
 		head="Mall. Chapeau +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Mallquis Trew +1", feet="Mallquis Clogs +2"}		
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 	
 	-- Hight Tier Nuke
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
@@ -181,47 +181,47 @@ function init_gear_sets()
 	
     sets.midcast['Dark Magic'] = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		-- head="Bagua Galero +3", neck="Incantor Torque", lear="Enchntr. Earring +1",
-		head="Geo. Galero +2", neck="Voltsurge Necklace", lear="Regal Earring", rear="Loquac. Earring",
+		head="Geo. Galero +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}
 
     sets.midcast.Drain = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		-- head="Bagua Galero +3", neck="Incantor Torque", lear="Enchntr. Earring +1",
-		head="Geo. Galero +2", neck="Voltsurge Necklace", lear="Regal Earring", rear="Loquac. Earring",
+		head="Geo. Galero +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}
 
     sets.midcast.Aspir = sets.midcast.Drain
 		
 	sets.midcast.Stun = {--ammo="Hasty Pinion +1",
 		-- lear="Enchntr. Earring +1",
-		head="Geo. Galero +2", neck="Voltsurge Necklace", lear="Regal Earring", rear="Loquac. Earring",
+		head="Geo. Galero +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}
 
 	sets.midcast.Stun.Resistant = {--ammo="Hasty Pinion +1",
 		-- lear="Enchntr. Earring +1",
-		head="Geo. Galero +2", neck="Voltsurge Necklace", lear="Regal Earring", rear="Loquac. Earring",
+		head="Geo. Galero +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}
 
 	sets.midcast.Impact = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		-- neck="Eddy Necklace", lear="Enchntr. Earring +1",
-		head="Geo. Galero +2", neck="Voltsurge Necklace", lear=" Earring", rear="Regal Earring",
+		head="Geo. Galero +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}
 
 	sets.midcast['Enfeebling Magic'] = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		-- neck="Eddy Necklace", lear="Enchntr. Earring +1",
-		head="Geo. Galero +2", neck="Voltsurge Necklace",lear="Regal Earring", rear="Regal Earring",
+		head="Geo. Galero +2", neck="Voltsurge Torque",lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		-- neck="Eddy Necklace", lear="Enchntr. Earring +1",
-		head="Geo. Galero +2", neck="Voltsurge Necklace", lear="Regal Earring", rear="Regal Earring",
+		head="Geo. Galero +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
+		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}
 
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {})
     sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
@@ -240,7 +240,7 @@ function init_gear_sets()
 	
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {})
 		
-	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion +1",
+	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion",
 		-- main=gear.gada_enhancing_club,sub="Ammurapi Shield",		
 		-- neck="Incantor's Torque",
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
@@ -271,20 +271,20 @@ function init_gear_sets()
 
 	-- Resting sets
 	sets.resting = {main={name="Iridal Staff", priority=2}, sub={name="Niobid Strap", priority=1},
-		head="Befouled Crown",neck="Eidolon Pendant", ear1="Ethereal Earring",ear2="Relaxing Earring",
+		head="Befouled Crown",neck="Loricate Torque +1", ear1="Ethereal Earring", rear="Merman's Earring",
 		body="Jhakri Robe +2", hands="Bagua Mitaines +1", ring1="Vocane Ring",ring2="Defending Ring",
-		back="Felicitas Cape",waist="Austerity Belt",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
+		back=gear.FC_jse_back,waist="Austerity Belt",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
 	-- Idle sets
 	sets.idle = {main={name="Bolelabunga", priority=2}, sub={name="Genbu's Shield", priority=1},
 		head="Befouled Crown", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Merman's Earring",
 		body="Jhakri Robe +2", hands="Bagua Mitaines +1", lring="Vocane Ring", rring="Defending Ring",
-		back=gear.idle_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
+		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Vocane Ring", rring="Defending Ring",
-		back=gear.idle_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
+		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 
 	sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
@@ -293,15 +293,13 @@ function init_gear_sets()
 		-- rear="Handler's Earring +1",
 		head=gear_telchine_head_Pet, lear="Ethereal Earring", rear="Merman's Earring",
 		body=gear_telchine_body_Pet, hands=gear_telchine_hands_Pet,
-		-- waist="Isa Belt",
-		back=gear.idle_jse_back, legs=gear_telchine_legs_Pet, feet="Bagua Sandals +1"})
+		back=gear.idle_jse_back, waist="Isa Belt", legs=gear_telchine_legs_Pet, feet="Bagua Sandals +1"})
 
 	sets.idle.PDT.Pet = {main="Earth Staff", sub="Umbra Strap", range="Dunna",
 		-- lear="Handler's Earring", rear="Handler's Earring +1",
 		head=gear_telchine_head_Pet, 
 		body=gear_telchine_body_Pet, hands="Bagua Mitaines +1",
-		-- waist="Isa Belt",
-		back=gear.idle_jse_back, legs=gear_telchine_legs_Pet, feet="Bagua Sandals +1"}
+		back=gear.idle_jse_back, waist="Isa Belt", legs=gear_telchine_legs_Pet, feet="Bagua Sandals +1"}
 				
 	-- .Indi sets are for when an Indi-spell is active.
 	sets.idle.Indi = set_combine(sets.idle, {})	
@@ -313,23 +311,23 @@ function init_gear_sets()
 	sets.idle.Weak = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Vocane Ring", rring="Defending Ring",
-		back="Umbra Cape", waist="Fucho-no-Obi", legs="Mallquis Trews +1", feet="Mallquis Clogs +2"}
+		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
 
 	-- Defense sets	
 	sets.defense.PDT = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Vocane Ring", rring="Defending Ring",
-		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +1", feet="Mallquis Clogs +2"}	
+		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}	
 
 	sets.defense.MDT = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Vocane Ring", rring="Defending Ring",
-		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +1", feet="Mallquis Clogs +2"}
+		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
 	
     sets.defense.MEVA = {main={name="Earth Staff", priority=2}, sub={name="Mensch Strap", priority=1},
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Vocane Ring", rring="Defending Ring",
-		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +1", feet="Mallquis Clogs +2"}
+		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
 		
 	sets.defense.PetPDT = sets.idle.PDT.Pet
 		
@@ -337,10 +335,10 @@ function init_gear_sets()
 	
 	sets.defense.GeoLock = sets.midcast.Geomancy.Indi
 
-	sets.Kiting = {feet="Geo. Sandals +2"}
+	sets.Kiting = {feet="Geo. Sandals +3"}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.DayIdle = {}
-	sets.NightIdle = {back="Umbra Cape"}
+	sets.NightIdle = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})--feet=gear.chironic_treasure_feet
 	
 	sets.HPDown = {}
@@ -383,8 +381,8 @@ function init_gear_sets()
 	sets.RecoverBurst = {ring1="Mujin Band", feet="Jhakri Pigaches +2"}--head="Ea Hat",neck="Mizu. Kubikazari",body="Seidr Cotehardie",hands="Ea Cuffs",legs="Ea Slops",
 
 	-- Weapons sets
-	sets.weapons.Nehushtan = {main='Nehushtan',sub="Genbu's Shield"}
-	sets.weapons.DualWeapons = {main='Nehushtan',sub='Nehushtan'}
+	sets.weapons.Nehushtan = {main='Kaja Rod',sub="Genbu's Shield"}
+	sets.weapons.DualWeapons = {main='Kaja Rod',sub='Gabaxorea'}
 end
 
 -- Select default macro book on initial load or subjob change.

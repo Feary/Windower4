@@ -184,22 +184,20 @@ function init_gear_sets()
 		head=gear_merlinic_nuke_head, neck="Sanctity Necklace", lear="Friomisi Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		-- Eschan Stone  
-		back=gear.nuke_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}		
+		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}		
 
     sets.midcast['Elemental Magic'].Resistant = {
 		main={name="Idris", priority=2}, sub={name="Genbu's Shield", priority=1}, ammo="Pemphredo Tathlum",
 		head=gear_merlinic_nuke_head, neck="Erra Pendant", lear="Barkaro. Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Eschan Stone 
-		back=gear.nuke_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}		
+		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}		
 
     sets.midcast['Elemental Magic'].Fodder = {
 		-- main={name=gear_grioavolr_nuke_staff, priority=2}, sub={name="Niobid Strap", priority=1},    
 		main={name="Idris", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
 		head=gear_merlinic_nuke_head, neck="Sanctity Necklace", lear="Friomisi Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Eschan Stone 
-		back=gear.nuke_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}		
+		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}		
 
 	-- High Tier Nuke
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
@@ -208,21 +206,18 @@ function init_gear_sets()
 		-- Saevus Pendant +1
 		head=gear_merlinic_nuke_head, neck="Sanctity Necklace", lear="Friomisi Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Eschan Stone 
-		back=gear.nuke_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"})	
+		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"})	
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {
 		--main={name=gear_grioavolr_nuke_staff, priority=2}, sub={name="Niobid Strap", priority=1}, 
 		main={name="Idris", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
 		head=gear_merlinic_nuke_head, neck="Erra Pendant", lear="Barkaro. Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Eschan Stone 
 		back=gear.nuke_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"})	
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder,  {
 		main={name="Idris", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
 		head=gear_merlinic_nuke_head, neck="Erra Pendant", lear="Barkaro. Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Eschan Stone 
-		back=gear.nuke_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"})	
+		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"})	
 		
     sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		-- Bagua Galero +3

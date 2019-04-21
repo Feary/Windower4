@@ -13,7 +13,7 @@ put Blood Mask safe2 all
 put Bullet safe2 all
 put Blurred Knife +1 safe2 all
 put Chas. Culottes +1 safe2 all
-put Chasseur's Bottes safe2 all
+put Chass. Bottes +1 safe2 all
 put Chasseur's Frac +1 safe2 all
 put Chasseur's Gants +1 safe2 all
 put Chass. Tricorne +1 safe2 all

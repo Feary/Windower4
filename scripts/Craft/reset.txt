@@ -1,0 +1,5 @@
+lua unload repeater 
+lua load repeater
+repeater command input /lastsynth
+repeater delay 24
+repeater count 60

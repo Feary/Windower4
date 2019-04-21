@@ -13,7 +13,7 @@ get Blood Mask safe2 all
 get Bullet safe2 all
 get Blurred Knife +1 safe2 all
 get Chas. Culottes +1 safe2 all
-get Chasseur's Bottes safe2 all
+get Chass. Bottes +1 safe2 all
 get Chasseur's Frac +1 safe2 all
 get Chasseur's Gants +1 safe2 all
 get Chass. Tricorne +1 safe2 all

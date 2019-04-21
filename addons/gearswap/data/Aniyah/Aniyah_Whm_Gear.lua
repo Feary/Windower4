@@ -234,7 +234,7 @@ function init_gear_sets()
 		head="Ebers Cap +1",
 		-- body="Hedera Cotehardie", 
 		body="Witching Robe", hands="Ebers Mitts +1",
-		waist="Witful Belt", legs="Ebers Pantaloons +1", feet="Gende. Galosh. +1"}
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Ebers Pantaloons +1", feet="Gende. Galosh. +1"}
 
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
 	-- Duration
@@ -390,7 +390,7 @@ function init_gear_sets()
 
 	sets.midcast['Enfeebling Magic'] = {-- Grioavolr Pemphredo Tathlum
 		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
-		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
+		-- Chironic Hat Theo. Cap +2 lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
@@ -511,7 +511,7 @@ function init_gear_sets()
     sets.precast.WS['Flash Nova'] = {
 		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
-		back="Umbra Cape", waist="Windbuffet Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back=gear.fastcast_jse_back, waist="Windbuffet Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.precast.WS['Mystic Boon'] = {
 		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",

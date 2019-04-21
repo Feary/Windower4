@@ -6,8 +6,8 @@ function user_setup()
 	state.Weapons:options('None','NukeWeapons','Malevolence') --'Khatvanga'
 
 	gear.obi_cure_waist = "Luminary Sash"
-	gear.obi_low_nuke_waist = "Yamabuki-no-Obi"
-	gear.obi_high_nuke_waist = "Yamabuki-no-Obi"
+	gear.obi_low_nuke_waist = "Eschan Stone"
+	gear.obi_high_nuke_waist = "Eschan Stone"
 	
 	-- Staves 
 	-- gear.grioavolr_nuke_staff 
@@ -115,7 +115,7 @@ function init_gear_sets()
 		--ammo="Staunch Tathlum",
 		--head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Evans Earring",ear2="Etiolation Earring",
 		--body="Amalric Doublet",hands="Regal Cuffs",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		--back="Aurist's Cape +1",waist="Yamabuki-no-Obi",legs="Psycloth Lappas",feet="Medium's Sabots"
+		--back="Aurist's Cape +1",waist="Eschan Stone",legs="Psycloth Lappas",feet="Medium's Sabots"
 		}
     
     ---- Midcast Sets ----
@@ -298,8 +298,8 @@ function init_gear_sets()
         head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Barkaro. Earring",ear2="Friomisi Earring",
         -- Arch. Coat +3 Arch. Gloves +3
 		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Eschan Stone Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+		-- Arch. Tonbon +3 Arch. Sabots +3
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
     sets.midcast['Elemental Magic'].Resistant = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		-- Niobid Strap
@@ -307,8 +307,8 @@ function init_gear_sets()
         head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Barkaro. Earring",ear2="Friomisi Earring",
         -- Arch. Coat +3 Arch. Gloves +3
 		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Eschan Stone Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+		-- Arch. Tonbon +3 Arch. Sabots +3
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		-- Niobid Strap
@@ -316,8 +316,8 @@ function init_gear_sets()
         head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Barkaro. Earring",ear2="Friomisi Earring",
         -- Arch. Coat +3 Arch. Gloves +3
 		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Eschan Stone Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+		-- Arch. Tonbon +3 Arch. Sabots +3
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 
 	-- High Tier 
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
@@ -327,8 +327,8 @@ function init_gear_sets()
          head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Barkaro. Earring",ear2="Friomisi Earring",
         -- Arch. Coat +3 Arch. Gloves +3
 		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Eschan Stone Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"})
+		-- Arch. Tonbon +3 Arch. Sabots +3
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"})
 	sets.midcast['Elemental Magic'].Resistant.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Resistant, {
 		main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		-- Niobid Strap
@@ -336,8 +336,8 @@ function init_gear_sets()
         head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Barkaro. Earring",ear2="Friomisi Earring",
         -- Arch. Coat +3 Arch. Gloves +3
 		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Eschan Stone Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"})
+		-- Arch. Tonbon +3 Arch. Sabots +3
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"})
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {
 		main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		-- Niobid Strap
@@ -345,8 +345,8 @@ function init_gear_sets()
         head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Barkaro. Earring",ear2="Friomisi Earring",
         -- Arch. Coat +3 Arch. Gloves +3
 		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Eschan Stone Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"})
+		-- Arch. Tonbon +3 Arch. Sabots +3
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"})
 	
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Resistant

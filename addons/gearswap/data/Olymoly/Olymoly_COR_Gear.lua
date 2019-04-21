@@ -87,7 +87,7 @@ function init_gear_sets()
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chass. Bottes +1"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
@@ -118,8 +118,8 @@ function init_gear_sets()
 		back=gear.magic_QD_jse_back, waist="Kwahu Kachina Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +2"}
 	
 	-- Proc AF3 Feet for Damage Bonus
-    sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes"})
-	sets.precast.CorsairShot['Fire Shot'] = set_combine(sets.precast.CorsairShot['Fire Shot'], {feet="Chasseur's Bottes"})
+    sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chass. Bottes +1"})
+	sets.precast.CorsairShot['Fire Shot'] = set_combine(sets.precast.CorsairShot['Fire Shot'], {feet="Chass. Bottes +1"})
 	
 	-- Less damage
     sets.precast.CorsairShot.Proc = {ammo=gear.QDbullet,

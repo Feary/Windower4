@@ -63,19 +63,19 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 	--
-	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar", feet="Hashishin Basmak"}
+	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar", feet="Hashi. Basmak +1"}
 	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk", feet="Luhlaza Charuqs +1"}
 	sets.buff.Convergence = {head="Luhlaza Keffiyeh"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
 	sets.buff.Enchainment = {body="Luhlaza Jubbah +1"}
-	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt"}
+	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +1"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 
 	sets.HPDown = {}
 
 	-- Precast Sets
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Azure Lore'] = {hands="Luhlaza Bazubands"}
+	sets.precast.JA['Azure Lore'] = {hands="Luh. Bazubands +1"}
 
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {}--legs="Dashing Subligar"
@@ -99,7 +99,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})--body="Passion Jacket"
 
-	sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Hashishin Mintan"})--body="Hashishin Mintan +1"
+	sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Hashishin Mintan +1"})
 
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
@@ -342,8 +342,8 @@ function init_gear_sets()
 		-- Breath Spells --
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
 		head="Luhlaza Keffiyeh", neck="Mavi Scarf", lear="Lifestorm Earring", rear="Psystorm Earring",
-		body="Assim. Jubbah +1", hands="Luhlaza Bazubands", lring="Stikini Ring", rring="Stikini Ring",
-		back="Cornflower Cape", waist="Ovate Rope", legs="Hashishin Tayt", feet="Luhlaza Charuqs +1"}
+		body="Assim. Jubbah +1", hands="Luh. Bazubands +1", lring="Stikini Ring", rring="Stikini Ring",
+		back="Cornflower Cape", waist="Ovate Rope", legs="Hashishin Tayt +1", feet="Luhlaza Charuqs +1"}
 
 	-- Physical Added Effect Spells most notably "Stun" spells --
 	sets.midcast['Blue Magic'].Stun = {ammo="Mavi Tathlum",
@@ -386,12 +386,12 @@ function init_gear_sets()
 		-- hands="Rawhide Gloves"
 		body="Assim. Jubbah +1", lring="Stikini Ring", rring="Stikini Ring",
 		-- back="Cornflower Cape", 
-		waist="Witful Belt", legs="Hashishin Tayt", feet="Luhlaza Charuqs +1"}
+		waist="Witful Belt", legs="Hashishin Tayt +1", feet="Luhlaza Charuqs +1"}
 
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
 		-- neck="Incanter's Torque"
 		head="Luhlaza Keffiyeh", neck="Mavi Scarf", lear="Loquac. Earring", rear="Gifted Earring",
-		body="Assim. Jubbah +1", hands="Hashi. Bazubands", ring1="Kishar Ring", ring2="Defending Ring",
+		body="Assim. Jubbah +1", hands="Hashi. Bazu. +1", ring1="Kishar Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Lengo Pants",feet="Carmine Greaves"}
 
 	sets.midcast['Blue Magic']['Battery Charge'] = set_combine(sets.midcast['Blue Magic'].Buff, {})--head="Amalric Coif",back="Grapevine Cape",waist="Gishdubar Sash"
@@ -463,7 +463,7 @@ function init_gear_sets()
 	sets.NightIdle = {back="Umbra Cape"}
 
 	-- Gear for learning spells: +skill and AF hands.
-	sets.Learning = {hands="Assim. Bazu."}
+	sets.Learning = {hands="Assim. Bazu. +1"}
 
 	-- Resting sets
 	sets.resting = {main={name="Tanmogayi +1", priority=2}, sub={name="Tanmogayi", priority=1},
