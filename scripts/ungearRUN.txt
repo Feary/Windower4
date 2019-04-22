@@ -1,0 +1,20 @@
+put Adhemar Bonnet +1 sack all
+put Adhemar Jacket +1 sack all
+put Adhemar Wrist. +1 sack all
+put Aettir locker all
+put Carm. Sc. Mail +1 safe2 all
+put Evasionist's Cape locker all
+put Handler's Earring +1 case all
+put Herculean Boots sack all
+put Kurys Gloves locker all
+put Meg. Chausses +2 sack all
+put Meg. Gloves +2 sack all
+put Meg. Jam. +2 sack all
+put Mekosu. Harness sack all
+put Ogma's cape locker all
+put Rawhide Mask sack all
+put Samnuha Tights sack all
+put Skaoi Boots sack all
+put Turms Leggings +1 locker all
+put Turms Mittens +1 locker all
+put Utu Grip locker all

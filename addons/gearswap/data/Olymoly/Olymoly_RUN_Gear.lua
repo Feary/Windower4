@@ -373,7 +373,7 @@ function init_gear_sets()
             body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Ilabrat Ring",
             back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Samnuha Tights",feet=gear_herculean_ta_feet}
 	sets.engaged.Acc = {ammo="Yamarang",
-            head="Adhemar Bonnet +1",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+            head="Adhemar Bonnet +1",neck="Anu Torque",ear1="Telos Earring",ear2="Digni. Earring",
             body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Ilabrat Ring",
             back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Samnuha Tights",feet=gear_herculean_ta_feet}
 	-- Hybrid

@@ -1,0 +1,34 @@
+get Adhemar Bonnet +1 sack all
+get Adhemar Jacket +1 sack all
+get Adhemar Wrist. +1 sack all
+get Aettir locker all
+get Carm. Sc. Mail +1 safe2 all
+get Eri. Leg Guards +1 locker all
+get Erilaz Galea +1 locker all
+get Erilaz Greaves +1 locker all
+get Erilaz Surcoat +1 locker all
+get Evasionist's Cape locker all
+get Fu. Bandeau +1 locker all
+get Futhark Boots +1 locker all
+get Futhark Coat +1 locker all
+get Futhark Mitons +1 locker all
+get Futhark Trousers +1 locker all
+get Handler's Earring +1 case all
+get Herculean Boots sack all
+get Kurys Gloves locker all
+get Meg. Chausses +2 sack all
+get Meg. Gloves +2 sack all
+get Meg. Jam. +2 sack all
+get Mekosu. Harness sack all
+get Ogma's cape locker all
+get Rawhide Mask sack all
+get Rune. Bandeau +1 locker all
+get Rune. Trousers +1 locker all
+get Runeist Bottes +1 locker all
+get Runeist Coat +1 locker all
+get Runeist Mitons +1 locker all
+get Samnuha Tights sack all
+get Skaoi Boots sack all
+get Turms Leggings +1 locker all
+get Turms Mittens +1 locker all
+get Utu Grip locker all
