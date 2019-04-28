@@ -1,0 +1,17 @@
+sets.exported={
+    main="Burtgang",
+    sub="Aegis",
+    ammo="Ginsen",
+    head="Sulevia's Mask +2",
+    body={ name="Emicho Haubert +1", augments={'HP+65','STR+12','Attack+20',}},
+    hands={ name="Lustr. Mittens +1", augments={'Accuracy+20','DEX+8','Crit. hit rate+3%',}},
+    legs={ name="Lustr. Subligar +1", augments={'Accuracy+20','DEX+8','Crit. hit rate+3%',}},
+    feet="Sulev. Leggings +2",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Brutal Earring",
+    right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    left_ring="Epaminondas's Ring",
+    right_ring="Regal Ring",
+    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
+}

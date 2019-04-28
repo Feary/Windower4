@@ -12,16 +12,15 @@ function user_setup()
 	state.Weapons:options('Default','Trishula')
 	state.Passive = M{['description'] = 'Passive Mode','None','MP','Twilight'}
 	
-    gear.da_jse_back = {name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	gear.stp_jse_back = {name="Brigantia's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
+    gear.da_jse_back = 		{name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	gear.stp_jse_back =		{name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	-- stardiver
-	gear.wsd_jse_back = {name="Brigantia's Mantle",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}	
+	gear.wsd_jse_back = 	{name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}
 	-- drakes
-	gear.crit_jse_back = {name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
-	gear.breathe_back = {name="Brigantia's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20',}}	
-	gear.fc_back = {name="Brigantia's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20',}}
-	-- str acc stp_jse_back
-	gear.jump_back = {name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
+	gear.crit_jse_back = 	{name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
+	gear.breathe_back = 	{name="Brigantia's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}}
+	gear.fc_back = 			{name="Brigantia's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}}
+	gear.jump_back = 		{name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	
 	-- Additional local binds
 	send_command('bind ^` input /ja "Hasso" <me>')

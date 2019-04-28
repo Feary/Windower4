@@ -1,6 +1,7 @@
 get Adad Amulet Storage all
 get Apogee Crown +1 Storage all
 get Apogee Slacks +1 Storage all
+get Apogee Mitts +1 Storage all
 get Apogee Pumps +1 Storage all
 get Amalric Gages case all 
 get Amalric Slops case all 

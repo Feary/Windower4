@@ -214,9 +214,8 @@ function init_gear_sets()
 	
 	-- Pet Macc/Skill
     sets.midcast.Pet.DebuffBloodPactWard = {main="Gridarvor",sub="Vox Grip", ammo=gear.avatar_ammo,
-		-- Apogee Mitts +1 Path D
         head="Convoker's Horn +3", neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
-        body="Con. Doublet +3", hands="Convo. Bracers +2",ring1="Evoker's Ring", ring2="Stikini Ring",
+        body="Con. Doublet +3", hands="Apogee Mitts +1",ring1="Evoker's Ring", ring2="Stikini Ring",
         back=gear.magic_jse_back, waist="Regal Belt", legs="Convo. Spats +2", feet="Convo. Pigaches +3"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
@@ -351,7 +350,7 @@ function init_gear_sets()
     sets.perp.Day = {}
     sets.perp.Weather = {}
 	
-	sets.perp.Carbuncle = {}--hands="Asteria Mitts"
+	sets.perp.Carbuncle = {hands="Asteria Mitts +1"}
     sets.perp.Diabolos = {}
     sets.perp.Alexander = sets.midcast.Pet.BloodPactWard
 
@@ -397,6 +396,11 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+        head="Convoker's Horn +3", neck="Shulmanu Collar", ear1="Digni. Earring", ear2="Telos Earring",
+        body="Con. Doublet +3", hands="Convo. Bracers +2",ring1="Rajas Ring",ring2="Ramuh Ring +1",
+        --waist="Olseni Belt",
+		back=gear.phys_jse_back, waist="Windbuffet belt +1", legs="Convo. Spats +2",feet="Convo. Pigaches +3"}
+	sets.engaged.Acc = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
         head="Convoker's Horn +3", neck="Shulmanu Collar", ear1="Digni. Earring", ear2="Telos Earring",
         body="Con. Doublet +3", hands="Convo. Bracers +2",ring1="Rajas Ring",ring2="Ramuh Ring +1",
         --waist="Olseni Belt",

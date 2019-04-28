@@ -50,6 +50,8 @@
     <addon>remember</addon>
     <addon>Pouches</addon>
     <addon>plasmon</addon>
+    <addon>autojoin</addon>
+    <addon>DressUp</addon>
     <plugin>Guildwork</plugin>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>

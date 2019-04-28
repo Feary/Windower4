@@ -1,19 +1,16 @@
+put Cab. Breeches +1 Locker all
 put Cab. Coronet +1 Locker all
-put Chev. Gauntlets +1 Locker all
-put Rev. Leggings +1 Locker all
+put Cab. Gauntlets +1 Locker all
 put Cab. Leggings +1 Locker all
 put Cab. Surcoat +1 Locker all
-put Cab. Gauntlets +1 Locker all
-put Cab. Breeches +1 Locker all
-put Thureous Earring Locker all
-put Rev. Gauntlets +1 Locker all
-put Chev. Cuisses +1 Locker all
-put Creed Baudrier Locker all
-put Weard Mantle Locker all
-put Chev. Cuirass Locker all
-put Rev. Surcoat +1 Locker all
-put Chev. Sabatons Locker all
 put Chev. Armet +1 Locker all
-put Rudianos's Mantle Locker all
+put Chev. Cuisses +1 Locker all
+put Chev. Gauntlets +1 Locker all
+put Chev. Sabatons Locker all
+put Creed Baudrier Locker all
 put Knightly Earring Locker all
-
+put Rev. Leggings +1 Locker all
+put Rudianos's Mantle Locker all
+put Thureous Earring Locker all
+put Weard Mantle Locker all
+put Carm. Sc. Mail +1 safe2 all
