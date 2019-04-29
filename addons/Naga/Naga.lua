@@ -1,6 +1,6 @@
-_addon.author   = 'Original by Kaotic, rewritten by Otamarai'
+_addon.author   = 'Erupt'
 _addon.version  = '2.05'
-_addon.commands = {'Quetz'}
+_addon.commands = {'Naga'}
 
 require 'logger'
 require 'strings'
@@ -17,32 +17,32 @@ running = false
 fighting = false
 waiting = false
 tp = false
-gob = false
+dremi = false
 pause = 'on'
-quetz_x = 608.17
-quetz_y = -933.43
-exitmenu = false
-teleport_ring = "Dim. Ring (Mea)"		--Set your teleport ring here
+naga_x = 0.00
+naga_y = -210.00
+teleport_ring = "Warp Ring"		--Set your teleport ring here
 
-
-
+--[[
+	This script is a little different from the Quetz script.  You will need to set your home point
+	in Misareaux Coast in order for this to work.  This acts as the Dimentional Teleport ring here.
+]]
 
 --Set your trusts here, and under trustx_short put the name as it appears in the party list or when they speak in party chat
-trust1 = 'Koru-Moru'
-trust1_short = 'Koru Moru'
+trust1 = 'Joachim'
+trust1_short = 'Joachim'
 trust2 = 'Selh\'teus'
 trust2_short = ''
-trust3 = 'Qultada'
+trust3 = 'Ulmia'
 trust3_short = ''
-trust4 = 'Yoran-Oran (UC)'
-trust4_short = ''
-trust5 = 'Ulmia'
-trust5_short = 'Ulmia'
-
-
+trust4 = 'Lilisette II'
+trust4_short = 'Lilisette'
+trust5 = 'Koru-Moru'
+trust5_short = 'Koru-Moru'
 
 windower.register_event('prerender', function()
 	local curtime = os.clock()
+	local waste = math.random()
 	if nexttime + delay <= curtime then
 		nexttime = curtime
 		delay = 0.2
@@ -53,11 +53,11 @@ windower.register_event('prerender', function()
 		
 		if pause == 'on' then return end
 		
-		if zone == 'La Theine Plateau' or zone == 'Konschtat Highlands' or zone == 'Tahrongi Canyon' then	--If we're in the areas with the crags, enter reisen
-			enterReisen()
-		elseif zone == 'Reisenjima' then	--If we're in reisen, check if we're inside already
-			gob = windower.ffxi.get_mob_by_name('Shiftrix')
-			if me and me.y < -400 and me.y > -550 then		--Check coordinates to see if we're inside since goblin distance is fucky when using warp packets
+		if zone == 'Misareaux Coast' then	--If we're in the areas with the crags, enter escha
+			enterRuaun()
+		elseif zone == 'Escha - Ru\'Aun' then	--If we're in escha, check if we're inside the arena already
+			dremi = windower.ffxi.get_mob_by_name('Dremi')
+			if me and me.y < -250 then		--Check coordinates to see if we're inside since distance is fucky when using warp packets
 				inside = false
 			else
 				inside = true
@@ -75,17 +75,7 @@ windower.register_event('prerender', function()
 					fight()
 				end
 			end
-		elseif zone ~= 'Reisenjima' and zone ~= 'La Theine Plateau' and zone ~= 'Konschtat Highlands' and zone ~= 'Tahrongi Canyon' then	--If we were sent to our home point for any reason, just warp our ass back out there
-			if getEquippedItem('right_ring') ~= teleport_ring then
-				windower.send_command('wait 3;input /equip ring2 "'..teleport_ring..'"')
-			else
-				windower.send_command('wait 3;input /item "'..teleport_ring..'" <me>')
-			end
-			delay = 15
 		end
-		
-		
-		
 	end
 end)
 
@@ -98,6 +88,9 @@ end
 
 function summonTrust()		--Return the name of your trusts that may have died/aren't in your party currently
 	local party = windower.ffxi.get_party()
+	if party.p5 then 
+		return false
+	end
 	local spellrecasts = windower.ffxi.get_spell_recasts()
 	local checkt1 = false
 	local checkt2 = false
@@ -132,11 +125,7 @@ function summonTrust()		--Return the name of your trusts that may have died/aren
 	else
 		return false
 	end
-	
-	
 end
-
-
 
 function isBuffActive(id)
 	local self = windower.ffxi.get_player()
@@ -148,16 +137,14 @@ function isBuffActive(id)
 	return false
 end
 
-
-
-function enterReisen()			--Take the Dimensional Portal
+function enterRuaun()			--Take the Undulating Confluence
 	local me = windower.ffxi.get_mob_by_target('me')
-	tp = windower.ffxi.get_mob_by_name('Dimensional Portal')
-	if tp and math.sqrt(tp.distance) > 3 and not running then
-		log('Entering Reisenjima')
+	tp = windower.ffxi.get_mob_by_name('Undulating Confluence')
+	if tp and math.sqrt(tp.distance) > 6 and not running then
+		log('Entering Escha - Ru\'Aun')
 		windower.ffxi.run(tp.x - me.x, tp.y - me.y)
 		running = true
-	elseif tp and math.sqrt(tp.distance) <= 3 then
+	elseif tp and math.sqrt(tp.distance) <= 6 then
 		windower.ffxi.run(false)
 		running = false
 		local p = packets.new('outgoing', 0x01A, {
@@ -170,46 +157,73 @@ function enterReisen()			--Take the Dimensional Portal
 	end
 end
 
-
 function enterArena()
-	gob = windower.ffxi.get_mob_by_name('Shiftrix')
-    if gob then
+	local me = windower.ffxi.get_mob_by_target('me')
+	dremi = windower.ffxi.get_mob_by_name('Dremi')
+	if dremi and math.sqrt(dremi.distance) > 3 and not running then		-- we need to run to Dremi
+		log('Entering Escha - Ru\'Aun')
+		windower.ffxi.run(dremi.x - me.x, dremi.y - me.y)
+		running = true
+	elseif dremi and math.sqrt(dremi.distance) <= 3 then
+		windower.ffxi.run(false)
+		running = false
         local p = packets.new('outgoing', 0x01A, {
-            ['Target'] = gob.id,
-            ['Target Index'] = gob.index,
+            ['Target'] = dremi.id,
+            ['Target Index'] = dremi.index,
         })
 		busy = true
 		packets.inject(p)
+		
+		windower.send_command('setkey escape down;wait 0.5;setkey escape up')	--sometimes the menu gets stuck open when getting elvorseal, this hits escape to fix it
+		delay = 5
     end
-	windower.send_command('setkey escape down;wait 0.5;setkey escape up')	--sometimes the menu gets stuck open when getting elvorseal, this hits escape to fix it
-	delay = 5
 end
 
+function randomFloat(min, max)
+    return min + math.random() * (max - min);
+end
+
+function findWaitPosition()
+	local offset_x = randomFloat(-5, 5)
+	local offset_y = randomFloat(-5, 5)
+	
+	local space_x = offset_x / math.abs(offset_x)
+	local space_y = offset_y / math.abs(offset_y)
+	
+	offset_x = offset_x + space_x * 6
+	offset_y = offset_y + space_y * 6
+
+	wait_x = naga_x + offset_x
+	wait_y = naga_y + offset_y
+	log('Waiting at X: ' .. wait_x .. ', Y:' .. wait_y)
+end
+
+findWaitPosition()
 
 function moveToLocation()
 	local me = windower.ffxi.get_mob_by_target('me')
 	if isBuffActive(603) then
-		windower.send_command('setkey escape down;wait 1;setkey escape up')							--To escape out of the menu with shiftrix
-		if math.abs(quetz_x - me.x) > 2 and math.abs(quetz_y - me.y) > 2 and not waiting then		--Run to location
-			windower.ffxi.run(quetz_x - me.x, quetz_y - me.y)
-		elseif math.abs(quetz_x - me.x) <= 2 and math.abs(quetz_y - me.y) <= 2 and not waiting then		--We're here, so stop
+		windower.send_command('setkey escape down;wait 1;setkey escape up')							--To escape out of the menu with dremi
+		if math.abs(wait_x - me.x) > 2 and math.abs(wait_y - me.y) > 2 and not waiting then		--Run to location
+			windower.ffxi.run(wait_x - me.x, wait_y - me.y)
+		elseif math.abs(wait_x - me.x) <= 2 and math.abs(wait_y - me.y) <= 2 and not waiting then		--We're here, so stop
 			windower.ffxi.run(false)
 			waiting = true
 			delay = 3
+			findWaitPosition()
 		end
 	else
 		fight()
 	end
 end
 
-
-
 function fight()
-	local quetz = windower.ffxi.get_mob_by_name('Quetzalcoatl')
+	local naga = windower.ffxi.get_mob_by_name('Naga Raja')
 	local player = windower.ffxi.get_player()
 	local party = windower.ffxi.get_party()
+	local partymembers = party.p5 or false
 	if isBuffActive(603) then	
-		if quetz.hpp > 0 then
+		if naga.hpp > 0 then
 			fighting = true
 		else
 			fighting = false
@@ -220,21 +234,22 @@ function fight()
 			end
 			delay = 3
 		end
+
 		if player.status == 0 and isBuffActive(603) and fighting then			--If not engaged then engage
-			engagequetz = packets.new('outgoing', 0x01A, {
-				['Target'] = quetz.id,
-				['Target Index'] = quetz.index,
+			engagenaga = packets.new('outgoing', 0x01A, {
+				['Target'] = naga.id,
+				['Target Index'] = naga.index,
 				['Category'] = 0x02,
 			})
-			packets.inject(engagequetz)
+			packets.inject(engagenaga)
 			delay = 1
-		elseif math.sqrt(quetz.distance) > 7 and player.status == 1 and fighting then		--Turn and run to quetz
+		elseif math.sqrt(naga.distance) > 7 and player.status == 1 and fighting then		--Turn and run to naga
 			local target = windower.ffxi.get_mob_by_index(player.target_index or 0)
 			local self_vector = windower.ffxi.get_mob_by_index(player.index or 0)
 			local angle = (math.atan2((target.y - self_vector.y), (target.x - self_vector.x))*180/math.pi)*-1
 			windower.ffxi.turn((angle):radian())
 			windower.ffxi.run(true)
-		elseif math.sqrt(quetz.distance) <= 7 and player.status == 1 and fighting then		--Summon trusts when they die
+		elseif math.sqrt(naga.distance) <= 7 and player.status == 1 and fighting and not partymembers then		--Summon trusts when they die
 			windower.ffxi.run(false)
 			if summonTrust() ~= false and not isBuffActive(6) and not isBuffActive(2) then
 				windower.send_command('input /ma "'..summonTrust()..'" <me>')
@@ -257,25 +272,23 @@ function fight()
 	end
 end
 
-
-
 windower.register_event('outgoing chunk',function(id,data,modified,injected,blocked)
 	local player = windower.ffxi.get_player()
 	local me = windower.ffxi.get_mob_by_target('me')
 	local zone_id = windower.ffxi.get_info().zone
 	local zone_name = res.zones[zone_id].name
-	if id == 0x05B then
+	if id == 0x05B or id == 0x05C then
 		if busy == true and portnow == true and isBuffActive(603) then		--Warp to the arena
 			local port = packets.new('outgoing', 0x05C, {
-				["X"] = 640,
-				["Z"] = -372.00003051758,
-				["Y"] = -921.00006103516,
-				["Target ID"] = gob.id,
+				["X"] = 0,
+				["Z"] = -43.600002288818,
+				["Y"] = -238.00001525879,
+				["Target ID"] = dremi.id,
 				["_unknown1"] = 12,
 				["Zone"] = zone_id,
 				["Menu ID"] = 9701,
-				["Target Index"] = gob.index,
-				["_unknown3"] = 24321,
+				["Target Index"] = dremi.index,
+				["_unknown3"] = 48897,
 			})
 			packets.inject(port)
 			busy = false
@@ -289,23 +302,16 @@ windower.register_event('outgoing chunk',function(id,data,modified,injected,bloc
 	end
 end)
 
-
 windower.register_event('incoming chunk',function(id,data,modified,injected,blocked)
 	local player = windower.ffxi.get_player()
 	local me = windower.ffxi.get_mob_by_target('me')
 	local zone_id = windower.ffxi.get_info().zone
-	local zone_name = res.zones[zone_id].name
-	local menu_id = 0
+	local menu_id = 14
 	if id == 0x034 or id == 0x032 then
 		if busy == true then
 			local parse = packets.parse('incoming', data)
 			local npc_id = parse['NPC']
-			if tp and npc_id == tp.id then		--Dimensional Portal
-				if zone_name == 'La Theine Plateau' then
-					menu_id = 222
-				elseif zone_name == 'Konschtat Highlands' or zone_name == 'Tahrongi Canyon' then
-					menu_id = 926
-				end
+			if tp and npc_id == tp.id then		--Undulating Confluence
 				local port = packets.new('outgoing', 0x05B, {
 					["Target"] = tp.id,
 					["Option Index"] = 0,
@@ -320,7 +326,7 @@ windower.register_event('incoming chunk',function(id,data,modified,injected,bloc
 				
 				local port = packets.new('outgoing', 0x05B, {
 					["Target"] = tp.id,
-					["Option Index"] = 2,
+					["Option Index"] = 1,
 					["_unknown1"] = 0,
 					["Target Index"] = tp.index,
 					["Automated Message"] = false,
@@ -331,13 +337,13 @@ windower.register_event('incoming chunk',function(id,data,modified,injected,bloc
 				packets.inject(port)
 				delay = 10
 				busy = false
-			elseif gob and npc_id == gob.id then	--Shiftrix
+			elseif dremi and npc_id == dremi.id then	--Dremi
 				if not isBuffActive(603) then
 					local elvorseal = packets.new('outgoing', 0x05B, {
-						["Target"] = gob.id,
+						["Target"] = dremi.id,
 						["Option Index"] = 10,
 						["_unknown1"] = 0,
-						["Target Index"] = gob.index,
+						["Target Index"] = dremi.index,
 						["Automated Message"] = true,
 						["_unknown2"] = 0,
 						["Zone"] = zone_id,
@@ -346,10 +352,10 @@ windower.register_event('incoming chunk',function(id,data,modified,injected,bloc
 					packets.inject(elvorseal)
 				end
 				local elvorseal = packets.new('outgoing', 0x05B, {
-					["Target"] = gob.id,
-					["Option Index"] = 0,
+					["Target"] = dremi.id,
+					["Option Index"] = 11,
 					["_unknown1"] = 16384,
-					["Target Index"] = gob.index,
+					["Target Index"] = dremi.index,
 					["Automated Message"] = true,
 					["_unknown2"] = 0,
 					["Zone"] = zone_id,
@@ -364,52 +370,37 @@ windower.register_event('incoming chunk',function(id,data,modified,injected,bloc
 		local parse = packets.parse('incoming', data)
 		local npc_id = parse['Actor']
 		local message_id = parse['Message ID']
-		if npc_id == gob.id and message_id == 6407 then
-			delay = 60
+		log('message id: ' .. message_id)
+		if dremi and npc_id == dremi.id and message_id == 6407 then
+			delay = 300
 		end
 	end
 end)
 
-
-
 --Zone change timers
 windower.register_event('zone change', function(new, old)
 	local zone = res.zones[new].name
-	if zone == 'Reisenjima' then
+	if zone == 'Escha - Ru\'Aun' then
 		delay = 20
-	elseif zone == 'La Theine Plateau' or zone == 'Konschtat Highlands' or zone == 'Tahrongi Canyon' then
+	elseif zone == 'Misareaux Coast' then
+		log('Don\'t forget to set your HP here!!!')
 		delay = 15
 		inside = false
 		running = false
 		fighting = false
 		waiting = false
-		exitmenu = false
 	else
 		delay = 15
 	end
 end)
 
-
-
-
 windower.register_event('addon command', function(...)
     local command = {...}
 	if command[1] == 'stop' then
 		pause = 'on'
-		log('Stopping Quetz')
+		log('Stopping Naga')
     elseif command[1] == 'start' then
 		pause = 'off'
-		log('Starting Quetz')
+		log('Starting Naga')
 	end
 end)
-
-
-
-
-
-
-
-
-
-
-
