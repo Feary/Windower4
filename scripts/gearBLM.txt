@@ -4,7 +4,7 @@ get Amalric Slops +1 all
 get Amalric Coif +1 all
 get Amalric Doublet +1 all
 get Arch. Coat +1 all
-get Arch. Gloves all
+get Arch. Gloves +1 all
 get Arch. Petasos +1 all
 get Arch. Sabots +1 all
 get Arch. Tonban +1 all
@@ -26,7 +26,7 @@ get Rubicundity all
 get Spae. Petasos all
 get Spae. Coat +1 all
 get Spaekona's Gloves all
-get Spaekona's Tonban all
+get Spae. Tonban +1 all
 get Spaekona's Sabots all
 get Taranus's Cape all
 get Wicce Chausses all

@@ -1,20 +1,20 @@
-alias g15m1g1 
-alias g15m1g2 
+alias g15m1g1 input /targetnpc;wait 1;input /ma "Blank Gaze" <t>
+alias g15m1g2  input /targetnpc;wait 1;input /ma "Jettatura" <t>
 alias g15m1g3 
-alias g15m1g4 
-alias g15m1g5 
+alias g15m1g4 input /targetnpc;wait 1;input /ma "Geist Wall" <t>
+alias g15m1g5 input /targetnpc;wait 1;input /ma "Sheep Song" <t>
 alias g15m1g6 
 
-alias g15m1g7 
-alias g15m1g8 
-alias g15m1g9 
-alias g15m1g10 
+alias g15m1g7 input /ma "Cocoon" <me>
+alias g15m1g8 input /ma "Phalanx" <me>
+alias g15m1g9 input /ma "Cure IV" <me>
+alias g15m1g10 input /ma "Crusade" <me>
 alias g15m1g11 
-alias g15m1g12 
+alias g15m1g12 input /ma "Cure III" <me>
 
-alias g15m1g13
-alias g15m1g14 
-alias g15m1g15 
-alias g15m1g16 
+alias g15m1g13 input /console gs c toggle AutoDefenseMode
+alias g15m1g14 input /console gs c cycle HybridMode
+alias g15m1g15 input /console gs c toggle TankAutoDefense
+alias g15m1g16 /console gs c cycle IdleMode
 alias g15m1g17 
-alias g15m1g18 
+alias g15m1g18 /console gs c toggle AutoTankMode

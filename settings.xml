@@ -52,6 +52,7 @@
     <addon>plasmon</addon>
     <addon>autojoin</addon>
     <addon>DressUp</addon>
+    <addon>MountMuzzle</addon>
     <plugin>Guildwork</plugin>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>

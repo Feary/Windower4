@@ -85,10 +85,9 @@ function init_gear_sets()
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
 
     -- Fast cast sets for spells    
-    sets.precast.FC = {main=gear.grioavolr_fc_staff,
-		-- sub="Clerisy Strap +1", ammo="Impatiens",
-		-- ear2="Enchntr. Earring +1",
-		head="Amalric Coif",neck="Voltsurge Torque",ear1="Loquac. Earring",
+    sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap",
+		--  ammo="Impatiens", 
+		head="Amalric Coif",neck="Voltsurge Torque",ear1="Loquac. Earring", ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands=gear_helios_hands_FC, ring1="Kishar Ring", ring2="Lebeche Ring",
 		--back="Perimede Cape",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps"}
@@ -119,10 +118,8 @@ function init_gear_sets()
     -- Midcast sets
     --------------------------------------
 
-    sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff,ammo="Hasty Pinion +1",
-		--sub="Clerisy Strap +1",
-		--ear2="Enchntr. Earring +1",
-		head="Amalric Coif", neck="Voltsurge Torque",ear1="Loquac. Earring",
+    sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap",ammo="Hasty Pinion +1",
+		head="Amalric Coif", neck="Voltsurge Torque",ear1="Loquac. Earring", ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands=gear_helios_hands_FC, ring1="Kishar Ring", ring2="Lebeche Ring",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Orvail Pants +1",feet="Regal Pumps"}
 	
@@ -146,7 +143,7 @@ function init_gear_sets()
 		--back="Tempered Cape +1", 
 		waist="Witful Belt"})
 			
-	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})--main="Oranyan",sub="Clemency Grip"
+	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {sub="Clemency Grip"})--main="Oranyan",
 
 	sets.midcast['Elemental Magic'] = {main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- rear="Crematio Earring",

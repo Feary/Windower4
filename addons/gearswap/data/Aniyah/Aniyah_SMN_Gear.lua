@@ -104,12 +104,12 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found. MP + Gear
     sets.precast.WS['Myrkr'] = {ammo=gear.avatar_ammo,
 		-- neck="Sanctity Necklace",
-        head="Beckoner's Horn +1",ear1="Etiolation Earring",ear2="Gifted Earring",
-        -- hands="Lamassu Mitts", ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		body="Con. Doublet +3", ring1="Evoker's Ring", ring2="Lebeche Ring",
+        head="Beckoner's Horn +1", ear1="Etiolation Earring",ear2="Gifted Earring",
+        -- hands="Lamassu Mitts", 
+		body="Con. Doublet +3", ring1="Evoker's Ring", ring1="Mephitas's Ring +1", ring2="Mephitas's Ring",
 		-- waist="Luminary Sash",
 		back="Conveyance Cape",  legs="Beck. Spats +1", feet="Beck. Pigaches +1"}
-
+	
     
     --------------------------------------
     -- Midcast sets
