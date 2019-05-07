@@ -45,6 +45,7 @@ lua load giltracker;
 lua load InfoReplacer;
 lua load instaLS;
 lua load itemizer;
+lua load MountMuzzle;
 lua load ohShi;
 lua load Omen;
 lua load pet_fix;

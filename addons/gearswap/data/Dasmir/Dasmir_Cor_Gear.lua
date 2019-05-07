@@ -103,7 +103,7 @@ function init_gear_sets()
 		-- neck="Combatant's Torque", lear="Dedition Earring", rear="Telos Earring",
 		head="Laksa. Tricorne +2", neck="Iskur Gorget", lear="Neritic Earring", rear="Enervating Earring",
 		-- body="Oshosi Vest +1", lring="Chirich Ring +1", rring="Chirich Ring +1",
-		body="Mummu Jacket +2", hands="Laksa. Gants +2", lring="Regal Ring", rring="Stikini Ring",
+		body="Oshosi Vest", hands="Laksa. Gants +2", lring="Regal Ring", rring="Stikini Ring",
 		-- waist="Kwahu Kachina Belt", feet="Lanun Boots +2"
 		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Carmine Greaves +1"}
 	
