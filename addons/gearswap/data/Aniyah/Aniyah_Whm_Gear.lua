@@ -363,7 +363,7 @@ function init_gear_sets()
 
     sets.midcast.Drain.Resistant = {-- Grioavolr Pemphredo Tathlum
 		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
-		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
+		-- Chironic Hat rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
@@ -374,7 +374,7 @@ function init_gear_sets()
 
 	sets.midcast.Stun = {-- Grioavolr  Pemphredo Tathlum
 		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
-		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
+		-- Chironic Hat Dign. Earring or  rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3

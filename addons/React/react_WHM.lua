@@ -25,4 +25,4 @@ return {
             ["ready_reaction"]="input /ma \"Barthundra\" <me>"
         }
 	}
-]
+}

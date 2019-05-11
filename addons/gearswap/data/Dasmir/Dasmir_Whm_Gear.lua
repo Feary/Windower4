@@ -95,22 +95,22 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.Cure_jse_back, waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	sets.precast.WS['Hexa Strike'] = {
-		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.Cure_jse_back, waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
     sets.precast.WS['Flash Nova'] = {
-		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.Cure_jse_back, waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.precast.WS['Mystic Boon'] = {
-		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.Cure_jse_back, waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
@@ -445,56 +445,49 @@ function init_gear_sets()
     -- Sets to return to when not performing an action.
     -- Resting sets
 	sets.resting = {main="Boonwell Staff", sub={name="Enki Strap", priority=1},
-		head="Befouled Crown", neck="Eidolon Pendant", lear="Merman's Earring", rear="Merman's Earring",
+		head="Befouled Crown", neck="Eidolon Pendant", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back="Felicitas Cape", waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Bolelabunga", priority=2}, sub={name="Genbu's Shield", priority=1},		
-		head="Befouled Crown", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+		head="Befouled Crown", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back=gear.Cure_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="Enki Strap", priority=1},
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.Cure_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
-	sets.idle.MDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+	sets.idle.MDT = {main={name="Earth Staff", priority=2}, sub={name="Enki Strap", priority=1},
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.Cure_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 		
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
-	sets.idle.Weak = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+	sets.idle.Weak = {main={name="Earth Staff", priority=2}, sub={name="Enki Strap", priority=1},
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.Cure_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     -- Defense sets
-	sets.defense.PDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+	sets.defense.PDT = {main={name="Earth Staff", priority=2}, sub={name="Enki Strap", priority=1},
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.Cure_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.defense.MDT = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+	sets.defense.MDT = {main={name="Earth Staff", priority=2}, sub={name="Enki Strap", priority=1},
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Engulfer Cape", waist="Austerity Belt", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +2"}			
 
-    sets.defense.MEVA = {main={name="Earth Staff", priority=2}, sub={name="", priority=1},
-		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
-		--  
+    sets.defense.MEVA = {main={name="Earth Staff", priority=2}, sub={name="Enki Strap", priority=1},
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Dark Ring", rring="Defending Ring",
-		--
 		back="Engulfer Cape", waist="Fucho-no-Obi", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +2"}	
 		
-	-- Gear for specific elemental nukes.
-	sets.element.Wind = {}
-	sets.element.Ice = {}
-	sets.element.Earth = {}
-
 	-- Engaged sets
 
     -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
@@ -504,22 +497,22 @@ function init_gear_sets()
 
     -- Basic set for if no TP weapon is defined.
     sets.engaged = {
-		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.Cure_jse_back, waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 		
     sets.engaged.Acc = {
-		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.Cure_jse_back, waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 		
     sets.engaged.DW = {
-		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.Cure_jse_back, waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 		
     sets.engaged.DW.Acc = {
-		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.Cure_jse_back, waist="Goading Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
