@@ -59,8 +59,7 @@ function init_gear_sets()
     sets.precast.JA['Astral Flow'] = {head="Glyphic Horn +1"}
     
     sets.precast.JA['Elemental Siphon'] = {main=gear.skill_staff, sub="Vox Grip", ammo="Esper Stone +1",
-		-- neck="Incanter's Torque"
-        head=gear_telchine_head_Siphon, neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",
+        head=gear_telchine_head_Siphon, neck="Incanter's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
 		-- hands="Baayami Cuffs"
         body=gear_telchine_body_Siphon, hands="Glyphic Bracers +1", ring1="Evoker's Ring", ring2="Stikini Ring",
         back="Conveyance Cape",waist="Lucidity Sash", legs=gear_telchine_legs_Siphon,feet="Beck. Pigaches +1"}
@@ -70,8 +69,7 @@ function init_gear_sets()
     -- Pact delay reduction gear
 	-- 
     sets.precast.BloodPactWard = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
-		-- neck="Incanter's Torque",
-		head="Beckoner's Horn +1",neck="Caller's Pendant",ear1="Andoaa Earring",ear2="Evans Earring",
+		head="Beckoner's Horn +1", neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Evans Earring",
         -- hands="Baayami Cuffs",
 		body="Con. Doublet +3", hands="Glyphic Bracers +1", ring1="Evoker's Ring",ring2="Stikini Ring",
         -- legs="Baayami Slops", feet="Baayami Sabots"
@@ -101,8 +99,8 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found. MP + Gear
     sets.precast.WS['Myrkr'] = {ammo=gear.avatar_ammo, 
         head="Beckoner's Horn +1",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Gifted Earring",
-        -- ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		body="Con. Doublet +3",hands="Lamassu Mitts",ring1="Evoker's Ring",ring2="Prolix Ring",
+        -- ring2="Mephitas's Ring",
+		body="Con. Doublet +3",hands="Lamassu Mitts", ring1="Mephitas's Ring +1", ring2="Prolix Ring",
 		back="Conveyance Cape", waist="Luminary Sash", legs="Beck. Spats +1", feet="Beck. Pigaches +1"}
 
     
@@ -117,8 +115,7 @@ function init_gear_sets()
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
 	
     sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",ammo="Hasty Pinion +1",
-		-- neck="Incanter's Torque",
-		head="Vanya Hood", neck="Colossus's Torque", ear1="Mendicant's Earring", ear2="Gifted Earring",
+		head="Vanya Hood", neck="Incanter's Torque", ear1="Mendicant's Earring", ear2="Gifted Earring",
         body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Stikini Ring",ring2="Sirona's Ring",
 		--feet="Vanya Clogs"
         back=gear.Cure_jse_back,waist="Austerity Belt",legs="Gyve Trousers", feet="Regal Pumps +1"}
@@ -150,14 +147,13 @@ function init_gear_sets()
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops",feet="Amalric Nails"}
 		
     sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		-- Incanter's Torque
-        head="Inyanga Tiara +2",neck="Sanctity Necklace",ear1="Gwati Earring",ear2="Enchntr. Earring +1",
+        head="Inyanga Tiara +2",neck="Incanter's Torque",ear1="Gwati Earring",ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Amalric Gages",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops",feet="Amalric Nails"}
 		
 	sets.midcast.Drain = {main="Rubicundity",sub="Genbu's Shield",
-       	--Ammurapi Shield Incanter's Torque
-        head="Pixie Hairpin +1",neck="Sanctity Necklace", ear1="Digni. Earring", ear2="Enchntr. Earring +1",
+       	--Ammurapi Shield
+        head="Pixie Hairpin +1",neck="Incanter's Torque", ear1="Digni. Earring", ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Amalric Gages",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back,waist="Fucho-no-obi",legs="Amalric Slops",feet="Amalric Nails"}
 		
@@ -174,14 +170,14 @@ function init_gear_sets()
 		back=gear.Cure_jse_back,waist="Witful Belt",legs="Amalric Slops",feet="Regal Pumps +1"}
 		
 	sets.midcast['Enfeebling Magic'] = {main="Gridarvor",sub="Enki Strap",
-		--Ammurapi Shield Incanter's Torque 
-        head="Inyanga Tiara +2",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Enchntr. Earring +1",
+		--Ammurapi Shield
+        head="Inyanga Tiara +2",neck="Incanter's Torque",ear1="Digni. Earring",ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Luminary Sash",legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Gridarvor",sub="Enki Strap",
-		--Ammurapi Shield Incanter's Torque 
-        head="Inyanga Tiara +2",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Enchntr. Earring +1",
+		--Ammurapi Shield  
+        head="Inyanga Tiara +2",neck="Incanter's Torque",ear1="Digni. Earring",ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Luminary Sash",legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 		
@@ -192,8 +188,7 @@ function init_gear_sets()
 	sets.midcast['Bio II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 		
 	sets.midcast['Enhancing Magic'] = {main=empty,sub="Genbu's Shield",ammo="Hasty Pinion +1",
-		--neck="Incanter's Torque",
-		head=gear_telchine_head_Duration,ear1="Andoaa Earring",ear2="Gifted Earring",
+		head=gear_telchine_head_Duration, neck="Incanter's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
 		body=gear_telchine_body_Duration,hands=gear_telchine_hands_Duration,ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.FC_jse_back,waist="Olympus Sash",legs=gear_telchine_legs_Duration,feet=gear_telchine_feet_Duration}
 		
@@ -205,8 +200,7 @@ function init_gear_sets()
     -- Avatar pact sets.  All pacts are Ability type.
     -- Skill
     sets.midcast.Pet.BloodPactWard = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
-        --neck="Incanter's Torque"
-		head="Beckoner's Horn +1", beck="Caller's Pendant", ear1="Andoaa Earring", ear2="Gifted Earring",
+		head="Beckoner's Horn +1", neck="Incanter's Torque", ear1="Andoaa Earring", ear2="Gifted Earring",
 		--hands="Baayami Cuffs",
         body="Beck. Doublet +1", hands="Lamassu Mitts", ring1="Evoker's Ring", ring2="Stikini Ring",
         -- legs="Baayami Slops",feet="Baayami Sabots"

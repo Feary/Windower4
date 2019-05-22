@@ -56,8 +56,10 @@ function init_gear_sets()
 	-- Indi Duration in slots that would normally have skill here to make entrust more efficient.
 	sets.buff.Entrust = {legs="Bagua Pants +1", feet="Azimuth Gaiters +1"}
 	
+	-- Relic hat for Blaze of Glory HP increase.
+	sets.buff['Blaze of Glory'] = {}
+	
 	-- Fast cast sets for spells
-
 	sets.precast.FC = {
 		--main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
 		--ear1="Enchntr. Earring +1",

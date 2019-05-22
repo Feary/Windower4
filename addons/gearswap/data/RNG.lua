@@ -22,10 +22,10 @@ function job_setup()
 	--List of which WS you plan to use TP bonus WS with.
 	moonshade_ws = S{'Jishnu\'s Radiance','Empyreal Arrow','Last Stand'}
 	
-	autows = "Last Stand"
-	rangedautows = "Last Stand"
-	autofood = 'Soy Ramen'
-	ammostock = 198
+	autows = "Jishnu\'s Radiance"
+	rangedautows = "Jishnu\'s Radiance"
+	autofood = 'Sublime Sushi'
+	ammostock = 98
 	
 	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","RngHelper","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","RangedMode","WeaponskillMode","IdleMode","Passive","RuneElement","TreasureMode",})
 end

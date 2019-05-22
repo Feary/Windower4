@@ -235,7 +235,8 @@ spell_maps = {
     ['Regen']='Regen',['Regen II']='Regen',['Regen III']='Regen',['Regen IV']='Regen',['Regen V']='Regen',
     ['Refresh']='Refresh',['Refresh II']='Refresh',['Refresh III']='Refresh',
     ['Teleport-Holla']='Teleport',['Teleport-Dem']='Teleport',['Teleport-Mea']='Teleport',['Teleport-Altep']='Teleport',['Teleport-Yhoat']='Teleport',
-    ['Teleport-Vahzl']='Teleport',['Recall-Pashh']='Teleport',['Recall-Meriph']='Teleport',['Recall-Jugner']='Teleport',['Warp']='Teleport',['Escape']='Teleport',['Retrace']='Teleport',
+    ['Teleport-Vahzl']='Teleport',['Recall-Pashh']='Teleport',['Recall-Meriph']='Teleport',['Recall-Jugner']='Teleport',['Warp']='Teleport',['Escape']='Teleport',
+	['Retrace']='TeleportOther',['Tractor']='TeleportOther',['Warp II']='TeleportOther',
 	['Temper']='Temper',['Temper II']='Temper',
     ['Valor Minuet']='Minuet',['Valor Minuet II']='Minuet',['Valor Minuet III']='Minuet',['Valor Minuet IV']='Minuet',['Valor Minuet V']='Minuet',
     ["Knight's Minne"]='Minne',["Knight's Minne II"]='Minne',["Knight's Minne III"]='Minne',["Knight's Minne IV"]='Minne',["Knight's Minne V"]='Minne',
@@ -266,8 +267,8 @@ spell_maps = {
     ['Doton: San'] = 'ElementalNinjutsu',['Huton: San'] = 'ElementalNinjutsu',['Hyoton: San'] = 'ElementalNinjutsu',
     ['Banish']='Banish',['Banish II']='Banish',['Banish III']='Banish',['Banishga']='Banish',['Banishga II']='Banish',
     ['Holy']='Holy',['Holy II']='Holy',['Drain']='Drain',['Drain II']='Drain',['Drain III']='Drain',['Aspir']='Aspir',['Aspir II']='Aspir',['Aspir III']='Aspir',
-    ['Absorb-Str']='Absorb',['Absorb-Dex']='Absorb',['Absorb-Vit']='Absorb',['Absorb-Agi']='Absorb',['Absorb-Int']='Absorb',['Absorb-Mnd']='Absorb',['Absorb-Chr']='Absorb',
-    ['Absorb-Acc']='Absorb',['Absorb-TP']='Absorb',['Absorb-Attri']='Absorb',
+    ['Absorb-STR']='Absorb',['Absorb-DEX']='Absorb',['Absorb-VIT']='Absorb',['Absorb-AGI']='Absorb',['Absorb-INT']='Absorb',['Absorb-MND']='Absorb',['Absorb-CHR']='Absorb',
+    ['Absorb-ACC']='Absorb',['Absorb-TP']='Absorb',['Absorb-Attri']='Absorb',
     ['Burn']='ElementalEnfeeble',['Frost']='ElementalEnfeeble',['Choke']='ElementalEnfeeble',['Rasp']='ElementalEnfeeble',['Shock']='ElementalEnfeeble',['Drown']='ElementalEnfeeble',
     ['Pyrohelix']='Helix',['Cryohelix']='Helix',['Anemohelix']='Helix',['Geohelix']='Helix',['Ionohelix']='Helix',['Hydrohelix']='Helix',['Luminohelix']='Helix',['Noctohelix']='Helix',
 	['Pyrohelix II']='Helix',['Cryohelix II']='Helix',['Anemohelix II']='Helix',['Geohelix II']='Helix',['Ionohelix II']='Helix',['Hydrohelix II']='Helix',['Luminohelix II']='Helix',['Noctohelix II']='Helix',
@@ -279,7 +280,10 @@ spell_maps = {
 }
 
 
-no_skill_spells_list = S{'Raise','Raise II','Raise III','Reraise','Arise','Tractor'}
+no_skill_spells_list = S{'Reraise','Reraise II','Reraise III','Reraise IV','Raise','Raise II','Raise III','Reraise','Arise',
+	'Tractor','Warp','Warp II','Tractor','Escape','Teleport-Holla','Teleport-Dem','Teleport-Mea','Teleport-Altep',
+	'Teleport-Yhoat','Teleport-Vahzl','Recall-Pashh','Recall-Meriph','Recall-Jugner','Retrace',
+}
 
 white_stratagems = S{'Penury','Celerity','Accession','Rapture','Perpetuance','Altruism','Tranquility','Addendum: White'}
 
@@ -310,6 +314,8 @@ dualWieldJobs = S{'THF','BLU','NIN','DNC'}
 -- Item related Mappings.
 bayld_items = {}
 
+slot_names = S{'main','sub','range','ranged','ammo','head','neck','ear1','lear','left_ear','ear2','rear','right_ear','ring1','lring','left_ring','ring2','rring','right_ring','back','waist','legs','feet'}
+
 --[[
 bayld_items = {'Tlalpoloani','Macoquetza','Camatlatia','Icoyoca','Tlamini','Suijingiri Kanemitsu','Zoquittihuitz',
 'Quauhpilli Helm','Chocaliztli Mask','Xux Hat','Quauhpilli Gloves','Xux Trousers','Chocaliztli Boots','Maochinoli',
@@ -318,7 +324,7 @@ bayld_items = {'Tlalpoloani','Macoquetza','Camatlatia','Icoyoca','Tlamini','Suij
 'Uk\'uxkaj Cap'}
 ]]
 	
-cprings = L{"Trizek Ring","Vocation Ring","Capacity Ring","Facility Ring"}
+cprings = L{"Endorsement Ring","Trizek Ring","Vocation Ring","Capacity Ring","Facility Ring"}
 xprings = L{"Echad Ring","Calibur Ring","Emperor Band","Empress Band","Resolution Ring"}
 cprings_count = 1
 

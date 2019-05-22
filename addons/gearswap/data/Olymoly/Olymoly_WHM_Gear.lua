@@ -107,6 +107,14 @@ function init_gear_sets()
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Stikini Ring", rring="Stikini Ring",
 		waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
+    sets.precast.WS.Dagan = {ammo="Hasty Pinion +1",
+		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Cessance Earring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Stikini Ring", rring="Stikini Ring",
+		waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		
+	sets.MaxTP = {ear1="Cessance Earring",ear2="Brutal Earring"}
+	sets.MaxTP.Dagan = {ear1="Etiolation Earring",ear2="Evans Earring"}
+	
     --sets.precast.WS['Flash Nova'] = {}
 
     --sets.precast.WS['Mystic Boon'] = {}

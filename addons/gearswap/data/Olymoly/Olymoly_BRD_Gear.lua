@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('None', 'Normal')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT')
-	state.Weapons:options('None','Default','Twashtar','DualWeapons','DualSwords','DualNukeWeapons')--'Aeneas',
+	state.Weapons:options('None','Default','Twashtar','DualWeapons','DualSwords')--'Aeneas',
 	
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = "Daurdabla"
@@ -46,11 +46,11 @@ function init_gear_sets()
 	--------------------------------------
 	-- Start defining the sets
 	--------------------------------------
-	
-	sets.weapons.Default = {main="Carnwenhan", sub="Twashtar"}
-	sets.weapons.Twashtar = {main="Twashtar", sub="Kaja Knife"}
+	-- Single 
+	sets.weapons.Default = {main="Carnwenhan", sub="Genbu's Shield"}
+	sets.weapons.Twashtar = {main="Twashtar", sub="Genbu's Shield"}
 	--sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
-	sets.weapons.DualWeapons = {main="Aeneas",sub="Taming Sari"}
+	sets.weapons.DualWeapons = {main="Twashtar",sub="Kaja Knife"}
 	sets.weapons.DualSwords = {main="Vampirism",sub="Vampirism"}
 	sets.weapons.DualNukeWeapons = {main="Malevolence",sub="Malevolence"}
 	

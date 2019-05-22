@@ -94,12 +94,12 @@ function init_gear_sets()
     
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-		-- herc helm agi/macc/mab Baetyl Pendant
-		head="Blood Mask", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Crematio Earring",
+		-- Baetyl Pendant
+		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Friomisi Earring", rear="Crematio Earring",
 		-- Lanun Frac +3  Fenrir Ring +1
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Shiva Ring +1",
-		--  Eschan Stone Heculean Trousers AGI/Macc/MAB Lanun Bottes +3
-		back=gear.magic_QD_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet="Adhe. Gamashes +1"}
+		-- Heculean Trousers AGI/Macc/MAB Lanun Bottes +3
+		back=gear.magic_QD_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet="Adhe. Gamashes +1"}
 	
 		--  Dedition Earring
 	sets.precast.CorsairShot.STP = {ammo=gear.QDbullet,
@@ -127,8 +127,7 @@ function init_gear_sets()
 		head="Blood Mask", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Crematio Earring",
 		-- Fenrir Ring +1 Fenrir Ring +1
 		body="Carm. Sc. Mail +1", hands="Leyline Gloves", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		-- Eschan Stone  
-		back=gear.magic_QD_jse_back, waist="Svelt. Gouriz +1", legs="Mummu Kecks +2", feet="Adhe. Gamashes +1"}
+		back=gear.magic_QD_jse_back, waist="Eschan Stone", legs="Mummu Kecks +2", feet="Adhe. Gamashes +1"}
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
@@ -247,16 +246,16 @@ function init_gear_sets()
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 herc gloves agi/mab/wsd 
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
-		-- Eschan Stone Lanun Bottes +3
-		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet="Lanun Bottes +1"}
+		-- Lanun Bottes +3
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet="Lanun Bottes +1"}
 
 	sets.precast.WS['Aeolian Edge'] = {ammo=gear.MAbullet,
 		-- Herc Helm AGI/Mab/wsd Baetyl Necklace
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Shiva Ring +1",
-		-- Eschan Stone Herc Trousers AGI/Macc/MAB Lanun Bottes +3
-		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet="Lanun Bottes +1"}
+		--  Herc Trousers AGI/Macc/MAB Lanun Bottes +3
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet="Lanun Bottes +1"}
 
 	-- Ranged WS
 	-- Last Stand
@@ -296,7 +295,7 @@ function init_gear_sets()
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet="Lanun Bottes +1"}
 
     sets.precast.WS['Leaden Salute'].Acc = {ammo=gear.MAbullet,
-        -- Sanctity Necklace Hermetic Earring
+        -- Hermetic Earring
 		head="Pixie Hairpin +1", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 herc gloves agi/mab/wsd 
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Archon Ring",
@@ -308,8 +307,8 @@ function init_gear_sets()
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		-- Lanun Frac +3 herc gloves agi/mab/wsd 
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
-		-- Eschan Stone Herc Trousers AGI/Macc/MAB Lanun Bottes +3
-		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet="Lanun Bottes +1"}
+		--  Herc Trousers AGI/Macc/MAB Lanun Bottes +3
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet="Lanun Bottes +1"}
 
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
 		-- Herc Helm AGI/Mab/wsd Sanctity Necklace Hermetic Earring
@@ -317,7 +316,7 @@ function init_gear_sets()
 		-- Lanun Frac +3 herc gloves agi/mab/wsd  
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Ilabrat Ring",
 		-- Eschan Stone Herc Trousers AGI/Macc/MAB Lanun Bottes +3
-		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet="Lanun Bottes +1"}
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet="Lanun Bottes +1"}
 
     sets.precast.WS['Hot Shot'] = sets.precast.WS['Wildfire']
     sets.precast.WS['Hot Shot'].Acc = sets.precast.WS['Wildfire'].Acc

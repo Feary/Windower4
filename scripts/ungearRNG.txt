@@ -13,14 +13,13 @@ put Amini Brague +1 safe2 all
 put Amini Caban +1 safe2 all
 put Amini Gapette +1 safe2 all
 put Amini Glove. +1 safe2 all
-put Arc. Braccae +1 safe2 all
+put Arc. Braccae +2 safe2 all
 put Arc. Bracers +1 safe2 all
-put Arc. Jerkin +1 safe2 all
-put Arcadian Beret +1 safe2 all
+put Arc. Jerkin +3 safe2 all
+put Arcadian Beret +2 safe2 all
 put Arcadian Socks +1 safe2 all
 put Armageddon safe2 all
 put Belenus's Cape safe2 all
-put Blurred Knife +1 safe2 all
 put Bullet safe2 all
 put Carm. Sc. Mail +1 safe2 all
 put Darraigner's Brais sack all
@@ -29,16 +28,15 @@ put Eminent Bullet safe2 all
 put Enervating Earring safe2 all
 put Erudit. Necklace safe2 all
 put Grunfeld Rope sack all
-put Hep. Rapier +1 safe2 all
-put Hep. Sapara +1 safe2 all
 put Herculean Boots sack all
 put Herculean Gloves sack all
-put Herculean Vest all
+put Herculean Vest sack all
 put Holliday safe2 all
 put Impulse Belt safe2 all
 put Iskur Gorget sack all
-put Kobo Kote safe2 all
+put Kustawi +1 safe2 all
 put Kwahu Kachina Belt safe2 all
+put Malevolence safe2 all
 put Meg. Chausses +2 sack all
 put Meg. Cuirie +2 sack all
 put Meg. Gloves +2 sack all
@@ -58,10 +56,7 @@ put Orion Jerkin +1 safe2 all
 put Orion Socks +1 safe2 all
 put Perun +1 safe2 all
 put Pursuer's Gaiters safe2 all
-put Svelt. Gouriz +1 safe2 all
 put Taeon Chapeau safe2 all
 put Yemaya Belt safe2 all
 put Yoichinoyumi safe2 all
 put Yoichi's Arrow safe2 all
-
-

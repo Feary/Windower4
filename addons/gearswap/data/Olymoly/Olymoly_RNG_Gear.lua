@@ -6,8 +6,8 @@ function user_setup()
 	state.IdleMode:options('Normal', 'PDT')
 	state.Weapons:options('Default','DualWeapons','DualMagicWeapons')
 	
-	DefaultAmmo = {['Fomalhaut'] = "Chrono Bullet",['Yoichinoyumi']="Yoichi's Arrow",['Armageddon']="Eminent Bullet"}
-	U_Shot_Ammo = {['Fomalhaut'] = "Animkii Bullet",['Yoichinoyumi']="Yoichi's Arrow",['Armageddon']="Eminent Bullet"}
+	DefaultAmmo = {['Fomalhaut'] = "Chrono Bullet", ['Yoichinoyumi']="Yoichi's Arrow", ['Armageddon']="Eminent Bullet",}
+	U_Shot_Ammo = {['Fomalhaut'] = "Animkii Bullet", ['Yoichinoyumi']="Yoichi's Arrow", ['Armageddon']="Eminent Bullet",}
 	ranged_Bow = T{"Yoichinoyumi", "Gandiva",}
 	ranged_Gun = T{"Annihilator", "Holliday", "Armageddon", "Fomalhaut", "Gastraphetes"}
 	
@@ -187,14 +187,12 @@ function init_gear_sets()
 		-- Baetyl Necklace
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
-		-- Eschan Stone 
-		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
+		back=gear.magic_wsd_jse7_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
     sets.precast.WS['Wildfire'].Acc = {		
 		-- Baetyl Necklace
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
-		-- Eschan Stone 
-		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
 
 	-- Crossbow
 	-- Trueflight
@@ -202,15 +200,15 @@ function init_gear_sets()
 		-- Baetyl Necklace
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
-		-- Eschan Stone 
-		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
+		--  
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
 
     sets.precast.WS['Trueflight'].Acc = {
         -- Baetyl Necklace
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
 		-- Eschan Stone 
-		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Telos Earring",ear2="Sherida Earring",}
@@ -330,7 +328,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Fomalhaut.Acc = {
         -- head="Arcadian Beret +3",
-       head="Arcadian Beret +2",,neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
+		head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- body="Orion Jerkin +3" 
         body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
         back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
@@ -344,7 +342,7 @@ function init_gear_sets()
 	sets.buff['Double Shot'] = {body="Arc. Jerkin +3", back=gear.tp_ranger_jse_back}
 	sets.buff['Double Shot'].Acc = {body="Arc. Jerkin +3", back=gear.tp_ranger_jse_back}
 	
-	sets.buff.Barrage = set_combine(sets.midcast.RA.Acc, 
+	sets.buff.Barrage = set_combine(sets.midcast.RA.Acc, {
 		-- head="Arcadian Beret +3",
         head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- body="Orion Jerkin +3" Orion Bracers +3 rring="Caooethic Ring +1",
@@ -404,8 +402,7 @@ function init_gear_sets()
 	sets.weapons.Default = {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
 	sets.weapons.SingleWeapon = {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
 	sets.weapons.DualWeapons =  {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
-	--sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence",range="Fomalhaut",ammo="Eminent Bullet"}
-	sets.weapons.MagicWeapons = {main="Hep. Rapier +1",sub="Hep. Sapara +1",range="Armageddon",ammo="Eminent Bullet"}
+	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence",range="Armageddon",ammo="Eminent Bullet"}
 	-- Melee
 	sets.weapons.SingleMelee= {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
 	sets.weapons.DualMelee =  {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}

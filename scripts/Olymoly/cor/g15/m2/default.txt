@@ -1,20 +1,21 @@
-alias g15m2g1 /ja "Fire Shot" <t>
-alias g15m2g2 /ja "Earth Shot" <t>
-alias g15m2g3 /ja "Water Shot" <t>
-alias g15m2g4 /ja "Wind Shot" <t>
-alias g15m2g5 /ja "Ice Shot" <t>
-alias g15m2g6 /ja "Thunder Shot" <t>
+alias g15m2g1 input /targetnpc;wait 1;input /attack <t>
+alias g15m2g2 
+alias g15m2g3 
+alias g15m2g4 
+alias g15m2g5 
+alias g15m2g6 
 
 alias g15m2g7 
 alias g15m2g8 
-alias g15m2g9 
+alias g15m2g9 input /ja "Light Shot" <t>
 alias g15m2g10 
 alias g15m2g11 
-alias g15m2g12 
+alias g15m2g12 input /ja "Dark Shot" <t>
 
-alias g15m2g13
-alias g15m2g14 
+alias g15m2g13 input gs c cycle RangedMode
+alias g15m2g14 input /targetnpc;wait 1;input /attack <t>
 alias g15m2g15 
-alias g15m2g16 
-alias g15m2g17 
-alias g15m2g18
+alias g15m2g16 input gs c cycle WeaponskillMode
+alias g15m2g17 input gs rh toggle
+alias g15m2g18 input gs c toggle AutoWSMode
+

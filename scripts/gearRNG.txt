@@ -13,10 +13,10 @@ get Amini Brague +1 all
 get Amini Caban +1 all
 get Amini Gapette +1 all
 get Amini Glove. +1 all
-get Arc. Braccae +1 all
+get Arc. Braccae +2 all
 get Arc. Bracers +1 all
-get Arc. Jerkin +1 all
-get Arcadian Beret +1 all
+get Arc. Jerkin +3 all
+get Arcadian Beret +2 all
 get Arcadian Socks +1 all
 get Armageddon all
 get Belenus's Cape all
@@ -28,17 +28,15 @@ get Eminent Bullet all
 get Enervating Earring all
 get Erudit. Necklace all
 get Grunfeld Rope all
-get Hep. Rapier +1 all
-get Hep. Sapara +1 all
 get Herculean Boots all
 get Herculean Gloves all
 get Herculean Vest all
 put Holliday safe2 all
-get Impulse Belt all
-get Iskur Gorget all
+get Impulse Belt safe2 all
+get Iskur Gorget sack all
 get Kustawi +1 all
-get kobo kote all
 get Kwahu Kachina Belt all
+get Malevolence safe2 all
 get Meg. Chausses +2 all
 get Meg. Cuirie +2 all
 get Meg. Gloves +2 all
@@ -57,7 +55,7 @@ get Orion Bracers +1 all
 get Orion Jerkin +1 all
 get Orion Socks +1 all
 get Perun +1 all
-get Svelt. Gouriz +1 all
+get Pursuer's Gaiters safe2 all
 get Taeon Chapeau safe2 all
 get Yemaya Belt all
 get Yoichinoyumi all

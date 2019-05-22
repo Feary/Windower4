@@ -25,14 +25,12 @@ get Plun. Bonnet +3 sack all
 get Plun. Culottes +3 sack all 
 get Plun. Poulaines +3 sack all 
 get Plunderer's Vest +3 sack all 
-get Raider's Bmrng. sack all 
-get Shijo sack all 
+get Raider's Bmrng. sack all
 get Skulk. Culottes +1 sack all 
 get Skulk. Poulaines +1 sack all 
 get Skulker's Bonnet +1 sack all 
 get Skulker's Vest +1 sack all 
 get Samnuha Tights sack all
-get Taming Sari sack all 
 get Toutatis's Cape sack all 
 get Tsoa. Crossbow sack all 
 get Twashtar sack all 

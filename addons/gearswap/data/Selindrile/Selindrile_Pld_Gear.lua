@@ -44,7 +44,7 @@ function init_gear_sets()
 	-- Precast sets
 	--------------------------------------
 	
-    sets.Enmity = {ammo="Paeapua",
+    sets.Enmity = {main="Mafic Cudgel",ammo="Paeapua",
         head="Loess Barbuta +1",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Trux Earring",
         body="Souv. Cuirass +1",hands="Macabre Gaunt. +1",ring1="Apeile Ring +1",ring2="Apeile Ring",
         back=gear.enmity_jse_back,waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Eschite Greaves"}

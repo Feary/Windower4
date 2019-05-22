@@ -49,4 +49,13 @@
         <Sort><![CDATA[Time]]></Sort>
         <TimeZones>PST,CST,AWST,GMT</TimeZones>
     </global>
+    <aniyah>
+        <Clock>
+            <pos>
+                <x>1362</x>
+                <y>0</y>
+            </pos>
+        </Clock>
+        <TimeZones>PST,CST,GMT,AWST</TimeZones>
+    </aniyah>
 </settings>

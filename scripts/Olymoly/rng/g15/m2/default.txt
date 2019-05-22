@@ -1,4 +1,4 @@
-alias g15m2g1 
+alias g15m2g1 input /ja "Sharpshot" <me>
 alias g15m2g2 
 alias g15m2g3 
 alias g15m2g4 
@@ -12,9 +12,9 @@ alias g15m2g10
 alias g15m2g11 
 alias g15m2g12 
 
-alias g15m2g13
-alias g15m2g14 
+alias g15m2g13 gs c cycle RangedMode
+alias g15m2g14 input /targetnpc;wait 1;input /attack <t>
 alias g15m2g15 
-alias g15m2g16 
-alias g15m2g17 
-alias g15m2g18
+alias g15m2g16 gs c cycle WeaponskillMode
+alias g15m2g17 gs rh toggle
+alias g15m2g18 gs c toggle AutoWSMode

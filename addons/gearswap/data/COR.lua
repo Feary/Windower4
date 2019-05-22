@@ -36,7 +36,7 @@ function job_setup()
 	autows = 'Leaden Salute'
 	rangedautows = 'Last Stand'
 	autofood = 'Sublime Sushi'
-	ammostock = 99
+	ammostock = 198
 
     define_roll_values()
 	
