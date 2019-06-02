@@ -1,12 +1,13 @@
 put Adad Amulet Storage all
 put Apogee Crown +1 Storage all
 put Apogee Slacks +1 Storage all
+put Apogee Mitts +1 Storage all
 put Apogee Pumps +1 Storage all
-put Amalric Gages case all 
-put Amalric Slops case all 
-put Amalric Nails case all 
+put Amalric Gages +1 case all 
+put Amalric Slops +1 case all 
+put Amalric Nails +1 case all 
 put Beck. Doublet +1 Storage all
-put Beck. Pigaches Storage all
+put Beck. Pigaches +1 Storage all
 put Beck. Spats +1 Storage all
 put Beck. Bracers +1 Storage all
 put Beckoner's Horn +1 Storage all
@@ -20,9 +21,9 @@ put Convo. Pigaches +3 Storage all
 put Convo. Spats +2 Storage all
 put Conveyance Cape Storage all
 put Elan Strap +1 Storage all
-put Eminent Pole Storage all
 put Enmerkar Earring Storage all
 put Enticer's Pants Storage all
+put Espiritus storage all
 put Evans Earring Storage all
 put Evoker's Ring Storage all
 put Gelos Earring Storage all
@@ -35,7 +36,6 @@ put Gridarvor Storage all
 put Handler's Earring case all
 put Handler's Earring +1 case all
 put Helios Band Storage all
-put Idaraaja Storage all
 put Incarnation Sash Storage all
 put Lamassu Mitts Storage all
 put Lucidity Sash Storage all
@@ -46,7 +46,6 @@ put Merlinic Dastanas Storage all
 put Rimeice Earring Storage all
 put Sacrifice Torque Storage all
 put Shomonjijoe +1 Storage all
-put Varar Ring +1 Storage all
 put Varar Ring +1 Storage all
 put Vox Grip Storage all
 

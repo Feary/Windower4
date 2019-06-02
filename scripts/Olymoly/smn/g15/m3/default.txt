@@ -1,5 +1,5 @@
-alias g15m3g1 aoe
-alias g15m3g2 
+alias g15m3g1 send @all input /targetnpc
+alias g15m3g2 send @all Thunderspark
 alias g15m3g3 
 alias g15m3g4 
 alias g15m3g5 

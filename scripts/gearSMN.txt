@@ -3,11 +3,11 @@ get Apogee Crown +1 Storage all
 get Apogee Slacks +1 Storage all
 get Apogee Mitts +1 Storage all
 get Apogee Pumps +1 Storage all
-get Amalric Gages case all 
-get Amalric Slops case all 
-get Amalric Nails case all 
+get Amalric Gages +1 case all 
+get Amalric Slops +1 case all 
+get Amalric Nails +1 case all 
 get Beck. Doublet +1 Storage all
-get Beck. Pigaches Storage all
+get Beck. Pigaches +1 Storage all
 get Beck. Spats +1 Storage all
 get Beck. Bracers +1 Storage all
 get Beckoner's Horn +1 Storage all
@@ -21,9 +21,9 @@ get Convo. Pigaches +3 Storage all
 get Convo. Spats +2 Storage all
 get Conveyance Cape Storage all
 get Elan Strap +1 Storage all
-get Eminent Pole Storage all
 get Enmerkar Earring Storage all
 get Enticer's Pants Storage all
+get Espiritus storage all
 get Evans Earring Storage all
 get Evoker's Ring Storage all
 get Gelos Earring Storage all
@@ -36,7 +36,6 @@ get Gridarvor Storage all
 get Handler's Earring case all
 get Handler's Earring +1 case all
 get Helios Band Storage all
-get Idaraaja Storage all
 get Incarnation Sash Storage all
 get Lamassu Mitts Storage all
 get Lucidity Sash Storage all
@@ -47,7 +46,6 @@ get Merlinic Dastanas Storage all
 get Rimeice Earring Storage all
 get Sacrifice Torque Storage all
 get Shomonjijoe +1 Storage all
-get Varar Ring +1 Storage all
 get Varar Ring +1 Storage all
 get Vox Grip Storage all
 

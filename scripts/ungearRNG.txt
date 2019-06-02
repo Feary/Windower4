@@ -22,7 +22,6 @@ put Armageddon safe2 all
 put Belenus's Cape safe2 all
 put Bullet safe2 all
 put Carm. Sc. Mail +1 safe2 all
-put Darraigner's Brais sack all
 put Desultor Tassets safe2 all
 put Eminent Bullet safe2 all
 put Enervating Earring safe2 all

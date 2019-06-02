@@ -47,7 +47,7 @@
 			windower.send_command('exec Olymoly/smn/g15/m1/default.txt;exec Olymoly/smn/g15/m2/default.txt;exec Olymoly/smn/g15/m3/default.txt;exec Olymoly/smn/g13/m1/default.txt;exec Olymoly/smn/g13/m2/default.txt;exec Olymoly/smn/g13/m3/default.txt')
 		-- BLU
 		elseif player.main_job == "BLU" then
-			windower.send_command('exec Olymoly/blu/g15/m1/default.txt;exec Olymoly/blu/g15/m2/default.txt;exec Olymoly/blu/g15/m3/default.txt;exec Olymoly/blu/g13/m1/default.txt;exec Olymoly/blu/g13/m2/default.txt;exec Olymoly/blu/g13/m3/default.txt</register>')
+			windower.send_command('exec Olymoly/blu/g15/m1/default.txt;exec Olymoly/blu/g15/m2/default.txt;exec Olymoly/blu/g15/m3/default.txt;exec Olymoly/blu/g13/m1/default.txt;exec Olymoly/blu/g13/m2/default.txt;exec Olymoly/blu/g13/m3/default.txt')
 		-- COR
 		elseif player.main_job == "COR" then
 			windower.send_command('exec Olymoly/cor/g15/m1/default.txt;exec Olymoly/cor/g15/m2/default.txt;exec Olymoly/cor/g15/m3/default.txt;exec Olymoly/cor/g13/m1/default.txt;exec Olymoly/cor/g13/m2/default.txt;exec Olymoly/cor/g13/m3/default.txt')
@@ -117,7 +117,7 @@
 			windower.send_command('exec Dasmir/smn/g15/m1/default.txt;exec Dasmir/smn/g15/m2/default.txt;exec Dasmir/smn/g15/m3/default.txt;exec Dasmir/smn/g13/m1/default.txt;exec Dasmir/smn/g13/m2/default.txt;exec Dasmir/smn/g13/m3/default.txt')
 		-- BLU
 		elseif player.main_job == "BLU" then
-			windower.send_command('exec Dasmir/blu/g15/m1/default.txt;exec Dasmir/blu/g15/m2/default.txt;exec Dasmir/blu/g15/m3/default.txt;exec Dasmir/blu/g13/m1/default.txt;exec Dasmir/blu/g13/m2/default.txt;exec Dasmir/blu/g13/m3/default.txt</register>')
+			windower.send_command('exec Dasmir/blu/g15/m1/default.txt;exec Dasmir/blu/g15/m2/default.txt;exec Dasmir/blu/g15/m3/default.txt;exec Dasmir/blu/g13/m1/default.txt;exec Dasmir/blu/g13/m2/default.txt;exec Dasmir/blu/g13/m3/default.txt')
 		-- COR
 		elseif player.main_job == "COR" then
 			windower.send_command('exec Dasmir/cor/g15/m1/default.txt;exec Dasmir/cor/g15/m2/default.txt;exec Dasmir/cor/g15/m3/default.txt;exec Dasmir/cor/g13/m1/default.txt;exec Dasmir/cor/g13/m2/default.txt;exec Dasmir/cor/g13/m3/default.txt')
@@ -187,7 +187,7 @@
 			windower.send_command('exec Aniyah/smn/g15/m1/default.txt;exec Aniyah/smn/g15/m2/default.txt;exec Aniyah/smn/g15/m3/default.txt;exec Aniyah/smn/g13/m1/default.txt;exec Aniyah/smn/g13/m2/default.txt;exec Aniyah/smn/g13/m3/default.txt')
 		-- BLU
 		elseif player.main_job == "BLU" then
-			windower.send_command('exec Aniyah/blu/g15/m1/default.txt;exec Aniyah/blu/g15/m2/default.txt;exec Aniyah/blu/g15/m3/default.txt;exec Aniyah/blu/g13/m1/default.txt;exec Aniyah/blu/g13/m2/default.txt;exec Aniyah/blu/g13/m3/default.txt</register>')
+			windower.send_command('exec Aniyah/blu/g15/m1/default.txt;exec Aniyah/blu/g15/m2/default.txt;exec Aniyah/blu/g15/m3/default.txt;exec Aniyah/blu/g13/m1/default.txt;exec Aniyah/blu/g13/m2/default.txt;exec Aniyah/blu/g13/m3/default.txt')
 		-- COR
 		elseif player.main_job == "COR" then
 			windower.send_command('exec Aniyah/cor/g15/m1/default.txt;exec Aniyah/cor/g15/m2/default.txt;exec Aniyah/cor/g15/m3/default.txt;exec Aniyah/cor/g13/m1/default.txt;exec Aniyah/cor/g13/m2/default.txt;exec Aniyah/cor/g13/m3/default.txt')
@@ -257,7 +257,7 @@
 			windower.send_command('exec Firetoplay/smn/g15/m1/default.txt;exec Firetoplay/smn/g15/m2/default.txt;exec Firetoplay/smn/g15/m3/default.txt;exec Firetoplay/smn/g13/m1/default.txt;exec Firetoplay/smn/g13/m2/default.txt;exec Firetoplay/smn/g13/m3/default.txt')
 		-- BLU
 		elseif player.main_job == "BLU" then
-			windower.send_command('exec Firetoplay/blu/g15/m1/default.txt;exec Firetoplay/blu/g15/m2/default.txt;exec Firetoplay/blu/g15/m3/default.txt;exec Firetoplay/blu/g13/m1/default.txt;exec Firetoplay/blu/g13/m2/default.txt;exec Firetoplay/blu/g13/m3/default.txt</register>')
+			windower.send_command('exec Firetoplay/blu/g15/m1/default.txt;exec Firetoplay/blu/g15/m2/default.txt;exec Firetoplay/blu/g15/m3/default.txt;exec Firetoplay/blu/g13/m1/default.txt;exec Firetoplay/blu/g13/m2/default.txt;exec Firetoplay/blu/g13/m3/default.txt')
 		-- COR
 		elseif player.main_job == "COR" then
 			windower.send_command('exec Firetoplay/cor/g15/m1/default.txt;exec Firetoplay/cor/g15/m2/default.txt;exec Firetoplay/cor/g15/m3/default.txt;exec Firetoplay/cor/g13/m1/default.txt;exec Firetoplay/cor/g13/m2/default.txt;exec Firetoplay/cor/g13/m3/default.txt')

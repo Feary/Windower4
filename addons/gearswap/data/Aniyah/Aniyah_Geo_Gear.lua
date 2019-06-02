@@ -1,5 +1,4 @@
 function user_setup()
-
 	-- Options: Override default values
     state.OffenseMode:options('Normal','DualWield')
 	state.CastingMode:options('Normal', 'Resistant', 'Fodder', 'Proc')
@@ -139,19 +138,19 @@ function init_gear_sets()
 	
     sets.midcast['Elemental Magic'] = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1},
 		--  neck="Eddy Necklace", lear="Novio Earring",
-		head="Mall. Chapeau +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
+		head="Mall. Chapeau +2", neck="Aesir Torque", lear="Regal Earring", rear="Friomisi Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 
     sets.midcast['Elemental Magic'].Resistant = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		--  neck="Eddy Necklace", lear="Novio Earring",
-		head="Mall. Chapeau +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
+		head="Mall. Chapeau +2", neck="Erra Pendant", lear="Regal Earring", rear="Friomisi Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 
     sets.midcast['Elemental Magic'].Fodder = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1},
 		--  neck="Eddy Necklace", lear="Novio Earring",
-		head="Mall. Chapeau +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
+		head="Mall. Chapeau +2", neck="Aesir Torque", lear="Regal Earring", rear="Friomisi Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 	
@@ -159,7 +158,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
 		main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1},
 		-- head="Amalric Coif", neck="Incantor Torque", lear="Novio Earring",
-		head="Jhakri Coronal +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Aesir Torque", lear="Regal Earring", rear="Friomisi Earring",
 		-- body="Amalric Robe" hands="Amalric Gages",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		-- legs="Amalric Slops" feet="Amalric Nails"
@@ -167,7 +166,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {
 		main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1},
 		-- head="Amalric Coif", neck="Incantor Torque",
-		head="Jhakri Coronal +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Aesir Torque", lear="Regal Earring", rear="Friomisi Earring",
 		-- body="Amalric Robe" hands="Amalric Gages",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		-- legs="Amalric Slops" feet="Amalric Nails"
@@ -175,7 +174,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {
 		main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1},
 		-- head="Amalric Coif", neck="Incantor Torque", 
-		head="Jhakri Coronal +2", neck="Aesir Torque", lear="Hecate's Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Aesir Torque", lear="Regal Earring", rear="Friomisi Earring",
 		-- body="Amalric Robe" hands="Amalric Gages",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		-- legs="Amalric Slops" feet="Amalric Nails"

@@ -136,10 +136,8 @@ function init_gear_sets()
 	
 	sets.ConserveMP = {ammo="Incantor Stone",
 		main="Rubicundity", sub="Thuellaic Ecu +1",
-		--head="Vanya Hood",neck="Incanter's Torque",
-		neck="Reti Pendant", ear1="Gifted Earring", ear2="Mendi. Earring",
-		--body="Vedic Coat",
-		hands="Fanatic Gloves", lring="Prolix Ring", rring="Kishar Ring",
+		head="Vanya Hood", neck="Reti Pendant", neck="Incanter's Torque", ear1="Gifted Earring", ear2="Mendi. Earring",
+		body="Vedic Coat", hands="Fanatic Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		back="Fi Follet Cape +1", waist="Austerity Belt",legs="Lengo Pants",feet="Kaykaus Boots"}
 		
 	sets.midcast.Teleport = sets.ConserveMP
@@ -148,18 +146,20 @@ function init_gear_sets()
     sets.MagicBurst = {neck="Mizu. Kubikazari",ring1="Mujin Band",ring2="Locus Ring"}
 	
     sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
-		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Prolix Ring",
 		back=gear.fastcast_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
 		
+	sets.midcast['Esuna'] =  sets.precast.FC['Healing Magic']
+	
     -- Cure sets
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
 	sets.midcast.Cure = {
 		-- Queller Rod D
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
-		-- Kaykaus Mitra B Incanter's Torque  
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		-- Kaykaus Mitra B   
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		-- 
@@ -168,80 +168,74 @@ function init_gear_sets()
 	sets.midcast.CureSolace = {
 		-- Queller Rod D
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
-		-- Kaykaus Mitra B Incanter's Torque  
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +2 +3 
+		-- Kaykaus Mitra B 
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
-		-- 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCure = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
-		-- Kaykaus Mitra B Incanter's Torque 
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +2 +3 
+		-- Kaykaus Mitra B 
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
+		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
-		--
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCureSolace = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
-		-- Kaykaus Mitra B Incanter's Torque 
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		--  Theophany Mitts +2 +3 
+		-- Kaykaus Mitra B 
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
+		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
-		--
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightDayCureSolace = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
-		-- Kaykaus Mitra B Incanter's Torque 
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		--  Theophany Mitts +2 +3 
+		-- Kaykaus Mitra B 
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
+		--  Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
-		--
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightDayCure = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
-		-- Kaykaus Mitra B Incanter's Torque 
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
-		--  Theophany Mitts +2 +3 
+		-- Kaykaus Mitra B
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
+		--  Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
-		--
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.Curaga = {	
-		-- 
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theo. Bliault +3 Theophany Mitts +2 +3
+		-- Queller Rod D
+		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",		
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		-- Theo. Bliault +3 Theophany Mitts +3
 		body="Theo. Briault +2", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCuraga = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Nuna Gorget +1 
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
 		body="Theo. Briault +2", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
-		-- 
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 		
 	sets.midcast.LightDayCuraga = {
 		main={name="Chatoyant Staff", priority=2}, sub={name="Archaq Grip", priority=1}, ammo="Esper Stone +1",
 		-- Nuna Gorget +1 
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
 		body="Theo. Briault +2", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
-		-- 
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 		
 	sets.midcast.Cure.DT = {
 		-- Queller Rod D
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
-		-- Kaykaus Mitra B Incanter's Torque  
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +2 +3
+		-- Kaykaus Mitra B 
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		-- Theophany Mitts +3
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
@@ -250,10 +244,9 @@ function init_gear_sets()
 		-- Queller Rod D
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
-		head="Gendewitha Caubeen +1", neck="Colossus's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
-		-- Theophany Mitts +2 +3 
+		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
-		-- 
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaud +1"})
@@ -287,7 +280,7 @@ function init_gear_sets()
 	sets.midcast.Cursna = {
 		-- main={name="Gada", priority=2}, sub={name="Sors Shield", priority=1},
 		-- Vanya Hood Healing skill neck="Debilis Medallion", rear="Healing Earring",
-		neck="Colossus's Torque", lear="Beatific Earring", 
+		neck="Incanter's Torque", lear="Beatific Earring", 
 		-- lring="Haoma's Ring", rring="Haoma's Ring",
 		body="Ebers Bliaud +1", hands="Fanatic Gloves", lring="Ephedra's Ring", rring="Ephedra's Ring",
 		-- Theo. Pant. +3
@@ -327,25 +320,22 @@ function init_gear_sets()
 	
 	-- 438 Cap
 	sets.midcast.BarElement = {
-		--main={name="Beneficus",priority=2}, sub={name="Sors Shield",priority=1},
-		-- Incanter's Torque
-		head="Ebers Cap +1", neck="Colossus's Torque", lear="Andoaa Earring", rear="Augment. Earring",
+		--main={name="Beneficus",priority=2}, sub={name="Ammurapi Shield",priority=1},
+		head="Ebers Cap +1", neck="Incanter's Torque", lear="Andoaa Earring", rear="Augment. Earring",
 		body="Ebers Bliaud +1", hands="Ebers Mitts +1", lring="Stikini Ring", rring="Stikini Ring",
 		back="Mending Cape", waist="Olympus Sash", legs="Ebers Pantaloons +1", feet="Ebers Duckbills +1"}
 
 	-- Caps 500 /sch  need 106 blm/rdm
 	sets.midcast.BarStatus = {
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
-		-- neck="Incantor's Torque",
-		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
+		head=gear_telchine_head_Duration, neck="Incanter's Torque", lear="Andoaa Earring", rear="Augment. Earring",
 		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 	
 	--sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
-		-- neck="Incantor's Torque",
-		--head=gear_telchine_head_Duration, neck="Colossus's Torque",  lear="Andoaa Earring", 
+		--head=gear_telchine_head_Duration, neck="Incanter's Torque",  lear="Andoaa Earring", 
 		--body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		-- feet="Theophany Duckbills +3"
 		--back="Mending Cape", waist="Olympus Sash", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
@@ -354,8 +344,7 @@ function init_gear_sets()
 	-- Duration
 	sets.midcast.BoostStat = {
 		-- main={name="Gada", priority=2},
-		-- Befouled Crown
-		head="Umuthi Hat", neck="Colossus's Torque", lear="Andoaa Earring", rear="Augment. Earring",
+		head="Befouled Crown", neck="Incanter's Torque", lear="Andoaa Earring", rear="Augment. Earring",
 		body="Anhur Robe", hands="Inyanga Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Theo. Duckbills +3
 		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
@@ -531,11 +520,6 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
-	-- Gear for specific elemental nukes.
-	sets.element.Wind = {}--main="Marin Staff +1"
-	sets.element.Ice = {}--main="Ngqoqwanb"
-	sets.element.Earth = {}--neck="Quanpur Necklace"
-
 	-- Engaged sets
 
     -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
