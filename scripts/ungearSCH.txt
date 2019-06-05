@@ -20,7 +20,6 @@ put Lugh's Cape case all
 put Mallquis Clogs +2 case all
 put Mallquis Saio +2 case all
 put Mallquis Trews +2 case all
-put Medium's Sabots case all
 put Merlinic Hood case all
 put Peda. Loafers case all
 put Pedagogy Pants case all

@@ -39,7 +39,7 @@ put Luzaf's Ring safe2 all
 put Lak. Frac +1 safe2 all
 put Lak. Hat +1 safe2 all
 put Lak. Trews +1 safe2 all
-put Lak. Bottes safe2 all
+put Lak. Bottes +1 safe2 all
 put Lak. Gants safe2 all
 put Meg. Chausses +2 sack all
 put Meg. Gloves +2 sack all

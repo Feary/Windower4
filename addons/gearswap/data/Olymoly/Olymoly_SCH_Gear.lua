@@ -35,6 +35,10 @@ function user_setup()
 	send_command('bind !\\\\ input /ma "Reraise III" <me>')
 	send_command('alias Myrkr input /ws "Myrkr" <me>')
 	
+	send_command('alias ta input /targetnpc')
+	send_command('alias at input /targetnpc; wait 1; input /attack <t>')
+	send_command('alias rads input //temps buy Radialens')
+	
     select_default_macro_book()
 end
 

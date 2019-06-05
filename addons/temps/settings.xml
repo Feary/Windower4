@@ -4,4 +4,7 @@
         <blacklist>radialens,primeval brew,mollifier</blacklist>
         <turbo>false</turbo>
     </global>
+    <olymoly>
+        <turbo>true</turbo>
+    </olymoly>
 </settings>

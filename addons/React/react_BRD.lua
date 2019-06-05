@@ -24,5 +24,11 @@ return {
             ["complete_reaction"]="", 
             ["ready_reaction"]="input /ma \"Barthundra\" <me>"
         }
-	}
+	},
+	["Bozzetto Retributionist"]={
+        ["Dread Spikes"]={
+            ["complete_reaction"]="input /ma \"Magic Finale\" <bt> ", 
+            ["ready_reaction"]=""
+        }
+    }
 }

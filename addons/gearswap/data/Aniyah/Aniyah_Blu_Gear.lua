@@ -164,17 +164,17 @@ function init_gear_sets()
 		back=gear.crit_jse_back, waist="Fotia Belt", legs="Samnuha Tights", feet="Carmine Greaves"})
 
 	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {
-		head="Jhakri Coronal +2", neck="Tjukurrpa Medal", lear="Brutal Earring", rear="Moonshade Earring",
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		body="Adhemar Jacket", hands="Jhakri Cuffs +2", lring="Ifrit Ring", rring="Ifrit Ring",
-		back=gear.wsd_jse_back, waist="Warwolf Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {
-		head="Carmine Mask", neck="Tjukurrpa Medal", lear="Brutal Earring", rear="Moonshade Earring",
+		head="Carmine Mask", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		body="Adhemar Jacket", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Ifrit Ring",
 		back=gear.wsd_jse_back, waist="Warwolf Belt", legs="Carmine Cuisses +1", feet="Carmine Greaves"})
 	sets.precast.WS['Savage Blade'].Fodder = set_combine(sets.precast.WS['Savage Blade'], {
-		head="Jhakri Coronal +2", neck="Tjukurrpa Medal", lear="Brutal Earring", rear="Moonshade Earring",
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		body="Adhemar Jacket", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Ifrit Ring",
-		back=gear.wsd_jse_back, waist="Warwolf Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 
 	sets.precast.WS['Vorpal Blade'] = set_combine(sets.precast.WS, {})
 	sets.precast.WS['Vorpal Blade'].Acc = set_combine(sets.precast.WS.Acc, {back=gear.crit_jse_back})
@@ -335,7 +335,7 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Stun.Resistant = {
 		-- lear="Regal Earring", rear="Enchntr. Earring +1",
-		head="Jhakri Coronal +2", neck="Eddy Necklace", lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Jhakri Coronal +2", neck="Erra Pendant", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
@@ -358,7 +358,7 @@ function init_gear_sets()
 		back=gear.ElementalCape, waist=gear.ElementalObi, legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 		
 	--Overwrite certain spells with these peices even if the day matches, because of resource inconsistancies.
-	sets.NonElementalCure = {back="Tempered Cape", waist="Ovate Rope"}
+	sets.NonElementalCure = {back=gear.cure_jse_back, waist="Ovate Rope"}
 
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
 		-- main="Iris",sub="Iris"
@@ -446,16 +446,16 @@ function init_gear_sets()
 	sets.Learning = {hands="Assim. Bazu. +1"}
 
 	-- Resting sets
-	sets.resting = {main={name="Tanmogayi +1", priority=2}, sub={name="Tanmogayi", priority=1},
+	sets.resting = {main={name="Kaja Sword", priority=2}, sub={name="Tanmogayi +1", priority=1},
 		-- Herculean Head 
-		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest  Herculean Hands
 		body="Jhakri Robe +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		-- Herculean Boots 
 		back="Repulse Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	-- Idle sets - Refresh
-	sets.idle =  {main={name="Tanmogayi +1", priority=2}, sub={name="Tanmogayi", priority=1},
+	sets.idle =  {main={name="Kaja Sword", priority=2}, sub={name="Tanmogayi +1", priority=1},
 		-- Herculean Head 
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest  Herculean Hands
@@ -463,7 +463,7 @@ function init_gear_sets()
 		-- Herculean Boots 
 		back="Repulse Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.idle.PDT =  {main={name="Tanmogayi +1", priority=2}, sub={name="Tanmogayi", priority=1},
+	sets.idle.PDT =  {main={name="Kaja Sword", priority=2}, sub={name="Tanmogayi +1", priority=1},
 		-- Herculean Head 
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest Herculean Hands
@@ -472,7 +472,7 @@ function init_gear_sets()
 		back="Repulse Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	-- Defense sets
-	sets.defense.PDT =  {main={name="Tanmogayi +1", priority=2}, sub={name="Tanmogayi", priority=1},
+	sets.defense.PDT =  {main={name="Kaja Sword", priority=2}, sub={name="Tanmogayi +1", priority=1},
 		-- Herculean Head
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest Herculean Hands
@@ -480,7 +480,7 @@ function init_gear_sets()
 		-- Herculean Boots 
 		back="Repulse Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.defense.MDT =  {main={name="Tanmogayi +1", priority=2}, sub={name="Tanmogayi", priority=1},
+	sets.defense.MDT =  {main={name="Kaja Sword", priority=2}, sub={name="Tanmogayi +1", priority=1},
 		-- Herculean Head 
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest  Herculean Hands
@@ -488,7 +488,7 @@ function init_gear_sets()
 		--  Herculean Boots 
 		back="Felicitas Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
-    sets.defense.MEVA =  {main={name="Tanmogayi +1", priority=2}, sub={name="Tanmogayi", priority=1},	
+    sets.defense.MEVA =  {main={name="Kaja Sword", priority=2}, sub={name="Tanmogayi +1", priority=1},	
 		-- Herculean Head
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		-- Herculean Vest Herculean Hands
@@ -514,12 +514,12 @@ function init_gear_sets()
 	sets.weapons.Default = {main="Kaja Sword",sub="Tanmogayi +1"}
 	sets.weapons.MeleeClubs = {main="Gabaxorea",sub="Tanmogayi +1"}
 	sets.weapons.MagicWeapons = {main="Kaja Sword",sub="Gabaxorea"}
-	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
+	sets.weapons.MaccWeapons = {main="Kaja Sword",sub="Tanmogayi +1"} --main="Iris",sub="Iris"
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets
 	sets.engaged =  {main="Kaja Sword", sub="Tanmogayi +1",
-		head="Carmine Mask", neck="Asperity Necklace", lear="Brutal Earring", rear="Ghillie Earring +1",
+		head="Carmine Mask", neck="Asperity Necklace", lear="Brutal Earring", rear="Zennaroi Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Petrov Ring", rring="Epona's Ring",
 		back=gear.da_jse_back, waist="Reiki Yotai", legs="Samnuha Tights", feet="Carmine Greaves"}
 
@@ -529,52 +529,52 @@ function init_gear_sets()
 		back=gear.da_jse_back, waist="Reiki Yotai", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 		
 	sets.engaged.Fodder = {
-		head="Carmine Mask", neck="Asperity Necklace", lear="Brutal Earring", rear="Ghillie Earring +1",
+		head="Carmine Mask", neck="Asperity Necklace", lear="Brutal Earring", rear="Zennaroi Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Petrov Ring", rring="Epona's Ring",
 		back=gear.da_jse_back, waist="Reiki Yotai", legs="Samnuha Tights", feet="Carmine Greaves"}
 
 	sets.engaged.DTLite = {
-		head="Carmine Mask", neck="Twilght Torque", lear="Brutal Earring", rear="Ghillie Earring +1",
+		head="Carmine Mask", neck="Loricate Torque +1", lear="Brutal Earring", rear="Zennaroi Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Vocane Ring", rring="Defending Ring",
 		back=gear.da_jse_back, waist="Reiki Yotai", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
 	sets.engaged.PDT = {
-		head="Carmine Mask", neck="Twilght Torque", lear="Brutal Earring", rear="Ghillie Earring +1",
+		head="Carmine Mask", neck="Loricate Torque +1", lear="Brutal Earring", rear="Zennaroi Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Vocane Ring", rring="Defending Ring",
 		back="Repulse Mantle", waist="Reiki Yotai", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
 	sets.engaged.Acc.DTLite = {
-		head="Carmine Mask", neck="Twilght Torque", lear="Brutal Earring", rear="Ghillie Earring +1",
+		head="Carmine Mask", neck="Loricate Torque +1", lear="Brutal Earring", rear="Zennaroi Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Vocane Ring", rring="Defending Ring",
 		back="Repulse Mantle", waist="Reiki Yotai", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
 	sets.engaged.Acc.PDT = {
-		head="Carmine Mask", neck="Twilght Torque", lear="Brutal Earring", rear="Ghillie Earring +1",
+		head="Carmine Mask", neck="Loricate Torque +1", lear="Brutal Earring", rear="Zennaroi Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Vocane Ring", rring="Defending Ring",
 		back="Repulse Mantle", waist="Reiki Yotai", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
 	sets.engaged.Fodder.DTLite = {
-		head="Carmine Mask", neck="Twilght Torque", lear="Brutal Earring", rear="Ghillie Earring +1",
+		head="Carmine Mask", neck="Loricate Torque +1", lear="Brutal Earring", rear="Zennaroi Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Vocane Ring", rring="Defending Ring",
 		back="Repulse Mantle", waist="Reiki Yotai", legs="Samnuha Tights", feet="Carmine Greaves"}
 
 	sets.engaged.Fodder.PDT = {
-		head="Carmine Mask", neck="Twilght Torque", lear="Brutal Earring", rear="Ghillie Earring +1",
+		head="Carmine Mask", neck="Loricate Torque +1", lear="Brutal Earring", rear="Zennaroi Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Vocane Ring", rring="Defending Ring",
 		back="Repulse Mantle", waist="Reiki Yotai", legs="Samnuha Tights", feet="Carmine Greaves"}
 
 	sets.engaged.MDT = {
-		head="Carmine Mask", neck="Twilght Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Carmine Mask", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Vocane Ring", rring="Defending Ring",
 		back="Repulse Mantle", waist="Reiki Yotai", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
 	sets.engaged.Acc.MDT = {
-		head="Carmine Mask", neck="Twilght Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Carmine Mask", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Vocane Ring", rring="Defending Ring",
 		back="Repulse Mantle", waist="Reiki Yotai", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
 	sets.engaged.Fodder.MDT = {
-		head="Carmine Mask", neck="Twilght Torque", lear="Merman's Earring", rear="Merman's Earring",
+		head="Carmine Mask", neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
 		body="Adhemar Jacket", hands="Adhemar Wristbands", lring="Vocane Ring", rring="Defending Ring",
 		back="Repulse Mantle", waist="Reiki Yotai", legs="Samnuha Tights", feet="Carmine Greaves"}
 

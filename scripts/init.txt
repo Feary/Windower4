@@ -37,6 +37,7 @@ lua load maga
 lua load repeater
 //lua load parse
 lua load react
+lua load skillchains
 
 //Bind keys
 //Bind syntax is "bind <key> <up> <command>

@@ -20,7 +20,6 @@ get Lugh's Cape case all
 get Mallquis Clogs +2 case all
 get Mallquis Saio +2 case all
 get Mallquis Trews +2 case all
-get Medium's Sabots case all
 get Merlinic Hood case all
 get Peda. Loafers case all
 get Pedagogy Pants case all

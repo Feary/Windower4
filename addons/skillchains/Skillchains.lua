@@ -28,7 +28,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 _addon.author = 'Ivaar'
 _addon.command = 'sc'
 _addon.name = 'SkillChains'
-_addon.version = '2.2017.12.15'
+_addon.version = '2.18.05.08'
 
 require('luau')
 require('pack')
@@ -42,14 +42,17 @@ default.Show = {burst=_static, pet=S{'BST','SMN'}, props=_static, spell=S{'SCH',
 default.UpdateFrequency = 0.2
 default.aeonic = false
 default.color = false
-default.display = {text={size=12,font='Consolas'},pos={x=0,y=0}}--,bg={visible=false}}
+default.display = {text={size=12,font='Consolas'},pos={x=0,y=0},bg={visible=true}}
 
 settings = config.load(default)
 skill_props = texts.new('',settings.display,settings)
 aeonic_weapon = S{20515,20594,20695,20843,20890,20935,20977,21025,21082,21147,21485,21694,21753,22117}
 message_ids = S{2,110,161,162,185,187,317}
 buff_dur = {[163]=40,[164]=30,[470]=60}
+pet_commands = {[110]=true,[317]=true}
 info = {member = {}}
+resonating = {}
+buffs = {}
 
 colors = {}            -- Color codes by Sammeh
 colors.Light =         '\\cs(255,255,255)'
@@ -111,7 +114,7 @@ initialize = function(text, settings)
         properties:append('${timer}')
     end
     if settings.Show.step[info.job] then
-        properties:append('Step: ${step} >> ${en}')
+        properties:append('Step: ${step} → ${en}')
     end
     if settings.Show.props[info.job] then
         properties:append('[${props}] ${elements}')
@@ -173,8 +176,8 @@ function add_skills(t, abilities, active, cat, aeonic)
             if prop then
                 prop = aeonic and lv == 4 and sc_info[prop].aeonic or prop
                 tt[lv][#tt[lv]+1] = settings.color and
-                    '%-17s>> Lv.%d %s%-14s\\cr':format(ability.en, lv, colors[prop], prop) or
-                    '%-17s>> Lv.%d %-14s':format(ability.en, lv, prop)
+                    '%-16s → Lv.%d %s%-14s\\cr':format(ability.en, lv, colors[prop], prop) or
+                    '%-16s → Lv.%d %-14s':format(ability.en, lv, prop)
             end
         end
     end
@@ -201,7 +204,7 @@ function check_results(reson)
     return _raw.table.concat(t, '\n')
 end
 
-function conv(t)
+function colorize(t)
     local temp
     if settings.color then
         temp = {}
@@ -236,9 +239,9 @@ function do_stuff()
             return
         end
         resonating[targ.id].props = resonating[targ.id].props or
-            not resonating[targ.id].bound and conv(resonating[targ.id].active) or 'Chainbound Lv.%d':format(resonating[targ.id].bound)
+            not resonating[targ.id].bound and colorize(resonating[targ.id].active) or 'Chainbound Lv.%d':format(resonating[targ.id].bound)
         resonating[targ.id].elements = resonating[targ.id].elements or
-            resonating[targ.id].step > 1 and settings.Show.burst[info.job] and '(%s)':format(conv(sc_info[resonating[targ.id].active[1]].ele)) or ''
+            resonating[targ.id].step > 1 and settings.Show.burst[info.job] and '(%s)':format(colorize(sc_info[resonating[targ.id].active[1]].ele)) or ''
         skill_props:update(resonating[targ.id])
         skill_props:show()
     elseif not visible then
@@ -265,12 +268,14 @@ end
 windower.register_event('incoming chunk', function(id, data)
     if id == 0x28 then
         local actor,targets,category,param = data:unpack('Ib10b4b16', 6)
-        local ability = skills[category] and skills[category][param]
         local effect = data:unpack('b17', 27, 6)
+        local msg = data:unpack('b10', 29, 7)
         local prop = skillchain[data:unpack('b6', 35)]
+        category = pet_commands[msg] and skills[13] or category
+        local ability = skills[category] and skills[category][param]
+
         if ability and (category ~= 4 or buffs[actor] and chain_buff(buffs[actor]) or prop) then
             local mob = data:unpack('b32', 19, 7)
-            local msg = data:unpack('b10', 29, 7)
             if prop then
                 local step = (resonating[mob] and resonating[mob].step or 1) + 1
                 local closed = step > 5 or sc_info[prop].lvl > 2 and 
@@ -372,28 +377,28 @@ windower.register_event('job change', function(job, lvl)
     end
 end)
 
-windower.register_event('unload', function()
-    coroutine.close(check_weapon)
-    coroutine.close(do_loop)
-end)
-
-function reset()
+windower.register_event('zone change', function()
     resonating = {}
-    buffs = {[info.player] = {}}
-end
-windower.register_event('zone change', reset)
+end)
 
 windower.register_event('load', function()
     if windower.ffxi.get_info().logged_in then
         local equip = windower.ffxi.get_items('equipment')
         update_weapon(equip.main_bag, equip.main)
+        buffs[info.player] = {}
     end
-    reset()
     do_loop = do_stuff:loop(settings.UpdateFrequency)
 end)
 
+windower.register_event('unload', function()
+    coroutine.close(check_weapon)
+    coroutine.close(do_loop)
+end)
+
 windower.register_event('logout', function()
-    coroutine.close(check_weapon) check_weapon = nil
+    coroutine.close(check_weapon)
+    check_weapon = nil
     info = {member = {}}
-    reset()
+    resonating = {}
+    buffs = {}
 end)
