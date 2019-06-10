@@ -52,14 +52,14 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {ammo="Incantor Stone",
+    sets.precast.FC = {main="Oranyan", ammo="Incantor Stone",
 		--main={name="Grioavolr",priority=2}}, sub={name="Clerisy Strap",priority=1}, ammo="Impatiens",
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		--  
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Regal Pumps +1"}
 
-    sets.precast.FC.DT = set_combine(sets.precast.FC, {
+    sets.precast.FC.DT = set_combine(sets.precast.FC, {main="Oranyan",
 		--main={name="Grioavolr",priority=2}}, sub={name="Clerisy Strap",priority=1}, ammo="Impatiens",
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Kishar Ring",
@@ -354,7 +354,7 @@ function init_gear_sets()
 		body="Twilight Cloak",hands=gear.chironic_enfeeble_hands,ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 		
-	sets.midcast['Elemental Magic'] = {ammo="Pemphredo Tathlum",
+	sets.midcast['Elemental Magic'] = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		-- Grioavolr Enki Strap 
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat
@@ -364,7 +364,7 @@ function init_gear_sets()
 		-- Chironic Hose Chironic Slippers 
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
-	sets.midcast['Elemental Magic'].Resistant = {ammo="Pemphredo Tathlum",
+	sets.midcast['Elemental Magic'].Resistant = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		-- Grioavolr Enki Strap
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat
@@ -374,7 +374,7 @@ function init_gear_sets()
 		-- Chironic Hose Chironic Slippers 
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
-	sets.midcast['Divine Magic'] = {ammo="Pemphredo Tathlum",
+	sets.midcast['Divine Magic'] = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		-- Grioavolr Enki Strap
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat
@@ -384,7 +384,7 @@ function init_gear_sets()
 		-- Chironic Hose Chironic Slippers 
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
-	sets.midcast['Dark Magic'] = {ammo="Pemphredo Tathlum",
+	sets.midcast['Dark Magic'] = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		-- Grioavolr Enki Strap
 		main={name="Rubicundity",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat 
@@ -394,7 +394,7 @@ function init_gear_sets()
 		-- Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
-    sets.midcast.Drain = {ammo="Pemphredo Tathlum",
+    sets.midcast.Drain = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		-- Grioavolr Enki Strap
 		main={name="Rubicundity",priority=2}, sub={name="Sors Shield", priority=1},
 		-- Chironic Hat 
@@ -404,7 +404,7 @@ function init_gear_sets()
 		-- Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Fucho-no-Obi", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
-    sets.midcast.Drain.Resistant = {ammo="Pemphredo Tathlum",
+    sets.midcast.Drain.Resistant = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		-- Grioavolr Enki Strap 
 		main={name="Rubicundity",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat
@@ -417,8 +417,8 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
 
-	sets.midcast.Stun = {ammo="Pemphredo Tathlum",
-		-- Grioavolr Enki Strap 
+	sets.midcast.Stun = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
+		-- Grioavolr -
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat 
 		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Regal Earring", rear="Digni. Earring",
@@ -427,8 +427,8 @@ function init_gear_sets()
 		-- Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
-	sets.midcast.Stun.Resistant = {ammo="Pemphredo Tathlum",
-		-- Grioavolr Enki Strap
+	sets.midcast.Stun.Resistant = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
+		-- Grioavolr 
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat  
 		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Regal Earring", rear="Digni. Earring",
@@ -437,25 +437,25 @@ function init_gear_sets()
 		-- Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 
-	sets.midcast['Enfeebling Magic'] = {ammo="Pemphredo Tathlum",
-		-- Grioavolr Enki Strap Hyrdocera
+	sets.midcast['Enfeebling Magic'] = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
+		-- Grioavolr Hyrdocera
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat 
 		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Regal Earring", rear="Digni. Earring",
 		-- Theo. Briault +3
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
+		back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear_chironic_macc_legs, feet="Inyanga Crackows +2"}
 
-	sets.midcast['Enfeebling Magic'].Resistant = {ammo="Pemphredo Tathlum",
-		-- Grioavolr Enki Strap Hyrdocera
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
+		-- Grioavolr Hyrdocera
 		main={name="Bolelabunga",priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- Chironic Hat 
 		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Regal Earring", rear="Digni. Earring",
 		-- Theo. Briault +3
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
-		-- Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
+		body="Theo. Briault +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		-- Theo. Duckbills +3
+		back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear_chironic_macc_legs, feet="Inyanga Crackows +2"}
 
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -565,3 +565,67 @@ end
 function select_default_macro_book()
 	set_macro_page(2, 1)
 end
+
+buff_spell_lists = {
+	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	When='Always'},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		When='Always'},
+		{Name='Aurorastorm',	Buff='Aurorastorm',	SpellID=119,	When='Always'},
+		{Name='Refresh',		Buff='Refresh',		SpellID=109,	When='Always'},
+		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		When='Always'},
+	},
+	
+	Default = {
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	Reapply=false},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Aquaveil',		Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Blink',			Buff='Blink',		SpellID=53,		Reapply=false},
+		{Name='Regen IV',		Buff='Regen',		SpellID=477,	Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',		SpellID=106,	Reapply=false},
+		{Name='Boost-MND',		Buff='MND Boost',	SpellID=484,	Reapply=false},
+		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=false},
+		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=false},
+		{Name='Aurorastorm',	Buff='Aurorastorm',	SpellID=119,	Reapply=false},
+		--{Name='Barthundra',		Buff='Barthunder',	SpellID=70,		Reapply=false},
+		--{Name='Barparalyzra',	Buff='Barparalyze',	SpellID=88,		Reapply=false},
+	},
+	Melee = {
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	Reapply=false},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Boost-STR',		Buff='STR Boost',	SpellID=479,	Reapply=false},
+		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=false},
+		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=false},
+		{Name='Auspice',		Buff='Auspice',		SpellID=96,		Reapply=false},
+	},
+	Ramuh = {
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	Reapply=false},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Aquaveil',		Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Blink',			Buff='Blink',		SpellID=53,		Reapply=false},
+		{Name='Regen IV',		Buff='Regen',		SpellID=477,	Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',		SpellID=106,	Reapply=false},
+		{Name='Boost-MND',		Buff='MND Boost',	SpellID=484,	Reapply=false},
+		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=false},
+		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=false},
+		{Name='Aurorastorm',	Buff='Aurorastorm',	SpellID=119,	Reapply=false},
+		--{Name='Barthundra',		Buff='Barthunder',	SpellID=70,		Reapply=false},
+		--{Name='Barparalyzra',	Buff='Barparalyze',	SpellID=88,		Reapply=false},
+	},
+	Shiva = {
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	Reapply=false},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Aquaveil',		Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Blink',			Buff='Blink',		SpellID=53,		Reapply=false},
+		{Name='Regen IV',		Buff='Regen',		SpellID=477,	Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',		SpellID=106,	Reapply=false},
+		{Name='Boost-MND',		Buff='MND Boost',	SpellID=484,	Reapply=false},
+		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=false},
+		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=false},
+		{Name='Aurorastorm',	Buff='Aurorastorm',	SpellID=119,	Reapply=false},
+		--{Name='Barthundra',		Buff='Barthunder',	SpellID=70,		Reapply=false},
+		{Name='Barparalyzra',	Buff='Barparalyze',	SpellID=88,		Reapply=false},
+	},
+}

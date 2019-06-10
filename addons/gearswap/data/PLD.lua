@@ -471,9 +471,9 @@ end
 
 buff_spell_lists = {
 	Auto = {	
-		{Name='Crusade',Buff='Enmity Boost',SpellID=476,When='Always'},
-		{Name='Reprisal',Buff='Reprisal',SpellID=97,When='Always'},
-		{Name='Phalanx',Buff='Phalanx',SpellID=106,When='Always'},
+		{Name='Crusade',	Buff='Enmity Boost',	SpellID=476,	When='Always'},
+		{Name='Reprisal',	Buff='Reprisal',		SpellID=97,		When='Always'},
+		{Name='Phalanx',	Buff='Phalanx',			SpellID=106,	When='Always'},
 	},
 	
 	Default = {

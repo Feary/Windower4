@@ -230,14 +230,14 @@ function init_gear_sets()
 	sets.precast.WS['Evisceration'] = {
 		-- Mache Earring +1
         head="Adhemar Bonnet",neck="Fotia Belt",ear1="Moonshade Earring",ear2="Telos Earring",       
-		body="Abnoba Kaftan",hands="Mummu Wrists +2", ring1="Mummu Ring", ring2="Regal Ring",
+		body="Abnoba Kaftan",hands="Mummu Wrists +2", ring1="Epaminondas's Ring", ring2="Regal Ring",
 		-- herc Trousers dex acc/crit
         back=gear.tp_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet="Mummu Gamash. +2"}		
 		
     sets.precast.WS['Evisceration'].Acc = {
 		-- Mache Earring +1 
         head="Mummu Bonnet +2", neck="Sanctity Necklace", ear1="Moonshade Earring",ear2="Telos Earring",
-		body="Mummu Jacket +2", hands="Meg. Gloves +2", ring1="Mummu Ring", ring2="Regal Ring",
+		body="Mummu Jacket +2", hands="Meg. Gloves +2", ring1="Epaminondas's Ring", ring2="Regal Ring",
 		-- herc Trousers dex acc/crit
         back=gear.tp_jse_back,waist="Grunfeld Rope",legs="Samnuha Tights",feet="Mummu Gamash. +2"}		
 	

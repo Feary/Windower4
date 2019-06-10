@@ -1,89 +1,61 @@
-put Abnoba Kaftan sack all
-put Adhemar Bonnet +1 sack all
-put Adhemar Bonnet sack all
-put Adhemar Jacket +1 sack all
-put Adhemar Wrist. +1 sack all
-put Adhemar Wristbands sack all
-put Amalric Gages +1 case all
-put Amalric Nails +1 case all
-put Amalric Slops +1 case all
-put Amalric Coif +1 case all
-put Amalric Doublet +1 case all
-put Assim. Bazu. sack all
-put Assim. Charuqs +1 sack all
-put Assim. Jubbah +1 sack all
-put Assim. Keffiyeh +1 sack all
-put Assim. Shalwar +1 sack all
-put Cornflower Cape sack all
-put Carm. Sc. Mail +1 safe2
-put Grunfeld Rope sack all
-put Hashi. Bazubands sack all
-put Hashishin Basmak sack all
-put Hashishin Kavuk sack all
-put Hashishin Mintan +1 sack all
-put Hashishin Tayt +1 sack all
-put Herculean Boots sack all
-put Herculean Gloves sack all
-put Herculean Helm sack all
-put Herculean Vest sack all
-put Helios Gloves case all
-put Iskur Gorget sack all
-put Jhakri Coronal +2 case all
-put Jhakri Cuffs +2 case all
-put Jhakri Pigaches +2 case all
-put Jhakri Robe +2 case all
-put Jhakri Slops +2 case all
-put Kaja Sword sack all
-put Kaja Knife sack all
-put Luh. Bazubands +1 sack all
-put Luh. Keffiyeh +1 sack all
-put Luhlaza Charuqs +1 sack all
-put Luhlaza Jubbah +1 sack all
-put Luhlaza Shalwar +1 sack all
-put Mavi Tathlum sack all
-put Mekosu. Harness sack all
-put Merlinic Hood case all
-put Merlinic Crackows case all
-put Nibiru Cudgel sack all
-put Rawhide Mask sack all
-put Rawhide Boots sack all
-put Rosmerta's Cape sack all
-put Samnuha Tights sack
-put Skaoi Boots case all
-put Tanmogayi +1 sack all
-put Thereoid Greaves sack all
-put Tokko Rod sack all
-put Vampirism sack all
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+get Abnoba Kaftan sack all
+get Adhe. Gamashes +1 safe2 all
+get Adhemar Bonnet +1 sack all
+get Adhemar Bonnet sack all
+get Adhemar Gamashes safe2 all
+get Adhemar Jacket +1 sack all
+get Adhemar Kecks +1 sack all
+get Adhemar Kecks sack all
+get Adhemar Wrist. +1 sack all
+get Adhemar Wristbands sack all
+get Amini Bottillons +1 safe2 all
+get Amini Brague +1 safe2 all
+get Amini Caban +1 safe2 all
+get Amini Gapette +1 safe2 all
+get Amini Glove. +1 safe2 all
+get Arc. Braccae +2 safe2 all
+get Arc. Bracers +1 safe2 all
+get Arc. Jerkin +3 safe2 all
+get Arcadian Beret +2 safe2 all
+get Arcadian Socks +1 safe2 all
+get Armageddon safe2 all
+get Belenus's Cape safe2 all
+get Bullet safe2 all
+get Carm. Sc. Mail +1 safe2 all
+get Desultor Tassets safe2 all
+get Eminent Bullet safe2 all
+get Enervating Earring safe2 all
+get Erudit. Necklace safe2 all
+get Grunfeld Rope sack all
+get Herculean Boots sack all
+get Herculean Gloves sack all
+get Herculean Vest sack all
+get Holliday safe2 all
+get Impulse Belt safe2 all
+get Iskur Gorget sack all
+get Kustawi +1 safe2 all
+get Kwahu Kachina Belt safe2 all
+get Malevolence safe2 all
+get Meg. Chausses +2 sack all
+get Meg. Cuirie +2 sack all
+get Meg. Gloves +2 sack all
+get Meg. Jam. +2 sack all
+get Meghanada Visor +2 sack all
+get Mummu Bonnet +2 sack all
+get Mummu Gamash. +2 sack all
+get Mummu Jacket +2 sack all
+get Mummu Kecks +2 sack all
+get Mummu Ring sack all
+get Mummu Wrists +2 sack all
+get Nusku Shield safe2 all
+get Orion Beret +2 safe2 all
+get Orion Braccae +2 safe2 all
+get Orion Bracers +2 safe2 all
+get Orion Jerkin +2 safe2 all
+get Orion Socks +2 safe2 all
+get Perun +1 safe2 all
+get Pursuer's Gaiters safe2 all
+get Taeon Chapeau safe2 all
+get Yemaya Belt safe2 all
+get Yoichinoyumi safe2 all
+get Yoichi's Arrow safe2 all

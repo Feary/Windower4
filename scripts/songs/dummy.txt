@@ -7,5 +7,5 @@ wait 6;
 input /ma "Army\'s Paeon IV" <me>;
 wait 9;
 input /ma "Army\'s Paeon III" <me>;
-wait 5;
+wait 6;
 gs c set ExtraSongsMode None

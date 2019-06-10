@@ -588,3 +588,19 @@ function select_default_macro_book()
         set_macro_page(3, 16) --War/Etc
     end
 end
+
+buff_spell_lists = {
+	Auto = {	
+		{Name='Crusade',	Buff='Enmity Boost',	SpellID=476,	When='Always'},
+		{Name='Reprisal',	Buff='Reprisal',		SpellID=97,		When='Always'},
+		{Name='Phalanx',	Buff='Phalanx',			SpellID=106,	When='Always'},
+	},
+	
+	Default = {
+		{Name='Crusade',	Buff='Enmity Boost',	SpellID=476,	Reapply=false},
+		{Name='Reprisal',	Buff='Reprisal',		SpellID=97,		Reapply=false},
+		{Name='Refresh',	Buff='Refresh',			SpellID=109,	Reapply=false},
+		{Name='Phalanx',	Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Cocoon',		Buff='Defense Boost', 	SpellID=547,	Reapply=false},
+	},
+}

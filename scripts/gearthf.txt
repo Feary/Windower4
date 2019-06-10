@@ -4,6 +4,12 @@ get Adhemar Jacket +1 sack all
 get Adhemar Kecks +1 safe2 all 
 get Adhemar Wrist. +1 sack all 
 get Adhemar Wristbands sack all 
+get Adhemar Gamashes +1 sack all
+get Erudit. Necklace safe2 all
+get Floral Gauntlets sack all
+get Grunfeld Rope sack all
+get Herculean Helm sack all
+get Malevolence safe2 all
 get Mandau sack all 
 get Meg. Chausses +2 sack all 
 get Meg. Cuirie +2 sack all 
@@ -14,7 +20,6 @@ get Mummu Bonnet +2 sack all
 get Mummu Gamash. +2 sack all 
 get Mummu Jacket +2 sack all 
 get Mummu Kecks +2 sack all 
-get Mummu Ring sack all 
 get Mummu Wrists +2 sack all 
 get Pill. Bonnet +2 sack all 
 get Pill. Culottes +3 sack all 
@@ -30,8 +35,8 @@ get Skulk. Culottes +1 sack all
 get Skulk. Poulaines +1 sack all 
 get Skulker's Bonnet +1 sack all 
 get Skulker's Vest +1 sack all 
+get Samnuha Coat sack all
 get Samnuha Tights sack all
 get Toutatis's Cape sack all 
 get Tsoa. Crossbow sack all 
-get Twashtar sack all 
 get Iskur Gorget all

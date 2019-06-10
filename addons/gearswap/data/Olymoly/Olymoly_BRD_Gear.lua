@@ -38,6 +38,7 @@ function user_setup()
 	send_command('alias ntmmmm exec songs/ntmmmm')
 	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 	
+	
 	select_default_macro_book()
 end
 
@@ -342,12 +343,12 @@ function init_gear_sets()
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 	sets.engaged.DW = {main={name="Carnwenhan", priority=2}, sub={name="Twashtar", priority=1}, ranged=gear.Instrument_tp,
-		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Telos Earring", rear="Suppanomimi",
+		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 	sets.engaged.DW.Acc = {main="Carnwenhan",sub="Twashtar",ranged=gear.Instrument_tp,
-		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Telos Earring", rear="Suppanomimi",
+		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
@@ -361,3 +362,14 @@ function select_default_macro_book()
 		set_macro_page(1, 4)
 	end
 end
+
+
+function user_job_self_command(commandArgs, eventArgs)
+	--if commandArgs[1]:lower() == 'ntmmmm' then
+	
+--	end
+	--if commandArgs[1]:lower() == 'p2' then
+		--windower.chat.input('/pcmd leave;wait 1;input /tell Bigtymer invite;'')
+	--end	
+end
+

@@ -6,8 +6,8 @@ function user_setup()
 	state.HybridMode:options('Normal','PDT')
 	state.Weapons:options('None','Akademos','Khatvanga')
 
-	gear.nuke_jse_back = {name="Lugh's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10'}}
-	gear.FC_jse_back = {name="Lugh's Cape",augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
+	gear.nuke_jse_back = {	name="Lugh's Cape", 	augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10'}}
+	gear.FC_jse_back = 	{	name="Lugh's Cape", 	augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Damage taken-5%',}}
 	
 	gear.obi_cure_back = "Tempered Cape +1"
 	gear.obi_cure_waist = "Witful Belt"
@@ -15,12 +15,15 @@ function user_setup()
 	gear.obi_low_nuke_waist = "Yamabuki-no-Obi"
 	gear.obi_high_nuke_waist = "Yamabuki-no-Obi"
 	
-		-- Additional local binds
+	-- Additional local binds 
+	-- * = ctrl
+	-- @ = windows
+	-- ! = alt
 	send_command('bind ^` gs c cycle ElementalMode')
 	send_command('bind !` gs c scholar power')
 	send_command('bind @` gs c cycle MagicBurstMode')
-	send_command('bind ^q gs c weapons Khatvanga;gs c set CastingMode OccultAcumen')
-	send_command('bind !q gs c weapons default;gs c reset CastingMode')
+	--send_command('bind ^q gs c weapons Khatvanga;gs c set CastingMode OccultAcumen')
+	--send_command('bind !q gs c weapons default;gs c reset CastingMode')
 	send_command('bind @f10 gs c cycle RecoverMode')
 	send_command('bind @f8 gs c toggle AutoNukeMode')
 	send_command('bind !pause gs c toggle AutoSubMode') --Automatically uses sublimation and Myrkr.
@@ -38,8 +41,34 @@ function user_setup()
 	send_command('alias ta input /targetnpc')
 	send_command('alias at input /targetnpc; wait 1; input /attack <t>')
 	send_command('alias rads input //temps buy Radialens')
+	send_command('alias b1 input /ja "immanence" <me>; wait 1; input /ma "luminohelix" <t>; wait 5; input /ja "immanence" <me>; wait 1; input /ma "stone" <t>; wait 4; input /ma "cryohelix" <t>')
+    
+	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 2.5;/ma "Embrava" <t>')
+
+	-- Skillchains
+	-- Fusion - Light/Fire
+	send_command('alias sclight input /p Skillchain: Fusion MB: Light/Fire>;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Fire" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Thunder" <t>')
+	send_command('alias sclight2 input /p Skillchain: Fusion MB: Light/Fire;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Thunder" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Fire" <t>')
+	send_command('alias sclight3 input /p Skillchain: Fusion MB: Light/Fire;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Fire" <t>;wait 3;input /ja "Immanence" <me>;wait 5;input /ma "Thunder" <t>')
+	-- Distortion/Induration- Ice Water 
+	send_command('alias scice input /p Skillchain: Induration MB: Ice;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Water" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Blizzard" <t>')
+	send_command('alias scice2 input /p Skillchain: Distortion MB: Ice/Water;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Luminohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Stone" <t>')
+	send_command('alias scice3 input /p Skillchain: Induration MB: Ice;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Water" <t>;wait 3;input /ja "Immanence" <me>;wait 5;input /ma "Blizzard" <t>')
+	-- Detonation/Fragmentation - Thunder Wind 
+	send_command('alias scthunder input /p Skillchain: Fragmentation  MB:Wind/Thunder;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Blizzard" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Water" <t>')
+	send_command('alias scthunder2 input /p Skillchain: Detonation  MB:Wind;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Noctohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Aero" <t>')
+	-- Impaction - Wind 
+	send_command('alias scwind input /p Skillchain: Impaction  MB: Wind;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Blizzard" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Thunder" <t>')
+	send_command('alias scwind2 input /p Skillchain: Impaction MB: Wind;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Noctohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Aero" <t>')
+	-- Reverberation - Water 
+	send_command('alias scwater input /p Skillchain: Reverberation MB: Water;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Luminohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Water" <t>')
+	-- Gravitation - Stone 
+	send_command('alias scstone input /p Skillchain: Gravitation MB: Stone;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Luminohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Water" <t>')
+	send_command('alias scstone2 input /p Skillchain: Gravitation MB: Stone;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Aero" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Noctohelix" <t>')
 	
-    select_default_macro_book()
+
+	select_default_macro_book()
+
 end
 
 -- Define sets and vars used by this job file.
@@ -63,7 +92,7 @@ function init_gear_sets()
         head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         --body="Zendik Robe",
 		body="Anhur Robe", hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
-        back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Amalric Nails +1"}
+        back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet="Amalric Nails +1"}
 		
 	sets.precast.FC.Arts = {}
 
@@ -81,9 +110,9 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS['Myrkr'] = {ammo="Staunch Tathlum",
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Evans Earring",ear2="Etiolation Earring",
-		-- hands="Regal Cuffs", ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		body="Amalric Doublet +1",
-		back="Fi Follet Cape +1",waist="Yamabuki-no-Obi",legs="Pedagogy Pants",feet="Medium's Sabots"}
+		-- hands="Regal Cuffs", 
+		body="Amalric Doublet +1", ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
+		back="Fi Follet Cape +1",waist="Yamabuki-no-Obi",legs="Pedagogy Pants",feet="Skaoi Boots"}
 
     -- Midcast Sets
 
@@ -297,15 +326,23 @@ function init_gear_sets()
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Amalric Slops +1",feet="Amalric Nails +1"})
 
 	sets.midcast.Helix = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
-		--main="Akademos",sub="Zuuxowu Grip",ammo="Dosis Tathlum",
+		--main="Akademos",ammo="Dosis Tathlum",
 		--neck="Saevus Pendant +1",
-        head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Crematio Earring",ear2="Friomisi Earring",
+        head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+		-- Refoccilation Stone
+        back="Bookworm Cape",waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 	
 	sets.midcast.Helix.Resistant = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
-		head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Barkaro. Earring",ear2="Friomisi Earring",
+		head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
+        body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
+		-- waist="Acuity Belt +1",
+        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+	
+	sets.midcast.Helix.Burst = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
+		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
+		head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		-- waist="Acuity Belt +1",
         back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
@@ -394,20 +431,20 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
-        head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+    sets.engaged = {main="Tokko Rod",sub="Genbu's Shield",ammo="Homiliary",
+        head="Chironic Hat",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Digni. Earring",
 		--hands=gear.merlinic_refresh_hands,
-        body="Jhakri Robe +2",hands="Volte Bracers", ring1="Defending Ring",ring2="Sheltered Ring",
+        body="Jhakri Robe +2",hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
-        back=gear.FC_jse_back, waist="Grunfeld Rope", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
+        back=gear.FC_jse_back, waist="Eschan Stone", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
 		
-	sets.engaged.PDT = {main="Earth Staff", ammo="Staunch Tathlum",
-		-- sub="Oneiros Grip",
+	sets.engaged.PDT = {main="Tokko Rod", sub="Genbu's Shield", ammo="Staunch Tathlum",
+		-- sub="Oneiros Grip", 	
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		--hands=gear.merlinic_refresh_hands,
-        body="Mallquis Saio +2", hands="Volte Bracers", ring1="Defending Ring",ring2="Sheltered Ring",
+        body="Mallquis Saio +2", hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
-        back=gear.FC_jse_back, waist="Grunfeld Rope", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
+        back=gear.FC_jse_back, waist="Eschan Stone", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Ebullience'] = {head="Arbatel Bonnet"}
@@ -442,12 +479,55 @@ end
 -- Default macro set/book
 function select_default_macro_book()
 	if player.sub_job == 'RDM' then
-		set_macro_page(1, 9)
+		set_macro_page(5, 9)
 	elseif player.sub_job == 'BLM' then
-		set_macro_page(1, 9)
+		set_macro_page(3, 9)
 	elseif player.sub_job == 'WHM' then
 		set_macro_page(1, 9)
 	else
-		set_macro_page(1, 9)
+		set_macro_page(5, 9)
 	end
 end
+
+function user_job_self_command(commandArgs, eventArgs)
+	
+end
+
+buff_spell_lists = {
+	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
+		{Name='Reraise',	Buff='Reraise',		SpellID=113,	When='Always'},
+		{Name='Haste',		Buff='Haste',		SpellID=57,		When='Always'},
+		{Name='Refresh',	Buff='Refresh',		SpellID=109,	When='Always'},
+		{Name='Stoneskin',	Buff='Stoneskin',	SpellID=54,		When='Always'},
+		{Name='Klimaform',	Buff='Klimaform',	SpellID=287,	When='Combat'},
+	},
+	
+	Default = {
+		{Name='Reraise',	Buff='Reraise',		SpellID=113,	Reapply=false},
+		{Name='Haste',		Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Refresh',	Buff='Refresh',		SpellID=109,	Reapply=false},
+		{Name='Aquaveil',	Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',	Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Klimaform',	Buff='Klimaform',	SpellID=287,	Reapply=false},
+		{Name='Blink',		Buff='Blink',		SpellID=53,		Reapply=false},
+		{Name='Regen',		Buff='Regen',		SpellID=108,	Reapply=false},
+		{Name='Phalanx',	Buff='Phalanx',		SpellID=106,	Reapply=false},
+	},
+	Default = {
+		{Name='Reraise',	Buff='Reraise',		SpellID=113,	Reapply=false},
+		{Name='Haste',		Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Refresh',	Buff='Refresh',		SpellID=109,	Reapply=false},
+		{Name='Aquaveil',	Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',	Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Klimaform',	Buff='Klimaform',	SpellID=287,	Reapply=false},
+		{Name='Blink',		Buff='Blink',		SpellID=53,		Reapply=false},
+		{Name='Regen',		Buff='Regen',		SpellID=108,	Reapply=false},
+		{Name='Phalanx',	Buff='Phalanx',		SpellID=106,	Reapply=false},
+	},
+}
+
+
+
+
+
+

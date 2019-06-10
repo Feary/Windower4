@@ -64,7 +64,7 @@ function init_gear_sets()
 		head="Amalric Coif +1", neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		-- Zendik Robe
 		body="Anhur Robe", hands=gear_helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
-		back=gear.FC_jse_back, waist="Witful Belt",legs="Geomancy Pants +2", feet="Amalric Nails +1"}
+		back=gear.FC_jse_back, waist="Witful Belt",legs="Geomancy Pants +2", feet=gear_merlinic_fc_feet}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {main="Idris", sub="Genbu's Shield", range="Dunna",ammo=empty,
 		rring=empty,

@@ -11,7 +11,6 @@ get Barkaro. Earring case all
 get Bookworm's Cape case all
 get Evans Earring storage all
 get Helios Boots case all
-get Helios Gloves case all
 get Jhakri Cuffs +2 case all
 get Jhakri Pigaches +2 case all
 get Jhakri Robe +2 case all
@@ -21,6 +20,7 @@ get Mallquis Clogs +2 case all
 get Mallquis Saio +2 case all
 get Mallquis Trews +2 case all
 get Merlinic Hood case all
+get Merlinic Crackows case all
 get Peda. Loafers case all
 get Pedagogy Pants case all
 get Rubicundity case all

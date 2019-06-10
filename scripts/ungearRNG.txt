@@ -48,11 +48,11 @@ put Mummu Kecks +2 sack all
 put Mummu Ring sack all
 put Mummu Wrists +2 sack all
 put Nusku Shield safe2 all
-put Orion Beret +1 safe2 all
-put Orion Braccae +1 safe2 all
-put Orion Bracers +1 safe2 all
-put Orion Jerkin +1 safe2 all
-put Orion Socks +1 safe2 all
+put Orion Beret +2 safe2 all
+put Orion Braccae +2 safe2 all
+put Orion Bracers +2 safe2 all
+put Orion Jerkin +2 safe2 all
+put Orion Socks +2 safe2 all
 put Perun +1 safe2 all
 put Pursuer's Gaiters safe2 all
 put Taeon Chapeau safe2 all

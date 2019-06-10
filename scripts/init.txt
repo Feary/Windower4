@@ -38,6 +38,7 @@ lua load repeater
 //lua load parse
 lua load react
 lua load skillchains
+lua load sendalltarget
 
 //Bind keys
 //Bind syntax is "bind <key> <up> <command>

@@ -105,7 +105,7 @@ function init_gear_sets()
 	sets.precast.FC = {main="Vampirism",sub="Vampirism",
 		head="Amalric Coif +1", neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body="Luhlaza Jubbah +1",hands="Leyline Gloves",ring1="Kishar Ring", ring2="Prolix Ring",
-		back=gear.FC_jse_back,waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
+		back=gear.FC_jse_back,waist="Witful Belt",legs="Aya. Cosciales +2 ",feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})--body="Passion Jacket"
 

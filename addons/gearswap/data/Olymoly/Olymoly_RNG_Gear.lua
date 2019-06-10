@@ -47,10 +47,10 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Volte Bracers", waist="Chaac Belt"})
 	sets.precast.JA['Bounty Shot'] = set_combine(sets.TreasureHunter, {hands="Amini Glove. +1"})
-	sets.precast.JA['Camouflage'] = {body="Orion Jerkin +1"}
-	sets.precast.JA['Scavenge'] = {feet="Orion Socks +1"}
-	sets.precast.JA['Shadowbind'] = {hands="Orion Bracers +1"}
-	sets.precast.JA['Sharpshot'] = {legs="Orion Braccae +1"}
+	sets.precast.JA['Camouflage'] = {body="Orion Jerkin +2"}
+	sets.precast.JA['Scavenge'] = {feet="Orion Socks +2"}
+	sets.precast.JA['Shadowbind'] = {hands="Orion Bracers +2"}
+	sets.precast.JA['Sharpshot'] = {legs="Orion Braccae +2"}
 	sets.precast.JA['Double Shot'] = {back=gear.tp_ranger_jse_back}
 	sets.precast.JA['Eagle Eye Shot'] = {legs="Arcadian Braccae +2"}
 	
@@ -253,7 +253,7 @@ function init_gear_sets()
         head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- body="Orion Jerkin +3" lring="Chirich Ring +1",
         body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Dingir Ring",ring2="Ilabrat Ring",
-		-- feet="Orion Socks +1",
+		-- feet="Orion Socks +2",
         back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
 
     sets.midcast.RA.Yoichinoyumi.Acc = {
@@ -346,11 +346,11 @@ function init_gear_sets()
 		-- head="Arcadian Beret +3",
         head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- body="Orion Jerkin +3" Orion Bracers +3 rring="Caooethic Ring +1",
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+        body="Meg. Cuirie +2",hands="Orion Bracers +2", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- Orion Socks +3
         back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"})
 	
-	sets.buff.Camouflage = {body="Orion Jerkin +1"}
+	sets.buff.Camouflage = {body="Orion Jerkin +2"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	
 	sets.Self_Healing = {neck="Phalaina Locket",ring2="Kunaji Ring",}--hands="Buremte Gloves", waist="Gishdubar Sash"
@@ -390,7 +390,7 @@ function init_gear_sets()
     
     sets.defense.MEVA = {ammo=gear.RAbullet,
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
+        body="Meg. Cuirie +2",hands="Volte Bracers",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Meg. Jam. +2"}
     
 	sets.Kiting = {feet="Jute Boots +1"}
@@ -404,8 +404,8 @@ function init_gear_sets()
 	sets.weapons.DualWeapons =  {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence",range="Armageddon",ammo="Eminent Bullet"}
 	-- Melee
-	sets.weapons.SingleMelee= {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
-	sets.weapons.DualMelee =  {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
+	sets.weapons.SingleMelee= {main="Kaja Sword",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
+	sets.weapons.DualMelee =  {main="Kaja Sword",sub="Kaja Knife",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
 	
 
 	--------------------------------------

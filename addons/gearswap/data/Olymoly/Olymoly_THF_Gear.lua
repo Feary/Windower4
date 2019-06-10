@@ -55,15 +55,15 @@ function init_gear_sets()
     sets.Knockback = {}
 	sets.Suppa = {ear1="Suppanomimi", ear2="Cessance Earring"}
 	sets.DWEarrings = {ear1="Brutal Earring", ear2="Suppanomimi"}
-	-- hands="Floral Gauntlets", Ebani Earring?
-	sets.DWMax = {body="Adhemar Jacket +1", waist="Reiki Yotai", ear1="Brutal Earring", ear2="Suppanomimi"}
+	--  Ebani Earring?
+	sets.DWMax = {body="Adhemar Jacket +1", hands="Floral Gauntlets", waist="Reiki Yotai", ear1="Brutal Earring", ear2="Suppanomimi"}
 	sets.Ambush = {body="Plunderer's Vest +3"}
 
 	-- Weapons Sets
-	sets.weapons.Normal = {main="Twashtar",sub="Taming Sari"}
+	sets.weapons.Normal = {main="Twashtar",sub="Kaja Knife"}
 	sets.weapons.Relic = {main="Mandau",sub="Twashtar"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
-	sets.weapons.Throwing = {main="Twashtar",sub="Taming Sari", range="Raider's Bmrng."}
+	sets.weapons.Throwing = {main="Twashtar",sub="Kaja Knife", range="Raider's Bmrng."}
 	
     -- Actions we want to use to tag TH.
     -- Acc
@@ -92,7 +92,7 @@ function init_gear_sets()
     sets.precast.JA['Flee'] = {feet="Pill. Poulaines +2"} 
     sets.precast.JA['Hide'] = {body="Pillager's Vest +3"}
     sets.precast.JA['Conspirator'] = {body="Skulker's Vest +1"}
-    sets.precast.JA['Steal'] = {head="Pill. Bonnet +2", hands="Pillager's Armlets", legs="Pill. Culottes +3", feet="Pill. Poulaines +2"}
+    sets.precast.JA['Steal'] = {head="Pill. Bonnet +2", legs="Pill. Culottes +3", feet="Pill. Poulaines +2"} --  hands="Pillager's Armlets",
 	sets.precast.JA['Mug'] = {head="Plun. Bonnet +3"}
     sets.precast.JA['Despoil'] = {legs="Skulker's Culottes +1", feet="Skulk. Poulaines +1"}
     sets.precast.JA['Perfect Dodge'] = {hands="Plun. Armlets +3"}
@@ -362,12 +362,11 @@ function init_gear_sets()
         back=gear.da_jse_back, waist="Fotia Belt",legs="Plun. Culottes +3",feet="Plun. Poulaines +3"})
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
-		-- head=gear_herculean_nuke_head NT/DEX, WSD, MAB
-        head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Friomisi Earring",ear2="Moonshade Earring",
+        head=gear_herculean_nuke_head,neck="Fotia Gorget",ear1="Friomisi Earring",ear2="Moonshade Earring",
 		-- Herculean Gloves NT/DEX, WSD, MAB rring="Karieyh Ring +1"
         body="Samnuha Coat",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",rring="Dingir Ring",
-        -- waist="Eschan Stone", legs=gear_herculean_nuke_legs NT/DEX, WSD, MAB mab feet=gear_herculean_nuke_feet NT/DEX, WSD, MAB
-		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"}
+        --  legs=gear_herculean_nuke_legs NT/DEX, WSD, MAB mab feet=gear_herculean_nuke_feet NT/DEX, WSD, MAB
+		back=gear.wsd_jse_back,waist="Eschan Stone",legs=legs=gear_herculean_nuke_legs,feet="Lustra. Leggings +1"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
@@ -516,7 +515,7 @@ function select_default_macro_book()
     end
 end
 
---Dynamis Trust Overwrite
+-- Dynamis Trust Overwrite
 function check_trust()
 	if not moving then
 		if state.AutoTrustMode.value and not areas.Cities:contains(world.area) and (buffactive['Reive Mark'] or not player.in_combat) then
