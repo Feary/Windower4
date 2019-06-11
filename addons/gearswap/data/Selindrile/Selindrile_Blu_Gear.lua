@@ -708,3 +708,40 @@ function check_trust()
 	end
 	return false
 end
+
+
+buff_spell_lists = {
+	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
+		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	When='Always'},
+		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	When='Idle'},
+		{Name='Refresh',			Buff='Refresh',			SpellID=109,	When='Idle'},
+		{Name='Nat. Meditation',	Buff='Attack Boost',	SpellID=700,	When='Engaged'},
+		{Name='Mighty Guard',		Buff='Mighty Guard',	SpellID=750,	When='Combat'},
+	},
+	
+	Default = {
+		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	Reapply=false},
+		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	Reapply=false},
+		{Name='Refresh',			Buff='Refresh',			SpellID=109,	Reapply=false},
+		{Name='Phalanx',			Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=false},
+		{Name='Stoneskin',			Buff='Stoneskin',		SpellID=54,		Reapply=false},
+		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=false},
+		{Name='Blink',				Buff='Blink',			SpellID=53,		Reapply=false},
+		{Name='Mighty Guard',		Buff='Mighty Guard',	SpellID=750,	Reapply=false},
+		{Name='Nat. Meditation',	Buff='Attack Boost',	SpellID=700,	Reapply=false},
+	},
+	
+	 aoe = {
+		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	Reapply=false},
+		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	Reapply=false},
+		{Name='Refresh',			Buff='Refresh',			SpellID=109,	Reapply=false},
+		{Name='Phalanx',			Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=false},
+		{Name='Stoneskin',			Buff='Stoneskin',		SpellID=54,		Reapply=false},
+		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=false},
+		{Name='Blink',				Buff='Blink',			SpellID=53,		Reapply=false},
+		{Name='Carcharian Verve',	Buff='Aquaveil',		SpellID=745,	Reapply=false},
+		{Name='Memento Mori',		Buff='Magic Atk. Boost',SpellID=538,	Reapply=false},
+	},
+}

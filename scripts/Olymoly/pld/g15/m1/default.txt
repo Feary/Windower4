@@ -12,9 +12,9 @@ alias g15m1g10 input /ma "Crusade" <me>
 alias g15m1g11 
 alias g15m1g12 
 
-alias g15m1g13 input /console gs c toggle AutoDefenseMode
-alias g15m1g14 input /console gs c cycle HybridMode
-alias g15m1g15 input /console gs c toggle TankAutoDefense
-alias g15m1g16 /console gs c cycle IdleMode
+alias g15m1g13 gs c toggle AutoDefenseMode
+alias g15m1g14 gs c cycle HybridMode
+alias g15m1g15 gs c toggle TankAutoDefense
+alias g15m1g16 gs c cycle IdleMode
 alias g15m1g17 
-alias g15m1g18 /console gs c toggle AutoTankMode
+alias g15m1g18 gs c toggle AutoTankMode

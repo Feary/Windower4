@@ -47,12 +47,16 @@ function user_setup()
 	send_command('bind !q gs c weapons HybridWeapons;gs c update')
 	
 	send_command('alias bludd aset spellset dd100')
+	send_command('alias blureset lua reload azureset')
+	-- aset spellset Zahak
 	send_command('alias bluddnin aset spellset dd100;input /macro set 1')
 	send_command('alias bluddwar aset spellset dd100;input /macro set 2')
 	send_command('alias bluddrdm aset spellset dd100;input /macro set 3')
 	send_command('alias bludddnc aset spellset dd100;input /macro set 4')
 	send_command('alias bluaoe aset spellset aoe;input /macro set 7')
 	send_command('alias bludynamis aset spellset Dynamis;input /macro set 6')
+	send_command('alias light input /ja "Chain Affinity" <me>;wait 1;input /ws "Savage Blade" <t>;wait 4;input /ja "Efflux" <me>;wait 2;input /ma "Thrashing Assault" <t>')
+	send_command('alias dark input /ja "Chain Affinity" <me>;wait 1;input /ws "Requiescat" <t>;wait 4;input /ja "Efflux" <me>;wait 2;input /ma "Quad. Continuum" Assault" <t>')
 	send_command('alias vw1 aset spellset vw1')
 	send_command('alias vw2 aset spellset vw2')
 	

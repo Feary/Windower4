@@ -366,7 +366,7 @@ function init_gear_sets()
 		-- Herculean Gloves NT/DEX, WSD, MAB rring="Karieyh Ring +1"
         body="Samnuha Coat",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",rring="Dingir Ring",
         --  legs=gear_herculean_nuke_legs NT/DEX, WSD, MAB mab feet=gear_herculean_nuke_feet NT/DEX, WSD, MAB
-		back=gear.wsd_jse_back,waist="Eschan Stone",legs=legs=gear_herculean_nuke_legs,feet="Lustra. Leggings +1"}
+		back=gear.wsd_jse_back,waist="Eschan Stone",legs=gear_herculean_nuke_legs,feet="Lustra. Leggings +1"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 

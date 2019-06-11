@@ -117,6 +117,25 @@
 				<slot15>Barbed Crescent</slot15>
 				<slot16>Erratic Flutter</slot16>				
 			</aoe>
+			<cleaving>
+				<slot01>tenebral crush</slot01>
+                <slot02>delta thrust</slot02>
+                <slot03>dream flower</slot03>
+                <slot04>barbed crescent</slot04>
+                <slot05>subduction</slot05>
+                <slot06>entomb</slot06>
+                <slot07>anvil lightning</slot07>
+                <slot08>occultation</slot08>
+                <slot09>erratic flutter</slot09>
+                <!--<slot10>searing tempest</slot10>-->
+                <slot11>sound blast</slot11>
+                <slot12>spectral floe</slot12>
+                <slot13>magic hammer</slot13>
+                <slot15>memento mori</slot15>
+                <slot17>reactor cool</slot17>
+                <slot18>magic fruit</slot18>
+                <slot20>regurgitation</slot20>
+			</cleaving>
 			<dd>
 				<slot01>quad. continuum</slot01>
 				<slot02>delta thrust</slot02>
