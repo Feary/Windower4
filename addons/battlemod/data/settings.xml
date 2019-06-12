@@ -18,6 +18,7 @@
         <line_noactor>${abil} ${number} ¨ ${target}</line_noactor>
         <line_nonumber>[${actor}] ${abil} ¨ ${target}</line_nonumber>
         <line_roll>${actor} ${abil} ¨ ${target} ª ${number}</line_roll>
+        <line_steal>[${actor}] ${abil} ¨ ${target} (${item})</line_steal>
         <oxford>true</oxford>
         <sumdamage>true</sumdamage>
         <supersilence>true</supersilence>

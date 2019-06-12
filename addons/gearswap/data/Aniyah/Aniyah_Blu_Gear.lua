@@ -13,18 +13,14 @@ function user_setup()
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'MP','SuppaBrutal', 'DWEarrings','DWMax'}
 
 	--Ambuscade Cape
-	--'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',
-	gear.da_jse_back = { name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
-	gear.stp_jse_back = { name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
-	-- 
-	gear.dw_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
-	-- 'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',
-	gear.crit_jse_back = {name="Rosmerta's Cape",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
-	-- 'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',
-	gear.wsd_jse_back = {name="Rosmerta's Cape",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
-	gear.mab_jse_back = {name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
-	gear.FC_jse_back = 	{name="Rosmerta's Cape", augments={'"Fast Cast"+10',}}
-	gear.cure_jse_back = {name="Rosmerta's Cape",augments={'MND+20','"Cure" potency +10%',}}
+	gear.da_jse_back = 		{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	gear.stp_jse_back =	 	{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}}
+	gear.dw_jse_back =	 	{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
+	gear.crit_jse_back = 	{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}
+	gear.wsd_jse_back = 	{name="Rosmerta's Cape",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
+	gear.mab_jse_back = 	{name="Rosmerta's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}}
+	gear.FC_jse_back = 		{name="Rosmerta's Cape",augments={'HP+60','"Fast Cast"+10','Damage taken-5%',}}
+	gear.cure_jse_back = 	{name="Rosmerta's Cape",augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%',}}
 	
 	gear.obi_cure_waist = "Ovate Rope"
 	gear.obi_nuke_waist = "Ovate Rope"
@@ -56,13 +52,16 @@ function user_setup()
 	send_command('bind ^q gs c weapons Almace;gs c update')
 	send_command('bind !q gs c weapons HybridWeapons;gs c update')
 	
-	send_command('alias bludd aset spellset dd100')
+	-- aset spellset Zahak
 	send_command('alias bluddnin aset spellset dd100;input /macro set 1')
 	send_command('alias bluddwar aset spellset dd100;input /macro set 2')
 	send_command('alias bluddrdm aset spellset dd100;input /macro set 3')
 	send_command('alias bludddnc aset spellset dd100;input /macro set 4')
 	send_command('alias bluaoe aset spellset aoe;input /macro set 7')
+	send_command('alias blucleaving aset spellset cleaving;input /macro set 7')
 	send_command('alias bludynamis aset spellset Dynamis;input /macro set 6')
+	send_command('alias light input /ja "Chain Affinity" <me>;wait 1;input /ws "Savage Blade" <t>;wait 4;input /ja "Efflux" <me>;wait 2;input /ma "Thrashing Assault" <t>')
+	send_command('alias dark input /ja "Chain Affinity" <me>;wait 1;input /ws "Requiescat" <t>;wait 4;input /ja "Efflux" <me>;wait 2;input /ma "Quad. Continuum" <t>')
 	send_command('alias vw1 aset spellset vw1')
 	send_command('alias vw2 aset spellset vw2')
 
@@ -631,3 +630,40 @@ function check_trust()
 	end
 	return false
 end
+
+
+buff_spell_lists = {
+	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
+		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	When='Always'},
+		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	When='Idle'},
+		{Name='Refresh',			Buff='Refresh',			SpellID=109,	When='Idle'},
+		{Name='Nat. Meditation',	Buff='Attack Boost',	SpellID=700,	When='Engaged'},
+		{Name='Mighty Guard',		Buff='Mighty Guard',	SpellID=750,	When='Combat'},
+	},
+	
+	Default = {
+		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	Reapply=false},
+		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	Reapply=false},
+		{Name='Refresh',			Buff='Refresh',			SpellID=109,	Reapply=false},
+		{Name='Phalanx',			Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=false},
+		{Name='Stoneskin',			Buff='Stoneskin',		SpellID=54,		Reapply=false},
+		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=false},
+		{Name='Blink',				Buff='Blink',			SpellID=53,		Reapply=false},
+		{Name='Mighty Guard',		Buff='Mighty Guard',	SpellID=750,	Reapply=false},
+		{Name='Nat. Meditation',	Buff='Attack Boost',	SpellID=700,	Reapply=false},
+	},
+	
+	 aoe = {
+		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	Reapply=false},
+		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	Reapply=false},
+		{Name='Refresh',			Buff='Refresh',			SpellID=109,	Reapply=false},
+		{Name='Phalanx',			Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=false},
+		{Name='Stoneskin',			Buff='Stoneskin',		SpellID=54,		Reapply=false},
+		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=false},
+		{Name='Blink',				Buff='Blink',			SpellID=53,		Reapply=false},
+		{Name='Carcharian Verve',	Buff='Aquaveil',		SpellID=745,	Reapply=false},
+		{Name='Memento Mori',		Buff='Magic Atk. Boost',SpellID=538,	Reapply=false},
+	},
+}

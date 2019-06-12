@@ -6,8 +6,8 @@ function user_setup()
 	state.HybridMode:options('Normal','PDT')
 	state.Weapons:options('None','Akademos','Khatvanga')
 
-	gear.nuke_jse_back = {	name="Lugh's Cape", 	augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10'}}
-	gear.FC_jse_back = 	{	name="Lugh's Cape", 	augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Damage taken-5%',}}
+	gear.nuke_jse_back = {	name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10'}}
+	gear.FC_jse_back = 	{	name="Lugh's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Damage taken-5%',}}
 	
 	gear.obi_cure_back = "Tempered Cape +1"
 	gear.obi_cure_waist = "Witful Belt"
@@ -40,7 +40,7 @@ function user_setup()
 	
 	send_command('alias ta input /targetnpc')
 	send_command('alias at input /targetnpc; wait 1; input /attack <t>')
-	send_command('alias rads input //temps buy Radialens')
+	
 	send_command('alias b1 input /ja "immanence" <me>; wait 1; input /ma "luminohelix" <t>; wait 5; input /ja "immanence" <me>; wait 1; input /ma "stone" <t>; wait 4; input /ma "cryohelix" <t>')
     
 	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 2.5;/ma "Embrava" <t>')
@@ -137,18 +137,18 @@ function init_gear_sets()
 		
     sets.midcast.Cure = {main="Tamaxchi", sub="Sors Shield", ammo="Hasty Pinion +1",
 		--main="Serenity",sub="Enki Strap",
-        head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+        head="Vanya Hood",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
         back="Tempered Cape +1",waist="Bishop's Sash",legs=gear_chironic_cure_legs,feet="Kaykaus Boots"}
 
     sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Enki Strap",ammo="Hasty Pinion +1",
-        head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+        head="Vanya Hood",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
         back="Tempered Cape +1",waist="Hachirin-no-Obi",legs=gear_chironic_cure_legs,feet="Kaykaus Boots"}
 		
     sets.midcast.LightDayCure = {main="Tamaxchi", sub="Sors Shield", ammo="Hasty Pinion +1",
 		--main="Serenity",sub="Enki Strap",
-        head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+        head="Vanya Hood",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
         back="Tempered Cape +1",waist="Hachirin-no-Obi",legs=gear_chironic_cure_legs,feet="Kaykaus Boots"}
 

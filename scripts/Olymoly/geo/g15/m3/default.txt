@@ -1,18 +1,20 @@
-alias g15m3g1 /ma "Cure IV" <p0>
-alias g15m3g2 /ma "Cure IV" <p1>
-alias g15m3g3 /ma "Cure IV" <p2>
-alias g15m3g4 /ma "Cure IV" <p3>
-alias g15m3g5 /ma "Cure IV" <p4>
-alias g15m3g6 /ma "Cure IV" <p5>
-alias g15m3g7 /ma "Cure IV" <a10>
-alias g15m3g8 /ma "Cure IV" <a11>
-alias g15m3g9 /ma "Cure IV" <a12>
-alias g15m3g10 /ma "Cure IV" <a13>
-alias g15m3g11 /ma "Cure IV" <a14>
-alias g15m3g12 /ma "Cure IV" <a15>
-alias g15m3g13 /ma "Cure IV" <a20>
-alias g15m3g14 /ma "Cure IV" <a21>
-alias g15m3g15 /ma "Cure IV" <a22>
-alias g15m3g16 /ma "Cure IV" <a23>
-alias g15m3g17 /ma "Cure IV" <a24>
-alias g15m3g18 /ma "Cure IV" <a25>
+alias g15m3g1 send Dasmir input /target <p0>;gs c smartcure
+alias g15m3g2 send Dasmir input /target <p1>;gs c smartcure
+alias g15m3g3 send Dasmir input /target <p2>;gs c smartcure
+alias g15m3g4 send Dasmir input /target <p3>;gs c smartcure
+alias g15m3g5 send Dasmir input /target <p4>;gs c smartcure
+alias g15m3g6 send Dasmir input /target <p5>;gs c smartcure
+
+alias g15m3g7 send Dasmir input /target <a10>;gs c smartcure
+alias g15m3g8 send Dasmir input /target <a11>;gs c smartcure
+alias g15m3g9 send Dasmir input /target <a12>;gs c smartcure
+alias g15m3g10 send Dasmir input /target <a13>;gs c smartcure
+alias g15m3g11 send Dasmir input /target <a14>;gs c smartcure
+alias g15m3g12 send Dasmir input /target <a15>;gs c smartcure
+
+alias g15m3g13 send Dasmir input /target <a10>;gs c smartcure
+alias g15m3g14 send Dasmir input /target <a10>;gs c smartcure
+alias g15m3g15 send Dasmir input /target <a10>;gs c smartcure
+alias g15m3g16 send Dasmir input /target <a10>;gs c smartcure
+alias g15m3g17 send Dasmir input /target <a10>;gs c smartcure
+alias g15m3g18 send Dasmir input /target <a10>;gs c smartcure

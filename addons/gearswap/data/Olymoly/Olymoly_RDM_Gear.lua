@@ -140,7 +140,7 @@ function init_gear_sets()
 		back=gear.nuke_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Carmine Greaves +1"})
 
     sets.midcast.Cure = {main={name="Tamaxchi", priority=2}, sub={name="Thuellaic Ecu +1", priority=1}, ammo="Esper Stone +1",
-		head="Vanya Hood", neck="Nodens Gorget", lear="Mendi. Earring" rear="Novia Earring",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Mendi. Earring" rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring 
 		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
 		-- Atrophy Tights +3 Vanya Clogs
@@ -148,7 +148,7 @@ function init_gear_sets()
 
     sets.midcast.LightWeatherCure = {main={name="Chatoyant Staff", priority=2}, sub={name="Curatio Grip", priority=1}, ammo="Esper Stone +1",
 		--
-		head="Vanya Hood", neck="Nodens Gorget",, lear="Mendi. Earring" rear="Novia Earring",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Mendi. Earring" rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring
 		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
 		-- Atrophy Tights +3 Vanya Clogs
@@ -182,15 +182,9 @@ function init_gear_sets()
 		--waist="Gishdubar Sash"
 		}
 	sets.Self_Refresh = {back="Grapevine Cape",}--waist="Gishdubar Sash"
-	sets.midcast.Phalanx = {
-		head=gear_taeon_head_Phalanx, neck="Incanter's Torque", ear1="Andoaa Earring", rear="Augment. Earring",
-		-- Stikini Ring +1 Stikini Ring +1
-		body=gear_telchine_body_Duration, hands=gear_taeon_hands_Phalanx, ring1="Stikini Ring", ring2="Stikini Ring",
-		-- 
-		back="Ghostfyre Cape", waist="Olympus Sash", legs=gear_taeon_legs_Phalanx, feet=gear_taeon_feet_Phalanx}
-		
+	
 	-- Duration
-	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion +1",
+	sets.midcast['Enhancing Magic'] = {main="Oranyan", sub=empty, ammo="Hasty Pinion +1",
 		-- main="Arendsi Fleuret",sub="Ammurapi Shield",
 		-- Duelist's Torque +2 
 		head=gear_telchine_head_Duration, neck="Incanter's Torque", ear1="Andoaa Earring", rear="Augment. Earring",
@@ -208,7 +202,7 @@ function init_gear_sets()
 		back="Ghostfyre Cape", waist="Olympus Sash", legs="Leth. Fuseau", feet="Leth. Houseaux"}
 	
 	-- Phalanx Potency
-	sets.midcast.Phalanx = {
+	sets.midcast.Phalanx = {main="Oranyan", sub=empty,
 		head=gear_taeon_head_Phalanx, neck="Incanter's Torque", ear1="Andoaa Earring", ear2="Gifted Earring", 
 		-- Stikini Ring +1 Stikini Ring +1
 		body=gear_telchine_body_Duration, hands=gear_taeon_hands_Phalanx, ring1="Stikini Ring", ring2="Stikini Ring",

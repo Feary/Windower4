@@ -94,7 +94,10 @@ send_command('bind !t input /target <bt>') --Targets the battle target.
 send_command('bind @p gs equip sets.Sheltered') --Equip sheltered ring, for when being Pro/Shelled.
 send_command('bind !p gs equip sets.Cure_Received') --Equip Cure Potency Received set for when being cured.
 send_command('bind @m gs c mount Hippogryph')
-send_command('alias ambuseal gs c ambuseal')
+send_command('alias ambuseal input /item "Abdhaljs Seal" <me>')
+send_command('alias rads temps buy Radialens')
+send_command('alias fol send dasmir input /follow olymoly;send aniyah input /follow olymoly')
+send_command('alias unfol sat allcommand unfollow')
 
 --Place to override Tables and other definitions you may want to.
 
