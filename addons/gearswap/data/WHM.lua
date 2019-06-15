@@ -527,6 +527,7 @@ buff_spell_lists = {
 		{Name='Barthundra',		Buff='Barthunder',	SpellID=70,		Reapply=false},
 		{Name='Barparalyzra',	Buff='Barparalyze',	SpellID=88,		Reapply=false},
 	},
+	
 	Melee = {
 		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	Reapply=false},
 		{Name='Haste',			Buff='Haste',		SpellID=57,		Reapply=false},

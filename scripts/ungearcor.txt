@@ -26,7 +26,7 @@ put Enervating Earring safe2 all
 put Herculean Boots sack all
 put Holliday safe2 all
 put Impulse Belt safe2 all
-put Kaja Sword sack all
+put Naegling sack all
 put Kaja Knife sack all
 put Kustawi +1 safe2 all
 put Kwahu Kachina Belt safe2 all

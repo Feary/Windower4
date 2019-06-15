@@ -15,26 +15,17 @@ function user_setup()
     gear.QDbullet = "Animikii Bullet" -- Living Bullet  Omphalous Bullet 
     options.ammo_warning_limit = 15
 
-	-- 1Snapshot
-	gear.snapshot_jse_back = {name="Camulus's Mantle", augments={'"Snapshot"+10',}}	
-	-- 2Last Stand
-	gear.ranger_wsd_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}}
-	-- 3Savage Blade
-	gear.str_wsd_jse_back = {name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	-- 4Melee TP DW
-	gear.DW_jse_back = {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dual Wield"+10','Damage taken-5%',}}
-	-- 5Ranged TP
-	gear.tp_ranger_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}}
-	-- 6Leaden/Wildfire
-	gear.magic_wsd_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
-	-- 7Melee TP DA 'Damage taken-5%',
-	gear.tp_jse_back = {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	-- 8Crit RA TP
-	gear.crit_ranger_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Crit.hit rate+10',}}
-	-- 9Quick Draw
-	gear.magic_QD_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
-	-- 10-fastcast
-	gear.FC_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
+
+	gear.snapshot_jse_back = {		name="Camulus's Mantle", augments={'"Snapshot"+10',}}	
+	gear.ranger_wsd_jse_back = {	name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}}
+	gear.str_wsd_jse_back = {		name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
+	gear.DW_jse_back = {			name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dual Wield"+10','Damage taken-5%',}}
+	gear.tp_ranger_jse_back = {		name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}}
+	gear.magic_wsd_jse_back = {		name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	gear.tp_jse_back = {			name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	gear.crit_ranger_jse_back = {	name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Crit.hit rate+10',}}
+	gear.magic_QD_jse_back = {		name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
+	gear.FC_jse_back = {			name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
 	
 	send_command('alias das send Dasmir /targetnpc;wait 1;send Dasmir Horde Lullaby;wait 1;send dasmir /follow olymoly')
 
@@ -481,13 +472,13 @@ function init_gear_sets()
 	-- Last Stand Dual Ranged
 	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Kaja Knife",range="Molybdosis"}
 	-- Fencer Savage 
-	sets.weapons.SavageWeapons = {main="Kaja Sword",sub="Nusku Shield", range="Molybdosis"}--range="Ataktos"
+	sets.weapons.SavageWeapons = {main="Naegling",sub="Nusku Shield", range="Molybdosis"}--range="Ataktos"
 	-- DW Savage
-	sets.weapons.DualWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Molybdosis"}--range="Ataktos"
+	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Molybdosis"}--range="Ataktos"
 	-- Leaden/Wildfire  Rostam Path A
-	sets.weapons.LeadenWeapons = {main="Kaja Sword",sub="Kaja Knife",range="Molybdosis"}--range="Fomalhaut"
+	sets.weapons.LeadenWeapons = {main="Naegling",sub="Kaja Knife",range="Molybdosis"}--range="Fomalhaut"
 	-- Rolling
-	sets.weapons.RollMeleeWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Compensator"}
+	sets.weapons.RollMeleeWeapons = {main="Naegling",sub="Blurred Knife +1",range="Compensator"}
 	sets.weapons.RollRangedWeapons = {main="Kustawi +1",sub="Nusku Shield", range="Compensator"}
 
     -- Engaged sets

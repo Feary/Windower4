@@ -238,8 +238,8 @@ function init_gear_sets()
 
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
 	-- Duration
-	sets.midcast['Enhancing Magic'] = {ammo="Clarus Stone",
-		-- main=gear.gada_enhancing_club,sub="Ammurapi Shield",
+	sets.midcast['Enhancing Magic'] = {sub="Ammurapi Shield", ammo="Clarus Stone",
+		-- main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
@@ -247,46 +247,44 @@ function init_gear_sets()
 		back="Mending Cape", waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 
 	sets.midcast.BarElement = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
-		--sub="Ammurapi Shield",
 		-- neck="Incantor's Torque", 
 		head="Ebers Cap +1", neck="Colossus's Torque",  lear="Andoaa Earring", 
 		body="Ebers Bliaud +1", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--back="Merciful Cape", 
 		back=gear.fastcast_jse_back, waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
-	sets.midcast.BarElement['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
-		--sub="Ammurapi Shield",
+	sets.midcast.BarElement['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- neck="Incantor's Torque", 
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Andoaa Earring", 
 		body="Ebers Bliaud +1", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.fastcast_jse_back, waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 		
-	sets.midcast.BarStatus = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
-		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
+	sets.midcast.BarStatus = {main={name="Beneficus", priority=2}, sub={name="Ammurapi Shield", priority=1},
+		--main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque",
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 
-	sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
-		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
+	sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Ammurapi Shield", priority=1},
+		--main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
-		--  back="Merciful Cape", feet="Theophany Duckbills +3"
-		waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		-- feet="Theophany Duckbills +3"
+		back="Mending Cape", waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
 
 	-- 500 Skill
-	sets.midcast.BoostStat = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
-		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
+	sets.midcast.BoostStat = {main={name="Beneficus", priority=2}, sub={name="Ammurapi Shield", priority=1},
+		--main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 
-	sets.midcast.BoostStat['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
-		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
+	sets.midcast.BoostStat['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Ammurapi Shield", priority=1},
+		--main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque", 
 		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
@@ -297,9 +295,10 @@ function init_gear_sets()
 
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'], {})
 
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod"})--,sub="Ammurapi Shield",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Ammurapi Shield"})--hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",
+	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {
+		main={name="Bolelabunga",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		head="Inyanga Tiara +2",
 		body="Piety Briault +1", hands="Ebers Mitts +1",
 		-- feet=gear_telchine_feet_Regen
@@ -311,7 +310,7 @@ function init_gear_sets()
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {legs="Piety Pantaln. +1"})
 
 	sets.midcast.Impact = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -319,7 +318,7 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 		
 	sets.midcast['Elemental Magic'] = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat neck="Sanctity Necklace",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Friomisi Earring", rear="Hecate's Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
@@ -328,7 +327,7 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Elemental Magic'].Resistant = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat neck="Sanctity Necklace",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Regal Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
@@ -337,7 +336,7 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Divine Magic'] = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat neck="Sanctity Necklace",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Friomisi Earring", rear="Regal Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
@@ -346,7 +345,7 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Dark Magic'] = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat neck="Sanctity Necklace", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -354,7 +353,7 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
     sets.midcast.Drain = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -362,7 +361,7 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
     sets.midcast.Drain.Resistant = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -373,7 +372,7 @@ function init_gear_sets()
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
 
 	sets.midcast.Stun = {-- Grioavolr  Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat Dign. Earring or  rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -381,7 +380,7 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast.Stun.Resistant = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -389,7 +388,7 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Enfeebling Magic'] = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat Theo. Cap +2 lear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -397,7 +396,7 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {-- Grioavolr Pemphredo Tathlum
-		main={name="Arasy Staff",priority=2}, sub={name="Enki Strap", priority=1},
+		main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		-- Chironic Hat  rear="Enchntr. Earring +1",
 		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Gwati Earring", rear="Regal Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
@@ -555,7 +554,7 @@ buff_spell_lists = {
 		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=false},
 		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=false},
 		{Name='Aurorastorm',	Buff='Aurorastorm',	SpellID=119,	Reapply=false},
-		--{Name='Barthundra',		Buff='Barthunder',	SpellID=70,		Reapply=false},
+		--{Name='Barthundra',	Buff='Barthunder',	SpellID=70,		Reapply=false},
 		--{Name='Barparalyzra',	Buff='Barparalyze',	SpellID=88,		Reapply=false},
 	},
 	melee = {

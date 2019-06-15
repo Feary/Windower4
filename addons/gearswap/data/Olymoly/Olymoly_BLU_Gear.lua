@@ -362,21 +362,21 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Magical = {ammo="Pemphredo Tathlum",
 		-- Kaja Rod
-		main="Kaja Sword", sub="Nibiru Cudgel",
+		main="Naegling", sub="Nibiru Cudgel",
 		-- Baetyl Pendant
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,{ammo="Pemphredo Tathlum",
-		main="Kaja Sword", sub="Nibiru Cudgel",
+		main="Naegling", sub="Nibiru Cudgel",
 		-- Baetyl Pendant
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"})
 
 	sets.midcast['Blue Magic'].Magical.Fodder = {ammo="Pemphredo Tathlum",
-		main="Kaja Sword", sub="Nibiru Cudgel",
+		main="Naegling", sub="Nibiru Cudgel",
 		-- Baetyl Pendant
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
@@ -387,13 +387,13 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].MagicalVit = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
-	sets.midcast['Blue Magic'].MagicAccuracy = {main="Kaja Sword",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
+	sets.midcast['Blue Magic'].MagicAccuracy = {main="Naegling",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
 		-- Assim +3 
 		head="Carmine Mask +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Digni. Earring",
 		body="Jhakri Robe +2", hands="Aya. Manopolas +2", lring="Stikini Ring", rring="Stikini Ring",
 		back="Cornflower Cape", waist="Eschan Stone", legs="Ayanmo Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.midcast['Enfeebling Magic'] = {main="Kaja Sword",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'] = {main="Naegling",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
 		-- Assim +3 
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Digni. Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Stikini Ring", rring="Stikini Ring",
@@ -591,12 +591,12 @@ function init_gear_sets()
 	
 	-- Weapon Set
 	--sets.weapons.Tizalmace = {main="Tizona",sub="Almace"}
-	sets.weapons.Ambu = {main="Kaja Sword", sub="Tanmogayi +1"}
+	sets.weapons.Ambu = {main="Naegling", sub="Tanmogayi +1"}
 	sets.weapons.MeleeClubs = {main="Tokko Rod",sub="Nibiru Cudgel"}
 	--sets.weapons.Almace = {main="Almace",sub="Sequence"}
 	--sets.weapons.Sequence = {main="Sequence",sub="Almace"}
-	sets.weapons.MagicWeapons = {main="Kaja Sword",sub="Nibiru Cudgel"} --sub="Kaja Rod"
-	sets.weapons.MaccWeapons = {main="Kaja Sword",sub="Nibiru Cudgel"}--main="Iris",sub="Iris"
+	sets.weapons.MagicWeapons = {main="Naegling",sub="Nibiru Cudgel"} --sub="Kaja Rod"
+	sets.weapons.MaccWeapons = {main="Naegling",sub="Nibiru Cudgel"}--main="Iris",sub="Iris"
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets

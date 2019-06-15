@@ -34,7 +34,7 @@ put Jhakri Cuffs +2 case all
 put Jhakri Pigaches +2 case all
 put Jhakri Robe +2 case all
 put Jhakri Slops +2 case all
-put Kaja Sword sack all
+put Naegling sack all
 put Kaja Knife sack all
 put Luh. Bazubands +1 sack all
 put Luh. Keffiyeh +1 sack all

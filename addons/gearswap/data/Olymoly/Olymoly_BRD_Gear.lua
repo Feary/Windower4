@@ -74,7 +74,7 @@ function init_gear_sets()
 	
 	sets.precast.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat"})
 
-	sets.precast.FC.BardSong = {main="Oranyan",  sub=none, -- Clericy Strap +1
+	sets.precast.FC.BardSong = {main="Oranyan", sub=none, -- Clericy Strap +1
 		head="Fili Calot +1", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
         back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet=gear_telchine_feet_Song}

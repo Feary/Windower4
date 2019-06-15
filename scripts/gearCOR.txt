@@ -26,7 +26,7 @@ get Enervating Earring safe2 all
 get Herculean Boots sack all
 get Holliday safe2 all
 get Impulse Belt safe2 all
-get Kaja Sword sack all
+get Naegling sack all
 get Kaja Knife sack all
 get Kustawi +1 safe2 all
 get Kwahu Kachina Belt safe2 all
