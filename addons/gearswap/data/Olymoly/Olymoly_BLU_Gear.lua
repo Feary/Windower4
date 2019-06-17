@@ -452,7 +452,7 @@ function init_gear_sets()
 	sets.element.Light = {} --ring2="Weatherspoon Ring"
 
 	sets.midcast.Cure = {ammo="Pemphredo Tathlum",
-		main="Tokko Rod",sub="Nibiru Cudgel",
+		main="Ajja Rod",sub="Nibiru Cudgel",
 		head="Carmine Mask +1", neck="Phalaina Locket", lear="Regal Earring", rear="Enchntr. Earring +1",
 		-- Vrikodata Jupon 
 		body=gear_telchine_body_CureRecieved, hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
@@ -592,7 +592,7 @@ function init_gear_sets()
 	-- Weapon Set
 	--sets.weapons.Tizalmace = {main="Tizona",sub="Almace"}
 	sets.weapons.Ambu = {main="Naegling", sub="Tanmogayi +1"}
-	sets.weapons.MeleeClubs = {main="Tokko Rod",sub="Nibiru Cudgel"}
+	sets.weapons.MeleeClubs = {main="Ajja Rod",sub="Nibiru Cudgel"}
 	--sets.weapons.Almace = {main="Almace",sub="Sequence"}
 	--sets.weapons.Sequence = {main="Sequence",sub="Almace"}
 	sets.weapons.MagicWeapons = {main="Naegling",sub="Nibiru Cudgel"} --sub="Kaja Rod"
