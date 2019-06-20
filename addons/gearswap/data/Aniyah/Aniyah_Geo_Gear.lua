@@ -34,6 +34,9 @@ function user_setup()
 	send_command('bind ^delete input /ma "Aspir III" <t>')
 	send_command('bind @delete input /ma "Sleep" <t>')
 	
+	-- Alias
+	send_command('alias ageomelee gs c autogeo frailty;gs c autoindi haste')
+	
 	indi_duration = 290
 	
 	select_default_macro_book()

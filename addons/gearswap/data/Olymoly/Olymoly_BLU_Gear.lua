@@ -362,11 +362,11 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Magical = {ammo="Pemphredo Tathlum",
 		-- Kaja Rod
-		main="Naegling", sub="Nibiru Cudgel",
+		main="Kaja Rod", sub="Naegling",
 		-- Baetyl Pendant
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
+		back=gear.mab_jse_back, waist="Hachirin-no-obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,{ammo="Pemphredo Tathlum",
 		main="Naegling", sub="Nibiru Cudgel",
@@ -380,7 +380,7 @@ function init_gear_sets()
 		-- Baetyl Pendant
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
-		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
+		back=gear.mab_jse_back, waist="Hachirin-no-obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Blue Magic'].MagicalMnd = set_combine(sets.midcast['Blue Magic'].Magical, {ring1="Stikini Ring",ring2="Stikini Ring",waist="Luminary Sash"})
 	sets.midcast['Blue Magic'].MagicalChr = set_combine(sets.midcast['Blue Magic'].Magical, {})
@@ -427,19 +427,19 @@ function init_gear_sets()
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 
 	sets.midcast['Divine Magic'] = {ammo="Pemphredo Tathlum",
-		main="Nibiru Cudgel", sub="Vampirism",
+		main="Ajja Rod", sub="Kaja Sword",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Elemental Magic'] = {ammo="Pemphredo Tathlum",
-		main="Nibiru Cudgel", sub="Vampirism",
+		main="Ajja Rod", sub="Kaja Sword",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Elemental Magic'].Resistant = {ammo="Pemphredo Tathlum",
-		main="Nibiru Cudgel", sub="Vampirism",
+		main="Ajja Rod", sub="Kaja Sword",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Digni. Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
@@ -485,7 +485,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic']['White Wind'] = {ammo="Mavi Tathlum",
 		-- Dualism Collar +1
 		head="Adhemar Bonnet +1", neck="Sanctity Necklace", lear="Odnowa Earring +1", rear="Odnowa Earring",
-		--gear_telchine_body_CuredRecieved Pinga Tunic
+		--gear_telchine_body_Cured Recieved Pinga Tunic
 		body="Assim. Jubbah +1", hands=gear_telchine_hands_Cure, lring="Ilabrat Ring", rring="Supershear Ring",
 		-- Oneiros Belt   Pinga Pants
 		back=gear.cure_jse_back, waist=gear.ElementalObi, legs="Gyve Trousers", feet="Skaoi Boots"}
@@ -592,11 +592,11 @@ function init_gear_sets()
 	-- Weapon Set
 	--sets.weapons.Tizalmace = {main="Tizona",sub="Almace"}
 	sets.weapons.Ambu = {main="Naegling", sub="Tanmogayi +1"}
-	sets.weapons.MeleeClubs = {main="Ajja Rod",sub="Nibiru Cudgel"}
+	sets.weapons.MeleeClubs = {main="Kaja Rod",sub="Nibiru Cudgel"}
 	--sets.weapons.Almace = {main="Almace",sub="Sequence"}
 	--sets.weapons.Sequence = {main="Sequence",sub="Almace"}
-	sets.weapons.MagicWeapons = {main="Naegling",sub="Nibiru Cudgel"} --sub="Kaja Rod"
-	sets.weapons.MaccWeapons = {main="Naegling",sub="Nibiru Cudgel"}--main="Iris",sub="Iris"
+	sets.weapons.MagicWeapons = {main="Naegling", sub="Kaja Rod"} --
+	sets.weapons.MaccWeapons = {main="Naegling", sub="Kaja Rod"}--main="Iris",sub="Iris"
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets
