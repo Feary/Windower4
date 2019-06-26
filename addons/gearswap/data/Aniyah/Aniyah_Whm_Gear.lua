@@ -2,7 +2,7 @@
 function user_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant')
-    state.IdleMode:options('Normal','PDT')
+    state.IdleMode:options('Normal','PDT','MEVA')
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -429,43 +429,43 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main={name="Bolelabunga", priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- ammo="Homillary",
-		head="Befouled Crown",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+		head="Befouled Crown",  neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
 
 	sets.idle.PDT = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
-		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		
+	sets.idle.MEVA = {main={name="Earth Staff", priority=2}, sub={name="Enki Strap", priority=1},
+		head="Inyanga Tiara +2",  neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shadow Ring", rring="Defending Ring",
+		back=gear.fastcast_jse_back, waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
 	sets.idle.Weak = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
-		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     -- Defense sets
 	sets.defense.PDT = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
-		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Vocane Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.defense.MDT = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
-		head="Inyanga Tiara +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+	sets.defense.MDT ={main={name="Earth Staff", priority=2}, sub={name="Enki Strap", priority=1},
+		head="Inyanga Tiara +2",  neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shadow Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Austerity Belt", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}			
 
-    sets.defense.MEVA = {main={name="Earth Staff", priority=2}, sub={name="Pax Grip", priority=1},
-		head="Inyanga Tiara +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Merman's Earring",
+    sets.defense.MEVA = {main={name="Earth Staff", priority=2}, sub={name="Enki Strap", priority=1},
+		head="Inyanga Tiara +2",  neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shadow Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 		
-	-- Gear for specific elemental nukes.
-	sets.element.Wind = {}
-	sets.element.Ice = {}
-	sets.element.Earth = {}
-
 	-- Engaged sets
 
     -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous

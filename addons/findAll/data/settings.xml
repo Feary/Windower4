@@ -43,6 +43,14 @@
             </text>
         </Tracker>
     </global>
+    <dasmir>
+        <Tracker>
+            <pos>
+                <x>1</x>
+                <y>1064</y>
+            </pos>
+        </Tracker>
+    </dasmir>
     <olymoly>
         <Tracker>
             <pos>

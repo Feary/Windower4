@@ -427,19 +427,19 @@ function init_gear_sets()
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 
 	sets.midcast['Divine Magic'] = {ammo="Pemphredo Tathlum",
-		main="Ajja Rod", sub="Kaja Sword",
+		main="Ajja Rod", sub="Naegling",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Elemental Magic'] = {ammo="Pemphredo Tathlum",
-		main="Ajja Rod", sub="Kaja Sword",
+		main="Ajja Rod", sub="Naegling",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Elemental Magic'].Resistant = {ammo="Pemphredo Tathlum",
-		main="Ajja Rod", sub="Kaja Sword",
+		main="Ajja Rod", sub="Naegling",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Digni. Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
@@ -697,7 +697,7 @@ function init_gear_sets()
 	sets.Healing_Club = {}
 	sets.Healing_DWClub = {}
 	sets.Cure_Received = {neck="Phalaina Locket",ring2="Kunaji Ring",}--waist="Gishdubar Sash" hands="Buremte Gloves",
-	sets.Self_Refresh = {}--back="Grapevine Cape",waist="Gishdubar Sash"
+	sets.Self_Refresh = {back="Grapevine Cape"}--waist="Gishdubar Sash"
 	sets.MagicBurst = {hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring"}
 end
 

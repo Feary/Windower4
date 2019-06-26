@@ -35,13 +35,13 @@ local bags = {
 }
 
 local pulse_items = {
-    [18457] = 'Murasamemaru',
-    [18542] = 'Aytanri',
-    [18904] = 'Ephemeron',
-    [19144] = 'Coruscanti',
-    [19145] = 'Asteria',
-    [19174] = 'Borealis',
-    [19794] = 'Delphinius',
+    --[18457] = 'Murasamemaru',
+    --[18542] = 'Aytanri',
+    --[18904] = 'Ephemeron',
+    --[19144] = 'Coruscanti',
+    --[19145] = 'Asteria',
+    --[19174] = 'Borealis',
+    --[19794] = 'Delphinius',
 }
 
 local cells = {
