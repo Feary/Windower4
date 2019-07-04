@@ -1,6 +1,12 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
+        <akilee>
+
+        </akilee>
+        <almontay>
+
+        </almontay>
         <autoupdate>true</autoupdate>
         <blinking>
             <all>
@@ -29,18 +35,54 @@
                 <target>true</target>
             </self>
         </blinking>
+        <dayanna>
+
+        </dayanna>
+        <deliah>
+
+        </deliah>
+        <drecien>
+
+        </drecien>
         <feary>
 
         </feary>
+        <fearyjunior>
+
+        </fearyjunior>
+        <gonzaloo>
+
+        </gonzaloo>
+        <kavita>
+
+        </kavita>
+        <mehany>
+
+        </mehany>
+        <midnightclamm>
+
+        </midnightclamm>
+        <molyoly>
+
+        </molyoly>
+        <mostmost>
+
+        </mostmost>
         <olymoly>
 
         </olymoly>
         <others>
 
         </others>
+        <perseise>
+
+        </perseise>
         <profiles>
 
         </profiles>
+        <ravindra>
+
+        </ravindra>
         <replacements>
             <body>
 
@@ -73,5 +115,8 @@
 
             </sub>
         </replacements>
+        <symbio>
+
+        </symbio>
     </global>
 </settings>

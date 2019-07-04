@@ -69,7 +69,8 @@ gear_helios_hands_FC = { name="Helios Gloves", augments={'"Fast Cast"+5',}}
 -- MAB 20 MACC 20 Snowdim Occult Acumen +1~10 Leafdim
 gear_helios_feet_occult = { name="Helios Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','"Occult Acumen"+10',}}
 
-gear.gada_enhancing_club = {name="Gada",augments={'Enh. Mag. eff. dur. +6','STR+3','Mag. Acc.+8','"Mag.Atk.Bns."+17','DMG:+7',}}
+gear.gada_enhancing_club = {name="Gada", augments={'Accuracy+1','"Conserve MP"+3','"Refresh"+1',}}
+gear.gada_refresh_club = {name="Gada", augments={'Accuracy+1','"Conserve MP"+3','"Refresh"+1',}}
 --gear.gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+11','"Mag.Atk.Bns."+13','DMG:+3',}}
 
 --gear.grioavolr_nuke_staff = {name="Grioavolr",augments={'Magic burst dmg.+8%','MP+61','Mag. Acc.+16','"Mag.Atk.Bns."+30','Magic Damage +7',}}

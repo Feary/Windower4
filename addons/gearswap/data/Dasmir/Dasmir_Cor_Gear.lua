@@ -15,23 +15,25 @@ function user_setup()
     options.ammo_warning_limit = 15
 
 	-- Snapshot
-	gear.snapshot_jse_back = {name="Camulus's Mantle", augments={'"Snapshot"+10',}}	
+	gear.snapshot_jse_back = 	{name="Camulus's Mantle", augments={'"Snapshot"+10',}}	
 	-- Ranged TP
-	gear.tp_ranger_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10','Damage taken-5%',}}
+	gear.tp_ranger_jse_back =	{name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10','Damage taken-5%',}}
 	-- Crit RA TP
-	gear.crit_ranger_jse_back= {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','Crit.hit rate+10',}}
+	gear.crit_ranger_jse_back= 	{name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','Crit.hit rate+10',}}
 	-- Last Stand
-	gear.ranger_wsd_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}}
+	gear.ranger_wsd_jse_back = 	{name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}}
 	-- Leaden/Wildfire
-	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}	
+	gear.magic_wsd_jse_back = 	{name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}	
 	-- Melee TP
-	gear.tp_jse_back = {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	gear.tp_jse_back = 			{name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
 	-- DW
-	gear.DW_jse_back = {name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}}
+	gear.DW_jse_back = 			{name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}}
 	-- Savage Blade
-	gear.str_wsd_jse_back = {name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
+	gear.str_wsd_jse_back = 	{name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 	-- - Quick Draw
-	gear.magic_QD_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10','Damage taken-5%',}}
+	gear.magic_QD_jse_back = 	{name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10','Damage taken-5%',}}
+	-- Fast Cast
+	gear.FC_jse_back = 			{name="Camulus's Mantle", augments={'MP+60','"Fast Cast"+10',}}
 	
     -- Additional local binds
 	send_command('bind !f11 gs c cycle ExtraMeleeMode')
@@ -155,21 +157,21 @@ function init_gear_sets()
 		-- neck="Comm. Charm +2
 		head=gear_taeon_head_Snapshot,
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1",
-		-- waist="Impulse Belt", legs="Laksa. Trews +3"
-		back=gear.snapshot_jse_back, waist="Yemaya Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"}
+		-- legs="Laksa. Trews +3"
+		back=gear.snapshot_jse_back, waist="Impulse Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {
 		-- neck="Comm. Charm +2
 		head=gear_taeon_head_Snapshot,
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1",
 		-- waist="Impulse Belt", legs="Laksa. Trews +3"
-		back=gear.snapshot_jse_back, waist="Yemaya Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"})
+		back=gear.snapshot_jse_back, waist="Impulse Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"})
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {
 		-- neck="Comm. Charm +2
 		head=gear_taeon_head_Snapshot,
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1",
-		-- waist="Impulse Belt", legs="Laksa. Trews +3"
-		back=gear.snapshot_jse_back, waist="Yemaya Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"})
+		-- legs="Laksa. Trews +3"
+		back=gear.snapshot_jse_back, waist="Impulse Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"})
 
        
     -- Weaponskill sets
@@ -243,7 +245,7 @@ function init_gear_sets()
     sets.precast.WS['Split Shot'].Acc = sets.precast.WS['Last Stand'].Acc
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
-		--  neck="Baetyl Pendant",  Comm. Neck +2
+		-- neck="Baetyl Pendant", Comm. Neck +2
 		head="Pixie Hairpin +1", neck="Fotia Gorget", lear="Friomisi Earring", rear="Moonshade Earring",
 		-- Lanun Frac +3  rring="Archon Ring",
 		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Regal Ring",
@@ -299,24 +301,24 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-		--  neck="Iskur Gorget", lear="Telos Earring", 
-		head="Meghanada Visor +2", neck="Ocachi Gorget", lear="Neritic Earring",rear="Enervating Earring",
+		-- lear="Telos Earring", 
+		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Neritic Earring",rear="Enervating Earring",
 		-- Nisroch Jerkin  Adhemar Wristbands +1 Path C
 		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Ilabrat Ring", rring="Dingir Ring", 
 		-- legs="Adhemar Kecks +1", Path C Feet="Adhemar Gamashes +1" Path D
 		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +2", feet="Adhemar Gamashes"}
 	
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
-		-- neck="Iskur Gorget", lear="Telos Earring", 
-		head="Meghanada Visor +2", neck="Ocachi Gorget", lear="Neritic Earring",rear="Enervating Earring",
+		-- lear="Telos Earring", 
+		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Neritic Earring",rear="Enervating Earring",
 		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Ilabrat Ring", rring="Regal Ring",
 		-- legs="Adhemar Kecks +1", 
 		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 		
 	 sets.midcast.RA.Crit = {ammo=gear.RAbullet,
-		-- neck="Iskur Gorget", lear="Telos Earring", 
-		head="Meghanada Visor +2", neck="Ocachi Gorget", lear="Neritic Earring",rear="Enervating Earring",
-		--  rring="Hajduk Ring", 
+		-- lear="Telos Earring", 
+		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Neritic Earring",rear="Enervating Earring",
+		-- rring="Hajduk Ring", 
 		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Ilabrat Ring", rring="Regal Ring",
 		-- legs="Adhemar Kecks +1", 
 		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
@@ -376,7 +378,7 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	--Weapon Sets
-	--'Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
+	-- 'Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
 	-- Fencer Last Stand Rostam
 	sets.weapons.Default = {main="Kustawi +1",sub="Nusku Shield",range="Holliday"}--range="Fomalhaut"
 	-- Last Stand Dual Ranged
@@ -403,7 +405,7 @@ function init_gear_sets()
 	-- Single Weapon
     sets.engaged = {
 		-- head="Adhemar Bonnet +1" neck="Iskur Gorget", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1"
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
 		--  feet="Herculean Boots", TA
@@ -411,7 +413,7 @@ function init_gear_sets()
 
     sets.engaged.Acc = {
 		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1" rring="Chirich Ring +1",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
 		-- waist="Olseni Belt",
