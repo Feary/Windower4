@@ -53,9 +53,11 @@ function init_gear_sets()
 	-- Single 
 	sets.weapons.Default = {main="Carnwenhan", sub="Genbu's Shield"}
 	sets.weapons.Twashtar = {main="Twashtar", sub="Genbu's Shield"}
+	sets.weapons.Mandau = {main="Mandau", sub="Genbu's Shield"}
 	--sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
-	sets.weapons.DualWeapons = {main="Twashtar",sub="Kaja Knife"}
-	sets.weapons.DualSwords = {main="Vampirism",sub="Vampirism"}
+	sets.weapons.Sword = {main="Naegling", sub="Genbu's Shield"}
+	sets.weapons.DualWeapons = {main="Twashtar",sub="Mandau"}
+	sets.weapons.DualSwords = {main="Naegling",sub="Vampirism"}
 	sets.weapons.DualNukeWeapons = {main="Malevolence",sub="Malevolence"}
 	
 	-- Precast Sets
@@ -139,6 +141,13 @@ function init_gear_sets()
 		back=gear.wsd_jse_back, waist="Grunfeld Rope", legs="Lustr. Subligar +1", feet="Lustra. Leggings +1"})
 		
 	sets.precast.WS["Mordant Rime"] = set_combine(sets.precast.WS, {ranged=gear.Instrument_wsd,
+		-- Bard's Charm +3
+		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Cessance Earring", rear="Regal Earring",
+		body="Bihu Jstcorps. +3", hands="Bihu Cuffs +3", lring="Epaminondas's Ring", rring="Ilabrat Ring",
+		back=gear.wsd_jse_back, waist="Grunfeld Rope", legs="Bihu Cannions +3", feet="Bihu Slippers +3"})
+		
+	-- Sword
+	sets.precast.WS["Savage Blade"] = set_combine(sets.precast.WS, {ranged=gear.Instrument_wsd,
 		-- Bard's Charm +3
 		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Cessance Earring", rear="Regal Earring",
 		body="Bihu Jstcorps. +3", hands="Bihu Cuffs +3", lring="Epaminondas's Ring", rring="Ilabrat Ring",

@@ -29,9 +29,9 @@ gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'"Fast Cast"+5',}}
 gear_telchine_head_Duration = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
 gear_telchine_head_Siphon = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
 
--- Body -- Duskdim Leaforb 
-gear_telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}}
-gear_telchine_body_Siphon = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}}
+-- Body  Leaforb 
+gear_telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
+gear_telchine_body_Siphon = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
 
 --Hands 
 gear_telchine_hands_Cure = { name="Telchine Gloves",augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
@@ -42,7 +42,7 @@ gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. ef
 gear_telchine_legs_Siphon = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
 
 -- Feet 
-gear_telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}}
+gear_telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}}
 -- DuskDim
 gear_telchine_feet_Regen = { name="Telchine Pigaches", augments={'"Regen" potency+3',}}
 
@@ -52,9 +52,9 @@ gear_telchine_feet_Regen = { name="Telchine Pigaches", augments={'"Regen" potenc
 
 -- Head occult
 gear_helios_head_occult = { name="Helios Band", augments={'Pet: Attack+26 Pet: Rng.Atk.+26','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
--- Snoworb  Leaforb Duskorb
+-- Snoworb Leaforb Duskorb
 -- name="Helios Band", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+7',}},
-gear_helios_head_BP = {name="Helios Band", augments={'Pet: "Dbl. Atk."+8',}}
+gear_helios_head_BP = {name="Helios Band", augments={'Pet: Attack+26 Pet: Rng.Atk.+26','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
 
 -- Body 
 -- Occult Acumen
