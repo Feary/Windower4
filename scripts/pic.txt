@@ -1,0 +1,6 @@
+lua unload repeater
+lua load repeater
+repeater command input /equip ammo "Blank Soulplate";wait 1;input /item "Soultrapper 2000" <t>
+repeater delay 33
+repeater count 50
+

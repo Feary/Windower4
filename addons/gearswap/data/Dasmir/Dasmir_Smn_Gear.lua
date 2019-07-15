@@ -8,12 +8,12 @@ function user_setup()
 	-- Avatar Ammo - 
 	gear.avatar_ammo = {name="Sancus Sachet +1"}
 	-- Staves
-	-- Nirvana
-	gear.perp_staff = {name="Gridarvor"}
+	gear.perp_staff = {name="Nirvana"}
 	gear.skill_staff = {name="Espiritus"}
-	gear.phys_BP_Staff = {name="Gridarvor"}
-	-- Nirvana grioavolr
-	gear.magic_BP_Staff = {name="Espiritus"}
+	gear.phys_BP_Staff = {name="Nirvana"}
+	-- Grioavolr BPD +10 
+	gear.magic_BP_Staff = {name="Nirvana"}
+	gear.macc_BP_Staff = {name="Nirvana"}
 	
 	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: "Regen"+5',}}
 	gear.phys_jse_back = {name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','System: 1 ID: 1247 Val: 4',}}
@@ -240,7 +240,7 @@ function init_gear_sets()
         waist="Cimmerian Sash", legs="Beck. Spats +1", feet="Rubeus Boots"}
 	
 	-- Macc
-    sets.midcast.Pet.DebuffBloodPactWard = {main=gear.skill_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
+    sets.midcast.Pet.DebuffBloodPactWard = {main=gear.macc_BP_Staff,sub="Vox Grip",ammo=gear.avatar_ammo,
       	-- Apogee Mitts +1 Path D
         head="Convoker's Horn +2", neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
 		-- ring1="Evoker's Ring",
@@ -253,7 +253,7 @@ function init_gear_sets()
 	-- 
     sets.midcast.Pet.PhysicalBloodPactRage = {main=gear.phys_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-        body="Con. Doublet +3",  hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
+        body="Con. Doublet +3",  hands=gear_merlinic_physpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
 		back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
 		
 	 -- Used for all physical pacts when AccMode is true	
@@ -266,15 +266,15 @@ function init_gear_sets()
     sets.midcast.Pet.MagicalBloodPactRage = {main=gear.magic_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		--head="Apogee Crown +1" neck="Summoner's Collar +2",
 		head=gear_helios_head_BP, neck="Adad Amulet", ear1="Gelos Earring", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-        body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
+        body="Con. Doublet +3", hands=gear_merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
 		back=gear.magic_jse_back, waist="Regal Belt", legs="Enticer's Pants", feet=gear.magic_BP_feet}
 
     sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Convo. Pigaches +3"}
 
-	sets.midcast.Pet['Flaming Crush'] = {main=gear.magic_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
+	sets.midcast.Pet['Flaming Crush'] = {main=gear.phys_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		-- head="Apogee Crown +1", neck="Summoner's Collar +2",
 		head=gear_helios_head_BP, neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-        body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
+        body="Con. Doublet +3", hands=gear_merlinic_physpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.phys_jse_back, waist="Regal Belt", legs="Apogee Slacks +1", feet=gear.magic_BP_feet}
 		
 	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Convo. Pigaches +3"}

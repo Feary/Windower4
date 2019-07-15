@@ -15,7 +15,7 @@
 	<!-- match should not be used for Emote. Examine matches to Examiners name, Invite matches to Inviters name. -->
 	<!-- <trigger match="*YourNickNameHere*" notmatch="*SomecommonMatch*" notfrom="Tell" from="Party|Linkshell" sound="Talk" /> -->
 	<!-- Ambuscade -->
-	<trigger match="*Ambuscade*1*VD*whm*|*Ambuscade*1*whm*VD*|*Ambuscade*1*VD*heal*|*Ambuscade*1*VD*BRD*" notmatch="*please*invite*me*|*invite*to*join*party*" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\ambuscade.wav"/>
+	<trigger match="*Ambuscade*1*VD*whm*|*Ambuscade*1*whm*VD*|*Ambuscade*1*VD*heal*|*Ambuscade*1*VD*BRD*|*Ambuscade*VD*whm|*Ambuscade*VD*brd*|*Ambuscade*VD*GEO|*Ambuscade*VD*idris*"   notmatch="*please*invite*me*|*invite*to*join*party*" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\ambuscade.wav"/>
 	<!-- Delve -->
 	<trigger match="*Plasm*Farm*|*delve*yoyd*" notmatch="*please*invite*me*|*can*i*have*it*|*buy*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Delve.wav"/>
 	<!-- Vagary -->
