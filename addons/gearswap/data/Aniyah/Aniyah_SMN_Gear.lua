@@ -7,13 +7,14 @@ function user_setup()
 
 	-- Avatar Ammo - 
 	gear.avatar_ammo = {name="Sancus Sachet +1"}
-	-- Staves
-	gear.perp_staff = {name="Nirvana"}
-	gear.skill_staff = {name="Espiritus"}
-	gear.phys_BP_Staff = {name="Nirvana"}
-	-- Grioavolr - BPD 10 Mab macc?
-	gear.magic_BP_Staff = {name="Nirvana"} 
-	gear.macc_BP_Staff = {name="Nirvana"}
+	-- Staves {name="Nirvana"}
+	gear.perp_staff = {name="Gridarvor"}
+	gear.skill_staff = {name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
+	-- Nirvana 
+	gear.phys_BP_Staff = {name="Gridarvor"}
+	-- Grioavolr BPD +10  Nirvana 
+	gear.magic_BP_Staff = {name="Espiritus", augments={'MP+50','Pet: "Mag.Atk.Bns."+20','Pet: Mag. Acc.+20',}}
+	gear.macc_BP_Staff = {name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 	
 	gear.magic_jse_back = {name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: "Regen"+5',}}
 	gear.phys_jse_back = {name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+10 /Mag. Eva.+10','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}}
@@ -388,7 +389,7 @@ function init_gear_sets()
         
     sets.perp = {}
     -- Caller's Bracer's halve the perp cost after other costs are accounted for.
-    -- Using -10 (Gridavor, ring, Conv.feet), standard avatars would then cost 5, halved to 2.
+    -- Using -10 (Gridarvor, ring, Conv.feet), standard avatars would then cost 5, halved to 2.
     -- We can then use Hagondes Coat and end up with the same net MP cost, but significantly better defense.
     -- Weather is the same, but we can also use the latent on the pendant to negate the last point lost.
     sets.perp.Day = {}

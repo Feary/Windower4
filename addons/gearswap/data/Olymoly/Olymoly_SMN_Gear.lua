@@ -7,13 +7,14 @@ function user_setup()
 	
 	-- Avatar Ammo 
 	gear.avatar_ammo = {name="Sancus Sachet +1"}
-	-- Staves
-	gear.perp_staff = {name="Nirvana"}
-	gear.skill_staff = {name="Espiritus"}
-	gear.phys_BP_Staff = {name="Nirvana"}
-	-- grioavolr bpd 10 mab
-	gear.magic_BP_Staff = {name="Nirvana"} 
-	gear.macc_BP_Staff = {name="Nirvana"}
+	-- Staves {name="Nirvana"}
+	gear.perp_staff = {name="Gridarvor"}
+	gear.skill_staff = {name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
+	-- Nirvana 
+	gear.phys_BP_Staff = {name="Gridarvor"}
+	-- Grioavolr BPD +10  Nirvana 
+	gear.magic_BP_Staff = {name="Espiritus", augments={'MP+50','Pet: "Mag.Atk.Bns."+20','Pet: Mag. Acc.+20',}}
+	gear.macc_BP_Staff = {name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 
 	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: "Regen"+10','Pet: "Regen"+5',}}
 	gear.phys_jse_back = {name="Campestres's Cape",augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Haste+10','Pet: Damage taken -5%',}}
