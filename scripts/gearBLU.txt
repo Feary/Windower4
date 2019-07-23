@@ -43,8 +43,6 @@ get Luhlaza Jubbah +1 sack all
 get Luhlaza Shalwar +1 sack all
 get Mavi Tathlum sack all
 get Mekosu. Harness sack all
-get Merlinic Hood case all
-get Merlinic Crackows case all
 get Nibiru Cudgel sack all
 get Rawhide Mask sack all
 get Rawhide Boots sack all

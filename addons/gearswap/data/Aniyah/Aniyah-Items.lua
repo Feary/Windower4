@@ -112,7 +112,7 @@ gear_gada_enhancing_club = {name="Gada",augments={'Enh. Mag. eff. dur. +6','STR+
 --gear_merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','INT+15','Mag. Acc.+3','"Mag.Atk.Bns."+13',}}
 --gear_merlinic_nuke_body = {name="Merlinic Jubbah",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Occult Acumen"+4','INT+10','Mag. Acc.+2','"Mag.Atk.Bns."+15',}}
 
-gear_merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'Pet: "Regen"+2','Attack+9','"Refresh"+1',}}
+gear_merlinic_refresh_hands = {name="Merlinic Dastanas", augments={'Pet: "Regen"+2','Attack+9','"Refresh"+1',}}
 --BPDmg+10, Pet:INT/MAcc/MAB
 gear_merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc.+21','Blood Pact Dmg.+10','Pet: STR+4',}}
 --BPDmg+10, Pet:INT/MAcc/MAB

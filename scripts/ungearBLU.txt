@@ -29,13 +29,12 @@ put Herculean Helm sack all
 put Herculean Vest sack all
 put Helios Gloves case all
 put Iskur Gorget sack all
-put Jhakri Coronal +2 case all
 put Jhakri Cuffs +2 case all
 put Jhakri Pigaches +2 case all
 put Jhakri Robe +2 case all
-put Jhakri Slops +2 case all
 put Naegling sack all
 put Kaja Knife sack all
+put Kaja Rod sack all
 put Luh. Bazubands +1 sack all
 put Luh. Keffiyeh +1 sack all
 put Luhlaza Charuqs +1 sack all
@@ -43,8 +42,6 @@ put Luhlaza Jubbah +1 sack all
 put Luhlaza Shalwar +1 sack all
 put Mavi Tathlum sack all
 put Mekosu. Harness sack all
-put Merlinic Hood case all
-put Merlinic Crackows case all
 put Nibiru Cudgel sack all
 put Rawhide Mask sack all
 put Rawhide Boots sack all
@@ -53,7 +50,6 @@ put Samnuha Tights sack
 put Skaoi Boots case all
 put Tanmogayi +1 sack all
 put Thereoid Greaves sack all
-put Tokko Rod sack all
 put Vampirism sack all
 
 
