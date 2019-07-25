@@ -34,8 +34,7 @@ get Jhakri Cuffs +2 case all
 get Jhakri Pigaches +2 case all
 get Jhakri Robe +2 case all
 get Jhakri Slops +2 case all
-get Naegling sack all
-get Kaja Knife sack all
+get Kaja Rod sack all
 get Luh. Bazubands +1 sack all
 get Luh. Keffiyeh +1 sack all
 get Luhlaza Charuqs +1 sack all
@@ -44,6 +43,7 @@ get Luhlaza Shalwar +1 sack all
 get Mavi Tathlum sack all
 get Mekosu. Harness sack all
 get Nibiru Cudgel sack all
+get Naegling sack all
 get Rawhide Mask sack all
 get Rawhide Boots sack all
 get Rosmerta's Cape sack all
