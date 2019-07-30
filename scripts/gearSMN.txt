@@ -6,6 +6,7 @@ get Apogee Pumps +1 Storage all
 get Amalric Gages +1 case all 
 get Amalric Slops +1 case all 
 get Amalric Nails +1 case all 
+get Amalric Doublet +1 case all
 get Beck. Doublet +1 Storage all
 get Beck. Pigaches +1 Storage all
 get Beck. Spats +1 Storage all
@@ -37,9 +38,11 @@ get Handler's Earring case all
 get Handler's Earring +1 case all
 get Helios Band Storage all
 get Incarnation Sash Storage all
+get Kaja Grip case all
 get Lamassu Mitts Storage all
 get Lucidity Sash Storage all
 get Lugalbanda Earring Storage all
+get Nirvana storage all
 get Regal Belt Storage all
 get Sancus Sachet +1 Storage all
 get Merlinic Dastanas Storage all

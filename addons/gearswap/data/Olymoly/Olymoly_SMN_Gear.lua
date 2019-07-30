@@ -3,23 +3,24 @@ function user_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant')
     state.IdleMode:options('Normal', 'PDT','TPEat')
-	state.Weapons:options('None','Gridarvor','Hvergelmir')
+	state.Weapons:options('None','Gridarvor','Nirvana','Hvergelmir')
 	
 	-- Avatar Ammo 
 	gear.avatar_ammo = {name="Sancus Sachet +1"}
 	-- Staves {name="Nirvana"}
-	gear.perp_staff = {name="Gridarvor"}
-	gear.skill_staff = {name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
+	gear.perp_staff = 		{name="Gridarvor"}
+	gear.skill_staff = 		{name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 	-- Nirvana 
-	gear.phys_BP_Staff = {name="Gridarvor"}
-	-- Grioavolr BPD +10  Nirvana 
-	gear.magic_BP_Staff = {name="Espiritus", augments={'MP+50','Pet: "Mag.Atk.Bns."+20','Pet: Mag. Acc.+20',}}
-	gear.macc_BP_Staff = {name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
+	gear.phys_BP_Staff = 	{name="Gridarvor"}
+	-- Grioavolr BPD +10  Nirvana
+	gear.magic_BP_Staff = 	{name="Espiritus"}
+	gear.macc_BP_Staff = 	{name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 
-	gear.magic_jse_back = {name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: "Regen"+10','Pet: "Regen"+5',}}
-	gear.phys_jse_back = {name="Campestres's Cape",augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Haste+10','Pet: Damage taken -5%',}}
-	gear.FC_jse_back = {name="Campestres's Cape",augments={'"Fast Cast"+10',}}
-	gear.Cure_jse_back = {}
+	gear.magic_jse_back = 	{name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: "Regen"+10','Pet: "Regen"+5',}}
+	gear.phys_jse_back = 	{name="Campestres's Cape",augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Haste+10','Pet: Damage taken -5%',}}
+	gear.FC_jse_back = 		{name="Campestres's Cape",augments={'"Fast Cast"+10',}}
+	gear.Cure_jse_back = 	{name="Campestres's Cape",augments={'"Fast Cast"+10',}}
+	gear.ws_jse_back = 		{name="Campestres's Cape",augments={'"Fast Cast"+10',}}
 	
 	gear.phys_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}}
 	gear.magic_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}}
@@ -79,14 +80,13 @@ function init_gear_sets()
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
 
     -- Fast cast sets for spells    
-    sets.precast.FC = {main="Oranyan", sub="Kaja Grip", ammo="Impatiens",
-		-- main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
+    sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Impatiens",		
 		head="Merlinic Hood",neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		-- Zendik Robe
 		body="Inyanga Jubbah +2", hands=gear_helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
 		gear.FC_jse_back, waist="Witful Belt", legs="Psycloth Lappas", feet=gear_merlinic_fc_feet}
 
-    sets.precast.FC.Cure = set_combine(sets.precast.FC, {})--main="Serenity",sub="Clerisy Strap +1"
+    sets.precast.FC.Cure = set_combine(sets.precast.FC, {sub="Clerisy Strap +1"})--main="Serenity",
 		
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
@@ -95,42 +95,43 @@ function init_gear_sets()
        
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {}
+    sets.precast.WS = {
+		head="Merlinic Hood", neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Ishvara Earring",
+		body="Amalric Doublet +1",hands="Amalric Gages +1", ring1="Epaminondas's Ring", ring2="Prolix Ring",
+		back=gear.ws_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
     -- Specific weaponskill sets.  
-	 sets.precast.WS['Garland of Bliss'] = {ammo=gear.avatar_ammo, 
-        head="Beckoner's Horn +1",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Gifted Earring",
-		body="Con. Doublet +3",hands="Lamassu Mitts", ring1="Ep", ring2="Prolix Ring",
-		back="Conveyance Cape", waist="Luminary Sash", legs="Beck. Spats +1", feet="Beck. Pigaches +1"}
+	sets.precast.WS['Garland of Bliss'] = {ammo=gear.avatar_ammo, 
+        head="Merlinic Hood", neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Ishvara Earring",
+		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Epaminondas's Ring", ring2="Prolix Ring",
+		back=gear.ws_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 	  
-	 sets.precast.WS['S'] = {ammo=gear.avatar_ammo, 
-        head="Beckoner's Horn +1", neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Gifted Earring",
-		body="Con. Doublet +3", hands="Lamassu Mitts", ring1="'s Ring +1", ring2="Prolix Ring",
-		back="Conveyance Cape", waist="Luminary Sash", legs="Beck. Spats +1", feet="Beck. Pigaches +1"}
+	sets.precast.WS['Shattersoul'] = {ammo=gear.avatar_ammo, 
+		head="Merlinic Hood", neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Ishvara Earring",
+		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Epaminondas's Ring", ring2="Prolix Ring",
+		back=gear.ws_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 		
 	--Uses the base set if an appropriate WSMod version isn't found. MP + Gear
     sets.precast.WS['Myrkr'] = {main="Hvergelmir", sub="Kaja Grip", ammo=gear.avatar_ammo, 
         head="Beckoner's Horn +1",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Gifted Earring",
         -- ring2="Mephitas's Ring",
 		body="Con. Doublet +3",hands="Lamassu Mitts", ring1="Mephitas's Ring +1", ring2="Prolix Ring",
-		back="Conveyance Cape", waist="Luminary Sash", legs="Beck. Spats +1", feet="Beck. Pigaches +1"}
+		back=gear.ws_jse_back, waist="Luminary Sash", legs="Beck. Spats +1", feet="Beck. Pigaches +1"}
 
     
     --------------------------------------
     -- Midcast sets
     --------------------------------------
 
-    sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
-		--main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",
+    sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands=gear_helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
 	
-    sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",ammo="Hasty Pinion +1",
+    sets.midcast.Cure = {main="Tamaxchi", sub="Sors Shield",
 		head="Vanya Hood", neck="Incanter's Torque", ear1="Mendicant's Earring", ear2="Gifted Earring",
         body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Stikini Ring",ring2="Sirona's Ring",
-		--feet="Vanya Clogs"
-        back=gear.Cure_jse_back,waist="Austerity Belt",legs="Gyve Trousers", feet="Regal Pumps +1"}
+        back=gear.Cure_jse_back,waist="Austerity Belt",legs="Gyve Trousers", feet="Vanya Clogs"}
 		
 	sets.Self_Healing = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",}-- waist="Gishdubar Sash"
 	sets.Cure_Received = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",}--waist="Gishdubar Sash"
@@ -143,27 +144,28 @@ function init_gear_sets()
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Oranyan",})--sub="Clemency Grip"
 
-	sets.midcast['Elemental Magic'] = {main="Oranyan",sub="Enki Strap",
+	sets.midcast['Elemental Magic'] = {main="Oranyan",sub="Kaja Grip", 
         head="Inyanga Tiara +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
-	sets.midcast['Elemental Magic'].Resistant = {main="Oranyan",sub="Enki Strap",ammo="Dosis Tathlum",
+	sets.midcast['Elemental Magic'].Resistant = {main="Oranyan",sub="Kaja Grip",ammo="Pemphredo Tathlum",
         head="Inyanga Tiara +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 
-    sets.midcast['Divine Magic'] = {main="Oranyan",sub="Enki Strap",
+    sets.midcast['Divine Magic'] = {main="Oranyan",sub="Kaja Grip", ammo="Pemphredo Tathlum",
         head="Inyanga Tiara +2",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
-    sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+    sets.midcast['Dark Magic'] = {main="Oranyan",sub="Kaja Grip",
+		--main="Rubicundity",sub="Ammurapi Shield",
         head="Inyanga Tiara +2",neck="Incanter's Torque",ear1="Gwati Earring",ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
-	sets.midcast.Drain = {main="Rubicundity",sub="Genbu's Shield",
+	sets.midcast.Drain = {main="Rubicundity",sub="Genbu's Shield", 
        	--Ammurapi Shield
         head="Pixie Hairpin +1",neck="Incanter's Torque", ear1="Digni. Earring", ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
@@ -171,27 +173,27 @@ function init_gear_sets()
 		
     sets.midcast.Aspir = sets.midcast.Drain
 		
-    sets.midcast.Stun = {main="Oranyan",sub="Enki Strap",ammo="Hasty Pinion +1",
+    sets.midcast.Stun = {main="Oranyan",sub="Kaja Grip",
 		head="Inyanga Tiara +2",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Prolix Ring",
-		back=gear.FC_jse_back,waist="Witful Belt",legs=gear_chironic_macc_legs,feet="Regal Pumps +1"}
+		back=gear.FC_jse_back,waist="Witful Belt",legs=gear_chironic_macc_legs,feet="Amalric Nails +1"}
 		
     sets.midcast.Stun.Resistant = {main="Oranyan",sub="Enki Strap",ammo="Hasty Pinion +1",
 		head="Inyanga Tiara +2",neck="Voltsurge Torque",ear1="Gwati Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Prolix Ring",
-		back=gear.Cure_jse_back,waist="Witful Belt",legs="Amalric Slops +1",feet="Regal Pumps +1"}
+		back=gear.Cure_jse_back,waist="Witful Belt",legs=gear_chironic_macc_legs,feet="Amalric Nails +1"}
 		
 	sets.midcast['Enfeebling Magic'] = {main="Oranyan",sub="Kaja Grip",
 		--Ammurapi Shield
         head="Inyanga Tiara +2",neck="Incanter's Torque",ear1="Digni. Earring",ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2", ring1="Stikini Ring",ring2="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Luminary Sash",legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
+		back=gear.Cure_jse_back, waist="Luminary Sash",legs=gear_chironic_macc_legs, feet="Inyan. Crackows +2"}
 	
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan",sub="Enki Strap",
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan",sub="Kaja Grip",
 		--Ammurapi Shield  
         head="Inyanga Tiara +2",neck="Incanter's Torque",ear1="Digni. Earring",ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2", ring1="Stikini Ring",ring2="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Luminary Sash",legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
+		back=gear.Cure_jse_back, waist="Luminary Sash",legs=gear_chironic_macc_legs, feet="Inyan. Crackows +2"}
 		
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -393,22 +395,23 @@ function init_gear_sets()
 	sets.buff.Sleep = {neck="Sacrifice Torque"}
 
 	-- Weapons sets
-	sets.weapons.Gridarvor = {main="Gridarvor", sub="Elan Strap +1"}
-	sets.weapons.Hvergelmir = {main="Hvergelmir", sub="Elan Strap +1"}
+	sets.weapons.Gridarvor = 	{main="Gridarvor", 	sub="Kaja Grip"}
+	sets.weapons.Nirvana = 		{main="Nirvana", 	sub="Kaja Grip"}
+	sets.weapons.Hvergelmir = 	{main="Hvergelmir", sub="Kaja Grip"}
 	
     --------------------------------------
     -- Engaged sets
     --------------------------------------
     
     -- Normal melee group
-    sets.engaged = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+    sets.engaged = {main="Nirvana",sub="Kaja Grip",	ammo=gear.avatar_ammo,
         head="Convoker's Horn +3", neck="Shulmanu Collar", ear1="Digni. Earring", ear2="Telos Earring",
-        body="Con. Doublet +3", hands="Convo. Bracers +2",ring1="Rajas Ring",ring2="Ramuh Ring +1",
+        body="Con. Doublet +3", hands="Convo. Bracers +2",ring1="Varar Ring +1",ring2="Varar Ring +1",
         --waist="Olseni Belt",
 		back=gear.phys_jse_back, waist="Windbuffet belt +1", legs="Convo. Spats +2",feet="Convo. Pigaches +3"}
-	sets.engaged.Acc = {main="Gridarvor",sub="Elan Strap +1",ammo=gear.avatar_ammo,
+	sets.engaged.Acc = {main="Nirvana",sub="Kaja Grip",ammo=gear.avatar_ammo,
         head="Convoker's Horn +3", neck="Shulmanu Collar", ear1="Digni. Earring", ear2="Telos Earring",
-        body="Con. Doublet +3", hands="Convo. Bracers +2",ring1="Rajas Ring",ring2="Ramuh Ring +1",
+        body="Con. Doublet +3", hands="Convo. Bracers +2",ring1="Varar Ring +1",ring2="Varar Ring +1",
         --waist="Olseni Belt",
 		back=gear.phys_jse_back, waist="Windbuffet belt +1", legs="Convo. Spats +2",feet="Convo. Pigaches +3"}
 end

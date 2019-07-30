@@ -29,12 +29,10 @@ get Herculean Helm sack all
 get Herculean Vest sack all
 get Helios Gloves case all
 get Iskur Gorget sack all
-get Jhakri Coronal +2 case all
 get Jhakri Cuffs +2 case all
 get Jhakri Pigaches +2 case all
 get Jhakri Robe +2 case all
-get Jhakri Slops +2 case all
-get Kaja Rod sack all
+get Kaja Rod case all
 get Luh. Bazubands +1 sack all
 get Luh. Keffiyeh +1 sack all
 get Luhlaza Charuqs +1 sack all
@@ -51,7 +49,6 @@ get Samnuha Tights sack
 get Skaoi Boots case all
 get Tanmogayi +1 sack all
 get Thereoid Greaves sack all
-get Tokko Rod sack all
 get Vampirism sack all
 
 
