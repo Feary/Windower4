@@ -100,7 +100,21 @@ function init_gear_sets()
        
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {}
+      sets.precast.WS = {
+		 head="Welkin Crown", neck="Saevus Pendant +1",ear1="Friomisi Earring",ear2="Hecate's Earring",
+		body="Witching Robe", hands="Amalric Gages", ring1="Shiva's Ring", ring2="Shiva's Ring",
+		back=gear.ws_jse_back, waist="Cascade Belt", legs="Tali'ah Sera. +2", feet="Amalric Nails"}
+
+    -- Specific weaponskill sets.  
+	sets.precast.WS['Garland of Bliss'] = {ammo=gear.avatar_ammo, 
+        head="Welkin Crown", neck="Saevus Pendant +1",ear1="Friomisi Earring",ear2="Hecate's Earring",
+		body="Witching Robe", hands="Amalric Gages", ring1="Shiva's Ring", ring2="Shiva's Ring",
+		back=gear.ws_jse_back, waist="Cascade Belt", legs="Tali'ah Sera. +2", feet="Amalric Nails"}
+	  
+	sets.precast.WS['Shattersoul'] = {ammo=gear.avatar_ammo, 
+		 head="Welkin Crown", neck="Saevus Pendant +1",ear1="Friomisi Earring",ear2="Hecate's Earring",
+		body="Witching Robe", hands="Amalric Gages", ring1="Shiva's Ring", ring2="Shiva's Ring",
+		back=gear.ws_jse_back, waist="Cascade Belt", legs="Tali'ah Sera. +2", feet="Amalric Nails"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found. MP + Gear
     sets.precast.WS['Myrkr'] = {ammo=gear.avatar_ammo,
@@ -141,8 +155,6 @@ function init_gear_sets()
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})--main="Oranyan",sub="Clemency Grip"
 
 	sets.midcast['Elemental Magic'] = {main="Kaja Rod", sub="Ammurapi Shield",
-		--main="Gridarvor",sub="Enki Strap",
-		--ammo="Dosis Tathlum",
         head="Inyanga Tiara +2",neck="Voltsurge Torque",ear1="Hecate's Earring",ear2="Friomisi Earring",
         body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- waist="Luminary Sash",
@@ -168,7 +180,6 @@ function init_gear_sets()
 		back=gear.Cure_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 	
 	sets.midcast.Drain = {main="Kaja Rod", sub="Ammurapi Shield",
-       	--main="Rubicundity", ammo="Pemphredo Tathlum",
 		-- head="Pixie Hairpin +1", Incanter's Torque ear1="Digni. Earring",
         neck="Voltsurge Torque", ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Amalric Gages",ring1="Stikini Ring",ring2="Stikini Ring",
@@ -231,7 +242,6 @@ function init_gear_sets()
 	
 	-- Pet Macc/Skill
     sets.midcast.Pet.DebuffBloodPactWard = {main=gear.macc_BP_Staff,sub="Vox Grip",ammo=gear.avatar_ammo,
-		-- Nirvana
 		-- neck="Summoner's Collar +2", 
 		head="Convoker's Horn +3", neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
 		-- hands="Apogee Mitts +1", Path D

@@ -93,8 +93,8 @@ function init_gear_sets()
     
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-		-- Sanctity Necklace/Baetyl Necklace Friomisi Earring Crematio Earring
-		head="Laksa. Tricorne +2", neck="Voltsurge Torque", lear="Hecate's Earring", rear="Novio Earring",
+		-- /Baetyl Necklace Friomisi Earring Crematio Earring
+		head="Laksa. Tricorne +2", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Novio Earring",
 		-- Lanun Frac +3 Fenrir Ring +1
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1", lring="Regal Ring", rring="Dingir Ring",
 		-- Eschan Stone 
@@ -124,8 +124,8 @@ function init_gear_sets()
 			
 	-- to Prevent Damage overkill
 	sets.precast.CorsairShot.Proc = {ammo=gear.RAbullet,
-        --  Sanctity Necklace/Baetyl Necklace Diginitary Earring
-		head="Laksa. Tricorne +2", neck="Voltsurge Torque", lear="Novio Earring", rear="Gwati Earring",
+        -- Baetyl Necklace Diginitary Earring
+		head="Laksa. Tricorne +2", neck="Sanctity Necklace", lear="Novio Earring", rear="Gwati Earring",
 		--  Fenrir Ring +1 Fenrir Ring +1
 		body="Lanun Frac +1", hands="Carmine Fin. Ga. +1", lring="Stikini Ring", rring="Stikini Ring",
 		-- Eschan Stone
@@ -142,9 +142,9 @@ function init_gear_sets()
 
     -- Fast cast sets for spells    
     sets.precast.FC = {
-		-- head="Carmine Mask", rear="Enchntr. Earring +1",
-		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring",  
-		body=gear_taeon_body_Fastcast, hands="Leyline Gloves", rring="Prolix Ring",
+		-- head="Carmine Mask", 
+		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring",  rear="Enchntr. Earring +1",
+		body=gear_taeon_body_Fastcast, hands="Leyline Gloves", lring="Kishar Ring", rring="Prolix Ring",
 		-- legs="Taeon Tights", 
 		back=gear.FC_jse_back, waist="Sarissapho. Belt", feet="Carmine Greaves +1"}
 
@@ -164,7 +164,7 @@ function init_gear_sets()
 		-- neck="Comm. Charm +2
 		head=gear_taeon_head_Snapshot,
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1",
-		-- waist="Impulse Belt", legs="Laksa. Trews +3"
+		-- legs="Laksa. Trews +3"
 		back=gear.snapshot_jse_back, waist="Impulse Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"})
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {
 		-- neck="Comm. Charm +2
@@ -404,7 +404,7 @@ function init_gear_sets()
     -- Normal melee group
 	-- Single Weapon
     sets.engaged = {
-		-- head="Adhemar Bonnet +1" neck="Iskur Gorget", rear="Cessance Earring"
+		-- head="Adhemar Bonnet +1"  rear="Cessance Earring"
 		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1"
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",

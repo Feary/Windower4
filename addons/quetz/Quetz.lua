@@ -24,9 +24,6 @@ quetz_y = -933.43
 exitmenu = false
 teleport_ring = "Dim. Ring (Mea)"		--Set your teleport ring here
 
-
-
-
 --Set your trusts here, and under trustx_short put the name as it appears in the party list or when they speak in party chat
 trust1 = 'Koru-Moru'
 trust1_short = 'Koru Moru'
@@ -34,8 +31,8 @@ trust2 = 'Selh\'teus'
 trust2_short = ''
 trust3 = 'Qultada'
 trust3_short = ''
-trust4 = 'Yoran-Oran (UC)'
-trust4_short = ''
+trust4 = 'Apururu (UC)'
+trust4_short = 'Apururu'
 trust5 = 'Ulmia'
 trust5_short = 'Ulmia'
 

@@ -3,6 +3,7 @@ get Apogee Crown +1 Storage all
 get Apogee Slacks +1 Storage all
 get Apogee Mitts +1 Storage all
 get Apogee Pumps +1 Storage all
+get Amalric Coif +1 case all
 get Amalric Gages +1 case all 
 get Amalric Slops +1 case all 
 get Amalric Nails +1 case all 

@@ -76,7 +76,7 @@ gear.gada_refresh_club = {name="Gada", augments={'"Mag.Atk.Bns."+24','Phys. dmg.
 
 gear_grioavolr_refresh_staff = {name="Grioavolr", augments={'Mag. Acc.+5','MND+10','"Refresh"+1',}}
 --gear.grioavolr_nuke_staff = {name="Grioavolr",augments={'Magic burst dmg.+8%','MP+61','Mag. Acc.+16','"Mag.Atk.Bns."+30','Magic Damage +7',}}
-gear.grioavolr_refresh_staff = {name="Grioavolr",augments={'"Fast Cast"+7','MP+20','Mag. Acc.+17','"Mag.Atk.Bns."+10','Magic Damage +5',}}
+--augments={'"Fast Cast"+7','MP+20','Mag. Acc.+17','"Mag.Atk.Bns."+10','Magic Damage +5',}}
 gear.grioavolr_fc_staff = {"Nibiru Staff"}
 --gear.grioavolr_pet_staff = {name="Grioavolr",augments={'Blood Pact Dmg.+8','Pet: STR+10','Pet: Mag. Acc.+19','Pet: "Mag.Atk.Bns."+30',}}
 
@@ -114,7 +114,7 @@ gear.herculean_wsd_body = {name="Herculean Vest", augments={'INT+7','Pet: "Mag.A
 
 gear.merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'MND+9','AGI+2','"Refresh"+2','Accuracy+14 Attack+14',}}
 gear_merlinic_magpact_hands = {name="Merlinic Dastanas",  augments={'Pet: Attack+20 Pet: Rng.Atk.+20','Blood Pact Dmg.+9','Pet: Mag. Acc.+11','Pet: "Mag.Atk.Bns."+11',}}
-gear_merlinic_magpact_hands = {name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+21','Blood Pact Dmg.+10','Pet: "Mag.Atk.Bns."+6',}}
+gear_merlinic_maccpact_hands = {name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+21','Blood Pact Dmg.+10','Pet: "Mag.Atk.Bns."+6',}}
 gear_merlinic_physpact_hands = {name="Merlinic Dastanas", augments={'Pet: Attack+20 Pet: Rng.Atk.+20','Blood Pact Dmg.+9','Pet: Mag. Acc.+11','Pet: "Mag.Atk.Bns."+11',}}
 gear_merlinic_accpact_hands = {name="Merlinic Dastanas",  augments={'Pet: Accuracy+17 Pet: Rng. Acc.+17','Blood Pact Dmg.+10','Pet: DEX+9','Pet: "Mag.Atk.Bns."+6',}}
 

@@ -22,8 +22,8 @@ function user_setup()
 	gear.Cure_jse_back = 	{name="Campestres's Cape",augments={'"Fast Cast"+10',}}
 	gear.ws_jse_back = 		{name="Campestres's Cape",augments={'"Fast Cast"+10',}}
 	
-	gear.phys_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}}
-	gear.magic_BP_feet = {name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}}
+	gear.phys_BP_feet = 	{name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}}
+	gear.magic_BP_feet = 	{name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}}
 	
 	--[[Global binds you may want to change.
 	Bind special characters.
@@ -97,18 +97,18 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
 		head="Merlinic Hood", neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Ishvara Earring",
-		body="Amalric Doublet +1",hands="Amalric Gages +1", ring1="Epaminondas's Ring", ring2="Prolix Ring",
+		body="Amalric Doublet +1",hands="Amalric Gages +1", ring1="Epaminondas's Ring", ring2="Shiva Ring +1",
 		back=gear.ws_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
     -- Specific weaponskill sets.  
 	sets.precast.WS['Garland of Bliss'] = {ammo=gear.avatar_ammo, 
         head="Merlinic Hood", neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Ishvara Earring",
-		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Epaminondas's Ring", ring2="Prolix Ring",
+		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Epaminondas's Ring", ring2="Shiva Ring +1",
 		back=gear.ws_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 	  
 	sets.precast.WS['Shattersoul'] = {ammo=gear.avatar_ammo, 
 		head="Merlinic Hood", neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Ishvara Earring",
-		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Epaminondas's Ring", ring2="Prolix Ring",
+		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Epaminondas's Ring", ring2="Shiva Ring +1",
 		back=gear.ws_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 		
 	--Uses the base set if an appropriate WSMod version isn't found. MP + Gear

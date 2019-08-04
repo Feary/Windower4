@@ -9,7 +9,7 @@ function user_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Normal','Relic','MagicWeapons','Throwing')
+	state.Weapons:options('Normal','Relic','MagicWeapons','Sword','Throwing')
 	
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 	state.AmbushMode = M(false, 'Ambush Mode')
@@ -60,10 +60,11 @@ function init_gear_sets()
 	sets.Ambush = {body="Plunderer's Vest +3"}
 
 	-- Weapons Sets
-	sets.weapons.Normal = {main="Twashtar",sub="Kaja Knife"}
-	sets.weapons.Relic = {main="Mandau",sub="Twashtar"}
+	sets.weapons.Normal = 		{main="Twashtar",sub="Kaja Knife"}
+	sets.weapons.Relic = 		{main="Mandau",sub="Twashtar"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
-	sets.weapons.Throwing = {main="Twashtar",sub="Kaja Knife", range="Raider's Bmrng."}
+	sets.weapons.Sword = 		{main="Naegling", sub="Twashtar"}
+	sets.weapons.Throwing = 	{main="Twashtar",sub="Kaja Knife", range="Raider's Bmrng."}
 	
     -- Actions we want to use to tag TH.
     -- Acc
@@ -87,18 +88,18 @@ function init_gear_sets()
     --------------------------------------
 
     -- Precast sets to enhance JAs
-    sets.precast.JA['Collaborator'] = {head="Skulker's Bonnet +1"}
-    sets.precast.JA['Accomplice'] = {head="Skulker's Bonnet +1"}
-    sets.precast.JA['Flee'] = {feet="Pill. Poulaines +2"} 
-    sets.precast.JA['Hide'] = {body="Pillager's Vest +3"}
-    sets.precast.JA['Conspirator'] = {body="Skulker's Vest +1"}
-    sets.precast.JA['Steal'] = {head="Pill. Bonnet +2", legs="Pill. Culottes +3", feet="Pill. Poulaines +2"} --  hands="Pillager's Armlets",
-	sets.precast.JA['Mug'] = {head="Plun. Bonnet +3"}
-    sets.precast.JA['Despoil'] = {legs="Skulker's Culottes +1", feet="Skulk. Poulaines +1"}
-    sets.precast.JA['Perfect Dodge'] = {hands="Plun. Armlets +3"}
-    sets.precast.JA['Feint'] = {legs="Plun. Culottes +3"}
-	sets.precast.JA['Assassin\'s Charge'] = {feet="Plun. Poulaines +3"}
-	sets.precast.JA['Bully'] = {}
+    sets.precast.JA['Collaborator'] 		= {head="Skulker's Bonnet +1"}
+    sets.precast.JA['Accomplice'] 			= {head="Skulker's Bonnet +1"}
+    sets.precast.JA['Flee'] 				= {feet="Pill. Poulaines +2"} 
+    sets.precast.JA['Hide'] 				= {body="Pillager's Vest +3"}
+    sets.precast.JA['Conspirator']			= {body="Skulker's Vest +1"}
+    sets.precast.JA['Steal']				= {head="Pill. Bonnet +2", legs="Pill. Culottes +3", feet="Pill. Poulaines +2"} --  hands="Pillager's Armlets",
+	sets.precast.JA['Mug']					= {head="Plun. Bonnet +3"}
+    sets.precast.JA['Despoil']				= {legs="Skulker's Culottes +1", feet="Skulk. Poulaines +1"}
+    sets.precast.JA['Perfect Dodge']	 	= {hands="Plun. Armlets +3"}
+    sets.precast.JA['Feint'] 				= {legs="Plun. Culottes +3"}
+	sets.precast.JA['Assassin\'s Charge'] 	= {feet="Plun. Poulaines +3"}
+	sets.precast.JA['Bully'] 				= {}
 	
     sets.precast.JA['Sneak Attack'] = sets.buff['Sneak Attack']
     sets.precast.JA['Trick Attack'] = sets.buff['Trick Attack']
@@ -370,6 +371,49 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
+	sets.precast.WS["Savage Blade"] = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
+        -- Lustr Cap +1 Path A
+		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+        body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
+        back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
+    sets.precast.WS["Savage Blade"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="Seeth. Bomblet +1",
+		--  Lustr Cap +1 Path A
+		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+        body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
+        back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
+    sets.precast.WS["Savage Blade"].Acc = set_combine(sets.precast.WS.Acc, {ammo="Seeth. Bomblet +1",
+		--  Lustr Cap +1 Path A
+		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+        body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
+        back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
+	sets.precast.WS["Savage Blade"].FullAcc = set_combine(sets.precast.WS.FullAcc, {ammo="Seeth. Bomblet +1",
+		--  Lustr Cap +1 Path A
+		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+        body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
+        back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
+    sets.precast.WS["Savage Blade"].Fodder = set_combine(sets.precast.WS["Savage Blade"], {ammo="Seeth. Bomblet +1",
+		-- Lustr Cap +1 Path A
+		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+        body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
+        back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
+    
+	sets.precast.WS["Savage Blade"].SA = set_combine(sets.precast.WS["Savage Blade"].Fodder, {ammo="Seeth. Bomblet +1",
+		-- Pill. Bonnet +3
+		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+        body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
+        back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
+    sets.precast.WS["Savage Blade"].TA = set_combine(sets.precast.WS["Savage Blade"].Fodder, {ammo="Seeth. Bomblet +1",
+		-- Pill. Bonnet +3
+		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+        body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
+        back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
+    sets.precast.WS["Savage Blade"].SATA = set_combine(sets.precast.WS["Savage Blade"].Fodder, {ammo="Seeth. Bomblet +1",
+		-- Pill. Bonnet +3
+		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+        body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
+        back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
+
+
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Sherida Earring",ear2="Brutal Earring"}
 	sets.AccMaxTP = {ear1="Sherida Earring",ear2="Cessance Earring"}
@@ -431,12 +475,12 @@ function init_gear_sets()
     sets.defense.MDT = {ammo="Staunch Tathlum",
        	head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
-		back="Engulfer Cape +1", waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
+		back="EMoonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
-		back="Engulfer Cape +1", waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		back="Moonbeam Cape", waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 
     --------------------------------------
