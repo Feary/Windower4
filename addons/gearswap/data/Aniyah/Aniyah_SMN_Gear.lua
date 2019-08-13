@@ -7,13 +7,12 @@ function user_setup()
 
 	-- Avatar Ammo - 
 	gear.avatar_ammo = {name="Sancus Sachet +1"}
-	-- Staves {name="Nirvana"}
-	gear.perp_staff = {name="Gridarvor"}
+	-- Staves 
+	gear.perp_staff = {name="Nirvana"}
 	gear.skill_staff = {name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
-	-- Nirvana 
-	gear.phys_BP_Staff = {name="Gridarvor"}
-	-- Grioavolr BPD +10  Nirvana 
-	gear.magic_BP_Staff = {name="Espiritus", augments={'MP+50','Pet: "Mag.Atk.Bns."+20','Pet: Mag. Acc.+20',}}
+	gear.phys_BP_Staff = {name="Nirvana"}
+	-- Grioavolr BPD +10  
+	gear.magic_BP_Staff = {name="Nirvana"}
 	gear.macc_BP_Staff = {name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 	
 	gear.magic_jse_back = {name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: "Regen"+5',}}
@@ -407,7 +406,8 @@ function init_gear_sets()
 	sets.perp.Carbuncle = {hands="Asteria Mitts +1"}
     sets.perp.Diabolos = {}
     sets.perp.Alexander = sets.midcast.Pet.BloodPactWard
-
+	sets.perp.Odin = sets.midcast.Pet.BloodPactWard
+	
 	-- Not really used anymore, was for the days of specific staves for specific avatars.
     sets.perp.staff_and_grip = {}
     
@@ -446,8 +446,8 @@ function init_gear_sets()
 	sets.buff.Sleep = {neck="Sacrifice Torque"}
 
 	-- Weapons sets
-	sets.weapons.Gridarvor =  	{main="Gridarvor", sub="Kaja Grip"}
-	sets.weapons.Nirvana = 		{main="Nirvana", sub="Kaja Grip"}
+	sets.weapons.Gridarvor =  	{main="Gridarvor", sub="Kaja Grip", ammo=gear.avatar_ammo}
+	sets.weapons.Nirvana = 		{main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo}
 	
     --------------------------------------
     -- Engaged sets

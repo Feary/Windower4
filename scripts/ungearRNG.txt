@@ -4,8 +4,8 @@ put Adhemar Bonnet +1 sack all
 put Adhemar Bonnet sack all
 put Adhemar Gamashes safe2 all
 put Adhemar Jacket +1 sack all
-put Adhemar Kecks +1 sack all
-put Adhemar Kecks sack all
+put Adhemar Kecks +1 safe2 all
+put Adhemar Kecks safe2 all
 put Adhemar Wrist. +1 sack all
 put Adhemar Wristbands sack all
 put Amini Bottillons +1 safe2 all
@@ -27,9 +27,6 @@ put Eminent Bullet safe2 all
 put Enervating Earring safe2 all
 put Erudit. Necklace safe2 all
 put Grunfeld Rope sack all
-put Herculean Boots sack all
-put Herculean Gloves sack all
-put Herculean Vest sack all
 put Holliday safe2 all
 put Impulse Belt safe2 all
 put Iskur Gorget sack all
@@ -45,7 +42,7 @@ put Mummu Bonnet +2 sack all
 put Mummu Gamash. +2 sack all
 put Mummu Jacket +2 sack all
 put Mummu Kecks +2 sack all
-put Mummu Ring sack all
+put Mummu Ring safe2 all
 put Mummu Wrists +2 sack all
 put Nusku Shield safe2 all
 put Orion Beret +2 safe2 all

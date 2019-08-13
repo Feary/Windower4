@@ -183,15 +183,15 @@ gear_herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23'
 --gear_herculean_refresh_feet = {name="Herculean Boots",augments={'CHR+8','Rng.Acc.+7','"Refresh"+1','Mag. Acc.+17 "Mag.Atk.Bns."+17',}}
 
 gear_merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+11 "Mag.Atk.Bns."+11','Mag. Acc.+9','"Mag.Atk.Bns."+4',}}
-
+ 
 --gear_merlinic_nuke_body = {name="Merlinic Jubbah",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Occult Acumen"+4','INT+10','Mag. Acc.+2','"Mag.Atk.Bns."+15',}}
 --gear.merlinic_occult_body
 
 --gear_merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'Attack+17','Pet: INT+5','"Refresh"+2','Accuracy+11 Attack+11',}}
 gear_merlinic_magpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc.+25 Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+9','Pet: DEX+4',}}
 gear_merlinic_maccpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc.+25 Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+9','Pet: DEX+4',}}
-gear_merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Attack+10 Pet: Rng.Atk.+10','Blood Pact Dmg.+9','Pet: CHR+4','Pet: "Mag.Atk.Bns."+10',}}
-gear_merlinic_accpact_hands = {name="Merlinic Dastanas",augments={'Pet: Attack+10 Pet: Rng.Atk.+10','Blood Pact Dmg.+9','Pet: CHR+4','Pet: "Mag.Atk.Bns."+10',}}
+gear_merlinic_physpact_hands = {name="Merlinic Dastanas", augments={'Pet: Attack+10 Pet: Rng.Atk.+10','Blood Pact Dmg.+5',}}
+gear_merlinic_accpact_hands = {name="Merlinic Dastanas",augments={'Pet: Accuracy+21 Pet: Rng. Acc.+21','Blood Pact Dmg.+9','Pet: DEX+1','Pet: Mag. Acc.+10','Pet: "Mag.Atk.Bns."+6',}}
 
 --gear.merlinic_occult_hands = {}
 

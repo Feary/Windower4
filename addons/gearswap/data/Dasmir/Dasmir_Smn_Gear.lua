@@ -7,13 +7,13 @@ function user_setup()
 
 	-- Avatar Ammo - 
 	gear.avatar_ammo 	= 	{name="Sancus Sachet +1"}
-	-- Staves {name="Nirvana"}
-	gear.perp_staff 	= 	{name="Gridarvor"}
+	-- Staves 
+	gear.perp_staff 	= 	{name="Nirvana"}
 	gear.skill_staff	= 	{name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 	-- Nirvana 
-	gear.phys_BP_Staff 	= 	{name="Gridarvor"}
+	gear.phys_BP_Staff 	= 	{name="Nirvana"}
 	-- Grioavolr Nirvana 
-	gear.magic_BP_Staff = 	{name="Nibiru Staff", augments={'Pet: Mag. Acc.+20','Pet: "Mag.Atk.Bns."+20','Pet: "Regen"+2',}}
+	gear.magic_BP_Staff = 	{name="Nirvana"}
 	gear.macc_BP_Staff 	= 	{name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 	
 	-- Ambuscade Cape
@@ -44,6 +44,7 @@ function user_setup()
 	send_command('alias fol send @others follow Dasmir')
 	--send_command('bind !f send @others /follow Dasmir')
 	
+	send_command('alias afac  input /ja "Astral Flow" <me>;wait 1;input /ja "Astral Conduit" <me>')
 	send_command('alias ramuh send @all /ma "Ramuh" <me>')
 	send_command('alias aoe input /targetnpc;send @all /pet "Thunderspark" <t>')
 	send_command('alias stun input /targetnpc;send @all /pet "Thunderspark" <t>')
@@ -118,9 +119,9 @@ function init_gear_sets()
 		back="Conveyance Cape", waist="Fotia Belt", legs="Tali'ah Sera. +2", feet="Amalric Nails"}
 	--	73~85% INT
 	sets.precast.WS['Shattersoul'] = {ammo=gear.avatar_ammo, 
-        head="Beckoner's Horn +1", neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Gifted Earring",
-		body="Con. Doublet +3", hands="Lamassu Mitts", ring1="'s Ring +1", ring2="Prolix Ring",
-		back="Conveyance Cape", waist="Fotia Belt", legs="Beck. Spats +1", feet="Beck. Pigaches +1"}
+		head="Welkin Crown",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Novio Earring",
+		body="Witching Robe",hands="Amalric Gages", ring1="Shiva Ring", ring2="Shiva Ring",
+		back="Conveyance Cape", waist="Fotia Belt", legs="Tali'ah Sera. +2", feet="Amalric Nails"}
 		
 	--Uses the base set if an appropriate WSMod version isn't found. MP + Gear
     sets.precast.WS['Myrkr'] = {ammo=gear.avatar_ammo, 
@@ -262,13 +263,18 @@ function init_gear_sets()
 	
 	-- Blood Pact Rage	
     sets.midcast.Pet.PhysicalBloodPactRage = {main=gear.phys_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
+		-- neck="Summoner's Collar +2",
 		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3",  hands=gear_merlinic_physpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
 		back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
 		
 	 -- Used for all physical pacts when AccMode is true	
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage,{
-		feet="Convo. Pigaches +3"})
+		main=gear.phys_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
+		-- Kyrene's Earring neck="Summoner's Collar +2",
+		head="Apogee Crown +1", neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
+        body="Con. Doublet +3",  hands="Convo. Bracers +2", ring1="Varar Ring +1", ring2="Varar Ring +1",
+		back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet="Convo. Pigaches +3"})
 
 	sets.midcast.Pet.PhysicalBloodPactRage.AM = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {
 		head="Apogee Crown +1"})
@@ -284,7 +290,7 @@ function init_gear_sets()
 	sets.midcast.Pet['Flaming Crush'] = {main=gear.phys_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		-- neck="Summoner's Collar +2",
 		head="Apogee Crown +1", neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-        body="Con. Doublet +3", hands=gear_merlinic_physpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
+        body="Con. Doublet +3", hands=gear_merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.phys_jse_back, waist="Regal Belt", legs="Apogee Slacks +1", feet=gear.magic_BP_feet}
 		
 	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Convo. Pigaches +3"}
@@ -453,8 +459,8 @@ function init_gear_sets()
     -- Weapons Sets
     --------------------------------------
 	
-	sets.weapons.Nirvana = 	{main="Nirvana", sub="Kaja Grip"}
-	sets.weapons.Melee =	{main="Nirvana", sub="Kaja Grip"}
+	sets.weapons.Nirvana = 		{main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo}
+	sets.weapons.Gridarvor =	{main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo}
     
 	--------------------------------------
     -- Engaged sets

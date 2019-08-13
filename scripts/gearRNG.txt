@@ -4,8 +4,8 @@ get Adhemar Bonnet +1 sack all
 get Adhemar Bonnet sack all
 get Adhemar Gamashes safe2 all
 get Adhemar Jacket +1 sack all
-get Adhemar Kecks +1 sack all
-get Adhemar Kecks sack all
+get Adhemar Kecks +1 safe2 all
+get Adhemar Kecks safe2 all
 get Adhemar Wrist. +1 sack all
 get Adhemar Wristbands sack all
 get Amini Bottillons +1 safe2 all
@@ -27,9 +27,6 @@ get Eminent Bullet safe2 all
 get Enervating Earring safe2 all
 get Erudit. Necklace safe2 all
 get Grunfeld Rope sack all
-get Herculean Boots sack all
-get Herculean Gloves sack all
-get Herculean Vest sack all
 get Holliday safe2 all
 get Impulse Belt safe2 all
 get Iskur Gorget sack all
@@ -45,7 +42,7 @@ get Mummu Bonnet +2 sack all
 get Mummu Gamash. +2 sack all
 get Mummu Jacket +2 sack all
 get Mummu Kecks +2 sack all
-get Mummu Ring sack all
+get Mummu Ring safe2 all
 get Mummu Wrists +2 sack all
 get Nusku Shield safe2 all
 get Orion Beret +2 safe2 all

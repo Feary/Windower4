@@ -113,15 +113,11 @@ gear_grioavolr_fc_staff = {"Arasy Staff"}
 --gear_merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','INT+15','Mag. Acc.+3','"Mag.Atk.Bns."+13',}}
 --gear_merlinic_nuke_body = {name="Merlinic Jubbah",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Occult Acumen"+4','INT+10','Mag. Acc.+2','"Mag.Atk.Bns."+15',}}
 
-gear_merlinic_refresh_hands = {name="Merlinic Dastanas", augments={'Pet: "Regen"+2','Attack+9','"Refresh"+1',}}
---BPDmg+10, Pet:INT/MAcc/MAB
-gear_merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc.+21','Blood Pact Dmg.+10','Pet: STR+4',}}
---BPDmg+10, Pet:INT/MAcc/MAB
-gear_merlinic_maccpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc.+21','Blood Pact Dmg.+10','Pet: STR+4',}}
--- BPDmg+10, Pet:INT/MAcc/MAB
-gear_merlinic_physpact_hands = {name="Merlinic Dastanas", augments={'Pet: Attack+19 Pet: Rng.Atk.+19','Blood Pact Dmg.+10','Pet: STR+5','Pet: Mag. Acc.+4',}}
--- BPDmg+10, Pet:INT/MAcc/MAB
-gear_merlinic_accpact_hands = {name="Merlinic Dastanas", augments={'Pet: Attack+19 Pet: Rng.Atk.+19','Blood Pact Dmg.+10','Pet: STR+5','Pet: Mag. Acc.+4',}}
+gear_merlinic_refresh_hands = {name="Merlinic Dastanas",  augments={'Pet: "Regen"+2','Attack+9','"Refresh"+1',}}
+gear_merlinic_magpact_hands = {name="Merlinic Dastanas",  augments={'Pet: Mag. Acc.+13 Pet: "Mag.Atk.Bns."+13','Blood Pact Dmg.+8','Pet: DEX+9','Pet: Mag. Acc.+4','Pet: "Mag.Atk.Bns."+15',}}
+gear_merlinic_maccpact_hands = {name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+24 Pet: "Mag.Atk.Bns."+24','Blood Pact Dmg.+7','Pet: INT+1','Pet: Mag. Acc.+10',}}
+gear_merlinic_physpact_hands = {name="Merlinic Dastanas", augments={'Pet: Attack+25 Pet: Rng.Atk.+25','Blood Pact Dmg.+8','Pet: Mag. Acc.+13','Pet: "Mag.Atk.Bns."+10',}}
+gear_merlinic_accpact_hands = {name="Merlinic Dastanas",  augments={'Pet: Attack+25 Pet: Rng.Atk.+25','Blood Pact Dmg.+8','Pet: Mag. Acc.+13','Pet: "Mag.Atk.Bns."+10',}}
 
 --gear_merlinic_nuke_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Conserve MP"+1','INT+11','Mag. Acc.+3','"Mag.Atk.Bns."+15',}}
 --gear_merlinic_aspir_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +10','Mag. Acc.+15',}}
