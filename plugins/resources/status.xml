@@ -508,7 +508,7 @@
   <b id="517" duration="0" jp="コリメイトファーバー" enLog="Collimated Fervor">Collimated Fervor</b>
   <b id="518" duration="0" jp="デマテリアライズ" enLog="Dematerialize">Dematerialize</b>
   <b id="519" duration="0" jp="タウマテルギフォカス" enLog="Theurgic Focus">Theurgic Focus</b>
-  <b id="522" duration="0" jp="Ｅ.スフォルツォ" enLog="Elemental Sforzo">Elemental Sforzo</b>
+  <b id="522" duration="0" jp="E.スフォルツォ" enLog="Elemental Sforzo">Elemental Sforzo</b>
   <b id="523" duration="0" jp="イグニス" enLog="Ignis">Ignis</b>
   <b id="524" duration="0" jp="ゲールス" enLog="Gelus">Gelus</b>
   <b id="525" duration="0" jp="フラブラ" enLog="Flabra">Flabra</b>
@@ -603,4 +603,6 @@
   <b id="614" duration="0" jp="ウルゴアの闇" enLog="Ullegore's Gloom">Ullegore's Gloom</b>
   <b id="615" duration="0" jp="ためる" enLog="Boost">Boost</b>
   <b id="616" duration="0" jp="芸術家肌" enLog="Artisanal Knowledge">Artisanal Knowledge</b>
+  <b id="617" duration="0" jp="サクリファイス" enLog="Sacrifice">Sacrifice</b>
+  <b id="618" duration="0" jp="エンポロックスのツボ" enLog="Emporox's Gift">Emporox's Gift</b>
 </status>

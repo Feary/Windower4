@@ -8,11 +8,11 @@ function user_setup()
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	-- Mandau Almace Sequence 
-	state.Weapons:options('None','Normal','DualWeapons','DualDagger','DualClubs')
+	state.Weapons:options('None','Sword','Dagger', 'DualWeapons','DualDagger','DualClubs')
 	
 	-- Augmented Capes
 	-- Skill+ 10 Duration 10-20
-	gear.JSE_Cape = 		{name="Ghostfyre Cape",	augments={'Enfb.mag. skill +8','Enha.mag. skill +10','Mag. Acc.+3',}}
+	gear.JSE_Cape = 		{name="Ghostfyre Cape",	 augments={'Enfb.mag. skill +8','Enha.mag. skill +10','Mag. Acc.+3',}}
 	gear.Macc_jse_back = 	{name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
 	-- INT MACC M.DMG
 	gear.nuke_jse_back = 	{name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
@@ -219,7 +219,7 @@ function init_gear_sets()
 	sets.midcast['Temper II'] = {ammo="Hasty Pinion +1",
 		--main="Pukulatmuj +1",sub="Arendsi Fleuret",		
 		-- Duelist's Torque +2 
-		head="Befouled Crown",neck="Incanter's Torque",ear1="Andoaa Earring", ear2="Augment. Earring"
+		head="Befouled Crown",neck="Incanter's Torque",ear1="Andoaa Earring", ear2="Augment. Earring",
 		-- Vitiation Tabard +3 Vitiation Gloves +3 Stikini Ring +1 Stikini Ring +1
 		body="Vitiation Tabard",hands="Vitiation Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- Atrophy Tights +3
@@ -411,13 +411,11 @@ function init_gear_sets()
 	sets.NightIdle = {}
 	
 	-- Weapons sets
-	sets.weapons.Mandau = {main="Mandau", sub="Genbu's Shield"}
-	sets.weapons.Sequence = {main="Sequence",sub="Genbu's Shield"}
-	sets.weapons.Almace = {main="Almace",sub="Genbu's Shield"}
-	sets.weapons.DualWeapons = {main="Sequence",sub="Almace"}
-	sets.weapons.DualDagger = {main="Mandau", sub="Almace"}
-	sets.weapons.DualClubs = {main="Mafic Club",sub="Bolelabunga"}
-	sets.weapons.DualAlmace = {main="Almace",sub="Sequence"}
+	sets.weapons.Dagger = {main="Kaja Knife", sub="Genbu's Shield"}
+	sets.weapons.Sword = {main="Naegling",sub="Genbu's Shield"}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Kaja Knife"}
+	sets.weapons.DualDagger = {main="Kaja Knife", sub="Naegling"}
+	sets.weapons.DualClubs = {main="Kaja Rod",sub="Bolelabunga"}
 
 	-- Engaged sets
 

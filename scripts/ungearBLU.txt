@@ -34,7 +34,7 @@ put Jhakri Pigaches +2 case all
 put Jhakri Robe +2 case all
 put Naegling sack all
 put Kaja Knife sack all
-put Kaja Rod sack all
+put Kaja Rod case all
 put Luh. Bazubands +1 sack all
 put Luh. Keffiyeh +1 sack all
 put Luhlaza Charuqs +1 sack all

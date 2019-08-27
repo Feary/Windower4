@@ -1,7 +1,13 @@
-get Amalric Gages case all
-get Amalric Nails case all
-get Amalric Slops case all
-get Arasy Staff case all
+get Amalric Gages +1 case all
+get Amalric Nails +1 case all
+get Amalric Slops +1 case all
+get Amalric Coif +1 case all
+get Amalric Doublet +1 case all
+get Atrophy Chapeau +1 storage all
+get Atrophy Tabard +1 storage all
+get Atrophy Gloves +1 storage all
+get Atrophy Tights +1 storage all
+get Atrophy Boots +1 storage all
 get Carm. Sc. Mail +1 safe2 all
 get Ghostfyre Cape case all
 get Hagondes Coat +1 case all
@@ -10,9 +16,6 @@ get Helios Gloves case all
 get Jhakri Cuffs +2 case all
 get Jhakri Pigaches +2 case all
 get Jhakri Robe +2 case all
-get Jhakri Slops +2 case all
-get Mandau sack all
-get Medium's Sabots case all
 get Merlinic Crackows case all
 get Merlinic Hood case all
 get Mizu. Kubikazari case all
@@ -21,3 +24,8 @@ get Rubicundity case all
 get Skaoi Boots case all
 get Sucellos's Cape case all
 get Vampirism sack all
+get Vitiation Chapeau storage all
+get Vitiation Tabard +1 storage all
+get Vitiation Gloves storage all
+get Vitiation Tights storage all
+get Vitiation Boots +1 storage all

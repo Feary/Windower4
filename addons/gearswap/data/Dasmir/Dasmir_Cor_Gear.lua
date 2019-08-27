@@ -384,13 +384,13 @@ function init_gear_sets()
 	-- Last Stand Dual Ranged
 	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Kaja Knife",range="Holliday"}
 	-- Fencer Savage 
-	sets.weapons.SavageWeapons = {main="Kaja Sword",sub="Nusku Shield", range="Holliday"}--range="Ataktos"
+	sets.weapons.SavageWeapons = {main="Naegling",sub="Nusku Shield", range="Holliday"}--range="Ataktos"
 	-- DW Savage
-	sets.weapons.DualWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Holliday"}--range="Ataktos"
+	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}--range="Ataktos"
 	-- Leaden/Wildfire  Rostam Path A
-	sets.weapons.LeadenWeapons = {main="Kaja Sword",sub="Kaja Knife",range="Holliday"}--range="Fomalhaut"
+	sets.weapons.LeadenWeapons = {main="Naegling",sub="Kaja Knife",range="Holliday"}--range="Fomalhaut"
 	-- Rolling
-	sets.weapons.RollMeleeWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Compensator"}
+	sets.weapons.RollMeleeWeapons = {main="Naegling",sub="Blurred Knife +1",range="Compensator"}
 	sets.weapons.RollRangedWeapons = {main="Kustawi +1",sub="Nusku Shield", range="Compensator"}
 	
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",}--body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"

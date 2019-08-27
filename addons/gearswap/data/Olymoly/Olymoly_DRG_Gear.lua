@@ -42,33 +42,33 @@ function init_gear_sets()
 	
 	-- Precast Sets
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Ancient Circle'] = {legs="Vishap Brais +1"}
+	sets.precast.JA['Ancient Circle'] = {legs="Vishap Brais +2"}
 	sets.precast.JA['Angon'] = {ammo="Angon",hands="Ptero. Fin. G. +3"} 
 	
 	sets.precast.JA['Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- hands="Vish. Fin. Gaunt. +3", 
-		 body="Ptero. Mail +3", hands="Flam. Manopolas +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
+		 body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Ptero. Brais +3",feet="Ostro Greaves"}
 	sets.precast.JA['High Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- hands="Vish. Fin. Gaunt. +3", 
-		 body="Ptero. Mail +3", hands="Flam. Manopolas +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
+		 body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Ptero. Brais +3",feet="Ostro Greaves"}
 	sets.precast.JA['Soul Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- hands="Vish. Fin. Gaunt. +3",
-		body="Ptero. Mail +3", hands="Flam. Manopolas +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
+		body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Ptero. Brais +3",feet="Ostro Greaves"}
 	sets.precast.JA['Spirit Jump'] = {ammo="Ginsen",
 		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- hands="Vish. Fin. Gaunt. +3", 
-		 body="Ptero. Mail +3", hands="Flam. Manopolas +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
+		 body="Ptero. Mail +3", hands="Vish. Fin. Gaunt. +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		back=gear.stp_jse_back, waist="Ioskeha Belt +1", legs="Ptero. Brais +3",feet="Ostro Greaves"}
 	sets.precast.JA['Super Jump'] = {}
 	sets.precast.JA['Spirit Link'] = {
-		head="Vishap Armet +1", lear="Pratik Earring",
-		hands="Pel. Vambraces",
+		head="Vishap Armet +2", lear="Pratik Earring",
+		hands="Pel. Vambraces +1",
 		feet="Ptero. Greaves +3"}
 	sets.precast.JA['Call Wyvern'] = {body="Ptero. Mail +3"} 
 	sets.precast.JA['Deep Breathing'] = {head="Ptero. Armet +3"}
@@ -77,7 +77,7 @@ function init_gear_sets()
 		--neck="Chanoix's Gorget", lear="Lancer's Earring",rear="Anastasi Earring",
 		-- hands="Despair Fin. Gauntlets",
 		body="Emicho Haubert +1",
-		back="Updraft Mantle", legs="Vishap Brais +1", feet="Ptero. Greaves +3"}
+		back="Updraft Mantle", legs="Vishap Brais +2", feet="Ptero. Greaves +3"}
 	
 	-- Breath sets
 	sets.precast.JA['Restoring Breath'] = {
@@ -85,7 +85,7 @@ function init_gear_sets()
 		head="Ptero. Armet +3", neck="Lancer's Torque", 
 		body=gear_acro_body_breathe, hands=gear_acro_hands_breathe,		
 		-- waist="Glassblower's Belt",
-		back="Updraft Mantle",  legs="Vishap Brais +1", feet="Ptero Greaves"}
+		back="Updraft Mantle",  legs="Vishap Brais +2", feet="Ptero Greaves"}
 	sets.precast.JA['Smiting Breath'] =  {	
 		-- lear="Lancer's Earring", rear="Anastasi Earring",
 		head="Ptero. Armet +3", neck="Lancer's Torque", 
@@ -98,7 +98,7 @@ function init_gear_sets()
 		head="Ptero. Armet +3", neck="Lancer's Torque", 
 		body=gear_acro_body_breathe, hands=gear_acro_hands_breathe,
 		-- waist="Glassblower's Belt",
-		back="Updraft Mantle", legs="Vishap Brais +1", feet="Ptero Greaves"}
+		back="Updraft Mantle", legs="Vishap Brais +2", feet="Ptero Greaves"}
 	
 	sets.SmitingBreath = {	
 		-- lear="Lancer's Earring", rear="Anastasi Earring",
@@ -261,8 +261,7 @@ function init_gear_sets()
 	sets.precast.WS['Leg Sweep'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2", neck="Sanctity Necklace", lear="Digni. Earring", rear="Moonshade Earring",
 		body="Flamma Korazin +2", hands="Flam. Manopolas +2",lring="Stikini Ring", rring="Flamma Ring",
-		-- waist="Eschan Stone",
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Flamma Dirs +2", feet="Flam. Gambieras +2"})
+		back=gear.wsd_jse_back, waist="Eschan Stone", legs="Flamma Dirs +2", feet="Flam. Gambieras +2"})
 	sets.precast.WS['Leg Sweep'].Fodder = set_combine(sets.precast.WS.Fodder, {ammo="Pemphredo Tahtlum",
 		head="Flam. Zucchetto +2", neck="Fotia Gorget", lear="Digni. Earring", rear="Moonshade Earring",
 		body="Flamma Korazin +2", hands="Flam. Manopolas +2",lring="Stikini Ring", rring="Flamma Ring",
@@ -319,7 +318,7 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Volte Bracers", waist="Chaac Belt"})
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Reienkyo", sub="Utu Grip"}
+	sets.weapons.Default = {main="Trishula", sub="Utu Grip"}
 	sets.weapons.Trishula = {main="Trishula", sub="Utu Grip"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP

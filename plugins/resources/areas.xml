@@ -181,7 +181,7 @@
   <a id="180" jp="ラ・ロフの劇場">La'Loff Amphitheater</a>
   <a id="181" jp="宿星の座">The Celestial Nexus</a>
   <a id="182" jp="ウォークオブエコーズ">Walk of Echoes</a>
-  <a id="183" jp="アブダルスの模型-レギオン">Maquette Abdhaljs-Legion</a>
+  <a id="183" jp="アブダルスの模型-レギオンA">Maquette Abdhaljs-LegionA</a>
   <a id="184" jp="デルクフの塔下層">Lower Delkfutt's Tower</a>
   <a id="185" jp="デュナミス-サンドリア">Dynamis - San d'Oria</a>
   <a id="186" jp="デュナミス-バストゥーク">Dynamis - Bastok</a>
@@ -276,6 +276,7 @@
   <a id="283" jp="シルバー・ナイフ">Silver Knife</a>
   <a id="284" jp="セレニア図書館">Celennia Memorial Library</a>
   <a id="285" jp="魂の聖櫃">Feretory</a>
+  <a id="287" jp="アブダルスの模型-レギオンB">Maquette Abdhaljs-LegionB</a>
   <a id="288" jp="エスカ-ジ・タ">Escha - Zi'Tah</a>
   <a id="289" jp="エスカ-ル・オン">Escha - Ru'Aun</a>
   <a id="290" jp="デスエチア-天象の鎖">Desuetia - Empyreal Paradox</a>
@@ -286,4 +287,5 @@
   <a id="295" jp="デュナミス-バストゥーク〔Ｄ〕">Dynamis - Bastok [D]</a>
   <a id="296" jp="デュナミス-ウィンダス〔Ｄ〕">Dynamis - Windurst [D]</a>
   <a id="297" jp="デュナミス-ジュノ〔Ｄ〕">Dynamis - Jeuno [D]</a>
+  <a id="298" jp="ウォークオブエコーズ〔Ｐ〕">Walk of Echoes [P]</a>
 </areas>

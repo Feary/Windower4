@@ -3,6 +3,7 @@ get Apogee Crown +1 Storage all
 get Apogee Slacks +1 Storage all
 get Apogee Mitts +1 Storage all
 get Apogee Pumps +1 Storage all
+get Apogee Dalmatica +1 Storage all
 get Amalric Coif +1 case all
 get Amalric Gages +1 case all 
 get Amalric Slops +1 case all 
@@ -30,7 +31,7 @@ get Evans Earring Storage all
 get Evoker's Ring Storage all
 get Gelos Earring Storage all
 get Glyphic Bracers +1 Storage all
-get Glyphic Doublet +1 Storage all
+get Glyphic Doublet +3 Storage all
 get Glyphic Horn +1 Storage all
 get Glyph. Pigaches +1 Storage all
 get Glyphic Spats +1 Storage all

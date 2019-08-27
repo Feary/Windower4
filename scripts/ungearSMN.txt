@@ -3,6 +3,7 @@ put Apogee Crown +1 Storage all
 put Apogee Slacks +1 Storage all
 put Apogee Mitts +1 Storage all
 put Apogee Pumps +1 Storage all
+put Apogee Dalmatica +1 Storage all
 put Amalric Coif +1 case all
 put Amalric Gages +1 case all 
 put Amalric Slops +1 case all 

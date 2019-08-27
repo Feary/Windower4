@@ -3532,8 +3532,12 @@
   <i id="3715" enl="pot of pink clematis" jp="ピンククレマテス" jpl="" targets="None">Pink Clematis</i>
   <i id="3717" enl="birch tree" jp="カバノキ" jpl="" targets="None">Birch Tree</i>
   <i id="3718" enl="handful of Adoulinian tomatoes" jp="アドゥリントマト" jpl="" targets="None">Ado. Tomatoes</i>
+  <i id="3719" enl="Prishe statue II" jp="プリッシュの像II" jpl="" targets="None">Prishe Statue II</i>
+  <i id="3720" enl="Arciela statue" jp="アシェラの像" jpl="" targets="None">Arciela Statue</i>
+  <i id="3721" enl="Iroha statue" jp="イロハの像" jpl="" targets="None">Iroha Statue</i>
   <i id="3722" enl="Lion statue" jp="ライオンの像" jpl="" targets="None">Lion Statue</i>
   <i id="3723" enl="Lilisette statue" jp="リリゼットの像" jpl="" targets="None">Lilisette Statue</i>
+  <i id="3724" enl="Uka statue" jp="ウカの像" jpl="" targets="None">Uka Statue</i>
   <i id="3725" enl="Cornelia statue" jp="コーネリアの像" jpl="" targets="None">Cornelia Statue</i>
   <i id="3726" enl="Aphmau statue" jp="アフマウの像" jpl="" targets="None">Aphmau Statue</i>
   <i id="3727" enl="Mumor statue" jp="ミュモルの像" jpl="" targets="None">Mumor Statue</i>
@@ -3541,6 +3545,7 @@
   <i id="3729" enl="light chest" jp="ライトチェスト" jpl="" targets="None">Light Chest</i>
   <i id="3730" enl="bulky coffer" jp="バルキーコッファー" jpl="" targets="None">Bulky Coffer</i>
   <i id="3731" enl="azure chest" jp="アジュールチェスト" jpl="" targets="None">Azure Chest</i>
+  <i id="3732" enl="crimson chest" jp="クリムゾンチェスト" jpl="" targets="None">Crimson Chest</i>
   <i id="3735" enl="aurum coffer" jp="オーラムコッファー" jpl="" targets="None">Aurum Coffer</i>
   <i id="3736" enl="well" jp="ウェル" jpl="" targets="None">Well</i>
   <i id="3737" enl="doll stand" jp="ひな壇" jpl="" targets="None">Doll Stand</i>
@@ -4202,7 +4207,7 @@
   <i id="4506" enl="mutton tortilla" jp="マトントルティーヤ" jpl="" targets="Self" casttime="1">Mutton Tortilla</i>
   <i id="4507" enl="rarab meatball" jp="ララブミートボール" jpl="" targets="Self" casttime="1">Rarab Meatball</i>
   <i id="4508" enl="serving of royal jelly" jp="ロイヤルゼリー" jpl="" targets="Self" casttime="1">Royal Jelly</i>
-  <i id="4509" enl="flask of distilled water" jp="蒸留水" jpl="" targets="None" casttime="0">Distilled Water</i>
+  <i id="4509" enl="flask of distilled water" jp="蒸留水" jpl="" targets="Self" casttime="1">Distilled Water</i>
   <i id="4510" enl="acorn cookie" jp="どんぐりクッキー" jpl="" targets="Self" casttime="1">Acorn Cookie</i>
   <i id="4511" enl="bowl of ambrosia" jp="アンブロシア" jpl="" targets="Self" casttime="1">Ambrosia</i>
   <i id="4512" enl="bottle of vampire juice" jp="バンパイアジュース" jpl="" targets="Self" casttime="1">Vampire Juice</i>
@@ -4326,6 +4331,7 @@
   <i id="4630" enl="scroll of Holy II" jp="ホーリーII" jpl="" targets="Self" casttime="1">Holy II</i>
   <i id="4631" enl="scroll of Dia" jp="ディア" jpl="" targets="Self" casttime="1">Dia</i>
   <i id="4632" enl="scroll of Dia II" jp="ディアII" jpl="" targets="Self" casttime="1">Dia II</i>
+  <i id="4633" enl="scroll of Dia III" jp="ディアIII" jpl="" targets="Self" casttime="1">Dia III</i>
   <i id="4636" enl="scroll of Banish" jp="バニシュ" jpl="" targets="Self" casttime="1">Banish</i>
   <i id="4637" enl="scroll of Banish II" jp="バニシュII" jpl="" targets="Self" casttime="1">Banish II</i>
   <i id="4638" enl="scroll of Banish III" jp="バニシュIII" jpl="" targets="Self" casttime="1">Banish III</i>
@@ -4417,10 +4423,12 @@
   <i id="4734" enl="scroll of Protectra II" jp="プロテアII" jpl="" targets="Self" casttime="1">Protectra II</i>
   <i id="4735" enl="scroll of Protectra III" jp="プロテアIII" jpl="" targets="Self" casttime="1">Protectra III</i>
   <i id="4736" enl="scroll of Protectra IV" jp="プロテアIV" jpl="" targets="Self" casttime="1">Protectra IV</i>
+  <i id="4737" enl="scroll of Protectra V" jp="プロテアV" jpl="" targets="Self" casttime="1">Protectra V</i>
   <i id="4738" enl="scroll of Shellra" jp="シェルラ" jpl="" targets="Self" casttime="1">Shellra</i>
   <i id="4739" enl="scroll of Shellra II" jp="シェルラII" jpl="" targets="Self" casttime="1">Shellra II</i>
   <i id="4740" enl="scroll of Shellra III" jp="シェルラIII" jpl="" targets="Self" casttime="1">Shellra III</i>
   <i id="4741" enl="scroll of Shellra IV" jp="シェルラIV" jpl="" targets="Self" casttime="1">Shellra IV</i>
+  <i id="4742" enl="scroll of Shellra V" jp="シェルラV" jpl="" targets="Self" casttime="1">Shellra V</i>
   <i id="4743" enl="scroll of Reraise" jp="リレイズ" jpl="" targets="Self" casttime="1">Reraise</i>
   <i id="4744" enl="scroll of Invisible" jp="インビジ" jpl="" targets="Self" casttime="1">Invisible</i>
   <i id="4745" enl="scroll of Sneak" jp="スニーク" jpl="" targets="Self" casttime="1">Sneak</i>
@@ -4479,11 +4487,17 @@
   <i id="4808" enl="scroll of Waterga II" jp="ウォタガII" jpl="" targets="Self" casttime="1">Waterga II</i>
   <i id="4809" enl="scroll of Waterga III" jp="ウォタガIII" jpl="" targets="Self" casttime="1">Waterga III</i>
   <i id="4812" enl="scroll of Flare" jp="フレア" jpl="" targets="Self" casttime="1">Flare</i>
+  <i id="4813" enl="scroll of Flare II" jp="フレアII" jpl="" targets="Self" casttime="1">Flare II</i>
   <i id="4814" enl="scroll of Freeze" jp="フリーズ" jpl="" targets="Self" casttime="1">Freeze</i>
+  <i id="4815" enl="scroll of Freeze II" jp="フリーズII" jpl="" targets="Self" casttime="1">Freeze II</i>
   <i id="4816" enl="scroll of Tornado" jp="トルネド" jpl="" targets="Self" casttime="1">Tornado</i>
+  <i id="4817" enl="scroll of Tornado II" jp="トルネドII" jpl="" targets="Self" casttime="1">Tornado II</i>
   <i id="4818" enl="scroll of Quake" jp="クエイク" jpl="" targets="Self" casttime="1">Quake</i>
+  <i id="4819" enl="scroll of Quake II" jp="クエイクII" jpl="" targets="Self" casttime="1">Quake II</i>
   <i id="4820" enl="scroll of Burst" jp="バースト" jpl="" targets="Self" casttime="1">Burst</i>
+  <i id="4821" enl="scroll of Burst II" jp="バーストII" jpl="" targets="Self" casttime="1">Burst II</i>
   <i id="4822" enl="scroll of Flood" jp="フラッド" jpl="" targets="Self" casttime="1">Flood</i>
+  <i id="4823" enl="scroll of Flood II" jp="フラッドII" jpl="" targets="Self" casttime="1">Flood II</i>
   <i id="4824" enl="scroll of Gravity" jp="グラビデ" jpl="" targets="Self" casttime="1">Gravity</i>
   <i id="4825" enl="scroll of Gravity II" jp="グラビデII" jpl="" targets="Self" casttime="1">Gravity II</i>
   <i id="4827" enl="scroll of Comet" jp="コメット" jpl="" targets="Self" casttime="1">Comet</i>
@@ -4493,6 +4507,7 @@
   <i id="4834" enl="scroll of Poisonga II" jp="ポイゾガII" jpl="" targets="Self" casttime="1">Poisonga II</i>
   <i id="4838" enl="scroll of Bio" jp="バイオ" jpl="" targets="Self" casttime="1">Bio</i>
   <i id="4839" enl="scroll of Bio II" jp="バイオII" jpl="" targets="Self" casttime="1">Bio II</i>
+  <i id="4840" enl="scroll of Bio III" jp="バイオIII" jpl="" targets="Self" casttime="1">Bio III</i>
   <i id="4843" enl="scroll of Burn" jp="バーン" jpl="" targets="Self" casttime="1">Burn</i>
   <i id="4844" enl="scroll of Frost" jp="フロスト" jpl="" targets="Self" casttime="1">Frost</i>
   <i id="4845" enl="scroll of Choke" jp="チョーク" jpl="" targets="Self" casttime="1">Choke</i>
@@ -4531,6 +4546,7 @@
   <i id="4881" enl="scroll of Sleepga" jp="スリプガ" jpl="" targets="Self" casttime="1">Sleepga</i>
   <i id="4882" enl="scroll of Sleepga II" jp="スリプガII" jpl="" targets="Self" casttime="1">Sleepga II</i>
   <i id="4883" enl="scroll of Absorb-TP" jp="アブゾタック" jpl="" targets="Self" casttime="1">Absorb-TP</i>
+  <i id="4884" enl="scroll of Blind II" jp="ブラインII" jpl="" targets="Self" casttime="1">Blind II</i>
   <i id="4885" enl="scroll of Dread Spikes" jp="ドレッドスパイク" jpl="" targets="Self" casttime="1">Dread Spikes</i>
   <i id="4886" enl="scroll of Absorb-ACC" jp="アブゾアキュル" jpl="" targets="Self" casttime="1">Absorb-ACC</i>
   <i id="4887" enl="scroll of Absorb-Attri" jp="アブゾアトリ" jpl="" targets="Self" casttime="1">Absorb-Attri</i>
@@ -4567,16 +4583,22 @@
   <i id="4927" enl="scroll of Watera II" jp="ウォタラII" jpl="" targets="Self" casttime="1">Watera II</i>
   <i id="4928" enl="scroll of Katon: Ichi" jp="火遁の術:壱" jpl="" targets="Self" casttime="1">Katon: Ichi</i>
   <i id="4929" enl="scroll of Katon: Ni" jp="火遁の術:弐" jpl="" targets="Self" casttime="1">Katon: Ni</i>
+  <i id="4930" enl="scroll of Katon: San" jp="火遁の術:参" jpl="" targets="Self" casttime="1">Katon: San</i>
   <i id="4931" enl="scroll of Hyoton: Ichi" jp="氷遁の術:壱" jpl="" targets="Self" casttime="1">Hyoton: Ichi</i>
   <i id="4932" enl="scroll of Hyoton: Ni" jp="氷遁の術:弐" jpl="" targets="Self" casttime="1">Hyoton: Ni</i>
+  <i id="4933" enl="scroll of Hyoton: San" jp="氷遁の術:参" jpl="" targets="Self" casttime="1">Hyoton: San</i>
   <i id="4934" enl="scroll of Huton: Ichi" jp="風遁の術:壱" jpl="" targets="Self" casttime="1">Huton: Ichi</i>
   <i id="4935" enl="scroll of Huton: Ni" jp="風遁の術:弐" jpl="" targets="Self" casttime="1">Huton: Ni</i>
+  <i id="4936" enl="scroll of Huton: San" jp="風遁の術:参" jpl="" targets="Self" casttime="1">Huton: San</i>
   <i id="4937" enl="scroll of Doton: Ichi" jp="土遁の術:壱" jpl="" targets="Self" casttime="1">Doton: Ichi</i>
   <i id="4938" enl="scroll of Doton: Ni" jp="土遁の術:弐" jpl="" targets="Self" casttime="1">Doton: Ni</i>
+  <i id="4939" enl="scroll of Doton: San" jp="土遁の術:参" jpl="" targets="Self" casttime="1">Doton: San</i>
   <i id="4940" enl="scroll of Raiton: Ichi" jp="雷遁の術:壱" jpl="" targets="Self" casttime="1">Raiton: Ichi</i>
   <i id="4941" enl="scroll of Raiton: Ni" jp="雷遁の術:弐" jpl="" targets="Self" casttime="1">Raiton: Ni</i>
+  <i id="4942" enl="scroll of Raiton: San" jp="雷遁の術:参" jpl="" targets="Self" casttime="1">Raiton: San</i>
   <i id="4943" enl="scroll of Suiton: Ichi" jp="水遁の術:壱" jpl="" targets="Self" casttime="1">Suiton: Ichi</i>
   <i id="4944" enl="scroll of Suiton: Ni" jp="水遁の術:弐" jpl="" targets="Self" casttime="1">Suiton: Ni</i>
+  <i id="4945" enl="scroll of Suiton: San" jp="水遁の術:参" jpl="" targets="Self" casttime="1">Suiton: San</i>
   <i id="4946" enl="scroll of Utsusemi: Ichi" jp="空蝉の術:壱" jpl="" targets="Self" casttime="1">Utsusemi: Ichi</i>
   <i id="4947" enl="scroll of Utsusemi: Ni" jp="空蝉の術:弐" jpl="" targets="Self" casttime="1">Utsusemi: Ni</i>
   <i id="4949" enl="scroll of Jubaku: Ichi" jp="呪縛の術:壱" jpl="" targets="Self" casttime="1">Jubaku: Ichi</i>
@@ -5251,7 +5273,7 @@
   <i id="5646" enl="handful of bloody chocolate" jp="ブラッディチョコ" jpl="" targets="Self" casttime="1">Bld. Chocolate</i>
   <i id="5647" enl="lik kabob" jp="リクの串焼" jpl="" targets="Self" casttime="1">Lik Kabob</i>
   <i id="5648" enl="grilled lik" jp="リクの白焼" jpl="" targets="Self" casttime="1">Grilled Lik</i>
-  <i id="5649" enl="handful of roasted almonds" jp="ローストアーモンド" jpl="" targets="Self" casttime="1">Roasted Almond</i>
+  <i id="5649" enl="handful of roasted almonds" jp="ローストアーモンド" jpl="" targets="Self" casttime="1">Roasted Almonds</i>
   <i id="5650" enl="pair of nopales" jp="ノパル" jpl="" targets="Self" casttime="1">Nopales</i>
   <i id="5651" enl="burdock root" jp="バードック" jpl="" targets="Self" casttime="1">Burdock</i>
   <i id="5652" enl="plate of anchovies" jp="アンチョビ" jpl="" targets="Self" casttime="1">Anchovy</i>
@@ -5861,8 +5883,8 @@
   <i id="6269" enl="eminent quiver" jp="箙【エミネン】" jpl="" targets="Self" casttime="1">Eminent Quiver</i>
   <i id="6270" enl="eminent bolt quiver" jp="矢筒【エミネン】" jpl="" targets="Self" casttime="1">Em. Bolt Quiver</i>
   <i id="6271" enl="eminent bullet pouch" jp="胴乱【エミネン】" jpl="" targets="Self" casttime="1">Em. Bul. Pouch</i>
-  <i id="6272" enl="fried pototo" jp="ポポトフライ" jpl="" targets="Self" casttime="1">Fried Popoto</i>
-  <i id="6273" enl="fried pototo +1" jp="ポポトフライ+1" jpl="" targets="Self" casttime="1">Fried Popoto +1</i>
+  <i id="6272" enl="fried popoto" jp="ポポトフライ" jpl="" targets="Self" casttime="1">Fried Popoto</i>
+  <i id="6273" enl="fried popoto +1" jp="ポポトフライ+1" jpl="" targets="Self" casttime="1">Fried Popoto +1</i>
   <i id="6274" enl="pukatrice egg" jp="スコッチエッグ" jpl="" targets="Self" casttime="1">Pukatrice Egg</i>
   <i id="6275" enl="pukatrice egg +1" jp="スコッチエッグ+1" jpl="" targets="Self" casttime="1">Pukatrice Egg +1</i>
   <i id="6276" enl="deep-fried shrimp" jp="エビフライ" jpl="" targets="Self" casttime="1">D.-fried Shrimp</i>
@@ -6080,6 +6102,50 @@
   <i id="6535" enl="pinch of pungent powder II" jp="ベビーパウダーII" jpl="" targets="Self" casttime="1">Pungent Powder II</i>
   <i id="6536" enl="New Year's pouch" jp="小袋【お年玉】" jpl="" targets="Self" casttime="1">New Year's Pouch</i>
   <i id="6537" enl="pinch of pungent powder III" jp="ベビーパウダーIII" jpl="" targets="Self" casttime="1">Pungent Powder III</i>
+  <i id="6538" enl="Altana's repast" jp="アルタナ全席" jpl="" targets="Self" casttime="1">Altana's Repast</i>
+  <i id="6539" enl="Altana's repast +1" jp="アルタナ全席+1" jpl="" targets="Self" casttime="1">Altana's Repast +1</i>
+  <i id="6540" enl="Altana's repast +2" jp="アルタナ全席+2" jpl="" targets="Self" casttime="1">Altana's Repast +2</i>
+  <i id="6541" enl="worn sack of snowslit stones +1" jp="袋【鋭い白石+1】" jpl="" targets="Self" casttime="1">Worn Sack (SS+1)</i>
+  <i id="6542" enl="worn sack of snowslit stones +2" jp="袋【鋭い白石+2】" jpl="" targets="Self" casttime="1">Worn Sack (SS+2)</i>
+  <i id="6543" enl="worn sack of leafslit stones +1" jp="袋【鋭い緑石+1】" jpl="" targets="Self" casttime="1">Worn Sack (LS+1)</i>
+  <i id="6544" enl="worn sack of leafslit stones +2" jp="袋【鋭い緑石+2】" jpl="" targets="Self" casttime="1">Worn Sack (LS+2)</i>
+  <i id="6545" enl="worn sack of duskslit stones +1" jp="袋【鋭い黒石+1】" jpl="" targets="Self" casttime="1">Worn Sack (DS+1)</i>
+  <i id="6546" enl="worn sack of duskslit stones +2" jp="袋【鋭い黒石+2】" jpl="" targets="Self" casttime="1">Worn Sack (DS+2)</i>
+  <i id="6547" enl="worn sack of snowtip stones +1" jp="袋【細い白石+1】" jpl="" targets="Self" casttime="1">Worn Sack (ST+1)</i>
+  <i id="6548" enl="worn sack of snowtip stones +2" jp="袋【細い白石+2】" jpl="" targets="Self" casttime="1">Worn Sack (ST+2)</i>
+  <i id="6549" enl="worn sack of leaftip stones +1" jp="袋【細い緑石+1】" jpl="" targets="Self" casttime="1">Worn Sack (LT+1)</i>
+  <i id="6550" enl="worn sack of leaftip stones +2" jp="袋【細い緑石+2】" jpl="" targets="Self" casttime="1">Worn Sack (LT+2)</i>
+  <i id="6551" enl="worn sack of dusktip stones +1" jp="袋【細い黒石+1】" jpl="" targets="Self" casttime="1">Worn Sack (DT+1)</i>
+  <i id="6552" enl="worn sack of dusktip stones +2" jp="袋【細い黒石+2】" jpl="" targets="Self" casttime="1">Worn Sack (DT+2)</i>
+  <i id="6553" enl="worn sack of snowdim stones +1" jp="袋【薄い白石+1】" jpl="" targets="Self" casttime="1">Worn Sack (SD+1)</i>
+  <i id="6554" enl="worn sack of snowdim stones +2" jp="袋【薄い白石+2】" jpl="" targets="Self" casttime="1">Worn Sack (SD+2)</i>
+  <i id="6555" enl="worn sack of leafdim stones +1" jp="袋【薄い緑石+1】" jpl="" targets="Self" casttime="1">Worn Sack (LD+1)</i>
+  <i id="6556" enl="worn sack of leafdim stones +2" jp="袋【薄い緑石+2】" jpl="" targets="Self" casttime="1">Worn Sack (LD+2)</i>
+  <i id="6557" enl="worn sack of duskdim stones +1" jp="袋【薄い黒石+1】" jpl="" targets="Self" casttime="1">Worn Sack (DD+1)</i>
+  <i id="6558" enl="worn sack of duskdim stones +2" jp="袋【薄い黒石+2】" jpl="" targets="Self" casttime="1">Worn Sack (DD+2)</i>
+  <i id="6559" enl="worn sack of snoworb stones +1" jp="袋【丸い白石+1】" jpl="" targets="Self" casttime="1">Worn Sack (SO+1)</i>
+  <i id="6560" enl="worn sack of snoworb stones +2" jp="袋【丸い白石+2】" jpl="" targets="Self" casttime="1">Worn Sack (SO+2)</i>
+  <i id="6561" enl="worn sack of leaforb stones +1" jp="袋【丸い緑石+1】" jpl="" targets="Self" casttime="1">Worn Sack (LO+1)</i>
+  <i id="6562" enl="worn sack of leaforb stones +2" jp="袋【丸い緑石+2】" jpl="" targets="Self" casttime="1">Worn Sack (LO+2)</i>
+  <i id="6563" enl="worn sack of duskorb stones +1" jp="袋【丸い黒石+1】" jpl="" targets="Self" casttime="1">Worn Sack (DO+1)</i>
+  <i id="6564" enl="worn sack of duskorb stones +2" jp="袋【丸い黒石+2】" jpl="" targets="Self" casttime="1">Worn Sack (DO+2)</i>
+  <i id="6565" enl="persikos snow cone" jp="ペルシコス欠氷" jpl="" targets="Self" casttime="1">Per. Snow Cone</i>
+  <i id="6566" enl="bonanza biscuit" jp="ボナンザクッキー" jpl="" targets="Self" casttime="1">Bonanza Biscuit</i>
+  <i id="6567" enl="tropical crepe" jp="トロピカルクレープ" jpl="" targets="Self" casttime="1">Tropical Crepe</i>
+  <i id="6568" enl="crepe des rois" jp="クレープ・デ・ロワ" jpl="" targets="Self" casttime="1">Crepe des Rois</i>
+  <i id="6569" enl="scroll of Slow II" jp="スロウII" jpl="" targets="Self" casttime="1">Slow II</i>
+  <i id="6570" enl="scroll of Paralyze II" jp="パライズII" jpl="" targets="Self" casttime="1">Paralyze II</i>
+  <i id="6571" enl="scroll of Phalanx II" jp="ファランクスII" jpl="" targets="Self" casttime="1">Phalanx II</i>
+  <i id="6572" enl="coffer of swart astral detritus" jp="宝箱【黒の残魂】" jpl="" targets="Self" casttime="1">Coffer (S. Ast.)</i>
+  <i id="6573" enl="coffer of murky astral detritus" jp="宝箱【闇の残魂】" jpl="" targets="Self" casttime="1">Coffer (M. Ast.)</i>
+  <i id="6574" enl="veridical conflux shard" jp="幽門石の欠片" jpl="" targets="Self" casttime="10">V. Con. Shard</i>
+  <i id="6575" enl="cheesesteak sandwich" jp="チーズステーキ" jpl="" targets="Self" casttime="1">Cheesestk. Sand.</i>
+  <i id="6577" enl="bowl of clam chowder" jp="クラムチャウダー" jpl="" targets="Self" casttime="1">Clam Chowder</i>
+  <i id="6578" enl="serving of popoto gratin" jp="チーズポポト" jpl="" targets="Self" casttime="1">Popoto Gratin</i>
+  <i id="6579" enl="behemoth sandwich" jp="ベヒーモスサンド" jpl="" targets="Self" casttime="1">Behemoth Sand.</i>
+  <i id="6580" enl="bowl of rustic fish" jp="ラステクフィッシュ" jpl="" targets="Self" casttime="1">Rustic Fish</i>
+  <i id="6581" enl="piece of cornbread" jp="コーンブレッド" jpl="" targets="Self" casttime="1">Cornbread</i>
+  <i id="6582" enl="watermelon snow cone" jp="ウォータメロン欠氷" jpl="" targets="Self" casttime="1">W. Snow Cone</i>
   <i id="8193" enl="Harlequin head" jp="湎用ヘッド" jpl="">Harlequin Head</i>
   <i id="8194" enl="Valoredge X-900 head" jp="白兵戦ヘッド" jpl="">Valoredge Head</i>
   <i id="8195" enl="Sharpshot Z-500 head" jp="射撃戦ヘッド" jpl="">Sharpshot Head</i>
@@ -6105,6 +6171,9 @@
   <i id="8461" enl="heat capacitor II" jp="Ｈ．キャパシターII" jpl="">Heat Capacitor II</i>
   <i id="8462" enl="speedloader" jp="チェインアンプ" jpl="">Speedloader</i>
   <i id="8463" enl="speedloader II" jp="チェインアンプII" jpl="">Speedloader II</i>
+  <i id="8464" enl="tension spring V" jp="Ｔ．スプリングV" jpl="">Tension Spring V</i>
+  <i id="8465" enl="magniplug" jp="マグニプラッグ" jpl="">Magniplug</i>
+  <i id="8466" enl="magniplug II" jp="マグニプラッグII" jpl="">Magniplug II</i>
   <i id="8481" enl="mana booster" jp="マナブースター" jpl="">Mana Booster</i>
   <i id="8482" enl="loudspeaker" jp="ラウドスピーカー" jpl="">Loudspeaker</i>
   <i id="8483" enl="scanner" jp="スキャナー" jpl="">Scanner</i>
@@ -6119,6 +6188,10 @@
   <i id="8492" enl="loudspeaker IV" jp="ラウドスピーカーIV" jpl="">Loudspeaker IV</i>
   <i id="8493" enl="tranquilizer III" jp="トランキライザーIII" jpl="">Tranquilizer III</i>
   <i id="8494" enl="amplifier II" jp="アンプリファイアII" jpl="">Amplifier II</i>
+  <i id="8495" enl="loudspeaker V" jp="ラウドスピーカーV" jpl="">Loudspeaker V</i>
+  <i id="8496" enl="tranquilizer IV" jp="トランキライザーIV" jpl="">Tranquilizer IV</i>
+  <i id="8497" enl="arcanoclutch" jp="アルカノクラッチ" jpl="">Arcanoclutch</i>
+  <i id="8498" enl="arcanoclutch II" jp="アルカノクラッチII" jpl="">Arcanoclutch II</i>
   <i id="8513" enl="accelerator" jp="アクセラレーター" jpl="">Accelerator</i>
   <i id="8514" enl="scope" jp="スコープ" jpl="">Scope</i>
   <i id="8515" enl="pattern reader" jp="パターンリーダー" jpl="">Pattern Reader</i>
@@ -6133,6 +6206,8 @@
   <i id="8524" enl="repeater" jp="リピーター" jpl="">Repeater</i>
   <i id="8525" enl="accelerator IV" jp="アクセラレーターIV" jpl="">Accelerator IV</i>
   <i id="8526" enl="scope III" jp="スコープIII" jpl="">Scope III</i>
+  <i id="8527" enl="scope IV" jp="スコープIV" jpl="">Scope IV</i>
+  <i id="8528" enl="truesights" jp="トゥルーサイツ" jpl="">Truesights</i>
   <i id="8545" enl="shock absorber" jp="Ｓ．アブソーバー" jpl="">Shock Absorber</i>
   <i id="8546" enl="armor plate" jp="アーマープレート" jpl="">Armor Plate</i>
   <i id="8547" enl="analyzer" jp="アナライザー" jpl="">Analyzer</i>
@@ -6159,6 +6234,7 @@
   <i id="8587" enl="dynamo II" jp="ダイナモII" jpl="">Dynamo II</i>
   <i id="8588" enl="stabilizer IV" jp="スタビライザーIV" jpl="">Stabilizer IV</i>
   <i id="8589" enl="dynamo III" jp="ダイナモIII" jpl="">Dynamo III</i>
+  <i id="8590" enl="stabilizer V" jp="スタビライザーV" jpl="">Stabilizer V</i>
   <i id="8609" enl="mana jammer" jp="マナジャマー" jpl="">Mana Jammer</i>
   <i id="8610" enl="heatsink" jp="ヒートシンク" jpl="">Heatsink</i>
   <i id="8611" enl="stealth screen" jp="ステルススクリーン" jpl="">Stealth Screen</i>
@@ -6746,6 +6822,9 @@
   <i id="9272" enl="Ambuscade voucher: fingers" jp="Ａ．チケット：指" jpl="" targets="None">A. Vou.: Fingers</i>
   <i id="9273" enl="Ambuscade token: fingers" jp="Ａ．トークン：指" jpl="" targets="None">A. Tok.: Fingers</i>
   <i id="9274" enl="dial key #ANV" jp="ダイヤルキー#ANV" jpl="" targets="None">Dial Key #ANV</i>
+  <i id="9275" enl="Mars orb" jp="マーズオーブ" jpl="" targets="None">Mars Orb</i>
+  <i id="9276" enl="Venus orb" jp="ビーナスオーブ" jpl="" targets="None">Venus Orb</i>
+  <i id="9277" enl="silver A.M.A.N. voucher" jp="互助会引換券・銀" jpl="" targets="None">Silver Voucher</i>
   <i id="9280" enl="damage gauge II" jp="ダメージゲージII" jpl="" targets="None">Damage Gauge II</i>
   <i id="9281" enl="paragon warrior card" jp="大戦士のカード" jpl="" targets="None">P. WAR Card</i>
   <i id="9282" enl="paragon monk card" jp="大格闘家のカード" jpl="" targets="None">P. MNK Card</i>
@@ -7008,6 +7087,8 @@
   <i id="9539" enl="beastmen's medal" jp="獣人勲章" jpl="" targets="None">Beastmen's Medal</i>
   <i id="9540" enl="blackened identification card" jp="黒ずんだ認識票" jpl="" targets="None">Black. I. Card</i>
   <i id="9541" enl="Kindred's medal" jp="獣神勲章" jpl="" targets="None">Kindred's Medal</i>
+  <i id="9542" enl="old identification card" jp="古びた認識票" jpl="" targets="None">Old I. Card</i>
+  <i id="9543" enl="demon's medal" jp="魔神勲章" jpl="" targets="None">Demon's Medal</i>
   <i id="9544" enl="headshard: WAR" jp="面具の破片：戦" jpl="" targets="None">Headshard: WAR</i>
   <i id="9545" enl="headshard: MNK" jp="面具の破片：モ" jpl="" targets="None">Headshard: MNK</i>
   <i id="9546" enl="headshard: WHM" jp="面具の破片：白" jpl="" targets="None">Headshard: WHM</i>
@@ -7104,7 +7185,7 @@
   <i id="9637" enl="handshard: THF" jp="手具の破片：シ" jpl="" targets="None">Handshard: THF</i>
   <i id="9638" enl="handshard: PLD" jp="手具の破片：ナ" jpl="" targets="None">Handshard: PLD</i>
   <i id="9639" enl="handshard: DRK" jp="手具の破片：暗" jpl="" targets="None">Handshard: DRK</i>
-  <i id="9640" enl="handshard: BSM" jp="手具の破片：獣" jpl="" targets="None">Handshard: BSM</i>
+  <i id="9640" enl="handshard: BST" jp="手具の破片：獣" jpl="" targets="None">Handshard: BST</i>
   <i id="9641" enl="handshard: BRD" jp="手具の破片：吟" jpl="" targets="None">Handshard: BRD</i>
   <i id="9642" enl="handshard: RNG" jp="手具の破片：狩" jpl="" targets="None">Handshard: RNG</i>
   <i id="9643" enl="handshard: SAM" jp="手具の破片：侍" jpl="" targets="None">Handshard: SAM</i>
@@ -7126,7 +7207,7 @@
   <i id="9659" enl="pair of void handwear: THF" jp="闇の手具：シ" jpl="" targets="None">Voidhand: THF</i>
   <i id="9660" enl="pair of void handwear: PLD" jp="闇の手具：ナ" jpl="" targets="None">Voidhand: PLD</i>
   <i id="9661" enl="pair of void handwear: DRK" jp="闇の手具：暗" jpl="" targets="None">Voidhand: DRK</i>
-  <i id="9662" enl="pair of void handwear: BSM" jp="闇の手具：獣" jpl="" targets="None">Voidhand: BSM</i>
+  <i id="9662" enl="pair of void handwear: BST" jp="闇の手具：獣" jpl="" targets="None">Voidhand: BST</i>
   <i id="9663" enl="pair of void handwear: BRD" jp="闇の手具：吟" jpl="" targets="None">Voidhand: BRD</i>
   <i id="9664" enl="pair of void handwear: RNG" jp="闇の手具：狩" jpl="" targets="None">Voidhand: RNG</i>
   <i id="9665" enl="pair of void handwear: SAM" jp="闇の手具：侍" jpl="" targets="None">Voidhand: SAM</i>
@@ -7192,7 +7273,7 @@
   <i id="9725" enl="footshard: THF" jp="足具の破片：シ" jpl="" targets="None">Footshard: THF</i>
   <i id="9726" enl="footshard: PLD" jp="足具の破片：ナ" jpl="" targets="None">Footshard: PLD</i>
   <i id="9727" enl="footshard: DRK" jp="足具の破片：暗" jpl="" targets="None">Footshard: DRK</i>
-  <i id="9728" enl="footshard: BSM" jp="足具の破片：獣" jpl="" targets="None">Footshard: BSM</i>
+  <i id="9728" enl="footshard: BST" jp="足具の破片：獣" jpl="" targets="None">Footshard: BST</i>
   <i id="9729" enl="footshard: BRD" jp="足具の破片：吟" jpl="" targets="None">Footshard: BRD</i>
   <i id="9730" enl="footshard: RNG" jp="足具の破片：狩" jpl="" targets="None">Footshard: RNG</i>
   <i id="9731" enl="footshard: SAM" jp="足具の破片：侍" jpl="" targets="None">Footshard: SAM</i>
@@ -7214,7 +7295,7 @@
   <i id="9747" enl="pair of void footwear: THF" jp="闇の足具：シ" jpl="" targets="None">Voidfoot: THF</i>
   <i id="9748" enl="pair of void footwear: PLD" jp="闇の足具：ナ" jpl="" targets="None">Voidfoot: PLD</i>
   <i id="9749" enl="pair of void footwear: DRK" jp="闇の足具：暗" jpl="" targets="None">Voidfoot: DRK</i>
-  <i id="9750" enl="pair of void footwear: BSM" jp="闇の足具：獣" jpl="" targets="None">Voidfoot: BSM</i>
+  <i id="9750" enl="pair of void footwear: BST" jp="闇の足具：獣" jpl="" targets="None">Voidfoot: BST</i>
   <i id="9751" enl="pair of void footwear: BRD" jp="闇の足具：吟" jpl="" targets="None">Voidfoot: BRD</i>
   <i id="9752" enl="pair of void footwear: RNG" jp="闇の足具：狩" jpl="" targets="None">Voidfoot: RNG</i>
   <i id="9753" enl="pair of void footwear: SAM" jp="闇の足具：侍" jpl="" targets="None">Voidfoot: SAM</i>
@@ -7236,12 +7317,84 @@
   <i id="9769" enl="water card" jp="水紋のカード" jpl="" targets="None">Water Card</i>
   <i id="9770" enl="light card" jp="光紋のカード" jpl="" targets="None">Light Card</i>
   <i id="9771" enl="dark card" jp="闇紋のカード" jpl="" targets="None">Dark Card</i>
+  <i id="9773" enl="moldy bolt" jp="朽ちたボルト" jpl="" targets="None">Moldy Bolt</i>
+  <i id="9774" enl="offering to the Orcs" jp="オークの供物" jpl="" targets="None">Orc Offering</i>
+  <i id="9775" enl="offering to the Quadav" jp="クゥダフの供物" jpl="" targets="None">Quadav Offering</i>
+  <i id="9776" enl="offering to the Yagudo" jp="ヤグードの供物" jpl="" targets="None">Yagudo Offering</i>
+  <i id="9777" enl="offering to the Goblins" jp="ゴブリンの供物" jpl="" targets="None">Goblin Offering</i>
+  <i id="9778" enl="letter from Iroha" jp="イロハからの手紙" jpl="" targets="None">Letter from Iroha</i>
+  <i id="9779" enl="letter from Reisenjima" jp="宮司からの招待状" jpl="" targets="None">L. from Reisenjima</i>
+  <i id="9780" enl="Ambuscade voucher: weapon" jp="Ａ．チケット：武器" jpl="" targets="None">A. Voucher: Weapon</i>
+  <i id="9781" enl="Ambuscade voucher: back" jp="Ａ．チケット：背" jpl="" targets="None">A. Voucher: Back</i>
+  <i id="9782" enl="Abdhaljs nugget" jp="アブダルスナゲット" jpl="" targets="None">Abdhaljs Nugget</i>
+  <i id="9783" enl="Abdhaljs gem" jp="アブダルスオーブ" jpl="" targets="None">Abdhaljs Gem</i>
+  <i id="9784" enl="Abdhaljs anima" jp="アブダルスアニマ" jpl="" targets="None">Abdhaljs Anima</i>
+  <i id="9785" enl="chunk of Abdhaljs matter" jp="アブダルスマター" jpl="" targets="None">Abdhaljs Matter</i>
+  <i id="9830" enl="moldy weapon" jp="朽ちた格闘武器" jpl="" targets="None">Moldy Weapon</i>
+  <i id="9831" enl="moldy dagger" jp="朽ちた短剣" jpl="" targets="None">Moldy Dagger</i>
+  <i id="9832" enl="moldy sword" jp="朽ちた片手剣" jpl="" targets="None">Moldy Sword</i>
+  <i id="9833" enl="moldy greatsword" jp="朽ちた両手剣" jpl="" targets="None">Moldy G. Sword</i>
+  <i id="9834" enl="moldy axe" jp="朽ちた片手斧" jpl="" targets="None">Moldy Axe</i>
+  <i id="9835" enl="moldy great axe" jp="朽ちた両手斧" jpl="" targets="None">Moldy Great Axe</i>
+  <i id="9836" enl="moldy polearm" jp="朽ちた両手槍" jpl="" targets="None">Moldy Polearm</i>
+  <i id="9837" enl="moldy scythe" jp="朽ちた両手鎌" jpl="" targets="None">Moldy Scythe</i>
+  <i id="9838" enl="moldy katana" jp="朽ちた片手刀" jpl="" targets="None">Moldy Katana</i>
+  <i id="9839" enl="moldy great katana" jp="朽ちた両手刀" jpl="" targets="None">Moldy G. Katana</i>
+  <i id="9840" enl="moldy club" jp="朽ちた片手棍" jpl="" targets="None">Moldy Club</i>
+  <i id="9841" enl="moldy staff" jp="朽ちた両手棍" jpl="" targets="None">Moldy Staff</i>
+  <i id="9843" enl="moldy crossbow" jp="朽ちた弩" jpl="" targets="None">Moldy Crossbow</i>
+  <i id="9844" enl="ratnaraj" jp="ラトラナジュ" jpl="" targets="None">Ratnaraj</i>
+  <i id="9845" enl="chunk of relic adaman" jp="レリックアダマン" jpl="" targets="None">Relic Adaman</i>
+  <i id="9846" enl="ruby crystal" jp="紅玉の結晶" jpl="" targets="None">Ruby Crystal</i>
+  <i id="9847" enl="sapphire crystal" jp="蒼玉の結晶" jpl="" targets="None">Sapphire Crystal</i>
+  <i id="9848" enl="seedstone crystal" jp="藍玉の結晶" jpl="" targets="None">Seedstone Crystal</i>
+  <i id="9849" enl="iolite crystal" jp="菫青の結晶" jpl="" targets="None">Iolite Crystal</i>
+  <i id="9850" enl="pyrope crystal" jp="紅榴の結晶" jpl="" targets="None">Pyrope Crystal</i>
+  <i id="9851" enl="peridot crystal" jp="橄欖の結晶" jpl="" targets="None">Peridot Crystal</i>
+  <i id="9852" enl="diamond crystal" jp="金剛の結晶" jpl="" targets="None">Diamond Crystal</i>
+  <i id="9853" enl="obsidian crystal" jp="黒曜の結晶" jpl="" targets="None">Obsidian Crystal</i>
+  <i id="9854" enl="topaz crystal" jp="黄玉の結晶" jpl="" targets="None">Topaz Crystal</i>
+  <i id="9855" enl="alexandrite crystal" jp="金緑の結晶" jpl="" targets="None">Alexandrite Crystal</i>
+  <i id="9856" enl="malachite crystal" jp="孔雀の結晶" jpl="" targets="None">Malachite Crystal</i>
+  <i id="9857" enl="amber crystal" jp="琥珀の結晶" jpl="" targets="None">Amber Crystal</i>
+  <i id="9858" enl="tanzanite crystal" jp="灰簾の結晶" jpl="" targets="None">Tanzanite Crystal</i>
+  <i id="9859" enl="andalusite crystal" jp="紅柱の結晶" jpl="" targets="None">Andalusite Crystal</i>
+  <i id="9860" enl="rutile crystal" jp="金紅の結晶" jpl="" targets="None">Rutile Crystal</i>
+  <i id="9861" enl="lapis lazuli crystal" jp="瑠璃の結晶" jpl="" targets="None">Lapis Lazuli Crystal</i>
+  <i id="9862" enl="jadeite crystal" jp="翡翠の結晶" jpl="" targets="None">Jadeite Crystal</i>
+  <i id="9863" enl="sardonyx crystal" jp="瑪瑙の結晶" jpl="" targets="None">Sardonyx Crystal</i>
+  <i id="9864" enl="sunstone crystal" jp="日長の結晶" jpl="" targets="None">Sunstone Crystal</i>
+  <i id="9865" enl="moonstone crystal" jp="月長の結晶" jpl="" targets="None">Moonstone Crystal</i>
+  <i id="9866" enl="emerald crystal" jp="翠玉の結晶" jpl="" targets="None">Emerald Crystal</i>
+  <i id="9867" enl="apatite crystal" jp="燐灰の結晶" jpl="" targets="None">Apatite Crystal</i>
+  <i id="9868" enl="moldy nodowa" jp="朽ちた喉輪" jpl="" targets="None">Moldy Nodowa</i>
+  <i id="9869" enl="moldy stole" jp="朽ちたストール" jpl="" targets="None">Moldy Stole</i>
+  <i id="9870" enl="moldy bead necklace" jp="朽ちた数珠" jpl="" targets="None">Moldy Necklace</i>
+  <i id="9871" enl="moldy gorget" jp="朽ちたゴルゲット" jpl="" targets="None">Moldy Gorget</i>
+  <i id="9872" enl="moldy torque" jp="朽ちたトルク" jpl="" targets="None">Moldy Torque</i>
+  <i id="9873" enl="moldy collar" jp="朽ちた首輪" jpl="" targets="None">Moldy Collar</i>
+  <i id="9874" enl="moldy charm" jp="朽ちたチャーム" jpl="" targets="None">Moldy Charm</i>
+  <i id="9875" enl="crystal of swart astral detritus" jp="黒の残魂" jpl="" targets="None">S. Astral Detritus</i>
+  <i id="9876" enl="crystal of murky astral detritus" jp="闇の残魂" jpl="" targets="None">M. Astral Detritus</i>
+  <i id="9877" enl="heroism crystal" jp="英雄の結晶" jpl="" targets="None">Heroism Crystal</i>
+  <i id="9878" enl="heroism aggregate" jp="英雄の大結晶" jpl="" targets="None">Heroism Aggregate</i>
+  <i id="9879" enl="Mog Kupon W-RMEA" jp="クーポンW-RMEA" jpl="" targets="None">Kupon W-RMEA</i>
+  <i id="9880" enl="tension spring V" jp="Ｔ．スプリングV" jpl="" targets="None">Ten. Spring V</i>
+  <i id="9881" enl="loudspeaker V" jp="ラウドスピーカーV" jpl="" targets="None">Loudspeaker V</i>
+  <i id="9882" enl="tranquilizer IV" jp="トランキライザーIV" jpl="" targets="None">Tranquilizer IV</i>
+  <i id="9883" enl="stabilizer V" jp="スタビライザーV" jpl="" targets="None">Stabilizer V</i>
+  <i id="9884" enl="scope IV" jp="スコープIV" jpl="" targets="None">Scope IV</i>
+  <i id="9885" enl="magniplug" jp="マグニプラッグ" jpl="" targets="None">Magniplug</i>
+  <i id="9886" enl="magniplug II" jp="マグニプラッグII" jpl="" targets="None">Magniplug II</i>
+  <i id="9887" enl="arcanoclutch" jp="アルカノクラッチ" jpl="" targets="None">Arcanoclutch</i>
+  <i id="9888" enl="arcanoclutch II" jp="アルカノクラッチII" jpl="" targets="None">Arcanoclutch II</i>
+  <i id="9889" enl="truesights" jp="トゥルーサイツ" jpl="" targets="None">Truesights</i>
   <i id="10049" enl="♪Raptor" jp="♪ラプトル" jpl="" targets="None">♪Raptor</i>
   <i id="10050" enl="♪Tiger" jp="♪剣虎" jpl="" targets="None">♪Tiger</i>
   <i id="10051" enl="♪Crab" jp="♪クラブ" jpl="" targets="None">♪Crab</i>
   <i id="10052" enl="♪Red Crab" jp="♪赤クラブ" jpl="" targets="None">♪Red Crab</i>
   <i id="10053" enl="♪Bomb" jp="♪ボム" jpl="" targets="None">♪Bomb</i>
-  <i id="10054" enl="♪Ram" jp="♪大羊" jpl="" targets="None">♪Ram</i>
+  <i id="10054" enl="♪Sheep" jp="♪大羊" jpl="" targets="None">♪Sheep</i>
   <i id="10055" enl="♪Morbol" jp="♪モルボル" jpl="" targets="None">♪Morbol</i>
   <i id="10056" enl="♪Crawler" jp="♪クロウラー" jpl="" targets="None">♪Crawler</i>
   <i id="10057" enl="♪Fenrir" jp="♪フェンリル" jpl="" targets="None">♪Fenrir</i>
@@ -7256,6 +7409,10 @@
   <i id="10066" enl="♪Spheroid" jp="♪スフィアロイド" jpl="" targets="None">♪Spheroid</i>
   <i id="10067" enl="♪Omega" jp="♪オメガ" jpl="" targets="None">♪Omega</i>
   <i id="10068" enl="♪Coeurl" jp="♪クァール" jpl="" targets="None">♪Coeurl</i>
+  <i id="10069" enl="♪Goobbue" jp="♪グゥーブー" jpl="" targets="None">♪Goobbue</i>
+  <i id="10070" enl="♪Raaz" jp="♪ラズ" jpl="" targets="None">♪Raaz</i>
+  <i id="10071" enl="♪Levitus" jp="♪レヴィデイス" jpl="" targets="None">♪Levitus</i>
+  <i id="10072" enl="♪Adamantoise" jp="♪アダマンタス" jpl="" targets="None">♪Adamantoise</i>
   <i id="10112" enl="cipher of Zeid's alter ego" jp="盟-ザイド" jpl="" targets="None">Cipher: Zeid</i>
   <i id="10113" enl="cipher of Lion's alter ego" jp="盟-ライオン" jpl="" targets="None">Cipher: Lion</i>
   <i id="10114" enl="cipher of Tenzen's alter ego" jp="盟-テンゼン" jpl="" targets="None">Cipher: Tenzen</i>
@@ -7479,6 +7636,7 @@
   <i id="29336" enl="moogle storage slip 25" jp="モグの預り帳【25】" jpl="">Storage Slip 25</i>
   <i id="29337" enl="moogle storage slip 26" jp="モグの預り帳【26】" jpl="">Storage Slip 26</i>
   <i id="29338" enl="moogle storage slip 27" jp="モグの預り帳【27】" jpl="">Storage Slip 27</i>
+  <i id="29339" enl="moogle storage slip 28" jp="モグの預り帳【28】" jpl="">Storage Slip 28</i>
   <i id="29695" enl="mangled mess" jp="？？？" jpl="">Mangled Mess</i>
   <i id="61441" enl="Rabbit" jp="ウサギ族" jpl="">Rabbit</i>
   <i id="61442" enl="Behemoth" jp="ベヒーモス族" jpl="">Behemoth</i>

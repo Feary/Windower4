@@ -159,26 +159,26 @@ function init_gear_sets()
 	sets.precast.RA['Last Stand'] = {
 		-- Orion Beret +3 Scout's Gorget +2
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Ishvara Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminodas's Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminondas's Ring",
 		-- Arc. Braccae +3 Herc. Boots AGI/Ratk/WSD
 		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	sets.precast.RA['Last Stand'].Acc = {
 		-- Orion Beret +3 Scout's Gorget +2
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Ishvara Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminodas's Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminondas's Ring",
 		-- Arc. Braccae +3 Herc. Boots AGI/Ratk/WSD
 		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	-- Coronach
 	sets.precast.RA['Coronach'] = {
 		-- Orion Beret +3 Scout's Neck +2
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Ishvara Earring", rear="Sherida Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminodas's Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminondas's Ring",
 		-- Arc. Braccae +3 Herc. Boots AGI/Ratk/WSD
 		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	sets.precast.RA['Coronach'].Acc = {
 		-- Orion Beret +3 Scout's Neck +2
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Ishvara Earring", rear="Sherida Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminodas's Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminondas's Ring",
 		-- Arc. Braccae +3 Herc. Boots AGI/Ratk/WSD
 		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -186,12 +186,12 @@ function init_gear_sets()
     sets.precast.WS['Wildfire'] = {
 		-- Baetyl Necklace
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
-		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
 		back=gear.magic_wsd_jse7_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
     sets.precast.WS['Wildfire'].Acc = {		
 		-- Baetyl Necklace
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
-		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
 		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
 
 	-- Crossbow
@@ -199,16 +199,16 @@ function init_gear_sets()
     sets.precast.WS['Trueflight'] = {
 		-- Baetyl Necklace
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
-		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
-		--  
-		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
+		-- feet=gear_herculean_nuke_feet
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet="Orion Socks +2"}
 
     sets.precast.WS['Trueflight'].Acc = {
         -- Baetyl Necklace
 		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
-		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminodas's Ring",
-		-- Eschan Stone 
-		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
+		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
+		-- feet=gear_herculean_nuke_feet
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet="Orion Socks +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Telos Earring",ear2="Sherida Earring",}
@@ -404,8 +404,8 @@ function init_gear_sets()
 	sets.weapons.DualWeapons =  {main="Perun +1",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence",range="Armageddon",ammo="Eminent Bullet"}
 	-- Melee
-	sets.weapons.SingleMelee= {main="Kaja Sword",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
-	sets.weapons.DualMelee =  {main="Kaja Sword",sub="Kaja Knife",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
+	sets.weapons.SingleMelee= {main="Naegling",sub="Nusku Shield",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
+	sets.weapons.DualMelee =  {main="Naegling",sub="Kaja Knife",range="Yoichinoyumi",ammo="Yoichi's Arrow"}
 	
 
 	--------------------------------------
@@ -417,27 +417,27 @@ function init_gear_sets()
 		-- neck="Combantant's Necklace", 
 		head="Meghanada Visor +2", neck="Erudit. Necklace",  lear="Brutal Earring", rear="Suppanomimi",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
-		back=gear.tp_jse_back, waist="Dynamic Belt +1", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.engaged.Acc = {
 		-- neck="Combantant's Necklace", 
 		head="Meghanada Visor +2", neck="Erudit. Necklace",  lear="Brutal Earring", rear="Suppanomimi",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Ilabrat Ring",
-		back=gear.tp_jse_back, waist="Dynamic Belt +1", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.engaged.DW = {
 		-- neck="Combantant's Necklace", 
 		head="Meghanada Visor +2", neck="Erudit. Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- Floral Gauntlets
 		body="Adhemar Jacket +1", hands="Meg. Gloves +2", lring="Regal Ring", rring="Epona's Ring",
-		back=gear.DW_jse_back, waist="Dynamic Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
+		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.DW.Acc = {
 		-- neck="Combantant's Necklace", 
 		head="Meghanada Visor +2", neck="Erudit. Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		--  Floral Gauntlets
 		body="Adhemar Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ilabrat Ring",
-		back=gear.DW_jse_back, waist="Dynamic Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
+		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
 
 	--------------------------------------
 	-- Custom buff sets

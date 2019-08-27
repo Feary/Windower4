@@ -13,7 +13,7 @@ function user_setup()
 	-- Nirvana 
 	gear.phys_BP_Staff = 	{name="Nirvana"}
 	-- Grioavolr BPD +10  Nirvana
-	gear.magic_BP_Staff = 	{name="Nirvana"}
+	gear.magic_BP_Staff = 	{name="Nirvana"}4
 	gear.macc_BP_Staff = 	{name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 
 	gear.magic_jse_back = 	{name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: "Regen"+10','Pet: "Regen"+5',}}
@@ -320,25 +320,23 @@ function init_gear_sets()
     -- Can make due without either the head or the body, and use +refresh items in those slots.
     
     sets.idle.Avatar = {main=gear.perp_staff, sub="Vox Grip",ammo=gear.avatar_ammo,
-		-- Nirvana Oneiros Grip 
         head="Convoker's Horn +3",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
-        body="Shomonjijoe +1",hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Defending Ring",
+        body="Apo. Dalmatica +1",hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Defending Ring",
 		back="Conveyance Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
 	sets.idle.PDT.Avatar = {main=gear.perp_staff, sub="Vox Grip",ammo=gear.avatar_ammo,
-		-- Nirvana Oneiros Grip 
         head="Convoker's Horn +3",neck="Loricate Torque +1",ar1="Handler's Earring +1",ear2="Handler's Earring",
-        body="Shomonjijoe +1",hands="Asteria Mitts +1",ring1="Inyanga Ring",ring2="Defending Ring",
+        body="Apo. Dalmatica +1",hands="Asteria Mitts +1",ring1="Inyanga Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Regal Belt",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 
     sets.idle.Spirit = {main=gear.perp_staff,sub="Vox Grip",ammo=gear.avatar_ammo,
         head="Convoker's Horn +3",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        body="Shomonjijoe +1",hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Sheltered Ring",
+        body="Apo. Dalmatica +1",hands="Asteria Mitts +1",ring1="Evoker's Ring",ring2="Sheltered Ring",
 		back="Conveyance Cape",waist="Lucidity Sash",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
     sets.idle.PDT.Spirit = {main=gear.perp_staff, sub="Vox Grip",ammo=gear.avatar_ammo,
 		head="Convoker's Horn +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
-        body="Shomonjijoe +1",hands="Asteria Mitts +1",ring1="Inyanga Ring",ring2="Defending Ring",
+        body="Apo. Dalmatica +1",hands="Asteria Mitts +1",ring1="Inyanga Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Lucidity Sash",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 		
 	sets.idle.TPEat.Avatar = set_combine(sets.idle.Avatar, {})--neck="Chrys. Torque"
