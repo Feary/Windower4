@@ -336,7 +336,7 @@ function init_gear_sets()
 		-- Amalric Doublet +1 Amalric Gages +1 Shiva Ring +1 Shiva Ring +1
 		body="Jhakri Robe +2", hands="Amalric Gages", lring="Shiva Ring", rring="Shiva Ring",
 		-- Yamabuki-no-obi Amalric Slops +1 Amalric Nails +1
-		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Amalric Nails"}
+		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Amalric Nails"})
 
 	sets.midcast['Blue Magic'].Magical.Fodder = {
 		-- Baetyl Pendant 
@@ -352,7 +352,8 @@ function init_gear_sets()
 		-- Amalric Doublet +1 Amalric Gages +1 Shiva Ring +1 Shiva Ring +1
 		body="Jhakri Robe +2", hands="Amalric Gages", lring="Shiva Ring", rring="Shiva Ring",
 		-- Yamabuki-no-obi Amalric Slops +1 Amalric Nails +1
-		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Amalric Nails"}
+		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Amalric Nails"})
+		
 	sets.midcast['Blue Magic'].MagicalChr = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalVit = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
@@ -423,13 +424,13 @@ function init_gear_sets()
 
 	sets.midcast['Enfeebling Magic'] = {
 		-- lear="Regal Earring", rear="Enchntr. Earring +1",
-		head="Jhakri Coronal +2", neck="Sanctity Necklace",  lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 		
 	sets.midcast['Dark Magic'] = {
 		-- lear="Regal Earring", rear="Enchntr. Earring +1",
-		head="Jhakri Coronal +2", neck="Sanctity Necklace",,  lear="Lifestorm Earring", rear="Psystorm Earring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Lifestorm Earring", rear="Psystorm Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.mab_jse_back, waist="Ovate Rope", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 

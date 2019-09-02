@@ -87,8 +87,8 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
 
-    sets.precast.FC = {main="Oranyan", 
-		--main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
+    sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1",
+		--main=gear.grioavolr_fc_staff,ammo="Impatiens",
         head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         --body="Zendik Robe",
 		body="Anhur Robe", hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
@@ -127,13 +127,12 @@ function init_gear_sets()
 	-- Gear for specific elemental nukes.
 	sets.element.Dark = {head="Pixie Hairpin +1",ring2="Archon Ring"}
 
-    sets.midcast.FastRecast = {main="Oranyan", 
-		--main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
+    sets.midcast.FastRecast = {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
+		--main=gear.grioavolr_fc_staff,
 		head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		--body="Zendik Robe",
 		body="Anhur Robe", hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Prolix Ring",
-		-- Psycloth Lappas
-		back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Amalric Nails +1"}
+		back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet="Amalric Nails +1"}
 		
     sets.midcast.Cure = {main="Tamaxchi", sub="Sors Shield", ammo="Hasty Pinion +1",
 		--main="Serenity",sub="Enki Strap",
@@ -158,11 +157,12 @@ function init_gear_sets()
 	sets.Cure_Received = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",}--waist="Gishdubar Sash"
 	sets.Self_Refresh = {back="Grapevine Cape"}--waist="Gishdubar Sash",feet="Inspirited Boots"
 	
-	sets.midcast.Cursna = {main="Oranyan",ammo="Hasty Pinion +1",}
+	sets.midcast.Cursna = {main="Oranyan",ammo="Hasty Pinion +1",
 		--sub="Clemency Grip",
-		--head="Amalric Coif +1",neck="Debilis Medallion",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+		--neck="Debilis Medallion",
+		head="Amalric Coif +1", ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		--body="Zendik Robe",hands="Hieros Mittens",ring1="Haoma's Ring",ring2="Menelaus's Ring",
-		--back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet="Vanya Clogs"
+		back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet="Vanya Clogs"}
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Oranyan",})--sub="Clemency Grip"
 
