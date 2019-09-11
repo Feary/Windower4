@@ -41,6 +41,7 @@ lua load skillchains
 lua load sendalltarget
 lua load tradenpc
 lua load quicktrade
+lua load fuckoff
 
 //Bind keys
 //Bind syntax is "bind <key> <up> <command>

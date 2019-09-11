@@ -1,0 +1,13 @@
+gs c set ExtraSongsMode DummyLock;
+wait 1;
+input /ma "Army\'s Paeon VI" <me>;
+wait 3;
+input /ma "Army\'s Paeon V" <me>;
+wait 6;
+input /ma "Army\'s Paeon IV" <me>;
+wait 9;
+input /ma "Army\'s Paeon III" <me>;
+wait 6;
+input /ma "Army\'s Paeon II" <me>;
+wait 6;
+gs c set ExtraSongsMode None

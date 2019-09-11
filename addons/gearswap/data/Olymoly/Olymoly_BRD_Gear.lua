@@ -37,8 +37,33 @@ function user_setup()
 	send_command('alias p1 input /pcmd leave;wait 1;input /tell Azzriel invite;')
 	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 	
+	-- Songs Scrits 
+	-- nt = Nitro
+	-- H = March  
+	-- A = Minuet
+	-- B = Ballad
+	-- M = Madrigal
+	-- P = Prelude
+	-- D = Minne
+	
+	-- dummy songs
 	send_command('alias dum exec songs/dummy.txt')
-	send_command('alias ntmmmm exec songs/ntmmmm')
+	-- Dummy 5 Songs
+	send_command('alias dumm exec songs/dummy2.txt')
+	
+	-- NT 5 Songs
+	
+	-- NT 4 Songs
+	send_command('alias ntHHMM exec songs/ntHHMM')
+	send_command('alias ntHMMA exec songs/ntHMMA')
+	send_command('alias ntHHAA exec songs/ntHHAA')
+	send_command('alias ntHHMA exec songs/ntHHMA')
+	send_command('alias ntPPAA exec songs/ntPPAA')
+	
+	-- 4 Songs
+	send_command('alias HHBB exec songs/HHBB')
+	send_command('alias HHMA exec songs/HHMA')
+	send_command('alias HHAA exec songs/HHAA')
 	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 	
 	

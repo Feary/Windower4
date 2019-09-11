@@ -26,6 +26,7 @@ put Enervating Earring safe2 all
 put Herculean Boots sack all
 put Holliday safe2 all
 put Impulse Belt safe2 all
+put Iskur Gorget sack all
 put Naegling sack all
 put Kaja Knife sack all
 put Kustawi +1 safe2 all
@@ -40,7 +41,7 @@ put Lak. Frac +1 safe2 all
 put Lak. Hat +1 safe2 all
 put Lak. Trews +1 safe2 all
 put Lak. Bottes +1 safe2 all
-put Lak. Gants safe2 all
+put Lak. Gants +1 safe2 all
 put Meg. Chausses +2 sack all
 put Meg. Gloves +2 sack all
 put Meg. Cuirie +2 sack all

@@ -1,0 +1,8 @@
+wait 1
+input /ma "Honor March";
+wait 1;
+input /ma "Victory March";
+wait 2;
+input /ma "Mage\'s Ballad III";
+wait 3;
+input /ma "Mage\'s Ballad II"

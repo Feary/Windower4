@@ -1,0 +1,13 @@
+input /ja "Marcato";
+wait 1;
+input /ja "Nightingale";
+wait 2;
+input /ja "Troubadour";
+wait 3;
+input /ma "Archer's Prelude";
+wait 4;
+input /ma "Hunter's Prelude";
+wait 5;
+input /ma "Blade Madrigal";
+wait 6;
+input /ma "Sword Madrigal"

@@ -13,7 +13,7 @@ function user_setup()
 	-- Nirvana 
 	gear.phys_BP_Staff = 	{name="Nirvana"}
 	-- Grioavolr BPD +10  Nirvana
-	gear.magic_BP_Staff = 	{name="Nirvana"}4
+	gear.magic_BP_Staff = 	{name="Nirvana"}
 	gear.macc_BP_Staff = 	{name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 
 	gear.magic_jse_back = 	{name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: "Regen"+10','Pet: "Regen"+5',}}

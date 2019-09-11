@@ -26,6 +26,7 @@ get Enervating Earring safe2 all
 get Herculean Boots sack all
 get Holliday safe2 all
 get Impulse Belt safe2 all
+get Iskur Gorget sack all
 get Naegling sack all
 get Kaja Knife sack all
 get Kustawi +1 safe2 all
@@ -40,7 +41,7 @@ get Lak. Frac +1 safe2 all
 get Lak. Hat +1 safe2 all
 get Lak. Trews +1 safe2 all
 get Lak. Bottes +1 safe2 all
-get Lak. Gants safe2 all
+get Lak. Gants +1 safe2 all
 get Meg. Chausses +2 sack all
 get Meg. Gloves +2 sack all
 get Meg. Cuirie +2 sack all
