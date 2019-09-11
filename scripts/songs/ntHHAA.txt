@@ -8,6 +8,6 @@ input /ma "Honor March";
 wait 4;
 input /ma "Victory March";
 wait 5;
-input /ma "Blade Madrigal";
+input /ma "Valor Minuet V";
 wait 6;
-input /ma "Sword Madrigal"
+input /ma "Valor Minuet IV";
