@@ -23,6 +23,7 @@ get Compensator safe2 all
 get Darraigner's Brais safe2 all
 get Eminent Bullet safe2 all
 get Enervating Earring safe2 all
+get Grunfeld Rope sack all
 get Herculean Boots sack all
 get Holliday safe2 all
 get Impulse Belt safe2 all

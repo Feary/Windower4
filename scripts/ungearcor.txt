@@ -23,6 +23,7 @@ put Compensator safe2 all
 put Darraigner's Brais safe2 all
 put Eminent Bullet safe2 all
 put Enervating Earring safe2 all
+put Grunfeld Rope sack all
 put Herculean Boots sack all
 put Holliday safe2 all
 put Impulse Belt safe2 all
