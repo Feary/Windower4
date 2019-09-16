@@ -1,0 +1,26 @@
+put Atro. Boots +2 case all
+put Atro. Chapeau +2 case all
+put Atrophy Gloves +2 case all
+put Atrophy Tabard +2 case all
+put Atrophy Tights +2 case all
+put Culminus case all
+put Estq. Chappel +2 case all
+put Estq. Ganthrt. +2 case all
+put Estq. Houseaux +2 case all
+put Estq. Sayon +2 case all
+put Estqr. Fuseau +2 case all
+put Ghastly Tathlum case all
+put Ghostfyre Cape case all
+put Hecate's Earring case all
+put Jhakri Coronal +2 case all
+put Jhakri Cuffs +2 case all
+put Jhakri Pigaches +2 case all
+put Jhakri Robe +2 case all
+put Jhakri Slops +2 case all
+put Regal Gem case all
+put Sucellos's Cape case all
+put Viti. Chapeau +1 case all
+put Viti. Gloves +1 case all
+put Viti. Tabard +1 case all
+put Viti. Tights +1 case all
+put Vitiation Boots +1 case all

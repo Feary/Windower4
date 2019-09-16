@@ -8,7 +8,7 @@
   <plugins>
     <plugin>
       <name>LuaCore</name>
-      <version>2.2.2.1</version>
+      <version>2.2.2.2</version>
       <required>true</required>
       <resources>true</resources>
     </plugin>
@@ -151,7 +151,7 @@
     </plugin>
     <plugin>
       <name>Timers</name>
-      <version>3.7.4.27</version>
+      <version>3.7.4.28</version>
       <resources>true</resources>
       <description>
         Tracks ability and spell recast timers, as well as durations on buffs that you cast.
