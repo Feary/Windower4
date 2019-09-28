@@ -66,9 +66,10 @@ function user_setup()
 	send_command('alias scstone input /p Skillchain: Gravitation MB: Stone;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Luminohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Water" <t>')
 	send_command('alias scstone2 input /p Skillchain: Gravitation MB: Stone;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Aero" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Noctohelix" <t>')
 	
-
+	send_command('alias gear exec gearsch.txt')
+	send_command('alias ungear gs equip naked;exec ungearsch.txt')
+	
 	select_default_macro_book()
-
 end
 
 -- Define sets and vars used by this job file.
@@ -367,7 +368,7 @@ function init_gear_sets()
     sets.resting = {main="Chatoyant Staff", ammo="Homiliary", -- sub="Oneiros Grip",
 		--neck="Chrys. Torque",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Amalric Doublet +1",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
+		body="Amalric Doublet +1",hands=gear_merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
 		back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
 
@@ -375,7 +376,7 @@ function init_gear_sets()
 
     sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		-- hands=gear.merlinic_refresh_hands,
+		-- hands=gear_merlinic_refresh_hands,
         body="Jhakri Robe +2",hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		-- waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Amalric Nails +1"}
@@ -391,7 +392,7 @@ function init_gear_sets()
 
     sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		--hands=gear.merlinic_refresh_hands,
+		--hands=gear_merlinic_refresh_hands,
         body="Jhakri Robe +2",hands="Volte Bracers",ring1="Defending Ring",ring2="Dark Ring",
 		--feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Amalric Nails +1"}
@@ -433,7 +434,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {main="Tokko Rod",sub="Genbu's Shield",ammo="Homiliary",
         head="Chironic Hat",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Digni. Earring",
-		--hands=gear.merlinic_refresh_hands,
+		--hands=gear_merlinic_refresh_hands,
         body="Jhakri Robe +2",hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Eschan Stone", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
@@ -441,7 +442,7 @@ function init_gear_sets()
 	sets.engaged.PDT = {main="Tokko Rod", sub="Genbu's Shield", ammo="Staunch Tathlum",
 		-- sub="Oneiros Grip", 	
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		--hands=gear.merlinic_refresh_hands,
+		--hands=gear_merlinic_refresh_hands,
         body="Mallquis Saio +2", hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Eschan Stone", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}

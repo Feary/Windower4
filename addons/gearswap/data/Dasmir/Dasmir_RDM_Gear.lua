@@ -49,6 +49,9 @@ function user_setup()
 	send_command('bind !\\\\ input /ma "Reraise" <me>')
 	send_command('bind @f10 gs c cycle RecoverMode')
 	
+	send_command('alias ungear gs equip naked;exec dasmir/ungearrdm.txt')
+	send_command('alias gear exec dasmir/gearrdm.txt')
+	
 	select_default_macro_book()
 end
 
@@ -194,17 +197,17 @@ function init_gear_sets()
 		-- Vitiation Tabard +3 Atrophy Gloves +3 Stikini Ring +1 Stikini Ring +1
 		body=gear_telchine_body_Duration, hands="Atrophy Gloves +2", ring1="Stikini Ring", ring2="Stikini Ring",
 		-- waist="Olympus Sash",
-		back=gear.JSE_Cape, waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet="Estq. Houseaux +2"}
+		back=gear.JSE_Cape, waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet="Leth. Houseaux +1"}
 
 	--Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
 	sets.buff.ComposureOther = {sub="Ammurapi Shield", ammo="Hasty Pinion +1",
 		--main="Pukulatmuj +1",		
 		--Duelist's Torque +2 neck="Incanter's Torque", rear="Augment. Earring",
-		head="Estq. Chappel +2", neck="Colossus's Torque", ear1="Andoaa Earring", 
+		head="Leth. Chappel +1", neck="Colossus's Torque", ear1="Andoaa Earring", 
 		-- Vitiation Tabard +3 Atrophy Gloves +3 Stikini Ring +1 Stikini Ring +1
-		body="Estq. Sayon +2", hands="Atrophy Gloves +2", ring1="Stikini Ring", ring2="Stikini Ring",
+		body="Lethargy Sayon +1", hands="Atrophy Gloves +2", ring1="Stikini Ring", ring2="Stikini Ring",
 		-- waist="Olympus Sash",
-		back=gear.JSE_Cape, waist="Cascade Belt", legs="Estqr. Fuseau +2", feet="Estq. Houseaux +2"}
+		back=gear.JSE_Cape, waist="Cascade Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 	
 	-- Phalanx Potency
 	sets.midcast.Phalanx = {sub="Ammurapi Shield", ammo="Hasty Pinion +1",
@@ -222,7 +225,7 @@ function init_gear_sets()
 		-- Vitiation Gloves +3 Stikini Ring +1 Stikini Ring +1
 		body="Viti. Tabard +1",hands="Viti. Gloves +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- Atrophy Tights +3 Olympus Sash
-		back=gear.JSE_Cape,waist="Cascade Belt",legs="Atrophy Tights +2",feet="Estq. Houseaux +2"}
+		back=gear.JSE_Cape,waist="Cascade Belt",legs="Atrophy Tights +2",feet="Leth. Houseaux +1"}
 	sets.midcast['Temper II'] = {sub="Ammurapi Shield", ammo="Hasty Pinion +1",
 		--main="Pukulatmuj +1",sub="Arendsi Fleuret",		
 		-- Duelist's Torque +2 ear2="Augment. Earring",
@@ -230,11 +233,11 @@ function init_gear_sets()
 		-- Viti. Tabard +1 +3 Vitiation Gloves +3 Stikini Ring +1 Stikini Ring +1
 		body="Viti. Tabard +1",hands="Viti. Gloves +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- Atrophy Tights +3 Olympus Sash
-		back=gear.JSE_Cape, waist="Cascade Belt",legs="Atrophy Tights +2",feet="Estq. Houseaux +2"}
+		back=gear.JSE_Cape, waist="Cascade Belt",legs="Atrophy Tights +2",feet="Leth. Houseaux +1"}
 		
 	--Red Mage enhancing sets are handled in a different way from most, layered on due to the way Composure works
 	--Don't set combine a full set with these spells, they should layer on Enhancing Set > Composure (If Applicable) > Spell
-	sets.midcast.Refresh = {head="Amalric Coif",body="Atrophy Tabard +2", hands="Atrophy Gloves +2",  legs="Estqr. Fuseau +2"} --  back="Grapevine Cape",waist="Gishdubar Sash",
+	sets.midcast.Refresh = {head="Amalric Coif",body="Atrophy Tabard +2", hands="Atrophy Gloves +2",  legs="Leth. Fuseau +1"} --  back="Grapevine Cape",waist="Gishdubar Sash",
 	sets.midcast.Aquaveil = {head="Amalric Coif",} --  hands="Regal Cuffs",waist="Emphatikos Rope", legs="Shedir Seraweels"
 	sets.midcast.BarElement = {} --legs="Shedir Seraweels"
 	sets.midcast.Stoneskin = {waist="Siegel Sash",} -- neck="Nodens Gorget",ear2="Earthcry Earring",legs="Shedir Seraweels"
@@ -245,7 +248,7 @@ function init_gear_sets()
 			--   Duelist's Torque +3 neck="Incanter's Torque",  lear="Digni. Earring", 
 			head="Atro. Chapeau +2", neck="Erra Pendant", lear="Enchntr. Earring +1", rear="Regal Earring", 
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
-			body="Atrophy Tabard +2", hands="Estq. Ganthrt. +2", lring="Stikini Ring", rring="Stikini Ring",
+			body="Atrophy Tabard +2", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",
 			--  legs=gear_chironic_macc_legs,
 			back=gear.Macc_jse_back, waist="Luminary Sash", legs="Aya. Cosciales +2", feet="Vitiation Boots +1"}
 	
@@ -253,7 +256,7 @@ function init_gear_sets()
 			--   Duelist's Torque +3 neck="Incanter's Torque",  lear="Digni. Earring", 
 			head="Atro. Chapeau +2", neck="Erra Pendant", lear="Enchntr. Earring +1", rear="Regal Earring", 
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
-			body="Atrophy Tabard +2", hands="Estq. Ganthrt. +2", lring="Stikini Ring", rring="Stikini Ring",
+			body="Atrophy Tabard +2", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",
 			--  legs=gear_chironic_macc_legs,
 			back=gear.Macc_jse_back, waist="Luminary Sash", legs="Aya. Cosciales +2", feet="Vitiation Boots +1"}
 		
@@ -266,10 +269,10 @@ function init_gear_sets()
 	sets.midcast.MndEnfeebles = set_combine(sets.midcast['Enfeebling Magic'], {})
 	sets.midcast.MndEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 	
-	sets.midcast['Distract III'] = set_combine(sets.midcast.MndEnfeebles, {body="Estq. Sayon +2"})
+	sets.midcast['Distract III'] = set_combine(sets.midcast.MndEnfeebles, {body="Lethargy Sayon +1"})
 	sets.midcast['Distract III'].Resistant = set_combine(sets.midcast.MndEnfeebles.Resistant, {})
 	
-	sets.midcast['Frazzle III'] = set_combine(sets.midcast.MndEnfeebles, {body="Estq. Sayon +2"})
+	sets.midcast['Frazzle III'] = set_combine(sets.midcast.MndEnfeebles, {body="Lethargy Sayon +1"})
 	sets.midcast['Frazzle III'].Resistant = set_combine(sets.midcast.MndEnfeebles.Resistant, {})
 	
 	sets.midcast.Silence = set_combine(sets.midcast['Enfeebling Magic'], {})
@@ -330,7 +333,7 @@ function init_gear_sets()
 	sets.midcast['Dark Magic'] = {main="Rubicundity", sub="Ammurapi Shield", ammo="Regal Gem", 
 		-- ear2="Digni. Earring",
 		head="Atrophy Chapeau +2", neck="Erra Pendant", lear="Enchntr. Earring +1", rear="Regal Earring",
-		--body="Atrophy Tabard +3",hands="Estq. Ganthrt. +2",
+		--body="Atrophy Tabard +3",hands="Leth. Gantherots +1",
 		body="Atrophy Tabard +2", hands="Aya. Manopolas +2", ring1="Stikini Ring", ring2="Stikini Ring",
 		-- legs="Psycloth Lappas", feet=gear.merlinic_nuke_feet
 		back=gear.Macc_jse_back,waist="Luminary Sash", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
@@ -361,7 +364,7 @@ function init_gear_sets()
 
 	-- Sets for special buff conditions on spells.
 		
-	sets.buff.Saboteur = {hands="Estq. Ganthrt. +2"}
+	sets.buff.Saboteur = {hands="Leth. Gantherots +1"}
 	
 	sets.HPDown = {}
 	

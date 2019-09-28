@@ -8,9 +8,7 @@ get Adhemar Gamashes +1 sack all
 get Erudit. Necklace safe2 all
 get Floral Gauntlets sack all
 get Grunfeld Rope sack all
-get Herculean Helm sack all
 get Malevolence safe2 all
-get Mandau sack all 
 get Meg. Chausses +2 sack all 
 get Meg. Cuirie +2 sack all 
 get Meg. Gloves +2 sack all 
@@ -21,6 +19,7 @@ get Mummu Gamash. +2 sack all
 get Mummu Jacket +2 sack all 
 get Mummu Kecks +2 sack all 
 get Mummu Wrists +2 sack all 
+get Naegling sack all
 get Pill. Bonnet +2 sack all 
 get Pill. Culottes +3 sack all 
 get Pill. Poulaines +2 sack all 

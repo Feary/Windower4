@@ -4,11 +4,11 @@ get Atrophy Gloves +2 case all
 get Atrophy Tabard +2 case all
 get Atrophy Tights +2 case all
 get Culminus case all
-get Estq. Chappel +2 case all
-get Estq. Ganthrt. +2 case all
-get Estq. Houseaux +2 case all
-get Estq. Sayon +2 case all
-get Estqr. Fuseau +2 case all
+get Leth. Chappel +1 case all
+get Leth. Gantherots +1 case all
+get Leth. Houseaux +1 case all
+get Lethargy Sayon +1 case all
+get Leth. Fuseau +1 case all
 get Ghastly Tathlum case all
 get Ghostfyre Cape case all
 get Hecate's Earring case all

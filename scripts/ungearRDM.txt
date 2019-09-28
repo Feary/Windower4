@@ -16,16 +16,25 @@ put Helios Gloves case all
 put Jhakri Cuffs +2 case all
 put Jhakri Pigaches +2 case all
 put Jhakri Robe +2 case all
+put Kaja Rod case all
+put Leth. Fuseau storage all
+put Lethargy Chappel storage all
+put Lethargy Sayon +1 storage all
+put Leth. Gantherots storage all
+put Leth. Houseaux +1 storage all
 put Merlinic Crackows case all
 put Merlinic Hood case all
 put Mizu. Kubikazari case all
+put Naegling sack all
+put Nibiru Crudgel sack all
 put Regal Gem case all
 put Rubicundity case all
-put Skaoi Boots case all
-put Sucellos's Cape case all
+put Skaoi Boots storage all
+put Sucellos's Cape storage all
+put Thereoid Greaves sack all
 put Vampirism sack all
-put Vitiation Chapeau storage all
-put Vitiation Tabard +1 storage all
-put Vitiation Gloves storage all
-put Vitiation Tights storage all
+put Viti. Chapeau +1 storage all
+put Viti. Tabard +1 storage all
+put Viti. Gloves +1 storage all
+put Viti. Tights +1 storage all
 put Vitiation Boots +1 storage all

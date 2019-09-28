@@ -322,14 +322,14 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {main="Boonwell Staff", sub="Kaja Grip",  ammo=gear.avatar_ammo,
         head="Beckoner's Horn +1", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        body="Shomonjijoe +1", hands=gear.merlinic_refresh_hands, ring1="Inyanga Ring", ring2="Defending Ring",
+        body="Shomonjijoe +1", hands=gear_merlinic_refresh_hands, ring1="Inyanga Ring", ring2="Defending Ring",
 		--  feet="Baayami Sabots"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
     
     -- Idle sets
     sets.idle = {main=gear_grioavolr_refresh_staff, sub="Kaja Grip", ammo=gear.avatar_ammo,
         head="Convoker's Horn +3", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-		body="Shomonjijoe +1", hands=gear.merlinic_refresh_hands, ring1="Inyanga Ring", ring2="Defending Ring",
+		body="Shomonjijoe +1", hands=gear_merlinic_refresh_hands, ring1="Inyanga Ring", ring2="Defending Ring",
 		-- feet="Baayami Sabots"
         back=gear.FC_jse_back, waist="Regal Belt", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 
@@ -368,30 +368,30 @@ function init_gear_sets()
     -- Can make due without either the head or the body, and use +refresh items in those slots.
     
     sets.idle.Avatar = {main=gear.perp_staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
-		-- Nirvana Oneiros Grip 
+		-- Oneiros Grip 
         head="Convoker's Horn +3",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
 		-- ring1="Evoker's Ring",
-        body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
+        body="Apo. Dalmatica +1", hands=gear_merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
         back="Conveyance Cape", waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 		
     sets.idle.PDT.Avatar = {main=gear.perp_staff, sub="Kaja Grip", ammo=gear.avatar_ammo,
-		-- Nirvana Oneiros Grip 
+		-- Oneiros Grip 
 		-- ear1="Rimeice Earring",
         head="Convoker's Horn +3",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Evans Earring",
 		-- ring1="Evoker's Ring",
-        body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
+        body="Apo. Dalmatica +1", hands=gear_merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
         back=gear.FC_jse_back, waist="Regal Belt", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 
     sets.idle.Spirit = {main=gear.perp_staff, sub="Kaja Grip", ammo=gear.avatar_ammo,
         head="Convoker's Horn +3",neck="Caller's Pendant",ear1="Ethereal Earring",ear2="Evans Earring",
 		--  ring1="Evoker's Ring",
-        body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
+        body="Apo. Dalmatica +1", hands=gear_merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
         back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
     sets.idle.PDT.Spirit = {main=gear.perp_staff,sub="Kaja Grip", ammo=gear.avatar_ammo,
 		-- sub="Oneiros Grip"
         head="Convoker's Horn +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
-        body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring",ring2="Defending Ring",
+        body="Apo. Dalmatica +1", hands=gear_merlinic_refresh_hands, ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back,waist="Regal Belt",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
 	sets.idle.TPEat.Avatar = set_combine(sets.idle.Avatar, {})--neck="Chrys. Torque"

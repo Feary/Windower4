@@ -63,9 +63,9 @@ function user_setup()
 	-- 4 Songs
 	send_command('alias HHBB exec songs/HHBB')
 	send_command('alias HHMA exec songs/HHMA')
-	send_command('alias HHAA exec songs/HHAA')
-	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
+	send_command('alias HHAA exec songs/HHAA')	
 	
+	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 	
 	select_default_macro_book()
 end

@@ -46,6 +46,9 @@ function user_setup()
 	send_command('alias aoe input /targetnpc;send @all /ma "Thunderspark" <t>')
 	send_command('alias stun input /targetnpc;send @all /ma "Thunderspark" <t>')
 	
+	send_command('alias gear exec gearsmn.txt')
+	send_command('alias ungear gs equip naked;exec ungearsmn.txt')
+	
     select_default_macro_book()
 end
 

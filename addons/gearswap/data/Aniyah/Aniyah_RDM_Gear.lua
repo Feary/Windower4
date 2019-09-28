@@ -49,6 +49,9 @@ function user_setup()
 	send_command('bind !\\\\ input /ma "Reraise" <me>')
 	send_command('bind @f10 gs c cycle RecoverMode')
 	
+	send_command('alias ungear gs equip naked;exec aniyah/ungearrdm.txt')
+	send_command('alias gear exec dasmir/ungearrdm.txt')
+	
 	select_default_macro_book()
 end
 

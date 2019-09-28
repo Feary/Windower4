@@ -9,17 +9,22 @@ function user_setup()
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
 	state.Passive = M{['description'] = 'Passive Mode','None','Twilight'}
-	state.Weapons:options('Default','DualWeapons','Greatsword','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcClub','ProcStaff')
+	state.Weapons:options('Default','DualWeapons','Axe','Greatsword','Sword','DualSwords','H2H','Polearm','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcClub','ProcStaff')
 
 	gear.da_jse_back = {name="Cichol's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10'}}
 	gear.crit_jse_back = {name="Cichol's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10'}}
-
+	gear.FC_jse_back = {name="Cichol's Mantle"}
+	gear.Enmity_jse_back = {name="Cichol's Mantle"}
+	
 	-- Additional local binds
 	send_command('bind ^` input /ja "Hasso" <me>')
 	send_command('bind !` input /ja "Seigan" <me>')
     send_command('bind !f11 gs c cycle ExtraMeleeMode')
 	send_command('bind @` gs c cycle SkillchainMode')
 	send_command('bind !r gs c weapons Greatsword;gs c update')
+	
+	send_command('alias ungear gs equip naked;exec dasmir/ungearwar.txt')
+	send_command('alias gear exec dasmir/gearwar.txt')
 	
 	select_default_macro_book()
 end
@@ -31,10 +36,11 @@ function init_gear_sets()
 	--------------------------------------
 	-- Precast Sets
 	
-    sets.Enmity = {
-		head="Cizin Helm", neck="Atzintli Necklace",
-		body="Souveran Cuirass",hands="Souv. Handschuhs",
-		back="Phalangite Mantle",waist="Goading Belt", legs="Souveran Diechlings",feet="Souveran Schuhs"}
+    sets.Enmity = {ammo="Paeapua", 
+		-- Souv Helm
+		head="Cizin Helm", 
+		body="Souveran Cuirass",hands="Souv. Handschuhs", lring="Petrov Ring",
+		back=gear.Enmity_jse_back,waist="Goading Belt", legs="Souveran Diechlings",feet="Souveran Schuhs"}
 	sets.Knockback = {}
 	sets.passive.Reraise = {head="Twilight Helm",body="Twilight Mail"}
 	
@@ -79,31 +85,46 @@ function init_gear_sets()
 	sets.midcast.Cure = {}
 	
 	sets.Self_Healing = {}
-	sets.Cure_Received = {}
+	sets.Cure_Received = {
+		-- head="Souv. Helm", 
+		neck="Phalaina Locket",
+		-- Kunaji Ring
+		body="Souveran Cuirass", hands="Souv. Handschuhs", 
+		legs="Souveran Diechlings", feet="Souveran Schuhs"}
 						                   
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Ifrit Ring",
-		back="Grounded Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"}
+    sets.precast.WS = {ammo="Knobkierrie",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
 
-	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {ammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Ifrit Ring",
-		back="Grounded Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"})
-	sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Ifrit Ring",
-		back="Grounded Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"})
-	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {ammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Ifrit Ring",
-		back="Grounded Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"})
-	sets.precast.WS.Fodder = set_combine(sets.precast.WS, {ammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Ifrit Ring",
-		back="Grounded Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"})
+	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"})
+	sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"})
+	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"})
+	sets.precast.WS.Fodder = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.	
     sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {})
@@ -118,11 +139,36 @@ function init_gear_sets()
     sets.precast.WS['Upheaval'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.precast.WS['Upheaval'].Fodder = set_combine(sets.precast.WS.Fodder, {})
      
-    sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {})
-    sets.precast.WS['Resolution'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
-    sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc, {})
-    sets.precast.WS['Resolution'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
-    sets.precast.WS['Resolution'].Fodder = set_combine(sets.precast.WS.Fodder, {})
+    sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"})
+    sets.precast.WS['Resolution'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="Seeth. Bomblet +1",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"})
+    sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Seeth. Bomblet +1",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"})
+    sets.precast.WS['Resolution'].FullAcc = set_combine(sets.precast.WS.FullAcc, {ammo="Seeth. Bomblet +1",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"})
+    sets.precast.WS['Resolution'].Fodder = set_combine(sets.precast.WS.Fodder, {ammo="Seeth. Bomblet +1",
+		head="Flam. Zucchetto +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		-- Pummeler Lorica +3 
+		body="Flamma Korazin +1", hands="Sulev. Gauntlets +1", lring="Regal Ring", rring="Niqmaddu Ring",
+		-- Plumm
+		back=gear.da_jse_back, waist="Fotia Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"})
 	
     sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Ruinator'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
@@ -169,9 +215,9 @@ function init_gear_sets()
            
 	-- Idle sets
 	sets.idle = {	
-		head="Sulevia's Mask", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulevia's Gauntlets", lring="Dark Ring", rring="Defending Ring",
-		back="Repulse Mantle", waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
+		head="Sulevia's Mask +1", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +1", lring="Dark Ring", rring="Defending Ring",
+		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 		
@@ -179,52 +225,103 @@ function init_gear_sets()
 	
 	-- Defense sets
 	sets.defense.PDT = {
-		head="Sulevia's Mask", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulevia's Gauntlets", lring="Dark Ring", rring="Defending Ring",
-		back="Repulse Mantle", waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
+		head="Sulevia's Mask +1", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +1", lring="Dark Ring", rring="Defending Ring",
+		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = {
-		head="Sulevia's Mask", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulevia's Gauntlets", lring="Dark Ring", rring="Defending Ring",
-		back="Engulfer Cape", waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
+		head="Sulevia's Mask +1", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +1", lring="Dark Ring", rring="Defending Ring",
+		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
 		
 	sets.defense.MEVA = {
-		head="Sulevia's Mask", neck="Twilight Torque", lear="Merman's Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulevia's Gauntlets", lring="Dark Ring", rring="Defending Ring",
-		back="Engulfer Cape", waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
+		head="Sulevia's Mask +1", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +1", lring="Dark Ring", rring="Defending Ring",
+		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.Kiting = {feet="Hermes' Sandals"}
 	sets.Reraise = {head="Twilight Helm",body="Twilight Mail"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {}--head="Frenzy Sallet"
      
-            -- Engaged sets
-	sets.engaged = {ammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Cacoethic Ring",
-		back="Atheling Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"}
-    sets.engaged.SomeAcc = {ammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Cacoethic Ring",
-		back="Atheling Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"}
-	sets.engaged.Acc = {aammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Cacoethic Ring",
-		back="Atheling Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"}
-    sets.engaged.FullAcc = {ammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Cacoethic Ring",
-		back="Atheling Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"}
-    sets.engaged.Fodder = {ammo="Seething Bomblet",
-		head="Sulevia's Mask", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Sulevia's Platemail", hands="Sulevia's Gauntlets", lring="Rajas Ring", rring="Cacoethic Ring",
-		back="Atheling Mantle", waist="Windbuffet Belt", legs="Sulevia's Cuisses", feet="Sulevia's Leggings"}
+    -- Engaged sets
+	sets.engaged = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
+	sets.engaged.DW = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}	
+    sets.engaged.SomeAcc = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
+	 sets.engaged.DW.SomeAcc = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
+	sets.engaged.Acc = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
+	sets.engaged.DW.Acc = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
+    sets.engaged.FullAcc = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
+	sets.engaged.DW.FullAcc = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
+    sets.engaged.Fodder = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
+	sets.engaged.DW.Fodder = {ammo="Seeth. Bomblet +1", --ammo="Ginsen", 
+		-- Ainia Collar  Brutal Earring Cessance Earring
+		head="Flam. Zucchetto +1", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		--
+		body="Sulevia's Plate. +1", hands="Sulev. Gauntlets +1", lring="Flamma Ring", rring="Niqmaddu Ring",
+		-- Ioskeha Belt +1 Plum. Cuisses +3 Plumm. Calligae +3
+		back=gear.da_jse_back, waist="Windbuffet Belt", legs="Sulevi. Cuisses +1", feet="Flam. Gambieras +1"}
 
 --[[
+
     sets.engaged.Charge = {}
 	sets.engaged.SomeAcc.Charge = {}
 	sets.engaged.Acc.Charge = {}
@@ -362,7 +459,7 @@ function init_gear_sets()
 	sets.engaged.Acc.MDT.Adoulin.Charge.Mighty = {}
 	sets.engaged.FullAcc.MDT.Adoulin.Charge.Mighty = {}
 	sets.engaged.Fodder.MDT.Adoulin.Charge.Mighty = {}
-	
+
             -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
             -- sets if more refined versions aren't defined.
             -- If you create a set with both offense and defense modes, the offense mode should be first.
@@ -1242,20 +1339,25 @@ function init_gear_sets()
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Retaliation = {}
 	sets.buff.Restraint = {}
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {legs="Volte Hose", waist="Chaac Belt"})
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Aizkora",sub="Pole Grip"}
-	sets.weapons.DualWeapons = {main="Mdomo Axe",sub="Ternion Dagger"}
-	sets.weapons.Greatsword = {main="Kaquljaan",sub="Pole Grip"}
-	sets.weapons.ProcDagger = {main="Ternion Dagger",sub="Mdomo Axe"}
-	sets.weapons.ProcSword = {main="Demersal Degen",sub=empty}
-	sets.weapons.ProcGreatSword = {main="Kaquljaan",sub=empty}
-	sets.weapons.ProcScythe = {main="Ark Scythe",sub=empty}
-	sets.weapons.ProcPolearm = {main="Pitchfork",sub=empty}
-	sets.weapons.ProcGreatKatana = {main="Hardwood Katana",sub=empty}
-	sets.weapons.ProcClub = {main="Rounsey Wand",sub=empty}
-	sets.weapons.ProcStaff = {main="Plenitas Virga",sub=empty}
+	sets.weapons.Default = {main="Aganoshe", sub="Pole Grip"} -- sub="Utu Grip"
+	sets.weapons.DualWeapons = {main="Kaja Axe", sub="Naegling"} -- Kaja Axe
+	sets.weapons.Axe = {main="Kaja Axe", sub="Adapa Shield"}
+	sets.weapons.Greatsword = {main="Montante", sub="Pole Grip"} -- sub="Utu Grip"
+	sets.weapons.Sword = {main="Naegling", sub="Adapa Shield"}
+	sets.weapons.DualSwords = {main="Naegling", sub="Kaja Axe"}
+	sets.weapons.H2H = {main="Kaja Knuckles"}
+	sets.weapons.Polearm = {main="Kaja Lance", sub="Pole Grip"} -- sub="Utu Grip"
+	sets.weapons.ProcDagger = {main="Kustawi +1", sub="Malevolence"}
+	sets.weapons.ProcSword = {main="Ibushi Shinai", sub="Adapa Shield"}
+	sets.weapons.ProcGreatSword = {main="Montante", sub="Pole Grip"}
+	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Pole Grip"}
+	sets.weapons.ProcPolearm = {main="Pitchfork", sub="Pole Grip"}
+	sets.weapons.ProcGreatKatana = {main="Zanmato", sub="Pole Grip"}
+	sets.weapons.ProcClub = {main="Rounsey Wand", sub="Adapa Shield"}
+	sets.weapons.ProcStaff = {main="Plenitas Virga", sub="Pole Grip"}
 
 end
 	

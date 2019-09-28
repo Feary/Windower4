@@ -4,11 +4,11 @@ put Atrophy Gloves +2 case all
 put Atrophy Tabard +2 case all
 put Atrophy Tights +2 case all
 put Culminus case all
-put Estq. Chappel +2 case all
-put Estq. Ganthrt. +2 case all
-put Estq. Houseaux +2 case all
-put Estq. Sayon +2 case all
-put Estqr. Fuseau +2 case all
+put Leth. Chappel +1 case all
+put Leth. Gantherots +1 case all
+put Leth. Houseaux +1 case all
+put Lethargy Sayon +1 case all
+put Leth. Fuseau +1 case all
 put Ghastly Tathlum case all
 put Ghostfyre Cape case all
 put Hecate's Earring case all

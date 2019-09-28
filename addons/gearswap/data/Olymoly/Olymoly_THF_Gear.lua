@@ -32,6 +32,9 @@ function user_setup()
 	send_command('bind ^\\\\ input /ja "Despoil" <t>')
 	send_command('bind !\\\\ input /ja "Mug" <t>')
 
+	send_command('alias gear exec gearthf.txt')
+	send_command('alias ungear gs equip naked;exec ungearthf.txt')
+	
     select_default_macro_book()
 end
 
@@ -475,7 +478,7 @@ function init_gear_sets()
     sets.defense.MDT = {ammo="Staunch Tathlum",
        	head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
-		back="EMoonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
+		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
