@@ -31,7 +31,7 @@ put Evans Earring Storage all
 put Evoker's Ring Storage all
 put Gelos Earring Storage all
 put Glyphic Bracers +1 Storage all
-put Glyphic Doublet +1 Storage all
+put Glyphic Doublet +3 Storage all
 put Glyphic Horn +1 Storage all
 put Glyph. Pigaches +1 Storage all
 put Glyphic Spats +1 Storage all

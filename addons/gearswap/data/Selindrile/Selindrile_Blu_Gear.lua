@@ -642,10 +642,6 @@ function init_gear_sets()
 				back="Engulfer Cape +1",waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Ahosi Leggings"}
 
 	sets.Self_Healing = {neck="Phalaina Locket",hands="Buremte Gloves",legs="Gyve Trousers",ring2="Kunaji Ring",waist="Gishdubar Sash"}
-	sets.Self_Healing_Club = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
-	sets.Self_Healing_DWClub = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
-	sets.Healing_Club = {}
-	sets.Healing_DWClub = {}
 	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
 	sets.MagicBurst = {body="Samnuha Coat",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring"}
@@ -708,40 +704,3 @@ function check_trust()
 	end
 	return false
 end
-
-
-buff_spell_lists = {
-	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
-		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	When='Always'},
-		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	When='Idle'},
-		{Name='Refresh',			Buff='Refresh',			SpellID=109,	When='Idle'},
-		{Name='Nat. Meditation',	Buff='Attack Boost',	SpellID=700,	When='Engaged'},
-		{Name='Mighty Guard',		Buff='Mighty Guard',	SpellID=750,	When='Combat'},
-	},
-	
-	Default = {
-		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	Reapply=false},
-		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	Reapply=false},
-		{Name='Refresh',			Buff='Refresh',			SpellID=109,	Reapply=false},
-		{Name='Phalanx',			Buff='Phalanx',			SpellID=106,	Reapply=false},
-		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=false},
-		{Name='Stoneskin',			Buff='Stoneskin',		SpellID=54,		Reapply=false},
-		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=false},
-		{Name='Blink',				Buff='Blink',			SpellID=53,		Reapply=false},
-		{Name='Mighty Guard',		Buff='Mighty Guard',	SpellID=750,	Reapply=false},
-		{Name='Nat. Meditation',	Buff='Attack Boost',	SpellID=700,	Reapply=false},
-	},
-	
-	 aoe = {
-		{Name='Erratic Flutter',	Buff='Haste',			SpellID=710,	Reapply=false},
-		{Name='Battery Charge',		Buff='Refresh',			SpellID=662,	Reapply=false},
-		{Name='Refresh',			Buff='Refresh',			SpellID=109,	Reapply=false},
-		{Name='Phalanx',			Buff='Phalanx',			SpellID=106,	Reapply=false},
-		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=false},
-		{Name='Stoneskin',			Buff='Stoneskin',		SpellID=54,		Reapply=false},
-		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=false},
-		{Name='Blink',				Buff='Blink',			SpellID=53,		Reapply=false},
-		{Name='Carcharian Verve',	Buff='Aquaveil',		SpellID=745,	Reapply=false},
-		{Name='Memento Mori',		Buff='Magic Atk. Boost',SpellID=538,	Reapply=false},
-	},
-}

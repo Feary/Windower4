@@ -232,7 +232,7 @@ function init_gear_sets()
 		--Brioso Roundlet +3
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
@@ -240,7 +240,7 @@ function init_gear_sets()
 		-- Brioso Roundlet +3 
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		--Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +2", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
 		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 
@@ -279,13 +279,13 @@ function init_gear_sets()
 	sets.midcast['Enfeebling Magic'] = {main="Oranyan Staff", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan Staff", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		--Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 		
@@ -304,13 +304,13 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'] = {main="Oranyan Staff", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 	sets.midcast['Elemental Magic'].Resistant = {main="Oranyan Staff", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +2", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 		

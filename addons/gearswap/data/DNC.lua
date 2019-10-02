@@ -54,9 +54,6 @@ function job_setup()
 	state.DanceStance = M{['description']='Dance Stance','None','Saber Dance','Fan Dance'}
 
     state.CurrentStep = M{['description']='Current Step', 'Main', 'Alt'}
-	
-	--List of which WS you plan to use TP bonus WS with.
-	moonshade_ws = S{"Rudra's Storm"}
 
 	autows = "Rudra's Storm"
 	autofood = 'Soy Ramen'
@@ -367,7 +364,7 @@ function step_cost()
 	
 	if player.equipment.main == 'Setan Kober' then cost = cost - 40 end
 	if player.equipment.sub == 'Setan Kober' then cost = cost - 40 end
-	if sets.precast.Step and sets.precast.Step.feet:startswith('Horos T. Shoes') then
+	if sets.precast.Step and sets.precast.Step.feet and sets.precast.Step.feet:startswith('Horos T. Shoes') then
 		if sets.precast.Step.feet:endswith('+2') then
 			cost = cost - 10
 		elseif sets.precast.Step.feet:endswith('+3') then

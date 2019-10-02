@@ -19,13 +19,10 @@ function job_setup()
 	state.Buff['Unlimited Shot'] = buffactive['Unlimited Shot'] or false
 	state.Buff['Velocity Shot'] = buffactive['Velocity Shot'] or false
 	
-	--List of which WS you plan to use TP bonus WS with.
-	moonshade_ws = S{'Jishnu\'s Radiance','Empyreal Arrow','Last Stand'}
-	
-	autows = "Jishnu\'s Radiance"
-	rangedautows = "Jishnu\'s Radiance"
-	autofood = 'Sublime Sushi'
-	ammostock = 98
+	autows = "Last Stand"
+	rangedautows = "Last Stand"
+	autofood = 'Soy Ramen'
+	ammostock = 198
 	
 	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","RngHelper","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","RangedMode","WeaponskillMode","IdleMode","Passive","RuneElement","TreasureMode",})
 end
@@ -51,7 +48,7 @@ function job_precast(spell, spellMap, eventArgs)
 
 	if spell.action_type == 'Ranged Attack' or
 	  (spell.type == 'WeaponSkill' and (spell.skill == 'Marksmanship' or spell.skill == 'Archery')) then
-		check_ammo(spell, action, spellMap, eventArgs)
+		check_ammo_precast(spell, action, spellMap, eventArgs)
 	end
 
 end
@@ -146,6 +143,7 @@ function job_buff_change(buff, gain)
 		if player.equipment.Ranged then
 			if (player.equipment.Ranged == 'Armageddon' and (buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath: Lv.3']))
 			or (player.equipment.Ranged == 'Gandiva' and (buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath: Lv.3']))
+			or (player.equipment.Ranged == "Gastraphetes" and state.Buff['Aftermath: Lv.3'])
 			or (player.equipment.Ranged == "Annihilator" and state.Buff['Aftermath'])
 			or (player.equipment.Ranged == "Yoichinoyumi" and state.Buff['Aftermath']) then
 				classes.CustomRangedGroups:append('AM')
@@ -177,7 +175,7 @@ end
 -------------------------------------------------------------------------------------------------------------------
 
 -- Check for proper ammo when shooting or weaponskilling
-function check_ammo(spell, action, spellMap, eventArgs)
+function check_ammo_precast(spell, action, spellMap, eventArgs)
 	-- Filter ammo checks depending on Unlimited Shot
 	if state.Buff['Unlimited Shot'] then
 		if player.equipment.ammo ~= U_Shot_Ammo[player.equipment.range] then

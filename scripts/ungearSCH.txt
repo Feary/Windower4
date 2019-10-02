@@ -20,7 +20,7 @@ put Mallquis Clogs +2 case all
 put Mallquis Saio +2 case all
 put Mallquis Trews +2 case all
 put Merlinic Hood case all
-get Merlinic Crackows case all
+put Merlinic Crackows case all
 put Peda. Loafers case all
 put Pedagogy Pants case all
 put Rubicundity case all

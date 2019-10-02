@@ -18,14 +18,11 @@ function job_setup()
 	
 	state.AutoBoost = M(false, 'Auto Boost Mode')
 	
-	--List of which WS you plan to use TP bonus WS with.
-	moonshade_ws = S{'Victory Smite'}
-	
 	autows = 'Victory Smite'
 	autofood = 'Soy Ramen'
 	
     info.impetus_hit_count = 0
-    windower.raw_register_event('action', on_action_for_impetus)
+    --windower.raw_register_event('action', on_action_for_impetus)
 	update_melee_groups()
 	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","TreasureMode",})
 end
@@ -45,12 +42,16 @@ function job_pretarget(spell, spellMap, eventArgs)
 end
 
 function job_precast(spell, spellMap, eventArgs)
-
 	if spell.type == 'WeaponSkill' and state.AutoBoost.value then
 		local abil_recasts = windower.ffxi.get_ability_recasts()
 		if abil_recasts[16] < latency then
 			eventArgs.cancel = true
 			windower.chat.input('/ja "Boost" <me>')
+			windower.chat.input:schedule(1,'/ws "'..spell.english..'" '..spell.target.raw..'')
+			return
+		elseif player.sub_job == 'WAR' and abil_recasts[2] < latency then
+			eventArgs.cancel = true
+			windower.chat.input('/ja "Warcry" <me>')
 			windower.chat.input:schedule(1,'/ws "'..spell.english..'" '..spell.target.raw..'')
 			return
 		end
@@ -138,7 +139,7 @@ end
 -- Custom event hooks.
 -------------------------------------------------------------------------------------------------------------------
 
--- Keep track of the current hit count while Impetus is up.
+--[[ Keep track of the current hit count while Impetus is up.
 function on_action_for_impetus(action)
     if state.Buff.Impetus then
         -- count melee hits by player
@@ -203,15 +204,50 @@ function on_action_for_impetus(action)
     end
     
 end
+]]
 
 function job_self_command(commandArgs, eventArgs)
 
 end
 
 function job_tick()
+	if check_buff() then return true end
 	return false
 end
 
+function check_buff()
+	if state.AutoBuffMode.value and player.in_combat then
+		local abil_recasts = windower.ffxi.get_ability_recasts()
+
+		if player.hpp < 51 and abil_recasts[15] < latency then
+			windower.chat.input('/ja "Chakra" <me>')
+			tickdelay = os.clock() + 1.8
+			return true
+		elseif not buffactive.Impetus and abil_recasts[31] < latency then
+			windower.chat.input('/ja "Impetus" <me>')
+			tickdelay = os.clock() + 1.8
+			return true
+		elseif not (buffactive.Aggressor or buffactive.Focus) and abil_recasts[13] < latency then
+			windower.chat.input('/ja "Focus" <me>')
+			tickdelay = os.clock() + 1.8
+			return true
+		elseif player.sub_job == 'WAR' then
+			if not buffactive.Berserk and abil_recasts[1] < latency then
+				windower.chat.input('/ja "Berserk" <me>')
+				tickdelay = os.clock() + 1.8
+				return true
+			elseif not (buffactive.Aggressor or buffactive.Focus) and abil_recasts[4] < latency then
+				windower.chat.input('/ja "Aggressor" <me>')
+				tickdelay = os.clock() + 1.8
+				return true
+			else
+				return false
+			end
+		end
+	end
+
+	return false
+end
 
 function update_melee_groups()
     classes.CustomMeleeGroups:clear()

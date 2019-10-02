@@ -505,7 +505,7 @@ function init_gear_sets()
 	-- Occulation: Resulting in 12 shadows at 600 skill. Current 544 + (39 JPs) 583 - need 17 in gear
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
 		--main="Iris",sub="Iris",
-		--Luh. Keffiyeh +3 +4
+		--Luh. Keffiyeh +3
 		head="Luh. Keffiyeh +1", neck="Incanter's Torque", lear="Gifted Earring", rear="Loquac. Earring",
 		-- Assim. Jubbah +3 +4 Rawhide Gloves +10  +3 +3
 		body="Assim. Jubbah +1", lring="Stikini Ring", rring="Stikini Ring",
@@ -692,10 +692,6 @@ function init_gear_sets()
 		back=gear.dw_jse_back, waist="Windbuffet Belt +1", legs="Samnuha Tights",feet=gear_herculean_ta_feet}
 
 	sets.Self_Healing = {neck="Phalaina Locket",legs="Gyve Trousers",ring2="Kunaji Ring",}--waist="Gishdubar Sash", hands="Buremte Gloves",
-	sets.Self_Healing_Club = {neck="Phalaina Locket",ring2="Kunaji Ring",}--waist="Gishdubar Sash", hands="Buremte Gloves"
-	sets.Self_Healing_DWClub = {neck="Phalaina Locket",ring2="Kunaji Ring",}--waist="Gishdubar Sash", hands="Buremte Gloves",
-	sets.Healing_Club = {}
-	sets.Healing_DWClub = {}
 	sets.Cure_Received = {neck="Phalaina Locket",ring2="Kunaji Ring",}--waist="Gishdubar Sash" hands="Buremte Gloves",
 	sets.Self_Refresh = {back="Grapevine Cape"}--waist="Gishdubar Sash"
 	sets.MagicBurst = {hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring"}

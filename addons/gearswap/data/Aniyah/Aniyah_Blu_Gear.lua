@@ -623,10 +623,6 @@ function init_gear_sets()
 		back="Repulse Mantle", waist="Reiki Yotai", legs="Samnuha Tights", feet="Carmine Greaves"}
 
 	sets.Self_Healing = {lring="Vocane Ring",}
-	sets.Self_Healing_Club = {lring="Vocane Ring",}
-	sets.Self_Healing_DWClub = {lring="Vocane Ring",}
-	sets.Healing_Club = {}
-	sets.Healing_DWClub = {}
 	sets.Cure_Received = {lring="Vocane Ring",}
 	sets.Self_Refresh = {}
 	sets.MagicBurst = {hands="Amalric Gages", ring1="Mujin Band"}
