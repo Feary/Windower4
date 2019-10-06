@@ -23,8 +23,10 @@ put Mallquis Saio +2 Case all
 put Mallquis Trews +2 Case all
 put Merlinic Hood Case all
 put Merlinic Crackows Case all
+put Perdition Slops case all
 put Rubicundity Case all
-get Skaoi Boots case all
+put Saevus Pendant +1 case all
+put Skaoi Boots case all
 put Spae. Petasos Case all
 put Spae. Coat +1 Case all
 put Spaekona's Gloves Case all

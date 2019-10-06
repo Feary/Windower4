@@ -1,37 +1,40 @@
-get Amalric Gages +1 case all
-get Amalric Nails +1 case all
-get Amalric Slops +1 case all
-get Amalric Coif +1 case all
-get Amalric Doublet +1 case all
-get Arch. Coat +1 case all
-get Arch. Gloves +1 case all
-get Arch. Petasos +1 case all
-get Arch. Sabots +1 case all
-get Arch. Tonban +1 case all
-get Bane Cape case all
-get Barkaro. Earring case all
-get Hagondes Coat +1 case all
+get Amalric Gages +1 Case all
+get Amalric Nails +1 Case all
+get Amalric Slops +1 Case all
+get Amalric Coif +1 Case all
+get Amalric Doublet +1 Case all
+get Arch. Coat +1 Case all
+get Arch. Gloves +1 Case all
+get Arch. Petasos +1 Case all
+get Arch. Sabots +1 Case all
+get Arch. Tonban +1 Case all
+get Bane Cape Case all
+get Barkaro. Earring Case all
+get Evans Earring storage all
+get Hagondes Coat +1 Case all
 get Helios Gloves case all
-get Helios Boots case all
-get Jhakri Cuffs +2 case all
-get Jhakri Pigaches +2 case all
-get Jhakri Robe +2 case all
-get Lathi case all
-get Mallquis Clogs +2 case all
-get Mallquis Saio +2 case all
-get Mallquis Trews +2 case all
-get Merlinic Hood case all
-get Merlinic Crackows case all
-get Rubicundity case all
+get Helios Boots Case all
+get Jhakri Cuffs +2 Case all
+get Jhakri Pigaches +2 Case all
+get Jhakri Robe +2 Case all
+get Lathi Case all
+get Mallquis Clogs +2 Case all
+get Mallquis Saio +2 Case all
+get Mallquis Trews +2 Case all
+get Merlinic Hood Case all
+get Merlinic Crackows Case all
+get Perdition Slops case all
+get Rubicundity Case all
+get Saevus Pendant +1 case all
 get Skaoi Boots case all
-get Spae. Petasos case all
-get Spae. Coat +1 case all
-get Spaekona's Gloves case all
-get Spae. Tonban +1 case all
-get Spaekona's Sabots case all
-get Taranus's Cape case all
-get Wicce Chausses case all
-get Wicce Coat case all
-get Wicce Gloves case all
-get Wicce Petasos +1 case all
-get Wicce Sabots +1 case all
+get Spae. Petasos Case all
+get Spae. Coat +1 Case all
+get Spaekona's Gloves Case all
+get Spae. Tonban +1 Case all
+get Spaekona's Sabots Case all
+get Taranus's Cape Case all
+get Wicce Chausses Case all
+get Wicce Coat Case all
+get Wicce Gloves Case all
+get Wicce Petasos +1 Case all
+get Wicce Sabots +1 Case all
