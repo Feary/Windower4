@@ -14,13 +14,13 @@ function user_setup()
     state.ExtraDefenseMode = M{['description']='Extra Defense Mode', 'None', 'MP', 'Twilight'}
 	
 	-- Augmented Capes
-	gear.phalanx_jse_back = {name="Weard Mantle", augments={'VIT+1','DEX+1','Enmity+2','Phalanx +3',}}	
-	gear.TP_jse_back = {name="Rudianos's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
-	gear.WS_jse_back = {name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
-	gear.WS_Req_jse_back = {name="Rudianos's Mantle", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
-	gear.WS_CDC_jse_back = {name="Rudianos's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}
-	gear.Enmity_jse_back = {name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10',}}
-	gear.fastcast_jse_back = {name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','"Fast Cast"+10',}}
+	gear.phalanx_jse_back 	= 	{name="Weard Mantle", augments={'VIT+1','DEX+1','Enmity+2','Phalanx +3',}}	
+	gear.TP_jse_back 		= 	{name="Rudianos's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
+	gear.WS_jse_back 		= 	{name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	gear.WS_Req_jse_back 	= 	{name="Rudianos's Mantle", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	gear.WS_CDC_jse_back 	= 	{name="Rudianos's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}
+	gear.Enmity_jse_back	= 	{name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10',}}
+	gear.fastcast_jse_back 	= 	{name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','"Fast Cast"+10',}}
 	
 	-- Additional local binds
 	send_command('bind !` gs c SubJobEnmity')
@@ -39,6 +39,9 @@ function user_setup()
 	send_command('bind @f8 gs c toggle AutoTankMode')
 	send_command('bind ^@!` gs c cycle SkillchainMode')
 	
+	send_command('alias gear exec gearpld.txt')
+	send_command('alias ungear gs equip naked;exec ungearpld.txt')
+	
     select_default_macro_book()
     update_defense_mode()
 end
@@ -52,8 +55,8 @@ function init_gear_sets()
     sets.Enmity = {ammo="Paeapua",
 		--  lear="Trux Earring", 
 		head="Loess Barbuta +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Cryptic Earring",
-		-- Yorium Gauntlets Apeile Ring +1
-		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Supershear Ring", rring="Apeile Ring",
+		-- Apeile Ring +1
+		body="Souv. Cuirass +1", hands=gear_yorium_hands_enmity, lring="Supershear Ring", rring="Apeile Ring",
 		-- Obyssean Cuisses Eschite Greaves path A
 		back=gear.Enmity_jse_back, waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 	
@@ -65,7 +68,7 @@ function init_gear_sets()
 	sets.Enmity.DT = {ammo="Paeapua",
 		-- lear="Trux Earring", 
 		head="Loess Barbuta +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Cryptic Earring",
-		-- Yorium Gauntlets rring="Apeile Ring +1"
+		-- rring="Apeile Ring +1"
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Supershear Ring", rring="Apeile Ring",
 		-- Obyssean Cuisses Eschite Greaves path A
 		back=gear.Enmity_jse_back, waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
@@ -190,8 +193,7 @@ function init_gear_sets()
 		back=gear.WS_CDC_jse_back, waist="Chiner's Belt +1", legs="Lustr. Subligar +1", feet="Lustra. Leggings +1"})
 
 	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {ammo="Ginsen",
-		-- Valorous Mask 
-		head="Sulevia's Mask +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		head=gear_valorous_wsd_head, neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		body="Emicho Haubert +1", hands="Sulev. Gauntlets +2", lring="Regal Ring", rring="Epaminondas's Ring",
 		back=gear.WS_jse_back, waist="Prosilio Belt +1", legs="Sulev. Cuisses +2", feet="Sulev. Leggings +2"})
     sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Ginsen",
@@ -230,8 +232,8 @@ function init_gear_sets()
 	
 	sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS,{
 		-- Founder/obyssean
-		head="Jumalik Helm", neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
-		body="Carm. Sc. Mail +1", hands="Founder's Gauntlets", lring="Shiva Ring +1", rring="Shiva Ring +1",
+		head="Carmine Mask +1", neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
+		body=gear_odyssean_mab_body, hands="Founder's Gauntlets", lring="Epaminondas's Ring", rring="Shiva Ring +1",
 		-- WSD Legs
 		back=gear.WS_jse_back, waist="Yamabuki-no-Obi", legs="Founder's Hose", feet="Sulev. Leggings +2"})
 		
@@ -304,8 +306,8 @@ function init_gear_sets()
     sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 	
 	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {ammo="Staunch Tathlum",
-		-- Obyssean Helm Phalanx +5 Incanter Torque
-		head="Carmine Mask +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
+		-- Obyssean Helm Phalanx +5
+		head="Carmine Mask +1", neck="Incanter's Torque", lear="Odnowa Earring +1", rear="Knightly Earring",
 		-- body="Shabti Cuirass", Apeile Ring +1
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Apeile Ring",
 		-- Obyssean Cuisses Phalanx +5 
@@ -356,7 +358,7 @@ function init_gear_sets()
 		head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Thureous Earring",
 		body="Tartarus Platemail",hands="Souv. Handsch. +1",ring1="Shadow Ring",ring2="Defending Ring",
 		-- feet="Hippo. Socks +1"
-		back="Shadow Mantle",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Souveran Schuhs +1"}
+		back="Shadow Mantle",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Hippomenes Socks"}
 		
     sets.idle.Reraise = {ammo="Staunch Tathlum",
 		head="Twilight Helm",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
@@ -384,7 +386,7 @@ function init_gear_sets()
 	-- Weapon Set
 	sets.weapons.Default = {main="Burtgang",sub="Aegis"}
 	sets.weapons.DDWeapons = {main="Burtgang",sub="Aegis"}
-    sets.weapons.DualWeapons = {main="Burtgang",sub="Tanmogayi +1"}
+    sets.weapons.DualWeapons = {main="Burtgang",sub="Naegling"}
 	
 	sets.Knockback = {}
     sets.MP = {head="Chev. Armet +1",ear2="Ethereal Earring",waist="Flume Belt"} -- neck="Coatl Gorget +1",
@@ -501,7 +503,7 @@ function init_gear_sets()
 	--------------------------------------
     
 	sets.engaged = {ammo="Ginsen",
-		head="Carmine Mask +1", neck="Asperity Necklace", lear="Telos Earring", rear="Digni. Earring",
+		head="Carmine Mask +1", neck="Sanctity Necklace", lear="Telos Earring", rear="Digni. Earring",
 		body="Souveran Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
 		back=gear.TP_jse_back, waist="Windbuffet Belt +1", legs="Souv. Diechlings +1", feet="Carmine Greaves +1"}
 

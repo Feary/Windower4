@@ -3,14 +3,21 @@ put Cab. Coronet +1 Locker all
 put Cab. Gauntlets +1 Locker all
 put Cab. Leggings +1 Locker all
 put Cab. Surcoat +1 Locker all
+put Carm. Sc. Mail +1 safe2 all
 put Chev. Armet +1 Locker all
 put Chev. Cuisses +1 Locker all
 put Chev. Gauntlets +1 Locker all
 put Chev. Sabatons Locker all
 put Creed Baudrier Locker all
+put Emicho Haubert +1 locker all
 put Knightly Earring Locker all
+put Mes'yohi Slacks locker all
 put Rev. Leggings +1 Locker all
 put Rudianos's Mantle Locker all
 put Thureous Earring Locker all
+put Tanmogayi +1 sack all
+put Vim Torque locker all
 put Weard Mantle Locker all
-put Carm. Sc. Mail +1 safe2 all
+
+
+

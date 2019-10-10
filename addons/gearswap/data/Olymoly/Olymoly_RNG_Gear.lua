@@ -417,26 +417,26 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-		-- neck="Combantant's Necklace", 
+		-- neck="Combatant's Necklace", 
 		head="Meghanada Visor +2", neck="Erudit. Necklace",  lear="Brutal Earring", rear="Suppanomimi",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
 		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.engaged.Acc = {
-		-- neck="Combantant's Necklace", 
+		-- neck="Combatant's Necklace", 
 		head="Meghanada Visor +2", neck="Erudit. Necklace",  lear="Brutal Earring", rear="Suppanomimi",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.engaged.DW = {
-		-- neck="Combantant's Necklace", 
+		-- neck="Combatant's Necklace", 
 		head="Meghanada Visor +2", neck="Erudit. Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- Floral Gauntlets
 		body="Adhemar Jacket +1", hands="Meg. Gloves +2", lring="Regal Ring", rring="Epona's Ring",
 		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.DW.Acc = {
-		-- neck="Combantant's Necklace", 
+		-- neck="Combatant's Necklace", 
 		head="Meghanada Visor +2", neck="Erudit. Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		--  Floral Gauntlets
 		body="Adhemar Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ilabrat Ring",
