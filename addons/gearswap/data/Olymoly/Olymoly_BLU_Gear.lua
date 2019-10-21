@@ -45,6 +45,9 @@ function user_setup()
 	send_command('bind ^q gs c weapons Almace;gs c update')
 	send_command('bind !q gs c weapons HybridWeapons;gs c update')
 	
+	send_command('alias gear exec gearblu.txt')
+	send_command('alias ungear gs equip naked;exec ungearblu.txt')
+	
 	send_command('alias bludd aset spellset dd100')
 	send_command('alias blureset lua reload azureset')
 	-- aset spellset Zahak

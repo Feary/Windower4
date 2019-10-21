@@ -22,7 +22,7 @@ function job_setup()
 
 	autows = 'Realmrazer'
 	autofood = 'Miso Ramen'
-	autoindi = 'Torpor'
+	autoindi = 'Haste'
 	autoentrust = 'Fury'
 	autoentrustee = '<p1>'
 	autogeo = 'Frailty'
