@@ -536,7 +536,7 @@ function init_gear_sets()
 	sets.NightIdle = {}
 
 	-- Gear for learning spells: +skill and AF hands.
-	sets.Learning = {hands="Assim. Bazu."}
+	sets.Learning = {hands="Assim. Bazu. +1"}
 
 	-- Resting sets
 	sets.resting = {main="Bolelabunga",sub="Genbu's Shield",ammo="Hasty Pinion +1",

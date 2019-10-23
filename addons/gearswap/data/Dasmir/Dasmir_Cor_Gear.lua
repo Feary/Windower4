@@ -75,8 +75,8 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +1"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
     
-    sets.precast.CorsairRoll = {
-		-- Odndowa Earring Compensator 
+    sets.precast.CorsairRoll = {ammo="Compensator",
+		-- Odndowa Earring 
 		head="Lanun Tricorne +1", neck="Regal Necklace", lear="Etiolation Earring", rear="Merman's Earring",
 		-- dt herc?
 		body="Meg. Cuirie +2", hands="Chasseur's Gants +1", lring="Dark Ring", rring="Defending Ring",
@@ -93,7 +93,7 @@ function init_gear_sets()
     
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-		-- /Baetyl Necklace Friomisi Earring Crematio Earring
+		-- /Baetyl Necklace Crematio Earring
 		head="Laksa. Tricorne +2", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Novio Earring",
 		-- Lanun Frac +3 Fenrir Ring +1
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1", lring="Regal Ring", rring="Dingir Ring",

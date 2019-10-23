@@ -556,8 +556,8 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Default = {main="Kaja Sword",sub="Tanmogayi +1"}
-	sets.weapons.MeleeClubs = {main="Gabaxorea",sub="Tanmogayi +1"}
-	sets.weapons.MagicWeapons = {main="Kaja Sword",sub="Gabaxorea"}
+	sets.weapons.MeleeClubs = {main="Kaja Rod",sub="Kaja Sword"}
+	sets.weapons.MagicWeapons = {main="Kaja Sword",sub="Kaja Rod"}
 	sets.weapons.MaccWeapons = {main="Kaja Sword",sub="Tanmogayi +1"} --main="Iris",sub="Iris"
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 

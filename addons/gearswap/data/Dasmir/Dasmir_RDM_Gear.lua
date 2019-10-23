@@ -81,6 +81,9 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Impact = set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
+	
+	sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {})
+	sets.precast.FC['Enfeebling Magic'] = set_combine(sets.precast.FC, {head="Leth. Chappel +1"})
        
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
@@ -285,11 +288,13 @@ function init_gear_sets()
 	
 	sets.midcast.Bio = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Bio II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
-	sets.midcast['Bio III'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter, {head="Viti. Chapeau +1"})
+	sets.midcast['Bio III'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter, {head="Viti. Chapeau +1", legs="Viti.  Tights +1"})
 
 	sets.midcast['Slow II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Viti. Chapeau +1"})
 	sets.midcast['Slow II'].Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Viti. Chapeau +1"})
 	
+	sets.midcast['Blind II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Viti. Chapeau +1",legs="Viti. Tights +1"})
+
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 
     sets.midcast['Elemental Magic'] = {main={name="Naegling", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum", 
