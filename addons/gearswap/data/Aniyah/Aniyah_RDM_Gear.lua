@@ -52,6 +52,8 @@ function user_setup()
 	send_command('alias ungear gs equip naked;exec aniyah/ungearrdm.txt')
 	send_command('alias gear exec dasmir/ungearrdm.txt')
 	
+	send_command('alias imp input /ja "Parsimony" <me>;wait 1;input /ma "Impact" <stnpc>')
+	
 	select_default_macro_book()
 end
 

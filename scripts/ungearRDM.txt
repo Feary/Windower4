@@ -9,7 +9,7 @@ put Atrophy Gloves +1 storage all
 put Atrophy Tights +1 storage all
 put Atrophy Boots +1 storage all
 put Carm. Sc. Mail +1 safe2 all
-put Ghostfyre Cape case all
+put Ghostfyre Cape storage all
 put Hagondes Coat +1 case all
 put Helios Boots case all
 put Helios Gloves case all
@@ -18,18 +18,18 @@ put Jhakri Pigaches +2 case all
 put Jhakri Robe +2 case all
 put Kaja Rod case all
 put Leth. Fuseau storage all
-put Lethargy Chappel storage all
+put Leth. Chappel +1 storage all
 put Lethargy Sayon +1 storage all
-put Leth. Gantherots storage all
+put Leth. Gantherots +1 storage all
 put Leth. Houseaux +1 storage all
 put Merlinic Crackows case all
 put Merlinic Hood case all
 put Mizu. Kubikazari case all
 put Naegling sack all
 put Nibiru Crudgel sack all
-put Regal Gem case all
+put Regal Gem storage all
 put Rubicundity case all
-put Skaoi Boots storage all
+put Skaoi Boots case all
 put Sucellos's Cape storage all
 put Thereoid Greaves sack all
 put Vampirism sack all

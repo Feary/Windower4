@@ -19,7 +19,7 @@ function user_setup()
 	gear.FC_jse_back 	= {name="Taranus's Cape", augments={'Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Damage taken-5%',}}
 	
 	gear.Cure_jse_back  = {name="Taranus's Cape", augments={'Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Damage taken-5%',}}
-	gear.stp_jse_back = {name="Taranus's Cape", augments={'Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Damage taken-5%',}}
+	gear.STP_jse_back 	= {name="Taranus's Cape", augments={'Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Damage taken-5%',}}
 	
 	-- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode') 
@@ -363,7 +363,7 @@ function init_gear_sets()
         --body=gear_helios_body_occult, 
 		body="Mallquis Saio +2", hands=gear_helios_hands_Occult, ring1="Rajas Ring", ring2="Petrov Ring",
 		-- waist="Oneiros Rope",legs="Perdition Slops",
-        back=gear.stp_jse_back, feet=gear_helios_feet_occult}
+        back=gear.STP_jse_back, feet=gear_helios_feet_occult}
 		
     sets.midcast.Impact.OccultAcumen = set_combine(sets.midcast['Elemental Magic'].OccultAcumen, {head=empty,body="Twilight Cloak"})
 	
@@ -481,7 +481,7 @@ function init_gear_sets()
         head="Jhakri Coronal +2",neck="Sanctity Necklace", ear1="Digni. Earring",ear2="Telos Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",
 		--waist="Olseni Belt"
-		back=gear.stp_jse_back, legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
+		back=gear.STP_jse_back, legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
 	--Situational sets: Gear that is equipped on certain targets
 	sets.Self_Healing = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",} --waist="Gishdubar Sash"

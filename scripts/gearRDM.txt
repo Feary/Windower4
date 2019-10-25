@@ -9,7 +9,7 @@ get Atrophy Gloves +1 storage all
 get Atrophy Tights +1 storage all
 get Atrophy Boots +1 storage all
 get Carm. Sc. Mail +1 safe2 all
-get Ghostfyre Cape case all
+get Ghostfyre Cape storage all
 get Hagondes Coat +1 case all
 get Helios Boots case all
 get Helios Gloves case all
@@ -18,18 +18,18 @@ get Jhakri Pigaches +2 case all
 get Jhakri Robe +2 case all
 get Kaja Rod case all
 get Leth. Fuseau storage all
-get Lethargy Chappel storage all
+get Leth. Chappel +1 storage all
 get Lethargy Sayon +1 storage all
-get Leth. Gantherots storage all
+get Leth. Gantherots +1 storage all
 get Leth. Houseaux +1 storage all
 get Merlinic Crackows case all
 get Merlinic Hood case all
 get Mizu. Kubikazari case all
 get Naegling sack all
 get Nibiru Crudgel sack all
-get Regal Gem case all
+get Regal Gem storage all
 get Rubicundity case all
-get Skaoi Boots storage all
+get Skaoi Boots case all
 get Sucellos's Cape storage all
 get Thereoid Greaves sack all
 get Vampirism sack all

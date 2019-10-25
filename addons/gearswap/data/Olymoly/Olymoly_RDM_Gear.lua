@@ -52,6 +52,8 @@
 	send_command('alias gear exec gearrdm.txt')
 	send_command('alias ungear gs equip naked;exec ungearrdm.txt')
 	
+	send_command('alias imp input /ja "Parsimony" <me>;wait 1;input /ma "Impact" <stnpc>')
+	
 	select_default_macro_book()
 end
 
@@ -176,12 +178,14 @@ function init_gear_sets()
 	
 	sets.Self_Healing = {
 		neck="Phalaina Locket",
-		ring2="Kunaji Ring", -- hands="Buremte Gloves",
+		 -- hands="Buremte Gloves",
+		ring2="Kunaji Ring",
 		--waist="Gishdubar Sash"
 		}
 	sets.Cure_Received = {
 		neck="Phalaina Locket", 
-		hands="Buremte Gloves",ring2="Kunaji Ring",
+		--hands="Buremte Gloves",
+		ring2="Kunaji Ring",
 		--waist="Gishdubar Sash"
 		}
 	sets.Self_Refresh = {back="Grapevine Cape",}--waist="Gishdubar Sash"
@@ -197,9 +201,9 @@ function init_gear_sets()
 
 	--Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
 	sets.buff.ComposureOther = {ammo="Hasty Pinion +1",
-		--main="Pukulatmuj +1",sub="Ammurapi Shield",		
+		--main="Pukulatmuj +1", sub="Ammurapi Shield",		
 		--Duelist's Torque +2 
-		head="Lethargy Chappel", neck="Incanter's Torque", ear1="Andoaa Earring", rear="Augment. Earring",
+		head="Leth. Chappel +1", neck="Incanter's Torque", ear1="Andoaa Earring", rear="Augment. Earring",
 		-- Atrophy Gloves +3 Stikini Ring +1 Stikini Ring +1
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2="Stikini Ring",
 		back=gear.JSE_Cape, waist="Olympus Sash", legs="Leth. Fuseau", feet="Leth. Houseaux +1"}
@@ -243,7 +247,7 @@ function init_gear_sets()
 			-- head="Atro. Chapeau +3",  Duelist's Torque +3
 			head="Carmine Mask +1", neck="Incanter's Torque", lear="Digni. Earring", rear="Regal Earring",
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
-			body="Atrophy Tabard +1", hands="Leth. Gantherots", lring="Stikini Ring", rring="Stikini Ring",
+			body="Atrophy Tabard +1", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",
 			-- feet="Vitiation Boots +3"
 			back=gear.Macc_jse_back, waist="Luminary Sash", legs="Psycloth Lappas", feet="Skaoi Boots"}
 	
@@ -251,7 +255,7 @@ function init_gear_sets()
 			-- head="Atro. Chapeau +3",  Duelist's Torque +3
 			head="Carmine Mask +1", neck="Incanter's Torque", lear="Digni. Earring", rear="Regal Earring",
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
-			body="Atrophy Tabard +1", hands="Leth. Gantherots", lring="Stikini Ring", rring="Stikini Ring",
+			body="Atrophy Tabard +1", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",
 			-- feet="Vitiation Boots +3"
 			back=gear.Macc_jse_back, waist="Luminary Sash", legs="Psycloth Lappas", feet="Skaoi Boots"}
 		
@@ -320,7 +324,7 @@ function init_gear_sets()
 		--sub="Ammurapi Shield",
 		head="Amalric Coif +1" ,neck="Incanter's Torque", ear1="Regal Earring", ear2="Digni. Earring",
 		--body="Atrophy Tabard +3",
-		body="Ayanmo Corazza +2", hands="Leth. Gantherots", ring1="Stikini Ring", ring2="Stikini Ring",
+		body="Ayanmo Corazza +2", hands="Leth. Gantherots +1", ring1="Stikini Ring", ring2="Stikini Ring",
 		--feet=gear.merlinic_nuke_feet
 		back=gear.Macc_jse_back,waist="Luminary Sash",legs="Psycloth Lappas", feet=gear_merlinic_aspir_feet}
 
@@ -347,7 +351,7 @@ function init_gear_sets()
 
 	-- Sets for special buff conditions on spells.
 		
-	sets.buff.Saboteur = {hands="Leth. Gantherots"}
+	sets.buff.Saboteur = {hands="Leth. Gantherots +1"}
 	
 	sets.HPDown = {}
 	
@@ -475,6 +479,8 @@ function select_default_macro_book()
 		set_macro_page(1, 3)
 	elseif player.sub_job == 'WHM' then
 		set_macro_page(4, 3)
+	elseif player.sub_job == 'WAR' then
+		set_macro_page(6, 3)
 	else
 		set_macro_page(1, 3)
 	end

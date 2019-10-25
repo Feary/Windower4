@@ -42,30 +42,10 @@ function user_setup()
 	send_command('alias at input /targetnpc; wait 1; input /attack <t>')
 	
 	send_command('alias b1 input /ja "immanence" <me>; wait 1; input /ma "luminohelix" <t>; wait 5; input /ja "immanence" <me>; wait 1; input /ma "stone" <t>; wait 4; input /ma "cryohelix" <t>')
-    
-	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 2.5;/ma "Embrava" <t>')
-
-	-- Skillchains
-	-- Fusion - Light/Fire
-	send_command('alias sclight input /p Skillchain: Fusion MB: Light/Fire>;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Fire" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Thunder" <t>')
-	send_command('alias sclight2 input /p Skillchain: Fusion MB: Light/Fire;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Thunder" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Fire" <t>')
-	send_command('alias sclight3 input /p Skillchain: Fusion MB: Light/Fire;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Fire" <t>;wait 3;input /ja "Immanence" <me>;wait 5;input /ma "Thunder" <t>')
-	-- Distortion/Induration- Ice Water 
-	send_command('alias scice input /p Skillchain: Induration MB: Ice;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Water" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Blizzard" <t>')
-	send_command('alias scice2 input /p Skillchain: Distortion MB: Ice/Water;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Luminohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Stone" <t>')
-	send_command('alias scice3 input /p Skillchain: Induration MB: Ice;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Water" <t>;wait 3;input /ja "Immanence" <me>;wait 5;input /ma "Blizzard" <t>')
-	-- Detonation/Fragmentation - Thunder Wind 
-	send_command('alias scthunder input /p Skillchain: Fragmentation  MB:Wind/Thunder;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Blizzard" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Water" <t>')
-	send_command('alias scthunder2 input /p Skillchain: Detonation  MB:Wind;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Noctohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Aero" <t>')
-	-- Impaction - Wind 
-	send_command('alias scwind input /p Skillchain: Impaction  MB: Wind;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Blizzard" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Thunder" <t>')
-	send_command('alias scwind2 input /p Skillchain: Impaction MB: Wind;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Noctohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Aero" <t>')
-	-- Reverberation - Water 
-	send_command('alias scwater input /p Skillchain: Reverberation MB: Water;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Luminohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Water" <t>')
-	-- Gravitation - Stone 
-	send_command('alias scstone input /p Skillchain: Gravitation MB: Stone;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Luminohelix" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Water" <t>')
-	send_command('alias scstone2 input /p Skillchain: Gravitation MB: Stone;wait 1;input /ja "Immanence" <me>;wait 1;input /ja "Aero" <t>;wait 4;input /ja "Immanence" <me>;wait 5;input /ma "Noctohelix" <t>')
 	
+	-- Embrava
+	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 3;input /ma "Embrava" <t>')
+
 	select_default_macro_book()
 
 end
