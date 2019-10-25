@@ -41,11 +41,15 @@ function user_setup()
 	send_command('alias ta input /targetnpc')
 	send_command('alias at input /targetnpc; wait 1; input /attack <t>')
 	
-	send_command('alias b1 input /ja "immanence" <me>; wait 1; input /ma "luminohelix" <t>; wait 5; input /ja "immanence" <me>; wait 1; input /ma "stone" <t>; wait 4; input /ma "cryohelix" <t>')
-	
 	-- Embrava
-	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 3;input /ma "Embrava" <t>')
+	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 3;input /ma "Embrava" <stpc>;wait 4;input /ja "Accession" <me>;wait 3;input /ma "Regen V" <stpc>')
+	--Kaustra
+	send_command('alias kau gs c set elementalmode earth;wait 1;input /ja "Tabula Rasa" <me>;wait 1;input /ja "Dark Arts" <me>;wait 1;input /ja "Addendum: Black" <me>;wait 2.5;gs c elemental skillchain2;wait 15;input /ja "Focalization" <me>;wait 1;input /ja "Ebullience" <me>;wait 2.5;input /ma "Kaustra" <t>')
 
+	-- Gear Up
+	send_command('alias gear exec aniyah/gearsch.txt')
+	send_command('alias ungear gs equip naked;exec aniyah/ungearsch.txt')
+	
 	select_default_macro_book()
 
 end

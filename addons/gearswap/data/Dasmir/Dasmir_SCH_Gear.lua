@@ -40,8 +40,11 @@ function user_setup()
 	
 	send_command('alias ta input /targetnpc')
 	send_command('alias at input /targetnpc; wait 1; input /attack <t>')
-	    
-	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 2.5;/ma "Embrava" <t>')
+	   
+	-- Embrava
+	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 3;input /ma "Embrava" <stpc>;wait 4;input /ja "Accession" <me>;wait 3;input /ma "Regen V" <stpc>')
+	--Kaustra
+	send_command('alias kau gs c set elementalmode earth;wait 1;input /ja "Tabula Rasa" <me>;wait 1;input /ja "Dark Arts" <me>;wait 1;input /ja "Addendum: Black" <me>;wait 2.5;gs c elemental skillchain2;wait 15;input /ja "Focalization" <me>;wait 1;input /ja "Ebullience" <me>;wait 2.5;input /ma "Kaustra" <t>')
 
 	-- Gear Up
 	send_command('alias gear exec dasmir/gearsch.txt')
@@ -62,8 +65,8 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 
-    sets.precast.JA['Tabula Rasa'] = {legs="Pedagogy Pants"} --Peda. Pants +1
-	sets.precast.JA['Enlightenment'] = {} --body="Peda. Gown +1"
+    sets.precast.JA['Tabula Rasa'] = {legs="Peda. Pants +1"} 
+	sets.precast.JA['Enlightenment'] = {body="Peda. Gown +1"}
 
     -- Fast cast sets for spells
 
@@ -92,7 +95,7 @@ function init_gear_sets()
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Evans Earring",ear2="Etiolation Earring",
 		-- hands="Regal Cuffs", 
 		body="Amalric Doublet +1", ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		back="Fi Follet Cape +1",waist="Yamabuki-no-Obi",legs="Pedagogy Pants",feet="Skaoi Boots"}
+		back="Fi Follet Cape +1",waist="Yamabuki-no-Obi",legs="Peda. Pants +1",feet="Skaoi Boots"}
 
     -- Midcast Sets
 
