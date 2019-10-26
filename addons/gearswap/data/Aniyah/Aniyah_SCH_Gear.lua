@@ -44,7 +44,7 @@ function user_setup()
 	-- Embrava
 	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 3;input /ma "Embrava" <stpc>;wait 4;input /ja "Accession" <me>;wait 3;input /ma "Regen V" <stpc>')
 	--Kaustra
-	send_command('alias kau gs c set elementalmode earth;wait 1;input /ja "Tabula Rasa" <me>;wait 1;input /ja "Dark Arts" <me>;wait 1;input /ja "Addendum: Black" <me>;wait 2.5;gs c elemental skillchain2;wait 15;input /ja "Focalization" <me>;wait 1;input /ja "Ebullience" <me>;wait 2.5;input /ma "Kaustra" <t>')
+	send_command('alias kau gs c set elementalmode dark;wait 1;input /ja "Tabula Rasa" <me>;wait 1;input /ja "Dark Arts" <me>;wait 1;input /ja "Addendum: Black" <me>;wait 2.5;gs c elemental skillchain2;wait 15;input /ja "Focalization" <me>;wait 1;input /ja "Ebullience" <me>;wait 2.5;input /ma "Kaustra" <t>')
 
 	-- Gear Up
 	send_command('alias gear exec aniyah/gearsch.txt')
@@ -66,7 +66,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
     sets.precast.JA['Tabula Rasa'] = {legs="Pedagogy Pants"} --Peda. Pants +1
-	sets.precast.JA['Enlightenment'] = {} --body="Peda. Gown +1"
+	sets.precast.JA['Enlightenment'] = {body="Argute Gown"} --body="Peda. Gown +1"
 
     -- Fast cast sets for spells
 

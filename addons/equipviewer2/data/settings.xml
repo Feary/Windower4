@@ -8,6 +8,9 @@
         <size>32</size>
     </global>
     <dasmir>
-
+        <pos>
+            <x>1200</x>
+            <y>400</y>
+        </pos>
     </dasmir>
 </settings>
