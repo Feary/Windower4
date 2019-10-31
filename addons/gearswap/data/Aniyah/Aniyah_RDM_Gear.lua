@@ -201,7 +201,7 @@ function init_gear_sets()
 		head="Leth. Chappel", neck="Incanter's Torque", ear1="Andoaa Earring", rear="Augment. Earring",
 		-- Atrophy Gloves +3 Stikini Ring +1 Stikini Ring +1
 		body="Lethargy Sayon", hands=gear_telchine_hands_Duration, ring1="Stikini Ring", ring2="Stikini Ring",
-		back="Ghostfyre Cape", waist="Olympus Sash", legs="Leth. Fuseau", feet="Leth. Houseaux"}
+		back="Ghostfyre Cape", waist="Olympus Sash", legs="Leth. Fuseau +1", feet="Leth. Houseaux"}
 	
 	-- Phalanx Potency
 	sets.midcast.Phalanx = {main="Oranyan", sub=empty,
@@ -231,7 +231,7 @@ function init_gear_sets()
 		
 	--Red Mage enhancing sets are handled in a different way from most, layered on due to the way Composure works
 	--Don't set combine a full set with these spells, they should layer on Enhancing Set > Composure (If Applicable) > Spell
-	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard", back="Grapevine Cape", legs="Leth. Fuseau"} --  hands="Atrophy Gloves +3", waist="Gishdubar Sash",
+	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard", back="Grapevine Cape", legs="Leth. Fuseau +1"} --  hands="Atrophy Gloves +3", waist="Gishdubar Sash",
 	sets.midcast.Aquaveil = {head="Amalric Coif +1",} --  hands="Regal Cuffs",waist="Emphatikos Rope", legs="Shedir Seraweels"
 	sets.midcast.BarElement = {} --legs="Shedir Seraweels"
 	sets.midcast.Stoneskin = {waist="Siegel Sash",} -- neck="Nodens Gorget",ear2="Earthcry Earring",legs="Shedir Seraweels"
@@ -416,10 +416,10 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Dagger = {main="Kaja Knife", sub="Genbu's Shield"}
-	sets.weapons.Sword = {main="Naegling",sub="Genbu's Shield"}
-	sets.weapons.DualWeapons = {main="Naegling",sub="Kaja Knife"}
-	sets.weapons.DualDagger = {main="Kaja Knife", sub="Naegling"}
-	sets.weapons.DualClubs = {main="Kaja Rod",sub="Bolelabunga"}
+	sets.weapons.Sword = {main="Kaja Sword",sub="Genbu's Shield"}
+	sets.weapons.DualWeapons = {main="Kaja Sword",sub="Kaja Knife"}
+	sets.weapons.DualDagger = {main="Kaja Knife", sub="Kaja Sword"}
+	sets.weapons.DualClubs = {main="Maxentius",sub="Kaja Sword"}
 
 	-- Engaged sets
 

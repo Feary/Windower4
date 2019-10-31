@@ -13,7 +13,7 @@ function user_setup()
 	gear.obi_low_nuke_waist = "Sekhmet Corset"
 	gear.obi_high_nuke_waist = "Refoccilation Stone"
 
-		-- Additional local binds
+	-- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode')
 	send_command('bind !\\\\ input /ja "Manawell" <me>')
 	send_command('bind !` input /ma "Aspir II" <t>')
@@ -30,6 +30,9 @@ function user_setup()
 	send_command('bind ^delete input /ja "Dark Arts" <me>')
 	send_command('bind !delete input /ja "Addendum: Black" <me>')
 	send_command('bind @delete input /ja "Manifestation" <me>')
+	
+	send_command('alias gear exec dasmir/gearblm.txt')
+	send_command('alias ungear gs equip naked;exec dasmir/ungearblm.txt')
     
 	select_default_macro_book()
 end

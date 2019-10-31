@@ -43,9 +43,11 @@ function user_setup()
 	
 	-- Embrava
 	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 3;input /ma "Embrava" <stpc>;wait 4;input /ja "Accession" <me>;wait 3;input /ma "Regen V" <stpc>')
-	--Kaustra
+	-- Kaustra
 	send_command('alias kau gs c set elementalmode dark;wait 1;input /ja "Tabula Rasa" <me>;wait 1;input /ja "Dark Arts" <me>;wait 1;input /ja "Addendum: Black" <me>;wait 2.5;gs c elemental skillchain2;wait 15;input /ja "Focalization" <me>;wait 1;input /ja "Ebullience" <me>;wait 2.5;input /ma "Kaustra" <t>')
-
+	-- Pro/shell
+	send_command('alias pro input /ma "Accession" <me>;wait 1;input /ma "Shell V" <me>;wait 5;input /ma "Accession" <me>;wait 1;input /ma "Protect V" <me>;')
+	
 	-- Gear Up
 	send_command('alias gear exec aniyah/gearsch.txt')
 	send_command('alias ungear gs equip naked;exec aniyah/ungearsch.txt')
@@ -476,8 +478,8 @@ function user_job_self_command(commandArgs, eventArgs)
 	
 end
 
-buff_spell_lists = {
 	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
+buff_spell_lists = {
 		{Name='Reraise',	Buff='Reraise',		SpellID=113,	When='Always'},
 		{Name='Haste',		Buff='Haste',		SpellID=57,		When='Always'},
 		{Name='Refresh',	Buff='Refresh',		SpellID=109,	When='Always'},

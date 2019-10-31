@@ -16,11 +16,11 @@ get Assim. Jubbah +1 sack all
 get Assim. Keffiyeh +1 sack all
 get Assim. Shalwar +1 sack all
 get Cornflower Cape sack all
-get Carm. Sc. Mail +1 safe2
+get Carm. Sc. Mail +1 safe2 all
 get Grunfeld Rope sack all
 get Hashi. Bazubands sack all
 get Hashishin Basmak sack all
-get Hashishin Kavuk sack all
+get Hashishin Kavuk +1 sack all
 get Hashishin Mintan +1 sack all
 get Hashishin Tayt +1 sack all
 get Herculean Boots sack all

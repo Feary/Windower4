@@ -53,10 +53,10 @@ function user_setup()
 	send_command('bind !q gs c weapons HybridWeapons;gs c update')
 	
 	-- aset spellset Zahak
-	send_command('alias bluddnin aset spellset dd100;input /macro set 1')
-	send_command('alias bluddwar aset spellset dd100;input /macro set 2')
-	send_command('alias bluddrdm aset spellset dd100;input /macro set 3')
-	send_command('alias bludddnc aset spellset dd100;input /macro set 4')
+	send_command('alias bluddnin aset spellset zahak;input /macro set 1')
+	send_command('alias bluddwar aset spellset zahak;input /macro set 2')
+	send_command('alias bluddrdm aset spellset zahak;input /macro set 3')
+	send_command('alias bludddnc aset spellset zahak;input /macro set 4')
 	send_command('alias bluaoe aset spellset aoe;input /macro set 7')
 	send_command('alias blucleaving aset spellset cleaving;input /macro set 7')
 	send_command('alias bludynamis aset spellset Dynamis;input /macro set 6')
@@ -64,6 +64,11 @@ function user_setup()
 	send_command('alias dark input /ja "Chain Affinity" <me>;wait 1;input /ws "Requiescat" <t>;wait 4;input /ja "Efflux" <me>;wait 2;input /ma "Quad. Continuum" <t>')
 	send_command('alias vw1 aset spellset vw1')
 	send_command('alias vw2 aset spellset vw2')
+	
+	-- Omen 
+	-- 30k CDC > Req > BA > Tenebral
+	send_command('alias 30k gs c cycle MagicBurstMode;wait 1;input /ws "Chant Du Cygne" <t>;wait 5;input /ws "Requiescat" <t>;wait 2;input /ja "Burst Affinity" <me>;wait 2;input /ma "Tenebral Crush" <t>')
+	send_command('alias 15k input /ja "Burst Affinity" <me>;wait 2;input /ma "Spectral Floe" <t>')
 
 	update_combat_form()
 	select_default_macro_book()
@@ -75,7 +80,7 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 	--
-	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar", feet="Hashi. Basmak +1"}
+	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +2", feet="Hashi. Basmak +1"}
 	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk", feet="Luhlaza Charuqs +1"}
 	sets.buff.Convergence = {head="Luhlaza Keffiyeh"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
@@ -556,8 +561,8 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Default = {main="Kaja Sword",sub="Tanmogayi +1"}
-	sets.weapons.MeleeClubs = {main="Kaja Rod",sub="Kaja Sword"}
-	sets.weapons.MagicWeapons = {main="Kaja Sword",sub="Kaja Rod"}
+	sets.weapons.MeleeClubs = {main="Maxentius",sub="Kaja Sword"}
+	sets.weapons.MagicWeapons = {main="Maxentius",sub="Kaja Sword"}
 	sets.weapons.MaccWeapons = {main="Kaja Sword",sub="Tanmogayi +1"} --main="Iris",sub="Iris"
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
@@ -625,7 +630,7 @@ function init_gear_sets()
 	sets.Self_Healing = {lring="Vocane Ring",}
 	sets.Cure_Received = {lring="Vocane Ring",}
 	sets.Self_Refresh = {}
-	sets.MagicBurst = {hands="Amalric Gages", ring1="Mujin Band"}
+	sets.MagicBurst = {hands="Amalric Gages", legs="Assim. Shalwar +2", ring1="Mujin Band"}
 
 end
 

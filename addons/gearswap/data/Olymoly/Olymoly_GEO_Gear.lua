@@ -34,6 +34,10 @@ function user_setup()
 	send_command('bind ^delete input /ma "Aspir III" <t>')
 	send_command('bind @delete input /ma "Sleep" <t>')
 	
+	
+	send_command('alias gear exec geargeo.txt')
+	send_command('alias ungear gs equip naked;exec ungeargeo.txt')
+	
 	indi_duration = 290
 	
 	select_default_macro_book()

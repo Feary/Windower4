@@ -16,11 +16,11 @@ put Assim. Jubbah +1 sack all
 put Assim. Keffiyeh +1 sack all
 put Assim. Shalwar +1 sack all
 put Cornflower Cape sack all
-put Carm. Sc. Mail +1 safe2
+put Carm. Sc. Mail +1 safe2 all
 put Grunfeld Rope sack all
 put Hashi. Bazubands sack all
 put Hashishin Basmak sack all
-put Hashishin Kavuk sack all
+put Hashishin Kavuk +1 sack all
 put Hashishin Mintan +1 sack all
 put Hashishin Tayt +1 sack all
 put Herculean Boots sack all

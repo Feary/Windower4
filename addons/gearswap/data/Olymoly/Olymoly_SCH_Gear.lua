@@ -46,9 +46,12 @@ function user_setup()
 	   
 	-- Embrava
 	send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 3;input /ma "Embrava" <stpc>;wait 4;input /ja "Accession" <me>;wait 3;input /ma "Regen V" <stpc>')
-	--Kaustra
+	-- Kaustra
 	send_command('alias kau gs c set elementalmode earth;wait 1;input /ja "Tabula Rasa" <me>;wait 1;input /ja "Dark Arts" <me>;wait 1;input /ja "Addendum: Black" <me>;wait 2.5;gs c elemental skillchain2;wait 15;input /ja "Focalization" <me>;wait 1;input /ja "Ebullience" <me>;wait 2.5;input /ma "Kaustra" <t>')
-
+	-- Pro/shell
+	send_command('alias pro input /ma "Accession" <me>;wait 1;input /ma "Shell V" <me>;wait 5;input /ma "Accession" <me>;wait 1;input /ma "Protect V" <me>;')
+	
+	-- Gear
 	send_command('alias gear exec gearsch.txt')
 	send_command('alias ungear gs equip naked;exec ungearsch.txt')
 	
@@ -66,7 +69,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 
-    sets.precast.JA['Tabula Rasa'] = {legs="Pedagogy Pants"} --Peda. Pants +1
+    sets.precast.JA['Tabula Rasa'] = {legs="Peda. Pants +1"}
 	sets.precast.JA['Enlightenment'] = {} --body="Peda. Gown +1"
 
     -- Fast cast sets for spells
@@ -96,7 +99,7 @@ function init_gear_sets()
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Evans Earring",ear2="Etiolation Earring",
 		-- hands="Regal Cuffs", 
 		body="Amalric Doublet +1", ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		back="Fi Follet Cape +1",waist="Yamabuki-no-Obi",legs="Pedagogy Pants",feet="Skaoi Boots"}
+		back="Fi Follet Cape +1",waist="Yamabuki-no-Obi",legs="Peda. Pants +1",feet="Skaoi Boots"}
 
     -- Midcast Sets
 
@@ -431,25 +434,25 @@ function init_gear_sets()
         back=gear.FC_jse_back, waist="Eschan Stone", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Ebullience'] = {head="Arbatel Bonnet"}
-    sets.buff['Rapture'] = {head="Arbatel Bonnet"}
-    sets.buff['Perpetuance'] = {hands="Arbatel Bracers"}
-    sets.buff['Immanence'] = {hands="Arbatel Bracers"}
-    sets.buff['Penury'] = {legs="Arbatel Pants"}
-    sets.buff['Parsimony'] = {legs="Arbatel Pants"}
+    sets.buff['Ebullience'] = {head="Arbatel Bonnet +1"}
+    sets.buff['Rapture'] = {head="Arbatel Bonnet +1"}
+    sets.buff['Perpetuance'] = {hands="Arbatel Bracers +1"}
+    sets.buff['Immanence'] = {hands="Arbatel Bracers +1"}
+    sets.buff['Penury'] = {legs="Arbatel Pants +1"}
+    sets.buff['Parsimony'] = {legs="Arbatel Pants +1"}
     sets.buff['Celerity'] = {feet="Peda. Loafers"}
     sets.buff['Alacrity'] = {feet="Peda. Loafers"}
     sets.buff['Klimaform'] = {feet="Arbatel Loafers"}
 	
 	sets.HPDown = {
 		head="Pixie Hairpin +1",ear1="Mendi. Earring",ear2="Evans Earring",
-		--body="Zendik Robe",hands="Hieros Mittens", ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		
+		--body="Zendik Robe",hands="Hieros Mittens",,ring2="Mephitas's Ring",
+		ring1="Mephitas's Ring +1",
 		back=gear.FC_jse_back,}--waist="Flax Sash",legs="Shedir Seraweels",feet=""
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff['Light Arts'] = {} --legs="Academic's Pants +3"
-	sets.buff['Dark Arts'] = {} --body="Academic's Gown +3"
+	sets.buff['Light Arts'] = {legs="Acad. Pants +1"} 
+	sets.buff['Dark Arts'] = {body="Acad. Gown +1"} 
 
     sets.buff.FullSublimation = {}
     sets.buff.PDTSublimation = {}

@@ -48,6 +48,7 @@ function user_setup()
 	send_command('bind @\\\\ input /ma "Shell V" <t>')
 	send_command('bind !\\\\ input /ma "Reraise" <me>')
 	send_command('bind @f10 gs c cycle RecoverMode')
+	send_command('bind !pause gs c toggle AutoSubMode')
 	
 	send_command('alias ungear gs equip naked;exec dasmir/ungearrdm.txt')
 	send_command('alias gear exec dasmir/gearrdm.txt')

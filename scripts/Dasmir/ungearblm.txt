@@ -1,24 +1,25 @@
-get Culminus case all
-get Ghastly Tathlum case all
-get Goet. Chausses +2 case all
-get Goetia Coat +2 case all
-get Goetia Gloves +2 case all
-get Goetia Petasos +2 case all
-get Goetia Sabots +2 case all
-get Hecate's Earring case all
-get Jhakri Coronal +2 case all
-get Jhakri Cuffs +2 case all
-get Jhakri Pigaches +2 case all
-get Jhakri Robe +2 case all
-get Jhakri Slops +2 case all
-get Lathi case all
-get Mall. Chapeau +2 case all
-get Mallquis Clogs +2 case all
-get Mallquis Cuffs +2 case all
-get Mallquis Saio +2 case all
-get Mallquis Trews +2 case all
-get Sorcerer's Gloves case all
-get Sorcerer's Petas. case all
-get Sorcerer's Tonban case all
-get Sucellus case all
-get Zuuxowu Grip case all
+put Culminus case all
+put Ghastly Tathlum case all
+put Goet. Chausses +2 case all
+put Goetia Coat +2 case all
+put Goetia Gloves +2 case all
+put Goetia Petasos +2 case all
+put Goetia Sabots +2 case all
+put Hecate's Earring case all
+put Jhakri Coronal +2 case all
+put Jhakri Cuffs +2 case all
+put Jhakri Pigaches +2 case all
+put Jhakri Robe +2 case all
+put Jhakri Slops +2 case all
+put Lathi case all
+put Mall. Chapeau +2 case all
+put Mallquis Clogs +2 case all
+put Mallquis Cuffs +2 case all
+put Mallquis Saio +2 case all
+put Mallquis Trews +2 case all
+put Sorcerer's Gloves case all
+put Sorcerer's Petas. case all
+put Sorcerer's Tonban case all
+put Sucellus case all
+put Taranus's Cape case all
+put Zuuxowu Grip case all

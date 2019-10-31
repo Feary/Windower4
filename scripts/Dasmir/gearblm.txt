@@ -21,4 +21,5 @@ get Sorcerer's Gloves case all
 get Sorcerer's Petas. case all
 get Sorcerer's Tonban case all
 get Sucellus case all
+get Taranus's Cape case all
 get Zuuxowu Grip case all

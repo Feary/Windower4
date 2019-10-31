@@ -206,7 +206,7 @@ function init_gear_sets()
 		head="Leth. Chappel +1", neck="Incanter's Torque", ear1="Andoaa Earring", rear="Augment. Earring",
 		-- Atrophy Gloves +3 Stikini Ring +1 Stikini Ring +1
 		body="Lethargy Sayon +1", hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2="Stikini Ring",
-		back=gear.JSE_Cape, waist="Olympus Sash", legs="Leth. Fuseau", feet="Leth. Houseaux +1"}
+		back=gear.JSE_Cape, waist="Olympus Sash", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 	
 	-- Phalanx Potency
 	sets.midcast.Phalanx = {ammo="Hasty Pinion +1",
@@ -236,7 +236,7 @@ function init_gear_sets()
 		
 	--Red Mage enhancing sets are handled in a different way from most, layered on due to the way Composure works
 	--Don't set combine a full set with these spells, they should layer on Enhancing Set > Composure (If Applicable) > Spell
-	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard +1", hands="Atrophy Gloves +1", back="Grapevine Cape", legs="Leth. Fuseau"} --   waist="Gishdubar Sash",
+	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard +1", hands="Atrophy Gloves +1", back="Grapevine Cape", legs="Leth. Fuseau +1"} --   waist="Gishdubar Sash",
 	sets.midcast.Aquaveil = {head="Amalric Coif +1",} --  hands="Regal Cuffs",waist="Emphatikos Rope", legs="Shedir Seraweels"
 	sets.midcast.BarElement = {} --legs="Shedir Seraweels"
 	sets.midcast.Stoneskin = {neck="Nodens Gorget", waist="Siegel Sash",} -- ear2="Earthcry Earring",legs="Shedir Seraweels"

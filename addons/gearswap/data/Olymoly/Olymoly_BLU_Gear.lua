@@ -51,7 +51,7 @@ function user_setup()
 	send_command('alias bludd aset spellset dd100')
 	send_command('alias blureset lua reload azureset')
 	-- aset spellset Zahak
-	send_command('alias bluddnin aset spellset dd100;input /macro set 1')
+	send_command('alias bluddnin aset spellset zahak;input /macro set 1')
 	send_command('alias bluddwar aset spellset dd100;input /macro set 2')
 	send_command('alias bluddrdm aset spellset dd100;input /macro set 3')
 	send_command('alias bludddnc aset spellset dd100;input /macro set 4')
@@ -63,6 +63,10 @@ function user_setup()
 	send_command('alias vw1 aset spellset vw1')
 	send_command('alias vw2 aset spellset vw2')
 	
+	-- Omen 
+	-- 30k CDC > Req > BA > Tenebral
+	send_command('alias 30k gs c cycle MagicBurstMode;wait 1;input /ws "Chant Du Cygne" <t>;wait 5;input /ws "Requiescat" <t>;wait 2;input /ja "Burst Affinity" <me>;wait 2;input /ma "Tenebral Crush" <t>')
+	send_command('alias 15k input /ja "Burst Affinity" <me>;wait 2;input /ma "Spectral Floe" <t>')
 
 	update_combat_form()
 	select_default_macro_book()
@@ -75,7 +79,7 @@ function init_gear_sets()
 	--------------------------------------
 
 	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +1", feet="Hashishin Basmak"}
-	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk", feet="Assim. Charuqs +1"}
+	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk +1", feet="Assim. Charuqs +1"}
 	sets.buff.Convergence = {head="Luh. Keffiyeh +1"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
 	sets.buff.Enchainment = {}
