@@ -259,7 +259,7 @@ function init_gear_sets()
 		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Mujin Band",ring2="Archon Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
-    sets.midcast.Stun = {main="Oranyan",sub="Enki Strap",ammo="Hasty Pinion +1",
+    sets.midcast.Stun = {main="Oranyan",sub="Kaja Grip",ammo="Hasty Pinion +1",
 		-- Spae. Petasos +3 
 		head="Amalric Coif +1",neck="Erra Pendant",ear1="Barkaro. Earring",ear2="Regal Earring",
         --body="Spaekona's Coat +3", hands="Spae. Gloves +3",
@@ -267,7 +267,7 @@ function init_gear_sets()
 		-- Spae. Tonbon +3 Spae. Sabots +3
         back=gear.nuke_jse_back,waist="Luminary Sash", legs="Mallquis Trews +2", feet="Amalric nails +1"}
 		
-    sets.midcast.Stun.Resistant = {main="Oranyan",sub="Enki Strap",ammo="Hasty Pinion +1",
+    sets.midcast.Stun.Resistant = {main="Oranyan",sub="Kaja Grip",ammo="Hasty Pinion +1",
 		-- Spae. Petasos +3
 		head="Amalric Coif +1",neck="Erra Pendant",ear1="Barkaro. Earring",ear2="Regal Earring",
         --body="Spaekona's Coat +3", hands="Spae. Gloves +3",
@@ -275,14 +275,13 @@ function init_gear_sets()
 		-- Spae. Tonbon +3 Spae. Sabots +3
         back=gear.nuke_jse_back,waist="Luminary Sash", legs="Mallquis Trews +2", feet="Amalric nails +1"}
 		
-    sets.midcast.BardSong = {--sub="Clerisy Strap +1",
-		main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
+    sets.midcast.BardSong = {main="Oranyan", sub="Kaja Grip", ammo="Pemphredo Tathlum",
         head="Amalric Coif +1", neck="Sanctity Necklace", ear1="Digni. Earring",ear2="Regal Earring",
 		--body="Zendik Robe",hands="Regal Cuffs",
 		body="Merlinic Jubbah", hands="Jhakri Cuffs +2", ring1="Stikini Ring", ring2="Stikini Ring",
         back=gear.nuke_jse_back, waist="Luminary Sash", legs="Lengo Pants", feet="Skaoi Boots"}
 		
-	sets.midcast.Impact = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
+	sets.midcast.Impact = {main="Oranyan",sub="Kaja Grip",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Barkaro. Earring",ear2="Regal Earring",
 		-- hands="Regal Cuffs"
 		body="Twilight Cloak",hands="Jhakri Cuffs +2",ring1="Stikini Ring", ring2="Stikini Ring",
