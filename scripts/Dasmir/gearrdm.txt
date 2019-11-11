@@ -24,3 +24,4 @@ get Viti. Gloves +1 case all
 get Viti. Tabard +1 case all
 get Viti. Tights +1 case all
 get Vitiation Boots +1 case all
+get Theriod Boots case all

@@ -16,10 +16,7 @@ get Assim. Jubbah +1 sack all
 get Assim. Keffiyeh +1 sack all
 get Assim. Shalwar +1 sack all
 get Cornflower Cape sack all
-get Carm. Sc. Mail +1 safe2 all
-get Grunfeld Rope sack all
-get Hashi. Bazubands sack all
-get Hashishin Basmak sack all
+get Hashi. Basmak +1 sack all
 get Hashishin Kavuk +1 sack all
 get Hashishin Mintan +1 sack all
 get Hashishin Tayt +1 sack all
@@ -28,7 +25,6 @@ get Herculean Gloves sack all
 get Herculean Helm sack all
 get Herculean Vest sack all
 get Helios Gloves case all
-get Iskur Gorget sack all
 get Jhakri Cuffs +2 case all
 get Jhakri Pigaches +2 case all
 get Jhakri Robe +2 case all

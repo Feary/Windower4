@@ -28,3 +28,5 @@ put Peda. Loafers +1 case all
 put Peda. M.Board +1 case all
 put Peda. Pants +1 case all
 put Sucellus case all
+put Savant's Treatise case all
+put Savant's Earring case all

@@ -28,3 +28,5 @@ get Peda. Loafers +1 case all
 get Peda. M.Board +1 case all
 get Peda. Pants +1 case all
 get Sucellus case all
+get Savant's Treatise case all
+get Savant's Earring case all

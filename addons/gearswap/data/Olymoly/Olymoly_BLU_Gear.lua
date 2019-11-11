@@ -15,7 +15,7 @@ function user_setup()
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'MP','SuppaBrutal', 'DWEarrings','DWMax'}
 	
 	-- 'DEX+20','Accuracy+20 Attack+20','"Dbl. Atk. +10',}}
-	gear.da_jse_back = 		{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
+	gear.da_jse_back = 		{name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 	gear.stp_jse_back =		{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	gear.dw_jse_back = 		{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10',}}
 	gear.crit_jse_back = 	{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}} 
@@ -50,7 +50,6 @@ function user_setup()
 	
 	send_command('alias bludd aset spellset dd100')
 	send_command('alias blureset lua reload azureset')
-	-- aset spellset Zahak
 	send_command('alias bluddnin aset spellset zahak;input /macro set 1')
 	send_command('alias bluddwar aset spellset zahak;input /macro set 2')
 	send_command('alias bluddrdm aset spellset zahak;input /macro set 3')
@@ -78,7 +77,7 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 
-	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +1", feet="Hashishin Basmak"}
+	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +1", feet="Hashishin Basmak +1"}
 	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk +1", feet="Assim. Charuqs +1"}
 	sets.buff.Convergence = {head="Luh. Keffiyeh +1"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
@@ -763,7 +762,6 @@ buff_spell_lists = {
 		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=false},
 		{Name='Stoneskin',			Buff='Stoneskin',		SpellID=54,		Reapply=false},
 		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=false},
-		{Name='Blink',				Buff='Blink',			SpellID=53,		Reapply=false},
 		{Name='Mighty Guard',		Buff='Mighty Guard',	SpellID=750,	Reapply=false},
 		{Name='Nat. Meditation',	Buff='Attack Boost',	SpellID=700,	Reapply=false},
 	},
@@ -776,7 +774,6 @@ buff_spell_lists = {
 		{Name='Barrier Tusk',		Buff='Phalanx',			SpellID=685,	Reapply=false},
 		{Name='Stoneskin',			Buff='Stoneskin',		SpellID=54,		Reapply=false},
 		{Name='Occultation',		Buff='Blink',			SpellID=679,	Reapply=false},
-		{Name='Blink',				Buff='Blink',			SpellID=53,		Reapply=false},
 		{Name='Carcharian Verve',	Buff='Aquaveil',		SpellID=745,	Reapply=false},
 		{Name='Memento Mori',		Buff='Magic Atk. Boost',SpellID=538,	Reapply=false},
 	},

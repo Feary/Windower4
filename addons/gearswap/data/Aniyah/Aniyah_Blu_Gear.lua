@@ -82,7 +82,7 @@ function init_gear_sets()
 	--
 	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +2", feet="Hashi. Basmak +1"}
 	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk", feet="Luhlaza Charuqs +1"}
-	sets.buff.Convergence = {head="Luhlaza Keffiyeh"}
+	sets.buff.Convergence = {head="Luh. Keffiyeh +1"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
 	sets.buff.Enchainment = {body="Luhlaza Jubbah +1"}
 	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +1"}

@@ -42,6 +42,7 @@ lua load sendalltarget
 lua load tradenpc
 lua load quicktrade
 lua load fuckoff
+lua load superwarp 
 
 //Bind keys
 //Bind syntax is "bind <key> <up> <command>

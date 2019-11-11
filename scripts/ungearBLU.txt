@@ -1,9 +1,7 @@
 put Abnoba Kaftan sack all
 put Adhemar Bonnet +1 sack all
-put Adhemar Bonnet sack all
 put Adhemar Jacket +1 sack all
 put Adhemar Wrist. +1 sack all
-put Adhemar Wristbands sack all
 put Amalric Gages +1 case all
 put Amalric Nails +1 case all
 put Amalric Slops +1 case all
@@ -16,10 +14,7 @@ put Assim. Jubbah +1 sack all
 put Assim. Keffiyeh +1 sack all
 put Assim. Shalwar +1 sack all
 put Cornflower Cape sack all
-put Carm. Sc. Mail +1 safe2 all
-put Grunfeld Rope sack all
-put Hashi. Bazubands sack all
-put Hashishin Basmak sack all
+put Hashi. Basmak +1 sack all
 put Hashishin Kavuk +1 sack all
 put Hashishin Mintan +1 sack all
 put Hashishin Tayt +1 sack all
@@ -28,7 +23,6 @@ put Herculean Gloves sack all
 put Herculean Helm sack all
 put Herculean Vest sack all
 put Helios Gloves case all
-put Iskur Gorget sack all
 put Jhakri Cuffs +2 case all
 put Jhakri Pigaches +2 case all
 put Jhakri Robe +2 case all
