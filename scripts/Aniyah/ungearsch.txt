@@ -1,8 +1,8 @@
-put Acad. Bracers +1 case all
-put Acad. Gown +1 case all
-put Acad. Loafers +1 case all
-put Acad. Mortar. +1 case all
-put Acad. Pants +1 case all
+put Acad. Bracers +2 case all
+put Acad. Gown +2 case all
+put Acad. Loafers +2 case all
+put Acad. Mortar. +2 case all
+put Acad. Pants +2 case all
 put Arbatel Bonnet +1 case all
 put Arbatel Bracers +1 case all
 put Arbatel Gown +1 case all

@@ -1,0 +1,17 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    ammo="Incantor Stone",
+    head="Befouled Crown",
+    body="Jhakri Robe +2",
+    hands={ name="Merlinic Dastanas", augments={'Pet: "Regen"+2','Attack+9','"Refresh"+1',}},
+    legs="Assid. Pants +1",
+    feet="Herald's Gaiters",
+    neck="Loricate Torque +1",
+    waist="Fucho-no-Obi",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Defending Ring",
+    right_ring="Vocane Ring",
+    back={ name="Lugh's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}},
+}

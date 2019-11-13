@@ -1,8 +1,8 @@
-get Acad. Bracers +1 case all
-get Acad. Gown +1 case all
-get Acad. Loafers +1 case all
-get Acad. Mortar. +1 case all
-get Acad. Pants +1 case all
+get Acad. Bracers +2 case all
+get Acad. Gown +2 case all
+get Acad. Loafers +2 case all
+get Acad. Mortar. +2 case all
+get Acad. Pants +2 case all
 get Arbatel Bonnet +1 case all
 get Arbatel Bracers +1 case all
 get Arbatel Gown +1 case all
