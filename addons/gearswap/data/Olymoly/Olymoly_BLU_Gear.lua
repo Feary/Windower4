@@ -610,7 +610,7 @@ function init_gear_sets()
 		-- Mirage Stole +2
 		head="Adhemar Bonnet +1",neck="Sanctity Necklace", ear1="Dedition Earring",ear2="Suppanomimi",
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring", ring2="Epona's Ring",
-		back=gear.stp_jse_back, waist="Windbuffet Belt +1", legs="Samnuha Tights",feet=gear_herculean_ta_feet}
+		back=gear.sk_jse_back, waist="Windbuffet Belt +1", legs="Samnuha Tights",feet=gear_herculean_ta_feet}
 
 	sets.engaged.AM = {ammo="Ginsen",
 		-- Mirage Stole +2
