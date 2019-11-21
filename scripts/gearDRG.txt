@@ -20,6 +20,7 @@ get Ptero. Fin. G. +3 locker all
 get Ptero. Greaves +3 locker all 
 get Ptero. Mail +3 locker all 
 get Trishula locker all
+get Shining One locker all
 get Updraft Mantle locker all
 get Utu Grip locker all 
 get Vis. Fng. Gaunt. +2 locker all 

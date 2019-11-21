@@ -19,6 +19,7 @@ put Ptero. Brais +3 locker all
 put Ptero. Fin. G. +3 locker all 
 put Ptero. Greaves +3 locker all 
 put Ptero. Mail +3 locker all 
+put Shining One locker all
 put Trishula locker all
 put Updraft Mantle locker all
 put Utu Grip locker all 

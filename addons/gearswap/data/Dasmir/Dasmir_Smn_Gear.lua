@@ -41,7 +41,7 @@ function user_setup()
 	send_command('bind @` gs c cycle MagicBurst')
 	send_command('bind ^` gs c toggle PactSpamMode')
 	send_command('bind !pause gs c toggle AutoSubMode') --Automatically uses sublimation.
-	send_command('alias fol send @others follow Dasmir')
+	send_command('alias fol ffo me')
 	--send_command('bind !f send @others /follow Dasmir')
 	
 	send_command('alias afac  input /ja "Astral Flow" <me>;wait 1;input /ja "Astral Conduit" <me>')

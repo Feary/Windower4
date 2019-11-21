@@ -9,7 +9,7 @@ function user_setup()
 	state.ResistDefenseMode:options('MEVA')
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
-	state.Weapons:options('Default','Trishula')
+	state.Weapons:options('Default','Trishula', 'ShiningOne')
 	state.Passive = M{['description'] = 'Passive Mode','None','MP','Twilight'}
 	
     gear.da_jse_back = 		{name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
@@ -282,7 +282,7 @@ function init_gear_sets()
 		back="Shadow Mantle",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Sulev. Leggings +2"}
 		
 	sets.idle.Refresh = {ammo="Staunch Tathlum",
-		head="Jumalik Helm",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+		head="Jumalik Helm",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
 		body="Jumalik Mail",hands="Sulev. Gauntlets +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Sulev. Leggings +2"}
 
@@ -292,21 +292,21 @@ function init_gear_sets()
 	
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum",
-		head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+		head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
 		body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Flume Belt",legs="Sulev. Cuisses +2",feet="Sulev. Leggings +2"}
 		
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = {ammo="Staunch Tathlum",
-		head="Sulevia's Mask +2",neck="Warder's Charm +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+		head="Sulevia's Mask +2",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
 		body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Sulev. Cuisses +2",feet="Sulev. Leggings +2"}
 		
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		head="Sulevia's Mask +2",neck="Warder's Charm +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+		head="Sulevia's Mask +2",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
 		body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Sulev. Cuisses +2",feet="Sulev. Leggings +2"}
 
@@ -321,16 +321,17 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Volte Bracers", waist="Chaac Belt"})
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Trishula", sub="Utu Grip"}
+	sets.weapons.Default = {main="Shining One", sub="Utu Grip"}
 	sets.weapons.Trishula = {main="Trishula", sub="Utu Grip"}
-
+	sets.weapons.ShiningOne = {main="Shining One", sub="Utu Grip"}
+	
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Sherida Earring",ear2="Brutal Earring",}
+	sets.MaxTP = {ear1="Sherida Earring",ear2="Brutal Earring"}
 	sets.AccMaxTP = {ear1="Moonshade Earring",ear2="Brutal Earring"}
 	sets.AccDayMaxTPWSEars = {ear1="Moonshade Earring",ear2="Brutal Earring"}
-	sets.DayMaxTPWSEars = {ear1="Moonshade Earring",ear2="Brutal Earring",}
+	sets.DayMaxTPWSEars = {ear1="Moonshade Earring",ear2="Brutal Earring"}
 	sets.AccDayWSEars = {ear1="Moonshade Earring",ear2="Brutal Earring"}
-	sets.DayWSEars = {ear1="Moonshade Earring",ear2="Brutal Earring",}
+	sets.DayWSEars = {ear1="Moonshade Earring",ear2="Brutal Earring"}
 	
 	-- Engaged sets
 

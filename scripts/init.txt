@@ -43,6 +43,9 @@ lua load tradenpc
 lua load quicktrade
 lua load fuckoff
 lua load superwarp 
+lua load fastfollow
+ffo pauseon any
+ffo pausedelay 0
 
 //Bind keys
 //Bind syntax is "bind <key> <up> <command>
