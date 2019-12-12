@@ -23,6 +23,7 @@ get Trishula locker all
 get Shining One locker all
 get Updraft Mantle locker all
 get Utu Grip locker all 
+get Valor. Hose locker all
 get Vis. Fng. Gaunt. +2 locker all 
 get Vishap Armet +2 locker all 
 get Vishap Brais +2 locker all 

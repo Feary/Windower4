@@ -17,6 +17,7 @@
         <line_noability>${numb} ¨ ${target}</line_noability>
         <line_noactor>${abil} ${number} ¨ ${target}</line_noactor>
         <line_nonumber>[${actor}] ${abil} ¨ ${target}</line_nonumber>
+        <line_notarget>[${actor}] ${abil} ¨ ${number}</line_notarget>
         <line_roll>${actor} ${abil} ¨ ${target} ª ${number}</line_roll>
         <line_steal>[${actor}] ${abil} ¨ ${target} (${item})</line_steal>
         <oxford>true</oxford>

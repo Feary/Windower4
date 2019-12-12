@@ -193,7 +193,7 @@ function init_gear_sets()
 
 
     -- Custom spell classes
-	sets.midcast['Enfeebling Magic'] = {main="Maxentius",sub="Ammurapi Shield", 
+	sets.midcast['Enfeebling Magic'] = {main="Kaja Rod",sub="Ammurapi Shield", 
 		-- ammo="Pemphredo Tathlum",
 		-- ear2="Digni. Earring",
         head="Acad. Mortar. +2",neck="Erra Pendant",ear1="Regal Earring",
@@ -201,7 +201,7 @@ function init_gear_sets()
 		body="Acad. Gown +2",hands="Acad. Bracers +2",ring1="Stikini Ring",ring2="Stikini Ring",
         back=gear.Cure_jse_back,waist="Ovate Rope",legs="Acad. Pants +2",feet="Acad. Loafers +2"}
 	
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Maxentius",sub="Ammurapi Shield", 
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Kaja Rod",sub="Ammurapi Shield", 
 		-- ammo="Pemphredo Tathlum",
 		-- ear2="Digni. Earring",
 		head="Acad. Mortar. +2", neck="Erra Pendant", ear1="Regal Earring",
@@ -226,7 +226,7 @@ function init_gear_sets()
 	
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {})
 
-    sets.midcast['Dark Magic'] = {main="Maxentius",sub="Ammurapi Shield", 
+    sets.midcast['Dark Magic'] = {main="Kaja Rod",sub="Ammurapi Shield", 
 		-- ammo="Pemphredo Tathlum",
 		-- ear2="Digni. Earring",
 		head="Acad. Mortar. +2",neck="Erra Pendant",ear1="Regal Earring",
@@ -235,7 +235,7 @@ function init_gear_sets()
         back=gear.Cure_jse_back,waist="Ovate Rope",legs="Acad. Pants +2",feet="Acad. Loafers +2"}
 
 	-- 300 INT
-    sets.midcast.Kaustra = {main="Maxentius",sub="Ammurapi Shield",
+    sets.midcast.Kaustra = {main="Kaja Rod",sub="Ammurapi Shield",
 		--ammo="Pemphredo Tathlum",
 		--main="Akademos", sub="Niobid Strap",
 		--  head="Pixie Hairpin +1",neck="Sanctity Necklace", ear1="Crematio Earring",ear2="Barkaro. Earring",
@@ -245,7 +245,7 @@ function init_gear_sets()
 		-- Yamabuki-no-Obi Acuity Belt +1
         back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 		
-    sets.midcast.Kaustra.Resistant = {main="Maxentius",sub="Ammurapi Shield", 
+    sets.midcast.Kaustra.Resistant = {main="Kaja Rod",sub="Ammurapi Shield", 
 		--ammo="Pemphredo Tathlum",
 		--main="Akademos", sub="Niobid Strap",
 		--  head="Pixie Hairpin +1",neck="Sanctity Necklace", ear1="Crematio Earring",ear2="Barkaro. Earring",
@@ -255,7 +255,7 @@ function init_gear_sets()
 		-- Yamabuki-no-Obi Acuity Belt +1
         back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 
-    sets.midcast.Drain = {main="Maxentius",sub="Ammurapi Shield", 
+    sets.midcast.Drain = {main="Kaja Rod",sub="Ammurapi Shield", 
 		-- main="Rubicundity",ammo="Pemphredo Tathlum",
 		-- head="Pixie Hairpin +1",
 		head="Jhakri Coronal +2", neck="Erra Pendant", ear1="Regal Earring",
@@ -263,7 +263,7 @@ function init_gear_sets()
 		 body="Mallquis Saio +2",hands="Mallquis Cuffs +2", ring1="Stikini Ring",  ring2="Stikini Ring",
         back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear_chironic_macc_legs,feet="Mallquis Clogs +2"}
 		
-    sets.midcast.Drain.Resistant = {main="Maxentius",sub="Ammurapi Shield", 
+    sets.midcast.Drain.Resistant = {main="Kaja Rod",sub="Ammurapi Shield", 
 		-- main="Rubicundity",ammo="Pemphredo Tathlum",
 		-- head="Pixie Hairpin +1",
 		head="Jhakri Coronal +2", neck="Erra Pendant", ear1="Regal Earring",
@@ -274,7 +274,7 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
 
-    sets.midcast.Stun = {main="Maxentius", sub="Ammurapi Shield", ammo="Hasty Pinion",
+    sets.midcast.Stun = {main="Kaja Rod", sub="Ammurapi Shield", ammo="Hasty Pinion",
 		--sub="Clerisy Strap +1", ear1="Enchntr. Earring +1",
         head="Mallquis Chapeau +2",neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Etiolation Earring", 
         -- body="Zendik Robe",
@@ -282,7 +282,7 @@ function init_gear_sets()
 		-- legs="Psycloth Lappas",
         back=gear.FC_jse_back, waist="Witful Belt", legs="Lengo Pants", feet="Peda. Loafers +1"}
 
-    sets.midcast.Stun.Resistant = {main="Maxentius", sub="Ammurapi Shield", ammo="Hasty Pinion",
+    sets.midcast.Stun.Resistant = {main="Kaja Rod", sub="Ammurapi Shield", ammo="Hasty Pinion",
 		--sub="Clerisy Strap +1", ear1="Enchntr. Earring +1",
         head="Mallquis Chapeau +2",neck="Erra Pendant",ear1="Loquacious Earring", ear2="Etiolation Earring", 
         -- body="Zendik Robe",
@@ -291,19 +291,19 @@ function init_gear_sets()
         back=gear.FC_jse_back,waist="Witful Belt", legs="Lengo Pants", feet="Peda. Loafers +1"}
 
     -- Elemental Magic sets are default for handling low-tier nukes.
-    sets.midcast['Elemental Magic'] = {main="Maxentius", sub="Ammurapi Shield",
+    sets.midcast['Elemental Magic'] = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Dosis Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
-    sets.midcast['Elemental Magic'].Resistant = {main="Maxentius", sub="Ammurapi Shield",
+    sets.midcast['Elemental Magic'].Resistant = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Dosis Tathlum",
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
-    sets.midcast['Elemental Magic'].Fodder = {main="Maxentius", sub="Ammurapi Shield",
+    sets.midcast['Elemental Magic'].Fodder = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Dosis Tathlum",
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
@@ -316,7 +316,7 @@ function init_gear_sets()
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
     sets.midcast['Elemental Magic'].OccultAcumen = set_combine(sets.midcast['Elemental Magic'],{
-		main="Maxentius", sub="Ammurapi Shield",
+		main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Khatvanga",sub="Bloodrain Strap",ammo="Seraphic Ampulla",
 		--neck="Combatant's Torque",  ear1="Dedition Earring",ear2="Telos Earring",
 		head="Mall. Chapeau +2", neck="Sanctity Necklace", ear1="Regal Earring", 
@@ -327,38 +327,38 @@ function init_gear_sets()
 		
     -- Custom refinements for certain nuke tiers
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
-		main="Maxentius", sub="Ammurapi Shield",
+		main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {--ammo="Pemphredo Tathlum",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",
-		main="Maxentius", sub="Ammurapi Shield",
+		main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {
-		main="Maxentius", sub="Ammurapi Shield",
+		main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"})
 
-	sets.midcast.Helix = {main="Maxentius", sub="Ammurapi Shield",
+	sets.midcast.Helix = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
-	sets.midcast.Helix.Resistant = {main="Maxentius", sub="Ammurapi Shield",
+	sets.midcast.Helix.Resistant = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 	
-	sets.midcast.Helix.Burst = {main="Maxentius", sub="Ammurapi Shield",
+	sets.midcast.Helix.Burst = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
@@ -370,7 +370,7 @@ function init_gear_sets()
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
-	sets.midcast.Impact = {main="Maxentius", sub="Ammurapi Shield",
+	sets.midcast.Impact = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
         body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
@@ -443,27 +443,27 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {main="Maxentius",sub="Genbu's Shield",ammo="Hasty Pinion",
+    sets.engaged = {main="Kaja Rod",sub="Genbu's Shield",ammo="Hasty Pinion",
 		-- ear2="Digni. Earring",
         head="Acad. Mortar. +2",neck="Sanctity Necklace",ear1="Regal Earring",
         body="Acad. Gown +2",hands="Acad. Bracers +2", ring1="Rajas Ring",ring2="Petrov Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Acad. Pants +2",feet="Acad. Loafers +2"}
 	
-	sets.engaged.DW = {main="Maxentius",sub="Genbu's Shield",ammo="Hasty Pinion",
+	sets.engaged.DW = {main="Kaja Rod",sub="Genbu's Shield",ammo="Hasty Pinion",
 		-- ear2="Digni. Earring",
         head="Acad. Mortar. +2",neck="Sanctity Necklace",ear1="Regal Earring",
         body="Acad. Gown +2",hands="Acad. Bracers +2", ring1="Rajas Ring",ring2="Petrov Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Acad. Pants +2",feet="Acad. Loafers +2"}
 	
-	sets.engaged.PDT = {main="Maxentius", sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+	sets.engaged.PDT = {main="Kaja Rod", sub="Genbu's Shield", -- ammo="Staunch Tathlum",
 		-- ear2="Digni. Earring",
 		head="Acad. Mortar. +2",neck="Sanctity Necklace",ear1="Regal Earring",
         body="Acad. Gown +2",hands="Acad. Bracers +2", ring1="Defending Ring", ring2="Vocane Ring",
         back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Acad. Pants +2",feet="Acad. Loafers +2"}
 
-	sets.engaged.PDT.DW = {main="Maxentius", sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+	sets.engaged.PDT.DW = {main="Kaja Rod", sub="Genbu's Shield", -- ammo="Staunch Tathlum",
 		-- ear2="Digni. Earring",
 		head="Acad. Mortar. +2",neck="Sanctity Necklace",ear1="Regal Earring",
         body="Acad. Gown +2",hands="Acad. Bracers +2", ring1="Defending Ring", ring2="Vocane Ring",
@@ -494,8 +494,8 @@ function init_gear_sets()
     sets.buff.PDTSublimation = {}
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Maxentius", sub="Genbu's Shield"}
-	sets.weapons.DualClub = {main="Maxentius", sub="Ajja Rod"}
+	sets.weapons.Default = {main="Kaja Rod", sub="Genbu's Shield"}
+	sets.weapons.DualClub = {main="Kaja Rod", sub="Ajja Rod"}
 	sets.weapons.Akademos = {}--main="Akademos",sub="Niobid Strap"
 	sets.weapons.Khatvanga = {}--main="Khatvanga",sub="Bloodrain Strap"
 end

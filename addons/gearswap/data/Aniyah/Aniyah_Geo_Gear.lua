@@ -187,13 +187,13 @@ function init_gear_sets()
 	
     sets.midcast['Dark Magic'] = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		-- head="Bagua Galero +3", neck="Incantor Torque", lear="Enchntr. Earring +1",
-		head="Geo. Galero +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
+		head="Bagua Galero +1", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}
 
     sets.midcast.Drain = {main={name="Arasy Staff", priority=2}, sub={name="Niobid Strap", priority=1}, 
 		-- head="Bagua Galero +3", neck="Incantor Torque", lear="Enchntr. Earring +1",
-		head="Geo. Galero +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
+		head="Bagua Galero +1", neck="Voltsurge Torque", lear="Regal Earring", rear="Loquac. Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Ovate Rope", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}
 

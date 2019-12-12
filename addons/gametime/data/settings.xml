@@ -20,7 +20,7 @@
             </flags>
             <padding>0</padding>
             <pos>
-                <x>1366</x>
+                <x>1383</x>
                 <y>1062</y>
             </pos>
             <text>
@@ -65,8 +65,8 @@
             </flags>
             <padding>0</padding>
             <pos>
-                <x>1315</x>
-                <y>1062</y>
+                <x>1339</x>
+                <y>1061</y>
             </pos>
             <text>
                 <alpha>255</alpha>

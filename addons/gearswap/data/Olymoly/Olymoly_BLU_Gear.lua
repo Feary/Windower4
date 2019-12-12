@@ -293,7 +293,7 @@ function init_gear_sets()
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
 		head="Carmine Mask +1",neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		body="Luhlaza Jubbah +1",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
+		body="Luhlaza Jubbah +1",hands="Hashi. Bazu. +1",ring1="Kishar Ring",ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic'] = {}

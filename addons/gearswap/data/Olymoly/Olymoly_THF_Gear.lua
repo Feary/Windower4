@@ -9,7 +9,7 @@ function user_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Normal','Relic','MagicWeapons','Sword','Throwing')
+	state.Weapons:options('Normal','Relic','MagicWeapons','Sword','Omen','Throwing')
 	
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 	state.AmbushMode = M(false, 'Ambush Mode')
@@ -32,6 +32,8 @@ function user_setup()
 	send_command('bind ^\\\\ input /ja "Despoil" <t>')
 	send_command('bind !\\\\ input /ja "Mug" <t>')
 
+	send_command('alias fol ffo me')
+	send_command('alias ufol ffo stopall')
 	send_command('alias gear exec gearthf.txt')
 	send_command('alias ungear gs equip naked;exec ungearthf.txt')
 	
@@ -65,8 +67,10 @@ function init_gear_sets()
 	-- Weapons Sets
 	sets.weapons.Normal = 		{main="Twashtar",sub="Kaja Knife"}
 	sets.weapons.Relic = 		{main="Mandau",sub="Twashtar"}
+	sets.weapons.Ambuscade = 	{main="Kaja Knife",sub="Twashtar"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Sword = 		{main="Naegling", sub="Twashtar"}
+	sets.weapons.Omen = 		{main="Blitto Needle", sub="Ridill"}
 	sets.weapons.Throwing = 	{main="Twashtar",sub="Kaja Knife", range="Raider's Bmrng."}
 	
     -- Actions we want to use to tag TH.
@@ -366,14 +370,19 @@ function init_gear_sets()
         back=gear.da_jse_back, waist="Fotia Belt",legs="Plun. Culottes +3",feet="Plun. Poulaines +3"})
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
-        head=gear_herculean_nuke_head,neck="Fotia Gorget",ear1="Friomisi Earring",ear2="Moonshade Earring",
+        head=gear_herculean_nuke_head, neck="Fotia Gorget",ear1="Friomisi Earring",ear2="Moonshade Earring",
 		-- Herculean Gloves NT/DEX, WSD, MAB rring="Karieyh Ring +1"
         body="Samnuha Coat",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",rring="Dingir Ring",
         --  legs=gear_herculean_nuke_legs NT/DEX, WSD, MAB mab feet=gear_herculean_nuke_feet NT/DEX, WSD, MAB
-		back=gear.wsd_jse_back,waist="Eschan Stone",legs=gear_herculean_nuke_legs,feet="Lustra. Leggings +1"}
+		back=gear.wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs,feet="Lustra. Leggings +1"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
-
+	
+	sets.precast.WS['Aeolian Edge'].Omen = {ammo="Yetshila",
+        head="Plun. Bonnet +3",neck="Fotia Gorget",ear1="Sherida Earring",ear2="Brutal Earring",
+        body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
+        back=gear.wsd_jse_back, waist="Fotia Belt", legs="Plun. Culottes +3", feet="Plun. Poulaines +3"}
+	
 	sets.precast.WS["Savage Blade"] = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
         -- Lustr Cap +1 Path A
 		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
@@ -461,7 +470,7 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Staunch Tathlum",
-        head="Meghanada Visor +2",neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+        head="Meghanada Visor +2",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Meg. Jam. +2"}
 
@@ -476,12 +485,12 @@ function init_gear_sets()
         back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-       	head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+       	head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 

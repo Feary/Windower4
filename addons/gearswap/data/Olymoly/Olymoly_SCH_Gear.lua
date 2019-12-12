@@ -70,11 +70,11 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
     sets.precast.JA['Tabula Rasa'] = {legs="Peda. Pants +1"}
-	sets.precast.JA['Enlightenment'] = {} --body="Peda. Gown +1"
+	sets.precast.JA['Enlightenment'] = {body="Peda. Gown +1"}
 
     -- Fast cast sets for spells
 
-    sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1",
+    sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1", ammo="Incanter's Stone",
 		--main=gear.grioavolr_fc_staff,ammo="Impatiens",
         head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         --body="Zendik Robe",
@@ -170,7 +170,7 @@ function init_gear_sets()
 	
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})--legs="Shedir Seraweels"
 
-    sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {feet="Peda. Loafers"})
+    sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {feet="Peda. Loafers +1"})
 
     sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
     sets.midcast.Protectra = sets.midcast.Protect
@@ -246,8 +246,7 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
 
-    sets.midcast.Stun = {main="Oranyan",ammo="Hasty Pinion +1",
-		--sub="Clerisy Strap +1",
+    sets.midcast.Stun = {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
         head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         -- body="Zendik Robe",
 		body="Anhur Robe",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Stikini Ring",
@@ -440,15 +439,16 @@ function init_gear_sets()
     sets.buff['Immanence'] = {hands="Arbatel Bracers +1"}
     sets.buff['Penury'] = {legs="Arbatel Pants +1"}
     sets.buff['Parsimony'] = {legs="Arbatel Pants +1"}
-    sets.buff['Celerity'] = {feet="Peda. Loafers"}
-    sets.buff['Alacrity'] = {feet="Peda. Loafers"}
-    sets.buff['Klimaform'] = {feet="Arbatel Loafers"}
+    sets.buff['Celerity'] = {feet="Peda. Loafers +1"}
+    sets.buff['Alacrity'] = {feet="Peda. Loafers +1"}
+    sets.buff['Klimaform'] = {feet="Arbatel Loafers +1"}
 	
 	sets.HPDown = {
 		head="Pixie Hairpin +1",ear1="Mendi. Earring",ear2="Evans Earring",
 		--body="Zendik Robe",hands="Hieros Mittens",,ring2="Mephitas's Ring",
 		ring1="Mephitas's Ring +1",
-		back=gear.FC_jse_back,}--waist="Flax Sash",legs="Shedir Seraweels",feet=""
+		--waist="Flax Sash",legs="Shedir Seraweels",feet=""
+		back=gear.FC_jse_back,}
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff['Light Arts'] = {legs="Acad. Pants +1"} 

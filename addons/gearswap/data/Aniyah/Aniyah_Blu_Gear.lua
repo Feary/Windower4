@@ -81,7 +81,7 @@ function init_gear_sets()
 	--------------------------------------
 	--
 	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +2", feet="Hashi. Basmak +1"}
-	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk", feet="Luhlaza Charuqs +1"}
+	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk +1", feet="Luhlaza Charuqs +1"}
 	sets.buff.Convergence = {head="Luh. Keffiyeh +1"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
 	sets.buff.Enchainment = {body="Luhlaza Jubbah +1"}
@@ -253,7 +253,7 @@ function init_gear_sets()
 	sets.AccMaxTP = {lear="Brutal Earring", rear="Zennaroi Earring",}
 
 	-- Midcast Sets
-	sets.midcast.FastRecast = set_combine(sets.precast.FC,{})
+	sets.midcast.FastRecast = set_combine(sets.precast.FC,{hands="Hashi. Bazu. +1"})
 
 	sets.midcast['Blue Magic'] = {}
 
@@ -630,7 +630,7 @@ function init_gear_sets()
 	sets.Self_Healing = {lring="Vocane Ring",}
 	sets.Cure_Received = {lring="Vocane Ring",}
 	sets.Self_Refresh = {}
-	sets.MagicBurst = {hands="Amalric Gages", legs="Assim. Shalwar +2", ring1="Mujin Band"}
+	sets.MagicBurst = {hands="Amalric Gages", legs="Assim. // +2", ring1="Mujin Band"}
 
 end
 

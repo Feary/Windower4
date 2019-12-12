@@ -384,8 +384,8 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
-	sets.weapons.SingleWeapon = {main='Idris', sub="Genbu's Shield", ranged="Dunna"}
-	sets.weapons.DualWeapons = {main='Idris', sub="Kaja Rod", ranged="Dunna"}	
+	sets.weapons.SingleWeapon = {main="Idris", sub="Genbu's Shield", ranged="Dunna"}
+	sets.weapons.DualWeapons = {main="Idris", sub="Kaja Rod", ranged="Dunna"}	
 	
 	sets.HPDown = {}
 	

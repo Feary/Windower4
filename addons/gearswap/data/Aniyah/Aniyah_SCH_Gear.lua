@@ -73,8 +73,8 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
 
-    sets.precast.FC = {main="Earth Staff", sub="Clerisy Strap +1", ammo="Incantor Stone",
-		--main=gear.grioavolr_fc_staff, ear1="Enchntr. Earring +1",
+    sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
+		--, ear1="Enchntr. Earring +1",
         head="Welkin Crown",neck="Voltsurge Torque", ear1="Loquacious Earring",ear2="Etiolation Earring",
         --body="Zendik Robe",
 		body="Helios Jacket", hands="Acad. Bracers +2",ring1="Kishar Ring",ring2="Prolix Ring",

@@ -23,6 +23,7 @@ put Shining One locker all
 put Trishula locker all
 put Updraft Mantle locker all
 put Utu Grip locker all 
+put Valor. Hose locker all
 put Vis. Fng. Gaunt. +2 locker all 
 put Vishap Armet +2 locker all 
 put Vishap Brais +2 locker all 

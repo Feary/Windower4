@@ -4,7 +4,6 @@ get Adhemar Jacket +1 sack all
 get Adhemar Kecks +1 safe2 all 
 get Adhemar Wrist. +1 sack all 
 get Adhemar Wristbands sack all 
-get Adhemar Gamashes +1 sack all
 get Erudit. Necklace safe2 all
 get Floral Gauntlets sack all
 get Grunfeld Rope sack all
