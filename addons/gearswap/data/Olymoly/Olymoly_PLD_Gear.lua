@@ -46,7 +46,7 @@ function user_setup()
     update_defense_mode()
 end
 
-function init_gear.sets()
+function init_gear_sets()
 	
 	--------------------------------------
 	-- Precast sets

@@ -42,7 +42,7 @@ function user_setup()
 end
 
 -- Set up all gear sets.
-function init_gear.sets()
+function init_gear_sets()
 	--------------------------------------
 	-- Precast sets
 	--------------------------------------

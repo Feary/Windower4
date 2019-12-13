@@ -45,7 +45,7 @@ function user_setup()
 	select_default_macro_book()
 end
 
-function init_gear.sets()
+function init_gear_sets()
 
     sets.Enmity = {ammo="Staunch Tathlum", -- Sapience Orb
 		 -- Halitus Helm
