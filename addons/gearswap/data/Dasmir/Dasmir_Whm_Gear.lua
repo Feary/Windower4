@@ -44,7 +44,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
     --------------------------------------
     -- Start defining the sets
     --------------------------------------
@@ -55,11 +55,12 @@ function init_gear_sets()
 	
     -- Precast Sets
     -- Fast cast sets for spells
-    sets.precast.FC = {ammo="Incantor Stone",
+    sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1", ammo="Incantor Stone",
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Lebeche Ring", rring="Kishar Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Regal Pumps"}
-    sets.precast.FC.DT = {ammo="Incantor Stone",	
+		
+    sets.precast.FC.DT = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",	
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Lebeche Ring", rring="Kishar Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Regal Pumps"}
@@ -163,7 +164,7 @@ function init_gear_sets()
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
 	sets.midcast.Cure = {main=gear.gada_enhancing_club, sub={name="Sors Shield", priority=1}, 
-		-- JP: Cure Pot 50-16 (23 Caps)  = 34 (27)   
+		-- JP: Cure Pot 50-23 = 27   
 		-- Queller Rod Path D
 		-- lear="Glorious Earring"
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Novia Earring",
@@ -178,7 +179,7 @@ function init_gear_sets()
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 	
 	-- Weather/Day
-	sets.midcast.LightWeatherCure = {main={name="Iridal Staff", priority=2}, sub={name="Kaja Grip", priority=1},
+	sets.midcast.LightWeatherCure = {main={name="Iridal Staff", priority=2}, sub={name="Clerisy Strap +1", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Novia Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
@@ -188,12 +189,12 @@ function init_gear_sets()
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1",feet="Piety Duckbills +1"}
 		
-	sets.midcast.LightDayCureSolace = {main={name=gear.gada_enhancing_club, priority=2}, sub={name="Sors Shield", priority=1},
+	sets.midcast.LightDayCureSolace = {main=gear.gada_enhancing_club, sub={name="Sors Shield", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Novia Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
-	sets.midcast.LightDayCure = {main=gear.gada_enhancing_club, sub={name="Sors Shield", priority=1}, 
+	sets.midcast.LightDayCure = {main=gear.gada_enhancing_club, sub={name="Sors Shield", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Novia Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pant. +1",feet="Piety Duckbills +1"}
@@ -272,10 +273,10 @@ function init_gear_sets()
 	-- Duration
 	sets.midcast['Enhancing Magic'] = {main={name=gear.gada_enhancing_club, priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Clarus Stone",
 		-- neck="Incantor's Torque",
-		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		-- feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		back="Mending Cape", waist="Cascade Belt", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
 	-- Set bonus
 	-- 500 Skill	
@@ -292,29 +293,29 @@ function init_gear_sets()
 
 	sets.midcast.BarStatus = {main=gear.gada_enhancing_club, sub={name="Ammurapi Shield", priority=1},
 		-- neck="Incantor's Torque",
-		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
-		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
+		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1",}
 	sets.midcast.BarStatus['Light Arts'] = {main=gear.gada_enhancing_club, sub={name="Ammurapi Shield", priority=1},
 		-- neck="Incantor's Torque",
-		head=gear_telchine_head_Duration, neck="Colossus's Torque",  lear="Andoaa Earring", 
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Colossus's Torque",  lear="Andoaa Earring", 
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		-- feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		back="Mending Cape", waist="Cascade Belt", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
 	-- 500 Skill
 	sets.midcast.BoostStat = {main=gear.gada_enhancing_club, sub={name="Ammurapi Shield", priority=1},
 		-- neck="Incantor's Torque"
-		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring",  
-		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring",  
+		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 
 	sets.midcast.BoostStat['Light Arts'] = {main=gear.gada_enhancing_club, sub={name="Ammurapi Shield", priority=1},
 		-- neck="Incantor's Torque", 
-		head=gear_telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring", 
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 
@@ -327,7 +328,7 @@ function init_gear_sets()
 	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",
 		head="Inyanga Tiara +2",
 		body="Piety Briault +1", hands="Ebers Mitts +1",
-		legs="Theo. Pant. +1", feet=gear_telchine_feet_Regen})
+		legs="Theo. Pant. +1", feet=gear.telchine_feet_Regen})
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})

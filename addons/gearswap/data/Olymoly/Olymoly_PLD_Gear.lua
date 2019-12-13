@@ -46,7 +46,7 @@ function user_setup()
     update_defense_mode()
 end
 
-function init_gear_sets()
+function init_gear.sets()
 	
 	--------------------------------------
 	-- Precast sets
@@ -56,7 +56,7 @@ function init_gear_sets()
 		--  lear="Trux Earring", 
 		head="Loess Barbuta +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Cryptic Earring",
 		-- Apeile Ring +1
-		body="Souv. Cuirass +1", hands=gear_yorium_hands_enmity, lring="Supershear Ring", rring="Apeile Ring",
+		body="Souv. Cuirass +1", hands=gear.yorium_hands_enmity, lring="Supershear Ring", rring="Apeile Ring",
 		-- Obyssean Cuisses Eschite Greaves path A
 		back=gear.Enmity_jse_back, waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 	
@@ -193,7 +193,7 @@ function init_gear_sets()
 		back=gear.WS_CDC_jse_back, waist="Chiner's Belt +1", legs="Lustr. Subligar +1", feet="Lustra. Leggings +1"})
 
 	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {ammo="Ginsen",
-		head=gear_valorous_wsd_head, neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
+		head=gear.valorous_wsd_head, neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		body="Emicho Haubert +1", hands="Sulev. Gauntlets +2", lring="Regal Ring", rring="Epaminondas's Ring",
 		back=gear.WS_jse_back, waist="Prosilio Belt +1", legs="Sulev. Cuisses +2", feet="Sulev. Leggings +2"})
     sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Ginsen",
@@ -233,7 +233,7 @@ function init_gear_sets()
 	sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS,{
 		-- Founder/obyssean
 		head="Carmine Mask +1", neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
-		body=gear_odyssean_mab_body, hands="Founder's Gauntlets", lring="Epaminondas's Ring", rring="Shiva Ring +1",
+		body=gear.odyssean_mab_body, hands="Founder's Gauntlets", lring="Epaminondas's Ring", rring="Shiva Ring +1",
 		-- WSD Legs
 		back=gear.WS_jse_back, waist="Yamabuki-no-Obi", legs="Founder's Hose", feet="Sulev. Leggings +2"})
 		

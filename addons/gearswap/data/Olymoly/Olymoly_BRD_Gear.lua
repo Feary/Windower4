@@ -36,6 +36,9 @@ function user_setup()
 	send_command('alias bt input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 	send_command('alias p1 input /pcmd leave;wait 1;input /tell Azzriel invite;')
 	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
+	send_command('alias fol ffo me')
+	send_command('alias ufol ffo stopall')
+	
 	
 	-- Songs Scrits 
 	-- nt = Nitro
@@ -50,6 +53,8 @@ function user_setup()
 	send_command('alias dum exec songs/dummy.txt')
 	-- Dummy 5 Songs
 	send_command('alias dumm exec songs/dummy2.txt')
+	send_command('alias dum5 exec songs/dummy2.txt')
+	send_command('alias ccdum exec songs/dummy2.txt')
 	
 	-- NT 5 Songs
 	
@@ -70,7 +75,7 @@ function user_setup()
 	select_default_macro_book()
 end
 
-function init_gear_sets()
+function init_gear.sets()
 
 	--------------------------------------
 	-- Start defining the sets
@@ -104,7 +109,7 @@ function init_gear_sets()
 	sets.precast.FC.BardSong = {main="Oranyan", sub=none, -- Clericy Strap +1
 		head="Fili Calot +1", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
-        back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet=gear_telchine_feet_Song}
+        back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet=gear.telchine_feet_Song}
 	
 	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Gjallarhorn"})
 	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Gjallarhorn"})
@@ -262,7 +267,7 @@ function init_gear_sets()
 	sets.midcast.Cure = {
 		main={name="Chatoyant Staff", priority=2}, sub={name=empty, priority=1},
 		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
 		
 	sets.Self_Healing = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",}--waist="Gishdubar Sash"
@@ -291,9 +296,9 @@ function init_gear_sets()
 		
 	sets.midcast['Enhancing Magic'] = {main="Oranyan Staff", sub="Enki Strap",
 		--main="Carnwenhan",sub="Ammurapi Shield",
-		head=gear_telchine_head_Duration, neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Prolix Ring",
-		back=gear.FC_jse_back,waist="Witful Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		head=gear.telchine_head_Duration, neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Prolix Ring",
+		back=gear.FC_jse_back,waist="Witful Belt", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
 		neck="Nodens Gorget",

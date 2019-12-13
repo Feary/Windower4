@@ -74,7 +74,7 @@ function user_setup()
 	select_default_macro_book()
 end
 
-function init_gear_sets()
+function init_gear.sets()
 
 	--------------------------------------
 	-- Start defining the sets
@@ -394,7 +394,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic']['White Wind'] = {ammo="Mavi Tathlum",
 		head="Carmine Mask", neck="Phalaina Locket", lear="Loquac. Earring", rear="Gifted Earring",
 		-- body="Vrikodara Jupon" lring="Kunaji Ring", 
-		body="Luhlaza Jubbah +1", hands=gear_telchine_hands_Cure, rring="Asklepian Ring", 
+		body="Luhlaza Jubbah +1", hands=gear.telchine_hands_Cure, rring="Asklepian Ring", 
 		-- legs="Gyve Trousers" feet="Medium's Sabots"
 		back=gear.ElementalCape, waist=gear.ElementalObi, legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 	sets.midcast['Blue Magic']['Healing Breeze'] = sets.midcast['Blue Magic']['White Wind']
@@ -402,7 +402,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Healing = {
 		head="Carmine Mask", neck="Phalaina Locket", lear="Loquac. Earring", rear="Gifted Earring",
 		-- body="Vrikodara Jupon" lring="Kunaji Ring", 
-		body="Luhlaza Jubbah +1", hands=gear_telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Luhlaza Jubbah +1", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		-- legs="Gyve Trousers" feet="Medium's Sabots"
 		back=gear.ElementalCape, waist=gear.ElementalObi, legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 		
@@ -482,7 +482,7 @@ function init_gear_sets()
 	sets.midcast.Cure = {
 		--neck="Incanter's Torque",
 		head="Carmine Mask", lear="Loquac. Earring",
-		hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
+		hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.ElementalCape, waist=gear.ElementalObi, legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
 	-- Sets to return to when not performing an action.

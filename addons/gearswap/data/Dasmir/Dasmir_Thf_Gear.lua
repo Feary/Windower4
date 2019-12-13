@@ -37,7 +37,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
     --------------------------------------
     -- Special sets (required by rules)
     --------------------------------------
@@ -117,7 +117,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {
 		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body=gear_taeon_body_Fastcast, hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
+		body=gear.taeon_body_Fastcast, hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		-- back=gear.FC_jse_back,  waist="Tempus Fugit", legs="Enif Cosciales", feet="Herculean Boots"
 		waist="Sarissapho. Belt",}
 

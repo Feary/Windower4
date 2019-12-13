@@ -49,7 +49,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
     --------------------------------------
     -- Precast Sets
     --------------------------------------
@@ -62,11 +62,11 @@ function init_gear_sets()
     sets.precast.JA['Elemental Siphon'] = {main=gear.skill_staff, sub="Vox Grip", 
 		-- ammo="Esper Stone +1",
 		--neck="Incanter's Torque"
-        head=gear_telchine_head_Siphon, neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",
+        head=gear.telchine_head_Siphon, neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",
 		-- hands="Baayami Cuffs"
-        body=gear_telchine_body_Siphon, hands="Glyphic Bracers +1", ring1="Evoker's Ring", ring2="Stikini Ring",
+        body=gear.telchine_body_Siphon, hands="Glyphic Bracers +1", ring1="Evoker's Ring", ring2="Stikini Ring",
 		-- waist="Kobo Obi",
-		back="Conveyance Cape", legs=gear_telchine_legs_Siphon, feet="Beck. Pigaches +1"}
+		back="Conveyance Cape", legs=gear.telchine_legs_Siphon, feet="Beck. Pigaches +1"}
 
     sets.precast.JA['Mana Cede'] = {hands="Beck. Bracers +1"}
 
@@ -87,7 +87,7 @@ function init_gear_sets()
 		--ammo="Impatiens",
 		--ar2="Enchntr. Earring +1",
 		head="Haruspex Hat",neck="Voltsurge Torque",ear1="Loquacious Earring", 
-		body="Inyanga Jubbah +2", hands=gear_helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
+		body="Inyanga Jubbah +2", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
 		gear.FC_jse_back, waist="Witful Belt", legs="Lengo Pants", feet="Amalric Nails"}
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {})--main="Serenity",sub="Clerisy Strap +1"
@@ -131,13 +131,13 @@ function init_gear_sets()
 
     sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Hasty Pinion",
 		head="Haruspex Hat",neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands=gear_helios_hands_FC, ring1="Kishar Ring", ring2="Lebeche Ring",
+		body="Inyanga Jubbah +2", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Lebeche Ring",
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Lengo Pants", feet="Amalric Nails"}
 	
     sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",ammo="Hasty Pinion",
 		-- head="Vanya Hood", neck="Incanter's Torque", ear1="Mendicant's Earring",
 		head="Haruspex Hat",neck="Phalaina Locket", ear2="Gifted Earring",
-        body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Stikini Ring",ring2="Sirona's Ring",
+        body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Stikini Ring",ring2="Sirona's Ring",
 		--feet="Vanya Clogs" legs="Gyve Trousers",
         back=gear.Cure_jse_back,waist="Austerity Belt", feet="Amalric Nails"}
 		
@@ -186,13 +186,13 @@ function init_gear_sets()
 		
     sets.midcast.Aspir = sets.midcast.Drain
 		
-    sets.midcast.Stun = {main=gear_grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion",
+    sets.midcast.Stun = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion",
 		-- ear2="Enchntr. Earring +1",
 		head="Inyanga Tiara +2",neck="Voltsurge Torque",ear1="Loquacious Earring",
 		body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Inyanga Shalwar +2",feet="Amalric Nails"}
 		
-    sets.midcast.Stun.Resistant = {main=gear_grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion",
+    sets.midcast.Stun.Resistant = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion",
 		-- ear2="Enchntr. Earring +1",
 		head="Inyanga Tiara +2",neck="Voltsurge Torque",ear1="Gwati Earring",
 		body="Inyanga Jubbah +2",hands="Amalric Gages",ring1="Stikini Ring",ring2="Prolix Ring",
@@ -220,9 +220,9 @@ function init_gear_sets()
 		
 	sets.midcast['Enhancing Magic'] = {
 		--neck="Incanter's Torque",
-		head=gear_telchine_head_Duration, neck="Colossus's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
-		body=gear_telchine_body_Duration,hands=gear_telchine_hands_Duration,ring1="Stikini Ring",ring2="Stikini Ring",
-		back=gear.FC_jse_back,waist="Cascade Belt",legs=gear_telchine_legs_Duration,feet=gear_telchine_feet_Duration}
+		head=gear.telchine_head_Duration, neck="Colossus's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
+		body=gear.telchine_body_Duration,hands=gear.telchine_hands_Duration,ring1="Stikini Ring",ring2="Stikini Ring",
+		back=gear.FC_jse_back,waist="Cascade Belt",legs=gear.telchine_legs_Duration,feet=gear.telchine_feet_Duration}
 		
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {})--head="Amalric Coif +1"
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",})--sub="Genmei Shield",head="Amalric Coif +1",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
@@ -251,14 +251,14 @@ function init_gear_sets()
     
     sets.midcast.Pet.PhysicalBloodPactRage = {main=gear.phys_BP_Staff,sub="Elan Strap +1", ammo=gear.avatar_ammo,
         -- neck="Summoner's Collar +2", 
-		head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-		body="Con. Doublet +3", hands=gear_merlinic_physpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
+		head=gear.helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
+		body="Con. Doublet +3", hands=gear.merlinic_physpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet=gear.phys_BP_feet}
 		
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = {main=gear.phys_BP_Staff,sub="Elan Strap +1",ammo=gear.avatar_ammo,
 		-- neck="Summoner's Collar +2", ear1="Kyrene's Earring", 
-        head=gear_helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-		body="Con. Doublet +3", hands=gear_merlinic_physpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
+        head=gear.helios_head_BP, neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
+		body="Con. Doublet +3", hands=gear.merlinic_physpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet="Convo. Pigaches +3"}
 		
 	-- Magical BloodPactRage
@@ -267,7 +267,7 @@ function init_gear_sets()
         -- Path A neck="Summoner's Collar +2", 
 		head="Apogee Crown +1", neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring", 
         -- body="Apo. Dalmatica +1", Path A
-        body="Con. Doublet +3", hands=gear_merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
+        body="Con. Doublet +3", hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1", ring2="Varar Ring +1",
 		back=gear.magic_jse_back, waist="Regal Belt", legs="Enticer's Pants", feet=gear.phys_BP_feet}
 
     sets.midcast.Pet.MagicalBloodPactRage.Acc = {feet="Convo. Pigaches +3"}
@@ -275,7 +275,7 @@ function init_gear_sets()
 	sets.midcast.Pet['Flaming Crush'] = {main=gear.phys_BP_Staff,sub="Elan Strap +1",ammo=gear.avatar_ammo,
         --  Path A neck="Summoner's Collar +2", 
 		head="Apogee Crown +1", neck="Adad Amulet", ear1="Gelos Earring", ear2="Lugalbanda Earring",
-        body="Con. Doublet +3",hands=gear_merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
+        body="Con. Doublet +3",hands=gear.merlinic_magpact_hands, ring1="Varar Ring +1",ring2="Varar Ring +1",
 		back=gear.magic_jse_back, waist="Regal Belt", legs="Apogee Slacks +1", feet=gear.magic_BP_feet}
 	
 	sets.midcast.Pet['Flaming Crush'].Acc = {feet="Convo. Pigaches +3"}
@@ -315,7 +315,7 @@ function init_gear_sets()
 		-- Contemp staff
         head="Convoker's Horn +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		-- Stikini Ring +1
-        body="Shomonjijoe +1",hands=gear_merlinic_refresh_hands,ring1="Inyanga Ring",ring2="Defending Ring",
+        body="Shomonjijoe +1",hands=gear.merlinic_refresh_hands,ring1="Inyanga Ring",ring2="Defending Ring",
 		-- feet="Baayami Sabots"
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
     

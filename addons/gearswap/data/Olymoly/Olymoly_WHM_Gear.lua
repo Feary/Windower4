@@ -40,7 +40,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
     --------------------------------------
     -- Start defining the sets
     --------------------------------------
@@ -211,7 +211,7 @@ function init_gear_sets()
 		main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",		
 		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Bliault +3 Theophany Mitts +3
-		body="Theo. Briault +2", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Lebeche Ring",
+		body="Theo. Briault +2", hands=gear.telchine_Hands_Cure, lring="Stikini Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCuraga = {
@@ -219,7 +219,7 @@ function init_gear_sets()
 		-- Nuna Gorget +1 
 		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
-		body="Theo. Briault +2", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +2", hands=gear.telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 		
 	sets.midcast.LightDayCuraga = {
@@ -227,7 +227,7 @@ function init_gear_sets()
 		-- Nuna Gorget +1 
 		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
-		body="Theo. Briault +2", hands=gear_telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
+		body="Theo. Briault +2", hands=gear.telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
 		
 	sets.midcast.Cure.DT = {
@@ -297,10 +297,10 @@ function init_gear_sets()
 	-- Duration
 	sets.midcast['Enhancing Magic'] = {
 		--main={name="Gada", priority=2}, sub={name="Ammurapi Shield", priority=1},
-		head=gear_telchine_head_Duration,
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration,
+		head=gear.telchine_head_Duration,
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration,
 		-- Theo. Duckbills +3
-		legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash",})--neck="Nodens Gorget",ear2="Earthcry Earring",legs="Shedir Seraweels"
 
@@ -328,17 +328,17 @@ function init_gear_sets()
 	-- Caps 500 /sch  need 106 blm/rdm
 	sets.midcast.BarStatus = {
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
-		head=gear_telchine_head_Duration, neck="Incanter's Torque", lear="Andoaa Earring", rear="Augment. Earring",
-		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Incanter's Torque", lear="Andoaa Earring", rear="Augment. Earring",
+		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 	
 	--sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
-		--head=gear_telchine_head_Duration, neck="Incanter's Torque",  lear="Andoaa Earring", 
-		--body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		--head=gear.telchine_head_Duration, neck="Incanter's Torque",  lear="Andoaa Earring", 
+		--body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		-- feet="Theophany Duckbills +3"
-		--back="Mending Cape", waist="Olympus Sash", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		--back="Mending Cape", waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
 	-- Caps 500 to Cap - need 106 blm/rdm
 	-- Duration
@@ -445,7 +445,7 @@ function init_gear_sets()
 		-- Theo. Briault +3
 		body="Theo. Briault +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Chironic Hose Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear_chironic_macc_legs, feet="Inyanga Crackows +2"}
+		back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear.chironic_macc_legs, feet="Inyanga Crackows +2"}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		-- Grioavolr Hyrdocera
@@ -455,7 +455,7 @@ function init_gear_sets()
 		-- Theo. Briault +3
 		body="Theo. Briault +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Theo. Duckbills +3
-		back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear_chironic_macc_legs, feet="Inyanga Crackows +2"}
+		back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear.chironic_macc_legs, feet="Inyanga Crackows +2"}
 
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)

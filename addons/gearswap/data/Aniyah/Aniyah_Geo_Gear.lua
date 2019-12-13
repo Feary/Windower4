@@ -44,7 +44,7 @@ function user_setup()
 	select_default_macro_book()
 end
 
-function init_gear_sets()
+function init_gear.sets()
 	
 	--------------------------------------
 	-- Precast sets
@@ -69,7 +69,7 @@ function init_gear_sets()
 		--ear1="Enchntr. Earring +1",
 		head="Haruspex Hat", neck="Voltsurge Torque", ear2="Loquac. Earring",
 		--body="Zendik Robe", 
-		hands=gear_helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring", 
+		hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring", 
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Geomancy Pants +2", feet="Amalric Nails"}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {range="Dunna",ammo=empty})
@@ -115,26 +115,26 @@ function init_gear_sets()
     sets.midcast.Cure = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1},
 		--Vanya Hood
 		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Lifestorm Earring",
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Geomancy Pants +2", feet="Rubeus Boots"}
 
     sets.midcast.LightWeatherCure = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip", priority=1},
 		-- Vanya Hood
 		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Lifestorm Earring",
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Geomancy Pants +2", feet="Rubeus Boots"}
 
 		--Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {main={name="Iridal Staff", priority=2}, sub={name="Pax Grip", priority=1},
 		---- Vanya Hood
 		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Lifestorm Earring",
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Geomancy Pants +2", feet="Rubeus Boots"}
     
 	sets.midcast.Curaga = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1},
 		-- lear="Novia Earring", rear="Lifestorm Earring",
 		head="Haruspex Hat", neck="Colossus's Torque", 
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Geomancy Pants +2", feet="Rubeus Boots"}
 
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {})--neck="Debilis Medallion",ring1="Haoma's Ring",ring2="Haoma's Ring"
@@ -249,9 +249,9 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion",
 		-- main=gear.gada_enhancing_club,sub="Ammurapi Shield",		
 		-- neck="Incantor's Torque",
-		head=gear_telchine_head_Duration, neck="Colossus's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, ring1="Stikini Ring",ring2="Stikini Ring",
-		back=gear.FC_jse_back, waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		head=gear.telchine_head_Duration, neck="Colossus's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, ring1="Stikini Ring",ring2="Stikini Ring",
+		back=gear.FC_jse_back, waist="Cascade Belt", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {})
 	
@@ -297,15 +297,15 @@ function init_gear_sets()
 	-- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = set_combine(sets.idle.PDT, {
 		-- rear="Handler's Earring +1",
-		head=gear_telchine_head_Pet, lear="Ethereal Earring", rear="Merman's Earring",
-		body=gear_telchine_body_Pet, hands=gear_telchine_hands_Pet,
-		back=gear.idle_jse_back, waist="Isa Belt", legs=gear_telchine_legs_Pet, feet="Bagua Sandals +1"})
+		head=gear.telchine_head_Pet, lear="Ethereal Earring", rear="Merman's Earring",
+		body=gear.telchine_body_Pet, hands=gear.telchine_hands_Pet,
+		back=gear.idle_jse_back, waist="Isa Belt", legs=gear.telchine_legs_Pet, feet="Bagua Sandals +1"})
 
 	sets.idle.PDT.Pet = {main="Earth Staff", sub="Umbra Strap", range="Dunna",
 		-- lear="Handler's Earring", rear="Handler's Earring +1",
-		head=gear_telchine_head_Pet, 
-		body=gear_telchine_body_Pet, hands="Bagua Mitaines +1",
-		back=gear.idle_jse_back, waist="Isa Belt", legs=gear_telchine_legs_Pet, feet="Bagua Sandals +1"}
+		head=gear.telchine_head_Pet, 
+		body=gear.telchine_body_Pet, hands="Bagua Mitaines +1",
+		back=gear.idle_jse_back, waist="Isa Belt", legs=gear.telchine_legs_Pet, feet="Bagua Sandals +1"}
 				
 	-- .Indi sets are for when an Indi-spell is active.
 	sets.idle.Indi = set_combine(sets.idle, {})	

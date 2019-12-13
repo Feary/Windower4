@@ -58,7 +58,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
 
     --------------------------------------
     -- Start defining the sets
@@ -129,24 +129,24 @@ function init_gear_sets()
 		--main="Serenity",sub="Enki Strap", 
 		-- head="Vanya Hood", neck="Incanter's Torque"
         head="Gende. Caubeen +1",neck="Colossus's Torque",ear1="Loquacious Earring",ear2="Etiolation Earring",
-        body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
-		-- waist="Bishop's Sash", legs=gear_chironic_cure_legs feet="Vanya Clogs"
+        body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
+		-- waist="Bishop's Sash", legs=gear.chironic_cure_legs feet="Vanya Clogs"
         back=gear.Cure_jse_back,waist="Cascade Belt", legs="Academic's Pants +2",feet="Peda. Loafers +1"}
 
     sets.midcast.LightWeatherCure = {main="Iridal Staff",sub="Enki Strap",ammo="Hasty Pinion",
        --main="Serenity",sub="Enki Strap", 
 		-- head="Vanya Hood", neck="Incanter's Torque"
         head="Gende. Caubeen +1",neck="Colossus's Torque",ear1="Loquacious Earring",ear2="Etiolation Earring",
-        body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
-		-- waist="Bishop's Sash", legs=gear_chironic_cure_legs feet="Vanya Clogs"
+        body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
+		-- waist="Bishop's Sash", legs=gear.chironic_cure_legs feet="Vanya Clogs"
         back=gear.Cure_jse_back,waist="Cascade Belt", legs="Academic's Pants +2",feet="Peda. Loafers +1"}
 		
     sets.midcast.LightDayCure = {main="Vadose Rod", sub="Sors Shield", ammo="Hasty Pinion",
 		--main="Serenity",sub="Enki Strap", 
 		-- head="Vanya Hood", neck="Incanter's Torque"
         head="Gende. Caubeen +1",neck="Colossus's Torque",ear1="Loquacious Earring",ear2="Etiolation Earring",
-        body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
-		-- waist="Bishop's Sash", legs=gear_chironic_cure_legs feet="Vanya Clogs"
+        body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
+		-- waist="Bishop's Sash", legs=gear.chironic_cure_legs feet="Vanya Clogs"
         back=gear.Cure_jse_back,waist="Cascade Belt", legs="Lengo Pants",feet="Peda. Loafers +1"}
 
     sets.midcast.Curaga = sets.midcast.Cure
@@ -168,10 +168,10 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = {main="Kirin's Pole", 
 		-- sub="Fulcio Grip", ammo="Savant's Treatise",
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield", ear2="Augment. Earring",
-		head=gear_telchine_head_Duration,neck="Melic Torque",ear1="Andoaa Earring",
-		body=gear_telchine_body_Duration,hands=gear_telchine_hands_Duration,ring1="Stikini Ring",ring2="Stikini Ring",
+		head=gear.telchine_head_Duration,neck="Melic Torque",ear1="Andoaa Earring",
+		body=gear.telchine_body_Duration,hands=gear.telchine_hands_Duration,ring1="Stikini Ring",ring2="Stikini Ring",
 		-- waist="Olympus Sash",
-		back="Fi Follet Cape +1",waist="Cascade Belt",legs=gear_telchine_legs_Duration,feet=gear_telchine_feet_Duration}
+		back="Fi Follet Cape +1",waist="Cascade Belt",legs=gear.telchine_legs_Duration,feet=gear.telchine_feet_Duration}
 
     sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {back=gear.FC_jse_back})
 
@@ -261,7 +261,7 @@ function init_gear_sets()
 		head="Jhakri Coronal +2", neck="Erra Pendant", ear1="Regal Earring",
         -- ring1="Evanescence Ring" ring2="Archon Ring",
 		 body="Mallquis Saio +2",hands="Mallquis Cuffs +2", ring1="Stikini Ring",  ring2="Stikini Ring",
-        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear_chironic_macc_legs,feet="Mallquis Clogs +2"}
+        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear.chironic_macc_legs,feet="Mallquis Clogs +2"}
 		
     sets.midcast.Drain.Resistant = {main="Maxentius",sub="Ammurapi Shield", 
 		-- main="Rubicundity",ammo="Pemphredo Tathlum",
@@ -269,7 +269,7 @@ function init_gear_sets()
 		head="Jhakri Coronal +2", neck="Erra Pendant", ear1="Regal Earring",
         -- ring1="Evanescence Ring" ring2="Archon Ring",
 		 body="Mallquis Saio +2",hands="Mallquis Cuffs +2", ring1="Stikini Ring",  ring2="Stikini Ring",
-        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear_chironic_macc_legs,feet="Mallquis Clogs +2"}
+        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear.chironic_macc_legs,feet="Mallquis Clogs +2"}
 
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
@@ -320,9 +320,9 @@ function init_gear_sets()
 		--main="Khatvanga",sub="Bloodrain Strap",ammo="Seraphic Ampulla",
 		--neck="Combatant's Torque",  ear1="Dedition Earring",ear2="Telos Earring",
 		head="Mall. Chapeau +2", neck="Sanctity Necklace", ear1="Regal Earring", 
-        -- body="Amalric Doublet +1", body=gear_helios_body_occult,  hands=gear_helios_hands_Occult,
+        -- body="Amalric Doublet +1", body=gear.helios_body_occult,  hands=gear.helios_hands_Occult,
 		body="Jhakri Robe +2", hands="Mallquis Cuffs +2", ring1="Rajas Ring",ring2="Petrov Ring",
-		--waist="Oneiros Rope",legs="Perdition Slops", feet=gear_helios_feet_occult
+		--waist="Oneiros Rope",legs="Perdition Slops", feet=gear.helios_feet_occult
         back=gear.nuke_jse_back, feet="Jhakri Pigaches +2"})
 		
     -- Custom refinements for certain nuke tiers
@@ -384,14 +384,14 @@ function init_gear_sets()
     sets.resting = {main="Iridal Staff", sub="Kaja Grip", -- ammo="Homiliary", sub="Oneiros Grip",
 		--neck="Chrys. Torque",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
-		body="Jhakri Robe +2", hands=gear_merlinic_refresh_hands,ring1="Defending Ring",ring2="Jhakri Ring",
+		body="Jhakri Robe +2", hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Jhakri Ring",
 		back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {main="Bolelabunga",sub="Genbu's Shield", -- ammo="Homiliary",
         head="Befouled Crown", neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
-        body="Jhakri Robe +2", hands=gear_merlinic_refresh_hands, ring1="Defending Ring",ring2="Vocane Ring",
+        body="Jhakri Robe +2", hands=gear.merlinic_refresh_hands, ring1="Defending Ring",ring2="Vocane Ring",
 		-- waist="Flax Sash", 
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
@@ -411,7 +411,7 @@ function init_gear_sets()
 
     sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield", --ammo="Homiliary",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
-        body="Mallquis Saio +2", hands=gear_merlinic_refresh_hands, ring1="Defending Ring",ring2="Vocane Ring",
+        body="Mallquis Saio +2", hands=gear.merlinic_refresh_hands, ring1="Defending Ring",ring2="Vocane Ring",
 		--feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		

@@ -1,4 +1,4 @@
--- Universal items that are the same for all characters, and logic to determine which item choices from quests have been made.
+-- Universal items that are the same for all characters, and logic to determine if some specific items are owned and used.
 sets.EndorsementRing = {ring2="Endorsement Ring"}
 sets.TrizekRing = {ring2="Trizek Ring"}
 sets.EchadRing = {ring2="Echad Ring"}
@@ -13,12 +13,22 @@ sets.Warp = {ring2="Warp Ring"}
 sets.RREar = {ear2="Reraise Earring"}
 sets.BehemothSuit = {body="Behemoth Suit +1",hands=empty,legs=empty,feet=empty}
 
-if player.inventory["Adoulin's Refuge +1"] or player.safe["Adoulin's Refuge +1"] or player.safe2["Adoulin's Refuge +1"] or player.storage["Adoulin's Refuge +1"] or player.locker["Adoulin's Refuge +1"] or player.satchel["Adoulin's Refuge +1"] or player.sack["Adoulin's Refuge +1"] or player.case["Adoulin's Refuge +1"] or player.wardrobe["Adoulin's Refuge +1"] or player.wardrobe2["Adoulin's Refuge +1"] or player.wardrobe3["Adoulin's Refuge +1"] or player.wardrobe4["Adoulin's Refuge +1"] then
-	sets.Reive = {neck="Adoulin's Refuge +1"}
-elseif player.inventory["Arciela's Grace +1"] or player.safe["Arciela's Grace +1"] or player.safe2["Arciela's Grace +1"] or player.storage["Arciela's Grace +1"] or player.locker["Arciela's Grace +1"] or player.satchel["Arciela's Grace +1"] or player.sack["Arciela's Grace +1"] or player.case["Arciela's Grace +1"] or player.wardrobe["Arciela's Grace +1"] or player.wardrobe2["Arciela's Grace +1"] or player.wardrobe3["Arciela's Grace +1"] or player.wardrobe4["Arciela's Grace +1"] then
-	sets.Reive = {neck="Arciela's Grace +1"}
-elseif player.inventory["Ygnas's Resolve +1"] or player.safe["Ygnas's Resolve +1"] or player.safe2["Ygnas's Resolve +1"] or player.storage["Ygnas's Resolve +1"] or player.locker["Ygnas's Resolve +1"] or player.satchel["Ygnas's Resolve +1"] or player.sack["Ygnas's Resolve +1"] or player.case["Ygnas's Resolve +1"] or player.wardrobe["Ygnas's Resolve +1"] or player.wardrobe2["Ygnas's Resolve +1"] or player.wardrobe3["Ygnas's Resolve +1"] or player.wardrobe4["Ygnas's Resolve +1"] then
-	sets.Reive = {neck="Ygnas's Resolve +1"}
-else
-	sets.Reive = {}
+if not sets.Reive then
+	if item_owned("Adoulin's Refuge +1") then
+		sets.Reive = {neck="Adoulin's Refuge +1"}
+	elseif item_owned("Arciela's Grace +1") then
+		sets.Reive = {neck="Arciela's Grace +1"}
+	elseif item_owned("Ygnas's Resolve +1") then
+		sets.Reive = {neck="Ygnas's Resolve +1"}
+	else
+		sets.Reive = {}
+	end
+end
+
+uses_waltz_legs = false
+if sets.precast.Waltz and sets.precast.Waltz.legs then
+	waltz_legs = standardize_set(sets.precast.Waltz).legs
+	if (waltz_legs == "Desultor Tassets" or waltz_legs == "Blitzer Poleyn" or waltz_legs == "Tatsumaki Sitagoromo") then
+		uses_waltz_legs	= true
+	end
 end

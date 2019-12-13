@@ -49,7 +49,7 @@ function user_setup()
 	select_default_macro_book()
 end
 
-function init_gear_sets()
+function init_gear.sets()
 
     --------------------------------------
     -- Start defining the sets
@@ -75,8 +75,8 @@ function init_gear_sets()
     sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
 		head="Amalric Coif +1", neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		-- body="Zendik Robe", 
-		body="Merlinic Jubbah", hands=gear_helios_hands_FC, ring1="Kishar Ring",ring2="Prolix Ring",
-		back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet=gear_merlinic_fc_feet}
+		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring",ring2="Prolix Ring",
+		back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet=gear.merlinic_fc_feet}
 		
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
@@ -95,7 +95,7 @@ function init_gear_sets()
 		--  sub="Niobid Strap",ammo="Psilomene",
 		head="Amalric Coif +1", neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Etiolation Earring",
 		-- body="Zendik Robe", hands="Volte Gloves",ring1="Mephitas's Ring +1", rring2="Rahab Ring",
-		body="Merlinic Jubbah", hands=gear_helios_hands_FC, ring1="Kishar Ring",ring2="Mephitas's Ring +1",
+		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring",ring2="Mephitas's Ring +1",
         -- waist="Channeler's Stone",  Path D 
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Psycloth Lappas", feet="Amalric Nails +1"}
 		
@@ -125,21 +125,21 @@ function init_gear_sets()
     sets.midcast.FastRecast = {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
 		head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		--body="Zendik Robe", hands="Volte Gloves",
-		body="Merlinic Jubbah", hands=gear_helios_hands_FC, ring1="Kishar Ring",ring2="Prolix Ring",
+		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring",ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas", feet="Amalric Nails +1"}
 
     sets.midcast.Cure = {main="Tamaxchi", sub="Sors Shield",ammo="Hasty Pinion +1",
 		--main=gear.gada_healing_club,
         head="Vanya Hood", neck="Incanter's Torque", ear1="Mendi. Earring",ear2="Roundel Earring",
         --body="Zendik Robe",
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
         back=gear.FC_jse_back,waist="Witful Belt",legs="Gyve Trousers",feet="Skaoi Boots"}
 		
     sets.midcast.LightWeatherCure = {main="Tamaxchi", sub="Sors Shield",ammo="Hasty Pinion +1",
 		--main=gear.gada_healing_club,
         head="Vanya Hood", neck="Incanter's Torque", ear1="Mendi. Earring",ear2="Roundel Earring",
         --body="Zendik Robe",
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
         back=gear.FC_jse_back,waist="Hachirin-no-Obi",legs="Gyve Trousers",feet="Skaoi Boots"}
 		
 	--Cureset for if it's not light weather but is light day.
@@ -147,7 +147,7 @@ function init_gear_sets()
 		--main=gear.gada_healing_club,
         head="Vanya Hood", neck="Incanter's Torque", ear1="Mendi. Earring",ear2="Roundel Earring",
         --body="Zendik Robe",
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
         back=gear.FC_jse_back,waist="Hachirin-no-Obi",legs="Gyve Trousers",feet="Skaoi Boots"}
 
     sets.midcast.Curaga = sets.midcast.Cure
@@ -163,9 +163,9 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = {
 		-- main=gear.gada_enhancing_club,sub="Ammurapi Shield",
 		ammo="Hasty Pinion +1",
-		head=gear_telchine_head_Duration, neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body=gear_telchine_body_Duration,hands=gear_telchine_hands_Duration,ring1="Stikini Ring","Stikini Ring",
-		back="Perimede Cape",waist="Olympus Sash",legs=gear_telchine_legs_Duration,feet=gear_telchine_feet_Duration}
+		head=gear.telchine_head_Duration, neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
+		body=gear.telchine_body_Duration,hands=gear.telchine_hands_Duration,ring1="Stikini Ring","Stikini Ring",
+		back="Perimede Cape",waist="Olympus Sash",legs=gear.telchine_legs_Duration,feet=gear.telchine_feet_Duration}
     
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
 			--ear2="Earthcry Earring", legs="Shedir Seraweels"
@@ -248,7 +248,7 @@ function init_gear_sets()
         head="Pixie Hairpin +1",neck="Incanter's Torque",ear1="Barkaro. Earring",ear2="Regal Earring",
 		--ring1="Evanescence Ring", 
 		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Stikini Ring", ring2="Mephitas's  Ring +1",
-        back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Amalric Slops +1", feet=gear_merlinic_aspir_feet}
+        back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Amalric Slops +1", feet=gear.merlinic_aspir_feet}
 	
 	-- Death
 	sets.midcast.Death = {main="Lathi", sub="Enki Strap",ammo="Pemphredo Tathlum",
@@ -352,17 +352,17 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].Proc = {main=empty,sub=empty,ammo="Impatiens",
         head="Amalric Coif +1",neck="Loricate Torque +1",ear1="Digni. Earring",ear2="Regal Earring",
         --body="Spaekona's Coat +3",
-		body="Spaekona's Coat +1", hands=gear_helios_hands_FC, ring1="Kishar Ring",ring2="Prolix Ring",
+		body="Spaekona's Coat +1", hands=gear.helios_hands_FC, ring1="Kishar Ring",ring2="Prolix Ring",
         back=gear.FC_jse_back,waist="Witful Belt",legs="Assid. Pants +1",feet="Amalric Nails +1"}
 		
     sets.midcast['Elemental Magic'].OccultAcumen = {
 		--main="Khatvanga",sub="Bloodrain Strap", ammo="Seraphic Ampulla",
 		--neck="Combatant's Torque",
         head="Amalric Coif +1", ear1="Dedition Earring", ear2="Telos Earring",
-        --body=gear_helios_body_occult, 
-		body="Mallquis Saio +2", hands=gear_helios_hands_Occult, ring1="Rajas Ring", ring2="Petrov Ring",
+        --body=gear.helios_body_occult, 
+		body="Mallquis Saio +2", hands=gear.helios_hands_Occult, ring1="Rajas Ring", ring2="Petrov Ring",
 		-- waist="Oneiros Rope",legs="Perdition Slops",
-        back=gear.STP_jse_back, feet=gear_helios_feet_occult}
+        back=gear.STP_jse_back, feet=gear.helios_feet_occult}
 		
     sets.midcast.Impact.OccultAcumen = set_combine(sets.midcast['Elemental Magic'].OccultAcumen, {head=empty,body="Twilight Cloak"})
 	

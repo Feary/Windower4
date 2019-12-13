@@ -54,7 +54,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
     --------------------------------------
     -- Start defining the sets
     --------------------------------------
@@ -89,7 +89,7 @@ function init_gear_sets()
 
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
-    sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {main={name=gear_grioavolr_fc_staff, priority=2}, sub={name="Clerisy Strap +1", priority=1}, 
+    sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {main={name=gear.grioavolr_fc_staff, priority=2}, sub={name="Clerisy Strap +1", priority=1}, 
 		head="Piety Cap +1", lear="Nourish. Earring", rear="Nourish. Earring +1",
 		feet="Cure Clogs"})
 	
@@ -246,10 +246,10 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = {main={name="Beneficus", priority=2}, sub="Ammurapi Shield", ammo="Clarus Stone",
 		-- main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque", 
-		head=gear_telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		-- feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		back="Mending Cape", waist="Cascade Belt", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
 	sets.midcast.BarElement = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
 		-- neck="Incantor's Torque", 
@@ -266,33 +266,33 @@ function init_gear_sets()
 	sets.midcast.BarStatus = {main={name="Beneficus", priority=2}, sub={name="Ammurapi Shield", priority=1},
 		--main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque",
-		head=gear_telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
-		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
+		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 
 	sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Ammurapi Shield", priority=1},
 		--main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque", 
-		head=gear_telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		-- feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Cascade Belt", legs=gear_telchine_legs_Duration, feet=gear_telchine_feet_Duration}
+		back="Mending Cape", waist="Cascade Belt", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
 	-- 500 Skill
 	sets.midcast.BoostStat = {main={name="Beneficus", priority=2}, sub={name="Ammurapi Shield", priority=1},
 		--main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque", 
-		head=gear_telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
-		body=gear_telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
+		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 
 	sets.midcast.BoostStat['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Ammurapi Shield", priority=1},
 		--main=gear.gada_enhancing_club,
 		-- neck="Incantor's Torque", 
-		head=gear_telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
-		body=gear_telchine_body_Duration, hands=gear_telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		head=gear.telchine_head_Duration, neck="Melic Torque", lear="Andoaa Earring", 
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Cascade Belt", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 
@@ -306,7 +306,7 @@ function init_gear_sets()
 		main={name="Bolelabunga",priority=2}, sub={name="Ammurapi Shield", priority=1},
 		head="Inyanga Tiara +2",
 		body="Piety Briault +1", hands="Ebers Mitts +1",
-		-- feet=gear_telchine_feet_Regen
+		-- feet=gear.telchine_feet_Regen
 		legs="Theo. Pant. +1",})
 		
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {feet="Piety Duckbills +1"})

@@ -42,7 +42,7 @@ function user_setup()
 end
 
 -- Set up all gear sets.
-function init_gear_sets()
+function init_gear.sets()
 	--------------------------------------
 	-- Precast sets
 	--------------------------------------
@@ -69,7 +69,7 @@ function init_gear_sets()
 	-- Snapshot - Caps at 70 from any source.
 	sets.precast.RA = {
 		--neck="Scout's Gorget +2"
-		head=gear_taeon_head_Snapshot,
+		head=gear.taeon_head_Snapshot,
 		-- Oshosi Vest +1
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
 		-- Orion Braccae +3
@@ -77,7 +77,7 @@ function init_gear_sets()
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {
 		-- head="Orion Beret +3", neck="Scout's Gorget +2"
-		head=gear_taeon_head_Snapshot,
+		head=gear.taeon_head_Snapshot,
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
 		-- legs="Path D"
 		back=gear.snapshot_ranger_jse_back, waist="Yemaya Belt", legs="Adhemar Kecks", feet="Meg. Jam. +2"})
@@ -91,7 +91,7 @@ function init_gear_sets()
 
 	sets.precast.RA.Gastraphetes = {
 		--neck="Scout's Gorget +2"
-		head=gear_taeon_head_Snapshot,
+		head=gear.taeon_head_Snapshot,
 		-- Oshosi Vest +1
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
 		-- Orion Braccae +3
@@ -99,7 +99,7 @@ function init_gear_sets()
 		
 	sets.precast.RA.Gastraphetes.Flurry = set_combine(sets.precast.RA, {
 		-- head="Orion Beret +3", neck="Scout's Gorget +2"
-		head=gear_taeon_head_Snapshot,
+		head=gear.taeon_head_Snapshot,
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
 		-- Adhemar Kecks +1
 		back=gear.snapshot_ranger_jse_back, waist="Yemaya Belt", legs="Adhemar Kecks", feet="Meg. Jam. +2"})
@@ -188,30 +188,30 @@ function init_gear_sets()
 	-- Wildfire
     sets.precast.WS['Wildfire'] = {
 		-- Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
+		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
-		back=gear.magic_wsd_jse7_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
+		back=gear.magic_wsd_jse7_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet=gear.herculean_nuke_feet}
     sets.precast.WS['Wildfire'].Acc = {		
 		-- Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
+		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
-		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet=gear_herculean_nuke_feet}
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet=gear.herculean_nuke_feet}
 
 	-- Crossbow
 	-- Trueflight
     sets.precast.WS['Trueflight'] = {
 		-- Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
+		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
-		-- feet=gear_herculean_nuke_feet
-		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet="Orion Socks +2"}
+		-- feet=gear.herculean_nuke_feet
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Orion Socks +2"}
 
     sets.precast.WS['Trueflight'].Acc = {
         -- Baetyl Necklace
-		head=gear_herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
+		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
-		-- feet=gear_herculean_nuke_feet
-		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs, feet="Orion Socks +2"}
+		-- feet=gear.herculean_nuke_feet
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Orion Socks +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Telos Earring",ear2="Sherida Earring",}

@@ -57,7 +57,7 @@
 	select_default_macro_book()
 end
 
-function init_gear_sets()
+function init_gear.sets()
 	--------------------------------------
 	-- Start defining the sets
 	--------------------------------------
@@ -148,14 +148,14 @@ function init_gear_sets()
     sets.midcast.Cure = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		head="Vanya Hood", neck="Incanter's Torque", lear="Mendi. Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring 
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
 		-- Vanya Clogs
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Atrophy Tights +1", feet="Kaykaus Boots"}
 
     sets.midcast.LightWeatherCure = {main={name="Chatoyant Staff", priority=2}, sub={name="Enki Strap", priority=1}, ammo="Esper Stone +1",
 		head="Vanya Hood", neck="Incanter's Torque",lear="Mendi. Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
 		-- Vanya Clogs
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Atrophy Tights +1", feet="Kaykaus Boots"}
 	
@@ -163,7 +163,7 @@ function init_gear_sets()
     sets.midcast.LightDayCure = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
 		head="Vanya Hood", neck="Nodens Gorget", lear="Mendi. Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Cuffs Haoma's Ring Sirona's Ring
-		body="Heka's Kalasiris", hands=gear_telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		-- Vanya Clogs
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Atrophy Tights +1", feet="Kaykaus Boots"}
 		
@@ -194,10 +194,10 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
 		-- main="Arendsi Fleuret",sub="Ammurapi Shield",
 		-- Duelist's Torque +2 
-		head=gear_telchine_head_Duration, neck="Incanter's Torque", ear1="Andoaa Earring", rear="Augment. Earring",
+		head=gear.telchine_head_Duration, neck="Incanter's Torque", ear1="Andoaa Earring", rear="Augment. Earring",
 		-- Atrophy Gloves +3 Stikini Ring +1 Stikini Ring +1
-		body=gear_telchine_body_Duration, hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2="Stikini Ring",
-		back=gear.JSE_Cape, waist="Olympus Sash", legs=gear_telchine_legs_Duration, feet="Leth. Houseaux +1"}
+		body=gear.telchine_body_Duration, hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2="Stikini Ring",
+		back=gear.JSE_Cape, waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet="Leth. Houseaux +1"}
 
 	--Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
 	sets.buff.ComposureOther = {ammo="Hasty Pinion +1",
@@ -210,11 +210,11 @@ function init_gear_sets()
 	
 	-- Phalanx Potency
 	sets.midcast.Phalanx = {ammo="Hasty Pinion +1",
-		--head=gear_taeon_head_Phalanx, 
+		--head=gear.taeon_head_Phalanx, 
 		head="Befouled Crown", neck="Incanter's Torque", ear1="Andoaa Earring", ear2="Augment. Earring", 
 		-- Stikini Ring +1 Stikini Ring +1
-		body=gear_telchine_body_Duration, hands=gear_taeon_hands_Phalanx, ring1="Stikini Ring", ring2="Stikini Ring",
-		back=gear.JSE_Cape, waist="Olympus Sash", legs=gear_taeon_legs_Phalanx, feet=gear_taeon_feet_Phalanx}
+		body=gear.telchine_body_Duration, hands=gear.taeon_hands_Phalanx, ring1="Stikini Ring", ring2="Stikini Ring",
+		back=gear.JSE_Cape, waist="Olympus Sash", legs=gear.taeon_legs_Phalanx, feet=gear.taeon_feet_Phalanx}
 		
 	-- Enhancing Magic Skill set
 	sets.midcast['Temper'] = {ammo="Hasty Pinion +1",
@@ -292,19 +292,19 @@ function init_gear_sets()
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 
     sets.midcast['Elemental Magic'] = {main={name="Oranyan", priority=2}, sub={name="Enki Strap", priority=1}, ammo="Pemphredo Tathlum", 
-		head=gear_merlinic_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring", 
+		head=gear.merlinic_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring", 
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
     sets.midcast['Elemental Magic'].Resistant = {main={name="Oranyan", priority=2}, sub={name="Enki Strap", priority=1}, ammo="Regal Gem", 
-		head=gear_merlinic_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
+		head=gear.merlinic_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
     sets.midcast['Elemental Magic'].Fodder = set_combine(sets.midcast['Elemental Magic'], {})
 
     sets.midcast['Elemental Magic'].Proc = {main=empty, sub=empty,ammo="Impatiens",
-        head=gear_merlinic_nuke_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+        head=gear.merlinic_nuke_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Jhakri Robe +2",hands="Gende. Gages +1",ring1="Prolix Ring",ring2="Defending Ring",
 		back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1", feet="Amalric Nails +1"}
 		
@@ -326,7 +326,7 @@ function init_gear_sets()
 		--body="Atrophy Tabard +3",
 		body="Ayanmo Corazza +2", hands="Leth. Gantherots +1", ring1="Stikini Ring", ring2="Stikini Ring",
 		--feet=gear.merlinic_nuke_feet
-		back=gear.Macc_jse_back,waist="Luminary Sash",legs="Psycloth Lappas", feet=gear_merlinic_aspir_feet}
+		back=gear.Macc_jse_back,waist="Luminary Sash",legs="Psycloth Lappas", feet=gear.merlinic_aspir_feet}
 
     sets.midcast.Drain = {main="Rubicundity", ammo="Pemphredo Tathlum",
 		-- sub="Ammurapi Shield",
@@ -334,7 +334,7 @@ function init_gear_sets()
         -- Shango Robe 
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Stikini Ring", ring2="Stikini Ring",
         --feet=gear.chironic_nuke_feet
-		back=gear.Macc_jse_back, waist="Fucho-no-obi", legs="Psycloth Lappas", feet=gear_merlinic_aspir_feet}
+		back=gear.Macc_jse_back, waist="Fucho-no-obi", legs="Psycloth Lappas", feet=gear.merlinic_aspir_feet}
 
 	sets.midcast.Aspir = sets.midcast.Drain
 		
@@ -342,12 +342,12 @@ function init_gear_sets()
 		head="Atro. Chapeau +1", neck="Voltsurge Torque",ear1="Loquac. Earring",ear2="Enchntr. Earring +1",
 		--body="Zendik Robe",
 		body="Ayanmo Corazza +2", hands="Gende. Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
-		back=gear.Macc_jse_back, waist="Witful Belt", legs="Psycloth Lappas", feet=gear_merlinic_aspir_feet}
+		back=gear.Macc_jse_back, waist="Witful Belt", legs="Psycloth Lappas", feet=gear.merlinic_aspir_feet}
 	sets.midcast.Stun.Resistant = {main="Oranyan", sub="Clerisy Strap +1", mmo="Regal Gem",
 		head="Atro. Chapeau +1", neck="Voltsurge Torque", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		--body="Zendik Robe",
 		body="Ayanmo Corazza +2", hands="Gende. Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
-		back=gear.Macc_jse_back,waist="Luminary Sash",legs="Psycloth Lappas", feet=gear_merlinic_aspir_feet}
+		back=gear.Macc_jse_back,waist="Luminary Sash",legs="Psycloth Lappas", feet=gear.merlinic_aspir_feet}
 
 	-- Sets for special buff conditions on spells.
 		

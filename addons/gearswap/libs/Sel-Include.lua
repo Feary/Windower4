@@ -252,7 +252,6 @@ function init_include()
     -- Include general user globals, such as custom binds or gear tables.
     -- Load Sel-Globals first, followed by User-Globals, followed by <character>-Globals.
     -- Any functions re-defined in the later includes will overwrite the earlier versions.
-    include('Sel-GlobalItems')
     optional_include('user-globals.lua')
     optional_include(player.name..'-globals.lua')
     optional_include(player.name..'-items.lua')
@@ -268,7 +267,6 @@ function init_include()
     -- Load sidecar file
 	include(player.name..'_'..player.main_job..'_gear.lua')
 
-	
 	-- Controls for handling our autmatic functions.
 	
 	tickdelay = os.clock() + 5
@@ -421,6 +419,9 @@ function init_include()
 	
     -- Load up all the gear sets.
     init_gear_sets()
+	
+	-- Load generic items into sets and determine settings after checking what is owned as needed.
+	include('Sel-GlobalItems')
 end
 
 -- Called when this job file is unloaded (eg: job change)
@@ -444,9 +445,15 @@ if not file_unload then
     end
 end
 
--- Function to bind GearSwap binds when loading a GS script, moved to globals to seperate per character and user.
+-- Non item-based global settings to check on load.
 function global_on_load()
-
+	if world.area then
+		if world.area:contains('Abyssea') or areas.ProcZones:contains(world.area) then
+			state.SkipProcWeapons:set('False')
+		else
+			state.SkipProcWeapons:reset()
+		end
+	end
 end
 
 -- Function to revert binds when unloading.
@@ -1370,20 +1377,16 @@ function get_idle_set(petStatus)
     mote_vars.set_breadcrumbs:append('sets')
     mote_vars.set_breadcrumbs:append('idle')
     
-    local idleScope
-
-    if buffactive.weakness then
-        idleScope = 'Weak'
-    else
-        idleScope = 'Field'
-    end
-
-    if idleSet[idleScope] then
-        idleSet = idleSet[idleScope]
-        mote_vars.set_breadcrumbs:append(idleScope)
-    end
+    if buffactive.weakness and sets.idle.Weak then
+		idleSet = sets.idle.Weak
+		mote_vars.set_breadcrumbs:append('Weak')
+	end
 
     if not (player.in_combat or being_attacked) and (state.IdleMode.current:contains('DT') or state.IdleMode.current:contains('Tank')) then
+		if state.NonCombatIdleMode and idleSet[state.NonCombatIdleMode.current] then
+			idleSet = idleSet[state.NonCombatIdleMode.current]
+			mote_vars.set_breadcrumbs:append(state.NonCombatIdleMode.current)
+		end
 	elseif idleSet[state.IdleMode.current] then
 		idleSet = idleSet[state.IdleMode.current]
 		mote_vars.set_breadcrumbs:append(state.IdleMode.current)

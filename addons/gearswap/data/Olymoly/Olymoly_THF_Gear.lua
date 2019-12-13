@@ -41,7 +41,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
     --------------------------------------
     -- Special sets (required by rules)
     --------------------------------------
@@ -370,11 +370,11 @@ function init_gear_sets()
         back=gear.da_jse_back, waist="Fotia Belt",legs="Plun. Culottes +3",feet="Plun. Poulaines +3"})
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
-        head=gear_herculean_nuke_head, neck="Fotia Gorget",ear1="Friomisi Earring",ear2="Moonshade Earring",
+        head=gear.herculean_nuke_head, neck="Fotia Gorget",ear1="Friomisi Earring",ear2="Moonshade Earring",
 		-- Herculean Gloves NT/DEX, WSD, MAB rring="Karieyh Ring +1"
         body="Samnuha Coat",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",rring="Dingir Ring",
-        --  legs=gear_herculean_nuke_legs NT/DEX, WSD, MAB mab feet=gear_herculean_nuke_feet NT/DEX, WSD, MAB
-		back=gear.wsd_jse_back, waist="Eschan Stone", legs=gear_herculean_nuke_legs,feet="Lustra. Leggings +1"}
+        --  legs=gear.herculean_nuke_legs NT/DEX, WSD, MAB mab feet=gear.herculean_nuke_feet NT/DEX, WSD, MAB
+		back=gear.wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs,feet="Lustra. Leggings +1"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 	
@@ -436,7 +436,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
 		-- Herculean Helm
         head="Haruspex Hat +1",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
-        body=gear_taeon_body_Fastcast,hands="Leyline Gloves",ring1="Dark Ring",ring2="Defending Ring",
+        body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Tempus Fugit",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     -- Specific spells

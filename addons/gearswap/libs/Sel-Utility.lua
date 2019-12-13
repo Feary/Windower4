@@ -174,12 +174,6 @@ function refine_waltz(spell, spellMap, eventArgs)
 		return
     end
 
-	if sets.precast.Waltz and sets.precast.Waltz.legs and (sets.precast.Waltz.legs == "Desultor Tassets" or sets.precast.Waltz.legs == "Blitzer Poleyn" or sets.precast.Waltz.legs == "Tatsumaki Sitagoromo") then
-		waltz_tp_cost = {['Curing Waltz'] = 150, ['Curing Waltz II'] = 300, ['Curing Waltz III'] = 450, ['Curing Waltz IV'] = 600, ['Curing Waltz V'] = 750}
-	else
-		waltz_tp_cost = {['Curing Waltz'] = 200, ['Curing Waltz II'] = 350, ['Curing Waltz III'] = 500, ['Curing Waltz IV'] = 650, ['Curing Waltz V'] = 800}
-	end
-	
     -- Don't modify anything for Healing Waltz or Divine Waltzes
     if spell.english == "Healing Waltz" or spell.english == "Divine Waltz" or spell.english == "Divine Waltz II" then
         return
@@ -258,7 +252,11 @@ function refine_waltz(spell, spellMap, eventArgs)
         end
     end
 
-    local tpCost = waltz_tp_cost[newWaltz]
+	local tpCost = waltz_tp_cost[newWaltz]
+
+	if state.DefenseMode.value == 'None' and uses_waltz_legs then
+		tpCost = tpCost - 50
+	end
 
     local downgrade
     
@@ -608,6 +606,7 @@ function optional_include(filename)
 	if path then
 		include(filename)
 	else
+		print('Missing optional file: '..filename..'')
 		return false
     end
 end
@@ -918,6 +917,14 @@ end
 
 function item_available(item)
 	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] then
+		return true
+	else
+		return false
+	end
+end
+
+function item_owned(item)
+	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] or player.safe[item] or player.safe2[item] or player.storage[item] or player.locker[item] or player.satchel[item] or player.sack[item] or player.case[item] then
 		return true
 	else
 		return false

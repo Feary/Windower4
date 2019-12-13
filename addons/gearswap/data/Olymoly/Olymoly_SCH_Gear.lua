@@ -59,7 +59,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
 
     --------------------------------------
     -- Start defining the sets
@@ -124,19 +124,19 @@ function init_gear_sets()
     sets.midcast.Cure = {main="Tamaxchi", sub="Sors Shield", ammo="Hasty Pinion +1",
 		--main="Serenity",sub="Enki Strap",
         head="Vanya Hood",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
-        body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
-        back="Tempered Cape +1",waist="Bishop's Sash",legs=gear_chironic_cure_legs,feet="Kaykaus Boots"}
+        body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
+        back="Tempered Cape +1",waist="Bishop's Sash",legs=gear.chironic_cure_legs,feet="Kaykaus Boots"}
 
     sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Enki Strap",ammo="Hasty Pinion +1",
         head="Vanya Hood",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
-        body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
-        back="Tempered Cape +1",waist="Hachirin-no-Obi",legs=gear_chironic_cure_legs,feet="Kaykaus Boots"}
+        body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
+        back="Tempered Cape +1",waist="Hachirin-no-Obi",legs=gear.chironic_cure_legs,feet="Kaykaus Boots"}
 		
     sets.midcast.LightDayCure = {main="Tamaxchi", sub="Sors Shield", ammo="Hasty Pinion +1",
 		--main="Serenity",sub="Enki Strap",
         head="Vanya Hood",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
-        body="Heka's Kalasiris",hands=gear_telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
-        back="Tempered Cape +1",waist="Hachirin-no-Obi",legs=gear_chironic_cure_legs,feet="Kaykaus Boots"}
+        body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
+        back="Tempered Cape +1",waist="Hachirin-no-Obi",legs=gear.chironic_cure_legs,feet="Kaykaus Boots"}
 
     sets.midcast.Curaga = sets.midcast.Cure
 
@@ -156,9 +156,9 @@ function init_gear_sets()
 	-- 500 Skill
 	sets.midcast['Enhancing Magic'] = {main="Kirin's Pole", sub="Fulcio Grip", ammo="Savant's Treatise",
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
-		head=gear_telchine_head_Duration,neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Augment. Earring",
-		body=gear_telchine_body_Duration,hands=gear_telchine_hands_Duration,ring1="Stikini Ring",ring2="Stikini Ring",
-		back="Fi Follet Cape +1",waist="Olympus Sash",legs=gear_telchine_legs_Duration,feet=gear_telchine_feet_Duration}
+		head=gear.telchine_head_Duration,neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Augment. Earring",
+		body=gear.telchine_body_Duration,hands=gear.telchine_hands_Duration,ring1="Stikini Ring",ring2="Stikini Ring",
+		back="Fi Follet Cape +1",waist="Olympus Sash",legs=gear.telchine_legs_Duration,feet=gear.telchine_feet_Duration}
 
     sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {back=gear.FC_jse_back})
 
@@ -184,12 +184,12 @@ function init_gear_sets()
 	sets.midcast['Enfeebling Magic'] = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
         body="Amalric Doublet +1",hands="Volte Bracers",ring1="Kishar Ring",ring2="Stikini Ring",
-        back=gear.nuke_jse_back,waist="Rumination Sash",legs=gear_chironic_macc_legs,feet="Skaoi Boots"}
+        back=gear.nuke_jse_back,waist="Rumination Sash",legs=gear.chironic_macc_legs,feet="Skaoi Boots"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
         body="Amalric Doublet +1",hands="Volte Bracers",ring1="Stikini Ring",ring2="Stikini Ring",		
-        back=gear.nuke_jse_back,waist="Rumination Sash",legs=gear_chironic_macc_legs,feet="Skaoi Boots"}
+        back=gear.nuke_jse_back,waist="Rumination Sash",legs=gear.chironic_macc_legs,feet="Skaoi Boots"}
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif +1",ear2="Barkaro. Earring",back=gear.nuke_jse_back,})--waist="Acuity Belt +1"
     sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif +1",ear2="Barkaro. Earring",back=gear.nuke_jse_back,})--waist="Acuity Belt +1"
@@ -213,7 +213,7 @@ function init_gear_sets()
         head="Amalric Coif +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Volte Bracers",ring1="Stikini Ring",ring2="Stikini Ring",
 		--waist="Acuity Belt +1",
-        back=gear.nuke_jse_back,waist="Luminary Sash",legs=gear_chironic_macc_legs,feet="Amalric Nails +1"}
+        back=gear.nuke_jse_back,waist="Luminary Sash",legs=gear.chironic_macc_legs,feet="Amalric Nails +1"}
 
 	-- 300 INT
     sets.midcast.Kaustra = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
@@ -235,13 +235,13 @@ function init_gear_sets()
         head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Barkaro. Earring",
         --ring1="Evanescence Ring"
 		body="Amalric Doublet +1",hands="Volte Bracers",ring1="Stikini Ring",ring2="Archon Ring",
-        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear_chironic_macc_legs,feet="Mallquis Clogs +2"}
+        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear.chironic_macc_legs,feet="Mallquis Clogs +2"}
 		
     sets.midcast.Drain.Resistant = {main="Rubicundity",ammo="Pemphredo Tathlum",
 		--sub="Ammurapi Shield",
         head="Amalric Coif +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands=gear.chironic_enfeeble_hands,ring1="Stikini Ring",ring2="Stikini Ring",
-        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs=gear_chironic_macc_legs,feet="Mallquis Clogs +2"}
+        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs=gear.chironic_macc_legs,feet="Mallquis Clogs +2"}
 
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
@@ -251,32 +251,32 @@ function init_gear_sets()
         -- body="Zendik Robe",
 		body="Anhur Robe",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Stikini Ring",
 		-- legs="Psycloth Lappas",
-        back=gear.nuke_jse_back,waist="Witful Belt", legs=gear_chironic_macc_legs, feet="Amalric Nails +1"}
+        back=gear.nuke_jse_back,waist="Witful Belt", legs=gear.chironic_macc_legs, feet="Amalric Nails +1"}
 
     sets.midcast.Stun.Resistant = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Amalric Coif +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Barkaro. Earring",
         -- body="Zendik Robe",
 		body="Anhur Robe",hands="Volte Bracers",ring1="Stikini Ring",ring2="Stikini Ring",
 		--waist="Acuity Belt +1",
-        back=gear.nuke_jse_back,waist="Witful Belt",legs=gear_chironic_macc_legs,feet="Amalric Nails +1"}
+        back=gear.nuke_jse_back,waist="Witful Belt",legs=gear.chironic_macc_legs,feet="Amalric Nails +1"}
 
     -- Elemental Magic sets are default for handling low-tier nukes.
     sets.midcast['Elemental Magic'] = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		--main="Akademos",sub="Zuuxowu Grip",ammo="Dosis Tathlum",
 		--neck="Saevus Pendant +1",
-        head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Crematio Earring",ear2="Friomisi Earring",
+        head=gear.merlinic_nuke_head,neck="Sanctity Necklace", ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Amalric Slops +1",feet="Amalric Nails +1"}
 
     sets.midcast['Elemental Magic'].Resistant = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",
-        head=gear_merlinic_nuke_head,neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Barkaro. Earring",
+        head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		--main="Akademos",sub="Zuuxowu Grip",ammo="Dosis Tathlum",
-        head=gear_merlinic_nuke_head,neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Barkaro. Earring",
+        head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
@@ -290,45 +290,45 @@ function init_gear_sets()
 		--neck="Combatant's Torque",
         --head="Mall. Chapeau +2",
 		neck="Lissome Necklace", ear1="Dedition Earring",ear2="Telos Earring",
-        --body=gear_helios_body_occult,
-		body="Amalric Doublet +1", hands=gear_helios_hands_Occult,ring1="Rajas Ring",ring2="Petrov Ring",
+        --body=gear.helios_body_occult,
+		body="Amalric Doublet +1", hands=gear.helios_hands_Occult,ring1="Rajas Ring",ring2="Petrov Ring",
 		--waist="Oneiros Rope",legs="Perdition Slops",
-        back=gear.nuke_jse_back,feet=gear_helios_feet_occult}
+        back=gear.nuke_jse_back,feet=gear.helios_feet_occult}
 		
     -- Custom refinements for certain nuke tiers
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {ammo="Pemphredo Tathlum",
 		--main="Akademos",sub="Niobid Strap",
-		head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
+		head=gear.merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Amalric Slops +1",feet="Amalric Nails +1"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {ammo="Pemphredo Tathlum",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",
-		head=gear_merlinic_nuke_head,neck="Sanctity Necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
+		head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {
-		head=gear_merlinic_nuke_head,neck="Sanctity Necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
+		head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Amalric Slops +1",feet="Amalric Nails +1"})
 
 	sets.midcast.Helix = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		--main="Akademos",ammo="Dosis Tathlum",
 		--neck="Saevus Pendant +1",
-        head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
+        head=gear.merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		-- Refoccilation Stone
         back="Bookworm Cape",waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 	
 	sets.midcast.Helix.Resistant = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
-		head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
+		head=gear.merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		-- waist="Acuity Belt +1",
         back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 	
 	sets.midcast.Helix.Burst = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
-		head=gear_merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
+		head=gear.merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		-- waist="Acuity Belt +1",
         back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
@@ -343,7 +343,7 @@ function init_gear_sets()
 		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Barkaro. Earring",
 		body="Twilight Cloak",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- waist="Acuity Belt +1",
-		back=gear.nuke_jse_back,waist="Yamabuki-no-Obi", legs=gear_chironic_macc_legs,feet="Amalric Nails +1"}
+		back=gear.nuke_jse_back,waist="Yamabuki-no-Obi", legs=gear.chironic_macc_legs,feet="Amalric Nails +1"}
 		
     sets.midcast.Impact.OccultAcumen = set_combine(sets.midcast['Elemental Magic'].OccultAcumen, {head=empty,body="Twilight Cloak"})
 		
@@ -353,7 +353,7 @@ function init_gear_sets()
     sets.resting = {main="Chatoyant Staff", ammo="Homiliary", -- sub="Oneiros Grip",
 		--neck="Chrys. Torque",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Amalric Doublet +1",hands=gear_merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
+		body="Amalric Doublet +1",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
 		back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
 
@@ -361,7 +361,7 @@ function init_gear_sets()
 
     sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		-- hands=gear_merlinic_refresh_hands,
+		-- hands=gear.merlinic_refresh_hands,
         body="Jhakri Robe +2",hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		-- waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Amalric Nails +1"}
@@ -377,7 +377,7 @@ function init_gear_sets()
 
     sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		--hands=gear_merlinic_refresh_hands,
+		--hands=gear.merlinic_refresh_hands,
         body="Jhakri Robe +2",hands="Volte Bracers",ring1="Defending Ring",ring2="Dark Ring",
 		--feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Amalric Nails +1"}
@@ -399,7 +399,7 @@ function init_gear_sets()
     sets.defense.MEVA = {main="Mafic Cudgel", sub="Genbu's Shield", ammo="Staunch Tathlum",
 		--sub="Umbra Strap",
 		--ear2="Sanare Earring",
-        head=gear_merlinic_nuke_head,neck="Warder's Charm +1",ear1="Etiolation Earring",
+        head=gear.merlinic_nuke_head,neck="Warder's Charm +1",ear1="Etiolation Earring",
         body="Amalric Doublet +1",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Purity Ring",
 		--waist="Acuity Belt +1",
         back=gear.nuke_jse_back,legs="Amalric Slops +1",feet="Amalric Nails +1"}
@@ -419,7 +419,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {main="Tokko Rod",sub="Genbu's Shield",ammo="Homiliary",
         head="Chironic Hat",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Digni. Earring",
-		--hands=gear_merlinic_refresh_hands,
+		--hands=gear.merlinic_refresh_hands,
         body="Jhakri Robe +2",hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Eschan Stone", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
@@ -427,7 +427,7 @@ function init_gear_sets()
 	sets.engaged.PDT = {main="Tokko Rod", sub="Genbu's Shield", ammo="Staunch Tathlum",
 		-- sub="Oneiros Grip", 	
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		--hands=gear_merlinic_refresh_hands,
+		--hands=gear.merlinic_refresh_hands,
         body="Mallquis Saio +2", hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Eschan Stone", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}

@@ -60,7 +60,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
     --------------------------------------
     -- Start defining the sets
     --------------------------------------
@@ -144,7 +144,7 @@ function init_gear_sets()
     sets.precast.FC = {
 		-- head="Carmine Mask", 
 		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring",  rear="Enchntr. Earring +1",
-		body=gear_taeon_body_Fastcast, hands="Leyline Gloves", lring="Kishar Ring", rring="Prolix Ring",
+		body=gear.taeon_body_Fastcast, hands="Leyline Gloves", lring="Kishar Ring", rring="Prolix Ring",
 		-- legs="Taeon Tights", 
 		back=gear.FC_jse_back, waist="Sarissapho. Belt", feet="Carmine Greaves +1"}
 
@@ -155,20 +155,20 @@ function init_gear_sets()
 	-- Snapshot Sets
     sets.precast.RA = {ammo=gear.RAbullet,
 		-- neck="Comm. Charm +2
-		head=gear_taeon_head_Snapshot,
+		head=gear.taeon_head_Snapshot,
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1",
 		-- legs="Laksa. Trews +3"
 		back=gear.snapshot_jse_back, waist="Impulse Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {
 		-- neck="Comm. Charm +2
-		head=gear_taeon_head_Snapshot,
+		head=gear.taeon_head_Snapshot,
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1",
 		-- legs="Laksa. Trews +3"
 		back=gear.snapshot_jse_back, waist="Impulse Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"})
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {
 		-- neck="Comm. Charm +2
-		head=gear_taeon_head_Snapshot,
+		head=gear.taeon_head_Snapshot,
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1",
 		-- legs="Laksa. Trews +3"
 		back=gear.snapshot_jse_back, waist="Impulse Belt", legs="Laksa. Trews +2", feet="Meg. Jam. +2"})

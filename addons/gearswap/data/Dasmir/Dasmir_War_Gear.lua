@@ -30,7 +30,7 @@ function user_setup()
 end
 
 -- Define sets and vars used by this job file.
-function init_gear_sets()
+function init_gear.sets()
 	--------------------------------------
 	-- Start defining the sets
 	--------------------------------------

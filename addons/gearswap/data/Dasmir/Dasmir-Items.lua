@@ -13,10 +13,10 @@ sets.precast.Item['Holy Water'] = {}
 
 -- Alluvion Skirmish Gear
 -- Taeon
-gear_taeon_head_Snapshot = {name="Taeon Chapeau", augments={'"Snapshot"+5','"Snapshot"+5',}}
+gear.taeon_head_Snapshot = {name="Taeon Chapeau", augments={'"Snapshot"+5','"Snapshot"+5',}}
 
 -- Body
-gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'"Fast Cast"+5',}}
+gear.taeon_body_Fastcast = {name="Taeon Tabard", augments={'"Fast Cast"+5',}}
 
 -- Telchine
 -- Head 1/1
@@ -26,48 +26,48 @@ gear_taeon_body_Fastcast = {name="Taeon Tabard", augments={'"Fast Cast"+5',}}
 -- Feet 2/2
 
 -- Head -- Leaforb
-gear_telchine_head_Duration = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
-gear_telchine_head_Siphon = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_head_Duration = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_head_Siphon = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
 
 -- Body  Leaforb 
-gear_telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
-gear_telchine_body_Siphon = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_body_Siphon = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}
 
 --Hands 
-gear_telchine_hands_Cure = { name="Telchine Gloves",augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
-gear_telchine_hands_Duration = { name="Telchine Gloves",augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
+gear.telchine_hands_Cure = { name="Telchine Gloves",augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
+gear.telchine_hands_Duration = { name="Telchine Gloves",augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
 
 -- Legs Leaforb
-gear_telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
-gear_telchine_legs_Siphon = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_legs_Siphon = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
 
 -- Feet 
-gear_telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}}
 -- DuskDim
-gear_telchine_feet_Regen = { name="Telchine Pigaches", augments={'"Regen" potency+3',}}
+gear.telchine_feet_Regen = { name="Telchine Pigaches", augments={'"Regen" potency+3',}}
 
 -- Helios 
 -- Head 1/1
 -- Hands 2/2
 
 -- Head occult
-gear_helios_head_occult = { name="Helios Band", augments={'Pet: Attack+26 Pet: Rng.Atk.+26','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
+gear.helios_head_occult = { name="Helios Band", augments={'Pet: Attack+26 Pet: Rng.Atk.+26','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
 -- Snoworb Leaforb Duskorb
 -- name="Helios Band", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+7',}},
-gear_helios_head_BP = {name="Helios Band", augments={'Pet: Attack+26 Pet: Rng.Atk.+26','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
+gear.helios_head_BP = {name="Helios Band", augments={'Pet: Attack+26 Pet: Rng.Atk.+26','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
 
 -- Body 
 -- Occult Acumen
-gear_helios_body_occult = {name="Helios Jacket", augments={''}}
+gear.helios_body_occult = {name="Helios Jacket", augments={''}}
 
 --Hands
-gear_helios_hands_FC = { name="Helios Gloves", augments={'"Fast Cast"+5',}}
+gear.helios_hands_FC = { name="Helios Gloves", augments={'"Fast Cast"+5',}}
 
 -- Legs 
 
 -- Feet
 -- MAB 20 MACC 20 Snowdim Occult Acumen +1~10 Leafdim
-gear_helios_feet_occult = { name="Helios Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','"Occult Acumen"+10',}}
+gear.helios_feet_occult = { name="Helios Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','"Occult Acumen"+10',}}
 
 
 gear.gada_enhancing_club = {name="Gada", augments={'"Mag.Atk.Bns."+24','Phys. dmg. taken -3%','"Refresh"+1',}}
@@ -76,9 +76,9 @@ gear.gada_refresh_club = {name="Gada", augments={'"Mag.Atk.Bns."+24','Phys. dmg.
 
 
 --gear.grioavolr_nuke_staff = {name="Grioavolr",augments={'Magic burst dmg.+8%','MP+61','Mag. Acc.+16','"Mag.Atk.Bns."+30','Magic Damage +7',}}
-gear_grioavolr_refresh_staff = {name="Grioavolr", augments={'Mag. Acc.+5','MND+10','"Refresh"+1',}}
+gear.grioavolr_refresh_staff = {name="Grioavolr", augments={'Mag. Acc.+5','MND+10','"Refresh"+1',}}
 --augments={'"Fast Cast"+7','MP+20','Mag. Acc.+17','"Mag.Atk.Bns."+10','Magic Damage +5',}}
-gear.grioavolr_fc_staff = {"Grioavolr"}
+gear.grioavolr_fc_staff = "Grioavolr"
 --gear.grioavolr_pet_staff = {name="Grioavolr",augments={'Blood Pact Dmg.+8','Pet: STR+10','Pet: Mag. Acc.+19','Pet: "Mag.Atk.Bns."+30',}}
 
 --gear.chironic_enfeeble_hands = {name="Chironic Gloves",augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','MND+10','Mag. Acc.+15',}}
@@ -110,15 +110,15 @@ gear.herculean_wsd_body = {name="Herculean Vest", augments={'INT+7','Pet: "Mag.A
 --gear.herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23','Rng.Acc.+14','Phalanx +1','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
 --gear.herculean_refresh_feet = {name="Herculean Boots",augments={'CHR+8','Rng.Acc.+7','"Refresh"+1','Mag. Acc.+17 "Mag.Atk.Bns."+17',}}
 
---gear_merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','INT+15','Mag. Acc.+3','"Mag.Atk.Bns."+13',}}
+--gear.merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','INT+15','Mag. Acc.+3','"Mag.Atk.Bns."+13',}}
 --gear.merlinic_nuke_body = {name="Merlinic Jubbah",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Occult Acumen"+4','INT+10','Mag. Acc.+2','"Mag.Atk.Bns."+15',}}
 
-gear_merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'MND+9','AGI+2','"Refresh"+2','Accuracy+14 Attack+14',}}
-gear_merlinic_magpact_hands = {name="Merlinic Dastanas",  augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8','Pet: INT+15',}}
+gear.merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'MND+9','AGI+2','"Refresh"+2','Accuracy+14 Attack+14',}}
+gear.merlinic_magpact_hands = {name="Merlinic Dastanas",  augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8','Pet: INT+15',}}
 -- Apogee Mitts Path D
-gear_merlinic_maccpact_hands = {name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+21','Blood Pact Dmg.+10','Pet: "Mag.Atk.Bns."+6',}}
-gear_merlinic_physpact_hands = {name="Merlinic Dastanas", augments={'Pet: Attack+20 Pet: Rng.Atk.+20','Blood Pact Dmg.+9','Pet: Mag. Acc.+11','Pet: "Mag.Atk.Bns."+11',}}
-gear_merlinic_accpact_hands = {name="Merlinic Dastanas",  augments={'Pet: Accuracy+17 Pet: Rng. Acc.+17','Blood Pact Dmg.+10','Pet: DEX+9','Pet: "Mag.Atk.Bns."+6',}}
+gear.merlinic_maccpact_hands = {name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+21','Blood Pact Dmg.+10','Pet: "Mag.Atk.Bns."+6',}}
+gear.merlinic_physpact_hands = {name="Merlinic Dastanas", augments={'Pet: Attack+20 Pet: Rng.Atk.+20','Blood Pact Dmg.+9','Pet: Mag. Acc.+11','Pet: "Mag.Atk.Bns."+11',}}
+gear.merlinic_accpact_hands = {name="Merlinic Dastanas",  augments={'Pet: Accuracy+17 Pet: Rng. Acc.+17','Blood Pact Dmg.+10','Pet: DEX+9','Pet: "Mag.Atk.Bns."+6',}}
 
 --gear.merlinic_nuke_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Conserve MP"+1','INT+11','Mag. Acc.+3','"Mag.Atk.Bns."+15',}}
 --gear.merlinic_aspir_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +10','Mag. Acc.+15',}}

@@ -19,6 +19,15 @@ elements.quickdraw = {['Fire']='Fire', ['Ice']='Ice', ['Wind']='Wind', ['Earth']
 		
 elements.enspell = {['Fire']='Fire', ['Ice']='Blizzard', ['Wind']='Aero', ['Earth']='Stone',
         ['Lightning']='Thunder', ['Water']='Water', ['Light']='Light', ['Dark']='Dark',}
+
+enspells = S{'Enthunder','Enstone','Enaero','Enblizzard','Enfire','Enwater','Enlight','Endark',
+		'Enthunder II','Enstone II','Enaero II','Enblizzard II','Enfire II','Enwater II','Enlight II','Endark II',}
+
+enspell_lookup = {['Enthunder']='Thunder', ['Enstone']='Earth', ['Enaero']='Wind', ['Enblizzard']='Ice',
+		['Enfire']='Fire', ['Enwater']='Water', ['Enlight']='Light', ['Endark']='Dark',	
+		['Enthunder II']='Thunder', ['Enstone II']='Earth', ['Enaero II']='Wind', 
+		['Enblizzard II']='Ice', ['Enfire II']='Fire', ['Enwater II']='Water', ['Enlight II']='Light', 
+		['Endark II']='Dark'}
 		
 elements.ninnuke = {['Fire']='Katon', ['Ice']='Hyoton', ['Wind']='Huton', ['Earth']='Doton',
         ['Lightning']='Raiton', ['Water']='Suiton', ['Dark']='Kurayami',}
