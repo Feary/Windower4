@@ -149,7 +149,7 @@ function init_gear_sets()
 		body="Viti. Tabard +1", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring", 
 		back=gear.nuke_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Carmine Greaves +1"})
 
-    sets.midcast.Cure = {main={name="Tamaxchi", priority=2}, sub={name="Thuellaic Ecu +1", priority=1}, ammo="Regal Gem",
+    sets.midcast.Cure = {main="Tamaxchi", sub="Thuellaic Ecu +1", ammo="Regal Gem",
 		--head="Vanya Hood", neck="Incanter's Torque", lear="Mendi. Earring",
 		head="Atro. Chapeau +2", neck="Colossus's Torque", lear="Roundel Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring 
@@ -157,7 +157,7 @@ function init_gear_sets()
 		-- Atrophy Tights +3 Vanya Clogs
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Atrophy Tights +2", feet="Carmine Greaves +1"}
 
-    sets.midcast.LightWeatherCure = {main={name="Iridal Staff", priority=2}, sub={name="Clerisy Strap +1", priority=1}, ammo="Regal Gem",
+    sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Clerisy Strap +1", ammo="Regal Gem",
 		--head="Vanya Hood",
 		head="Atro. Chapeau +2", neck="Colossus's Torque", lear="Roundel Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring
@@ -166,7 +166,7 @@ function init_gear_sets()
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Atrophy Tights +2", feet="Carmine Greaves +1"}
 	
 		--Cureset for if it's not light weather but is light day.
-    sets.midcast.LightDayCure = {main={name="Tamaxchi", priority=2}, sub={name="Thuellaic Ecu +1", priority=1}, ammo="Regal Gem",
+    sets.midcast.LightDayCure = {main="Tamaxchi", sub="Thuellaic Ecu +1", ammo="Regal Gem",
 		-- head="Vanya Hood", lear="Mendi. Earring",
 		head="Atro. Chapeau +2", neck="Colossus's Torque", lear="Roundel Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Cuffs Haoma's Ring Sirona's Ring
@@ -196,7 +196,7 @@ function init_gear_sets()
 	sets.Self_Refresh = {}--back="Grapevine Cape",waist="Gishdubar Sash"
 	
 	-- Duration
-	sets.midcast['Enhancing Magic'] = {sub="Ammurapi Shield", ammo="Hasty Pinion +1",
+	sets.midcast['Enhancing Magic'] = {main="Naegling", sub="Ammurapi Shield", ammo="Hasty Pinion +1",
 		-- main="Pukulatmuj +1",
 		-- Duelist's Torque +2  rear="Augment. Earring",
 		head=gear.telchine_head_Duration, neck="Colossus's Torque", ear1="Andoaa Earring", 
@@ -206,7 +206,7 @@ function init_gear_sets()
 		back=gear.JSE_Cape, waist="Cascade Belt", legs=gear.telchine_legs_Duration, feet="Leth. Houseaux +1"}
 
 	--Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
-	sets.buff.ComposureOther = {sub="Ammurapi Shield", ammo="Hasty Pinion +1",
+	sets.buff.ComposureOther = {main="Naegling", sub="Ammurapi Shield", ammo="Hasty Pinion +1",
 		--main="Pukulatmuj +1",		
 		--Duelist's Torque +2 neck="Incanter's Torque", rear="Augment. Earring",
 		head="Leth. Chappel +1", neck="Colossus's Torque", ear1="Andoaa Earring", 
@@ -216,7 +216,7 @@ function init_gear_sets()
 		back=gear.JSE_Cape, waist="Cascade Belt", legs="Leth. Fuseau +1", feet="Leth. Houseaux +1"}
 	
 	-- Phalanx Potency
-	sets.midcast.Phalanx = {sub="Ammurapi Shield", ammo="Hasty Pinion +1",
+	sets.midcast.Phalanx = {main="Naegling", sub="Ammurapi Shield", ammo="Hasty Pinion +1",
 		head=gear.taeon_head_Phalanx, neck="Colossus's Torque", ear1="Andoaa Earring", ear2="Gifted Earring", 
 		-- Vitiation Tabard +3 Stikini Ring +1 Stikini Ring +1
 		body=gear.telchine_body_Duration, hands=gear.taeon_hands_Phalanx, ring1="Stikini Ring", ring2="Stikini Ring",
@@ -224,7 +224,7 @@ function init_gear_sets()
 		back=gear.JSE_Cape, waist="Cascade Belt", legs=gear.taeon_legs_Phalanx, feet=gear.taeon_feet_Phalanx}
 		
 	-- Enhancing Magic Skill set
-	sets.midcast['Temper'] = {sub="Ammurapi Shield", ammo="Hasty Pinion +1",
+	sets.midcast['Temper'] = {main="Naegling", sub="Ammurapi Shield", ammo="Hasty Pinion +1",
 		--main="Pukulatmuj +1",sub="Arendsi Fleuret",		
 		--neck="Incanter's Torque", Duelist's Torque +2  rear="Augment. Earring",
 		head="Befouled Crown", neck="Colossus's Torque", ear1="Andoaa Earring",
@@ -232,7 +232,7 @@ function init_gear_sets()
 		body="Viti. Tabard +1",hands="Viti. Gloves +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- Atrophy Tights +3 Olympus Sash
 		back=gear.JSE_Cape,waist="Cascade Belt",legs="Atrophy Tights +2",feet="Leth. Houseaux +1"}
-	sets.midcast['Temper II'] = {sub="Ammurapi Shield", ammo="Hasty Pinion +1",
+	sets.midcast['Temper II'] = {main="Naegling",  sub="Ammurapi Shield", ammo="Hasty Pinion +1",
 		--main="Pukulatmuj +1",sub="Arendsi Fleuret",		
 		-- Duelist's Torque +2 ear2="Augment. Earring",
 		head="Befouled Crown",neck="Colossus's Torque",ear1="Andoaa Earring", 
@@ -250,7 +250,7 @@ function init_gear_sets()
 	sets.midcast.Protect = {ring2="Sheltered Ring"}
 	sets.midcast.Shell = {ring2="Sheltered Ring"}
 	
-	sets.midcast['Enfeebling Magic'] = {main={name="Naegling", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Regal Gem",
+	sets.midcast['Enfeebling Magic'] = {main="Naegling", sub="Ammurapi Shield", ammo="Regal Gem",
 			--   Duelist's Torque +3 neck="Incanter's Torque",  lear="Digni. Earring", 
 			head="Atro. Chapeau +2", neck="Erra Pendant", lear="Enchntr. Earring +1", rear="Regal Earring", 
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
@@ -258,7 +258,7 @@ function init_gear_sets()
 			--  legs=gear.chironic_macc_legs,
 			back=gear.Macc_jse_back, waist="Luminary Sash", legs="Aya. Cosciales +2", feet="Vitiation Boots +1"}
 	
-	sets.midcast['Enfeebling Magic'].Resistant = {main={name="Naegling", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Regal Gem",
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Naegling", sub="Ammurapi Shield", ammo="Regal Gem",
 			--   Duelist's Torque +3 neck="Incanter's Torque",  lear="Digni. Earring", 
 			head="Atro. Chapeau +2", neck="Erra Pendant", lear="Enchntr. Earring +1", rear="Regal Earring", 
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
@@ -300,7 +300,7 @@ function init_gear_sets()
 
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 
-    sets.midcast['Elemental Magic'] = {main={name="Naegling", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum", 
+    sets.midcast['Elemental Magic'] = {main="Naegling", sub="Ammurapi Shield", ammo="Pemphredo Tathlum", 
 		-- gear.merlinic_nuke_head
 		head="Atro. Chapeau +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Doublet +1 Amalric Gages +1  Shiva Ring +1 Shiva Ring +1
@@ -308,7 +308,7 @@ function init_gear_sets()
 		-- Eschan Belt Amalric Slops +1
 		back=gear.nuke_jse_back, waist="Acuity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
 
-    sets.midcast['Elemental Magic'].Resistant = {main={name="Naegling", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Regal Gem", 
+    sets.midcast['Elemental Magic'].Resistant = {main="Naegling", sub="Ammurapi Shield", ammo="Regal Gem", 
 		-- gear.merlinic_nuke_head
 		head="Atro. Chapeau +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Doublet +1
@@ -330,7 +330,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {})
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {})
 		
-	sets.midcast.Impact = {main={name="Naegling", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Regal Gem", 
+	sets.midcast.Impact = {main="Naegling", sub="Ammurapi Shield", ammo="Regal Gem", 
 		-- Duelist Torque +2
 		head=empty, neck="Erra Pendant", lear="Enchntr. Earring +1", rear="Regal Earring",
 		-- Regal Cuffs Stikini Ring +1 Stikini Ring +1

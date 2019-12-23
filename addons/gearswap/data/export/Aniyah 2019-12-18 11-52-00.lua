@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}},
+    sub="Kaja Grip",
+    ammo="Sancus Sachet +1",
+    head="Convoker's Horn +3",
+    body="Councilor's Garb",
+    hands="Asteria Mitts +1",
+    legs="Assid. Pants +1",
+    feet="Herald's Gaiters",
+    neck="Caller's Pendant",
+    waist="Fucho-no-Obi",
+    left_ear="Andoaa Earring",
+    right_ear="Enmerkar Earring",
+    left_ring="Evoker's Ring",
+    right_ring="Defending Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+45%','HP+28','"Mag.Atk.Bns."+3','DEF+10',}},
+}

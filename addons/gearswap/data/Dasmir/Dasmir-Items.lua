@@ -72,7 +72,7 @@ gear.helios_feet_occult = { name="Helios Boots", augments={'Mag. Acc.+15 "Mag.At
 
 gear.gada_enhancing_club = {name="Gada", augments={'"Mag.Atk.Bns."+24','Phys. dmg. taken -3%','"Refresh"+1',}}
 gear.gada_refresh_club = {name="Gada", augments={'"Mag.Atk.Bns."+24','Phys. dmg. taken -3%','"Refresh"+1',}}
---gear.gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+11','"Mag.Atk.Bns."+13','DMG:+3',}}
+gear.gada_healing_club = {name="Gada", augments={'"Mag.Atk.Bns."+24','Phys. dmg. taken -3%','"Refresh"+1',}}
 
 
 --gear.grioavolr_nuke_staff = {name="Grioavolr",augments={'Magic burst dmg.+8%','MP+61','Mag. Acc.+16','"Mag.Atk.Bns."+30','Magic Damage +7',}}

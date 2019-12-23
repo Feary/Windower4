@@ -1,0 +1,5 @@
+get Mall. Chapeau +2 case all
+get Mallquis Clogs +2 case all
+get Mallquis Cuffs +2 case all
+get Mallquis Saio +2 case all
+get Mallquis Trews +2 case all

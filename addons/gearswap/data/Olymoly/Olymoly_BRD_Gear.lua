@@ -222,7 +222,7 @@ function init_gear_sets()
 	-- For song buffs (Full Duration, AF3 set bonus, DT)
 	sets.midcast.SongEffect = {
 		-- Genmei's Shield
-		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+		main="Carnwenhan", sub="Genbu's Shield", range="Gjallarhorn",
 		-- Genmei Earring
 		head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Genmei Earring", rear="Etiolation Earring",
 		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Dark Ring", rring="Defending Ring",
@@ -233,7 +233,7 @@ function init_gear_sets()
 	-- For song debuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {range="Gjallarhorn",
 		-- Ammurapi Shield
-		main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
+		main="Carnwenhan", sub="Genbu's Shield",
 		--Brioso Roundlet +3
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
@@ -241,7 +241,7 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
-	sets.midcast.ResistantSongDebuff = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Shield", priority=1},
+	sets.midcast.ResistantSongDebuff = {main="Carnwenhan", sub="Genbu's Shield",
 		-- Brioso Roundlet +3 
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		--Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
@@ -265,7 +265,7 @@ function init_gear_sets()
 
 	-- Other general spells and classes.
 	sets.midcast.Cure = {
-		main={name="Chatoyant Staff", priority=2}, sub={name=empty, priority=1},
+		main="Chatoyant Staff", sub="Kaja Grip",
 		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
@@ -294,7 +294,7 @@ function init_gear_sets()
 		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 		
-	sets.midcast['Enhancing Magic'] = {main="Oranyan Staff", sub="Enki Strap",
+	sets.midcast['Enhancing Magic'] = {main="Oranyan Staff", sub="Clerisy Strap +1",
 		--main="Carnwenhan",sub="Ammurapi Shield",
 		head=gear.telchine_head_Duration, neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Prolix Ring",
@@ -328,39 +328,37 @@ function init_gear_sets()
 	
 	-- Sets to return to when not performing an action.
 	sets.Sheltered = {ring2="Sheltered Ring"}
-	sets.Capacity = {back={name="Mecisto. Mantle", augments={'Cap. Point+40%','HP+18','Rng.Atk.+4','DEF+13',}}}
-	sets.Warp = {ring2="Warp Ring"}
 	sets.RREar = {ear2="Reraise Earring"}
 	
 	-- Resting sets
-	sets.resting = {main={name="Chatoyant Staff", priority=2}, sub={name=empty, priority=1}, range="Gjallarhorn",
+	sets.resting = {main="Chatoyant Staff", sub="Kaja Grip", range="Gjallarhorn",
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
 	
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {main={name="Sangoma", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+	sets.idle = {main="Sangoma", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
 
-	sets.idle.Weak = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+	sets.idle.Weak = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Assiduity Pants +1", feet="Aya. Gambieras +2"}
 	
-	sets.idle.PDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+	sets.idle.PDT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1",  lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 	
 	-- Defense sets
-	sets.defense.PDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+	sets.defense.PDT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
-	sets.defense.MDT = {main={name="Mafic Cudgel", priority=2}, sub={name="Genbu's Shield", priority=1}, range="Gjallarhorn",
+	sets.defense.MDT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +2",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
@@ -374,7 +372,7 @@ function init_gear_sets()
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
-	sets.engaged = {main={name="Carnwenhan", priority=2}, sub={name="Genbu's Sheild", priority=1}, ranged=gear.Instrument_tp,
+	sets.engaged = {main="Carnwenhan", sub="Genbu's Shield",, ranged=gear.Instrument_tp,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
@@ -384,7 +382,7 @@ function init_gear_sets()
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
-	sets.engaged.DW = {main={name="Carnwenhan", priority=2}, sub={name="Twashtar", priority=1}, ranged=gear.Instrument_tp,
+	sets.engaged.DW = {main="Carnwenhan", sub="Twashtar",, ranged=gear.Instrument_tp,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
@@ -405,13 +403,4 @@ function select_default_macro_book()
 	end
 end
 
-
-function user_job_self_command(commandArgs, eventArgs)
-	--if commandArgs[1]:lower() == 'ntmmmm' then
-	
---	end
-	--if commandArgs[1]:lower() == 'p2' then
-		--windower.chat.input('/pcmd leave;wait 1;input /tell Bigtymer invite;'')
-	--end	
-end
 

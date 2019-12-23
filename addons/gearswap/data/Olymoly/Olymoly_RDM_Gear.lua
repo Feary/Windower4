@@ -145,14 +145,14 @@ function init_gear_sets()
 		body="Viti. Tabard +1", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring", 
 		back=gear.nuke_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Carmine Greaves +1"})
 
-    sets.midcast.Cure = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
+    sets.midcast.Cure = {main="Tamaxchi", sub="Sors Shield", ammo="Esper Stone +1",
 		head="Vanya Hood", neck="Incanter's Torque", lear="Mendi. Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring 
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
 		-- Vanya Clogs
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Atrophy Tights +1", feet="Kaykaus Boots"}
 
-    sets.midcast.LightWeatherCure = {main={name="Chatoyant Staff", priority=2}, sub={name="Enki Strap", priority=1}, ammo="Esper Stone +1",
+    sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Enki Strap", ammo="Esper Stone +1",
 		head="Vanya Hood", neck="Incanter's Torque",lear="Mendi. Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
@@ -160,7 +160,7 @@ function init_gear_sets()
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Atrophy Tights +1", feet="Kaykaus Boots"}
 	
 		--Cureset for if it's not light weather but is light day.
-    sets.midcast.LightDayCure = {main={name="Tamaxchi", priority=2}, sub={name="Sors Shield", priority=1}, ammo="Esper Stone +1",
+    sets.midcast.LightDayCure = {main="Tamaxchi", sub="Sors Shield", ammo="Esper Stone +1",
 		head="Vanya Hood", neck="Nodens Gorget", lear="Mendi. Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Cuffs Haoma's Ring Sirona's Ring
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
@@ -243,7 +243,7 @@ function init_gear_sets()
 	sets.midcast.Protect = {ring2="Sheltered Ring"}
 	sets.midcast.Shell = {ring2="Sheltered Ring"}
 	
-	sets.midcast['Enfeebling Magic'] = {main={name="Oranyan", priority=2}, sub={name="Kaja Grip", priority=1}, ammo="Regal Gem",
+	sets.midcast['Enfeebling Magic'] = {main="Oranyan", sub="Enki Strap", ammo="Regal Gem",
 			-- head="Atro. Chapeau +3",  Duelist's Torque +3
 			head="Carmine Mask +1", neck="Incanter's Torque", lear="Digni. Earring", rear="Regal Earring",
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
@@ -251,7 +251,7 @@ function init_gear_sets()
 			-- feet="Vitiation Boots +3"
 			back=gear.Macc_jse_back, waist="Luminary Sash", legs="Psycloth Lappas", feet="Skaoi Boots"}
 	
-	sets.midcast['Enfeebling Magic'].Resistant = {main={name="Oranyan", priority=2}, sub={name="Enki Strap", priority=1}, ammo="Regal Gem",
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Enki Strap", ammo="Regal Gem",
 			-- head="Atro. Chapeau +3",  Duelist's Torque +3
 			head="Carmine Mask +1", neck="Incanter's Torque", lear="Digni. Earring", rear="Regal Earring",
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
@@ -291,12 +291,12 @@ function init_gear_sets()
 	
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 
-    sets.midcast['Elemental Magic'] = {main={name="Oranyan", priority=2}, sub={name="Enki Strap", priority=1}, ammo="Pemphredo Tathlum", 
+    sets.midcast['Elemental Magic'] = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum", 
 		head=gear.merlinic_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring", 
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
-    sets.midcast['Elemental Magic'].Resistant = {main={name="Oranyan", priority=2}, sub={name="Enki Strap", priority=1}, ammo="Regal Gem", 
+    sets.midcast['Elemental Magic'].Resistant = {main="Oranyan", sub="Enki Strap", ammo="Regal Gem", 
 		head=gear.merlinic_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}
@@ -312,7 +312,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {})
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {})
 		
-	sets.midcast.Impact = {main={name="Oranyan", priority=2}, sub={name="Enki Strap", priority=1}, ammo="Regal Gem",
+	sets.midcast.Impact = {main="Oranyan", sub="Enki Strap", ammo="Regal Gem",
 		-- Duelist Torque +2
 		head=empty, neck="Erra Pendant", lear="Regal Earring", rear="Digni. Earring",
 		-- Regal Cuffs Stikini Ring +1 Stikini Ring +1

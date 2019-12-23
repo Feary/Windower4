@@ -25,6 +25,7 @@ lua load aecho;
 lua load AnnounceTarget;
 lua load answeringmachine;
 lua load autocontrol;
+lua load autoenterkey;
 lua load autoinvite;
 lua load autojoin;
 lua load azureSets;

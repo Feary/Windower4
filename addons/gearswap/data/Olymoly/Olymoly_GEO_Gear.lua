@@ -184,22 +184,18 @@ function init_gear_sets()
 	
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Oranyan",})--sub="Clemency Grip"
 	
-    sets.midcast['Elemental Magic'] = {main="Idris", sub={name="Ammurapi Shield",
-		-- 	main={name=gear.grioavolr_nuke_staff, priority=2}, sub={name="Niobid Strap", priority=1},    
-		main={name="Idris", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
+    sets.midcast['Elemental Magic'] = {main="Idris", sub="Ammurapi Shield", 
 		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Friomisi Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}		
 
-    sets.midcast['Elemental Magic'].Resistant = {main="Idris", sub={name="Ammurapi Shield",
-		main={name="Idris", priority=2}, sub={name="Genbu's Shield", priority=1}, ammo="Pemphredo Tathlum",
+    sets.midcast['Elemental Magic'].Resistant = {main="Idris", sub="Ammurapi Shield", 
 		head=gear.merlinic_nuke_head, neck="Erra Pendant", lear="Barkaro. Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}		
 
-    sets.midcast['Elemental Magic'].Fodder = {main="Idris", sub={name="Ammurapi Shield",
+    sets.midcast['Elemental Magic'].Fodder = {main="Idris", sub="Ammurapi Shield", 
 		-- main={name=gear.grioavolr_nuke_staff, priority=2}, sub={name="Niobid Strap", priority=1},    
-		main={name="Idris", priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
 		head=gear.merlinic_nuke_head, neck="Sanctity Necklace", lear="Friomisi Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"}		
@@ -207,29 +203,29 @@ function init_gear_sets()
 	-- High Tier Nuke
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
 		--	main={name=gear.grioavolr_nuke_staff, priority=2}, sub={name="Niobid Strap", priority=1}, 
-		main={name="Idris", priority=2}, sub={name="Ammurapi Shield", priority=1}, 
+		main="Idris", sub="Ammurapi Shield", 
 		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Friomisi Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"})	
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {
 		--main={name=gear.grioavolr_nuke_staff, priority=2}, sub={name="Niobid Strap", priority=1}, 
-		main={name="Idris", priority=2}, sub={name="Ammurapi Shield", priority=1},
+		main="Idris", sub="Ammurapi Shield", 
 		head=gear.merlinic_nuke_head, neck="Erra Pendant", lear="Barkaro. Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"})	
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder,  {
-		main={name="Idris", priority=2}, sub={name="Ammurapi Shield", priority=1}, 
+		main="Idris", sub="Ammurapi Shield",
 		head=gear.merlinic_nuke_head, neck="Erra Pendant", lear="Barkaro. Earring", rear="Regal Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Amalric Nails +1"})	
 		
-    sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+    sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",
 		-- Bagua Galero +3
         head="Bagua Galero +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Enchntr. Earring +1",
         body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Stikini Ring",
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
 		
-    sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+    sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",
 		-- Hirundinea Earring
         head="Bagua Galero +1",neck="Erra Pendant",ear1="Digni. Earring",ear2="Regal Earring",
         body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Stikini Ring",
@@ -237,19 +233,19 @@ function init_gear_sets()
     
     sets.midcast.Aspir = sets.midcast.Drain
 		
-	sets.midcast.Stun = {main="Idris",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
+	sets.midcast.Stun = {main="Idris",sub="Ammurapi Shield",
 		head="Geo. Galero +2",neck="Voltsurge Torque",ear1="Regal Earring",ear2="Enchntr. Earring +1",
         -- body="Zendik Robe",
 		body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Kishar Ring",
         back=gear.FC_jse_back,waist="Ninurta's Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
     
-	sets.midcast.Stun.Resistant = {main="Idris",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
+	sets.midcast.Stun.Resistant = {main="Idris",sub="Ammurapi Shield",
 		head="Geo. Galero +2",neck="Erra Pendant",ear1="Regal Earring",ear2="Enchntr. Earring +1",
 		-- body="Zendik Robe",
 		body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Kishar Ring",
 		back=gear.FC_jse_back,waist="Ninurta's Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
 	
-	sets.midcast.Impact = {main="Idris",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+	sets.midcast.Impact = {main="Idris",sub="Ammurapi Shield", 
 		head=empty, neck="Erra Pendant",ear1="Barkaro. Earring",ear2="Regal Earring",
 		body="Twilight Cloak", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
@@ -260,7 +256,7 @@ function init_gear_sets()
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring", ring2="Kishar Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
 		
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Clerisy Strap +1", ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Clerisy Strap +1", 
 		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digni. Earring", ear2="Regal Earring", 
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
@@ -283,7 +279,7 @@ function init_gear_sets()
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {})
 		
 	-- Duration
-	sets.midcast['Enhancing Magic'] = {main="Oranyan", sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
+	sets.midcast['Enhancing Magic'] = {main="Oranyan", sub="Clerisy Strap +1",
 		--main=gear.gada_enhancing_club, sub="Ammurapi Shield", 
 		head=gear.telchine_head_Duration, neck="Incanter's Torque", lear="Andoaa Earring", rear="Augment. Earring",
 		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
@@ -325,7 +321,7 @@ function init_gear_sets()
 		body="Jhakri Robe +2", hands="Bagua Mitaines +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 		
-	sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
+	sets.idle.PDT = {main="Idris",sub="Genbu's Shield",ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Mallquis Saio +2",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
@@ -347,8 +343,8 @@ function init_gear_sets()
 	sets.idle.Indi = set_combine(sets.idle, {main="Idris",sub="Genbu's Shield",range="Dunna"})	
 	sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {main="Idris",sub="Genbu's Shield",range="Dunna"}) 
 	
-	sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {}) 
-	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {})
+	sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {main="Idris",sub="Genbu's Shield",range="Dunna"})
+	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {main="Idris",sub="Genbu's Shield",range="Dunna"})
 
 	sets.idle.Weak = {main="Idris",sub="Genbu's Shield", range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",

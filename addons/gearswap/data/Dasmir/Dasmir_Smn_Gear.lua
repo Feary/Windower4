@@ -8,7 +8,7 @@ function user_setup()
 	-- Avatar Ammo - 
 	gear.avatar_ammo 	= 	{name="Sancus Sachet +1"}
 	-- Staves 
-	gear.perp_staff 	= 	{name="Nirvana"}
+	gear.perp_staff = 		{name="Nirvana"}
 	gear.skill_staff	= 	{name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 	-- Nirvana 
 	gear.phys_BP_Staff 	= 	{name="Nirvana"}
@@ -160,34 +160,34 @@ function init_gear_sets()
 			
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {sub="Clemency Grip"})--main="Oranyan",
 
-	sets.midcast['Elemental Magic'] = {main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
+	sets.midcast['Elemental Magic'] = {main="Kaja Rod", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- rear="Crematio Earring",
 		head="Amalric Coif", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Novia Earring",
 		-- Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Amalric Gages", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Amalric Nails"}
-	sets.midcast['Elemental Magic'].Resistant = {main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
+	sets.midcast['Elemental Magic'].Resistant = {main="Kaja Rod", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- rear="Crematio Earring",
 		head="Amalric Coif", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Novia Earring",
 		-- Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Amalric Gages", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Amalric Nails"}
 
-    sets.midcast['Divine Magic'] = {main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
+    sets.midcast['Divine Magic'] = {main="Kaja Rod", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- rear="Crematio Earring",
 		head="Amalric Coif", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Novia Earring",
 		-- Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 		
-    sets.midcast['Dark Magic'] = {main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
+    sets.midcast['Dark Magic'] = {main="Kaja Rod", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- rear="Crematio Earring",
 		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Novia Earring",
 		-- Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 	
-	sets.midcast.Drain = {main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
+	sets.midcast.Drain = {main="Kaja Rod", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- rear="Crematio Earring",
 		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Novia Earring",
 		-- Fenrir Ring +1 Fenrir Ring +1 
@@ -196,14 +196,14 @@ function init_gear_sets()
     
     sets.midcast.Aspir = sets.midcast.Drain
 		
-    sets.midcast.Stun = {main={name=gear.grioavolr_fc_staff, priority=2}, sub={name="Clerisy Strap +1", priority=1}, ammo="Pemphredo Tathlum",
+    sets.midcast.Stun = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Pemphredo Tathlum",
 		-- rear="Crematio Earring",
 		head="Inyanga Tiara +2", neck="Sanctity Necklace", ear1="Loquac. Earring", ear2="Enchntr. Earring +1",
 		-- Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 		
-    sets.midcast.Stun.Resistant = {main={name=gear.grioavolr_fc_staff,priority=2}, sub={name="Clerisy Strap +1", priority=1}, ammo="Pemphredo Tathlum",
+    sets.midcast.Stun.Resistant = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Pemphredo Tathlum",
 		-- rear="Crematio Earring",
 		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", ear2="Enchntr. Earring +1",
 		-- Fenrir Ring +1 Fenrir Ring +1 
@@ -211,14 +211,14 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 		
 		
-	sets.midcast['Enfeebling Magic'] = {main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'] = {main="Kaja Rod", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- rear="Crematio Earring",
 		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Gwati Earring", ear2="Enchntr. Earring +1",
 		-- Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
 		
-	sets.midcast['Enfeebling Magic'].Resistant = {main={name="Kaja Rod",priority=2}, sub={name="Ammurapi Shield", priority=1}, ammo="Pemphredo Tathlum",	
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Kaja Rod", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",	
 		head="Inyanga Tiara +2", neck="Erra Pendant", lear="Gwati Earring", ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyanga Crackows +2"}
@@ -367,14 +367,14 @@ function init_gear_sets()
     
     -- Can make due without either the head or the body, and use +refresh items in those slots.
     
-    sets.idle.Avatar = {main=gear.perp_staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
+    sets.idle.Avatar = {main="Nirvana", sub="Elan Strap +1", ammo=gear.avatar_ammo,
 		-- Oneiros Grip 
         head="Convoker's Horn +3",neck="Caller's Pendant",ear1="Etiolation Earring",ear2="Evans Earring",
 		-- ring1="Evoker's Ring",
         body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
         back="Conveyance Cape", waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 		
-    sets.idle.PDT.Avatar = {main=gear.perp_staff, sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.idle.PDT.Avatar = {main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo,
 		-- Oneiros Grip 
 		-- ear1="Rimeice Earring",
         head="Convoker's Horn +3",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Evans Earring",
@@ -382,13 +382,13 @@ function init_gear_sets()
         body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
         back=gear.FC_jse_back, waist="Regal Belt", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 
-    sets.idle.Spirit = {main=gear.perp_staff, sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.idle.Spirit = {main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo,
         head="Convoker's Horn +3",neck="Caller's Pendant",ear1="Ethereal Earring",ear2="Evans Earring",
 		--  ring1="Evoker's Ring",
         body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
         back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
-    sets.idle.PDT.Spirit = {main=gear.perp_staff,sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.idle.PDT.Spirit = {main="Nirvana",sub="Kaja Grip", ammo=gear.avatar_ammo,
 		-- sub="Oneiros Grip"
         head="Convoker's Horn +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
         body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring",ring2="Defending Ring",

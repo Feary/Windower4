@@ -53,6 +53,7 @@
     <addon>autojoin</addon>
     <addon>DressUp</addon>
     <addon>MountMuzzle</addon>
+    <addon>autoenterkey</addon>
     <plugin>Guildwork</plugin>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>

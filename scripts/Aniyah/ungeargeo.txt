@@ -1,0 +1,5 @@
+put Mall. Chapeau +2 case all
+put Mallquis Clogs +2 case all
+put Mallquis Cuffs +2 case all
+put Mallquis Saio +2 case all
+put Mallquis Trews +2 case all

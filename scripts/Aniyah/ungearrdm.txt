@@ -1,8 +1,8 @@
-put Atro. Boots +2 case all
-put Atro. Chapeau +2 case all
-put Atrophy Gloves +2 case all
-put Atrophy Tabard +2 case all
-put Atrophy Tights +2 case all
+put Atrophy Boots +1 case all
+put Atro. Chapeau +1 case all
+put Atrophy Gloves +1 case all
+put Atrophy Tabard +1 case all
+put Atrophy Tights +1 case all
 put Culminus case all
 put Leth. Chappel +1 case all
 put Leth. Gantherots +1 case all

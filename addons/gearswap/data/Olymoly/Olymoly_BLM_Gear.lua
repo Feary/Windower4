@@ -380,7 +380,7 @@ function init_gear_sets()
     -- Idle sets
     
     -- Normal refresh idle set
-    sets.idle = {main={name="Lathi",priority=2}, sub={name="Enki Strap", priority=1}, ammo="Staunch Tathlum",
+    sets.idle = {main="Lathi", sub="Enki Strap", ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
 		body="Jhakri Robe +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
