@@ -53,4 +53,5 @@ put Sacrifice Torque Storage all
 put Shomonjijoe +1 Storage all
 put Varar Ring +1 Storage all
 put Vox Grip Storage all
+put Rubeus Boots storage all
 

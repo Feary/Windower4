@@ -21,16 +21,17 @@ sets.precast.Item['Holy Water'] = {}
 
 -- Head 
 gear.taeon_head_Snapshot = {name="Taeon Chapeau", augments={'Accuracy+19 Attack+19','"Snapshot"+5','"Snapshot"+5',}}
-gear.taeon_head_Phalanx = {name="Taeon Chapeau", augments={'Accuracy+19 Attack+19','"Snapshot"+5','"Snapshot"+5',}}
+-- Dusk dim
+--gear.taeon_head_Phalanx = {name="Taeon Chapeau", augments={'Accuracy+19 Attack+19','"Snapshot"+5','"Snapshot"+5',}}
 
 -- Body 
 gear.taeon_body_Fastcast = {name="Taeon Tabard", augments={'Accuracy+15 Attack+15','"Fast Cast"+4','Phalanx +3',}}
 gear.taeon_body_Phalanx = {name="Taeon Tabard", augments={'Accuracy+15 Attack+15','"Fast Cast"+4','Phalanx +3',}}
-
+-- Hands
 gear.taeon_hands_Phalanx = {name="Taeon Gloves", augments={'Accuracy+16 Attack+16','"Triple Atk."+2','Phalanx +3',}}
--- Duskdim
+-- Legs
 gear.taeon_legs_Phalanx = {name="Taeon Tights", augments={'Accuracy+25','"Dual Wield"+5','Phalanx +3',}}
--- Duskdim
+-- Feet
 gear.taeon_feet_Phalanx = {name="Taeon Boots", augments={'Accuracy+18 Attack+18','"Triple Atk."+1','Phalanx +3',}}
 
 -- Telchine
@@ -43,30 +44,32 @@ gear.taeon_feet_Phalanx = {name="Taeon Boots", augments={'Accuracy+18 Attack+18'
 -- Head
 gear.telchine_head_Duration = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +10',}}
 gear.telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +10',}}
--- Pet DT
 gear.telchine_head_Pet = {name="Telchine Cap", augments={'Mag. Evasion+18','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
--- Body Leaforb
-gear.telchine_body_CureRecieved = {}
+-- Body 
+-- Leaforb
+--gear.telchine_body_CureRecieved = {}
 gear.telchine_body_Duration = { name="Telchine Chas.", augments={'"Elemental Siphon"+30','Enh. Mag. eff. dur. +10',}}
 gear.telchine_body_Siphon = {name="Telchine Chas.",augments={'"Elemental Siphon"+30','Enh. Mag. eff. dur. +10',}}
 gear.telchine_body_Pet = { name="Telchine Chas.", augments={'Mag. Evasion+21','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
---Hands Leaforb
+--Hands 
 gear.telchine_hands_Cure = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
 gear.telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
-gear.telchine_hands_Siphon = { name="Telchine Gloves", augments={'"Elemental Siphon"+10',}}
+-- Leaforb
+--gear.telchine_hands_Siphon = { name="Telchine Gloves", augments={'"Elemental Siphon"+10',}}
 gear.telchine_hands_Pet = { name="Telchine Gloves", augments={'Mag. Evasion+15','Pet: "Regen"+3','Pet: Damage taken -4%',}}
 
--- Legs Leaforb
+-- Legs 
 gear.telchine_legs_Duration = { name="Telchine Braconi", augments={'"Elemental Siphon"+5','Enh. Mag. eff. dur. +10',}}
+-- Leaforb
 gear.telchine_legs_Siphon = { name="Telchine Braconi", augments={'"Elemental Siphon"+5','Enh. Mag. eff. dur. +10',}}
 gear.telchine_legs_Pet = { name="Telchine Braconi", augments={'Mag. Evasion+24','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Feet
 gear.telchine_feet_Song = { name="Telchine Pigaches", augments={'Mag. Acc.+20','Song spellcasting time -7%',}}
 gear.telchine_feet_Duration = { name="Telchine Pigaches", augments={'Haste+2','Enh. Mag. eff. dur. +10',}}
--- Duskdim
+-- Duskdim need feet
 gear.telchine_feet_Regen = { name="Telchine Pigaches",  augments={'"Regen" potency+3',}}
 
 -- Acro
@@ -88,9 +91,8 @@ gear.acro_hands_breathe = {name="Acro Gauntlets", augments={'Pet: Mag. Acc.+22',
 gear.acro_hands_stp = {name="Acro Gauntlets", augments={'Accuracy+20 Attack+20','"Store TP"+6','STR+6 DEX+6',}}
 
 -- Legs 
--- pet macc +1~25 Snoworb
 gear.acro_legs_breathe = { name="Acro Breeches", augments={'Pet: Mag. Acc.+23','Pet: Breath+8',}}
--- Call Beast Delay Leaforb
+-- Call Beast Delay Leaforb needs legs
 gear.acro_legs_CallBeast ={name="Acro Breeches", augments={'"Call Beast" ability delay -5',}}
 
 -- Feet 
@@ -100,8 +102,8 @@ gear.acro_feet_breathe = {name="Acro Leggings", augments={'Pet: Mag. Acc.+21','P
 -- Helios
 -- Head 1/1
 -- Body 0/1 
--- Hands 1/2
--- Legs 
+-- Hands 2/2
+-- Legs 0/0
 -- Feet 1/1
 
 -- Head 
@@ -109,12 +111,12 @@ gear.acro_feet_breathe = {name="Acro Leggings", augments={'Pet: Mag. Acc.+21','P
 gear.helios_head_BP = {name="Helios Band", augments={'Pet: Attack+24 Pet: Rng.Atk.+24','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
 
 -- Body 
--- Occult Acumen
+-- Occult Acumen need jacket
 gear.helios_body_occult = {name="Helios Jacket", augments={}}
 
 -- Hands
 gear.helios_hands_Occult = {name="Helios Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Occult Acumen"+10',}}
--- Fastcast +1~5%    add MP
+--  add MP
 gear.helios_hands_FC = {name="Helios Gloves", augments={'"Fast Cast"+5',}}
 
 -- Legs 

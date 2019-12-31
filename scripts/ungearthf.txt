@@ -40,4 +40,4 @@ put Taming Sari sack all
 put Toutatis's Cape sack all 
 put Tsoa. Crossbow sack all 
 put Twashtar sack all 
-put Iskur Gorget sack all
+put Iskur Gorget safe2 all

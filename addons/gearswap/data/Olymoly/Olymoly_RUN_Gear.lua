@@ -42,6 +42,13 @@ function user_setup()
 	send_command('bind !r gs c weapons Lionheart;gs c update')
 	send_command('bind !f11 gs c cycle IdleMode')
 	send_command('bind @f11 gs c cycle ExtraDefenseMode')
+	
+	--Alias
+	send_command('alias gear exec gearrun.txt')
+	send_command('alias ungear gs equip naked;exec ungearrun.txt')
+	
+	
+	
 	select_default_macro_book()
 end
 
@@ -221,7 +228,7 @@ function init_gear_sets()
 		head="Futhark Bandeau +1",
 		body=gear.taeon_body_Phalanx,hands=gear.taeon_hands_Phalanx,
 		legs=gear.taeon_legs_Phalanx,feet=gear.taeon_feet_Phalanx})
-    sets.midcast['Regen'] = set_combine(sets.midcast['Enhancing Magic'],{head="Rune. Bandeau +1"}) 
+    sets.midcast['Regen'] = set_combine(sets.midcast['Enhancing Magic'],{head="Rune. Bandeau +1", neck="Sacro Gorget"}) 
 	sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'],{head="Erilaz Galea +1"}) 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})--ear2="Earthcry Earring",
 	sets.midcast.Flash = set_combine(sets.Enmity, {})
@@ -232,15 +239,15 @@ function init_gear_sets()
 	sets.midcast.Cocoon = set_combine(sets.Enmity.SIRD, {})
 
     sets.midcast.Cure = {ammo="Staunch Tathlum",
-        head="Rune. Bandeau +1",neck="Phalaina Locket",ear1="Mendi. Earring",ear2="Roundel Earring",
+        head="Rune. Bandeau +1",neck="Sacro Gorget",ear1="Mendi. Earring",ear2="Roundel Earring",
         --body="Vrikodara Jupon",hands="Buremte Gloves",ring2="Janniston Ring",
 		body="Erilaz Surcoat +1", hands="Kurys Gloves", ring1="Lebeche Ring", ring2="Moonbeam Ring",
         back="Tempered Cape +1",waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Skaoi Boots"}
 		
 	sets.midcast['Wild Carrot'] = set_combine(sets.midcast.Cure, {})
 		
-	sets.Self_Healing = {neck="Phalaina Locket",}--hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"
-	sets.Cure_Received = {neck="Phalaina Locket",}--hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"
+	sets.Self_Healing = {}--hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"
+	sets.Cure_Received = {}--hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"
 	sets.Self_Refresh = {}--waist="Gishdubar Sash"
 	
     sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
@@ -265,20 +272,20 @@ function init_gear_sets()
 		head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		-- hands="Turms Mittens +1"
 		body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-		--feet="Turms Leggings +1"
+		-- feet="Turms Leggings +1"
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
 	
 	sets.idle.KiteTank = {ammo="Staunch Tathlum",
 		head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		-- hands="Turms Mittens +1"
 		body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-		--feet="Turms Leggings +1"
+		-- feet="Turms Leggings +1"
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
 	sets.idle.Weak = {ammo="Homiliary",
 		head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		-- hands="Turms Mittens +1"
 		body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-		--feet="Turms Leggings +1"
+		-- feet="Turms Leggings +1"
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
 	
 	sets.Kiting = {legs="Carmine Cuisses +1"}

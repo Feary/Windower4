@@ -19,13 +19,12 @@
 	<!-- Delve -->
 	<trigger match="*Plasm*Farm*|*delve*yoyd*" notmatch="*please*invite*me*|*can*i*have*it*|*buy*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Delve.wav"/>
 	<!-- Vagary -->
-	<trigger match="*Vagary*" notmatch="*please*invite*me*|*can*i*have*it*|*shop*|*synth*|*buy*|*3m*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Vagary.wav"/>
+	<trigger match="*Vagary*" notmatch="*please*invite*me*|*can*i*have*it*|*shop*|*synth*|*buy*|*3m*|*mats*do you*" from="Yell|Shout" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Vagary.wav"/>
 	<!-- Tales -->
 	<trigger match="*Tales*|*rem*ch*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<trigger match="*avatar*|*HTBF*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Avatar.wav"/>
 	<!-- Omen-->
-	<trigger match="*Omen*Card*|*Kyou*|*kei*|*omen*fu*|*Omen*gin*|*Omen*kin*" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Omen.wav"/>
-	<!-- Neo Nyzul -->
+	<trigger match="*Omen*Card*|* Kyou *|* Kei *|* Fu *|* Gin *|* Kin *" Notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\Omen.wav"/>
 	<!--Unity-->	
 	<trigger match="" notmatch="" notfrom="Tell" from="Yell|Shout|Linkshell" sound="C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\plugins\sounds\unity.wav"/>
 	<!-- Exping --> 

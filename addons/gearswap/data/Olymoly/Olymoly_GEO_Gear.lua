@@ -97,49 +97,6 @@ function init_gear_sets()
 	
 	sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {hands="Bagua Mitaines +1"})
 	
-	-- Weaponskill sets
-	-- Default set for any weaponskill that isn't any more specifically defined
-	sets.precast.WS = {
-		-- Bagua Galero +2
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Regal Earring", rear="Ishvara Earring",
-		-- Bagua Tunic +2 Bagua Mitaines +2 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Epaminondas's Ring",
-		-- WS Cape Bagua Pants +2 Bagua Sandals +2
-		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
-
-	-- Club
-	-- STR/MND
-	sets.precast.WS['Hexa Strike']= {  
-		head="Jhakri Coronal +2", neck="Caro Necklace", lear="Telos Earring", rear="Regal Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Begrudging Ring", rring="Ifrit Ring +1",
-		back=gear.nuke_jse_back, waist="Prosilio Belt +1", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
-	sets.precast.WS['Flash Nova']= {  
-		-- Bagua Galero +2
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Regal Earring", rear="Ishvara Earring",
-		-- Bagua Tunic +2 Bagua Mitaines +2 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Epaminondas's Ring",
-		-- WS Cape Bagua Pants +2 Bagua Sandals +2
-		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
-	-- Changes Based on TP Range
-	sets.precast.WS['Realmrazer']= {
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Cessance Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Epaminondas's Ring",
-		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
-	-- MND
-	sets.precast.WS['Exudation']= {	
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Regal Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Archon Ring",
-		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
-	-- Staff
-	sets.precast.WS['Catacylsm']= {
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Regal Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Archon Ring",
-		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
-	sets.precast.WS['Shattersoul']= {
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Regal Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Shiva Ring +1",
-		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
-
 	--------------------------------------
 	-- Midcast sets
 	--------------------------------------
@@ -310,7 +267,7 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Resting sets
-	sets.resting = {main="Chatoyant Staff", sub="Elder's Grip +1",
+	sets.resting = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
@@ -408,6 +365,49 @@ function init_gear_sets()
 		head="Jhakri Coronal +2",neck="Sanctity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Rajas Ring",ring2="Petrov Ring",
 		back="Moonbeam Cape",waist="Witful Belt",legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
+
+	-- Weaponskill sets
+	-- Default set for any weaponskill that isn't any more specifically defined
+	sets.precast.WS = {
+		-- Bagua Galero +2
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Regal Earring", rear="Ishvara Earring",
+		-- Bagua Tunic +2 Bagua Mitaines +2 
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Epaminondas's Ring",
+		-- WS Cape Bagua Pants +2 Bagua Sandals +2
+		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+
+	-- Club
+	-- STR/MND
+	sets.precast.WS['Hexa Strike']= {  
+		head="Jhakri Coronal +2", neck="Caro Necklace", lear="Telos Earring", rear="Regal Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Begrudging Ring", rring="Ifrit Ring +1",
+		back=gear.nuke_jse_back, waist="Prosilio Belt +1", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+	sets.precast.WS['Flash Nova']= {  
+		-- Bagua Galero +2
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Regal Earring", rear="Ishvara Earring",
+		-- Bagua Tunic +2 Bagua Mitaines +2 
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Epaminondas's Ring",
+		-- WS Cape Bagua Pants +2 Bagua Sandals +2
+		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+	-- Changes Based on TP Range
+	sets.precast.WS['Realmrazer']= {
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Cessance Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Epaminondas's Ring",
+		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+	-- MND
+	sets.precast.WS['Exudation']= {	
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Regal Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Archon Ring",
+		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+	-- Staff
+	sets.precast.WS['Catacylsm']= {
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Regal Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Archon Ring",
+		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+	sets.precast.WS['Shattersoul']= {
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Regal Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Shiva Ring +1",
+		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	-- Custom buff sets
 	--------------------------------------

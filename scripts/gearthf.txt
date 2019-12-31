@@ -37,4 +37,4 @@ get Samnuha Coat sack all
 get Samnuha Tights sack all
 get Toutatis's Cape sack all 
 get Tsoa. Crossbow sack all 
-get Iskur Gorget sack all
+get Iskur Gorget safe2 all

@@ -53,4 +53,5 @@ get Sacrifice Torque Storage all
 get Shomonjijoe +1 Storage all
 get Varar Ring +1 Storage all
 get Vox Grip Storage all
+get Rubeus Boots storage all
 

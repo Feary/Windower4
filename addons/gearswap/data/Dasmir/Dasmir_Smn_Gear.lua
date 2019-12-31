@@ -82,7 +82,7 @@ function init_gear_sets()
         -- hands="Baayami Cuffs",
 		body="Con. Doublet +3", hands="Convo. Bracers +2", ring1="Evoker's Ring", ring2="Stikini Ring",
         -- back="Conyeyance Cape", waist="Kobo Obi", legs="Baayami Slops", feet="Baayami Sabots"
-		back="Astute Cape", waist="Cimmerian Sash", legs="Glyphic Spats +1", feet="Glyphic Pigaches +1"}
+		back="Astute Cape", waist="Cimmerian Sash", legs="Glyphic Spats +1", feet="Convo. Pigaches +3"}
 
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
 
