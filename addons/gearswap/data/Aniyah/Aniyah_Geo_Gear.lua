@@ -42,7 +42,10 @@ function user_setup()
 	send_command('alias gear exec geargeo.txt')
 	send_command('alias ungear gs equip naked;exec ungeargeo.txt')
 	
-	indi_duration = 290
+	send_command('alias fol ffo me')
+	send_command('alias ufol ffo stopall')
+	
+	indi_duration = 275
 	
 	select_default_macro_book()
 end
@@ -375,56 +378,62 @@ function init_gear_sets()
 	-- Normal melee group
 	sets.engaged = {
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rajas Ring", rring="Ramuh Ring",
-		waist="Witful Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rajas Ring", rring="Petrov Ring",
+		back=gear.idle_jse_back, waist="Witful Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.engaged.DualWield = {
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ramuh Ring", rring="Ramuh Ring",
-		 waist="Witful Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		back=gear.idle_jse_back, waist="Witful Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {
 		-- Bagua Galero +2
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Regal Earring", rear="Ishvara Earring",
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Zennaroi Earring", rear="Regal Earring",
 		-- Bagua Tunic +2 Bagua Mitaines +2 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Epaminondas's Ring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Petrov Ring",
 		-- WS Cape Bagua Pants +2 Bagua Sandals +2
 		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	-- Club
 	-- STR/MND
 	sets.precast.WS['Hexa Strike']= {  
-		head="Jhakri Coronal +2", neck="Caro Necklace", lear="Telos Earring", rear="Regal Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Begrudging Ring", rring="Ifrit Ring +1",
-		back=gear.nuke_jse_back, waist="Prosilio Belt +1", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		-- neck="Caro Necklace", lear="Telos Earring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Zennaroi Earring", rear="Regal Earring",
+		-- lring="Begrudging Ring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring",  rring="Petrov Ring",
+		back=gear.nuke_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	sets.precast.WS['Flash Nova']= {  
 		-- Bagua Galero +2
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Regal Earring", rear="Ishvara Earring",
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Zennaroi Earring", rear="Regal Earring",
 		-- Bagua Tunic +2 Bagua Mitaines +2 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Epaminondas's Ring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring",  rring="Petrov Ring",
 		-- WS Cape Bagua Pants +2 Bagua Sandals +2
 		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	-- Changes Based on TP Range
 	sets.precast.WS['Realmrazer']= {
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Cessance Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Epaminondas's Ring",
+		-- lear="Telos Earring", rear="Cessance Earring",
+		head="Jhakri Coronal +2", neck="Fotia Gorget",  lear="Zennaroi Earring", rear="Regal Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring",  rring="Petrov Ring",
 		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	-- MND
 	sets.precast.WS['Exudation']= {	
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Regal Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Archon Ring",
+		-- lear="Telos Earring",
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Zennaroi Earring", rear="Regal Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Archon Ring",
 		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	
 	-- Staff
 	sets.precast.WS['Catacylsm']= {
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Regal Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Archon Ring",
+		--  lear="Telos Earring",
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Zennaroi Earring", rear="Regal Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring", rring="Archon Ring",
 		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	sets.precast.WS['Shattersoul']= {
-		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Telos Earring", rear="Regal Earring",
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Shiva Ring +1",
+		-- lring="Epaminondas's Ring",
+		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Zennaroi Earring", rear="Regal Earring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2",  rring="Shiva Ring",
 		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	
 	--------------------------------------
@@ -435,8 +444,8 @@ function init_gear_sets()
 	sets.RecoverMP = {}--body="Seidr Cotehardie"
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {ring1="Mujin Band", feet="Jhakri Pigaches +2"}--head="Ea Hat",neck="Mizu. Kubikazari",body="Ea Houppelande",hands="Ea Cuffs",legs="Ea Slops",
-	sets.RecoverBurst = {ring1="Mujin Band", feet="Jhakri Pigaches +2"}--head="Ea Hat",neck="Mizu. Kubikazari",body="Seidr Cotehardie",hands="Ea Cuffs",legs="Ea Slops",
+    sets.MagicBurst = {head="Ea Hat", ring1="Mujin Band", feet="Jhakri Pigaches +2"}--neck="Mizu. Kubikazari",body="Ea Houppelande",hands="Ea Cuffs",legs="Ea Slops",
+	sets.RecoverBurst = {head="Ea Hat", ring1="Mujin Band", feet="Jhakri Pigaches +2"}--head="Ea Hat",neck="Mizu. Kubikazari",body="Seidr Cotehardie",hands="Ea Cuffs",legs="Ea Slops",
 
 	-- Weapons sets
 	-- Weapons sets

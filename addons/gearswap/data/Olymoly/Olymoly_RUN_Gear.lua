@@ -8,18 +8,18 @@ function user_setup()
 	state.MagicalDefenseMode:options('MDT','MDT_HP','BDT','BDT_HP')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP','Death','Charm','DTCharm')
 	state.IdleMode:options('Normal','Tank','KiteTank','Sphere')
-	state.Weapons:options('Aettir') --'Lionheart','DualWeapons'
+	state.Weapons:options('Epeolatry','DualWeapons') --'Lionheart','DualWeapons'
 	
 	state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP'}
 
-	gear.enmity_jse_back = {name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
-	gear.tp_jse_back = {name="Ogma's cape",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
-	gear.da_jse_back = {name="Ogma's cape",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
-	gear.ws_jse_back = {name="Ogma's cape",augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	gear.enmity_jse_back = 	{name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
+	gear.tp_jse_back = 		{name="Ogma's cape",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	gear.da_jse_back = 		{name="Ogma's cape",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	gear.ws_jse_back = 		{name="Ogma's cape",augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 	-- HP, Magic Eva, Enmity + and PDT -10%
-	gear.hp_jse_back = {name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
+	gear.hp_jse_back = 		{name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
 	-- Hp fc meva
-	gear.FC_jse_back = {name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
+	gear.FC_jse_back = 		{name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
 
 	-- Additional local binds
 	send_command('bind !` gs c SubJobEnmity')
@@ -38,8 +38,8 @@ function user_setup()
 	send_command('bind @f8 gs c toggle AutoTankMode')
 	send_command('bind @f10 gs c toggle TankAutoDefense')
 	send_command('bind ^@!` gs c cycle SkillchainMode')
-	send_command('bind !r gs c weapons Lionheart;gs c update')
-	send_command('bind !r gs c weapons Lionheart;gs c update')
+	--send_command('bind !r gs c weapons Epeolatry;gs c update')
+	--send_command('bind !r gs c weapons Epeolatry;gs c update')
 	send_command('bind !f11 gs c cycle IdleMode')
 	send_command('bind @f11 gs c cycle ExtraDefenseMode')
 	
@@ -47,6 +47,8 @@ function user_setup()
 	send_command('alias gear exec gearrun.txt')
 	send_command('alias ungear gs equip naked;exec ungearrun.txt')
 	
+	send_command('alias fol ffo me')
+	send_command('alias ufol ffo stopall')
 	
 	
 	select_default_macro_book()
@@ -57,21 +59,21 @@ function init_gear_sets()
     sets.Enmity = {ammo="Staunch Tathlum", -- Sapience Orb
 		 -- Halitus Helm
 	     head="Fu. Bandeau +1",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
-	     body="Emet Harness",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
+	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
 		 -- Ahosi Leggings
 		 back=gear.enmity_jse_back,waist="Goading Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 		 
     sets.Enmity.SIRD = {ammo="Staunch Tathlum",
 		 -- Halitus Helm
 	     head="Fu. Bandeau +1",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
-	     body="Emet Harness",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
+	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
 		 -- Ahosi Leggings
 		 back=gear.enmity_jse_back,waist="Rumination Sash",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
     sets.Enmity.DT = {ammo="Staunch Tathlum",
         -- Halitus Helm
 	     head="Fu. Bandeau +1",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
-	     body="Emet Harness",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
+	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
 		 -- Ahosi Leggings
 		 back=gear.enmity_jse_back,waist="Rumination Sash",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
@@ -301,8 +303,9 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Aettir = {main="Aettir",sub="Utu Grip"}--Refined Grip +1
+	sets.weapons.Epeolatry = {main="Epeolatry", sub="Utu Grip"}
 	--sets.weapons.Lionheart = {main="Lionheart",sub="Utu Grip"}
-	--sets.weapons.DualWeapons = {main="Kaja Sword",sub="Reikiko"}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Reikiko"}
 	
 	-- Defense Sets
 	

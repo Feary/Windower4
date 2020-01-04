@@ -105,7 +105,7 @@ function init_gear_sets()
 		-- Taeon Tabard Taeon Gloves lring="Epaminodas's Ring", 
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Ilabrat Ring",
 		--  Taeon Tights feet="Theroid Greaves"
-		back=gear.Cape_WS, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Carmine Greaves +1"})
+		back=gear.Cape_WS, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Thereoid Greaves"})
 
 	sets.precast.WS['Savage Blade'] = {--ammo="Ginsen",
 		-- Despair Helm Caro Necklace 
@@ -448,10 +448,10 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Dagger = {main="Kaja Knife", sub="Ammurapi Shield"}
-	sets.weapons.Sword = {main="Naegling",sub="Ammurapi Shield"}
-	sets.weapons.DualWeapons = {main="Naegling",sub="Kaja Knife"}
+	sets.weapons.Sword = {main="Naegling", sub="Ammurapi Shield"} 
+	sets.weapons.DualWeapons = {main="Naegling", sub="Kaja Knife"}
 	sets.weapons.DualDagger = {main="Kaja Knife", sub="Naegling"}
-	sets.weapons.DualClubs = {main="Kaja Rod",sub="Bolelabunga"}
+	sets.weapons.DualClubs = {main="Kaja Rod", sub="Bolelabunga"}
 
 	-- Engaged sets
 

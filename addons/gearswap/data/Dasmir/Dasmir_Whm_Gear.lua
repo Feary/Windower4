@@ -55,31 +55,30 @@ function init_gear_sets()
 	
     -- Precast Sets
     -- Fast cast sets for spells
+	-- Current: 74
     sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1", ammo="Incantor Stone",
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Lebeche Ring", rring="Kishar Ring",
+		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Lebeche Ring", rring="Kishar Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Regal Pumps"}
 		
     sets.precast.FC.DT = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",	
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Lebeche Ring", rring="Kishar Ring",
+		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Lebeche Ring", rring="Kishar Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Regal Pumps"}
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
-    sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {hands="Carapacho Cuffs"})
+    sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat", hands="Carapacho Cuffs"})
 
     sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pant. +1"})
 
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
-		main={name="Ababinili", priority=2}, sub={name="Kaja Grip", priority=1}, 	
-		head="Piety Cap +1", lear="Nourish. Earring +1", rear="Nourish. Earring",
-		back=gear.fastcast_jse_back, legs="Ebers Pant. +1", feet="Hygieia Clogs"})
+		head="Piety Cap +1", legs="Ebers Pant. +1", feet="Theo. Duckbills +1"})
 
-	sets.precast.FC.Cure.DT = {main={name="Beneficus", priority=2}, sub={name="Sors Shield", priority=1}, 	
-		head="Nahtirah Hat",neck="Loricate Torque +1",lear="Nourish. Earring +1", rear="Nourish. Earring",
-		body="Inyanga Jubbah +2", hands="Gende. Gages +1",ring1="Dark Ring",ring2="Defending Ring",
+	sets.precast.FC.Cure.DT = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",
+		head="Piety Cap +1", neck="Loricate Torque +1",lear="Nourish. Earring +1", rear="Nourish. Earring",
+		body="Inyanga Jubbah +2", hands="Fanatic Gloves",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.Cure_jse_back,waist="Witful Belt",legs="Ebers Pant. +1",feet="Hygieia Clogs"}
 
     sets.precast.FC.Curaga = sets.precast.FC.Cure
@@ -148,7 +147,7 @@ function init_gear_sets()
 		-- Reti Pendant
 		head="Telchine Cap", lear="Gwati Earring", rear="Calamitous Earring",
 		-- hands="Skrieker's Cuffs", 
-		body="Witching Robe",
+		body="Witching Robe", hands="Fanatic Gloves",
 		--  legs="Vanya Slops",
         back="Aurist's Cape", waist="Austerity Belt", legs="Lengo Pants", feet="Umbani Boots"}
 		
@@ -184,7 +183,7 @@ function init_gear_sets()
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
-	sets.midcast.LightWeatherCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Kaja Grip", priority=1},
+	sets.midcast.LightWeatherCureSolace = {main={name="Iridal Staff", priority=2}, sub={name="Clerisy Strap +1", priority=1},
 		head="Gende. Caubeen +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Novia Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1",feet="Piety Duckbills +1"}
@@ -204,7 +203,7 @@ function init_gear_sets()
 		body="Theo. Briault +3", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}
 
-	sets.midcast.LightWeatherCuraga = {main={name="Iridal Staff", priority=2}, sub={name="Kaja Grip", priority=1}, 
+	sets.midcast.LightWeatherCuraga = {main={name="Iridal Staff", priority=2}, sub={name="Clerisy Strap +1", priority=1}, 
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Novia Earring",
 		body="Theo. Briault +3", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pant. +1", feet="Piety Duckbills +1"}

@@ -24,3 +24,4 @@ put Viti. Gloves +1 case all
 put Viti. Tabard +1 case all
 put Viti. Tights +1 case all
 put Vitiation Boots +1 case all
+put thereoid boots case all

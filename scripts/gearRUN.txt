@@ -1,5 +1,5 @@
-put Aettir locker all
-put Carm. Sc. Mail +1 safe2 all
+put Epeolatry locker all
+put Carm. Sc. Mail +1 sack all
 put Eri. Leg Guards +1 locker
 put Erilaz Galea +1 locker
 put Erilaz Greaves +1 locker
