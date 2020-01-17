@@ -243,40 +243,74 @@ function init_gear_sets()
 	sets.midcast.Protect = {ring2="Sheltered Ring"}
 	sets.midcast.Shell = {ring2="Sheltered Ring"}
 	
+	-- Path F = Full Potency Gear
 	sets.midcast['Enfeebling Magic'] = {main="Oranyan", sub="Enki Strap", ammo="Regal Gem",
-			-- head="Atro. Chapeau +3",  Duelist's Torque +3
+			-- Kaja Rod Ammurapi Shield
+			-- Vitiation Chapeau +3  Duelist's Torque +3
 			head="Carmine Mask +1", neck="Incanter's Torque", lear="Digni. Earring", rear="Regal Earring",
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
-			body="Atrophy Tabard +1", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",
+			body="Lethargy Sayon +1", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",
 			-- feet="Vitiation Boots +3"
-			back=gear.Macc_jse_back, waist="Luminary Sash", legs="Psycloth Lappas", feet="Skaoi Boots"}
+			back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear.chironic_macc_legs, feet="Skaoi Boots"}
 	
+	-- Path A - Pure Macc No Potency
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Enki Strap", ammo="Regal Gem",
 			-- head="Atro. Chapeau +3",  Duelist's Torque +3
 			head="Carmine Mask +1", neck="Incanter's Torque", lear="Digni. Earring", rear="Regal Earring",
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
 			body="Atrophy Tabard +1", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",
 			-- feet="Vitiation Boots +3"
-			back=gear.Macc_jse_back, waist="Luminary Sash", legs="Psycloth Lappas", feet="Skaoi Boots"}
-		
-    sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif +1"}) --waist="Acuity Belt +1"
-    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif +1"}) --waist="Acuity Belt +1"
+			back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear.chironic_macc_legs, feet="Skaoi Boots"}		
+    
+	sets.midcast['Sleep'] = sets.midcast['Enfeebling Magic'].Resistant
+	sets.midcast['Sleep II'] = sets.midcast['Enfeebling Magic'].Resistant
+	sets.midcast['Sleepga'] = sets.midcast['Enfeebling Magic'].Resistant
+	sets.midcast['Silence'] = sets.midcast['Enfeebling Magic'].Resistant
+	sets.midcast['Inundation'] = sets.midcast['Enfeebling Magic'].Resistant
+	sets.midcast['Dispel'] = sets.midcast['Enfeebling Magic'].Resistant
+	sets.midcast['Break'] = sets.midcast['Enfeebling Magic'].Resistant
+	sets.midcast['Bind'] = sets.midcast['Enfeebling Magic'].Resistant
 	
+	-- Path C Int + Potency Gear
+	-- Blind
 	sets.midcast.IntEnfeebles = set_combine(sets.midcast['Enfeebling Magic'], {back=gear.nuke_jse_back})
 	sets.midcast.IntEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {back=gear.nuke_jse_back})
-
-	sets.midcast.MndEnfeebles = set_combine(sets.midcast['Enfeebling Magic'], {})
-	sets.midcast.MndEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 	
+	sets.midcast['Blind'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Viti. Chapeau +1", legs="Viti. Tights +1"})
+	sets.midcast['Blind II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Viti. Chapeau +1", legs="Viti. Tights +1"})
+	
+	-- Path B MND + Potency Gear
+	sets.midcast.MndEnfeebles = set_combine(sets.midcast['Enfeebling Magic'], {body="Atrophy Tabard +1",})
+	sets.midcast.MndEnfeebles.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {body="Atrophy Tabard +1"})
+
+	sets.midcast['Paralyze'] = set_combine(sets.midcast.MndEnfeebles, {})
+	sets.midcast['Paralyze II'] = set_combine(sets.midcast.MndEnfeebles, {})
+	sets.midcast['Addle'] = set_combine(sets.midcast.MndEnfeebles, {})
+	sets.midcast['Addle II'] = set_combine(sets.midcast.MndEnfeebles, {})
+	sets.midcast['Slow II'] = set_combine(sets.midcast.MndEnfeebles, {head="Viti. Chapeau +1"})
+	sets.midcast['Slow II'].Resistant = set_combine(sets.midcast.MndEnfeebles, {head="Viti. Chapeau +1"})
+	
+	-- Path D Enfeebling Skill + Potency Gear
+	-- Poison II
+	sets.midcast['Poison'] = set_combine(sets.midcast['Enfeebling Magic'], {})
+	sets.midcast['Poison II'] = set_combine(sets.midcast['Enfeebling Magic'], {})
+	sets.midcast['Poisonga'] = set_combine(sets.midcast['Enfeebling Magic'], {})
+ 
+	-- Path E - Enfeebling Skill + MND + Potency
+	sets.midcast['Distract'] = set_combine(sets.midcast.MndEnfeebles, {body="Lethargy Sayon +1"})
+	sets.midcast['Distract'].Resistant = set_combine(sets.midcast.MndEnfeebles.Resistant, {})
+	sets.midcast['Distract II'] = set_combine(sets.midcast.MndEnfeebles, {body="Lethargy Sayon +1"})
+	sets.midcast['Distract II'].Resistant = set_combine(sets.midcast.MndEnfeebles.Resistant, {})
 	sets.midcast['Distract III'] = set_combine(sets.midcast.MndEnfeebles, {body="Lethargy Sayon +1"})
 	sets.midcast['Distract III'].Resistant = set_combine(sets.midcast.MndEnfeebles.Resistant, {})
-	
+	sets.midcast['Frazzle'] = set_combine(sets.midcast.MndEnfeebles, {body="Lethargy Sayon +1"})
+	sets.midcast['Frazzle'].Resistant = set_combine(sets.midcast.MndEnfeebles.Resistant, {})
+	sets.midcast['Frazzle II'] = set_combine(sets.midcast.MndEnfeebles, {body="Lethargy Sayon +1"})
+	sets.midcast['Frazzle II'].Resistant = set_combine(sets.midcast.MndEnfeebles.Resistant, {})
 	sets.midcast['Frazzle III'] = set_combine(sets.midcast.MndEnfeebles, {body="Lethargy Sayon +1"})
 	sets.midcast['Frazzle III'].Resistant = set_combine(sets.midcast.MndEnfeebles.Resistant, {})
 	
-	sets.midcast.Silence = set_combine(sets.midcast['Enfeebling Magic'], {})
-	sets.midcast.Silence.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})	
-	
+	-- Path F - Seperated For AF
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Dia II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -286,11 +320,14 @@ function init_gear_sets()
 	sets.midcast['Bio II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Bio III'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter, {head="Viti. Chapeau +1"})
 
-	sets.midcast['Slow II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Viti. Chapeau +1"})
-	sets.midcast['Slow II'].Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Viti. Chapeau +1"})
 	
+	-- Divine Magic 
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 
+	sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif +1"}) --waist="Acuity Belt +1"
+    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif +1"}) --waist="Acuity Belt +1"
+		
+	-- Elemental Magic 
     sets.midcast['Elemental Magic'] = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum", 
 		head=gear.merlinic_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring", 
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",

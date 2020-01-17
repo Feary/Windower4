@@ -27,6 +27,8 @@ function user_setup()
 	gear.magic_QD_jse_back = {		name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
 	gear.FC_jse_back = {			name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
 	
+	
+	
 	send_command('alias das send Dasmir /targetnpc;wait 1;send Dasmir Horde Lullaby;wait 1;send dasmir /follow olymoly')
 
     -- Additional local binds
@@ -49,6 +51,14 @@ function user_setup()
 	send_command('bind ^q gs c weapons DualRangedWeapons;gs c update')
 	send_command('bind !q gs c weapons SavageWeapons;gs c update')
 	send_command('bind @pause roller roll')
+
+	-- Alias
+	send_command('alias gear exec gearcor.txt')
+	send_command('alias ungear gs equip naked;exec ungearcor.txt')
+	
+	send_command('alias store po store cor')
+	send_command('alias unstore po unpack cor')
+
 
     select_default_macro_book()
 end

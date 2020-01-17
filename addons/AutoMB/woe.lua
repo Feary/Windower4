@@ -1,0 +1,1 @@
+windower.add_to_chat(123,"I'm a Walk of Echoes lua!")

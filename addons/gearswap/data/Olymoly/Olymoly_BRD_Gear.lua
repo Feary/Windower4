@@ -403,4 +403,20 @@ function select_default_macro_book()
 	end
 end
 
+function job_setup()
+
+    state.ExtraSongsMode = M{['description']='Extra Songs','None','Dummy','DummyLock','FullLength','FullLengthLock'}
+
+	state.Buff['Aftermath: Lv.3'] = buffactive['Aftermath: Lv.3'] or false
+    state.Buff['Pianissimo'] = buffactive['Pianissimo'] or false
+	state.Buff['Nightingale'] = buffactive['Nightingale'] or false
+	state.RecoverMode = M('35%', '60%', 'Always', 'Never')
+
+	autows = "Rudra's Storm"
+	autofood = 'Pear Crepe'
+
+	update_melee_groups()
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoNukeMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","ExtraSongsMode","CastingMode","TreasureMode",})
+end
+
 

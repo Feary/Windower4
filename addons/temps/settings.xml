@@ -4,6 +4,9 @@
         <blacklist>radialens,primeval brew,mollifier</blacklist>
         <turbo>false</turbo>
     </global>
+    <dasmir>
+        <blacklist>radialens,primeval brew</blacklist>
+    </dasmir>
     <olymoly>
         <turbo>true</turbo>
     </olymoly>

@@ -1,20 +1,20 @@
-alias g15m1g1 
-alias g15m1g2 
-alias g15m1g3 
-alias g15m1g4 
-alias g15m1g5 
-alias g15m1g6 
+alias g15m1g1 input /target <p0>;gs c smartcure
+alias g15m1g2 input /target <p1>;gs c smartcure
+alias g15m1g3 input /target <p2>;gs c smartcure
+alias g15m1g4 input /target <p3>;gs c smartcure
+alias g15m1g5 input /target <p4>;gs c smartcure
+alias g15m1g6 input /target <p5>;gs c smartcure
 
-alias g15m1g7 
-alias g15m1g8 
-alias g15m1g9 
-alias g15m1g10 
-alias g15m1g11 
-alias g15m1g12 
+alias g15m1g7 input /target <a10>;gs c smartcure
+alias g15m1g8 input /target <a11>;gs c smartcure
+alias g15m1g9 input /target <a12>;gs c smartcure
+alias g15m1g10 input /target <a13>;gs c smartcure
+alias g15m1g11 input /target <a14>;gs c smartcure
+alias g15m1g12 input /target <a15>;gs c smartcure
 
-alias g15m1g13
-alias g15m1g14 
-alias g15m1g15 
-alias g15m1g16 
-alias g15m1g17 
-alias g15m1g18 
+alias g15m1g13 input /target <a20>;gs c smartcure
+alias g15m1g14 input /target <a21>;gs c smartcure
+alias g15m1g15 input /target <a22>;gs c smartcure
+alias g15m1g16 input /target <a23>;gs c smartcure
+alias g15m1g17 input /target <a24>;gs c smartcure
+alias g15m1g18 input /target <a25>;gs c smartcure

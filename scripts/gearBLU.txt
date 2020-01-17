@@ -18,6 +18,7 @@ get Assim. Shalwar +1 sack all
 get Cornflower Cape sack all
 get Hashi. Basmak +1 sack all
 get Hashishin Kavuk +1 sack all
+get Hashi. Bazu. +1 sack all
 get Hashishin Mintan +1 sack all
 get Hashishin Tayt +1 sack all
 get Herculean Boots sack all

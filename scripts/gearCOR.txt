@@ -1,6 +1,6 @@
 get Abnoba Kaftan sack all
 get Adhemar Gamashes safe2 all
-get Adhe. Gamashes +1 sack all
+get Adhe. Gamashes +1 safe2 all
 get Adhemar Bonnet +1 sack all
 get Adhemar Bonnet sack all
 get Adhemar Jacket +1 sack all
@@ -17,19 +17,15 @@ get Chass. Bottes +1 safe2 all
 get Chasseur's Frac +1 safe2 all
 get Chasseur's Gants +1 safe2 all
 get Chass. Tricorne +1 safe2 all
-get Carm. Sc. Mail +1 safe2 all
+get Carm. Sc. Mail +1 sack all
 get Camulus's Mantle safe2 all
 get Compensator safe2 all
 get Darraigner's Brais safe2 all
 get Eminent Bullet safe2 all
 get Enervating Earring safe2 all
 get Grunfeld Rope sack all
-get Herculean Boots sack all
-get Holliday safe2 all
 get Impulse Belt safe2 all
-get Iskur Gorget sack all
-get Naegling sack all
-get Kaja Knife sack all
+get Iskur Gorget safe2 all
 get Kustawi +1 safe2 all
 get Kwahu Kachina Belt safe2 all
 get Lanun Bottes +1 safe2 all
@@ -55,7 +51,7 @@ get Mummu Wrists +2 sack all
 get Mummu Jacket +2 sack all
 get Mummu Kecks +2 sack all
 get Mummu Gamash. +2 sack all
-get Mummu Ring sack all
+get Mummu Ring safe2 all
 get Nusku Shield safe2 all
 get Pursuer's Gaiters safe2 all
 get Regal Necklace safe2 all
