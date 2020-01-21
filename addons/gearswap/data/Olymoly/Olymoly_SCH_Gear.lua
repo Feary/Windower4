@@ -55,6 +55,12 @@ function user_setup()
 	send_command('alias gear exec gearsch.txt')
 	send_command('alias ungear gs equip naked;exec ungearsch.txt')
 	
+	send_command('alias store po store sch')
+	send_command('alias unstore po unpack sch')
+	
+	send_command('alias fol ffo me')
+	send_command('alias ufol ffo stopall')
+	
 	select_default_macro_book()
 end
 
@@ -74,7 +80,7 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
 
-    sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1", ammo="Incanter's Stone",
+    sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1", ammo="Incanter's Torque",
 		--main=gear.grioavolr_fc_staff,ammo="Impatiens",
         head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         --body="Zendik Robe",

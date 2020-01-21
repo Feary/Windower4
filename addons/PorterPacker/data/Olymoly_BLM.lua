@@ -1,0 +1,17 @@
+return {
+    "Arch. Petasos +1",
+    "Wicce Chausses +1",
+    "Wicce Sabots +1",
+    "Spae. Sabots +1",
+    "Spae. Coat +1",
+    "Arch. Tonban +1",
+    "Arch. Gloves +1",
+    "Arch. Sabots +1",
+    "Arch. Coat +1",
+    "Spae. Gloves +1",
+    "Spae. Petasos +1",
+    "Spae. Tonban +1",
+    "Wicce Petasos +1",
+    "Wicce Gloves +1",
+    "Wicce Coat +1",
+}

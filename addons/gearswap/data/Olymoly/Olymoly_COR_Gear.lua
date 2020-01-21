@@ -54,7 +54,7 @@ function user_setup()
 
 	-- Alias
 	send_command('alias gear exec gearcor.txt')
-	send_command('alias ungear gs equip naked;exec ungearcor.txt')
+	send_command('alias ungear gs equip naked;wait 1;exec ungearcor.txt')
 	
 	send_command('alias store po store cor')
 	send_command('alias unstore po unpack cor')

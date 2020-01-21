@@ -1,0 +1,16 @@
+return {
+    "Erilaz Galea +1",
+    "Fu. Bandeau +1",
+    "Runeist Mitons +1",
+    "Runeist Coat +1",
+    "Runeist Bottes +1",
+    "Rune. Trousers +1",
+    "Rune. Bandeau +1",
+    "Futhark Trousers +1",
+    "Futhark Mitons +1",
+    "Futhark Coat +1",
+    "Futhark Boots +1",
+    "Erilaz Surcoat +1",
+    "Eri. Leg Guards +1",
+    "Erilaz Greaves +1",
+}

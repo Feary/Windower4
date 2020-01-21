@@ -3,9 +3,9 @@ put Amalric Nails +1 case all
 put Amalric Slops +1 case all
 put Amalric Doublet +1 case all
 put Amalric Coif +1 case all
-put Azimuth Coat case all
+put Azimuth Coat +1 case all
 put Azimuth Gaiters +1 case all
-put Azimuth Gloves case all
+put Azimuth Gloves +1 case all
 put Azimuth Hood +1 case all
 put Azimuth Tights +1 case all
 put Bagua Galero +1 case all
@@ -35,3 +35,6 @@ put Mallquis Trews +2 case all
 put Merlinic Crackows case all
 put Nantosuelta's Cape case all
 put Rubicundity case all
+put Merlinic Hood case all
+put Saevus Pendant +1 case all
+

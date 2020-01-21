@@ -1,0 +1,17 @@
+return {
+    "Vishap Mail +2",
+    "Vishap Greaves +2",
+    "Vishap Brais +2",
+    "Vishap Armet +2",
+    "Vis. Fng. Gaunt. +2",
+    "Ptero. Mail +3",
+    "Ptero. Greaves +3",
+    "Ptero. Fin. G. +3",
+    "Ptero. Brais +3",
+    "Pelt. Cuissots +1",
+    "Ptero. Armet +3",
+    "Pelt. Schyn. +1",
+    "Pelt. Plackart +1",
+    "Pel. Vambraces +1",
+    "Lancer's Torque",
+}

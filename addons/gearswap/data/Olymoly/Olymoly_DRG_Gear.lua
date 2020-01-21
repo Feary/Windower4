@@ -30,8 +30,15 @@ function user_setup()
 	send_command('bind @f7 gs c toggle AutoJumpMode')
 	send_command('bind @` gs c cycle SkillchainMode')
 	
+	-- Alias 
 	send_command('alias ungear gs equip naked;exec ungeardrg.txt')
 	send_command('alias gear exec geardrg.txt')
+	
+	send_command('alias store po store drg')
+	send_command('alias unstore po unpack drg')
+	
+	send_command('alias fol ffo me')
+	send_command('alias ufol ffo stopall')
 	
 	update_combat_form()
     select_default_macro_book()

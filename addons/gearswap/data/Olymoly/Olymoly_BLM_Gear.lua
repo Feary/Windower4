@@ -43,8 +43,12 @@ function user_setup()
 	send_command('bind !delete input /ja "Addendum: Black" <me>')
 	send_command('bind @delete input /ja "Manifestation" <me>')
     
+	-- Alias
 	send_command('alias gear exec gearblm.txt')
 	send_command('alias ungear gs equip naked;exec ungearblm.txt')
+	
+	send_command('alias store po store blm')
+	send_command('alias unstore po unpack blm')
 	
 	select_default_macro_book()
 end
@@ -380,7 +384,7 @@ function init_gear_sets()
     -- Idle sets
     
     -- Normal refresh idle set
-    sets.idle = {main="Lathi", sub="Enki Strap", ammo="Staunch Tathlum",
+    sets.idle = {main="Lathi", sub="Kaja Grip", ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
 		body="Jhakri Robe +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
@@ -388,7 +392,7 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
-    sets.idle.PDT = {main="Earth Staff", sub={name="Enki Strap", priority=1}, ammo="Staunch Tathlum",
+    sets.idle.PDT = {main="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
 		--sub="Oneiros Grip",
         head="Jhakri Coronal +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
@@ -406,7 +410,7 @@ function init_gear_sets()
 		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
 		back="Bane Cape", waist="Fucho-no-obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
-    sets.idle.Weak = {main="Lathi",sub="Enki Strap",ammo="Staunch Tathlum",
+    sets.idle.Weak = {main="Malignance Pole",sub="Kaja Grip",ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
 		body="Jhakri Robe +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
@@ -414,21 +418,21 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
     -- Defense sets
-    sets.defense.PDT = {main="Earth Staff", sub="Kaja Grip", ammo="Staunch Tathlum",
+    sets.defense.PDT = {main="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
 		body="Mallquis Saio +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
 		-- waist="Flax Sash", feet=gear.merlinic_refresh_feet
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
-    sets.defense.MDT = {main="Earth Staff", sub="Kaja Grip", ammo="Staunch Tathlum",
+    sets.defense.MDT = {main="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
 		body="Mallquis Saio +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
 		-- waist="Flax Sash", feet=gear.merlinic_refresh_feet
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
-    sets.defense.MEVA = {main="Earth Staff", sub="Irenic Strap +1", ammo="Staunch Tathlum",
+    sets.defense.MEVA = {main="Malignance Pole", sub="Irenic Strap +1", ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
 		body="Mallquis Saio +2", hands="Volte Bracers", ring1="Dark Ring",ring2="Defending Ring",

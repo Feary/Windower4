@@ -1,0 +1,17 @@
+return {
+    "Amini Gapette +1",
+    "Amini Caban +1",
+    "Amini Brague +1",
+    "Amini Bottillons +1",
+    "Arc. Braccae +2",
+    "Orion Socks +2",
+    "Orion Jerkin +2",
+    "Orion Bracers +2",
+    "Orion Braccae +2",
+    "Orion Beret +2",
+    "Amini Glove. +1",
+    "Arcadian Socks +1",
+    "Arcadian Beret +2",
+    "Arc. Jerkin +3",
+    "Arc. Bracers +1",
+}

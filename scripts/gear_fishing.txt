@@ -1,0 +1,14 @@
+get Waders safe all
+get Dwarf Pugil safe all
+get Fisherman's Hose safe all
+get Lu Sh. F. Rod +1 safe all
+get Kachina Gloves safe all
+get Noddy Ring safe all
+get Duck Ring safe all
+get Albatross Ring safe all
+get Fisher's Torque safe all
+get Fisherman's Smock safe all
+get Drill Calamary safe all
+get Tlahtlamah Glasses safe all
+get Fisherman's Belt safe all
+

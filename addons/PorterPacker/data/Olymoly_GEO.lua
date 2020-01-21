@@ -1,0 +1,15 @@
+return {
+    "Geomancy Tunic +2",
+    "Geomancy Pants +2",
+    "Geo. Sandals +2",
+    "Geo. Mitaines +3",
+    "Geo. Galero +2",
+    "Bagua Tunic +1",
+    "Bagua Sandals +1",
+    "Bagua Pants +1",
+    "Bagua Mitaines +1",
+    "Bagua Galero +1",
+    "Azimuth Tights +1",
+    "Azimuth Gaiters +1",
+    "Azimuth Hood +1",
+}

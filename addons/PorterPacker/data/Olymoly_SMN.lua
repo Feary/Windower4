@@ -1,0 +1,17 @@
+return {
+    "Beckoner's Horn +1",
+    "Beck. Bracers +1",
+    "Beck. Spats +1",
+    "Beck. Pigaches +1",
+    "Beck. Doublet +1",
+    "Convo. Spats +2",
+    "Convo. Pigaches +3",
+    "Convoker's Horn +3",
+    "Con. Doublet +3",
+    "Convo. Bracers +2",
+    "Caller's Pendant",
+    "Rubeus Boots",
+    "Glyph. Pigaches +1",
+    "Glyphic Spats +1",
+    "Glyphic Bracers +1",
+}

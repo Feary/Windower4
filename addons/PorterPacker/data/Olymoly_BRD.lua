@@ -1,0 +1,17 @@
+return {
+    "Brioso Roundlet +2",
+    "Brioso Justau. +3",
+    "Brioso Cuffs +2",
+    "Brioso Cannions +2",
+    "Brioso Slippers +3",
+    "Bihu Roundlet +3",
+    "Bihu Jstcorps. +3",
+    "Bihu Cuffs +3",
+    "Bihu Cannions +3",
+    "Bihu Slippers +3",
+    "Fili Calot +1",
+    "Fili Hongreline +1",
+    "Fili Manchettes +1",
+    "Fili Rhingrave +1",
+    "Fili Cothurnes +1",
+}

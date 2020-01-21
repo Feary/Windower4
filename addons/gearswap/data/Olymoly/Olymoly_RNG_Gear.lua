@@ -34,8 +34,15 @@ function user_setup()
 	send_command('bind !r gs c weapons MagicWeapons;gs c update')
 	send_command('bind ^q gs c weapons SingleWeapon;gs c update')
 	
+	-- Alias
 	send_command('alias gear exec gearrng.txt')
 	send_command('alias ungear gs equip naked;exec ungearrng.txt')
+	
+	send_command('alias store po store rng')
+	send_command('alias unstore po unpack rng')
+	
+	send_command('alias fol ffo me')
+	send_command('alias ufol ffo stopall')
 	
 	select_default_macro_book()
 

@@ -3,9 +3,9 @@ get Amalric Nails +1 case all
 get Amalric Slops +1 case all
 get Amalric Doublet +1 case all
 get Amalric Coif +1 case all
-get Azimuth Coat case all
+get Azimuth Coat +1 case all
 get Azimuth Gaiters +1 case all
-get Azimuth Gloves case all
+get Azimuth Gloves +1 case all
 get Azimuth Hood +1 case all
 get Azimuth Tights +1 case all
 get Bagua Galero +1 case all
@@ -35,3 +35,5 @@ get Mallquis Trews +2 case all
 get Merlinic Crackows case all
 get Nantosuelta's Cape case all
 get Rubicundity case all
+get Merlinic Hood case all
+get Saevus Pendant +1 case all

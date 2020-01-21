@@ -125,7 +125,7 @@ function init_gear_sets()
     sets.precast.JA['Lunge'] = {ammo="Seeth. Bomblet +1",
 		-- neck="Baetyl Pendant",
         head=gear.herculean_nuke_head,neck="Sanctity Necklace", ear1="Friomisi Earring",ear2="Crematio Earring",
-        body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
+        body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1",ring1="Shiva Ring +1", ring2="Shiva Ring +1",
         back="Evasionist's Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Aya. Gambieras +2"}
 
 	sets.precast.JA['Swipe'] = sets.precast.JA['Lunge']
@@ -177,20 +177,20 @@ function init_gear_sets()
 	-- Weaponskill sets
 	sets.precast.WS = {ammo="Yamarang",
             head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-            body="Adhemar Jacket +1",hands="Adhemar Wristbands +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
+            body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
             back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
 	sets.precast.WS.Acc = {ammo="Yamarang",
             head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-            body="Adhemar Jacket +1",hands="Adhemar Wristbands +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
+            body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
             back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
 	
     sets.precast.WS['Resolution'] = set_combine(sets.precast.WS,{ammo="Yamarang",
             head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-            body="Adhemar Jacket +1",hands="Adhemar Wristbands +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
+            body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
             back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet})
     sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc,{ammo="Yamarang",
             head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-            body="Adhemar Jacket +1",hands="Adhemar Wristbands +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
+            body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
             back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet})
     
     sets.precast.WS['Dimidiation'] = set_combine(sets.precast.WS,{ammo="Knobkierrie",
@@ -302,7 +302,6 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Volte Bracers", waist="Chaac Belt"})
 	
 	-- Weapons sets
-	sets.weapons.Aettir = {main="Aettir",sub="Utu Grip"}--Refined Grip +1
 	sets.weapons.Epeolatry = {main="Epeolatry", sub="Utu Grip"}
 	--sets.weapons.Lionheart = {main="Lionheart",sub="Utu Grip"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Reikiko"}

@@ -1,0 +1,15 @@
+return {
+    "Nukumi Quijotes",
+    "Nukumi Manoplas",
+    "Nukumi Ocreae",
+    "Ankusa Helm",
+    "Ankusa Jackcoat",
+    "Ankusa Gloves",
+    "Ankusa Trousers",
+    "Ankusa Gaiters",
+    "Totemic Helm",
+    "Totemic Jackcoat",
+    "Totemic Gloves",
+    "Totemic Trousers",
+    "Totemic Gaiters",
+}

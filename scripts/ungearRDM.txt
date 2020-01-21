@@ -3,13 +3,13 @@ put Amalric Nails +1 case all
 put Amalric Slops +1 case all
 put Amalric Coif +1 case all
 put Amalric Doublet +1 case all
-put Atrophy Chapeau +1 storage all
-put Atrophy Tabard +1 storage all
-put Atrophy Gloves +1 storage all
-put Atrophy Tights +1 storage all
-put Atrophy Boots +1 storage all
+put Atrophy Chapeau +1 case all
+put Atrophy Tabard +1 case all
+put Atrophy Gloves +1 case all
+put Atrophy Tights +1 case all
+put Atrophy Boots +1 case all
 put Carm. Sc. Mail +1 safe2 all
-put Ghostfyre Cape storage all
+put Ghostfyre Cape case all
 put Hagondes Coat +1 case all
 put Helios Boots case all
 put Helios Gloves case all
@@ -17,24 +17,24 @@ put Jhakri Cuffs +2 case all
 put Jhakri Pigaches +2 case all
 put Jhakri Robe +2 case all
 put Kaja Rod case all
-put Leth. Fuseau storage all
-put Leth. Chappel +1 storage all
-put Lethargy Sayon +1 storage all
-put Leth. Gantherots +1 storage all
-put Leth. Houseaux +1 storage all
+put Leth. Fuseau case all
+put Leth. Chappel +1 case all
+put Lethargy Sayon +1 case all
+put Leth. Gantherots +1 case all
+put Leth. Houseaux +1 case all
 put Merlinic Crackows case all
 put Merlinic Hood case all
 put Mizu. Kubikazari case all
 put Naegling sack all
 put Nibiru Crudgel sack all
-put Regal Gem storage all
+put Regal Gem case all
 put Rubicundity case all
 put Skaoi Boots case all
-put Sucellos's Cape storage all
+put Sucellos's Cape case all
 put Thereoid Greaves sack all
 put Vampirism sack all
-put Viti. Chapeau +1 storage all
-put Viti. Tabard +1 storage all
-put Viti. Gloves +1 storage all
-put Viti. Tights +1 storage all
-put Vitiation Boots +1 storage all
+put Viti. Chapeau +1 case all
+put Viti. Tabard +1 case all
+put Viti. Gloves +1 case all
+put Viti. Tights +1 case all
+put Vitiation Boots +1 case all

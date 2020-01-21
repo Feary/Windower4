@@ -1,0 +1,16 @@
+return {
+    "Skulk. Culottes +1",
+    "Skulker's Vest +1",
+    "Skulker's Bonnet +1",
+    "Raider's Bmrng.",
+    "Skulk. Poulaines +1",
+    "Plunderer's Vest +3",
+    "Plun. Poulaines +3",
+    "Plun. Culottes +3",
+    "Plun. Bonnet +3",
+    "Plun. Armlets +3",
+    "Pillager's Vest +3",
+    "Pill. Poulaines +2",
+    "Pill. Culottes +3",
+    "Pill. Bonnet +2",
+}

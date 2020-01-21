@@ -38,6 +38,9 @@ function user_setup()
 	send_command('alias gear exec geargeo.txt')
 	send_command('alias ungear gs equip naked;exec ungeargeo.txt')
 	
+	send_command('alias store po store geo')
+	send_command('alias unstore po unpack geo')
+	
 	send_command('alias fol ffo me')
 	send_command('alias ufol ffo stopall')
 	
@@ -86,8 +89,8 @@ function init_gear_sets()
 
 	sets.precast.FC.Curaga = sets.precast.FC.Cure
 	
-	sets.Self_Healing = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",}-- waist="Gishdubar Sash"
-	sets.Cure_Received = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",}--waist="Gishdubar Sash"
+	sets.Self_Healing = {ring1="Kunaji Ring",ring2="Asklepian Ring",}-- waist="Gishdubar Sash" neck="Phalaina Locket",
+	sets.Cure_Received = {ring1="Kunaji Ring",ring2="Asklepian Ring",}--waist="Gishdubar Sash" neck="Phalaina Locket",
 	sets.Self_Refresh = {back="Grapevine Cape"}--waist="Gishdubar Sash",feet="Inspirited Boots"
 	
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
@@ -97,7 +100,7 @@ function init_gear_sets()
 	sets.precast.FC.Impact = {ammo="Impatiens",
 		head=empty,neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body="Twilight Cloak",hands=gear.helios_hands_FC, ring1="Prolix Ring",
-		back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +2",feet="Amalric Nails"}
+		back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +2",feet="Amalric Nails +1"}
 	
 	sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {hands="Bagua Mitaines +1"})
 	
@@ -110,10 +113,10 @@ function init_gear_sets()
 		head="Amalric Coif +1", neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		-- Zendik Robe
 		body="Anhur Robe", hands=gear.helios_hands_FC, lring="Prolix Ring", rring="Kishar Ring",
-		back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +2",feet="Amalric Nails"}
+		back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +2",feet="Amalric Nails +1"}
 
 	sets.midcast.Geomancy = {main="Idris", sub="Genbu's Shield", range="Dunna",
-		head="Azimuth Hood +1", neck="Incanter's Torque", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Azimuth Hood +1", neck="Incanter's Torque", lear="Odonowa Earring +1", rear="Etiolation Earring",
 		body="Vedic Coat", hands="Shrieker's Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- Feet Conserve MP
 		back=gear.FC_jse_back, waist="Austerity Belt", legs="Vanya Slops", feet="Azimuth Gaiters +1"}

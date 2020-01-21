@@ -1,0 +1,13 @@
+put Waders safe all
+put Dwarf Pugil safe all
+put Fisherman's Hose safe all
+put Lu Sh. F. Rod +1 safe all
+put Kachina Gloves safe all
+put Noddy Ring safe all
+put Duck Ring safe all
+put Albatross Ring safe all
+put Fisher's Torque safe all
+put Fisherman's Smock safe all
+put Drill Calamary safe all
+put Tlahtlamah Glasses safe all
+put Fisherman's Belt safe all

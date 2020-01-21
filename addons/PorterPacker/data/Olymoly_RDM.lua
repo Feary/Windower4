@@ -1,0 +1,17 @@
+return {
+    "Atrophy Gloves +1",
+    "Vitiation Boots +1",
+    "Viti. Tights +1",
+    "Viti. Gloves +1",
+    "Viti. Tabard +1",
+    "Viti. Chapeau +1",
+    "Leth. Houseaux +1",
+    "Leth. Gantherots +1",
+    "Lethargy Sayon +1",
+    "Leth. Chappel +1",
+    "Atrophy Boots +1",
+    "Atrophy Tabard +1",
+    "Atrophy Tights +1",
+    "Atro. Chapeau +1",
+    "Leth. Fuseau +1",
+}

@@ -1,0 +1,12 @@
+put Craftmaster's Ring safe all
+put Midras's Helm +1 safe all
+put Carver's Torque safe all
+put Carpenter's Belt safe all
+put Artificer's Ring safe all
+put Coconut Rusk safe all
+put Carpenter's Gloves safe all
+put Carpenter's Ring safe all
+put Orvail Ring safe all
+put Carpenter's Smock safe all
+put Craftkeeper's Ring safe all
+put Joiner's Aspis safe all

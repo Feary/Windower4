@@ -52,6 +52,9 @@
 	send_command('alias gear exec gearrdm.txt')
 	send_command('alias ungear gs equip naked;exec ungearrdm.txt')
 	
+	send_command('alias store po store rdm')
+	send_command('alias unstore po unpack rdm')
+	
 	send_command('alias imp input /ja "Parsimony" <me>;wait 1;input /ma "Impact" <stnpc>')
 	
 	select_default_macro_book()
@@ -381,7 +384,7 @@ function init_gear_sets()
 		body="Ayanmo Corazza +2", hands="Gende. Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Macc_jse_back, waist="Witful Belt", legs="Psycloth Lappas", feet=gear.merlinic_aspir_feet}
 	sets.midcast.Stun.Resistant = {main="Oranyan", sub="Clerisy Strap +1", mmo="Regal Gem",
-		head="Atro. Chapeau +1", neck="Voltsurge Torque", lear="Gwati Earring", rear="Enchntr. Earring +1",
+		head="Atro. Chapeau +1", neck="Voltsurge Torque", lear="Regal Earring", rear="Enchntr. Earring +1",
 		--body="Zendik Robe",
 		body="Ayanmo Corazza +2", hands="Gende. Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Macc_jse_back,waist="Luminary Sash",legs="Psycloth Lappas", feet=gear.merlinic_aspir_feet}
@@ -461,7 +464,7 @@ function init_gear_sets()
 	sets.weapons.Almace = {main="Almace",sub="Genbu's Shield"}
 	sets.weapons.DualWeapons = {main="Sequence",sub="Almace"}
 	sets.weapons.DualDagger = {main="Mandau", sub="Almace"}
-	sets.weapons.DualClubs = {main="Kaja Rod", sub="Nibiru Cudgel"}
+	sets.weapons.DualClubs = {main="Kaja Rod", sub="Eletta Rod"}
 	sets.weapons.DualAlmace = {main="Almace",sub="Sequence"}
 
 	-- Engaged sets
