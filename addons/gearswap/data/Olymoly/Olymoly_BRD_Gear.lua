@@ -142,15 +142,15 @@ function init_gear_sets()
 		body="Bihu Jstcorps. +3",hands="Lustr. Mittens +1",ring1="Epaminondas's Ring",ring2="Ilabrat Ring",
 		back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"}
 	sets.precast.WS.Acc = {ranged=gear.Instrument_wsd,
-		head="Aya. Zucchetto +2", neck="Iqabi Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Bihu Jstcorps. +3", hands="Aya. Manopolas +2", lring="Epaminondas's Ring", rring="Ilabrat Ring",
-		back=gear.wsd_jse_back, waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
+		back=gear.wsd_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {ranged=gear.Instrument_wsd,
 		head="Lustratio Cap +1", neck="Fotia Gorget", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Bihu Jstcorps. +3", hands="Lustr. Mittens +1", lring="Epaminondas's Ring", rring="Ilabrat Ring",
-		back=gear.wsd_jse_back, waist="Dynamic Belt +1", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"})
+		back=gear.wsd_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"})
 	
 	sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Ginsen",
 		head="Lustratio Cap +1", neck="Fotia Gorget", lear="Moonshade Earring", rear="Brutal Earring",
@@ -281,20 +281,20 @@ function init_gear_sets()
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})--main="Marin Staff +1",sub="Clemency Grip"
 	
-	sets.midcast['Enfeebling Magic'] = {main="Oranyan Staff", sub="Enki Strap",
+	sets.midcast['Enfeebling Magic'] = {main="Oranyan", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 	
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan Staff", sub="Enki Strap",
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		--Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
 		
-	sets.midcast['Enhancing Magic'] = {main="Oranyan Staff", sub="Clerisy Strap +1",
+	sets.midcast['Enhancing Magic'] = {main="Oranyan", sub="Clerisy Strap +1",
 		--main="Carnwenhan",sub="Ammurapi Shield",
 		head=gear.telchine_head_Duration, neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Prolix Ring",
@@ -306,13 +306,13 @@ function init_gear_sets()
 		-- legs="Shedir Seraweels"
 		waist="Siegel Sash",})
 		
-	sets.midcast['Elemental Magic'] = {main="Oranyan Staff", sub="Enki Strap",
+	sets.midcast['Elemental Magic'] = {main="Oranyan", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
-	sets.midcast['Elemental Magic'].Resistant = {main="Oranyan Staff", sub="Enki Strap",
+	sets.midcast['Elemental Magic'].Resistant = {main="Oranyan", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",

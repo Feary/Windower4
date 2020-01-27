@@ -11,10 +11,10 @@ function user_setup()
 	state.Weapons:options('None','PetPDTAxe','DualWeapons')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Knockback','Suppa','DWEarrings'}
 
-	gear.PHYKumbha1 = {name="Kumbhakarna", augments={'Pet: Attack+16 Pet: Rng.Atk.+16','Pet: TP Bonus+120',}}
-	gear.PHYKumbha2 = {name="Kumbhakarna",  augments={'Pet: Accuracy+15 Pet: Rng. Acc.+15','Pet: Haste+3','Pet: TP Bonus+160',}}
-	gear.PDTMABKumbha = {name="Kumbhakarna", augments={'Pet: Accuracy+18 Pet: Rng. Acc.+18','Pet: Damage taken -2%','Pet: TP Bonus+200',}}
-	gear.MABKumbha = {name="Kumbhakarna", augments={'Pet: Mag. Acc.+20','Pet: TP Bonus+120',}}
+	gear.PHYKumbha1 = {name="Kumbhakarna", augments={'Pet: Attack+20 Pet: Rng.Atk.+20','Pet: "Dbl.Atk."+4 Pet: Crit.hit rate +4','Pet: TP Bonus+180',}}
+	gear.PHYKumbha2 = {name="Kumbhakarna", augments={'Pet: Accuracy+18 Pet: Rng. Acc.+18','Pet: TP Bonus+160',}}
+	gear.PDTMABKumbha = {name="Kumbhakarna", augments={'Pet: "Mag.Atk.Bns."+20','Pet: Phys. dmg. taken -4%','Pet: TP Bonus+200',}}
+	gear.MABKumbha = {name="Kumbhakarna", augments={'Pet: "Mag.Atk.Bns."+19','Pet: TP Bonus+160',}}
 
 	-- Capes 
 	gear.tp_jse_back = 			"Artio's Mantle" 
@@ -22,11 +22,11 @@ function user_setup()
 	gear.magic_ws_jse_back = 	"Artio's Mantle" 
 	gear.FC_jse_back = 			"Artio's Mantle" 
 	-- Pet Accuracy Attack Haste
-	gear.Pet_acc_jse_back =  	{name="Artio's Mantle",  augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}}
+	gear.Pet_acc_jse_back =  	{name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: Haste+10','System: 1 ID: 1246 Val: 4',}}
 	-- Pet Macc Haste
-	gear.Pet_macc_jse_back = 	{name="Artio's Mantle",  augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20',}}
+	gear.Pet_macc_jse_back = 	{name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Mag. Acc+20 /Mag. Dmg.+20','Pet: Haste+10','Pet: Damage taken -5%',}}
 	-- Pet: Regen acc  pet dt
-	gear.Pet_regen_jse_back =  	{name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Pet: Damage taken -5%',}}
+	gear.Pet_regen_jse_back =  	{name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10','Pet: Damage taken -5%',}}
 	-- MND Macc
 	gear.Reward_jse_back =  	"Artio's Mantle" 
 	
@@ -54,8 +54,8 @@ function user_setup()
 	--ready_moves.default.WarlikePatrick = 'Tail Blow'
 	
 	-- Alias
-	send_command('alias gear exec gearbst.txt')
-	send_command('alias ungear gs equip naked;wait 1;exec ungearbst.txt')
+	send_command('alias gear exec Dasmir/gearcbst.txt')
+	send_command('alias ungear gs equip naked;wait 1;exec dasmir/ungearbst.txt')
 	
 	send_command('alias store po store bst')
 	send_command('alias unstore po unpack bst')
@@ -80,7 +80,7 @@ function init_gear_sets()
 	sets.precast.JA.Reward = {
 		neck="Phalaina Locket",ear1="Etiolation Earring",ear2="Domesticator's Earring", --head="Stout Bonnet"
 		body="Tot. Jackcoat +3",hands="Regimen Mittens",ring1="Stikini Ring",ring2="Stikini Ring",
-		back="Artio's Mantle",waist="Klouskap Sash",legs="Ankusa Trousers +1",feet="Ankusa Gaiters +3"}
+		back="Pastoralist's Mantle",waist="Klouskap Sash",legs="Ankusa Trousers +1",feet="Ankusa Gaiters +3"}
 
 	sets.precast.JA.Reward.Theta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Theta"})
 	sets.precast.JA.Reward.Zeta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Zeta"})
@@ -195,15 +195,15 @@ function init_gear_sets()
 
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {})
 
-	-- Swap to these on Moonshade using WS if at 3000 TP
+		-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Brutal Earring",ear2="Sherida Earring",}
 	sets.AccMaxTP = {ear1="Zennaroi Earring",ear2="Telos Earring"}
 
-	-- PET SIC & READY MOVES
+				-- PET SIC & READY MOVES
 	sets.midcast.Pet.WS = {main=gear.PHYKumbha1,sub=gear.PHYKumbha2,ammo="Demonry Core",
 		head="Totemic Helm +1",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
 		body="Taeon Tabard",hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
-		back=gear.Pet_acc_jse_back,waist="Incarnation Sash",legs=gear.valorous_physical_pet_legs,feet="Totemic Gaiters +1"}
+		back="Artio's Mantle",waist="Incarnation Sash",legs=gear.valorous_physical_pet_legs,feet="Totemic Gaiters +1"}
 
 	sets.midcast.Pet.SomeAcc = set_combine(sets.midcast.Pet.WS, {main="Kerehcatl",sub=gear.PHYKumbha2,head="Totemic Helm +1",hands="Regimen Mittens"})
 	sets.midcast.Pet.Acc = set_combine(sets.midcast.Pet.WS, {main="Kerehcatl",sub="Hunahpu",head="Totemic Helm +1",hands="Regimen Mittens"})
@@ -211,8 +211,8 @@ function init_gear_sets()
 				
 	sets.midcast.Pet.MagicReady = {main=gear.MABKumbha,sub=gear.PDTMABKumbha,ammo="Demonry Core",
 		head=gear.valorous_pet_head,neck="Adad Amulet",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-		body="Emicho Haubert +1",hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
-		back=gear.Pet_macc_jse_back,waist="Incarnation Sash",legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet}
+		body=gear.valorous_pet_body,hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
+		back="Artio's Mantle",waist="Incarnation Sash",legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet}
 
 	sets.midcast.Pet.ReadyRecast = {legs="Desultor Tassets"}
 	sets.midcast.Pet.ReadyRecastDW = {sub="Charmer's Merlin",legs="Desultor Tassets"}
@@ -226,30 +226,28 @@ function init_gear_sets()
 	-- RESTING
 	sets.resting = {}
 
-	sets.idle = {main="Izizoeksi",sub=gear.PDTMABKumbha, ammo="Staunch Tathlum",
-		-- Bathy Collar +1 Infused Earring Dawn Earring
-		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etoilation Earring",ear2="Genmei Earring",
-		-- Sacro Breastplate Paguroidea Ring
-		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Sheltered Ring",
-		back=gear.FC_jse_back, waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+	sets.idle = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Staunch Tathlum",
+		head="Jumalik Helm",neck="Loricate Torque +1",ear1="Sanare Earring",ear2="Genmei Earring",
+		body="Jumalik Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Sheltered Ring",
+		back="Solemnity Cape",waist="Flume Belt",legs="Tali'ah Sera. +2",feet="Skd. Jambeaux +1"}
 
-	sets.idle.Refresh = set_combine(sets.idle, {head="Jumalik Helm", body="Jumalik Mail",}) -- Ogier's Gauntlets, Stearc Subligar, Ogier's Leggings
+	sets.idle.Refresh = set_combine(sets.idle, {})
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.idle.Pet = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Demonry Core",
 		head="Anwig Salade",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Sheltered Ring",
-		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
+		back="Artio's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
 
 	sets.idle.Pet.Engaged = {ammo="Demonry Core",
 		head="Anwig Salade",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Dark Ring",
-		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
+		back="Artio's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
 
 	-- DEFENSE SETS
 	sets.defense.PDT = {ammo="Staunch Tathlum",
 		head="Genmei Kabuto",neck="Loricate Torque +1",ear1="Sanare Earring",ear2="Handler's Earring +1",
-		body="Tartarus Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Dark Ring",
+		body="Jumalik Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt",legs="Tali'ah Sera. +2",feet="Nukumi Ocreae +1"}
 
 	sets.defense.PetPDT = {ammo="Demonry Core",
@@ -279,7 +277,7 @@ function init_gear_sets()
 
 	sets.defense.MKiller = set_combine(sets.defense.MDT, {body="Nukumi Gausape +1"})
 
-	sets.Kiting = {feet="Skadi's Jambeaux"}
+	sets.Kiting = {feet="Skadi Jambeaux"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}
 
@@ -289,17 +287,17 @@ function init_gear_sets()
 		body="Mes. Haubergeon",hands="Acro Gauntlets",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Ground. Mantle +1",waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
 
-	sets.engaged.SomeAcc = {ammo="Ginsen",
+	sets.engaged.SomeAcc = {ammo="Falcon Eye",
 		head=gear.valorous_wsd_head,neck="Defiant Collar",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Mes. Haubergeon",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Letalis Mantle",waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
 
-	sets.engaged.Acc = {ammo="Ginsen",
+	sets.engaged.Acc = {ammo="Falcon Eye",
 		head=gear.valorous_wsd_head,neck="Combatant's Torque",ear1="Zennaroi Earring",ear2="Brutal Earring",
 		body="Mes. Haubergeon",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Letalis Mantle",waist="Olseni Belt",legs="Flamma Dirs +2",feet="Valorous Greaves"}
 
-	sets.engaged.FullAcc = {ammo="Ginsen",
+	sets.engaged.FullAcc = {ammo="Falcon Eye",
 		head=gear.valorous_wsd_head,neck="Combatant's Torque",ear1="Zennaroi Earring",ear2="Telos Earring",
 		body="Mes. Haubergeon",hands="Leyline Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 		back="Ground. Mantle +1",waist="Olseni Belt",legs="Flamma Dirs +2",feet="Valorous Greaves"}
@@ -315,17 +313,17 @@ function init_gear_sets()
 		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Valorous Greaves"}
 
-	sets.engaged.SomeAcc.PDT = {ammo="Ginsen",
+	sets.engaged.SomeAcc.PDT = {ammo="Falcon Eye",
 		head="Genmei Kabuto",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Valorous Greaves"}
 
-	sets.engaged.Acc.PDT = {ammo="Ginsen",
+	sets.engaged.Acc.PDT = {ammo="Falcon Eye",
 		head=gear.valorous_wsd_head,neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Valorous Greaves"}
 
-	sets.engaged.FullAcc.PDT = {ammo="Ginsen",
+	sets.engaged.FullAcc.PDT = {ammo="Falcon Eye",
 		head=gear.valorous_wsd_head,neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Valorous Greaves"}
@@ -341,17 +339,17 @@ function init_gear_sets()
 		body="Tartarus Platemail",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Ground. Mantle +1",waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.DW.SomeAcc = {ammo="Ginsen",
+	sets.engaged.DW.SomeAcc = {ammo="Falcon Eye",
 		head=gear.valorous_wsd_head,neck="Defiant Collar",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Meg. Cuirie +2",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Letalis Mantle",waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
 
-	sets.engaged.DW.Acc = {ammo="Ginsen",
+	sets.engaged.DW.Acc = {ammo="Falcon Eye",
 		head="Meghanada Visor +2",neck="Combatant's Torque",ear1="Zennaroi Earring",ear2="Brutal Earring",
 		body="Mes. Haubergeon",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
 		back="Letalis Mantle",waist="Grunfeld Rope",legs="Flamma Dirs +2",feet="Valorous Greaves"}
 
-	sets.engaged.DW.FullAcc = {ammo="Ginsen",
+	sets.engaged.DW.FullAcc = {ammo="Falcon Eye",
 		head=gear.valorous_wsd_head,neck="Combatant's Torque",ear1="Zennaroi Earring",ear2="Telos Earring",
 		body="Mes. Haubergeon",hands="Leyline Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 		back="Ground. Mantle +1",waist="Olseni Belt",legs="Flamma Dirs +2",feet="Valorous Greaves"}
