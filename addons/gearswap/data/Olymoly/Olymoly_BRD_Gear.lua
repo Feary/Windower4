@@ -16,9 +16,9 @@ function user_setup()
 	gear.FC_jse_back = {	name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
 	
 	-- Snowdim acc leafslit wsd  dusk quad attack
-	gear.Instrument_tp = {	name="Linos"}
+	gear.Instrument_tp = "Linos"
 	-- Snowdim acc leafslit wsd
-	gear.Instrument_wsd = {	name="Linos"}
+	gear.Instrument_wsd = "Linos"
 	
 	-- Set this to false if you don't want to use custom timers.
     state.UseCustomTimers = M(false, 'Use Custom Timers')
@@ -36,10 +36,7 @@ function user_setup()
 	send_command('alias bt input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 	send_command('alias p1 input /pcmd leave;wait 1;input /tell Azzriel invite;')
 	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
-	send_command('alias fol ffo me')
-	send_command('alias ufol ffo stopall')
-	
-	
+		
 	-- Songs Scrits 
 	-- nt = Nitro
 	-- H = March  

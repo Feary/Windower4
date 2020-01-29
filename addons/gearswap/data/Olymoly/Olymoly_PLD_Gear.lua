@@ -39,9 +39,6 @@ function user_setup()
 	send_command('bind @f8 gs c toggle AutoTankMode')
 	send_command('bind ^@!` gs c cycle SkillchainMode')
 	
-	send_command('alias gear exec gearpld.txt')
-	send_command('alias ungear gs equip naked;exec ungearpld.txt')
-	
     select_default_macro_book()
     update_defense_mode()
 end

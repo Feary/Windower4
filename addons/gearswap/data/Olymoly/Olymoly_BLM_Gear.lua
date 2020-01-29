@@ -42,14 +42,7 @@ function user_setup()
 	send_command('bind ^delete input /ja "Dark Arts" <me>')
 	send_command('bind !delete input /ja "Addendum: Black" <me>')
 	send_command('bind @delete input /ja "Manifestation" <me>')
-    
-	-- Alias
-	send_command('alias gear exec gearblm.txt')
-	send_command('alias ungear gs equip naked;exec ungearblm.txt')
-	
-	send_command('alias store po store blm')
-	send_command('alias unstore po unpack blm')
-	
+   	
 	select_default_macro_book()
 end
 

@@ -44,17 +44,7 @@ function user_setup()
 	
 	--send_command('alias aoe input /targetnpc;send @all /ma "Thunderspark" <t>')
 	--send_command('alias stun input /targetnpc;send @all /ma "Thunderspark" <t>')
-	
-	send_command('alias gear exec gearsmn.txt')
-	send_command('alias ungear gs equip naked;exec ungearsmn.txt')
-	
-	send_command('alias store po store smn')
-	send_command('alias unstore po unpack smn')
-	
-	send_command('alias fol ffo me')
-	send_command('alias ufol ffo stopall')
-	
-    select_default_macro_book()
+	select_default_macro_book()
 end
 
 -- Define sets and vars used by this job file.

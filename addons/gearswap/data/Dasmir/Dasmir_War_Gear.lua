@@ -23,9 +23,6 @@ function user_setup()
 	send_command('bind @` gs c cycle SkillchainMode')
 	send_command('bind !r gs c weapons Greatsword;gs c update')
 	
-	send_command('alias ungear gs equip naked;exec dasmir/ungearwar.txt')
-	send_command('alias gear exec dasmir/gearwar.txt')
-	
 	select_default_macro_book()
 end
 

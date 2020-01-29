@@ -52,14 +52,7 @@ function user_setup()
 
 	--Example of how to change default ready moves.
 	--ready_moves.default.WarlikePatrick = 'Tail Blow'
-	
-	-- Alias
-	send_command('alias gear exec Dasmir/gearcbst.txt')
-	send_command('alias ungear gs equip naked;wait 1;exec dasmir/ungearbst.txt')
-	
-	send_command('alias store po store bst')
-	send_command('alias unstore po unpack bst')
-	
+		
 	select_default_macro_book()
 end
 

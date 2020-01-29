@@ -38,13 +38,7 @@ function user_setup()
 	send_command('alias ageohaste gs c autogeo frailty;gs c autoindi haste;gs c autoentrust fury')
 	send_command('alias ageoatk gs c autogeo frailty;gs c autoindi fury')	
 	send_command('alias ageoacc gs c autogeo frailty;gs c autoindi torpor')
-	
-	send_command('alias gear exec geargeo.txt')
-	send_command('alias ungear gs equip naked;exec ungeargeo.txt')
-	
-	send_command('alias fol ffo me')
-	send_command('alias ufol ffo stopall')
-	
+		
 	indi_duration = 275
 	
 	select_default_macro_book()

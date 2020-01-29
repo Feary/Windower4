@@ -58,12 +58,15 @@ function init_gear_sets()
 
 	sets.precast.JA.Reward = {
 		neck="Phalaina Locket",ear1="Etiolation Earring",ear2="Domesticator's Earring", --head="Stout Bonnet"
-		body="Tot. Jackcoat +3",hands="Regimen Mittens",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Tot. Jackcoat +3",hands="Regimen Mittens",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Pastoralist's Mantle",waist="Klouskap Sash",legs="Ankusa Trousers +1",feet="Ankusa Gaiters +3"}
 
 	sets.precast.JA.Reward.Theta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Theta"})
 	sets.precast.JA.Reward.Zeta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Zeta"})
 	sets.precast.JA.Reward.Eta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Eta"})
+	
+	sets.RewardAxe = {}
+	sets.RewardAxesDW = {}
 
 	sets.precast.JA.Charm = {}
 
@@ -199,13 +202,10 @@ function init_gear_sets()
 	sets.midcast.Pet.Favorable = {head="Nukumi Cabasset"}
 	sets.midcast.Pet.TPBonus = {hands="Nukumi Manoplas +1"}
 
-	sets.RewardAxe = {}
-	sets.RewardAxesDW = {}
-
 	-- RESTING
 	sets.resting = {}
 
-	sets.idle = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Staunch Tathlum",
+	sets.idle = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Staunch Tathlum +1",
 		head="Jumalik Helm",neck="Loricate Torque +1",ear1="Sanare Earring",ear2="Genmei Earring",
 		body="Jumalik Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Sheltered Ring",
 		back="Solemnity Cape",waist="Flume Belt",legs="Tali'ah Sera. +2",feet="Skd. Jambeaux +1"}
@@ -218,13 +218,18 @@ function init_gear_sets()
 		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Sheltered Ring",
 		back="Artio's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
 
-	sets.idle.Pet.Engaged = {ammo="Demonry Core",
+	sets.idle.Pet.Engaged = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Demonry Core",
+		head="Anwig Salade",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
+		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Dark Ring",
+		back="Artio's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
+
+	sets.idle.Pet.Engaged.DW = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Demonry Core",
 		head="Anwig Salade",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Artio's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
 
 	-- DEFENSE SETS
-	sets.defense.PDT = {ammo="Staunch Tathlum",
+	sets.defense.PDT = {ammo="Staunch Tathlum +1",
 		head="Genmei Kabuto",neck="Loricate Torque +1",ear1="Sanare Earring",ear2="Handler's Earring +1",
 		body="Jumalik Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt",legs="Tali'ah Sera. +2",feet="Nukumi Ocreae +1"}
@@ -244,7 +249,7 @@ function init_gear_sets()
 	sets.defense.PKiller = set_combine(sets.defense.PDT, {body="Nukumi Gausape +1"})
 	sets.defense.Reraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
-	sets.defense.MDT = {ammo="Staunch Tathlum",
+	sets.defense.MDT = {ammo="Staunch Tathlum +1",
 		head="Genmei Kabuto",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Etiolation Earring",
 		body="Jumalik Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Shadow Ring",
 		back="Engulfer Cape +1",waist="Engraved Belt",legs="Tali'ah Sera. +2",feet="Nukumi Ocreae +1"}
@@ -287,7 +292,7 @@ function init_gear_sets()
 		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
 
 	-- MELEE (SINGLE-WIELD) HYBRID SETS
-	sets.engaged.PDT = {ammo="Staunch Tathlum",
+	sets.engaged.PDT = {ammo="Staunch Tathlum +1",
 		head="Genmei Kabuto",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Valorous Greaves"}
@@ -307,7 +312,7 @@ function init_gear_sets()
 		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Valorous Greaves"}
 
-	sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum",
+	sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum +1",
 		head=gear.valorous_wsd_head,neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
 		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Valorous Greaves"}

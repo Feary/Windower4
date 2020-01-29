@@ -18,14 +18,7 @@ function user_setup()
 	send_command('bind !` input /ja "Perfect Counter" <me>')
 	send_command('bind ^backspace input /ja "Mantra" <me>')
 	send_command('bind @` gs c cycle SkillchainMode')
-	
-	-- Alias
-	send_command('alias gear exec gearmnk.txt')
-	send_command('alias ungear gs equip naked;wait 1;exec ungearmnk.txt')
-	
-	send_command('alias store po store mnk')
-	send_command('alias unstore po unpack mnk')
-	
+		
 	select_default_macro_book()
 end
 

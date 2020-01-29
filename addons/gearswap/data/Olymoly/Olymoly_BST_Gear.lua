@@ -53,20 +53,13 @@ function user_setup()
 	--Example of how to change default ready moves.
 	--ready_moves.default.WarlikePatrick = 'Tail Blow'
 	
-	-- Alias
-	send_command('alias gear exec gearbst.txt')
-	send_command('alias ungear gs equip naked;wait 1;exec ungearbst.txt')
-	
-	send_command('alias store po store bst')
-	send_command('alias unstore po unpack bst')
-	
 	select_default_macro_book()
 end
 
 -- BST gearsets
 function init_gear_sets()
 	-- PRECAST SETS
-	sets.precast.JA['Killer Instinct'] = {} --head="Ankusa Helm +1"
+	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm"} --head="Ankusa Helm +1"
 	sets.precast.JA['Bestial Loyalty'] = {body="Mirke Wardecors",hands="Ankusa Gloves +1"}
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
 	sets.precast.JA.Familiar = {legs="Ankusa Trousers +1"}
@@ -236,11 +229,13 @@ function init_gear_sets()
 	sets.idle.Refresh = set_combine(sets.idle, {head="Jumalik Helm", body="Jumalik Mail",}) -- Ogier's Gauntlets, Stearc Subligar, Ogier's Leggings
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
+	-- Pet Out No one engaged
 	sets.idle.Pet = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Demonry Core",
 		head="Anwig Salade",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Sheltered Ring",
 		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
 
+	-- Pet Engaged Only
 	sets.idle.Pet.Engaged = {ammo="Demonry Core",
 		head="Anwig Salade",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Dark Ring",
@@ -265,7 +260,7 @@ function init_gear_sets()
 	sets.defense.PetMEVA = sets.defense.PetMDT
 
 	sets.defense.PKiller = set_combine(sets.defense.PDT, {body="Nukumi Gausape +1"})
-	sets.defense.Reraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
+	sets.defense.Reraise = set_combine(sets.defense.PDT, {head="Twilight Helm", body="Twilight Mail"})
 
 	sets.defense.MDT = {ammo="Staunch Tathlum",
 		head="Genmei Kabuto",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Etiolation Earring",

@@ -96,10 +96,7 @@ send_command('bind !p gs equip sets.Cure_Received') --Equip Cure Potency Receive
 send_command('bind @m gs c mount Hippogryph')
 send_command('alias ambuseal input /item "Abdhaljs Seal" <me>')
 send_command('alias rads temps buy Radialens')
-send_command('alias fol send olymoly input /follow Dasmir;send aniyah input /follow Dasmir')
-send_command('alias fol send olymoly input /follow Dasmir;send aniyah input /follow Dasmir')
-send_command('alias unfol sat allcommand unfollow')
-send_command('alias ufol sat allcommand unfollow')
+send_command('alias molli temps buy Mollifier')
 
 --Place to override Tables and other definitions you may want to.
 

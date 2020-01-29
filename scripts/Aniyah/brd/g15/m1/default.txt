@@ -1,0 +1,22 @@
+alias g15m1g1 input /ma "Honor March" 
+alias g15m1g2 input /ma "Victory March" 
+alias g15m1g3 input /ma "Blade Madrigal" 
+alias g15m1g4 input /ma "Sword Madrigal" 
+alias g15m1g5 input /ma "Honor March" 
+alias g15m1g6 input /ma "Honor March" 
+
+alias g15m1g7 gs c set ExtraSongsMode Dummy;wait 1;input /ma "Fowl Aubade"
+alias g15m1g8 
+alias g15m1g9 
+alias g15m1g10 
+alias g15m1g11 
+alias g15m1g12 
+
+alias g15m1g13 
+alias g15m1g14 
+alias g15m1g15 
+alias g15m1g16 
+alias g15m1g17 
+alias g15m1g18 
+
+

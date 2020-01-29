@@ -1,0 +1,20 @@
+alias g15m1g1 /ja "Yonin" <me>
+alias g15m1g2 /ja "Innin" <me>
+alias g15m1g3 /ja "Futae" <me>
+alias g15m1g4 //sc set Evasion
+alias g15m1g5 /ma "Utsusemi: Ni" <me>
+alias g15m1g6 /ma "Utsusemi: Ichi" <me>
+
+alias g15m1g7 /ma "Kurayami: ni" <me>
+alias g15m1g8 /ma "Hojo: Ni <me>
+alias g15m1g9 /ma "Jubaki: ichi" <me>
+alias g15m1g10 /ma "Aisha: Ichi" <me>
+alias g15m1g11 /ma "Yurin: Ichi" <me>
+alias g15m1g12 /ma "Myoshu: ichi" <me>
+
+alias g15m1g13 /ja "Blade: Jin" <stnpc>
+alias g15m1g14 
+alias g15m1g15 
+alias g15m1g16 
+alias g15m1g17 
+alias g15m1g18 

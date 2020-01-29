@@ -1,0 +1,25 @@
+alias g13m1g1 
+alias g13m1g2 
+alias g13m1g3 
+alias g13m1g4 
+alias g13m1g5 
+alias g13m1g6 
+
+alias g13m1g7 
+alias g13m1g8 
+alias g13m1g9 
+alias g13m1g10 
+alias g13m1g11 
+alias g13m1g12 
+alias g13m1g13 
+alias g13m1g14 
+alias g13m1g15 
+alias g13m1g16 
+alias g13m1g17 
+alias g13m1g19 
+alias g13m1g20 
+alias g13m1g21 
+alias g13m1g22
+ 
+alias g13m1g23 
+alias g13m1g24

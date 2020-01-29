@@ -1,0 +1,20 @@
+alias g15m2g1 input /targetnpc;wait 1;input /ma "Blank Gaze" <t>
+alias g15m2g2 input /targetnpc;wait 1;input /ma "Jettatura" <t>
+alias g15m2g3 
+alias g15m2g4 input /targetnpc;wait 1;input /ma "Geist Wall" <t>
+alias g15m2g5 input /targetnpc;wait 1;input /ma "Sheep Song" <t>
+alias g15m2g6 input /targetnpc;wait 1;input /ma "Sporific" <t>
+
+alias g15m2g7  input /ma "Cocoon" <me>
+alias g15m2g8  input /ma "Phalanx" <me>
+alias g15m2g9  input /ma "Stoneskin" <me>
+alias g15m2g10 input /ma "Crusade" <me>
+alias g15m2g11 
+alias g15m2g12 
+
+alias g15m2g13 input /console gs c toggle AutoDefenseMode
+alias g15m2g14 input /console gs c cycle HybridMode
+alias g15m2g15 input /console gs c toggle TankAutoDefense
+alias g15m2g16 input /console gs c cycle IdleMode
+alias g15m2g17 input /console gs c toggle AutoRuneMode
+alias g15m2g18 input /console gs c toggle RuneElement

@@ -22,13 +22,6 @@ function user_setup()
 	send_command('bind ^r gs c set skipprocweapons true;gs c weapons Default;gs c set WeaponskillMode Normal;gs c update')
 	send_command('bind ^q gs c weapons Bow;gs c update')
 	
-	-- Alias
-	send_command('alias gear exec gearsam.txt')
-	send_command('alias ungear gs equip naked;wait 1;exec ungearsam.txt')
-	
-	send_command('alias store po store sam')
-	send_command('alias unstore po unpack sam')
-
     select_default_macro_book()
 end
 

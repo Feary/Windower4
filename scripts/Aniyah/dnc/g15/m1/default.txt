@@ -1,0 +1,20 @@
+alias g15m1g1 /ja "Quickstep" <t>
+alias g15m1g2 /ja "Boxstep" <t>
+alias g15m1g3 /ma "Utsusemi: Ni" <me>
+alias g15m1g4 /ja "Stutter Step" <t>
+alias g15m1g5 /ja "Feather Step" <t>
+alias g15m1g6 /ma "Utsusemi: Ichi <me>
+
+alias g15m1g7 //sc var set Evasion 1;wait 1;input /echo Evasion set
+alias g15m1g8 //sc var set Evasion 0;wait 1;input /echo TP set
+alias g15m1g9 /ja "Fan Dance" <me>
+alias g15m1g10 /ja "Presto <me>
+alias g15m1g11 /ja "No Foot Rise" <me>
+alias g15m1g12  /ja "Saber Dance" <me>
+
+alias g15m1g13 /ws "Evisceration" <t>
+alias g15m1g14 /ws "Exenteator" <t>
+alias g15m1g15 /ws "Shark bite" <t>
+alias g15m1g16 /ws "Viper Bite" <t>
+alias g15m1g17 /ws "Cyclone" <t>
+alias g15m1g18 /ws "Energy Drain" <t>

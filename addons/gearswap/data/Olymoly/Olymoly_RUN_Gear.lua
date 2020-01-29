@@ -39,17 +39,8 @@ function user_setup()
 	send_command('bind @f10 gs c toggle TankAutoDefense')
 	send_command('bind ^@!` gs c cycle SkillchainMode')
 	--send_command('bind !r gs c weapons Epeolatry;gs c update')
-	--send_command('bind !r gs c weapons Epeolatry;gs c update')
 	send_command('bind !f11 gs c cycle IdleMode')
 	send_command('bind @f11 gs c cycle ExtraDefenseMode')
-	
-	--Alias
-	send_command('alias gear exec gearrun.txt')
-	send_command('alias ungear gs equip naked;exec ungearrun.txt')
-	
-	send_command('alias fol ffo me')
-	send_command('alias ufol ffo stopall')
-	
 	
 	select_default_macro_book()
 end

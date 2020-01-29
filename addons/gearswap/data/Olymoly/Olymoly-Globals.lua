@@ -94,8 +94,9 @@ send_command('bind !p gs equip sets.Cure_Received') --Equip Cure Potency Receive
 send_command('bind @m gs c mount Omega')
 send_command('alias ambuseal input /item "Abdhaljs Seal" <me>')
 send_command('alias rads temps buy Radialens')
-send_command('alias fol send dasmir input /follow olymoly;send aniyah input /follow olymoly')
-send_command('alias unfol sat allcommand unfollow')
+send_command('alias molli temps buy Mollifier')
+
+
 --Place to override Tables and other definitions you may want to.
 
 bayld_items = {'Tlalpoloani','Macoquetza','Camatlatia','Icoyoca','Tlamini','Suijingiri Kanemitsu',

@@ -37,8 +37,6 @@ function user_setup()
 	send_command('bind ^\\\\ input /ma "Protectra V" <me>')
 	send_command('bind @\\\\ input /ma "Shellra V" <me>')
 	send_command('bind !\\\\ input /ma "Reraise III" <me>')
-
-	send_command('alias fol ffo me')
 	
     select_default_macro_book()
 end

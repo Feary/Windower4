@@ -1,0 +1,29 @@
+alias g13m1g1 /ma "Katon: San" <t>
+alias g13m1g2 /ma "Doton: San" <t>
+alias g13m1g3 /ma "Suiton: San" <t>
+alias g13m1g4 /ma "Huton: San" <t>
+alias g13m1g5 /ma "Hyoton: San" <t>
+alias g13m1g6 /ma "Raiton: San" <t>
+alias g13m1g7 /ja "futae" <me>
+
+alias g13m1g8 /ma "Katon: Ni" <t>
+alias g13m1g9  /ma "Doton: Ni" <t>
+alias g13m1g10 /ma "Suiton: Ni" <t>
+alias g13m1g11 /ma "Huton: Ni" <t>
+alias g13m1g12 /ma "Hyoton: Ni" <t>
+alias g13m1g13 /ma "Raiton: Ni" <t>
+alias g13m1g14 
+ 
+alias g13m1g15 /ma "Migawari: ichi" <me>
+alias g13m1g16 /ma "Yurin: ichi" <t>
+alias g13m1g17 /ma "Myoshu: ichi" <t>
+alias g13m1g18 /ma "Aisha: Ichi" <t>
+alias g13m1g19 /ma "Dokumori: ichi" <t>
+
+alias g13m1g20 /ma "Kurayami: Ni" <t>
+alias g13m1g21 /ma "Hojo: Ni" <t>
+alias g13m1g22  /ma "Jubaku: ichi" <t>
+ 
+alias g13m1g23 /ma "Utsusemi: Ni" <me>
+alias g13m1g24 /ma "Utsusemi: Ichi" <me>
+

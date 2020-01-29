@@ -18,3 +18,4 @@ displayx = 480
 displayy = 750
 
 include('g15.lua')
+include('Extras/Alias.lua')

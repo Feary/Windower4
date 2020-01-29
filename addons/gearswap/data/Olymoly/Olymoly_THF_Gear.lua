@@ -31,16 +31,6 @@ function user_setup()
 	send_command('bind !r gs c weapons MagicWeapons;gs c update')
 	send_command('bind ^\\\\ input /ja "Despoil" <t>')
 	send_command('bind !\\\\ input /ja "Mug" <t>')
-
-	-- Alias 
-	send_command('alias gear exec gearthf.txt')
-	send_command('alias ungear gs equip naked;exec ungearthf.txt')
-	
-	send_command('alias store po store thf')
-	send_command('alias unstore po unpack thf')
-	
-	send_command('alias fol ffo me')
-	send_command('alias ufol ffo stopall')
 	
     select_default_macro_book()
 end

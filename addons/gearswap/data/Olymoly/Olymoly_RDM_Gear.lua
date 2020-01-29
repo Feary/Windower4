@@ -48,13 +48,7 @@
 	send_command('bind @\\\\ input /ma "Shell V" <t>')
 	send_command('bind !\\\\ input /ma "Reraise" <me>')
 	send_command('bind @f10 gs c cycle RecoverMode')
-	
-	send_command('alias gear exec gearrdm.txt')
-	send_command('alias ungear gs equip naked;exec ungearrdm.txt')
-	
-	send_command('alias store po store rdm')
-	send_command('alias unstore po unpack rdm')
-	
+		
 	send_command('alias imp input /ja "Parsimony" <me>;wait 1;input /ma "Impact" <stnpc>')
 	
 	select_default_macro_book()

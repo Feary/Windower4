@@ -1,0 +1,20 @@
+alias g15m1g1 /ja "Jump" <t>
+alias g15m1g2 /ja "High Jump" <t>
+alias g15m1g3 /ma "Utsusemi: Ni" <me>
+alias g15m1g4 /ja "Super Jump" <t>
+alias g15m1g5 /ja "Angon" <stpc>
+alias g15m1g6 /ma "Utsusemi: Ichi <me>
+
+alias g15m1g7 //sc set Standard
+alias g15m1g8 /ja "Call Wyvern" <me>
+alias g15m1g9 /ja "Spirit Link" <me>
+alias g15m1g10 /ja "Deep Breathing" <me>
+alias g15m1g11 /ja "Restoring Breath" <me>
+alias g15m1g12 /ja "Smiting Breath" <stnpc>
+
+alias g15m1g13 /ws "Drakesbane" <t>
+alias g15m1g14 /ws "Penta Thrust" <t>
+alias g15m1g15 /ws "Impluse Drive" <t>
+alias g15m1g16 /ws "Skewer" <t>
+alias g15m1g17 /ws "Vorpal Thrust" <t>
+alias g15m1g18 /ws "Raiden Thrust" <t>

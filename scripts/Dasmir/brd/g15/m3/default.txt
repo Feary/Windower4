@@ -1,0 +1,20 @@
+alias g15m3g1 input /target <p0>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g2 input /target <p1>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g3 input /target <p2>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g4 input /target <p3>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g5 input /target <p4>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g6 input /target <p5>;wait 1;sat youcommand aniyah gs c smartcure
+
+alias g15m3g7 input /target <a10>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g8 input /target <a11>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g9 input /target <a12>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g10 input /target <a13>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g11 input /target <a14>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g12 input /target <a15>;wait 1;sat youcommand aniyah gs c smartcure
+
+alias g15m3g13 input /target <a10>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g14 input /target <a10>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g15 input /target <a10>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g16 input /target <a10>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g17 input /target <a10>;wait 1;sat youcommand aniyah gs c smartcure
+alias g15m3g18 input /target <a10>;wait 1;sat youcommand aniyah gs c smartcure

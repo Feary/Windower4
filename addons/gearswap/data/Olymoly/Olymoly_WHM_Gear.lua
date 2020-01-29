@@ -36,16 +36,6 @@ function user_setup()
 	send_command('bind @\\\\ input /ma "Shellra V" <me>')
 	send_command('bind !\\\\ input /ma "Reraise IV" <me>')
 	
-	-- Alias
-	send_command('alias gear exec gearrwhmtxt')
-	send_command('alias ungear gs equip naked;exec ungearwhm.txt')
-	
-	send_command('alias store po store whm')
-	send_command('alias unstore po unpack whm')
-	
-	send_command('alias fol ffo me')
-	send_command('alias ufol ffo stopall')
-
     select_default_macro_book()
 end
 

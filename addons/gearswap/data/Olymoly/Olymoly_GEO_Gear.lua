@@ -34,16 +34,6 @@ function user_setup()
 	send_command('bind ^delete input /ma "Aspir III" <t>')
 	send_command('bind @delete input /ma "Sleep" <t>')
 	
-	-- Alias
-	send_command('alias gear exec geargeo.txt')
-	send_command('alias ungear gs equip naked;exec ungeargeo.txt')
-	
-	send_command('alias store po store geo')
-	send_command('alias unstore po unpack geo')
-	
-	send_command('alias fol ffo me')
-	send_command('alias ufol ffo stopall')
-	
 	-- Base duration is 180 seconds.
 	indi_duration = 275
 	

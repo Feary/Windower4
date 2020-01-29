@@ -51,16 +51,6 @@ function user_setup()
 	-- Pro/shell
 	send_command('alias pro input /ma "Accession" <me>;wait 1;input /ma "Shell V" <me>;wait 5;input /ma "Accession" <me>;wait 1;input /ma "Protect V" <me>;')
 	
-	-- Gear
-	send_command('alias gear exec gearsch.txt')
-	send_command('alias ungear gs equip naked;exec ungearsch.txt')
-	
-	send_command('alias store po store sch')
-	send_command('alias unstore po unpack sch')
-	
-	send_command('alias fol ffo me')
-	send_command('alias ufol ffo stopall')
-	
 	select_default_macro_book()
 end
 

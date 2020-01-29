@@ -30,9 +30,6 @@ function user_setup()
 	send_command('bind ^delete input /ja "Dark Arts" <me>')
 	send_command('bind !delete input /ja "Addendum: Black" <me>')
 	send_command('bind @delete input /ja "Manifestation" <me>')
-	
-	send_command('alias gear exec dasmir/gearblm.txt')
-	send_command('alias ungear gs equip naked;exec dasmir/ungearblm.txt')
     
 	select_default_macro_book()
 end

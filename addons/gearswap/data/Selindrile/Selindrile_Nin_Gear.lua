@@ -74,7 +74,7 @@ function init_gear_sets()
 		legs="Rawhide Trousers",feet="Mochi. Kyahan +1"}
 		
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Passion Jacket",feet="Hattori Kyahan +1"})
-	sets.precast.FC.Shadows = set_combine(sets.precast.FC.Utsusemi, {ammo="Staunch Tathlum",ring1="Prolix Ring"})
+	sets.precast.FC.Shadows = set_combine(sets.precast.FC.Utsusemi, {ammo="Staunch Tathlum +1",ring1="Prolix Ring"})
 
     -- Snapshot for ranged
     sets.precast.RA = {legs="Nahtirah Trousers"}
@@ -151,11 +151,9 @@ function init_gear_sets()
 	
 	sets.MagicBurst = {ring1="Mujin Band",ring2="Locus Ring"}
 	
-	sets.element.Earth = {neck="Quanpur Necklace"}
-
     sets.midcast.NinjutsuDebuff = {ammo="Dosis Tathlum",
         head="Dampening Tam",neck="Incanter's Torque",ear1="Gwati Earring",ear2="Digni. Earring",
-        body="Mekosu. Harness",hands="Mochizuki Tekko +1",ring1="Stikini Ring",ring2="Stikini Ring",
+        body="Mekosu. Harness",hands="Mochizuki Tekko +1",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back="Andartia's Mantle",waist="Chaac Belt",legs="Rawhide Trousers",feet="Mochi. Kyahan +1"}
 
     sets.midcast.NinjutsuBuff = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})

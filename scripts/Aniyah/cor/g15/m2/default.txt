@@ -1,0 +1,21 @@
+alias g15m2g1 input /targetnpc;wait 1;input /attack <t>
+alias g15m2g2 
+alias g15m2g3 
+alias g15m2g4 
+alias g15m2g5 
+alias g15m2g6 
+
+alias g15m2g7 
+alias g15m2g8 
+alias g15m2g9 input /ja "Light Shot" <t>
+alias g15m2g10 
+alias g15m2g11 
+alias g15m2g12 input /ja "Dark Shot" <t>
+
+alias g15m2g13 gs c cycle RangedMode
+alias g15m2g14 input /targetnpc;wait 1;input /ra <t>
+alias g15m2g15 input /targetnpc;wait 1;input /attack <t>
+alias g15m2g16 gs c cycle WeaponskillMode
+alias g15m2g17 gs c toggle rnghelper
+alias g15m2g18 gs c toggle AutoWSMode
+

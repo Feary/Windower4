@@ -52,14 +52,6 @@ function user_setup()
 	send_command('bind !q gs c weapons SavageWeapons;gs c update')
 	send_command('bind @pause roller roll')
 
-	-- Alias
-	send_command('alias gear exec gearcor.txt')
-	send_command('alias ungear gs equip naked;wait 1;exec ungearcor.txt')
-	
-	send_command('alias store po store cor')
-	send_command('alias unstore po unpack cor')
-
-
     select_default_macro_book()
 end
 
