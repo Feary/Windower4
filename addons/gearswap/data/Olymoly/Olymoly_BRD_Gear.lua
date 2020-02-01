@@ -319,10 +319,6 @@ function init_gear_sets()
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Fodder
 		
-	-- Gear for specific elemental nukes.
-	sets.WindNuke = {}--main="Marin Staff +1"
-	sets.IceNuke = {}--main="Ngqoqwanb"
-	
 	-- Sets to return to when not performing an action.
 	sets.Sheltered = {ring2="Sheltered Ring"}
 	sets.RREar = {ear2="Reraise Earring"}
@@ -400,6 +396,7 @@ function select_default_macro_book()
 	end
 end
 
+-- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
 
     state.ExtraSongsMode = M{['description']='Extra Songs','None','Dummy','DummyLock','FullLength','FullLengthLock'}
@@ -411,9 +408,11 @@ function job_setup()
 
 	autows = "Rudra's Storm"
 	autofood = 'Pear Crepe'
+	
+	state.AutoSongMode = M(false, 'Auto Song Mode')
 
 	update_melee_groups()
-	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoNukeMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoBuffMode",},{"AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","ExtraSongsMode","CastingMode","TreasureMode",})
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoNukeMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoStunMode","AutoDefenseMode","AutoSongMode",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","ExtraSongsMode","CastingMode","TreasureMode",})
 end
 
 

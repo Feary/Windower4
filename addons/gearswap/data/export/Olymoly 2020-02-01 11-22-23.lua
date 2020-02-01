@@ -1,0 +1,17 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    ammo="Homiliary",
+    head="Befouled Crown",
+    body="Theo. Briault +2",
+    hands="Inyan. Dastanas +2",
+    legs="Assid. Pants +1",
+    feet="Herald's Gaiters",
+    neck="Loricate Torque +1",
+    waist="Fucho-no-Obi",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Inyanga Ring",
+    right_ring="Defending Ring",
+    back={ name="Alaunus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}},
+}

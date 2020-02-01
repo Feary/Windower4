@@ -13,4 +13,6 @@ return {
     "Pill. Poulaines +2",
     "Pill. Culottes +3",
     "Pill. Bonnet +2",
+	"Skulk. Armlets +1",
+	"Pill. Armlets +1",
 }

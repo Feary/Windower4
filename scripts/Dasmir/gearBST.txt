@@ -1,44 +1,27 @@
 get Acro Helm storage all
-get Adad Amulet storage all
 get Ankusa Gaiters storage all
 get Ankusa Gloves storage all
 get Ankusa Helm storage all
 get Ankusa Jackcoat storage all
 get Ankusa Trousers storage all
 get Artio's Mantle storage all
-get Enmerkar Earring storage all
 get Focal Orb storage all
 get Handler's Earring case all
 get Handler's Earring +1 case all
 get Hatxiik storage all
 get Hunahpu storage all
 get Hurch'lan Sash storage all
-get Isa Belt case all
-get Incarnation Sash storage all
 get Izizoeksi storage all
 get Kaidate storage all
 get Kerehcatl storage all
 get Kumbhakarna storage all
-get Meg. Chausses +2 sack all
-get Meg. Cuirie +2 sack all
-get Meg. Gloves +2 sack all
-get Meg. Jam. +2 sack all
-get Meghanada Visor +2 sack all
 get Nukumi Manoplas storage all
 get Nukumi Ocreae storage all
 get Nukumi Quijotes storage all
 get Pet Food Theta storage all
 get Rimeice Earring storage all
-get Skadi's Jambeaux storage all
-get Tali'ah Crackows +2 storage all
-get Tali'ah Gages +2 storage all
-get Tali'ah Manteel +2 storage all
-get Tali'ah Ring storage all
-get Tali'ah Sera. +2 storage all
-get Tali'ah Turban +2 storage all
 get Totemic Gaiters storage all
 get Totemic Gloves storage all
 get Totemic Helm storage all
 get Totemic Jackcoat storage all
 get Totemic Trousers storage all
-get Varar Ring +1 storage all

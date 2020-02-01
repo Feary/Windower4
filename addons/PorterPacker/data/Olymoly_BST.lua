@@ -12,4 +12,5 @@ return {
     "Totemic Gloves",
     "Totemic Trousers",
     "Totemic Gaiters",
+	"Skadi's Jambeaux",
 }
