@@ -229,6 +229,14 @@
 				<slot16>magic fruit</slot16>
 				<slot17>tenebral crush</slot17>				
 			</zahak>
+			<subblu>
+				<slot01>Cocoon</slot01>
+				<slot02>Jettatura</slot02>
+				<slot03>Blank Gaze</slot03>
+				<slot04>Sheep Song</slot04>
+				<slot05>Geist Wall</slot05>
+				<slot06>Refueling</slot06>		
+			</subblu>
 			</spellsets>
 	</global>
 </settings>

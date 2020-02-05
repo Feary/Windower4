@@ -74,7 +74,7 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
 	-- RDM gets 30 FC from traits and up to 8 more from JP gifts. 80-38=42 
-	sets.precast.FC = {ammo="Hasty Pinion +1",
+	sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
 		head="Atro. Chapeau +2", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Viti. Tabard +1", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		-- legs="Psycloth Lappas", 

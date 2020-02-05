@@ -93,8 +93,8 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS['Myrkr'] = {ammo="Staunch Tathlum",
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Evans Earring",ear2="Etiolation Earring",
-		-- hands="Regal Cuffs", 
-		body="Amalric Doublet +1", ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
+		-- hands="Regal Cuffs",  ring2="Mephitas's Ring",
+		body="Amalric Doublet +1", ring1="Mephitas's Ring +1",
 		back="Fi Follet Cape +1",waist="Yamabuki-no-Obi",legs="Peda. Pants +1",feet="Skaoi Boots"}
 
     -- Midcast Sets
@@ -136,8 +136,8 @@ function init_gear_sets()
 
     sets.midcast.Curaga = sets.midcast.Cure
 
-	sets.Self_Healing = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",}--waist="Gishdubar Sash"
-	sets.Cure_Received = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",}--waist="Gishdubar Sash"
+	sets.Self_Healing = {ring1="Kunaji Ring",ring2="Asklepian Ring",}-- neck="Phalaina Locket", waist="Gishdubar Sash"
+	sets.Cure_Received = {ring1="Kunaji Ring",ring2="Asklepian Ring",}--neck="Phalaina Locket", waist="Gishdubar Sash"
 	sets.Self_Refresh = {back="Grapevine Cape"}--waist="Gishdubar Sash",feet="Inspirited Boots"
 	
 	sets.midcast.Cursna = {main="Oranyan",ammo="Hasty Pinion +1",
@@ -313,7 +313,7 @@ function init_gear_sets()
         head=gear.merlinic_nuke_head,neck="Sanctity Necklace", ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		-- Refoccilation Stone
-        back="Bookworm Cape",waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+        back="Bookworm's Cape",waist="Yamabuki-no-Obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 	
 	sets.midcast.Helix.Resistant = {main="Oranyan", sub="Enki Strap", ammo="Pemphredo Tathlum",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
@@ -364,7 +364,7 @@ function init_gear_sets()
 
     sets.idle.PDT = {main="Mafic Cudgel", sub="Genbu's Shield", ammo="Staunch Tathlum",
 		-- sub="Oneiros Grip",
-        head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Mallquis Saio +2",hands="Volte Bracers",ring1="Defending Ring",ring2="Dark Ring",
 		--feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
@@ -382,13 +382,13 @@ function init_gear_sets()
 
     -- Defense sets
     sets.defense.PDT = {main="Mafic Cudgel", sub="Genbu's Shield", ammo="Staunch Tathlum",
-        head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Mallquis Saio +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 
     sets.defense.MDT = {main="Mafic Cudgel", sub="Genbu's Shield", ammo="Staunch Tathlum",
 		--sub="Umbra Strap",
-        head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Mallquis Saio +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
@@ -413,14 +413,14 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {main="Tokko Rod",sub="Genbu's Shield",ammo="Homiliary",
+    sets.engaged = {main="Kaja Rod",sub="Genbu's Shield",ammo="Homiliary",
         head="Chironic Hat",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Digni. Earring",
 		--hands=gear.merlinic_refresh_hands,
         body="Jhakri Robe +2",hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Eschan Stone", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
 		
-	sets.engaged.PDT = {main="Tokko Rod", sub="Genbu's Shield", ammo="Staunch Tathlum",
+	sets.engaged.PDT = {main="Kaja Rod", sub="Genbu's Shield", ammo="Staunch Tathlum",
 		-- sub="Oneiros Grip", 	
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		--hands=gear.merlinic_refresh_hands,
@@ -454,6 +454,7 @@ function init_gear_sets()
     sets.buff.PDTSublimation = {}
 	
 	-- Weapons sets
+	sets.weapons.None = {main="Kaja Rod", sub="Genbu's Shield"}
 	sets.weapons.Akademos = {}--main="Akademos",sub="Niobid Strap"
 	sets.weapons.Khatvanga = {}--main="Khatvanga",sub="Bloodrain Strap"
 end

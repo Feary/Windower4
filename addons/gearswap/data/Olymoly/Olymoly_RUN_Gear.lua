@@ -42,13 +42,15 @@ function user_setup()
 	send_command('bind !f11 gs c cycle IdleMode')
 	send_command('bind @f11 gs c cycle ExtraDefenseMode')
 	
+	send_command('aset set subblu')
+	
 	select_default_macro_book()
 end
 
 function init_gear_sets()
 
     sets.Enmity = {ammo="Staunch Tathlum", -- Sapience Orb
-		 -- Halitus Helm
+		 -- Halitus Helm Futhark Torque +2 Moonlight Necklace Trux Earring
 	     head="Fu. Bandeau +1",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
 	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
 		 -- Ahosi Leggings

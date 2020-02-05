@@ -41,6 +41,7 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Requires Gearswap and Motenten includes.
 being_attacked = false
+engaging = os.clock()
 
 include('Sel-MonsterAbilities.lua')
 
@@ -138,15 +139,18 @@ windower.raw_register_event('action', function(act)
 	
 	if curact.category == 1 then
 		if targetsMe then
-			if state.AutoEngageMode.value and actor.race == 0 and player.status == 'Idle' and not moving then
-				if player.target.type == "MONSTER" then
-					windower.chat.input('/attack')
-				elseif player.target.type ~= 'NONE' then
-					send_command('setkey escape down; wait .2;setkey escape up')
-				end
+			if state.AutoEngageMode.value and actor.race == 0 and math.sqrt(actor.distance) < (3.2 + actor.model_size) and player.status == 'Idle' and not (moving or engaging > os.clock() or actor.name:contains("'s ")) then
+				engaging = os.clock() + 2
+				
+				packets.inject(packets.new('outgoing', 0x1a, {
+					['Target'] = actor.id,
+					['Target Index'] = actor.index,
+					['Category']     = 0x02,
+				}))
+				
 			elseif player.status == 'Idle' and not (being_attacked or midaction() or pet_midaction()) then
 				being_attacked = true
-				send_command('gs c forceequip')
+				windower.send_command('gs c forceequip')
 			end
 			being_attacked = true
 		end

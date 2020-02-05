@@ -11,6 +11,8 @@ return {
     "Convo. Bracers +2",
     "Caller's Pendant",
     "Rubeus Boots",
+	"Glyphic Horn +1",
+	"Glyphic Doublet +3",
     "Glyph. Pigaches +1",
     "Glyphic Spats +1",
     "Glyphic Bracers +1",
