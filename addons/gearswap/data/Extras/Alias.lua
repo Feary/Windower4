@@ -1,7 +1,14 @@
 -- Global Alias
+
+send_command('alias geodes exec geodes.txt')
+
 -- Fast Follow 
 send_command('alias fol ffo me')
 send_command('alias ufol ffo stopall')
+
+-- Crafting Gear
+send_command('alias crafting exec '..player.name..'/gear_craft.txt')
+send_command('alias uncrafting exec '..player.name..'/ungear_craft.txt')
 
 -- Gearing from Slips
 send_command('alias getslip exec '..player.name..'/get_slips.txt')

@@ -23,6 +23,7 @@ put Mallquis Trews +2 case all
 put Merlinic Hood case all
 put Merlinic Crackows case all
 put Peda. Loafers +1 case all
+put Peda. Bracers +1 case all
 put Pedagogy Pants +1 case all
 put Rubicundity case all
 put Savant's Treatise case all

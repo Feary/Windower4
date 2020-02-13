@@ -23,6 +23,7 @@ get Mallquis Trews +2 case all
 get Merlinic Hood case all
 get Merlinic Crackows case all
 get Peda. Loafers +1 case all
+get Peda. Bracers +1 case all
 get Pedagogy Pants +1 case all
 get Rubicundity case all
 get Savant's Treatise case all
