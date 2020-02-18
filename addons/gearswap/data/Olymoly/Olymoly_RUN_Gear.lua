@@ -12,33 +12,37 @@ function user_setup()
 	
 	state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP'}
 
-	gear.enmity_jse_back = 	{name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
-	gear.tp_jse_back = 		{name="Ogma's cape",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
-	gear.da_jse_back = 		{name="Ogma's cape",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
-	gear.ws_jse_back = 		{name="Ogma's cape",augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
-	-- HP, Magic Eva, Enmity + and PDT -10%
-	gear.hp_jse_back = 		{name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
+	
+	gear.tp_jse_back = 		{name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	gear.da_jse_back = 		{name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	gear.ws_jse_back = 		{name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
+	gear.enmity_jse_back = 	{name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}}
+	gear.hp_jse_back = 		{name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}}
 	-- Hp fc meva
-	gear.FC_jse_back = 		{name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
+	--gear.FC_jse_back = 		{name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
+	-- vit/def back={ name="Ogma's cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','DEF+50',}},} 
+	
+
 
 	-- Additional local binds
-	send_command('bind !` gs c SubJobEnmity')
-	send_command('bind @` gs c cycle RuneElement')
+	send_command('bind !` gs c RuneElement') -- SubJobEnmity
+	send_command('bind @` gs c RuneElement')
 	send_command('bind ^` gs c RuneElement')
+	send_command('bind pause gs c cycle RuneElement')
 	send_command('bind @pause gs c toggle AutoRuneMode')
-	send_command('bind ^delete input /ja "Provoke" <stnpc>')
-	send_command('bind !delete input /ma "Cure IV" <stal>')
-	send_command('bind @delete input /ma "Flash" <stnpc>')
+	send_command('bind ^backspace input /ma "Phalanx" <me>')
+	send_command('bind !backspace input /ma "Cure IV" <stal>')
+	send_command('bind @backspace input /ma "Flash" <stnpc>')
 	send_command('bind ^\\\\ input /ma "Protect IV" <t>')
 	send_command('bind @\\\\ input /ma "Shell V" <t>')
 	send_command('bind !\\\\ input /ma "Crusade" <me>')
-	send_command('bind ^backspace input /ja "Lunge" <t>')
-	send_command('bind @backspace input /ja "Gambit" <t>')
-	send_command('bind !backspace input /ja "Rayke" <t>')
+	send_command('bind ^delete input /ja "Lunge" <t>')
+	send_command('bind @delete input /ja "Gambit" <t>')
+	send_command('bind !delete input /ja "Rayke" <t>')
 	send_command('bind @f8 gs c toggle AutoTankMode')
 	send_command('bind @f10 gs c toggle TankAutoDefense')
-	send_command('bind ^@!` gs c cycle SkillchainMode')
-	--send_command('bind !r gs c weapons Epeolatry;gs c update')
+	--send_command('bind ^@!` gs c cycle SkillchainMode')
+	send_command('bind !r gs c weapons Epeolatry;gs c update')
 	send_command('bind !f11 gs c cycle IdleMode')
 	send_command('bind @f11 gs c cycle ExtraDefenseMode')
 	
@@ -259,7 +263,7 @@ function init_gear_sets()
 		--hands=gear.herculean_refresh_hands
 		body="Runeist Coat +1", hands="Kurys Gloves", ring1="Defending Ring",ring2="Dark Ring",
 		--feet=gear.herculean_refresh_feet
-		back="Moonbeam Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+		back=gear.hp_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
 		
     sets.idle.Sphere = set_combine(sets.idle,{body="Mekosu. Harness"})
 			
@@ -268,20 +272,19 @@ function init_gear_sets()
 		-- hands="Turms Mittens +1"
 		body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- feet="Turms Leggings +1"
-		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+		back=gear.hp_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
 	
 	sets.idle.KiteTank = {ammo="Staunch Tathlum",
 		head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		-- hands="Turms Mittens +1"
 		body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- feet="Turms Leggings +1"
-		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	sets.idle.Weak = {ammo="Homiliary",
 		head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		-- hands="Turms Mittens +1"
-		body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- feet="Turms Leggings +1"
-		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1", feet="Turms Leggings +1"}
 	
 	sets.Kiting = {legs="Carmine Cuisses +1"}
 	
@@ -299,66 +302,65 @@ function init_gear_sets()
 	--sets.weapons.Lionheart = {main="Lionheart",sub="Utu Grip"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Reikiko"}
 	
-	-- Defense Sets
-	
+	-- Defense Sets	
 	sets.defense.PDT = {ammo="Staunch Tathlum",
 			head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-			body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+			body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	sets.defense.PDT_HP = {ammo="Staunch Tathlum",
 			head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-			body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+			body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
 	sets.defense.MDT = {ammo="Yamarang",
 			head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-       		body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+       		body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
 	sets.defense.MDT_HP = {ammo="Staunch Tathlum",
 			head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-			body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+			body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
 	sets.defense.BDT = {ammo="Staunch Tathlum",
 			head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-			body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+			body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
 	sets.defense.BDT_HP = {ammo="Staunch Tathlum",
 			head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-			body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+			body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
 	
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		-- Volte Cap Futhark Torque
-		head="Erilaz Galea +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-		body="Runeist Coat +1",hands="Volte Bracers",ring1="Defending Ring",ring2="Moonbeam Ring",
+		-- Futhark Torque
+		head="Turms Cap +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Hearty Earring",
+		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- Engraved Belt
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	sets.defense.MEVA_HP = {ammo="Staunch Tathlum",
-		-- Volte Cap Futhark Torque
-		head="Erilaz Galea +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+		-- Futhark Torque
+		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	sets.defense.Death = {ammo="Staunch Tathlum",
-       	-- Volte Cap Futhark Torque
-		head="Erilaz Galea +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+       	-- Futhark Torque
+		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	sets.defense.DTCharm = {ammo="Staunch Tathlum",
-       	-- Volte Cap Futhark Torque
-		head="Erilaz Galea +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+       	--  Futhark Torque
+		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	sets.defense.Charm = {ammo="Staunch Tathlum",
-      	-- Volte Cap Futhark Torque
-		head="Erilaz Galea +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+      	--  Futhark Torque
+		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
@@ -380,19 +382,22 @@ function init_gear_sets()
             back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 	-- Hybrid
 	sets.engaged.DTLite = {ammo="Staunch Tathlum",
+			-- Futhark Bandeau +3
             head="Aya. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-            body="Ayanmo Corazza +2",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
-            back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+            -- Futhark Coat +3
+			body="Ayanmo Corazza +2",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+            back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Meg. Chausses +2",feet="Turms Leggings +1"}
     sets.engaged.Acc.DTLite = {ammo="Staunch Tathlum",
-           head="Aya. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-			-- Turms Mittens +1
-            body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Defending Ring",ring2="Moonbeam Ring",
-            back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+			head="Aya. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+            body="Ayanmo Corazza +2",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+            back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Meg. Chausses +2",feet="Turms Leggings +1"}
 	-- Tank
     sets.engaged.Tank = {ammo="Staunch Tathlum",
-            head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-			body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+			-- Futhark Bandeau +3
+            head="Fu. Bandeau +1", neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+			-- Futhark Coat +3
+			body="Futhark Coat +1", hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+            back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
 	sets.engaged.Acc.Tank = sets.engaged.Tank
 	

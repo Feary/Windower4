@@ -1,6 +1,8 @@
 -- Global Alias
-
 send_command('alias geodes exec geodes.txt')
+
+-- Crafting Related
+send_command('alias crest exec craft/reset.txt')
 
 -- Fast Follow 
 send_command('alias fol ffo me')

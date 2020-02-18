@@ -26,14 +26,14 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ]]
 
-_addon.name = "Empy Pop Tracker"
-_addon.author = "Dean James (Xurion of Bismarck)"
-_addon.commands = { "ept", "empypoptracker" }
-_addon.version = "2.0.0"
+_addon.name = 'Empy Pop Tracker'
+_addon.author = 'Dean James (Xurion of Bismarck)'
+_addon.commands = { 'ept', 'empypoptracker' }
+_addon.version = '2.0.0'
 
-config = require("config")
-res = require("resources")
-nm_data = require("nms/index")
+config = require('config')
+res = require('resources')
+nm_data = require('nms/index')
 
 active = false
 
@@ -52,38 +52,31 @@ defaults.text.bg.red = 0
 defaults.text.bg.visible = true
 defaults.text.padding = 8
 defaults.text.text = {}
-defaults.text.text.font = "Consolas"
+defaults.text.text.font = 'Consolas'
 defaults.text.text.size = 10
-defaults.tracking = "briareus"
+defaults.tracking = 'briareus'
 defaults.visible = true
+defaults.add_to_chat_mode = 8
 
 EmpyPopTracker.settings = config.load(defaults)
-EmpyPopTracker.text = require("texts").new(EmpyPopTracker.settings.text, EmpyPopTracker.settings)
+EmpyPopTracker.text = require('texts').new(EmpyPopTracker.settings.text, EmpyPopTracker.settings)
 
 colors = {}
-colors.success = "\\cs(100,255,100)"
-colors.danger = "\\cs(255,50,50)"
-colors.warning = "\\cs(255,170,0)"
-colors.close = "\\cr"
+colors.success = '\\cs(100,255,100)'
+colors.danger = '\\cs(255,50,50)'
+colors.warning = '\\cs(255,170,0)'
+colors.close = '\\cr'
 
 function owns_item(id, items)
-    local owned = false
-
-    -- Loop maximum 80 times over all slots. 80 indexes are returned for each bag regardless of max capacity.
-    for i = 1, 80, 1 do
-        if items.safe[i].id == id or
-            items.safe2[i].id == id or
-            items.locker[i].id == id or
-            items.sack[i].id == id or
-            items.satchel[i].id == id or
-            items.inventory[i].id == id or
-            items.storage[i].id == id then
-                owned = true
-                break
+    for _, bag in ipairs(items) do
+        for _, item in ipairs(bag) do
+            if item.id == id then
+                return true
+            end
         end
     end
 
-    return owned
+    return false
 end
 
 function owns_key_item(id, items)
@@ -112,17 +105,19 @@ function item_treasure_pool_count(id, treasure)
 end
 
 function ucwords(str)
-    return string.gsub(str, "(%a)([%w_']*)", function(first, rest)
+    local result = string.gsub(str, '(%a)([%w_\']*)', function(first, rest)
         return first:upper() .. rest:lower()
     end)
+
+    return result
 end
 
 function get_indent(depth)
-    return string.rep("  ", depth)
+    return string.rep('  ', depth)
 end
 
 function generate_text(data, key_items, items, depth)
-    local text = depth == 1 and data.name or ""
+    local text = depth == 1 and data.name or ''
     for _, pop in pairs(data.pops) do
         local resource
         local item_scope
@@ -142,12 +137,12 @@ function generate_text(data, key_items, items, depth)
 
         local pop_name = 'Unknown pop'
         if resource then
-            pop_name = ucwords(resource.en)
+            pop_name = ucwords(resource.name)
         end
 
         --separator line for each top-level mob
         if depth == 1 then
-            text = text .. "\n"
+            text = text .. '\n'
         end
 
         local item_colour
@@ -161,7 +156,7 @@ function generate_text(data, key_items, items, depth)
         if in_pool_count > 0 then
             pool_notification = colors.warning .. ' [' .. in_pool_count .. ']' .. colors.close
         end
-        text = text .. "\n" .. get_indent(depth) .. pop.dropped_from.name .. "\n" .. get_indent(depth) .. ' >> ' .. item_colour .. item_identifier .. pop_name .. colors.close .. pool_notification
+        text = text .. '\n' .. get_indent(depth) .. pop.dropped_from.name .. '\n' .. get_indent(depth) .. ' >> ' .. item_colour .. item_identifier .. pop_name .. colors.close .. pool_notification
         if pop.dropped_from.pops then
             text = text .. generate_text(pop.dropped_from, key_items, items, depth + 1)
         end
@@ -170,23 +165,10 @@ function generate_text(data, key_items, items, depth)
     return text
 end
 
-EmpyPopTracker.add_to_chat = function(message)
-    if type(message) ~= 'string' then
-        error('add_to_chat requires the message arg to be a string')
-    end
-
-    windower.add_to_chat(8, message)
-end
-
 EmpyPopTracker.generate_info = function(nm, key_items, items)
-    local nm_type = type(nm)
-    if nm_type ~= 'table' then
-        error('generate_info requires the nm arg to be a table, but got ' .. nm_type .. ' instead')
-    end
-
     local info = {
         has_all_kis = true,
-        text = ""
+        text = ''
     }
 
     if nm.pops then
@@ -204,19 +186,23 @@ EmpyPopTracker.generate_info = function(nm, key_items, items)
     return info
 end
 
-function find_nms(query)
+function find_nms(pattern)
     local matching_nms = {}
-    local lower_query = query:lower()
+    local lower_pattern = pattern:lower()
     for _, nm in pairs(nm_data) do
-        local result = string.match(nm.name:lower(), '(.*' .. lower_query .. '.*)')
+        local nm_name = nm.name:lower()
+        local result = windower.wc_match(nm_name, lower_pattern)
         if result then
-            table.insert(matching_nms, result)
+            table.insert(matching_nms, nm_name)
         end
     end
+
     return matching_nms
 end
 
-windower.register_event("addon command", function(command, ...)
+windower.register_event('addon command', function(command, ...)
+    command = command and command:lower() or 'help'
+
     if commands[command] then
         commands[command](...)
     else
@@ -228,19 +214,19 @@ commands = {}
 
 commands.track = function(...)
     local args = {...}
-    local nm_name = args[1]
-    local matching_nm_names = find_nms(nm_name)
+    local nm_search_pattern = args[1]
+    local matching_nm_names = find_nms(nm_search_pattern)
 
     if #matching_nm_names == 0 then
-        EmpyPopTracker.add_to_chat('Unable to find a NM using: "' .. nm_name .. '"')
+        windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, 'Unable to find a NM using: "' .. nm_search_pattern .. '"')
     elseif #matching_nm_names > 1 then
-        EmpyPopTracker.add_to_chat('"' .. nm_name .. '" matches ' .. #matching_nm_names .. ' NMs. Please be more explicit:')
+        windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, '"' .. nm_search_pattern .. '" matches ' .. #matching_nm_names .. ' NMs. Please be more explicit:')
         for key, matching_file_name in pairs(matching_nm_names) do
-            EmpyPopTracker.add_to_chat('  Match ' .. key .. ': ' .. ucwords(matching_file_name))
+            windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, '  Match ' .. key .. ': ' .. ucwords(matching_file_name))
         end
     else
         active = true
-        EmpyPopTracker.add_to_chat("Now tracking: " .. ucwords(matching_nm_names[1]))
+        windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, 'Now tracking: ' .. ucwords(matching_nm_names[1]))
         EmpyPopTracker.settings.tracking = matching_nm_names[1]
         EmpyPopTracker.update()
         commands.show()
@@ -264,26 +250,27 @@ commands.show = function()
 end
 
 commands.help = function()
-    EmpyPopTracker.add_to_chat("---Empy Pop Tracker---")
-    EmpyPopTracker.add_to_chat("Available commands:")
-    EmpyPopTracker.add_to_chat("//ept t|track briareus - tracks Briareus pops (partial names such as apadem work too!)")
-    EmpyPopTracker.add_to_chat("//ept hide - hides the UI")
-    EmpyPopTracker.add_to_chat("//ept show - shows the UI")
-    EmpyPopTracker.add_to_chat("//ept list - lists all trackable NMs")
-    EmpyPopTracker.add_to_chat("//ept help - displays this help")
+    windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, '---Empy Pop Tracker---')
+    windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, 'Available commands:')
+    windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, '//ept track briareus - tracks Briareus pops (search patterns such as apadem* work too!)')
+    windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, '//ept hide - hides the UI')
+    windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, '//ept show - shows the UI')
+    windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, '//ept list - lists all trackable NMs')
+    windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, '//ept help - displays this help')
 end
 
 commands.list = function()
-    EmpyPopTracker.add_to_chat("---Empy Pop Tracker---")
-    EmpyPopTracker.add_to_chat("Trackable NMs:")
+    windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, '---Empy Pop Tracker---')
+    windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, 'Trackable NMs:')
     for _, nm in pairs(nm_data) do
-        EmpyPopTracker.add_to_chat(ucwords(nm.name))
+        windower.add_to_chat(EmpyPopTracker.settings.add_to_chat_mode, ucwords(nm.name))
     end
 end
 
 commands.bg = function()
     local tracking_nm = nm_data[EmpyPopTracker.settings.tracking]
-    windower.open_url(tracking_nm.bg_url)
+    local url = 'https://www.bg-wiki.com/bg/' .. tracking_nm.name
+    windower.open_url(url)
 end
 
 EmpyPopTracker.update = function()
