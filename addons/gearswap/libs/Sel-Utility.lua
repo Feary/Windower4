@@ -1889,7 +1889,7 @@ function check_cpring()
 
 	if player.main_job_level == 99 then
 	
-		if player.job_points[(res.jobs[player.main_job_id].ens):lower()].jp_spent == 2100 then
+		if player.job_points[(res.jobs[player.main_job_id].ens):lower()].jp_spent == 2100 and not buffactive["Emporox's Gift"] then
 			if item_available("Emporox's Ring") then
 				local emporox_ring = get_usable_item("Emporox's Ring")
 				if player.equipment.left_ring and player.equipment.left_ring == "Emporox's Ring" and emporox_ring.usable then
@@ -2579,3 +2579,11 @@ function get_warcry_tp_bonus()
 end
 
 warcry_tp_bonus = get_warcry_tp_bonus()
+
+function set_dual_wield()
+	if (dualWieldJobs:contains(player.main_job) or (player.sub_job == 'DNC' or player.sub_job == 'NIN')) then
+		can_dual_wield = true
+	else
+		can_dual_wield = false
+	end
+end

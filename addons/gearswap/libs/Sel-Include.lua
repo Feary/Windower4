@@ -72,7 +72,7 @@
 function init_include()
 	extdata = require('extdata')
 	require('queues')
-	res = require ('resources')
+	res = require('resources')
 	packets = require('packets')
 	
 	--Snaps's Rnghelper extension for automatic ranged attacks that should be superior to my implementation.
@@ -177,13 +177,6 @@ function init_include()
 	state.Buff['Manifestation'] = buffactive['Manifestation'] or false
 	state.Buff['Warcry'] = buffactive['Warcry'] or false
 	
-	--Defining Variables here on load that won't change without a reload to save processing.
-	if (dualWieldJobs:contains(player.main_job) or (player.sub_job == 'DNC' or player.sub_job == 'NIN')) then
-		can_dual_wield = true
-	else
-		can_dual_wield = false
-	end
-
     -- Classes describe a 'type' of action.  They are similar to state, but
     -- may have any free-form value, or describe an entire table of mapped values.
     classes = {}
@@ -241,6 +234,7 @@ function init_include()
 	next_cast = 0
 	delayed_cast = ''
 	delayed_target = ''
+	equipped = 0
 	
 	time_test = false
 	selindrile_warned = false
@@ -346,7 +340,7 @@ function init_include()
 	end
 
 	if not selindrile_warned then
-		naughty_list = {'lua','gearswap','file','windower','plugin','addon','program','hack','bot'}
+		naughty_list = {'lua','gearswap','file','windower','plugin','addon','program','hack','bot ','bots ','botting','easyfarm'}
 		
 		windower.raw_register_event('outgoing chunk', function(id, data, modified, injected, blocked)
 			if id == 0x0B6 and res.servers[windower.ffxi.get_info().server].en == 'Asura' then
@@ -534,6 +528,7 @@ end
 
 -- Non item-based global settings to check on load.
 function global_on_load()
+	set_dual_wield()
 	if world.area then
 		if world.area:contains('Abyssea') or areas.ProcZones:contains(world.area) then
 			state.SkipProcWeapons:set('False')
@@ -1389,6 +1384,13 @@ end
 -- Central point to call to equip gear based on status.
 -- Status - Player status that we're using to define what gear to equip.
 function handle_equipping_gear(playerStatus, petStatus)
+	local current_time = os.clock()
+	if current_time < equipped then
+		return
+	else
+		equipped = current_time + .1
+	end
+	
     -- init a new eventArgs
     local eventArgs = {handled = false}
 	
@@ -1398,7 +1400,7 @@ function handle_equipping_gear(playerStatus, petStatus)
     end
 
 	if state.ReEquip.value and state.Weapons.value ~= 'None' then
-		if player.equipment.main == 'empty' or player.equipment.sub == 'empty' then
+		if player.equipment.main ~= sets.weapons[state.Weapons.value].main or (sets.weapons[state.Weapons.value].sub and player.equipment.sub ~= sets.weapons[state.Weapons.value].sub) or (sets.weapons[state.Weapons.value].range and player.equipment.range ~= sets.weapons[state.Weapons.value].range) then
 			handle_weapons()
 		end
 	end
@@ -2104,6 +2106,7 @@ end
 
 -- Called when the player's subjob changes.
 function sub_job_change(newSubjob, oldSubjob)
+	set_dual_wield()
     if user_setup then
         user_setup()
     end
@@ -2286,6 +2289,10 @@ function buff_change(buff, gain)
 		elseif gain and (player.equipment.head == "Guide Beret" or player.equipment.head == "Sprout Beret") then
 			enable("head")
         end
+	elseif buff == "Emporox's Gift" and gain then
+		if player.equipment.left_ring == "Emporox's Ring" then
+			enable("ring1")
+		end
     end
 
 	if not midaction() and not pet_midaction() then

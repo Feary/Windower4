@@ -64,7 +64,7 @@ function job_setup()
 	
 	state.RecoverMode = M('35%', '60%', 'Always', 'Never')
 	
-	autows = "Chant Du Cygne"
+	autows = "Savage Blade"
 	autofood = 'Pear Crepe'
 	enspell = ''
 	
@@ -200,20 +200,30 @@ function job_post_midcast(spell, spellMap, eventArgs)
 		if state.Buff.Saboteur then
 			equip(sets.buff.Saboteur)
 		end
-    elseif spell.skill == 'Enhancing Magic' then
+
+	elseif spell.skill == 'Enhancing Magic' then
 		equip(sets.midcast['Enhancing Magic'])
 	
 		if buffactive.Composure and spell.target.type == 'PLAYER' then
 			equip(sets.buff.ComposureOther)
 		end
-		
-		if sets.midcast[spell.english] then
+
+		if state.Weapons.value == 'None' and can_dual_wield and sets.midcast[spell.english] and sets.midcast[spell.english].DW then
+			equip(sets.midcast[spell.english].DW)
+		elseif state.Weapons.value == 'None' and can_dual_wield and sets.midcast[spellMap] and sets.midcast[spellMap].DW then
+			equip(sets.midcast[spellMap].DW)
+		elseif sets.midcast[spell.english] then
 			equip(sets.midcast[spell.english])
 		elseif sets.midcast[spellMap] then
 			equip(sets.midcast[spellMap])
 		end
-		
     end
+	
+	if spell.skill == 'Enfeebling Magic' or default_spell_map == 'ElementalEnfeeble' or spell.english == 'Impact' then
+		if state.Weapons.value ~= 'None' and not sets.weapons[state.Weapons.value].range and item_available('Regal Gem') then
+			equip({range=empty,ammo="Regal Gem"})
+		end
+	end
 end
 
 function job_aftercast(spell, spellMap, eventArgs)
@@ -543,11 +553,16 @@ function update_melee_groups()
 end
 
 buff_spell_lists = {
-	Auto = {
+	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
 		{Name='Refresh III',	Buff='Refresh',		SpellID=894,	When='Always'},
 		{Name='Haste II',		Buff='Haste',		SpellID=511,	When='Always'},
 		{Name='Aurorastorm',	Buff='Aurorastorm',	SpellID=119,	When='Idle'},
 		{Name='Reraise',		Buff='Reraise',		SpellID=135,	When='Always'},
+	},
+	
+	AutoMelee = {
+		{Name='Haste II',		Buff='Haste',		SpellID=511,	When='Engaged'},
+		{Name='Temper II',		Buff='Multi Strikes',SpellID=895,	When='Engaged'},
 	},
 	
 	Default = {
@@ -570,7 +585,7 @@ buff_spell_lists = {
 		{Name='Protect V',		Buff='Protect',			SpellID=47,		Reapply=false},
 	},
 	
-	MeleeBuff = {
+	FullMeleeBuff = {
 		{Name='Refresh III',	Buff='Refresh',			SpellID=894,	Reapply=false},
 		{Name='Haste II',		Buff='Haste',			SpellID=511,	Reapply=false},
 		{Name='Regen II',		Buff='Regen',			SpellID=110,	Reapply=false},
@@ -582,9 +597,23 @@ buff_spell_lists = {
 		{Name='Shell V',		Buff='Shell',			SpellID=52,		Reapply=false},
 		{Name='Protect V',		Buff='Protect',			SpellID=47,		Reapply=false},
 		{Name='Shock Spikes',	Buff='Shock Spikes',	SpellID=251,	Reapply=false},
-		{Name='Enthunder II',	Buff='Enthunder II',	SpellID=316,	Reapply=false},
+		{Name='Enthunder',		Buff='Enthunder',		SpellID=104,	Reapply=false},
 		{Name='Temper II',		Buff='Multi Strikes',	SpellID=895,	Reapply=false},
 		{Name='Barfire',		Buff='Barfire',			SpellID=60,		Reapply=false},
+		{Name='Barparalyze',	Buff='Barparalyze',		SpellID=74,		Reapply=false},
+	},
+	
+	MeleeBuff = {
+		{Name='Refresh III',	Buff='Refresh',			SpellID=894,	Reapply=false},
+		{Name='Haste II',		Buff='Haste',			SpellID=511,	Reapply=false},
+		{Name='Temper II',		Buff='Multi Strikes',	SpellID=895,	Reapply=false},
+		{Name='Gain-STR',		Buff='STR Boost',		SpellID=479,	Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Shell V',		Buff='Shell',			SpellID=52,		Reapply=false},
+		{Name='Protect V',		Buff='Protect',			SpellID=47,		Reapply=false},
+		{Name='Shock Spikes',	Buff='Shock Spikes',	SpellID=251,	Reapply=false},
+		{Name='Enthunder',		Buff='Enthunder',		SpellID=104,	Reapply=false},
+		{Name='Barblizzard',	Buff='Barblizzard',		SpellID=61,		Reapply=false},
 		{Name='Barparalyze',	Buff='Barparalyze',		SpellID=74,		Reapply=false},
 	},
 	
