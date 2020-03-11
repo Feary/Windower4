@@ -46,7 +46,7 @@ function init_gear_sets()
 	
     sets.buff['Sneak Attack'] = {}
     sets.buff['Trick Attack'] = {}
-		
+
     -- Extra Melee sets.  Apply these on top of melee sets.
     sets.Knockback = {}
 	sets.Suppa = {ear1="Suppanomimi", ear2="Sherida Earring"}
@@ -57,6 +57,8 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Aeneas = {main="Aeneas",sub="Taming Sari"}
 	sets.weapons.LowBuff = {main="Aeneas",sub="Blurred Knife +1"}
+	sets.weapons.Savage = {main="Naegling",sub="Tauret"}
+	sets.weapons.Evisceration = {main="Tauret",sub="Taming Sari"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Throwing = {main="Aeneas",sub="Taming Sari",range="Raider's Bmrng.",ammo=empty}
 	sets.weapons.Bow = {main="Aeneas",sub="Taming Sari",range="Kaja Bow"}
@@ -222,7 +224,7 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -236,7 +238,7 @@ function init_gear_sets()
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Shadow Mantle",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Dampening Tam",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",

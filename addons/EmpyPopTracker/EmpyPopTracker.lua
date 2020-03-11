@@ -29,7 +29,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 _addon.name = 'Empy Pop Tracker'
 _addon.author = 'Dean James (Xurion of Bismarck)'
 _addon.commands = { 'ept', 'empypoptracker' }
-_addon.version = '2.0.0'
+_addon.version = '2.2.1'
 
 config = require('config')
 res = require('resources')
@@ -57,21 +57,38 @@ defaults.text.text.size = 10
 defaults.tracking = 'briareus'
 defaults.visible = true
 defaults.add_to_chat_mode = 8
+defaults.colors = {}
+defaults.colors.needed = {}
+defaults.colors.needed.red = 255
+defaults.colors.needed.green = 50
+defaults.colors.needed.blue = 50
+defaults.colors.obtained = {}
+defaults.colors.obtained.red = 100
+defaults.colors.obtained.green = 255
+defaults.colors.obtained.blue = 100
+defaults.colors.pool = {}
+defaults.colors.pool.red = 255
+defaults.colors.pool.green = 170
+defaults.colors.pool.blue = 0
+defaults.colors.bgall = {}
+defaults.colors.bgall.red = 0
+defaults.colors.bgall.green = 75
+defaults.colors.bgall.blue = 0
 
 EmpyPopTracker.settings = config.load(defaults)
 EmpyPopTracker.text = require('texts').new(EmpyPopTracker.settings.text, EmpyPopTracker.settings)
 
-colors = {}
-colors.success = '\\cs(100,255,100)'
-colors.danger = '\\cs(255,50,50)'
-colors.warning = '\\cs(255,170,0)'
-colors.close = '\\cr'
+function start_color(color)
+    return '\\cs(' .. EmpyPopTracker.settings.colors[color].red .. ',' .. EmpyPopTracker.settings.colors[color].green .. ',' .. EmpyPopTracker.settings.colors[color].blue .. ')'
+end
 
 function owns_item(id, items)
-    for _, bag in ipairs(items) do
-        for _, item in ipairs(bag) do
-            if item.id == id then
-                return true
+    for _, bag in pairs(items) do
+        if type(bag) == 'table' then
+            for _, item in ipairs(bag) do
+                if item.id == id then
+                    return true
+                end
             end
         end
     end
@@ -147,16 +164,16 @@ function generate_text(data, key_items, items, depth)
 
         local item_colour
         if owns_pop then
-            item_colour = colors.success
+            item_colour = start_color('obtained')
         else
-            item_colour = colors.danger
+            item_colour = start_color('needed')
         end
 
         local pool_notification = ''
         if in_pool_count > 0 then
-            pool_notification = colors.warning .. ' [' .. in_pool_count .. ']' .. colors.close
+            pool_notification = start_color('pool') .. ' [' .. in_pool_count .. ']' .. '\\cr'
         end
-        text = text .. '\n' .. get_indent(depth) .. pop.dropped_from.name .. '\n' .. get_indent(depth) .. ' >> ' .. item_colour .. item_identifier .. pop_name .. colors.close .. pool_notification
+        text = text .. '\n' .. get_indent(depth) .. pop.dropped_from.name .. '\n' .. get_indent(depth) .. ' >> ' .. item_colour .. item_identifier .. pop_name .. '\\cr' .. pool_notification
         if pop.dropped_from.pops then
             text = text .. generate_text(pop.dropped_from, key_items, items, depth + 1)
         end
@@ -166,24 +183,12 @@ function generate_text(data, key_items, items, depth)
 end
 
 EmpyPopTracker.generate_info = function(nm, key_items, items)
-    local info = {
-        has_all_kis = true,
-        text = ''
+    return {
+        has_all_pops = not nm.pops or T(nm.pops):all(function(item)
+            return item.type == 'item' and owns_item(item.id, items) or owns_key_item(item.id, key_items)
+        end),
+        text = generate_text(nm, key_items, items, 1)
     }
-
-    if nm.pops then
-        for _, key_item_data in pairs(nm.pops) do
-            local has_pop_ki = owns_key_item(key_item_data.id, key_items)
-
-            if not has_pop_ki then
-                info.has_all_kis = false
-            end
-        end
-    end
-
-    info.text = generate_text(nm, key_items, items, 1)
-
-    return info
 end
 
 function find_nms(pattern)
@@ -213,8 +218,7 @@ end)
 commands = {}
 
 commands.track = function(...)
-    local args = {...}
-    local nm_search_pattern = args[1]
+    local nm_search_pattern = table.concat({...}, ' ')
     local matching_nm_names = find_nms(nm_search_pattern)
 
     if #matching_nm_names == 0 then
@@ -279,10 +283,10 @@ EmpyPopTracker.update = function()
     local tracked_nm_data = nm_data[EmpyPopTracker.settings.tracking]
     local generated_info = EmpyPopTracker.generate_info(tracked_nm_data, key_items, items)
     EmpyPopTracker.text:text(generated_info.text)
-    if generated_info.has_all_kis then
-        EmpyPopTracker.text:bg_color(0, 75, 0)
+    if generated_info.has_all_pops then
+        EmpyPopTracker.text:bg_color(EmpyPopTracker.settings.colors.bgall.red, EmpyPopTracker.settings.colors.bgall.green, EmpyPopTracker.settings.colors.bgall.blue)
     else
-        EmpyPopTracker.text:bg_color(0, 0, 0)
+        EmpyPopTracker.text:bg_color(EmpyPopTracker.settings.text.red, EmpyPopTracker.settings.text.green, EmpyPopTracker.settings.text.blue)
     end
     if EmpyPopTracker.settings.visible then
         EmpyPopTracker.text:visible(true)
