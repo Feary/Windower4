@@ -158,7 +158,7 @@ function init_include()
 	
 	NotifyBuffs = S{}
 	
-	if mageJobs:contains(player.main_job) then
+	if data.jobs.mage_jobs:contains(player.main_job) then
 		state.Weapons		  = M{['description'] = 'Weapons','None','Weapons'}
 	else
 		state.Weapons		  = M{['description'] = 'Weapons','Weapons','None'}
@@ -187,7 +187,7 @@ function init_include()
     -- they may benefit from spell-specific augments, such as improved regen or refresh).
     -- Spells that fall under this category will be skipped when searching for
     -- spell.skill sets.
-    classes.NoSkillSpells = no_skill_spells_list
+    classes.NoSkillSpells = data.spells.no_skill
     classes.SkipSkillCheck = false
     -- Custom, job-defined class, like the generic spell mappings.
     -- Takes precedence over default spell maps.
@@ -382,7 +382,7 @@ function init_include()
 		local sub= windower.ffxi.get_mob_by_target('st')
 		if (target ~= nil) and (sub == nil) then
 			if state.AutoCleanupMode.value and math.sqrt(target.distance) < 7 then
-				if target.name == "Runje Desaali" then 
+				if target.name == "Runje Desaali" and bayld_items then 
 					for i in pairs(bayld_items) do
 						if player.inventory[bayld_items[i]] then
 							windower.chat.input('/item "'..bayld_items[i]..'" <t>')
@@ -425,7 +425,7 @@ function init_include()
 		lastincombat = false
 		being_attacked = false
 		
-		if world.area:contains('Abyssea') or areas.ProcZones:contains(world.area) then
+		if world.area:contains('Abyssea') or data.areas.proc:contains(world.area) then
 			state.SkipProcWeapons:set('False')
 		else
 			state.SkipProcWeapons:reset()
@@ -530,7 +530,7 @@ end
 function global_on_load()
 	set_dual_wield()
 	if world.area then
-		if world.area:contains('Abyssea') or areas.ProcZones:contains(world.area) then
+		if world.area:contains('Abyssea') or data.areas.proc:contains(world.area) then
 			state.SkipProcWeapons:set('False')
 		else
 			state.SkipProcWeapons:reset()
@@ -969,10 +969,9 @@ function default_precast(spell, spellMap, eventArgs)
 	end
 	
     cancel_conflicting_buffs(spell, spellMap, eventArgs)
-    refine_waltz(spell, spellMap, eventArgs)
 	
 	if spell.action_type == 'Magic' then
-		next_cast = os.clock() + 3.6 - latency
+		next_cast = os.clock() + (spell.cast_time/4) + 3.35 - latency
 	elseif spell.type == 'WeaponSkill' then
 		next_cast = os.clock() + 2.5 - latency
 	elseif spell.action_type == 'Ability' then
@@ -997,7 +996,7 @@ function default_post_precast(spell, spellMap, eventArgs)
 			
 		elseif spell.type == 'WeaponSkill' then
 		
-			if state.WeaponskillMode.value ~= 'Proc' and elemental_obi_weaponskills:contains(spell.english) then
+			if state.WeaponskillMode.value ~= 'Proc' and data.weaponskills.elemental:contains(spell.english) then
 				local orpheus_avail = item_available("Orpheus's Sash")
 				local hachirin_avail = item_available('Hachirin-no-Obi')
 				
@@ -1013,6 +1012,10 @@ function default_post_precast(spell, spellMap, eventArgs)
 					equip({waist="Hachirin-no-Obi"})
 				end
 			end
+
+			if state.SkillchainMode.value ~= 'Off' and sets.Skillchain then
+				equip(sets.Skillchain)
+			end
 			
 			if sets.Reive and buffactive['Reive Mark'] and sets.Reive.neck == "Ygnas's Resolve +1" then
 				equip(sets.Reive)
@@ -1022,7 +1025,7 @@ function default_post_precast(spell, spellMap, eventArgs)
 				equip(sets.precast.WS.Proc)
 			end
 			
-			if state.Capacity.value == true then 
+			if state.Capacity.value == true then
 				equip(sets.Capacity)
 			end
 			
@@ -1054,10 +1057,6 @@ function default_post_precast(spell, spellMap, eventArgs)
 					handle_equipping_gear(player.status)
 				end
 			elseif spell.type == 'WeaponSkill' then
-				if state.SkillchainMode.value ~= 'Off' and sets.Skillchain then
-					equip(sets.Skillchain)
-				end
-				
 				if sets.precast.WS[spell.english] and sets.precast.WS[spell.english].DT then
 					equip(sets.precast.WS[spell.english].DT)
 				elseif sets.precast.WS.DT then
@@ -1174,7 +1173,7 @@ function default_aftercast(spell, spellMap, eventArgs)
 	elseif spell.action_type == 'Magic' then
 		next_cast = os.clock() + 3.35 - latency
 	elseif spell.type == 'WeaponSkill' then
-		next_cast = os.clock() + 2 - latency
+		next_cast = os.clock() + 1.5 - latency
 	elseif spell.action_type == 'Ability' then
 		next_cast = os.clock() + .8 - latency
 	elseif 	spell.action_type == 'Item' then
@@ -1201,7 +1200,7 @@ function default_aftercast(spell, spellMap, eventArgs)
 			if state.ElementalWheel.value and (spell.skill == 'Elemental Magic' or spellMap:contains('ElementalNinjutsu')) then
 				state.ElementalMode:cycle()
 				local startindex = state.ElementalMode.index
-				while S{"Light","Dark"}:contains(state.ElementalMode.value) do
+				while (state.ElementalMode.value == 'Light' or state.ElementalMode.value == 'Dark') do
 					state.ElementalMode:cycle()
 					if startindex == state.ElementalMode.index then break end
 				end
@@ -1271,6 +1270,7 @@ function filter_precast(spell, spellMap, eventArgs)
 		if check_warps(spell, spellMap, eventArgs) then return end
 	elseif spell.action_type == 'Ability' or spell.type == 'WeaponSkill' then
 		if check_amnesia(spell, spellMap, eventArgs) then return end
+		if refine_waltz(spell, spellMap, eventArgs) then return end
 		if check_abilities(spell, spellMap, eventArgs) then return end
 	end
 	if check_recast(spell, spellMap, eventArgs) then return end
@@ -1510,7 +1510,7 @@ function get_idle_set(petStatus)
 		end
 	end
 
-    if areas.Assault:contains(world.area) and sets.Assault then
+    if data.areas.assault:contains(world.area) and sets.Assault then
         idleSet = set_combine(idleSet, sets.Assault)
     end
 	
@@ -1530,7 +1530,7 @@ function get_idle_set(petStatus)
         idleSet = user_job_customize_idle_set(idleSet)
     end
 
-    if areas.Cities:contains(world.area) then
+    if data.areas.cities:contains(world.area) then
 		if sets.idle.Town then
 			idleSet = set_combine(idleSet, sets.Kiting, sets.idle.Town)
 		elseif sets.Town then
@@ -2243,7 +2243,7 @@ function state_change(stateField, newValue, oldValue)
 		else
 			send_command('wait .001;gs c DisplayElement')
 		end
-	elseif stateField == 'Capacity' and newValue == 'false' and cprings:contains(player.equipment.left_ring) then
+	elseif stateField == 'Capacity' and newValue == 'false' and data.equipment.cprings:contains(player.equipment.left_ring) then
             enable("ring1")
 	end
 	
@@ -2276,15 +2276,15 @@ function buff_change(buff, gain)
     if user_job_buff_change then
         user_job_buff_change(buff, gain, eventArgs)
     end
-	
+
 	if buff == 'Voidwatcher' then
 		state.SkipProcWeapons:set('False')
-	elseif S{'sleep','Lullaby'}:contains(buff) and state.CancelStoneskin.value then
+	elseif (buff == 'sleep' or buff == 'Lullaby') and state.CancelStoneskin.value then
 		send_command('cancel stoneskin')
-	elseif (S{'Blink','Third Eye'}:contains(buff) or buff:contains('Copy Image')) and not gain then
+	elseif (buff == 'Blink' or buff == 'Third Eye' or buff:startswith('Copy Image')) and not gain then
 		lastshadow = "None"
-    elseif S{'Commitment','Dedication'}:contains(buff) then
-        if gain and (cprings:contains(player.equipment.left_ring) or xprings:contains(player.equipment.left_ring)) then
+    elseif (buff == 'Commitment' or buff == 'Dedication') then
+        if gain and (data.equipment.cprings:contains(player.equipment.left_ring) or data.equipment.xprings:contains(player.equipment.left_ring)) then
             enable("ring1")			
 		elseif gain and (player.equipment.head == "Guide Beret" or player.equipment.head == "Sprout Beret") then
 			enable("head")

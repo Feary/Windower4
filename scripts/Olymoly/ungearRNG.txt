@@ -8,20 +8,11 @@ put Adhemar Kecks +1 safe2 all
 put Adhemar Kecks safe2 all
 put Adhemar Wrist. +1 sack all
 put Adhemar Wristbands sack all
-put Amini Bottillons +1 safe2 all
-put Amini Brague +1 safe2 all
-put Amini Caban +1 safe2 all
-put Amini Gapette +1 safe2 all
-put Amini Glove. +1 safe2 all
-put Arc. Braccae +2 safe2 all
-put Arc. Bracers +1 safe2 all
-put Arc. Jerkin +3 safe2 all
-put Arcadian Beret +2 safe2 all
-put Arcadian Socks +1 safe2 all
 put Armageddon safe2 all
 put Belenus's Cape safe2 all
 put Bullet safe2 all
 put Carm. Sc. Mail +1 safe2 all
+put Darraigner's Brais safe2 all
 put Desultor Tassets safe2 all
 put Eminent Bullet safe2 all
 put Enervating Earring safe2 all
@@ -30,6 +21,7 @@ put Grunfeld Rope sack all
 put Holliday safe2 all
 put Impulse Belt safe2 all
 put Iskur Gorget sack all
+put Jute Boots +1 sack all
 put Kustawi +1 safe2 all
 put Kwahu Kachina Belt safe2 all
 put Malevolence safe2 all
@@ -45,11 +37,6 @@ put Mummu Kecks +2 sack all
 put Mummu Ring safe2 all
 put Mummu Wrists +2 sack all
 put Nusku Shield safe2 all
-put Orion Beret +2 safe2 all
-put Orion Braccae +2 safe2 all
-put Orion Bracers +2 safe2 all
-put Orion Jerkin +2 safe2 all
-put Orion Socks +2 safe2 all
 put Perun +1 safe2 all
 put Pursuer's Gaiters safe2 all
 put Taeon Chapeau safe2 all

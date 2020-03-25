@@ -9,4 +9,4 @@ get Carpenter's Ring safe all
 get Orvail Ring safe all
 get Carpenter's Smock safe all
 get Craftkeeper's Ring safe all
-get Joiner's Aspis safe all
+get Joiner's Shield safe all

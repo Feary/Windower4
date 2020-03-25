@@ -21,7 +21,7 @@ function user_setup()
 	gear.ranger_wsd_jse_back = {name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}}
 	-- Leaden/Wildfire/Trueflight
 	gear.magic_wsd_jse_back = {name="Belenus's Cape", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
-	-- -- Melee TP
+	-- Melee TP
 	gear.tp_jse_back = {name="Belenus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}
 	-- DW
 	gear.DW_jse_back = {name="Belenus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
@@ -187,12 +187,14 @@ function init_gear_sets()
 		-- Baetyl Necklace
 		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
-		back=gear.magic_wsd_jse7_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet=gear.herculean_nuke_feet}
+		-- gear.herculean_nuke_feet
+		back=gear.magic_wsd_jse7_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Adhe. Gamashes +1"}
     sets.precast.WS['Wildfire'].Acc = {		
 		-- Baetyl Necklace
 		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
-		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet=gear.herculean_nuke_feet}
+		-- gear.herculean_nuke_feet
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Adhe. Gamashes +1"}
 
 	-- Crossbow
 	-- Trueflight
@@ -201,14 +203,14 @@ function init_gear_sets()
 		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
 		-- feet=gear.herculean_nuke_feet
-		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Orion Socks +2"}
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Adhe. Gamashes +1"}
 
     sets.precast.WS['Trueflight'].Acc = {
         -- Baetyl Necklace
 		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Moonshade Earring", rear="Friomisi Earring",
 		body="Carm. Sc. Mail +1", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Epaminondas's Ring",
 		-- feet=gear.herculean_nuke_feet
-		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Orion Socks +2"}
+		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Adhe. Gamashes +1"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Telos Earring",ear2="Sherida Earring",}
@@ -353,8 +355,8 @@ function init_gear_sets()
 	sets.buff.Camouflage = {body="Orion Jerkin +2"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	
-	sets.Self_Healing = {neck="Phalaina Locket",ring2="Kunaji Ring",}--hands="Buremte Gloves", waist="Gishdubar Sash"
-	sets.Cure_Received = {neck="Phalaina Locket",ring2="Kunaji Ring",}--hands="Buremte Gloves", waist="Gishdubar Sash"
+	sets.Self_Healing = {ring2="Kunaji Ring",}--neck="Phalaina Locket",hands="Buremte Gloves", waist="Gishdubar Sash"
+	sets.Cure_Received = {ring2="Kunaji Ring",}--neck="Phalaina Locket",hands="Buremte Gloves", waist="Gishdubar Sash"
 	sets.Self_Refresh = {}--waist="Gishdubar Sash"
 	
     sets.midcast.Utsusemi = sets.midcast.FastRecast
@@ -367,29 +369,29 @@ function init_gear_sets()
 
 	-- Resting sets
 	sets.resting = {
-		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
     
 	-- Idle sets
     sets.idle = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Meg. Jam. +2"}
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Meg. Jam. +2"}
     
     sets.defense.MDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Meg. Jam. +2"}
     
     sets.defense.MEVA = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
+		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Volte Bracers",ring1="Dark Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Meg. Jam. +2"}
     

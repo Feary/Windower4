@@ -156,7 +156,7 @@
         </other_pets>
         <others>
         <!-- He's targeting some guy nearby -->
-            <all>false</all>
+            <all>true</all>
             <casting>false</casting>
             <damage>false</damage>
             <healing>false</healing>

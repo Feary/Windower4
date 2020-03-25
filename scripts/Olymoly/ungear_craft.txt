@@ -10,4 +10,4 @@ put Carpenter's Ring safe all
 put Orvail Ring safe all
 put Carpenter's Smock safe all
 put Craftkeeper's Ring safe all
-put Joiner's Aspis safe all
+put Joiner's Shield safe all

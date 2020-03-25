@@ -236,7 +236,7 @@ function job_customize_idle_set(idleSet)
 		else
 			idleSet = set_combine(idleSet, sets.idle.Pet.Engaged)
 		end
-	elseif  mageJobs:contains(player.sub_job) then
+	elseif  data.jobs.mage_jobs:contains(player.sub_job) then
 		if player.mpp < 51 and (state.IdleMode.value == 'Normal' or state.IdleMode.value:contains('Sphere')) then
 			if sets.latent_refresh then
 				idleSet = set_combine(idleSet, sets.latent_refresh)
@@ -394,7 +394,7 @@ end
 
 function check_auto_pet()
 
-	if not state.AutoPuppetMode.value or areas.Cities:contains(world.area) then return false end
+	if not state.AutoPuppetMode.value or data.areas.cities:contains(world.area) then return false end
 
 	local abil_recasts = windower.ffxi.get_ability_recasts()
 

@@ -22,6 +22,7 @@ get Armageddon safe2 all
 get Belenus's Cape safe2 all
 get Bullet safe2 all
 get Carm. Sc. Mail +1 safe2 all
+get Darraigner's Brais safe2 all
 get Desultor Tassets safe2 all
 get Eminent Bullet safe2 all
 get Enervating Earring safe2 all
@@ -30,6 +31,7 @@ get Grunfeld Rope sack all
 get Holliday safe2 all
 get Impulse Belt safe2 all
 get Iskur Gorget sack all
+get Jute Boots +1 sack all
 get Kustawi +1 safe2 all
 get Kwahu Kachina Belt safe2 all
 get Malevolence safe2 all

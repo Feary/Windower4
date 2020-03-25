@@ -7,7 +7,11 @@
         <almontay>
 
         </almontay>
-        <autoupdate>true</autoupdate>
+        <aniyah>
+            <face>6</face>
+            <race>2</race>
+        </aniyah>
+        <autoupdate>false</autoupdate>
         <blinking>
             <all>
                 <always>true</always>
@@ -35,6 +39,9 @@
                 <target>true</target>
             </self>
         </blinking>
+        <casanoova>
+
+        </casanoova>
         <dayanna>
 
         </dayanna>
@@ -118,5 +125,8 @@
         <symbio>
 
         </symbio>
+        <watitdew>
+
+        </watitdew>
     </global>
 </settings>

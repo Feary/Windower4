@@ -122,7 +122,7 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {}) -- legs="Volte Hose", waist="Chaac Belt"
 	
 	-- Gear that converts elemental damage done to recover MP.	
-	sets.RecoverMP = {}--body="Seidr Cotehardie"
+	sets.RecoverMP = {body="Seidr Cotehardie"}
 	
 	-- Gear for Magic Burst mode.
     sets.MagicBurst = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
@@ -135,8 +135,7 @@ function init_gear_sets()
 	sets.RecoverBurst = {main="Maxentius", sub="Ammurapi Shield",
 		-- head="Ea Hat +1", 
 		head="Atro. Chapeau +1", neck="Mizu. Kubikazari", lear="Regal Earring", rear="Friomisi Earring",
-		-- body="Seidr Cotehardie"
-		body="Jhakri Robe +2",hands="Amalric Gages", ring1="Mujin Band", ring2="Shiva Ring",
+		body="Seidr Cotehardie",hands="Amalric Gages", ring1="Mujin Band", ring2="Shiva Ring",
 		-- waist="Refoccilation Stone", legs="Ea Slops +1",
 		back=gear.nuke_jse_back, waist="Acuity Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	

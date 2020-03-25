@@ -435,13 +435,11 @@ function init_gear_sets()
 	--------------------------------------
 	
 	-- Gear that converts elemental damage done to recover MP.	
-	sets.RecoverMP = {}--body="Seidr Cotehardie"
+	sets.RecoverMP = {body="Seidr Cotehardie"}
 	
 	-- Gear for Magic Burst mode.
     sets.MagicBurst = {head="Ea Hat", ring1="Mujin Band", feet="Jhakri Pigaches +2"}--neck="Mizu. Kubikazari",body="Ea Houppelande",hands="Ea Cuffs",legs="Ea Slops",
-	sets.RecoverBurst = {head="Ea Hat", ring1="Mujin Band", feet="Jhakri Pigaches +2"}--head="Ea Hat",neck="Mizu. Kubikazari",body="Seidr Cotehardie",hands="Ea Cuffs",legs="Ea Slops",
-
-	-- Weapons sets
+	sets.RecoverBurst = {head="Ea Hat", body="Seidr Cotehardie", ring1="Mujin Band", feet="Jhakri Pigaches +2"}--head="Ea Hat",neck="Mizu. Kubikazari",hands="Ea Cuffs",legs="Ea Slops",
 	-- Weapons sets
 	sets.weapons.SingleWeapon = {main="Idris", sub="Genbu's Shield", ranged="Dunna"}
 	sets.weapons.DualWeapons = {main="Idris", sub="Maxentius", ranged="Dunna"}	
