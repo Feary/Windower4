@@ -48,23 +48,25 @@
 -- Buff utility functions.
 -------------------------------------------------------------------------------------------------------------------
 
-local cancel_spells_to_check = S{'Sneak', 'Stoneskin', 'Spectral Jig', 'Trance', 'Monomi: Ichi', 'Utsusemi: Ichi','Utsusemi: Ni','Diamondhide','Magic Barrier'}
+local cancel_spells_to_check = S{'Sneak','Stoneskin','Spectral Jig','Trance','Monomi: Ichi','Utsusemi: Ichi','Utsusemi: Ni','Diamondhide','Magic Barrier','Valiance'}
 local cancel_types_to_check = S{'Waltz', 'Samba'}
 
 -- Function to cancel buffs if they'd conflict with using the spell you're attempting.
 -- Requirement: Must have Cancel addon installed and loaded for this to work.
 function cancel_conflicting_buffs(spell, spellMap, eventArgs)
     if cancel_spells_to_check:contains(spell.english) or cancel_types_to_check:contains(spell.type) then
-        if spell.english == 'Spectral Jig' and buffactive.sneak then
+        if spell.english == 'Spectral Jig' and buffactive['Sneak'] then
             cast_delay(0.2)
 			send_command('cancel sneak')
 			tickdelay = os.clock() + 1.5
-        elseif spell.english == 'Sneak' and spell.target.type == 'SELF' and buffactive.sneak then
+        elseif spell.english == 'Valiance' and buffactive['Vallation'] then
+            cast_delay(0.2)
+			send_command('cancel vallation')
+			tickdelay = os.clock() + 1.5
+        elseif (spell.english:startswith('Monomi') or (spell.english == 'Sneak' and spell.target.type == 'SELF')) and buffactive['Sneak'] then
             send_command('cancel sneak')
         elseif spell.english == ('Stoneskin') or spell.english == ('Diamondhide') or spell.english == ('Magic Barrier') then
             send_command('@wait 1;cancel stoneskin')
-        elseif spell.english:startswith('Monomi') then
-            send_command('@wait 1.5;cancel sneak')
         elseif spell.english == 'Utsusemi: Ni' and player.main_job == 'NIN' and lastshadow == 'Utsusemi: San' then
 			if buffactive['Copy Image (4+)'] and conserveshadows then
 				add_to_chat(123,'Abort: You have four or more shadows.')
@@ -79,11 +81,11 @@ function cancel_conflicting_buffs(spell, spellMap, eventArgs)
 			else
 				send_command('@wait '..utsusemi_cancel_delay..';cancel copy image*')
 			end
-        elseif (spell.english == 'Trance' or spell.type=='Waltz') and buffactive['saber dance'] then
+        elseif (spell.english == 'Trance' or spell.type=='Waltz') and buffactive['Saber Dance'] then
             cast_delay(0.2)
             send_command('cancel saber dance')
 			tickdelay = os.clock() + 1.7
-        elseif spell.type=='Samba' and buffactive['fan dance'] then
+        elseif spell.type=='Samba' and buffactive['Fan Dance'] then
             cast_delay(0.2)
             send_command('cancel fan dance')
 			tickdelay = os.clock() + 1.7
@@ -95,9 +97,9 @@ end
 function notify_buffs(buff, gain)
 	if state.NotifyBuffs.value and NotifyBuffs:contains(buff) then
 		if gain then
-			windower.chat.input('/p I just got hit with '..buff..'.')
+			windower.chat.input('/p '..buff:ucfirst()..' on me!')
 		else
-			windower.chat.input('/p '..buff..' is off now.')
+			windower.chat.input('/p '..buff:ucfirst()..' is off now.')
 		end
 	end
 end
@@ -407,91 +409,9 @@ function refine_waltz(spell, spellMap, eventArgs)
     end
 end
 
-
--- Function to allow for automatic adjustment of the spell target type based on preferences.
-function auto_change_target(spell, spellMap)
-    -- Don't adjust targetting for explicitly named targets
-    if not spell.target.raw:startswith('<') then
-        return
-    end
-
-    -- Do not modify target for spells where we get <lastst> or <me>.
-    if spell.target.raw == ('<lastst>') or spell.target.raw == ('<me>') then
-        return
-    end
-    
-    -- init a new eventArgs with current values
-    local eventArgs = {handled = false, PCTargetMode = state.PCTargetMode.value, SelectNPCTargets = state.SelectNPCTargets.value}
-
-    -- Allow the job to do custom handling, or override the default values.
-    -- They can completely handle it, or set one of the secondary eventArgs vars to selectively
-    -- override the default state vars.
-    if job_auto_change_target then
-        job_auto_change_target(spell, action, spellMap, eventArgs)
-    end
-    
-    -- If the job handled it, we're done.
-    if eventArgs.handled then
-        return
-    end
-    
-    local pcTargetMode = eventArgs.PCTargetMode
-    local selectNPCTargets = eventArgs.SelectNPCTargets
-
-    
-    local validPlayers = S{'Self', 'Player', 'Party', 'Ally', 'NPC'}
-
-    local intersection = spell.targets * validPlayers
-    local canUseOnPlayer = not intersection:empty()
-    
-    local newTarget
-    
-    -- For spells that we can cast on players:
-    if canUseOnPlayer and pcTargetMode ~= 'default' then
-        -- Do not adjust targetting for player-targettable spells where the target was <t>
-        if spell.target.raw ~= ('<t>') then
-            if pcTargetMode == 'stal' then
-                -- Use <stal> if possible, otherwise fall back to <stpt>.
-                if spell.targets.Ally then
-                    newTarget = '<stal>'
-                elseif spell.targets.Party then
-                    newTarget = '<stpt>'
-                end
-            elseif pcTargetMode == 'stpt' then
-                -- Even ally-possible spells are limited to the current party.
-                if spell.targets.Ally or spell.targets.Party then
-                    newTarget = '<stpt>'
-                end
-            elseif pcTargetMode == 'stpc' then
-                -- If it's anything other than a self-only spell, can change to <stpc>.
-                if spell.targets.Player or spell.targets.Party or spell.targets.Ally or spell.targets.NPC then
-                    newTarget = '<stpc>'
-                end
-            end
-        end
-    -- For spells that can be used on enemies:
-    elseif spell.targets and spell.targets.Enemy and selectNPCTargets then
-        -- Note: this means macros should be written for <t>, and it will change to <stnpc>
-        -- if the flag is set.  It won't change <stnpc> back to <t>.
-        newTarget = '<stnpc>'
-    end
-    
-    -- If a new target was selected and is different from the original, call the change function.
-    if newTarget and newTarget ~= spell.target.raw then
-        change_target(newTarget)
-    end
-end
-
-
 -------------------------------------------------------------------------------------------------------------------
 -- Environment utility functions.
 -------------------------------------------------------------------------------------------------------------------
-
--- Function to get the current weather intensity: 0 for none, 1 for single weather, 2 for double weather.
-function get_weather_intensity()
-    return gearswap.res.weather[world.weather_id].intensity
-end
-
 
 -- Returns true if you're in a party solely comprised of Trust NPCs.
 -- TODO: Do we need a check to see if we're in a party partly comprised of Trust NPCs?
@@ -599,7 +519,7 @@ function set_elemental_obi_cape_ring(spell, spellMap)
 			end
 		else
 			local hachirin_avail = item_available('Hachirin-no-Obi')
-			if hachirin_avail and spell.element == world.weather_element and gearswap.res.weather[world.weather_id].intensity == 2 then
+			if hachirin_avail and spell.element == world.weather_element and world.weather_intensity == 2 then
 				gear.ElementalObi.name = "Hachirin-no-Obi"
 			elseif orpheus_avail and spell.target.distance < 3 then
 				gear.ElementalObi.name = "Orpheus's Sash"
@@ -1635,6 +1555,20 @@ function check_use_item()
 	return false
 end
 
+function check_lockstyle()
+	if state.AutoLockstyle.value and style_lock and os.clock() > style_delay then
+		if user_job_lockstyle then
+			user_job_lockstyle()
+		elseif user_lockstyle then
+			user_lockstyle()
+		else
+			windower.chat.input('/lockstyle on')
+		end
+		style_lock = false
+		style_delay = os.clock() + 13
+	end
+end
+
 function check_food()
 	if state.AutoFoodMode.value and not buffactive['Food'] and not data.areas.cities:contains(world.area) then
 	
@@ -2614,4 +2548,58 @@ function set_dual_wield()
 	else
 		can_dual_wield = false
 	end
+end
+
+function get_closest_mob_id_by_name(name)
+	local name = get_fuzzy_name(name)
+	local mobs = windower.ffxi.get_mob_array()
+	local fuzzy_list = T{}
+	local best_match = T{}
+
+	for i, mob in pairs(mobs) do
+		if mob.valid_target then
+			local fuzzy_mob_name = get_fuzzy_name(mob.name)
+			if (name:length() >= 3 and fuzzy_mob_name:contains(name)) or fuzzy_mob_name == name then
+				fuzzy_list[mob.id] = mob
+				fuzzy_list[mob.id].score = fuzzy_mob_name:length() - name:length()
+			end
+		end
+	end
+	
+	for i, mob in pairs(fuzzy_list) do
+		if (not best_match.score or mob.score < best_match.score) or (mob.score == best_match.score and (mob.distance < best_match.distance)) then
+			best_match = mob
+		end
+	end
+
+	return best_match.id or false
+end
+
+function get_closest_mob_by_name(name)
+	local name = get_fuzzy_name(name)
+	local mobs = windower.ffxi.get_mob_array()
+	local fuzzy_list = T{}
+	local best_match = T{}
+
+	for i, mob in pairs(mobs) do
+		if mob.valid_target then
+			local fuzzy_mob_name = get_fuzzy_name(mob.name)
+			if (name:length() >= 3 and fuzzy_mob_name:contains(name)) or fuzzy_mob_name == name then
+				fuzzy_list[mob.id] = mob
+				fuzzy_list[mob.id].score = fuzzy_mob_name:length() - name:length()
+			end
+		end
+	end
+	
+	for i, mob in pairs(fuzzy_list) do
+		if (not best_match.score or mob.score < best_match.score) or (mob.score == best_match.score and (mob.distance < best_match.distance)) then
+			best_match = mob
+		end
+	end
+
+	return best_match or false
+end
+
+function get_fuzzy_name(name)
+	return name:lower():gsub("%s", ""):gsub("%p", "")
 end

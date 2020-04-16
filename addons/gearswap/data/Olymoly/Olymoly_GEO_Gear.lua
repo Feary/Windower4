@@ -67,7 +67,7 @@ function init_gear_sets()
 		body="Anhur Robe", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Geomancy Pants +2", feet=gear.merlinic_fc_feet}
 
-	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {main="Idris", sub="Genbu's Shield", range="Dunna",ammo=empty,
+	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {main="Idris", sub="Genmei Shield", range="Dunna",ammo=empty,
 		rring=empty,
 		waist="Austerity Belt"})
 	
@@ -105,7 +105,7 @@ function init_gear_sets()
 		body="Anhur Robe", hands=gear.helios_hands_FC, lring="Prolix Ring", rring="Kishar Ring",
 		back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +2",feet="Amalric Nails +1"}
 
-	sets.midcast.Geomancy = {main="Idris", sub="Genbu's Shield", range="Dunna",
+	sets.midcast.Geomancy = {main="Idris", sub="Genmei Shield", range="Dunna",
 		head="Azimuth Hood +1", neck="Incanter's Torque", lear="Odonowa Earring +1", rear="Etiolation Earring",
 		body="Vedic Coat", hands="Shrieker's Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- Feet Conserve MP
@@ -270,12 +270,12 @@ function init_gear_sets()
 		back="Moonbeam Cape",waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 
 	-- Idle sets
-	sets.idle = {main="Idris",sub="Genbu's Shield",ammo="Staunch Tathlum",
+	sets.idle = {main="Idris",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Befouled Crown", neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Bagua Mitaines +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 		
-	sets.idle.PDT = {main="Idris",sub="Genbu's Shield",ammo="Staunch Tathlum",
+	sets.idle.PDT = {main="Idris",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Mallquis Saio +2",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
@@ -283,40 +283,40 @@ function init_gear_sets()
 	sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
 	--Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Idris",sub="Genbu's Shield",range="Dunna",
+	sets.idle.Pet = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head=gear.telchine_head_Pet, neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",		
 		body=gear.telchine_body_Pet,hands=gear.telchine_hands_Pet, ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.idle_jse_back, waist="Isa Belt", legs=gear.telchine_legs_Pet, feet="Bagua Sandals +1"}
 
-	sets.idle.PDT.Pet = {main="Idris",sub="Genbu's Shield",range="Dunna",
+	sets.idle.PDT.Pet = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head=gear.telchine_head_Pet, neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body=gear.telchine_body_Pet, hands="Geo. Mitaines +3", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.idle_jse_back, waist="Isa Belt", legs=gear.telchine_legs_Pet, feet="Bagua Sandals +1"}
 
 	--Indi sets are for when an Indi-spell is active.
-	sets.idle.Indi = set_combine(sets.idle, {main="Idris",sub="Genbu's Shield",range="Dunna"})	
-	sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {main="Idris",sub="Genbu's Shield",range="Dunna"}) 
+	sets.idle.Indi = set_combine(sets.idle, {main="Idris",sub="Genmei Shield",range="Dunna"})	
+	sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {main="Idris",sub="Genmei Shield",range="Dunna"}) 
 	
-	sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {main="Idris",sub="Genbu's Shield",range="Dunna"})
-	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {main="Idris",sub="Genbu's Shield",range="Dunna"})
+	sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {main="Idris",sub="Genmei Shield",range="Dunna"})
+	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {main="Idris",sub="Genmei Shield",range="Dunna"})
 
-	sets.idle.Weak = {main="Idris",sub="Genbu's Shield", range="Dunna",
+	sets.idle.Weak = {main="Idris",sub="Genmei Shield", range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
 	-- Defense sets	
-	sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
+	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Mallquis Saio +2",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Azimuth Gaiters +1"}
 
-	sets.defense.MDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
+	sets.defense.MDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Mallquis Saio +2",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
-    sets.defense.MEVA = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
+    sets.defense.MEVA = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
         head=gear.telchine_head_Pet,neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Mallquis Saio +2",hands=gear.telchine_hands_Pet,ring1="Dark Ring",ring2="Defending Ring",
         back=gear.idle_jse_back, waist="Fucho-no-obi",legs=gear.telchine_legs_Pet,feet="Mallquis Clogs +2"}
@@ -334,7 +334,7 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
-	sets.weapons.SingleWeapon = {main="Idris", sub="Genbu's Shield", ranged="Dunna"}
+	sets.weapons.SingleWeapon = {main="Idris", sub="Genmei Shield", ranged="Dunna"}
 	sets.weapons.DualWeapons = {main="Idris", sub="Kaja Rod", ranged="Dunna"}	
 	
 	sets.HPDown = {}

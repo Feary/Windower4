@@ -118,6 +118,7 @@ function init_include()
 	state.Capacity 			  = M(false, 'Capacity Mode')
 	state.ReEquip 			  = M(false, 'ReEquip Mode')
 	state.AutoArts	 		  = M(false, 'AutoArts Mode')
+	state.AutoLockstyle	 	  = M(false, 'AutoLockstyle Mode')
 	state.AutoTrustMode 	  = M(false, 'Auto Trust Mode')
 	state.RngHelper		 	  = M(false, 'RngHelper')
 	state.AutoTankMode 		  = M(false, 'Auto Tank Mode')
@@ -240,6 +241,7 @@ function init_include()
 	selindrile_warned = false
 	utsusemi_cancel_delay = .5
 	conserveshadows = true
+	filtered_st_command = false
 	
 	-- Buff tracking that buffactive can't detect
 	lastshadow = "Utsusemi: San"
@@ -284,40 +286,39 @@ function init_include()
     gear.FastcastStaff = {name=""}
     gear.RecastStaff = {name=""}
 
+    -- Include general user globals, such as custom binds or gear tables.
+    -- Load Sel-Libs first, followed by User-Globals, followed by <character>-Globals.
+    -- Any functions re-defined in the later includes will overwrite the earlier versions.
     -- Load externally-defined information (info that we don't want to change every time this file is updated).
-
     -- Used to define misc utility functions that may be useful for this include or any job files.
     include('Sel-Utility')
 
     -- Used for all self-command handling.
     include('Sel-SelfCommands')
 	include('Sel-TreasureHunter')
-
-    -- Include general user globals, such as custom binds or gear tables.
-    -- Load Sel-Globals first, followed by User-Globals, followed by <character>-Globals.
-    -- Any functions re-defined in the later includes will overwrite the earlier versions.
+	
+	-- User based files.
     optional_include('user-globals.lua')
     optional_include(player.name..'-globals.lua')
     optional_include(player.name..'-items.lua')
 	optional_include(player.name..'_Crafting.lua')
+	include(player.name..'_'..player.main_job..'_gear.lua') -- Required Gear file.
 
 	-- New Display functions, needs to come after globals for user settings.
 	include('Sel-Display.lua')
 
-
-    -- Global default binds
-    global_on_load()
-
-    -- Load sidecar file
-	include(player.name..'_'..player.main_job..'_gear.lua')
-
 	-- Controls for handling our autmatic functions.
 	
 	tickdelay = os.clock() + 5
+	style_delay = os.clock() + 15
+	style_lock = true
 	
 	if spell_latency == nil then
 		spell_latency = (latency * 60) + 18
 	end
+
+	--Certain Checks
+    global_on_load()
 	
 	-- General var initialization and setup.
     if job_setup then
@@ -329,15 +330,18 @@ function init_include()
         user_setup()
     end
 	
+    if character_setup then
+        character_setup()
+    end
+	
+    -- Job-User-specific var initialization and setup.
+    if user_job_setup then
+        user_job_setup()
+    end
+	
 	if extra_user_setup then
         extra_user_setup()
     end
-
-	if state.Weapons.value == 'None' then
-		enable('main','sub','range','ammo')
-	else
-		send_command('@wait 3;gs c weapons Default')
-	end
 
 	if not selindrile_warned then
 		naughty_list = {'lua','gearswap','file','windower','plugin','addon','program','hack','bot ','bots ','botting','easyfarm'}
@@ -365,6 +369,22 @@ function init_include()
 			useItemName = 'Revitalizer'
 			useItemSlot = 'item'
 			add_to_chat(217,"Revitalizer added to inventory, using, /heal to cancel.")
+		end
+	end)
+
+	-- Event register for <st> actions
+	windower.raw_register_event('outgoing chunk', function(id, data, modified, injected, blocked)
+		if id == 0x05d and st_command then
+			local p = packets.parse('outgoing',data)
+			if p['Emote'] == 31 and p['Type'] == 2 then
+				if p['Target ID'] == 0 then
+					windower.send_command('gs c '..st_command..' '..player.id..'')
+				else
+					windower.send_command('gs c '..st_command..' '..p['Target ID']..'')
+				end
+				st_command = false
+				return true
+			end
 		end
 	end)
 	
@@ -528,12 +548,19 @@ end
 
 -- Non item-based global settings to check on load.
 function global_on_load()
-	set_dual_wield()
 	if world.area then
+		set_dual_wield()
+		
 		if world.area:contains('Abyssea') or data.areas.proc:contains(world.area) then
 			state.SkipProcWeapons:set('False')
 		else
 			state.SkipProcWeapons:reset()
+		end
+		
+		if state.Weapons.value == 'None' then
+			enable('main','sub','range','ammo')
+		else
+			send_command('@wait 3;gs c weapons Default')
 		end
 	end
 end
@@ -833,113 +860,76 @@ end
 
 function default_filtered_action(spell, eventArgs)
 	if spell.english == 'Warp' then
-		if (item_available('Warp Ring') or player.satchel['Warp Ring']) then
-			useItem = true
-			useItemName = 'Warp Ring'
-			useItemSlot = 'ring2'
-			add_to_chat(217,"You can't cast warp, attempting to use Warp Ring instead, /heal to cancel.")
-		elseif (item_available('Treat Staff') or player.satchel['Treat Staff']) then
-			useItem = true
-			useItemName = 'Treat Staff'
-			useItemSlot = 'main'
-		elseif (item_available('Warp Cudgel') or player.satchel['Warp Cudgel']) then
-			add_to_chat(217,"You can't cast warp, attempting to use Warp Cudgel instead, /heal to cancel.")
-			useItem = true
-			useItemName = 'Warp Cudgel'
-			useItemSlot = 'main'
-			add_to_chat(217,"You can't cast warp, attempting to use Warp Cudgel instead, /heal to cancel.")
-		elseif (item_available('Instant Warp') or player.satchel['Instant Warp']) then
-			useItem = true
-			useItemName = 'Instant Warp'
-			useItemSlot = 'item'
-			add_to_chat(217,"You can't cast warp, attempting to use a Warp Scroll instead, /heal to cancel.")
-		else
-			add_to_chat(122,'Warp unavailable and no warp items available.')
-		end
+		useItem = true
+		useItemName = 'Warp Ring'
+		useItemSlot = 'ring2'
+		add_to_chat(217,"You can't cast warp, attempting to use Warp Ring instead, /heal to cancel.")
 		cancel_spell()
 		eventArgs.cancel = true
 	elseif spell.english == 'Retrace' then
-		if spell.target.type == 'SELF' and (item_available('Instant Retrace') or player.satchel['Instant Retrace']) then
-			useItem = true
-			useItemName = 'Instant Retrace'
-			useItemSlot = 'item'
-			add_to_chat(217,"You can't cast Retrace, attempting to use a Retrace Scroll instead, /heal to cancel.")
-			cancel_spell()
-			eventArgs.cancel = true
-		end
+		useItem = true
+		useItemName = 'Instant Retrace'
+		useItemSlot = 'item'
+		add_to_chat(217,"You can't cast Retrace, attempting to use a Retrace Scroll instead, /heal to cancel.")
+		cancel_spell()
+		eventArgs.cancel = true
 	elseif spell.english == 'Teleport-Holla' then
-		if (item_available('Dim. Ring (Holla)') or player.satchel['Dim. Ring (Holla)']) then
-			useItem = true
-			useItemName = 'Dim. Ring (Holla)'
-			useItemSlot = 'ring2'
-			add_to_chat(217,"You can't cast Teleport-Holla, attempting to use Dimensional Ring instead, /heal to cancel.")
-			cancel_spell()
-			eventArgs.cancel = true
-		end
+		useItem = true
+		useItemName = 'Dim. Ring (Holla)'
+		useItemSlot = 'ring2'
+		add_to_chat(217,"You can't cast Teleport-Holla, attempting to use Dimensional Ring instead, /heal to cancel.")
+		cancel_spell()
+		eventArgs.cancel = true
+	elseif spell.english == 'Reraise' then
+		useItem = true
+		useItemName = 'Dusty Reraise'
+		useItemSlot = 'item'
+		add_to_chat(217,"You can't cast Reraise, attempting to use Instant Reraise instead, /heal to cancel.")
+		cancel_spell()
+		eventArgs.cancel = true
 	elseif spell.english == 'Teleport-Dem' then
-		if (item_available('Dim. Ring (Dem)') or player.satchel['Dim. Ring (Dem)']) then
-			useItem = true
-			useItemName = 'Dim. Ring (Dem)'
-			useItemSlot = 'ring2'
-			add_to_chat(217,"You can't cast Teleport-Dem, attempting to use Dimensional Ring instead, /heal to cancel.")
-			cancel_spell()
-			eventArgs.cancel = true
-		end
+		useItem = true
+		useItemName = 'Dim. Ring (Dem)'
+		useItemSlot = 'ring2'
+		add_to_chat(217,"You can't cast Teleport-Dem, attempting to use Dimensional Ring instead, /heal to cancel.")
+		cancel_spell()
+		eventArgs.cancel = true
 	elseif spell.english == 'Teleport-Mea' then
-		if (item_available('Dim. Ring (Mea)') or player.satchel['Dim. Ring (Mea)']) then
-			useItem = true
-			useItemName = 'Dim. Ring (Mea)'
-			useItemSlot = 'ring2'
-			add_to_chat(217,"You can't cast Teleport-Mea, attempting to use Dimensional Ring instead, /heal to cancel.")
-			cancel_spell()
-			eventArgs.cancel = true
-		end
+		useItem = true
+		useItemName = 'Dim. Ring (Mea)'
+		useItemSlot = 'ring2'
+		add_to_chat(217,"You can't cast Teleport-Mea, attempting to use Dimensional Ring instead, /heal to cancel.")
+		cancel_spell()
+		eventArgs.cancel = true
 	elseif spell.english == 'Invisible' then
 		if player.main_job == 'DNC' or player.sub_job == 'DNC' then
 			windower.chat.input('/ja "Spectral Jig" <me>')
 			add_to_chat(217,"You can't cast Invisible, attempting to use Spectral Jig instead.")
-			cancel_spell()
-			eventArgs.cancel = true
-			return
 		elseif player.main_job == 'NIN' or player.sub_job == 'NIN' then
 			windower.chat.input('/ma "Tonko: Ni" <me>')
 			add_to_chat(217,"You can't cast Invisible, attempting to use Tonko: Ni instead.")
-			cancel_spell()
-			eventArgs.cancel = true
-			return
 		elseif item_available('Prism Powder') then
 			windower.chat.input('/item "Prism Powder" <me>')
 			add_to_chat(217,"You can't cast Invisible, attempting to use Prism Powder instead.")
-			cancel_spell()
-			eventArgs.cancel = true
-			return
 		elseif item_available('Rainbow Powder') then
 			windower.chat.input('/item "Rainbow Powder" <me>')
 			add_to_chat(217,"You can't cast Invisible, attempting to use Prism Powder instead.")
-			cancel_spell()
-			eventArgs.cancel = true
-			return
 		end
+		cancel_spell()
+		eventArgs.cancel = true
 	elseif spell.english == 'Sneak' then
 		if player.main_job == 'DNC' or player.sub_job == 'DNC' then
 			windower.chat.input('/ja "Spectral Jig" <me>')
 			add_to_chat(217,"You can't cast Sneak, attempting to use Spectral Jig instead.")
-			cancel_spell()
-			eventArgs.cancel = true
-			return
 		elseif player.main_job == 'NIN' or player.sub_job == 'NIN' then
 			windower.chat.input('/ma "Monomi: Ichi" <me>')
 			add_to_chat(217,"You can't cast Sneak, attempting to use Monomi: Ichi instead.")
-			cancel_spell()
-			eventArgs.cancel = true
-			return
 		elseif item_available('Silent Oil') then
 			windower.chat.input('/item "Silent Oil" <me>')
 			add_to_chat(217,"You can't cast Sneak, attempting to use Silent Oil instead.")
-			cancel_spell()
-			eventArgs.cancel = true
-			return
 		end
+		cancel_spell()
+		eventArgs.cancel = true
 	end
 end
 
@@ -947,17 +937,15 @@ function extra_default_filtered_action(spell, eventArgs)
 	if spell.action_type == 'Item' and world.area == "Mog Garden" then
 		return
 	elseif spell.action_type == 'Magic' and not silent_can_use(spell.recast_id) and stepdown(spell, eventArgs) then
-		cancel_spell()
-		return
 	elseif not can_use(spell) then
-		cancel_spell()
-		eventArgs.cancel = true
-		return		
 	end
+	
+	cancel_spell()
+	eventArgs.cancel = true
 end
 
 function default_pretarget(spell, spellMap, eventArgs)
-    auto_change_target(spell, spellMap)
+
 end
 
 function default_precast(spell, spellMap, eventArgs)
@@ -1000,7 +988,7 @@ function default_post_precast(spell, spellMap, eventArgs)
 				local orpheus_avail = item_available("Orpheus's Sash")
 				local hachirin_avail = item_available('Hachirin-no-Obi')
 				
-				if hachirin_avail and spell.element and spell.element == world.weather_element and gearswap.res.weather[world.weather_id].intensity == 2 then
+				if hachirin_avail and spell.element and spell.element == world.weather_element and world.weather_intensity == 2 then
 					equip({waist="Hachirin-no-Obi"})
 				elseif orpheus_avail and spell.target.distance < 3 then
 					equip({waist="Orpheus's Sash"})
@@ -1356,6 +1344,7 @@ function pre_tick()
 end
 
 function default_tick()
+	check_lockstyle()
 	if check_doomed() then return true end
 	if check_shadows() then return true end
 	if check_use_item() then return true end
@@ -2195,6 +2184,11 @@ end
 -- Handle notifications of general state change.
 function state_change(stateField, newValue, oldValue)
     if stateField == 'Weapons' then
+		
+		if stateField == 'Weapons' and state.AutoLockstyle.value and newValue ~= oldValue then
+			style_lock = true
+		end
+	
 		if ((newValue:contains('DW') or newValue:contains('Dual')) and not can_dual_wield) or (newValue:contains('Proc') and state.SkipProcWeapons.value) then
 			local startindex = state.Weapons.index
 			while ((state.Weapons.value:contains('DW') or state.Weapons.value:contains('Dual')) and not can_dual_wield) or (state.SkipProcWeapons.value and state.Weapons.value:contains('Proc')) do

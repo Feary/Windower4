@@ -7,6 +7,8 @@ get Adhemar Wristbands sack all
 get Erudit. Necklace safe2 all
 get Floral Gauntlets sack all
 get Grunfeld Rope sack all
+get Jute Boots +1 sack all
+get Kaja Knife sack all
 get Malevolence safe2 all
 get Meg. Chausses +2 sack all 
 get Meg. Cuirie +2 sack all 
@@ -28,6 +30,7 @@ get Plun. Bonnet +3 sack all
 get Plun. Culottes +3 sack all 
 get Plun. Poulaines +3 sack all 
 get Plunderer's Vest +3 sack all 
+get Ridill sack all
 get Raider's Bmrng. sack all
 get Skulk. Culottes +1 sack all 
 get Skulk. Poulaines +1 sack all 

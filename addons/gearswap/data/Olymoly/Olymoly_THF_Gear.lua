@@ -65,7 +65,7 @@ function init_gear_sets()
 	sets.weapons.Ambuscade = 	{main="Kaja Knife",sub="Twashtar"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Sword = 		{main="Naegling", sub="Twashtar"}
-	sets.weapons.Omen = 		{main="Blitto Needle", sub="Ridill"}
+	sets.weapons.Omen = 		{main="Blurred Knife +1", sub="Ridill"}
 	sets.weapons.Throwing = 	{main="Twashtar",sub="Kaja Knife", range="Raider's Bmrng."}
 	
     -- Actions we want to use to tag TH.

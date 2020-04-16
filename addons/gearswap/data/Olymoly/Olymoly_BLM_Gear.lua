@@ -172,7 +172,7 @@ function init_gear_sets()
 	
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
 		--main="Vadose Rod",
-		sub="Genbu's Shield",
+		sub="Genmei Shield",
 		head="Amalric Coif +1",
 		--hands="Regal Cuffs",		
 		--waist="Emphatikos Rope",legs="Shedir Seraweels"

@@ -54,6 +54,7 @@ end
 function job_setup()
 
 	state.AutoAmmoMode = M(true,'Auto Ammo Mode')
+	state.UseDefaultAmmo = M(true,'Use Default Ammo')
 	state.Buff.Barrage = buffactive.Barrage or false
 	state.Buff.Camouflage = buffactive.Camouflage or false
 	state.Buff['Double Shot'] = buffactive['Double Shot'] or false
@@ -291,6 +292,12 @@ function check_ammo_precast(spell, action, spellMap, eventArgs)
 				add_to_chat(122,"Ammo '"..player.equipment.ammo.."' running low: ("..count_available_ammo(player.equipment.ammo)..") remaining.")
 			end
 		end
+	end
+end
+
+function job_aftercast(spell, spellMap, eventArgs)
+	if state.UseDefaultAmmo.value then
+		equip({ammo=DefaultAmmo[player.equipment.range]})
 	end
 end
 

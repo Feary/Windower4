@@ -46,8 +46,8 @@ function init_gear_sets()
     --------------------------------------
 
 	-- Weapons sets
-	sets.weapons.MeleeWeapons = {main="Kaja Rod",sub="Sors Shield"}
-	sets.weapons.DualWeapons = {main="Kaja Rod",sub="Eletta Rod"}
+	sets.weapons.MeleeWeapons = {main="Maxentius",sub="Sors Shield"}
+	sets.weapons.DualWeapons = {main="Maxentius",sub="Eletta Rod"}
 
     -- Precast Sets
 
@@ -329,7 +329,7 @@ function init_gear_sets()
 		--  feet="Theophany Duckbills +3"
 		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
 	
-	--sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genbu's Shield", priority=1},
+	--sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genmei Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
 		--head=gear.telchine_head_Duration, neck="Incanter's Torque",  lear="Andoaa Earring", 
 		--body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
@@ -457,7 +457,7 @@ function init_gear_sets()
 		back=gear.fastcast_jse_back,waist="Austerity Belt",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {main="Bolelabunga",sub="Genbu's Shield", ammo="Homiliary",
+	sets.idle = {main="Bolelabunga",sub="Genmei Shield", ammo="Homiliary",
 		head="Befouled Crown", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Theo. Briault +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
