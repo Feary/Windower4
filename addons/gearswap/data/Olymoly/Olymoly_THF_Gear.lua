@@ -465,9 +465,9 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Staunch Tathlum",
-        head="Meghanada Visor +2",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Meg. Jam. +2"}
+        head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
+        body="Meg. Cuirie +2",hands="Turms Mittens +1",ring1="Dark Ring",ring2="Defending Ring",
+        back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
 
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -480,14 +480,14 @@ function init_gear_sets()
         back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-       	head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
-		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
+       	head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
+		body="Meghanada Cuirie +2", hands="Turms Mittens +1", lring="Dark Ring", rring="Defending Ring",
+		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Turms Leggings +1"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
-		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
+		body="Meghanada Cuirie +2", hands="Turms Mittens +1", lring="Dark Ring", rring="Defending Ring",
+		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Turms Leggings +1"}
 
 
     --------------------------------------

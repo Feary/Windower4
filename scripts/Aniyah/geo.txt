@@ -1,0 +1,2 @@
+input /ja "Blaze of Glory" <me>;wait 3:
+gs c toggle autogeo

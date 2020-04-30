@@ -10,3 +10,4 @@ get Orvail Ring safe all
 get Carpenter's Smock safe all
 get Craftkeeper's Ring safe all
 get Joiner's Shield safe all
+get Bundling Twine safe all

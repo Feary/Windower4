@@ -3,7 +3,7 @@ function user_job_setup()
 	state.OffenseMode:options('Normal','SomeAcc','Acc','HighAcc','FullAcc')
 	state.HybridMode:options('Normal','DTLite','Tank')
 	state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','HighAcc','FullAcc')
-	state.CastingMode:options('Normal','SIRD','Resistant')
+	state.CastingMode:options('Normal','SIRD')
 	state.PhysicalDefenseMode:options('PDT_HP','PDT')
 	state.MagicalDefenseMode:options('MDT_HP','BDT_HP','MDT','BDT')
 	state.ResistDefenseMode:options('MEVA_HP','MEVA','Death','Charm','DTCharm')
@@ -466,4 +466,12 @@ function check_trust()
 		end
 	end
 	return false
+end
+
+function user_job_lockstyle()
+	if state.Weapons.value == 'Lionheart' then
+		windower.chat.input('/lockstyleset 034')
+	else
+		windower.chat.input('/lockstyleset 033')
+	end
 end

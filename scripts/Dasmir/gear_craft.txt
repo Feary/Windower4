@@ -1,0 +1,15 @@
+gs equip naked
+get Craftmaster's Ring satchel all
+get Goldsm. Torque satchel all
+get Carpenter's Belt satchel all
+get Artificer's Ring satchel all
+get Coconut Rusk satchel all
+get Shaded Specs. satchel all
+get Goldsmith's Ring satchel all
+get Orvail Ring satchel all
+get Goldsmith's Smock satchel all
+get Craftkeeper's Ring satchel all
+get Toreutic Scutum satchel all
+get Tanner's Gloves satchel all
+get Magnifying Specs. satchel all
+get Goldsmith's Belt satchel all

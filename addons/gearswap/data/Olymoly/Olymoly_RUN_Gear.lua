@@ -1,14 +1,14 @@
 function user_setup()
 
 	state.OffenseMode:options('Normal','Acc')
-	state.HybridMode:options('Normal','DTLite','Tank')
+	state.HybridMode:options('Tank','Normal','DTLite',)
 	state.WeaponskillMode:options('Match','Normal','Acc')
-	state.CastingMode:options('Normal','SIRD','Resistant')
+	state.CastingMode:options('Normal','SIRD')
 	state.PhysicalDefenseMode:options('PDT', 'PDT_HP')
 	state.MagicalDefenseMode:options('MDT','MDT_HP','BDT','BDT_HP')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP','Death','Charm','DTCharm')
 	state.IdleMode:options('Normal','Tank','KiteTank','Sphere')
-	state.Weapons:options('Epeolatry','DualWeapons') --'Lionheart','DualWeapons'
+	state.Weapons:options('Epeolatry','DualWeapons') --'Lionheart',
 	
 	state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP'}
 

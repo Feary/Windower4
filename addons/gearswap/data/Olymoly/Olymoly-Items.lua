@@ -210,20 +210,24 @@ gear.merlinic_fc_feet = {name="Merlinic Crackows",augments={'STR+7','Accuracy+24
 --gear.merlinic_occult_feet = {name="Merlinic Crackows"}
 
 --
-gear.odyssean_mab_body = {name="Odyss. Chestplate",augments={'"Fast Cast"+6','"Mag.Atk.Bns."+12',}}
+gear.odyssean_phalanx_head = {name="Odyss. Helm", augments={'AGI+7','"Mag.Atk.Bns."+29','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
+
+gear.odyssean_mab_body = {name="Odyss. Chestplate", augments={'AGI+7','"Mag.Atk.Bns."+29','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
+
 --gear.odyssean_wsd_hands = { name="Odyssean Gauntlets", augments={'Accuracy+26','Weapon skill damage +4%','STR+6','Attack+14',}}
+
 --gear.odyssean_stp_legs = {name="Odyssean Cuisses",augments={'Accuracy+28','"Store TP"+6','DEX+9',}}
 --gear.odyssean_fc_legs = {name="Odyssean Cuisses",augments={'"Fast Cast"+6','"Mag.Atk.Bns."+12',}}
 --gear.odyssean_phalanx_legs = {name="Odyssean Cuisses",augments={'Accuracy+28','"Store TP"+6','DEX+9',}}
 
 --
 --gear.valorous_magical_wsd_head = {name="Valorous Mask",augments={'"Mag.Atk.Bns."+17','Weapon skill damage +5%','Attack+10',}}
-gear.valorous_wsd_head = {name="Valorous Mask",augments={'Attack+23','Weapon skill damage +4%','Accuracy+15',}}
+gear.valorous_wsd_head = {name="Valorous Mask", augments={'Weapon skill damage +3%','Rng.Acc.+18','Accuracy+19 Attack+19',}}
 --gear.valorous_pet_head = {name="Valorous Mask",augments={'Pet: "Mag.Atk.Bns."+25','Pet: "Regen"+3','Pet: INT+14','Pet: Accuracy+2 Pet: Rng. Acc.+2',}}
 
 --gear.valorous_pet_body = {name="Valorous Mail",augments={'Pet: "Mag.Atk.Bns."+26','"Dbl.Atk."+3','Pet: INT+8','Pet: Accuracy+13 Pet: Rng. Acc.+13','Pet: Attack+12 Pet: Rng.Atk.+12',}}
 --Valorous Mail STR +7~10, Acc/Atk +15+, STP +7~8
-gear.valorous_wsd_body = {name="Valorous Mail",augments={'Accuracy+25 Attack+25','Weapon skill damage +4%','Accuracy+10','Attack+12',}}
+gear.valorous_wsd_body = {name="Valorous Mail", augments={'Accuracy+25 Attack+25','Weapon skill damage +4%','Accuracy+10','Attack+12',}}
 --gear.valorous_wsd_hands = {name="Valorous Mitts",augments={'Accuracy+30','Weapon skill damage +2%','STR+10','Attack+10',}}
 --gear.valorous_acc_hands = {name="Valorous Mitts",augments={'Accuracy+21 Attack+21','"Store TP"+4','Accuracy+15','Attack+9',}}
 
@@ -231,6 +235,7 @@ gear.valorous_wsd_body = {name="Valorous Mail",augments={'Accuracy+25 Attack+25'
 --gear.valorous_stp_legs = {name="Valor. Hose",augments={'Pet: Attack+29 Pet: Rng.Atk.+29','Pet: "Dbl.Atk."+3 Pet: Crit.hit rate +3','Pet: STR+8','Pet: Accuracy+8 Pet: Rng. Acc.+8',}}
 --gear.valorous_physical_pet_legs = {name="Valor. Hose",augments={'Pet: Attack+29 Pet: Rng.Atk.+29','Pet: "Dbl.Atk."+3 Pet: Crit.hit rate +3','Pet: STR+8','Pet: Accuracy+8 Pet: Rng. Acc.+8',}}
 --gear.valorous_magical_pet_legs = { name="Valor. Hose", augments={'Pet: "Mag.Atk.Bns."+28','Pet: "Regen"+3','Pet: INT+13','Pet: Attack+2 Pet: Rng.Atk.+2',}}
---gear.valorous_magical_pet_feet = {name="Valorous Greaves",augments={'Pet: "Mag.Atk.Bns."+29','Pet: "Dbl.Atk."+1 Pet: Crit.hit rate +1','Pet: INT+9','Pet: Accuracy+1 Pet: Rng. Acc.+1','Pet: Attack+4 Pet: Rng.Atk.+4',}}
+gear.valorous_phalanx_legs = {name="Valor. Hose", augments={'Sklchn.dmg.+4%','"Blood Pact" ability delay -8','Phalanx +5','Mag. Acc.+11 "Mag.Atk.Bns."+11',}}
 
---gear.valorous_wsd_feet = {name="Valorous Greaves",augments={'Accuracy+25','Weapon skill damage +4%','STR+5',}}
+--gear.valorous_magical_pet_feet = {name="Valorous Greaves",augments={'Pet: "Mag.Atk.Bns."+29','Pet: "Dbl.Atk."+1 Pet: Crit.hit rate +1','Pet: INT+9','Pet: Accuracy+1 Pet: Rng. Acc.+1','Pet: Attack+4 Pet: Rng.Atk.+4',}}
+gear.valorous_wsd_feet = {name="Valorous Greaves",augments={'Pet: Accuracy+15 Pet: Rng. Acc.+15','Accuracy+29','Accuracy+13 Attack+13',}}

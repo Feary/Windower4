@@ -70,6 +70,7 @@ function job_setup()
 	last_indi = nil
 	last_geo = nil
 	blazelocked = false
+	used_ecliptic = false
 
 	state.ShowDistance = M(true, 'Show Geomancy Buff/Debuff distance')
 	state.AutoEntrust = M(false, 'AutoEntrust Mode')
@@ -97,7 +98,7 @@ function job_filter_precast(spell, spellMap, eventArgs)
 	if spell.english:startswith('Geo-') and pet.isvalid then
 		eventArgs.cancel = true
 		windower.chat.input('/ja "Full Circle" <me>')
-		windower.chat.input:schedule(2,'/ma "'..spell.english..'" '..spell.target.raw..'')
+		windower.chat.input:schedule(1.3,'/ma "'..spell.english..'" '..spell.target.raw..'')
 	end
 
 end
@@ -369,6 +370,10 @@ end
 
 -- Function that watches pet gain and loss.
 function job_pet_change(pet, gain)
+	if not gain then
+		used_ecliptic = false
+	end
+
     if blazelocked then
 		enable('head')
 		blazelocked = false
@@ -537,6 +542,9 @@ end
 
 function check_geo()
 	if state.AutoBuffMode.value ~= 'Off' and not data.areas.cities:contains(world.area) then
+		if not pet.isvalid then
+			used_ecliptic = false
+		end
 		local abil_recasts = windower.ffxi.get_ability_recasts()
 		if autoindi ~= 'None' and ((not player.indi) or last_indi ~= autoindi) then
 			windower.chat.input('/ma "Indi-'..autoindi..'" <me>')
@@ -552,8 +560,9 @@ function check_geo()
 				windower.chat.input('/ja "Full Circle" <me>')
 				tickdelay = os.clock() + 1.1
 				return true
-			elseif state.AutoGeoAbilities.value and abil_recasts[244] < latency then
+			elseif state.AutoGeoAbilities.value and abil_recasts[244] < latency and not used_ecliptic then
 				windower.chat.input('/ja "Ecliptic Attrition" <me>;')
+				used_ecliptic = true
 				return true
 			else
 				return false

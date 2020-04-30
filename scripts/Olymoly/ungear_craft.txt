@@ -1,4 +1,5 @@
 gs equip naked
+put Bundling Twine safe all
 put Craftmaster's Ring safe all
 put Midras's Helm +1 safe all
 put Carver's Torque safe all

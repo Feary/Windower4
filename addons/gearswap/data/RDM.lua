@@ -208,9 +208,9 @@ function job_post_midcast(spell, spellMap, eventArgs)
 			equip(sets.buff.ComposureOther)
 		end
 
-		if state.Weapons.value == 'None' and can_dual_wield and sets.midcast[spell.english] and sets.midcast[spell.english].DW then
+		if can_dual_wield and sets.midcast[spell.english] and sets.midcast[spell.english].DW then
 			equip(sets.midcast[spell.english].DW)
-		elseif state.Weapons.value == 'None' and can_dual_wield and sets.midcast[spellMap] and sets.midcast[spellMap].DW then
+		elseif can_dual_wield and sets.midcast[spellMap] and sets.midcast[spellMap].DW then
 			equip(sets.midcast[spellMap].DW)
 		elseif sets.midcast[spell.english] then
 			equip(sets.midcast[spell.english])
@@ -219,7 +219,7 @@ function job_post_midcast(spell, spellMap, eventArgs)
 		end
     end
 	
-	if spell.skill == 'Enfeebling Magic' or default_spell_map == 'ElementalEnfeeble' or spell.english == 'Impact' then
+	if spell.skill == 'Enfeebling Magic' or spell.skill == 'Dark Magic' or default_spell_map == 'ElementalEnfeeble' or spell.english == 'Impact' then
 		if state.Weapons.value ~= 'None' and not sets.weapons[state.Weapons.value].range and item_available('Regal Gem') then
 			equip({range=empty,ammo="Regal Gem"})
 		end
@@ -235,17 +235,16 @@ function job_aftercast(spell, spellMap, eventArgs)
         elseif spell.skill == 'Elemental Magic' and state.MagicBurstMode.value == 'Single' then
             state.MagicBurstMode:reset()
 			if state.DisplayMode.value then update_job_states()	end
-        end
-    end
+		elseif data.spells.enspells:contains(spell.english) then
+			enspell = spell.english
+			update_melee_groups()
+		end
+	end
 end
 
 function job_buff_change(buff, gain)
-	if data.spells.enspells:contains(buff) then
-		if gain then
-			enspell = buff
-		else
-			enspell = ''
-		end
+	if buff == enspell and not gain then
+		enspell = ''
 	end
 	update_melee_groups()
 end
@@ -295,9 +294,20 @@ function job_customize_idle_set(idleSet)
 end
 
 function job_customize_melee_set(meleeSet)
+	if state.Weapons.value:contains('Enspell') and enspell ~= '' then
+		local enspell_element = data.elements.enspells_lookup[enspell]
+		if sets.element.enspell and sets.element.enspell[enspell_element] then
+			meleeSet = set_combine(meleeSet, sets.element.enspell[enspell_element])
+		end
 
-	if enspell ~= '' and sets.element.enspell and sets.element.enspell[data.elements.enspells_lookup.enspell] then
-		meleeSet = set_combine(meleeSet, sets.element.enspell[data.elements.enspells_lookup.enspell])
+		local hachirin_avail = item_available('Hachirin-no-Obi')
+		if hachirin_avail and enspell_element == world.weather_element and world.weather_intensity == 2 then
+			meleeSet = set_combine(meleeSet, {waist="Hachirin-no-Obi"})
+		elseif item_available("Orpheus's Sash") then
+			meleeSet = set_combine(meleeSet, {waist="Orpheus's Sash"})
+		elseif hachirin_avail and enspell_element == world.weather_element or enspell_element == world.day_element then
+			meleeSet = set_combine(meleeSet, {waist="Hachirin-no-Obi"})
+		end
 	end
 
     return meleeSet
@@ -627,6 +637,17 @@ buff_spell_lists = {
 		{Name='Barblizzard',	Buff='Barblizzard',		SpellID=61,		Reapply=false},
 		{Name='Barparalyze',	Buff='Barparalyze',		SpellID=74,		Reapply=false},
 	},
+
+	Odin = {
+		{Name='Refresh III',	Buff='Refresh',			SpellID=894,	Reapply=false},
+		{Name='Haste II',		Buff='Haste',			SpellID=511,	Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Gain-INT',		Buff='INT Boost',		SpellID=490,	Reapply=false},
+		{Name='Temper II',		Buff='Multi Strikes',	SpellID=895,	Reapply=false},
+		{Name='Enaero',			Buff='Enaero',			SpellID=102,	Reapply=false},
+		{Name='Shell V',		Buff='Shell',			SpellID=52,		Reapply=false},
+		{Name='Protect V',		Buff='Protect',			SpellID=47,		Reapply=false},
+	},
 	
 	HybridCleave = {
 		{Name='Refresh III',	Buff='Refresh',			SpellID=894,	Reapply=false},
@@ -637,5 +658,5 @@ buff_spell_lists = {
 		{Name='Temper II',		Buff='Multi Strikes',	SpellID=895,	Reapply=false},
 		{Name='Shell V',		Buff='Shell',			SpellID=52,		Reapply=false},
 		{Name='Protect V',		Buff='Protect',			SpellID=47,		Reapply=false},
-	},	
+	},
 }

@@ -486,24 +486,6 @@ function handle_forceequip(cmdParams)
 	end
 end
 
-function handle_quietdisable(cmdParams)
-	if cmdParams[1] == nil or cmdParams[1] == all then
-		disable('main','sub','range','ammo','head','neck','lear','rear','body','hands','lring','rring','back','waist','legs','feet')
-	else
-		disable(cmdParams[1])
-		handle_update({'auto'})
-	end
-end
-
-function handle_quietenable(cmdParams)
-	if cmdParams[1] == nil or cmdParams[1] == all then
-		enable('main','sub','range','ammo','head','neck','lear','rear','body','hands','lring','rring','back','waist','legs','feet')
-	else
-		enable(cmdParams[1])
-		handle_update({'auto'})
-	end
-end
-
 function handle_delayedcast()
 	if delayed_cast ~= '' and delayed_target ~= '' then
 		windower.send_command(''..delayed_cast..' '..delayed_target..'')
@@ -542,7 +524,15 @@ function handle_smartws(cmdParams)
 	local target
 	
 	if cmdParams[1] then
-		if tonumber(cmdParams[1]) then
+		if cmdParams[1] == 'ws' then
+			if cmdParams[2] then
+				smartws = table.concat(cmdParams, ' ', 2)
+				add_to_chat(122,'SmartWS Set to: '..smartws..'.')
+			else
+				add_to_chat(122,'Invalid command, Syntax: //gs c smartws Weaponskill Name')
+			end
+			return
+		elseif tonumber(cmdParams[1]) then
 			target = windower.ffxi.get_mob_by_id(tonumber(cmdParams[1]))
 		else
 			target = table.concat(cmdParams, ' ')
@@ -560,8 +550,35 @@ function handle_smartws(cmdParams)
 		local self_vector = windower.ffxi.get_mob_by_id(player.id)
 		local angle = (math.atan2((target.y - self_vector.y), (target.x - self_vector.x))*180/math.pi)*-1
 		windower.ffxi.turn((angle):radian())
-		windower.send_command:schedule(.3,''..autows..' '..target.id..'')
+		if smartws then
+			windower.send_command:schedule(.3,''..smartws..' '..target.id..'')
+		else
+			windower.send_command:schedule(.3,''..autows..' '..target.id..'')
+		end
 	end
+end
+
+function handle_facemob(cmdParams)
+	local target
+	
+	if cmdParams[1] then
+		if tonumber(cmdParams[1]) then
+			target = windower.ffxi.get_mob_by_id(tonumber(cmdParams[1]))
+		else
+			target = table.concat(cmdParams, ' ')
+			target = get_closest_mob_by_name(target) 
+			if not target.name then target = player.target end
+			if not target.name then target = player end
+		end
+	elseif player.target.type == 'MONSTER' then
+		target = player.target
+	elseif player.target.type == "SELF" or player.target.type == 'NONE' then
+		target = player
+	end
+
+	local self_vector = windower.ffxi.get_mob_by_id(player.id)
+	local angle = (math.atan2((target.y - self_vector.y), (target.x - self_vector.x))*180/math.pi)*-1
+	windower.ffxi.turn((angle):radian())
 end
 
 function handle_killstatue()
@@ -1038,10 +1055,6 @@ function handle_test(cmdParams)
     end
 end
 
-function handle_facetarget()
-	face_target()
-end
-
 -------------------------------------------------------------------------------------------------------------------
 -- The below table maps text commands to the above handler functions.
 -------------------------------------------------------------------------------------------------------------------
@@ -1066,7 +1079,7 @@ selfCommandMaps = {
 	['autonuke'] 		= handle_autonuke,
 	['autows'] 			= handle_autows,
 	['autofood']		= handle_autofood,
-	['facetarget']		= handle_facetarget,
+	['facemob']			= handle_facemob,
     ['test']        	= handle_test,
 	['displayrune'] 	= handle_displayrune,
 	['displayshot'] 	= handle_displayshot,

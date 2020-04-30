@@ -21,3 +21,6 @@ send_command('alias ungear gs equip naked;exec '..player.name..'/ungear'..player
 -- PortPacker
 send_command('alias store po store '..player.main_job)
 send_command('alias unstore po unpack '..player.main_job)
+
+send_command('alias ageo exec aniyah/geo.txt')
+send_command('alias tank input /ja "Pianissimo"  <me>;wait 2;input /ma "Foe Sirvante" <p1>')

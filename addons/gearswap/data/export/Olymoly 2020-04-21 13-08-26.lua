@@ -1,0 +1,17 @@
+sets.exported={
+    main="Burtgang",
+    sub="Aegis",
+    ammo="Homiliary",
+    head={ name="Valorous Mask", augments={'Weapon skill damage +3%','Rng.Acc.+18','Accuracy+19 Attack+19',}},
+    body={ name="Odyss. Chestplate", augments={'AGI+7','"Mag.Atk.Bns."+29','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    legs={ name="Valor. Hose", augments={'Sklchn.dmg.+4%','"Blood Pact" ability delay -8','Phalanx +5','Mag. Acc.+11 "Mag.Atk.Bns."+11',}},
+    feet={ name="Valorous Greaves", augments={'Pet: Accuracy+15 Pet: Rng. Acc.+15','Accuracy+29','Accuracy+13 Attack+13',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Moonbeam Ring",
+    right_ring="Defending Ring",
+    back="Moonbeam Cape",
+}

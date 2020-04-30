@@ -8,7 +8,7 @@ function user_setup()
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	-- Mandau Almace Sequence 
-	state.Weapons:options('None','Sword','Dagger',p'Club','DualWeapons','DualDagger','DualClubs')
+	state.Weapons:options('None','Sword','Dagger','Club','DualWeapons','DualDagger','DualClubs')
 	
 	-- Augmented Capes
 	-- Skill+ 10 Duration 10-20

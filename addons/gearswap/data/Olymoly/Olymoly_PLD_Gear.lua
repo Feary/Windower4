@@ -4,9 +4,9 @@ function user_setup()
 	state.OffenseMode:options('Normal', 'Acc')
     state.HybridMode:options('Tank', 'DDTank', 'BreathTank', 'NoShellTank', 'Reraise', 'Normal')
     state.WeaponskillMode:options('Match','Normal', 'Acc')
-    state.CastingMode:options('Normal', 'Resistant')
+    state.CastingMode:options('Normal','SIRD')
     state.PhysicalDefenseMode:options('PDT', 'PDT_HP', 'PDT_Reraise', 'Tank')
-    state.MagicalDefenseMode:options('BDT','MDT_HP','AegisMDT','AegisNoShellMDT','OchainMDT','OchainNoShellMDT','MDT_Reraise')
+    state.MagicalDefenseMode:options('MDT','BDT','MDT_HP','AegisMDT','AegisNoShellMDT','OchainMDT','OchainNoShellMDT','MDT_Reraise')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP','Death','Charm')
 	state.IdleMode:options('Tank','Normal','KiteTank','PDT','MDT','Refresh','Reraise')
 	state.Weapons:options('Default','DDWeapons','DualWeapons')
@@ -33,9 +33,11 @@ function user_setup()
 	send_command('bind !delete input /ma "Cure IV" <stal>')
 	send_command('bind @delete input /ma "Flash" <stnpc>')
     send_command('bind !f11 gs c cycle ExtraDefenseMode')
+	--send_command('bind ^f10 gs c reset DefenseMode')
 	send_command('bind @f10 gs c toggle TankAutoDefense')
 	send_command('bind @` gs c cycle RuneElement')
 	send_command('bind @pause gs c toggle AutoRuneMode')
+
 	send_command('bind @f8 gs c toggle AutoTankMode')
 	send_command('bind ^@!` gs c cycle SkillchainMode')
 	
@@ -89,7 +91,7 @@ function init_gear_sets()
     -- Add MND for Chivalry
     sets.precast.JA['Chivalry'] = {
 		--ear1="Nourish. Earring",
-		head="Carmine Mask +1",neck="Phalaina Locket", ear1="Nourish. Earring +1",
+		head="Carmine Mask +1",neck="Sacro Gorget", ear1="Odnowa Earring +1", ear2="Nourish. Earring +1", 
 		body="Cab. Surcoat +1",hands="Cab. Gauntlets +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.enmity_jse_back,waist="Luminary Sash",legs="Mes'yohi Slacks",feet="Carmine Greaves +1"}
 
@@ -102,7 +104,7 @@ function init_gear_sets()
 	sets.precast.JA['Berserk'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Aggressor'] = set_combine(sets.Enmity, {})
 	
-	sets.precast.JA['Shield Bash'].DT = set_combine(sets.Enmity.DT, {lear="Knightly Earring",hands="Cab. Gauntlets +1"})		
+	sets.precast.JA['Shield Bash'].DT = set_combine(sets.Enmity.DT, {lear="Knightly Earring", hands="Cab. Gauntlets +1"})		
     sets.precast.JA['Provoke'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Warcry'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Palisade'].DT = set_combine(sets.Enmity.DT, {})
@@ -129,7 +131,7 @@ function init_gear_sets()
 	-- Macc
 	sets.precast.JA['Violent Flourish'] = {ammo="Ginsen",
         --head="Founder's Corona",
-		head="Flam. Zucchetto +2", neck="Erra Pendant",ear1="Gwati Earring",ear2="Digni. Earring",
+		head="Flam. Zucchetto +2", neck="Erra Pendant",ear1="Enchntr. Earring +1",ear2="Digni. Earring",
         body="Found. Breastplate",hands="Leyline Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- waist="Olseni Belt",
         back=gear.TP_jse_back, waist="Eschan Stone", legs="Carmine Cuisses +1",feet="Founder's Greaves"}
@@ -200,12 +202,12 @@ function init_gear_sets()
 
 	-- Macc
 	sets.precast.WS['Flat Blade'] = {ammo="Ginsen",
-		head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Gwati Earring", ear2="Digni. Earring",
+		head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Enchntr. Earring +1", ear2="Digni. Earring",
         body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Regal Ring",ring2="Stikini Ring",
         back=gear.WS_jse_back,waist="Eschan Stone",legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
 	
 	sets.precast.WS['Flat Blade'].Acc = {ammo="Ginsen",
-        head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Gwati Earring", ear2="Digni. Earring",
+        head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Enchntr. Earring +1", ear2="Digni. Earring",
         body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Regal Ring",ring2="Stikini Ring",
         back=gear.WS_jse_back,waist="Eschan Stone",legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
 	
@@ -229,7 +231,7 @@ function init_gear_sets()
 	
 	sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS,{
 		-- Founder/obyssean
-		head="Carmine Mask +1", neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
+		head=gear.valorous_wsd_head, neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
 		body=gear.odyssean_mab_body, hands="Founder's Gauntlets", lring="Epaminondas's Ring", rring="Shiva Ring +1",
 		-- WSD Legs
 		back=gear.WS_jse_back, waist="Yamabuki-no-Obi", legs="Founder's Hose", feet="Sulev. Leggings +2"})
@@ -265,6 +267,12 @@ function init_gear_sets()
 		-- Regal Gauntlets 
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
 		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Odyssean Greaves"}
+	
+	  sets.midcast.Cure.SIRD = {ammo="Staunch Tathlum",
+		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
+		-- Regal Gauntlets 
+		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
+		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Odyssean Greaves"}
 
     sets.midcast.Cure.DT = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Odnowa Earring", 
@@ -290,12 +298,17 @@ function init_gear_sets()
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 
 	sets.Cure_Received = {head="Souv. Schaller +1", hands="Souv. Handsch. +1",legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
-	sets.Self_Refresh = {waist="Gishdubar Sash",}--feet="Shab. Sabatons +1"
+	sets.Self_Refresh = {}--waist="Gishdubar Sash", feet="Shab. Sabatons +1"
 
-    sets.midcast['Enhancing Magic'] = {
+    sets.midcast['Enhancing Magic'] = {ammo="Staunch Tathlum",
 		head="Souv. Schaller +1", neck="Incanter's Torque", lear="Augment. Earring", rear="Andoaa Earring",
-		body="Souv. Cuirass +1", lring="Stikini Ring", rring="Stikini Ring",
-		back="Moonbeam Cape", waist="Olympus Sash", legs="Carmine Cuisses +1"}
+		body="Souv. Cuirass +1", hands="Souv. Handsch. +1",	lring="Stikini Ring", rring="Stikini Ring",
+		back="Moonbeam Cape", waist="Olympus Sash", legs="Carmine Cuisses +1", feet="Souveran Schuhs +1"}
+	
+    sets.midcast['Enhancing Magic'].SIRD = {ammo="Staunch Tathlum",
+		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Knightly Earring", rear="Andoaa Earring",
+		body="Souv. Cuirass +1", hands="Souv. Handsch. +1",	lring="Stikini Ring", rring="Stikini Ring",
+		back="Moonbeam Cape", waist="Olympus Sash", legs="Founder's Hose", feet="Souveran Schuhs +1"}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})
 
@@ -303,12 +316,18 @@ function init_gear_sets()
     sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 	
 	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {ammo="Staunch Tathlum",
-		-- Obyssean Helm Phalanx +5
+		-- odyssean Helm Phalanx +5
 		head="Carmine Mask +1", neck="Incanter's Torque", lear="Odnowa Earring +1", rear="Knightly Earring",
 		-- body="Shabti Cuirass", Apeile Ring +1
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Apeile Ring",
-		-- Obyssean Cuisses Phalanx +5 
-		back=gear.phalanx_jse_back, waist="Rumination Sash", legs="Carmine Cuisses +1", feet="Souveran Schuhs +1"})
+		back=gear.phalanx_jse_back, waist="Rumination Sash", legs=gear.valorous_phalanx_legs, feet="Souveran Schuhs +1"})
+		
+	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {ammo="Staunch Tathlum",
+		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
+		-- body="Shabti Cuirass", Apeile Ring +1
+		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Apeile Ring",
+		-- back= Odyssean feet SIRD
+		back=gear.phalanx_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Souveran Schuhs +1"})
 
 	--------------------------------------
 	-- Idle/resting/defense/etc sets
@@ -470,26 +489,26 @@ function init_gear_sets()
     -- Shellra V can provide 75/256, which would need another 53/256 in gear.
     sets.defense.OchainMDT = {sub="Aegis", ammo="Staunch Tathlum",
 		-- Spellbr. Earring  Sanare Earring
-		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Shadow Ring", rring="Defending Ring",				
 		back="Reiki Cloak", waist="Creed Baudrier", legs="Mes'yohi Slacks", feet="Sulev. Leggings +2"}
 
     sets.defense.OchainNoShellMDT = {sub="Aegis", ammo="Staunch Tathlum",
 		-- Founder's Corona  Sanare Earring Spellbound. Earring 
-		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Shadow Ring", rring="Defending Ring",
 		-- Flax Sash 
 		back="Moonbeam Cape", waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Cab. Leggings +1"}
 
     sets.defense.AegisMDT = {sub="Aegis", ammo="Staunch Tathlum",
 		-- Founder's Corona Spellbr. Earring  Sanare Earring
-		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Shadow Ring", rring="Defending Ring",				
 		back="Reiki Cloak", waist="Creed Baudrier", legs="Mes'yohi Slacks", feet="Sulev. Leggings +2"}
 
     sets.defense.AegisNoShellMDT = {sub="Aegis", ammo="Staunch Tathlum",
 		-- Founder's Corona  Sanare Earring Spellbound. Earring 
-		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		-- Lunette Ring +1
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Shadow Ring", rring="Defending Ring",
 		--  Flax Sash 

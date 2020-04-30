@@ -9,7 +9,7 @@
         <ShowMob>true</ShowMob>
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
-        <Ranges></Ranges>
+        <Ranges />
     </global>
     <Aniyah>
         <X>1334</X>
@@ -61,7 +61,6 @@
     <Olymoly>
         <X>1317</X>
         <Y>39</Y>
-        <Zoom>90</Zoom>
     </Olymoly>
     <Sikend>
         <X>1357</X>
@@ -122,6 +121,7 @@
     <Dasmir>
         <X>1371</X>
         <Y>21</Y>
+        <Zoom>80</Zoom>
     </Dasmir>
     <Symbio>
         <X>1350</X>
