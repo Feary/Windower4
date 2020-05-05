@@ -8,6 +8,8 @@ return {
     "Chev. Cuisses +1",
     "Cab. Leggings +1",
     "Chev. Sabatons +1",
-    "Rev. Leggings +1",
+	"Rev. Coronet +2",
+	"Rev. Surcoat +3",
+    "Rev. Leggings +2",
     "Creed Baudrier",
 }

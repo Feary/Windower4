@@ -1,0 +1,16 @@
+sets.exported={
+    main="Kaja Lance",
+    sub="Kaja Grip",
+    ammo="Knobkierrie",
+    head="Flam. Zucchetto +2",
+    body="Hiza. Haramaki +2",
+    hands="Flam. Manopolas +2",
+    legs="Flamma Dirs +2",
+    feet="Flam. Gambieras +2",
+    neck="Loricate Torque +1",
+    waist="Windbuffet Belt",
+    left_ear="Etiolation Earring",
+    left_ring="Defending Ring",
+    right_ring={ name="Dark Ring", augments={'Breath dmg. taken -4%','Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
+}

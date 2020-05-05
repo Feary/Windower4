@@ -1,0 +1,11 @@
+gs equip naked
+put Flam. Gambieras +2 locker all
+put Flam. Zucchetto +2 locker all
+put Flam. Manopolas +2 locker all
+put Kaja Lance locker all
+put Knobkierrie locker all
+put Flamma Korazin +2 locker all
+put Norifusa locker all
+put Flamma Dirs +2 locker all
+put Paeapua locker all
+put Smertrios's Mantle locker all

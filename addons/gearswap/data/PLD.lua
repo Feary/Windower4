@@ -316,11 +316,7 @@ function job_customize_idle_set(idleSet)
 		if player.mpp < 51 and sets.latent_refresh then
 			idleSet = set_combine(idleSet, sets.latent_refresh)
 		end
-		
-		if not main_weapon_is_one_handed() and sets.latent_refresh_grip then
-			idleSet = set_combine(idleSet, sets.latent_refresh_grip)
-		end
-		
+
 		if player.hpp < 71 then
 			idleSet = set_combine(idleSet, sets.latent_regen)
 		end

@@ -259,7 +259,7 @@ function init_gear_sets()
 	
 	-- Path A - Pure Macc No Potency
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Naegling", sub="Ammurapi Shield", ammo="Regal Gem",
-			--  Duelist's Torque +3 neck="Incanter's Torque",  lear="Digni. Earring", 
+			--  Duelist's Torque +3 Duelist's Torque +3 neck="Incanter's Torque",  lear="Digni. Earring", 
 			head="Atro. Chapeau +2", neck="Erra Pendant", lear="Enchntr. Earring +1", rear="Regal Earring", 
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
 			body="Atrophy Tabard +2", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",

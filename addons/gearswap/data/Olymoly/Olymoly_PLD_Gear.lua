@@ -74,15 +74,15 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
     sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1"})
-    sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +1"})
+    sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +2"})
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +1"})
     sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +1"})
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1"})
     sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +1"})
-    sets.precast.JA['Cover'] = set_combine(sets.Enmity, {head="Rev. Coronet +1", body="Cab. Surcoat +1"})
+    sets.precast.JA['Cover'] = set_combine(sets.Enmity, {head="Rev. Coronet +2", body="Cab. Surcoat +1"})
 	
 	sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1"})
-    sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +1"})
+    sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +2"})
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +1"})
     sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +1"})
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1"})
@@ -141,15 +141,13 @@ function init_gear_sets()
     -- Fast cast sets for spells    
     sets.precast.FC = {ammo="Staunch tathlum",
 		head="Carmine Mask +1", neck="Voltsurge Torque", lear="Odnowa Earring +1", rear="Odnowa Earring",
-		-- Reverence Surcoat +3
-		body="Odyss. Chestplate", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
-		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
+		body="Rev. Surcoat +3", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
+		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Carmine Greaves +1"}
 
     sets.precast.FC.DT = {ammo="Staunch tathlum",
 		head="Carmine Mask +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Odnowa Earring",
-		-- Reverence Surcoat +3 
-		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Kishar Ring", rring="Prolix Ring",
-		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
+		body="Rev. Surcoat +3", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
+		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Carmine Greaves +1"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
@@ -247,15 +245,13 @@ function init_gear_sets()
 
     sets.midcast.FastRecast = {ammo="Incantor Stone",
 		head="Chev. Armet +1", neck="Voltsurge Torque",ear1="Loquac. Earring", ear2="Enchntr. Earring +1",
-        --body="Rev. Surcoat +3", 
-		body="Odyss. Chestplate", hands="Leyline Gloves", ring1="Moonbeam Ring", ring2="Moonbeam Ring",
+		body="Rev. Surcoat +3", hands="Leyline Gloves", ring1="Moonbeam Ring", ring2="Moonbeam Ring",
 		--legs=gear.odyssean_fc_legs, 
         back=gear.fastcast_jse_back, waist="Tempus Fugit", legs="Carmine Cuisses +1", feet="Odyssean Greaves"}		
 		
 	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        --body="Rev. Surcoat +3",
-		body="Souv. Cuirass +1", hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Defending Ring",
+		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 
     sets.midcast.Flash = set_combine(sets.Enmity, {})
@@ -293,8 +289,8 @@ function init_gear_sets()
 		
 	sets.Self_Healing.DT = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-		--  body="Rev. Surcoat +3", ring2=Moonbeam Ring
-		body="Souv. Cuirass +1", hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Defending Ring",
+		--   ring2=Moonbeam Ring
+		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 
 	sets.Cure_Received = {head="Souv. Schaller +1", hands="Souv. Handsch. +1",legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
@@ -422,20 +418,18 @@ function init_gear_sets()
 		
     sets.defense.PDT_HP = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1", ear2="Odnowa Earring",
-        --body="Rev. Surcoat +3", 
-		body="Tartarus Platemail", hands="Souv. Handsch. +1",ring1="Moonbeam Ring", ring2="Moonbeam Ring",
+		body="Rev. Surcoat +3",  hands="Souv. Handsch. +1",ring1="Moonbeam Ring", ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
     sets.defense.MDT_HP = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1", ear2="Odnowa Earring",
-		--body="Rev. Surcoat +3", 
-		body="Tartarus Platemail", hands="Souv. Handsch. +1",ring1="Moonbeam Ring", ring2="Moonbeam Ring",
+		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonbeam Ring", ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 		
     sets.defense.MEVA_HP = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1", ear2="Etiolation Earring",
         --body="Rev. Surcoat +3", 
-		body="Tartarus Platemail", hands="Souv. Handsch. +1",ring1="Moonbeam Ring",  ring2="Moonbeam Ring",
+		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonbeam Ring",  ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
     sets.defense.PDT_Reraise = {ammo="Staunch Tathlum",

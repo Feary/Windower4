@@ -116,7 +116,7 @@ function init_gear_sets()
 		--head="Carmine Mask +1", lear="Crematio Earring",
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Regal Earring", rear="Friomisi Earring",
 		-- lring="Epaminodas's Ring", 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Freke Ring", rring="Shiva Ring",
 		back=gear.Cape_WS, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Carmine Greaves +1"}
 
 	-- Midcast Sets
@@ -336,7 +336,7 @@ function init_gear_sets()
 		-- gear.merlinic_nuke_head
 		head="Atro. Chapeau +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Doublet +1 Amalric Gages +1  Shiva Ring +1 Shiva Ring +1
-		body="Jhakri Robe +2", hands="Amalric Gages", lring="Shiva Ring", rring="Shiva Ring",
+		body="Jhakri Robe +2", hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
 		-- Eschan Belt Amalric Slops +1
 		back=gear.nuke_jse_back, waist="Acuity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
 
@@ -344,7 +344,7 @@ function init_gear_sets()
 		-- gear.merlinic_nuke_head
 		head="Atro. Chapeau +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Doublet +1
-		body="Jhakri Robe +2", hands="Amalric Gages", lring="Shiva Ring", rring="Shiva Ring",
+		body="Jhakri Robe +2", hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
 		-- Eschan Belt Amalric Slops +1
 		back=gear.nuke_jse_back, waist="Acuity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
 
@@ -354,7 +354,7 @@ function init_gear_sets()
         -- gear.merlinic_nuke_head
 		head="Atro. Chapeau +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Doublet +1 Amalric Gages +1  Shiva Ring +1 Shiva Ring +1
-		body="Jhakri Robe +2", hands="Amalric Gages", lring="Shiva Ring", rring="Shiva Ring",
+		body="Jhakri Robe +2", hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
 		-- Eschan Belt Amalric Slops +1
 		back=gear.nuke_jse_back, waist="Acuity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
 		

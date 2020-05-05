@@ -287,25 +287,25 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'] = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Dosis Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
     sets.midcast['Elemental Magic'].Resistant = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Dosis Tathlum",
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Dosis Tathlum",
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
     sets.midcast['Elemental Magic'].Proc = {main=Empty, sub=Empty,
 		--main="Akademos", sub="Kaja Grip", ammo="Dosis Tathlum",
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
     sets.midcast['Elemental Magic'].OccultAcumen = set_combine(sets.midcast['Elemental Magic'],{
@@ -323,50 +323,50 @@ function init_gear_sets()
 		main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {--ammo="Pemphredo Tathlum",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",
 		main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {
 		main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"})
 
 	sets.midcast.Helix = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main="Akademos", sub="Kaja Grip", ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
 	sets.midcast.Helix.Resistant = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 	
 	sets.midcast.Helix.Burst = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
 	sets.midcast.Helix.Proc = {main=empty, sub=empty,
 		--ammo="Impatiens",
      	head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
 	sets.midcast.Impact = {main="Kaja Rod", sub="Ammurapi Shield",
 		--main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", ear1="Regal Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2",hands="Amalric Gages",ring1="Shiva Ring",ring2="Shiva Ring",
+        body="Jhakri Robe +2",hands="Amalric Gages", lring="Freke Ring", rring="Shiva Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
     sets.midcast.Impact.OccultAcumen = set_combine(sets.midcast['Elemental Magic'].OccultAcumen, {head=empty,body="Twilight Cloak"})

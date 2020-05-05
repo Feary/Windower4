@@ -1,8 +1,8 @@
-get Atrophy Boots +1 case all
-get Atro. Chapeau +1 case all
-get Atrophy Gloves +1 case all
-get Atrophy Tabard +1 case all
-get Atrophy Tights +1 case all
+get Atro. Boots +2 case all
+get Atro. Chapeau +2 case all
+get Atrophy Gloves +2 case all
+get Atrophy Tabard +2 case all
+get Atrophy Tights +2 case all
 get Culminus case all
 get Leth. Chappel +1 case all
 get Leth. Gantherots +1 case all
