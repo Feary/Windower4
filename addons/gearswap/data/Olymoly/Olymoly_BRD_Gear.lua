@@ -15,10 +15,10 @@ function user_setup()
 	gear.wsd_jse_back = { 	name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}} 
 	gear.FC_jse_back = {	name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
 	
-	-- Snowdim acc leafslit wsd  dusk quad attack
+	-- Snowdim Acc leafslit double atk  dusktip quad attack
 	gear.Instrument_tp = {name="Linos", augments={'Attack+20','"Store TP"+4','Quadruple Attack +3',}}
-	-- Snowdim acc leafslit wsd
-	gear.Instrument_wsd = {name="Linos",  augments={'Accuracy+14 Attack+14','Weapon skill damage +1%','Quadruple Attack +3',}}
+	-- Snowslit atk/acc leaftip wsd Dusksslit Save TP
+	gear.Instrument_wsd = {name="Linos", augments={'Accuracy+14 Attack+14','Weapon skill damage +1%','Quadruple Attack +3',}}
 	
 	-- Set this to false if you don't want to use custom timers.
     state.UseCustomTimers = M(false, 'Use Custom Timers')

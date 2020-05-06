@@ -43,7 +43,6 @@ gear.telchine_legs_Siphon = { name="Telchine Braconi", augments={'Enh. Mag. eff.
 
 -- Feet 
 gear.telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}}
--- DuskDim
 gear.telchine_feet_Regen = { name="Telchine Pigaches", augments={'"Regen" potency+3',}}
 
 -- Helios 
