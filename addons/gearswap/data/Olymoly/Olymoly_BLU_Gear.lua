@@ -365,8 +365,8 @@ function init_gear_sets()
 	-- Magical Spells --
 
 	sets.midcast['Blue Magic'].Magical = {ammo="Pemphredo Tathlum",
-		-- Kaja Rod
-		main="Kaja Rod", sub="Naegling",
+		-- Maxentius
+		main="Maxentius", sub="Naegling",
 		-- Baetyl Pendant
 		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
@@ -431,19 +431,19 @@ function init_gear_sets()
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 
 	sets.midcast['Divine Magic'] = {ammo="Pemphredo Tathlum",
-		main="Kaja Rod", sub="Naegling",
+		main="Maxentius", sub="Naegling",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Elemental Magic'] = {ammo="Pemphredo Tathlum",
-		main="Kaja Rod", sub="Naegling",
+		main="Maxentius", sub="Naegling",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Elemental Magic'].Resistant = {ammo="Pemphredo Tathlum",
-		main="Kaja Rod", sub="Naegling",
+		main="Maxentius", sub="Naegling",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Digni. Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
@@ -456,7 +456,7 @@ function init_gear_sets()
 	sets.element.Light = {} --ring2="Weatherspoon Ring"
 
 	sets.midcast.Cure = {ammo="Pemphredo Tathlum",
-		main="Kaja Rod",sub="Nibiru Cudgel",
+		main="Maxentius",sub="Nibiru Cudgel",
 		head="Carmine Mask +1", neck="Phalaina Locket", lear="Regal Earring", rear="Enchntr. Earring +1",
 		-- Vrikodata Jupon 
 		body=gear.telchine_body_CureRecieved, hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
@@ -548,7 +548,7 @@ function init_gear_sets()
 	-- Idle sets
 	-- Refresh
 	sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Rawhide Mask", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Rawhide Mask", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		-- Assim. Jubbah +3 Herc Refresh
 		body="Jhakri Robe +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Herc Refresh  Herc Refresh
@@ -557,11 +557,11 @@ function init_gear_sets()
 	sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
-	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",})--feet="Hippo. Socks +1"
+	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippomenes Socks"})--
 
 	-- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield", ammo="Staunch Tathlum",
@@ -571,12 +571,12 @@ function init_gear_sets()
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	sets.defense.MDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
 	sets.defense.MEVA = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-      	head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+      	head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
@@ -596,11 +596,11 @@ function init_gear_sets()
 	-- Weapon Set
 	--sets.weapons.Tizalmace = {main="Tizona",sub="Almace"}
 	sets.weapons.Ambu = {main="Naegling", sub="Tanmogayi +1"}
-	sets.weapons.MeleeClubs = {main="Kaja Rod",sub="Nibiru Cudgel"}
+	sets.weapons.MeleeClubs = {main="Maxentius",sub="Nibiru Cudgel"}
 	--sets.weapons.Almace = {main="Almace",sub="Sequence"}
 	--sets.weapons.Sequence = {main="Sequence",sub="Almace"}
-	sets.weapons.MagicWeapons = {main="Naegling", sub="Kaja Rod"} --
-	sets.weapons.MaccWeapons = {main="Naegling", sub="Kaja Rod"}--main="Iris",sub="Iris"
+	sets.weapons.MagicWeapons = {main="Naegling", sub="Maxentius"} --
+	sets.weapons.MaccWeapons = {main="Naegling", sub="Maxentius"}--main="Iris",sub="Iris"
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets

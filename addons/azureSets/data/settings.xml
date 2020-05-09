@@ -235,8 +235,20 @@
 				<slot03>Blank Gaze</slot03>
 				<slot04>Sheep Song</slot04>
 				<slot05>Geist Wall</slot05>
-				<slot06>Refueling</slot06>		
+				<slot06>Refueling</slot06>
+				<slot07>Soporific</slot07>
+				<slot08>Sandspin</slot08>
 			</subblu>
+			<tank>
+				<slot01>Cocoon</slot01>
+				<slot02>Jettatura</slot02>
+				<slot03>Blank Gaze</slot03>
+				<slot04>Sheep Song</slot04>
+				<slot05>Geist Wall</slot05>
+				<slot06>Refueling</slot06>
+				<slot07>Soporific</slot07>
+				<slot08>Sandspin</slot08>
+			</tank>
 			</spellsets>
 	</global>
 </settings>

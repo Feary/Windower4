@@ -17,5 +17,7 @@ state.DisplayMode = M(true, 'Display Mode') --Set this to false if you don't wan
 displayx = 480
 displayy = 750
 
+data.equipment.xprings = L{"Echad Ring","Caliber Ring","Emperor Band","Empress Band","Resolution Ring","Novennial Ring", "Decennial Ring", "DuoDecennial Ring","UnDecennial Ring"}
+
 include('g15.lua')
 include('Extras/Alias.lua')

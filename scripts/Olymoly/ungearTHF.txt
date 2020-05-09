@@ -42,5 +42,4 @@ put Skulker's Vest +1 sack all
 put Samnuha Coat sack all
 put Samnuha Tights sack all
 put Toutatis's Cape sack all 
-put Tsoa. Crossbow sack all 
-put Iskur Gorput safe2 all
+put Tsoa. Crossbow sack all
