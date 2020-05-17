@@ -1,27 +1,4 @@
-get Acro Helm storage all
-get Ankusa Gaiters storage all
-get Ankusa Gloves storage all
-get Ankusa Helm storage all
-get Ankusa Jackcoat storage all
-get Ankusa Trousers storage all
-get Artio's Mantle storage all
-get Focal Orb storage all
-get Handler's Earring case all
-get Handler's Earring +1 case all
-get Hatxiik storage all
-get Hunahpu storage all
-get Hurch'lan Sash storage all
-get Izizoeksi storage all
-get Kaidate storage all
-get Kerehcatl storage all
-get Kumbhakarna storage all
-get Nukumi Manoplas storage all
-get Nukumi Ocreae storage all
-get Nukumi Quijotes storage all
-get Pet Food Theta storage all
-get Rimeice Earring storage all
-get Totemic Gaiters storage all
-get Totemic Gloves storage all
-get Totemic Helm storage all
-get Totemic Jackcoat storage all
-get Totemic Trousers storage all
+get Artio's Mantle sack all
+get Beastmaster collar sack all
+get Kaja Axe sack all
+get Kumbhakarna sack all

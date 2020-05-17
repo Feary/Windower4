@@ -3,6 +3,7 @@ get Storage Slip 04 safe
 get Storage Slip 06 safe
 get Storage Slip 07 safe
 get Storage Slip 08 safe
+get Storage Slip 09 safe
 get Storage Slip 10 safe
 get Storage Slip 15 safe
 get Storage Slip 16 safe

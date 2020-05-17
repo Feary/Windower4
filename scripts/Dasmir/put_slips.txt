@@ -3,6 +3,7 @@ put Storage Slip 04 safe
 put Storage Slip 06 safe
 put Storage Slip 07 safe
 put Storage Slip 08 safe
+put Storage Slip 09 safe
 put Storage Slip 10 safe
 put Storage Slip 15 safe
 put Storage Slip 16 safe

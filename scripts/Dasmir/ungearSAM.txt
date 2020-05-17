@@ -9,3 +9,5 @@ put Norifusa locker all
 put Flamma Dirs +2 locker all
 put Paeapua locker all
 put Smertrios's Mantle locker all
+put Quint Spear locker all
+

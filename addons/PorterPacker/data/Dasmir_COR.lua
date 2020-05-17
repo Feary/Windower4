@@ -1,0 +1,17 @@
+return {
+    "Laksa. Tricorne +2",
+    "Lanun Tricorne +1",
+    "Chass. Tricorne +1",
+    "Laksa. Frac +3",
+    "Laksa. Gants +2",
+    "Chasseur's Frac +1",
+    "Lanun Frac +1",
+    "Lanun Gants +1",
+    "Chasseur's Gants +1",
+    "Laksa. Trews +2",
+    "Lanun Trews +1",
+    "Chas. Culottes +1",
+    "Laksa. Boots +2",
+    "Lanun Bottes +1",
+    "Chass. Bottes +1",
+}

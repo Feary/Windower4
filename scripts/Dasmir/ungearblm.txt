@@ -1,3 +1,6 @@
+put Amalric Gages case all
+put Amalric Coif case all
+put Amalric Nails case all
 put Culminus case all
 put Ghastly Tathlum case all
 put Goet. Chausses +2 case all

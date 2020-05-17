@@ -1,1 +1,2 @@
-put Kumbhakarna 
+put Kumbhakarna sack all
+put Skullrender sack all

@@ -46,22 +46,22 @@ function init_gear_sets()
 	sets.precast.JA['Angon'] = {ammo="Angon",hands="Ptero. Fin. G. +3"} 
 	
 	sets.precast.JA['Jump'] = {ammo="Ginsen",
-		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Sherida Earring",ear2="Telos Earring",
 		-- hands="Vish. Fin. Gaunt. +3", 
 		 body="Ptero. Mail +3", hands="Vis. Fng. Gaunt. +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Ptero. Brais +3",feet="Ostro Greaves"}
 	sets.precast.JA['High Jump'] = {ammo="Ginsen",
-		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Sherida Earring",ear2="Telos Earring",
 		-- hands="Vish. Fin. Gaunt. +3", 
 		 body="Ptero. Mail +3", hands="Vis. Fng. Gaunt. +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Ptero. Brais +3",feet="Ostro Greaves"}
 	sets.precast.JA['Soul Jump'] = {ammo="Ginsen",
-		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Sherida Earring",ear2="Telos Earring",
 		-- hands="Vish. Fin. Gaunt. +3",
 		body="Ptero. Mail +3", hands="Vis. Fng. Gaunt. +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Ptero. Brais +3",feet="Ostro Greaves"}
 	sets.precast.JA['Spirit Jump'] = {ammo="Ginsen",
-		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Sherida Earring",ear2="Telos Earring",
 		-- hands="Vish. Fin. Gaunt. +3", 
 		 body="Ptero. Mail +3", hands="Vis. Fng. Gaunt. +2",ring1="Petrov Ring",rring="Niqmaddu Ring",
 		back=gear.stp_jse_back, waist="Ioskeha Belt +1", legs="Ptero. Brais +3",feet="Ostro Greaves"}
@@ -445,7 +445,7 @@ function init_gear_sets()
 	
 	-- Ryunohige
 	sets.engaged.Ryunohige = {ammo="Ginsen",
-		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		head="Flam. Zucchetto +2",neck="Anu Torque",ear1="Sherida Earring",ear2="Telos Earring",
 		body="Pelt. Plackart +1", hands="Sulev. Gauntlets +2", ring1="Petrov Ring",ring2="Niqmaddu Ring",
 		back=gear.da_jse_back, waist="Ioskeha Belt +1", legs="Flamma Dirs +2",feet="Flam. Gambieras +2"}
     sets.engaged.Ryunohige.SomeAcc = {ammo="Ginsen",

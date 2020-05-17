@@ -1,5 +1,5 @@
 return {
-	"Ferine Cabasset",
+    "Ferine Cabasset",
     "Ferine Quijotes",
     "Ferine Manoplas",
     "Ferine Gausape",
@@ -17,9 +17,4 @@ return {
     "Monster Gloves",
     "Monster Trousers",
     "Monster Gaiters",
-    "Tali'ah Turban +2",
-    "Tali'ah Manteel +2",
-    "Tali'ah Gages +2",
-    "Tali'ah Sera. +2",
-    "Tali'ah Crackows +2",
 }

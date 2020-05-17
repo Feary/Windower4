@@ -8,4 +8,10 @@ return {
     "Frn. Manoplas +2",
     "Ferine Quijotes +2",
     "Ferine Ocreae +2",
+	"Kaja Axe",
+    "Beast Gaiters",
+    "Beast Trousers",
+    "Beast Gloves",
+    "Beast Jackcoat",
+    "Beast Helm",
 }

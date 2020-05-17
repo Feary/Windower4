@@ -1,5 +1,6 @@
 get storage slip 01 safe
 get Storage Slip 08 safe
+get Storage Slip 09 safe
 get Storage Slip 15 safe
 get Storage Slip 16 safe
 get Storage Slip 17 safe

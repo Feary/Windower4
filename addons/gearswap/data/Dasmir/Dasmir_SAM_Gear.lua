@@ -10,8 +10,9 @@ function user_job_setup()
     state.IdleMode:options('Normal', 'Reraise')
 	state.Weapons:options('GreatKatana','Polearm','Omen','Quint','ProcWeapon','Bow') --'Dojikiri',
 
-	gear.ws_jse_back = {name="Smertrios's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	gear.ws_jse_back = {name="Smertrios's Mantle",  augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 	gear.stp_jse_back = {name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}
+	gear.dbl_jse_back = {name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 	
     -- Additional local binds
     send_command('bind ^` input /ja "Hasso" <me>')
@@ -19,8 +20,8 @@ function user_job_setup()
 	send_command('bind !backspace input /ja "Third Eye" <me>')
 	send_command('bind @` gs c cycle SkillchainMode')
 	send_command('bind !@^` gs c cycle Stance')
-	send_command('bind !r gs c set skipprocweapons false;gs c weapons ProcWeapon;gs c set WeaponskillMode Proc;gs c update')
-	send_command('bind ^r gs c set skipprocweapons true;gs c weapons Default;gs c set WeaponskillMode Normal;gs c update')
+	--send_command('bind !r gs c set skipprocweapons false;gs c weapons ProcWeapon;gs c set WeaponskillMode Proc;gs c update')
+	--send_command('bind ^r gs c set skipprocweapons true;gs c weapons Default;gs c set WeaponskillMode Normal;gs c update')
 	--send_command('bind ^q gs c weapons Bow;gs c update')
 
     select_default_macro_book()

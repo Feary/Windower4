@@ -9,7 +9,7 @@
         <ShowMob>true</ShowMob>
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
-        <Ranges />
+        <Ranges></Ranges>
     </global>
     <Aniyah>
         <X>1334</X>
@@ -51,8 +51,8 @@
         <Zoom>120</Zoom>
     </Feary>
     <Worldkiller>
-        <X>1387</X>
-        <Y>16</Y>
+        <X>1378</X>
+        <Y>28</Y>
     </Worldkiller>
     <Akili>
         <X>1377</X>

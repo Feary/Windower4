@@ -1,10 +1,12 @@
+get Flamma Dirs +2 locker all
 get Flam. Gambieras +2 locker all
-get Flam. Zucchetto +2 locker all
+get Flamma Korazin +2 locker all
 get Flam. Manopolas +2 locker all
+get Flam. Zucchetto +2 locker all
 get Kaja Lance locker all
 get Knobkierrie locker all
-get Flamma Korazin +2 locker all
 get Norifusa locker all
-get Flamma Dirs +2 locker all
 get Paeapua locker all
 get Smertrios's Mantle locker all
+get Quint Spear locker all
+

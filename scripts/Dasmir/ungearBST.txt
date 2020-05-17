@@ -1,28 +1,4 @@
-put Acro Helm storage all
-put Ankusa Gaiters storage all
-put Ankusa Gloves storage all
-put Ankusa Helm storage all
-put Ankusa Jackcoat storage all
-put Ankusa Trousers storage all
-put Artio's Mantle storage all
-put Focal Orb storage all
-put Handler's Earring case all
-put Handler's Earring +1 case all
-put Hatxiik storage all
-put Hunahpu storage all
-put Hurch'lan Sash storage all
-put Izizoeksi storage all
-put Kaidate storage all
-put Kerehcatl storage all
-put Kumbhakarna storage all
-put Nukumi Manoplas storage all
-put Nukumi Ocreae storage all
-put Nukumi Quijotes storage all
-put Pet Food Theta storage all
-put Rimeice Earring storage all
-put Totemic Gaiters storage all
-put Totemic Gloves storage all
-put Totemic Helm storage all
-put Totemic Jackcoat storage all
-put Totemic Trousers storage all
-put Ukko Sash storage all
+put Artio's Mantle sack all
+put Beastmaster collar sack all
+put Kaja Axe sack all
+put Kumbhakarna sack all
