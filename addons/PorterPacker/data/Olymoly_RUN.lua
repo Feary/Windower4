@@ -13,4 +13,9 @@ return {
     "Erilaz Surcoat +1",
     "Eri. Leg Guards +1",
     "Erilaz Greaves +1",
+    "Meghanada Visor +2",
+    "Meg. Cuirie +2",
+    "Meg. Gloves +2",
+    "Meg. Chausses +2",
+    "Meg. Jam. +2",
 }

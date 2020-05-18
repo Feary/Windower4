@@ -120,6 +120,8 @@ Blm2:		/console gs c cycle MagicBurstMode	(Single makes your next spell burst, w
 				
 :Macro:		/console gs c cycle MagicalDefenseMode
 
+
+
 [Alt+F11]	= Extra job specific modes, Pld gets extra defense modes, other melee generally get extra
 				melee modes.
 				

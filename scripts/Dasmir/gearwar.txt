@@ -1,34 +1,34 @@
-get Adapa Shield sack all
-get Aganoshe sack all
-get Ark Scythe sack all
-get Cichol's Mantle sack all
-get Cizin Helm sack all
-get Flam. Gambieras +1 sack all
-get Flam. Manopolas +1 sack all
-get Flam. Zucchetto +1 sack all
-get Flamma Dirs +1 sack all
-get Flamma Korazin +1 sack all
-get Flamma Ring sack all
-get Ibushi Shinai sack all
-get Kaja Axe sack all
-get Kaja Knuckles sack all
-get Kaja Lance sack all
-get Knobkierrie sack all
-get Mdomo Axe sack all
-get Montante sack all
-get Nierenschutz sack all
-get Paeapua sack all
-get Pitchfork sack all
-get Plenitas Virga sack all
-get Pole Grip sack all
-get Rounsey Wand sack all
-get Souv. Handschuhs sack all
-get Souveran Cuirass sack all
-get Souveran Diechlings sack all
-get Souveran Schuhs sack all
-get Sulev. Gauntlets +1 sack all
-get Sulev. Leggings +1 sack all
-get Sulevi. Cuisses +1 sack all
-get Sulevia's Mask +1 sack all
-get Sulevia's Plate. +1 sack all
-get Zanmato sack all
+get Adapa Shield locker all
+get Aganoshe locker all
+get Ark Scythe locker all
+get Cichol's Mantle locker all
+get Cizin Helm locker all
+get Flam. Gambieras +1 locker all
+get Flam. Manopolas +1 locker all
+get Flam. Zucchetto +1 locker all
+get Flamma Dirs +1 locker all
+get Flamma Korazin +1 locker all
+get Flamma Ring locker all
+get Ibushi Shinai locker all
+get Kaja Axe locker all
+get Kaja Knuckles locker all
+get Kaja Lance locker all
+get Knobkierrie locker all
+get Mdomo Axe locker all
+get Montante locker all
+get Nierenschutz locker all
+get Paeapua locker all
+get Pitchfork locker all
+get Plenitas Virga locker all
+get Pole Grip locker all
+get Rounsey Wand locker all
+get Souv. Handschuhs locker all
+get Souveran Cuirass locker all
+get Souveran Diechlings locker all
+get Souveran Schuhs locker all
+get Sulev. Gauntlets +1 locker all
+get Sulev. Leggings +1 locker all
+get Sulevi. Cuisses +1 locker all
+get Sulevia's Mask +1 locker all
+get Sulevia's Plate. +1 locker all
+get Zanmato locker all

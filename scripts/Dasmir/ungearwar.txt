@@ -1,34 +1,20 @@
-put Adapa Shield sack all
-put Aganoshe sack all
-put Ark Scythe sack all
-put Cichol's Mantle sack all
-put Cizin Helm sack all
-put Flam. Gambieras +1 sack all
-put Flam. Manopolas +1 sack all
-put Flam. Zucchetto +1 sack all
-put Flamma Dirs +1 sack all
-put Flamma Korazin +1 sack all
-put Flamma Ring sack all
-put Ibushi Shinai sack all
-put Kaja Axe sack all
-put Kaja Knuckles sack all
-put Kaja Lance sack all
-put Knobkierrie sack all
-put Mdomo Axe sack all
-put Montante sack all
-put Nierenschutz sack all
-put Paeapua sack all
-put Pitchfork sack all
-put Plenitas Virga sack all
-put Pole Grip sack all
-put Rounsey Wand sack all
-put Souv. Handschuhs sack all
-put Souveran Cuirass sack all
-put Souveran Diechlings sack all
-put Souveran Schuhs sack all
-put Sulev. Gauntlets +1 sack all
-put Sulev. Leggings +1 sack all
-put Sulevi. Cuisses +1 sack all
-put Sulevia's Mask +1 sack all
-put Sulevia's Plate. +1 sack all
-put Zanmato sack all
+put Adapa Shield locker all
+put Aganoshe locker all
+put Ark Scythe locker all
+put Cichol's Mantle locker all
+put Cizin Helm locker all
+put Ibushi Shinai locker all
+put Knobkierrie locker all
+put Mdomo Axe locker all
+put Montante locker all
+put Nierenschutz locker all
+put Paeapua locker all
+put Pitchfork locker all
+put Plenitas Virga locker all
+put Pole Grip locker all
+put Rounsey Wand locker all
+put Souv. Handschuhs locker all
+put Souveran Cuirass locker all
+put Souveran Diechlings locker all
+put Souveran Schuhs locker all
+put Zanmato locker all

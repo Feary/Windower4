@@ -145,6 +145,7 @@ function init_include()
 	state.SkipProcWeapons 	  = M(false, 'Skip Proc Weapons')
 	state.NotifyBuffs		  = M(false, 'Notify Buffs')
 	state.UnlockWeapons		  = M(false, 'Unlock Weapons')
+	state.SelfWarp2Block 	  = M(true, 'Block Warp2 on Self')
 
 	state.AutoBuffMode 		  = M{['description'] = 'Auto Buff Mode','Off','Auto'}
 	state.RuneElement 		  = M{['description'] = 'Rune Element','Ignis','Gelus','Flabra','Tellus','Sulpor','Unda','Lux','Tenebrae'}
@@ -836,7 +837,8 @@ function precast(spell)
 end
 
 function midcast(spell)
-    handle_actions(spell, 'midcast')
+	if (spell.type == 'WeaponSkill' or spell.type == 'JobAbility') then return end
+	handle_actions(spell, 'midcast')
 end
 
 function aftercast(spell)
@@ -947,7 +949,12 @@ function extra_default_filtered_action(spell, eventArgs)
 end
 
 function default_pretarget(spell, spellMap, eventArgs)
-
+	if spell.english == 'Warp II' and spell.target.name == player.name and state.SelfWarp2Block.value then
+		eventArgs.cancel = true
+		cancel_spell()
+		add_to_chat(123,'Blocking Warp2 on self, use Warp instead or disable the SelfWarp2Block state.')
+		return
+	end
 end
 
 function default_precast(spell, spellMap, eventArgs)
@@ -1019,7 +1026,7 @@ function default_post_precast(spell, spellMap, eventArgs)
 				equip(sets.Capacity)
 			end
 			
-			if state.TreasureMode.value ~= 'None' and not info.tagged_mobs[spell.target.id] then
+			if state.TreasureMode.value ~= 'None' and not info.tagged_mobs[spell.target.id] and not TH_WS_exceptions:contains(spell.target.name) then
 				equip(sets.TreasureHunter)
 			end
 			
@@ -1144,7 +1151,7 @@ function default_post_midcast(spell, spellMap, eventArgs)
 end
 
 function default_post_pet_midcast(spell, spellMap, eventArgs)
-	if state.Capacity.value == true then
+	if state.Capacity.value then
 		equip(sets.Capacity)
 	end
 

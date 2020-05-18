@@ -20,4 +20,9 @@ return {
     "Hizamaru Kote +2",
     "Hiza. Hizayoroi +2",
     "Hiza. Sune-Ate +2",
+	"Mummu Kecks +2",
+    "Mummu Wrists +2",
+    "Mummu Jacket +2",    
+    "Mummu Bonnet +2",
+    "Mummu Gamash. +2",
 }

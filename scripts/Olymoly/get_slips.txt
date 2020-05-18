@@ -12,3 +12,4 @@ get Storage Slip 24 safe
 get Storage Slip 25 safe
 get Storage Slip 26 safe
 get Storage Slip 27 safe
+get Storage Slip 28 safe
