@@ -1,2 +1,3 @@
 put Kumbhakarna sack all
 put Skullrender sack all
+put Artio's Mantle sack all

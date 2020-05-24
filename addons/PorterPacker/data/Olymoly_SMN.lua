@@ -16,4 +16,10 @@ return {
     "Glyph. Pigaches +1",
     "Glyphic Spats +1",
     "Glyphic Bracers +1",
+	 "Tali'ah Turban +2",
+    "Tali'ah Sera. +2",
+    "Tali'ah Ring",
+    "Tali'ah Manteel +2",
+    "Tali'ah Gages +2",
+    "Tali'ah Crackows +2",
 }

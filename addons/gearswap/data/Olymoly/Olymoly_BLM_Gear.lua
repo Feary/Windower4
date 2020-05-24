@@ -115,7 +115,7 @@ function init_gear_sets()
     sets.precast.WS['Myrkr'] = {ammo="Staunch Tathlum",
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Evans Earring",ear2="Etiolation Earring",
 		-- hands="Regal Cuffs", ring2="Mephitas's Ring"
-		body="Amalric Doublet +1 ", hands="Amalric Gages +1", ring1="Mephitas's Ring +1",ring2="Lebeche Ring",
+		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Mephitas's Ring +1",ring2="Lebeche Ring",
 		back="Aurist's Cape +1",waist="Eschan Stone",legs="Psycloth Lappas",feet="Skaoi Boots"}
     
     ---- Midcast Sets ----
@@ -244,7 +244,7 @@ function init_gear_sets()
 		-- main=gear.grioavolr_nuke_staff, Psilomene		
         head="Pixie Hairpin +1",neck="Incanter's Torque",ear1="Barkaro. Earring",ear2="Regal Earring",
 		--ring1="Evanescence Ring", 
-		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Stikini Ring", ring2="Mephitas's  Ring +1",
+		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Stikini Ring", ring2="Mephitas's Ring +1",
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Amalric Slops +1", feet=gear.merlinic_aspir_feet}
 	
 	-- Death

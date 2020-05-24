@@ -1,7 +1,7 @@
 function user_setup()
 
 	state.OffenseMode:options('Normal','Acc')
-	state.HybridMode:options('Tank','Normal','DTLite',)
+	state.HybridMode:options('Tank','Normal','DTLite')
 	state.WeaponskillMode:options('Match','Normal','Acc')
 	state.CastingMode:options('Normal','SIRD')
 	state.PhysicalDefenseMode:options('PDT', 'PDT_HP')

@@ -14,4 +14,5 @@ return {
     "Assim. Shalwar +1",
     "Assim. Charuqs +1",
     "Assim. Bazu. +1",
+	
 }

@@ -335,7 +335,7 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.SingleWeapon = {main="Idris", sub="Genmei Shield", ranged="Dunna"}
-	sets.weapons.DualWeapons = {main="Idris", sub="Kaja Rod", ranged="Dunna"}	
+	sets.weapons.DualWeapons = {main="Idris", sub="Maxentius", ranged="Dunna"}	
 	
 	sets.HPDown = {}
 	

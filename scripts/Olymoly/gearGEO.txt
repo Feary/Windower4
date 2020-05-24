@@ -28,6 +28,8 @@ get Isa Belt case all
 get Jhakri Cuffs +2 case all
 get Jhakri Pigaches +2 case all
 get Jhakri Robe +2 case all
+get Jhakri Slops +2 case all
+get Jhakri Coronal +2 case all
 get Lifestream Cape case all
 get Mallquis Clogs +2 case all
 get Mallquis Saio +2 case all

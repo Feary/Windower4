@@ -298,7 +298,7 @@ function init_gear_sets()
 				
 	sets.midcast.Pet.MagicReady = {main=gear.MABKumbha,sub=gear.PDTMABKumbha,ammo="Demonry Core",
 		-- head="Emicho Coronet +1" Bst. Collar +2 ear1="Kyrene Earring" ear2="Domesticator's Earring",
-		head=gear.valorous_pet_head,neck="Adad Amulet", ear1="Enmerkar Earring",
+		head="Tali'ah Turban +2",neck="Adad Amulet", ear1="Enmerkar Earring",
 		body="Emicho Haubert +1",hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
 		back=gear.Pet_macc_jse_back,waist="Incarnation Sash",legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet}
 

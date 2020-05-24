@@ -23,5 +23,5 @@ return {
     "Mummu Jacket +2",
     "Mummu Bonnet +2",
     "Meghanada Visor +2",
-	 "Mummu Ring",
+	"Mummu Ring",
 }

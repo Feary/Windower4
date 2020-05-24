@@ -16,3 +16,4 @@ put Storage Slip 24 safe
 put Storage Slip 25 safe
 put Storage Slip 26 safe
 put Storage Slip 27 safe
+put Storage Slip 28 safe

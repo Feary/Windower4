@@ -1,0 +1,18 @@
+return {
+    "Cirque Farsetto +1",
+    "Cirq. Pantaloni +1",
+    "Cirque Scarpe +1",
+    "Karagoz Guanti",
+    "Karagoz Capello",
+	"Pantin Taj",
+	"Pantin Babouches",
+	"Pantin Churidars",
+	"Pantin Dastanas",
+	"Pantin Tobe",
+	"Tali'ah Turban +2",
+    "Tali'ah Manteel +2",
+    "Tali'ah Gages +2",
+    "Tali'ah Sera. +2",
+    "Tali'ah Crackows +2",
+	"Hiza. Hizayoroi +2",
+}

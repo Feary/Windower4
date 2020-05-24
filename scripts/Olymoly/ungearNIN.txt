@@ -1,0 +1,18 @@
+put Abnoba Kaftan sack all
+put Adhemar Bonnet sack all
+put Adhemar Bonnet +1 sack all
+put Adhemar Jacket +1 sack all
+put Adhemar Wrist. +1 sack all
+put Adhemar Wristbands sack all
+put Andartia's Mantle sack all
+put Dampening Tam sack all
+put Floral Gauntlets sack all
+put Ochu sack all
+put Pitchfork sack all
+put Rawhide Boots sack all
+put Rounsey Wand sack all
+put Samnuha Coat sack all
+put Samnuha Tights sack all
+put Yokaze Mantle sack all
+put Zanmato sack all
+put Amm Greaves locker all

@@ -28,4 +28,5 @@ return {
     "Warrior's Mask",
     "Warrior's Lorica",
     "Warrior's Mufflers",
+	"Naegling",
 }

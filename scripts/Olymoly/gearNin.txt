@@ -1,0 +1,18 @@
+get Abnoba Kaftan sack all
+get Adhemar Bonnet sack all
+get Adhemar Bonnet +1 sack all
+get Adhemar Jacket +1 sack all
+get Adhemar Wrist. +1 sack all
+get Adhemar Wristbands sack all
+get Andartia's Mantle sack all
+get Dampening Tam sack all
+get Floral Gauntlets sack all
+get Ochu sack all
+get Pitchfork sack all
+get Rawhide Boots sack all
+get Rounsey Wand sack all
+get Samnuha Coat sack all
+get Samnuha Tights sack all
+get Yokaze Mantle sack all
+get Zanmato sack all
+get Amm Greaves locker all

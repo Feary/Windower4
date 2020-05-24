@@ -54,6 +54,9 @@
     <addon>DressUp</addon>
     <addon>MountMuzzle</addon>
     <addon>autoenterkey</addon>
+    <addon>indinope</addon>
+    <addon>BattleStations</addon>
+    <addon>JobChange</addon>
     <plugin>Guildwork</plugin>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>

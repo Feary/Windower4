@@ -28,6 +28,8 @@ put Isa Belt case all
 put Jhakri Cuffs +2 case all
 put Jhakri Pigaches +2 case all
 put Jhakri Robe +2 case all
+put Jhakri Slops +2 case all
+put Jhakri Coronal +2 case all
 put Lifestream Cape case all
 put Mallquis Clogs +2 case all
 put Mallquis Saio +2 case all
