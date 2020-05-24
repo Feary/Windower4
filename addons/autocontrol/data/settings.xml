@@ -67,7 +67,7 @@
                 <slot10>Optic Fiber</slot10>
                 <slot11>Heat Capacitor</slot11>
                 <slot12>Flashbulb</slot12>
-            </default>
+            </Turtle>
 			<Turtle100>
 				<frame>Valoredge Frame</frame>
                 <head>Soulsoother Head</head>
