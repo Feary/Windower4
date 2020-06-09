@@ -1,7 +1,7 @@
 return {
 	"Futhark Coat +1",
     "Runeist Mitons +1",
-    "Runeist Coat +1",
+    "Runeist's Coat +3",
     "Runeist Bottes +1",
     "Rune. Trousers +1",
     "Rune. Bandeau +1",

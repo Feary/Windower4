@@ -58,6 +58,7 @@ function user_setup()
 
 	--Example of how to change default ready moves.
 	--ready_moves.default.WarlikePatrick = 'Tail Blow'
+	ready_moves.default.ScissorlegXerin = 'Tegmina Buffet'
 	
 	select_default_macro_book()
 end
@@ -66,10 +67,10 @@ end
 function init_gear_sets()
 	-- PRECAST SETS
 	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm"} --head="Ankusa Helm +1"
-	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves"} -- body="Mirke Wardecors",
+	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"} -- body="Mirke Wardecors",
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
 	sets.precast.JA.Familiar = {legs="Ankusa Trousers"}
-	sets.precast.JA.Tame = {head="Totemic Helm "}
+	sets.precast.JA.Tame = {head="Totemic Helm +1 +1"}
 	sets.precast.JA.Spur = {back="Artio's Mantle",feet="Nukumi Ocreae"}
 	sets.SpurAxe = {main="Skullrender"}
 	sets.SpurAxesDW = {main="Skullrender",sub="Skullrender"}
@@ -99,9 +100,9 @@ function init_gear_sets()
 	-- Charm = CHR
 	sets.precast.JA.Charm = {
 		-- neck=Unmoving Collar +1", rear="Enchanter's Earring
-		head="Totemic Helm", lear="Enchntr. Earring +1",
+		head="Totemic Helm +1", lear="Enchntr. Earring +1",
 		-- Carb. Ring +1
-		body="Ankusa Jackcoat", hands="Ankusa Gloves",
+		body="Ankusa Jackcoat", hands="Ankusa Gloves +1",
 		back="Artio's Mantle", waist="Chaac Belt", legs="Ankusa Trousers", feet="Ankusa Gaiters"}
 
 	-- CURING WALTZ - CHR
@@ -292,27 +293,28 @@ function init_gear_sets()
 
 	-- PET SIC & READY MOVES
 	sets.midcast.Pet.WS = {main=gear.PHYKumbha1,sub=gear.PHYKumbha2,ammo="Demonry Core",
-		-- Nukumi Cabasset head="Emicho Coronet +1", neck=ear2="Domesticator's Earring", ammo="Voluspa Tathlum",
-		head="Tali'ah Turban +2", neck="Shulmanu Collar", ear1="Enmerkar Earring",
+		-- head="Emicho Coronet +1", neck=ear2="Domesticator's Earring", ammo="Voluspa Tathlum",
+		head="Nuk. Cabasset +1", neck="Shulmanu Collar", ear1="Enmerkar Earring",
 		-- rring="C. Palug Ring"
 		body="Tali'ah Manteel +2",hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
-		back=gear.Pet_acc_jse_back,waist="Incarnation Sash",legs="Totemic Trousers",feet="Totemic Gaiters"}
+		back=gear.Pet_acc_jse_back,waist="Incarnation Sash",legs="Tot. Trousers +2",feet="Tot. Gaiters +2"}
 
 	sets.midcast.Pet.SomeAcc = set_combine(sets.midcast.Pet.WS, {})
 	sets.midcast.Pet.Acc = set_combine(sets.midcast.Pet.WS, {})
 	sets.midcast.Pet.FullAcc = set_combine(sets.midcast.Pet.WS, {})
 				
 	sets.midcast.Pet.MagicReady = {main=gear.MABKumbha,sub=gear.PDTMABKumbha,ammo="Demonry Core",
-		-- head="Emicho Coronet +1" Bst. Collar +2 ear1="Kyrene Earring" ear2="Domesticator's Earring",
-		head=gear.valorous_pet_head,neck="Adad Amulet", ear1="Enmerkar Earring",
-		body="Emicho Haubert +1",hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
-		back=gear.Pet_macc_jse_back,waist="Incarnation Sash",legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet}
+		-- head="Emicho Coronet +1" Bst. Collar +2  ear2="Domesticator's Earring",
+		head="Tali'ah Turban +2", neck="Adad Amulet", ear1="Enmerkar Earring",
+		body="Tali'ah Manteel +2", hands="Nukumi Manoplas +1", ring1="Varar Ring +1", ring2="Varar Ring +1",
+		-- legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet
+		back=gear.Pet_macc_jse_back, waist="Incarnation Sash", legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}
 
 	sets.midcast.Pet.ReadyRecast = {}-- legs="Desultor Tassets"
 	sets.midcast.Pet.ReadyRecastDW = {} -- legs="Desultor Tassets"
-	sets.midcast.Pet.Neutral = {head="Totemic Helm"}
-	sets.midcast.Pet.Favorable = {head="Nukumi Cabasset"}
-	sets.midcast.Pet.TPBonus = {hands="Nukumi Manoplas"}
+	sets.midcast.Pet.Neutral = {head="Totemic Helm +1"}
+	sets.midcast.Pet.Favorable = {head="Nuk. Cabasset +1"}
+	sets.midcast.Pet.TPBonus = {hands="Nukumi Manoplas +1"}
 
 	sets.RewardAxe = {}
 	sets.RewardAxesDW = {}

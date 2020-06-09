@@ -43,3 +43,4 @@ put Totemic Jackcoat storage all
 put Totemic Trousers storage all
 put Ukko Sash storage all
 put Varar Ring +1 storage all
+put Kyrene's Earring Storage all

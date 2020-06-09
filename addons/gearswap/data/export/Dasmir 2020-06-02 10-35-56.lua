@@ -1,0 +1,17 @@
+sets.exported={
+    main="Norifusa",
+    sub="Kaja Grip",
+    ammo="Knobkierrie",
+    head="Flam. Zucchetto +2",
+    body="Hiza. Haramaki +2",
+    hands="Flam. Manopolas +2",
+    legs="Flamma Dirs +2",
+    feet="Flam. Gambieras +2",
+    neck="Sanctity Necklace",
+    waist="Windbuffet Belt",
+    left_ear="Merman's Earring",
+    right_ear="Etiolation Earring",
+    left_ring={ name="Dark Ring", augments={'Breath dmg. taken -4%','Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring="Defending Ring",
+    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
+}

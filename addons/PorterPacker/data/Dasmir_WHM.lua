@@ -25,4 +25,5 @@ return {
     "Ebers Duckbills +1",
     "Theo. Duckbills +1",
     "Inyanga Ring",
+	"Kaja Rod",
 }

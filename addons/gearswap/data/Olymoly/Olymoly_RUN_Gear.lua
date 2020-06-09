@@ -81,7 +81,7 @@ function init_gear_sets()
 	-- Item sets.
 
 	-- Precast sets to enhance JAs
-    sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{body="Runeist Coat +1",legs="Futhark Trousers +1"})
+    sets.precast.JA['Vallation'] = set_combine(sets.Enmity,{body="Runeist's Coat +3",legs="Futhark Trousers +1"})
     sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
     sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{feet="Runeist Bottes +1"})
     sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head="Futhark Bandeau +1"})
@@ -100,7 +100,7 @@ function init_gear_sets()
 	sets.precast.JA['Aggressor'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Animated Flourish'] = set_combine(sets.Enmity, {})
 
-    sets.precast.JA['Vallation'].DT = set_combine(sets.Enmity.DT,{body="Runeist Coat +1", legs="Futhark Trousers +1"})
+    sets.precast.JA['Vallation'].DT = set_combine(sets.Enmity.DT,{body="Runeist's Coat +3", legs="Futhark Trousers +1"})
     sets.precast.JA['Valiance'].DT = sets.precast.JA['Vallation'].DT
     sets.precast.JA['Pflug'].DT = set_combine(sets.Enmity.DT,{feet="Runeist Bottes +1"})
     sets.precast.JA['Battuta'].DT = set_combine(sets.Enmity.DT,{head="Futhark Bandeau +1"})
@@ -164,7 +164,7 @@ function init_gear_sets()
 			
 	sets.precast.FC.DT = {ammo="Staunch Tathlum",
         head="Rune. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        body="Runeist Coat +1",hands="Leyline Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
+        body="Runeist's Coat +3",hands="Leyline Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 			
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", legs="Futhark Trousers +1"})
@@ -216,7 +216,7 @@ function init_gear_sets()
 		
 	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum",
         head="Rune. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        body="Runeist Coat +1",hands="Leyline Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
+        body="Runeist's Coat +3",hands="Leyline Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 		
     sets.midcast['Enhancing Magic'] = set_combine(sets.midcast.FastRecast,{
@@ -261,7 +261,7 @@ function init_gear_sets()
     sets.idle = {ammo='Homiliary',
 		head="Rawhide Mask",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
 		--hands=gear.herculean_refresh_hands
-		body="Runeist Coat +1", hands="Kurys Gloves", ring1="Defending Ring",ring2="Dark Ring",
+		body="Runeist's Coat +3", hands="Kurys Gloves", ring1="Defending Ring",ring2="Dark Ring",
 		--feet=gear.herculean_refresh_feet
 		back=gear.hp_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
 		
@@ -269,21 +269,16 @@ function init_gear_sets()
 			
 	sets.idle.Tank = {ammo="Staunch Tathlum",
 		head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		-- hands="Turms Mittens +1"
-		body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-		-- feet="Turms Leggings +1"
-		back=gear.hp_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
+		body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+		back=gear.hp_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
 	sets.idle.KiteTank = {ammo="Staunch Tathlum",
 		head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		-- hands="Turms Mittens +1"
-		body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-		-- feet="Turms Leggings +1"
+		body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	sets.idle.Weak = {ammo="Homiliary",
 		head="Fu. Bandeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Futhark Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
-		-- feet="Turms Leggings +1"
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1", feet="Turms Leggings +1"}
 	
 	sets.Kiting = {legs="Carmine Cuisses +1"}
@@ -336,32 +331,32 @@ function init_gear_sets()
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		-- Futhark Torque
 		head="Turms Cap +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Hearty Earring",
-		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- Engraved Belt
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	sets.defense.MEVA_HP = {ammo="Staunch Tathlum",
 		-- Futhark Torque
 		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	sets.defense.Death = {ammo="Staunch Tathlum",
        	-- Futhark Torque
 		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	sets.defense.DTCharm = {ammo="Staunch Tathlum",
        	--  Futhark Torque
 		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	sets.defense.Charm = {ammo="Staunch Tathlum",
       	--  Futhark Torque
 		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		body="Runeist Coat +1",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP

@@ -24,4 +24,6 @@ return {
 	"Azimuth Gaiters +1",
     "Azimuth Tights +1",
 	"Azimuth Hood +1",
+	"Rubeus Boots",
+	"Kaja Grip",
 }

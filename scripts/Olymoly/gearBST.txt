@@ -42,3 +42,4 @@ get Totemic Helm storage all
 get Totemic Jackcoat storage all
 get Totemic Trousers storage all
 get Varar Ring +1 storage all
+get Kyrene's Earring Storage all

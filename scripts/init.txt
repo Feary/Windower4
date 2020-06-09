@@ -50,6 +50,7 @@ lua load porterpacker
 //lua load AutoMB
 lua load UnityNPC
 lua load Sparks 
+lua load NpcInteract
 
 //Bind keys
 //Bind syntax is "bind <key> <up> <command>
@@ -71,7 +72,7 @@ consolebg position 15 50
 
 
 // *** ALLIANCE TARGET KEYS ***
-// This lets you push Alt+F1-6 and Ctrl+F1-6 to  to target Alliance members.
+// This lets you push Alt+F1-6 and Ctrl+F1-6 to target Alliance members.
 bind ^f1 input /ta <a10>
 bind ^f2 input /ta <a11>
 bind ^f3 input /ta <a12>
