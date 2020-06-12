@@ -1,10 +1,5 @@
 put Acro Helm storage all
 put Adad Amulet storage all
-put Ankusa Gaiters storage all
-put Ankusa Gloves storage all
-put Ankusa Helm storage all
-put Ankusa Jackcoat storage all
-put Ankusa Trousers storage all
 put Artio's Mantle storage all
 put Enmerkar Earring storage all
 put Focal Orb storage all
@@ -19,28 +14,11 @@ put Izizoeksi storage all
 put Kaidate storage all
 put Kerehcatl storage all
 put Kumbhakarna storage all
-put Meg. Chausses +2 sack all
-put Meg. Cuirie +2 sack all
-put Meg. Gloves +2 sack all
-put Meg. Jam. +2 sack all
-put Meghanada Visor +2 sack all
-put Nukumi Manoplas storage all
-put Nukumi Ocreae storage all
-put Nukumi Quijotes storage all
 put Pet Food Theta storage all
 put Rimeice Earring storage all
 put Skadi's Jambeaux storage all
-put Tali'ah Crackows +2 storage all
-put Tali'ah Gages +2 storage all
-put Tali'ah Manteel +2 storage all
-put Tali'ah Ring storage all
-put Tali'ah Sera. +2 storage all
-put Tali'ah Turban +2 storage all
-put Totemic Gaiters storage all
-put Totemic Gloves storage all
-put Totemic Helm storage all
-put Totemic Jackcoat storage all
-put Totemic Trousers storage all
-put Ukko Sash storage all
 put Varar Ring +1 storage all
 put Kyrene's Earring Storage all
+put Amm Greaves locker all
+put Thereoid Greaves sack all
+put Emicho Haubert +1 locker al

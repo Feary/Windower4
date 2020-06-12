@@ -11,6 +11,8 @@ sets.precast.Item['Holy Water'] = {}
 
 --Augmented items that you'll use among multiple jobs.
 
+gear.DarkRing = {name="Dark Ring", augments={'Breath dmg. taken -4%','Phys. dmg. taken -5%','Magic dmg. taken -3%',}}
+
 -- Alluvion Skirmish Gear
 -- Taeon
 
