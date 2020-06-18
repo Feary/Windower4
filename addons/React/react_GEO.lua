@@ -36,5 +36,15 @@ return {
             ["complete_reaction"]="input /ma Dispel", 
             ["ready_reaction"]=""
         }
+    },
+	["Bozzetto Retributionist"]={
+        ["Nether Castigation"]={
+            ["complete_reaction"]="", 
+            ["ready_reaction"]="input /ma stun <bt>"
+        }, 
+        ["Charging up"]={
+            ["complete_reaction"]="", 
+            ["ready_reaction"]="input /p Charging up"
+        }
     }
 }

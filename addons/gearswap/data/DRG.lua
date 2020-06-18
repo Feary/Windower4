@@ -115,6 +115,14 @@ function job_post_precast(spell, spellMap, eventArgs)
 				end
 			end
 		end
+	elseif spell.type == 'JobAbility' then
+		if spell.english:endswith('Jump') then
+			if sets.precast.JA[spell.english] then
+				if sets.precast.JA[spell.english][state.OffenseMode.value] then
+					equip(sets.precast.JA[spell.english][state.OffenseMode.value])
+				end
+			end
+		end
 	end
 end
 
@@ -142,7 +150,7 @@ end
 
 function job_aftercast(spell, spellMap, eventArgs)
 	if pet.isvalid then
-		if (spell.action_type == 'Magic' and player.hpp < Breath_HPP) or spell.english == 'Steady Wing' then
+		if (spell.action_type == 'Magic' and player.hpp < Breath_HPP) or spell.english == 'Steady Wing' or spell.english == 'Restoring Breath' then
 			petWillAct = os.clock()
 			equip(sets.HealingBreath)
 			eventArgs.handled = true

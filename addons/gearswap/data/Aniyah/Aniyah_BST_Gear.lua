@@ -10,7 +10,8 @@ function user_setup()
 	state.ResistDefenseMode:options('PetMEVA', 'MEVA')
 	state.Weapons:options('None','PetPDTAxe','DualWeapons','DualPetPDTAxe')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Knockback','Suppa','DWEarrings'}
-
+	
+	-- Weapons 
 	gear.PHYKumbha1 = {name="Kumbhakarna", augments={'Pet: Accuracy+17 Pet: Rng. Acc.+17','Pet: "Dbl.Atk."+3 Pet: Crit.hit rate +3','Pet: TP Bonus+180',}} 
 	gear.PHYKumbha2 = {name="Kumbhakarna", augments={'Pet: Accuracy+17 Pet: Rng. Acc.+17','Pet: Haste+3','Pet: TP Bonus+200',}}
 	gear.PDTMABKumbha = {name="Kumbhakarna", augments={'Pet: DEF+12','Pet: Phys. dmg. taken -2%',}}

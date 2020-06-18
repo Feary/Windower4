@@ -382,7 +382,7 @@ function init_gear_sets()
 
 	sets.defense.MKiller = set_combine(sets.defense.MDT, {body="Nukumi Gausape +1"})
 
-	sets.Kiting = {}--feet="Skadi's Jambeaux"
+	sets.Kiting = {feet="Skadi's Jambeaux"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}
 

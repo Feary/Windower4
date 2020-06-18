@@ -475,7 +475,7 @@ function init_include()
 		
 		gearswap.refresh_globals(false)
 		
-		if (player ~= nil) and (player.status == 'Idle' or player.status == 'Engaged') and not (check_midaction() or moving or buffactive['Sneak'] or buffactive['Invisible'] or silent_check_disable()) then
+		if (player ~= nil) and (player.status == 'Idle' or player.status == 'Engaged') and not (delayed_cast ~= '' or check_midaction() or moving or buffactive['Sneak'] or buffactive['Invisible'] or silent_check_disable()) then
 			if pre_tick then
 				if pre_tick() then return end
 			end
@@ -837,7 +837,7 @@ function precast(spell)
 end
 
 function midcast(spell)
-	if (spell.type == 'WeaponSkill' or spell.type == 'JobAbility') then return end
+	if spell.type == 'WeaponSkill' or spell.type == 'JobAbility' then return end
 	handle_actions(spell, 'midcast')
 end
 
@@ -1238,9 +1238,11 @@ function default_aftercast(spell, spellMap, eventArgs)
 end
 
 function default_pet_midcast(spell, spellMap, eventArgs)
+	--[[Handling this in aftercast now, commenting out to prevent duplication.
 	if not (type(spell.type) == 'string' and (spell.type:startswith('BloodPact') or spell.type == 'Monster')) then
 		equip(get_pet_midcast_set(spell, spellMap))
 	end
+	]]
 end
 
 function default_pet_aftercast(spell, spellMap, eventArgs)
@@ -1347,20 +1349,20 @@ function cleanup_pet_aftercast(spell, spellMap, eventArgs)
 end
 
 function pre_tick()
+	if check_doomed() then return true end
 	if check_trust() then return true end
 	if check_rune() then return true end
+	if check_shadows() then return true end
+	if check_use_item() then return true end
 	return false
 end
 
 function default_tick()
 	check_lockstyle()
-	if check_doomed() then return true end
-	if check_shadows() then return true end
-	if check_use_item() then return true end
 	if check_sub() then return true end
 	if check_food() then return true end
-	if check_ws() then return true end
 	if check_samba() then return true end
+	if check_ws() then return true end
 	if check_cpring_buff() then return true end
 	if check_cleanup() then return true end
 	if check_nuke() then return true end

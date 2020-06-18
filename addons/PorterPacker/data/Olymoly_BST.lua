@@ -27,6 +27,6 @@ return {
     "Meg. Jam. +2",
 	"Skadi's Jambeaux",
 	"Kaja Axe",
-	"Twilight Helm"
+	"Twilight Helm",
 	"Twilight Mail",
 }

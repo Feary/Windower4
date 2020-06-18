@@ -27,8 +27,12 @@ return {
 	},
 	["Bozzetto Retributionist"]={
         ["Dread Spikes"]={
-            ["complete_reaction"]="input /ma \"Magic Finale\" <t> ", 
+            ["complete_reaction"]="input /ma \"Magic Finale\" <bt>", 
             ["ready_reaction"]=""
+        }, 
+        ["Charging up"]={
+            ["complete_reaction"]="", 
+            ["ready_reaction"]="input /p Charging up"
         }
     },
 	["Bozzetto Deathbringer"]={

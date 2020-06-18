@@ -8,10 +8,19 @@ function user_job_setup()
 	state.ResistDefenseMode:options('MEVA')
 	state.IdleMode:options('Normal', 'PDT')
 	state.Weapons:options('Godhands','Staff','ProcStaff','ProcClub','Barehanded','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana')
-
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None'}
 
-    update_melee_groups()
+		-- Capes 
+	gear.tp_jse_back = 			{name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	gear.ws_jse_back = 			{name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	-- STR Acc CRIT
+	gear.critws_jse_back =		{name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	gear.FC_jse_back = 			{name="Segomo's Mantle", augments={'MND+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}
+    gear.charka_jse_back =		{name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	gear.chi_jse_back = 		{name="Segomo's Mantle", augments={'MND+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}
+	gear.counter_jse_back =		{name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','System: 1 ID: 640 Val: 4',}}
+	
+	update_melee_groups()
 	
 	-- Additional local binds
 	send_command('bind ^` input /ja "Boost" <me>')

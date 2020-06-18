@@ -21,4 +21,4 @@ put Varar Ring +1 storage all
 put Kyrene's Earring Storage all
 put Amm Greaves locker all
 put Thereoid Greaves sack all
-put Emicho Haubert +1 locker al
+put Emicho Haubert +1 locker all

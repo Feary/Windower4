@@ -2211,42 +2211,47 @@ function check_rune()
 
 		if player.main_job == 'RUN' and (not buffactive[state.RuneElement.value] or buffactive[state.RuneElement.value] < 3) then
 			if abil_recasts[92] > 0 then return false end		
-			send_command('input /ja "'..state.RuneElement.value..'" <me>')
+			windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
 			tickdelay = os.clock() + 1.8
 			return true
 
 		elseif not buffactive[state.RuneElement.value] or buffactive[state.RuneElement.value] < 2 then
 			if abil_recasts[92] > 0 then return false end		
-			send_command('input /ja "'..state.RuneElement.value..'" <me>')
+			windower.chat.input('/ja "'..state.RuneElement.value..'" <me>')
+			tickdelay = os.clock() + 1.8
+			return true
+
+		elseif player.main_job == 'RUN' and abil_recasts[242] < latency and (player.hpp < 50 or (state.RuneElement.Value == 'Tenebrae' and player.mpp < 75)) then
+			windower.chat.input('/ja "Vivacious Pulse" <me>')
 			tickdelay = os.clock() + 1.8
 			return true
 			
 		elseif not player.in_combat then
 			return false
 			
-		elseif not buffactive['Pflug'] then
-			if abil_recasts[59] < latency then
-				send_command('input /ja "Pflug" <me>')
-				tickdelay = os.clock() + 1.8
-				return true
+		elseif not buffactive['Pflug'] and abil_recasts[59] < latency then
+			windower.chat.input('/ja "Pflug" <me>')
+			tickdelay = os.clock() + 1.8
+			return true
+		elseif player.main_job == 'RUN' then
+			if not (state.Buff['Vallation'] or state.Buff['Valiance']) then
+				if abil_recasts[113] < latency then
+					windower.chat.input('/ja "Valiance" <me>')
+					tickdelay = os.clock() + 2.5
+					return true
+				elseif abil_recasts[23] < latency then
+					windower.chat.input('/ja "Vallation" <me>')
+					tickdelay = os.clock() + 2.5
+					return true
+				end
 			end
-			
 		elseif not (buffactive['Vallation'] or buffactive['Valiance']) then
-			if player.main_job == 'RUN' and abil_recasts[113] < latency then
-				send_command('input /ja "Valiance" <me>')
+			if abil_recasts[23] < latency then
+				windower.chat.input('/ja "Vallation" <me>')
 				tickdelay = os.clock() + 2.5
 				return true
-			elseif abil_recasts[23] < latency then
-				send_command('input /ja "Vallation" <me>')
-				tickdelay = os.clock() + 2.5
-				return true
-			else
-				return false
 			end
-		else
-			return false
 		end
-	
 	end
 	
 	return false
@@ -2393,13 +2398,13 @@ windower.raw_register_event('outgoing chunk',function(id,data,modified,is_inject
         lastlocation = modified:sub(5, 16)
 		
 		if wasmoving ~= moving then
-			if not (player.status == 'Event' or check_midaction() or pet_midaction()) then
+			if not (player.status == 'Event' or (os.clock() < (next_cast + 1)) or pet_midaction() or (os.clock() < (petWillAct + 2))) then
 				send_command('gs c forceequip')
 			end
 		end
 
 		if moving then
-			if player.movement_speed <= 5 and sets.Kiting and not (player.status == 'Event' or check_midaction() or pet_midaction()) then
+			if player.movement_speed <= 5 and sets.Kiting and not (player.status == 'Event' or (os.clock() < (next_cast + 1)) or pet_midaction() or (os.clock() < (petWillAct + 2))) then
 				send_command('gs c forceequip')
 			end
 			if state.RngHelper.value then
