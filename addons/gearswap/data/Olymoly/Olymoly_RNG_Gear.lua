@@ -6,11 +6,39 @@ function user_setup()
 	state.IdleMode:options('Normal', 'PDT')
 	state.Weapons:options('Default','DualWeapons','DualMagicWeapons')
 	
-	DefaultAmmo = {['Fomalhaut'] = "Chrono Bullet", ['Yoichinoyumi']="Yoichi's Arrow", ['Armageddon']="Eminent Bullet",}
-	U_Shot_Ammo = {['Fomalhaut'] = "Animkii Bullet", ['Yoichinoyumi']="Yoichi's Arrow", ['Armageddon']="Eminent Bullet",}
-	ranged_Bow = T{"Yoichinoyumi", "Gandiva",}
-	ranged_Gun = T{"Annihilator", "Holliday", "Armageddon", "Fomalhaut", "Gastraphetes"}
-	
+	WeaponType =  {['Fail-Not'] = "Bow",
+                   ['Fomalhaut'] = "Gun",
+				   ['Ataktos'] = "Gun",
+                   }
+
+	DefaultAmmo = {
+		['Bow']  = {['Default'] = "Eminent Arrow",
+					['WS'] = "Eminent Arrow",
+					['Acc'] = "Eminent Arrow",
+					['Magic'] = "Eminent Arrow",
+					['MagicAcc'] = "Eminent Arrow",
+					['Unlimited'] = "Hauksbok Arrow",
+					['MagicUnlimited'] ="Hauksbok Arrow",
+					['MagicAccUnlimited'] ="Hauksbok Arrow"},
+					
+		['Gun']  = {['Default'] = "Chrono Bullet",
+					['WS'] = "Chrono Bullet",
+					['Acc'] = "Chrono Bullet",
+					['Magic'] = "Orichalc. Bullet",
+					['MagicAcc'] = "Orichalc. Bullet",
+					['Unlimited'] = "Hauksbok Bullet",
+					['MagicUnlimited'] = "Hauksbok Bullet",
+					['MagicAccUnlimited'] ="Animikii Bullet"},
+					
+		['Crossbow'] = {['Default'] = "Eminent Bolt",
+						['WS'] = "Eminent Bolt",
+						['Acc'] = "Eminent Bolt",
+						['Magic'] = "Eminent Bolt",
+						['MagicAcc'] = "Eminent Bolt",
+						['Unlimited'] = "Hauksbok Bolt",
+						['MagicUnlimited'] = "Hauksbok Bolt",
+						['MagicAccUnlimited'] ="Hauksbok Bolt"}
+	}
 	-- Snapshot
 	gear.snapshot_jse_back = {name="Belenus's Cape", augments={'"Snapshot"+10',}}	
 	-- Ranged TP
