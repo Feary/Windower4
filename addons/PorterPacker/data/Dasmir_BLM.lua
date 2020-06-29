@@ -17,4 +17,5 @@ return {
     "Jhakri Pigaches +2",
     "Mallquis Clogs +2",
     "Goetia Sabots +2",
+	"Kaja Rod",
 }

@@ -15,4 +15,5 @@ return {
     "Tali'ah Sera. +2",
     "Tali'ah Crackows +2",
 	"Hiza. Hizayoroi +2",
+	"Kaja Knuckles",
 }

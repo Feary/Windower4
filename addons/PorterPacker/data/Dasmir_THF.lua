@@ -24,4 +24,6 @@ return {
     "Mummu Bonnet +2",
     "Meghanada Visor +2",
 	"Mummu Ring",
+	"Kaja Knife",
+	"Naegling",
 }

@@ -19,4 +19,8 @@ return {
     "Leth. Houseaux +1",
     "Atrophy Gloves +2",
     "Atrophy Tights +2",
+	"Kaja Rod",
+	"Kaja Knife",
+	"Naegling",
+	"Kaja Bow",
 }

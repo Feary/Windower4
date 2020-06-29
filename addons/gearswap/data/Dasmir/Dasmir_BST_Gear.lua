@@ -32,7 +32,7 @@ function user_setup()
 	-- Pet Accuracy Attack Haste
 	gear.Pet_acc_jse_back =  	{name="Artio's Mantle",  augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: Haste+10','Pet: Damage taken -5%',}}
 	-- Pet Macc Haste
-	gear.Pet_macc_jse_back = 	{name="Artio's Mantle",  augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}}
+	gear.Pet_macc_jse_back = 	{name="Artio's Mantle",   augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Mag. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}}
 	-- Pet Tank Pet: Regen acc  pet dt
 	gear.Pet_regen_jse_back =  	{name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10','Pet: Damage taken -5%',}}
 	-- CHR Macc

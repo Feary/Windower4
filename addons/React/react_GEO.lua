@@ -40,7 +40,7 @@ return {
 	["Bozzetto Retributionist"]={
         ["Nether Castigation"]={
             ["complete_reaction"]="", 
-            ["ready_reaction"]="input /ma stun <bt>"
+            ["ready_reaction"]="input /ma \"Stun\" <t>"
         }, 
         ["Charging up"]={
             ["complete_reaction"]="", 

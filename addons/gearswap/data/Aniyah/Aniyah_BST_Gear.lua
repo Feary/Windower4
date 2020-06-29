@@ -18,11 +18,12 @@ function user_setup()
 	gear.MABKumbha =  {name="Kumbhakarna", augments={'Pet: "Mag.Atk.Bns."+16','Pet: Phys. dmg. taken -2%','Pet: TP Bonus+140',}}
 
 	-- Capes 
-	gear.tp_jse_back = 			 {name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	gear.ws_jse_back = 			 {name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	gear.magic_ws_jse_back = 	"Artio's Mantle" 
-	-- MND Meva FC DT
-	gear.FC_jse_back = 			"Artio's Mantle" 
+	gear.tp_jse_back = 			 {name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	gear.ws_jse_back = 			 {name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	-- MND
+	gear.magic_ws_jse_back = 	 {name="Artio's Mantle", augments={'MND+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	--  Meva FC DT
+	gear.FC_jse_back = 			{name="Artio's Mantle", augments={'MND+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10',}}
 	-- Pet Accuracy Attack Haste
 	gear.Pet_acc_jse_back =  	{name="Artio's Mantle",  augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','System: 1 ID: 1246 Val: 4',}}
 	-- Pet Macc Haste
@@ -30,7 +31,7 @@ function user_setup()
 	-- Pet Tank Pet: Regen acc  pet dt
 	gear.Pet_regen_jse_back =  	{name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10','Pet: Damage taken -5%',}}
 	-- CHR Macc
-	gear.Charm_jse_back =  	"Artio's Mantle" 
+	gear.Charm_jse_back =  		{name="Artio's Mantle", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Waltz" potency +10%','Phys. dmg. taken-10%',}}
 	
 	-- Set up Jug Pet cycling and keybind Ctrl+F7
 	-- INPUT PREFERRED JUG PETS HERE

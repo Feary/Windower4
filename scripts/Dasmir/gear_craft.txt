@@ -8,7 +8,7 @@ get Goldsmith's Ring satchel all
 get Orvail Ring satchel all
 get Goldsmith's Smock satchel all
 get Craftkeeper's Ring satchel all
-get Toreutic Scutum satchel all
+get Toreutic Shield satchel all
 get Tanner's Gloves satchel all
 get Magnifying Specs. satchel all
 get Goldsmith's Belt satchel all

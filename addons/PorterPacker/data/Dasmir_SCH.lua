@@ -26,4 +26,6 @@ return {
     "Arbatel Loafers +1",
     "Mallquis Trews +2",
     "Arbatel Pants +1",
+	"Kaja Rod",
+	"Kaja Grip",
 }

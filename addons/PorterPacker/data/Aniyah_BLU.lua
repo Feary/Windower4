@@ -23,6 +23,10 @@ return {
     "Jhakri Robe +2",
 	"Kaja Rod",
 	"Maxentius",
-	"Ajja Sword",
-    "Kaja Sword",	
+	"Kaja Sword",   	
+	"Aya. Gambieras +2",
+    "Aya. Manopolas +2",
+    "Aya. Zucchetto +2",
+    "Ayanmo Corazza +2",
+    "Aya. Cosciales +2",
 }

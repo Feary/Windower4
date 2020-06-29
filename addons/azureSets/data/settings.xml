@@ -104,22 +104,25 @@
 			</dynamis>
 			<!-- This is for Aoe Party -->
 			<aoe>
-				<slot01>glutinous dart</slot01>
-				<slot02>spectral floe</slot02>
-				<slot03>subduction</slot03>
-				<slot04>entomb</slot04>
-				<slot05>tenebral crush</slot05>
-				<slot06>cocoon</slot06>
-				<slot07>barrier tusk</slot07>
-				<slot08>occultation</slot08>
-				<slot09>diamondhide</slot09>
-				<slot10>dream flower</slot10>
-				<slot11>magic fruit</slot11>
-				<slot12>magic hammer</slot12>
-				<slot13>battery charge</slot13>
-				<slot14>Delta Thrust</slot14>
-				<slot15>Barbed Crescent</slot15>
-				<slot16>Erratic Flutter</slot16>				
+				<slot01>Delta Thrust</slot01>
+				<slot02>Barbed Crescent</slot02>
+				<slot03>Erratic Flutter</slot03>		
+				<slot04>Spectral Floe</slot04>
+				<slot05>Subduction</slot05>
+				<slot06>Magic Hammer</slot06>
+				<slot07>Reactor Cool</slot07>
+				<slot08>Cursed Sphere</slot08>
+				<slot09>Sound Blast</slot09>
+				<slot10>Entomb</slot10>
+				<slot11>Tenebral Crush</slot11>
+				<slot12>Magic Fruit</slot12>
+				<slot13>Occultation</slot13>
+				<slot14>Diamondhide</slot14>
+				<slot15>Water Bomb</slot15>
+				<slot16>Barrier Tusk</slot16>
+				<slot17>Blinding Fulgor</slot17>
+				<slot18>Retinal Glare</slot18>
+				<slot19>Barrier Tusk</slot19>				
 			</aoe>
 			<!-- This is for Solo Aoe -->
 			<cleaving>

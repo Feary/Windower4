@@ -26,4 +26,5 @@ return {
     "Mummu Gamash. +2",
     "Mummu Ring",
 	"Naegling",
+	"Kaja Knife",
 }

@@ -26,4 +26,5 @@ return {
 	"Azimuth Hood +1",
 	"Rubeus Boots",
 	"Kaja Grip",
+	"Kaja Rod",
 }

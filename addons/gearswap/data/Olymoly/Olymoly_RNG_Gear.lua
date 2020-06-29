@@ -6,28 +6,28 @@ function user_setup()
 	state.IdleMode:options('Normal', 'PDT')
 	state.Weapons:options('Default','DualWeapons','DualMagicWeapons')
 	
-	WeaponType =  {['Fail-Not'] = "Bow",
+	WeaponType =  {['Yoichinoyumi'] = "Bow",
                    ['Fomalhaut'] = "Gun",
-				   ['Ataktos'] = "Gun",
+				   ['Armageddon'] = "Gun",
                    }
 
 	DefaultAmmo = {
-		['Bow']  = {['Default'] = "Eminent Arrow",
-					['WS'] = "Eminent Arrow",
-					['Acc'] = "Eminent Arrow",
-					['Magic'] = "Eminent Arrow",
-					['MagicAcc'] = "Eminent Arrow",
-					['Unlimited'] = "Hauksbok Arrow",
-					['MagicUnlimited'] ="Hauksbok Arrow",
-					['MagicAccUnlimited'] ="Hauksbok Arrow"},
+		['Bow']  = {['Default'] = "Yochi's Arrow",
+					['WS'] = "Yochi's Arrow",
+					['Acc'] = "Yochi's Arrow",
+					['Magic'] = "Yochi's Arrow",
+					['MagicAcc'] = "Yochi's Arrow",
+					['Unlimited'] = "Yochi's Arrow",
+					['MagicUnlimited'] ="Yochi's Arrow",
+					['MagicAccUnlimited'] ="Yochi's Arrow"},
 					
-		['Gun']  = {['Default'] = "Chrono Bullet",
-					['WS'] = "Chrono Bullet",
-					['Acc'] = "Chrono Bullet",
-					['Magic'] = "Orichalc. Bullet",
-					['MagicAcc'] = "Orichalc. Bullet",
-					['Unlimited'] = "Hauksbok Bullet",
-					['MagicUnlimited'] = "Hauksbok Bullet",
+		['Gun']  = {['Default'] = "Eminent Bullet",
+					['WS'] = "Eminent Bullet",
+					['Acc'] = "Eminent Bullet",
+					['Magic'] = "Eminent Bullet",
+					['MagicAcc'] = "Eminent Bullet",
+					['Unlimited'] = "Animikii Bullet",
+					['MagicUnlimited'] = "Animikii Bullet",
 					['MagicAccUnlimited'] ="Animikii Bullet"},
 					
 		['Crossbow'] = {['Default'] = "Eminent Bolt",

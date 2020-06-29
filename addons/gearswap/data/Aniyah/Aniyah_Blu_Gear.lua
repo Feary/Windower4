@@ -18,8 +18,8 @@ function user_setup()
 	gear.dw_jse_back =	 	{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
 	gear.crit_jse_back = 	{name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}
 	gear.wsd_jse_back = 	{name="Rosmerta's Cape",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	gear.mab_jse_back = 	{name="Rosmerta's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}}
-	gear.FC_jse_back = 		{name="Rosmerta's Cape",augments={'HP+60','"Fast Cast"+10','Damage taken-5%',}}
+	gear.mab_jse_back = 	{name="Rosmerta's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Spell interruption rate down-10%',}}
+	gear.FC_jse_back = 		{name="Rosmerta's Cape",augments={'HP+60','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}}
 	gear.cure_jse_back = 	{name="Rosmerta's Cape",augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%',}}
 	
 	gear.obi_cure_waist = "Ovate Rope"

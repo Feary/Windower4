@@ -24,4 +24,5 @@ return {
     "Caller's Earring",
     "Astute Cape",
     "Kaja Grip",
+	"Kaja Rod",
 }
