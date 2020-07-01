@@ -343,14 +343,14 @@ function init_gear_sets()
     
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+        head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		-- back="Moonbeam Cape", Herc feet DT
 		back=gear.tp_ranger_jse_back, waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
 		
     sets.idle.Refresh = {ammo=gear.RAbullet,
 		-- Rawhide Mask
-		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
 		-- body="Mekosu. Harness", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
 		--legs=Rawhide Trousers",
@@ -358,17 +358,17 @@ function init_gear_sets()
 	
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Meghanada Ring", rring="Defending Ring",
 		back=gear.tp_ranger_jse_back, waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
 
     sets.defense.MDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Meghanada Ring", rring="Defending Ring",	
 		back=gear.tp_ranger_jse_back, waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
 	
     sets.defense.MEVA = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
 		-- Herc gloves DT
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Meghanada Ring", rring="Defending Ring",
 		--
