@@ -36,11 +36,11 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto",back=gear.ws_jse_back} -- Sakonji Kote +1
-    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto"}
-    sets.precast.JA['Blade Bash'] = {hands="Saotome Kote"}-- Sakonji Kote +1
+    sets.precast.JA.Meditate = {head="Wakido Kabuto +1",hands="Sakonji Kote", back=gear.ws_jse_back}
+    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +1"}
+    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote"}-- Sakonji Kote +1
 	sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +1"}
-	sets.precast.JA['Sengikori'] = {feet="Unkai Sune-ate +2"}--Kas. Sune-Ate +1
+	sets.precast.JA['Sengikori'] = {feet="Kasuga Sune-ate"}--Kas. Sune-Ate +1
 	
 	-- Acc
     sets.precast.Step = {ammo="Hasty Pinion +1",
@@ -81,7 +81,7 @@ function init_gear_sets()
 		head="Flam. Zucchetto +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
         -- Sakonji Domaru +3 Valourous Mitts
 		body="Flamma Korazin +2",hands="Flam. Manopolas +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
-		-- wakido Haidate +3 Valourous Greaves 
+		-- Wakido Haidate +3 Valourous Greaves 
         back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Flam. Gambieras +2"}
    
 	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {feet="Wakido Sune. +3"})

@@ -13,7 +13,7 @@ return {
     "Hiza. Haramaki +2",
     "Hiza. Hizayoroi +2",  
     "Wakido Kote +3",
-    "Wakido Kabuto",
+    "Wakido Kabuto +1",
     "Wakido Domaru +2",
     "Wakido Haidate +2",
 	"Wakido Sune-Ate",

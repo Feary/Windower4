@@ -1,5 +1,5 @@
 return {   
-	"Cirque Farsetto +1",
+	"Karagoz Farsetto",
     "Cirque Guanti +1",
     "Karagoz Capello",
     "Karagoz Scarpe",
