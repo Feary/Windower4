@@ -57,4 +57,11 @@
             </pos>
         </text_box_settings>
     </fearyjunior>
+    <molyoly>
+        <text_box_settings>
+            <pos>
+                <x>-22</x>
+            </pos>
+        </text_box_settings>
+    </molyoly>
 </settings>

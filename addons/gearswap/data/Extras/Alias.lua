@@ -10,6 +10,7 @@
 	
 -- Global Alias
 send_command('alias geodes exec geodes.txt')
+send_command('alias key input /item "Forbidden Key" <stnpc>')
 
 -- Crafting Related
 send_command('alias crafting exec  '..player.name..'/gear_craft.txt')
@@ -26,6 +27,8 @@ send_command('alias sas send @all')
 -- everyone target
 send_command('alias sa sat alltarget')
 -- everyone 
+send_command('alias as sat allcommand')
+send_command('alias ac sat allcommand')
 send_command('alias saa sat allattack')
 send_command('alias ass sat alltarget;wait 1;sat allcommand assault')
 
@@ -54,7 +57,8 @@ send_command('alias naked gs equip naked')
 -- Follow
 send_command('bind pageup ffo me')
 send_command('bind pagedown ffo stopall')
-
+send_command('bind !pageup exec movement.txt')
+	
 send_command('bind numpad+ sat alltarget')
 send_command('bind !numpad+ sat allattack')
 send_command('bind ^numpad+ sat allattack')

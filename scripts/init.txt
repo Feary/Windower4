@@ -51,6 +51,10 @@ lua load porterpacker
 lua load UnityNPC
 lua load Sparks 
 lua load NpcInteract
+lua load trade
+lua load tradenpc
+lua load synthchain
+
 
 //Bind keys
 //Bind syntax is "bind <key> <up> <command>

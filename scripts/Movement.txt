@@ -1,0 +1,1 @@
+send @all input /ma "Chocobo Mazurka" <me>;wait 1;send @all input /ma "Bolter's Roll" <me>;wait 1;send @all input /ja "Chocobo Jig II" <me>;

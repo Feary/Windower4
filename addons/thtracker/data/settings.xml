@@ -1,6 +1,6 @@
 <?xml version="1.1" ?>
 <settings>
-	<global>
+    <global>
         <bg>
             <alpha>200</alpha>
             <blue>30</blue>
@@ -17,6 +17,7 @@
         <flags>
             <bold>false</bold>
             <bottom>false</bottom>
+            <draggable>true</draggable>
             <italic>false</italic>
             <right>false</right>
         </flags>
@@ -32,10 +33,18 @@
             <blue>255</blue>
             <font>Arial</font>
             <fonts>
+
             </fonts>
             <green>255</green>
             <red>255</red>
             <size>12</size>
+            <stroke>
+                <alpha>255</alpha>
+                <blue>0</blue>
+                <green>0</green>
+                <red>0</red>
+                <width>0</width>
+            </stroke>
         </text>
-	</global>
+    </global>
 </settings>

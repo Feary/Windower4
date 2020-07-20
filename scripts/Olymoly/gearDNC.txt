@@ -1,0 +1,14 @@
+get Adhemar Bonnet +1 sack all
+get Adhemar Bonnet sack all
+get Adhemar Jacket +1 sack all
+get Adhemar Wrist. +1 sack all
+get Adhemar Wristbands sack all
+get Ainia Collar sack all
+get Dampening Tam sack all
+get Floral Gauntlets sack all
+get Kaja Knife sack all
+get Regal Cpt. Gloves sack all
+get Regal Gloves sack all
+get Samnuha Tights sack all
+get Toetapper Mantle sack all
+get Senuna's Mantle sack all

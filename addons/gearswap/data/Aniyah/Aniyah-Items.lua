@@ -93,12 +93,25 @@ gear.grioavolr_fc_staff = {name="Grioavolr", augments={'"Mag.Atk.Bns."+16','Weap
 --gear.herculean_fc_head = {name="Herculean Helm",augments={'"Fast Cast"+6','"Mag.Atk.Bns."+13',}}
 --gear.herculean_nuke_head = {name="Herculean Helm",augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Enmity-3','INT+9','"Mag.Atk.Bns."+13',}}
 
+-- Pet: Store TP +10-11, Pet: Acc/R.Acc/Attack/R.Attack
+--gear.herculean_PUP_head
+--gear.herculean_PUP_hands
+--gear.herculean_PUP_legs
+--gear.herculean_PUP_feet
+-- Pet: Repair 8
+--gear.herculean_Repair_head
+--gear.herculean_Repair_body
+--gear.herculean_Repair_hands
+--gear.herculean_Repair_legs
+
+
 --gear.herculean_waltz_body = {name="Herculean Vest",augments={'Attack+26','"Waltz" potency +11%','AGI+4','Accuracy+5',}}
 --gear.herculean_wsd_body = {name="Herculean Vest",augments={'Accuracy+11','Weapon skill damage +5%','DEX+7',}}
 
 --gear.herculean_dt_hands = {name="Herculean Gloves",augments={'Attack+4','Damage taken-4%',}}
 --gear.herculean_refresh_hands = {name="Herculean Gloves",augments={'Enmity+2','Pet: "Store TP"+4','"Refresh"+1',}}
 --gear.herculean_waltz_hands = {name="Herculean Gloves",augments={'Rng.Acc.+16','"Waltz" potency +11%','AGI+1',}}
+--gear.herculean_ta_hands = {name="Herculean Gloves",augments={'Rng.Acc.+16','"Waltz" potency +11%','AGI+1',}}
 
 --gear.herculean_dt_legs = {name="Herculean Trousers",augments={'Attack+15','Damage taken-4%','STR+3','Accuracy+12',}}
 --gear.herculean_wsd_legs = {name="Herculean Trousers",augments={'Weapon skill damage +5%','DEX+8','Accuracy+13','Attack+14',}}

@@ -1,8 +1,9 @@
 return {
 	"Nuk. Cabasset +1",
     "Nukumi Manoplas +1",
-    "Ferine Quijotes",
-    "Ferine Gausape",
+    "Nukumi Quijotes",
+    "Nukumi Gausape +1",
+	"Nukumi Ocreae +1",
 	"Ankusa Jackcoat",  
     "Ankusa Helm",   
 	"Ankusa Gloves",

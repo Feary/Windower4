@@ -9,6 +9,8 @@ sets.TreasureHunter = {hands="Volte Bracers", waist="Chaac Belt"} --head="Wh. Ra
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}
 
+gear.DarkRing = {name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}}
+
 --Augmented items that you'll use among multiple jobs.
 
 -- Alluvion Skirmish Gear
@@ -188,7 +190,7 @@ gear.herculean_ta_feet = {name="Herculean Boots", augments={'Accuracy+28','"Trip
 --gear.herculean_dt_feet = {name="Herculean Boots",augments={'Damage taken-4%','MND+7','Attack+6',}}
 --gear.herculean_wsd_feet = {name="Herculean Boots",augments={'Accuracy+23 Attack+23','Weapon skill damage +5%','DEX+10','Accuracy+10','Attack+1',}}
 --gear.herculean_waltz_feet = {name="Herculean Boots",augments={'Attack+10','"Waltz" potency +10%','AGI+4','Accuracy+9',}}
-gear.herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23','Rng.Acc.+14','Phalanx +1','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
+gear.herculean_nuke_feet = {name="Herculean Boots", augments={'Accuracy+28','"Triple Atk."+3','DEX+7',}}
 --gear.herculean_refresh_feet = {name="Herculean Boots",augments={'CHR+8','Rng.Acc.+7','"Refresh"+1','Mag. Acc.+17 "Mag.Atk.Bns."+17',}}
 
 gear.merlinic_nuke_head = {name="Merlinic Hood", augments={'Crit.hit rate+3','Pet: Haste+2','"Refresh"+1','Accuracy+1 Attack+1','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}

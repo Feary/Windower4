@@ -25,4 +25,10 @@ return {
     "Astute Cape",
     "Kaja Grip",
 	"Kaja Rod",
+	 "Inyanga Shalwar +2",
+    "Inyanga Jubbah +2",
+    "Inyan. Crackows +2",
+    "Inyanga Tiara +2",
+    "Inyan. Dastanas +2",
+    "Inyanga Ring",
 }

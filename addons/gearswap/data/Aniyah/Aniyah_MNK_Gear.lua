@@ -7,7 +7,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	state.IdleMode:options('Normal', 'PDT')
-	state.Weapons:options('Godhands','Staff','ProcStaff','ProcClub','Barehanded','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana')
+	state.Weapons:options('Kaja','Staff','ProcStaff','ProcClub','Barehanded','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None'}
 
 	-- Capes 
@@ -40,14 +40,14 @@ function init_gear_sets()
 	
 	-- Precast sets to enhance JAs on use
 	sets.precast.JA['Hundred Fists'] = {legs="Hesychast's Hose +1"}
-	sets.precast.JA['Boost'] = {} --hands="Anchorite's Gloves +1"
-	sets.precast.JA['Boost'].OutOfCombat = {} --hands="Anchorite's Gloves +1", Remove Haste and Add Slow Gear.
+	sets.precast.JA['Boost'] = {hands="Anchorite's Gloves +1"} --
+	sets.precast.JA['Boost'].OutOfCombat = {hands="Anchorite's Gloves +1"} -- Remove Haste and Add Slow Gear.
 	sets.precast.JA['Dodge'] = {feet="Anchorite's Gaiters +1"}
 	sets.precast.JA['Focus'] = {head="Anchorite's Crown +1"}
-	sets.precast.JA['Counterstance'] = {} --feet="Hesychast's Gaiters +1"
-	sets.precast.JA['Footwork'] = {feet="Shukuyu Sune-Ate"}
+	sets.precast.JA['Counterstance'] = {feet="Hesychast's Gaiters +1"} 
+	sets.precast.JA['Footwork'] = {}--feet="Shukuyu Sune-Ate"
 	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas"}
-	sets.precast.JA['Mantra'] = {feet="Mel. Gaiters +2"} --feet="Hesychast's Gaiters +1"
+	sets.precast.JA['Mantra'] = {feet="Hesychast's Gaiters +1"} 
 
 	sets.precast.JA['Chi Blast'] = {}
 	
@@ -274,43 +274,45 @@ function init_gear_sets()
 
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff.Sleep = {head="Frenzy Sallet"}
-	sets.buff.Impetus = {body="Bhikku Cyclas +1"}
-	sets.buff.Footwork = {feet="Shukuyu Sune-Ate"}
+	sets.buff.Sleep = {}-- head="Frenzy Sallet"
+	sets.buff.Impetus = {body="Bhikku Cyclas"}
+	sets.buff.Footwork = {}--feet="Shukuyu Sune-Ate"
 	sets.buff.Boost = {} --waist="Ask Sash"
 	
-	sets.FootworkWS = {feet="Shukuyu Sune-Ate"}
+	sets.FootworkWS = {}--feet="Shukuyu Sune-Ate"
 	sets.DayIdle = {}
 	sets.NightIdle = {}
     sets.Knockback = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
-	sets.Skillchain = {legs="Ryuo Hakama"}
+	sets.Skillchain = {}--legs="Ryuo Hakama"
 	
 	-- Weapons sets
-	sets.weapons.Godhands = {main="Godhands"}
+	sets.weapons.Kaja = {main="Kaja Knuckles"}
 	sets.weapons.Barehanded = {main=empty}
 	sets.weapons.Staff = {main="Malignance Pole",sub="Bloodrain Strap"}
-	sets.weapons.ProcStaff = {main="Terra's Staff"}
+	sets.weapons.ProcStaff = {main="Earth Staff"}
 	sets.weapons.ProcClub = {main="Mafic Cudgel"}
-	sets.weapons.ProcSword = {main="Ark Sword",sub=empty}
+	sets.weapons.ProcSword = {main="Ibushi Shinai",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Lament",sub=empty}
 	sets.weapons.ProcScythe = {main="Ark Scythe",sub=empty}
-	sets.weapons.ProcPolearm = {main="Pitchfork +1",sub=empty}
-	sets.weapons.ProcGreatKatana = {main="Hardwood Katana",sub=empty}
+	sets.weapons.ProcPolearm = {main="Pitchfork",sub=empty}
+	sets.weapons.ProcGreatKatana = {main="Zanmato",sub=empty}
 end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
 	-- Default macro set/book
 	if player.sub_job == 'DNC' then
-		set_macro_page(5, 20)
+		set_macro_page(2, 6)
+	elseif player.sub_job == 'WAR' then
+		set_macro_page(1, 6)
 	elseif player.sub_job == 'NIN' then
-		set_macro_page(4, 20)
+		set_macro_page(3, 6)
 	elseif player.sub_job == 'THF' then
-		set_macro_page(6, 20)
+		set_macro_page(4, 6)
 	elseif player.sub_job == 'RUN' then
-		set_macro_page(7, 20)
+		set_macro_page(5, 6)
 	else
-		set_macro_page(6, 20)
+		set_macro_page(1, 6)
 	end
 end
