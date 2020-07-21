@@ -7,7 +7,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	state.IdleMode:options('Normal', 'PDT')
-	state.Weapons:options('Godhands','Staff','ProcStaff','ProcClub','Barehanded','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana')
+	state.Weapons:options('Kaja','Staff','ProcStaff','ProcClub','Barehanded','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None'}
 
@@ -40,15 +40,15 @@ function init_gear_sets()
 	-- Precast Sets
 	
 	-- Precast sets to enhance JAs on use
-	sets.precast.JA['Hundred Fists'] = {legs="Hesychast's Hose"}
-	sets.precast.JA['Boost'] = {hands="Anchorite's Gloves"}
-	sets.precast.JA['Boost'].OutOfCombat = {hands="Anchorite's Gloves"} 
-	sets.precast.JA['Dodge'] = {feet="Anchorite's Gaiters"}
-	sets.precast.JA['Focus'] = {head="Anchorite's Crown"}
+	sets.precast.JA['Hundred Fists'] = {legs="Hesychast's Hose +1"}
+	sets.precast.JA['Boost'] = {hands="Anchorite's Gloves +1"}
+	sets.precast.JA['Boost'].OutOfCombat = {hands="Anchorite's Gloves +1"} 
+	sets.precast.JA['Dodge'] = {feet="Anchorite's Gaiters +1"}
+	sets.precast.JA['Focus'] = {head="Anchorite's Crown +1"}
 	sets.precast.JA['Footwork'] = {}-- feet="Shukuyu Sune-Ate"
-	sets.precast.JA['Counterstance'] = {-feet="Hesychast's Gaiters"} --feet="Hesychast's Gaiters +1"
+	sets.precast.JA['Counterstance'] = {feet="Hesychast's Gaiters +1"}
 	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas"}
-	sets.precast.JA['Mantra'] = {feet="Hesychast's Gaiters"} --feet="Hesychast's Gaiters +1"
+	sets.precast.JA['Mantra'] = {feet="Hesychast's Gaiters +1"} 
 
 	sets.precast.JA['Chi Blast'] = {}
 	
@@ -221,10 +221,11 @@ function init_gear_sets()
 
 	-- Normal melee sets
 	sets.engaged = {ammo="Ginsen",
-		head="Dampening Tam",neck="Moonbeam Nodowa",ear1="Brutal Earring",ear2="Sherida Earring",
+		-- Adhemar Bonnet +1 Moonlight Nodowa
+		head="Dampening Tam",neck="Sanctity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- 
 		body="Ken. Samue",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Gere Ring",
-		-- waist="Moonlight Belt +1", legs="Hes. Hose +3",feet="Anch. Gaiters +3"}
+		-- waist="Moonlight Belt +1", legs="Hes. Hose +3",feet="Anch. Gaiters +3"
 		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 	sets.engaged.SomeAcc = {ammo="Falcon Eye",
 		head="Dampening Tam",neck="Moonbeam Nodowa",ear1="Brutal Earring",ear2="Sherida Earring",
@@ -288,7 +289,7 @@ function init_gear_sets()
 	sets.engaged.FullAcc.HF = set_combine(sets.engaged.FullAcc, {})
 	sets.engaged.Fodder.HF = set_combine(sets.engaged.Fodder, {})
 
-	ets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {}-- head="Frenzy Sallet"
 	sets.buff.Impetus = {body="Bhikku Cyclas +1"}
 	sets.buff.Footwork = {}--feet="Shukuyu Sune-Ate"
@@ -330,5 +331,4 @@ function select_default_macro_book()
 	else
 		set_macro_page(1, 6)
 	end
-end
 end

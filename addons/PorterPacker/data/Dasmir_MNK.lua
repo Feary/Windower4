@@ -6,7 +6,7 @@ return {
     "Anchorite's Gloves +1",
     "Anchorite's Hose +1",
 	"Anchorite's Gaiters +1",   
-    "Bhikku Cyclas",
+    "Bhikku Cyclas +1",
     "Bhikku Crown",
 	"Bhikku Gloves",
     "Bhikku Hose",
