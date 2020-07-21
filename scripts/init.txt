@@ -53,7 +53,7 @@ lua load Sparks
 lua load NpcInteract
 lua load trade
 lua load tradenpc
-lua load synthchain
+//lua load synthchain
 
 
 //Bind keys
