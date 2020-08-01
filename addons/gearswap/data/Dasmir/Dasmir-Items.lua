@@ -112,9 +112,11 @@ gear.herculean_wsd_body = {name="Herculean Vest", augments={'INT+7','Pet: "Mag.A
 
 --gear.merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','INT+15','Mag. Acc.+3','"Mag.Atk.Bns."+13',}}
 --gear.merlinic_nuke_body = {name="Merlinic Jubbah",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Occult Acumen"+4','INT+10','Mag. Acc.+2','"Mag.Atk.Bns."+15',}}
+gear.merlinic_fastcast_body = {name="Merlinic Jubbah", augments={'Phys. dmg. taken -1%','Enmity+1','"Fast Cast"+4',}}
 
 gear.merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'MND+9','AGI+2','"Refresh"+2','Accuracy+14 Attack+14',}}
 gear.merlinic_magpact_hands = {name="Merlinic Dastanas",  augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8','Pet: INT+15',}}
+	
 -- Apogee Mitts Path D
 gear.merlinic_maccpact_hands = {name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+21','Blood Pact Dmg.+10','Pet: "Mag.Atk.Bns."+6',}}
 gear.merlinic_physpact_hands = {name="Merlinic Dastanas", augments={'Pet: Attack+20 Pet: Rng.Atk.+20','Blood Pact Dmg.+9','Pet: Mag. Acc.+11','Pet: "Mag.Atk.Bns."+11',}}

@@ -1,0 +1,16 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    head="Befouled Crown",
+    body="Jhakri Robe +2",
+    hands={ name="Merlinic Dastanas", augments={'MND+9','AGI+2','"Refresh"+2','Accuracy+14 Attack+14',}},
+    legs="Assid. Pants +1",
+    feet="Herald's Gaiters",
+    neck="Loricate Torque +1",
+    waist="Austerity Belt",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Defending Ring",
+    right_ring={ name="Dark Ring", augments={'Breath dmg. taken -4%','Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
+}

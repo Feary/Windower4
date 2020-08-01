@@ -1,9 +1,8 @@
-get Rao Togi sack all
-get Rao Sune-ate sack all
-get Bilious Torque sack all
-get Segomo's Mantle sack all
-get Tripudio Earring sack all
-get Black Belt sack all
-get Crudelis Belt sack all
-get Kaja Knuckles sack all
 get Count's Cuffs sack all
+get Ibushi Shinai sack all
+get Kaja Knuckles sack all
+get Pitchfork sack all
+get Rao Sune-Ate sack all
+get Rao Togi sack all
+get Segomo's Mantle sack all
+get Zanmato sack all

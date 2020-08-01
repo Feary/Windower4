@@ -1,18 +1,20 @@
-alias g15m3g1 /ma "Cure VI" <p0>
-alias g15m3g2 /ma "Cure VI" <p1>
-alias g15m3g3 /ma "Cure VI" <p2>
-alias g15m3g4 /ma "Cure VI" <p3>
-alias g15m3g5 /ma "Cure VI" <p4>
-alias g15m3g6 /ma "Cure VI" <p5>
-alias g15m3g7 /ma "Cure VI" <a10>
-alias g15m3g8 /ma "Cure VI" <a11>
-alias g15m3g9 /ma "Cure VI" <a12>
-alias g15m3g10 /ma "Cure VI" <a13>
-alias g15m3g11 /ma "Cure VI" <a14>
-alias g15m3g12 /ma "Cure VI" <a15>
-alias g15m3g13 /ma "Cure VI" <a20>
-alias g15m3g14 /ma "Cure VI" <a21>
-alias g15m3g15 /ma "Cure VI" <a22>
-alias g15m3g16 /ma "Cure VI" <a23>
-alias g15m3g17 /ma "Cure VI" <a24>
-alias g15m3g18 /ma "Cure VI" <a25>
+alias g15m2g1 send Aniyah input /target <p0>;send Aniyah gs c smartcure
+alias g15m2g2 send Aniyah input /target <p1>;send Aniyah gs c smartcure
+alias g15m2g3 send Aniyah input /target <p2>;send Aniyah gs c smartcure
+alias g15m2g4 send Aniyah input /target <p3>;send Aniyah gs c smartcure
+alias g15m2g5 send Aniyah input /target <p4>;send Aniyah gs c smartcure
+alias g15m2g6 send Aniyah input /target <p5>;send Aniyah gs c smartcure
+
+alias g15m2g7 send Aniyah input /target <a10>;send Aniyah gs c smartcure
+alias g15m2g8 send Aniyah input /target <a11>;send Aniyah gs c smartcure
+alias g15m2g9 send Aniyah input /target <a12>;send Aniyah gs c smartcure
+alias g15m2g10 send Aniyah input /target <a13>;send Aniyah gs c smartcure
+alias g15m2g11 send Aniyah input /target <a14>;send Aniyah gs c smartcure
+alias g15m2g12 send Aniyah input /target <a15>;send Aniyah gs c smartcure
+
+alias g15m2g13 send Aniyah input /target <a10>;send Aniyah gs c smartcure
+alias g15m2g14 send Aniyah input /target <a10>;send Aniyah gs c smartcure
+alias g15m2g15 send Aniyah input /target <a10>;send Aniyah gs c smartcure
+alias g15m2g16 send Aniyah input /target <a10>;send Aniyah gs c smartcure
+alias g15m2g17 send Aniyah input /target <a10>;send Aniyah gs c smartcure
+alias g15m2g18 send Aniyah input /target <a10>;send Aniyah gs c smartcure

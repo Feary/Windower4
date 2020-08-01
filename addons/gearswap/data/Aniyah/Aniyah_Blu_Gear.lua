@@ -8,7 +8,7 @@ function user_setup()
 	state.PhysicalDefenseMode:options('PDT', 'NukeLock')
 	state.MagicalDefenseMode:options('MDT', 'NukeLock')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Default','None','MagicWeapons','MaccWeapons','HybridWeapons')
+	state.Weapons:options('None','MagicWeapons','MaccWeapons','HybridWeapons')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'MP','SuppaBrutal', 'DWEarrings','DWMax'}
 

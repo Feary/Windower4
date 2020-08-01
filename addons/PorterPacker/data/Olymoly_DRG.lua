@@ -26,4 +26,5 @@ return {
     "Sulev. Cuisses +2",
     "Sulevia's Mask +2",
     "Shining One",
+	"Kaja Grip",
 }

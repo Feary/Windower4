@@ -47,7 +47,7 @@ function init_gear_sets()
 
 	-- Weapons sets
 	sets.weapons.MeleeWeapons = {main="Maxentius",sub="Sors Shield"}
-	sets.weapons.DualWeapons = {main="Maxentius",sub="Eletta Rod"}
+	sets.weapons.DualWeapons = {main="Maxentius",sub="Kaja Rod"}
 
     -- Precast Sets
 
@@ -79,7 +79,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Cure.DT =  set_combine(sets.precast.FC.Cure, {
 		main="Oranyan", sub="Clerisy Strap +1",
-		head="Piety Cap +1", neck="Loricate Torque +1",lear="Nourish. Earring +1", rear="Nourish. Earring",
+		head="Piety Cap +1", neck="Loricate Torque +1",lear="Nourish. Earring +1", rear="Novia Earring",
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.Cure_jse_back, waist="Witful Belt", legs="Ebers Pant. +1", feet="Cure Clogs"})
 
@@ -99,7 +99,7 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Hasty Pinion +1",
-		head="Aya. Zucchetto +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Cessance Earring",
+		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Cessance Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Stikini Ring", rring="Stikini Ring",
 		waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
@@ -124,8 +124,8 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {waist="Chaac Belt"})
 	
 	--Situational sets: Gear that is equipped on certain targets
-	sets.Self_Healing = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring"}
-	sets.Cure_Received = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring"}
+	sets.Self_Healing = {ring1="Kunaji Ring",ring2="Asklepian Ring"}-- neck="Phalaina Locket",
+	sets.Cure_Received = {ring1="Kunaji Ring",ring2="Asklepian Ring"} -- neck="Phalaina Locket",
 	sets.Self_Refresh = {}
 
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.
@@ -143,7 +143,7 @@ function init_gear_sets()
 	
     sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Prolix Ring",
+		body="Inyanga Jubbah +2",hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.fastcast_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
 		
 	sets.midcast['Esuna'] =  sets.precast.FC['Healing Magic']
@@ -155,7 +155,7 @@ function init_gear_sets()
 		-- Queller Rod D
 		main="Tamaxchi", sub="Sors Shield", ammo="Esper Stone +1",
 		-- Kaykaus Mitra B   
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		-- 
@@ -165,7 +165,7 @@ function init_gear_sets()
 		-- Queller Rod D
 		main="Tamaxchi", sub="Sors Shield", ammo="Esper Stone +1",
 		-- Kaykaus Mitra B 
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -173,7 +173,7 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCure = {
 		main="Chatoyant Staff", sub="Elder's Grip +1", ammo="Esper Stone +1",
 		-- Kaykaus Mitra B 
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -181,7 +181,7 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCureSolace = {
 		main="Chatoyant Staff", sub="Elder's Grip +1", ammo="Esper Stone +1",
 		-- Kaykaus Mitra B 
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -189,7 +189,7 @@ function init_gear_sets()
 	sets.midcast.LightDayCureSolace = {
 		main="Chatoyant Staff", sub="Elder's Grip +1", ammo="Esper Stone +1",
 		-- Kaykaus Mitra B 
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
 		--  Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -197,7 +197,7 @@ function init_gear_sets()
 	sets.midcast.LightDayCure = {
 		main="Chatoyant Staff", sub="Elder's Grip +1", ammo="Esper Stone +1",
 		-- Kaykaus Mitra B
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque",lear="Glorious Earring", rear="Nourish. Earring +1",
 		--  Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -205,7 +205,7 @@ function init_gear_sets()
 	sets.midcast.Curaga = {	
 		-- Queller Rod D
 		main="Tamaxchi", sub="Sors Shield", ammo="Esper Stone +1",		
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Bliault +3 Theophany Mitts +3
 		body="Theo. Briault +2", hands=gear.telchine_Hands_Cure, lring="Stikini Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -213,7 +213,7 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCuraga = {
 		main="Chatoyant Staff", sub="Elder's Grip +1", ammo="Esper Stone +1",
 		-- Nuna Gorget +1 
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
 		body="Theo. Briault +2", hands=gear.telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -221,7 +221,7 @@ function init_gear_sets()
 	sets.midcast.LightDayCuraga = {
 		main="Chatoyant Staff", sub="Elder's Grip +1", ammo="Esper Stone +1",
 		-- Nuna Gorget +1 
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theo. Briault +3 Kaykaus Cuffs A
 		body="Theo. Briault +2", hands=gear.telchine_Hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Hachirin-no-Obi",  legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -230,7 +230,7 @@ function init_gear_sets()
 		-- Queller Rod D
 		main="Tamaxchi", sub="Sors Shield", ammo="Esper Stone +1",
 		-- Kaykaus Mitra B 
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theophany Mitts +3
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -240,7 +240,7 @@ function init_gear_sets()
 		-- Queller Rod D
 		main="Tamaxchi", sub="Sors Shield", ammo="Esper Stone +1",
 		-- Kaykaus Mitra B Incanter's Torque  
-		head="Gendewitha Caubeen +1", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Glorious Earring", rear="Nourish. Earring +1",
 		-- Theophany Mitts +3 
 		body="Ebers Bliaud +1", hands="Theophany Mitts +2", lring="Sirona's Ring", rring="Lebeche Ring",
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Ebers Pantaloons +1", feet="Kaykaus Boots"}
@@ -472,7 +472,7 @@ function init_gear_sets()
     sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
 
 	sets.idle.Weak = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricat	e Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Shamash Robe Chironic Gloves DT
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Chironic Slippers DT
@@ -505,9 +505,9 @@ function init_gear_sets()
 
     -- Basic set for if no TP weapon is defined.
 	sets.engaged = {ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     sets.engaged.Acc = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
@@ -515,7 +515,7 @@ function init_gear_sets()
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 		
     sets.engaged.DW = {ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
@@ -563,7 +563,7 @@ buff_spell_lists = {
 		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=false},
 		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=false},
 		{Name='Aurorastorm',	Buff='Aurorastorm',	SpellID=119,	Reapply=false},
-		--{Name='Barthundra',		Buff='Barthunder',	SpellID=70,		Reapply=false},
+		--{Name='Barthundra',	Buff='Barthunder',	SpellID=70,		Reapply=false},
 		--{Name='Barparalyzra',	Buff='Barparalyze',	SpellID=88,		Reapply=false},
 	},
 	Melee = {

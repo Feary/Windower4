@@ -1,5 +1,4 @@
 return {
-	"Tantra Tathlum",
 	"Kaja Knuckles",
     "Anchorite's Crown",
 	"Anchorite's Cyclas",
@@ -21,7 +20,6 @@ return {
     "Hizamaru Kote +2",
     "Hiza. Hizayoroi +2",
     "Hiza. Sune-Ate +2",
-    "Hizamaru Ring",
     "Mummu Bonnet +2",
     "Mummu Jacket +2",
     "Mummu Wrists +2",
