@@ -112,7 +112,7 @@ function init_gear_sets()
 		-- Despair Trousers Despair Greaves
 		back=gear.Cape_WS, waist="Prosilio Belt", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
-	sets.precast.WS['Sanguine Blade'] = {ammo="Pemphredo Tathlum",
+	sets.precast.WS['Sanguine Blade'] = {ammo="Regal Gem",
 		--head="Carmine Mask +1", lear="Crematio Earring",
 		head="Pixie Hairpin +1", neck="Fotia Gorget", lear="Regal Earring", rear="Friomisi Earring",
 		-- lring="Epaminodas's Ring", 
@@ -126,7 +126,7 @@ function init_gear_sets()
 	sets.RecoverMP = {}--body="Seidr Cotehardie"
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+    sets.MagicBurst = {main="Maxentius", sub="Ammurapi Shield", ammo="Regal Gem",
 		--head="Ea Hat +1", 
 		head="Atro. Chapeau +2", neck="Mizu. Kubikazari", lear="Regal Earring", rear="Friomisi Earring",
 		-- body="Ea Houppelande +1",
@@ -148,7 +148,7 @@ function init_gear_sets()
 
     sets.midcast.Cure = {main="Tamaxchi", sub="Thuellaic Ecu +1", ammo="Regal Gem",
 		--head="Vanya Hood", neck="Incanter's Torque", lear="Mendi. Earring",
-		head="Atro. Chapeau +2", neck="Melic Torque", lear="Roundel Earring", rear="Novia Earring",
+		head="Atro. Chapeau +2", neck="Melic Torque", lear="Regal Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring 
 		body="Viti. Tabard +1", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
 		-- Atrophy Tights +3 Vanya Clogs
@@ -156,7 +156,7 @@ function init_gear_sets()
 
     sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Clerisy Strap +1", ammo="Regal Gem",
 		--head="Vanya Hood",
-		head="Atro. Chapeau +2", neck="Melic Torque", lear="Roundel Earring", rear="Novia Earring",
+		head="Atro. Chapeau +2", neck="Melic Torque", lear="Regal Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring
 		body="Viti. Tabard +1", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
 		-- Atrophy Tights +3 Vanya Clogs  feet="Kaykaus Boots"
@@ -165,7 +165,7 @@ function init_gear_sets()
 		--Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {main="Tamaxchi", sub="Thuellaic Ecu +1", ammo="Regal Gem",
 		-- head="Vanya Hood", lear="Mendi. Earring",
-		head="Atro. Chapeau +2", neck="Melic Torque", lear="Roundel Earring", rear="Novia Earring",
+		head="Atro. Chapeau +2", neck="Melic Torque", lear="Regal Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Cuffs Haoma's Ring Sirona's Ring
 		body="Viti. Tabard +1", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		-- Atrophy Tights +3 Vanya Clogs
@@ -325,38 +325,38 @@ function init_gear_sets()
 	sets.midcast['Bio III'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter, {head="Viti. Chapeau +1"})
 
 
-	sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif", waist="Acuity Belt"})
-    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif", waist="Acuity Belt"}) 
+	sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif", waist="Austerity Belt"})
+    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif", waist="Austerity Belt"}) 
     
 	-- Divine Magic 
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 
 	-- Elemental Magic 
-	sets.midcast['Elemental Magic'] = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum", 
+	sets.midcast['Elemental Magic'] = {main="Maxentius", sub="Ammurapi Shield", ammo="Regal Gem", 
 		-- gear.merlinic_nuke_head
 		head="Atro. Chapeau +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Doublet +1 Amalric Gages +1  Shiva Ring +1 Shiva Ring +1
 		body="Jhakri Robe +2", hands="Amalric Gages", lring="Shiva Ring", rring="Shiva Ring",
-		-- Eschan Belt Amalric Slops +1
-		back=gear.nuke_jse_back, waist="Acuity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
+		-- Eschan Stone Amalric Slops +1
+		back=gear.nuke_jse_back, waist="Austerity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
 
     sets.midcast['Elemental Magic'].Resistant = {main="Maxentius", sub="Ammurapi Shield", ammo="Regal Gem", 
 		-- gear.merlinic_nuke_head
 		head="Atro. Chapeau +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Doublet +1
 		body="Jhakri Robe +2", hands="Amalric Gages", lring="Shiva Ring", rring="Shiva Ring",
-		-- Eschan Belt Amalric Slops +1
-		back=gear.nuke_jse_back, waist="Acuity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
+		-- Eschan Stone Amalric Slops +1
+		back=gear.nuke_jse_back, waist="Austerity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
 
     sets.midcast['Elemental Magic'].Fodder = set_combine(sets.midcast['Elemental Magic'], {})
 
-    sets.midcast['Elemental Magic'].Proc = {main=empty, sub=empty, ammo="Pemphredo Tathlum",
+    sets.midcast['Elemental Magic'].Proc = {main=empty, sub=empty, ammo="Regal Gem",
         -- gear.merlinic_nuke_head
 		head="Atro. Chapeau +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Doublet +1 Amalric Gages +1  Shiva Ring +1 Shiva Ring +1
 		body="Jhakri Robe +2", hands="Amalric Gages", lring="Shiva Ring", rring="Shiva Ring",
-		-- Eschan Belt Amalric Slops +1
-		back=gear.nuke_jse_back, waist="Acuity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
+		-- Eschan Stone Amalric Slops +1
+		back=gear.nuke_jse_back, waist="Austerity Belt", legs="Jhakri Slops +2", feet="Amalric Nails"}
 		
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {})
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {})
@@ -480,11 +480,11 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Dagger = {main="Kaja Knife", sub="Ammurapi Shield"}
-	sets.weapons.Sword = {main="Maxentius", sub="Ammurapi Shield"} 
+	sets.weapons.Sword = {main="Kaja Sword", sub="Ammurapi Shield"} 
 	sets.weapons.Club = {main="Maxentius", sub="Ammurapi Shield"} 
-	sets.weapons.DualWeapons = {main="Maxentius", sub="Kaja Knife"}
-	sets.weapons.DualDagger = {main="Kaja Knife", sub="Maxentius"}
-	sets.weapons.DualClubs = {main="Maxentius", sub="Maxentius"}
+	sets.weapons.DualWeapons = {main="Kaja Sword", sub="Pukulatmuj"}
+ 	sets.weapons.DualDagger = {main="Kaja Knife", sub="Maxentius"} -- Kaja Knife
+	sets.weapons.DualClubs = {main="Maxentius", sub="Kaja Rod"}
 
 	-- Engaged sets
 

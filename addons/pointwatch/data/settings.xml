@@ -49,6 +49,14 @@
             </text>
         </text_box_settings>
     </global>
+    <dasmir>
+        <text_box_settings>
+            <pos>
+                <x>4</x>
+                <y>0</y>
+            </pos>
+        </text_box_settings>
+    </dasmir>
     <fearyjunior>
         <text_box_settings>
             <pos>
