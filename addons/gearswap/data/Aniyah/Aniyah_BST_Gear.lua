@@ -35,7 +35,7 @@ function user_setup()
 	
 	-- Set up Jug Pet cycling and keybind Ctrl+F7
 	-- INPUT PREFERRED JUG PETS HERE
-	state.JugMode = M{['description']='Jug Mode', 'ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}
+	state.JugMode = M{['description']='Jug Mode', 'ScissorlegXerin'} -- ,'BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'
 	-- Ctrl F7
 	send_command('bind ^f7 gs c cycle JugMode')
 
@@ -101,7 +101,7 @@ function init_gear_sets()
 		-- neck=Unmoving Collar +1", rear="Enchanter's Earring
 		head="Totemic Helm +1", lear="Enchntr. Earring +1",
 		-- Carb. Ring +1
-		body="Ankusa Jackcoat", hands="Ankusa Gloves +1",
+		body="Ankusa Jackcoat", hands="Ankusa Gloves",
 		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers", feet="Ankusa Gaiters"}
 
 	-- CURING WALTZ - CHR
@@ -334,7 +334,7 @@ function init_gear_sets()
 	sets.idle.Pet = {main="Izizoeksi",sub=gear.PDTMABKumbha, --ammo="Demonry Core",
 		-- head="Anwig Salade",
 		head="Meghanada Visor +2", neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Tot. Jackcoat +1",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Vocane Ring",
+		body="Tot. Jackcoat +1",hands="Ankusa Gloves",ring1="Defending Ring",ring2="Vocane Ring",
 		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters"}
 
 	-- Pet Engaged Only - Path C
@@ -468,7 +468,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
@@ -476,7 +476,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
@@ -484,7 +484,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
@@ -492,7 +492,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
@@ -500,7 +500,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 

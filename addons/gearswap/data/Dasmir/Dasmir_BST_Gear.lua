@@ -30,9 +30,9 @@ function user_setup()
 	-- MND Macc meva FC
 	gear.FC_jse_back = 			"Artio's Mantle" 
 	-- Pet Accuracy Attack Haste
-	gear.Pet_acc_jse_back =  	{name="Artio's Mantle",  augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: Haste+10','Pet: Damage taken -5%',}}
+	gear.Pet_acc_jse_back =  	{name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: Haste+10','System: 1 ID: 1246 Val: 4',}}
 	-- Pet Macc Haste
-	gear.Pet_macc_jse_back = 	{name="Artio's Mantle",   augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Mag. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}}
+	gear.Pet_macc_jse_back = 	{name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Mag. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}}
 	-- Pet Tank Pet: Regen acc  pet dt
 	gear.Pet_regen_jse_back =  	{name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Regen"+10','Pet: Damage taken -5%',}}
 	-- CHR Macc
@@ -40,7 +40,7 @@ function user_setup()
 	
 	-- Set up Jug Pet cycling and keybind Ctrl+F7
 	-- INPUT PREFERRED JUG PETS HERE
-	state.JugMode = M{['description']='Jug Mode', 'ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}
+	state.JugMode = M{['description']='Jug Mode', 'ScissorlegXerin'} --'BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'
 	send_command('bind ^f7 gs c cycle JugMode')
 
 	-- Set up Monster Correlation Modes and keybind Alt+F7
@@ -354,7 +354,7 @@ function init_gear_sets()
 		-- head="Genmei Kabuto",
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
 		-- Sacro Breastplate Malignance Gloves Paguroidea Ring
-		body="Tartarus Platemail",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Tartarus Platemail", hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- legs="Malignance Tights"
 		back=gear.FC_jse_back, waist="Flume Belt",legs="Meg. Chausses +2", feet="Amm Greaves"}
 
@@ -471,7 +471,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
@@ -479,7 +479,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
@@ -487,7 +487,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
@@ -495,7 +495,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
@@ -503,7 +503,7 @@ function init_gear_sets()
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Gavialis Helm", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
-		body="Taliah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
+		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 

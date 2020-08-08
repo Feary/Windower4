@@ -342,7 +342,12 @@ function init_gear_sets()
 	sets.idle.PDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1",  lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
-		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+	
+	sets.idle.MDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
+		head="Inyanga Tiara +2",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
+		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
 	-- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
