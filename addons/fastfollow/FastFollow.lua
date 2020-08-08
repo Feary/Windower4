@@ -1,6 +1,6 @@
 _addon.name = 'FastFollow'
-_addon.author = 'DiscipleOfEris'
-_addon.version = '1.2.1'
+_addon.author = 'DiscipleOfEris (forked by Circuitous-Odin)'
+_addon.version = '1.2.1a'
 _addon.commands = {'fastfollow', 'ffo'}
 
 -- TODO: pause on ranged attacks.
@@ -59,9 +59,15 @@ casting = nil
 cast_time = 0
 pause_delay = 0.1
 pause_dismount_delay = 0.5
-pauseon = S{'spell','item','dismount'}
+pauseon = S{}
 co = nil
 tracking = false
+
+-- Duplicated from gearswap statics.lua / packet_parsing.lua
+local in_mog_house = false
+-- Details on the most recent zone request from the master.
+-- Should we be running towards a zoneline? If so which zone should we be zoning from and where in that zone did the master zone from?
+local zoning_status = {pending=false, zone_id=nil, pos_x=nil, pos_y=nil}
 
 track_info = T{}
 
@@ -93,6 +99,8 @@ windower.register_event('addon command', function(command, ...)
     if following then windower.send_ipc_message('stopfollowing '..following) end
     following = false
     tracking = false
+    windower.ffxi.run(false)
+    zoning_status = {pending=false, zone_id=nil, pos_x=nil, pos_y=nil}
   elseif command == 'stopall' then
     follow_me = 0
     following = false
@@ -165,6 +173,7 @@ windower.register_event('ipc message', function(msgStr)
     following = false
     tracking = false
     windower.ffxi.run(false)
+    zoning_status = {pending=false, zone_id=nil, pos_x=nil, pos_y=nil}
   elseif command == 'follow' then
     if following then windower.send_ipc_message('stopfollowing '..following) end
     following = args[1]
@@ -196,12 +205,19 @@ windower.register_event('ipc message', function(msgStr)
       last_target = target
     end
   elseif command == 'zone' then
+    -- If a zone message was received from someone we weren't following, no-op.
     if not following or args[1] ~= following then return end
-    
-    local zone_line = tonumber(args[2])
-    local zone_type = tonumber(args[3])
-    
-    if zone_line and zone_type then zone(zone_line, zone_type, target.zone, target.x, target.y) end
+
+    local zone_id = tonumber(args[2])
+    local x = tonumber(args[3])
+    local y = tonumber(args[4])
+
+    if zone_id and x and y then
+      local info = windower.ffxi.get_info()
+      if info ~= nil and info.zone == zone_id then
+        zoning_status = {pending=true, zone_id=zone_id, pos_x=x, pos_y=y}
+      end
+    end
   elseif command == 'track' then
     tracking = args[1] == 'on' and true or false
   end
@@ -242,11 +258,15 @@ windower.register_event('prerender', function()
     end
     
     distSq = distanceSquared(target, self)
-    len = math.sqrt(distSq)
-    if len < 1 then len = 1 end
     
-    if target.zone == info.zone and distSq > min_dist and distSq < max_dist then
-      windower.ffxi.run((target.x - self.x)/len, (target.y - self.y)/len)
+    if zoning_status.pending then
+      if zoning_status.zone_id == info.zone then
+        -- Ignore minimum distance config when moving to a zone line.
+        windower.ffxi.run((zoning_status.pos_x - self.x), (zoning_status.pos_y - self.y))
+        running = true
+      end
+    elseif target.zone == info.zone and distSq > min_dist and distSq < max_dist then
+      windower.ffxi.run((target.x - self.x), (target.y - self.y))
       running = true
     elseif target.zone == info.zone and distSq <= min_dist then
       windower.ffxi.run(false)
@@ -259,22 +279,33 @@ windower.register_event('prerender', function()
 end)
 
 local PACKET_OUT = { ACTION = 0x01A, USE_ITEM = 0x037, REQUEST_ZONE = 0x05E }
-local PACKET_INC = { ACTION = 0x028 }
+local PACKET_INC = { ACTION = 0x028, ZONE_UPDATE = 0x00A }
 local PACKET_ACTION_CATEGORY = { MAGIC_CAST = 0x03, DISMOUNT = 0x12 }
 local EVENT_ACTION_CATEGORY = { SPELL_FINISH = 4, ITEM_FINISH = 5, SPELL_BEGIN_OR_INTERRUPT = 8, ITEM_BEGIN_OR_INTERRUPT = 9 }
 local EVENT_ACTION_PARAM = { BEGIN = 24931, INTERRUPT = 28787 }
+
+-- Zone lines over which mules should not follow.
+-- 1836215674 is Ru'Lude Gardens into a Mog House, which is a zone triggered by a menu interaction.
+local ZONE_LINE_BLACKLIST = S{ 1836215674 }
 
 windower.register_event('outgoing chunk', function(id, original, modified, injected, blocked)
   if blocked then return end
   
   if id == PACKET_OUT.REQUEST_ZONE then
+    local packet = packets.parse('outgoing', modified)
     if follow_me > 0 then
-      local packet = packets.parse('outgoing', modified)
       local self = windower.ffxi.get_mob_by_target('me')
-      
-      windower.send_ipc_message('zone %s %d %d':format(self.name, packet['Zone Line'], packet['Type']))
+      local info = windower.ffxi.get_info()
+      -- Do not instruct mules to zone if zoning from a mog house or across a zone line which cannot be accessed by running over it.
+      if not ZONE_LINE_BLACKLIST:contains(packet['Zone Line']) and not in_mog_house then
+        windower.send_ipc_message('zone %s %d %s %s':format(self.name, info.zone, self.x, self.y))
+      end
     end
-    
+
+    if following then
+      zoning_status = {pending=false, zone_id=nil, pos_x=nil, pos_y=nil}
+    end
+    -- TODO: This might not be needed anymore since we're no longer sending possible duplicate zone request packets?
     if following and (os.clock() - last_zone) < zone_suppress then
       return true
     else
@@ -341,6 +372,13 @@ windower.register_event('outgoing chunk', function(id, original, modified, injec
   end
 end)
 
+windower.register_event('incoming chunk', function(packetId, data)
+  if packetId == PACKET_INC.ZONE_UPDATE then
+    -- as per gearswap packet_parsing.lua
+    in_mog_house = data:byte(0x81) == 1
+  end
+end)
+
 windower.register_event('action', function(action)
   local player = windower.ffxi.get_player()
   if not player or action.actor_id ~= player.id then return end
@@ -353,35 +391,6 @@ windower.register_event('action', function(action)
     casting = os.clock()
   end
 end)
-
-function zone(zone_line, zone_type, zone, x, y)
-  coroutine.sleep(0.2 + math.random()*2.5)
-  local self = windower.ffxi.get_mob_by_target('me')
-  local info = windower.ffxi.get_info()
-  
-  if not self or not info or info.zone ~= zone then return end
-  
-  local packet = packets.new('outgoing', PACKET_OUT.REQUEST_ZONE, {
-    ['Zone Line'] = zone_line,
-    ['Type'] = zone_type
-  })
-  
-  local pos = {x=x, y=y}
-  local distSq = distanceSquared(self, pos)
-  local i = 0
-  while distSq > zone_min_dist and i < 12 do
-    coroutine.sleep(0.25)
-    self = windower.ffxi.get_mob_by_target('me')
-    if not self then return end
-    distSq = distanceSquared(self, pos)
-    i = i + 1
-  end
-  
-  if distSq <= zone_min_dist then
-    packets.inject(packet)
-    last_zone = os.clock()
-  end
-end
 
 function updateInfo()
   box:visible(settings.show)

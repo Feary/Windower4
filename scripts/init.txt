@@ -54,6 +54,7 @@ lua load NpcInteract
 lua load trade
 lua load tradenpc
 //lua load synthchain
+lua load curtracker
 
 
 //Bind keys
