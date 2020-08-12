@@ -72,4 +72,12 @@
             </pos>
         </text_box_settings>
     </molyoly>
+    <olymoly>
+        <text_box_settings>
+            <pos>
+                <x>6</x>
+                <y>0</y>
+            </pos>
+        </text_box_settings>
+    </olymoly>
 </settings>

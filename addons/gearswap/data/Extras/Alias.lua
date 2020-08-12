@@ -25,6 +25,9 @@ send_command('alias key input /item "Forbidden Key" <stnpc>')
 send_command('alias ta input /targetnpc')
 send_command('alias at input /targetnpc; wait 1; input /attack <t>')
 
+send_command('alias sendpost input /sendpost')
+send_command('alias deliverybox input /deliverybox')
+
 -- Crafting Related
 send_command('alias crafting exec  '..player.name..'/gear_craft.txt')
 send_command('alias ucrafting exec  '..player.name..'/ungear_craft.txt')
