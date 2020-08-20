@@ -6,11 +6,12 @@ function user_setup()
 	state.Weapons:options('None','NukeWeapons','MeleeStaff','MeleeClubs','Death')
 	
 	--Jse Capes
-	gear.fastcast_jse_back = {name="Taranus's Cape", augments={'MP+30','Mag. Acc+16 /Mag. Dmg.+16','"Fast Cast"+9',}}		
-	gear.Nuke_jse_back = {name="Taranus's Cape", augments={'MP+30','Mag. Acc+16 /Mag. Dmg.+16','"Fast Cast"+9',}}
-	gear.cure_jse_back = {name="Taranus's Cape", augments={'MP+30','Mag. Acc+16 /Mag. Dmg.+16','"Fast Cast"+9',}}
-	gear.TP_jse_back = {name="Taranus's Cape", augments={'MP+30','Mag. Acc+16 /Mag. Dmg.+16','"Fast Cast"+9',}}
-	gear.WS_jse_back = {name="Taranus's Cape", augments={'MP+30','Mag. Acc+16 /Mag. Dmg.+16','"Fast Cast"+9',}}
+	gear.fastcast_jse_back = 	{name="Taranus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Mag. Evasion+15',}}
+	gear.Nuke_jse_back = 		{name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}}
+	gear.cure_jse_back = 		{name="Taranus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
+	
+	gear.TP_jse_back = {name="Taranus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Mag. Evasion+15',}}
+	gear.WS_jse_back = {name="Taranus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Mag. Evasion+15',}}
 	
 	gear.obi_cure_waist = "Witful Belt"
 	gear.obi_low_nuke_waist = "Austerity Belt"

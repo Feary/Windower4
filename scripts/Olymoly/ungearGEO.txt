@@ -3,38 +3,14 @@ put Amalric Nails +1 case all
 put Amalric Slops +1 case all
 put Amalric Doublet +1 case all
 put Amalric Coif +1 case all
-put Azimuth Coat +1 case all
-put Azimuth Gaiters +1 case all
-put Azimuth Gloves +1 case all
-put Azimuth Hood +1 case all
-put Azimuth Tights +1 case all
-put Bagua Galero +1 case all
-put Bagua Mitaines +1 case all
-put Bagua Pants +1 case all
-put Bagua Sandals +1 case all
-put Bagua Tunic +1 case all
 put Barkaro. Earring case all
 put Dunna case all
-put Geo. Galero +2 case all
-put Geo. Mitaines +3 case all
-put Geo. Sandals +2 case all
-put Geomancy Pants +2 case all
-put Geomancy Tunic +2 case all
 put Hagondes Coat +1 case all
 put Handler's Earring +1 case all
 put Handler's Earring case all
 put Idris case all
 put Isa Belt case all
-put Jhakri Cuffs +2 case all
-put Jhakri Pigaches +2 case all
-put Jhakri Robe +2 case all
-put Jhakri Slops +2 case all
-put Jhakri Coronal +2 case all
 put Lifestream Cape case all
-put Mallquis Clogs +2 case all
-put Mallquis Saio +2 case all
-put Mallquis Trews +2 case all
-put Merlinic Crackows case all
 put Nantosuelta's Cape case all
 put Rubicundity case all
 put Merlinic Hood case all

@@ -49,6 +49,14 @@
             </text>
         </text_box_settings>
     </global>
+    <aniyah>
+        <text_box_settings>
+            <pos>
+                <x>24</x>
+                <y>0</y>
+            </pos>
+        </text_box_settings>
+    </aniyah>
     <dasmir>
         <text_box_settings>
             <pos>

@@ -22,3 +22,5 @@ put Kyrene's Earring Storage all
 put Amm Greaves locker all
 put Thereoid Greaves sack all
 put Emicho Haubert +1 locker all
+put Skullrender storage all
+get Emicho Haubert +1 locker all

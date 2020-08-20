@@ -324,7 +324,7 @@ function init_gear_sets()
 		-- Bathy Collar +1 Infused Earring Dawn Earring
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
 		-- Sacro Breastplate Paguroidea Ring
-		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Tartarus Platemail",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.FC_jse_back, waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
 	sets.idle.Refresh = set_combine(sets.idle, {head="Jumalik Helm", body="Jumalik Mail",}) -- Ogier's Gauntlets, Stearc Subligar, Ogier's Leggings
@@ -338,7 +338,7 @@ function init_gear_sets()
 		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters"}
 
 	-- Pet Engaged Only - Path C
-	sets.idle.Pet.Engaged = {-- main="Skullrender",sub="Skullrender", Ammo="Voluspa Tathlum",
+	sets.idle.Pet.Engaged = {main="Skullrender",sub="Skullrender", Ammo="Voluspa Tathlum",
 		-- neck="Beast Collar +2", ear2="Domesticator Earring", 
 		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		-- body="An. Jackcoat +3", hands="Emicho Gauntlets +1" Path C
@@ -637,5 +637,49 @@ function select_default_macro_book()
 		set_macro_page(4, 14)
 	else
 		set_macro_page(1, 14)
+	end
+end
+
+function user_job_lockstyle()
+	if player.equipment.main == nil or player.equipment.main == 'empty' then
+		windower.chat.input('/lockstyleset 014')
+	elseif res.items[item_name_to_id(player.equipment.main)].skill == 3 then --Sword in main hand.
+		if player.equipment.sub == nil or player.equipment.sub == 'empty' then --Sword/Nothing.
+				windower.chat.input('/lockstyleset 014')
+		elseif res.items[item_name_to_id(player.equipment.sub)].shield_size then --Sword/Shield
+				windower.chat.input('/lockstyleset 014')
+		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Sword/Sword.
+			windower.chat.input('/lockstyleset 014')
+		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Sword/Dagger.
+			windower.chat.input('/lockstyleset 014')
+		else
+			windower.chat.input('/lockstyleset 014') --Catchall just in case something's weird.
+		end
+	elseif res.items[item_name_to_id(player.equipment.main)].skill == 2 then --Dagger in main hand.
+		if player.equipment.sub == nil or player.equipment.sub == 'empty' then --Dagger/Nothing.
+			windower.chat.input('/lockstyleset 014')
+		elseif res.items[item_name_to_id(player.equipment.sub)].shield_size then --Dagger/Shield
+			windower.chat.input('/lockstyleset 014')
+		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Dagger/Sword.
+			windower.chat.input('/lockstyleset 014')
+		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Dagger/Dagger.
+			windower.chat.input('/lockstyleset 014')
+		else
+			windower.chat.input('/lockstyleset 014') --Catchall just in case something's weird.
+		end
+	elseif res.items[item_name_to_id(player.equipment.main)].skill == 5 then --Axe in main hand.
+		if player.equipment.sub == nil or player.equipment.sub == 'empty' then --Axe/Nothing.
+			windower.chat.input('/lockstyleset 014')
+		elseif res.items[item_name_to_id(player.equipment.sub)].shield_size then --Axe/Shield
+			windower.chat.input('/lockstyleset 014')
+		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Axe/Sword.
+			windower.chat.input('/lockstyleset 014')
+		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Axe/Dagger.
+			windower.chat.input('/lockstyleset 014')
+		else
+			windower.chat.input('/lockstyleset 014') --Catchall just in case something's weird.
+		end
+	else 
+		windower.chat.input('/lockstyleset 014')
 	end
 end

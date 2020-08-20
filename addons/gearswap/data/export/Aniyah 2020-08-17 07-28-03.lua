@@ -1,0 +1,15 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    head="Befouled Crown",
+    hands={ name="Merlinic Dastanas", augments={'Pet: "Regen"+2','Attack+9','"Refresh"+1',}},
+    legs="Assid. Pants +1",
+    feet="Herald's Gaiters",
+    neck="Loricate Torque +1",
+    waist="Austerity Belt",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Defending Ring",
+    right_ring="Vocane Ring",
+    back={ name="Taranus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Mag. Evasion+15',}},
+}

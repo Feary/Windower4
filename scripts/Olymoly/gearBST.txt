@@ -22,3 +22,5 @@ get Kyrene's Earring Storage all
 get Amm Greaves locker all
 get Thereoid Greaves sack all
 get Emicho Haubert +1 locker al
+get Skullrender storage all
+get Emicho Haubert +1 locker all
