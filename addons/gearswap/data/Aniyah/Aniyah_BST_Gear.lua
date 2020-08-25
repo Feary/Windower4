@@ -308,12 +308,20 @@ function init_gear_sets()
 				
 	sets.midcast.Pet.MagicReady = {main=gear.MABKumbha,sub=gear.PDTMABKumbha,ammo="Demonry Core",
 		-- head="Emicho Coronet +1" Bst. Collar +2 ear1="Domesticator's Earring",
-		--head=gear.valorous_pet_head,
-		head="Tali'ah Turban +2", neck="Adad Amulet", ear1="Enmerkar Earring", ear2="Kyrene's Earring",
+		--head=gear.valorous_pet_head, ear2="Kyrene's Earring",
+		head="Tali'ah Turban +2", neck="Adad Amulet", ear1="Enmerkar Earring", 
 		body="Emicho Haubert +1",hands="Nukumi Manoplas +1", ring1="Tali'ah Ring",ring2="Varar Ring +1",
 		-- legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet
 		back=gear.Pet_macc_jse_back,waist="Incarnation Sash",legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}
-
+	
+	sets.midcast.Pet.DebuffReady = {main=gear.MABKumbha,sub=gear.PDTMABKumbha,--ammo="Voluspa Tathlum",
+		-- head="Emicho Coronet +1" Bst. Collar +2 ear1="Domesticator's Earring",
+		--head=gear.valorous_pet_head, ear2="Kyrene's Earring",
+		head="Tali'ah Turban +2", neck="Adad Amulet", ear1="Enmerkar Earring", 
+		body="Emicho Haubert +1", hands="Nukumi Manoplas +1", ring1="Tali'ah Ring",ring2="Varar Ring +1",
+		-- legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet
+		back=gear.Pet_macc_jse_back,waist="Incarnation Sash",legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}
+	
 	sets.midcast.Pet.ReadyRecast = {}-- legs="Desultor Tassets"
 	sets.midcast.Pet.ReadyRecastDW = {} -- legs="Desultor Tassets"
 	sets.midcast.Pet.Neutral = {head="Totemic Helm +1"}
@@ -326,7 +334,7 @@ function init_gear_sets()
 	-- RESTING
 	sets.resting = {}
 
-	sets.idle = {main="Izizoeksi",sub=gear.PDTMABKumbha, ammo="Staunch Tathlum",
+	sets.idle = {main="Skullrender",sub=gear.PDTMABKumbha, ammo="Staunch Tathlum",
 		-- Bathy Collar +1 Infused Earring Dawn Earring
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Merman's Earring",
 		-- Sacro Breastplate Paguroidea Ring
@@ -337,7 +345,7 @@ function init_gear_sets()
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
 	-- Pet Out No one engaged
-	sets.idle.Pet = {main="Izizoeksi",sub=gear.PDTMABKumbha, --ammo="Demonry Core",
+	sets.idle.Pet = {main="Skullrender",sub=gear.PDTMABKumbha, --ammo="Demonry Core",
 		-- head="Anwig Salade",
 		head="Meghanada Visor +2", neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +1",hands="Ankusa Gloves",ring1="Defending Ring",ring2="Vocane Ring",

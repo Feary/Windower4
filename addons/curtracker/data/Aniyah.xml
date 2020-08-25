@@ -3,7 +3,7 @@
     <global>
         <curfields>mystical canteens,login points</curfields>
         <curlines>2</curlines>
-        <currefresh>60</currefresh>
+        <currefresh>30</currefresh>
         <curtracking>true</curtracking>
         <field_color>
             <blue>255</blue>

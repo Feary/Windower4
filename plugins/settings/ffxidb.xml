@@ -9,7 +9,7 @@
         <ShowMob>true</ShowMob>
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
-        <Ranges></Ranges>
+        <Ranges />
     </global>
     <Aniyah>
         <X>1334</X>
@@ -59,8 +59,8 @@
         <Y>11</Y>
     </Akili>
     <Olymoly>
-        <X>1331</X>
-        <Y>28</Y>
+        <X>1298</X>
+        <Y>24</Y>
     </Olymoly>
     <Sikend>
         <X>1357</X>

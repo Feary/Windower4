@@ -72,7 +72,7 @@ function init_gear_sets()
 	sets.precast.JA.Tame = {head="Totemic Helm +1"}
 	sets.precast.JA.Spur = {back="Artio's Mantle",feet="Nukumi Ocreae"}
 	sets.SpurAxe = {main="Skullrender"}
-	sets.SpurAxesDW = {main="Skullrender",sub="Skullrender"}
+	sets.SpurAxesDW = {main="Skullrender",}-- sub="Skullrender"
 
 	-- Macc
 	sets.precast.JA['Feral Howl'] = {ammo="Pemphredo Tathlum",
@@ -331,7 +331,7 @@ function init_gear_sets()
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
 	-- Pet Out No one engaged
-	sets.idle.Pet = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Demonry Core",
+	sets.idle.Pet = {main="Izizoeksi",sub=gear.PDTMABKumbha,--ammo="Demonry Core",
 		-- head="Anwig Salade",
 		head="Meghanada Visor +2", neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +1",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Moonbeam Ring",

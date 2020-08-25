@@ -1,7 +1,7 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
-        <curfields />
+        <curfields>login points</curfields>
         <curlines>2</curlines>
         <currefresh>60</currefresh>
         <curtracking>true</curtracking>
@@ -12,7 +12,7 @@
         </field_color>
         <pos>
             <x>0</x>
-            <y>0</y>
+            <y>43</y>
         </pos>
         <text>
             <size>10</size>
@@ -23,4 +23,10 @@
             <red>255</red>
         </value_color>
     </global>
+    <gonzaloo>
+        <pos>
+            <x>1597</x>
+            <y>59</y>
+        </pos>
+    </gonzaloo>
 </settings>

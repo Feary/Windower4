@@ -324,7 +324,7 @@ function init_gear_sets()
 	-- RESTING
 	sets.resting = {}
 
-	sets.idle = {main="Izizoeksi",sub=gear.PDTMABKumbha, ammo="Staunch Tathlum",
+	sets.idle = {main="Skullrender",sub=gear.PDTMABKumbha, ammo="Staunch Tathlum",
 		-- Bathy Collar +1 Infused Earring Dawn Earring
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Merman's Earring",
 		-- Sacro Breastplate Paguroidea Ring
@@ -335,14 +335,14 @@ function init_gear_sets()
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
 	-- Pet Out No one engaged
-	sets.idle.Pet = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Demonry Core",
+	sets.idle.Pet = {main="Skullrender",sub=gear.PDTMABKumbha,ammo="Demonry Core",
 		-- head="Anwig Salade",
 		head="Meghanada Visor +2", neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +1",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters"}
 
 	-- Pet Engaged Only - Path C
-	sets.idle.Pet.Engaged = {main="Skullrender", sub="Skullrender", Ammo="Voluspa Tathlum",
+	sets.idle.Pet.Engaged = {main="Skullrender", sub=PDTMABKumbha, Ammo="Voluspa Tathlum",
 		-- neck="Beast Collar +2", ear2="Domesticator Earring", 
 		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		-- body="An. Jackcoat +3", hands="Emicho Gauntlets +1" Path C

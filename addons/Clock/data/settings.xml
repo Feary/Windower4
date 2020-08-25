@@ -58,4 +58,7 @@
         </Clock>
         <TimeZones>PST,CST,GMT,AWST</TimeZones>
     </aniyah>
+    <dasmir>
+        <TimeZones>PST,CST,GMT,AWST</TimeZones>
+    </dasmir>
 </settings>
