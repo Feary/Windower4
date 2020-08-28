@@ -88,4 +88,12 @@
             </pos>
         </text_box_settings>
     </olymoly>
+    <suede>
+        <text_box_settings>
+            <pos>
+                <x>67</x>
+                <y>-3</y>
+            </pos>
+        </text_box_settings>
+    </suede>
 </settings>

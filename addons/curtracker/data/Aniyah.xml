@@ -23,4 +23,10 @@
             <red>255</red>
         </value_color>
     </global>
+    <aniyah>
+        <pos>
+            <x>1501</x>
+            <y>57</y>
+        </pos>
+    </aniyah>
 </settings>
