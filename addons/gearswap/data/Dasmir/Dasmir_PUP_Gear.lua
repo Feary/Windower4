@@ -8,11 +8,15 @@ function user_job_setup()
 	state.Weapons:options('None','Godhands','PetWeapons')
 
 	-- Capes
-	gear.TP_jse_back = {name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}}
-	gear.WS_jse_back = {name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}}
-	gear.Crit_jse_back = {name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}}
-	gear.Pet_TP_jse_back = {name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}}
-	gear.FC_jse_back = {name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}}
+	-- 
+	gear.TP_jse_back = {name="Visucius's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	-- VIt Acc wsd
+	gear.WS_jse_back = {name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10',}}
+	-- dex acc crit
+	gear.Crit_jse_back = {name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10',}}
+	gear.Pet_TP_jse_back = {name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10',}}
+	-- meva FC DT
+	gear.FC_jse_back = {name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10',}}
     
 	-- Default/Automatic maneuvers for each pet mode.  Define at least 3.
 	defaultManeuvers = {
@@ -290,7 +294,7 @@ function init_gear_sets()
     -- Idle sets to wear while pet is engaged
     sets.idle.Pet.Engaged = {
 		-- gear.herculean_PUP_head
-        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="gear.DarkRing Earring",
+        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
         -- Pitre Tobe +3 gear.herculean_PUP_hands
 		body="Pitre Tobe",hands="Tali'ah Gages +2",ring1="Varar Ring +1",ring2="Varar Ring +1",
         -- Klouskap Sash gear.herculean_PUP_legs gear.herculean_PUP_feet
@@ -311,7 +315,7 @@ function init_gear_sets()
 		-- Malignance Chapeau
         head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
         -- Malignance Tabard Malignance Gloves 
-		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2="Dark Ring",
+		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2=gear.DarkRing,
         -- Maliganance Tights  Maliganance Boots 
 		back="Solemnity Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 
@@ -319,7 +323,7 @@ function init_gear_sets()
         	-- Malignance Chapeau
         head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
         -- Malignance Tabard Malignance Gloves 
-		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2="Dark Ring",
+		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2=gear.DarkRing,
         -- Maliganance Tights  Maliganance Boots 
 		back="Solemnity Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 		
@@ -327,7 +331,7 @@ function init_gear_sets()
       	-- Malignance Chapeau
         head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
         -- Malignance Tabard Malignance Gloves 
-		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2="Dark Ring",
+		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2=gear.DarkRing,
         -- Maliganance Tights  Maliganance Boots 
 		back="Solemnity Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 

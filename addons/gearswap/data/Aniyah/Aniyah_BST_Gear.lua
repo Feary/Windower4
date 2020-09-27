@@ -35,7 +35,7 @@ function user_setup()
 	
 	-- Set up Jug Pet cycling and keybind Ctrl+F7
 	-- INPUT PREFERRED JUG PETS HERE
-	state.JugMode = M{['description']='Jug Mode', 'ScissorlegXerin'} -- ,'BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'
+	state.JugMode = M{['description']='Jug Mode',  'BouncingBertha', 'ScissorlegXerin'} -- ,'BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'
 	-- Ctrl F7
 	send_command('bind ^f7 gs c cycle JugMode')
 
@@ -66,11 +66,11 @@ end
 function init_gear_sets()
 	-- PRECAST SETS
 	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm"} --head="Ankusa Helm +1"
-	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves"} -- body="Mirke Wardecors",
+	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"} -- body="Mirke Wardecors",
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
 	sets.precast.JA.Familiar = {legs="Ankusa Trousers"}
 	sets.precast.JA.Tame = {head="Totemic Helm +1"}
-	sets.precast.JA.Spur = {back="Artio's Mantle",feet="Nukumi Ocreae"}
+	sets.precast.JA.Spur = {back="Artio's Mantle",feet="Nukumi Ocreae +1"}
 	sets.SpurAxe = {main="Skullrender"}
 	sets.SpurAxesDW = {main="Skullrender"}--main="Skullrender"
 
@@ -78,7 +78,7 @@ function init_gear_sets()
 	sets.precast.JA['Feral Howl'] = {----ammo="Pemphredo Tathlum",
 		--head="Malignance Chapeau", neck="Bst. Collar +2", lear="Digni. Earring", rear="Gwati Earring", rear="Enchntr. Earring +1",
 		head="Tali'ah Turban +2", neck="Sanctity Necklace",  ear1="Lifestorm Earring", ear2="Psystorm Earring",
-		-- Ankusa Jackcoat Malignance Gloves
+		-- Ankusa Jackcoat +1 Malignance Gloves
 		body="Tali'ah Manteel +2", hands="Tali'ah Gages +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Malignance Trousers  Malignance Boots
 		back=gear.FC_jse_back, waist="Eschan Stone", legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}
@@ -101,7 +101,7 @@ function init_gear_sets()
 		-- neck=Unmoving Collar +1", lear="Enchntr. Earring +1", rear="Enchanter's Earring
 		head="Totemic Helm +1", neck="Sanctity Necklace", ear1="Lifestorm Earring", ear2="Psystorm Earring",
 		-- Carb. Ring +1
-		body="Ankusa Jackcoat", hands="Ankusa Gloves", ring1="Stikini Ring", ring2="Stikini Ring",
+		body="Ankusa Jackcoat +1", hands="Ankusa Gloves +1", ring1="Stikini Ring", ring2="Stikini Ring",
 		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers", feet="Ankusa Gaiters"}
 
 	-- CURING WALTZ - CHR
@@ -117,14 +117,14 @@ function init_gear_sets()
 	sets.precast.Flourish1 = {----ammo="Pemphredo Tathlum",
 		--head="Malignance Chapeau", neck="Bst. Collar +2", lear="Digni. Earring", rear="Gwati Earring",
 		head="Tali'ah Turban +2", neck="Sanctity Necklace", ear1="Lifestorm Earring", ear2="Psystorm Earring",
-		-- Ankusa Jackcoat Malignance Gloves
+		-- Ankusa Jackcoat +1 Malignance Gloves
 		body="Tali'ah Manteel +2", hands="Tali'ah Gages +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Eschan Stone", Malignance Trousers  Malignance Boots
 		back=gear.magic_ws_jse_back,  legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}
 	sets.precast.Flourish1['Violent Flourish'] = {--ammo="Pemphredo Tathlum",
 		--head="Malignance Chapeau", neck="Bst. Collar +2",   lear="Digni. Earring",  rear="Gwati Earring",
 		head="Tali'ah Turban +2", neck="Sanctity Necklace", ear1="Lifestorm Earring", ear2="Psystorm Earring",
-		-- Ankusa Jackcoat Malignance Gloves
+		-- Ankusa Jackcoat +1 Malignance Gloves
 		body="Tali'ah Manteel +2", hands="Tali'ah Gages +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Eschan Stone", Malignance Trousers  Malignance Boots
 		back=gear.magic_ws_jse_back,  legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}
@@ -348,7 +348,7 @@ function init_gear_sets()
 	sets.idle.Pet = {main="Skullrender",sub=gear.PDTMABKumbha, --ammo="Demonry Core",
 		-- head="Anwig Salade",
 		head="Meghanada Visor +2", neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Tot. Jackcoat +1",hands="Ankusa Gloves",ring1="Defending Ring",ring2="Vocane Ring",
+		body="Tot. Jackcoat +1",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Vocane Ring",
 		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters"}
 
 	-- Pet Engaged Only - Path C

@@ -14,12 +14,11 @@ function user_job_setup()
     update_melee_groups()
 	
 	-- Capes 
-	gear.tp_jse_back = 			{name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
-	gear.ws_jse_back = 			{name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}}
-	-- STR Acc CRIT
-	gear.critws_jse_back =		{name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
+	gear.TP_jse_back = 			{name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	gear.WS_jse_back = 			{name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}}
+	gear.crit_jse_back =		{name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
 	gear.FC_jse_back = 			{name="Segomo's Mantle", augments={'MND+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}
-    gear.charka_jse_back =		{name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+    gear.charka_jse_back =		{name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}}
 	gear.chi_jse_back = 		{name="Segomo's Mantle", augments={'MND+20','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Occ. inc. resist. to stat. ailments+10',}}
 	gear.counter_jse_back =		{name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','System: 1 ID: 640 Val: 4',}}
 	
@@ -101,7 +100,7 @@ function init_gear_sets()
 		-- Ken. Samue +1 hands="Anchor. Gloves +3", ring2="Gere Ring",
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Moonbow Belt +1 Ken. Hakama +1 Ken. Sune-Ate +1
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"}
+		back=gear.WS_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"}
 	sets.precast.WSSomeAcc = {}
 	sets.precast.WSAcc = {}
 	sets.precast.WSFullAcc = {}
@@ -118,70 +117,70 @@ function init_gear_sets()
 		-- Adhemar Jacket +1 hands="Adhemar Wrist. +1", ring2="Gere Ring",
 		body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Ken. Hakama +1 Ken. Sune-Ate +1
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.TP_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Howling Fist']    = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Hes. Crown +2 Mnk Nodowa +2
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
 		-- Ken. Samue +1 hands="Adhemar Wrist. +1",gear.herculean_ta_hands ring2="Gere Ring",
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Ken. Hakama +1 Ken. Sune-Ate +1 gear.herculean_ta_feet
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.charka_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Hes. Crown +3
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Ken. Samue +1 hands="Adhemar Wrist. +1", ring2="Gere Ring",
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Ken. Hakama +1 Ken. Sune-Ate +1
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.WS_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS["Ascetic's Fury"]  = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Adhemar Bonnet +1
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
 		-- Anch. Cyclas +3  Or Ken. Samue +1 Ryou Tekko +1 ring2="Gere Ring", 
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Moonbow Belt +1 Ken. Hakama +1 Ken. Sune-Ate +1
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.crit_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Adhemar Bonnet +1
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
 		-- Anch. Cyclas +3  Or Ken. Samue +1 Ryou Tekko +1 ring2="Gere Ring", 
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Moonbow Belt +1 Ken. Hakama +1 Ken. Sune-Ate +1
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.crit_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Hes. Crown +3
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Ken. Samue +1 hands="Adhemar Wrist. +1", ring2="Gere Ring",
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Ken. Hakama +1 Ken. Sune-Ate +1
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.TP_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Hes. Crown +3
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Ken. Samue +1 hands="Adhemar Wrist. +1", ring2="Gere Ring",
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Ken. Hakama +1 Ken. Sune-Ate +1
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.WS_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Hes. Crown +3 Mnk Nodowa +2 
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
 		-- Ken. Samue +1 hands="Adhemar Wrist. +1", ring2="Gere Ring",
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Ken. Hakama +1 Anch. Gaiters +3
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.charka_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Spinning Attack'] = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Hes. Crown +3
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
 		-- Ken. Samue +1 hands="Adhemar Wrist. +1", ring2="Gere Ring",
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Ken. Hakama +1 Ken. Sune-Ate +1
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.WS_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Shell Crusher'] = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Malignance Chapeau Moonlight Necklace Digni. Earring ear1="Enchntr. Earring +1", ear2="Gwati Earring",
 		head="Mummu Bonnet +2",neck="Sanctity Necklace",
 		-- Malignance Tabard Malignance Gloves
 		body="Mummu Jacket +2",hands="Adhemar Wristbands",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- Malignance Tights Malignance Boots
-		back=gear.ws_jse_back,waist="Ovate Rope",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.WS_jse_back,waist="Ovate Rope",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 
 	sets.precast.WS["Raging Fists"].SomeAcc = set_combine(sets.precast.WS["Raging Fists"], sets.precast.WSSomeAcc)
 	sets.precast.WS["Howling Fist"].SomeAcc = set_combine(sets.precast.WS["Howling Fist"], sets.precast.WSSomeAcc)
@@ -224,7 +223,7 @@ function init_gear_sets()
 		head="Pixie Hairpin +1", neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
 		body="Samnuha Coat", hands="Leyline Gloves",ring1="Shiva Ring", ring2="Regal Ring",
 		-- Eschan Stone waist="Wanion Belt",
-		back=gear.ws_jse_back, legs="Hiza. Hizayoroi +2", feet="Mummu Gamash. +2"}
+		back=gear.WS_jse_back, legs="Hiza. Hizayoroi +2", feet="Mummu Gamash. +2"}
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Brutal Earring",ear2="Sherida Earring",}

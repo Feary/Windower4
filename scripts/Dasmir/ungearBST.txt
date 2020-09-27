@@ -3,3 +3,6 @@ put Beastmaster collar sack all
 put Kaja Axe sack all
 put Kumbhakarna sack all
 put sabong earring sack all
+put pet food* sack all
+put *broth sack all
+put akamochi sack all

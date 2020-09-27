@@ -14,9 +14,7 @@ get Izizoeksi storage all
 get Kaidate storage all
 get Kerehcatl storage all
 get Kumbhakarna storage all
-get Pet Food Theta storage all
 get Rimeice Earring storage all
-get Skadi's Jambeaux storage all
 get Varar Ring +1 storage all
 get Kyrene's Earring Storage all
 get Amm Greaves locker all
@@ -24,3 +22,7 @@ get Thereoid Greaves sack all
 get Emicho Haubert +1 locker al
 get Skullrender storage all
 get Emicho Haubert +1 locker all
+get Domesticator Earring locker all
+get pet food* storage all
+get *broth storage all
+get akamochi storage all

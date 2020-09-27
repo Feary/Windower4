@@ -218,7 +218,7 @@ function job_setup()
 	state.AutoCallPet = M(false, 'Auto Call Pet')
 	state.PetMode = M{['description']='Pet Mode','Tank','DD'}
 	state.RewardMode = M{['description']='Reward Mode', 'Theta', 'Zeta', 'Eta'}
-    state.JugMode = M{['description']='Jug Mode', 'ScissorlegXerin', 'BlackbeardRandy', 'AttentiveIbuki', 'AgedAngus',
+    state.JugMode = M{['description']='Jug Mode', 'BouncingBertha','ScissorlegXerin', 'BlackbeardRandy', 'AttentiveIbuki', 'AgedAngus',
                 'RedolentCandi','DroopyDortwin','WarlikePatrick','HeraldHenry','AlluringHoney','SwoopingZhivago','AcuexFamiliar'}
 
 	UnleashLock = true

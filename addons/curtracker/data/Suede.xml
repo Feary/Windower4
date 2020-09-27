@@ -1,7 +1,7 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
-        <curfields>login points</curfields>
+        <curfields />
         <curlines>2</curlines>
         <currefresh>60</currefresh>
         <curtracking>true</curtracking>
@@ -25,8 +25,8 @@
     </global>
     <suede>
         <pos>
-            <x>1602</x>
-            <y>49</y>
+            <x>1532</x>
+            <y>75</y>
         </pos>
     </suede>
 </settings>

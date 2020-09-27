@@ -34,32 +34,13 @@
     <dasmir>
         <version>3.0.1.2</version>
     </dasmir>
+    <drecien>
+        <version>3.0.1.2</version>
+    </drecien>
     <feary>
         <version>3.0.1.2</version>
     </feary>
     <olymoly>
-		<UseUniversalTools>
-            <Aisha>true</Aisha>
-            <Dokumori>true</Dokumori>
-            <Doton>true</Doton>
-            <Gekka>true</Gekka>
-            <Hojo>true</Hojo>
-            <Huton>true</Huton>
-            <Hyoton>true</Hyoton>
-            <Jubaku>true</Jubaku>
-            <Kakka>true</Kakka>
-            <Katon>true</Katon>
-            <Kurayami>true</Kurayami>
-            <Migawari>true</Migawari>
-            <Monomi>true</Monomi>
-            <Myoshu>true</Myoshu>
-            <Raiton>true</Raiton>
-            <Suiton>true</Suiton>
-            <Tonko>true</Tonko>
-            <Utsusemi>true</Utsusemi>
-            <Yain>true</Yain>
-            <Yurin>true</Yurin>
-        </UseUniversalTools>
         <version>3.0.1.2</version>
     </olymoly>
 </settings>

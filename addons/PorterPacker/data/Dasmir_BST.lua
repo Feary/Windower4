@@ -7,7 +7,7 @@ return {
     "Ankusa Jackcoat",  
     "Ankusa Helm",   
 	"Ankusa Gloves +1",    
-    "Ankusa Trousers",    
+    "Ankusa Trousers +1",    
 	"Ankusa Gaiters",
     "Totemic Helm +1", 
 	"Tot. Trousers +2",

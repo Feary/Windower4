@@ -12,7 +12,7 @@ return {
     "Brioso Roundlet +2",
     "Brioso Justau. +3",
     "Brioso Cuffs +2",
-    "Brioso Cannions +2",
+    "Brioso Cannions +3",
     "Brioso Slippers +3",
     "Bihu Roundlet +3",
     "Bihu Jstcorps. +3",

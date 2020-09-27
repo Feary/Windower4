@@ -40,7 +40,7 @@ function init_gear_sets()
 	-- Precast Sets
 	
 	-- Precast sets to enhance JAs on use
-	sets.precast.JA['Hundred Fists'] = {legs="Hesychast's Hose"}
+	sets.precast.JA['Hundred Fists'] = {legs="Hesychast's Hose +1"}
 	sets.precast.JA['Boost'] = {hands="Anchorite's Gloves"}
 	sets.precast.JA['Boost'].OutOfCombat = {hands="Anchorite's Gloves"} 
 	sets.precast.JA['Dodge'] = {feet="Anchorite's Gaiters"}
@@ -306,7 +306,7 @@ function init_gear_sets()
 		head="Adhemar Bonnet +1",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		--  Gere Ring
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-		-- waist="Moonlight Belt +1", legs="Hes. Hose +3",feet="Anch. Gaiters +3"
+		-- waist="Moonlight Belt +1", legs="Hes. Hose +3", feet="Anch. Gaiters +3"
 		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Mummu Gamash. +2"}
 	sets.engaged.SomeAcc = {ammo="Ginsen",
 		-- Moonlight Nodowa  

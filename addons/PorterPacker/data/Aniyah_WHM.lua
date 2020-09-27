@@ -26,4 +26,6 @@ return {
     "Inyanga Tiara +2",
     "Inyan. Dastanas +2",
     "Inyanga Ring",
+	"Maxentius",
+	"Kaja Rod",	
 }

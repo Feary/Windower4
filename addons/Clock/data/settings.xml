@@ -56,9 +56,13 @@
                 <y>0</y>
             </pos>
         </Clock>
+        <Separator>\n</Separator>
+        <Sort><![CDATA[None]]></Sort>
         <TimeZones>PST,CST,GMT,AWST</TimeZones>
     </aniyah>
     <dasmir>
+        <Separator>\n</Separator>
+        <Sort><![CDATA[None]]></Sort>
         <TimeZones>PST,CST,GMT,AWST</TimeZones>
     </dasmir>
 </settings>

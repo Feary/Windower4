@@ -3,3 +3,6 @@ get Beastmaster collar sack all
 get Kaja Axe sack all
 get Kumbhakarna sack all
 get Sabong Earring sack all
+get pet food* sack all
+get *broth sack all
+get akamochi sack all

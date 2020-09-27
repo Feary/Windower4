@@ -33,7 +33,7 @@ lua load equipviewer
 lua load checkparam
 partybuffs size 20
 lua load roller
-lua load maga
+//lua load maga
 lua load repeater
 //lua load parse
 lua load react
@@ -55,6 +55,8 @@ lua load trade
 lua load tradenpc
 //lua load synthchain
 lua load curtracker
+lua load Valkyrie
+lua load petcharges
 
 
 //Bind keys

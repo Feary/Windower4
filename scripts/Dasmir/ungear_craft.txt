@@ -1,4 +1,4 @@
-gs equip naked
+lua load gearswap;wait 1;gs equip naked
 put Craftmaster's Ring satchel all
 put Goldsm. Torque satchel all
 put Carpenter's Belt satchel all

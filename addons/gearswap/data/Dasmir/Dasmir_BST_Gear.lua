@@ -40,7 +40,7 @@ function user_setup()
 	
 	-- Set up Jug Pet cycling and keybind Ctrl+F7
 	-- INPUT PREFERRED JUG PETS HERE
-	state.JugMode = M{['description']='Jug Mode', 'ScissorlegXerin'} --'BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'
+	state.JugMode = M{['description']='Jug Mode', 'BouncingBertha','ScissorlegXerin'} --'BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'
 	send_command('bind ^f7 gs c cycle JugMode')
 
 	-- Set up Monster Correlation Modes and keybind Alt+F7
@@ -71,7 +71,7 @@ function init_gear_sets()
 	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm"} --head="Ankusa Helm +1"
 	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"} -- body="Mirke Wardecors",
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
-	sets.precast.JA.Familiar = {legs="Ankusa Trousers"}
+	sets.precast.JA.Familiar = {legs="Ankusa Trousers +1"}
 	sets.precast.JA.Tame = {head="Totemic Helm +1"}
 	sets.precast.JA.Spur = {back="Artio's Mantle",feet="Nukumi Ocreae"}
 	sets.SpurAxe = {main="Skullrender"}
@@ -105,7 +105,7 @@ function init_gear_sets()
 		head="Totemic Helm +1", lear="Enchntr. Earring +1",
 		-- Carb. Ring +1
 		body="Ankusa Jackcoat", hands="Ankusa Gloves +1",
-		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers", feet="Ankusa Gaiters"}
+		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers +1", feet="Ankusa Gaiters"}
 
 	-- CURING WALTZ - CHR
 	sets.precast.Waltz = {}

@@ -9,8 +9,8 @@
             <visible>true</visible>
         </bg>
         <curfields />
-        <curlines>2</curlines>
-        <currefresh>60</currefresh>
+        <curlines>1</curlines>
+        <currefresh>15</currefresh>
         <curtracking>true</curtracking>
         <field_color>
             <blue>255</blue>
@@ -26,8 +26,8 @@
         </flags>
         <padding>0</padding>
         <pos>
-            <x>0</x>
-            <y>0</y>
+            <x>1515</x>
+            <y>57</y>
         </pos>
         <text>
             <alpha>255</alpha>
@@ -53,34 +53,18 @@
             <red>255</red>
         </value_color>
     </global>
-    <aniyah>
+    <ravindra>
+        <curlines>2</curlines>
+        <currefresh>60</currefresh>
         <pos>
-            <x>1501</x>
-            <y>57</y>
+            <x>1529</x>
+            <y>72</y>
         </pos>
-    </aniyah>
-    <dasmir>
-        <pos>
-            <x>1503</x>
-            <y>52</y>
-        </pos>
-    </dasmir>
-    <gonzaloo>
-        <pos>
-            <x>1597</x>
-            <y>59</y>
-        </pos>
-    </gonzaloo>
-    <olymoly>
-        <pos>
-            <x>1517</x>
-            <y>54</y>
-        </pos>
-    </olymoly>
+    </ravindra>
     <suede>
         <pos>
-            <x>1602</x>
-            <y>49</y>
+            <x>1532</x>
+            <y>75</y>
         </pos>
     </suede>
 </settings>

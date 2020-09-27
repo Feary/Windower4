@@ -234,7 +234,7 @@ function init_gear_sets()
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
 	sets.midcast.ResistantSongDebuff = {main="Carnwenhan", sub="Genmei Shield", range="Gjallarhorn",
@@ -242,8 +242,7 @@ function init_gear_sets()
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		--Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		-- Brioso Cannions +3 
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 
 	sets.midcast.SongDebuff.DW = {}
 	
@@ -260,8 +259,7 @@ function init_gear_sets()
     sets.midcast.DaurdablaDummy = set_combine(sets.midcast.SongRecast, {range=info.ExtraSongInstrument})
 
 	-- Other general spells and classes.
-	sets.midcast.Cure = {
-		main="Chatoyant Staff", sub="Clerisy Strap +1",
+	sets.midcast.Cure = {main="Chatoyant Staff", sub="Clerisy Strap +1",
 		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
@@ -281,14 +279,14 @@ function init_gear_sets()
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		--Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		-- Brioso Cannions +3 
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 		
 	sets.midcast['Enhancing Magic'] = {main="Oranyan", sub="Clerisy Strap +1",
 		--main="Carnwenhan",sub="Ammurapi Shield",
@@ -307,13 +305,13 @@ function init_gear_sets()
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		-- Brioso Cannions +3 
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 	sets.midcast['Elemental Magic'].Resistant = {main="Oranyan", sub="Enki Strap",
 		head="Brioso Roundlet +2", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
 		-- Brioso Cannions +3 
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +2", feet="Brioso Slippers +3"}
+		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 		
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Fodder
