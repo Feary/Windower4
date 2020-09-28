@@ -41,7 +41,7 @@
             </text>
         </Clock>
         <Display>
-            <awst>JST</awst>
+            <awst>PST,CST,GMT,JST</awst>
         </Display>
         <Format><![CDATA[%H:%M:%S]]></Format>
         <Separator>--</Separator>
@@ -50,19 +50,11 @@
         <TimeZones>PST,CST,AWST,GMT</TimeZones>
     </global>
     <aniyah>
-        <Clock>
-            <pos>
-                <x>1358</x>
-                <y>0</y>
-            </pos>
-        </Clock>
-        <Separator>\n</Separator>
         <Sort><![CDATA[None]]></Sort>
-        <TimeZones>PST,CST,GMT,AWST</TimeZones>
+        <TimeZones>PST,CST,GMT,JST</TimeZones>
     </aniyah>
     <dasmir>
-        <Separator>\n</Separator>
         <Sort><![CDATA[None]]></Sort>
-        <TimeZones>PST,CST,GMT,AWST</TimeZones>
+        <TimeZones>PST,CST,GMT,JST</TimeZones>
     </dasmir>
 </settings>
