@@ -16,9 +16,9 @@ function user_setup()
 	-- ACC 25 TP 200 Snoworb  pet dbl leaf orb TP 200 Duskorb
 	gear.PHYKumbha2 = {name="Kumbhakarna", augments={'Pet: Accuracy+17 Pet: Rng. Acc.+17','Pet: "Dbl.Atk."+1 Pet: Crit.hit rate +1','Pet: TP Bonus+200',}}
 	-- PETMAB TP 200 Snoworb  PDT leaforb -1~4% TP 200 Duskorb
-	gear.PDTMABKumbha = {name="Kumbhakarna", augments={'Pet: Accuracy+18 Pet: Rng. Acc.+18','Pet: Damage taken -3%','Pet: TP Bonus+200',}}
+	gear.PDTMABKumbha = {name="Kumbhakarna", augments={'Pet: DEF+19','Pet: Phys. dmg. taken -4%','Pet: TP Bonus+160',}}
 	-- pet MAB Snoworb tp bonus 200 Duskorb
-	gear.MABKumbha = {name="Kumbhakarna", augments={'Pet: "Mag.Atk.Bns."+20','Pet: Phys. dmg. taken -2%','Pet: TP Bonus+180',}}
+	gear.MABKumbha = {name="Kumbhakarna", augments={'Pet: Accuracy+19 Pet: Rng. Acc.+19','Pet: Haste+3','Pet: TP Bonus+180',}}
 
 	-- Capes 
 	-- DA
@@ -357,7 +357,7 @@ function init_gear_sets()
 		-- Sacro Breastplate Malignance Gloves Paguroidea Ring
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- legs="Malignance Tights"
-		back=gear.FC_jse_back, waist="Flume Belt",legs="Meg. Chausses +2", feet="Amm Greaves"}
+		back=gear.FC_jse_back, waist="Flume Belt",legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 	sets.defense.PetPDT = {--ammo="Demonry Core",
 		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",

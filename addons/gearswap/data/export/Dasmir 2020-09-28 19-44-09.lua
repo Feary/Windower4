@@ -1,0 +1,16 @@
+sets.exported={
+    main={ name="Kumbhakarna", augments={'Pet: DEF+19','Pet: Phys. dmg. taken -4%','Pet: TP Bonus+160',}},
+    sub={ name="Kumbhakarna", augments={'Pet: Accuracy+19 Pet: Rng. Acc.+19','Pet: Haste+3','Pet: TP Bonus+180',}},
+    head="Meghanada Visor +2",
+    body="Meg. Cuirie +2",
+    hands="Meg. Gloves +2",
+    legs="Meg. Chausses +2",
+    feet="Meg. Jam. +2",
+    neck="Loricate Torque +1",
+    waist="Flume Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Merman's Earring",
+    left_ring="Defending Ring",
+    right_ring="Moonbeam Ring",
+    back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Mag. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},
+}

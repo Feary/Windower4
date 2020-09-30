@@ -19,7 +19,7 @@ get Varar Ring +1 storage all
 get Kyrene's Earring Storage all
 get Amm Greaves locker all
 get Thereoid Greaves sack all
-get Emicho Haubert +1 locker al
+get Emicho Haubert +1 locker all
 get Skullrender storage all
 get Emicho Haubert +1 locker all
 get Domesticator Earring locker all

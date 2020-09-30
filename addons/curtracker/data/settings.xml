@@ -67,4 +67,10 @@
             <y>75</y>
         </pos>
     </suede>
+    <worldkiller>
+        <pos>
+            <x>1530</x>
+            <y>71</y>
+        </pos>
+    </worldkiller>
 </settings>

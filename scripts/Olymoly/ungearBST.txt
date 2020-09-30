@@ -3,12 +3,9 @@ put Adad Amulet storage all
 put Artio's Mantle storage all
 put Enmerkar Earring storage all
 put Focal Orb storage all
-put Handler's Earring case all
-put Handler's Earring +1 case all
 put Hatxiik storage all
 put Hunahpu storage all
 put Hurch'lan Sash storage all
-put Isa Belt case all
 put Incarnation Sash storage all
 put Izizoeksi storage all
 put Kaidate storage all
