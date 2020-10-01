@@ -165,7 +165,7 @@ function init_gear_sets()
 	
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {}) -- head="Amalric Coif +1"
 	
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod", sub="Genbu's Shield",})-- head="Amalric Coif +1",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod", sub="Genmei Shield",})-- head="Amalric Coif +1",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
 	
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})--legs="Shedir Seraweels"
 
@@ -375,27 +375,27 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle = {main="Bolelabunga",sub="Genbu's Shield", -- ammo="Homiliary",
+    sets.idle = {main="Bolelabunga",sub="Genmei Shield", -- ammo="Homiliary",
         head="Befouled Crown", neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
         body="Jhakri Robe +2", hands=gear.merlinic_refresh_hands, ring1="Defending Ring",ring2="Vocane Ring",
 		-- waist="Flax Sash", 
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
-    sets.idle.PDT = {main="Mafic Cudgel", sub="Genbu's Shield",-- ammo="Staunch Tathlum",
+    sets.idle.PDT = {main="Mafic Cudgel", sub="Genmei Shield",-- ammo="Staunch Tathlum",
 		-- sub="Oneiros Grip",
         head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
         body="Mallquis Saio +2",hands="Jhakri Cuffs +2",ring1="Defending Ring",ring2="Vocane Ring",
 		--feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 		
-	sets.idle.MEVA = {main="Mafic Cudgel", sub="Genbu's Shield",-- ammo="Staunch Tathlum",
+	sets.idle.MEVA = {main="Mafic Cudgel", sub="Genmei Shield",-- ammo="Staunch Tathlum",
 		head="Acad. Mortar. +2", neck="Warder's Charm +1", lear="Lugalbanda Earring", ear2="Etiolation Earring",
         body="Acad. Gown +2",hands="Acad. Bracers +2", ring1="Defending Ring", ring2="Vocane Ring",
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Academic's Pants +2",feet="Academic's Loafers +2"}
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {})--feet="Hippo. Socks +1"
 
-    sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield", --ammo="Homiliary",
+    sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield", --ammo="Homiliary",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
         body="Mallquis Saio +2", hands=gear.merlinic_refresh_hands, ring1="Defending Ring",ring2="Vocane Ring",
 		--feet=gear.chironic_refresh_feet
@@ -404,17 +404,17 @@ function init_gear_sets()
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
     -- Defense sets
-    sets.defense.PDT = {main="Mafic Cudgel", sub="Genbu's Shield", --ammo="Staunch Tathlum",
+    sets.defense.PDT = {main="Mafic Cudgel", sub="Genmei Shield", --ammo="Staunch Tathlum",
         head="Mall. Chapeau +2",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
         body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring",ring2="Vocane Ring",
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 
-    sets.defense.MDT = {main="Mafic Cudgel", sub="Genbu's Shield", --ammo="Staunch Tathlum",
+    sets.defense.MDT = {main="Mafic Cudgel", sub="Genmei Shield", --ammo="Staunch Tathlum",
         head="Mall. Chapeau +2",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
         body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring",ring2="Vocane Ring",
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 		
-    sets.defense.MEVA = {main="Mafic Cudgel", sub="Genbu's Shield", --ammo="Staunch Tathlum",
+    sets.defense.MEVA = {main="Mafic Cudgel", sub="Genmei Shield", --ammo="Staunch Tathlum",
 		--sub="Irenic Strap +1",
 		--ear2="Sanare Earring",
         head="Acad. Mortar. +2", neck="Warder's Charm +1", lear="Lugalbanda Earring", ear2="Etiolation Earring",
@@ -434,27 +434,27 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {main="Maxentius",sub="Genbu's Shield",ammo="Hasty Pinion",
+    sets.engaged = {main="Maxentius",sub="Genmei Shield",ammo="Hasty Pinion",
 		-- ear2="Digni. Earring",
         head="Acad. Mortar. +2",neck="Sanctity Necklace",ear1="Regal Earring",
         body="Acad. Gown +2",hands="Acad. Bracers +2", ring1="Rajas Ring",ring2="Petrov Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Acad. Pants +2",feet="Academic's Loafers +2"}
 	
-	sets.engaged.DW = {main="Maxentius",sub="Genbu's Shield",ammo="Hasty Pinion",
+	sets.engaged.DW = {main="Maxentius",sub="Genmei Shield",ammo="Hasty Pinion",
 		-- ear2="Digni. Earring",
         head="Acad. Mortar. +2",neck="Sanctity Necklace",ear1="Regal Earring",
         body="Acad. Gown +2",hands="Acad. Bracers +2", ring1="Rajas Ring",ring2="Petrov Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Acad. Pants +2",feet="Academic's Loafers +2"}
 	
-	sets.engaged.PDT = {main="Maxentius", sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+	sets.engaged.PDT = {main="Maxentius", sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		-- ear2="Digni. Earring",
 		head="Acad. Mortar. +2",neck="Sanctity Necklace",ear1="Regal Earring",
         body="Acad. Gown +2",hands="Acad. Bracers +2", ring1="Defending Ring", ring2="Vocane Ring",
         back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Acad. Pants +2",feet="Academic's Loafers +2"}
 
-	sets.engaged.PDT.DW = {main="Maxentius", sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+	sets.engaged.PDT.DW = {main="Maxentius", sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		-- ear2="Digni. Earring",
 		head="Acad. Mortar. +2",neck="Sanctity Necklace",ear1="Regal Earring",
         body="Acad. Gown +2",hands="Acad. Bracers +2", ring1="Defending Ring", ring2="Vocane Ring",
@@ -485,7 +485,7 @@ function init_gear_sets()
     sets.buff.PDTSublimation = {}
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Maxentius", sub="Genbu's Shield"}
+	sets.weapons.Default = {main="Maxentius", sub="Genmei Shield"}
 	sets.weapons.DualClub = {main="Maxentius", sub="Ajja Rod"}
 	sets.weapons.Akademos = {}--main="Akademos",sub="Niobid Strap"
 	sets.weapons.Khatvanga = {}--main="Khatvanga",sub="Bloodrain Strap"

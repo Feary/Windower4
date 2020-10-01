@@ -414,7 +414,7 @@ function init_gear_sets()
 	
 	-- Resting sets
 	sets.resting = {-- ammo="Homiliary",
-		main="Bolelabunga",sub="Genbu's Shield",
+		main="Bolelabunga",sub="Genmei Shield",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Vocane Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
@@ -428,20 +428,20 @@ function init_gear_sets()
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
 	sets.idle.PDT = {-- ammo="Staunch Tathlum",
-		main="Bolelabunga",sub="Genbu's Shield",
+		main="Bolelabunga",sub="Genmei Shield",
 		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Vocane Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
 	sets.idle.MDT = {-- ammo="Staunch Tathlum",
-		main="Bolelabunga",sub="Genbu's Shield",
+		main="Bolelabunga",sub="Genmei Shield",
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
 	sets.idle.Weak = {-- ammo="Staunch Tathlum",
-		main="Bolelabunga",sub="Genbu's Shield",
+		main="Bolelabunga",sub="Genmei Shield",
 		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Vocane Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
@@ -450,7 +450,7 @@ function init_gear_sets()
 	
 	-- Defense sets
 	sets.defense.PDT = {-- ammo="Staunch Tathlum",
-		main="Bolelabunga",sub="Genbu's Shield",
+		main="Bolelabunga",sub="Genmei Shield",
 		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Vocane Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
@@ -458,14 +458,14 @@ function init_gear_sets()
 	sets.defense.NukeLock = sets.midcast['Elemental Magic']
 		
 	sets.defense.MDT = {-- ammo="Staunch Tathlum",
-		main="Bolelabunga",sub="Genbu's Shield",
+		main="Bolelabunga",sub="Genmei Shield",
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
     sets.defense.MEVA = {-- ammo="Staunch Tathlum",
-		main="Bolelabunga",sub="Genbu's Shield",
+		main="Bolelabunga",sub="Genmei Shield",
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",

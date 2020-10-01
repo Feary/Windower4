@@ -53,6 +53,12 @@
             <red>255</red>
         </value_color>
     </global>
+    <fearyjunior>
+        <pos>
+            <x>1511</x>
+            <y>59</y>
+        </pos>
+    </fearyjunior>
     <ravindra>
         <curlines>2</curlines>
         <currefresh>60</currefresh>
@@ -62,12 +68,16 @@
         </pos>
     </ravindra>
     <suede>
+        <curlines>2</curlines>
+        <currefresh>60</currefresh>
         <pos>
             <x>1532</x>
             <y>75</y>
         </pos>
     </suede>
     <worldkiller>
+        <curlines>2</curlines>
+        <currefresh>60</currefresh>
         <pos>
             <x>1530</x>
             <y>71</y>
