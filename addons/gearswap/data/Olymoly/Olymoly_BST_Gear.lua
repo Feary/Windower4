@@ -65,7 +65,7 @@ end
 -- BST gearsets
 function init_gear_sets()
 	-- PRECAST SETS
-	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm +1"} --Ankusa Helm +1"
+	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm +1"}
 	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"} -- body="Mirke Wardecors",
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
 	sets.precast.JA.Familiar = {legs="Ankusa Trousers +1"}

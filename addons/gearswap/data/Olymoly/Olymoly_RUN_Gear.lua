@@ -59,16 +59,17 @@ function init_gear_sets()
 	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
 		 -- Ahosi Leggings
 		 back=gear.enmity_jse_back,waist="Goading Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
-		 
+	
+	-- 102
     sets.Enmity.SIRD = {ammo="Staunch Tathlum",
-		 -- Halitus Helm
 	     head="Fu. Bandeau +1",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
+		 -- Futhark Coat +3 Rawhide Gloves
 	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
-		 -- Ahosi Leggings
-		 back=gear.enmity_jse_back,waist="Rumination Sash",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
+		 -- Audumbla Sash
+		 back=gear.enmity_jse_back,waist="Rumination Sash",legs="Carmine Cuisses +1",feet="Erilaz Greaves +1"}
 
     sets.Enmity.DT = {ammo="Staunch Tathlum",
-        -- Halitus Helm
+		 -- Halitus Helm
 	     head="Fu. Bandeau +1",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
 	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
 		 -- Ahosi Leggings
@@ -166,7 +167,12 @@ function init_gear_sets()
         head="Rune. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
         body="Runeist's Coat +3",hands="Leyline Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
-			
+	
+	sets.precast.FC.SIRD = {ammo="Staunch Tathlum",
+        head="Rune. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
+        body="Runeist's Coat +3",hands="Leyline Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",
+        back="Moonbeam Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
+		
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", legs="Futhark Trousers +1"})
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck='Magoraga beads'})--back="Mujin Mantle"
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
@@ -203,6 +209,7 @@ function init_gear_sets()
     sets.precast.WS['Ground Strike'].Acc = set_combine(sets.precast.WS.Acc,{})
 		
     sets.precast.WS['Herculean Slash'] = set_combine(sets.precast['Lunge'], {})
+	
 	sets.precast.WS['Sanguine Blade'] = set_combine(sets.precast['Lunge'], {})
 
 	--------------------------------------

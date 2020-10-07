@@ -84,7 +84,7 @@ function init_gear_sets()
 		-- Ankusa Jackcoat Malignance Gloves
 		body="Tali'ah Manteel +2", hands="Tali'ah Gages +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Malignance Trousers waist="Eschan Stone", Malignance Boots
-		back=gear.FC_jse_back,  legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}
+		back=gear.FC_jse_back, legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}
 		
 	-- MND Mod
 	sets.precast.JA.Reward = {
@@ -177,7 +177,7 @@ function init_gear_sets()
 
 	-- WEAPONSKILLS
 	-- Default weaponskill sets.
-	sets.precast.WS = {ammo="Ginsen", 
+	sets.precast.WS = {--ammo="Ginsen", 
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
@@ -185,7 +185,7 @@ function init_gear_sets()
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
-	sets.precast.WS.SomeAcc = {ammo="Ginsen", 
+	sets.precast.WS.SomeAcc = {--ammo="Ginsen", 
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
@@ -193,7 +193,7 @@ function init_gear_sets()
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
-	sets.precast.WS.Acc = {ammo="Ginsen", 
+	sets.precast.WS.Acc = {--ammo="Ginsen", 
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
@@ -201,7 +201,7 @@ function init_gear_sets()
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
-	sets.precast.WS.FullAcc = {ammo="Ginsen", 
+	sets.precast.WS.FullAcc = {--ammo="Ginsen", 
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
@@ -209,7 +209,7 @@ function init_gear_sets()
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
-	sets.precast.WS.Fodder = {ammo="Ginsen", 
+	sets.precast.WS.Fodder = {--ammo="Ginsen", 
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
@@ -218,7 +218,7 @@ function init_gear_sets()
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 	-- Specific weaponskill sets.
-	sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {ammo="Focal Orb",
+	sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {--ammo="Focal Orb",
 		-- Argosy Celeta +1
 		head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Argosy Hauberk +1 Argosy Mufflers +1 Gere Ring
@@ -239,15 +239,15 @@ function init_gear_sets()
 		-- feet="Argosy Sollerets +1"
 		back=gear.ws_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
-	sets.precast.WS['Rampage'] = {ammo="Ginsen",
+	sets.precast.WS['Rampage'] = {--ammo="Ginsen",
 		-- head="Heyoka Cap +1" neck="Bst. Collar +2",
 		head=gear.valorous_wsd_head, neck="Fotia Gorget", lear="Moonshade Earring", rear="Sherida Earring",
-		-- Gere Ring
-		body="Meg. Cuirie +2", hands="Tali'ah Gages +2", lring="Regal Ring", rring="Begrudging Ring",
+		-- Gere Ring  rring="Begrudging Ring",
+		body="Meg. Cuirie +2", hands="Tali'ah Gages +2", lring="Regal Ring", rring="Petrov Ring",
 		-- legs="Heyoka Subligar +1", feet="Argosy Sollerets +1"
 		back=gear.ws_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Thereoid Greaves"}
 		
-	sets.precast.WS['Mistral Axe'] = {ammo="Ginsen", 
+	sets.precast.WS['Mistral Axe'] = {--ammo="Ginsen", 
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
@@ -255,7 +255,7 @@ function init_gear_sets()
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
-	sets.precast.WS['Calamity'] = {ammo="Ginsen", 
+	sets.precast.WS['Calamity'] = {--ammo="Ginsen", 
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
@@ -263,9 +263,9 @@ function init_gear_sets()
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
-	sets.precast.WS['Onslaught'] = {ammo="Ginsen", 
-		-- Ankusa Helm +3 neck="Bst. Collar +2", Thud Earring 
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Cessance Earring", rear="Ishvara Earring",
+	sets.precast.WS['Onslaught'] = {--ammo="Ginsen", 
+		-- Ankusa Helm +3 neck="Bst. Collar +2", Thud Earring  Cessance Earring
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Sherida Earring",
 		-- Totemic Gloves +3
 		body="Tali'ah Manteel +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Ilabrat Ring",
 		-- legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
@@ -278,19 +278,20 @@ function init_gear_sets()
 	
 	sets.precast.WS['Primal Rend'] = {ammo="Pemphredo Tathlum",
 		-- Ankusa Helm +3 Bst. Collar +2
-		head="Jumalik Helm",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Sherida Earring",
+		head="Ankusa Helm",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Sherida Earring",
 		-- Sacro Breastplate 
-		body="Jumalik Mail",hands="Leyline Gloves",ring1="Shiva Ring +1",ring2="Petrov Ring",
+		body="Tali'ah Manteel +2",hands="Leyline Gloves",ring1="Regal Ring",ring2="Petrov Ring",
 		back=gear.magic_ws_jse_back,waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {mmo="Pemphredo Tathlum",
-		head=gear.valorous_wsd_head,neck="Baetyl Pendant",ear1="Crematio Earring",ear2="Friomisi Earring",
-		body="Tali'ah Manteel +2",hands="Leyline Gloves",ring1="Shiva Ring +1",ring2="Petrov Ring",
+		--head=gear.valorous_wsd_head,
+		head="Ankusa Helm", neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
+		body="Tali'ah Manteel +2",hands="Leyline Gloves",ring1="Regal Ring",ring2="Petrov Ring",
 		back=gear.magic_ws_jse_back,waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"})
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Brutal Earring",ear2="Sherida Earring"}
-	sets.AccMaxTP = {ear1="Zennaroi Earring",ear2="Telos Earring"}
+	sets.AccMaxTP = {ear1="Brutal Earring",ear2="Sherida Earring"}
 
 	-- PET SIC & READY MOVES
 	sets.midcast.Pet.WS = {main=gear.PHYKumbha1,sub=gear.PHYKumbha2,
@@ -324,34 +325,34 @@ function init_gear_sets()
 	-- RESTING
 	sets.resting = {}
 
-	sets.idle = {main="Skullrender",sub=gear.PDTMABKumbha, ammo="Staunch Tathlum",
+	sets.idle = {main="Skullrender",sub=gear.PDTMABKumbha, --ammo="Staunch Tathlum",
 		-- Bathy Collar +1 Infused Earring Dawn Earring
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Merman's Earring",
 		-- Sacro Breastplate Paguroidea Ring
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.FC_jse_back, waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.idle.Refresh = set_combine(sets.idle, {head="Jumalik Helm", body="Jumalik Mail",}) -- Ogier's Gauntlets, Stearc Subligar, Ogier's Leggings
-	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
+	sets.idle.Refresh = set_combine(sets.idle, {}) -- head="Jumalik Helm", body="Jumalik Mail" Ogier's Gauntlets, Stearc Subligar, Ogier's Leggings
+	sets.idle.Reraise = set_combine(sets.idle, {}) -- head="Twilight Helm",body="Twilight Mail"
 
 	-- Pet Out No one engaged
-	sets.idle.Pet = {main="Skullrender",sub=gear.PDTMABKumbha,ammo="Demonry Core",
+	sets.idle.Pet = {main="Skullrender",sub=gear.PDTMABKumbha, --ammo="Demonry Core",
 		-- head="Anwig Salade",
 		head="Meghanada Visor +2", neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +1",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters"}
 
 	-- Pet Engaged Only - Path C
-	sets.idle.Pet.Engaged = {main="Skullrender", sub=PDTMABKumbha, Ammo="Voluspa Tathlum",
-		-- neck="Beast Collar +2", ear2="Domesticator Earring", 
-		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
+	sets.idle.Pet.Engaged = {main="Skullrender", sub=PDTMABKumbha, --Ammo="Voluspa Tathlum",
+		-- neck="Beast Collar +2", ear2="Domesticator Earring",  ear2="Handler's Earring +1",
+		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",
 		-- body="An. Jackcoat +3", hands="Emicho Gauntlets +1" Path C
 		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Varar Ring +1",ring2="Varar Ring +1",
 		-- legs="Ankusa Trousers +3", feet Valorous Greaves Pet DA Fern stone
 		back=gear.Pet_acc_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 
 	-- DEFENSE SETS
-	sets.defense.PDT = {ammo="Staunch Tathlum",
+	sets.defense.PDT = {--ammo="Staunch Tathlum",
 		-- head="Genmei Kabuto",
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Merman's Earring",
 		-- Sacro Breastplate Malignance Gloves Paguroidea Ring
@@ -360,7 +361,8 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Flume Belt",legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 	sets.defense.PetPDT = {--ammo="Demonry Core",
-		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
+		--ear2="Handler's Earring +1"
+		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",
 		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 
@@ -374,8 +376,9 @@ function init_gear_sets()
 	sets.defense.PKiller = set_combine(sets.defense.PDT, {body="Nukumi Gausape +1"})
 	sets.defense.Reraise = set_combine(sets.defense.PDT, {head="Twilight Helm", body="Twilight Mail"})
 
-	sets.defense.MDT = {ammo="Staunch Tathlum",
-		head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
+	sets.defense.MDT = {--ammo="Staunch Tathlum",
+		-- ear2="Handler's Earring +1",
+		head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Enmerkar Earring",
 		body="Meg. Cuirie +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.Pet_regen_jse_back,waist="Flume Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 
@@ -391,84 +394,84 @@ function init_gear_sets()
 	sets.NightIdle = {}
 
 	-- MELEE (SINGLE-WIELD) SETS
-	sets.engaged = {main="Kerehcatl", ammo="Ginsen",
+	sets.engaged = {main=gear.PHYKumbha1, ammo="Ginsen",
 		-- Malignance Chapeau ear1="Dedition Earring",
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves  Gere Ring
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.SomeAcc = {main="Kerehcatl", ammo="Ginsen",
+	sets.engaged.SomeAcc = {main=gear.PHYKumbha1, ammo="Ginsen",
 		-- Malignance Chapeau
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves  Gere Ring
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 		
-	sets.engaged.Acc = {main="Kerehcatl", ammo="Ginsen",
+	sets.engaged.Acc = {main=gear.PHYKumbha1, ammo="Ginsen",
 		-- Malignance Chapeau
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves  Gere Ring
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.FullAcc = {main="Kerehcatl", ammo="Ginsen",
+	sets.engaged.FullAcc = {main=gear.PHYKumbha1, ammo="Ginsen",
 		-- Malignance Chapeau
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves  Gere Ring
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.Fodder = {main="Kerehcatl", ammo="Ginsen",
+	sets.engaged.Fodder = {main=gear.PHYKumbha1, ammo="Ginsen",
 		-- Malignance Chapeau
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves  Gere Ring
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
 	-- MELEE (SINGLE-WIELD) HYBRID SETS
-	sets.engaged.PDT = {ammo="Staunch Tathlum",
+	sets.engaged.PDT = {--ammo="Staunch Tathlum",
 		-- Malignance Chapeau lear="Ebani Earring",
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights Malignance Boots
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.SomeAcc.PDT = {ammo="Staunch Tathlum",
+	sets.engaged.SomeAcc.PDT = {--ammo="Staunch Tathlum",
 		-- Malignance Chapeau lear="Ebani Earring",
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights Malignance Boots
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.Acc.PDT = {ammo="Staunch Tathlum",
+	sets.engaged.Acc.PDT = {--ammo="Staunch Tathlum",
 		-- Malignance Chapeau lear="Ebani Earring",
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights Malignance Boots
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.FullAcc.PDT = {ammo="Staunch Tathlum",
+	sets.engaged.FullAcc.PDT = {--ammo="Staunch Tathlum",
 		-- Malignance Chapeau lear="Ebani Earring",
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights Malignance Boots
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum",
+	sets.engaged.Fodder.PDT = {--ammo="Staunch Tathlum",
 		-- Malignance Chapeau lear="Ebani Earring",
 		head="Meghanada Visor +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
 		-- Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights Malignance Boots
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back,waist="Windbuffet Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
 	-- MELEE (DUAL-WIELD) SETS FOR DNC AND NIN SUBJOB
-	sets.engaged.DW = {ammo="Ginsen",
+	sets.engaged.DW = {--ammo="Ginsen",
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Meghanada Visor +2", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
@@ -476,7 +479,7 @@ function init_gear_sets()
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Patentia Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.DW.SomeAcc = {ammo="Ginsen",
+	sets.engaged.DW.SomeAcc = {--ammo="Ginsen",
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Meghanada Visor +2", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
@@ -484,7 +487,7 @@ function init_gear_sets()
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Patentia Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.DW.Acc = {ammo="Ginsen",
+	sets.engaged.DW.Acc = {--ammo="Ginsen",
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Meghanada Visor +2", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
@@ -492,7 +495,7 @@ function init_gear_sets()
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Patentia Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.DW.FullAcc = {ammo="Ginsen",
+	sets.engaged.DW.FullAcc = {--ammo="Ginsen",
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Meghanada Visor +2", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
@@ -500,7 +503,7 @@ function init_gear_sets()
 		-- Malignance Tights Malignance Boots
 		back=gear.tp_jse_back,waist="Patentia Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
-	sets.engaged.DW.Fodder = {ammo="Ginsen",
+	sets.engaged.DW.Fodder = {--ammo="Ginsen",
 		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
 		head="Meghanada Visor +2", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring

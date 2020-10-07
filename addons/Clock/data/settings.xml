@@ -50,12 +50,10 @@
         <TimeZones>PST,CST,AWST,GMT</TimeZones>
     </global>
     <aniyah>
-        <Separator>\n</Separator>
         <Sort><![CDATA[None]]></Sort>
         <TimeZones>PST,CST,GMT,JST</TimeZones>
     </aniyah>
     <dasmir>
-        <Separator>\n</Separator>
         <Sort><![CDATA[None]]></Sort>
         <TimeZones>PST,CST,GMT,JST</TimeZones>
     </dasmir>
@@ -65,12 +63,8 @@
                 <x>1350</x>
                 <y>0</y>
             </pos>
-            <text>
-                <fonts>
-
-                </fonts>
-            </text>
         </Clock>
+        <Sort><![CDATA[None]]></Sort>
         <TimeZones>PST,CST,GMT,AWST</TimeZones>
     </olymoly>
 </settings>
