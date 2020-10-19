@@ -62,6 +62,7 @@ function init_gear_sets()
 	
 	-- 102
     sets.Enmity.SIRD = {ammo="Staunch Tathlum",
+		-- Halaz Earring
 	     head="Fu. Bandeau +1",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
 		 -- Futhark Coat +3 Rawhide Gloves
 	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonbeam Ring",

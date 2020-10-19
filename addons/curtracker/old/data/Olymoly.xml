@@ -1,0 +1,26 @@
+<?xml version="1.1" ?>
+<settings>
+    <global>
+        <curfields>escha silt,silver a.m.a.n. vouchers stored,mystical canteens,login points</curfields>
+        <curlines>1</curlines>
+        <currefresh>15</currefresh>
+        <curtracking>true</curtracking>
+        <field_color>
+            <blue>255</blue>
+            <green>255</green>
+            <red>0</red>
+        </field_color>
+        <pos>
+            <x>1515</x>
+            <y>64</y>
+        </pos>
+        <text>
+            <size>10</size>
+        </text>
+        <value_color>
+            <blue>255</blue>
+            <green>255</green>
+            <red>255</red>
+        </value_color>
+    </global>
+</settings>

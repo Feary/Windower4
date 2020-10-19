@@ -464,7 +464,7 @@ function init_gear_sets()
 	
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle = {ammo="Staunch Tathlum",
+    sets.idle = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum",
         head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Turms Mittens +1",ring1="Dark Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Turms Leggings +1"}

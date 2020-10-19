@@ -2,8 +2,8 @@
 <settings>
     <global>
         <curfields>login points</curfields>
-        <curlines>1</curlines>
-        <currefresh>2</currefresh>
+        <curlines>2</curlines>
+        <currefresh>60</currefresh>
         <curtracking>true</curtracking>
         <field_color>
             <blue>255</blue>
@@ -12,7 +12,7 @@
         </field_color>
         <pos>
             <x>1515</x>
-            <y>64</y>
+            <y>57</y>
         </pos>
         <text>
             <size>10</size>
