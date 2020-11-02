@@ -11,7 +11,7 @@ return {
     "Laksa. Trews +2",
     "Lanun Trews +1",
     "Chas. Culottes +1",
-    "Laksa. Boots +2",
+    "Laksa. Bottes  +2",
     "Lanun Bottes +1",
     "Chass. Bottes +1",
 	"Meghanada Visor +2",

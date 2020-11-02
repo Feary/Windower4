@@ -157,14 +157,12 @@ function init_gear_sets()
         body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
-    sets.midcast['Dark Magic'] = {main="Oranyan",sub="Kaja Grip",
-		--main="Rubicundity",sub="Ammurapi Shield",
+    sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",
         head="Inyanga Tiara +2",neck="Incanter's Torque",ear1="Gwati Earring",ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back,waist="Luminary Sash",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
-	sets.midcast.Drain = {main="Rubicundity",sub="Genbu's Shield", 
-       	--Ammurapi Shield
+	sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",
         head="Pixie Hairpin +1",neck="Incanter's Torque", ear1="Digni. Earring", ear2="Enchntr. Earring +1",
         body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Cure_jse_back,waist="Fucho-no-obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
@@ -199,13 +197,13 @@ function init_gear_sets()
 	sets.midcast.Bio = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Bio II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 		
-	sets.midcast['Enhancing Magic'] = {main=empty,sub="Genbu's Shield",ammo="Hasty Pinion +1",
+	sets.midcast['Enhancing Magic'] = {main=empty,sub="Ammurapi Shield",ammo="Hasty Pinion +1",
 		head=gear.telchine_head_Duration, neck="Incanter's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
 		body=gear.telchine_body_Duration,hands=gear.telchine_hands_Duration,ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.FC_jse_back,waist="Olympus Sash",legs=gear.telchine_legs_Duration,feet=gear.telchine_feet_Duration}
 		
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif +1"})
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif +1"})--main="Vadose Rod",sub="Genmei Shield",,hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif +1"})--main="Vadose Rod",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash",})--neck="Nodens Gorget",ear2="Earthcry Earring",legs="Shedir Seraweels"
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})--legs="Shedir Seraweels"
 

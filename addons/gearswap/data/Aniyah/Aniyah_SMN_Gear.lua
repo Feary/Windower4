@@ -60,8 +60,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA['Astral Flow'] = {head="Glyphic Horn +1"}
     
-    sets.precast.JA['Elemental Siphon'] = {main=gear.skill_staff, sub="Vox Grip", 
-		-- ammo="Esper Stone +1",
+    sets.precast.JA['Elemental Siphon'] = {main=gear.skill_staff, sub="Vox Grip", ammo="Esper Stone +1",
 		--neck="Incanter's Torque"
         head=gear.telchine_head_Siphon, neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",
 		-- hands="Baayami Cuffs"
@@ -135,7 +134,7 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Lebeche Ring",
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Lengo Pants", feet="Amalric Nails"}
 	
-    sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",ammo="Hasty Pinion",
+    sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",ammo="Esper Stone +1",
 		-- head="Vanya Hood", neck="Incanter's Torque", ear1="Mendicant's Earring",
 		head="Haruspex Hat",neck="Phalaina Locket", ear2="Gifted Earring",
         body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Stikini Ring",ring2="Sirona's Ring",

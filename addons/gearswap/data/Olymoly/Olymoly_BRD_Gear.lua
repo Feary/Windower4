@@ -228,8 +228,7 @@ function init_gear_sets()
 
 	-- For song debuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {range="Gjallarhorn",
-		-- Ammurapi Shield
-		main="Carnwenhan", sub="Genmei Shield",
+		main="Carnwenhan", sub="Ammurapi Shield",
 		-- Brioso Roundlet +3
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
@@ -237,7 +236,7 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
-	sets.midcast.ResistantSongDebuff = {main="Carnwenhan", sub="Genmei Shield", range="Gjallarhorn",
+	sets.midcast.ResistantSongDebuff = {main="Carnwenhan", sub="Ammurapi Shield", range="Gjallarhorn",
 		-- Brioso Roundlet +3 
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		--Brioso Cuffs +3 Stikini Ring +1 Stikini Ring +1
@@ -264,6 +263,36 @@ function init_gear_sets()
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
 		
+	-- Weather/Day
+	sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Clerisy Strap +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+	sets.midcast.LightDayCure = {main="Chatoyant Staff", sub="Clerisy Strap +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+	
+	sets.midcast.Curaga = {main="Chatoyant Staff", sub="Clerisy Strap +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+
+	sets.midcast.LightWeatherCuraga = {main="Chatoyant Staff", sub="Clerisy Strap +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+
+	sets.midcast.LightDayCuraga = {main="Chatoyant Staff", sub="Clerisy Strap +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+	
+	sets.midcast.Cure.DT = {main="Chatoyant Staff", sub="Clerisy Strap +1",
+		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+		
 	sets.Self_Healing = {}--waist="Gishdubar Sash"
 	sets.Cure_Received = {}--waist="Gishdubar Sash"
 	sets.Self_Refresh = {back="Grapevine Cape"}--,waist="Gishdubar Sash"
@@ -285,11 +314,9 @@ function init_gear_sets()
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		--Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
-		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 		
-	sets.midcast['Enhancing Magic'] = {main="Oranyan", sub="Clerisy Strap +1",
-		--main="Carnwenhan",sub="Ammurapi Shield",
+	sets.midcast['Enhancing Magic'] = {main="Carnwenhan",sub="Ammurapi Shield",
 		head=gear.telchine_head_Duration, neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
@@ -304,13 +331,11 @@ function init_gear_sets()
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
-		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 	sets.midcast['Elemental Magic'].Resistant = {main="Oranyan", sub="Enki Strap",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Brioso Justau. +3", hands="Brioso Cuffs +2", lring="Stikini ring", rring="Stikini ring",
-		-- Brioso Cannions +3 
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 		
 	sets.midcast.Helix = sets.midcast['Elemental Magic']

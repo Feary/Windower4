@@ -98,7 +98,7 @@ function init_gear_sets()
 		-- Lanun Frac +3 Fenrir Ring +1
 		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1", lring="Regal Ring", rring="Dingir Ring",
 		-- Eschan Stone 
-		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Laksa. Boots +2"}
+		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Laksa. Bottes  +2"}
 	
 	-- STP 
     sets.precast.CorsairShot.STP = {ammo=gear.QDbullet,
@@ -115,7 +115,7 @@ function init_gear_sets()
 		head="Laksa. Tricorne +2", neck="Voltsurge Torque", rear="Gwati Earring",
 		body="Mummu Jacket +2", hands="Laksa. Gants +2", lring="Regal Ring", rring="Stikini Ring",
 		-- waist="Kwahu Kachina Belt",
-		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Laksa. Boots +2"}
+		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Laksa. Bottes  +2"}
 
 	-- for ws bonus
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes +1"})
@@ -177,13 +177,13 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		-- rring="Epaminondas's Ring", 
 		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Regal Ring", rring="Epona's Ring",
 		back=gear.magic_wsd_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
     sets.precast.WS.Acc = {
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
 		back=gear.magic_wsd_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -228,7 +228,7 @@ function init_gear_sets()
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
 		-- head="Lanun Tricorne +3", rear="Ishvara Earring"
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Enervating Earring",
-		-- lring="Epaminondas's Ring", rring="Dingir Ring", 
+		-- lring="Epaminondas's Ring",
 		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Regal Ring", rring="Dingir Ring", 
 		-- feet="Lanun Boots +3"
 		back=gear.ranger_wsd_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
@@ -255,7 +255,7 @@ function init_gear_sets()
     sets.precast.WS['Leaden Salute'].Acc = {ammo=gear.MAbullet,
        	-- neck="Baetyl Pendant", 
 		head="Pixie Hairpin +1", neck="Fotia Gorget", lear="Friomisi Earring", rear="Moonshade Earring",
-		-- Lanun Frac +3  rring="Archon Ring",
+		-- Lanun Frac +3 rring="Archon Ring",
 		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Regal Ring",
 		-- Herc legs agi mdmg wsd
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Laksa. Trews +2", feet="Lanun Bottes +1"}
@@ -263,7 +263,7 @@ function init_gear_sets()
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
 		-- head="Herc Helm", neck="Baetyl Pendant", Comm. Neck +2
 		head="Mummu Bonnet +2", neck="Fotia Gorget", lear="Friomisi Earring",  rear="Moonshade Earring",
-		-- Lanun Frac +3  rring="Archon Ring",
+		-- Lanun Frac +3 rring="Archon Ring",
 		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Regal Ring",
 		-- Herc legs agi mdmg wsd
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Laksa. Trews +2", feet="Lanun Bottes +1"}
@@ -271,7 +271,7 @@ function init_gear_sets()
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
 		-- neck="Baetyl Pendant", 
 		head="Pixie Hairpin +1", neck="Fotia Gorget", lear="Friomisi Earring", rear="Moonshade Earring",
-		-- Lanun Frac +3  rring="Archon Ring",
+		-- Lanun Frac +3 rring="Archon Ring",
 		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Regal Ring",
 		-- Herc legs agi mdmg wsd
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Laksa. Trews +2", feet="Lanun Bottes +1"}
@@ -421,7 +421,7 @@ function init_gear_sets()
 	
 	 sets.engaged.Low = {
 		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1"  rring="Chirich Ring +1",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2",lring="Petrov Ring", rring="Epona's Ring",
 		-- waist="Olseni Belt", 
@@ -429,7 +429,7 @@ function init_gear_sets()
 
 	sets.engaged.Mid = {
 		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1" rring="Chirich Ring +1",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
 		-- waist="Olseni Belt", 
@@ -437,26 +437,26 @@ function init_gear_sets()
 
 	sets.engaged.Max = {
 		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1" rring="Chirich Ring +1",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
 		-- waist="Olseni Belt", 
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
 
     sets.engaged.DW = {
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Heartseeker Earring", rear="Dudgeon Earring",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Heartseeker Earring", rear="Dudgeon Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
 		back=gear.DW_jse_back, waist="Kentarch Belt +1", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.engaged.DW.Acc = {
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Heartseeker Earring", rear="Dudgeon Earring",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Heartseeker Earring", rear="Dudgeon Earring",
 		-- Adhemar Jacket +1
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Cacoethic Ring", rring="Ramuh Ring",
 		back=gear.DW_jse_back, waist="Kentarch Belt +1", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
 	sets.engaged.DW.Low = {
 		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1"  rring="Chirich Ring +1",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
 		-- waist="Olseni Belt", 
@@ -464,7 +464,7 @@ function init_gear_sets()
 
 	sets.engaged.DW.Mid = {
 		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1" rring="Chirich Ring +1",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
 		-- waist="Olseni Belt", 
@@ -472,7 +472,7 @@ function init_gear_sets()
 
 	sets.engaged.DW.Max = {
 		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Asperity Necklace", lear="Brutal Earring", rear="Suppanomimi",
+		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
 		-- body="Herculean Vest", hands="Adhemar Wrist. +1" lring="Petrov Ring", rring="Chirich Ring +1",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
 		-- waist="Olseni Belt", 

@@ -60,8 +60,8 @@ function init_gear_sets()
 	sets.buff['Blaze of Glory'] = {}
 	
 	-- Fast cast sets for spells
-	sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1",
-		--main=gear.grioavolr_fc_staff,ammo="Impatiens",
+	sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
+		--ammo="Impatiens",
 		head="Amalric Coif +1", neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		-- Zendik Robe
 		body="Anhur Robe", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
@@ -75,7 +75,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {
 		 rear="Mendi. Earring",
-		 body="Heka's Kalasiris",})
+		 body="Heka's Kalasiris"})
 
 	sets.precast.FC.Curaga = sets.precast.FC.Cure
 	
@@ -87,7 +87,7 @@ function init_gear_sets()
 
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat"})
 
-	sets.precast.FC.Impact = {ammo="Impatiens",
+	sets.precast.FC.Impact = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Impatiens",
 		head=empty,neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body="Twilight Cloak",hands=gear.helios_hands_FC, ring1="Prolix Ring",
 		back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +2",feet="Amalric Nails +1"}
@@ -98,8 +98,8 @@ function init_gear_sets()
 	-- Midcast sets
 	--------------------------------------
 
-    sets.midcast.FastRecast = {main="Oranyan", sub="Clerisy Strap +1",
-		--main=gear.grioavolr_fc_staff,sub="Genmei Shield",
+    sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
+		--ammo=
 		head="Amalric Coif +1", neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		-- Zendik Robe
 		body="Anhur Robe", hands=gear.helios_hands_FC, lring="Prolix Ring", rring="Kishar Ring",
@@ -204,13 +204,13 @@ function init_gear_sets()
 		body="Twilight Cloak", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
 
-	sets.midcast['Enfeebling Magic'] = {main="Oranyan", sub="Clerisy Strap +1",
-		--main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'] = {main="Idris", sub="Ammurapi Shield",
+		--ammo="Pemphredo Tathlum",
 		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digni. Earring", ear2="Regal Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring", ring2="Kishar Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
 		
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Clerisy Strap +1", 
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Idris", sub="Ammurapi Shield", 
 		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digni. Earring", ear2="Regal Earring", 
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
@@ -411,12 +411,12 @@ function init_gear_sets()
 	--------------------------------------
 	
 	-- Gear that converts elemental damage done to recover MP.	
-	sets.RecoverMP = {feet="Mallquis Clogs +2"}--body="Seidr Cotehardie", 
+	sets.RecoverMP = {body="Seidr Cotehardie", feet="Mallquis Clogs +2"}
 	sets.DamageMP = {lear="Ethereal Earring", feet="Mallquis Clogs +2"}
 	
 	-- Gear for Magic Burst mode.
     sets.MagicBurst = {neck="Mizu. Kubikazari",ring1="Mujin Band",feet="Jhakri Pigaches +2"}--head="Ea Hat",body="Ea Houppelande",hands="Ea Cuffs",legs="Ea Slops",
-	sets.RecoverBurst = {neck="Mizu. Kubikazari",ring1="Mujin Band",feet="Jhakri Pigaches +2"}--head="Ea Hat",body="Seidr Cotehardie",hands="Ea Cuffs",legs="Ea Slops",
+	sets.RecoverBurst = {neck="Mizu. Kubikazari",body="Seidr Cotehardie",ring1="Mujin Band",feet="Jhakri Pigaches +2"}--head="Ea Hat",hands="Ea Cuffs",legs="Ea Slops",
 
 end
 

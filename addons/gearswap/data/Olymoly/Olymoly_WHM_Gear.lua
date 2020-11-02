@@ -52,13 +52,13 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1", ammo="Incantor Stone",
+    sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
 		--main=gear.grioavolr_fc_staff, ammo="Impatiens",
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Regal Pumps +1"}
 
-    sets.precast.FC.DT = set_combine(sets.precast.FC, {main="Oranyan", sub="Clerisy Strap +1", ammo="Incantor Stone",
+    sets.precast.FC.DT = set_combine(sets.precast.FC, {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
 		-- ammo="Impatiens",
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Kishar Ring",
@@ -78,7 +78,7 @@ function init_gear_sets()
 		head="Piety Cap +1", legs="Ebers Pant. +1", feet="Theo. Duckbills +1"})
 
 	sets.precast.FC.Cure.DT =  set_combine(sets.precast.FC.Cure, {
-		main="Oranyan", sub="Clerisy Strap +1",
+		main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
 		head="Piety Cap +1", neck="Loricate Torque +1",lear="Nourish. Earring +1", rear="Novia Earring",
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.Cure_jse_back, waist="Witful Belt", legs="Ebers Pant. +1", feet="Cure Clogs"})
@@ -282,7 +282,7 @@ function init_gear_sets()
 		-- Theo. Pant. +3
 		back=gear.fastcast_jse_back, waist="Bishop's Sash", legs="Theo. Pant. +1", feet="Gende. Galosh. +1"}
 
-	sets.midcast.StatusRemoval = {main="Oranyan", sub="Clerisy Strap +1", 
+	sets.midcast.StatusRemoval = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", 
 		--main={name="Grioavolr", priority=2}, sub={name="Clemency Grip", priority=1}, 
 		ammo="Hasty Pinion +1",
 		head="Ebers Cap +1",
@@ -291,7 +291,7 @@ function init_gear_sets()
 
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
 	-- Duration
-	sets.midcast['Enhancing Magic'] = {
+	sets.midcast['Enhancing Magic'] = {main=empty, sub="Ammurapi Shield",
 		--main={name="Gada", priority=2}, sub={name="Ammurapi Shield", priority=1},
 		head=gear.telchine_head_Duration,
 		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration,
