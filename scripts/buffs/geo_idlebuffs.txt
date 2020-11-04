@@ -1,0 +1,1 @@
+input /ma "indi-refresh" <me>; wait 4; input /ma "geo-refresh" <me>;

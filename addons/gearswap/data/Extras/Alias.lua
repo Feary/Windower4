@@ -71,8 +71,8 @@ send_command('alias naked gs equip naked')
 
 -- Binds
 -- Follow
-send_command('bind pageup ffo me')
-send_command('bind pagedown ffo stopall')
+send_command('bind pageup send @all /follow <me>')
+send_command('bind pagedown send @all /follow <me>')
 send_command('bind !pageup exec movement.txt')
 	
 send_command('bind numpad+ sat alltarget')
@@ -81,7 +81,6 @@ send_command('bind ^numpad+ sat allattack')
 send_command('bind @numpad+ sat allattack')
 --send_command('bind numpadEnter sat allattack')
 
-
 -- Jobs
 -- Embrava
 send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 3;input /ma "Embrava" <stpc>;wait 4;input /ja "Accession" <me>;wait 3;input /ma "Regen V" <stpc>')
@@ -89,4 +88,9 @@ send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula R
 send_command('alias kau gs c set elementalmode earth;wait 1;input /ja "Tabula Rasa" <me>;wait 1;input /ja "Dark Arts" <me>;wait 1;input /ja "Addendum: Black" <me>;wait 2.5;gs c elemental skillchain2;wait 15;input /ja "Focalization" <me>;wait 1;input /ja "Ebullience" <me>;wait 2.5;input /ma "Kaustra" <t>')
 -- Pro/shell
 send_command('alias pro input /ma "Accession" <me>;wait 1;input /ma "Shell V" <me>;wait 5;input /ma "Accession" <me>;wait 1;input /ma "Protect V" <me>;')
+
+-- Base Buffs
+send_command('alias allbuffs send @all exec buffs/'..player.main_job..'_basebuffs.txt')
+send_command('alias idlebuffs sennd @all exec buffs/'..player.main_job..'_idlebuffs.txt')
+
 	

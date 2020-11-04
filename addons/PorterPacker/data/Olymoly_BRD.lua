@@ -11,7 +11,7 @@ return {
     "Aya. Gambieras +2",
     "Brioso Roundlet +2",
     "Brioso Justau. +3",
-    "Brioso Cuffs +2",
+    "Brioso Cuffs +3",
     "Brioso Cannions +3",
     "Brioso Slippers +3",
     "Bihu Roundlet +3",
