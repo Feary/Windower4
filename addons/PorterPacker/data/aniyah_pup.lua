@@ -11,7 +11,7 @@ return {
 	"Pitre Taj",
 	"Foire Babouches",
 	"Foire Churidars",
-	"Foire Dastanas",
+	"Foire Dastanas +1",
 	"Foire Tobe",
 	"Foire Taj",
 	"Tali'ah Turban +2",

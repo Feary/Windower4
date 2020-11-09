@@ -67,7 +67,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
 		-- rear="Enchntr. Earring +1",
-		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring",
+		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Malignance Earring", 
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Kishar Ring", rring="Lebeche Ring",
 		-- feet="Regal Pumps +1" 
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", }
@@ -93,7 +93,7 @@ function init_gear_sets()
 	
 	sets.precast.FC.Cure.DT = {ammo="Incantor Stone",
 		-- rear="Enchntr. Earring +1",
-		head="Piety Cap +1", neck="Voltsurge Torque", lear="Loquac. Earring",
+		head="Piety Cap +1", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Malignance Earring", 
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Kishar Ring", rring="Lebeche Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Cure Clogs"}
 
@@ -154,20 +154,20 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Clerisy Strap +1",
 		head="Ebers Cap +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}
+		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}
 	sets.midcast.LightWeatherCureSolace = {main="Iridal Staff", sub="Clerisy Strap +1",
 		head="Ebers Cap +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}	
+		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}	
 	sets.midcast.LightDayCureSolace = {main="Iridal Staff", sub="Clerisy Strap +1",
 		head="Ebers Cap +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring",rring="Lebeche Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}
+		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.LightDayCure =  {main="Queller Rod", sub="Sors Shield", 
 		head="Ebers Cap +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Lebeche Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}	
+		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}	
 		
 	sets.midcast.Curaga =  {main="Queller Rod", sub="Sors Shield", 
 		head="Ebers Cap +1", neck="Melic Torque", ear1="Novia Earring",ear2="Nourish. Earring",
@@ -177,12 +177,12 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCuraga = {main="Iridal Staff", sub="Clerisy Strap +1",
 		head="Ebers Cap +1", neck="Melic Torque", ear1="Novia Earring",ear2="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring",  rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}
+		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.LightDayCuraga = {main="Queller Rod", sub="Sors Shield", 
 		head="Ebers Cap +1", neck="Melic Torque", ear1="Novia Earring",ear2="Nourish. Earring",
 		body="Ebers Bliaud +1", hands="Theophany Mitts +3", lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}
+		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Ebers Pantaloons +1", feet="Piety Duckbills +1"}
 
 	sets.midcast.Cure.DT = {main="Iridal Staff", sub="Clerisy Strap +1",
 		head="Ebers Cap +1",  neck="Loricate Torque +1", ear1="Novia Earring",ear2="Nourish. Earring",
@@ -232,8 +232,8 @@ function init_gear_sets()
 		back=gear.fastcast_jse_back, legs="Th. Pantaloons +2", feet="Gende. Galosh. +1"}
 
 	-- -Na
-	sets.midcast.StatusRemoval = {ammo="Hasty Pinion",
-		--main=gear.grioavolr_fc_staff, sub="Clemency Grip", 
+	sets.midcast.StatusRemoval = {main=gear.grioavolr_fc_staff, ammo="Hasty Pinion",
+		-- sub="Clemency Grip", 
 		head="Ebers Cap +1",
 		-- body="Hedera Cotehardie", 
 		body="Witching Robe", hands="Ebers Mitts +1",
@@ -315,15 +315,15 @@ function init_gear_sets()
 	sets.midcast.Impact = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
 		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Regal Earring",
+		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 		
 	sets.midcast['Elemental Magic'] = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
-		-- Chironic Hat neck="Sanctity Necklace",
-		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Friomisi Earring", rear="Hecate's Earring",
+		-- Chironic Hat 
+		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Malignance Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
 		--  Chironic Hose Chironic Slippers 
@@ -332,7 +332,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].Resistant = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
 		-- Chironic Hat 
-		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Lifestorm Earring", rear="Regal Earring",
+		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Malignance Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
 		--  Chironic Hose Chironic Slippers 
@@ -341,7 +341,7 @@ function init_gear_sets()
 	sets.midcast['Divine Magic'] = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
 		-- Chironic Hat
-		head="Inyanga Tiara +2", neck="Sanctity Necklace",  lear="Friomisi Earring", rear="Regal Earring",
+		head="Inyanga Tiara +2", neck="Sanctity Necklace",  lear="Regal Earring", rear="Malignance Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
 		--  Chironic Hose Chironic Slippers 
@@ -349,24 +349,24 @@ function init_gear_sets()
 
 	sets.midcast['Dark Magic'] = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
-		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Lifestorm Earring", rear="Regal Earring",
+		-- Chironic Hat 
+		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Malignance Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
     sets.midcast.Drain = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
-		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Lifestorm Earring", rear="Regal Earring",
+		-- Chironic Hat
+		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Malignance Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
     sets.midcast.Drain.Resistant = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
-		-- Chironic Hat rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Lifestorm Earring", rear="Regal Earring",
+		-- Chironic Hat
+		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Malignance Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
@@ -374,34 +374,34 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
 
-	sets.midcast.Stun = {-- Grioavolr  Pemphredo Tathlum
+	sets.midcast.Stun = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
-		-- Chironic Hat Dign. Earring or  rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Voltsurge Torque",  lear="Lifestorm Earring", rear="Regal Earring",
+		-- Chironic Hat 
+		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast.Stun.Resistant = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
-		-- Chironic Hat lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Regal Earring",
+		-- Chironic Hat
+		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Aya. Cosciales +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Enfeebling Magic'] = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
-		-- Chironic Hat Theo. Cap +2 lear="Gwati Earring", rear="Enchntr. Earring +1",
-		head="Inyanga Tiara +2", neck="Voltsurge Torque",   rear="Regal Earring",
+		-- Chironic Hat Theo. Cap +2
+		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {-- Grioavolr Pemphredo Tathlum
 		main="Maxentius", sub="Ammurapi Shield",
-		-- Chironic Hat  rear="Enchntr. Earring +1", lear="Gwati Earring",
-		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Lifestorm Earring", rear="Regal Earring",
+		-- Chironic Hat 
+		head="Inyanga Tiara +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  Luminary Sash Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}

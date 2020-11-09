@@ -44,8 +44,8 @@ function init_gear_sets()
     -- Start defining the sets
     --------------------------------------
 	
-	sets.weapons.NukeWeapons = {main="Maxentius",sub="Ammurapi Shield"}
-	sets.weapons.MeleeStaff = {main="Maxentius",sub="Ammurapi Shield"}
+	sets.weapons.NukeWeapons = {main="Lathi",sub="Niobid Strap"}
+	sets.weapons.MeleeStaff = {main="Malignance Pole",sub="Ammurapi Shield"}
 	sets.weapons.MeleeClubs =  {main="Maxentius",sub="Ammurapi Shield"}
 	sets.weapons.Death = {main="Maxentius",sub="Ammurapi Shield"}
 	
@@ -63,8 +63,8 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
-		-- amalric coif ar1="Enchntr. Earring +1",
-		head="Haruspex Hat", neck="Voltsurge Torque", ear1="Etiolation Earring", eear2="Loquacious Earring",
+		-- Amalric Coif ear1="Enchntr. Earring +1",
+		head="Haruspex Hat", neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Malignance Earring",
 		--body="Zendik Robe",
 		body="Vanir Cotehardie", hands="Helios Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
 		-- legs="Psycloth Lappas",

@@ -355,8 +355,8 @@ function init_gear_sets()
         head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard Malignance Gloves 
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
-		-- Malignance Tights Malignance Boots
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		-- Malignance Tights
+        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
     
@@ -367,24 +367,24 @@ function init_gear_sets()
         head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard Malignance Gloves 
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
-		-- Malignance Tights Malignance Boots
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		-- Malignance Tights 
+        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
 		-- Malignance Chapeau
         head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard Malignance Gloves 
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
-		-- Malignance Tights Malignance Boots
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		-- Malignance Tights
+        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 		
 	sets.defense.MEVA = {ammo="Yamarang",
 		-- Malignance Chapeau
         head="Meghanada Visor +2",neck="Warder's Charm +1",ear1="Hearty Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard Malignance Gloves 
 		body="Meg. Cuirie +2",hands="Volte Bracers",ring1="Moonbeam Ring",ring2="Purity Ring",
-		-- Malignance Tights Malignance Boots
-        back=gear.stp_jse_back,waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+		-- Malignance Tights
+        back=gear.stp_jse_back,waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
     sets.Kiting = {feet="Skadi's Jambeaux"}
 

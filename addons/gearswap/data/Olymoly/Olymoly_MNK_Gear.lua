@@ -72,15 +72,15 @@ function init_gear_sets()
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		-- Moonlight Belt  Malignance Tights Malignance Boots 
-		back=gear.TP_jse_back,waist="Black Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"}
+		back=gear.TP_jse_back,waist="Black Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}
 		
 	sets.precast.Flourish1 = {ammo="Ginsen",
 		-- Malignance Chapeau Mnk. Nodowa +2 
 		head="Hiza. Somen　+2",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
-		-- Moonlight Belt  Malignance Tights Malignance Boots 
-		back=gear.TP_jse_back,waist="Black Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"}
+		-- Moonlight Belt  Malignance Tights 
+		back=gear.TP_jse_back,waist="Black Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}
 
 
 	-- Fast cast sets for spells	
@@ -124,8 +124,8 @@ function init_gear_sets()
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
 		-- Ken. Samue +1  ring2="Gere Ring",
 		body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-		-- Ken. Hakama +1 Ken. Sune-Ate +1 gear.herculean_ta_feet
-		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		-- Ken. Hakama +1 Ken. Sune-Ate +1 
+		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet=gear.herculean_ta_feet})
 	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		-- Hes. Crown +3
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
@@ -179,7 +179,7 @@ function init_gear_sets()
 		-- Malignance Tabard Malignance Gloves
 		body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- Malignance Tights Malignance Boots
-		back=gear.ws_jse_back,waist="Luminary Sash",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
+		back=gear.ws_jse_back,waist="Luminary Sash",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"})
 
 	sets.precast.WS["Raging Fists"].SomeAcc = set_combine(sets.precast.WS["Raging Fists"], sets.precast.WSSomeAcc)
 	sets.precast.WS["Howling Fist"].SomeAcc = set_combine(sets.precast.WS["Howling Fist"], sets.precast.WSSomeAcc)
@@ -332,7 +332,7 @@ function init_gear_sets()
 	sets.engaged.Fodder = {ammo="Ginsen",
 		-- Moonlight Nodowa
 		head="Adhemar Bonnet +1",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-		--  Gere Ring
+		-- Gere Ring
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- waist="Moonlight Belt +1", legs="Hes. Hose +3",feet="Anch. Gaiters +3"
 		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Mummu Gamash. +2"}
@@ -344,35 +344,35 @@ function init_gear_sets()
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		-- Moonlight Belt  Malignance Tights Malignance Boots 
-		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.engaged.SomeAcc.PDT = {ammo="Ginsen", -- Staunch Tahtlum +1
 		-- Malignance Chapeau Mnk. Nodowa +2 
 		head="Hiza. Somen　+2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		-- Moonlight Belt  Malignance Tights Malignance Boots 
-		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.engaged.Acc.PDT = {ammo="Ginsen", -- Staunch Tahtlum +1
 		-- Malignance Chapeau Mnk. Nodowa +2
 		head="Hiza. Somen　+2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		-- Moonlight Belt  Malignance Tights Malignance Boots 
-		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.engaged.FullAcc.PDT = {ammo="Ginsen", -- Staunch Tahtlum +1
 		-- Malignance Chapeau Mnk. Nodowa +2 
 		head="Hiza. Somen　+2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
-		-- Moonlight Belt  Malignance Tights Malignance Boots 
-		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		-- Moonlight Belt  Malignance Tights 
+		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.engaged.Fodder.PDT = {ammo="Ginsen", -- Staunch Tahtlum +1
 		-- Malignance Chapeau Mnk. Nodowa +2 
 		head="Hiza. Somen　+2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		-- Moonlight Belt  Malignance Tights Malignance Boots 
-		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
 	-- Hundred Fists/Impetus melee set mods	
 	sets.engaged.HF = set_combine(sets.engaged, {})
@@ -383,7 +383,7 @@ function init_gear_sets()
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {}-- head="Frenzy Sallet"
-	sets.buff.Impetus = {body="Bhikku Cyclas"}
+	sets.buff.Impetus = {body="Bhikku Cyclas +1"}
 	sets.buff.Footwork = {}--feet="Shukuyu Sune-Ate"
 	sets.buff.Boost = {} --waist="Ask Sash"
 	

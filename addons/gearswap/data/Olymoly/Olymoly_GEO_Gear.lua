@@ -177,13 +177,13 @@ function init_gear_sets()
 		-- Bagua Galero +3
         head="Bagua Galero +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Enchntr. Earring +1",
         body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Stikini Ring",
-        back=gear.nuke_jse_back,waist="Luminary Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
+        back=gear.nuke_jse_back,waist="Luminary Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +3"}
 		
     sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",
 		-- Hirundinea Earring
         head="Bagua Galero +1",neck="Erra Pendant",ear1="Digni. Earring",ear2="Regal Earring",
         body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Stikini Ring",
-        back="Perimede Cape",waist="Fucho-no-obi",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
+        back="Perimede Cape",waist="Fucho-no-obi",legs="Geomancy Pants +2",feet="Geo. Sandals +3"}
     
     sets.midcast.Aspir = sets.midcast.Drain
 		
@@ -191,29 +191,29 @@ function init_gear_sets()
 		head="Geo. Galero +2",neck="Voltsurge Torque",ear1="Regal Earring",ear2="Enchntr. Earring +1",
         -- body="Zendik Robe",
 		body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Kishar Ring",
-        back=gear.FC_jse_back,waist="Ninurta's Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
+        back=gear.FC_jse_back,waist="Ninurta's Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +3"}
     
 	sets.midcast.Stun.Resistant = {main="Idris",sub="Ammurapi Shield",
 		head="Geo. Galero +2",neck="Erra Pendant",ear1="Regal Earring",ear2="Enchntr. Earring +1",
 		-- body="Zendik Robe",
 		body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Kishar Ring",
-		back=gear.FC_jse_back,waist="Ninurta's Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +2"}
+		back=gear.FC_jse_back,waist="Ninurta's Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +3"}
 	
 	sets.midcast.Impact = {main="Idris",sub="Ammurapi Shield", 
 		head=empty, neck="Erra Pendant",ear1="Barkaro. Earring",ear2="Regal Earring",
 		body="Twilight Cloak", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
-		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}		
 
 	sets.midcast['Enfeebling Magic'] = {main="Idris", sub="Ammurapi Shield",
 		--ammo="Pemphredo Tathlum",
 		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digni. Earring", ear2="Regal Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring", ring2="Kishar Ring",
-		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}		
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Idris", sub="Ammurapi Shield", 
 		head="Geo. Galero +2", neck="Erra Pendant",ear1="Digni. Earring", ear2="Regal Earring", 
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
-		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}		
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}		
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {ammo="Pemphredo Tathlum",back=gear.FC_jse_back})
     sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {ammo="Pemphredo Tathlum",back=gear.FC_jse_back})
@@ -327,7 +327,7 @@ function init_gear_sets()
 	
 	sets.defense.GeoLock = sets.midcast.Geomancy.Indi
 
-	sets.Kiting = {feet="Geo. Sandals +2"}
+	sets.Kiting = {feet="Geo. Sandals +3"}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}

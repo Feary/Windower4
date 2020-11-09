@@ -1,11 +1,11 @@
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
 	-- Options: Override default values
-    state.OffenseMode:options('Normal','SomeAcc','Acc','FullAcc','Fodder')
-    state.HybridMode:options('Normal','PDT')
+    state.OffenseMode:options('Normal','SomeAcc','Acc','FullAcc', 'Evasion', 'Fodder')
+    state.HybridMode:options('Normal','PDT','Evasion')
     state.RangedMode:options('Normal', 'Acc')
     state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','FullAcc','Fodder')
-	state.IdleMode:options('Normal', 'Sphere')
+	state.IdleMode:options('Normal', 'Evasion','Sphere')
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -43,7 +43,7 @@ function init_gear_sets()
 
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Plun. Armlets +3"})
     sets.ExtraRegen = {}
-    sets.Kiting = {feet="Jute Boots +1"}
+    sets.Kiting = {feet="Pill. Poulaines +3"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {} -- head="Frenzy Sallet"
@@ -60,7 +60,7 @@ function init_gear_sets()
 	sets.Ambush = {body="Plunderer's Vest +3"}
 
 	-- Weapons Sets
-	sets.weapons.Normal = 		{main="Twashtar",sub="Kaja Knife"}
+	sets.weapons.Normal = 		{main="Twashtar",sub=empty}
 	sets.weapons.Relic = 		{main="Mandau",sub="Twashtar"}
 	sets.weapons.Ambuscade = 	{main="Kaja Knife",sub="Twashtar"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
@@ -92,10 +92,10 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA['Collaborator'] 		= {head="Skulker's Bonnet +1"}
     sets.precast.JA['Accomplice'] 			= {head="Skulker's Bonnet +1"}
-    sets.precast.JA['Flee'] 				= {feet="Pill. Poulaines +2"} 
+    sets.precast.JA['Flee'] 				= {feet="Pill. Poulaines +3"} 
     sets.precast.JA['Hide'] 				= {body="Pillager's Vest +3"}
     sets.precast.JA['Conspirator']			= {body="Skulker's Vest +1"}
-    sets.precast.JA['Steal']				= {head="Pill. Bonnet +2", legs="Pill. Culottes +3", feet="Pill. Poulaines +2"} --  hands="Pillager's Armlets",
+    sets.precast.JA['Steal']				= {head="Pill. Bonnet +3", legs="Pill. Culottes +3", feet="Pill. Poulaines +3",hands="Pill. Armlets +3",} --  
 	sets.precast.JA['Mug']					= {head="Plun. Bonnet +3"}
     sets.precast.JA['Despoil']				= {legs="Skulker's Culottes +1", feet="Skulk. Poulaines +1"}
     sets.precast.JA['Perfect Dodge']	 	= {hands="Plun. Armlets +3"}
@@ -134,22 +134,22 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Seeth. Bomblet +1",
 		-- neck="Assassin's Neck +2", 
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
 		body="Plunderer's Vest +3", hands="Meg. Gloves +2",ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"}    
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
 		-- neck="Assassin's Neck +2", 
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
         body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
        	-- neck="Assassin's Neck +2", 
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring", 
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring", 
         body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Plun. Culottes +3",feet="Plun. Poulaines +3"})
 	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
        	-- neck="Assassin's Neck +2", 
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
         body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Plun. Culottes +3",feet="Plun. Poulaines +3"})
 
@@ -175,69 +175,66 @@ function init_gear_sets()
 		back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Plun. Culottes +3",feet="Plun. Poulaines +3"})
     
 	sets.precast.WS["Rudra's Storm"].Fodder = set_combine(sets.precast.WS["Rudra's Storm"], {ammo="Seeth. Bomblet +1",
-		-- head="Pill. Bonnet +3",
-        head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
+		--
+        head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
 		body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- waist="Artful Belt +1" 
 		back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     
 	sets.precast.WS["Rudra's Storm"].SA = set_combine(sets.precast.WS["Rudra's Storm"].Fodder, {ammo="Yetshila",
-        -- head="Pillager's Bonnet +3", neck="Assassin's Neck +2", 
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
+        --  neck="Assassin's Neck +2", 
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
         body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"})
     
 	sets.precast.WS["Rudra's Storm"].TA = set_combine(sets.precast.WS["Rudra's Storm"].Fodder, {ammo="Yetshila",
-        -- head="Pillager's Bonnet +3", neck="Assassin's Neck +2", 
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
+        --  neck="Assassin's Neck +2", 
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
         body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"})
     
 	sets.precast.WS["Rudra's Storm"].SATA = set_combine(sets.precast.WS["Rudra's Storm"].Fodder, {ammo="Yetshila",
         -- head="Pillager's Bonnet +3", neck="Assassin's Neck +2", 
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
         body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"})
     
     sets.precast.WS["Mercy Stroke"] = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
         -- Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Mercy Stroke"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="Seeth. Bomblet +1",
 		--  Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Mercy Stroke"].Acc = set_combine(sets.precast.WS.Acc, {ammo="Seeth. Bomblet +1",
 		--  Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
 	sets.precast.WS["Mercy Stroke"].FullAcc = set_combine(sets.precast.WS.FullAcc, {ammo="Seeth. Bomblet +1",
 		--  Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Mercy Stroke"].Fodder = set_combine(sets.precast.WS["Mercy Stroke"], {ammo="Seeth. Bomblet +1",
 		-- Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     
 	sets.precast.WS["Mercy Stroke"].SA = set_combine(sets.precast.WS["Mercy Stroke"].Fodder, {ammo="Seeth. Bomblet +1",
-		-- Pill. Bonnet +3
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Mercy Stroke"].TA = set_combine(sets.precast.WS["Mercy Stroke"].Fodder, {ammo="Seeth. Bomblet +1",
-		-- Pill. Bonnet +3
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Mercy Stroke"].SATA = set_combine(sets.precast.WS["Mercy Stroke"].Fodder, {ammo="Seeth. Bomblet +1",
-		-- Pill. Bonnet +3
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
 
@@ -380,43 +377,40 @@ function init_gear_sets()
 	
 	sets.precast.WS["Savage Blade"] = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
         -- Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Savage Blade"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="Seeth. Bomblet +1",
 		--  Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Savage Blade"].Acc = set_combine(sets.precast.WS.Acc, {ammo="Seeth. Bomblet +1",
 		--  Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
 	sets.precast.WS["Savage Blade"].FullAcc = set_combine(sets.precast.WS.FullAcc, {ammo="Seeth. Bomblet +1",
 		--  Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Savage Blade"].Fodder = set_combine(sets.precast.WS["Savage Blade"], {ammo="Seeth. Bomblet +1",
 		-- Lustr Cap +1 Path A
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     
 	sets.precast.WS["Savage Blade"].SA = set_combine(sets.precast.WS["Savage Blade"].Fodder, {ammo="Seeth. Bomblet +1",
-		-- Pill. Bonnet +3
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Savage Blade"].TA = set_combine(sets.precast.WS["Savage Blade"].Fodder, {ammo="Seeth. Bomblet +1",
-		-- Pill. Bonnet +3
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
     sets.precast.WS["Savage Blade"].SATA = set_combine(sets.precast.WS["Savage Blade"].Fodder, {ammo="Seeth. Bomblet +1",
-		-- Pill. Bonnet +3
-		head="Pill. Bonnet +2",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
+		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Ishvara Earring",
         body="Lustr. Harness +1",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Epaminondas's Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Plun. Culottes +3",feet="Lustra. Leggings +1"})
 
@@ -477,7 +471,7 @@ function init_gear_sets()
     sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Meghanada Visor +2",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Genmei Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
        	head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
@@ -488,40 +482,41 @@ function init_gear_sets()
 		head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Meghanada Cuirie +2", hands="Turms Mittens +1", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Turms Leggings +1"}
-
+	
 
     --------------------------------------
     -- Melee sets  
     --------------------------------------
 
     -- Normal melee group
-    sets.engaged = {ammo="Ginsen",
-		--head="Adhemar Bonnet", Path A neck="Assassin's Gorget +2", 
-		head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",rear="Dedition Earring",
+    sets.engaged = {ammo="Yamarang",
+		-- head="Adhemar Bonnet", Path A neck="Assassin's Gorget +2",
+		head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
+		-- ring1="Gere Ring"
         body="Pillager's Vest +3",hands="Adhemar Wrist. +1",ring1="Epona's Ring", rring="Hetairoi Ring", 
         back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +3"}
 		
     sets.engaged.SomeAcc = {ammo="Yamarang",
-		--head="Adhemar Bonnet", Path A neck="Assassin's Gorget +2",
-		head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
-        body="Pillager's Vest +3",hands="Adhemar Wrist. +1",ring1="Epona's Ring", rring="Hetairoi Ring", 
-        back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +3"}
-		
-	sets.engaged.Acc = {ammo="Yamarang",
 		--neck="Assassin's Gorget +2",
 		head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring", 
         body="Pillager's Vest +3",hands="Adhemar Wristbands", ring1="Epona's Ring", rring="Hetairoi Ring", 
         back=gear.stp_jse_back, waist="Reiki Yotai", legs="Pill. Culottes +3",  feet="Plun. Poulaines +3"}
 		
+	sets.engaged.Acc = {ammo="Yamarang",
+		--neck="Assassin's Gorget +2",
+        head="Plun. Bonnet +3",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
+        body="Pillager's Vest +3",hands="Adhemar Wristbands",ring1="Epona's Ring", rring="Regal Ring", 
+        back=gear.stp_jse_back,waist="Reiki Yotai", legs="Pill. Culottes +3",  feet="Plun. Poulaines +3"}
+		
     sets.engaged.FullAcc = {ammo="Yamarang",
 		--neck="Assassin's Gorget +2",
-        head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
-        body="Pillager's Vest +3",hands="Adhemar Wristbands",ring1="Epona's Ring", rring="Hetairoi Ring", 
+        head="Plun. Bonnet +3",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
+        body="Pillager's Vest +3",hands="Adhemar Wristbands",ring1="Epona's Ring", rring="Regal Ring", 
         back=gear.stp_jse_back,waist="Reiki Yotai", legs="Pill. Culottes +3",  feet="Plun. Poulaines +3"}
 	
 	sets.engaged.Fodder = {ammo="Ginsen",
-		-- neck="Assassin's Gorget +2", 
-        head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",rear="Dedition Earring",
+		--head="Adhemar Bonnet", Path A neck="Assassin's Gorget +2", 
+		head="Adhemar Bonnet +1",neck="Iskur Gorget",lear="Sherida Earring",rear="Dedition Earring",		
         body="Pillager's Vest +3",hands="Adhemar Wrist. +1",ring1="Epona's Ring", rring="Hetairoi Ring", 
         back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +3"}
 	
@@ -549,6 +544,47 @@ function init_gear_sets()
 		head="Adhemar Bonnet",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Meg. Cuirie +2", hands="Adhemar Wrist. +1", ring1="Epona's Ring",ring2="Defending Ring",
         back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +3"}
+		
+	
+    sets.engaged.Evasion = {ammo="Yamarang",
+		-- Malignance Chapeau Neck="Assassin Gorget +2", ear2="Balder Earring +1"
+        head="Adhemar Bonnet", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
+		-- Malignance Tabard Malignance Gloves Gere Ring
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
+		-- Malignance Tights
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
+
+    sets.engaged.SomeAcc.Evasion = {ammo="Yamarang",
+		-- Malignance Chapeau Neck="Assassin Gorget +2", ear2="Balder Earring +1"
+        head="Adhemar Bonnet", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
+		-- Malignance Tabard Malignance Gloves Gere Ring
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
+		-- Malignance Tights
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
+
+    sets.engaged.Acc.Evasion = {ammo="Yamarang",
+		-- Malignance Chapeau Neck="Assassin Gorget +2", ear2="Balder Earring +1"
+        head="Adhemar Bonnet", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
+		-- Malignance Tabard Malignance Gloves Gere Ring
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
+		-- Malignance Tights
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
+
+    sets.engaged.FullAcc.Evasion ={ammo="Yamarang",
+		-- Malignance Chapeau Neck="Assassin Gorget +2", ear2="Balder Earring +1"
+        head="Adhemar Bonnet", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
+		-- Malignance Tabard Malignance Gloves Gere Ring
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
+		-- Malignance Tights
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
+
+    sets.engaged.Fodder.Evasion = {ammo="Yamarang",
+		-- Malignance Chapeau Neck="Assassin Gorget +2", ear2="Balder Earring +1"
+        head="Adhemar Bonnet", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
+		-- Malignance Tabard Malignance Gloves Gere Ring
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
+		-- Malignance Tights
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
 end
 

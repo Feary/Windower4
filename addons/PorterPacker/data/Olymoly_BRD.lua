@@ -9,7 +9,7 @@ return {
     "Ayanmo Corazza +2",
     "Aya. Manopolas +2",
     "Aya. Gambieras +2",
-    "Brioso Roundlet +2",
+    "Brioso Roundlet +3",
     "Brioso Justau. +3",
     "Brioso Cuffs +3",
     "Brioso Cannions +3",

@@ -57,7 +57,7 @@ StunAbility = 	  S{"Fulmination","Breakga","Death Scissors","Hell Scissors","Ter
 					"Acheron Flame","No Quarter","Denounce","Naakual's Vengeance","Pestilent Penance","Infernal Deliverance","Malevolent Blessing",
 					"Empty Salvation","Winds of Oblivion","Bewitching Lantern","Quenching Hammer","Dread Spikes","Yama's Judgment",
 					"??? Needles","10000 Needles","4000 Needles","Slimy Proposal","Ruthlessness","Stalking Prey","Level 3 Petrify",
-					"Chymous Reek","Crowning Flatus","Gnash 'n Guttle","Infected Illusion","Dynastic Gravitas","Fulminous Fury","Tartaric Sigil",
+					"Chymous Reek","Crowning Flatus","Gnash 'n Guttle","Infected Illusion","Dynastic Gravitas","Fulminous Fury","Tartaric Sigil","Absorb-TP"
 				   }
 
 --"Raksha: Vengeance","Raksha: Judgment",

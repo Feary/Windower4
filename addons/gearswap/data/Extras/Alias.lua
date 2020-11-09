@@ -31,6 +31,8 @@ send_command('alias deliverybox input /deliverybox')
 -- Crafting Related
 send_command('alias crafting exec  '..player.name..'/gear_craft.txt')
 send_command('alias ucrafting exec  '..player.name..'/ungear_craft.txt')
+send_command('alias craft exec  '..player.name..'/gear_craft.txt')
+send_command('alias ucraft exec  '..player.name..'/ungear_craft.txt')
 send_command('alias crest exec craft/reset.txt')
 
 -- Fast Follow 

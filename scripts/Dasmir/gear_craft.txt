@@ -12,6 +12,6 @@ get Toreutic Shield satchel all
 get Tanner's Gloves satchel all
 get Magnifying Specs. satchel all
 get Goldsmith's Belt satchel all
-find mogw;wait 2
+find mog;wait 2
 input /equipset 21;wait 2
 lua unload gearswap

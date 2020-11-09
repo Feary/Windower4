@@ -1,7 +1,7 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
-        <curfields>voidstones,mystical canteens,silver a.m.a.n. vouchers stored,login points,escha silt</curfields>
+        <curfields>voidstones,escha beads,mystical canteens,silver a.m.a.n. vouchers stored,login points,escha silt</curfields>
         <curlines>1</curlines>
         <currefresh>15</currefresh>
         <curtracking>true</curtracking>

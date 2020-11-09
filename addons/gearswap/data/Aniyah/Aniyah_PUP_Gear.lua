@@ -103,7 +103,7 @@ function init_gear_sets()
 
     sets.precast.JA.Maneuver = {main="Midnights",--Animator P +1
 		neck="Bfn. Collar +1",
-		body="Karagoz Farsetto",hands="Foire Dastanas",
+		body="Karagoz Farsetto",hands="Foire Dastanas +1",
 		back="Visucius's Mantle"} 
 
     -- Waltz set (chr and vit)

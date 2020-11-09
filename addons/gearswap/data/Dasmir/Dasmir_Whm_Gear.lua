@@ -259,7 +259,7 @@ function init_gear_sets()
 		body="Ebers Bliaud +1", hands="Fanatic Gloves", lring="Ephedra Ring", rring="Ephedra Ring",
 		-- Haoma Ring
 		-- Theo. Pants +3
-		back=gear.fastcast_jse_back, legs="Theo. Pant. +1", feet="Gende. Galosh. +1"}
+		back=gear.fastcast_jse_back, legs="Th. Pantaloons +2", feet="Gende. Galosh. +1"}
 
 	sets.midcast.StatusRemoval = {main=gear.grioavolr_fc_staff, sub="Clemency Grip", ammo="Hasty Pinion +1",
 		head="Ebers Cap +1",
@@ -326,7 +326,7 @@ function init_gear_sets()
 	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {main="Bolelabunga",
 		head="Inyanga Tiara +2",
 		body="Piety Briault +1", hands="Ebers Mitts +1",
-		legs="Theo. Pant. +1", feet=gear.telchine_feet_Regen})
+		legs="Th. Pantaloons +2", feet=gear.telchine_feet_Regen})
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring"})
