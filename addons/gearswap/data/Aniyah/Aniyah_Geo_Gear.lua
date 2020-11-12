@@ -68,7 +68,7 @@ function init_gear_sets()
 	sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
 		--ammo="Impatiens",
 		--ear1="Enchntr. Earring +1",
-		head="Haruspex Hat", neck="Voltsurge Torque", ear1="Etiolation Earring", ear2="Loquac. Earring",
+		head="Haruspex Hat", neck="Voltsurge Torque", ear1="Loquac. Earring", ear2="Malignance Earring",
 		--body="Zendik Robe", 
 		Body="Helios Jacket", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring", 
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Geomancy Pants +2", feet="Amalric Nails"}
@@ -101,7 +101,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = set_combine(sets.precast.FC,{main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
 		--ammo="Impatiens",
 		--ear1="Enchntr. Earring +1",
-		head="Haruspex Hat", neck="Voltsurge Torque", ear1="Etiolation Earring", ear2="Loquac. Earring",
+		head="Haruspex Hat", neck="Voltsurge Torque", ear1="Loquac. Earring", ear2="Malignance Earring",
 		--body="Zendik Robe", 
 		Body="Helios Jacket", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring", 
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Geomancy Pants +2", feet="Amalric Nails"})
@@ -121,25 +121,24 @@ function init_gear_sets()
 
     sets.midcast.Cure = {main="Tamaxchi", sub="Sors Shield", range="Dunna",
 		--Vanya Hood
-		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Lifestorm Earring",
+		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Malignance Earring",
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Geomancy Pants +2", feet="Rubeus Boots"}
 
     sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Kaja Grip", range="Dunna",
 		-- Vanya Hood
-		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Lifestorm Earring",
+		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Malignance Earring",
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Geomancy Pants +2", feet="Rubeus Boots"}
 
     sets.midcast.LightDayCure = {main="Iridal Staff", sub="Kaja Grip", range="Dunna",
 		---- Vanya Hood
-		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Lifestorm Earring",
+		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Malignance Earring",
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Geomancy Pants +2", feet="Rubeus Boots"}
     
 	sets.midcast.Curaga = {main="Tamaxchi", sub="Sors Shield", range="Dunna",
-		-- lear="Novia Earring", rear="Lifestorm Earring",
-		head="Haruspex Hat", neck="Colossus's Torque", 
+		head="Haruspex Hat", neck="Colossus's Torque", lear="Novia Earring", rear="Malignance Earring",
 		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="Cascade Belt", legs="Geomancy Pants +2", feet="Rubeus Boots"}
 
@@ -149,19 +148,19 @@ function init_gear_sets()
 	
     sets.midcast['Elemental Magic'] = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- lear="Novio Earring",
-		head="Mall. Chapeau +2", neck="Melic Torque", lear="Regal Earring", rear="Friomisi Earring",
+		head="Mall. Chapeau +2", neck="Melic Torque", lear="Regal Earring", rear="Malignance Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 
     sets.midcast['Elemental Magic'].Resistant = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- lear="Novio Earring",
-		head="Mall. Chapeau +2", neck="Erra Pendant", lear="Regal Earring", rear="Friomisi Earring",
+		head="Mall. Chapeau +2", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 
     sets.midcast['Elemental Magic'].Fodder = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- lear="Novio Earring",
-		head="Mall. Chapeau +2", neck="Melic Torque", lear="Regal Earring", rear="Friomisi Earring",
+		head="Mall. Chapeau +2", neck="Melic Torque", lear="Regal Earring", rear="Malignance Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}		
 	
@@ -169,7 +168,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
 		main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- head="Amalric Coif", neck="Incantor Torque", lear="Novio Earring",
-		head="Jhakri Coronal +2", neck="Melic Torque", lear="Regal Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Melic Torque", lear="Regal Earring", rear="Malignance Earring",
 		-- body="Amalric Robe" hands="Amalric Gages",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		-- legs="Amalric Slops" feet="Amalric Nails"
@@ -177,7 +176,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {
 		main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- head="Amalric Coif", neck="Incantor Torque",
-		head="Jhakri Coronal +2", neck="Melic Torque", lear="Regal Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Melic Torque", lear="Regal Earring", rear="Malignance Earring",
 		-- body="Amalric Robe" hands="Amalric Gages",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		-- legs="Amalric Slops" feet="Amalric Nails"
@@ -185,7 +184,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {
 		main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- head="Amalric Coif", neck="Incantor Torque", 
-		head="Jhakri Coronal +2", neck="Melic Torque", lear="Regal Earring", rear="Friomisi Earring",
+		head="Jhakri Coronal +2", neck="Melic Torque", lear="Regal Earring", rear="Malignance Earring",
 		-- body="Amalric Robe" hands="Amalric Gages",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Shiva Ring", rring="Shiva Ring",
 		-- legs="Amalric Slops" feet="Amalric Nails"

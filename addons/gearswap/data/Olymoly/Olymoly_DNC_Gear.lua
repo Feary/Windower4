@@ -3,7 +3,7 @@ function user_job_setup()
     state.OffenseMode:options('Normal', 'SomeAcc','Acc','FullAcc','Fodder')
     state.HybridMode:options('Normal','DTLite','PDT','MDT')
     state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','FullAcc','Fodder','Proc')
-	state.IdleMode:options('Normal', 'Sphere')
+	state.IdleMode:options('Normal', 'Evole', 'Sphere')
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -82,7 +82,7 @@ function init_gear_sets()
     sets.precast.Step = {ammo="Yamarang",
 		-- Mache Earring +1 
         head="Maxixi Tiara",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Digni. Earring",
-		-- Maxixi Casaque Maxixi Bangles Chirich Ring +1
+		-- Maxixi Casaque +3 Maxixi Bangles +3 Chirich Ring +1
         body="Maxixi Casaque",hands="Maxixi Bangles",ring1="Regal Ring",ring2="Ilabrat Ring",
         back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Maxixi Tights",feet="Horos Toe Shoes"}
 		
@@ -351,36 +351,37 @@ function init_gear_sets()
     -- Idle sets
 
     sets.idle = {ammo="Staunch Tathlum",
-		-- Malignance Chapeau
-        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-        -- Malignance Tabard Malignance Gloves 
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        -- Malignance Tabard  Malignance Gloves 
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
-		
+	 sets.idle.Evasion = {ammo="Staunch Tathlum",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        -- Malignance Tabard  Malignance Gloves 
+		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
+		-- Malignance Tights
+        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}	
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
     
     -- Defense sets
 
     sets.defense.PDT = {ammo="Staunch Tathlum",
-		-- Malignance Chapeau
-        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard Malignance Gloves 
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights 
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-		-- Malignance Chapeau
-        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard Malignance Gloves 
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 		
 	sets.defense.MEVA = {ammo="Yamarang",
-		-- Malignance Chapeau
-        head="Meghanada Visor +2",neck="Warder's Charm +1",ear1="Hearty Earring",ear2="Odnowa Earring +1",
+        head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Hearty Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard Malignance Gloves 
 		body="Meg. Cuirie +2",hands="Volte Bracers",ring1="Moonbeam Ring",ring2="Purity Ring",
 		-- Malignance Tights
@@ -463,7 +464,7 @@ function init_gear_sets()
         back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Saber Dance'] = {} --legs="Horos Tights"
+    sets.buff['Saber Dance'] = {legs="Horos Tights +1"} 
     sets.buff['Climactic Flourish'] = {ammo="Charis Feather",
         -- Etoile Gorget +2
 		head="Maculele Tiara +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",

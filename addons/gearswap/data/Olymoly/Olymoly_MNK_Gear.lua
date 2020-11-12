@@ -43,8 +43,8 @@ function init_gear_sets()
 	sets.precast.JA['Hundred Fists'] = {legs="Hesychast's Hose +1"}
 	sets.precast.JA['Boost'] = {hands="Anchorite's Gloves"}
 	sets.precast.JA['Boost'].OutOfCombat = {hands="Anchorite's Gloves"} 
-	sets.precast.JA['Dodge'] = {feet="Anchorite's Gaiters"}
-	sets.precast.JA['Focus'] = {head="Anchorite's Crown"}
+	sets.precast.JA['Dodge'] = {feet="Anch. Gaiters +1"}
+	sets.precast.JA['Focus'] = {head="Anchor. Crown +1"}
 	sets.precast.JA['Footwork'] = {}-- feet="Shukuyu Sune-Ate"
 	sets.precast.JA['Counterstance'] = {feet="Hesychast's Gaiters"}
 	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas"}
@@ -67,16 +67,16 @@ function init_gear_sets()
 	sets.precast.Waltz['Healing Waltz'] = {}
 
 	sets.precast.Step = {ammo="Ginsen", 
-		-- Malignance Chapeau Mnk. Nodowa +2 
-		head="Hiza. Somen　+2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		-- Mnk. Nodowa +2 
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
-		-- Moonlight Belt  Malignance Tights Malignance Boots 
+		-- Moonlight Belt  Malignance Tights 
 		back=gear.TP_jse_back,waist="Black Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}
 		
 	sets.precast.Flourish1 = {ammo="Ginsen",
-		-- Malignance Chapeau Mnk. Nodowa +2 
-		head="Hiza. Somen　+2",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Sherida Earring",
+		-- Mnk. Nodowa +2 
+		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		-- Moonlight Belt  Malignance Tights 
@@ -339,25 +339,25 @@ function init_gear_sets()
 
 	-- Defensive melee hybrid sets
 	sets.engaged.PDT = {ammo="Ginsen", -- Staunch Tahtlum +1
-		-- Malignance Chapeau Mnk. Nodowa +2 
-		head="Hiza. Somen　+2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		--  Mnk. Nodowa +2 
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
-		-- Moonlight Belt  Malignance Tights Malignance Boots 
+		-- Moonlight Belt  Malignance Tights
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.engaged.SomeAcc.PDT = {ammo="Ginsen", -- Staunch Tahtlum +1
-		-- Malignance Chapeau Mnk. Nodowa +2 
-		head="Hiza. Somen　+2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-		-- Ashera Harness Malignance Tabard Malignance Gloves 
+		-- Mnk. Nodowa +2 
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		-- Ashera Harness Malignance Tabard 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
-		-- Moonlight Belt  Malignance Tights Malignance Boots 
+		-- Moonlight Belt  Malignance Tights  
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.engaged.Acc.PDT = {ammo="Ginsen", -- Staunch Tahtlum +1
-		-- Malignance Chapeau Mnk. Nodowa +2
-		head="Hiza. Somen　+2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-		-- Ashera Harness Malignance Tabard Malignance Gloves 
+		-- Mnk. Nodowa +2
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		-- Ashera Harness Malignance Tabard 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
-		-- Moonlight Belt  Malignance Tights Malignance Boots 
+		-- Moonlight Belt  Malignance Tights  
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.engaged.FullAcc.PDT = {ammo="Ginsen", -- Staunch Tahtlum +1
 		-- Malignance Chapeau Mnk. Nodowa +2 
@@ -367,11 +367,11 @@ function init_gear_sets()
 		-- Moonlight Belt  Malignance Tights 
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.engaged.Fodder.PDT = {ammo="Ginsen", -- Staunch Tahtlum +1
-		-- Malignance Chapeau Mnk. Nodowa +2 
-		head="Hiza. Somen　+2",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		--  Mnk. Nodowa +2 
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
-		-- Moonlight Belt  Malignance Tights Malignance Boots 
+		-- Moonlight Belt  Malignance Tights 
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
 	-- Hundred Fists/Impetus melee set mods	

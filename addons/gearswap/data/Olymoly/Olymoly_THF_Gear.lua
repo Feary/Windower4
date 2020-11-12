@@ -425,7 +425,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
 		-- Herculean Helm
         head="Haruspex Hat +1",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
-        body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Dark Ring",ring2="Defending Ring",
+        body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Tempus Fugit",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     -- Specific spells
@@ -459,8 +459,8 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum",
-        head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
-        body="Meg. Cuirie +2",hands="Turms Mittens +1",ring1="Dark Ring",ring2="Defending Ring",
+        head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
+        body="Meg. Cuirie +2",hands="Turms Mittens +1",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
 
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
@@ -469,18 +469,20 @@ function init_gear_sets()
 
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch Tathlum",
-        head="Meghanada Visor +2",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Genmei Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
+        head="Malignance Chapeau",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Genmei Earring",
+        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-       	head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
-		body="Meghanada Cuirie +2", hands="Turms Mittens +1", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Turms Leggings +1"}
+       	head="Malignance Chapeau", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
+		body="Meghanada Cuirie +2", hands="Turms Mittens +1", lring="Moonbeam Ring", rring="Defending Ring",
+		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
-		body="Meghanada Cuirie +2", hands="Turms Mittens +1", lring="Dark Ring", rring="Defending Ring",
+		head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
+		-- Turms Harness +1
+		body="Meghanada Cuirie +2", hands="Turms Mittens +1", lring="Moonbeam Ring", rring="Defending Ring",
+		-- Turms Subligar +1 
 		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Turms Leggings +1"}
 	
 

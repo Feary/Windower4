@@ -65,10 +65,10 @@ end
 -- BST gearsets
 function init_gear_sets()
 	-- PRECAST SETS
-	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm"} --head="Ankusa Helm +1"
+	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm +1"} --
 	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"} -- body="Mirke Wardecors",
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
-	sets.precast.JA.Familiar = {legs="Ankusa Trousers"}
+	sets.precast.JA.Familiar = {legs="Ankusa Trousers +1"}
 	sets.precast.JA.Tame = {head="Totemic Helm +1"}
 	sets.precast.JA.Spur = {back="Artio's Mantle",feet="Nukumi Ocreae +1"}
 	sets.SpurAxe = {main="Skullrender"}
@@ -90,7 +90,7 @@ function init_gear_sets()
 		-- Malignance Gloves
 		body="Totemic Jackcoat +1", hands="Meg. Gloves +2", ring1="Stikini Ring", ring2="Stikini Ring",
 		-- waist="Klouskap Sash", legs="Ankusa Trousers +3",
-		back=gear.FC_jse_back, legs="Tot. Trousers +2", feet="Ankusa Gaiters"}
+		back=gear.FC_jse_back, legs="Tot. Trousers +2", feet="Ankusa Gaiters +1"}
 
 	sets.precast.JA.Reward.Theta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Theta"})
 	sets.precast.JA.Reward.Zeta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Zeta"})
@@ -102,7 +102,7 @@ function init_gear_sets()
 		head="Totemic Helm +1", neck="Sanctity Necklace", ear1="Lifestorm Earring", ear2="Psystorm Earring",
 		-- Carb. Ring +1
 		body="Ankusa Jackcoat +1", hands="Ankusa Gloves +1", ring1="Stikini Ring", ring2="Stikini Ring",
-		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers", feet="Ankusa Gaiters"}
+		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers +1", feet="Ankusa Gaiters +1"}
 
 	-- CURING WALTZ - CHR 
 	sets.precast.Waltz = {}
@@ -188,7 +188,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Sherida Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
 		body="Tali'ah Manteel +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
+		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 	sets.precast.WS.SomeAcc = {--ammo="Ginsen", 
@@ -196,7 +196,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Sherida Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
 		body="Tali'ah Manteel +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
+		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 	sets.precast.WS.Acc = {--ammo="Ginsen", 
@@ -204,7 +204,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Sherida Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
 		body="Tali'ah Manteel +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
+		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 	sets.precast.WS.FullAcc = {--ammo="Ginsen", 
@@ -212,7 +212,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rrear="Sherida Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
 		body="Tali'ah Manteel +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
+		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 	sets.precast.WS.Fodder = {--ammo="Ginsen", 
@@ -220,7 +220,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rrear="Sherida Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
 		body="Tali'ah Manteel +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
+		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
 	-- Specific weaponskill sets.
@@ -258,7 +258,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rrear="Sherida Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
 		body="Tali'ah Manteel +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
+		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
 	sets.precast.WS['Calamity'] = {--ammo="Ginsen", 
@@ -266,7 +266,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rrear="Sherida Earring",
 		-- Ankusa Jackcoat +3 Totemic Gloves +3
 		body="Tali'ah Manteel +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
+		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
 	sets.precast.WS['Onslaught'] = {--ammo="Ginsen", 
@@ -274,7 +274,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rrear="Sherida Earring",
 		-- Totemic Gloves +3  lring="Epaminondas's Ring", rring="Ilabrat Ring",
 		body="Tali'ah Manteel +2", hands="Meg. Gloves +2",  lring="Regal Ring", rring="Petrov Ring",
-		-- legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
+		-- legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 		
 	sets.precast.WS['Onslaught'].SomeAcc = set_combine(sets.precast.WS, {})
@@ -284,13 +284,13 @@ function init_gear_sets()
 	
 	sets.precast.WS['Primal Rend'] = {--ammo="Pemphredo Tathlum",
 		-- Ankusa Helm +3 Bst. Collar +2
-		head="Ankusa Helm",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Sherida Earring",
+		head="Ankusa Helm +1",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Sherida Earring",
 		-- Sacro Breastplate 
 		body="Tali'ah Manteel +2",hands="Leyline Gloves",ring1="Shiva Ring",ring2="Rufescent Ring",
 		back=gear.magic_ws_jse_back,waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {--ammo="Pemphredo Tathlum",
-		head="Ankusa Helm",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
+		head="Ankusa Helm +1",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
 		body="Tali'ah Manteel +2",hands="Leyline Gloves",ring1="Shiva Ring",ring2="Rufescent Ring",
 		back=gear.magic_ws_jse_back,waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"})
 
@@ -355,7 +355,7 @@ function init_gear_sets()
 		-- head="Anwig Salade",
 		head="Meghanada Visor +2", neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +1",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Vocane Ring",
-		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters"}
+		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +1"}
 
 	-- Pet Engaged Only - Path C
 	sets.idle.Pet.Engaged = {main="Skullrender", -- sub="Skullrender", Ammo="Voluspa Tathlum",

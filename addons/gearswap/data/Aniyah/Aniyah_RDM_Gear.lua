@@ -161,7 +161,7 @@ function init_gear_sets()
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring
 		body="Viti. Tabard +1", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Sirona's Ring",
 		-- Atrophy Tights +3 Vanya Clogs  feet="Kaykaus Boots"
-		back=gear.Cure_jse_back, waist="Hachirin-no-Obi", legs="Atrophy Tights +2", feet="Carmine Greaves"}
+		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Atrophy Tights +2", feet="Carmine Greaves"}
 	
 		--Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {main="Tamaxchi", sub="Thuellaic Ecu +1", ammo="Regal Gem",
@@ -170,7 +170,7 @@ function init_gear_sets()
 		-- Kaykaus Bliaut Cuffs Haoma's Ring Sirona's Ring
 		body="Viti. Tabard +1", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		-- Atrophy Tights +3 Vanya Clogs
-		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Atrophy Tights +2", feet="Carmine Greaves"}
+		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Atrophy Tights +2", feet="Carmine Greaves"}
 		
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {
 		--neck="Debilis Medallion",hands="Hieros Mittens",

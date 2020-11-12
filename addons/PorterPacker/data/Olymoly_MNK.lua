@@ -1,7 +1,7 @@
 return {
     "Tantra Tathlum",
 	"Kaja Knuckles",
-	"Anchorite's Crown",
+	"Anchor. Crown +1",
 	"Anch. Cyclas +1",
     "Anchorite's Gloves",
     "Anchorite's Hose +1",
@@ -11,7 +11,7 @@ return {
 	"Bhikku Gloves",
     "Bhikku Hose",
     "Bhikku Gaiters",
-    "Hesychast's Crown",
+    "Hesychast's Crown +1",
 	"Hesychast's Cyclas",
 	"Hesychast's Gloves",
 	"Hesychast's Hose +1",
