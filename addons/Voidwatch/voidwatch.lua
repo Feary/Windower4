@@ -35,13 +35,13 @@ local bags = {
 }
 
 local pulse_items = {
-    --[18457] = 'Murasamemaru',
-    --[18542] = 'Aytanri',
-    --[18904] = 'Ephemeron',
-    --[19144] = 'Coruscanti',
-    --[19145] = 'Asteria',
-    --[19174] = 'Borealis',
-    --[19794] = 'Delphinius',
+    [18457] = 'Murasamemaru',
+    [18542] = 'Aytanri',
+    [18904] = 'Ephemeron',
+    [19144] = 'Coruscanti',
+    [19145] = 'Asteria',
+    [19174] = 'Borealis',
+    [19794] = 'Delphinius',
 }
 
 local cells = {
@@ -209,7 +209,7 @@ local function start_fight(id, data)
     if (id == 0x5b) and conditions['rift'] then
         log('start fight')
         local p = packets.parse('outgoing', data)
-        p['Option Index'] = 0x51
+        p['Option Index'] = 0x01
         p['_unknown1'] = 0
         conditions['rift'] = false
         conditions['escape'] = false
