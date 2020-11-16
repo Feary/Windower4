@@ -341,55 +341,55 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Nisroch Jerkin", hands="Adhemar Wrist. +1 Path C 
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
+		-- body="Nisroch Jerkin", Malignance Tabard Malignance Gloves
         body="Mummu Jacket +2", hands="Adhemar Wristbands",ring1="Dingir Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Legs="Malignance Tights
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 	
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Laksa. Frac +3",
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
+		-- Malignance Tabard Malignance Gloves
         body="Mummu Jacket +2", hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
-		-- waist="K. Kachina Belt +1" legs="Laksa. Trews +3",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
+		-- waist="K. Kachina Belt +1" legs="Malignance Tights
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 	
     sets.midcast.RA.Crit = {ammo=gear.RAbullet, 
         head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- body="Nisroch Jerkin", hands="Adhemar Wrist. +1" Path C 
-        body="Mummu Jacket +2", hands="Mummu Wrists +2",ring1="Mummu Ring", rring="Begrudging Ring", 
-		-- waist="K. Kachina Belt +1" feet="Osh. Leggings +1"
-        back=gear.crit_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Darraigner's Brais",feet="Meg. Jam. +2"}
+        body="Meg. Cuirie +2", hands="Mummu Wrists +2",ring1="Mummu Ring", rring="Begrudging Ring", 
+		-- waist="K. Kachina Belt +1" Gerdr Belt feet="Osh. Leggings +1"
+        back=gear.crit_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Darraigner's Brais",feet="Malignance Boots"}
 	
 	sets.midcast.RA.STP = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",rear="Dedition Earring",
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",rear="Dedition Earring",
 		-- body="Nisroch Jerkin", hands="Adhemar Wrist. +1 Path C lring="Chirich Ring +1", 
-        body="Mummu Jacket +2", hands="Adhemar Wristbands",ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt", legs="Adhemar Kecks +1", feet="Adhe. Gamashes +1"}
+        body="Mummu Jacket +2", hands="Adhemar Wristbands",ring1="Dingir Ring",ring2="Ilabrat Ring",
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt", legs="Adhemar Kecks +1", feet="Malignance Boots"}
 	
 	sets.midcast.RA.Armageddon = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- body="Nisroch Jerkin", hands="Adhemar Wrist. +1 Path C 
         body="Mummu Jacket +2", hands="Adhemar Wristbands",lring="Dingir Ring", ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt", legs="Adhemar Kecks +1", feet="Adhe. Gamashes +1"}
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt", legs="Adhemar Kecks +1", feet="Malignance Boots"}
 	
     sets.midcast.RA.Armageddon.Acc = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- body="Laksa. Frac +3",
-        body="Mummu Jacket +2", hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
-		-- waist="K. Kachina Belt +1" legs="Laksa. Trews +3",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Meg. Jam. +2"}
+        body="Mummu Jacket +2", hands="Meg. Gloves +2",ring1="Dingir Ring",ring2="Ilabrat Ring",
+		-- waist="K. Kachina Belt +1" legs="Malignance Tights",
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 	
 	sets.midcast.RA.Armageddon.Crit = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Nisroch Jerkin", Path C 
-        body="Mummu Jacket +2", hands="Mummu Wrists +2",ring1="Mummu Ring",rring="Begrudging Ring", 
+        head="Mummu Bonnet +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
+		-- body="Nisroch Jerkin", 
+        body="Meg. Cuirie +2", hands="Mummu Wrists +2",ring1="Mummu Ring",rring="Begrudging Ring", 
 		-- waist="K. Kachina Belt +1" feet="Osh. Leggings +1"
-        back=gear.crit_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Darraigner's Brais",feet="Meg. Jam. +2"}
+        back=gear.crit_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Darraigner's Brais",feet="Mummu Gamash. +2"}
 	
 	sets.midcast.RA.Armageddon.STP = {ammo=gear.RAbullet,
-		--rear="Dedition Earring",
-        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Nisroch Jerkin", hands="Adhemar Wrist. +1" Path C lring="Chirich Ring +1", 
+        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring", ear2="Dedition Earring",
+		-- body="Malignance Tabard",  hands="Malignance Gloves", lring="Chirich Ring +1", 
         body="Mummu Jacket +2", hands="Adhemar Wrist. +1" ,ring1="Regal Ring",ring2="Ilabrat Ring",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Adhemar Kecks +1", feet="Adhe. Gamashes +1"}
 		
@@ -436,31 +436,50 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Genmei Earring", rear="Etiolation Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Meg. Jam. +2"}
+		-- lear="Eabani Earring", 
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Genmei Earring", rear="Etiolation Earring",
+		-- Malignance Tabard  Malignance Gloves
+        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Vengeful Ring",ring2="Defending Ring",
+		-- Malignance Tights
+        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 		
     sets.idle.Refresh = {ammo=gear.RAbullet,
-		head="Rawhide Mask", neck="Loricate Torque +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-        body="Mekosu. Harness",hands="Meg. Gloves +2",ring1="Dark Ring",ring2="Defending Ring",
+		head="Rawhide Mask", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
+		-- Malignance Gloves
+		body="Mekosu. Harness",hands="Meg. Gloves +2",ring1="Vengeful Ring",ring2="Defending Ring",
 		--legs="Rawhide Trousers",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2", feet="Malignance Boots"}
+    
+	sets.idle.Regen = {ammo=gear.RAbullet,
+		head="Rawhide Mask", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Ethereal Earring",
+		-- Malignance Gloves
+		body="Mekosu. Harness",hands="Meg. Gloves +2",ring1="Vengeful Ring",ring2="Defending Ring",
+		-- legs="Rawhide Trousers",
+        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2", feet="Malignance Boots"}
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Genmei Earring", rear="Etiolation Earring",
-		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		head="Malignance Chapeau", neck="Loricate Torque +1", lear="Genmei Earring", rear="Etiolation Earring",
+		-- Malignance Tabard  Malignance Gloves
+		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Vengeful Ring", rring="Defending Ring",
+		-- Malignance Tights
+		back="Moonbeam Cape", waist="Flume Belt", legs="Meg. Chausses +2", feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
-		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
+		-- lear="Sanare Earring", rear="Eabani Earring",
+		head="Malignance Chapeau", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		-- Malignance Tabard  Malignance Gloves
+		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Vengeful Ring", rring="Defending Ring",
+		-- Malignance Tights
+		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
 
     sets.defense.MEVA = {ammo=gear.RAbullet,
-		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
-		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
+		-- lear="Sanare Earring", rear="Eabani Earring",
+		head="Malignance Chapeau", neck="Warder's Charm +1", lear="Merman's Earring", rear="Etiolation Earring",
+		-- Malignance Tabard  Malignance Gloves
+		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Vengeful Ring", rring="Defending Ring",
+		-- Malignance Tights
+		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Volte Bracers", waist="Chaac Belt"})

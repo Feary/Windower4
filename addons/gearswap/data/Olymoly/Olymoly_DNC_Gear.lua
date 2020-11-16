@@ -96,7 +96,7 @@ function init_gear_sets()
     sets.precast.JA.Provoke = sets.Enmity
 
     sets.precast.Flourish1 = {}
-    sets.precast.Flourish1['Violent Flourish'] = {ammo="Yamarang",
+    sets.precast.Flourish1['Violent Flourish'] = {ammo="Yadsmarang",
         head="Mummu Bonnet +2",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Digni. Earring",
         -- Horo Casaque +3
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Stikini Ring",ring2="Stikini Ring",
@@ -261,7 +261,7 @@ function init_gear_sets()
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Charis Feather",
         -- Etoile Gorget +2 Odr Earring
 		head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-        -- Maxixi Bangles +3
+        -- lring="Gere Ring"
 		body="Meg. Cuirie +2",hands="Mummu Wrists +2",ring1="Ilabrat Ring",ring2="Regal Ring",
 		-- Horo Tights +3
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"})
@@ -289,40 +289,40 @@ function init_gear_sets()
 	sets.precast.WS['Evisceration'].Fodder = set_combine(sets.precast.WS['Evisceration'], {})
 	
     sets.precast.WS['Pyrrhic Kleos'] = set_combine(sets.precast.WS, {ammo="Ginsen",
-        -- Etoile Gorget +2 Mache Earring +1
+        -- Mache Earring +1
 		head="Lustratio Cap +1",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
-        -- Gere Ring 
+        -- Horo Casaque +3 Gere Ring 
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epaminondas's Ring",ring2="Epona's Ring",
 		-- Horo Tights +3
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet="Lustra. Leggings +1"})
     sets.precast.WS['Pyrrhic Kleos'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="Ginsen",
-        -- Etoile Gorget +2 Mache Earring +1
+        -- Mache Earring +1
 		head="Lustratio Cap +1",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
-        -- Gere Ring 
+        -- Horo Casaque +3 Gere Ring 
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epaminondas's Ring",ring2="Epona's Ring",
 		-- Horo Tights +3
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet="Lustra. Leggings +1"})
     sets.precast.WS['Pyrrhic Kleos'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Ginsen",
-        -- Etoile Gorget +2 Mache Earring +1
+        -- Mache Earring +1
 		head="Lustratio Cap +1",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
-        -- Gere Ring 
+        -- Horo Casaque +3 Gere Ring 
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epaminondas's Ring",ring2="Epona's Ring",
 		-- Horo Tights +3
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet="Lustra. Leggings +1"})
 	sets.precast.WS['Pyrrhic Kleos'].FullAcc = set_combine(sets.precast.WS.FullAcc, {ammo="Ginsen",
         -- Etoile Gorget +2 Mache Earring +1
 		head="Lustratio Cap +1",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
-        -- Gere Ring 
+        -- Horo Casaque +3 Gere Ring 
 		body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epaminondas's Ring",ring2="Epona's Ring",
 		-- Horo Tights +3
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet="Lustra. Leggings +1"})
 	sets.precast.WS['Pyrrhic Kleos'].Fodder = set_combine(sets.precast.WS['Pyrrhic Kleos'], {})
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Pemphredo Tathlum",
-        head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
+        head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
         body="Samnuha Coat",hands="Leyline Gloves",ring1="Epaminondas's Ring",ring2="Shiva Ring +1",
 		-- Horo Tights +3 
-        back=gear.wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_wsd_legs,feet=gear.herculean_nuke_feet}
+        back=gear.wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet=gear.herculean_nuke_feet}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
@@ -345,7 +345,7 @@ function init_gear_sets()
     
     -- Resting sets
     sets.resting = {}
-    sets.ExtraRegen = {}
+    sets.ExtraRegen = {body="Turms Harness",}
     
 
     -- Idle sets
@@ -358,8 +358,8 @@ function init_gear_sets()
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 	 sets.idle.Evasion = {ammo="Staunch Tathlum",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-        -- Malignance Tabard  Malignance Gloves 
-		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
+        -- Malignance Tabard Malignance Gloves 
+		body="Turms Harness",hands="Turms Mittens +1",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}	
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
@@ -367,31 +367,32 @@ function init_gear_sets()
     -- Defense sets
 
     sets.defense.PDT = {ammo="Staunch Tathlum",
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        head="Malignance Chapeau", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Odnowa Earring",
         -- Malignance Tabard Malignance Gloves 
-		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Meg. Cuirie +2", hands="Meg. Gloves +2", ring1="Defending Ring", ring2="Moonbeam Ring",
 		-- Malignance Tights 
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-        -- Malignance Tabard Malignance Gloves 
-		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
+        head="Malignance Chapeau",neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Odnowa Earring",
+		-- Turms Harness +1
+		body="Turms Harness",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Purity Ring",
 		-- Malignance Tights
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 		
 	sets.defense.MEVA = {ammo="Yamarang",
-        head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Hearty Earring",ear2="Odnowa Earring +1",
-        -- Malignance Tabard Malignance Gloves 
-		body="Meg. Cuirie +2",hands="Volte Bracers",ring1="Moonbeam Ring",ring2="Purity Ring",
+		-- rear="Sanare Earring"
+        head="Turms Cap +1",neck="Warder's Charm +1",ear1="Hearty Earring",ear2="Odnowa Earring +1",
+        -- Turms Harness +1
+		body="Turms Harness", hands="Turms Mittens +1", ring1="Defending Ring",ring2="Purity Ring",
 		-- Malignance Tights
-        back=gear.stp_jse_back,waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
+        back=gear.stp_jse_back,waist="Flume Belt",legs="Mummu Kecks +2", feet="Turms Leggings +1"}
 
     sets.Kiting = {feet="Skadi's Jambeaux"}
 
     -- Engaged sets
 
-    -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
+    -- Variations for TP weapon and (optional) offense/defense mod6es.  Code will fall back on previous
     -- sets if more refined versions aren't defined.
     -- If you create a set with both offense and defense modes, the offense mode should be first.
     -- EG: sets.engaged.Dagger.Accuracy.Evasion

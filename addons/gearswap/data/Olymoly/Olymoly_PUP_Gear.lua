@@ -318,28 +318,25 @@ function init_gear_sets()
 
     -- Defense sets
     sets.defense.PDT = {
-		-- Malignance Chapeau
-        head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
         -- Malignance Tabard Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2=gear.DarkRing,
-        -- Maliganance Tights  Maliganance Boots 
-		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Maliganance Tights   
+		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Maliganance Boots"}
 
     sets.defense.MDT = {
-        	-- Malignance Chapeau
-        head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
         -- Malignance Tabard Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2=gear.DarkRing,
-        -- Maliganance Tights  Maliganance Boots 
-		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Maliganance Tights  
+		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Maliganance Boots"}
 		
     sets.defense.MEVA = {
-      	-- Malignance Chapeau
-        head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
         -- Malignance Tabard Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Volte Bracers",ring1="Defending Ring",ring2="Purity Ring",
-        -- Maliganance Tights  Maliganance Boots 
-		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Maliganance Tights   
+		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Maliganance Boots"}
 
     sets.Kiting = {feet="Hermes' Sandals"}
 
@@ -356,83 +353,79 @@ function init_gear_sets()
         head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- gear.herculean_ta_hands Gere Ring
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        -- Moonlight Belt +1 Ryuo Hakama +1 gear.herculean_ta_feet
-		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Moonlight Belt +1 Ryuo Hakama +1 
+		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet=gear.herculean_ta_feet}
     sets.engaged.Acc = {
-      -- Ryuo Somen +1 Mache Earring +1 ear2="Telos Earring",
+      -- Ryuo Somen +1 Mache Earring +1 
         head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- gear.herculean_ta_hands Gere Ring
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        -- Moonlight Belt +1 Ryuo Hakama +1 gear.herculean_ta_feet
-		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Moonlight Belt +1 Ryuo Hakama +1 
+		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet=gear.herculean_ta_feet}
     sets.engaged.FullAcc = {
-       -- Ryuo Somen +1 Mache Earring +1 ear2="Telos Earring",
+       -- Ryuo Somen +1 Mache Earring +1 
         head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- gear.herculean_ta_hands Gere Ring
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        -- Moonlight Belt +1 Ryuo Hakama +1 gear.herculean_ta_feet
-		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Moonlight Belt +1 Ryuo Hakama +1 
+		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet=gear.herculean_ta_feet}
 	sets.engaged.Fodder = {
        -- Ryuo Somen +1 Mache Earring +1 ear2="Telos Earring",
         head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- gear.herculean_ta_hands Gere Ring
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        -- Moonlight Belt +1 Ryuo Hakama +1 gear.herculean_ta_feet
-		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Moonlight Belt +1 Ryuo Hakama +1 
+		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet=gear.herculean_ta_feet}
     
 	sets.engaged.DT = {
-        -- Ryuo Somen +1 Mache Earring +1 ear2="Telos Earring",
+        -- Ryuo Somen +1 Mache Earring +1
         head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- gear.herculean_ta_hands Gere Ring
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
         -- Moonlight Belt +1 Ryuo Hakama +1 gear.herculean_ta_feet
-		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet=gear.herculean_ta_feet}
     sets.engaged.Acc.DT = {
-        -- Ryuo Somen +1 Mache Earring +1 ear2="Telos Earring",
+        -- Ryuo Somen +1 Mache Earring +1 
         head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- gear.herculean_ta_hands Gere Ring
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        -- Moonlight Belt +1 Ryuo Hakama +1 gear.herculean_ta_feet
-		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Moonlight Belt +1 Ryuo Hakama +1 
+		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet=gear.herculean_ta_feet}
     sets.engaged.FullAcc.DT = {
-      -- Ryuo Somen +1 Mache Earring +1 ear2="Telos Earring",
+      -- Ryuo Somen +1 Mache Earring +1
         head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- gear.herculean_ta_hands Gere Ring
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        -- Moonlight Belt +1 Ryuo Hakama +1 gear.herculean_ta_feet
-		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Moonlight Belt +1 Ryuo Hakama +1 
+		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet=gear.herculean_ta_feet}
     sets.engaged.Fodder.DT = {
-       -- Ryuo Somen +1 Mache Earring +1 ear2="Telos Earring",
+       -- Ryuo Somen +1 Mache Earring +1 
         head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- gear.herculean_ta_hands Gere Ring
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        -- Moonlight Belt +1 Ryuo Hakama +1 gear.herculean_ta_feet
-		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        -- Moonlight Belt +1 Ryuo Hakama +1 
+		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Tali'ah Sera. +2",feet=gear.herculean_ta_feet}
 		
     sets.engaged.Pet = {
-        -- ear1="Cessance Earring",ear2="Telos Earring",
-		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Brutal Earring",
+		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- Pitre Tobe +3 He. Mittens +1
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Varar Ring +1",
         -- Moonlight Belt +1 Heyoka Subligar +1 He. Leggings +1
 		back=gear.Pet_TP_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
     sets.engaged.Acc.Pet = {
-        -- ear1="Cessance Earring",ear2="Telos Earring",
-		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Brutal Earring",
+		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- Pitre Tobe +3 He. Mittens +1
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Varar Ring +1",
         -- Moonlight Belt +1 Heyoka Subligar +1 He. Leggings +1
 		back=gear.Pet_TP_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
     sets.engaged.FullAcc.Pet = {
-         -- ear1="Cessance Earring",ear2="Telos Earring",
-		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Brutal Earring",
+		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
 		-- Pitre Tobe +3 He. Mittens +1
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Varar Ring +1",
         -- Moonlight Belt +1 Heyoka Subligar +1 He. Leggings +1
 		back=gear.Pet_TP_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
     sets.engaged.Fodder.Pet = {
-          -- ear1="Cessance Earring",ear2="Telos Earring",
-		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Brutal Earring",
+		head="Tali'ah Turban +2",neck="Shulmanu Collar", ear1="Cessance Earring",ear2="Telos Earring",
 		-- Pitre Tobe +3 He. Mittens +1
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Varar Ring +1",
         -- Moonlight Belt +1 Heyoka Subligar +1 He. Leggings +1

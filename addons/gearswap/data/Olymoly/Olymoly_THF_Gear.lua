@@ -481,7 +481,7 @@ function init_gear_sets()
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		-- Turms Harness +1
-		body="Meghanada Cuirie +2", hands="Turms Mittens +1", lring="Moonbeam Ring", rring="Defending Ring",
+		body="Turms Harness", hands="Turms Mittens +1", lring="Moonbeam Ring", rring="Defending Ring",
 		-- Turms Subligar +1 
 		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Turms Leggings +1"}
 	

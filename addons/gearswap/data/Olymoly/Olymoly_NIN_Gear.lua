@@ -43,9 +43,9 @@ function init_gear_sets()
         back="Moonlight Cape",waist="Goading Belt",legs=gear.herculean_dt_legs,feet="Amm Greaves"}
 
     -- Precast sets to enhance JAs
-    sets.precast.JA['Mijin Gakure'] = {} --legs="Mochizuki Hakama"
+    sets.precast.JA['Mijin Gakure'] = {legs="Mochizuki Hakama"}
     sets.precast.JA['Futae'] = {hands="Hattori Tekko +1"}
-    sets.precast.JA['Sange'] = {} --legs="Mochizuki Chainmail"
+    sets.precast.JA['Sange'] = {legs="Mochizuki Chainmail"}
     sets.precast.JA['Provoke'] = sets.Enmity
     sets.precast.JA['Warcry'] = sets.Enmity
 
@@ -60,12 +60,12 @@ function init_gear_sets()
 
     -- Set for acc on steps, since Yonin drops acc a fair bit
     sets.precast.Step = {ammo="Yamarang",
-        head="Dampening Tam",neck="Moonbeam Nodowa",ear1="Mache Earring +1",ear2="Telos Earring",
+        head="Malignance Chapeau",neck="Moonbeam Nodowa",ear1="Mache Earring +1",ear2="Telos Earring",
         body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back="Andartia's Mantle",waist="Olseni Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
     sets.precast.Flourish1 = {ammo="Yamarang",
-        head="Dampening Tam",neck="Moonbeam Nodowa",ear1="Gwati Earring",ear2="Digni. Earring",
+        head="Malignance Chapeau",neck="Moonbeam Nodowa",ear1="Gwati Earring",ear2="Digni. Earring",
         body="Mekosu. Harness",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back="Andartia's Mantle",waist="Olseni Belt",legs="Hattori Hakama +1",feet="Malignance Boots"}
 
@@ -184,40 +184,36 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo="Staunch Tathlum",
 		--ear2="Sanare Earring",
-        --head="Malignance Chapeau",ear2="Sanare Earring",
-		 head="Dampening Tam", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
-        --body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-         body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Dark Ring",
-		--legs="Malignance Tights",feet="Malignance Boots"
-		back="Moonbeam Cape",waist="Flume Belt", legs="Mummu Kecks +2", feet="Amm Greaves"}
+		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
+        --body="Malignance Tabard",hands="Malignance Gloves",
+         body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
+		--legs="Malignance Tights",
+		back="Moonbeam Cape",waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
     sets.defense.PDT = {ammo="Staunch Tathlum",
 		--ear2="Sanare Earring",
-        --head="Malignance Chapeau",ear2="Sanare Earring",
-		 head="Dampening Tam", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
-        --body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-         body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Dark Ring",
-		--legs="Malignance Tights",feet="Malignance Boots"
-		back="Moonbeam Cape",waist="Flume Belt", legs="Mummu Kecks +2", feet="Amm Greaves"}
+		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
+        --body="Malignance Tabard",hands="Malignance Gloves",
+         body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
+		--legs="Malignance Tights",
+		back="Moonbeam Cape",waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
 		--ear2="Sanare Earring",
-        --head="Malignance Chapeau",ear2="Sanare Earring",
-		 head="Dampening Tam", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
-        --body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-         body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Dark Ring",
-		--legs="Malignance Tights",feet="Malignance Boots"
-		back="Moonbeam Cape",waist="Flume Belt", legs="Mummu Kecks +2", feet="Amm Greaves"}
+		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
+        --body="Malignance Tabard",hands="Malignance Gloves",
+         body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
+		--legs="Malignance Tights",
+		back="Moonbeam Cape",waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
 
-	sets.defense.MEVA = {ammo="Staunch Tathlum",
-		--ear2="Sanare Earring",
-        --head="Malignance Chapeau",ear2="Sanare Earring",
-		 head="Dampening Tam", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Etiolation Earring",
-        --body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-         body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Dark Ring",
-		--legs="Malignance Tights",feet="Malignance Boots"
-		back="Moonbeam Cape",waist="Flume Belt", legs="Mummu Kecks +2", feet="Amm Greaves"}
+	sets.defense.MEVA = ammo="Staunch Tathlum",
+		-- ear2="Sanare Earring",
+		head="Malignance Chapeau", neck="Warder's Charm +1",ear1="Genmei Earring",ear2="Etiolation Earring",
+        -- body="Malignance Tabard",hands="Malignance Gloves",
+         body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
+		-- legs="Malignance Tights"
+		back="Moonbeam Cape",waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
 
 
     sets.Kiting = {feet="Danzo Sune-Ate"}

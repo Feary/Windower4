@@ -576,7 +576,7 @@ function init_gear_sets()
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
 	sets.defense.MEVA = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-      	head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
+      	head="Aya. Zucchetto +2", neck="Warden's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
