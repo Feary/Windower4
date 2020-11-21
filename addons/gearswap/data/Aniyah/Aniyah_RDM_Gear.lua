@@ -8,7 +8,7 @@ function user_setup()
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	-- Mandau Almace Sequence 
-	state.Weapons:options('None','Sword','Dagger','Club','DualWeapons','DualDagger','DualClubs')
+	state.Weapons:options('None','Naegling','DualWeapons','DualWeaponsAcc','DualEvisceration','DualClubs','DualAeolian','DualProcDaggers','EnspellOnly')
 	
 	-- Augmented Capes
 	-- Skill+ 10 Duration 10-20
@@ -18,8 +18,9 @@ function user_setup()
 	gear.FC_jse_back =		{name="Sucellos's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}}
 	gear.Cure_jse_back = 	{name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Cure" potency +10%','Spell interruption rate down-10%',}}
 	
-	gear.Cape_TP = {name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}}
-	gear.Cape_WS = {name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
+	gear.dw_jse_back = 		{name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}}			
+	gear.stp_jse_back = 	{name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}}
+	gear.ws_jse_back = 			{name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
 	
 	-- Waist Replacements
 	gear.obi_cure_back = gear.Cure_jse_back
@@ -92,7 +93,7 @@ function init_gear_sets()
 		head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- lring="Epaminodas's Ring",
 		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Petrov Ring", 
-		back=gear.Cape_WS, waist="Windbuffet Belt", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
+		back=gear.ws_jse_back, waist="Windbuffet Belt", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {})
@@ -103,7 +104,7 @@ function init_gear_sets()
 		-- Taeon Tabard Taeon Gloves lring="Epaminodas's Ring",
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Petrov Ring",
 		--  Taeon Tights
-		back=gear.Cape_WS, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Thereoid Greaves"})
+		back=gear.ws_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Thereoid Greaves"})
 
 	sets.precast.WS['Savage Blade'] = {--ammo="Ginsen",
 		-- Despair Helm Caro Necklace 
@@ -111,14 +112,14 @@ function init_gear_sets()
 		-- Despair Mail Atrophy Gloves +3 lring="Epaminodas's Ring",
 		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Petrov Ring",
 		-- Despair Trousers Despair Greaves
-		back=gear.Cape_WS, waist="Prosilio Belt", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
+		back=gear.ws_jse_back, waist="Prosilio Belt", legs="Carmine Cuisses +1", feet="Carmine Greaves"}
 
 	sets.precast.WS['Sanguine Blade'] = {ammo="Regal Gem",
 		--head="Carmine Mask +1", lear="Crematio Earring",
 		head="Pixie Hairpin +1", neck="Fotia Gorget", lear="Regal Earring", rear="Friomisi Earring",
 		-- lring="Epaminodas's Ring", 
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Archon Ring", rring="Shiva Ring",
-		back=gear.Cape_WS, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Carmine Greaves"}
+		back=gear.ws_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Carmine Greaves"}
 
 	-- Midcast Sets
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {legs="Volte Hose", waist="Chaac Belt"})
@@ -485,6 +486,34 @@ function init_gear_sets()
  	sets.weapons.DualDagger = {main="Kaja Knife", sub="Maxentius"} -- Kaja Knife
 	sets.weapons.DualClubs = {main="Maxentius", sub="Kaja Rod"}
 
+	-- Weapons sets
+	sets.weapons.Sword = {main="Naegling", sub="Genmei Shield"}
+	sets.weapons.Mandau = {main="Mandau", sub="Genmei Shield"}
+	sets.weapons.Sequence = {main="Sequence",sub="Genmei Shield"}
+	sets.weapons.Almace = {main="Almace",sub="Genmei Shield"}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Kaja Knife"}
+	sets.weapons.DualDagger = {main="Mandau", sub="Kaja Knife"}
+	sets.weapons.DualClubs = {main="Maxentius", sub="Kaja Rod"}
+	-- Sequence
+	sets.weapons.DualAlmace = {main="Almace",sub="Naegling"}
+	sets.weapons.Sequence = {main="Sequence",sub="Ammurapi Shield"}
+	sets.weapons.Naegling = {main="Naegling",sub="Ammurapi Shield"}
+	sets.weapons.Almace = {main="Almace",sub="Ammurapi Shield"}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Kaja Sword"}
+	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Almace"}
+	sets.weapons.DualEvisceration = {main="Kaja Knife",sub="Almace"}
+	sets.weapons.DualAeolian = {main="Kaja Knife",sub="Maxentius"}
+	sets.weapons.DualProcDaggers = {main="Blurred Knife +1",sub="Atoyac"}
+	sets.weapons.EnspellOnly = {main="Norgish Dagger",sub="Aern Dagger",range="Kaja Bow",ammo="Beetle Arrow"}
+	sets.weapons.DualClubs = {main="Maxentius",sub="Kaja Rod"}
+	sets.weapons.DualBlackHalo = {main="Maxentius",sub="Kaja Rod"}
+	sets.weapons.DualAlmace = {main="Almace",sub="Naegling"}
+	sets.weapons.DualBow = {main="Naegling",sub="Kaja Knife",range="Kaja Bow"}
+	sets.weapons.BowMacc = {range="Kaja Bow",ammo=empty}
+	
+    sets.buff.Sublimation = {} -- waist="Embla Sash"
+    sets.buff.DTSublimation = {} -- waist="Embla Sash"
+
 	-- Engaged sets
 
 	-- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
@@ -495,35 +524,91 @@ function init_gear_sets()
 	-- Normal melee group
 	--	sets.engaged = {ammo="Ginsen",
 	--	head="Aya. Zucchetto +2",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-	--	body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Petrov Ring",
-	--	back="Bleating Mantle",waist="Windbuffet Belt",legs="Carmine Cuisses +1",feet="Carmine Greaves"}
+	--	body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring", ring2="Ilabrat Ring",
+	--	back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
 
-	sets.engaged = {--ammo="Ginsen",
-		-- ear2="Cessance Earring",
-		head="Aya. Zucchetto +2",neck="Sanctity Necklace",ear1="Sherida Earring", ear2="Brutal Earring",
+	sets.engaged = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",\
 		-- Chirich Ring +1 Chirich Ring +1
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Rajas Ring",ring2="Petrov Ring",
-		back=gear.Cape_TP,waist="Windbuffet Belt",legs="Carmine Cuisses +1",feet="Carmine Greaves"}
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
-	sets.engaged.DW = {--ammo="Ginsen",
-		-- ear2="Cessance Earring",
-		head="Aya. Zucchetto +2",neck="Sanctity Necklace",ear1="Sherida Earring", ear2="Brutal Earring",
+	sets.engaged.Acc = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",\
 		-- Chirich Ring +1 Chirich Ring +1
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Rajas Ring",ring2="Petrov Ring",
-		--
-		back=gear.Cape_TP,waist="Windbuffet Belt",legs="Carmine Cuisses +1",feet="Carmine Greaves"}
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
-	sets.engaged.PhysicalDef = {--ammo="Ginsen",
-		-- ear2="Cessance Earring",
-		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Sherida Earring", ear2="Brutal Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Vocane Ring",ring2="Defending Ring",
-		back=gear.Cape_TP,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+	sets.engaged.FullAcc = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",\
+		-- Chirich Ring +1 Chirich Ring +1
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+
+	sets.engaged.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
+		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+		back="Moonlight Cape",waist="Windbuffet Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
-	sets.engaged.MagicalDef = {--ammo="Ginsen",
-		-- ear2="Cessance Earring",
-		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Sherida Earring", ear2="Brutal Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Vocane Ring",ring2="Defending Ring",
-		back=gear.Cape_TP,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+	sets.engaged.Acc.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
+		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+		
+	sets.engaged.FullAcc.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
+		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+		
+	sets.engaged.EnspellOnly = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		-- Dls. Torque +2 ear2="Hollow Earring",
+		head="Umuthi Hat",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",
+		-- Malignance Tabard
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Metamor. Ring +1",ring2="Ramuh Ring +1",
+		-- Orpheus's Sash Malignance Tights 
+		back=gear.dw_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2",feet="Malignance Boots"}
+		
+	sets.engaged.DW = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		-- ear1="Eabani Earring"
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",
+		-- body="Malignance Tabard",hands="Malignance Gloves", Chirich Ring +1 Chirich Ring +1
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		
+	sets.engaged.DW.Acc = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		-- ear1="Eabani Earring"
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",
+		-- body="Malignance Tabard",hands="Malignance Gloves", Chirich Ring +1 Chirich Ring +1
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		
+	sets.engaged.DW.FullAcc = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		-- ear1="Eabani Earring"
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",
+		-- body="Malignance Tabard",hands="Malignance Gloves", Chirich Ring +1 Chirich Ring +1
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		
+	sets.engaged.DW.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		-- ear1="Eabani Earring"
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",
+		-- body="Malignance Tabard",hands="Malignance Gloves", Chirich Ring +1 Chirich Ring +1
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		
+	sets.engaged.DW.Acc.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		-- ear1="Eabani Earring"
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",
+		-- body="Malignance Tabard",hands="Malignance Gloves", Chirich Ring +1 Chirich Ring +1
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		
+	sets.engaged.DW.FullAcc.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
+		-- ear1="Eabani Earring"
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",
+		-- body="Malignance Tabard",hands="Malignance Gloves", Chirich Ring +1 Chirich Ring +1
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Petrov Ring",ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
 end
 

@@ -448,6 +448,7 @@ function init_gear_sets()
         body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring",ring2="Ilabrat Ring",
         back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
+	sets.midcast['Absorb-TP'] =  sets.midcast.RA
     --------------------------------------
     -- Idle/resting/defense sets
     --------------------------------------

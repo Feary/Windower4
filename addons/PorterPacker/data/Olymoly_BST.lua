@@ -1,8 +1,8 @@
 return {
 	"Nuk. Cabasset +1",
     "Nukumi Gausape +1", 	
+	"Nukumi Quijotes +1",
     "Nukumi Manoplas +1",
-	"Nukumi Quijotes",
 	"Nukumi Ocreae +1",
     "Ankusa Jackcoat +1",  
     "Ankusa Helm +1",   

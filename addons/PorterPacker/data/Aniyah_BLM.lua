@@ -5,7 +5,7 @@ return {
     "Wicce Petasos",
     "Wicce Sabots +1",
     "Arch. Coat",
-    "Arch. Gloves",
+    "Arch. Gloves +1",
     "Arch. Petasos",
     "Arch. Sabots",
     "Arch. Tonban",

@@ -9,7 +9,7 @@ return {
 	"Pitre Dastanas",
 	"Pitre Tobe",
 	"Pitre Taj",
-	"Foire Babouches",
+	"Foire Babouches +1",
 	"Foire Churidars",
 	"Foire Dastanas +1",
 	"Foire Tobe",

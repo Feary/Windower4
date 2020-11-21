@@ -41,13 +41,13 @@ function init_gear_sets()
 	
 	-- Precast sets to enhance JAs on use
 	sets.precast.JA['Hundred Fists'] = {legs="Hesychast's Hose +1"}
-	sets.precast.JA['Boost'] = {hands="Anchorite's Gloves"}
-	sets.precast.JA['Boost'].OutOfCombat = {hands="Anchorite's Gloves"} 
+	sets.precast.JA['Boost'] = {hands="Anch. Gloves +1"}
+	sets.precast.JA['Boost'].OutOfCombat = {hands="Anch. Gloves +1"} 
 	sets.precast.JA['Dodge'] = {feet="Anch. Gaiters +1"}
 	sets.precast.JA['Focus'] = {head="Anchor. Crown +1"}
 	sets.precast.JA['Footwork'] = {}-- feet="Shukuyu Sune-Ate"
 	sets.precast.JA['Counterstance'] = {feet="Hesychast's Gaiters"}
-	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas"}
+	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas +1"}
 	sets.precast.JA['Mantra'] = {feet="Hesychast's Gaiters"} 
 
 	sets.precast.JA['Chi Blast'] = {}
@@ -86,7 +86,6 @@ function init_gear_sets()
 	-- Fast cast sets for spells	
 	sets.precast.FC = {mmo="Ginsen",
 		head="Haruspex Hat +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		--body="Taeon Tabard",
 		body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Kishar Ring",
 		back=gear.FC_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
@@ -102,6 +101,7 @@ function init_gear_sets()
 		body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Moonbow Belt +1 Ken. Hakama +1 Ken. Sune-Ate +1
 		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"}
+		
 	sets.precast.WSSomeAcc = {}
 	sets.precast.WSAcc = {}
 	sets.precast.WSFullAcc = {}
