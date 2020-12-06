@@ -12,7 +12,7 @@ return {
     "Kasuga Kabuto",
     "Kasuga Domaru",
     "Kasuga Kote",
-    "Kasuga Haidate",
+    "Kasuga Haidate +1",
     "Kasuga Sune-Ate",
     "Hiza. Somen　+2",
     "Hiza. Haramaki +2",

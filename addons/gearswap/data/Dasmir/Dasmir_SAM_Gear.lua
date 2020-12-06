@@ -446,7 +446,7 @@ function init_gear_sets()
 
 	-- Weapons sets
 	sets.weapons.Omen = {main="Norifusa",sub="Kaja Grip"}
-	sets.weapons.GreatKatana = {main="Norifusa",sub="Kaja Grip"}
+	sets.weapons.GreatKatana = {main="Norifusa",sub="Utu Grip"}
 	sets.weapons.Quint = {main="Quint Spear",sub="Kaja Grip"}
 	sets.weapons.Polearm = {main="Kaja Lance",sub="Kaja Grip"}
 	sets.weapons.ProcWeapon = {main="Norifusa",sub="Kaja Grip"}

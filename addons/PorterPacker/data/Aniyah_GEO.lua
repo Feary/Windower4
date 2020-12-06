@@ -1,5 +1,4 @@
-return {
-    "Maxentius",    
+return {   
   	"Jhakri Coronal +2",
     "Jhakri Cuffs +2",
     "Jhakri Pigaches +2",
@@ -27,4 +26,5 @@ return {
 	"Rubeus Boots",
 	"Kaja Grip",
 	"Kaja Rod",
+	"Maxentius",
 }

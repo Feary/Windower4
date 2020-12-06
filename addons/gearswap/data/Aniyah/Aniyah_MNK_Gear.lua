@@ -46,16 +46,17 @@ function init_gear_sets()
 	sets.precast.JA['Focus'] = {head="Anchorite's Crown"}
 	sets.precast.JA['Footwork'] = {}-- feet="Shukuyu Sune-Ate"
 	sets.precast.JA['Counterstance'] = {feet="Hesychast's Gaiters +1"}
-	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas"}
+	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas +1"}
 	sets.precast.JA['Mantra'] = {feet="Hesychast's Gaiters +1"} 
 
-	sets.precast.JA['Chi Blast'] = {}
+	--Penance
+	sets.precast.JA['Chi Blast'] = {head="Hesychast's Crown +1"}
 	
 	sets.precast.JA['Chakra'] = {
 		-- Genmei Kabuto Unmoving Collar +1 Handler's Earring +1 Tuisto Eaerring
 		head="Hiza. Somen　+2", neck="Loricate Torque +1",
 		-- Anch. Cyclas +3 Hes. Gloves +3
-		body="Anchorite's Cyclas", hands="Hesychast's Gloves +1", ring1="Niqmaddu Ring", ring2="Regal Ring",
+		body="Anchorite's Cyclas +1", hands="Hesychast's Gloves +1", ring1="Niqmaddu Ring", ring2="Regal Ring",
 		-- waist="Latria Sash",
 		back=gear.charka_jse_back,  legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"}
 

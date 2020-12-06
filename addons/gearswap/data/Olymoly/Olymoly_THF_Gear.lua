@@ -5,11 +5,11 @@ function user_setup()
     state.HybridMode:options('Normal','PDT','Evasion')
     state.RangedMode:options('Normal', 'Acc')
     state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','FullAcc','Fodder')
-	state.IdleMode:options('Normal', 'Evasion','Sphere')
+	state.IdleMode:options('Normal', 'Evasion', 'Regen', 'Sphere')
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Normal','Relic','MagicWeapons','Sword','Omen','Throwing')
+	state.Weapons:options('Normal','Relic','Ambuscade', 'Sword', 'MagicWeapons','Omen','Throwing')
 	
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 	state.AmbushMode = M(false, 'Ambush Mode')
@@ -61,26 +61,27 @@ function init_gear_sets()
 
 	-- Weapons Sets
 	sets.weapons.Normal = 		{main="Twashtar",sub=empty}
-	sets.weapons.Relic = 		{main="Mandau",sub="Twashtar"}
-	sets.weapons.Ambuscade = 	{main="Kaja Knife",sub="Twashtar"}
+	sets.weapons.Relic = 		{main="Mandau",sub="Blurred Knife +1"}
+	sets.weapons.Ambuscade = 	{main="Kaja Knife",sub="Blurred Knife +1"}	
+	sets.weapons.Sword = 		{main="Naegling", sub="Blurred Knife +1"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
-	sets.weapons.Sword = 		{main="Naegling", sub="Twashtar"}
+	sets.weapons.Throwing = 	{main="Twashtar",sub="Blurred Knife +1", range="Raider's Bmrng."}
 	sets.weapons.Omen = 		{main="Blurred Knife +1", sub="Ridill"}
-	sets.weapons.Throwing = 	{main="Twashtar",sub="Kaja Knife", range="Raider's Bmrng."}
+	
 	
     -- Actions we want to use to tag TH.
     -- Acc
 	sets.precast.Step = {ammo="Yamarang",
-		head="Meghanada Visor +2", neck="Erudit. Necklace", lear="Sherida Earring", rear="Telos Earring",
+		head="Malignance Chapeau", neck="Erudit. Necklace", lear="Sherida Earring", rear="Telos Earring",
 		body="Pillager's Vest +3", hands="Adhemar Wrist. +1", lring="Regal Ring", rring="Ilabrat Ring",
 		-- Herculean Boots 
-		back=gear.stp_jse_back, waist="Windbuffet Belt +1", legs="Pill. Culottes +3", feet="Mummu Gamash. +2"}
+		back=gear.stp_jse_back, waist="Windbuffet Belt +1", legs="Pill. Culottes +3", feet="Malignance Boots"}
 	-- Macc
     sets.precast.JA['Violent Flourish'] = {ammo="Yamarang",  
-		head="Mummu Bonnet +2", neck="Erudit. Necklace", lear="Digni. Earring", rear="Sherida Earring",
+		head="Malignance Chapeau", neck="Erudit. Necklace", lear="Digni. Earring", rear="Sherida Earring",
 		body="Pillager's Vest +3", hands="Adhemar Wrist. +1", lring="Regal Ring", rring="Stikini Ring",
 		-- Herculean Boots 
-		back=gear.stp_jse_back, waist="Grunfeld Rope", legs="Pill. Culottes +3", feet="Mummu Gamash. +2"}
+		back=gear.stp_jse_back, waist="Grunfeld Rope", legs="Pill. Culottes +3", feet="Malignance Boots"}
 
 	sets.precast.JA['Animated Flourish'] = sets.TreasureHunter
 	sets.precast.JA.Provoke = sets.TreasureHunter
@@ -194,7 +195,7 @@ function init_gear_sets()
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"})
     
 	sets.precast.WS["Rudra's Storm"].SATA = set_combine(sets.precast.WS["Rudra's Storm"].Fodder, {ammo="Yetshila",
-        -- head="Pillager's Bonnet +3", neck="Assassin's Neck +2", 
+        -- neck="Assassin's Neck +2", 
 		head="Pill. Bonnet +3",neck="Caro Necklace",ear1="Sherida Earring",ear2="Moonshade Earring",
         body="Plunderer's Vest +3",hands="Meg. Gloves +2",ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"})
@@ -365,7 +366,7 @@ function init_gear_sets()
         head=gear.herculean_nuke_head, neck="Fotia Gorget",ear1="Friomisi Earring",ear2="Moonshade Earring",
 		-- Herculean Gloves NT/DEX, WSD, MAB rring="Karieyh Ring +1"
         body="Samnuha Coat",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",rring="Dingir Ring",
-        --  legs=gear.herculean_nuke_legs NT/DEX, WSD, MAB mab feet=gear.herculean_nuke_feet NT/DEX, WSD, MAB
+        -- feet=gear.herculean_nuke_feet NT/DEX, WSD, MAB
 		back=gear.wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs,feet="Lustra. Leggings +1"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
@@ -439,14 +440,18 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {
-        head="Mummu Bonnet +2",neck="Erudit. Necklace",ear1="Telos Earring",ear2="Sherida Earring",
+        head="Malignance Chapeau",neck="Erudit. Necklace",ear1="Telos Earring",ear2="Sherida Earring",
+		-- Malignance Tabard  Malignance Gloves
         body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		-- Malignance Tights
+        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {
-        head="Mummu Bonnet +2",neck="Erudit. Necklace",ear1="Telos Earring",ear2="Sherida Earring",
-        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+        head="Malignance Chapeau",neck="Erudit. Necklace",ear1="Telos Earring",ear2="Sherida Earring",
+        -- Malignance Tabard  Malignance Gloves
+		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- Malignance Tights
+        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
 	sets.midcast['Absorb-TP'] =  sets.midcast.RA
     --------------------------------------
@@ -463,6 +468,11 @@ function init_gear_sets()
         head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
         body="Meg. Cuirie +2",hands="Turms Mittens +1",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
+		
+	sets.idle.Regen = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum",
+        head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
+        body="Turms Harness",hands="Turms Mittens +1",ring1="Moonbeam Ring",ring2="Defending Ring",
+        back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
 
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -476,7 +486,7 @@ function init_gear_sets()
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
        	head="Malignance Chapeau", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
-		body="Meghanada Cuirie +2", hands="Turms Mittens +1", lring="Moonbeam Ring", rring="Defending Ring",
+		body="Turms Harness", hands="Turms Mittens +1", lring="Moonbeam Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum",

@@ -21,21 +21,9 @@ get Mummu Jacket +2 sack all
 get Mummu Kecks +2 sack all 
 get Mummu Wrists +2 sack all 
 get Naegling sack all
-get Pill. Bonnet +2 sack all 
-get Pill. Culottes +3 sack all 
-get Pill. Poulaines +2 sack all 
-get Pillager's Vest +3 sack all 
-get Plun. Armlets +3 sack all 
-get Plun. Bonnet +3 sack all 
-get Plun. Culottes +3 sack all 
-get Plun. Poulaines +3 sack all 
-get Plunderer's Vest +3 sack all 
-get Ridill sack all
 get Raider's Bmrng. sack all
-get Skulk. Culottes +1 sack all 
-get Skulk. Poulaines +1 sack all 
-get Skulker's Bonnet +1 sack all 
-get Skulker's Vest +1 sack all 
+get Rawhide Boots sack all
+get Ridill sack all
 get Samnuha Coat sack all
 get Samnuha Tights sack all
 get Toutatis's Cape sack all 

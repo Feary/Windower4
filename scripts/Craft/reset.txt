@@ -1,5 +1,5 @@
 lua unload repeater 
 lua load repeater
 repeater command input /lastsynth
-repeater delay 24
+repeater delay 20
 repeater count 60

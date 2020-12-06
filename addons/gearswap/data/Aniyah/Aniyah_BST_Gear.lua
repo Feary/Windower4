@@ -301,7 +301,7 @@ function init_gear_sets()
 	-- PET SIC & READY MOVES
 	sets.midcast.Pet.WS = {main=gear.PHYKumbha1,sub=gear.PHYKumbha2,
 		--  head="Emicho Coronet +1", neck="Beast Collar +2", ear2="Domesticator's Earring", ammo="Voluspa Tathlum",
-		head="Nuk. Cabasset +1", neck="Shulmanu Collar", ear1="Enmerkar Earring", --ear2="Sabong Earring",
+		head="Nuk. Cabasset +1", neck="Shulmanu Collar", ear1="Enmerkar Earring", ear2="Sabong Earring",
 		-- rring="C. Palug Ring"
 		body="Tali'ah Manteel +2",hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
 		back=gear.Pet_acc_jse_back,waist="Incarnation Sash",legs="Tot. Trousers +2",feet="Tot. Gaiters +2"}

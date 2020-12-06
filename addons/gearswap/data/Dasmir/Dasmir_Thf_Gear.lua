@@ -47,8 +47,8 @@ function init_gear_sets()
 	-- Weapon Sets
 	sets.weapons.None = {main="Kaja Knife",sub="Blurred Knife +1"}
 	sets.weapons.Sword = {main="Naegling",sub="Blurred Knife +1"}
-	sets.weapons.MagicWeapons = {main="Kaja Knife",sub="Naegling"}
-	sets.weapons.Throwing = {main="Kaja Knife",sub="Naegling", range="Raider's Bmrng."}
+	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
+	sets.weapons.Throwing = {main="Kaja Knife",sub="Blurred Knife +1", range="Raider's Bmrng."}
 
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Plun. Armlets +1",waist="Chaac Belt",feet="Skulk. Poulaines +1"})
     sets.ExtraRegen = {}
@@ -432,22 +432,22 @@ function init_gear_sets()
 		-- body="Pillager's Vest +3", hands="Adhemar Wrist. +1", lring="Epona's Ring", rring="Hetairoi Ring",
 		body="Pillager's Vest +2", hands="Mummu Wrists +2", lring="Regal Ring", rring="Epona's Ring",
 		-- waist="Reiki Yotai", feet="Plun. Poulaines +3"
-		back=gear.stp_jse_back, waist="Patentia Sash", legs="Samnu ha Tights", feet="Mummu Gamash. +2"}
+		back=gear.stp_jse_back, waist="Patentia Sash", legs="Samnuha Tights", feet="Mummu Gamash. +2"}
 
  	sets.engaged.Acc = {
 		head="Mummu Bonnet +2", neck="Sanctity Necklace", lear="Sherida Earring", rear="Suppanomimi",
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Rajas Ring", rring="Epona's Ring",
-		back=gear.stp_jse_back, waist="Patentia Sash", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		back=gear.stp_jse_back, waist="Patentia Sash", legs="Pill. Culottes +3", feet="Meg. Jam. +2"}
 
     sets.engaged.FullAcc = {
 		head="Mummu Bonnet +2", neck="Sanctity Necklace", lear="Sherida Earring", rear="Suppanomimi",
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Rajas Ring", rring="Epona's Ring",
-		back=gear.stp_jse_back, waist="Patentia Sash", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		back=gear.stp_jse_back, waist="Patentia Sash", legs="Pill. Culottes +3", feet="Meg. Jam. +2"}
 
     sets.engaged.Fodder = {
 		head="Mummu Bonnet +2", neck="Anu Torque", lear="Sherida Earring", rear="Suppanomimi",
 		body="Mummu Jacket +2", hands="Mummu Wrists +2", lring="Rajas Ring", rring="Epona's Ring",
-		back=gear.stp_jse_back, waist="Patentia Sash", legs="Meg. Chausses +2", feet="Mummu Gamash. +2"}
+		back=gear.stp_jse_back, waist="Patentia Sash", legs="Pill. Culottes +3", feet="Mummu Gamash. +2"}
 
     sets.engaged.PDT = {
 		-- Malignance Chapeau

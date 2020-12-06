@@ -67,29 +67,28 @@ function init_gear_sets()
     
     -- Precast Sets
 
-    -- Precast sets to enhance JAs
-	
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}-- hands="Lanun Gants +3",
-    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +1"}
-    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +1"}
-    sets.precast.JA['Random Deal'] = {body="Lanun Frac +1"}
-    sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
+    -- Precast sets to enhance JAs	
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}-- hands="Lanun Gants +3",
+    sets.precast.JA['Snake Eye'] = {legs="Comm. Trews"}
+    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes"}
+    sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
+    sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
     
     sets.precast.CorsairRoll = {ammo="Compensator",
 		-- Odndowa Earring 
-		head="Lanun Tricorne +1", neck="Regal Necklace", lear="Etiolation Earring", rear="Merman's Earring",
+		head="Lanun Tricorne", neck="Regal Necklace", lear="Etiolation Earring", rear="Merman's Earring",
 		-- dt herc?
-		body="Meg. Cuirie +2", hands="Chasseur's Gants +1", lring="Dark Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Chasseur's Gants", lring="Barataria Ring", rring="Defending Ring",
 		--  legs="Desultor Tassets" -dt feet
 		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
-    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes +1"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
-    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
+    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
+    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
     
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
@@ -326,7 +325,7 @@ function init_gear_sets()
 		-- Lanun Gants +3 Oshosi Gloves
 		body="Chasseur's Frac +1", hands="Meg. Gloves +2", 
 		-- legs="Oshosi Trousers +1", Feet="Oshosi Leggings +1",
-		back=gear.tp_ranger_jse_back, legs="Laksa. Trews +3", feet="Adhemar Gamashes"}
+		back=gear.tp_ranger_jse_back, legs="Meg. Chausses +2", feet="Adhemar Gamashes"}
     
     -- Sets to return to when not performing an action.
 	

@@ -7,7 +7,7 @@ put Adhemar Wristbands sack all
 put Erudit. Necklace safe2 all
 put Floral Gauntlets sack all
 put Grunfeld Rope sack all
-put Iskur Gorget sack all
+put Iskur Gorget safe2 all
 put Jute Boots +1 sack all
 put Kaja Knife sack all
 put Malevolence safe2 all
@@ -23,22 +23,9 @@ put Mummu Jacket +2 sack all
 put Mummu Kecks +2 sack all 
 put Mummu Wrists +2 sack all 
 put Naegling sack all
-put Pill. Bonnet +2 sack all 
-put Pill. Culottes +3 sack all 
-put Pill. Poulaines +2 sack all 
-put Pillager's Vest +3 sack all 
-put Plun. Armlets +3 sack all 
-put Plun. Bonnet +3 sack all 
-put Plun. Culottes +3 sack all 
-put Plun. Poulaines +3 sack all 
-put Plunderer's Vest +3 sack all 
 put Ridill sack all
 put Raider's Bmrng. sack all
 put Rawhide boots sack all
-put Skulk. Culottes +1 sack all 
-put Skulk. Poulaines +1 sack all 
-put Skulker's Bonnet +1 sack all 
-put Skulker's Vest +1 sack all 
 put Samnuha Coat sack all
 put Samnuha Tights sack all
 put Toutatis's Cape sack all 
