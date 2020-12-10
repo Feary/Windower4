@@ -39,8 +39,7 @@ function init_gear_sets()
     -- Start defining the sets
     --------------------------------------
     
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
-	
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})	
 	
     -- Extra Melee sets.  Apply these on top of melee sets.
 	sets.Suppa = {ear1="Suppanomimi", ear2="Sherida Earring"}
@@ -50,8 +49,8 @@ function init_gear_sets()
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
 	
 	-- Weapons sets
-	sets.weapons.Twashtar = {main="Twashtar",sub="Kaja Knife"}
-	sets.weapons.LowBuff = {main="Twashtar",sub="Blurred Knife +1"}
+	sets.weapons.Twashtar = {main="Twashtar", sub="Blurred Knife +1"}
+	sets.weapons.LowBuff = {main="Twashtar", sub="Blurred Knife +1"}
 	
     -- Precast Sets
     
@@ -59,7 +58,7 @@ function init_gear_sets()
 
     sets.precast.JA['No Foot Rise'] = {body="Horos Casaque"}
 
-    sets.precast.JA['Trance'] = {head="Horos Tiara"}
+    sets.precast.JA['Trance'] = {head="Horos Tiara +1"}
     
 
     -- Waltz set (chr and vit)
@@ -77,7 +76,7 @@ function init_gear_sets()
     
     sets.precast.Samba = {head="Maxixi Tiara", back=gear.stp_jse_back}
 
-    sets.precast.Jig = {legs="Horos Tights", feet="Maxixi Toe Shoes"}
+    sets.precast.Jig = {legs="Horos Tights +1", feet="Maxixi Toe Shoes"}
 
     sets.precast.Step = {ammo="Yamarang",
 		-- Mache Earring +1 
@@ -100,7 +99,7 @@ function init_gear_sets()
         head="Mummu Bonnet +2",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Digni. Earring",
         -- Horo Casaque +3
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Stikini Ring",ring2="Stikini Ring",
-		-- Horos Tights +3
+		--Horos Tights +3
         back=gear.stp_jse_back,waist="Eschan Stone",legs="Meg. Chausses +2",feet="Mummu Gamashes +2"}
 		
     sets.precast.Flourish1['Animated Flourish'] = sets.Enmity
@@ -330,11 +329,10 @@ function init_gear_sets()
 	sets.MaxTP = {ear1="Ishvara Earring",ear2="Sherida Earring"}
 	sets.AccMaxTP = {ear1="Ishvara Earring",ear2="Sherida Earring"}-- ear1="Mache Earring +1"
 	
-    sets.Skillchain = {} --hands="Charis Bangles +2"
+    sets.Skillchain = {hands="Maculele Bangles"} 
     
     
-    -- Midcast Sets
-    
+    -- Midcast Sets    
     sets.midcast.FastRecast = {}
         
     -- Specific spells
@@ -345,11 +343,10 @@ function init_gear_sets()
     
     -- Resting sets
     sets.resting = {}
-    sets.ExtraRegen = {body="Turms Harness",}
+    sets.ExtraRegen = {body="Turms Harness"}
     
 
     -- Idle sets
-
     sets.idle = {ammo="Staunch Tathlum",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard  Malignance Gloves 
@@ -465,7 +462,7 @@ function init_gear_sets()
         back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Saber Dance'] = {legs="Horos Tights +1"} 
+    sets.buff['Saber Dance'] = {legs="Horos Tights +1 +1"} 
     sets.buff['Climactic Flourish'] = {ammo="Charis Feather",
         -- Etoile Gorget +2
 		head="Maculele Tiara +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
