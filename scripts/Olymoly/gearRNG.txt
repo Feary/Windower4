@@ -8,16 +8,6 @@ get Adhemar Kecks +1 safe2 all
 get Adhemar Kecks safe2 all
 get Adhemar Wrist. +1 sack all
 get Adhemar Wristbands sack all
-get Amini Bottillons +1 safe2 all
-get Amini Brague +1 safe2 all
-get Amini Caban +1 safe2 all
-get Amini Gapette +1 safe2 all
-get Amini Glove. +1 safe2 all
-get Arc. Braccae +2 safe2 all
-get Arc. Bracers +1 safe2 all
-get Arc. Jerkin +3 safe2 all
-get Arcadian Beret +2 safe2 all
-get Arcadian Socks +1 safe2 all
 get Armageddon safe2 all
 get Belenus's Cape safe2 all
 get Bullet safe2 all
@@ -35,23 +25,8 @@ get Jute Boots +1 sack all
 get Kustawi +1 safe2 all
 get Kwahu Kachina Belt safe2 all
 get Malevolence safe2 all
-get Meg. Chausses +2 sack all
-get Meg. Cuirie +2 sack all
-get Meg. Gloves +2 sack all
-get Meg. Jam. +2 sack all
-get Meghanada Visor +2 sack all
-get Mummu Bonnet +2 sack all
-get Mummu Gamash. +2 sack all
-get Mummu Jacket +2 sack all
-get Mummu Kecks +2 sack all
-get Mummu Ring safe2 all
-get Mummu Wrists +2 sack all
+get Nisroch Jerkin safe2 all
 get Nusku Shield safe2 all
-get Orion Beret +2 safe2 all
-get Orion Braccae +2 safe2 all
-get Orion Bracers +2 safe2 all
-get Orion Jerkin +2 safe2 all
-get Orion Socks +2 safe2 all
 get Perun +1 safe2 all
 get Pursuer's Gaiters safe2 all
 get Taeon Chapeau safe2 all

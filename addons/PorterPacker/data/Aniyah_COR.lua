@@ -1,6 +1,6 @@
 return {
 	"Lanun Bottes",
-	"Comm. Trews",
+	"Lanun Trews +1",
 	"Lanun Tricorne",
 	"Lanun Frac",
 	"Lanun Gants",

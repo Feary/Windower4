@@ -295,8 +295,8 @@ function init_gear_sets()
     sets.idle.Pet.Engaged = {
 		-- gear.herculean_PUP_head
         head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-        -- Pitre Tobe +3 gear.herculean_PUP_hands
-		body="Pitre Tobe",hands="Tali'ah Gages +2",ring1="Varar Ring +1",ring2="Varar Ring +1",
+        -- Pitre Tobe +1 +3 gear.herculean_PUP_hands
+		body="Pitre Tobe +1",hands="Tali'ah Gages +2",ring1="Varar Ring +1",ring2="Varar Ring +1",
         -- Klouskap Sash gear.herculean_PUP_legs gear.herculean_PUP_feet
 		back=gear.Pet_TP_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 
@@ -406,28 +406,28 @@ function init_gear_sets()
     sets.engaged.Pet = {
         -- ear1="Cessance Earring",ear2="Telos Earring",
 		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Brutal Earring",
-		-- Pitre Tobe +3 He. Mittens +1
+		-- Pitre Tobe +1 +3 He. Mittens +1
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Varar Ring +1",
         -- Moonlight Belt +1 Heyoka Subligar +1 He. Leggings +1
 		back=gear.Pet_TP_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
     sets.engaged.Acc.Pet = {
         -- ear1="Cessance Earring",ear2="Telos Earring",
 		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Brutal Earring",
-		-- Pitre Tobe +3 He. Mittens +1
+		-- Pitre Tobe +1 +3 He. Mittens +1
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Varar Ring +1",
         -- Moonlight Belt +1 Heyoka Subligar +1 He. Leggings +1
 		back=gear.Pet_TP_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
     sets.engaged.FullAcc.Pet = {
          -- ear1="Cessance Earring",ear2="Telos Earring",
 		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Brutal Earring",
-		-- Pitre Tobe +3 He. Mittens +1
+		-- Pitre Tobe +1 +3 He. Mittens +1
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Varar Ring +1",
         -- Moonlight Belt +1 Heyoka Subligar +1 He. Leggings +1
 		back=gear.Pet_TP_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
     sets.engaged.Fodder.Pet = {
           -- ear1="Cessance Earring",ear2="Telos Earring",
 		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Brutal Earring",
-		-- Pitre Tobe +3 He. Mittens +1
+		-- Pitre Tobe +1 +3 He. Mittens +1
         body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Niqmaddu Ring",ring2="Varar Ring +1",
         -- Moonlight Belt +1 Heyoka Subligar +1 He. Leggings +1
 		back=gear.Pet_TP_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}

@@ -69,7 +69,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 	
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}-- hands="Lanun Gants +3",
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1", hands="Lanun Gants +1"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +1"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +1"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +1"}
@@ -379,13 +379,13 @@ function init_gear_sets()
 	-- Fencer Last Stand Rostam
 	sets.weapons.Default = {main="Kustawi +1",sub="Nusku Shield",range="Holliday"}--range="Fomalhaut"
 	-- Last Stand Dual Ranged
-	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Kaja Knife",range="Holliday"}
+	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Tauret",range="Holliday"}
 	-- Fencer Savage 
 	sets.weapons.SavageWeapons = {main="Naegling",sub="Nusku Shield", range="Holliday"}--range="Ataktos"
 	-- DW Savage
 	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}--range="Ataktos"
 	-- Leaden/Wildfire  Rostam Path A
-	sets.weapons.LeadenWeapons = {main="Naegling",sub="Kaja Knife",range="Holliday"}--range="Fomalhaut"
+	sets.weapons.LeadenWeapons = {main="Naegling",sub="Tauret",range="Holliday"}--range="Fomalhaut"
 	-- Rolling
 	sets.weapons.RollMeleeWeapons = {main="Naegling",sub="Blurred Knife +1",range="Compensator"}
 	sets.weapons.RollRangedWeapons = {main="Kustawi +1",sub="Nusku Shield", range="Compensator"}

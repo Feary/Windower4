@@ -136,7 +136,7 @@ function init_gear_sets()
 	
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {})
 	
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Genbu's Shield"})
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Genmei Shield"})
 	
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})
 
@@ -282,7 +282,7 @@ function init_gear_sets()
 		back=gear.fastcast_jse_back,waist="Austerity Belt",legs="Assid. Pants +1",feet="Wicce Sabots +1"}
 
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
-    sets.idle.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
+    sets.idle.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Mallquis Saio +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2=gear.DarkRing,
 		back=gear.fastcast_jse_back,waist="Austerity Belt",legs="Assid. Pants +1",feet="Wicce Sabots +1"}
@@ -295,22 +295,22 @@ function init_gear_sets()
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
 		back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Wicce Sabots +1"}
 
-    sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",ammo="Staunch Tathlum",
+    sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2=gear.DarkRing,
 		back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Wicce Sabots +1"}
 
     -- Defense sets
-    sets.defense.PDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
+    sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
         head="Mallquis Chapeau +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
         body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring", ring2=gear.DarkRing,
         back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 
-    sets.defense.MDT = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
+    sets.defense.MDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
         head="Mallquis Chapeau +2",neck="Loricate Torque +1",ear1="Merman's Earring",ear2="Etiolation Earring",
         body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring", ring2=gear.DarkRing,
         back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
-    sets.defense.MEVA = {main="Mafic Cudgel",sub="Genbu's Shield",ammo="Staunch Tathlum",
+    sets.defense.MEVA = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
         head="Mallquis Chapeau +2",neck="Warder's Charm +1",ear1="Lugalbanda Earring",ear2="Etiolation Earring",
         body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring", ring2=gear.DarkRing,
         back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}

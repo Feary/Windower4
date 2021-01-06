@@ -1,6 +1,6 @@
 return {
-    "Karagoz Farsetto",
-    "Karagoz Pantaloni",
+    "Karagoz Farsetto +1",
+    "Karagoz Pantaloni +1",
     "Karagoz Scarpe",
     "Karagoz Guanti",
     "Karagoz Capello",
@@ -8,7 +8,7 @@ return {
 	"Pitre Babouches",
 	"Pitre Churidars",
 	"Pitre Dastanas",
-	"Pitre Tobe",
+	"Pitre Tobe +1",
 	"Foire Babouches",
 	"Foire Churidars",
 	"Foire Dastanas +1",

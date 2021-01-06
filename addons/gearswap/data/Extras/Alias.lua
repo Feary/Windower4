@@ -25,8 +25,7 @@ send_command('alias unpool lua load treasurepool')
 send_command('alias logout input /logout')
 send_command('alias sendpost input /sendpost')
 send_command('alias deliverybox input /deliverybox')
-
-
+send_command('alias hpa hp a')
 
 -- Gearing from Slips
 send_command('alias getslip exec '..player.name..'/get_slips.txt')
@@ -102,7 +101,7 @@ send_command('alias puller gs c toggle Kiting;wait 1;gs c ')
 -- Follow
 send_command('bind pageup fol')
 send_command('bind pagedown ufol')
-send_command('bind !pageup exec bolt')
+send_command('bind !pageup 	bolt')
 	
 send_command('bind numpad+ input /targetnpc;wait 1;sat alltarget')
 send_command('bind ^numpad+ sat allattack')

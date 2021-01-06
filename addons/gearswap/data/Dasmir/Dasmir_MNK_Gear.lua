@@ -55,7 +55,7 @@ function init_gear_sets()
 		-- Genmei Kabuto Unmoving Collar +1 Handler's Earring +1 Tuisto Eaerring
 		head="Hiza. Somen　+2", neck="Loricate Torque +1",
 		-- Anch. Cyclas +3 Hes. Gloves +3
-		body="Anchorite's Cyclas", hands="Hesychast's Gloves +1", ring1="Niqmaddu Ring", ring2="Regal Ring",
+		body="Anch. Cyclas +1", hands="Hesychast's Gloves +1", ring1="Niqmaddu Ring", ring2="Regal Ring",
 		-- waist="Latria Sash",
 		back=gear.charka_jse_back,  legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"}
 
@@ -398,7 +398,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Kaja = {main="Kaja Knuckles"}
 	sets.weapons.Barehanded = {main=empty}
-	sets.weapons.Staff = {main="Plenitas Virgas", sub="Pole Grip"}
+	sets.weapons.Staff = {main="Plenitas Virga", sub="Pole Grip"}
 	sets.weapons.Club = {main="Mafic Cudgel",sub=empty}
 	sets.weapons.ProcStaff = {main="Earth Staff"}
 	sets.weapons.ProcClub = {main="Rounsey Wand"}

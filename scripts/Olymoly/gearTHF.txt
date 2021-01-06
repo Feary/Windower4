@@ -10,16 +10,6 @@ get Grunfeld Rope sack all
 get Jute Boots +1 sack all
 get Kaja Knife sack all
 get Malevolence safe2 all
-get Meg. Chausses +2 sack all 
-get Meg. Cuirie +2 sack all 
-get Meg. Gloves +2 sack all 
-get Meg. Jam. +2 sack all 
-get Meghanada Visor +2 sack all 
-get Mummu Bonnet +2 sack all 
-get Mummu Gamash. +2 sack all 
-get Mummu Jacket +2 sack all 
-get Mummu Kecks +2 sack all 
-get Mummu Wrists +2 sack all 
 get Naegling sack all
 get Raider's Bmrng. sack all
 get Rawhide Boots sack all

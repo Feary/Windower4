@@ -7,8 +7,7 @@ function user_setup()
     state.PhysicalDefenseMode:options('PDT', 'NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	-- Mandau Almace Sequence 
-	state.Weapons:options('None','Naegling','DualWeapons','DualWeaponsAcc','DualEvisceration','DualClubs','DualAeolian','DualProcDaggers','EnspellOnly')
+	state.Weapons:options('None','Dagger','Sword','DualWeapons','DualWeaponsAcc','DualDagger','DualEvisceration','DualAeolian','DualProcDaggers','EnspellOnly','DualClubs','DualBlackHalo','DualBow','BowMacc')
 	
 	-- Augmented Capes
 	-- Skill+ 10 Duration 10-20
@@ -416,30 +415,30 @@ function init_gear_sets()
 	-- Sets to return to when not performing an action.
 	
 	-- Resting sets
-	sets.resting = {main="Daybreak",sub="Genbu's Shield", -- ammo="Homiliary",
+	sets.resting = {main="Daybreak",sub="Genmei Shield", -- ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 	
 	-- Idle sets
-	sets.idle = {main="Daybreak",sub="Genbu's Shield", -- ammo="Homiliary",
+	sets.idle = {main="Daybreak",sub="Genmei Shield", -- ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
-	sets.idle.PDT = {main="Daybreak",sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+	sets.idle.PDT = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
-	sets.idle.MDT = {main="Daybreak",sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+	sets.idle.MDT = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
-	sets.idle.Weak = {main="Daybreak",sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+	sets.idle.Weak = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
@@ -447,20 +446,20 @@ function init_gear_sets()
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {back=gear.FC_jse_back,legs="Carmine Cuisses +1",})--feet="Hippo. Socks +1"
 	
 	-- Defense sets
-	sets.defense.PDT = {main="Daybreak",sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+	sets.defense.PDT = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
 	sets.defense.NukeLock = sets.midcast['Elemental Magic']
 		
-	sets.defense.MDT = {main="Daybreak",sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+	sets.defense.MDT = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
-    sets.defense.MEVA = {main="Daybreak",sub="Genbu's Shield", -- ammo="Staunch Tathlum",
+    sets.defense.MEVA = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
@@ -474,36 +473,18 @@ function init_gear_sets()
 	sets.NightIdle = {}
 	
 	-- Weapons sets
-	sets.weapons.Dagger = {main="Kaja Knife", sub="Ammurapi Shield"}
+	sets.weapons.Dagger = {main="Tauret", sub="Ammurapi Shield"}
 	sets.weapons.Sword = {main="Naegling", sub="Ammurapi Shield"} 
-	sets.weapons.DualWeapons = {main="Naegling", sub="Kaja Knife"}
-	sets.weapons.DualDagger = {main="Kaja Knife", sub="Naegling"}
-	sets.weapons.DualClubs = {main="Kaja Rod", sub="Bolelabunga"}
-
-	-- Weapons sets
-	sets.weapons.Sword = {main="Naegling", sub="Genmei Shield"}
-	sets.weapons.Mandau = {main="Mandau", sub="Genmei Shield"}
-	sets.weapons.Sequence = {main="Sequence",sub="Genmei Shield"}
-	sets.weapons.Almace = {main="Almace",sub="Genmei Shield"}
-	sets.weapons.DualWeapons = {main="Naegling",sub="Kaja Knife"}
-	sets.weapons.DualDagger = {main="Mandau", sub="Kaja Knife"}
-	sets.weapons.DualClubs = {main="Maxentius", sub="Kaja Rod"}
-	-- Sequence
-	sets.weapons.DualAlmace = {main="Almace",sub="Naegling"}
-	
-	sets.weapons.Sequence = {main="Sequence",sub="Ammurapi Shield"}
-	sets.weapons.Naegling = {main="Naegling",sub="Ammurapi Shield"}
-	sets.weapons.Almace = {main="Almace",sub="Ammurapi Shield"}
-	sets.weapons.DualWeapons = {main="Naegling",sub="Kaja Sword"}
+	sets.weapons.DualWeapons = {main="Naegling", sub="Tauret"}
 	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Almace"}
-	sets.weapons.DualEvisceration = {main="Kaja Knife",sub="Almace"}
-	sets.weapons.DualAeolian = {main="Kaja Knife",sub="Maxentius"}
+	sets.weapons.DualDagger = {main="Tauret", sub="Naegling"}
+	sets.weapons.DualEvisceration = {main="Tauret",sub="Almace"}
+	sets.weapons.DualAeolian = {main="Tauret",sub="Kaja Rod"}
 	sets.weapons.DualProcDaggers = {main="Blurred Knife +1",sub="Atoyac"}
-	sets.weapons.EnspellOnly = {main="Norgish Dagger",sub="Aern Dagger",range="Kaja Bow",ammo="Beetle Arrow"}
-	sets.weapons.DualClubs = {main="Maxentius",sub="Kaja Rod"}
-	sets.weapons.DualBlackHalo = {main="Maxentius",sub="Kaja Rod"}
-	sets.weapons.DualAlmace = {main="Almace",sub="Naegling"}
-	sets.weapons.DualBow = {main="Naegling",sub="Kaja Knife",range="Kaja Bow"}
+	sets.weapons.EnspellOnly = {main="Ceremonial Dagger",sub="Ceremonial Dagger",range="Kaja Bow",ammo="Beetle Arrow"}	
+	sets.weapons.DualClubs = {main="Daybreak", sub="Kaja Rod"}
+	sets.weapons.DualBlackHalo = {main="Kaja Rod",sub="Daybreak"}
+	sets.weapons.DualBow = {main="Naegling",sub="Tauret",range="Kaja Bow"}
 	sets.weapons.BowMacc = {range="Kaja Bow",ammo=empty}
 	
     sets.buff.Sublimation = {} -- waist="Embla Sash"

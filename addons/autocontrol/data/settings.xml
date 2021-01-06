@@ -520,4 +520,10 @@
         </text>
         <visible>false</visible>
     </global>
+    <aniyah>
+        <pos>
+            <x>1186</x>
+            <y>267</y>
+        </pos>
+    </aniyah>
 </settings>

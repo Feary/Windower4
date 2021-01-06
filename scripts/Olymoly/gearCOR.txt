@@ -12,11 +12,6 @@ get Animikii Bullet safe2 all
 get Blood Mask safe2 all
 get Bullet safe2 all
 get Blurred Knife +1 safe2 all
-get Chas. Culottes +1 safe2 all
-get Chass. Bottes +1 safe2 all
-get Chasseur's Frac +1 safe2 all
-get Chasseur's Gants +1 safe2 all
-get Chass. Tricorne +1 safe2 all
 get Carm. Sc. Mail +1 sack all
 get Camulus's Mantle safe2 all
 get Compensator safe2 all
@@ -34,24 +29,9 @@ get Lanun Trews +1 safe2 all
 get Lanun Gants +1 safe2 all
 get Lanun Tricorne +1 safe2 all
 get Luzaf's Ring safe2 all
-get Lak. Frac +1 safe2 all
-get Lak. Hat +1 safe2 all
-get Lak. Trews +1 safe2 all
-get Lak. Bottes +1 safe2 all
-get Lak. Gants +1 safe2 all
-get Meg. Chausses +2 sack all
-get Meg. Gloves +2 sack all
-get Meg. Cuirie +2 sack all
-get Meg. Jam. +2 sack all
-get Meghanada Visor +2 sack all
 get Mekosu. Harness sack all
 get Molybdosis safe2 all
-get Mummu Bonnet +2 sack all
-get Mummu Wrists +2 sack all
-get Mummu Jacket +2 sack all
-get Mummu Kecks +2 sack all
-get Mummu Gamash. +2 sack all
-get Mummu Ring safe2 all
+get Nisroch Jerkin safe2 all
 get Nusku Shield safe2 all
 get Pursuer's Gaiters safe2 all
 get Regal Necklace safe2 all

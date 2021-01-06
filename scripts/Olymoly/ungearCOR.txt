@@ -12,11 +12,6 @@ put Animikii Bullet safe2 all
 put Blood Mask safe2 all
 put Bullet safe2 all
 put Blurred Knife +1 safe2 all
-put Chas. Culottes +1 safe2 all
-put Chass. Bottes +1 safe2 all
-put Chasseur's Frac +1 safe2 all
-put Chasseur's Gants +1 safe2 all
-put Chass. Tricorne +1 safe2 all
 put Carm. Sc. Mail +1 sack all
 put Camulus's Mantle safe2 all
 put Compensator safe2 all
@@ -25,7 +20,7 @@ put Eminent Bullet safe2 all
 put Enervating Earring safe2 all
 put Grunfeld Rope sack all
 put Impulse Belt safe2 all
-put Iskur Gorget safe2 all
+put Iskur Gorput safe2 all
 put Kustawi +1 safe2 all
 put Kwahu Kachina Belt safe2 all
 put Lanun Bottes +1 safe2 all
@@ -34,24 +29,9 @@ put Lanun Trews +1 safe2 all
 put Lanun Gants +1 safe2 all
 put Lanun Tricorne +1 safe2 all
 put Luzaf's Ring safe2 all
-put Lak. Frac +1 safe2 all
-put Lak. Hat +1 safe2 all
-put Lak. Trews +1 safe2 all
-put Lak. Bottes +1 safe2 all
-put Lak. Gants +1 safe2 all
-put Meg. Chausses +2 sack all
-put Meg. Gloves +2 sack all
-put Meg. Cuirie +2 sack all
-put Meg. Jam. +2 sack all
-put Meghanada Visor +2 sack all
 put Mekosu. Harness sack all
 put Molybdosis safe2 all
-put Mummu Bonnet +2 sack all
-put Mummu Wrists +2 sack all
-put Mummu Jacket +2 sack all
-put Mummu Kecks +2 sack all
-put Mummu Gamash. +2 sack all
-put Mummu Ring safe2 all
+put Nisroch Jerkin safe2 all
 put Nusku Shield safe2 all
 put Pursuer's Gaiters safe2 all
 put Regal Necklace safe2 all

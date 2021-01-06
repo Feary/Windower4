@@ -39,12 +39,13 @@ function user_setup()
 						['MagicUnlimited'] = "Hauksbok Bolt",
 						['MagicAccUnlimited'] ="Hauksbok Bolt"}
 	}
+	
 	-- Snapshot
 	gear.snapshot_jse_back = {name="Belenus's Cape", augments={'"Snapshot"+10',}}	
 	-- Ranged TP
 	gear.tp_ranger_jse_back = {name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10','Damage taken-5%',}}
-	-- --Crit RA TP/ws
-	gear.crit_ranger_jse_back = {name="Belenus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}}
+	-- Crit RA TP/ws
+	gear.crit_ranger_jse_back = {name="Belenus's Cape", augments={'DEX+20','Rng.Acc.+20 Rng.Atk.+20','DEX+10','Crit.hit rate+10',}}
 	-- Last Stand
 	gear.ranger_wsd_jse_back = {name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}}
 	-- Leaden/Wildfire/Trueflight
@@ -281,107 +282,139 @@ function init_gear_sets()
 	-- Ranged sets	
 	-- Everything else
 	sets.midcast.RA = {
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Sherida Earring",
-		-- body="Orion Jerkin +3" lring="Chirich Ring +1",
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Dingir Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Orion Jerkin +3" lring="Chirich Ring +1",
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+        -- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1", feet="Orion Socks +2"}
 	
 	sets.midcast.RA.HighAcc = {
-		
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Orion Jerkin +3"
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enverating Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1", feet="Orion Socks +2"}
 
     sets.midcast.RA.Yoichinoyumi = {
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- lring="Chirich Ring +1",
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Dingir Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Orion Socks +2",}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 
     sets.midcast.RA.Yoichinoyumi.Acc = {
-		
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 	
 	sets.midcast.RA.Yoichinoyumi.HighAcc = {
-		
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}	
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 
 	sets.midcast.RA.Yoichinoyumi.AM = {
-       -- 
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- lring="Chirich Ring +1",
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Dingir Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 
 	sets.midcast.RA.Gandiva = {
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- lring="Chirich Ring +1",
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Dingir Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring", ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring", ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back, waist="Kwahu Kachina Belt", legs="Adhemar Kecks +1", feet="Malignance Boots"}
 
     sets.midcast.RA.Gandiva.Acc = {
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- lring="Chirich Ring +1",
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Orion Socks +2"}
 	
 	sets.midcast.RA.Gandiva.HighAcc = {
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- lring="Chirich Ring +1",
-        body="Orion Jerkin +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+       -- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enverating Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Orion Socks +2"}
 
-	sets.midcast.RA.Annihilator = {
+	sets.midcast.RA.Gandiva.AM = {
+        -- Scout's Gorget +2
+        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enverating Earring",
+        body="Nisroch Jerkin",hands="Mummu Wrists +2", ring1="Begrudging Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1 Osh. Leggings +1
+        back=gear.crit_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Darraigner Brais",feet="Malignance Boots"}
 		
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- lring="Chirich Ring +1",
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Dingir Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+	sets.midcast.RA.Annihilator = {		
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 
-    sets.midcast.RA.Annihilator.Acc = {
-		
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Orion Jerkin +3"
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+    sets.midcast.RA.Annihilator.Acc = {		
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 	
-	 sets.midcast.RA.Annihilator.HighAcc = {
-		
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Orion Jerkin +3"
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+	 sets.midcast.RA.Annihilator.HighAcc = {		
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 
 	sets.midcast.RA.Fomalhaut  = {
-		
-       head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Sherida Earring",
-		-- body="Oshosi Vest +1", lring="Chirich Ring +1",
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Dingir Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 
     sets.midcast.RA.Fomalhaut.Acc = {
-        -- head="Arcadian Beret +3",
-		head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Orion Jerkin +3" 
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 	
 	sets.midcast.RA.Fomalhaut.HighAcc = {
-		head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Orion Jerkin +3"
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Adhe. Gamashes +1"}
+		-- Scout's Gorget +2
+        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+		-- Malignance Gloves
+        body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
+		-- K. Kachina Belt +1
+        back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 
 	sets.buff['Double Shot'] = {body="Arc. Jerkin +3", back=gear.tp_ranger_jse_back}
 	sets.buff['Double Shot'].Acc = {body="Arc. Jerkin +3", back=gear.tp_ranger_jse_back}

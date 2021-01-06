@@ -7,7 +7,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Twashtar','LowBuff')
+	state.Weapons:options('Twashtar','LowBuff','Omen')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 
 	gear.DA_jse_back = {name="Senuna's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
@@ -49,22 +49,20 @@ function init_gear_sets()
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
 	
 	-- Weapons sets
-	sets.weapons.Twashtar = {main="Twashtar", sub="Blurred Knife +1"}
+	sets.weapons.Twashtar = {main="Twashtar", sub="Kaja Knife"}--Blurred Knife +1
 	sets.weapons.LowBuff = {main="Twashtar", sub="Blurred Knife +1"}
-	
+	sets.weapons.Omen = {main="Pugiunculus", sub="Demersal Degen"}
     -- Precast Sets
     
     -- Precast sets to enhance JAs
-
-    sets.precast.JA['No Foot Rise'] = {body="Horos Casaque"}
-
+    sets.precast.JA['No Foot Rise'] = {body="Horos Casaque +1"}
     sets.precast.JA['Trance'] = {head="Horos Tiara +1"}
     
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {ammo="Yamarang",
-		-- Etoile Collar +2
-        head="Mummu Bonnet +2",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
+		-- Etoile Collar +2 neck="Unmoving Collar +1",
+        head="Mummu Bonnet +2",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
 		-- Carbuncle Ring +1 Carbuncle Ring +1
         body="Maxixi Casaque",hands="Regal Gloves",ring1="Defending Ring",ring2="Valseur's Ring",
         back="Toetapper Mantle",waist="Chaac Belt",legs="Dashing Subligar",feet="Maxixi Toe Shoes"}
@@ -83,19 +81,19 @@ function init_gear_sets()
         head="Maxixi Tiara",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Digni. Earring",
 		-- Maxixi Casaque +3 Maxixi Bangles +3 Chirich Ring +1
         body="Maxixi Casaque",hands="Maxixi Bangles",ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Maxixi Tights",feet="Horos Toe Shoes"}
+        back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Maxixi Tights +1",feet="Horos Toe Shoes +1"}
 		
     sets.Enmity = {ammo="Paeapua",
         --head="Halitus Helm", neck="Unmoving Collar +1",
 		ear1="Friomisi Earring",ear2="Cryptic Earring",
         -- Horos Bangles +3
-		body="Emet Harness +1",hands="Horos Bangles",ring1="Petrov Ring",ring2="Supershear Ring",
+		body="Emet Harness +1",hands="Horos Bangles +1",ring1="Petrov Ring",ring2="Supershear Ring",
         back="Reiki Cloak",waist="Goading Belt",legs=gear.herculean_dt_legs,feet="Malignance Boots"}
 		
     sets.precast.JA.Provoke = sets.Enmity
 
     sets.precast.Flourish1 = {}
-    sets.precast.Flourish1['Violent Flourish'] = {ammo="Yadsmarang",
+    sets.precast.Flourish1['Violent Flourish'] = {ammo="Yamarang",
         head="Mummu Bonnet +2",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Digni. Earring",
         -- Horo Casaque +3
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Stikini Ring",ring2="Stikini Ring",
@@ -179,7 +177,7 @@ function init_gear_sets()
         back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"})
     sets.precast.WS["Rudra's Storm"].Fodder = set_combine(sets.precast.WS["Rudra's Storm"], {ammo="Charis Feather",
         -- Etoile Gorget +2
-		head="Maculele Tiara +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
+		head="Maculele Tiara",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
         -- Maxixi Bangles +3
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",ring2="Regal Ring",
 		-- Horo Tights +3
@@ -317,11 +315,7 @@ function init_gear_sets()
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet="Lustra. Leggings +1"})
 	sets.precast.WS['Pyrrhic Kleos'].Fodder = set_combine(sets.precast.WS['Pyrrhic Kleos'], {})
 
-    sets.precast.WS['Aeolian Edge'] = {ammo="Pemphredo Tathlum",
-        head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Epaminondas's Ring",ring2="Shiva Ring +1",
-		-- Horo Tights +3 
-        back=gear.wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet=gear.herculean_nuke_feet}
+    sets.precast.WS['Aeolian Edge'] = {head=empty, body=empty, hands=empty, legs=empty, feet=empty}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
@@ -385,7 +379,7 @@ function init_gear_sets()
 		-- Malignance Tights
         back=gear.stp_jse_back,waist="Flume Belt",legs="Mummu Kecks +2", feet="Turms Leggings +1"}
 
-    sets.Kiting = {feet="Skadi's Jambeaux"}
+    sets.Kiting = {feet="Tandava Crackows"}
 
     -- Engaged sets
 
@@ -462,10 +456,10 @@ function init_gear_sets()
         back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Saber Dance'] = {legs="Horos Tights +1 +1"} 
+    sets.buff['Saber Dance'] = {legs="Horos Tights +1"} 
     sets.buff['Climactic Flourish'] = {ammo="Charis Feather",
         -- Etoile Gorget +2
-		head="Maculele Tiara +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
+		head="Maculele Tiara",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
         -- Maxixi Bangles +3
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",ring2="Regal Ring",
 		-- Horo Tights +3

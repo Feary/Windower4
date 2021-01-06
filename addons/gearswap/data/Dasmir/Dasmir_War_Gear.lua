@@ -1339,22 +1339,22 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {legs="Volte Hose", waist="Chaac Belt"})
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Aganoshe", sub="Pole Grip"} -- sub="Utu Grip"
+	sets.weapons.Default = {main="Aganoshe", sub="Utu Grip"} --
 	sets.weapons.DualWeapons = {main="Kaja Axe", sub="Naegling"} -- Kaja Axe
 	sets.weapons.Axe = {main="Kaja Axe", sub="Adapa Shield"}
-	sets.weapons.Greatsword = {main="Montante", sub="Pole Grip"} -- sub="Utu Grip"
+	sets.weapons.Greatsword = {main="Montante", sub="Utu Grip"} 
 	sets.weapons.Sword = {main="Naegling", sub="Adapa Shield"}
 	sets.weapons.DualSwords = {main="Naegling", sub="Kaja Axe"}
 	sets.weapons.H2H = {main="Kaja Knuckles"}
-	sets.weapons.Polearm = {main="Kaja Lance", sub="Pole Grip"} -- sub="Utu Grip"
+	sets.weapons.Polearm = {main="Kaja Lance",  sub="Utu Grip"}
 	sets.weapons.ProcDagger = {main="Kustawi +1", sub="Malevolence"}
 	sets.weapons.ProcSword = {main="Ibushi Shinai", sub="Adapa Shield"}
-	sets.weapons.ProcGreatSword = {main="Montante", sub="Pole Grip"}
-	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Pole Grip"}
-	sets.weapons.ProcPolearm = {main="Pitchfork", sub="Pole Grip"}
-	sets.weapons.ProcGreatKatana = {main="Zanmato", sub="Pole Grip"}
+	sets.weapons.ProcGreatSword = {main="Montante", sub="Utu Grip"}                                                              "}
+	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Utu Grip"}                                                              "}
+	sets.weapons.ProcPolearm = {main="Pitchfork", sub="Utu Grip"}                                                              "}
+	sets.weapons.ProcGreatKatana = {main="Zanmato", sub="Utu Grip"}                                                              "}
 	sets.weapons.ProcClub = {main="Rounsey Wand", sub="Adapa Shield"}
-	sets.weapons.ProcStaff = {main="Plenitas Virga", sub="Pole Grip"}
+	sets.weapons.ProcStaff = {main="Plenitas Virga", sub="Utu Grip"}                                                              "}
 
 end
 	

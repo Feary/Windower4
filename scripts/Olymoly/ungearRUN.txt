@@ -6,28 +6,11 @@ put Handler's Earring +1 case all
 put Reikiko locker all
 put Epeolatry locker all
 put Carm. Sc. Mail +1 sack all
-put Eri. Leg Guards +1 locker
-put Erilaz Galea +1 locker
-put Erilaz Greaves +1 locker
-put Erilaz Surcoat +1 locker
 put Evasionist's Cape locker all
-put Fu. Bandeau +1 locker
-put Futhark Boots +1 locker
-put Futhark Coat +1 locker
-put Futhark Mitons +1 locker
-put Futhark Trousers +1 locker
-put Meg. Chausses +2 sack all
-put Meg. Gloves +2 sack all
-put Meg. Jam. +2 sack all
 put Mekosu. Harness sack all
 put Ogma's cape locker all
 put Rawhide Boots sack
 put Rawhide Mask sack all
-put Rune. Bandeau +1 locker
-put Rune. Trousers +1 locker
-put Runeist Bottes +1 locker
-put Runeist Coat +1 locker
-put Runeist Mitons +1 locker
 put Samnuha Tights sack all
 put Skaoi Boots case all
 put Utu Grip locker all

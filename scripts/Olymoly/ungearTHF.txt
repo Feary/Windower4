@@ -9,20 +9,8 @@ put Floral Gauntlets sack all
 put Grunfeld Rope sack all
 put Iskur Gorget safe2 all
 put Jute Boots +1 sack all
-put Kaja Knife sack all
 put Malevolence safe2 all
 put Mekosu. Harness sack all
-put Meg. Chausses +2 sack all 
-put Meg. Cuirie +2 sack all 
-put Meg. Gloves +2 sack all 
-put Meg. Jam. +2 sack all 
-put Meghanada Visor +2 sack all 
-put Mummu Bonnet +2 sack all 
-put Mummu Gamash. +2 sack all 
-put Mummu Jacket +2 sack all 
-put Mummu Kecks +2 sack all 
-put Mummu Wrists +2 sack all 
-put Naegling sack all
 put Ridill sack all
 put Raider's Bmrng. sack all
 put Rawhide boots sack all

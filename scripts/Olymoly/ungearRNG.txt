@@ -20,22 +20,12 @@ put Erudit. Necklace safe2 all
 put Grunfeld Rope sack all
 put Holliday safe2 all
 put Impulse Belt safe2 all
-put Iskur Gorget sack all
+put Iskur Gorput sack all
 put Jute Boots +1 sack all
 put Kustawi +1 safe2 all
 put Kwahu Kachina Belt safe2 all
 put Malevolence safe2 all
-put Meg. Chausses +2 sack all
-put Meg. Cuirie +2 sack all
-put Meg. Gloves +2 sack all
-put Meg. Jam. +2 sack all
-put Meghanada Visor +2 sack all
-put Mummu Bonnet +2 sack all
-put Mummu Gamash. +2 sack all
-put Mummu Jacket +2 sack all
-put Mummu Kecks +2 sack all
-put Mummu Ring safe2 all
-put Mummu Wrists +2 sack all
+put Nisroch Jerkin safe2 all
 put Nusku Shield safe2 all
 put Perun +1 safe2 all
 put Pursuer's Gaiters safe2 all

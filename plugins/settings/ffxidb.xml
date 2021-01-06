@@ -53,14 +53,16 @@
     <Worldkiller>
         <X>1280</X>
         <Y>32</Y>
+        <Zoom>70</Zoom>
     </Worldkiller>
     <Akili>
         <X>1280</X>
         <Y>32</Y>
     </Akili>
     <Olymoly>
-        <X>1278</X>
+        <X>1277</X>
         <Y>40</Y>
+        <Zoom>90</Zoom>
     </Olymoly>
     <Sikend>
         <X>1280</X>

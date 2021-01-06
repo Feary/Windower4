@@ -57,6 +57,7 @@ lua load tradenpc
 lua load curtracker
 lua load Valkyrie
 lua load petcharges
+lua load DNC-hud
 
 
 //Bind keys

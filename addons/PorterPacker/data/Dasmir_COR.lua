@@ -4,7 +4,6 @@ return {
     "Chass. Tricorne +1",
     "Chasseur's Frac +1",
     "Chasseur's Gants +1",
-    "Kaja Knife",
     "Laksa. Bottes  +2",
     "Laksa. Frac +3",
     "Laksa. Gants +2",
@@ -20,6 +19,7 @@ return {
     "Meg. Gloves +2",
     "Meg. Jam. +2",
     "Meghanada Visor +2",
+	"Meghanada Ring",
     "Mummu Bonnet +2",
     "Mummu Gamash. +2",
     "Mummu Jacket +2",
@@ -27,4 +27,7 @@ return {
     "Mummu Ring",
     "Mummu Wrists +2",
     "Naegling",
+	"Kaja Sword",
+	"Kaja Knife",
+	"Tauret",
 }

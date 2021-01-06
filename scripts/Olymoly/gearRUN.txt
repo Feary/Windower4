@@ -6,28 +6,11 @@ get Handler's Earring +1 case all
 get Reikiko locker all
 get Epeolatry locker all
 get Carm. Sc. Mail +1 sack all
-get Eri. Leg Guards +1 locker
-get Erilaz Galea +1 locker
-get Erilaz Greaves +1 locker
-get Erilaz Surcoat +1 locker
 get Evasionist's Cape locker all
-get Fu. Bandeau +1 locker
-get Futhark Boots +1 locker
-get Futhark Coat +1 locker
-get Futhark Mitons +1 locker
-get Futhark Trousers +1 locker
-get Meg. Chausses +2 sack all
-get Meg. Gloves +2 sack all
-get Meg. Jam. +2 sack all
 get Mekosu. Harness sack all
 get Ogma's cape locker all
 get Rawhide Boots sack
 get Rawhide Mask sack all
-get Rune. Bandeau +1 locker
-get Rune. Trousers +1 locker
-get Runeist Bottes +1 locker
-get Runeist Coat +1 locker
-get Runeist Mitons +1 locker
 get Samnuha Tights sack all
 get Skaoi Boots case all
 get Utu Grip locker all

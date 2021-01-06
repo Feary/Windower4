@@ -48,7 +48,7 @@ function init_gear_sets()
     --------------------------------------
 
 	-- Weapons sets
-	sets.weapons.MeleeWeapons = {main="Kaja Rod", sub="Genbu's Shield"}
+	sets.weapons.MeleeWeapons = {main="Kaja Rod", sub="Genmei Shield"}
 	sets.weapons.DualWeapons = 	{main="Kaja Rod", sub="Kaja Rod"}
 	
     -- Precast Sets
@@ -438,12 +438,12 @@ function init_gear_sets()
 		back=gear.fastcast_jse_back, waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {main="Bolelabunga", sub="Genbu's Shield",		
+	sets.idle = {main="Bolelabunga", sub="Genmei Shield",		
 		head="Befouled Crown", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Theo. Briault +3", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
 
-	sets.idle.PDT = {main="Mafic Cudgel", sub="Genbu's Shield",
+	sets.idle.PDT = {main="Mafic Cudgel", sub="Genmei Shield",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
@@ -458,13 +458,13 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}	
 		
-	sets.idle.Weak = {main="Mafic Cudgel", sub="Genbu's Shield",
+	sets.idle.Weak = {main="Mafic Cudgel", sub="Genmei Shield",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
     -- Defense sets
-	sets.defense.PDT = {main="Mafic Cudgel", sub="Genbu's Shield",
+	sets.defense.PDT = {main="Mafic Cudgel", sub="Genmei Shield",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
