@@ -4,7 +4,7 @@
         <autodecline>false</autodecline>
         <blacklist />
         <mode>whitelist</mode>
-        <whitelist>Olymoly, Firetoplay, Aniyah, Dasmir</whitelist>
+        <whitelist>Olymoly, Firetoplay, Aniyah, Dasmir, Oasus, Helyah</whitelist>
 	</global>
 	<aniyah>
 		<whitelist>Firetoplay, Dasmir, Olymoly</whitelist>
@@ -13,6 +13,6 @@
 		<whitelist>Firetoplay, Aniyah, Olymoly</whitelist>
 	</Dasmir>
 	<Olymoly>
-        <whitelist>Firetoplay, Aniyah, Dasmir, Nurzejoy, Azzriel, Odysseuss, Geriond, Bigtymer</whitelist>
+        <whitelist>Firetoplay, Aniyah, Dasmir</whitelist>
 	</Olymoly>
 </settings>

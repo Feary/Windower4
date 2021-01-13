@@ -3,15 +3,17 @@ put Adad Amulet storage all
 put Artio's Mantle storage all
 put Enmerkar Earring storage all
 put Focal Orb storage all
+put Handler's Earring case all
+put Handler's Earring +1 case all
 put Hatxiik storage all
 put Hunahpu storage all
 put Hurch'lan Sash storage all
+put Isa Belt case all
 put Incarnation Sash storage all
 put Izizoeksi storage all
 put Kaidate storage all
 put Kerehcatl storage all
 put Kumbhakarna storage all
-put Pet Food Theta storage all
 put Rimeice Earring storage all
 put Varar Ring +1 storage all
 put Kyrene's Earring Storage all
@@ -20,7 +22,10 @@ put Thereoid Greaves sack all
 put Emicho Haubert +1 locker all
 put Skullrender storage all
 put Emicho Haubert +1 locker all
-put Domesticator Earring locker all
+put Domes. Earring storage all
 put pet food* storage all
 put *broth storage all
 put akamochi storage all
+put Farsha storage all
+put Malignance* sack all
+

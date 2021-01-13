@@ -76,8 +76,8 @@ function init_gear_sets()
 
 	-- Macc
 	sets.precast.JA['Feral Howl'] = {ammo="Pemphredo Tathlum",
-		--head="Malignance Chapeau", neck="Bst. Collar +2", rear="Gwati Earring",
-		head="Tali'ah Turban +2", neck="Sanctity Necklace", lear="Digni. Earring", rear="Enchntr. Earring +1",
+		--neck="Bst. Collar +2", rear="Gwati Earring",
+		head="Malignance Chapeau", neck="Sanctity Necklace", lear="Digni. Earring", rear="Enchntr. Earring +1",
 		-- Ankusa Jackcoat Malignance Gloves
 		body="Ankusa Jackcoat +1", hands="Tali'ah Gages +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Malignance Trousers 
@@ -85,8 +85,8 @@ function init_gear_sets()
 		
 	-- MND Mod
 	sets.precast.JA.Reward = {
-		-- head="Stout Bonnet"  neck="Phalaina Locket", ear2="Domesticator's Earring",
-		head="Meghanada Visor +2", ear1="Lifestorm Earring",
+		-- head="Stout Bonnet"  neck="Phalaina Locket",
+		head="Malignance Chapeau", ear1="Domes. Earring", ear2="Lifestorm Earring",
 		-- Malignance Gloves
 		body="Totemic Jackcoat +1", hands="Meg. Gloves +2", ring1="Stikini Ring", ring2="Stikini Ring",
 		-- waist="Klouskap Sash", legs="Ankusa Trousers +3",
@@ -115,15 +115,15 @@ function init_gear_sets()
 
 	-- VIOLENT FLOURISH
 	sets.precast.Flourish1 = {ammo="Pemphredo Tathlum",
-		--head="Malignance Chapeau", neck="Bst. Collar +2", rear="Gwati Earring",
-		head="Tali'ah Turban +2", neck="Sanctity Necklace", lear="Digni. Earring", 
+		-- neck="Bst. Collar +2",
+		head="Malignance Chapeau", neck="Sanctity Necklace", lear="Digni. Earring", rear="Enchntr. Earring +1",
 		-- Ankusa Jackcoat +1 Malignance Gloves
 		body="Tali'ah Manteel +2", hands="Tali'ah Gages +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Malignance Trousers  
 		back=gear.magic_ws_jse_back, waist="Eschan Stone", legs="Tali'ah Seraweels +2", feet="Malignance Boots"}
 	sets.precast.Flourish1['Violent Flourish'] = {ammo="Pemphredo Tathlum",
-		--head="Malignance Chapeau", neck="Bst. Collar +2", rear="Gwati Earring",
-		head="Tali'ah Turban +2", neck="Sanctity Necklace", lear="Digni. Earring", 
+		--neck="Bst. Collar +2",
+		head="Malignance Chapeau", neck="Sanctity Necklace", lear="Digni. Earring", rear="Enchntr. Earring +1",
 		-- Ankusa Jackcoat +1 Malignance Gloves
 		body="Tali'ah Manteel +2", hands="Tali'ah Gages +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Malignance Trousers 
@@ -139,9 +139,11 @@ function init_gear_sets()
 
 	-- MIDCAST SETS
 	sets.midcast.FastRecast = {
-		head="Tali'ah Turban +2",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+		head="Malignance Chapeau",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+		-- Malignance Tabard Malignance Hands
 		body="Taeon Tabard",hands="Leyline Gloves",ring1="Defending Ring",ring2="Prolix Ring",
-		back=gear.FC_jse_back,waist="Tempus Fugit",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+		-- Malignance Tights 
+		back=gear.FC_jse_back,waist="Tempus Fugit",legs="Tali'ah Sera. +2",feet="Malignance Boots"}
 
 	sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})
 
@@ -291,7 +293,7 @@ function init_gear_sets()
 	-- PET SIC & READY MOVES
 	sets.midcast.Pet.WS = {main=gear.PHYKumbha1,sub=gear.PHYKumbha2,
 		--  head="Emicho Coronet +1", neck="Beast Collar +2", ammo="Voluspa Tathlum",
-		head="Nuk. Cabasset +1", neck="Shulmanu Collar", ear1="Domesticator's Earring", ear2="Kyrene's Earring",
+		head="Nuk. Cabasset +1", neck="Shulmanu Collar", ear1="Domes. Earring", ear2="Kyrene's Earring",
 		-- rring="C. Palug Ring"
 		body="Tali'ah Manteel +2",hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
 		back=gear.Pet_acc_jse_back,waist="Incarnation Sash",legs="Tot. Trousers +2",feet="Tot. Gaiters +2"}
@@ -303,7 +305,7 @@ function init_gear_sets()
 	sets.midcast.Pet.MagicReady = {main=gear.MABKumbha,sub=gear.PDTMABKumbha,ammo="Demonry Core",
 		-- head="Emicho Coronet +1" Bst. Collar +2 
 		--head=gear.valorous_pet_head,
-		head="Tali'ah Turban +2", neck="Adad Amulet", ear1="Domesticator's Earring", ear2="Kyrene's Earring",
+		head="Tali'ah Turban +2", neck="Adad Amulet", ear1="Domes. Earring", ear2="Kyrene's Earring",
 		body="Emicho Haubert +1",hands="Nukumi Manoplas +1", ring1="Tali'ah Ring",ring2="Varar Ring +1",
 		-- legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet
 		back=gear.Pet_macc_jse_back,waist="Incarnation Sash",legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}

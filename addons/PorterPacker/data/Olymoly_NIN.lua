@@ -10,7 +10,7 @@ return {
     "Hattori Hakama",
     "Hattori Kyahan",
     "Hachiya Kyahan",
-    "Hachiya Hakama",
+    "Hachiya Hakama +1",
     "Hachiya Tekko",
     "Hachi. Chainmail",
     "Hachiya Hatsuburi",

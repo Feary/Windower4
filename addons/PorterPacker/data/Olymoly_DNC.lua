@@ -2,7 +2,7 @@ return {
 	"Skadi's Jambeaux",
 	"Charis Feather",
     "Maxixi Tiara",
-    "Maxixi Casaque",
+    "Maxixi Casaque +1",
     "Maxixi Bangles",
     "Maxixi Tights +1",
     "Maxixi Shoes",
