@@ -4,7 +4,7 @@
         <autodecline>false</autodecline>
         <blacklist />
         <mode>whitelist</mode>
-        <whitelist>Olymoly, Firetoplay, Aniyah, Dasmir, Oasus, Helyah</whitelist>
+        <whitelist>Olymoly, Firetoplay, Aniyah, Dasmir, Oasus, Helyah, Yerp</whitelist>
 	</global>
 	<aniyah>
 		<whitelist>Firetoplay, Dasmir, Olymoly</whitelist>
