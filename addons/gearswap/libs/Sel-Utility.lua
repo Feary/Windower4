@@ -535,14 +535,14 @@ function set_elemental_obi_cape_ring(spell, spellMap)
 				gear.ElementalObi.name = gear.default.obi_waist
 			end
 		end
+		
+		if spell.element == world.day_element and spell.english ~= 'Impact' and not spell.skill == 'Divine Magic' then
+			gear.ElementalRing.name = "Zodiac Ring"
+		else
+			gear.ElementalRing.name = gear.default.obi_ring
+		end
+		
 	end
-	
-	if spell.element == world.day_element and spell.english ~= 'Impact' and not S{'Divine Magic','Dark Magic','Healing Magic'}:contains(spell.skill) then
-        gear.ElementalRing.name = "Zodiac Ring"
-	else
-		gear.ElementalRing.name = gear.default.obi_ring
-	end
-
 end
 
 
@@ -940,7 +940,7 @@ end
 --Selindrile's Functions
 
 function item_available(item)
-	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] then
+	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] or player.satchel[item] then
 		return true
 	else
 		return false
@@ -1532,12 +1532,12 @@ function check_use_item()
 			windower.chat.input('/item "'..useItemName..'" <me>')
 			tickdelay = os.clock() + 3
 			return true
-		elseif item_available(useItemName) and ((get_usable_item(useItemName).next_use_time) + Offset) < 10 then
-			windower.send_command('gs c forceequip '..useItemSlot..' '..useItemName..'')
-			tickdelay = os.clock() + 2
-			return true
 		elseif player.satchel[useItemName] then
 			windower.send_command('get "'..useItemName..'" satchel')
+			tickdelay = os.clock() + 2
+			return true
+		elseif item_available(useItemName) and ((get_usable_item(useItemName).next_use_time) + Offset) < 10 then
+			windower.send_command('gs c forceequip '..useItemSlot..' '..useItemName..'')
 			tickdelay = os.clock() + 2
 			return true
 		elseif item_stepdown[useItemName] then
@@ -1697,7 +1697,7 @@ function is_party_member(playerid)
 end
 
 function get_usable_item(name)--returns time that you can use the item again
-    for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4"}) do
+	for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","satchel"}) do
         for _,v in pairs(gearswap.items[n]) do
             if type(v) == "table" and v.id ~= 0 and res.items[v.id].english:lower() == name:lower() then
                 return extdata.decode(v)
@@ -2028,7 +2028,7 @@ function is_nuke(spell, spellMap)
 	    (player.main_job == 'BLU' and spell.skill == 'Blue Magic' and spellMap and spellMap:contains('Magical')) or
 		(player.main_job == 'NIN' and spell.skill == 'Ninjutsu' and spellMap and spellMap:contains('ElementalNinjutsu')) or
 		spell.english == 'Comet' or spell.english == 'Meteor' or spell.english == 'Impact' or spell.english == 'Death' or
-		spell.english:startswith('Banish')
+		spell.english:startswith('Banish') or spell.english:startswith('Drain')
 		) then
 		
 		return true
@@ -2151,7 +2151,7 @@ function face_target()
 end
 
 function check_ammo()
-
+ 
 	if state.AutoAmmoMode.value and player.equipment.range and not player.in_combat and not world.in_mog_house and not useItem then
 		local ammo_to_stock
 		if type(ammostock) == 'table' and ammostock[data.equipment.rema_ranged_weapons_ammo[player.equipment.range]] then
@@ -2471,8 +2471,8 @@ function standardize_set(set)
 
 	standardized_set.ear1 = standardized_set.ear1 or standardized_set.left_ear or standardized_set.lear or nil
 	standardized_set.ear2 = standardized_set.ear2 or standardized_set.right_ear or standardized_set.rear or nil
-	standardized_set.ring1 = standardized_set.ring1 or standardized_set.left_ring or standardized_set.rring or nil
-	standardized_set.ring2 = standardized_set.ring2 or standardized_set.right_ring or standardized_set.lring or nil
+	standardized_set.ring1 = standardized_set.ring1 or standardized_set.left_ring or standardized_set.lring or nil
+	standardized_set.ring2 = standardized_set.ring2 or standardized_set.right_ring or standardized_set.rring or nil
 	standardized_set.range = standardized_set.range or standardized_set.ranged or nil
 	
 	return standardized_set

@@ -264,43 +264,38 @@ function init_gear_sets()
         back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     sets.engaged.DT = {ammo="Yamarang",
-      --  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-	    head="Mummu Bonnet +2",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-      --  body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Epona's Ring",
-	    body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Rajas Ring",ring2="Epona's Ring",
-      --  back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
-	   back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+		--  body="Malignance Tabard",hands="Malignance Gloves",
+		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Epona's Ring",
+		-- legs="Malignance Tights",
+		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
 	sets.engaged.SomeAcc.DT = {ammo="Yamarang",
-          --  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-	    head="Mummu Bonnet +2",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-      --  body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Epona's Ring",
-	    body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Rajas Ring",ring2="Epona's Ring",
-      --  back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
-	   back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+		--  body="Malignance Tabard",hands="Malignance Gloves",
+		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Epona's Ring",
+		-- legs="Malignance Tights",
+		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.engaged.Acc.DT = {ammo="Yamarang",
-         --  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-	    head="Mummu Bonnet +2",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-      --  body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Epona's Ring",
-	    body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Rajas Ring",ring2="Epona's Ring",
-      --  back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
-	   back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+		--  body="Malignance Tabard",hands="Malignance Gloves",
+		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Epona's Ring",
+		-- legs="Malignance Tights",
+		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
 	sets.engaged.FullAcc.DT = {ammo="Yamarang",
-          --  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-	    head="Mummu Bonnet +2",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-      --  body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Epona's Ring",
-	    body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Rajas Ring",ring2="Epona's Ring",
-      --  back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
-	   back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+		--  body="Malignance Tabard",hands="Malignance Gloves",
+		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Epona's Ring",
+		-- legs="Malignance Tights",
+		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
 	sets.engaged.Fodder.DT = {ammo="Yamarang",
-          --  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-	    head="Mummu Bonnet +2",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-      --  body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Epona's Ring",
-	    body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Rajas Ring",ring2="Epona's Ring",
-      --  back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
-	   back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+		--  body="Malignance Tabard",hands="Malignance Gloves",
+		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Epona's Ring",
+		-- legs="Malignance Tights",
+		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
     --------------------------------------
     -- Custom buff sets

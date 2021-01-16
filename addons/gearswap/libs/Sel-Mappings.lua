@@ -377,7 +377,7 @@ data.equipment.rema_ranged_weapons_ammo_pouch = {
 	['Annihilator'] = 'Era. Bul. Pouch'}
 
 data.equipment.cprings = L{"Endorsement Ring","Trizek Ring","Vocation Ring","Capacity Ring","Facility Ring"}
-data.equipment.xprings = L{"Echad Ring","Caliber Ring","Emperor Band","Empress Band","Resolution Ring","Duodecennial Ring","Decennial Ring","Novennial Ring","Undecennial Ring","Kupofried's Ring","Expertise Ring","Anniversary Ring","Allied Ring"}
+data.equipment.xprings = L{"Echad Ring","Caliber Ring","Emperor Band","Empress Band","Resolution Ring"}
 
 -------------------------------------------------------------------------------------------------------------------
 -- Tool Maps/Lists
