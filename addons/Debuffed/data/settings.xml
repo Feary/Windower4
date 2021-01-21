@@ -57,6 +57,12 @@
         <timers>true</timers>
         <whitelist />
     </global>
+    <akilee>
+        <pos>
+            <x>527</x>
+            <y>400</y>
+        </pos>
+    </akilee>
     <aniyah>
         <pos>
             <x>448</x>
