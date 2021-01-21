@@ -4,15 +4,6 @@
         <autodecline>false</autodecline>
         <blacklist />
         <mode>whitelist</mode>
-        <whitelist>Olymoly, Firetoplay, Aniyah, Dasmir, Oasus, Helyah, Yerp, Suede, Worldkiller, Casanoova, Watitdew, Kavita, Midnightclamm, Drecien, Fearyjunior, Akilee</whitelist>
+        <whitelist>Olymoly, Firetoplay, Aniyah, Dasmir, Oasus, Helyah, Yerp, Suede, Worldkiller, Casanoova, Watitdew, Kavita, Midnightclamm, Drecien, Fearyjunior, Akilee, Dayanna, Mehany, Ravindra, Symbio, Perseise, Almontay, Gonzaloo, Mostmost</whitelist>
 	</global>
-	<aniyah>
-		<whitelist>Firetoplay, Dasmir, Olymoly</whitelist>
-	</aniyah>
-	<Dasmir>
-		<whitelist>Firetoplay, Aniyah, Olymoly</whitelist>
-	</Dasmir>
-	<Olymoly>
-        <whitelist>Firetoplay, Aniyah, Dasmir</whitelist>
-	</Olymoly>
 </settings>
