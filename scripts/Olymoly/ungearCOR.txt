@@ -23,12 +23,8 @@ put Impulse Belt safe2 all
 put Iskur Gorput safe2 all
 put Kustawi +1 safe2 all
 put Kwahu Kachina Belt safe2 all
-put Lanun Bottes +1 safe2 all
-put Lanun Frac +1 safe2 all
-put Lanun Trews +1 safe2 all
-put Lanun Gants +1 safe2 all
-put Lanun Tricorne +1 safe2 all
 put Luzaf's Ring safe2 all
+put Malignance* sack all
 put Mekosu. Harness sack all
 put Molybdosis safe2 all
 put Nisroch Jerkin safe2 all

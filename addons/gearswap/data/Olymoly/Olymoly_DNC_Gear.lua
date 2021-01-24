@@ -112,11 +112,10 @@ function init_gear_sets()
     sets.precast.Flourish2['Reverse Flourish'] = {back="Toetapper Mantle", hands="Maculele Bangles"}
 
     sets.precast.Flourish3 = {}
-    sets.precast.Flourish3['Striking Flourish'] = {body="Maculele Casaque"}
+    sets.precast.Flourish3['Striking Flourish'] = {body="Maculele Casaque +1"}
     sets.precast.Flourish3['Climactic Flourish'] = {}
 
-    -- Fast cast sets for spells
-    
+    -- Fast cast sets for spells    
     sets.precast.FC = {ammo="Impatiens",
 		head="Herculean Helm",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
@@ -459,7 +458,7 @@ function init_gear_sets()
     sets.buff['Saber Dance'] = {legs="Horos Tights +1"} 
     sets.buff['Climactic Flourish'] = {ammo="Charis Feather",
         -- Etoile Gorget +2
-		head="Maculele Tiara",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
+		head="Maculele Tiara +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
         -- Maxixi Bangles +3
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Epaminondas's Ring",ring2="Regal Ring",
 		-- Horo Tights +3

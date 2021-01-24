@@ -23,12 +23,8 @@ get Impulse Belt safe2 all
 get Iskur Gorget safe2 all
 get Kustawi +1 safe2 all
 get Kwahu Kachina Belt safe2 all
-get Lanun Bottes +1 safe2 all
-get Lanun Frac +1 safe2 all
-get Lanun Trews +1 safe2 all
-get Lanun Gants +1 safe2 all
-get Lanun Tricorne +1 safe2 all
 get Luzaf's Ring safe2 all
+get Malignance* sack all
 get Mekosu. Harness sack all
 get Molybdosis safe2 all
 get Nisroch Jerkin safe2 all
