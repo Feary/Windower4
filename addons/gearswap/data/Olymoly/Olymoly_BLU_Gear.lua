@@ -46,7 +46,7 @@ function user_setup()
 	send_command('bind !q gs c weapons HybridWeapons;gs c update')
 	
 	-- Gearing Commands
-	send_command('alias bludd aset spellset zahak')
+	send_command('alias bludd aset spellset dd100')
 	send_command('alias blureset lua reload azureset')
 	send_command('alias bluddnin aset spellset zahak;input /macro set 1')
 	send_command('alias bluddwar aset spellset zahak;input /macro set 2')

@@ -8,7 +8,7 @@ return {
 	"Chasseur's Bottes",
 	"Nvrch. Culottes +1",
 	"Chasseur's Tricorne",
-	"Chasseur's Gants +1",
+	"Chasseur's Gants",
 	"Meg. Chausses +2",
 	"Meg. Cuirie +2",
 	"Meg. Gloves +2",

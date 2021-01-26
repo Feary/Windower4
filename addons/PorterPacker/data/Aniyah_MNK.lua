@@ -1,6 +1,6 @@
 return {
 	"Kaja Knuckles",
-    "Anchorite's Crown +1",
+    "Anchorite's Crown",
 	"Anchorite's Cyclas +1",
     "Anchorite's Gloves +1",
     "Anchorite's Hose +1",
