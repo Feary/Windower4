@@ -78,7 +78,7 @@ function init_gear_sets()
 		-- Odndowa Earring 
 		head="Lanun Tricorne", neck="Regal Necklace", lear="Etiolation Earring", rear="Merman's Earring",
 		-- dt herc?
-		body="Meg. Cuirie +2", hands="Chasseur's Gants", lring="Barataria Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Chasseur's Gants +1", lring="Barataria Ring", rring="Defending Ring",
 		--  legs="Desultor Tassets" -dt feet
 		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 

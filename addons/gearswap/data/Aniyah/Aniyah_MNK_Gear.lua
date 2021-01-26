@@ -43,7 +43,7 @@ function init_gear_sets()
 	sets.precast.JA['Boost'] = {hands="Anchorite's Gloves +1"}
 	sets.precast.JA['Boost'].OutOfCombat = {hands="Anchorite's Gloves +1"} 
 	sets.precast.JA['Dodge'] = {feet="Anchorite's Gaiters +1"}
-	sets.precast.JA['Focus'] = {head="Anchorite's Crown"}
+	sets.precast.JA['Focus'] = {head="Anchorite's Crown +1"}
 	sets.precast.JA['Footwork'] = {}-- feet="Shukuyu Sune-Ate"
 	sets.precast.JA['Counterstance'] = {feet="Hesychast's Gaiters +1"}
 	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas +1"}

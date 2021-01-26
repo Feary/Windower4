@@ -97,7 +97,7 @@ function init_gear_sets()
         head="Mummu Bonnet +2",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Digni. Earring",
         -- Horo Casaque +3
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Stikini Ring",ring2="Stikini Ring",
-		--Horos Tights +3
+		-- Horos Tights +3
         back=gear.stp_jse_back,waist="Eschan Stone",legs="Meg. Chausses +2",feet="Mummu Gamashes +2"}
 		
     sets.precast.Flourish1['Animated Flourish'] = sets.Enmity
