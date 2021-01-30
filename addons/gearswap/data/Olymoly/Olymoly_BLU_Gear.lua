@@ -9,7 +9,7 @@ function user_setup()
 	state.PhysicalDefenseMode:options('PDT', 'NukeLock')
 	state.MagicalDefenseMode:options('MDT', 'NukeLock')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','Ambu','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons')--'Tizalmace','Sequence','Almace',
+	state.Weapons:options('None','Ambu','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons','DualAmbu','DualMagicWeapons','DualMeleeClubs','DualMaccWeapons','HybridWeapons')--'Tizalmace','Sequence','Almace',
 
     
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'MP','SuppaBrutal', 'DWEarrings','DWMax'}
@@ -365,22 +365,21 @@ function init_gear_sets()
 	-- Magical Spells --
 
 	sets.midcast['Blue Magic'].Magical = {ammo="Pemphredo Tathlum",
-		-- Maxentius
-		main="Maxentius", sub="Naegling",
+		main="Maxentius", sub="Kaja Rod",
 		-- Baetyl Pendant
 		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Hachirin-no-obi", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,{ammo="Pemphredo Tathlum",
-		main="Naegling", sub="Nibiru Cudgel",
+		main="Maxentius", sub="Kaja Rod",
 		-- Baetyl Pendant
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Yamabuki-no-Obi", legs="Amalric Slops +1", feet="Amalric Nails +1"})
 
 	sets.midcast['Blue Magic'].Magical.Fodder = {ammo="Pemphredo Tathlum",
-		main="Naegling", sub="Nibiru Cudgel",
+		main="Maxentius", sub="Kaja Rod",
 		-- Baetyl Pendant
 		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
@@ -391,13 +390,13 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].MagicalVit = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
-	sets.midcast['Blue Magic'].MagicAccuracy = {main="Naegling",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
+	sets.midcast['Blue Magic'].MagicAccuracy = {main="Maxentius", sub="Kaja Rod",ammo="Pemphredo Tathlum",
 		-- Assim +3 
 		head="Carmine Mask +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Digni. Earring",
 		body="Jhakri Robe +2", hands="Aya. Manopolas +2", lring="Stikini Ring", rring="Stikini Ring",
 		back="Cornflower Cape", waist="Eschan Stone", legs="Ayanmo Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.midcast['Enfeebling Magic'] = {main="Naegling",sub="Nibiru Cudgel",ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'] = {main="Maxentius", sub="Kaja Rod", ammo="Pemphredo Tathlum",
 		-- Assim +3 
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Digni. Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Stikini Ring", rring="Stikini Ring",
@@ -511,7 +510,7 @@ function init_gear_sets()
 		--main="Iris",sub="Iris",
 		--Luh. Keffiyeh +3
 		head="Luh. Keffiyeh +1", neck="Incanter's Torque", lear="Gifted Earring", rear="Loquac. Earring",
-		-- Assim. Jubbah +3 +4 Rawhide Gloves +10  +3 +3
+		-- Assim. Jubbah +3 +4 Rawhide Gloves +10 +3
 		body="Assim. Jubbah +1", lring="Stikini Ring", rring="Stikini Ring",
 		-- Luhlaza Charuqs +3 +4
 		back="Cornflower Cape", waist="Witful Belt", legs="Hashishin Tayt +1", feet="Luhlaza Charuqs +1"}
@@ -564,8 +563,7 @@ function init_gear_sets()
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippomenes Socks"})--
 
 	-- Defense sets
-	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield", ammo="Staunch Tathlum",
-		-- Genmei Shield 
+	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield", ammo="Staunch Tathlum", 
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Genmei Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
@@ -595,13 +593,20 @@ function init_gear_sets()
 	
 	-- Weapon Set
 	--sets.weapons.Tizalmace = {main="Tizona",sub="Almace"}
-	sets.weapons.Ambu = {main="Naegling", sub="Tanmogayi +1"}
-	sets.weapons.MeleeClubs = {main="Maxentius",sub="Nibiru Cudgel"}
+	sets.weapons.Ambu = {main="Naegling", sub="Kaja Sword"}
+	sets.weapons.MeleeClubs = {main="Maxentius",sub="Kaja Rod"}
 	--sets.weapons.Almace = {main="Almace",sub="Sequence"}
 	--sets.weapons.Sequence = {main="Sequence",sub="Almace"}
-	sets.weapons.MagicWeapons = {main="Naegling", sub="Maxentius"} --
-	sets.weapons.MaccWeapons = {main="Naegling", sub="Maxentius"}--main="Iris",sub="Iris"
+	sets.weapons.MagicWeapons = {main="Maxentius",sub="Kaja Rod"}
+	sets.weapons.MaccWeapons ={main="Maxentius",sub="Kaja Rod"}
 	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
+	
+	-- Dual Wield
+	sets.weapons.DualAmbu = {main="Naegling", sub="Kaja Sword"}
+	sets.weapons.DualMeleeClubs = {main="Maxentius",sub="Kaja Rod"}
+	sets.weapons.DualMagicWeapons = {main="Maxentius",sub="Kaja Rod"}
+	sets.weapons.DualMaccWeapons ={main="Maxentius",sub="Kaja Rod"}
+	sets.weapons.DualHybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets
 	sets.engaged = {ammo="Ginsen",

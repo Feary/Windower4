@@ -9,18 +9,7 @@ put Amalric Nails +1 case all
 put Amalric Slops +1 case all
 put Amalric Coif +1 case all
 put Amalric Doublet +1 case all
-put Ainia Collar sack all
-put Assim. Bazu. +1 sack all
-put Assim. Charuqs +1 sack all
-put Assim. Jubbah +1 sack all
-put Assim. Keffiyeh +1 sack all
-put Assim. Shalwar +1 sack all
 put Cornflower Cape sack all
-put Hashi. Basmak +1 sack all
-put Hashishin Kavuk +1 sack all
-put Hashishin Mintan +1 sack all
-put Hashi. Bazu. +1 sack all
-put Hashishin Tayt +1 sack all
 put Herculean Boots sack all
 put Herculean Gloves sack all
 put Herculean Helm sack all
@@ -32,11 +21,6 @@ put Jhakri Robe +2 case all
 put Naegling sack all
 put Kaja Knife sack all
 put Kaja Rod case all
-put Luh. Bazubands +1 sack all
-put Luh. Keffiyeh +1 sack all
-put Luhlaza Charuqs +1 sack all
-put Luhlaza Jubbah +1 sack all
-put Luhlaza Shalwar +1 sack all
 put Mavi Tathlum sack all
 put Mekosu. Harness sack all
 put Nibiru Cudgel sack all
@@ -45,7 +29,6 @@ put Rawhide Boots sack all
 put Rosmerta's Cape sack all
 put Samnuha Tights sack
 put Skaoi Boots case all
-put Tanmogayi +1 sack all
 put Thereoid Greaves sack all
 put Vampirism sack all
 
