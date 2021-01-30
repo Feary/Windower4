@@ -1349,12 +1349,12 @@ function init_gear_sets()
 	sets.weapons.Polearm = {main="Kaja Lance",  sub="Utu Grip"}
 	sets.weapons.ProcDagger = {main="Kustawi +1", sub="Malevolence"}
 	sets.weapons.ProcSword = {main="Ibushi Shinai", sub="Adapa Shield"}
-	sets.weapons.ProcGreatSword = {main="Montante", sub="Utu Grip"}                                                              "}
-	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Utu Grip"}                                                              "}
-	sets.weapons.ProcPolearm = {main="Pitchfork", sub="Utu Grip"}                                                              "}
-	sets.weapons.ProcGreatKatana = {main="Zanmato", sub="Utu Grip"}                                                              "}
+	sets.weapons.ProcGreatSword = {main="Montante", sub="Utu Grip"}
+	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Utu Grip"}
+	sets.weapons.ProcPolearm = {main="Pitchfork", sub="Utu Grip"}
+	sets.weapons.ProcGreatKatana = {main="Zanmato", sub="Utu Grip"}
 	sets.weapons.ProcClub = {main="Rounsey Wand", sub="Adapa Shield"}
-	sets.weapons.ProcStaff = {main="Plenitas Virga", sub="Utu Grip"}                                                              "}
+	sets.weapons.ProcStaff = {main="Plenitas Virga", sub="Utu Grip"}
 
 end
 	
