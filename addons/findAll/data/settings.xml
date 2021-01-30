@@ -43,12 +43,4 @@
             </text>
         </Tracker>
     </global>
-    <olymoly>
-        <Track />
-        <Tracker>
-            <pos>
-                <y>1064</y>
-            </pos>
-        </Tracker>
-    </olymoly>
 </settings>
