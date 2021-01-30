@@ -9,74 +9,19 @@ get Amalric Nails +1 case all
 get Amalric Slops +1 case all
 get Amalric Coif +1 case all
 get Amalric Doublet +1 case all
-get Ainia Collar sack all
-get Assim. Bazu. +1 sack all
-get Assim. Charuqs +1 sack all
-get Assim. Jubbah +1 sack all
-get Assim. Keffiyeh +1 sack all
-get Assim. Shalwar +1 sack all
 get Cornflower Cape sack all
-get Hashi. Basmak +1 sack all
-get Hashishin Kavuk +1 sack all
-get Hashi. Bazu. +1 sack all
-get Hashishin Mintan +1 sack all
-get Hashishin Tayt +1 sack all
 get Herculean Boots sack all
 get Herculean Gloves sack all
 get Herculean Helm sack all
 get Herculean Vest sack all
 get Helios Gloves case all
-get Jhakri Cuffs +2 case all
-get Jhakri Pigaches +2 case all
-get Jhakri Robe +2 case all
-get Kaja Rod case all
-get Luh. Bazubands +1 sack all
-get Luh. Keffiyeh +1 sack all
-get Luhlaza Charuqs +1 sack all
-get Luhlaza Jubbah +1 sack all
-get Luhlaza Shalwar +1 sack all
 get Mavi Tathlum sack all
 get Mekosu. Harness sack all
 get Nibiru Cudgel sack all
-get Naegling sack all
 get Rawhide Mask sack all
 get Rawhide Boots sack all
 get Rosmerta's Cape sack all
 get Samnuha Tights sack
 get Skaoi Boots case all
-get Tanmogayi +1 sack all
 get Thereoid Greaves sack all
 get Vampirism sack all
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

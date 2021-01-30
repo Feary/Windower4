@@ -457,8 +457,7 @@ function init_gear_sets()
 	sets.midcast.Cure = {ammo="Pemphredo Tathlum",
 		main="Maxentius",sub="Nibiru Cudgel",
 		head="Carmine Mask +1", neck="Phalaina Locket", lear="Regal Earring", rear="Enchntr. Earring +1",
-		-- Vrikodata Jupon 
-		body=gear.telchine_body_CureRecieved, hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
+		body="Vrikodata Jupon", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.cure_jse_back, waist="Luminary Sash", legs="Gyve Trousers",feet="Skaoi Boots"}
 
 	-- Breath Spells --
@@ -498,8 +497,8 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Healing = {ammo="Staunch Tathlum", 
 		sub="Nibiru Cudgel",
 		head="Carmine Mask +1", neck="Phalaina Locket", lear="Regal Earring", rear="Enchntr. Earring +1",
-		-- Vrikodata Jupon body=gear.telchine_body_CureRecieved, 
-		body="Assim. Jubbah +1",hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
+		--  body=gear.telchine_body_CureRecieved, 
+		body="Vrikodata Jupon",hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.cure_jse_back, waist="Luminary Sash", legs="Gyve Trousers", feet="Skaoi Boots"}
 
 	--Overwrite certain spells with these pieces even if the day matches, because of resource inconsistencies.
@@ -540,9 +539,9 @@ function init_gear_sets()
 
 	-- Resting sets
 	sets.resting = {main="Bolelabunga",sub="Genmei Shield",ammo="Hasty Pinion +1",
-		head="Rawhide Mask", neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
+		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
 		body="Jhakri Robe +2", hands="Aya. Manopolas +2", ring1="Dark Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back="Moonbeam Cape",waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 
 	-- Idle sets
 	-- Refresh
@@ -551,32 +550,32 @@ function init_gear_sets()
 		-- Assim. Jubbah +3 Herc Refresh
 		body="Jhakri Robe +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Herc Refresh  Herc Refresh
-		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}		
+		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Malignance Boots"}		
 		
 	sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
+		head="Malignance Chapeau", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
+		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Malignance Boots"}			
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippomenes Socks"})--
 
 	-- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield", ammo="Staunch Tathlum", 
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Genmei Earring", rear="Etiolation Earring",
+		head="Malignance Chapeau", neck="Loricate Torque +1", lear="Genmei Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Malignance Boots"}
 
 	sets.defense.MDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
+		head="Malignance Chapeau", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
+		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Malignance Boots"}	
 
 	sets.defense.MEVA = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum",
-      	head="Aya. Zucchetto +2", neck="Warden's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
+		head="Malignance Chapeau", neck="Warden's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
+		back="Moonbeam Cape", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Malignance Boots"}	
 
 	sets.defense.NukeLock = sets.midcast['Blue Magic'].Magical
 
@@ -646,9 +645,9 @@ function init_gear_sets()
 		back=gear.stp_jse_back, waist="Windbuffet Belt +1", legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	sets.engaged.DTLite = {ammo="Staunch Tathlum",
-		head="Adhemar Bonnet +1",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Dedition Earring",
+		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Dedition Earring",
 		body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Defending Ring",
-		back=gear.dw_jse_back, waist="Windbuffet Belt +1", legs="Samnuha Tights",feet=gear.herculean_ta_feet}
+		back=gear.dw_jse_back, waist="Windbuffet Belt +1", legs="Samnuha Tights",feet="Malignance Boots"}
 
 	sets.engaged.DTLite.AM = {ammo="Staunch Tathlum",
 		head="Adhemar Bonnet +1",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Dedition Earring",

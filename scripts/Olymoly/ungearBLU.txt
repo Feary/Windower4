@@ -15,12 +15,6 @@ put Herculean Gloves sack all
 put Herculean Helm sack all
 put Herculean Vest sack all
 put Helios Gloves case all
-put Jhakri Cuffs +2 case all
-put Jhakri Pigaches +2 case all
-put Jhakri Robe +2 case all
-put Naegling sack all
-put Kaja Knife sack all
-put Kaja Rod case all
 put Mavi Tathlum sack all
 put Mekosu. Harness sack all
 put Nibiru Cudgel sack all
@@ -31,36 +25,6 @@ put Samnuha Tights sack
 put Skaoi Boots case all
 put Thereoid Greaves sack all
 put Vampirism sack all
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+put Malignance Chapaeu sack all
+put Malignance Boots sack all
+put Carm. Sc. Mail +1 sack all

@@ -25,4 +25,6 @@ return {
     "Meg. Chausses +2",
     "Meg. Jam. +2",
 	"Naegling",	
+	"Kaja Sword",
+	"Kaja Knife",
 }
