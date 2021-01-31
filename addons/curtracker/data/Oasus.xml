@@ -23,4 +23,10 @@
             <red>255</red>
         </value_color>
     </global>
+    <oasus>
+        <pos>
+            <x>1561</x>
+            <y>48</y>
+        </pos>
+    </oasus>
 </settings>

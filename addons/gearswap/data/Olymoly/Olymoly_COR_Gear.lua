@@ -171,17 +171,17 @@ function init_gear_sets()
 	-- Melee
     sets.precast.WS = {
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Ilabrat Ring",
+        body="Nisroch Jerkin",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 		
     sets.precast.WS.Acc = {
         head="Meghanada Visor +2",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-		body="Meg. Cuirie +2",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Ilabrat Ring",
+		body="Nisroch Jerkin,hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.str_wsd_jse_back,waist="Grunfeld Rope",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}		
 		
     sets.precast.WS.Proc = {
         head="Carmine Mask +1",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Cessance Earring",
-		body="Mummu Jacket +2", hands="Floral Gauntlets", ring1="Regal Ring", ring2="Ilabrat Ring",
+		body="Nisroch Jerkin", hands="Floral Gauntlets", ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.str_wsd_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Mummu Gamash. +2"}
 		
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -194,15 +194,16 @@ function init_gear_sets()
 		-- Herc Helm STR/Acc/WSD 
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
 		-- Laksa. Frac +3 
-        body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Shukuyu Ring",
+        body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Epaminondas's Ring",
 		-- Herc Trousers STR/ACC/WSD feet="Lanun Bottes +3"
         back=gear.str_wsd_jse_back,waist="Prosilio Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
+		-- Herch Helm STRattaccwsd Comm. Charm +2
         head="Meghanada Visor +2",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
 		-- Laksa. Frac +3
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",lring="Regal Ring", rring="Shukuyu Ring",
-		-- Herc Trousers STR/ACC/WSD Lanun Bottes +3
+        body="Meg. Cuirie +2",hands="Meg. Gloves +2",lring="Regal Ring", rring="Epaminondas's Ring",
+		-- Salifi Belt +1 Herc Trousers STR/ACC/WSD Lanun Bottes +3
         back=gear.str_wsd_jse_back,waist="Grunfeld Rope",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 	
 	sets.precast.WS['Swift Blade'] = {ammo=gear.WSbullet,
@@ -341,15 +342,15 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
-		-- body="Nisroch Jerkin", Malignance Tabard Malignance Gloves
-        body="Mummu Jacket +2", hands="Adhemar Wristbands",ring1="Dingir Ring",ring2="Ilabrat Ring",
+		--  Malignance Tabard Malignance Gloves
+		body="Nisroch Jerkin", hands="Adhemar Wristbands",ring1="Dingir Ring",ring2="Ilabrat Ring",
 		-- Legs="Malignance Tights
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 	
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- Malignance Tabard Malignance Gloves
-        body="Mummu Jacket +2", hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
+        body="Nisroch Jerkin", hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- waist="K. Kachina Belt +1" legs="Malignance Tights
         back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Adhemar Kecks +1",feet="Malignance Boots"}
 	
@@ -366,6 +367,7 @@ function init_gear_sets()
         body="Mummu Jacket +2", hands="Adhemar Wristbands",ring1="Dingir Ring",ring2="Ilabrat Ring",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt", legs="Adhemar Kecks +1", feet="Malignance Boots"}
 	
+	-- Armageddon
 	sets.midcast.RA.Armageddon = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- body="Nisroch Jerkin", hands="Adhemar Wrist. +1 Path C 
@@ -387,11 +389,12 @@ function init_gear_sets()
         back=gear.crit_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Darraigner's Brais",feet="Mummu Gamash. +2"}
 	
 	sets.midcast.RA.Armageddon.STP = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring", ear2="Dedition Earring",
-		-- body="Malignance Tabard",  hands="Malignance Gloves", lring="Chirich Ring +1", 
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring", ear2="Dedition Earring",
+		-- body="Malignance Tabard", hands="Malignance Gloves", lring="Chirich Ring +1", 
         body="Mummu Jacket +2", hands="Adhemar Wrist. +1" ,ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Adhemar Kecks +1", feet="Adhe. Gamashes +1"}
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Adhemar Kecks +1", feet="Malignance Boots"}
 		
+	--Fomalhaut
 	sets.midcast.RA.Fomalhaut = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enervating Earring",
 		-- body="Nisroch Jerkin", hands="Adhemar Wrist. +1" Path C 
