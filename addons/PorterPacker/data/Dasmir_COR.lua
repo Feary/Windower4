@@ -27,7 +27,7 @@ return {
     "Mummu Ring",
     "Mummu Wrists +2",
     "Naegling",
-	"Kaja Sword",
-	"Kaja Knife",
 	"Tauret",
+	--"Kaja Sword",
+	--"Kaja Knife",	
 }

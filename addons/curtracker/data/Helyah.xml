@@ -1,9 +1,9 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
-        <curfields>login points</curfields>
-        <curlines>2</curlines>
-        <currefresh>60</currefresh>
+        <curfields>voidstones,mystical canteens,potpourri,silver a.m.a.n. vouchers stored,escha silt,login points</curfields>
+        <curlines>1</curlines>
+        <currefresh>15</currefresh>
         <curtracking>true</curtracking>
         <field_color>
             <blue>255</blue>
@@ -11,8 +11,8 @@
             <red>0</red>
         </field_color>
         <pos>
-            <x>1608</x>
-            <y>48</y>
+            <x>1515</x>
+            <y>64</y>
         </pos>
         <text>
             <size>10</size>

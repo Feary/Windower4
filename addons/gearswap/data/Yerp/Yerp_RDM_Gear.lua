@@ -362,7 +362,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {})
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {})
 		
-	sets.midcast.Impact = {main="Naegling", sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty
+	sets.midcast.Impact = {main="Naegling", sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty,
 		-- Duelist Torque +2 ear1="Regal Earring", ear2="Malignance Earring",
 		head=empty, neck="Erra Pendant",  lear="Regal Earring", rear="Enchntr. Earring +1", 
 		-- Regal Cuffs Stikini Ring +1 Stikini Ring +1
@@ -370,7 +370,7 @@ function init_gear_sets()
 		-- Vitiation Boots +3
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Ayanmo Cosciales +2", feet="Jhakri Pigaches +2"}
 
-	sets.midcast['Dark Magic'] = {main="Rubicundity", sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty
+	sets.midcast['Dark Magic'] = {main="Rubicundity", sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty,
 		-- ear1="Regal Earring", ear2="Malignance Earring",
 		head="Atrophy Chapeau +2", neck="Erra Pendant", lear="Enchntr. Earring +1", rear="Regal Earring",
 		--body="Atrophy Tabard +3",hands="Leth. Gantherots +1",
@@ -378,7 +378,7 @@ function init_gear_sets()
 		-- legs="Psycloth Lappas", feet=gear.merlinic_nuke_feet
 		back=gear.Macc_jse_back,waist="Luminary Sash", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-    sets.midcast.Drain = {main="Rubicundity", sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty
+    sets.midcast.Drain = {main="Rubicundity", sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty,
 		-- ear1="Regal Earring", ear2="Malignance Earring",
 		head="Pixie Hairpin +1", neck="Erra Pendant", ear1="Enchntr. Earring +1", ear2="Regal Earring", 
         -- Shango Robe 
@@ -396,7 +396,7 @@ function init_gear_sets()
 		-- legs=gear.chironic_macc_legs, eet=gear.merlinic_aspir_feet
 		back=gear.Macc_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2",  feet="Aya. Gambieras +2"}
 		
-	sets.midcast.Stun.Resistant = {main="Daybreak",sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty
+	sets.midcast.Stun.Resistant = {main="Daybreak",sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty,
 		-- ear1="Regal Earring", ear2="Malignance Earring",
 		head="Atrophy Chapeau +2", neck="Voltsurge Torque", lear="Gwati Earring", rear="Enchntr. Earring +1",
 		--body="Zendik Robe",
@@ -504,19 +504,19 @@ function init_gear_sets()
 	--	back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
 
 	sets.engaged = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",\
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Chirich Ring +1 Chirich Ring +1
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
 	sets.engaged.Acc = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",\
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Chirich Ring +1 Chirich Ring +1
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
 	sets.engaged.FullAcc = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",\
+		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Chirich Ring +1 Chirich Ring +1
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
