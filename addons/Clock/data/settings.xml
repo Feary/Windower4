@@ -49,25 +49,4 @@
         <Sort><![CDATA[Time]]></Sort>
         <TimeZones>PST,CST,AWST,GMT</TimeZones>
     </global>
-    <aniyah>
-        <Separator>\n</Separator>
-        <Sort><![CDATA[None]]></Sort>
-        <TimeZones>PST,CST,GMT,JST</TimeZones>
-    </aniyah>
-    <dasmir>
-        <Separator>\n</Separator>
-        <Sort><![CDATA[None]]></Sort>
-        <TimeZones>PST,CST,GMT,JST</TimeZones>
-    </dasmir>
-    <olymoly>
-        <Clock>
-            <pos>
-                <x>1341</x>
-                <y>0</y>
-            </pos>
-        </Clock>
-        <Separator>\n</Separator>
-        <Sort><![CDATA[None]]></Sort>
-        <TimeZones>PST,CST,GMT,AWST</TimeZones>
-    </olymoly>
 </settings>

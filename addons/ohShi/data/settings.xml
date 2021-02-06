@@ -13,7 +13,7 @@
         <bggreen>0</bggreen>
         <bgred>0</bgred>
         <dangerwords>
-            <spells>Blizzaja,Kaustra,Firaja,Thundaga IV,Stonega IV,Stoneja,Aeroga IV,Breakga,cure,Meteor,Death,Firaga IV,Blizzaga IV,Aeroja,Thundaja</spells>
+            <spells>Stonega IV,Kaustra,Firaja,Thundaga IV,Thundaja,Stoneja,Aeroga IV,Breakga,cure,Meteor,Death,Firaga IV,Blizzaga IV,Aeroja,Blizzaja</spells>
             <weaponskills>Nerve,Danse,Astral Flow,Oblivion&apos;s Mantle,Provenance Watcher starts,Extreme Purgitation,Fulmination,Pawn&apos;s Penumbra,Gates,Frog,Rancid Reflux,Thundris,Divesting Gale,Mandible Massacre,Zantetsuken,Chainspell,Raksha Stance,Arm Cannon,Slimy Proposal,Geirrothr,Eradicator,Ballistic Kick,Yama&apos;s,Gorge,Beastruction</weaponskills>
         </dangerwords>
         <duration>7</duration>
@@ -26,11 +26,11 @@
         </flags>
         <moblist>
             <abyssea>Alfard,Isgebind,Glavoid,Carabosse,Orthrus</abyssea>
-            <dangerous>Provenance Watcher,Apademak,Mandragora</dangerous>
+            <dangerous>Apademak,Mandragora,Provenance Watcher</dangerous>
             <legion>Soaring,Paramount,Veiled,Mired,Lofty</legion>
             <meebles>Goldwing,Samursk,Umagrhk,Grannus,Silagilith,Svaha,Izyx,Melisseus,Dreyruk,Surtr</meebles>
             <other>Cerberus,Hydra,Enraged,Dvergr,Khimaira,Bloodthirsty,Odin,Tiamat,Khrysokhimaira</other>
-            <voidwatch>Provenance Watcher,Bismarck,Kaggen,Wazir,Sarbaz,Hahava,Kholomodumo,Asb,Ig-Alima,Taweret,Mellonia,Botulus Rex,Cherufe,Uptala,Pil,Rukh,Aello,Celaeno,Kalasutrax,Gugalanna,Gasha,Agathos,Belphoebe,Ocythoe,Akvan,Morta,Shah,Giltine,Gaunab,Qilin,Goji</voidwatch>
+            <voidwatch>Provenance Watcher,Bismarck,Kaggen,Wazir,Sarbaz,Hahava,Gaunab,Asb,Ig-Alima,Taweret,Mellonia,Botulus Rex,Cherufe,Uptala,Kholomodumo,Rukh,Aello,Celaeno,Kalasutrax,Gugalanna,Gasha,Agathos,Belphoebe,Ocythoe,Akvan,Morta,Shah,Giltine,Pil,Qilin,Goji</voidwatch>
         </moblist>
         <padding>0</padding>
         <pos>
