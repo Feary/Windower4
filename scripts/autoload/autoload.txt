@@ -31,7 +31,6 @@ lua load autojoin;
 lua load azureSets;
 lua load battlemod;
 lua load BattleStations;
-lua load BLUAlert;
 lua load cancel;
 lua load checkparam;
 lua load Clock;

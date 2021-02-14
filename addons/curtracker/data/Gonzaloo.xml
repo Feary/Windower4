@@ -2,7 +2,7 @@
 <settings>
     <global>
         <curfields>login points</curfields>
-        <curlines>2</curlines>
+        <curlines>1</curlines>
         <currefresh>60</currefresh>
         <curtracking>true</curtracking>
         <field_color>
