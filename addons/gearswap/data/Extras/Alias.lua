@@ -41,6 +41,9 @@ send_command('alias ungear gs equip naked;exec '..player.name..'/ungear'..player
 send_command('alias store naked;wait 1;po store '..player.main_job)
 send_command('alias unstore po unpack '..player.main_job)
 
+--Sparks
+send_command('alias shields repeater command sparks buy acheron shield;wait 1;repeater delay 3;wait 1;wrepeater count 38;wait 1;repeater on')
+
 -- Naked
 send_command('alias naked gs equip naked')
 

@@ -132,6 +132,9 @@ end
 
 -- Called when pet is about to perform an action
 function job_pet_midcast(spell, spellMap, eventArgs)
+	if spell.action_type == 'Magic' then --Limiting getting midcast to magic.
+		equip(get_pet_midcast_set(spell, spellMap))
+	end
 --[[ Not working due to delay, preserving in case it does in the future.
     if petWeaponskills:contains(spell.english) then
         classes.CustomClass = "Weaponskill"
@@ -470,7 +473,7 @@ function check_maneuver()
 end
 
 function job_aftercast(spell, spellMap, eventArgs)
-	if pet_midaction() or spell.english == 'Activate' or spell.english == 'Deus Ex Automata' then
+	if not spell.interrupted and (spell.english == 'Activate' or spell.english == 'Deus Ex Automata') then
 		eventArgs.handled = true
 	end
 end
