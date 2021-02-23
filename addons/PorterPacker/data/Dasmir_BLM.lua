@@ -9,7 +9,7 @@ return {
     "Arch. Petasos",
     "Arch. Sabots",
     "Arch. Tonban",
-    "Spaekona's Coat",
+    "Spaekona's Coat +1",
     "Spaekona's Gloves",
     "Spaekona's Petasos",
     "Spaekona's Sabots +1",

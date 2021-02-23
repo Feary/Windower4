@@ -65,7 +65,7 @@ function init_gear_sets()
         head="Mummu Bonnet +2",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
 		-- Carbuncle Ring +1 Carbuncle Ring +1
         body="Maxixi Casaque",hands="Regal Gloves",ring1="Defending Ring",ring2="Valseur's Ring",
-        back="Toetapper Mantle",waist="Chaac Belt",legs="Dashing Subligar",feet="Maxixi Toe Shoes"}
+        back="Toetapper Mantle",waist="Chaac Belt",legs="Dashing Subligar",feet="Maxixi Toe Shoes +1"}
 		
 	sets.Self_Waltz = {head="Mummu Bonnet +2",ring1="Asklepian Ring"}
         
@@ -74,7 +74,7 @@ function init_gear_sets()
     
     sets.precast.Samba = {head="Maxixi Tiara", back=gear.stp_jse_back}
 
-    sets.precast.Jig = {legs="Horos Tights +1", feet="Maxixi Toe Shoes"}
+    sets.precast.Jig = {legs="Horos Tights +1", feet="Maxixi Toe Shoes +1"}
 
     sets.precast.Step = {ammo="Yamarang",
 		-- Mache Earring +1 

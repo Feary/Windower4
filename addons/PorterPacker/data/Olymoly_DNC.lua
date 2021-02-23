@@ -5,7 +5,7 @@ return {
     "Maxixi Casaque +1",
     "Maxixi Bangles",
     "Maxixi Tights +1",
-    "Maxixi Shoes",
+    "Maxixi Toe Shoes +1",
     "Horos Tiara +1",
     "Horos Casaque +1",   
     "Horos Bangles +1",
