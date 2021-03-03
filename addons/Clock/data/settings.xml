@@ -49,4 +49,15 @@
         <Sort><![CDATA[Time]]></Sort>
         <TimeZones>PST,CST,AWST,GMT</TimeZones>
     </global>
+    <symbio>
+        <Clock>
+            <pos>
+                <x>1352</x>
+                <y>2</y>
+            </pos>
+        </Clock>
+        <Separator>\n</Separator>
+        <Sort><![CDATA[None]]></Sort>
+        <TimeZones>PST,CST,GMT,AWST</TimeZones>
+    </symbio>
 </settings>

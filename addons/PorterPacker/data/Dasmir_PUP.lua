@@ -6,7 +6,7 @@ return {
     "Karagoz Capello +1",
 	"Pitre Taj",
 	"Pitre Babouches +1",
-	"Pitre Churidars",
+	"Pitre Churidars +1",
 	"Pitre Dastanas",
 	"Pitre Tobe +1",
 	"Foire Babouches",
