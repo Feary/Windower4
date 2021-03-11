@@ -187,15 +187,14 @@ function init_gear_sets()
 	sets.RecoverMP = {}--body="Seidr Cotehardie"
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
-		-- main="Daybreak", 
+    sets.MagicBurst = {main="Daybreak", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- head="Ea Hat +1", 
 		head="Amalric Coif +1", neck="Mizu. Kubikazari", lear="Regal Earring", rear="Friomisi Earring",
 		-- body="Ea Houppelande +1",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Mujin Band", ring2="Shiva Ring +1",
 		--waist="Refoccilation Stone", legs="Ea Slops +1", feet="Ea Pigaches +1"
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Jhakri Pigaches +2"}
-	sets.RecoverBurst = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+	sets.RecoverBurst = {main="Daybreak", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- head="Ea Hat +1", 
 		head="Amalric Coif +1", neck="Mizu. Kubikazari", lear="Regal Earring", rear="Friomisi Earring",
 		body="Seidr Cotehardie", hands="Amalric Gages +1", ring1="Mujin Band", ring2="Shiva Ring +1",
@@ -310,11 +309,11 @@ function init_gear_sets()
 			back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear.chironic_macc_legs, feet="Skaoi Boots"}
 	
 	-- Path A - Pure Macc No Potency
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Maxentius",sub="Ammurapi Shield", range="Kaja Bow",ammo=empty, --Daybreak
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield", range="Kaja Bow",ammo=empty, --
 			-- head="Atro. Chapeau +3", Duelist's Torque +3
 			head="Carmine Mask +1", neck="Incanter's Torque", lear="Digni. Earring", rear="Regal Earring",
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
-			body="Atrophy Tabard +1", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",
+			body="Shamash Robe", hands="Leth. Gantherots +1", lring="Stikini Ring", rring="Stikini Ring",
 			-- feet="Vitiation Boots +3"
 			back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear.chironic_macc_legs, feet="Skaoi Boots"}		
     
@@ -383,8 +382,8 @@ function init_gear_sets()
 	-- Divine Magic 
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 
-	sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif +1"}) --waist="Acuity Belt +1"
-    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif +1"}) --waist="Acuity Belt +1"
+	sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif +1",waist="Acuity Belt"}) --waist="Acuity Belt +1"
+    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif +1",waist="Acuity Belt"}) --waist="Acuity Belt +1"
 		
 	-- Elemental Magic 
     sets.midcast['Elemental Magic'] = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum", 
@@ -458,30 +457,30 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Jhakri Robe +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 	
 	-- Idle sets
 	sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Jhakri Robe +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 		
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Homiliary",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 		
 	sets.idle.MDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		-- Sanare Earring
 		head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 		
 	sets.idle.Weak = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 	
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {back=gear.FC_jse_back,legs="Carmine Cuisses +1",feet="Hippomenes Socks"})
@@ -489,7 +488,7 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 
 	sets.defense.NukeLock = sets.midcast['Elemental Magic']
@@ -497,13 +496,13 @@ function init_gear_sets()
 	sets.defense.MDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		-- Sanare Earring
 		head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 		
     sets.defense.MEVA = {main="Mafic Cudgel", sub="Genmei Shield", ammo="Staunch Tathlum",
 		-- Sanare Earring
 		head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 		
 	sets.Kiting = {legs="Carmine Cuisses +1"}

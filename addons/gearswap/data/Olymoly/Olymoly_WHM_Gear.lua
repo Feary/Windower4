@@ -453,19 +453,19 @@ function init_gear_sets()
     -- Resting sets
 	sets.resting = {main="Chatoyant Staff", sub="Enki Strap", ammo="Homiliary",
 		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2",ring1="Inyanga Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Inyan. Dastanas +2",ring1="Inyanga Ring",ring2="Defending Ring",
 		back=gear.fastcast_jse_back,waist="Austerity Belt",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Bolelabunga",sub="Genmei Shield", ammo="Homiliary",
 		head="Befouled Crown", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Theo. Briault +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
+		body="Shamash Robe", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 
 	sets.idle.PDT = {main="Malignance Pole", sub="Irenic Strap +1", ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Genmei Earring",
-		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
+		-- Chironic Gloves DT
+		body="Shamash Robe", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Chironic Slippers DT
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
@@ -473,16 +473,16 @@ function init_gear_sets()
 
 	sets.idle.Weak = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
+		-- Chironic Gloves DT
+		body="Shamash Robe", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Chironic Slippers DT
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Aya. Gambieras +2"}
 
     -- Defense sets
 	sets.defense.PDT = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Genmei Earring",
-		-- Shamash Robe Chironic Gloves DT
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
+		-- Chironic Gloves DT
+		body="Shamash Robe", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Chironic Slippers DT
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 

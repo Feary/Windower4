@@ -181,20 +181,20 @@ function init_gear_sets()
     sets.midcast['Enfeebling Magic'] = {main="Maxentius",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Malignance Earring",
         -- body="Spaekona Coat +3", hands="Regal Cuffs"
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet="Skaoi Boots"}
 		
     sets.midcast['Enfeebling Magic'].Resistant = {main="Maxentius",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Malignance Earring",
         -- body="Spaekona Coat +3", hands="Regal Cuffs"
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Mallquis Trews +2",feet="Jhakri Pigaches +2"}		
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {
 		main="Maxentius",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Malignance Earring",
         -- body="Spaekona Coat +3",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- feet="Spaekona Sabots +2"
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Mallquis Trews +2",feet="Jhakri Pigaches +2"})
 		
@@ -202,7 +202,7 @@ function init_gear_sets()
 		main="Maxentius",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Malignance Earring",
         -- body="Spaekona Coat +3",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- feet="Spaekona Sabots +2"
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Mallquis Trews +2",feet="Jhakri Pigaches +2"})
 	
@@ -366,7 +366,7 @@ function init_gear_sets()
 		-- sub="Oneiros Grip", neck="Chrys. Torque", ear2="Sanare Earring",
 		head="Befouled Crown",neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
 		-- body="Vrikodara Jupon", hands=gear.merlinic_refresh_hands Stikini Ring +1 Stikini Ring +1
-		Body="Jhakri Robe +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
+		Body="Shamash Robe", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
 		-- waist="Refoccilation Stone", feet=gear.merlinic_refresh_feet
 		back=gear.FC_jse_back, legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
     
@@ -376,7 +376,7 @@ function init_gear_sets()
     sets.idle = {main="Lathi", sub="Kaja Grip", ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
-		body="Jhakri Robe +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
 		-- waist="Flax Sash", feet=gear.merlinic_refresh_feet
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
@@ -385,7 +385,7 @@ function init_gear_sets()
 		--sub="Oneiros Grip",
         head="Jhakri Coronal +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
-        Body="Mallquis Saio +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
+        Body="Shamash Robe", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
         --waist="Flax Sash",
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
@@ -402,7 +402,7 @@ function init_gear_sets()
     sets.idle.Weak = {main="Malignance Pole",sub="Kaja Grip",ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
-		body="Jhakri Robe +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
 		-- waist="Flax Sash", feet=gear.merlinic_refresh_feet
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
@@ -410,21 +410,21 @@ function init_gear_sets()
     sets.defense.PDT = {main="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
-		body="Mallquis Saio +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
 		-- waist="Flax Sash", feet=gear.merlinic_refresh_feet
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
     sets.defense.MDT = {main="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
-		body="Mallquis Saio +2", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe", hands="Amalric Gages +1", ring1="Dark Ring",ring2="Defending Ring",
 		-- waist="Flax Sash", feet=gear.merlinic_refresh_feet
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
     sets.defense.MEVA = {main="Malignance Pole", sub="Irenic Strap +1", ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		-- hands=gear.merlinic_refresh_hands,
-		body="Mallquis Saio +2", hands="Volte Bracers", ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe", hands="Volte Bracers", ring1="Dark Ring",ring2="Defending Ring",
 		-- waist="Flax Sash", feet=gear.merlinic_refresh_feet
 		back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 

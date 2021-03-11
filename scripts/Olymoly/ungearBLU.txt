@@ -27,4 +27,3 @@ put Thereoid Greaves sack all
 put Vampirism sack all
 put Malignance Chapaeu sack all
 put Malignance Boots sack all
-put Carm. Sc. Mail +1 sack all

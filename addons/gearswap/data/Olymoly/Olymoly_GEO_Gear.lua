@@ -180,7 +180,6 @@ function init_gear_sets()
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +3"}
 		
     sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",
-		-- Hirundinea Earring
         head="Bagua Galero +1",neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
         body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Stikini Ring",
         back="Perimede Cape",waist="Fucho-no-obi",legs="Geomancy Pants +2",feet="Geo. Sandals +3"}
@@ -205,8 +204,11 @@ function init_gear_sets()
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}		
 
 	sets.midcast['Enfeebling Magic'] = {main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+		-- Geo. Galero +3
 		head="Geo. Galero +2", neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
+		-- Geomancy Tunic +3
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring", ring2="Kishar Ring",
+		-- Geomancy Pants +2
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}		
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
@@ -244,8 +246,7 @@ function init_gear_sets()
 	
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif +1"})
 	
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
-		--main="Vadose Rod", sub="Genmei Shield",
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod", sub="Genmei Shield",
 		head="Amalric Coif +1", 
 		--hands="Regal Cuffs",
 		--waist="Emphatikos Rope", legs="Shedir Seraweels"
@@ -265,18 +266,18 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Jhakri Robe +2",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 
 	-- Idle sets
 	sets.idle = {main="Idris",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Befouled Crown", neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Jhakri Robe +2", hands="Bagua Mitaines +1", ring1="Dark Ring", ring2="Defending Ring",
+		body="Shamash Robe", hands="Bagua Mitaines +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 		
 	sets.idle.PDT = {main="Idris",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Mallquis Saio +2",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
@@ -301,23 +302,23 @@ function init_gear_sets()
 
 	sets.idle.Weak = {main="Idris",sub="Genmei Shield", range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Jhakri Robe +2",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
 	-- Defense sets	
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Mallquis Saio +2",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Azimuth Gaiters +1"}
 
 	sets.defense.MDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Mallquis Saio +2",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
     sets.defense.MEVA = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
         head=gear.telchine_head_Pet,neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Mallquis Saio +2",hands=gear.telchine_hands_Pet,ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands=gear.telchine_hands_Pet,ring1="Dark Ring",ring2="Defending Ring",
         back=gear.idle_jse_back, waist="Fucho-no-obi",legs=gear.telchine_legs_Pet,feet="Mallquis Clogs +2"}
 		
 	sets.defense.PetPDT = sets.idle.PDT.Pet
