@@ -78,4 +78,16 @@
             </stroke>
         </text>
     </global>
+    <fearyjunior>
+        <pos>
+            <x>815</x>
+            <y>112</y>
+        </pos>
+    </fearyjunior>
+    <oasus>
+        <pos>
+            <x>911</x>
+            <y>308</y>
+        </pos>
+    </oasus>
 </settings>

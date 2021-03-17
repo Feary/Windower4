@@ -23,5 +23,5 @@ return {
     "Sakonji Kabuto",
 	"Sakonji Sune-Ate",
 	"Kaja Grip",
-	"Kaja Lance",
+	"Shining One",
 }
