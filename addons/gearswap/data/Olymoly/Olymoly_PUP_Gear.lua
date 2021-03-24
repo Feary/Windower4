@@ -282,10 +282,10 @@ function init_gear_sets()
     sets.resting = {}
     
     -- Idle sets
-    sets.idle = {
-        head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Merman's Earring",
+    sets.idle = {main="Ohtas",range="Divinator II",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Merman's Earring",
         body="Hiza. Haramaki +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2=gear.DarkRing,
-        back="Moonbeam Cape",waist="Fucho-no-Obi",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        back="Moonbeam Cape",waist="Fucho-no-Obi",legs="Tali'ah Sera. +2",feet="Malignance Boots"}
 		
 	sets.idle.Refresh = {
         head="Tali'ah Turban +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Merman's Earring",
@@ -321,22 +321,22 @@ function init_gear_sets()
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
         -- Malignance Tabard Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2=gear.DarkRing,
-        -- Maliganance Tights   
-		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Maliganance Boots"}
+        -- Malignance Tights   
+		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Malignance Boots"}
 
     sets.defense.MDT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
         -- Malignance Tabard Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2=gear.DarkRing,
-        -- Maliganance Tights  
-		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Maliganance Boots"}
+        -- Malignance Tights  
+		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Malignance Boots"}
 		
     sets.defense.MEVA = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
         -- Malignance Tabard Malignance Gloves 
 		body="Tali'ah Manteel +2",hands="Volte Bracers",ring1="Defending Ring",ring2="Purity Ring",
-        -- Maliganance Tights   
-		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Maliganance Boots"}
+        -- Malignance Tights   
+		back="Moonbeam Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Malignance Boots"}
 
     sets.Kiting = {feet="Hermes' Sandals"}
 

@@ -11,4 +11,4 @@ get Pratik Earring locker all
 get Rimeice Earring storage all
 get Ukko Sash storage all
 get Varar Ring +1 storage all
-
+get Malignance* sack all

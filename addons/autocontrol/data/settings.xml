@@ -522,8 +522,14 @@
     </global>
     <aniyah>
         <pos>
-            <x>1186</x>
-            <y>267</y>
+            <x>1197</x>
+            <y>244</y>
         </pos>
     </aniyah>
+    <olymoly>
+        <pos>
+            <x>1193</x>
+            <y>267</y>
+        </pos>
+    </olymoly>
 </settings>

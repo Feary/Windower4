@@ -72,15 +72,15 @@ function init_gear_sets()
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
     
-    sets.precast.Samba = {head="Maxixi Tiara", back=gear.stp_jse_back}
+    sets.precast.Samba = {head="Maxixi Tiara +1", back=gear.stp_jse_back}
 
     sets.precast.Jig = {legs="Horos Tights +1", feet="Maxixi Toe Shoes +1"}
 
     sets.precast.Step = {ammo="Yamarang",
 		-- Mache Earring +1 
-        head="Maxixi Tiara",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Digni. Earring",
+        head="Maxixi Tiara +1",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Digni. Earring",
 		-- Maxixi Casaque +3 Maxixi Bangles +3 Chirich Ring +1
-        body="Maxixi Casaque",hands="Maxixi Bangles",ring1="Regal Ring",ring2="Ilabrat Ring",
+        body="Maxixi Casaque",hands="Maxixi Bangles +1",ring1="Regal Ring",ring2="Ilabrat Ring",
         back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Maxixi Tights +1",feet="Horos Toe Shoes +1"}
 		
     sets.Enmity = {ammo="Paeapua",
@@ -109,7 +109,7 @@ function init_gear_sets()
         back=gear.fc_jse_back,waist="Kentarch Belt +1",legs="Meg. Chausses +2",feet="Mummu Gamashes +2"}
 
     sets.precast.Flourish2 = {}
-    sets.precast.Flourish2['Reverse Flourish'] = {back="Toetapper Mantle", hands="Maculele Bangles"}
+    sets.precast.Flourish2['Reverse Flourish'] = {back="Toetapper Mantle", hands="Maculele Bangles +1"}
 
     sets.precast.Flourish3 = {}
     sets.precast.Flourish3['Striking Flourish'] = {body="Maculele Casaque +1"}
@@ -322,7 +322,7 @@ function init_gear_sets()
 	sets.MaxTP = {ear1="Ishvara Earring",ear2="Sherida Earring"}
 	sets.AccMaxTP = {ear1="Ishvara Earring",ear2="Sherida Earring"}-- ear1="Mache Earring +1"
 	
-    sets.Skillchain = {hands="Maculele Bangles"} 
+    sets.Skillchain = {hands="Maculele Bangles +1"} 
     
     
     -- Midcast Sets    

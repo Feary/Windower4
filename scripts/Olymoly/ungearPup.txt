@@ -11,3 +11,4 @@ put Pratik Earring locker all
 put Rimeice Earring storage all
 put Ukko Sash storage all
 put Varar Ring +1 storage all
+put Malignance* sack all
