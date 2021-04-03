@@ -1,9 +1,9 @@
 return {
-	"Lanun Bottes",
+	"Lanun Bottes +1",
 	"Lanun Trews +1",
-	"Lanun Tricorne",
+	"Lanun Tricorne +1",
 	"Lanun Frac +1",
-	"Lanun Gants",
+	"Lanun Gants +1",
 	"Navarch's Frac +1",
 	"Chasseur's Bottes",
 	"Nvrch. Culottes +1",

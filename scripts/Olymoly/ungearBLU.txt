@@ -4,17 +4,7 @@ put Adhemar Bonnet sack all
 put Adhemar Jacket +1 sack all
 put Adhemar Wrist. +1 sack all
 put Adhemar Wristbands sack all
-put Amalric Gages +1 case all
-put Amalric Nails +1 case all
-put Amalric Slops +1 case all
-put Amalric Coif +1 case all
-put Amalric Doublet +1 case all
 put Cornflower Cape sack all
-put Herculean Boots sack all
-put Herculean Gloves sack all
-put Herculean Helm sack all
-put Herculean Vest sack all
-put Helios Gloves case all
 put Mavi Tathlum sack all
 put Mekosu. Harness sack all
 put Nibiru Cudgel sack all
@@ -25,5 +15,4 @@ put Samnuha Tights sack
 put Skaoi Boots case all
 put Thereoid Greaves sack all
 put Vampirism sack all
-put Malignance Chapaeu sack all
-put Malignance Boots sack all
+put Malignance* sack all

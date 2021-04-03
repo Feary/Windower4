@@ -4,17 +4,7 @@ get Adhemar Bonnet sack all
 get Adhemar Jacket +1 sack all
 get Adhemar Wrist. +1 sack all
 get Adhemar Wristbands sack all
-get Amalric Gages +1 case all
-get Amalric Nails +1 case all
-get Amalric Slops +1 case all
-get Amalric Coif +1 case all
-get Amalric Doublet +1 case all
 get Cornflower Cape sack all
-get Herculean Boots sack all
-get Herculean Gloves sack all
-get Herculean Helm sack all
-get Herculean Vest sack all
-get Helios Gloves case all
 get Mavi Tathlum sack all
 get Mekosu. Harness sack all
 get Nibiru Cudgel sack all
@@ -25,3 +15,4 @@ get Samnuha Tights sack
 get Skaoi Boots case all
 get Thereoid Greaves sack all
 get Vampirism sack all
+get Malignance* sack all
