@@ -1,7 +1,7 @@
 get Adad Amulet storage all
 get Bfn. Collar +1 storage all
 get Dispersal Mantle storage all
-get Divinator II storage all
+get Divinator* storage all
 get Enmerkar Earring storage all
 get Hurch'lan Sash storage all
 get Incarnation Sash storage all

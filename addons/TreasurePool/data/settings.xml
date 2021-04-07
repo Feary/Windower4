@@ -84,10 +84,22 @@
             <y>112</y>
         </pos>
     </fearyjunior>
+    <molyoly>
+        <pos>
+            <x>932</x>
+            <y>48</y>
+        </pos>
+    </molyoly>
     <oasus>
         <pos>
             <x>911</x>
             <y>308</y>
         </pos>
     </oasus>
+    <olymoly>
+        <pos>
+            <x>955</x>
+            <y>46</y>
+        </pos>
+    </olymoly>
 </settings>

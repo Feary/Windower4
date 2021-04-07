@@ -1,7 +1,7 @@
 put Adad Amulet storage all
 put Bfn. Collar +1 storage all
 put Dispersal Mantle storage all
-put Divinator II storage all
+put Divinator* storage all
 put Enmerkar Earring storage all
 put Hurch'lan Sash storage all
 put Incarnation Sash storage all

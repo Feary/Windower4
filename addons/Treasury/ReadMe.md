@@ -10,7 +10,7 @@ An addon that manages the treasure pool for you and keeps your inventory clean o
 Note:
 All commands can be shortened to `//tr`. `lot` and `pass` can be shortened to `l` and `p` respectively. `add` and `remove` can be shortened to `a` or `+` and `r` or `-` respectively.
 
-`//treasury lot|pass|drop add|remove [global] <name>`
+`//treasuy lot|pass|drop add|remove [global] <name>`
 
 This will add to or remove from the lot list, pass list or drop list all items matching `name`. `name` can contain standard Windower wildcards (`*`, `?`, `|`). It will add those for the current character only, unless `global` is specified, in which case it will add it for all characters.
 
@@ -20,6 +20,11 @@ There are a few special key words for `name`:
 * `avatarites` matches all geode items (HQ)
 * `currency` matches all Dynamis currency (all three tiers of all three kinds)
 * `seals` matches the standard seals found in the field (BS, KS, KC, HKC, SKC)
+* `detritus` matches Swart Astral Detritus and Murky Astral Detritus
+* `heroism` matches Heroism Crystal and Heroism Aggregate
+* `moldy` matches all Moldy weapons and neck items from Dynamis Divergence
+* `dynad` matches all three card types, all three medal types, and the crafting materials from Dynamis Divergence
+* `papers` matches all shards and all void items from Dynamis Divergence
 * `pool` matches your current treasure pool
 
 '//treasury lot|pass|drop clear|list`
