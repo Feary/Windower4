@@ -84,6 +84,8 @@ gear.grioavolr_fc_staff = "Grioavolr"
 --gear.chironic_enfeeble_hands = {name="Chironic Gloves",augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','MND+10','Mag. Acc.+15',}}
 --gear.chironic_refresh_hands = {name="Chironic Gloves",augments={'Phys. dmg. taken -1%','STR+10','"Refresh"+1','Accuracy+12 Attack+12','Mag. Acc.+12 "Mag.Atk.Bns."+12',}}
 
+gear.chironic_macc_legs = {name="Chironic Hose", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Drain" and "Aspir" potency +9','INT+8','Mag. Acc.+15','"Mag.Atk.Bns."+3',}}
+
 --gear.chironic_treasure_feet = {name="Chironic Slippers",augments={'"Occult Acumen"+8','MND+7','"Treasure Hunter"+2',}}
 --gear.chironic_nuke_feet = {name="Chironic Slippers",augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +10','CHR+6','"Mag.Atk.Bns."+15',}}
 --gear.chironic_refresh_feet = {name="Chironic Slippers",augments={'Pet: Mag. Acc.+18 Pet: "Mag.Atk.Bns."+18','Pet: Mag. Acc.+3','"Refresh"+1','Accuracy+13 Attack+13','Mag. Acc.+8 "Mag.Atk.Bns."+8',}}

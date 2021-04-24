@@ -20,9 +20,6 @@ My Stream Discord, ( https://discord.gg/ug6xtvQ ) this is the best way to reach 
 	alternatively you can connect with me through a messenger (They're linked to my FFXIAH account.) If you're relatively computer savvy,
 	it shouldn't be too hard, if not, I'm happy to help explain more or answer questions even if you do get it working.
 
-My Dropbox ( https://www.dropbox.com/sh/flhraba7cf23a7k/AADfZmGmsXcYamFth8UkLoy0a?dl=0 )
-
-
 Again PLEASE DO NOT MESSAGE ME ABOUT ANYTHING THIRD PARTY IN GAME, however feel free to shoot me a way to contact you outside of game, through
 	the game, and I'm happy to help.
 
@@ -237,7 +234,6 @@ autowstp = 1250
 
 My scripts\init.txt loads Request, which is an addon that can be used to answer player's requests, use it with the Shortcuts addon.
 It also loads a few other addons which I've written or found from other sources.
-Non-Official addon mentioned here can be downloaded from: https://www.dropbox.com/sh/qz5rb5je202cbu3/AAAxozfBv_8agarM0NCnPTiZa?dl=0
 
 --- Item Handling ---
 
@@ -294,7 +290,7 @@ skillchain1 - Tier 1 skillchain
 skillchain2 - Tier 2 skillchain
 skillchain3 - Only works on Fire element, does Liquefaction > Fusion
 skillchain4 - 4 Step skillchain for popping Perfidion
-skillchain6 - 6 Step Skillchain for popping Pluton (Requires you have a strategem up and 5 strategem charges to start)
+skillchain6 - 6 Step Skillchain for popping Pluton (Requires you have a stratagem up and 5 stratagem charges to start)
 wsskillchain - Attempts to start skillchain with a weaponskill and finish with a spell (for conserving stratagems).
 endskillchain - Attempts to end a skillchain with the current element.
 tier1 - Casts a tier 1 spell of that element.

@@ -57,6 +57,7 @@
     <addon>BattleStations</addon>
     <addon>JobChange</addon>
     <addon>NoCampaignMusic</addon>
+    <addon>equipviewer</addon>
     <plugin>Guildwork</plugin>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>

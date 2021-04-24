@@ -1,23 +1,13 @@
-get Cab. Breeches +1 Locker all
-get Cab. Coronet +1 Locker all
-get Cab. Gauntlets +1 Locker all
-get Cab. Leggings +1 Locker all
-get Cab. Surcoat +1 Locker all
 get Carm. Sc. Mail +1 sack all
-get Chev. Armet +1 Locker all
-get Chev. Cuisses +1 Locker all
-get Chev. Gauntlets +1 Locker all
-get Chev. Sabatons Locker all
-get Creed Baudrier Locker all
 get Emicho Haubert +1 locker all
 get Knightly Earring Locker all
 get Mes'yohi Slacks locker all
-get Rev. Leggings +1 Locker all
 get Rudianos's Mantle Locker all
 get Thureous Earring Locker all
 get Tanmogayi +1 sack all
 get Vim Torque locker all
 get Weard Mantle Locker all
+get Malevolence safe2 all
 
 
 

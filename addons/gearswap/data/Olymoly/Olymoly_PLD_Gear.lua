@@ -9,7 +9,7 @@ function user_setup()
     state.MagicalDefenseMode:options('MDT','BDT','MDT_HP','AegisMDT','AegisNoShellMDT','OchainMDT','OchainNoShellMDT','MDT_Reraise')
 	state.ResistDefenseMode:options('MEVA','MEVA_HP','Death','Charm')
 	state.IdleMode:options('Tank','Normal','KiteTank','PDT','MDT','Refresh','Reraise')
-	state.Weapons:options('Default','DDWeapons','DualWeapons')
+	state.Weapons:options('Default','DDWeapons','DualWeapons','Dagger')
 	    
     state.ExtraDefenseMode = M{['description']='Extra Defense Mode', 'None', 'MP', 'Twilight'}
 	
@@ -61,7 +61,7 @@ function init_gear_sets()
 	
 	sets.Enmity.SIRD = {ammo="Staunch Tathlum", -- Impatiens
 		head="Souveran Schaller +1",neck="Moonbeam Necklace",ear1="Knightly Earring",ear2="Cryptic Earring",
-		body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Defending Ring",ring2="Moonbeam Ring",
+		body="Souv. Cuirass +1",hands="Regal Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.Enmity_jse_back,waist="Rumination Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
     
 	sets.Enmity.DT = {ammo="Paeapua",
@@ -230,9 +230,10 @@ function init_gear_sets()
 	sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS,{
 		-- Founder/obyssean
 		head=gear.valorous_wsd_head, neck="Sanctity Necklace", lear="Crematio Earring", rear="Friomisi Earring",
-		body=gear.odyssean_mab_body, hands="Founder's Gauntlets", lring="Epaminondas's Ring", rring="Shiva Ring +1",
-		-- WSD Legs
-		back=gear.WS_jse_back, waist="Yamabuki-no-Obi", legs="Founder's Hose", feet="Sulev. Leggings +2"})
+		-- Cohort Cloak +1 Rank 15
+		body=gear.odyssean_mab_body, hands="Carmine Fin. Gaunt. +1", lring="Epaminondas's Ring", rring="Shiva Ring +1",
+		--  Augury Cuisses +1 Rank 15 
+		back=gear.WS_jse_back, waist="Eschan Stone", legs="Founder's Hose", feet="Founder's Greaves"})
 		
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Brutal Earring",ear2="Cessance Earring",}
@@ -260,26 +261,23 @@ function init_gear_sets()
 
     sets.midcast.Cure = {ammo="Staunch Tathlum",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
-		-- Regal Gauntlets 
-		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
+		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonbeam Ring", rring="Moonbeam Ring",
 		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Odyssean Greaves"}
 	
-	  sets.midcast.Cure.SIRD = {ammo="Staunch Tathlum",
+	 sets.midcast.Cure.SIRD = {ammo="Staunch Tathlum",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
-		-- Regal Gauntlets 
-		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
+		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonbeam Ring", rring="Moonbeam Ring",
+		-- waist="Audumbla Sash"
 		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Odyssean Greaves"}
 
     sets.midcast.Cure.DT = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Odnowa Earring", 
-        -- Regal Gauntlets 
-		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", ring1="Moonbeam Ring", rring="Moonbeam Ring",
+		body="Souv. Cuirass +1", hands="Regal Gauntlets ", ring1="Moonbeam Ring", rring="Moonbeam Ring",
         back=gear.fastcast_jse_back,waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
     sets.midcast.Reprisal = {ammo="Staunch Tathlum",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Etiolation Earring",
-		-- Regal Gauntlets 
-		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
+		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonbeam Ring", rring="Moonbeam Ring",
 		back="Reiki Cloak", waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 
 	sets.Self_Healing = {ammo="Staunch Tathlum",
@@ -289,7 +287,7 @@ function init_gear_sets()
 		
 	sets.Self_Healing.DT = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-		--   ring2=Moonbeam Ring
+		-- ring2=Moonbeam Ring
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 
@@ -321,7 +319,7 @@ function init_gear_sets()
 	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {ammo="Staunch Tathlum",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
 		-- body="Shabti Cuirass", Apeile Ring +1
-		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Apeile Ring",
+		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonbeam Ring", rring="Apeile Ring",
 		-- back= Odyssean feet SIRD
 		back=gear.phalanx_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Souveran Schuhs +1"})
 
@@ -329,11 +327,7 @@ function init_gear_sets()
 	-- Idle/resting/defense/etc sets
 	--------------------------------------
 
-    sets.resting = {ammo="Homiliary",
-		-- neck="Coatl Gorget +1",
-		head="Jumalik Helm", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Etiolation Earring",
-		body="Jumalik Mail",hands="Souv. Handsch. +1",ring1="Moonbeam Ring",ring2="Defending Ring",
-		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Sulev. Cuisses +2",feet="Souveran Schuhs +1"}
+    sets.resting = {}
 
     -- Idle sets
     sets.idle = {ammo="Homiliary",
@@ -399,6 +393,7 @@ function init_gear_sets()
 	sets.weapons.Default = {main="Burtgang",sub="Aegis"}
 	sets.weapons.DDWeapons = {main="Burtgang",sub="Aegis"}
     sets.weapons.DualWeapons = {main="Burtgang",sub="Naegling"}
+	sets.weapons.Dagger = {main="Malevolence",sub=	"Ochain"}
 	
 	sets.Knockback = {}
     sets.MP = {head="Chev. Armet +1",ear2="Ethereal Earring",waist="Flume Belt"} -- neck="Coatl Gorget +1",

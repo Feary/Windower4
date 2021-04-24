@@ -98,8 +98,8 @@ function init_gear_sets()
 
 	-- Charm = CHR
 	sets.precast.JA.Charm = {
-		-- neck=Unmoving Collar +1", rear="Enchanter's Earring
-		head="Totemic Helm +1", neck="Sanctity Necklace", lear="Enchntr. Earring +1",
+		-- rear="Enchanter's Earring
+		head="Totemic Helm +1", neck="Unmoving Collar +1", lear="Enchntr. Earring +1",
 		-- Carb. Ring +1
 		body="Ankusa Jackcoat +1", hands="Ankusa Gloves +1",
 		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers +1", feet="Ankusa Gaiters +1"}

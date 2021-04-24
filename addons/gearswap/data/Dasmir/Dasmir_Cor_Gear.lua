@@ -368,7 +368,6 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
 		-- Herc gloves DT
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Meghanada Ring", rring="Defending Ring",
-		--
 		back=gear.tp_ranger_jse_back,  waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
 			
     sets.Kiting = {legs="Carmine Cuisses +1"}

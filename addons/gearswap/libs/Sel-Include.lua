@@ -470,7 +470,7 @@ function target_change(new)
 					end
 				end
 			elseif target.name == "Sturdy Pyxis" and player.inventory['Forbidden Key'] then
-				windower.chat.input('/item "Forbidden Key" <t>')
+				windower.chat.input('/item "Forbidden Key" <t>') return
 			end
 		end
 	end
@@ -1599,6 +1599,10 @@ function get_idle_set(petStatus)
 		end
 	end
 	
+	if state.UnlockWeapons.value and sets.weapons[state.Weapons.value] then
+		idleSet = set_combine(idleSet, sets.weapons[state.Weapons.value])
+	end
+	
 	if (buffactive.sleep or buffactive.Lullaby) and (player.main_job == 'SMN' and pet.isvalid) then
 		idleSet = set_combine(idleSet, sets.buff.Sleep)
 	end
@@ -1967,7 +1971,10 @@ function get_ranged_set(equipSet, spell, spellMap)
         mote_vars.set_breadcrumbs:append(state.CombatForm.value)
     end
 
-    if state.CombatWeapon.has_value and equipSet[state.CombatWeapon.value] then
+	if equipSet[state.Weapons.value] then
+        equipSet = equipSet[state.Weapons.value]
+        mote_vars.set_breadcrumbs:append(state.Weapons.value)
+    elseif state.CombatWeapon.has_value and equipSet[state.CombatWeapon.value] then
         equipSet = equipSet[state.CombatWeapon.value]
         mote_vars.set_breadcrumbs:append(state.CombatWeapon.value)
     end

@@ -39,6 +39,7 @@ lua load craft;
 lua load Debuffed;
 lua load DistancePlus;
 lua load DressUp;
+lua load equipviewer;
 lua load findAll;
 lua load gametime;
 lua load GearSwap;

@@ -1,32 +1,6 @@
-get Acad. Bracers +2 case all
-get Acad. Gown +2 case all
-get Acad. Loafers +2 case all
-get Acad. Mortar. +2 case all
-get Acad. Pants +2 case all
-get Arbatel Bonnet +1 case all
-get Arbatel Bracers +1 case all
-get Arbatel Gown +1 case all
-get Arbatel Loafers +1 case all
-get Arbatel Pants +1 case all
 get Culminus case all
 get Ghastly Tathlum case all
 get Hecate's Earring case all
-get Jhakri Coronal +2 case all
-get Jhakri Cuffs +2 case all
-get Jhakri Pigaches +2 case all
-get Jhakri Robe +2 case all
-get Jhakri Slops +2 case all
 get Lugh's Cape case all
-get Mall. Chapeau +2 case all
-get Mallquis Clogs +2 case all
-get Mallquis Cuffs +2 case all
-get Mallquis Saio +2 case all
-get Mallquis Trews +2 case all
-get Peda. Bracers +1 case all
-get Peda. Gown +1 case all
-get Peda. Loafers +1 case all
-get Peda. M.Board +1 case all
-get Peda. Pants +1 case all
 get Sucellus case all
-get Savant's Treatise case all
-get Savant's Earring case all
+get Akademos 

@@ -78,6 +78,17 @@
             </stroke>
         </text>
     </global>
+    <dasmir>
+        <pos>
+            <x>688</x>
+            <y>181</y>
+        </pos>
+        <text>
+            <fonts>
+
+            </fonts>
+        </text>
+    </dasmir>
     <fearyjunior>
         <pos>
             <x>815</x>

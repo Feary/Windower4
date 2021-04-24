@@ -269,7 +269,7 @@ function init_gear_sets()
     sets.idle = {ammo='Homiliary',
 		head="Rawhide Mask",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
 		--hands=gear.herculean_refresh_hands
-		body="Runeist's Coat +3", hands="Kurys Gloves", ring1="Defending Ring",ring2="Dark Ring",
+		body="Runeist's Coat +3", hands="Regal Gauntlets", ring1="Defending Ring",ring2="Dark Ring",
 		--feet=gear.herculean_refresh_feet
 		back=gear.hp_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Aya. Gambieras +2"}
 		

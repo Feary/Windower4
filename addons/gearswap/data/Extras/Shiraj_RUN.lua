@@ -1066,7 +1066,7 @@ function init_gear_sets()
 		ear1="Etiolation Earring", 
 		ear2="Odnowa Earring +1",
         body="Futhark Coat +3", 
-		hands="Kurys Gloves", 
+		hands="Regal Gauntlets", 
 		left_ring="Defending Ring",
 		ring2={name="Moonlight Ring", priority=2},
         back="Evasionist's Cape", 
