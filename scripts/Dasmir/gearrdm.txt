@@ -1,27 +1,7 @@
-get Atro. Boots +2 case all
-get Atro. Chapeau +2 case all
-get Atrophy Gloves +2 case all
-get Atrophy Tabard +2 case all
-get Atrophy Tights +2 case all
 get Culminus case all
-get Leth. Chappel +1 case all
-get Leth. Gantherots +1 case all
-get Leth. Houseaux +1 case all
-get Lethargy Sayon +1 case all
-get Leth. Fuseau +1 case all
 get Ghastly Tathlum case all
 get Ghostfyre Cape case all
 get Hecate's Earring case all
-get Jhakri Coronal +2 case all
-get Jhakri Cuffs +2 case all
-get Jhakri Pigaches +2 case all
-get Jhakri Robe +2 case all
-get Jhakri Slops +2 case all
 get Regal Gem case all
 get Sucellos's Cape case all
-get Viti. Chapeau +1 case all
-get Viti. Gloves +1 case all
-get Viti. Tabard +1 case all
-get Viti. Tights +1 case all
-get Vitiation Boots +1 case all
 get Thereiod Boots case all
