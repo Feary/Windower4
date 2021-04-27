@@ -9,7 +9,7 @@
         <ShowMob>true</ShowMob>
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
-        <Ranges></Ranges>
+        <Ranges />
     </global>
     <Aniyah>
         <X>1280</X>
@@ -174,7 +174,7 @@
         <Y>22</Y>
     </Oasus>
     <Helyah>
-        <X>1275</X>
+        <X>1225</X>
         <Y>17</Y>
     </Helyah>
     <Yerp>

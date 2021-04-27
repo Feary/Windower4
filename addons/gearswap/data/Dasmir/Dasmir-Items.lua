@@ -29,6 +29,8 @@ gear.taeon_body_Fastcast = {name="Taeon Tabard", augments={'"Fast Cast"+5',}}
 -- Head -- Leaforb
 gear.telchine_head_Duration = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
 gear.telchine_head_Siphon = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
+-- HP Cure Pot
+gear.telchine_head_Cure = { name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}}
 
 -- Body  Leaforb 
 gear.telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}}

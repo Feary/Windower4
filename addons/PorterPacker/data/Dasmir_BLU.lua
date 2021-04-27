@@ -14,6 +14,12 @@ return {
 	"Mv. Bazubands +1",
 	"Mavi Tayt +1", 
 	"Mavi Basmak +1",
+	"Mavi Tathlum",
+	"Mirage Keffiyeh",
+	"Mirage Jubbah",
+	"Mirage Bazubands",
+	"Mirage Shalwar",
+	"Mirage Charuqs",
 	"Kaja Rod",
 	"Naegling",	
 }
