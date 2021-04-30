@@ -2,10 +2,8 @@ put Adhemar Bonnet +1 sack all
 put Adhemar Bonnet sack all
 put Adhemar Jacket +1 sack all
 put Adhemar Wrist. +1 Sack all
-put Handler's Earring +1 case all
-put Reikiko locker all
 put Epeolatry locker all
-put Carm. Sc. Mail +1 sack all
+put Carm. Sc. Mail +1 sack2 all
 put Evasionist's Cape locker all
 put Mekosu. Harness sack all
 put Ogma's cape locker all

@@ -12,8 +12,8 @@ user_settings = {
         Geomancy = T{},
         Enhancing = T{},
         Ninjutsu = T{},
-        Singing = T{'Victory March","Advancing March"},
-        Blue = T{'Pollen','Cocoon','Metalicc Body'},
+        Singing = T{'Victory March','Advancing March','Mage\'s Ballad III','Mage\'s Ballad II','Mage\'s Ballad'},
+        Blue = T{'Pollen','Cocoon','Metalicc Body','Magic Fruit','Exuviation'},
         Summoning = T{}},
     save_settings = false} --change this to true if you wish to save the last position of your skillup window
 sets.brd = {
@@ -30,10 +30,6 @@ sets.Idle = {
     }
 sets.Resting = {
     main="Boonwell Staff",
-    left_ear="Relaxing Earring",
-    ammo="Clarus Stone",
-    neck="Eidolon pendant",
-    right_ear="Boroka Earring",
     }
 --DO NOT CHANGE ANY THING BELOW THIS LINE--
 function get_sets()

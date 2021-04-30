@@ -561,11 +561,11 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Default = {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.Sword =  {main="Naegling",sub="Genmei Shield"}
-	sets.weapons.Club =  {main="Daybreak",sub="Genmei Shield"}
+	sets.weapons.Club =  {main="Kaja Rod",sub="Genmei Shield"}
 	-- Dual
-	sets.weapons.DualMeleeClubs = {main="Daybreak",sub="Kaja Rod"}
-	sets.weapons.DualMagicWeapons = {main="Daybreak",sub="Kaja Rod"}
-	sets.weapons.DualMaccWeapons = {main="Daybreak",sub="Kaja Rod"}
+	sets.weapons.DualMeleeClubs = {main="Kaja Rod",sub="Kaja Rod"}
+	sets.weapons.DualMagicWeapons = {main="Kaja Rod",sub="Kaja Rod"}
+	sets.weapons.DualMaccWeapons = {main="Kaja Rod",sub="Kaja Rod"}
 	sets.weapons.DualHybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets

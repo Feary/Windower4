@@ -2,15 +2,12 @@ get Adhemar Bonnet +1 sack all
 get Adhemar Bonnet sack all
 get Adhemar Jacket +1 sack all
 get Adhemar Wrist. +1 Sack all
-get Handler's Earring +1 case all
-get Reikiko locker all
 get Epeolatry locker all
-get Carm. Sc. Mail +1 sack all
+get Carm. Sc. Mail +1 sack2 all
 get Evasionist's Cape locker all
 get Mekosu. Harness sack all
 get Ogma's cape locker all
 get Rawhide Boots sack
 get Rawhide Mask sack all
 get Samnuha Tights sack all
-get Skaoi Boots case all
 get Utu Grip locker all
