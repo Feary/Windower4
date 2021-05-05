@@ -8,11 +8,11 @@ res = require 'resources'
 ---You need to have a minimum of 2 spells in your list
 user_settings = {
     user_spells = {
-        Healing = T{},
+        Healing = T{'Cure','Cure II','Cure III','Cura','Cura II'},
         Geomancy = T{},
         Enhancing = T{},
         Ninjutsu = T{},
-        Singing = T{'Victory March','Advancing March','Mage\'s Ballad III','Mage\'s Ballad II','Mage\'s Ballad'},
+        Singing = T{},
         Blue = T{'Pollen','Cocoon','Metalicc Body','Magic Fruit','Exuviation'},
         Summoning = T{}},
     save_settings = false} --change this to true if you wish to save the last position of your skillup window
