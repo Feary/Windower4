@@ -1,4 +1,4 @@
-function user_setup()
+/dfunction user_setup()
 
 	state.OffenseMode:options('Normal','Acc')
 	state.HybridMode:options('Tank','Normal','DTLite')
@@ -22,8 +22,6 @@ function user_setup()
 	--gear.FC_jse_back = 		{name="Ogma's cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Parrying rate+5%',}}	
 	-- vit/def back={ name="Ogma's cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','DEF+50',}},} 
 	
-
-
 	-- Additional local binds
 	send_command('bind !` gs c RuneElement') -- SubJobEnmity
 	send_command('bind @` gs c RuneElement')
