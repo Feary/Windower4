@@ -1,4 +1,4 @@
-/dfunction user_setup()
+function user_setup()
 
 	state.OffenseMode:options('Normal','Acc')
 	state.HybridMode:options('Tank','Normal','DTLite')
