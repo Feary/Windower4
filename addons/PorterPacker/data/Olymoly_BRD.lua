@@ -25,7 +25,7 @@ return {
     "Fili Rhingrave +1",
     "Fili Cothurnes +1",
     "Inyanga Ring",
-    "Kaja Knife",
+    "Tauret",
     "Kaja Sword",
 	"Naegling",
 }

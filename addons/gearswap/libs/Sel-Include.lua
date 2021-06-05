@@ -121,6 +121,7 @@ function init_include()
 	state.AutoLockstyle	 	  = M(false, 'AutoLockstyle Mode')
 	state.AutoTrustMode 	  = M(false, 'Auto Trust Mode')
 	state.RngHelper		 	  = M(false, 'RngHelper')
+	state.RngHelperQuickDraw  = M(false, 'RngHelperQuickDraw')
 	state.AutoTankMode 		  = M(false, 'Auto Tank Mode')
 	state.AutoAcceptRaiseMode = M(false, 'Auto Accept Raise Mode')
 	state.AutoNukeMode 		  = M(false, 'Auto Nuke Mode')
@@ -2300,16 +2301,16 @@ function state_change(stateField, newValue, oldValue)
 		end
     end
 	
-	if user_job_state_change then
-		user_job_state_change(stateField, newValue, oldValue)
-	end
-	
 	if user_state_change then
 		user_state_change(stateField, newValue, oldValue)
 	end
 	
 	if job_state_change then
 		job_state_change(stateField, newValue, oldValue)
+	end
+	
+	if user_job_state_change then
+		user_job_state_change(stateField, newValue, oldValue)
 	end
 	
 	if stateField == 'Rune Element' then

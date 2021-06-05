@@ -293,7 +293,7 @@ function init_gear_sets()
 	--Red Mage enhancing sets are handled in a different way from most, layered on due to the way Composure works
 	--Don't set combine a full set with these spells, they should layer on Enhancing Set > Composure (If Applicable) > Spell
 	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard +1", hands="Atrophy Gloves +1", back="Grapevine Cape", legs="Leth. Fuseau +1"} --   waist="Gishdubar Sash",
-	sets.midcast.Aquaveil = {head="Amalric Coif +1",} --  hands="Regal Cuffs",waist="Emphatikos Rope", legs="Shedir Seraweels"
+	sets.midcast.Aquaveil = {head="Amalric Coif +1", hands="Regal Cuffs"} --waist="Emphatikos Rope", legs="Shedir Seraweels"
 	sets.midcast.BarElement = {} --legs="Shedir Seraweels"
 	sets.midcast.Stoneskin = {neck="Nodens Gorget", waist="Siegel Sash",} -- ear2="Earthcry Earring",legs="Shedir Seraweels"
 	sets.midcast.Protect = {ring2="Sheltered Ring"}
@@ -412,8 +412,8 @@ function init_gear_sets()
 	sets.midcast.Impact = {main="Maxentius", sub="Ammurapi Shield", ammo="Regal Gem",
 		-- Duelist Torque +2
 		head=empty, neck="Erra Pendant", lear="Regal Earring", rear="Digni. Earring",
-		-- Regal Cuffs Stikini Ring +1 Stikini Ring +1
-		body="Twilight Cloak", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
+		-- Stikini Ring +1 Stikini Ring +1
+		body="Twilight Cloak", hands="Regal Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- Vitiation Boots +3
 		back=gear.Macc_jse_back, waist="Eschan Stone", legs="Ayanmo Cosciales +2", feet="Jhakri Pigaches +2"}
 
@@ -515,10 +515,12 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Sword = {main="Naegling", sub="Genmei Shield"}
 	sets.weapons.Mandau = {main="Mandau", sub="Genmei Shield"}
+	sets.weapons.Tauret = {main="Tauret",sub="Genmei Shield"}
 	sets.weapons.Sequence = {main="Sequence",sub="Genmei Shield"}
 	sets.weapons.Almace = {main="Almace",sub="Genmei Shield"}
+	-- Dual 
 	sets.weapons.DualWeapons = {main="Naegling",sub="Kaja Knife"}
-	sets.weapons.DualDagger = {main="Mandau", sub="Kaja Knife"}
+	sets.weapons.DualDagger = {main="Mandau", sub="Tauret"}
 	sets.weapons.DualClubs = {main="Maxentius", sub="Kaja Rod"}
 	-- Sequence
 	sets.weapons.DualAlmace = {main="Almace",sub="Naegling"}
@@ -574,17 +576,17 @@ function init_gear_sets()
 
 	sets.engaged.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Windbuffet Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.Acc.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.FullAcc.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+		body="Malignance Tabard",hands="Aya. Manopolas +2",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.EnspellOnly = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",

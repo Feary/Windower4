@@ -25,7 +25,7 @@ return {
     "Ayanmo Corazza +2",
     "Aya. Cosciales +2",
 	"Kaja Rod",
-	"Kaja Knife",
+	"Tauret",
 	"Kaja Sword",
 	"Naegling",
 	"Kaja Bow",

@@ -81,11 +81,15 @@ function init_gear_sets()
 	--sets.weapons.Aeneas = {main="Aeneas", sub="Genmei Shield"}
 	sets.weapons.Carn = {main="Carnwenhan", sub="Genmei Shield"}
 	sets.weapons.Twashtar = {main="Twashtar", sub="Genmei Shield"}
+	sets.weapons.Tauret = {main="Tauret", sub="Genmei Shield"}
 	sets.weapons.Mandau = {main="Mandau", sub="Genmei Shield"}
 	--sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
 	sets.weapons.Sword = {main="Naegling", sub="Genmei Shield"}
 	-- Dualwield
-	sets.weapons.DualDaggers = {main="Twashtar", sub="Mandau"}
+	sets.weapons.DualDaggers = {main="Twashtar", sub="Tauret"}
+	sets.weapons.DualCarn = {main="Carnwenhan", sub="Twashtar"}
+	sets.weapons.DualTauret = {main="Tauret", sub="Twashtar"}
+	sets.weapons.DualMandau = {main="Mandau", sub="Twashtar"}
 	sets.weapons.DualSwords = {main="Naegling", sub="Blurred Knife +1"}
 	sets.weapons.DualNukeWeapons = {main="Malevolence",sub="Malevolence"}
 	

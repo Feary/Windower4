@@ -7,7 +7,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Twashtar','LowBuff','Omen')
+	state.Weapons:options('Twashtar','Tauret','LowBuff','Omen')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 
 	gear.DA_jse_back = {name="Senuna's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
@@ -49,7 +49,8 @@ function init_gear_sets()
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
 	
 	-- Weapons sets
-	sets.weapons.Twashtar = {main="Twashtar", sub="Kaja Knife"}--Blurred Knife +1
+	sets.weapons.Twashtar = {main="Twashtar", sub="Tauret"}--Blurred Knife +1
+	sets.weapons.Tauret = {main="Tauret", sub="Twashtar"}--Blurred Knife +1
 	sets.weapons.LowBuff = {main="Twashtar", sub="Blurred Knife +1"}
 	sets.weapons.Omen = {main="Pugiunculus", sub="Demersal Degen"}
     -- Precast Sets

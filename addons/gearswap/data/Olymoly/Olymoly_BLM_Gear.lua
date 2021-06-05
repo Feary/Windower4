@@ -112,8 +112,8 @@ function init_gear_sets()
 
     sets.precast.WS['Myrkr'] = {ammo="Staunch Tathlum",
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Evans Earring",ear2="Etiolation Earring",
-		-- hands="Regal Cuffs", ring2="Mephitas's Ring"
-		body="Amalric Doublet +1", hands="Amalric Gages +1", ring1="Mephitas's Ring +1", ring2="Lebeche Ring",
+		--  ring2="Mephitas's Ring"
+		body="Amalric Doublet +1", hands="Regal Cuffs", ring1="Mephitas's Ring +1", ring2="Lebeche Ring",
 		back="Aurist's Cape +1",waist="Eschan Stone",legs="Psycloth Lappas",feet="Skaoi Boots"}
     
     ---- Midcast Sets ----
@@ -171,8 +171,7 @@ function init_gear_sets()
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
 		--main="Vadose Rod",
 		sub="Genmei Shield",
-		head="Amalric Coif +1",
-		--hands="Regal Cuffs",		
+		head="Amalric Coif +1", hands="Regal Cuffs",	
 		--waist="Emphatikos Rope",legs="Shedir Seraweels"
 		})
 	
@@ -180,21 +179,21 @@ function init_gear_sets()
 
     sets.midcast['Enfeebling Magic'] = {main="Maxentius",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Malignance Earring",
-        -- body="Spaekona Coat +3", hands="Regal Cuffs"
-		body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
+        -- body="Spaekona Coat +3", 
+		body="Amalric Doublet +1", hands="Regal Cuffs", ring1="Stikini Ring",ring2="Stikini Ring",
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet="Skaoi Boots"}
 		
     sets.midcast['Enfeebling Magic'].Resistant = {main="Maxentius",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Malignance Earring",
-        -- body="Spaekona Coat +3", hands="Regal Cuffs"
-		body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
+        -- body="Spaekona Coat +3",
+		body="Amalric Doublet +1", hands="Regal Cuffs", ring1="Stikini Ring",ring2="Stikini Ring",
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Mallquis Trews +2",feet="Jhakri Pigaches +2"}		
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {
 		main="Maxentius",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Malignance Earring",
         -- body="Spaekona Coat +3",
-		body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Amalric Doublet +1",hands="Regal Cuffs",ring1="Stikini Ring",ring2="Stikini Ring",
 		-- feet="Spaekona Sabots +2"
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Mallquis Trews +2",feet="Jhakri Pigaches +2"})
 		
@@ -270,14 +269,13 @@ function init_gear_sets()
 		
     sets.midcast.BardSong = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
         head="Amalric Coif +1", neck="Sanctity Necklace", ear1="Regal Earring",ear2="Malignance Earring",
-		--body="Zendik Robe",hands="Regal Cuffs",
-		body="Merlinic Jubbah", hands="Jhakri Cuffs +2", ring1="Stikini Ring", ring2="Stikini Ring",
+		--body="Zendik Robe",
+		body="Merlinic Jubbah", hands="Regal Cuffs", ring1="Stikini Ring", ring2="Stikini Ring",
         back=gear.nuke_jse_back, waist="Luminary Sash", legs="Lengo Pants", feet="Skaoi Boots"}
 		
 	sets.midcast.Impact = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Regal Earring", ear2="Malignance Earring",
-		-- hands="Regal Cuffs"
-		body="Twilight Cloak",hands="Jhakri Cuffs +2",ring1="Stikini Ring", ring2="Stikini Ring",
+		body="Twilight Cloak",hands="Regal Cuffs",ring1="Stikini Ring", ring2="Stikini Ring",
 		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 
     -- Elemental Magic sets    

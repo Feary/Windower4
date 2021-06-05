@@ -93,8 +93,8 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS['Myrkr'] = {ammo="Staunch Tathlum",
 		head="Pixie Hairpin +1",neck="Sanctity Necklace", ear1="Evans Earring",ear2="Etiolation Earring",
-		-- hands="Regal Cuffs",  ring2="Mephitas's Ring",
-		body="Amalric Doublet +1", ring1="Mephitas's Ring +1",
+		--  ring2="Mephitas's Ring",
+		body="Amalric Doublet +1", hands="Regal Cuffs", ring1="Mephitas's Ring +1",
 		back="Fi Follet Cape +1",waist="Yamabuki-no-Obi",legs="Peda. Pants +1",feet="Skaoi Boots"}
 
     -- Midcast Sets
@@ -162,7 +162,7 @@ function init_gear_sets()
 	
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif +1"})
 	
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {-main=empty,sub="Ammurapi Shield", head="Amalric Coif +1",})--hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {-main=empty,sub="Ammurapi Shield", head="Amalric Coif +1", hands="Regal Cuffs"})--,waist="Emphatikos Rope",legs="Shedir Seraweels"
 	
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})--legs="Shedir Seraweels"
 

@@ -318,9 +318,9 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Katana = {main="Ochu", sub="Ochu"}
 	sets.weapons.Savage = {main="Naegling",sub="Blurred Knife +1"}
-	sets.weapons.Evisceration = {main="Kaja Knife",sub="Blurred Knife +1"}
+	sets.weapons.Evisceration = {main="Tauret",sub="Blurred Knife +1"}
 	sets.weapons.LowBuff = {main="Ochu",sub="Blurred Knife +1"}
-	sets.weapons.ProcDagger = {main="Kaja Knife",sub=empty}
+	sets.weapons.ProcDagger = {main="Tauret",sub=empty}
 	sets.weapons.ProcSword = {main="Naegling",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Lament",sub=empty}
 	sets.weapons.ProcScythe = {main="Ark Scythe",sub=empty}

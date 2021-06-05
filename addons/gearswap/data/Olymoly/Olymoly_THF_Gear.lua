@@ -62,7 +62,7 @@ function init_gear_sets()
 	-- Weapons Sets
 	sets.weapons.Normal = 		{main="Twashtar",sub=empty}
 	sets.weapons.Relic = 		{main="Mandau",sub="Blurred Knife +1"}
-	sets.weapons.Ambuscade = 	{main="Kaja Knife",sub="Blurred Knife +1"}	
+	sets.weapons.Ambuscade = 	{main="Tauret",sub="Blurred Knife +1"}	
 	sets.weapons.Sword = 		{main="Naegling", sub="Blurred Knife +1"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Throwing = 	{main="Twashtar",sub="Blurred Knife +1", range="Raider's Bmrng."}
