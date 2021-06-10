@@ -4,12 +4,12 @@
         <AutoDrop>false</AutoDrop>
         <AutoStack>true</AutoStack>
         <Delay>0</Delay>
-        <Drop />
+        <Drop>Unlit Lantern</Drop>
         <Lot />
         <Pass />
         <Verbose>false</Verbose>
     </global>
     <oasus>
-        <Drop>Furia Visor,Furia Sollerets,Furia Tights,Furia Mitts,Furia Leggings,Furia Breastplate,Furia Brayettes,Furia Mask,Furia Dastanas,Furia Helm,Furia Brogues,Furia Hat,Furia Galea,Furia Gaiters,Furia Spats,Furia Mail,Furia Frock,Furia Cuffs,Furia Sabots,Furia Gants,Furia Wristbands,Furia Tam,Furia Haubert,Furia Slops,Furia Gages,Furia Harness,Furia Beret,Furia Galoshes,Furia Vest,Furia Slacks,Furia Celata,Furia Caubeen,Furia Clogs,Furia Boots,Furia Moufles,Furia Breeches,Furia Talar,Furia Headgear,Furia Hose,Furia Bracers,Furia Brais,Furia Gloves,Furia Socks,Furia Coat,Furia Sabatons,Furia Jerkin,Furia Gauntlets,Furia Braccae,Furia Greaves,Furia Bliaut,Furia Cuisses,Furia Cuirass,Furia Pigment,Furia Pants,Furia Armet,Furia Mufflers</Drop>
+        <Drop>Furia Gauntlets,Furia Sollerets,Unlit Lantern,Furia Brogues,Furia Dastanas,Furia Leggings,Furia Mufflers,Furia Brayettes,Furia Hat,Furia Mitts,Furia Helm,Furia Gaiters,Furia Breastplate,Furia Sabots,Furia Celata,Furia Spats,Furia Mail,Furia Frock,Furia Cuffs,Furia Beret,Furia Gants,Furia Wristbands,Furia Tam,Furia Haubert,Furia Slops,Furia Gages,Furia Harness,Furia Tights,Furia Galea,Furia Clogs,Furia Slacks,Furia Galoshes,Furia Boots,Furia Bracers,Furia Jerkin,Furia Moufles,Furia Caubeen,Furia Talar,Furia Breeches,Furia Hose,Furia Coat,Furia Brais,Furia Headgear,Furia Socks,Furia Gloves,Furia Sabatons,Furia Visor,Furia Vest,Furia Braccae,Furia Greaves,Furia Bliaut,Furia Cuisses,Furia Cuirass,Furia Pigment,Furia Pants,Furia Armet,Furia Mask</Drop>
     </oasus>
 </settings>
