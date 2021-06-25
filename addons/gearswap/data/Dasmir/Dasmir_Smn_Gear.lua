@@ -131,12 +131,12 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps"}
 	
     sets.midcast.Cure = {main=gear.gada_healing_club, sub="Sors Shield", ammo="Hasty Pinion +1",
-		-- head="Vanya Hood", neck="Incanter's Torque", ear1="Mendicant's Earring",
-        head="Amalric Coif", neck="Phalaina Locket", lear="Roundel Earring", ear2="Novia Earring",
+		--  neck="Incanter's Torque", ear1="Mendicant's Earring",
+		head="Vanya Hood", neck="Phalaina Locket", lear="Roundel Earring", ear2="Novia Earring",
 		-- body="Vrikodara Jupon",
         body="Inyanga Jubbah +2", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Lebeche Ring", 
-		-- legs="Gyve Trousers",feet="Vanya Clogs"
-        back=gear.Cure_jse_back, waist="Austerity Belt", legs="Lengo Pants", feet="Medium's Sabots"}
+		--eet="Vanya Clogs"
+        back=gear.Cure_jse_back, waist="Austerity Belt", legs="Gyve Trousers", feet="Medium's Sabots"}
 		
 	sets.Self_Healing = {neck="Phalaina Locket"}--ring1="Kunaji Ring",ring2="Asklepian Ring",waist="Gishdubar Sash"
 	sets.Cure_Received = {neck="Phalaina Locket"}--ring1="Kunaji Ring",ring2="Asklepian Ring",waist="Gishdubar Sash"
@@ -241,14 +241,14 @@ function init_gear_sets()
         head="Beckoner's Horn +1", neck="Caller's Pendant", ear1="Andoaa Earring",ear2="Gifted Earring",
         -- hands="Baayami Cuffs",
 		body="Beck. Doublet +1", hands="Glyphic Bracers +1", ring1="Stikini Ring",ring2="Stikini Ring",
-		--back="Conveyance Cape", waist="Kobo Obi", legs="Baayami Slops", feet="Baayami Sabots"
-        waist="Cimmerian Sash", legs="Beck. Spats +1", feet="Rubeus Boots"}
+		--back="Conveyance Cape", waist="Kobo Obi",  feet="Baayami Sabots"
+        waist="Cimmerian Sash", legs="Baayami Slops", feet="Rubeus Boots"}
 	
 	-- Macc
     sets.midcast.Pet.DebuffBloodPactWard = {main=gear.macc_BP_Staff,sub="Vox Grip",ammo=gear.avatar_ammo,
         head="Convoker's Horn +3", neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Enmerkar Earring",
-		-- Apogee Mitts +1 Path D ring1="Evoker's Ring",
-        body="Con. Doublet +3", hands="Convo. Bracers +2",ring1="Stikini Ring", ring2="Stikini Ring",
+		-- ring1="Evoker's Ring",
+        body="Con. Doublet +3", hands="Apogee Mitts +1",ring1="Stikini Ring", ring2="Stikini Ring",
         back=gear.magic_jse_back, waist="Regal Belt", legs="Convo. Spats +3", feet="Convo. Pigaches +3"}
         
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard    
@@ -263,8 +263,8 @@ function init_gear_sets()
 	 -- Used for all physical pacts when AccMode is true	
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage,{
 		main=gear.phys_BP_Staff, sub="Elan Strap +1", ammo=gear.avatar_ammo,
-		-- Kyrene's Earring neck="Summoner's Collar +2",
-		head="Apogee Crown +1", neck="Shulmanu Collar", ear1="Gelos Earring", ear2="Lugalbanda Earring",
+		-- neck="Summoner's Collar +2",
+		head="Apogee Crown +1", neck="Shulmanu Collar", ear1="Kyrene's Earring", ear2="Lugalbanda Earring",
         body="Con. Doublet +3",  hands="Convo. Bracers +2", ring1="Varar Ring +1", ring2="Varar Ring +1",
 		back=gear.phys_jse_back, waist="Incarnation Sash", legs="Apogee Slacks +1", feet="Convo. Pigaches +3"})
 

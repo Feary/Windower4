@@ -1,5 +1,5 @@
 return {
-	"Kaja Knife",
+	"Tokko Knife",
 	"Naegling",
 	"Meg. Chausses +2",
 	"Meg. Cuirie +2",
@@ -26,4 +26,6 @@ return {
 	"Skulk. Poulaines +1",
 	"Skulker's Bonnet +1",
 	"Skulker's Vest",
+	"Tauret",
+	"Kaja Bow",
 }

@@ -108,25 +108,22 @@ function init_gear_sets()
         back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Peda. Loafers +1"}
 		
     sets.midcast.Cure = {main=gear.gada_healing_club, sub="Sors Shield", ammo="Hasty Pinion +1",
-		--main="Serenity",sub="Enki Strap", 
-		-- head="Vanya Hood", neck="Incanter's Torque"
-        head="Gende. Caubeen +1",neck="Colossus's Torque", ear1="Regal Earring",ear2="Novia Earring",
+		-- neck="Incanter's Torque"
+        head="Vanya Hood",neck="Colossus's Torque", ear1="Regal Earring",ear2="Novia Earring",
         body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
 		-- legs=gear.chironic_cure_legs feet="Vanya Clogs"
         back=gear.Cure_jse_back,waist="Luminary Sash", legs="Acad. Pants +2",feet="Peda. Loafers +1"}
 
     sets.midcast.LightWeatherCure = {main="Iridal Staff",sub="Enki Strap",ammo="Hasty Pinion +1",
-       --main="Serenity",sub="Enki Strap", 
-		-- head="Vanya Hood", neck="Incanter's Torque"
-        head="Gende. Caubeen +1",neck="Colossus's Torque", ear1="Regal Earring",ear2="Novia Earring",
+		-- neck="Incanter's Torque"
+        head="Vanya Hood",neck="Colossus's Torque", ear1="Regal Earring",ear2="Novia Earring",
         body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
 		--  legs=gear.chironic_cure_legs feet="Vanya Clogs"
         back=gear.Cure_jse_back, wwaist="Hachirin-no-Obi", legs="Lengo Pants",feet="Peda. Loafers +1"}
 		
     sets.midcast.LightDayCure = {main=gear.gada_healing_club, sub="Sors Shield", ammo="Hasty Pinion +1",
-		--main="Serenity",sub="Enki Strap", 
-		-- head="Vanya Hood", neck="Incanter's Torque"
-        head="Gende. Caubeen +1", neck="Colossus's Torque", ear1="Regal Earring",ear2="Novia Earring",
+		-- neck="Incanter's Torque"
+        head="Vanya Hood", neck="Colossus's Torque", ear1="Regal Earring",ear2="Novia Earring",
         body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
 		-- legs=gear.chironic_cure_legs feet="Vanya Clogs"
         back=gear.Cure_jse_back, wwaist="Hachirin-no-Obi",legs="Lengo Pants",feet="Peda. Loafers +1"}
@@ -141,8 +138,8 @@ function init_gear_sets()
 		-- main="Oranyan", sub="Clemency Grip",
 		-- neck="Debilis Medallion",
 		head="Amalric Coif",neck="Colossus's Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		--body="Zendik Robe",hands="Hieros Mittens",ring1="Haoma's Ring",ring2="Menelaus's Ring",
-		ring1="Ephedra Ring", ring2="Ephedra Ring",
+		--body="Zendik Robe",hands="Hieros Mittens",ring1="Haoma's Ring",
+		ring1="Ephedra Ring", ring2="Menelaus's Ring",		
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Peda. Loafers +1"}
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})-- main="Oranyan", sub="Clemency Grip"

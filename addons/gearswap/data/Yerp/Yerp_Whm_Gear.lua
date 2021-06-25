@@ -66,15 +66,15 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
-		-- rear="Enchntr. Earring +1",
-		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Malignance Earring", 
+		--  rear="Malignance Earring", 
+		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Kishar Ring", rring="Lebeche Ring",
-		-- feet="Regal Pumps +1" 
-		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", }
+		--  legs="Aya. Cosciales +2", feet="Regal Pumps +1" 
+		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Gyve Trousers",}
 
     sets.precast.FC.DT = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
-		-- rear="Enchntr. Earring +1",
-		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring",
+		-- rear="Malignance Earring", 
+		head="Haruspex Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Kishar Ring", rring="Lebeche Ring",
 		-- feet="Regal Pumps +1" 
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2",}
@@ -89,7 +89,7 @@ function init_gear_sets()
 	
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
 		head="Piety Cap +1", lear="Nourish. Earring", rear="Nourish. Earring +1",
-		feet="Cure Clogs"})
+		legs="Ebers Pantaloons +1", feet="Cure Clogs"})
 	
 	sets.precast.FC.Cure.DT = {ammo="Incantor Stone",
 		-- rear="Enchntr. Earring +1",

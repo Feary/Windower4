@@ -49,6 +49,15 @@
         <Sort><![CDATA[Time]]></Sort>
         <TimeZones>PST,CST,AWST,GMT</TimeZones>
     </global>
+    <helyah>
+        <Clock>
+            <pos>
+                <x>1350</x>
+                <y>-1</y>
+            </pos>
+        </Clock>
+        <TimeZones>PST,CST,GMT,AWST</TimeZones>
+    </helyah>
     <symbio>
         <Clock>
             <pos>
