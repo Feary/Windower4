@@ -98,9 +98,14 @@
     </molyoly>
     <oasus>
         <pos>
-            <x>911</x>
-            <y>308</y>
+            <x>895</x>
+            <y>44</y>
         </pos>
+        <text>
+            <fonts>
+
+            </fonts>
+        </text>
     </oasus>
     <olymoly>
         <pos>
