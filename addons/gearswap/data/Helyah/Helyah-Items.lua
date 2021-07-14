@@ -49,6 +49,7 @@ gear.telchine_legs_Siphon = {}
 gear.telchine_legs_Pet = { name="Telchine Braconi", augments={'Mag. Evasion+25','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Feet
+gear.telchine_feet_Song = "Telchine Pigaches"
 gear.telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}}
 gear.telchine_feet_Regen = { name="Telchine Pigaches", augments={'"Regen" potency+3',}}
 
