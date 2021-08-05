@@ -118,7 +118,7 @@ function init_gear_sets()
 
     -- Fast cast sets for spells    
     sets.precast.FC = {ammo="Impatiens",
-		head="Herculean Helm",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+		head="Herculean Helm",neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
 		back=gear.FC_jse_back}
 

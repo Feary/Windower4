@@ -136,7 +136,7 @@ function init_gear_sets()
     
     sets.precast.FC = {
 		-- neck="Baetyl Pendant"
-        head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
+        head="Carmine Mask +1",neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
         body="Taeon Tabard",hands="Leyline Gloves",ring1="Prolix Ring",ring2="Kishar Ring",
 		-- Herc FC
         back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Carmine Greaves +1"}

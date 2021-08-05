@@ -54,13 +54,13 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
 		--main=gear.grioavolr_fc_staff, ammo="Impatiens",
-		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Enchntr. Earring +1", rear="Malignance Earring",
+		head="Nahtirah Hat", neck="Orunmila's Torque", lear="Enchntr. Earring +1", rear="Malignance Earring",
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Regal Pumps +1"}
 
     sets.precast.FC.DT = set_combine(sets.precast.FC, {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
 		-- ammo="Impatiens",
-		head="Nahtirah Hat", neck="Voltsurge Torque",  lear="Enchntr. Earring +1", rear="Malignance Earring",
+		head="Nahtirah Hat", neck="Orunmila's Torque",  lear="Enchntr. Earring +1", rear="Malignance Earring",
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		-- Kaykaus Tights
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Regal Pumps +1"})
@@ -142,7 +142,7 @@ function init_gear_sets()
     sets.MagicBurst = {neck="Mizu. Kubikazari",ring1="Mujin Band",ring2="Locus Ring"}
 	
     sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
-		head="Nahtirah Hat", neck="Voltsurge Torque",  lear="Enchntr. Earring +1", rear="Malignance Earring",
+		head="Nahtirah Hat", neck="Orunmila's Torque",  lear="Enchntr. Earring +1", rear="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.fastcast_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
 		

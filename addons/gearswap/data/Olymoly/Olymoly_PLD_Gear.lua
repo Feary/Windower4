@@ -140,7 +140,7 @@ function init_gear_sets()
 
     -- Fast cast sets for spells    
     sets.precast.FC = {ammo="Staunch tathlum",
-		head="Carmine Mask +1", neck="Voltsurge Torque", lear="Odnowa Earring +1", rear="Odnowa Earring",
+		head="Carmine Mask +1", neck="Orunmila's Torque", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
 		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Carmine Greaves +1"}
 
@@ -245,7 +245,7 @@ function init_gear_sets()
 	--------------------------------------
 
     sets.midcast.FastRecast = {ammo="Incantor Stone",
-		head="Chev. Armet +1", neck="Voltsurge Torque",ear1="Loquac. Earring", ear2="Enchntr. Earring +1",
+		head="Chev. Armet +1", neck="Orunmila's Torque",ear1="Loquac. Earring", ear2="Enchntr. Earring +1",
 		body="Rev. Surcoat +3", hands="Leyline Gloves", ring1="Moonbeam Ring", ring2="Moonbeam Ring",
 		--legs=gear.odyssean_fc_legs, 
         back=gear.fastcast_jse_back, waist="Tempus Fugit", legs="Carmine Cuisses +1", feet="Odyssean Greaves"}		

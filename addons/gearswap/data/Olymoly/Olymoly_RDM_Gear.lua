@@ -74,7 +74,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	-- RDM gets 30 FC from traits and up to 8 more from JP gifts. 80-38=42 
 	sets.precast.FC = {
-		head="Atro. Chapeau +1", neck="Voltsurge Torque", lear="Enchntr. Earring +1", rear="Malignance Earring",
+		head="Atro. Chapeau +1", neck="Orunmila's Torque", lear="Enchntr. Earring +1", rear="Malignance Earring",
 		body="Viti. Tabard +1", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Psycloth Lappas", feet="Carmine Greaves +1"}
 
@@ -202,7 +202,7 @@ function init_gear_sets()
 		back=gear.nuke_jse_back, waist="Eschan Stone", legs="Amalric Slops +1", feet="Jhakri Pigaches +2"}
 
 	sets.midcast.FastRecast = set_combine(sets.precast.FC, {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
-		head="Atro. Chapeau +1", beck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
+		head="Atro. Chapeau +1", beck="Orunmila's Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Viti. Tabard +1", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring", 
 		back=gear.nuke_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Carmine Greaves +1"})
 
@@ -401,7 +401,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].Fodder = set_combine(sets.midcast['Elemental Magic'], {})
 
     sets.midcast['Elemental Magic'].Proc = {main=empty, sub=empty,ammo="Impatiens",
-        head=gear.merlinic_nuke_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+        head=gear.merlinic_nuke_head,neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
         body="Jhakri Robe +2",hands="Gende. Gages +1",ring1="Prolix Ring",ring2="Defending Ring",
 		back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1", feet="Amalric Nails +1"}
 		
@@ -434,12 +434,12 @@ function init_gear_sets()
 	sets.midcast.Aspir = sets.midcast.Drain
 		
 	sets.midcast.Stun = {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
-		head="Atro. Chapeau +1", neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
+		head="Atro. Chapeau +1", neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
 		--body="Zendik Robe",
 		body="Viti. Tabard +1", hands="Gende. Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Macc_jse_back, waist="Witful Belt", legs="Psycloth Lappas", feet=gear.merlinic_aspir_feet}
 	sets.midcast.Stun.Resistant = {main="Oranyan", sub="Clerisy Strap +1", range="Kaja Bow",
-		head="Atro. Chapeau +1", neck="Voltsurge Torque", lear="Regal Earring", rear="Enchntr. Earring +1",
+		head="Atro. Chapeau +1", neck="Orunmila's Torque", lear="Regal Earring", rear="Enchntr. Earring +1",
 		--body="Zendik Robe",
 		body="Viti. Tabard +1", hands="Gende. Gages +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.Macc_jse_back,waist="Luminary Sash",legs="Psycloth Lappas", feet=gear.merlinic_aspir_feet}

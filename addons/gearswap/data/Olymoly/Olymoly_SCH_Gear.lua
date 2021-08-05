@@ -72,7 +72,7 @@ function init_gear_sets()
 
     sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incanter's Torque",
 		--ammo="Impatiens",
-        head="Amalric Coif +1",neck="Voltsurge Torque", ear1="Enchntr. Earring +1",ear2="Malignance Earring",
+        head="Amalric Coif +1",neck="Orunmila's Torque", ear1="Enchntr. Earring +1",ear2="Malignance Earring",
         --body="Zendik Robe",
 		body="Anhur Robe", hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
         back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet="Amalric Nails +1"}
@@ -112,7 +112,7 @@ function init_gear_sets()
 
     sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
 		--main=gear.grioavolr_fc_staff,
-		head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1", ear2="Malignance Earring",
+		head="Amalric Coif +1",neck="Orunmila's Torque",ear1="Enchntr. Earring +1", ear2="Malignance Earring",
 		--body="Zendik Robe",
 		body="Anhur Robe", hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet="Amalric Nails +1"}
@@ -240,7 +240,7 @@ function init_gear_sets()
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
 
     sets.midcast.Stun = {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
-        head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1", ear2="Malignance Earring",
+        head="Amalric Coif +1",neck="Orunmila's Torque",ear1="Enchntr. Earring +1", ear2="Malignance Earring",
         -- body="Zendik Robe",
 		body="Anhur Robe",hands="Gende. Gages +1",ring1="Kishar Ring", ring2="Stikini Ring",
         back=gear.nuke_jse_back,waist="Witful Belt", legs="Psycloth Lappas", feet="Amalric Nails +1"}
@@ -273,7 +273,7 @@ function init_gear_sets()
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
     sets.midcast['Elemental Magic'].Proc = {main=empty, sub=empty,ammo="Impatiens",
-        head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
+        head="Nahtirah Hat",neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
         body="Amalric Doublet +1",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Prolix Ring",
         back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Amalric Nails +1"}
 		
@@ -327,7 +327,7 @@ function init_gear_sets()
 		
 	sets.midcast.Helix.Proc = {main=empty, sub=empty,
 		--ammo="Impatiens",
-        head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Regal Earring",ear2="Malignance Earring",
+        head="Nahtirah Hat",neck="Orunmila's Torque",ear1="Regal Earring",ear2="Malignance Earring",
         body="Amalric Doublet +1",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Prolix Ring",
         back=gear.FC_jse_back, waist="Witful Belt",legs="Lengo Pants",feet="Amalric Nails +1"}
 

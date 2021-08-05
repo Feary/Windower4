@@ -101,11 +101,6 @@
             <x>895</x>
             <y>44</y>
         </pos>
-        <text>
-            <fonts>
-
-            </fonts>
-        </text>
     </oasus>
     <olymoly>
         <pos>
@@ -113,4 +108,10 @@
             <y>46</y>
         </pos>
     </olymoly>
+    <suede>
+        <pos>
+            <x>1167</x>
+            <y>305</y>
+        </pos>
+    </suede>
 </settings>

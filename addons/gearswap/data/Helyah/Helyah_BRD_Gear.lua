@@ -223,8 +223,8 @@ function init_gear_sets()
 		--head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Genmei Earring", rear="Etiolation Earring",
 		head="Aoidos Calot +1", neck"Brioso Whistle", 
 		-- body="Fili Hongreline +1",  hands="Fili Manchettes +1", 
-		body="Aoidos' Hngrln. +1", hands="Ad. Mnchtte +1", lring="Dark Ring", rring="Defending Ring",
-		--back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"}
+		body="Aoidos' Hngrln. +1", hands="Ad. Mnchtte +1", lring="Dark Ring", rring="Defending Ring"}
+		--back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"
 
 	sets.midcast.SongEffect.DW = {}
 

@@ -79,7 +79,7 @@ function init_gear_sets()
 
     -- Fast cast sets for spells    
     sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Impatiens",		
-		head="Merlinic Hood",neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
+		head="Merlinic Hood",neck="Orunmila's Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		-- Zendik Robe
 		body="Inyanga Jubbah +2", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
 		gear.FC_jse_back, waist="Witful Belt", legs="Psycloth Lappas", feet=gear.merlinic_fc_feet}
@@ -122,7 +122,7 @@ function init_gear_sets()
     --------------------------------------
 
     sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
-		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
+		head="Nahtirah Hat",neck="Orunmila's Torque",ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
 	
@@ -170,12 +170,12 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 		
     sets.midcast.Stun = {main="Oranyan",sub="Kaja Grip",
-		head="Inyanga Tiara +2",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
+		head="Inyanga Tiara +2",neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs=gear.chironic_macc_legs,feet="Amalric Nails +1"}
 		
     sets.midcast.Stun.Resistant = {main="Oranyan",sub="Enki Strap",ammo="Hasty Pinion +1",
-		head="Inyanga Tiara +2",neck="Voltsurge Torque",ear1="Gwati Earring",ear2="Enchntr. Earring +1",
+		head="Inyanga Tiara +2",neck="Orunmila's Torque",ear1="Gwati Earring",ear2="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2",hands="Amalric Gages +1",ring1="Stikini Ring",ring2="Prolix Ring",
 		back=gear.Cure_jse_back,waist="Witful Belt",legs=gear.chironic_macc_legs,feet="Amalric Nails +1"}
 		

@@ -442,20 +442,23 @@ function init_gear_sets()
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.mab_jse_back, waist="Luminary Sash", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
-	sets.midcast['Enhancing Magic'] = {}
+	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion +1",
+		head=gear.telchine_head_Duration, neck="Incanter's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, ring1="Stikini Ring",ring2="Stikini Ring",
+		back="Perimede Cape", waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
-	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {})--head="Amalric Coif"
+	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif"})
 
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {})--head="Amalric Coif",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif"})--hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
 
-	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {})--ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"
+	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})--ear2="Earthcry Earring",legs="Shedir Seraweels"
 
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})--legs="Shedir Seraweels"
 	
-	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {})--ring2="Sheltered Ring"
-	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {})--ring2="Sheltered Ring"
-	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {})--ring2="Sheltered Ring"
-	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {})--ring2="Sheltered Ring"
+	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
+	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
+	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
+	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 
 	sets.midcast['Divine Magic'] = {
 		head="Jhakri Coronal +2", neck="Erra Pendant",lear="Regal Earring", rear="Gwati Earring",
@@ -494,7 +497,7 @@ function init_gear_sets()
 	sets.Learning = {}-- hands="Assim. Bazu. +2"
 
 	-- Resting sets
-	sets.resting = {main="Naegling", sub="Tanmogayi +1",
+	sets.resting = {main="Naegling", sub="Genmei Shield",
 		-- Herculean Head 
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Vest  Herculean Hands
@@ -503,24 +506,24 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	-- Idle sets - Refresh
-	sets.idle =  {main="Naegling", sub="Tanmogayi +1",
+	sets.idle =  {main="Naegling", sub="Genmei Shield",
 		-- Herculean Head 
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
-		-- Herculean Vest  Herculean Hands
+		-- Herculean Hands
 		body="Shamash Robe", hands="Aya. Manopolas +2", lring=gear.DarkRing, rring="Defending Ring",
 		-- Herculean Boots 
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.idle.PDT =  {main="Naegling", sub="Tanmogayi +1",
+	sets.idle.PDT =  {main="Naegling", sub="Genmei Shield",
 		-- Herculean Head 
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
-		-- Herculean Vest Herculean Hands
+		-- Herculean Hands
 		body="Shamash Robe", hands="Aya. Manopolas +2", lring=gear.DarkRing, rring="Defending Ring",
 		-- Herculean Boots 
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	-- Defense sets
-	sets.defense.PDT =  {main="Naegling", sub="Tanmogayi +1",
+	sets.defense.PDT =  {main="Naegling", sub="Genmei Shield",
 		-- Herculean Head
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Vest Herculean Hands
@@ -528,7 +531,7 @@ function init_gear_sets()
 		-- Herculean Boots 
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.defense.MDT =  {main="Naegling", sub="Tanmogayi +1",
+	sets.defense.MDT =  {main="Naegling", sub="Genmei Shield",
 		-- Herculean Head 
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Vest  Herculean Hands
@@ -536,7 +539,7 @@ function init_gear_sets()
 		--  Herculean Boots 
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}			
 
-    sets.defense.MEVA =  { 	main="Naegling", sub="Tanmogayi +1",	
+    sets.defense.MEVA =  { 	main="Naegling", sub="Genmei Shield",	
 		-- Herculean Head
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Vest Herculean Hands
@@ -563,13 +566,13 @@ function init_gear_sets()
 	sets.weapons.Sword =  {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.Club =  {main="Kaja Rod",sub="Genmei Shield"}
 	-- Dual
-	sets.weapons.DualMeleeClubs = {main="Kaja Rod",sub="Kaja Rod"}
-	sets.weapons.DualMagicWeapons = {main="Kaja Rod",sub="Kaja Rod"}
+	sets.weapons.DualMeleeClubs = {main="Kaja Rod", sub="Kaja Rod"}
+	sets.weapons.DualMagicWeapons = {main="Kaja Rod",sub="Naegling"} --Kaja Rod
 	sets.weapons.DualMaccWeapons = {main="Kaja Rod",sub="Kaja Rod"}
 	sets.weapons.DualHybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets
-	sets.engaged =  {main="Naegling", sub="Tanmogayi +1",
+	sets.engaged =  {main="Naegling", sub="Genmei Shield",
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		-- body="Adhemar Jacket", 
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Petrov Ring", rring="Epona's Ring",

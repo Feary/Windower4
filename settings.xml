@@ -69,6 +69,7 @@
     <plugin>Run</plugin>
     <plugin>SSOrganizer</plugin>
     <plugin>ChatMon</plugin>
+    <plugin>Config</plugin>
   </autoload>
   <profile name="">
     <consolekey>Insert</consolekey>

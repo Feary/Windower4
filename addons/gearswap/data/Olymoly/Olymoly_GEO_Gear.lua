@@ -62,7 +62,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
 		--ammo="Impatiens",
-		head="Amalric Coif +1", neck="Voltsurge Torque", lear="Enchntr. Earring +1", rear="Malignance Earring",
+		head="Amalric Coif +1", neck="Orunmila's Torque", lear="Enchntr. Earring +1", rear="Malignance Earring",
 		-- Zendik Robe
 		body="Anhur Robe", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Geomancy Pants +2", feet=gear.merlinic_fc_feet}
@@ -88,7 +88,7 @@ function init_gear_sets()
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat"})
 
 	sets.precast.FC.Impact = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Impatiens",
-		head=empty,neck="Voltsurge Torque",lear="Enchntr. Earring +1", rear="Malignance Earring",
+		head=empty,neck="Orunmila's Torque",lear="Enchntr. Earring +1", rear="Malignance Earring",
 		body="Twilight Cloak",hands=gear.helios_hands_FC, ring1="Prolix Ring",
 		back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +2",feet="Amalric Nails +1"}
 	
@@ -100,7 +100,7 @@ function init_gear_sets()
 
     sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
 		--ammo=
-		head="Amalric Coif +1", neck="Voltsurge Torque", lear="Enchntr. Earring +1", rear="Malignance Earring",
+		head="Amalric Coif +1", neck="Orunmila's Torque", lear="Enchntr. Earring +1", rear="Malignance Earring",
 		-- Zendik Robe
 		body="Anhur Robe", hands=gear.helios_hands_FC, lring="Prolix Ring", rring="Kishar Ring",
 		back="Lifestream Cape",waist="Witful Belt",legs="Geomancy Pants +2",feet="Amalric Nails +1"}
@@ -187,7 +187,7 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 		
 	sets.midcast.Stun = {main="Idris",sub="Ammurapi Shield",
-		head="Geo. Galero +2",neck="Voltsurge Torque", ear1="Enchntr. Earring +1", ear2="Malignance Earring",
+		head="Geo. Galero +2",neck="Orunmila's Torque", ear1="Enchntr. Earring +1", ear2="Malignance Earring",
         -- body="Zendik Robe",
 		body="Geomancy Tunic +2",hands="Geo. Mitaines +3",ring1="Stikini Ring",ring2="Kishar Ring",
         back=gear.FC_jse_back,waist="Ninurta's Sash",legs="Geomancy Pants +2",feet="Geo. Sandals +3"}

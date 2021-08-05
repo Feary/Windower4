@@ -120,7 +120,7 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     sets.precast.FC = {ammo="Impatiens",
-		head="Haruspex Hat +1",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
+		head="Haruspex Hat +1",neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
 		body="Taeon Tabard",hands="Leyline Gloves", ring1="Lebeche Ring", ring2="Prolix Ring",
 		--legs="Rawhide Trousers"
 		}
@@ -425,7 +425,7 @@ function init_gear_sets()
     --------------------------------------
     sets.midcast.FastRecast = {
 		-- Herculean Helm
-        head="Haruspex Hat +1",neck="Voltsurge Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
+        head="Haruspex Hat +1",neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
         body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Tempus Fugit",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 

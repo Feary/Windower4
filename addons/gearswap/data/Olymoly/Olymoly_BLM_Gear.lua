@@ -70,7 +70,7 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
-		head="Amalric Coif +1", neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
+		head="Amalric Coif +1", neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
 		-- body="Zendik Robe", 
 		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring",ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet=gear.merlinic_fc_feet}
@@ -90,7 +90,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Death = {main=gear.grioavolr_Death_staff, 
 		--  sub="Niobid Strap",ammo="Psilomene",
-		head="Amalric Coif +1", neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
+		head="Amalric Coif +1", neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
 		-- body="Zendik Robe", hands="Volte Gloves",ring1="Mephitas's Ring +1", rring2="Rahab Ring",
 		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring",ring2="Mephitas's Ring +1",
         -- waist="Channeler's Stone",  Path D 
@@ -118,7 +118,7 @@ function init_gear_sets()
     
     ---- Midcast Sets ----
     sets.midcast.FastRecast = {main="Oranyan", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
-		head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
+		head="Amalric Coif +1",neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
 		--body="Zendik Robe", hands="Volte Gloves",
 		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring",ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Psycloth Lappas", feet="Amalric Nails +1"}
