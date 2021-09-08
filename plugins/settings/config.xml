@@ -14,8 +14,6 @@
         <FootstepEffects>true</FootstepEffects>
         <!--Time in minutes of inactivity until a disconnect, 0 to disable-->
         <AutoDisconnectTime>0</AutoDisconnectTime>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>0</FrameRateDivisor>
     </global>
     <Worldkiller>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
@@ -41,32 +39,24 @@
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
     </Almontay>
-    <Oasus>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Oasus>
     <Mehany>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
     </Mehany>
-    <Midnightclamm>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Midnightclamm>
-    <Mostmost>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Mostmost>
     <Drecien>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
     </Drecien>
+    <Dasmir>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Dasmir>
+    <Helyah>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Helyah>
     <Yerp>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
     </Yerp>
-    <Ravindra>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Ravindra>
 </settings>
