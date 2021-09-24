@@ -121,8 +121,7 @@
 				<slot15>Water Bomb</slot15>
 				<slot16>Barrier Tusk</slot16>
 				<slot17>Blinding Fulgor</slot17>
-				<slot18>Retinal Glare</slot18>
-				<slot19>Barrier Tusk</slot19>				
+				<slot18>Retinal Glare</slot18>	
 			</aoe>
 			<!-- This is for Solo Aoe -->
 			<cleaving>

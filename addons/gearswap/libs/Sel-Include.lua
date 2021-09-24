@@ -1019,20 +1019,44 @@ function default_post_precast(spell, spellMap, eventArgs)
 			end
 			
 		elseif spell.type == 'WeaponSkill' then
-		
+
 			if state.WeaponskillMode.value ~= 'Proc' and data.weaponskills.elemental:contains(spell.english) then
-				local orpheus_avail = item_available("Orpheus's Sash")
-				local hachirin_avail = item_available('Hachirin-no-Obi')
+				local distance = spell.target.distance - spell.target.model_size
+				local single_obi_intensity = 0
+				local orpheus_intensity = 0
+				local hachirin_intensity = 0
+
+				if item_available("Orpheus's Sash") then
+					orpheus_intensity = (16 - (distance <= 1 and 1 or distance >= 15 and 15 or distance)) or 0
+				end
 				
-				if hachirin_avail and spell.element and spell.element == world.weather_element and world.weather_intensity == 2 then
-					equip({waist="Hachirin-no-Obi"})
-				elseif orpheus_avail and spell.target.distance < 3 then
+				if item_available(data.elements.obi_of[spell.element]) then
+					if spell.element == world.weather_element then
+						single_obi_intensity = single_obi_intensity + data.weather_bonus_potency[world.weather_intensity]
+					end
+					if spell.element == world.day_element then
+						single_obi_intensity = single_obi_intensity + 10
+					end
+				end
+				
+				if item_available('Hachirin-no-Obi') then
+					if spell.element == world.weather_element then
+						hachirin_intensity = hachirin_intensity + data.weather_bonus_potency[world.weather_intensity]
+					elseif spell.element == data.elements.weak_to[world.weather_element] then
+						hachirin_intensity = hachirin_intensity - data.weather_bonus_potency[world.weather_intensity]
+					end
+					if spell.element == world.day_element then
+						hachirin_intensity = hachirin_intensity + 10
+					elseif spell.element == data.elements.weak_to[world.day_element] then
+						hachirin_intensity = hachirin_intensity - 10
+					end
+				end
+
+				if orpheus_intensity > hachirin_intensity and orpheus_intensity > single_obi_intensity and orpheus_intensity > 5 then
 					equip({waist="Orpheus's Sash"})
-				elseif hachirin_avail and spell.element and spell.element == world.weather_element and spell.element == world.day_element then
-					equip({waist="Hachirin-no-Obi"})
-				elseif orpheus_avail and spell.target.distance < 8 then
-					equip({waist="Orpheus's Sash"})
-				elseif hachirin_avail and spell.element and (spell.element == world.weather_element or spell.element == world.day_element) then
+				elseif single_obi_intensity >= hachirin_intensity and single_obi_intensity > 5 then
+					equip({waist=data.elements.obi_of[spell.element]})
+				elseif hachirin_intensity > 5 then
 					equip({waist="Hachirin-no-Obi"})
 				end
 			end
@@ -1209,10 +1233,6 @@ function default_aftercast(spell, spellMap, eventArgs)
 	if tickdelay < next_cast then tickdelay = next_cast end
 	
 	if not spell.interrupted then
-		if delayed_cast == spell.english then
-			delayed_cast = ''
-			delayed_target = ''
-		end
 		if state.TreasureMode.value ~= 'None' and state.DefenseMode.value == 'None' and spell.target.type == 'MONSTER' and not info.tagged_mobs[spell.target.id] then
 			info.tagged_mobs[spell.target.id] = os.time()
 			if player.target.id == spell.target.id and state.th_gear_is_locked then
@@ -1448,7 +1468,7 @@ end
 -- Function to wrap logic for equipping gear on aftercast, status change, or user update.
 -- @param status : The current or new player status that determines what sort of gear to equip.
 function equip_gear_by_status(playerStatus, petStatus)
-    if _global.debug_mode then add_to_chat(123,'Debug: Equip gear for status ['..tostring(status)..'], HP='..tostring(player.hp)) end
+    if _global.debug_mode then add_to_chat(123,'Debug: Equip gear for status ['..tostring(playerStatus)..'], HP='..tostring(player.hp)) end
 	if player.hp > 0 then
 		playerStatus = playerStatus or player.status or 'Idle'
 		-- If status not defined, treat as idle.
@@ -1818,7 +1838,7 @@ function get_precast_set(spell, spellMap)
     end
 
     -- Update defintions for element-specific gear that may be used.
-    set_elemental_gear(spell, spellMap)
+    set_elemental_obi_cape_ring(spell, spellMap)
     
     -- Return whatever we've constructed.
     return equipSet
@@ -2262,7 +2282,7 @@ function state_change(stateField, newValue, oldValue)
 			style_lock = true
 		end
 	
-		if newValue == 'None' or state.UnlockWeapons.value then
+		if newValue == 'None' then
 			enable('main','sub','range','ammo')
 		elseif ((newValue:contains('DW') or newValue:contains('Dual')) and not can_dual_wield) or (newValue:contains('Proc') and state.SkipProcWeapons.value) then
 			local startindex = state.Weapons.index
@@ -2271,10 +2291,12 @@ function state_change(stateField, newValue, oldValue)
 				if startindex == state.Weapons.index then break end
 			end
 			
-			if state.Weapons.value == 'None' then
+			newValue = state.Weapons.value
+			
+			if newValue == 'None' or state.UnlockWeapons.value then
 				enable('main','sub','range','ammo')
 			elseif not state.ReEquip.value then
-				handle_weapons()
+				equip_weaponset(newValue)
 			end
 		elseif sets.weapons[newValue] then
 			if not state.ReEquip.value then equip_weaponset(newValue) end
@@ -2283,9 +2305,8 @@ function state_change(stateField, newValue, oldValue)
 				add_to_chat(123,"sets.weapons."..newValue.." does not exist, resetting weapon state.")
 			end
 			state.Weapons:reset()
-			if sets.weapons[state.Weapons.value] and not state.ReEquip.value then
-				equip_weaponset(state.Weapons.value)
-			end
+			newValue = state.Weapons.value
+			if not state.ReEquip.value then	equip_weaponset(newValue) end
 		end
 	elseif stateField == 'Unlock Weapons' then
 		if newValue == true then

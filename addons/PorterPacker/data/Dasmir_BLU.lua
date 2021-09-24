@@ -20,6 +20,7 @@ return {
 	"Mirage Bazubands",
 	"Mirage Shalwar",
 	"Mirage Charuqs",
-	"Kaja Rod",
+	"Maxentius",
+	--"Kaja Rod",
 	"Naegling",	
 }
