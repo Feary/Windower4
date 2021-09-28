@@ -488,9 +488,9 @@ function set_elemental_obi_cape_ring(spell, spellMap)
 	if spell.english:endswith('helix') then
 		if item_available("Orpheus's Sash") then
 			local distance = spell.target.distance - spell.target.model_size
-			local orpheus_intensity = (16 - (distance <= 1 and 1 or distance >= 15 and 15 or distance)) or 0
+			local orpheus_intensity = (16 - (distance <= 1 and 1 or distance >= 15 and 15 or distance))
 				if orpheus_intensity > 5 then
-					equip({waist="Orpheus's Sash"})
+					gear.ElementalObi.name = "Orpheus's Sash"
 				end
 			end
 	elseif is_nuke(spell, spellMap) then
@@ -501,7 +501,7 @@ function set_elemental_obi_cape_ring(spell, spellMap)
 		local hachirin_intensity = 0
 
 		if item_available("Orpheus's Sash") then
-			orpheus_intensity = (16 - (distance <= 1 and 1 or distance >= 15 and 15 or distance)) or 0
+			orpheus_intensity = (16 - (distance <= 1 and 1 or distance >= 15 and 15 or distance))
 		end
 		
 		if item_available(data.elements.obi_of[spell.element]) then
@@ -526,13 +526,12 @@ function set_elemental_obi_cape_ring(spell, spellMap)
 			end
 		end
 		
-		if orpheus_intensity > hachirin_intensity and orpheus_intensity > single_obi_intensity and orpheus_intensity > 5 then
-			gear.ElementalObi.name = "Orpheus's Sash"
-		elseif hachirin_intensity >= single_obi_intensity and hachirin_intensity > 5 then
+		if hachirin_intensity >= single_obi_intensity and hachirin_intensity >= orpheus_intensity and hachirin_intensity >= 5 then
 			gear.ElementalObi.name = "Hachirin-no-Obi"
-		elseif single_obi_intensity > 5 then
-			gear.ElementalObi.name = data.elements.obi_of[spell.element]
-			
+		elseif single_obi_intensity >= orpheus_intensity and single_obi_intensity >= 5 then
+			gear.ElementalObi.name = data.elements.obi_of[enspell_element]
+		elseif orpheus_intensity >= 5 then
+			gear.ElementalObi.name = "Orpheus's Sash"
 		end
 	
 		if spell.element == world.day_element and spell.english ~= 'Impact' and not spell.skill == 'Divine Magic' and item_available("Zodiac Ring") then
@@ -2000,7 +1999,7 @@ function is_nuke(spell, spellMap)
 	    (player.main_job == 'BLU' and spell.skill == 'Blue Magic' and spellMap and spellMap:contains('Magical')) or
 		(player.main_job == 'NIN' and spell.skill == 'Ninjutsu' and spellMap and spellMap:contains('ElementalNinjutsu')) or
 		spell.english == 'Comet' or spell.english == 'Meteor' or spell.english == 'Impact' or spell.english == 'Death' or
-		spell.english:startswith('Banish') or spell.english:startswith('Drain')
+		spell.english:startswith('Banish') or spell.english:startswith('Drain') or spell.english:startswith('Aspir')
 		) then
 		
 		return true

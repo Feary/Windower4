@@ -78,24 +78,78 @@
             </stroke>
         </text>
     </global>
+    <almontay>
+        <pos>
+            <x>1330</x>
+            <y>147</y>
+        </pos>
+    </almontay>
     <dasmir>
         <pos>
             <x>688</x>
             <y>181</y>
         </pos>
     </dasmir>
+    <dayanna>
+        <pos>
+            <x>1334</x>
+            <y>173</y>
+        </pos>
+    </dayanna>
+    <deliah>
+        <pos>
+            <x>1312</x>
+            <y>168</y>
+        </pos>
+    </deliah>
+    <drecien>
+        <pos>
+            <x>1348</x>
+            <y>134</y>
+        </pos>
+    </drecien>
     <fearyjunior>
         <pos>
             <x>815</x>
             <y>112</y>
         </pos>
     </fearyjunior>
+    <gonzaloo>
+        <pos>
+            <x>1387</x>
+            <y>202</y>
+        </pos>
+    </gonzaloo>
+    <kavita>
+        <pos>
+            <x>1406</x>
+            <y>178</y>
+        </pos>
+    </kavita>
+    <mehany>
+        <pos>
+            <x>1378</x>
+            <y>162</y>
+        </pos>
+    </mehany>
+    <midnightclamm>
+        <pos>
+            <x>1472</x>
+            <y>119</y>
+        </pos>
+    </midnightclamm>
     <molyoly>
         <pos>
             <x>932</x>
             <y>48</y>
         </pos>
     </molyoly>
+    <mostmost>
+        <pos>
+            <x>1372</x>
+            <y>220</y>
+        </pos>
+    </mostmost>
     <oasus>
         <pos>
             <x>895</x>
@@ -108,6 +162,12 @@
             <y>46</y>
         </pos>
     </olymoly>
+    <ravindra>
+        <pos>
+            <x>1394</x>
+            <y>152</y>
+        </pos>
+    </ravindra>
     <suede>
         <pos>
             <x>1167</x>
