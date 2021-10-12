@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT','NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','Naegling','Sequence','DualWeapons','DualWeaponsAcc','DualEvisceration','DualClubs','DualAeolian','DualProcDaggers','EnspellOnly')
+	state.Weapons:options('None','Naegling','Sequence','DualWeapons','DualWeaponsAcc','DualEvisceration','DualClubs','DualAeolian','DualProcDaggers','EnspellOnly','EnspellDW')
 	
 	gear.obi_cure_back = "Tempered Cape +1"
 	gear.obi_cure_waist = "Witful Belt"
@@ -190,9 +190,9 @@ function init_gear_sets()
 	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",
 		head="Viti. Chapeau +3",neck="Dls. Torque +2",ear1="Regal Earring",ear2="Snotra Earring",
 		body="Lethargy Sayon +1",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Stikini Ring +1",
-		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet="Vitiation Boots +3"}
+		back=gear.nuke_jse_back,waist="Obstin. Sash",legs="Chironic Hose",feet="Vitiation Boots +3"}
 		
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",range="Kaja Bow",ammo=empty,
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",
 		head="Viti. Chapeau +3",neck="Dls. Torque +2",ear1="Regal Earring",ear2="Snotra Earring",
 		body="Atrophy Tabard +3",hands=gear.chironic_enfeeble_hands,ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
 		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet="Vitiation Boots +3"}
@@ -222,7 +222,8 @@ function init_gear_sets()
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})
 
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
-	
+	sets.midcast.Diaga = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
+		
 	sets.midcast.Bio = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 
     sets.midcast['Elemental Magic'] = {main="Daybreak",sub="Ammurapi Shield",range=empty,ammo="Ghastly Tathlum +1",
@@ -349,20 +350,21 @@ function init_gear_sets()
 	sets.NightIdle = {}
 	
 	-- Weapons sets
-	sets.weapons.Sequence = {main="Sequence",sub="Ammurapi Shield"}
-	sets.weapons.Naegling = {main="Naegling",sub="Ammurapi Shield"}
-	sets.weapons.Almace = {main="Almace",sub="Ammurapi Shield"}
-	sets.weapons.DualWeapons = {main="Naegling",sub="Thibron"}
-	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Almace"}
-	sets.weapons.DualEvisceration = {main="Tauret",sub="Almace"}
-	sets.weapons.DualAeolian = {main="Tauret",sub="Daybreak"}
-	sets.weapons.DualProcDaggers = {main="Blurred Knife +1",sub="Atoyac"}
+	sets.weapons.Sequence = {main="Sequence",sub="Ammurapi Shield",range=empty}
+	sets.weapons.Naegling = {main="Naegling",sub="Ammurapi Shield",range=empty}
+	sets.weapons.Almace = {main="Almace",sub="Ammurapi Shield",range=empty}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Thibron",range=empty}
+	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Almace",range=empty}
+	sets.weapons.DualEvisceration = {main="Tauret",sub="Almace",range=empty}
+	sets.weapons.DualAeolian = {main="Tauret",sub="Daybreak",range=empty}
+	sets.weapons.DualProcDaggers = {main="Blurred Knife +1",sub="Atoyac",range=empty}
 	sets.weapons.EnspellOnly = {main="Norgish Dagger",sub="Aern Dagger",range="Kaja Bow",ammo="Beetle Arrow"}
-	sets.weapons.DualClubs = {main="Nehushtan",sub="Nehushtan"}
-	sets.weapons.DualBlackHalo = {main="Kaja Rod",sub="Thibron"}
-	sets.weapons.DualAlmace = {main="Almace",sub="Sequence"}
+	sets.weapons.EnspellDW = {main="Blurred Knife +1",sub="Atoyac",range="Kaja Bow",ammo="Beetle Arrow"}
+	sets.weapons.DualClubs = {main="Nehushtan",sub="Nehushtan",range=empty}
+	sets.weapons.DualBlackHalo = {main="Kaja Rod",sub="Thibron",range=empty}
+	sets.weapons.DualAlmace = {main="Almace",sub="Sequence",range=empty}
 	sets.weapons.DualBow = {main="Naegling",sub="Tauret",range="Kaja Bow"}
-	sets.weapons.BowMacc = {range="Kaja Bow",ammo=empty}
+	sets.weapons.BowMacc = {main="Naegling",sub="Tauret",range="Kaja Bow",ammo=empty}
 	
     sets.buff.Sublimation = {waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
@@ -402,18 +404,18 @@ function init_gear_sets()
 
 	sets.engaged.DT = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Windbuffet Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+		body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
+		back="Moonlight Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Battlecast Gaiters"}
 		
 	sets.engaged.Acc.DT = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+		body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Battlecast Gaiters"}
 		
 	sets.engaged.FullAcc.DT = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+		body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Battlecast Gaiters"}
 		
 	sets.engaged.DW = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",

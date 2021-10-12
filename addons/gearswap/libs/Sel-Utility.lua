@@ -525,7 +525,7 @@ function set_elemental_obi_cape_ring(spell, spellMap)
 				hachirin_intensity = hachirin_intensity - 10
 			end
 		end
-		
+
 		if hachirin_intensity >= single_obi_intensity and hachirin_intensity >= orpheus_intensity and hachirin_intensity >= 5 then
 			gear.ElementalObi.name = "Hachirin-no-Obi"
 		elseif single_obi_intensity >= orpheus_intensity and single_obi_intensity >= 5 then
@@ -1597,7 +1597,7 @@ function check_doomed()
 end
 
 function check_ws()
-	if state.AutoWSMode.value and not state.RngHelper.value and player.status == 'Engaged' and player.target.type == "MONSTER" and player.tp > 999 and not silent_check_amnesia() and player.target and not (player.target.distance > (19.7 + player.target.model_size)) then
+	if state.AutoWSMode.value and not state.RngHelper.value and player.status == 'Engaged' and player.target and player.target.type == "MONSTER" and player.tp > 999 and not silent_check_amnesia() and not (player.target.distance > (19.7 + player.target.model_size)) then
 
 	local available_ws = S(windower.ffxi.get_abilities().weapon_skills)
 		
