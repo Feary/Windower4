@@ -1,1 +1,2 @@
-get Cornflower Cape sack
+get Cornflower Cape sack all
+get Rosmerta* sack all

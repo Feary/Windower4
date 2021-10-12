@@ -40,7 +40,7 @@ gear.telchine_body_Pet = { name="Telchine Chas.", augments={'Mag. Evasion+25','P
 --Hands
 -- Leafdim
 gear.telchine_hands_Cure = { name="Telchine Gloves",augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
-gear.telchine_hands_Duration = { name="Telchine Gloves",augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
+gear.telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
 gear.telchine_hands_Pet = { name="Telchine Gloves", augments={'Mag. Evasion+15','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Legs
@@ -49,10 +49,10 @@ gear.telchine_legs_Siphon = {}
 gear.telchine_legs_Pet = { name="Telchine Braconi", augments={'Mag. Evasion+25','Pet: "Regen"+3','Pet: Damage taken -3%',}}
 
 -- Feet
-gear.telchine_feet_Song = "Telchine Pigaches"
-gear.telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}}
-gear.telchine_feet_Regen = { name="Telchine Pigaches", augments={'"Regen" potency+3',}}
-
+gear.telchine_feet_Song = {name="Telchine Pigaches", augments={'Song spellcasting time -7%','"Regen" potency+2',}}
+gear.telchine_feet_Duration = {name="Telchine Pigaches", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}}
+gear.telchine_feet_Regen = { name="Telchine Pigaches", augments={'Song spellcasting time -7%','"Regen" potency+2',}}
+gear.telchine_feet_FC = {name="Telchine Pigaches", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}}
 
 -- Helios 
 -- Head 1/1

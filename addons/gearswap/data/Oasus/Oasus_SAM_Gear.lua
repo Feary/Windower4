@@ -276,11 +276,12 @@ function init_gear_sets()
     -- Normal melee group
     -- Delay 450 GK, 25 Save TP => 65 Store TP for a 5-hit (25 Store TP in gear)
     sets.engaged = {ammo="Ginsen",
-		-- neck="Moonbeam Nodowa", neck="Moonlight Nodowa", ear1="Brutal Earring",ear2="Cessance Earring",
-		head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Kasuga Domaru +1",hands="Wakido Kokte +3",ring1="Flamma Ring",ring2="Petrov Ring",
-		-- Ioskeha Belt Ryou Hakama +1 Ryou Sune-ate +1
-        back=gear.stp_jse_back,waist="Windbuffet Belt",legs="Hiza. Hizayoroi +2",feet="Flam. Gambieras +2"}
+		-- neck="Sam. Nodowa +2", ear1="Telos Earring",ear2="Cessance Earring",
+		head="Flam. Zucchetto +2",neck="Combatant Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+		-- Niqnmaddu Ring 
+        body="Kasuga Domaru +1",hands="Wakido Kokte +3",ring1="Chirich Ring",ring2="Flamma Ring",
+		-- Windbuffet Belt +1 
+        back=gear.dbl_jse_back,waist="Ioskeha Belt",legs="Hiza. Hizayoroi +2",feet="Flam. Gambieras +1"}
     sets.engaged.SomeAcc = {ammo="Ginsen",
 		-- neck="Moonbeam Nodowa", neck="Moonlight Nodowa", ear1="Brutal Earring",ear2="Cessance Earring",
 		head="Flam. Zucchetto +2",neck="Sanctity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",

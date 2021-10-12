@@ -6,10 +6,10 @@ function user_setup()
 	state.HybridMode:options('Normal','PDT')
 	state.Weapons:options('None', 'Default', 'DualClubs','Akademos','Khatvanga')
 
-	gear.nuke_jse_back = {	name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}}
-	gear.FC_jse_back = 	{	name="Lugh's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}}
-	gear.Cure_jse_back = {	name="Lugh's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Cure" potency +10%','Spell interruption rate down-10%',}}
-	
+	gear.nuke_jse_back = {	name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}
+	gear.FC_jse_back = 	{	name="Lugh's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Mag. Evasion+15',}}
+	gear.Cure_jse_back = {	name="Lugh's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
+
 	gear.obi_cure_back = gear.Cure_jse_back
 	gear.obi_cure_waist = "Witful Belt"
 
@@ -61,7 +61,7 @@ function init_gear_sets()
 
     sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
 		--, ear1="Enchntr. Earring +1",
-        head="Welkin Crown",neck="Voltsurge Torque", ear1="Loquacious Earring",ear2="Malignance Earring",
+        head="Merlinic Hood",neck="Voltsurge Torque", ear1="Loquacious Earring",ear2="Malignance Earring",
         --body="Zendik Robe",
 		body="Helios Jacket", hands="Acad. Bracers +2",ring1="Kishar Ring",ring2="Prolix Ring",
         back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Peda. Loafers +1"}

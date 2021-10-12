@@ -300,8 +300,8 @@ function init_gear_sets()
     sets.midcast.RA = {ammo=gear.RAbullet,
 		-- lear="Telos Earring", 
 		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Neritic Earring",rear="Enervating Earring",
-		-- Nisroch Jerkin  Adhemar Wristbands +1 Path C
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Ilabrat Ring", rring="Dingir Ring", 
+		--  Adhemar Wristbands +1 Path C
+		body="Nisroch Jerkin", hands="Meg. Gloves +2", lring="Ilabrat Ring", rring="Dingir Ring", 
 		-- legs="Adhemar Kecks +1", Path C Feet="Adhemar Gamashes +1" Path D
 		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +2", feet="Adhemar Gamashes"}
 	

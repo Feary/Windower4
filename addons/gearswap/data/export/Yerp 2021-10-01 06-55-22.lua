@@ -1,0 +1,15 @@
+sets.exported={
+    main="Iridal Staff",
+    head="Befouled Crown",
+    body="Annoint. Kalasiris",
+    hands="Telchine Gloves",
+    legs="Gyve Trousers",
+    feet="Herald's Gaiters",
+    neck="Saevus Pendant +1",
+    waist="Cascade Belt",
+    left_ear="Divine Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Defending Ring",
+    right_ring="Warp Ring",
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}},
+}

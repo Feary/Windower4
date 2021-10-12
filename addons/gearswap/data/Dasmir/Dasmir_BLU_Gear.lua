@@ -232,8 +232,8 @@ function init_gear_sets()
 		head="Pixie Hairpin +1", neck="Sanctity Necklace",lear="Regal Earring", rear="Malignance Earring",
 		-- Amalric Doublet +1  Epaminondas's Ring
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Archon Ring", rring="Shiva Ring",
-		-- waist="Orpheus's Sash", legs="Luhlaza Shalwar +3", feet="Amalric Nails +1"
-		back=gear.wsd_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		-- legs="Luhlaza Shalwar +3", feet="Amalric Nails +1"
+		back=gear.wsd_jse_back, waist="Orpheus's Sash", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.precast.WS['Realmrazer'] = set_combine(sets.precast.WS, {
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",

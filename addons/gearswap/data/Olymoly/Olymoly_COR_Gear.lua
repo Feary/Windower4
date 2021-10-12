@@ -176,7 +176,7 @@ function init_gear_sets()
 		
     sets.precast.WS.Acc = {
         head="Meghanada Visor +2",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-		body="Nisroch Jerkin,hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Ilabrat Ring",
+		body="Nisroch Jerkin",hands="Meg. Gloves +2", ring1="Regal Ring", ring2="Ilabrat Ring",
         back=gear.str_wsd_jse_back,waist="Grunfeld Rope",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}		
 		
     sets.precast.WS.Proc = {

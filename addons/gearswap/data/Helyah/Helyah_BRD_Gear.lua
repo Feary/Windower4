@@ -3,17 +3,17 @@ function user_setup()
     state.OffenseMode:options('None', 'Normal')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'MDT')
-	state.Weapons:options('None','Carn','Twashtar','Mandau','Sword','DualDaggers','DualSwords')--'Aeneas',
+	state.Weapons:options('None','Sword')--'Aeneas', Carn','Twashtar','Mandau', 'DualDaggers','DualSwords'
 	
 	-- Adjust this if using the Terpander (new +song instrument)
-    info.ExtraSongInstrument = "Daurdabla"
+    info.ExtraSongInstrument = "Blurred Harp +1"
 	-- How many extra songs we can keep from Daurdabla/Terpander
-    info.ExtraSongs = 2
+    info.ExtraSongs = 1
 	
 	-- Capes 
 	gear.tp_jse_back = { 	name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
-	gear.wsd_jse_back = { 	name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}} 
-	gear.FC_jse_back = {	name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
+	gear.wsd_jse_back = { 	name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Phys. dmg. taken-10%',}}
+	gear.FC_jse_back = {	name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-1%',}}
 	
 	-- Snowdim Acc leafslit double atk  dusktip quad attack
 	gear.Instrument_TP = {name="Linos", augments={'Attack+20','"Store TP"+4','Quadruple Attack +3',}}
@@ -77,7 +77,7 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 	-- Single 
-	sets.weapons.Default = {main="Legato Dagger", sub="Genmei Shield"}
+	sets.weapons.Default = {main="Sangoma", sub="Genmei Shield"}
 	--sets.weapons.Aeneas = {main="Aeneas", sub="Genmei Shield"}
 	sets.weapons.Carn = {main="Legato Dagger", sub="Genmei Shield"}
 	sets.weapons.Twashtar = {main="Twashtar", sub="Genmei Shield"}
@@ -92,22 +92,29 @@ function init_gear_sets()
 	-- Precast Sets
 
 	-- Fast cast sets for spells
-	sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1",
-		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
-		back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
+	sets.precast.FC = {main="Sangoma",
+		--main="Oranyan", sub="Clerisy Strap +1",
+		--head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
+		--hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
+		body="Inyanga Jubbah +1",  
+		-- feet="Bihu Slippers +3"
+		back=gear.FC_jse_back, wai0st="Witful Belt", legs="Aya. Cosciales +2", feet=gear.telchine_feet_FC }
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {
-		rear="Mendi. Earring",
-		back=gear.FC_jse_back, feet="Kaykaus Boots"})
+		--rear="Mendi. Earring",
+		--feet="Kaykaus Boots"
+		back=gear.FC_jse_back, })
 
-	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
+	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {})--waist="Siegel Sash"
 	
-	sets.precast.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat"})
+	sets.precast.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {}) --head="Umuthi Hat"
 
-	sets.precast.FC.BardSong = {main="Oranyan", sub="Clerisy Strap +1",
-		head="Fili Calot +1", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
+	sets.precast.FC.BardSong = {main="Sangoma",
+		-- main="Oranyan", sub="Clerisy Strap +1",
+		-- neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
+		head="Aoidos' Calot +1", 
+		--  hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
+		body="Inyanga Jubbah +1",
         back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet=gear.telchine_feet_Song}
 	
 	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Gjallarhorn"})
@@ -190,7 +197,7 @@ function init_gear_sets()
 	-- General set for recast times.
 	sets.midcast.FastRecast = {main="Oranyan", sub="Clerisy Strap +1",
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
+		body="Inyanga Jubbah +1", hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.FC_jse_back, waist="Tempus Fugit", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
 
 	-- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
@@ -202,10 +209,10 @@ function init_gear_sets()
 	sets.midcast.Madrigal = {head="Fili Calot +1"}
 	sets.midcast.Paeon = {head="Brioso Roundlet +3"}
 	sets.midcast.Etude = {} -- head="Mousai Turban"
-	sets.midcast.Mambo = {}	-- feet="Mousai Crackows"
+	sets.midcast.Mambo = {range="Vihuela"}	-- feet="Mousai Crackows"
 	sets.midcast.Minne = {} -- legs="Mousai Seraweels"
 	sets.midcast.Threnody = {} -- body="Mousai Manteel"
-	sets.midcast.Mazurka = {range="Daurdabla"}	
+	sets.midcast.Mazurka = {range="Blurred Harp +1"}-- range="Daurdabla"
 	sets.midcast.March = {hands="Fili Manchettes +1"}	
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March, {range="Marsyas"})	
 	sets.midcast.Minuet = {body="Fili Hongreline +1"}
@@ -220,11 +227,12 @@ function init_gear_sets()
 	-- For song buffs (Full Duration, AF3 set bonus, DT)
 	sets.midcast.SongEffect = {range="Gjallarhorn",
 		main="Legato Dagger", sub="Genmei Shield",
-		--head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Genmei Earring", rear="Etiolation Earring",
-		head="Aoidos Calot +1", neck"Brioso Whistle", 
-		-- body="Fili Hongreline +1",  hands="Fili Manchettes +1", 
-		body="Aoidos' Hngrln. +1", hands="Ad. Mnchtte +1", lring="Dark Ring", rring="Defending Ring"}
-		--back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"
+		--head="Fili Calot +1", lear="Genmei Earring", rear="Etiolation Earring",
+		head="Aoidos' Calot +1", neck="Moonbow Whistle +1",
+		-- body="Fili Hongreline +1",  hands="Fili Manchettes +1", lring="Dark Ring",
+		body="Aoidos' Hngrln. +1", hands="Ad. Mnchtte +1", rring="Defending Ring",
+		--feet="Brioso Slippers +3"
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2"}
 
 	sets.midcast.SongEffect.DW = {}
 
@@ -252,7 +260,7 @@ function init_gear_sets()
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
+		body="Inyanga Jubbah +1", hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.FC_jse_back, waist="Tempus Fugit", legs="Aya. Cosciales +2", feet=gear.telchine_feet_Song}
 
 	-- Cast spell with normal gear, except using Daurdabla instead
@@ -351,14 +359,15 @@ function init_gear_sets()
 	
 	-- Resting sets
 	sets.resting = {main="Sangoma", sub="Genmei Shield", range="Gjallarhorn",
-		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
+		head="Inyanga Tiara +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Inyanga Jubbah +1", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
+		-- legs="Assiduity Pants +1", feet="Fili Cothurnes +1"
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
 	
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Sangoma", sub="Genmei Shield", range="Gjallarhorn",
-		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
+		head="Inyanga Tiara +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Inyanga Jubbah +1", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
 
 	sets.idle.Weak = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
@@ -372,8 +381,8 @@ function init_gear_sets()
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 	sets.idle.MDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
-		head="Inyanga Tiara +2",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
+		head="Inyanga Tiara +1",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Inyanga Jubbah +1", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
 	-- Defense sets
@@ -383,8 +392,8 @@ function init_gear_sets()
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 	sets.defense.MDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
-		head="Inyanga Tiara +2",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
+		head="Inyanga Tiara +1",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Inyanga Jubbah +1", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
 	sets.Kiting = {feet="Fili Cothurnes +1"}
@@ -396,22 +405,22 @@ function init_gear_sets()
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
-	sets.engaged = {main="Legato Dagger", sub="Genmei Shield", ranged=gear.Instrument_TP,
+	sets.engaged = {main="Naegling", sub="Legato Dagger", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
-	sets.engaged.Acc = {main="Legato Dagger",sub="Genmei Shield", ranged=gear.Instrument_TP,
+	sets.engaged.Acc = {main="Naegling",sub="Legato Dagger", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
-	sets.engaged.DW = {main="Legato Dagger", sub="Twashtar", ranged=gear.Instrument_TP,
+	sets.engaged.DW = {main="Naegling", sub="Legato Dagger", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
-	sets.engaged.DW.Acc = {main="Legato Dagger",sub="Twashtar",ranged=gear.Instrument_TP,
+	sets.engaged.DW.Acc = {main="Naegling",sub="Legato Dagger",ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}

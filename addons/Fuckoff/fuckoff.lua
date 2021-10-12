@@ -9,7 +9,7 @@ local blackListedUsers = T{'Koohoo','Kooboo','TotallyABotThree','Fudu','Blackjac
      
 -- I could do a general digit check on JP instead of set 500/2100 values but atm I feel it's not needed. Will see if they change thier tactics.
 -- If you want to learn more about "Magical Characters" or Patterns in Lua: <a href="https://riptutorial.com/lua/example/20315/lua-pattern-matching" rel="nofollow">https://riptutorial.com/lua/example/20315/lua-pattern-matching</a>
-local blackListedWords = T{string.char(0x81,0x99),string.char(0x81,0x9A),'1%-99','Job Point.*2100','Job Point.*500','JP.*2100','JP.*500','Capacity Point.*2100','Capacity Point.*500','CP.*2100','CP.*500','500p/4m','500p/5m','500p/3m','500/4m','500/5m','500/3m','4m/500p','1-50 1m','gilshop','fast delivery!','*99/1*','master*/*m'} -- First two are '☆' and '★' symbols.
+local blackListedWords = T{string.char(0x81,0x99),string.char(0x81,0x9A),'1%-99','Job Point.*2100','Job Point.*500','JP.*2100','JP.*500','Capacity Point.*2100','Capacity Point.*500','CP.*2100','CP.*500','500p/4m','500p/5m','500p/3m','500/4m','500/5m','500/3m','4m/500p','1-50 1m','gilshop','fast delivery!','*99/1*','master*/*m','gil delivery','localgamers.shop'} -- First two are '☆' and '★' symbols.
  
 windower.register_event('incoming chunk', function(id,data)
     if id == 0x017 then -- 0x017 Is incoming chat.

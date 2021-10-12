@@ -12,3 +12,5 @@ get Rimeice Earring storage all
 get Ukko Sash storage all
 get Varar Ring +1 storage all
 get Malignance* sack all
+get Animator P* storage all
+get Taeon* storage all

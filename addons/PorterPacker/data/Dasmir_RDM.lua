@@ -28,4 +28,5 @@ return {
 	"Tauret",
 	"Naegling",
 	"Kaja Bow",
+	"Kaja Sword",
 }
