@@ -4,7 +4,7 @@ function user_setup()
     state.CastingMode:options('Normal','Resistant','Proc','OccultAcumen')
     state.IdleMode:options('Normal', 'PDT', 'MDT', 'MEVA', 'TPEat')
 	state.HybridMode:options('Normal','PDT')
-	state.Weapons:options('None', 'Default', 'DualClubs','Akademos','Khatvanga')
+	state.Weapons:options('None', 'Default')
 
 	gear.nuke_jse_back = {	name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}
 	gear.FC_jse_back = 	{	name="Lugh's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Mag. Evasion+15',}}
@@ -20,7 +20,7 @@ function user_setup()
 	-- * = ctrl
 	-- @ = windows
 	-- ! = alt
-	send_command('bind ^` gs c cycle ElementalMode')
+	send_command('bind ^` gs c cycle ElementalMode')AA
 	send_command('bind !` gs c scholar power')
 	send_command('bind @` gs c cycle MagicBurstMode')
 	--send_command('bind ^q gs c weapons Khatvanga;gs c set CastingMode OccultAcumen')
@@ -60,8 +60,8 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
-		--, ear1="Enchntr. Earring +1",
-        head="Merlinic Hood",neck="Voltsurge Torque", ear1="Loquacious Earring",ear2="Malignance Earring",
+		--kd
+        head="Merlinic Hood",ineck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
         --body="Zendik Robe",
 		body="Helios Jacket", hands="Acad. Bracers +2",ring1="Kishar Ring",ring2="Prolix Ring",
         back=gear.FC_jse_back,waist="Witful Belt",legs="Lengo Pants",feet="Peda. Loafers +1"}
@@ -88,7 +88,6 @@ function init_gear_sets()
 		back="Fi Follet Cape +1", waist="Fucho-no-obi", legs="Peda. Pants +1",feet="Peda. Loafers +1"}
 
     -- Midcast Sets
-
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})-- hands="Volte Bracers", waist="Chaac Belt"
 	
 	-- Gear that converts elemental damage done to recover MP.	
@@ -152,10 +151,11 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = {main="Kirin's Pole", 
 		-- sub="Fulcio Grip", ammo="Savant's Treatise",
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield", ear2="Augment. Earring",
-		head=gear.telchine_head_Duration,neck="Melic Torque",ear1="Andoaa Earring",
-		body=gear.telchine_body_Duration,hands=gear.telchine_hands_Duration,ring1="Stikini Ring",ring2="Stikini Ring",
-		-- waist="Olympus Sash",
-		back="Fi Follet Cape +1",waist="Cascade Belt",legs=gear.telchine_legs_Duration,feet=gear.telchine_feet_Duration}
+		-- Melic Torque ear1="Andoaa Earring",
+		head=gear.telchine_head_Duration,  
+		body=gear.telchine_body_Duration,hands=gear.telchine_hands_Duration, ring1="Stikini Ring", ring2="Stikini Ring",
+		--back="Fi Follet Cape +1",
+		waist="Olympus Sash",legs=gear.telchine_legs_Duration,feet=gear.telchine_feet_Duration}
 
     sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {back=gear.FC_jse_back})
 
