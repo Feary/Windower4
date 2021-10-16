@@ -15,7 +15,6 @@ load Config;
 load DelayMeNot;
 load FFXIDB;
 load FishingCrashFix;
-load Guildwork;
 load IME;
 load Run;
 load Sandbox;

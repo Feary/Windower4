@@ -20,7 +20,7 @@ function user_setup()
 	-- * = ctrl
 	-- @ = windows
 	-- ! = alt
-	send_command('bind ^` gs c cycle ElementalMode')AA
+	send_command('bind ^` gs c cycle ElementalMode')
 	send_command('bind !` gs c scholar power')
 	send_command('bind @` gs c cycle MagicBurstMode')
 	--send_command('bind ^q gs c weapons Khatvanga;gs c set CastingMode OccultAcumen')

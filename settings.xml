@@ -58,7 +58,6 @@
     <addon>NoCampaignMusic</addon>
     <addon>equipviewer</addon>
     <addon>Treasury</addon>
-    <plugin>Guildwork</plugin>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>
     <plugin>Timers</plugin>
