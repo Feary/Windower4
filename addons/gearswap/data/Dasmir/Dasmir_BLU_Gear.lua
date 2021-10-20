@@ -446,7 +446,12 @@ function init_gear_sets()
 		head=gear.telchine_head_Duration, neck="Incanter's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
 		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Perimede Cape", waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
-
+	
+	sets.midcast.Phalanx = {ammo="Hasty Pinion +1",
+		head=gear.taeon_head_Phalanx, neck="Incanter's Torque", ear1="Andoaa Earring",ear2="Gifted Earring",
+		body=gear.taeon_body_Phalanx, hands=gear.taeon_hands_Phalanx, ring1="Stikini Ring",ring2="Stikini Ring",
+		back="Perimede Cape", waist="Olympus Sash", legs=gear.taeon_legs_Phalanx, feet=gear.taeon_feet_Phalanx}
+	
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif"})
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif"})--hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"
