@@ -292,7 +292,7 @@ function init_gear_sets()
 			back=gear.Macc_jse_back, waist="Luminary Sash", legs=gear.chironic_macc_legs, feet="Vitiation Boots +1"}
 	
 	-- Path A - Pure Macc No Potency
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak", sub="Ammurapi Shield", ammo="Kaja Bow",
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak", sub="Ammurapi Shield", ammo="Ullr",
 			--  Duelist's Torque +3 neck="Incanter's Torque", 
 			head="Atro. Chapeau +2", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
 			-- body="Atrophy Tabard +3", hands="Kaykaus Cuffs +1", Stikini Ring +1 Stikini Ring +1
@@ -395,7 +395,7 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {})
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {})
 		
-	sets.midcast.Impact = {main="Daybreak", sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty,
+	sets.midcast.Impact = {main="Daybreak", sub="Ammurapi Shield", ranged="Ullr", ammo=empty,
 		-- Duelist Torque +2 
 		head=empty, neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
 		-- Regal Cuffs Stikini Ring +1 Stikini Ring +1
@@ -403,14 +403,14 @@ function init_gear_sets()
 		-- Vitiation Boots +3
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Ayanmo Cosciales +2", feet="Jhakri Pigaches +2"}
 
-	sets.midcast['Dark Magic'] = {main="Rubicundity", sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty,
+	sets.midcast['Dark Magic'] = {main="Rubicundity", sub="Ammurapi Shield", ranged="Ullr", ammo=empty,
 		head="Atrophy Chapeau +2", neck="Erra Pendant",  ear1="Regal Earring", ear2="Malignance Earring",
 		--body="Atrophy Tabard +3", hands="Leth. Gantherots +1",
 		body="Atrophy Tabard +2", hands="Aya. Manopolas +2", ring1="Stikini Ring", ring2="Stikini Ring",
 		-- legs="Psycloth Lappas", feet=gear.merlinic_nuke_feet
 		back=gear.Macc_jse_back,waist="Luminary Sash", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-    sets.midcast.Drain = {main="Rubicundity", sub="Ammurapi Shield", ranged="Kaja Bow", ammo=empty,
+    sets.midcast.Drain = {main="Rubicundity", sub="Ammurapi Shield", ranged="Ullr", ammo=empty,
 		head="Pixie Hairpin +1", neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
         -- Shango Robe 
 		body="Atrophy Tabard +2", hands="Aya. Manopolas +2", ring1="Stikini Ring", ring2="Stikini Ring",
@@ -426,7 +426,7 @@ function init_gear_sets()
 		-- feet=gear.merlinic_aspir_feet
 		back=gear.Macc_jse_back, waist="Witful Belt",legs=gear.chironic_macc_legs, feet="Aya. Gambieras +2"}
 		
-	sets.midcast.Stun.Resistant = {gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ranged="Kaja Bow", ammo=empty,
+	sets.midcast.Stun.Resistant = {gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ranged="Ullr", ammo=empty,
 		head="Atrophy Chapeau +2", neck="Voltsurge Torque", ear1="Regal Earring", ear2="Malignance Earring",
 		--body="Zendik Robe",
 		body="Atrophy Tabard +2", hands="Leyline Gloves", ring1="Stikini Ring", ring2="Stikini Ring",
@@ -501,19 +501,19 @@ function init_gear_sets()
 	sets.NightIdle = {}
 	
 	-- Weapons sets
-	sets.weapons.Dagger = {main="Tauret", sub="Ammurapi Shield",range="Kaja Bow",ammo="Beetle Arrow"}
-	sets.weapons.Sword = {main="Naegling", sub="Ammurapi Shield",range="Kaja Bow",ammo="Beetle Arrow"} 
+	sets.weapons.Dagger = {main="Tauret", sub="Ammurapi Shield",range="Ullr",ammo="Beetle Arrow"}
+	sets.weapons.Sword = {main="Naegling", sub="Ammurapi Shield",range="Ullr",ammo="Beetle Arrow"} 
 	sets.weapons.DualWeapons = {main="Naegling", sub="Tauret"}
 	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Tauret"}
 	sets.weapons.DualDagger = {main="Tauret", sub="Naegling"}
 	sets.weapons.DualEvisceration = {main="Tauret",sub="Almace"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Kaja Rod"}
 	sets.weapons.DualProcDaggers = {main="Blurred Knife +1",sub="Atoyac"}
-	sets.weapons.EnspellOnly = {main="Ceremonial Dagger",sub="Ceremonial Dagger",range="Kaja Bow",ammo="Beetle Arrow"}	
+	sets.weapons.EnspellOnly = {main="Ceremonial Dagger",sub="Ceremonial Dagger",range="Ullr",ammo="Beetle Arrow"}	
 	sets.weapons.DualClubs = {main="Daybreak", sub="Kaja Rod"}
 	sets.weapons.DualBlackHalo = {main="Kaja Rod",sub="Daybreak"}
-	sets.weapons.DualBow = {main="Naegling",sub="Tauret",range="Kaja Bow"}
-	sets.weapons.BowMacc = {range="Kaja Bow",ammo=empty}
+	sets.weapons.DualBow = {main="Naegling",sub="Tauret",range="Ullr"}
+	sets.weapons.BowMacc = {range="Ullr",ammo=empty}
 	
     sets.buff.Sublimation = {} -- waist="Embla Sash"
     sets.buff.DTSublimation = {} -- waist="Embla Sash"

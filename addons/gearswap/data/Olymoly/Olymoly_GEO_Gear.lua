@@ -265,18 +265,18 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Shamash Robe",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Bagua Mitaines +1",ring1=gear.DarkRing,ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 
 	-- Idle sets
 	sets.idle = {main="Idris",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Befouled Crown", neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Shamash Robe", hands="Bagua Mitaines +1", ring1="Dark Ring", ring2="Defending Ring",
+		body="Shamash Robe", hands="Bagua Mitaines +1", ring1=gear.DarkRing, ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 		
 	sets.idle.PDT = {main="Idris",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Shamash Robe",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Bagua Mitaines +1",ring1=gear.DarkRing,ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi", legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
@@ -284,12 +284,12 @@ function init_gear_sets()
 	--Pet sets are for when Luopan is present.
 	sets.idle.Pet = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head=gear.telchine_head_Pet, neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",		
-		body=gear.telchine_body_Pet,hands=gear.telchine_hands_Pet, ring1="Dark Ring",ring2="Defending Ring",
+		body=gear.telchine_body_Pet,hands=gear.telchine_hands_Pet, ring1=gear.DarkRing,ring2="Defending Ring",
 		back=gear.idle_jse_back, waist="Isa Belt", legs=gear.telchine_legs_Pet, feet="Bagua Sandals +1"}
 
 	sets.idle.PDT.Pet = {main="Idris",sub="Genmei Shield",range="Dunna",
 		head=gear.telchine_head_Pet, neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body=gear.telchine_body_Pet, hands="Geo. Mitaines +3", ring1="Dark Ring", ring2="Defending Ring",
+		body=gear.telchine_body_Pet, hands="Geo. Mitaines +3", ring1=gear.DarkRing, ring2="Defending Ring",
 		back=gear.idle_jse_back, waist="Isa Belt", legs=gear.telchine_legs_Pet, feet="Bagua Sandals +1"}
 
 	--Indi sets are for when an Indi-spell is active.
@@ -301,23 +301,23 @@ function init_gear_sets()
 
 	sets.idle.Weak = {main="Idris",sub="Genmei Shield", range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Shamash Robe",hands="Bagua Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Bagua Mitaines +1",ring1=gear.DarkRing,ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
 	-- Defense sets	
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Shamash Robe",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Geo. Mitaines +3",ring1=gear.DarkRing,ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Azimuth Gaiters +1"}
 
 	sets.defense.MDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Shamash Robe",hands="Geo. Mitaines +3",ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Geo. Mitaines +3",ring1=gear.DarkRing,ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 		
     sets.defense.MEVA = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum",
         head=gear.telchine_head_Pet,neck="Warder's Charm +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Shamash Robe",hands=gear.telchine_hands_Pet,ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands=gear.telchine_hands_Pet,ring1=gear.DarkRing,ring2="Defending Ring",
         back=gear.idle_jse_back, waist="Fucho-no-obi",legs=gear.telchine_legs_Pet,feet="Mallquis Clogs +2"}
 		
 	sets.defense.PetPDT = sets.idle.PDT.Pet

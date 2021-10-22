@@ -405,12 +405,12 @@ function init_gear_sets()
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
-	sets.engaged = {main="Naegling", sub="Legato Dagger", ranged=gear.Instrument_TP,
+	sets.engaged = {main="Naegling", sub="Genmei Shield", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +1", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 	
-	sets.engaged.Acc = {main="Naegling",sub="Legato Dagger", ranged=gear.Instrument_TP,
+	sets.engaged.Acc = {main="Naegling",sub="Genmei Shield", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +1", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
