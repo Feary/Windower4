@@ -74,11 +74,11 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
     
-    sets.precast.CorsairRoll = {ammo="Compensator",
-		-- Odndowa Earring 
-		head="Lanun Tricorne", neck="Regal Necklace", lear="Etiolation Earring", rear="Merman's Earring",
-		-- dt herc?
-		body="Meg. Cuirie +2", hands="Chasseur's Gants +1", lring="Barataria Ring", rring="Defending Ring",
+    sets.precast.CorsairRoll = {--ammo="Compensator",
+		-- neck="Regal Necklace", lear="Etiolation Earring", rear="Odndowa Earring",
+		head="Lanun Tricorne",  
+		-- hands="Chasseur's Gants +1",
+		body="Meg. Cuirie", hands="Meghanada Gloves", lring="Barataria Ring", rring="Defending Ring",
 		--  legs="Desultor Tassets" -dt feet
 		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 

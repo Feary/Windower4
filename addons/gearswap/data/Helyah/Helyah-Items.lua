@@ -1,10 +1,10 @@
 ----gearsets your character will use among multiple jobs.
 
 sets.Sheltered = {ring2="Sheltered Ring"}
-sets.Capacity = {back={name="Mecisto. Mantle", augments={'Cap. Point+45%','HP+28','"Mag.Atk.Bns."+3','DEF+10',}}}
+sets.Capacity = {back="Aptitude Mantle +1"}
 
-sets.buff.Doom = {waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"}
-sets.TreasureHunter = {head="Wh. Rarab Cap +1", waist="Chaac Belt"}
+sets.buff.Doom = {}--waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"
+sets.TreasureHunter = {waist="Chaac Belt"}
 
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}

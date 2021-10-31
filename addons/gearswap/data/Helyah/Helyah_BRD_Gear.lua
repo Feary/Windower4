@@ -147,6 +147,7 @@ function init_gear_sets()
 		head="Lustratio Cap +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
 		body="Bihu Jstcorps. +3",hands="Lustr. Mittens +1",ring1="Epaminondas's Ring",ring2="Ilabrat Ring",
 		back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"}
+		
 	sets.precast.WS.Acc = {ranged=gear.Instrument_WSD,
 		head="Aya. Zucchetto +1", neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
 		body="Bihu Jstcorps. +3", hands="Aya. Manopolas +1", lring="Epaminondas's Ring", rring="Ilabrat Ring",
@@ -202,22 +203,22 @@ function init_gear_sets()
 
 	-- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
 	sets.midcast.Ballad = {legs="Fili Rhingrave +1"}
-	sets.midcast['Foe Lullaby'] = {body="Fili Hongreline +1", legs="Inyanga Shalwar +2", hands="Brioso Cuffs +3"}
-	sets.midcast['Foe Lullaby II'] = {body="Fili Hongreline +1", hands="Brioso Cuffs +3", legs="Inyanga Shalwar +2"} 
-	sets.midcast['Horde Lullaby'] = {range="Blurred Harp +1", body="Fili Hongreline +1", hands="Brioso Cuffs +3", legs="Inyanga Shalwar +2"}
-	sets.midcast['Horde Lullaby II'] = {range="Blurred Harp +1", body="Fili Hongreline +1", hands="Brioso Cuffs +3", legs="Inyanga Shalwar +2"}
-	sets.midcast.Madrigal = {head="Fili Calot +1"}
-	sets.midcast.Paeon = {head="Brioso Roundlet +3"}
+	sets.midcast['Foe Lullaby'] = {legs="Inyanga Shalwar +2"} -- body="Fili Hongreline +1", hands="Brioso Cuffs +3",
+	sets.midcast['Foe Lullaby II'] = {legs="Inyanga Shalwar +2"} -- body="Fili Hongreline +1", hands="Brioso Cuffs +3",
+	sets.midcast['Horde Lullaby'] = {range="Blurred Harp +1", legs="Inyanga Shalwar +2"} --  body="Fili Hongreline +1", hands="Brioso Cuffs +3",
+	sets.midcast['Horde Lullaby II'] = {range="Blurred Harp +1",  legs="Inyanga Shalwar +2"} --body="Fili Hongreline +1", hands="Brioso Cuffs +3",
+	sets.midcast.Madrigal = {}--head="Fili Calot +1"
+	sets.midcast.Paeon = {}-- head="Brioso Roundlet +3"
 	sets.midcast.Etude = {} -- head="Mousai Turban"
-	sets.midcast.Mambo = {range="Vihuela"}	-- feet="Mousai Crackows"
+	sets.midcast.Mambo = {range="Blurred Harp +1"} -- feet="Mousai Crackows"
 	sets.midcast.Minne = {} -- legs="Mousai Seraweels"
 	sets.midcast.Threnody = {} -- body="Mousai Manteel"
 	sets.midcast.Mazurka = {range="Blurred Harp +1"}-- range="Daurdabla"
-	sets.midcast.March = {hands="Fili Manchettes +1"}	
+	sets.midcast.March = {}	--hands="Fili Manchettes +1"
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March, {range="Marsyas"})	
 	sets.midcast.Minuet = {body="Fili Hongreline +1"}
 	sets.midcast.Carol = {} -- hands="Mousai Gages"
-	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +1"}
+	sets.midcast["Sentinel's Scherzo"] = {}--feet="Fili Cothurnes +1"
 	sets.midcast['Magic Finale'] = {range="Gjallarhorn"}
 	
 	-- Merited Songs
@@ -237,30 +238,39 @@ function init_gear_sets()
 	sets.midcast.SongEffect.DW = {}
 
 	-- For song debuffs (duration primary, accuracy secondary)
-	sets.midcast.SongDebuff = {range="Gjallarhorn",
-		main="Legato Dagger", sub="Ammurapi Shield",
-		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
+	sets.midcast.SongDebuff = {range="Gjallarhorn",		
+		main="Legato Dagger", 
+		-- head="Brioso Roundlet +3", sub="Ammurapi Shield", lear="Digni. Earring", rear="Regal Earring",
+		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
+		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
+		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
-	sets.midcast.ResistantSongDebuff = {main="Legato Dagger", sub="Ammurapi Shield", range="Gjallarhorn",
-		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
+	sets.midcast.ResistantSongDebuff = {range="Gjallarhorn",		
+		main="Legato Dagger", 
+		-- head="Brioso Roundlet +3", sub="Ammurapi Shield", lear="Digni. Earring", rear="Regal Earring",
+		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
+		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
+		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
 
-	sets.midcast.SongDebuff.DW = {main="Legato Dagger", sub="Ammurapi Shield", range="Gjallarhorn",
-		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
+	sets.midcast.SongDebuff.DW = {range="Gjallarhorn",		
+		main="Legato Dagger", 
+		-- head="Brioso Roundlet +3", sub="Ammurapi Shield", lear="Digni. Earring", rear="Regal Earring",
+		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
+		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
+		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
 	
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
+		-- Leyline
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.FC_jse_back, waist="Tempus Fugit", legs="Aya. Cosciales +2", feet=gear.telchine_feet_Song}
 
 	-- Cast spell with normal gear, except using Daurdabla instead
@@ -270,44 +280,50 @@ function init_gear_sets()
     sets.midcast.DaurdablaDummy = set_combine(sets.midcast.SongRecast, {range=info.ExtraSongInstrument})
 
 	-- Other general spells and classes.
-	sets.midcast.Cure = {main="Chatoyant Staff", sub="Clerisy Strap +1",
-		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
-		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+	sets.midcast.Cure = {main="Iridal Staff", --sub="Clerisy Strap +1",
+		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		legs="Gyve Trousers",}
 		
 	-- Weather/Day
-	sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Clerisy Strap +1",
-		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
-		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
-	sets.midcast.LightDayCure = {main="Chatoyant Staff", sub="Clerisy Strap +1",
-		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
-		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
-	
-	sets.midcast.Curaga = {main="Chatoyant Staff", sub="Clerisy Strap +1",
-		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
-		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+	sets.midcast.LightWeatherCure = {main="Iridal Staff", --sub="Clerisy Strap +1",
+		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		legs="Gyve Trousers",}
+	sets.midcast.LightDayCure = {main="Iridal Staff", --sub="Clerisy Strap +1",
+		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		legs="Gyve Trousers",}
+	sets.midcast.Curaga = {main="Iridal Staff", --sub="Clerisy Strap +1",
+		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		legs="Gyve Trousers",}
 
-	sets.midcast.LightWeatherCuraga = {main="Chatoyant Staff", sub="Clerisy Strap +1",
-		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
-		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+	sets.midcast.LightWeatherCuraga = {main="Iridal Staff", --sub="Clerisy Strap +1",
+		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		legs="Gyve Trousers",}
 
-	sets.midcast.LightDayCuraga = {main="Chatoyant Staff", sub="Clerisy Strap +1",
-		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
-		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+	sets.midcast.LightDayCuraga = {main="Iridal Staff", --sub="Clerisy Strap +1",
+		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		legs="Gyve Trousers",}
 	
-	sets.midcast.Cure.DT = {main="Chatoyant Staff", sub="Clerisy Strap +1",
-		head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
-		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Bishop's Sash", legs="Gyve Trousers", feet="Kaykaus Boots"}
+	sets.midcast.Cure.DT = {main="Iridal Staff", --sub="Clerisy Strap +1",
+		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		legs="Gyve Trousers",}
 		
 	sets.Self_Healing = {}--waist="Gishdubar Sash"
 	sets.Cure_Received = {}--waist="Gishdubar Sash"
-	sets.Self_Refresh = {back="Grapevine Cape"}--,waist="Gishdubar Sash"
+	sets.Self_Refresh = {}--back="Grapevine Cape", waist="Gishdubar Sash"
 	
 	sets.midcast.Cursna = {
 		neck="Debilis Medallion",
@@ -316,22 +332,31 @@ function init_gear_sets()
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})--main="Marin Staff +1",sub="Clemency Grip"
 	
-	sets.midcast['Enfeebling Magic'] = {main="Oranyan", sub="Enki Strap",
-		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini ring", rring="Stikini ring",
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
+	sets.midcast['Enfeebling Magic'] = {main="Naegling",
+		--main="Oranyan", sub="Enki Strap",
+		--head="Brioso Roundlet +3",  lear="Digni. Earring", rear="Regal Earring",
+		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
+		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini ring", rring="Stikini ring",
+		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"} 
 	
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Oranyan", sub="Enki Strap",
-		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		--Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini ring", rring="Stikini ring",
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Naegling",
+		--main="Oranyan", sub="Enki Strap",
+		--head="Brioso Roundlet +3",  lear="Digni. Earring", rear="Regal Earring",
+		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
+		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini ring", rring="Stikini ring",
+		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"} 
 		
-	sets.midcast['Enhancing Magic'] = {main="Legato Dagger",sub="Ammurapi Shield",
-		head=gear.telchine_head_Duration, neck="Voltsurge Torque", ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Prolix Ring",
-		back=gear.FC_jse_back,waist="Witful Belt", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
+	sets.midcast['Enhancing Magic'] = {main="Sangoma",
+		-- sub="Ammurapi Shield",
+		-- head=gear.telchine_head_Duration, ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
+		neck="Melic Torque", 
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		-- waist="Witful Belt", legs=gear.telchine_legs_Duration,
+		back=gear.FC_jse_back, waist="Olympus Sash", feet=gear.telchine_feet_Duration}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
 		neck="Nodens Gorget",
@@ -339,16 +364,22 @@ function init_gear_sets()
 		-- legs="Shedir Seraweels"
 		waist="Siegel Sash",})
 		
-	sets.midcast['Elemental Magic'] = {main="Oranyan", sub="Enki Strap",
-		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini ring", rring="Stikini ring",
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
-	sets.midcast['Elemental Magic'].Resistant = {main="Oranyan", sub="Enki Strap",
-		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini ring", rring="Stikini ring",
-		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
+	sets.midcast['Elemental Magic'] = {main="Naegling",
+		--main="Oranyan", sub="Enki Strap",
+		--head="Brioso Roundlet +3",  lear="Digni. Earring", rear="Regal Earring",
+		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
+		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini ring", rring="Stikini ring",
+		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"} 
+	sets.midcast['Elemental Magic'].Resistant = {main="Naegling",
+		--main="Oranyan", sub="Enki Strap",
+		--head="Brioso Roundlet +3",  lear="Digni. Earring", rear="Regal Earring",
+		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
+		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini ring", rring="Stikini ring",
+		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"} 
 		
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Fodder
@@ -382,18 +413,18 @@ function init_gear_sets()
 	
 	sets.idle.MDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +1",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
 	-- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 	
 	sets.defense.MDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
-		head="Inyanga Tiara +1",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
+		head="Inyanga Tiara +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
 	sets.Kiting = {feet="Fili Cothurnes +1"}

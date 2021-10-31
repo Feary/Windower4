@@ -125,13 +125,13 @@ function init_gear_sets()
 		body="Shamash Robe", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist="olympus Sash", legs="Gyve Trousers", feet="Skaoi Boots"}
 
-    sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Kaja Grip", range="Dunna",
+    sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Kaja Grip", range="Dunna",
 		head="Vanya Hood", neck="Colossus's Torque", lear="Novia Earring", rear="Regal Earring",
 		--body="Heka's Kalasiris", 
 		body="Shamash Robe", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.Cure_jse_back, waist=gear.ElementalObi, legs="Gyve Trousers", feet="Skaoi Boots"}
 
-    sets.midcast.LightDayCure = {main="Iridal Staff", sub="Kaja Grip", range="Dunna",
+    sets.midcast.LightDayCure = {main="Chatoyant Staff", sub="Kaja Grip", range="Dunna",
 		head="Vanya Hood", neck="Colossus's Torque", lear="Novia Earring", rear="Regal Earring",
 		--body="Heka's Kalasiris", 
 		body="Shamash Robe", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",

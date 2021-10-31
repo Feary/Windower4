@@ -52,8 +52,8 @@
     <helyah>
         <Clock>
             <pos>
-                <x>1350</x>
-                <y>-1</y>
+                <x>1363</x>
+                <y>21</y>
             </pos>
         </Clock>
         <TimeZones>PST,CST,GMT,AWST</TimeZones>

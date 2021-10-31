@@ -114,7 +114,7 @@ function init_gear_sets()
 		-- legs=gear.chironic_cure_legs feet="Vanya Clogs"
         back=gear.Cure_jse_back,waist="Luminary Sash", legs="Acad. Pants +2",feet="Peda. Loafers +1"}
 
-    sets.midcast.LightWeatherCure = {main="Iridal Staff",sub="Enki Strap",ammo="Hasty Pinion +1",
+    sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Enki Strap",ammo="Hasty Pinion +1",
 		-- neck="Incanter's Torque"
         head="Vanya Hood",neck="Colossus's Torque", ear1="Regal Earring",ear2="Novia Earring",
         body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Sirona's Ring",ring2="Lebeche Ring",
@@ -326,7 +326,7 @@ function init_gear_sets()
     -- Sets to return to when not performing an action.
 
      -- Resting sets
-    sets.resting = {main="Iridal Staff", sub="Kaja Grip", -- ammo="Homiliary", sub="Oneiros Grip",
+    sets.resting = {main="Chatoyant Staff", sub="Kaja Grip", -- ammo="Homiliary", sub="Oneiros Grip",
 		--neck="Chrys. Torque",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
 		body="Jhakri Robe +2", hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Jhakri Ring",

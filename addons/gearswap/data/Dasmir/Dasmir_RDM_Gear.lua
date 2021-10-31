@@ -191,7 +191,7 @@ function init_gear_sets()
 		-- Atrophy Tights +3 Vanya Clogs
 		back=gear.Cure_jse_back, waist="Bishop's Sash", legs="Atrophy Tights +2", feet="Carmine Greaves +1"}
 
-    sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Clerisy Strap +1", ammo="Regal Gem",
+    sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Clerisy Strap +1", ammo="Regal Gem",
 		--head="Vanya Hood",
 		head="Atro. Chapeau +2", neck="Colossus's Torque", lear="Roundel Earring", rear="Novia Earring",
 		-- Kaykaus Bliaut Kaykaus Cuffs Haoma's Ring

@@ -106,7 +106,7 @@ function init_gear_sets()
 		-- legs="Psycloth Lappas",
         back=gear.Cure_jse_back,waist="Luminary Sash", legs="Lengo Pants", feet="Medium's Sabots"}
 		
-    sets.midcast.LightWeatherCure = {main=gear.gada_healing_club,sub="Sors Shield",ammo="Hasty Pinion +1",
+    sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
         --head="Vanya Hood",
 		head="Haruspex Hat", neck="Voltsurge Torque",ear1="Regal Earring",ear2="Novia Earring",
         body="Witching Robe",hands="Telchine Gloves",ring1="Stikini Ring",ring2="Sirona's Ring",

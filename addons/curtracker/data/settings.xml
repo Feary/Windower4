@@ -53,10 +53,16 @@
             <red>255</red>
         </value_color>
     </global>
+    <dasmir>
+        <pos>
+            <x>1483</x>
+            <y>60</y>
+        </pos>
+    </dasmir>
     <dayanna>
         <pos>
-            <x>1520</x>
-            <y>53</y>
+            <x>1519</x>
+            <y>55</y>
         </pos>
     </dayanna>
     <helyah>
@@ -67,8 +73,7 @@
     </helyah>
     <kavita>
         <pos>
-            <x>1523</x>
-            <y>52</y>
+            <y>64</y>
         </pos>
     </kavita>
     <oasus>
