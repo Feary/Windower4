@@ -60,7 +60,7 @@ function init_gear_sets()
 	sets.Ambush = {body="Plunderer's Vest +3"}
 
 	-- Weapons Sets
-	sets.weapons.Normal = 		{main="Twashtar",sub=empty}
+	sets.weapons.Normal = 		{main="Twashtar",sub="Blurred Knife +1"}
 	sets.weapons.Relic = 		{main="Mandau",sub="Blurred Knife +1"}
 	sets.weapons.Ambuscade = 	{main="Tauret",sub="Blurred Knife +1"}	
 	sets.weapons.Sword = 		{main="Naegling", sub="Blurred Knife +1"}

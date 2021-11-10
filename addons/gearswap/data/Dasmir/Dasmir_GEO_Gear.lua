@@ -36,7 +36,7 @@ function user_setup()
 	
 	-- Alias
 	send_command('alias ageohaste gs c autogeo frailty;gs c autoindi haste;gs c autoentrust fury')
-	send_command('alias ageoatk gs c autogeo frailty;gs c autoindi fury')	
+	send_command('alias ageoatk gs c autogeo frailty;gs c autoindi fury;gs c autoentrust haste')	
 	send_command('alias ageoacc gs c autogeo frailty;gs c autoindi torpor')
 		
 	indi_duration = 275

@@ -43,20 +43,19 @@ function init_gear_sets()
 	sets.precast.JA['Sengikori'] = {feet="Kasuga Sune-ate"}--Kas. Sune-Ate +1
 	
 	-- Acc
-    sets.precast.Step = {ammo="Hasty Pinion +1",
+    sets.precast.Step = {ammo="Hasty Pinion",
 		-- ear1="Digni. Earring", Telos Earring ear2="Moonshade Earring",
 		head="Flam. Zucchetto +2", neck="Combatant's Torque", 
 		-- hands="Wakido Kote +3", lring="Regal Ring", rring="Niqmaddu Ring",
-		body="Flamma Korazin +1", hands="Flam. Manopolas +1",
-		back=gear.dbl_jse_back, waist="Kentarch Belt +1",legs="Flamma Dirs +1", feet="Flam. Gambieras +2"}
+		body="Flamma Korazin +1", hands="Flam. Manopolas +1", ring1="Flamma Ring". ring2="Chirich Ring", 
+		back=gear.dbl_jse_back, waist="Ioskeha Belt",legs="Flamma Dirs +1", feet="Flam. Gambieras +2"}
     -- Macc
 	sets.precast.JA['Violent Flourish'] = {ammo="Pemphredo Tathlum",
 		-- ear1="Digni. Earring", ,neck="Sanctity Necklace",ear2="Moonshade Earring",
-        head="Flam. Zucchetto +2",
+        head="Flam. Zucchetto +2", neck="Combantant
         -- ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		body="Flamma Korazin +1", hands="Flam. Manopolas +1",
-		-- waist="Eschan Stone",
-        back=gear.dbl_jse_back,legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
+		body="Flamma Korazin +1", hands="Flam. Manopolas +1", ring1="Flamma Ring". ring2="Chirich Ring", 
+        back=gear.dbl_jse_back, waist="Ioskeha Belt", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
@@ -83,7 +82,7 @@ function init_gear_sets()
 		head="Flam. Zucchetto +2", neck="Combantant's Torque",
         -- Sakonji Domaru +3 gear.valorous_wsd_hands ring1="Niqmaddu Ring",ring2="Regal Ring",
 		body="Flamma Korazin +1",hands="Flam. Manopolas +1", lring="Flamma Ring", rring="Chirich Ring",
-		-- waist="Fotia Belt", Wakido Haidate +3 gear.valorous_wsd_feet
+		-- waist="Sailfi Belt +1", Wakido Haidate +3 gear.valorous_wsd_feet
         back=gear.ws_jse_back, waist="Ioskeha Belt", legs="Hiza. Hizayoroi +2",feet="Flam. Gambieras +2"}
    
 	sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {})-- feet="Wakido Sune. +3"

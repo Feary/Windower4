@@ -403,7 +403,7 @@ function init_gear_sets()
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
     -- Defense sets
-    sets.defense.PDT = main="Mafic Cudgel", -- ammo="Homiliary",
+    sets.defense.PDT = {main="Mafic Cudgel", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
         head="Befouled Crown", 
 		--  hands=gear.merlinic_refresh_hands, 
