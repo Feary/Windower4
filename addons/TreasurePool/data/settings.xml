@@ -78,6 +78,12 @@
             </stroke>
         </text>
     </global>
+    <akilee>
+        <pos>
+            <x>1150</x>
+            <y>57</y>
+        </pos>
+    </akilee>
     <almontay>
         <pos>
             <x>1330</x>
@@ -120,6 +126,12 @@
             <y>202</y>
         </pos>
     </gonzaloo>
+    <helyah>
+        <pos>
+            <x>958</x>
+            <y>46</y>
+        </pos>
+    </helyah>
     <kavita>
         <pos>
             <x>1406</x>
@@ -162,6 +174,12 @@
             <y>46</y>
         </pos>
     </olymoly>
+    <perseise>
+        <pos>
+            <x>977</x>
+            <y>48</y>
+        </pos>
+    </perseise>
     <ravindra>
         <pos>
             <x>1394</x>
@@ -174,4 +192,10 @@
             <y>305</y>
         </pos>
     </suede>
+    <symbio>
+        <pos>
+            <x>1392</x>
+            <y>141</y>
+        </pos>
+    </symbio>
 </settings>

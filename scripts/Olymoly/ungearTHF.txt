@@ -18,3 +18,4 @@ put Samnuha Coat sack all
 put Samnuha Tights sack all
 put Toutatis's Cape sack all 
 put Tsoa. Crossbow sack all
+put Ashera Harness sack all

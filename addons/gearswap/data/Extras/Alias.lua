@@ -38,8 +38,8 @@ send_command('alias gear exec '..player.name..'/gear'..player.main_job..'.txt')
 send_command('alias ungear gs equip naked;exec '..player.name..'/ungear'..player.main_job..'.txt')
 
 -- PortPacker
-send_command('alias store naked;wait 1;po store '..player.main_job)
-send_command('alias unstore po unpack '..player.main_job)
+send_command('alias store lua load enternity;wait 1;naked;wait 1;po store '..player.main_job)
+send_command('alias unstore lua load enternity;po unpack '..player.main_job..';wait 20;lua unload enternity')
 
 --Sparks
 send_command('alias shields repeater command sparks buy acheron shield;wait 1;repeater delay 3;wait 1;wrepeater count 38;wait 1;repeater on')
@@ -114,6 +114,8 @@ send_command('bind ^@!numpad+ sat allattack')
 
 send_command('bind numpad- off')
 
+
+send_command('bind numpad9 send @brd /ma "Horde\'s Lullaby <tid>"')
 
 --send_command('bind numpadEnter sat allattack')
 

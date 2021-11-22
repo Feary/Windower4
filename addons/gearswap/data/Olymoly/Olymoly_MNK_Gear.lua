@@ -69,8 +69,8 @@ function init_gear_sets()
 	sets.precast.Step = {ammo="Ginsen", 
 		-- Mnk. Nodowa +2 
 		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-		-- Ashera Harness Malignance Tabard Malignance Gloves 
-		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
+		--  Malignance Tabard Malignance Gloves 
+		body="Ashera Harness",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		-- Moonlight Belt  Malignance Tights 
 		back=gear.TP_jse_back,waist="Black Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}
 		
@@ -78,7 +78,7 @@ function init_gear_sets()
 		-- Mnk. Nodowa +2 
 		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Ashera Harness Malignance Tabard Malignance Gloves 
-		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
+		body="Ashera Harness",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
 		-- Moonlight Belt  Malignance Tights 
 		back=gear.TP_jse_back,waist="Black Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}
 
@@ -245,7 +245,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum",
 		head="Mummu Bonnet +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		body="Hiza. Haramaki +2",hands="Hizamaru Kote +2",ring1="Defending Ring",ring2=gear.DarkRing,
+		body="Ashera Harness",hands="Hizamaru Kote +2",ring1="Defending Ring",ring2=gear.DarkRing,
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
 	sets.idle.Weak = {ammo="Staunch Tathlum",
@@ -255,7 +255,7 @@ function init_gear_sets()
 
 	sets.idle.PDT = {ammo="Staunch Tathlum",
 		head="Mummu Bonnet +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		body="Hiza. Haramaki +2",hands="Hizamaru Kote +2",ring1="Defending Ring",ring2=gear.DarkRing,
+		body="Ashera Harness",hands="Hizamaru Kote +2",ring1="Defending Ring",ring2=gear.DarkRing,
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
 	-- Defense sets

@@ -15,6 +15,8 @@ function user_setup()
 	gear.wsd_jse_back = { 	name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}} 
 	gear.FC_jse_back = {	name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}
 	
+	-- HP+20, Magic Evasion +15, Magic Damage Taken -4%
+	gear.Instrument_IDLE = {name="Linos", augments={'Attack+20','"Store TP"+4','Quadruple Attack +3',}}
 	-- Snowdim Acc leafslit double atk  dusktip quad attack
 	gear.Instrument_TP = {name="Linos", augments={'Attack+20','"Store TP"+4','Quadruple Attack +3',}}
 	-- Snowslit atk/acc leaftip wsd Dusksslit Save TP
@@ -109,10 +111,12 @@ function init_gear_sets()
 	
 	sets.precast.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat"})
 
-	sets.precast.FC.BardSong = {main="Oranyan", sub="Clerisy Strap +1",
-		head="Fili Calot +1", neck="Orunmila's Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
-        back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet=gear.telchine_feet_Song}
+	sets.precast.FC.BardSong = {main="Sangoma", sub="Genmei Shield",
+		head="Fili Calot +1", neck="Loricate Torque +1", lear="Loquac. Earring", rear="Enchntr. Earring +1",
+		-- hands song casting time -5
+		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Kishar Ring", rring="Defending Ring",
+        -- Flume Belt +1
+		back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet=gear.telchine_feet_Song}
 	
 	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Gjallarhorn"})
 	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Gjallarhorn"})
@@ -156,8 +160,10 @@ function init_gear_sets()
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Bihu Cannions +3", feet="Bihu Slippers +3"})
 	
 	sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Ginsen",
+		-- Blistering Sallet 
 		head="Lustratio Cap +1", neck="Fotia Gorget", lear="Moonshade Earring", rear="Brutal Earring",
-		body="Ayanmo Corazza +2", hands="Lustr. Mittens +1", lring="Epaminondas's Ring", rring="Ilabrat Ring",
+		--
+		body="Ayanmo Corazza +2", hands="Lustr. Mittens +1", lring="Epaminondas's Ring", rring="Hetairoi Ring",
 		-- Rancerous Mantle
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Lustr. Subligar +1", feet="Lustra. Leggings +1"})
 	
@@ -171,13 +177,14 @@ function init_gear_sets()
 		head="Lustratio Cap +1", neck="Caro Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Kariyeh ring +1 
 		body="Bihu Jstcorps. +3", hands="Lustr. Mittens +1", lring="Epaminondas's Ring", rring="Ilabrat Ring",
-		back=gear.wsd_jse_back, waist="Grunfeld Rope", legs="Lustr. Subligar +1", feet="Lustra. Leggings +1"})
+		back=gear.wsd_jse_back, waist="Kentarch Belt +1", legs="Lustr. Subligar +1", feet="Lustra. Leggings +1"})
 		
 	sets.precast.WS["Mordant Rime"] = set_combine(sets.precast.WS, {ranged=gear.Instrument_WSD,
-		-- Bard's Charm +3
+		-- Bard's Charm +2
 		head="Bihu Roundlet +3", neck="Moonbow Whistle +1", lear="Ishvara Earring", rear="Regal Earring",
+		-- rring="Metamor. Ring +1"
 		body="Bihu Jstcorps. +3", hands="Bihu Cuffs +3", lring="Epaminondas's Ring", rring="Ilabrat Ring",
-		back=gear.wsd_jse_back, waist="Grunfeld Rope", legs="Bihu Cannions +3", feet="Bihu Slippers +3"})
+		back=gear.wsd_jse_back, waist="Kentarch Belt +1", legs="Bihu Cannions +3", feet="Bihu Slippers +3"})
 		
 	-- Sword
 	sets.precast.WS["Savage Blade"] = set_combine(sets.precast.WS, {ranged=gear.Instrument_WSD,
@@ -227,14 +234,18 @@ function init_gear_sets()
 		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Dark Ring", rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"}
 
-	sets.midcast.SongEffect.DW = {}
+	sets.midcast.SongEffect.DW = {main="Carnwenhan", sub="Kali", range="Gjallarhorn",
+		head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Genmei Earring", rear="Etiolation Earring",
+		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Dark Ring", rring="Defending Ring",
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"}
 
+	-- Debuff
 	-- For song debuffs (duration primary, accuracy secondary)
-	sets.midcast.SongDebuff = {range="Gjallarhorn",
-		main="Carnwenhan", sub="Ammurapi Shield",
+	sets.midcast.SongDebuff = {main="Carnwenhan", sub="Ammurapi Shield", range="Gjallarhorn",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini Ring", rring="Stikini Ring",
+		body="Fili Hongreline +1", hands="Brioso Cuffs +3", lring="Stikini Ring", rring="Stikini Ring",
+		-- Acuity Belt +1
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
@@ -252,7 +263,7 @@ function init_gear_sets()
 	
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {
-		head="Nahtirah Hat", neck="Orunmila's Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
+		head="Fili Calot +1", neck="Orunmila's Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.FC_jse_back, waist="Tempus Fugit", legs="Aya. Cosciales +2", feet=gear.telchine_feet_Song}
 
@@ -354,39 +365,51 @@ function init_gear_sets()
 	sets.resting = {main="Sangoma", sub="Genmei Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Assiduity Pants +1", feet="Inyanga Crackows +2"}
 	
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {main="Sangoma", sub="Genmei Shield", range="Gjallarhorn",
+	sets.idle = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
+		-- Linos
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Assiduity Pants +1", feet="Fili Cothurnes +1"}
+		body="Ashera Harness", hands="Volte Bracers", ring1="Inyanga Ring", ring2="Defending Ring",
+		-- Flume Belt +1
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
 
-	sets.idle.Weak = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Assiduity Pants +1", feet="Aya. Gambieras +2"}
+	sets.idle.Weak = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
+		-- Linos
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Ashera Harness", hands="Volte Bracers", ring1="Inyanga Ring", ring2="Defending Ring",
+		-- Flume Belt +1
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
 	
-	sets.idle.PDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1",  lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
-		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+	sets.idle.PDT = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
+		-- Linos
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Ashera Harness", hands="Volte Bracers", ring1="Inyanga Ring", ring2="Defending Ring",
+		-- Flume Belt +1
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
 	
-	sets.idle.MDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
-		head="Inyanga Tiara +2",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
-		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
+	sets.idle.MDT = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
+		-- Linos
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Ashera Harness", hands="Volte Bracers", ring1="Inyanga Ring", ring2="Defending Ring",
+		-- Flume Belt +1
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
 	
 	-- Defense sets
-	sets.defense.PDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", ring1="Dark Ring", ring2="Defending Ring",
-		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+	sets.defense.PDT = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
+		-- Linos
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Ashera Harness", hands="Volte Bracers", ring1="Inyanga Ring", ring2="Defending Ring",
+		-- Flume Belt +1
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
 	
-	sets.defense.MDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
-		head="Inyanga Tiara +2",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
-		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
+	sets.defense.MDT = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
+		-- Linos
+		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
+		body="Ashera Harness", hands="Volte Bracers", ring1="Inyanga Ring", ring2="Defending Ring",
+		-- Flume Belt +1
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
 
 	sets.Kiting = {feet="Fili Cothurnes +1"}
 
@@ -399,22 +422,22 @@ function init_gear_sets()
 	
 	sets.engaged = {main="Carnwenhan", sub="Genmei Shield", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
+		body="Ashera Harness", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 	sets.engaged.Acc = {main="Carnwenhan",sub="Genmei Shield", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
+		body="Ashera Harness", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 	sets.engaged.DW = {main="Carnwenhan", sub="Twashtar", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
+		body="Ashera Harness", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 	sets.engaged.DW.Acc = {main="Carnwenhan",sub="Twashtar",ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
+		body="Ashera Harness", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Reiki Yotai", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	
 end

@@ -28,4 +28,5 @@ return {
 	"Naegling",
 	--"Kaja Knife",
 	"Tauret",
+	"Ullr",
 }

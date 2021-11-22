@@ -466,7 +466,7 @@ function init_gear_sets()
 
     sets.idle = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum",
         head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
-        body="Meg. Cuirie +2",hands="Turms Mittens +1",ring1="Moonbeam Ring",ring2="Defending Ring",
+        body="Ashera Harness",hands="Turms Mittens +1",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
 		
 	sets.idle.Regen = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum",
@@ -481,7 +481,7 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Malignance Chapeau",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Genmei Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
+        body="Ashsera Harness",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",

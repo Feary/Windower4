@@ -16,3 +16,5 @@ get Skaoi Boots case all
 get Thereoid Greaves sack all
 get Vampirism sack all
 get Malignance* sack all
+get Vrikodara Jupan sack all
+get Dashing Subligar sack all
