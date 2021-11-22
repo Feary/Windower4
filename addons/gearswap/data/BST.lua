@@ -73,7 +73,7 @@ function job_setup()
         'Double Claw','Filamented Hold','Spore','Blockhead','Secretion','Fireball','Tail Blow','Plague Breath',
         'Brain Crush','Infrasonics','Needleshot','Chaotic Eye','Blaster','Ripper Fang','Intimidate','Recoil Dive',
         'Water Wall','Snow Cloud','Wild Carrot','Sudden Lunge','Noisome Powder','Wing Slap','Beak Lunge','Suction',
-        'Drainkiss','Acid Mist','TP Drainkiss','Back Heel','Jettatura','Choke Breath','Fantod','Charged Whisker',
+        'Drainkiss','Acid Mist','Back Heel','Jettatura','Choke Breath','Fantod','Charged Whisker',
         'Purulent Ooze','Corrosive Ooze','Tortoise Stomp','Harden Shell','Aqua Breath','Sensilla Blades',
         'Tegmina Buffet','Sweeping Gouge','Zealous Snort','Tickling Tendrils','Pecking Flurry','Pestilent Plume',
 		'Foul Waters','Spider Web','Crossthrash','Venom Shower','Mega Scissors','Fluid Toss',
@@ -159,7 +159,7 @@ function job_setup()
 							['StalwartAngelina']='Disembowel',['SweetCaroline']='Head Butt',['P.CrabFamiliar']='Mega Scissors',
 							['JovialEdwin']='Mega Scissors',['Y.BeetleFamiliar']='Power Attack',['EnergizedSefina']='Power Attack',
 							['LynxFamiliar']='Charged Whisker',['VivaciousGaston']='Charged Whisker',['Hip.Familiar']='Back Heel',['DaringRoland']='Back Heel',
-							['SlimeFamiliar']='Fluid Toss',['SultryPatrice']='Fluid Toss',
+							['SlimeFamiliar']='Fluid Toss',['SultryPatrice']='Fluid Toss',['FatsoFargann']='TP Drainkiss',
 							}
 							
 	ready_moves.aoe = 	   {['DroopyDortwin']='Whirl Claws',['PonderingPeter']='Whirl Claws',['HeraldHenry']='Bubble Shower',['CourierCarrie']='Bubble Shower',
