@@ -1,7 +1,7 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
-        <curfields>wind crystals,fire crystals,water crystals,login points,escha silt,lightning crystals,daily tally,crafter points,dark crystals,ice crystals,earth crystals,light crystals</curfields>
+        <curfields>daily tally,login points,silver a.m.a.n. vouchers stored,wind crystals,fire crystals,water crystals,lightning crystals,crafter points,dark crystals,ice crystals,earth crystals,light crystals</curfields>
         <curlines>2</curlines>
         <currefresh>60</currefresh>
         <curtracking>true</curtracking>

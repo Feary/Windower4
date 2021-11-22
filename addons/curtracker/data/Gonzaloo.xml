@@ -1,8 +1,8 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
-        <curfields>login points</curfields>
-        <curlines>1</curlines>
+        <curfields>silver a.m.a.n. vouchers stored,daily tally,login points</curfields>
+        <curlines>2</curlines>
         <currefresh>60</currefresh>
         <curtracking>true</curtracking>
         <field_color>
@@ -11,8 +11,8 @@
             <red>0</red>
         </field_color>
         <pos>
-            <x>1515</x>
-            <y>57</y>
+            <x>1544</x>
+            <y>53</y>
         </pos>
         <text>
             <size>10</size>
