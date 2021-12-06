@@ -23,4 +23,10 @@
             <red>255</red>
         </value_color>
     </global>
+    <gonzaloo>
+        <pos>
+            <x>1449</x>
+            <y>47</y>
+        </pos>
+    </gonzaloo>
 </settings>

@@ -53,6 +53,18 @@
             <red>255</red>
         </value_color>
     </global>
+    <akilee>
+        <pos>
+            <x>1439</x>
+            <y>45</y>
+        </pos>
+    </akilee>
+    <almontay>
+        <pos>
+            <x>1438</x>
+            <y>51</y>
+        </pos>
+    </almontay>
     <dasmir>
         <pos>
             <x>1483</x>
@@ -65,6 +77,12 @@
             <y>53</y>
         </pos>
     </dayanna>
+    <gonzaloo>
+        <pos>
+            <x>1449</x>
+            <y>47</y>
+        </pos>
+    </gonzaloo>
     <helyah>
         <pos>
             <x>1464</x>
@@ -89,6 +107,12 @@
             <y>61</y>
         </pos>
     </olymoly>
+    <symbio>
+        <pos>
+            <x>1503</x>
+            <y>53</y>
+        </pos>
+    </symbio>
     <yerp>
         <pos>
             <x>1529</x>

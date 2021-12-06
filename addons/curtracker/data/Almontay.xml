@@ -23,4 +23,10 @@
             <red>255</red>
         </value_color>
     </global>
+    <almontay>
+        <pos>
+            <x>1438</x>
+            <y>51</y>
+        </pos>
+    </almontay>
 </settings>

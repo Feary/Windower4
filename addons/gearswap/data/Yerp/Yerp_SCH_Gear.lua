@@ -107,20 +107,20 @@ function init_gear_sets()
 		
     sets.midcast.Cure = {main="Vadose Rod", sub="Sors Shield", ammo="Incanter Stone",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
+		head="Merlinic Hood", rear="Beatific Earring", 
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		--back=gear.Cure_jse_back, 
 		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Give Trousers", feet="Skaoi Boots"}
 
     sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Achaq Grip", ammo="Incanter Stone",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
+		head="Merlinic Hood", rear="Beatific Earring", 
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		--waist=gear.ElementalObi,
-		--back=gear.Cure_jse_back, 
 		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Give Trousers", feet="Skaoi Boots"}
 		
     sets.midcast.LightDayCure = {main="Iridal Staff", sub="Achaq Grip", ammo="Incanter Stone",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Orison Cap +1", 
+		head="Merlinic Hood", rear="Beatific Earring", 
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		--waist=gear.ElementalObi,
 		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Give Trousers", feet="Skaoi Boots"}	
@@ -220,7 +220,7 @@ function init_gear_sets()
 		
     sets.midcast.Kaustra.Resistant = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
-		head="Jhakri Coronal",lear="Enchntr. Earring +1",
+		head="Jhakri Coronal", lear="Enchntr. Earring +1",
 		body="Jhakri Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
 		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Jhakri Slops", feet="Skaoi Boots"}

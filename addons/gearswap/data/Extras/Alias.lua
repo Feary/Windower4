@@ -21,6 +21,12 @@ send_command('alias l2 send @all lua unload lottery')
 send_command('alias pool lua load treasurepool')
 send_command('alias unpool lua load treasurepool')
 
+send_command('alias ld2 send @all /pcmd leader Olymoly')
+send_command('alias ld3 send @all /pcmd leader Dasmir')
+send_command('alias ld4 send @all /pcmd leader Helyah')
+send_command('alias ld5 send @all /pcmd leader Oasus')
+send_command('alias ld6 send @all /pcmd leader Yerp')
+
 -- Typos
 send_command('alias logout input /logout')
 send_command('alias sendpost input /sendpost')
@@ -41,14 +47,15 @@ send_command('alias ungear gs equip naked;exec '..player.name..'/ungear'..player
 send_command('alias store lua load enternity;wait 1;naked;wait 1;po store '..player.main_job)
 send_command('alias unstore lua load enternity;po unpack '..player.main_job..';wait 20;lua unload enternity')
 
---Sparks
+-- Sparks
 send_command('alias shields repeater command sparks buy acheron shield;wait 1;repeater delay 3;wait 1;wrepeater count 38;wait 1;repeater on')
 
 -- Naked
 send_command('alias naked gs equip naked')
 
 -- Jobs
-send_command('alias si send @all sneak')
+send_command('alias si send @all sneak;wait .5;send @all invisible')
+-- Ranger
 send_command('alias rh1 send @cor gs rh enable; wait .5; ra <t>')
 send_command('alias rh2 send @cor gs rh disable')
 -- Embrava

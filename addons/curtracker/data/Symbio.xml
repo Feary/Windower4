@@ -23,4 +23,9 @@
             <red>255</red>
         </value_color>
     </global>
+    <symbio>
+        <pos>
+            <x>1503</x>
+        </pos>
+    </symbio>
 </settings>

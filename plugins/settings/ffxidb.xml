@@ -9,7 +9,7 @@
         <ShowMob>true</ShowMob>
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
-        <Ranges></Ranges>
+        <Ranges />
     </global>
     <Aniyah>
         <X>1280</X>
@@ -130,8 +130,8 @@
         <Y>32</Y>
     </Symbio>
     <Akilee>
-        <X>1280</X>
-        <Y>32</Y>
+        <X>1202</X>
+        <Y>29</Y>
     </Akilee>
     <Perseise>
         <X>1280</X>
@@ -158,8 +158,8 @@
         <Y>32</Y>
     </Gonzaloo>
     <Almontay>
-        <X>1280</X>
-        <Y>32</Y>
+        <X>1216</X>
+        <Y>33</Y>
     </Almontay>
     <Dayanna>
         <X>1280</X>
