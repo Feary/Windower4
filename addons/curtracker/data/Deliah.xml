@@ -23,4 +23,10 @@
             <red>255</red>
         </value_color>
     </global>
+    <deliah>
+        <pos>
+            <x>1435</x>
+            <y>50</y>
+        </pos>
+    </deliah>
 </settings>

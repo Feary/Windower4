@@ -77,6 +77,18 @@
             <y>53</y>
         </pos>
     </dayanna>
+    <deliah>
+        <pos>
+            <x>1435</x>
+            <y>50</y>
+        </pos>
+    </deliah>
+    <fearyjunior>
+        <pos>
+            <x>1430</x>
+            <y>51</y>
+        </pos>
+    </fearyjunior>
     <gonzaloo>
         <pos>
             <x>1449</x>
@@ -95,6 +107,12 @@
             <y>53</y>
         </pos>
     </kavita>
+    <molyoly>
+        <pos>
+            <x>1432</x>
+            <y>50</y>
+        </pos>
+    </molyoly>
     <oasus>
         <pos>
             <x>1561</x>
@@ -107,6 +125,12 @@
             <y>61</y>
         </pos>
     </olymoly>
+    <suede>
+        <pos>
+            <x>1435</x>
+            <y>48</y>
+        </pos>
+    </suede>
     <symbio>
         <pos>
             <x>1503</x>
