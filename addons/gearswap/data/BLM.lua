@@ -66,7 +66,7 @@ function job_setup()
 	state.AutoManawell = M(true, 'Auto Manawell Mode')
 	state.RecoverMode = M('35%', '60%', 'Always', 'Never')
 
-	autows = 'Vidohunir'
+	autows = 'Myrkr'
 	autofood = 'Pear Crepe'
 	
 	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoNukeMode","AutoManawell","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoStunMode","AutoDefenseMode"},{"AutoBuffMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","RecoverMode","ElementalMode","CastingMode","TreasureMode",})
@@ -158,7 +158,7 @@ function job_post_midcast(spell, spellMap, eventArgs)
 				equip(sets.precast.FC.Death)
 			end
 
-		elseif is_nuke(spell, spellMap) and spell.english ~= 'Impact' then
+		elseif is_nuke(spell, spellMap) then
 			if state.MagicBurstMode.value ~= 'Off' then
 				if state.CastingMode.value:contains('Resistant') and sets.ResistantMagicBurst then
 					equip(sets.ResistantMagicBurst)

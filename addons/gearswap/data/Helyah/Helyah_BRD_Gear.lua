@@ -352,11 +352,10 @@ function init_gear_sets()
 		
 	sets.midcast['Enhancing Magic'] = {main="Sangoma",
 		-- sub="Ammurapi Shield",
-		-- head=gear.telchine_head_Duration, ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
-		neck="Melic Torque", 
+		--  ear1="Loquacious Earring", ear2="Enchntr. Earring +1",
+		head=gear.telchine_head_Duration, neck="Melic Torque", 
 		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
-		-- waist="Witful Belt", legs=gear.telchine_legs_Duration,
-		back=gear.FC_jse_back, waist="Olympus Sash", feet=gear.telchine_feet_Duration}
+		back=gear.FC_jse_back, waist="Witful Belt", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
 		neck="Nodens Gorget",

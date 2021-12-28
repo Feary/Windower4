@@ -1,38 +1,54 @@
 <settings>
-    <Dasmir>
+    <Perseise>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Dasmir>
-    <Mostmost>
+    </Perseise>
+    <Almontay>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Mostmost>
-    <Ravindra>
+    </Almontay>
+    <Dayanna>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Ravindra>
+    </Dayanna>
     <Gonzaloo>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
     </Gonzaloo>
-    <Suede>
+    <Ravindra>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>0</FrameRateDivisor>
-    </Suede>
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Ravindra>
+    <Kavita>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Kavita>
+    <Akilee>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Akilee>
+    <Drecien>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Drecien>
+    <Deliah>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Deliah>
+    <Olymoly>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Olymoly>
     <Yerp>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>0</FrameRateDivisor>
+        <FrameRateDivisor>2</FrameRateDivisor>
     </Yerp>
-    <Mehany>
+    <Helyah>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Mehany>
-    <global>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>0</FrameRateDivisor>
-    </global>
-    <Molyoly>
+    </Helyah>
+    <Mostmost>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Molyoly>
+    </Mostmost>
 </settings>

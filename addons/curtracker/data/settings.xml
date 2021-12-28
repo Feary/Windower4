@@ -137,6 +137,12 @@
             <y>53</y>
         </pos>
     </symbio>
+    <worldkiller>
+        <pos>
+            <x>1440</x>
+            <y>47</y>
+        </pos>
+    </worldkiller>
     <yerp>
         <pos>
             <x>1529</x>

@@ -37,7 +37,7 @@ gear.telchine_body_Duration = { name="Telchine Chas.", augments={'Enh. Mag. eff.
 gear.telchine_body_Siphon = {}
 gear.telchine_body_Pet = { name="Telchine Chas.", augments={'Mag. Evasion+25','Pet: "Regen"+3','Pet: Damage taken -4%',}}
 
---Hands
+-- Hands
 -- Leafdim
 gear.telchine_hands_Cure = { name="Telchine Gloves",augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
 gear.telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
@@ -64,18 +64,20 @@ gear.helios_head_occult = { name="Helios Band", augments={'Pet: Attack+29 Pet: R
 gear.helios_head_BP = {name="Helios Band", augments={'Pet: Attack+29 Pet: Rng.Atk.+29','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+7',}}
 
 -- Body 
--- Occult Acumen Leafdim
+-- MAB 20 MACC 20 Snowdim Occult Acumen +1~10 Leafdim
 gear.helios_body_occult = {name="Helios Jacket", augments={''}}
 
---Hands
+-- Hands
 gear.helios_hands_FC = { name="Helios Gloves", augments={'"Fast Cast"+5',}}
 
 -- Legs 
 
 -- Feet
--- MAB 20 MACC 20 Snowdim Occult Acumen +1~10 Leafdim
-gear.helios_feet_occult = {name="Helios Boots", augments={''}}
+gear.helios_feet_occult = {name="Helios Boots",  augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Occult Acumen"+10',}}
 
+
+
+--- Weapons 
 gear.gada_enhancing_club = {name="Gada",augments={'Enh. Mag. eff. dur. +6','STR+3','Mag. Acc.+8','"Mag.Atk.Bns."+17','DMG:+7',}}
 ----gear.gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+11','"Mag.Atk.Bns."+13','DMG:+3',}}
 
