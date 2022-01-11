@@ -1,36 +1,16 @@
 <settings>
-    <Perseise>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Perseise>
-    <Almontay>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Almontay>
     <Dayanna>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
     </Dayanna>
-    <Gonzaloo>
+    <Almontay>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Gonzaloo>
-    <Ravindra>
+    </Almontay>
+    <Perseise>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Ravindra>
-    <Kavita>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Kavita>
-    <Akilee>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Akilee>
-    <Drecien>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Drecien>
+    </Perseise>
     <Deliah>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
@@ -39,16 +19,46 @@
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
     </Olymoly>
-    <Yerp>
+    <Midnightclamm>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Yerp>
-    <Helyah>
+    </Midnightclamm>
+    <Molyoly>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Helyah>
-    <Mostmost>
+    </Molyoly>
+    <Suede>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Mostmost>
+    </Suede>
+    <Worldkiller>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Worldkiller>
+    <Dasmir>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Dasmir>
+    <Kavita>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+    </Kavita>
+    <global>
+        <!--If set to true will automatically determine the correct aspect ratio-->
+        <AdjustAspectRatio>true</AdjustAspectRatio>
+        <!--Explicitly define the aspect ratio (x:y resolution), will be ignored if "AdjustAspectRatio" is enabled-->
+        <AspectRatio>1.33333</AspectRatio>
+        <!--If set to true will automatically lock onto a target after engaging-->
+        <BattleAutoTarget>true</BattleAutoTarget>
+        <!--The maximum map draw distance, 1 being the game's maximum setting-->
+        <ClippingPlane>5</ClippingPlane>
+        <!--Only integer values, 3 being the lowest and 0 the highest-->
+        <AnimationFrameRate>0</AnimationFrameRate>
+        <!--If set to true will enable footstep effects (both display and sound)-->
+        <FootstepEffects>true</FootstepEffects>
+        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
+        <FrameRateDivisor>2</FrameRateDivisor>
+        <!--Time in minutes of inactivity until a disconnect, 0 to disable-->
+        <AutoDisconnectTime>0</AutoDisconnectTime>
+    </global>
 </settings>

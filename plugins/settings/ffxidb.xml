@@ -9,7 +9,7 @@
         <ShowMob>true</ShowMob>
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
-        <Ranges />
+        <Ranges></Ranges>
     </global>
     <Aniyah>
         <X>1280</X>
@@ -93,8 +93,8 @@
         <Y>32</Y>
     </Kavita>
     <Drecien>
-        <X>1280</X>
-        <Y>32</Y>
+        <X>1210</X>
+        <Y>29</Y>
     </Drecien>
     <Most>
         <X>1280</X>
@@ -150,8 +150,8 @@
         <Y>32</Y>
     </Molyoly>
     <Mostmost>
-        <X>1280</X>
-        <Y>32</Y>
+        <X>1202</X>
+        <Y>33</Y>
     </Mostmost>
     <Gonzaloo>
         <X>1280</X>
