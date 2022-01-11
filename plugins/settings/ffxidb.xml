@@ -9,7 +9,7 @@
         <ShowMob>true</ShowMob>
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
-        <Ranges></Ranges>
+        <Ranges />
     </global>
     <Aniyah>
         <X>1280</X>
@@ -89,8 +89,8 @@
         <Y>32</Y>
     </Midnightclam>
     <Kavita>
-        <X>1280</X>
-        <Y>32</Y>
+        <X>1221</X>
+        <Y>30</Y>
     </Kavita>
     <Drecien>
         <X>1210</X>
@@ -101,8 +101,8 @@
         <Y>32</Y>
     </Most>
     <Ravindra>
-        <X>1280</X>
-        <Y>32</Y>
+        <X>1215</X>
+        <Y>38</Y>
     </Ravindra>
     <Gonzalo>
         <X>1280</X>
@@ -113,8 +113,8 @@
         <Y>32</Y>
     </Denonie>
     <Mehany>
-        <X>1280</X>
-        <Y>32</Y>
+        <X>1213</X>
+        <Y>36</Y>
     </Mehany>
     <Suede>
         <X>1213</X>
@@ -142,8 +142,8 @@
         <Y>30</Y>
     </Deliah>
     <Midnightclamm>
-        <X>1280</X>
-        <Y>32</Y>
+        <X>1202</X>
+        <Y>36</Y>
     </Midnightclamm>
     <Molyoly>
         <X>1184</X>
@@ -162,7 +162,7 @@
         <Y>33</Y>
     </Almontay>
     <Dayanna>
-        <X>1280</X>
+        <X>1211</X>
         <Y>32</Y>
     </Dayanna>
     <Oamlonry>

@@ -460,7 +460,7 @@ function init_gear_sets()
     -- Resting sets
 	sets.resting = {main="Boonwell Staff",
 		head="Inyanga Tiara +1",neck="Eidolon Pendant",
-		body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2", ring1="Inyanga Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Inyan. Dastanas +2", ring1="Inyanga Ring",ring2="Defending Ring",
 		--back=gear.fastcast_jse_back,
 		back="Felicitas Cape +1", waist="Austerity Belt",legs="Inyanga Shalwar +1",feet="Inyan. Crackows +1"}
 
@@ -470,7 +470,7 @@ function init_gear_sets()
 		-- neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		head="Befouled Crown",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
+		body="Shamash Robe", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
 		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Inyan. Crackows +1"}
 
@@ -479,7 +479,7 @@ function init_gear_sets()
 		-- neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		head="Aya. Zucchetto +1",
 		--body="Theo. Briault +3", 
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
+		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
 		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
@@ -498,7 +498,7 @@ function init_gear_sets()
 		-- neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		head="Aya. Zucchetto +1",
 		--body="Theo. Briault +3", 
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
+		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
 		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
@@ -508,7 +508,7 @@ function init_gear_sets()
 		-- neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		head="Aya. Zucchetto +1",
 		--body="Theo. Briault +3", 
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
+		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
 		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 

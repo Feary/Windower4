@@ -23,4 +23,10 @@
             <red>255</red>
         </value_color>
     </global>
+    <kavita>
+        <pos>
+            <x>1441</x>
+            <y>50</y>
+        </pos>
+    </kavita>
 </settings>
