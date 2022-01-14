@@ -25,5 +25,5 @@ return {
     "Hiza. Hizayoroi +2",
     "Hiza. Sune-Ate +2",
     "Hizamaru Ring",
-	"Kaja Knuckles",
+	"Karambit",
 }

@@ -112,17 +112,77 @@ send_command('alias puller gs c toggle Kiting;wait 1;gs c ')
 send_command('bind pageup fol')
 send_command('bind pagedown ufol')
 send_command('bind !pageup 	bolt')
-	
-send_command('bind numpad+ input /targetnpc;wait 1;sat alltarget')
-send_command('bind ^numpad+ sat allattack')
-send_command('bind @numpad+ sat allattack')
-send_command('bind !numpad+ sat allattack')
-send_command('bind ^@!numpad+ sat allattack')
+
+-- Home Key
+send_command('bind home send @brd input /ma "Horde\'s Lullaby" <tid>"')
+-- ALT
+send_command('bind !home send @brd input /ma "Nightingale" <me>"')
+-- Control
+send_command('bind ^home send @brd input /ma "Troubadour" <me>"')
+--Windows
+send_command('bind @home send @brd input /ma "Marcato" <me>"')
+-- Shift
+send_command('bind ~home send @brd input /ma "Pianissimo" <p1>"')
+
+-- End Key
+--send_command('bind end send @brd input /ma "Horde\'s Lullaby" <tid>"')
+--send_command('bind !end send @brd input /ma "Nightingale" <me>"')
+--send_command('bind ^end send @brd input /ma "Troubadour" <me>"')
+--send_command('bind @end send @brd input /ma "Marcato" <me>"')
+--send_command('bind ~end send @brd input /ma "Pianissimo" <p1>"')
+
+--send_command('bind numpad9 send Yerp input /ma "Cure IV" <p1>"')
+--send_command('bind !numpad9 send Yerp input /ma "Cure IV" <p1>"')
+--send_command('bind ^numpad9 send Yerp input /ma "Cure IV" <p1>"')
+--send_command('bind @numpad9 send Yerp input /ma "Cure IV" <p1>"')
+--send_command('bind ~numpad9 send Yerp input /ma "Cure IV" <p1>"')
+
+-- Scholar
+send_command('bind numpad9 send @sch input /ma "Cure VI" <p1>"')
+send_command('bind !numpad9 send @whm input /ma "Cure VI" <p1>"')
+send_command('bind ^numpad9 send @whm input /ma "Cure VI" <p1>"')
+send_command('bind @numpad9 send @whm input /ma "Cure VI" <p1>"')
+send_command('bind ~numpad9 send @whm input /ma "Cure VI" <p1>"')
+
+send_command('bind numpad6 send @whm input /ma "Curaga IV" <p1>"')
+send_command('bind !numpad6 send @whm input /ma "Curaga IV" <p1>"')
+send_command('bind ^numpad6 send @whm input /ma "Curaga IV" <p1>"')
+send_command('bind @numpad6 send @whm input /ma "Curaga IV" <p1>"')
+send_command('bind ~numpad6 send @whm input /ma "Curaga IV" <p1>"')
+
+send_command('bind numpad3 send @whm input /ma "Curaga III" <p1>"')
+send_command('bind !numpad3 send @whm input /ma "Curaga III" <p1>"')
+send_command('bind ^numpad3 send @whm input /ma "Curaga III" <p1>"')
+send_command('bind @numpad3 send @whm input /ma "Curaga III" <p1>"')
+send_command('bind ~numpad3 send @whm input /ma "Curaga III" <p1>"')
+
+-- WHM
+-- send_command('bind numpad9 send @whm input /ma "Cure VI" <p1>"')
+-- send_command('bind !numpad9 send @whm input /ma "Cure VI" <p1>"')
+-- send_command('bind ^numpad9 send @whm input /ma "Cure VI" <p1>"')
+-- send_command('bind @numpad9 send @whm input /ma "Cure VI" <p1>"')
+-- send_command('bind ~numpad9 send @whm input /ma "Cure VI" <p1>"')
+
+-- send_command('bind numpad6 send @whm input /ma "Curaga IV" <p1>"')
+-- send_command('bind !numpad6 send @whm input /ma "Curaga IV" <p1>"')
+-- send_command('bind ^numpad6 send @whm input /ma "Curaga IV" <p1>"')
+-- send_command('bind @numpad6 send @whm input /ma "Curaga IV" <p1>"')
+-- send_command('bind ~numpad6 send @whm input /ma "Curaga IV" <p1>"')
+
+-- send_command('bind numpad3 send @whm input /ma "Curaga III" <p1>"')
+-- send_command('bind !numpad3 send @whm input /ma "Curaga III" <p1>"')
+-- send_command('bind ^numpad3 send @whm input /ma "Curaga III" <p1>"')
+-- send_command('bind @numpad3 send @whm input /ma "Curaga III" <p1>"')
+-- send_command('bind ~numpad3 send @whm input /ma "Curaga III" <p1>"')
+
+--send_command('bind numpad+ input /targetnpc;wait 1;sat alltarget')
+--send_command('bind ^numpad+ sat allattack')
+--send_command('bind @numpad+ sat allattack')
+--send_command('bind !numpad+ sat allattack')
+--send_command('bind ^@!numpad+ sat allattack')
 
 send_command('bind numpad- off')
 
-
-send_command('bind numpad9 send @brd /ma "Horde\'s Lullaby <tid>"')
 
 --send_command('bind numpadEnter sat allattack')
 

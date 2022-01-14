@@ -1344,9 +1344,11 @@ function init_gear_sets()
 	sets.weapons.Axe = {main="Kaja Axe", sub="Adapa Shield"}
 	sets.weapons.Greatsword = {main="Montante", sub="Utu Grip"} 
 	sets.weapons.Sword = {main="Naegling", sub="Adapa Shield"}
+	sets.weapons.Dagger = {main="Naegling", sub="Adapa Shield"}
 	sets.weapons.DualSwords = {main="Naegling", sub="Kaja Axe"}
-	sets.weapons.H2H = {main="Kaja Knuckles"}
-	sets.weapons.Polearm = {main="Kaja Lance",  sub="Utu Grip"}
+	sets.weapons.H2H = {main="Karambit"}
+	sets.weapons.Polearm = {main="Shining One", sub="Utu Grip"}
+	-- Proc Weapons Sets 
 	sets.weapons.ProcDagger = {main="Kustawi +1", sub="Malevolence"}
 	sets.weapons.ProcSword = {main="Ibushi Shinai", sub="Adapa Shield"}
 	sets.weapons.ProcGreatSword = {main="Montante", sub="Utu Grip"}

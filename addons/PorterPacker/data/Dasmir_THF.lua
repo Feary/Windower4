@@ -27,5 +27,6 @@ return {
 	"Skulker's Bonnet +1",
 	"Skulker's Vest",
 	"Tauret",
-	"Kaja Bow",
+	"Ullr",
+	"Karambit"
 }

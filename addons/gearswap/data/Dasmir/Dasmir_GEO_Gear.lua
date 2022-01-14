@@ -271,18 +271,18 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Resting sets
-	sets.resting = {main="Daybreak", sub="Genmei Shield", range="Dunna",
+	sets.resting = {main="Idris", sub="Genmei Shield", range="Dunna",
 		head="Befouled Crown",neck="Loricate Torque +1", ear1="Ethereal Earring", rear="Etiolation Earring",
 		body="Shamash Robe", hands="Bagua Mitaines", ring1=gear.DarkRing, ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Austerity Belt",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
 	-- Idle sets
-	sets.idle = {main="Daybreak", sub="Genmei Shield", range="Dunna",
+	sets.idle = {main="Idris", sub="Genmei Shield", range="Dunna",
 		head="Befouled Crown", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Shamash Robe", hands="Bagua Mitaines", lring=gear.DarkRing, rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
 
-	sets.idle.PDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Dunna",
+	sets.idle.PDT = {main="Idris", sub="Genmei Shield", range="Dunna",
 		-- Genmei Earring 
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Shamash Robe", hands="Mallquis Cuffs +2", lring=gear.DarkRing, rring="Defending Ring",
@@ -292,13 +292,13 @@ function init_gear_sets()
 
 	-- Pet sets are for when Luopan is present.
 	-- Idris
-	sets.idle.Pet = set_combine(sets.idle.PDT, {main="Solstice", sub="Genmei Shield", range="Dunna",
+	sets.idle.Pet = set_combine(sets.idle.PDT, {main="Idris", sub="Genmei Shield", range="Dunna",
 		-- rear="Handler's Earring +1",
 		head=gear.telchine_head_Pet, lear="Ethereal Earring", rear="Etiolation Earring",
 		body=gear.telchine_body_Pet, hands=gear.telchine_hands_Pet,
 		back=gear.idle_jse_back, waist="Isa Belt", legs=gear.telchine_legs_Pet, feet="Bagua Sandals +1"})
 
-	sets.idle.PDT.Pet = {main="Solstice", sub="Genmei Shield", range="Dunna",
+	sets.idle.PDT.Pet = {main="Idris", sub="Genmei Shield", range="Dunna",
 		-- lear="Handler's Earring", rear="Handler's Earring +1",
 		head=gear.telchine_head_Pet, 
 		body=gear.telchine_body_Pet, hands="Bagua Mitaines +1",
@@ -306,30 +306,30 @@ function init_gear_sets()
 				
 	-- Indi sets are for when an Indi-spell is active.
 	-- Idris
-	sets.idle.Indi = set_combine(sets.idle, {main="Solstice", sub="Genmei Shield", range="Dunna"})	
-	sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {main="Solstice", sub="Genmei Shield", range="Dunna"}) 
+	sets.idle.Indi = set_combine(sets.idle, {main="Idris", sub="Genmei Shield", range="Dunna"})	
+	sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {main="Idris", sub="Genmei Shield", range="Dunna"}) 
 	
-	sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {main="Solstice", sub="Genmei Shield", range="Dunna"})
-	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {main="Solstice", sub="Genmei Shield", range="Dunna"})
+	sets.idle.Pet.Indi = set_combine(sets.idle.Pet, {main="Idris", sub="Genmei Shield", range="Dunna"})
+	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {main="Idris", sub="Genmei Shield", range="Dunna"})
 
-	sets.idle.Weak = {main="Mafic Cudgel",sub="Genmei Shield", range="Dunna",
+	sets.idle.Weak = {main="Idris",sub="Genmei Shield", range="Dunna",
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Shamash Robe", hands="Mallquis Cuffs +2", lring=gear.DarkRing, rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
 
 	-- Defense sets	
-	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield", range="Dunna",
+	sets.defense.PDT = {main="Idris",sub="Genmei Shield", range="Dunna",
 		-- Genmei Earring
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		body="Shamash Robe", hands="Mallquis Cuffs +2", lring=gear.DarkRing, rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}	
 
-	sets.defense.MDT = {main="Mafic Cudgel",sub="Genmei Shield", range="Dunna",
+	sets.defense.MDT = {main="Idris",sub="Genmei Shield", range="Dunna",
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Sanare Earring", rear="Etiolation Earring",
 		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring=gear.DarkRing, rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
 	
-    sets.defense.MEVA = {main="Mafic Cudgel",sub="Genmei Shield", range="Dunna",
+    sets.defense.MEVA = {main="Idris",sub="Genmei Shield", range="Dunna",
 		head="Mall. Chapeau +2", neck="Loricate Torque +1", lear="Sanare Earring", rear="Etiolation Earring",
 		body="Shamash Robe", hands="Mallquis Cuffs +2", lring=gear.DarkRing, rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}

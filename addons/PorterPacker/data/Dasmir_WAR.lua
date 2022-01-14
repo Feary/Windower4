@@ -25,13 +25,11 @@ return {
 	"Pitchfork",
     "Zanmato",
     "Rounsey Wand",
-    "Kaja Knuckles",
+    "Karambit",
     "Ark Scythe",    
     "Ark Tabar",
 	"Naegling",	
 	"Shining One",
     "Kaja Axe",
 	"Kaja Sword",
-	"Kaja Dagger",
-	"Tauret"
 }
