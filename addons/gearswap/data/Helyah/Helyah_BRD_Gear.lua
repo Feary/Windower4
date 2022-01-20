@@ -45,6 +45,12 @@ function user_setup()
 	-- P = Prelude
 	-- D = Minne
 	
+	send_command('bind home send @brd input /ma "Horde\'s Lullaby" <tid>"')
+	send_command('bind !home send @brd input /ma "Nightingale" <me>"')
+	send_command('bind ^home send @brd input /ma "Troubadour" <me>"')
+	send_command('bind @home send @brd input /ma "Marcato" <me>"')
+	send_command('bind ~home send @brd input /ma "Pianissimo" <p1>"')
+	
 	-- dummy songs
 	send_command('alias dum exec songs/dummy.txt')
 	-- Dummy 5 Songs
@@ -94,11 +100,12 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	sets.precast.FC = {main="Sangoma",
 		--main="Oranyan", sub="Clerisy Strap +1",
-		--head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
+		--head="Nahtirah Hat", neck="Voltsurge Torque", rear="Enchntr. Earring +1",
+		lear="Loquac. Earring",
 		--hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		body="Inyanga Jubbah +2",  
 		-- feet="Bihu Slippers +3"
-		back=gear.FC_jse_back, wai0st="Witful Belt", legs="Aya. Cosciales +2", feet=gear.telchine_feet_FC }
+		back=gear.FC_jse_back, wai0st="Witful Belt", legs="Aya. Cosciales +2", feet=gear.telchine_feet_FC}
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {
 		--rear="Mendi. Earring",
@@ -111,8 +118,8 @@ function init_gear_sets()
 
 	sets.precast.FC.BardSong = {main="Sangoma",
 		-- main="Oranyan", sub="Clerisy Strap +1",
-		-- neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		head="Aoidos' Calot +1", 
+		-- neck="Voltsurge Torque",  rear="Enchntr. Earring +1",
+		head="Aoidos' Calot +1",  lear="Loquac. Earring",
 		--  hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		body="Inyanga Jubbah +2",
         back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet=gear.telchine_feet_Song}
@@ -134,9 +141,9 @@ function init_gear_sets()
 	sets.precast.DaurdablaDummy = sets.precast.FC.Daurdabla
 	
 	-- Precast sets to enhance JAs	
-	sets.precast.JA.Nightingale = {feet="Bihu Slippers +3"}
-	sets.precast.JA.Troubadour = {body="Bihu Jstcorps. +3"}
-	sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions +3"}
+	sets.precast.JA.Nightingale = {feet="Bihu Slippers"}
+	sets.precast.JA.Troubadour = {body="Bihu Justaucorps"}
+	sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions"}
 
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {}

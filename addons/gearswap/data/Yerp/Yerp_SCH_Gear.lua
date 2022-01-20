@@ -40,6 +40,23 @@ function user_setup()
 	send_command('bind !\\\\ input /ma "Reraise III" <me>')
 	send_command('alias Myrkr input /ws "Myrkr" <me>')
 	   
+	send_command('bind numpad9 send @sch input /ma "Cure IV" Olymoly"')
+	send_command('bind !numpad9 send @sch input /ma "Cure IV" <p1>"')
+	send_command('bind ^numpad9 send @sch input /ma "Cure IV" <p1>"')
+	send_command('bind @numpad9 send @sch input /ma "Cure IV" <p1>"')
+	send_command('bind ~numpad9 send @sch input /ma "Cure IV" <p1>"')
+
+	send_command('bind numpad6 send @sch input /ma "Cure IV" Olymoly"')
+	send_command('bind !numpad6 send @sch Accession;wait 2;Cure IV Olymoly"')
+	send_command('bind ^numpad6 send @sch input /ja "Penury" <p0>;wait 2;send @sch input /ma "Cure IV" Olymoly"')
+	send_command('bind @numpad6 send @sch input /ma "Rapture" <p0>;wait 2;send @sch input /ma "Cure IV" Olymoly"')
+	send_command('bind ~numpad6 send @sch input /ma "Celerity" <p0>;wait 2;send @sch input /ma "Cure IV" Olymoly"')
+
+	send_command('bind numpad3 send @sch input /ma "Cure III" <p1>"')
+	send_command('bind !numpad3 send @sch input /ma "Accession" <p0>;wait 2;send @sch input /ma "Cure III" Olymoly"')
+	send_command('bind ^numpad3 send @sch input /ma "Penury" <p0>;wait 2;send @sch input /ma "Cure III" Olymoly"')
+	send_command('bind @numpad3 send @sch input /ma "Rapture" <p0>;wait 2;send @sch input /ma "Cure III" Olymoly"')
+	send_command('bind ~numpad3 send @sch input /ma "Celerity" <p0>;wait 2;send @sch input /ma "Cure III" Olymoly"')   
 	
 	select_default_macro_book()
 end
@@ -55,25 +72,24 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 
-    sets.precast.JA['Tabula Rasa'] = {legs="Peda. Pants +1"}
-	sets.precast.JA['Enlightenment'] = {body="Peda. Gown +1"} 
+    sets.precast.JA['Tabula Rasa'] = {legs="Pedagogy Pants"}
+	sets.precast.JA['Enlightenment'] = {body="Pedagogy Gown"} 
 
     -- Fast cast sets for spells
-
-    sets.precast.FC = {main="Nibiru Staff", sub="Achaq Grip", ammo="Incantor Stone",
+    sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Achaq Grip", ammo="Incantor Stone",
 		-- neck="Voltsurge Torque", ear2="Malignance Earring",
-		head="Merlinic Hood", ear1="Enchntr. Earring +1",
+		head="Merlinic Hood", ear1="Enchntr. Earring +1", ear2="Loquac. Earring",
         --body="Zendik Robe",
-		body="Merlinic Jubbah", hands="Psycloth Manillas",ring1="Prolix Ring",ring2="Defending Ring",
-        back=gear.FC_jse_back,waist="Witful Belt",legs="Gyve Trousers",feet="Skaoi Boots"}
+		body="Merlinic Jubbah", hands=gear.helios_hands_FC,ring1="Prolix Ring",ring2="Defending Ring",
+        back=gear.FC_jse_back,waist="Witful Belt",legs="Gyve Trousers",feet="Peda Loafers"}
 		
-	sets.precast.FC.Arts = {}--feet="Acaldemic's Loafers +2"
+	sets.precast.FC.Arts = {}--feet="Academic's Loafers +2"
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {})-- waist="Siegel Sash"
 
     sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {})--ear1="Barkaro. Earring" body="Mallquis Saio +2",
 
-    sets.precast.FC.Cure = set_combine(sets.precast.FC, {})-- main="Serenity",
+    sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Vadose Rod", sub="Sors Shield",})-- main="Serenity",
 
     sets.precast.FC.Curaga = sets.precast.FC.Cure
 
@@ -96,14 +112,14 @@ function init_gear_sets()
 	sets.element.Dark = {} -- head="Pixie Hairpin +1", ring2="Archon Ring"
 
 	-- Midcast
-    sets.midcast.FastRecast = {main="Nibiru Staff", ammo="Incanter Stone",
+    sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff, ammo="Incanter Stone",
 		--main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Hasty Pinion",
 		--head="Amalric Coif", ear2="Malignance Earring",  ear2="Etiolation Earring",
-		 head="Merlinic Hood", neck="Voltsurge Torque",ear1="Enchntr. Earring +1",
+		 head="Merlinic Hood", neck="Voltsurge Torque", ear1="Enchntr. Earring +1", ear2="Loquac. Earring", 
 		--body="Zendik Robe", hands="Acad. Bracers +2", ring1="Kishar Ring",
-		body="Merlinic Jubbah", hands="Psycloth Manillas", ring2="Prolix Ring",
-		-- Psycloth Lappas feet="Peda. Loafers +1"
-		back=gear.FC_jse_back, waist="Witful Belt", legs="Give Trousers", feet="Skaoi Boots"}
+		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring2="Prolix Ring",
+		-- Psycloth Lappas
+		back=gear.FC_jse_back, waist="Witful Belt", legs="Give Trousers", feet="Peda Loafers"}
 		
     sets.midcast.Cure = {main="Vadose Rod", sub="Sors Shield", ammo="Incanter Stone",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
@@ -115,14 +131,12 @@ function init_gear_sets()
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Merlinic Hood", rear="Beatific Earring", 
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		--waist=gear.ElementalObi,
 		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Give Trousers", feet="Skaoi Boots"}
 		
     sets.midcast.LightDayCure = {main="Iridal Staff", sub="Achaq Grip", ammo="Incanter Stone",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Merlinic Hood", rear="Beatific Earring", 
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		--waist=gear.ElementalObi,
 		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Give Trousers", feet="Skaoi Boots"}	
 
     sets.midcast.Curaga = sets.midcast.Cure
@@ -131,10 +145,10 @@ function init_gear_sets()
 	sets.Cure_Received = {neck="Phalaina Locket",ring2="Asklepian Ring",}--waist="Gishdubar Sash" ring1="Kunaji Ring",
 	sets.Self_Refresh = {}-- back="Grapevine Cape"waist="Gishdubar Sash",feet="Inspirited Boots"
 	
-	sets.midcast.Cursna = {ear1="Enchntr. Earring +1",
+	sets.midcast.Cursna = {ear1="Enchntr. Earring +1", ear2="Loquac. Earring",
 		-- main="Oranyan",ammo="Hasty Pinion",
 		--sub="Clemency Grip",
-		--head="Amalric Coif +1",neck="Debilis Medallion",ear2="Loquacious Earring",
+		--head="Amalric Coif +1",neck="Debilis Medallion",
 		--body="Zendik Robe", hands="Hieros Mittens",ring1="Haoma's Ring",ring2="Menelaus's Ring",
 		--legs="Psycloth Lappas",feet="Vanya Clogs"
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Gyve Trousers"}
@@ -143,11 +157,11 @@ function init_gear_sets()
 	-- 500 Skill
 	sets.midcast['Enhancing Magic'] = {main="Boonwell Staff", sub="Fulcio Grip", ammo="Clarus Stone",
 		-- main=gear.gada_enhancing_club, sub="Ammurapi Shield", ammo="Savant's Treatise",
-		-- head=gear.telchine_head_Duration, neck="Incantor's Torque", lear="Andoaa Earring", 
-		head="Befouled Crown",
+		--neck="Incantor's Torque", lear="Andoaa Earring", 
+		head=gear.telchine_head_Duration,
 		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
-		-- back="Fi Follet Cape +1", feet=gear.telchine_feet_Duration
-		back=gear.FC_jse_back, waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet="Skaoi Boots"}
+		-- back="Fi Follet Cape +1", 
+		back=gear.FC_jse_back, waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
 
     sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {back=gear.FC_jse_back})
@@ -160,7 +174,7 @@ function init_gear_sets()
 	
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})--legs="Shedir Seraweels"
 
-    sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {feet="Peda. Loafers +1"})
+    sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {feet="Peda. Loafers"})
 
     sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
     sets.midcast.Protectra = sets.midcast.Protect
@@ -358,8 +372,8 @@ function init_gear_sets()
 
      -- Resting sets
     sets.resting = {main="Boonwell Staff", --  sub="Kaja Grip", ammo="Homiliary", sub="Oneiros Grip",
-		--neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-		head="Befouled Crown",
+		--neck="Loricate Torque +1", , ear2="Etiolation Earring",
+		head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, Stikini Ring +1
 		body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring",ring2="Stikini Ring",
 		back="Felicitas Cape +1", waist="Austerity Belt",legs="Assid. Pants +1",feet="Jhakri Pigaches"}
@@ -367,24 +381,24 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {main="Mafic Cudgel", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
+        head="Befouled Crown",  ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
-        body="Shmash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
+        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 
     sets.idle.PDT = {main="Mafic Cudgel", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+		-- sub="Genmei Shield", neck="Loricate Torque +1", ear2="Etiolation Earring",
+        head="Befouled Crown",   ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 		
 	sets.idle.MEVA = {main="Mafic Cudgel", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
+        head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
@@ -393,8 +407,8 @@ function init_gear_sets()
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {})--feet="Hippo. Socks +1"
 
     sets.idle.Weak = {main="Mafic Cudgel", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+		-- sub="Genmei Shield", neck="Loricate Torque +1", ear2="Etiolation Earring",
+        head="Befouled Crown",  ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
@@ -404,24 +418,24 @@ function init_gear_sets()
 
     -- Defense sets
     sets.defense.PDT = {main="Mafic Cudgel", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
+        head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 
     sets.defense.MDT = {main="Mafic Cudgel", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
+        head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 		
     sets.defense.MEVA = {main="Mafic Cudgel", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
+        head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
@@ -442,8 +456,8 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {main="Maxentius",
 		-- ammo="Homiliary", sub="Genmei Shield",ammo="Hasty Pinion", 
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
+        head="Befouled Crown",  ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
@@ -452,7 +466,7 @@ function init_gear_sets()
 	sets.engaged.DW = {main="Maxentius",
 		-- ammo="Homiliary", sub="Genmei Shield",ammo="Hasty Pinion", 
 		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+        head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
@@ -461,7 +475,7 @@ function init_gear_sets()
 	sets.engaged.PDT = {main="Maxentius",
 		-- ammo="Homiliary", sub="Genmei Shield",ammo="Hasty Pinion", 
 		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+        head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
@@ -470,7 +484,7 @@ function init_gear_sets()
 	sets.engaged.PDT.DW = {main="Maxentius",
 		-- ammo="Homiliary", sub="Genmei Shield",ammo="Hasty Pinion", 
 		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", 
+        head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
@@ -483,8 +497,8 @@ function init_gear_sets()
     sets.buff['Immanence'] = {hands="Svnt. Bracers +1"}
     sets.buff['Penury'] = {legs="Savant Pants +1"}
     sets.buff['Parsimony'] = {legs="Savant Pants +1"}
-    sets.buff['Celerity'] = {feet="Peda. Loafers +1"}
-    sets.buff['Alacrity'] = {feet="Peda. Loafers +1"}
+    sets.buff['Celerity'] = {feet="Peda. Loafers"}
+    sets.buff['Alacrity'] = {feet="Peda. Loafers"}
     sets.buff['Klimaform'] = {feet="Savant Loafers +1"}
 	
 	sets.HPDown = {

@@ -1,0 +1,6 @@
+send_command('input /echo BRD Binds')
+send_command('bind home send @brd input /ma "Horde\'s Lullaby" <tid>"')
+send_command('bind !home send @brd input /ma "Nightingale" <me>"')
+send_command('bind ^home send @brd input /ma "Troubadour" <me>"')
+send_command('bind @home send @brd input /ma "Marcato" <me>"')
+send_command('bind ~home send @brd input /ma "Pianissimo" <p1>"')

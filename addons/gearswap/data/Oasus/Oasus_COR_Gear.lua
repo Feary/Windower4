@@ -69,7 +69,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs	
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}-- hands="Lanun Gants +3",
-    sets.precast.JA['Snake Eye'] = {legs="Comm. Trews"}
+    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
@@ -78,24 +78,24 @@ function init_gear_sets()
 		-- neck="Regal Necklace", lear="Etiolation Earring", rear="Odndowa Earring",
 		head="Lanun Tricorne",  
 		-- hands="Chasseur's Gants +1",
-		body="Meg. Cuirie", hands="Meghanada Gloves", lring="Barataria Ring", rring="Defending Ring",
+		body="Meg. Cuirie", hands="Nvrch. Gloves +1", lring="Barataria Ring", rring="Defending Ring",
 		--  legs="Desultor Tassets" -dt feet
-		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses", feet="Meg. Jambeaux"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Nvrch. Tricorne +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
-    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
+    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Nvrch. Gloves +1"})
     
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
 		-- Baetyl Necklace Crematio Earring
 		head="Laksa. Tricorne +2", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Novio Earring",
 		-- Lanun Frac +3 Fenrir Ring +1
-		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1", lring="Regal Ring", rring="Dingir Ring",
+		body="Laksa. Frac +3", hands="Carmine Fin. Ga. +1", lring="Rajas Ring", rring="Dingir Ring",
 		-- Eschan Stone 
 		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Laksa. Bottes  +2"}
 	
@@ -104,7 +104,7 @@ function init_gear_sets()
 		-- neck="Combatant's Torque", lear="Dedition Earring", rear="Telos Earring",
 		head="Laksa. Tricorne +2", neck="Iskur Gorget", lear="Neritic Earring", rear="Enervating Earring",
 		-- body="Oshosi Vest +1", lring="Chirich Ring +1", rring="Chirich Ring +1",
-		body="Oshosi Vest", hands="Laksa. Gants +2", lring="Regal Ring", rring="Stikini Ring",
+		body="Oshosi Vest", hands="Laksa. Gants +2", lring="Rajas Ring", rring="Chirich Ring",
 		-- waist="Kwahu Kachina Belt", feet="Lanun Boots +2"
 		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Carmine Greaves +1"}
 	
@@ -112,7 +112,7 @@ function init_gear_sets()
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
 		-- neck="Combatant's Torque", lear="Diginitary Earring", 
 		head="Laksa. Tricorne +2", neck="Voltsurge Torque", rear="Gwati Earring",
-		body="Mummu Jacket +2", hands="Laksa. Gants +2", lring="Regal Ring", rring="Stikini Ring",
+		body="Mummu Jacket +2", hands="Laksa. Gants +2", lring="Rajas Ring", rring="Stikini Ring",
 		-- waist="Kwahu Kachina Belt",
 		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Laksa. Bottes  +2"}
 
@@ -175,7 +175,7 @@ function init_gear_sets()
     sets.precast.WS = {
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		-- rring="Epaminondas's Ring", 
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Regal Ring", rring="Epona's Ring",
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
 		back=gear.magic_wsd_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
     sets.precast.WS.Acc = {
@@ -200,7 +200,7 @@ function init_gear_sets()
 		-- rear="Ishvara Earring",
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Steelflash Earring",
 		-- rring="Epaminondas's Ring",
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Regal Ring", rring="Epona's Ring",
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
 		-- Herc legs str acc att wsd Lanun Boots +3
 		back=gear.str_wsd_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -217,7 +217,7 @@ function init_gear_sets()
 		-- head="Lanun Tricorne +3", rear="Ishvara Earring"
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Enervating Earring",
 		-- lring="Epaminondas's Ring", 
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Regal Ring", rring="Dingir Ring", 
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Dingir Ring", 
 		-- feet="Lanun Boots +3"
 		back=gear.ranger_wsd_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -225,7 +225,7 @@ function init_gear_sets()
 		-- head="Lanun Tricorne +3", rear="Ishvara Earring"
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Enervating Earring",
 		-- lring="Epaminondas's Ring",
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Regal Ring", rring="Dingir Ring", 
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Dingir Ring", 
 		-- feet="Lanun Boots +3"
 		back=gear.ranger_wsd_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -244,7 +244,7 @@ function init_gear_sets()
 		-- neck="Baetyl Pendant", Comm. Neck +2
 		head="Pixie Hairpin +1", neck="Fotia Gorget", lear="Friomisi Earring", rear="Moonshade Earring",
 		-- Lanun Frac +3  rring="Archon Ring",
-		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Regal Ring",
+		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Rajas Ring",
 		-- Herc legs agi mdmg wsd
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Laksa. Trews +3", feet="Lanun Bottes +1"}
 
@@ -252,7 +252,7 @@ function init_gear_sets()
        	-- neck="Baetyl Pendant", 
 		head="Pixie Hairpin +1", neck="Fotia Gorget", lear="Friomisi Earring", rear="Moonshade Earring",
 		-- Lanun Frac +3 rring="Archon Ring",
-		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Regal Ring",
+		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Rajas Ring",
 		-- Herc legs agi mdmg wsd
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Laksa. Trews +3", feet="Lanun Bottes +1"}
 
@@ -260,7 +260,7 @@ function init_gear_sets()
 		-- head="Herc Helm", neck="Baetyl Pendant", Comm. Neck +2
 		head="Mummu Bonnet +2", neck="Fotia Gorget", lear="Friomisi Earring",  rear="Moonshade Earring",
 		-- Lanun Frac +3 
-		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Regal Ring",
+		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Rajas Ring",
 		-- Herc legs agi mdmg wsd
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Laksa. Trews +3", feet="Lanun Bottes +1"}
 
@@ -268,7 +268,7 @@ function init_gear_sets()
 		-- neck="Baetyl Pendant", 
 		head="Pixie Hairpin +1", neck="Fotia Gorget", lear="Friomisi Earring", rear="Moonshade Earring",
 		-- Lanun Frac +3 
-		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Regal Ring",
+		body="Samnuha Coat", hands="Carmine Fin. Ga. +1", lring="Dingir Ring", rring="Rajas Ring",
 		-- Herc legs agi mdmg wsd
 		back=gear.magic_wsd_jse_back, waist="Svelt. Gouriz +1", legs="Laksa. Trews +3", feet="Lanun Bottes +1"}
 
@@ -307,7 +307,7 @@ function init_gear_sets()
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
 		-- lear="Telos Earring", 
 		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Neritic Earring",rear="Enervating Earring",
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Ilabrat Ring", rring="Regal Ring",
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Ilabrat Ring", rring="Rajas Ring",
 		-- legs="Adhemar Kecks +1", 
 		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 		
@@ -315,7 +315,7 @@ function init_gear_sets()
 		-- lear="Telos Earring", 
 		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Neritic Earring",rear="Enervating Earring",
 		-- rring="Hajduk Ring", 
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Ilabrat Ring", rring="Regal Ring",
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Ilabrat Ring", rring="Rajas Ring",
 		-- legs="Adhemar Kecks +1", 
 		back=gear.tp_ranger_jse_back, waist="Yemaya Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	

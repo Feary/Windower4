@@ -1,0 +1,18 @@
+send_command('input /echo whm Binds')
+send_command('bind numpad9 send @whm input /ma "Cure VI" <p1>"')
+send_command('bind !numpad9 send @whm input /ma "Cure VI" <p1>"')
+send_command('bind ^numpad9 send @whm input /ma "Cure VI" <p1>"')
+send_command('bind @numpad9 send @whm input /ma "Cure VI" <p1>"')
+send_command('bind ~numpad9 send @whm input /ma "Cure VI" <p1>"')
+
+send_command('bind numpad6 send @whm input /ma "Curaga IV" <p1>"')
+send_command('bind !numpad6 send @whm input /ma "Curaga IV" <p1>"')
+send_command('bind ^numpad6 send @whm input /ma "Curaga IV" <p1>"')
+send_command('bind @numpad6 send @whm input /ma "Curaga IV" <p1>"')
+send_command('bind ~numpad6 send @whm input /ma "Curaga IV" <p1>"')
+
+send_command('bind numpad3 send @whm input /ma "Curaga III" <p1>"')
+send_command('bind !numpad3 send @whm input /ma "Curaga III" <p1>"')
+send_command('bind ^numpad3 send @whm input /ma "Curaga III" <p1>"')
+send_command('bind @numpad3 send @whm input /ma "Curaga III" <p1>"')
+send_command('bind ~numpad3 send @whm input /ma "Curaga III" <p1>"')
