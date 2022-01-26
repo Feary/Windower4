@@ -48,24 +48,8 @@ function user_setup()
 	send_command('bind @\\\\ input /ma "Shellra V" <me>')
 	send_command('bind !\\\\ input /ma "Reraise III" <me>')
 	
-	-- Binds
-	send_command('bind numpad9 send @whm input /ma "Cure V" <p1>"')
-	send_command('bind !numpad9 send @whm input /ma "Cure V" <p1>"')
-	send_command('bind ^numpad9 send @whm input /ma "Cure V" <p1>"')
-	send_command('bind @numpad9 send @whm input /ma "Cure V" <p1>"')
-	send_command('bind ~numpad9 send @whm input /ma "Cure V" <p1>"')
+	send_command('send @all exec job_binds/whm_binds.txt')	
 
-	send_command('bind numpad6 send @whm input /ma "Curaga IV" <p1>"')
-	send_command('bind !numpad6 send @whm input /ma "Curaga IV" <p1>"')
-	send_command('bind ^numpad6 send @whm input /ma "Curaga IV" <p1>"')
-	send_command('bind @numpad6 send @whm input /ma "Curaga IV" <p1>"')
-	send_command('bind ~numpad6 send @whm input /ma "Curaga IV" <p1>"')
-
-	send_command('bind numpad3 send @whm input /ma "Curaga III" <p1>"')
-	send_command('bind !numpad3 send @whm input /ma "Curaga III" <p1>"')
-	send_command('bind ^numpad3 send @whm input /ma "Curaga III" <p1>"')
-	send_command('bind @numpad3 send @whm input /ma "Curaga III" <p1>"')
-	send_command('bind ~numpad3 send @whm input /ma "Curaga III" <p1>"')
 end
 	
     select_default_macro_book()

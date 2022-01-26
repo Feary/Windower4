@@ -55,6 +55,8 @@ function user_setup()
 	send_command('bind ^q gs c weapons DualRangedWeapons;gs c update')
 	send_command('bind !q gs c weapons SavageWeapons;gs c update')
 	send_command('bind @pause roller roll')
+	
+	send_command('send @all exec job_binds/sch_binds.txt')	
 
     select_default_macro_book()
 end
@@ -68,7 +70,7 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Precast sets to enhance JAs	
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}-- hands="Lanun Gants +3",
+	sets.precast.JA['Triple Shot'] = {body="Navarch's Frac +1"}-- hands="Lanun Gants +3",
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
@@ -84,10 +86,10 @@ function init_gear_sets()
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
-    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
+    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Nvrch. Culottes +1"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Navarch's Bottes +1"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Nvrch. Tricorne +1"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Navarch's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Nvrch. Gloves +1"})
     
 	-- Quick Draw
@@ -376,15 +378,15 @@ function init_gear_sets()
 	--Weapon Sets
 	-- 'Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
 	-- Fencer Last Stand Rostam
-	sets.weapons.Default = {main="Kustawi +1",sub="Nusku Shield",range="Holliday"}--range="Fomalhaut"
+	sets.weapons.Default = {main="Odium",sub="Nusku Shield",range="Nibiru Gun"}--range="Fomalhaut"
 	-- Last Stand Dual Ranged
-	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Kaja Knife",range="Holliday"}
+	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Kaja Knife",range="Nibiru Gun"}
 	-- Fencer Savage 
-	sets.weapons.SavageWeapons = {main="Naegling",sub="Nusku Shield", range="Holliday"}--range="Ataktos"
+	sets.weapons.SavageWeapons = {main="Naegling",sub="Nusku Shield", range="Nibiru Gun"}--range="Ataktos"
 	-- DW Savage
-	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}--range="Ataktos"
+	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Nibiru Gun"}--range="Ataktos"
 	-- Leaden/Wildfire  Rostam Path A
-	sets.weapons.LeadenWeapons = {main="Naegling",sub="Kaja Knife",range="Holliday"}--range="Fomalhaut"
+	sets.weapons.LeadenWeapons = {main="Naegling",sub="Kaja Knife",range="Nibiru Gun"}--range="Fomalhaut"
 	-- Rolling
 	sets.weapons.RollMeleeWeapons = {main="Naegling",sub="Blurred Knife +1",range="Compensator"}
 	sets.weapons.RollRangedWeapons = {main="Kustawi +1",sub="Nusku Shield", range="Compensator"}

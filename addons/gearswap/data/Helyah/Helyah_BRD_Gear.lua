@@ -36,6 +36,8 @@ function user_setup()
 	send_command('alias p1 input /pcmd leave;wait 1;input /tell Azzriel invite;')
 	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 		
+	send_command('send @all exec job_binds/brd_binds.txt')	
+		
 	-- Songs Scrits 
 	-- nt = Nitro
 	-- H = March  
@@ -44,12 +46,6 @@ function user_setup()
 	-- M = Madrigal
 	-- P = Prelude
 	-- D = Minne
-	
-	send_command('bind home send @brd input /ma "Horde\'s Lullaby" <tid>"')
-	send_command('bind !home send @brd input /ma "Nightingale" <me>"')
-	send_command('bind ^home send @brd input /ma "Troubadour" <me>"')
-	send_command('bind @home send @brd input /ma "Marcato" <me>"')
-	send_command('bind ~home send @brd input /ma "Pianissimo" <p1>"')
 	
 	-- dummy songs
 	send_command('alias dum exec songs/dummy.txt')
@@ -71,9 +67,7 @@ function user_setup()
 	send_command('alias HHBB exec songs/HHBB')
 	send_command('alias HHMA exec songs/HHMA')
 	send_command('alias HHAA exec songs/HHAA')	
-	
-	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
-	
+		
 	select_default_macro_book()
 end
 

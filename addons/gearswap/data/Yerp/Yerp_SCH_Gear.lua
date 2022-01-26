@@ -40,23 +40,7 @@ function user_setup()
 	send_command('bind !\\\\ input /ma "Reraise III" <me>')
 	send_command('alias Myrkr input /ws "Myrkr" <me>')
 	   
-	send_command('bind numpad9 send @sch input /ma "Cure IV" Olymoly"')
-	send_command('bind !numpad9 send @sch input /ma "Cure IV" <p1>"')
-	send_command('bind ^numpad9 send @sch input /ma "Cure IV" <p1>"')
-	send_command('bind @numpad9 send @sch input /ma "Cure IV" <p1>"')
-	send_command('bind ~numpad9 send @sch input /ma "Cure IV" <p1>"')
-
-	send_command('bind numpad6 send @sch input /ma "Cure IV" Olymoly"')
-	send_command('bind !numpad6 send @sch Accession;wait 2;Cure IV Olymoly"')
-	send_command('bind ^numpad6 send @sch input /ja "Penury" <p0>;wait 2;send @sch input /ma "Cure IV" Olymoly"')
-	send_command('bind @numpad6 send @sch input /ma "Rapture" <p0>;wait 2;send @sch input /ma "Cure IV" Olymoly"')
-	send_command('bind ~numpad6 send @sch input /ma "Celerity" <p0>;wait 2;send @sch input /ma "Cure IV" Olymoly"')
-
-	send_command('bind numpad3 send @sch input /ma "Cure III" <p1>"')
-	send_command('bind !numpad3 send @sch input /ma "Accession" <p0>;wait 2;send @sch input /ma "Cure III" Olymoly"')
-	send_command('bind ^numpad3 send @sch input /ma "Penury" <p0>;wait 2;send @sch input /ma "Cure III" Olymoly"')
-	send_command('bind @numpad3 send @sch input /ma "Rapture" <p0>;wait 2;send @sch input /ma "Cure III" Olymoly"')
-	send_command('bind ~numpad3 send @sch input /ma "Celerity" <p0>;wait 2;send @sch input /ma "Cure III" Olymoly"')   
+	windower.send_command('send @all exec job_binds/sch_binds.txt')	
 	
 	select_default_macro_book()
 end

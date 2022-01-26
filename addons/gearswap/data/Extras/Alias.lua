@@ -32,6 +32,8 @@ send_command('alias logout input /logout')
 send_command('alias sendpost input /sendpost')
 send_command('alias deliverybox input /deliverybox')
 send_command('alias hpa hp a')
+send_command('alias hpp hp')
+send_command('alias hppa hp a')
 
 -- Gearing from Slips
 send_command('alias getslip exec '..player.name..'/get_slips.txt')
@@ -82,6 +84,9 @@ send_command('alias idlerefresh gs c set IdleMode refresh')
 send_command('alias kite gs c toggle Kiting')
 send_command('alias bolt send @cor boltersroll;wait 1;send @dnc chocobo jig ii;wait 1;send @brd Chocobo Mazurka')
 
+-- invite
+send_command('alias invall input /pcmd add Olymoly;wait 1;input /pcmd add oasus;wait 2;input /pcmd add Dasmir;wait 3;input /pcmd add Helyah;wait 4;input /pcmd add Yerp')
+send_command('alias inviteall input /pcmd add Olymoly;wait 1;input /pcmd add oasus;wait 2;input /pcmd add Dasmir;wait 3;input /pcmd add Helyah;wait 4;input /pcmd add Yerp')
 
 -- Send all Target
 -- everyone do action
@@ -106,6 +111,10 @@ send_command('alias puller gs c toggle Kiting;wait 1;gs c ')
 --send_command('alias ageo exec aniyah/geo.txt')
 --send_command('alias tank input /ja "Pianissimo" <me>;wait 2;input /ma "Foe Sirvante" <p1>')
 
+-- Corsair
+send_command('alias coron send @cor roller on')
+send_command('alias coroff send @cor roller off')
+
 -- Embrava
 send_command('alias emb input /ja "Light Arts" <me>;wait 1.5;input /ja "Tabula Rasa" <me>;wait 2;input /ja "Perpetuance" <me>;wait 2;input /ja "Accession" <me>;wait 3;input /ma "Embrava" <stpc>;wait 4;input /ja "Accession" <me>;wait 3;input /ma "Regen V" <stpc>')
 -- Kaustra
@@ -114,7 +123,7 @@ send_command('alias kau gs c set elementalmode earth;wait 1;input /ja "Tabula Ra
 send_command('alias pro input /ma "Accession" <me>;wait 1;input /ma "Shell V" <me>;wait 5;input /ma "Accession" <me>;wait 1;input /ma "Protect V" <me>;')
 
 -- Base Buffs
-send_command('alias allbuffs send @all exec buffs/'..player.main_job..'_basebuffs.txt')
+send_command('alias allbuffs send @cor exec buffs/cor_basebuffs.txt;wait 1;send @brd exec buffs/brd_basebuffs;wait 1;send @whm exec buffs/whm_basebuffs;wait 1;send @sch exec buffs/sch/_basebuffs')
 send_command('alias idlebuffs send @all exec buffs/'..player.main_job..'_idlebuffs.txt')
 
 send_command('alias aoecorbuffs send @cor roller roll1 exp;wait 1;send @cor roller roll2 blm;wait 1;send @cor roller on')
