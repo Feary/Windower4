@@ -22,6 +22,12 @@
             <y>50</y>
         </pos>
     </casanoova>
+    <dasmir>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </dasmir>
     <dela>
         <pos>
             <x>15</x>
@@ -52,6 +58,12 @@
             <y>50</y>
         </pos>
     </suede>
+    <worldkiller>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </worldkiller>
     <yerp>
         <pos>
             <x>15</x>

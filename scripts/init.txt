@@ -44,8 +44,8 @@ lua load quicktrade
 lua load fuckoff
 lua load superwarp 
 //lua load fastfollow
-ffo pauseon any
-ffo pausedelay 0
+//ffo pauseon any
+//ffo pausedelay 0
 lua load porterpacker
 //lua load AutoMB
 lua load UnityNPC
@@ -75,9 +75,44 @@ echo DrawDistance Lv 10: Alt-F10
 echo DrawDistance Lv 1: Ctrl-F10
 echo Paste Clipboard = Ctrl-V
 
+//Follow
+bind pageup fol
+bind pagedown ufol
+bind !pageup bolt
+	
+bind numpad+ sat allattack
+bind ^numpad+ send @all gs c autows on
+bind @numpad+ sat allattack
+bind !numpad+ sat allattack
+bind ^@!numpad+ sat allattack
+
+bind numpad- off
+//ctrl
+bind ^numpad- send @all gs c autows on
+//windows
+bind @numpad- send @brd gs c autows set savage blade;send @cor gs c autows set savage blade;send Olymoly gs c autows set savage blade;
+//alt
+bind !numpad- send @brd gs c autows set savage blade;send @cor gs c autows set savage blade;send Olymoly gs c autows set savage blade;
+bind ~numpad- send @brd gs c autows set savage blade;send @cor gs c autows set savage blade;send Olymoly gs c autows set savage blade;
+bind @^!numpad- send @brd gs c autows set aeolian edge;send @cor gs c autows set aeolian edge;send Olymoly gs c autows set savage blade;
+
+//brd
+exec job_binds/brd_binds.txt
+
+//geo
+exec job_binds/geo_binds.txt
+
+//whm
+//exec job_binds/whm_binds.txt
+
+//sch
+exec job_binds/sch_binds.txt
+
+//cor
+exec job_binds/cor_binds.txt
+
 //Sets ConsoleBG Background Position
 consolebg position 15 50
-
 
 // *** ALLIANCE TARGET KEYS ***
 // This lets you push Alt+F1-6 and Ctrl+F1-6 to target Alliance members.

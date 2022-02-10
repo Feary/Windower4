@@ -58,6 +58,10 @@
     <addon>NoCampaignMusic</addon>
     <addon>equipviewer</addon>
     <addon>Treasury</addon>
+    <addon>NyzulHelper</addon>
+    <addon>RAWR</addon>
+    <addon>Stubborn</addon>
+    <addon>SubTarget</addon>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>
     <plugin>Timers</plugin>
@@ -69,6 +73,8 @@
     <plugin>SSOrganizer</plugin>
     <plugin>ChatMon</plugin>
     <plugin>Config</plugin>
+    <plugin>Binder</plugin>
+    <plugin>WinControl</plugin>
   </autoload>
   <profile name="">
     <consolekey>Insert</consolekey>

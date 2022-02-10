@@ -1,0 +1,19 @@
+//End Key 
+bind %end send @geo
+
+//ALT
+bind %!end send @geo stun <tid>
+
+//ctrl
+bind %^end send @geo dispel <tid>;wait .5;send @brd Magic Finale <tid>
+
+//windows
+bind %@end
+
+//Shift
+bind %~end send @geo sleepga <tid>
+
+//crtrlaltwin
+bind %!^@end send @geo 
+
+

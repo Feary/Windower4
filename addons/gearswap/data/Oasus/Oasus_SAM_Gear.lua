@@ -47,14 +47,14 @@ function init_gear_sets()
 		-- ear1="Digni. Earring", Telos Earring ear2="Moonshade Earring",
 		head="Flam. Zucchetto +2", neck="Combatant's Torque", 
 		-- hands="Wakido Kote +3", lring="Regal Ring", rring="Niqmaddu Ring",
-		body="Flamma Korazin +1", hands="Flam. Manopolas +1", ring1="Flamma Ring". ring2="Chirich Ring", 
+		body="Flamma Korazin +1", hands="Flam. Manopolas +1", ring1="Flamma Ring", ring2="Chirich Ring", 
 		back=gear.dbl_jse_back, waist="Ioskeha Belt",legs="Flamma Dirs +1", feet="Flam. Gambieras +2"}
     -- Macc
 	sets.precast.JA['Violent Flourish'] = {ammo="Pemphredo Tathlum",
 		-- ear1="Digni. Earring", ,neck="Sanctity Necklace",ear2="Moonshade Earring",
-        head="Flam. Zucchetto +2", neck="Combantant
+        head="Flam. Zucchetto +2", neck="Combantant's Torque", 
         -- ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		body="Flamma Korazin +1", hands="Flam. Manopolas +1", ring1="Flamma Ring". ring2="Chirich Ring", 
+		body="Flamma Korazin +1", hands="Flam. Manopolas +1", ring1="Flamma Ring", ring2="Chirich Ring", 
         back=gear.dbl_jse_back, waist="Ioskeha Belt", legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
 
     -- Waltz set (chr and vit)

@@ -21,4 +21,6 @@ data.equipment.xprings = L{"Echad Ring","Caliber Ring","Emperor Band","Empress B
 
 include('g15.lua')
 include('Extras/Alias.lua')
-include('Extras/Binds.lua')
+--include('Extras/Binds.lua')
+
+send_command('exec init.txt')

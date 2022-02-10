@@ -103,6 +103,7 @@ send_command('alias allatt sat allattack')
 send_command('alias ass sat alltarget;wait 1;sat allcommand assault')
 
 send_command('alias off send @all /attackoff')
+
 send_command('alias ta input /targetnpc')
 send_command('alias at input /targetnpc; wait 1; input /attack <t>')
 

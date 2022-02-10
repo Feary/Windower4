@@ -1,5 +1,5 @@
-send_command("bind %home send @brd hordelullaby2 <tid>")
-send_command("bind %!home send @brd nightingale")
-send_command("bind %^home send @brd troubadour")
-send_command("bind %@home send @brd marcato")
-send_command("bind %~home send @brd pianissimo")
+bind %home send @brd hordelullaby2 <tid>
+bind %!home send @brd nightingale;wait .5;troubadour
+bind %^home send @brd pianissimo
+bind %@home send @brd marcato
+bind %~home send @geo sleepga <tid>

@@ -209,7 +209,147 @@
 		end
 	end
 	
-	if player.name == "Firetoplay" then
+	if player.name == "Oasus" then
+		-- WAR
+		if player.main_job == "WAR" then
+			windower.send_command('exec Firetoplay/war/g15/m1/default.txt;exec Firetoplay/war/g15/m2/default.txt;exec Firetoplay/war/g15/m3/default.txt;exec Firetoplay/war/g13/m1/default.txt;exec Firetoplay/war/g13/m2/default.txt;exec Firetoplay/war/g13/m3/default.txt')
+		-- MNK
+		elseif player.main_job == "MNK" then
+			windower.send_command('exec Firetoplay/mnk/g15/m1/default.txt;exec Firetoplay/mnk/g15/m2/default.txt;exec Firetoplay/mnk/g15/m3/default.txt;exec Firetoplay/mnk/g13/m1/default.txt;exec Firetoplay/mnk/g13/m2/default.txt;exec Firetoplay/mnk/g13/m3/default.txt')
+		-- WHM
+		elseif player.main_job == "WHM" then
+			windower.send_command('exec Firetoplay/whm/g15/m1/default.txt;exec Firetoplay/whm/g15/m2/default.txt;exec Firetoplay/whm/g15/m3/default.txt;exec Firetoplay/whm/g13/m1/default.txt;exec Firetoplay/whm/g13/m2/default.txt;exec Firetoplay/whm/g13/m3/default.txt')
+		-- BLM
+		elseif player.main_job == "BLM" then
+			windower.send_command('exec Firetoplay/blm/g15/m1/default.txt;exec Firetoplay/blm/g15/m2/default.txt;exec Firetoplay/blm/g15/m3/default.txt;exec Firetoplay/blm/g13/m1/default.txt;exec Firetoplay/blm/g13/m2/default.txt;exec Firetoplay/blm/g13/m3/default.txt')
+		-- RDM
+		elseif player.main_job == "RDM" then
+			windower.send_command('exec Firetoplay/rdm/g15/m1/default.txt;exec Firetoplay/rdm/g15/m2/default.txt;exec Firetoplay/rdm/g15/m3/default.txt;exec Firetoplay/rdm/g13/m1/default.txt;exec Firetoplay/rdm/g13/m2/default.txt;exec Firetoplay/rdm/g13/m3/default.txt')
+		-- THF
+		elseif player.main_job == "THF" then
+			windower.send_command('exec Firetoplay/thf/g15/m1/default.txt;exec Firetoplay/thf/g15/m2/default.txt;exec Firetoplay/thf/g15/m3/default.txt;exec Firetoplay/thf/g13/m1/default.txt;exec Firetoplay/thf/g13/m2/default.txt;exec Firetoplay/thf/g13/m3/default.txt')
+		-- PLD
+		elseif player.main_job == "PLD" then
+			windower.send_command('exec Firetoplay/pld/g15/m1/default.txt;exec Firetoplay/pld/g15/m2/default.txt;exec Firetoplay/pld/g15/m3/default.txt;exec Firetoplay/pld/g13/m1/default.txt;exec Firetoplay/pld/g13/m2/default.txt;exec Firetoplay/pld/g13/m3/default.txt')
+		-- DRK
+		elseif player.main_job == "DRK" then
+			windower.send_command('exec Firetoplay/drk/g15/m1/default.txt;exec Firetoplay/drk/g15/m2/default.txt;exec Firetoplay/drk/g15/m3/default.txt;exec Firetoplay/drk/g13/m1/default.txt;exec Firetoplay/drk/g13/m2/default.txt;exec Firetoplay/drk/g13/m3/default.txt')
+		-- BST
+		elseif player.main_job == "BST" then 
+			windower.send_command('exec Firetoplay/bst/g15/m1/default.txt;exec Firetoplay/bst/g15/m2/default.txt;exec Firetoplay/bst/g15/m3/default.txt;exec Firetoplay/bst/g13/m1/default.txt;exec Firetoplay/bst/g13/m2/default.txt;exec Firetoplay/bst/g13/m3/default.txt')
+		-- BRD 
+		elseif player.main_job == "BRD" then
+			windower.send_command('exec Firetoplay/brd/g15/m1/default.txt;exec Firetoplay/brd/g15/m2/default.txt;exec Firetoplay/brd/g15/m3/default.txt;exec Firetoplay/brd/g13/m1/default.txt;exec Firetoplay/brd/g13/m2/default.txt;exec Firetoplay/brd/g13/m3/default.txt')
+		-- RNG
+		elseif player.main_job == "RNG" then
+			windower.send_command('exec Firetoplay/rng/g15/m1/default.txt;exec Firetoplay/rng/g15/m2/default.txt;exec Firetoplay/rng/g15/m3/default.txt;exec Firetoplay/rng/g13/m1/default.txt;exec Firetoplay/rng/g13/m2/default.txt;exec Firetoplay/rng/g13/m3/default.txt')
+		-- SAM
+		elseif player.main_job == "SAM" then
+			windower.send_command('exec Firetoplay/sam/g15/m1/default.txt;exec Firetoplay/sam/g15/m2/default.txt;exec Firetoplay/sam/g15/m3/default.txt;exec Firetoplay/sam/g13/m1/default.txt;exec Firetoplay/sam/g13/m2/default.txt;exec Firetoplay/sam/g13/m3/default.txt')
+		-- NIN
+		elseif player.main_job == "NIN" then
+			windower.send_command('exec Firetoplay/nin/g15/m1/default.txt;exec Firetoplay/nin/g15/m2/default.txt;exec Firetoplay/nin/g15/m3/default.txt;exec Firetoplay/nin/g13/m1/default.txt;exec Firetoplay/nin/g13/m2/default.txt;exec Firetoplay/nin/g13/m3/default.txt')
+		-- DRG 
+		elseif player.main_job == "DRG" then
+			windower.send_command('exec Firetoplay/drg/g15/m1/default.txt;exec Firetoplay/drg/g15/m2/default.txt;exec Firetoplay/drg/g15/m3/default.txt;exec Firetoplay/drg/g13/m1/default.txt;exec Firetoplay/drg/g13/m2/default.txt;exec Firetoplay/drg/g13/m3/default.txt')
+		-- SMN
+		elseif player.main_job == "SMN" then
+			windower.send_command('exec Firetoplay/smn/g15/m1/default.txt;exec Firetoplay/smn/g15/m2/default.txt;exec Firetoplay/smn/g15/m3/default.txt;exec Firetoplay/smn/g13/m1/default.txt;exec Firetoplay/smn/g13/m2/default.txt;exec Firetoplay/smn/g13/m3/default.txt')
+		-- BLU
+		elseif player.main_job == "BLU" then
+			windower.send_command('exec Firetoplay/blu/g15/m1/default.txt;exec Firetoplay/blu/g15/m2/default.txt;exec Firetoplay/blu/g15/m3/default.txt;exec Firetoplay/blu/g13/m1/default.txt;exec Firetoplay/blu/g13/m2/default.txt;exec Firetoplay/blu/g13/m3/default.txt')
+		-- COR
+		elseif player.main_job == "COR" then
+			windower.send_command('exec Firetoplay/cor/g15/m1/default.txt;exec Firetoplay/cor/g15/m2/default.txt;exec Firetoplay/cor/g15/m3/default.txt;exec Firetoplay/cor/g13/m1/default.txt;exec Firetoplay/cor/g13/m2/default.txt;exec Firetoplay/cor/g13/m3/default.txt')
+		-- PUP
+		elseif player.main_job == "PUP" then
+			windower.send_command('exec Firetoplay/pup/g15/m1/default.txt;exec Firetoplay/pup/g15/m2/default.txt;exec Firetoplay/pup/g15/m3/default.txt;exec Firetoplay/pup/g13/m1/default.txt;exec Firetoplay/pup/g13/m2/default.txt;exec Firetoplay/pup/g13/m3/default.txt')
+		-- SCH
+		elseif player.main_job == "SCH" then
+			windower.send_command('exec Firetoplay/sch/g15/m1/default.txt;exec Firetoplay/sch/g15/m2/default.txt;exec Firetoplay/sch/g15/m3/default.txt;exec Firetoplay/sch/g13/m1/default.txt;exec Firetoplay/sch/g13/m2/default.txt;exec Firetoplay/sch/g13/m3/default.txt')
+		-- DNC
+		elseif player.main_job == "DNC" then
+			windower.send_command('exec Firetoplay/dnc/g15/m1/default.txt;exec Firetoplay/dnc/g15/m2/default.txt;exec Firetoplay/dnc/g15/m3/default.txt;exec Firetoplay/dnc/g13/m1/default.txt;exec Firetoplay/dnc/g13/m2/default.txt;exec Firetoplay/dnc/g13/m3/default.txt')
+		-- GEO
+		elseif player.main_job == "GEO" then
+			windower.send_command('exec Firetoplay/geo/g15/m1/default.txt;exec Firetoplay/geo/g15/m2/default.txt;exec Firetoplay/geo/g15/m3/default.txt;exec Firetoplay/geo/g13/m1/default.txt;exec Firetoplay/geo/g13/m2/default.txt;exec Firetoplay/geo/g13/m3/default.txt')
+		-- RUN
+		elseif player.main_job == "RUN" then
+			windower.send_command('exec Firetoplay/run/g15/m1/default.txt;exec Firetoplay/run/g15/m2/default.txt;exec Firetoplay/run/g15/m3/default.txt;exec Firetoplay/run/g13/m1/default.txt;exec Firetoplay/run/g13/m2/default.txt;exec Firetoplay/run/g13/m3/default.txt')
+		end
+	end
+	
+	if player.name == "Yerp" then
+		-- WAR
+		if player.main_job == "WAR" then
+			windower.send_command('exec Firetoplay/war/g15/m1/default.txt;exec Firetoplay/war/g15/m2/default.txt;exec Firetoplay/war/g15/m3/default.txt;exec Firetoplay/war/g13/m1/default.txt;exec Firetoplay/war/g13/m2/default.txt;exec Firetoplay/war/g13/m3/default.txt')
+		-- MNK
+		elseif player.main_job == "MNK" then
+			windower.send_command('exec Firetoplay/mnk/g15/m1/default.txt;exec Firetoplay/mnk/g15/m2/default.txt;exec Firetoplay/mnk/g15/m3/default.txt;exec Firetoplay/mnk/g13/m1/default.txt;exec Firetoplay/mnk/g13/m2/default.txt;exec Firetoplay/mnk/g13/m3/default.txt')
+		-- WHM
+		elseif player.main_job == "WHM" then
+			windower.send_command('exec Firetoplay/whm/g15/m1/default.txt;exec Firetoplay/whm/g15/m2/default.txt;exec Firetoplay/whm/g15/m3/default.txt;exec Firetoplay/whm/g13/m1/default.txt;exec Firetoplay/whm/g13/m2/default.txt;exec Firetoplay/whm/g13/m3/default.txt')
+		-- BLM
+		elseif player.main_job == "BLM" then
+			windower.send_command('exec Firetoplay/blm/g15/m1/default.txt;exec Firetoplay/blm/g15/m2/default.txt;exec Firetoplay/blm/g15/m3/default.txt;exec Firetoplay/blm/g13/m1/default.txt;exec Firetoplay/blm/g13/m2/default.txt;exec Firetoplay/blm/g13/m3/default.txt')
+		-- RDM
+		elseif player.main_job == "RDM" then
+			windower.send_command('exec Firetoplay/rdm/g15/m1/default.txt;exec Firetoplay/rdm/g15/m2/default.txt;exec Firetoplay/rdm/g15/m3/default.txt;exec Firetoplay/rdm/g13/m1/default.txt;exec Firetoplay/rdm/g13/m2/default.txt;exec Firetoplay/rdm/g13/m3/default.txt')
+		-- THF
+		elseif player.main_job == "THF" then
+			windower.send_command('exec Firetoplay/thf/g15/m1/default.txt;exec Firetoplay/thf/g15/m2/default.txt;exec Firetoplay/thf/g15/m3/default.txt;exec Firetoplay/thf/g13/m1/default.txt;exec Firetoplay/thf/g13/m2/default.txt;exec Firetoplay/thf/g13/m3/default.txt')
+		-- PLD
+		elseif player.main_job == "PLD" then
+			windower.send_command('exec Firetoplay/pld/g15/m1/default.txt;exec Firetoplay/pld/g15/m2/default.txt;exec Firetoplay/pld/g15/m3/default.txt;exec Firetoplay/pld/g13/m1/default.txt;exec Firetoplay/pld/g13/m2/default.txt;exec Firetoplay/pld/g13/m3/default.txt')
+		-- DRK
+		elseif player.main_job == "DRK" then
+			windower.send_command('exec Firetoplay/drk/g15/m1/default.txt;exec Firetoplay/drk/g15/m2/default.txt;exec Firetoplay/drk/g15/m3/default.txt;exec Firetoplay/drk/g13/m1/default.txt;exec Firetoplay/drk/g13/m2/default.txt;exec Firetoplay/drk/g13/m3/default.txt')
+		-- BST
+		elseif player.main_job == "BST" then 
+			windower.send_command('exec Firetoplay/bst/g15/m1/default.txt;exec Firetoplay/bst/g15/m2/default.txt;exec Firetoplay/bst/g15/m3/default.txt;exec Firetoplay/bst/g13/m1/default.txt;exec Firetoplay/bst/g13/m2/default.txt;exec Firetoplay/bst/g13/m3/default.txt')
+		-- BRD 
+		elseif player.main_job == "BRD" then
+			windower.send_command('exec Firetoplay/brd/g15/m1/default.txt;exec Firetoplay/brd/g15/m2/default.txt;exec Firetoplay/brd/g15/m3/default.txt;exec Firetoplay/brd/g13/m1/default.txt;exec Firetoplay/brd/g13/m2/default.txt;exec Firetoplay/brd/g13/m3/default.txt')
+		-- RNG
+		elseif player.main_job == "RNG" then
+			windower.send_command('exec Firetoplay/rng/g15/m1/default.txt;exec Firetoplay/rng/g15/m2/default.txt;exec Firetoplay/rng/g15/m3/default.txt;exec Firetoplay/rng/g13/m1/default.txt;exec Firetoplay/rng/g13/m2/default.txt;exec Firetoplay/rng/g13/m3/default.txt')
+		-- SAM
+		elseif player.main_job == "SAM" then
+			windower.send_command('exec Firetoplay/sam/g15/m1/default.txt;exec Firetoplay/sam/g15/m2/default.txt;exec Firetoplay/sam/g15/m3/default.txt;exec Firetoplay/sam/g13/m1/default.txt;exec Firetoplay/sam/g13/m2/default.txt;exec Firetoplay/sam/g13/m3/default.txt')
+		-- NIN
+		elseif player.main_job == "NIN" then
+			windower.send_command('exec Firetoplay/nin/g15/m1/default.txt;exec Firetoplay/nin/g15/m2/default.txt;exec Firetoplay/nin/g15/m3/default.txt;exec Firetoplay/nin/g13/m1/default.txt;exec Firetoplay/nin/g13/m2/default.txt;exec Firetoplay/nin/g13/m3/default.txt')
+		-- DRG 
+		elseif player.main_job == "DRG" then
+			windower.send_command('exec Firetoplay/drg/g15/m1/default.txt;exec Firetoplay/drg/g15/m2/default.txt;exec Firetoplay/drg/g15/m3/default.txt;exec Firetoplay/drg/g13/m1/default.txt;exec Firetoplay/drg/g13/m2/default.txt;exec Firetoplay/drg/g13/m3/default.txt')
+		-- SMN
+		elseif player.main_job == "SMN" then
+			windower.send_command('exec Firetoplay/smn/g15/m1/default.txt;exec Firetoplay/smn/g15/m2/default.txt;exec Firetoplay/smn/g15/m3/default.txt;exec Firetoplay/smn/g13/m1/default.txt;exec Firetoplay/smn/g13/m2/default.txt;exec Firetoplay/smn/g13/m3/default.txt')
+		-- BLU
+		elseif player.main_job == "BLU" then
+			windower.send_command('exec Firetoplay/blu/g15/m1/default.txt;exec Firetoplay/blu/g15/m2/default.txt;exec Firetoplay/blu/g15/m3/default.txt;exec Firetoplay/blu/g13/m1/default.txt;exec Firetoplay/blu/g13/m2/default.txt;exec Firetoplay/blu/g13/m3/default.txt')
+		-- COR
+		elseif player.main_job == "COR" then
+			windower.send_command('exec Firetoplay/cor/g15/m1/default.txt;exec Firetoplay/cor/g15/m2/default.txt;exec Firetoplay/cor/g15/m3/default.txt;exec Firetoplay/cor/g13/m1/default.txt;exec Firetoplay/cor/g13/m2/default.txt;exec Firetoplay/cor/g13/m3/default.txt')
+		-- PUP
+		elseif player.main_job == "PUP" then
+			windower.send_command('exec Firetoplay/pup/g15/m1/default.txt;exec Firetoplay/pup/g15/m2/default.txt;exec Firetoplay/pup/g15/m3/default.txt;exec Firetoplay/pup/g13/m1/default.txt;exec Firetoplay/pup/g13/m2/default.txt;exec Firetoplay/pup/g13/m3/default.txt')
+		-- SCH
+		elseif player.main_job == "SCH" then
+			windower.send_command('exec Firetoplay/sch/g15/m1/default.txt;exec Firetoplay/sch/g15/m2/default.txt;exec Firetoplay/sch/g15/m3/default.txt;exec Firetoplay/sch/g13/m1/default.txt;exec Firetoplay/sch/g13/m2/default.txt;exec Firetoplay/sch/g13/m3/default.txt')
+		-- DNC
+		elseif player.main_job == "DNC" then
+			windower.send_command('exec Firetoplay/dnc/g15/m1/default.txt;exec Firetoplay/dnc/g15/m2/default.txt;exec Firetoplay/dnc/g15/m3/default.txt;exec Firetoplay/dnc/g13/m1/default.txt;exec Firetoplay/dnc/g13/m2/default.txt;exec Firetoplay/dnc/g13/m3/default.txt')
+		-- GEO
+		elseif player.main_job == "GEO" then
+			windower.send_command('exec Firetoplay/geo/g15/m1/default.txt;exec Firetoplay/geo/g15/m2/default.txt;exec Firetoplay/geo/g15/m3/default.txt;exec Firetoplay/geo/g13/m1/default.txt;exec Firetoplay/geo/g13/m2/default.txt;exec Firetoplay/geo/g13/m3/default.txt')
+		-- RUN
+		elseif player.main_job == "RUN" then
+			windower.send_command('exec Firetoplay/run/g15/m1/default.txt;exec Firetoplay/run/g15/m2/default.txt;exec Firetoplay/run/g15/m3/default.txt;exec Firetoplay/run/g13/m1/default.txt;exec Firetoplay/run/g13/m2/default.txt;exec Firetoplay/run/g13/m3/default.txt')
+		end
+	end
+	
+	if player.name == "Helyah" then
 		-- WAR
 		if player.main_job == "WAR" then
 			windower.send_command('exec Firetoplay/war/g15/m1/default.txt;exec Firetoplay/war/g15/m2/default.txt;exec Firetoplay/war/g15/m3/default.txt;exec Firetoplay/war/g13/m1/default.txt;exec Firetoplay/war/g13/m2/default.txt;exec Firetoplay/war/g13/m3/default.txt')

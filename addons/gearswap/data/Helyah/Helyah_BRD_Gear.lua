@@ -36,8 +36,6 @@ function user_setup()
 	send_command('alias p1 input /pcmd leave;wait 1;input /tell Azzriel invite;')
 	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 		
-	send_command('send @all exec job_binds/brd_binds.txt')	
-		
 	-- Songs Scrits 
 	-- nt = Nitro
 	-- H = March  
@@ -200,14 +198,14 @@ function init_gear_sets()
 	sets.midcast.FastRecast = {main="Oranyan", sub="Clerisy Strap +1",
 		head="Nahtirah Hat", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		body="Inyanga Jubbah +2", hands="Gende. Gages +1", lring="Prolix Ring", rring="Kishar Ring",
-		back=gear.FC_jse_back, waist="Tempus Fugit", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
+		back=gear.FC_jse_back, waist="Tempus Fugit", legs="Aya. Cosciales +2", feet="Bihu Slippers"}
 
 	-- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
 	sets.midcast.Ballad = {legs="Fili Rhingrave +1"}
-	sets.midcast['Foe Lullaby'] = {legs="Inyanga Shalwar +2"} -- body="Fili Hongreline +1", hands="Brioso Cuffs +3",
-	sets.midcast['Foe Lullaby II'] = {legs="Inyanga Shalwar +2"} -- body="Fili Hongreline +1", hands="Brioso Cuffs +3",
-	sets.midcast['Horde Lullaby'] = {range="Blurred Harp +1", legs="Inyanga Shalwar +2"} --  body="Fili Hongreline +1", hands="Brioso Cuffs +3",
-	sets.midcast['Horde Lullaby II'] = {range="Blurred Harp +1",  legs="Inyanga Shalwar +2"} --body="Fili Hongreline +1", hands="Brioso Cuffs +3",
+	sets.midcast['Foe Lullaby'] = {body="Aoidos' Hngrln. +1", hands="Brioso Cuffs", legs="Inyanga Shalwar +2"} 
+	sets.midcast['Foe Lullaby II'] = {body="Aoidos' Hngrln. +1", hands="Brioso Cuffs", legs="Inyanga Shalwar +2"} 
+	sets.midcast['Horde Lullaby'] = {range="Blurred Harp +1", body="Aoidos' Hngrln. +1", hands="Brioso Cuffs", legs="Inyanga Shalwar +2"} 
+	sets.midcast['Horde Lullaby II'] = {range="Blurred Harp +1", body="Aoidos' Hngrln. +1", hands="Brioso Cuffs", legs="Inyanga Shalwar +2"}
 	sets.midcast.Madrigal = {}--head="Fili Calot +1"
 	sets.midcast.Paeon = {}-- head="Brioso Roundlet +3"
 	sets.midcast.Etude = {} -- head="Mousai Turban"
@@ -231,27 +229,32 @@ function init_gear_sets()
 		main="Legato Dagger", sub="Genmei Shield",
 		--head="Fili Calot +1", lear="Genmei Earring", rear="Etiolation Earring",
 		head="Aoidos' Calot +1", neck="Moonbow Whistle +1",
-		-- body="Fili Hongreline +1",  hands="Fili Manchettes +1", lring="Dark Ring",
+		-- body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Dark Ring",
 		body="Aoidos' Hngrln. +1", hands="Ad. Mnchtte +1", rring="Defending Ring",
-		--feet="Brioso Slippers +3"
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2"}
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers"}
 
-	sets.midcast.SongEffect.DW = {}
+	sets.midcast.SongEffect.DW = {range="Gjallarhorn",
+		main="Legato Dagger", sub="Genmei Shield",
+		--head="Fili Calot +1", lear="Genmei Earring", rear="Etiolation Earring",
+		head="Aoidos' Calot +1", neck="Moonbow Whistle +1",
+		-- body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Dark Ring",
+		body="Aoidos' Hngrln. +1", hands="Ad. Mnchtte +1", rring="Defending Ring",
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers"}
 
 	-- For song debuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {range="Gjallarhorn",		
-		main="Legato Dagger", 
-		-- head="Brioso Roundlet +3", sub="Ammurapi Shield", lear="Digni. Earring", rear="Regal Earring",
+		main="Legato Dagger", sub="Ammurapi Shield",
+		-- head="Brioso Roundlet +3", lear="Digni. Earring", rear="Regal Earring",
 		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
 	sets.midcast.ResistantSongDebuff = {range="Gjallarhorn",		
-		main="Legato Dagger", 
-		-- head="Brioso Roundlet +3", sub="Ammurapi Shield", lear="Digni. Earring", rear="Regal Earring",
+		main="Legato Dagger", sub="Ammurapi Shield",
+		-- head="Brioso Roundlet +3",  lear="Digni. Earring", rear="Regal Earring",
 		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
@@ -260,7 +263,7 @@ function init_gear_sets()
 
 	sets.midcast.SongDebuff.DW = {range="Gjallarhorn",		
 		main="Legato Dagger", 
-		-- head="Brioso Roundlet +3", sub="Ammurapi Shield", lear="Digni. Earring", rear="Regal Earring",
+		-- head="Brioso Roundlet +3", lear="Digni. Earring", rear="Regal Earring",
 		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
@@ -301,7 +304,7 @@ function init_gear_sets()
 	sets.midcast.Curaga = {main="Iridal Staff", --sub="Clerisy Strap +1",
 		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		--back="Tempered Cape +1", waist="Bishop's Sash", feet="Kaykaus Boots"
 		legs="Gyve Trousers",}
 
 	sets.midcast.LightWeatherCuraga = {main="Iridal Staff", --sub="Clerisy Strap +1",
@@ -313,13 +316,13 @@ function init_gear_sets()
 	sets.midcast.LightDayCuraga = {main="Iridal Staff", --sub="Clerisy Strap +1",
 		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		--back="Tempered Cape +1", waist="Bishop's Sash", feet="Kaykaus Boots"
 		legs="Gyve Trousers",}
 	
 	sets.midcast.Cure.DT = {main="Iridal Staff", --sub="Clerisy Strap +1",
 		--head="Vanya Hood", neck="Incanter's Torque", lear="Novia Earring", rear="Mendi. Earring",
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		--back="Tempered Cape +1", waist="Bishop's Sash",  feet="Kaykaus Boots"
+		--back="Tempered Cape +1", waist="Bishop's Sash", feet="Kaykaus Boots"
 		legs="Gyve Trousers",}
 		
 	sets.Self_Healing = {}--waist="Gishdubar Sash"
@@ -427,7 +430,7 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
-	sets.Kiting = {feet="Fili Cothurnes +1"}
+	sets.Kiting = {feet="Aoidos' Cothrn. +1"}
 
 	-- Engaged sets
 

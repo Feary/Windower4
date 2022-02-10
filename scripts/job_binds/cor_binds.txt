@@ -1,0 +1,4 @@
+bind pause send @cor roller off
+bind !pause send @cor roller on;wait 120;send @cor roller off
+bind @pause send @cor roller on;wait 120;send @cor roller off
+bind ^pause send @cor roller on;wait 120;send @cor roller off
