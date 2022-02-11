@@ -2,7 +2,7 @@
 <settings>
     <global>
         <KeyItemDisplay>true</KeyItemDisplay>
-        <Track>Invent.: ${inventory:$usedspace}/${inventory:$maxspace}(${inventory:$freespace}) - Safe: ${safe:$usedspace}/${safe:$maxspace}(${safe:$freespace}) - Safe2: ${Safe 2:$usedspace}/${Safe 2:$maxspace}(${Safe 2:$freespace}) - Stor.: ${storage:$usedspace}/${storage:$maxspace}(${storage:$freespace}) - Lock.: ${locker:$usedspace}/${locker:$maxspace}(${locker:$freespace}) - Ward.: ${wardrobe:$usedspace}/${wardrobe:$maxspace}(${wardrobe:$freespace}) - Ward. 2: ${wardrobe 2:$usedspace}/${wardrobe 2:$maxspace}(${wardrobe 2:$freespace})- Ward. 3: ${wardrobe 3:$usedspace}/${wardrobe 3:$maxspace}(${wardrobe 3:$freespace})- Ward. 4: ${wardrobe 4:$usedspace}/${wardrobe 4:$maxspace}(${wardrobe 4:$freespace}) - Satc.: ${satchel:$usedspace}/${satchel:$maxspace}(${satchel:$freespace}) - Sack: ${sack:$usedspace}/${sack:$maxspace}(${sack:$freespace}) - Case: ${case:$usedspace}/${case:$maxspace}(${case:$freespace})</Track>
+        <Track>Invent.: ${inventory:$usedspace}/${inventory:$maxspace}(${inventory:$freespace}) - Safe: ${safe:$usedspace}/${safe:$maxspace}(${safe:$freespace}) - Safe2: ${Safe 2:$usedspace}/${Safe 2:$maxspace}(${Safe 2:$freespace}) - Stor.: ${storage:$usedspace}/${storage:$maxspace}(${storage:$freespace}) - Lock.: ${locker:$usedspace}/${locker:$maxspace}(${locker:$freespace}) - Ward.: ${wardrobe:$usedspace}/${wardrobe:$maxspace}(${wardrobe:$freespace}) - Ward. 2: ${wardrobe 2:$usedspace}/${wardrobe 2:$maxspace}(${wardrobe 2:$freespace}) - Ward. 3: ${wardrobe 3:$usedspace}/${wardrobe 3:$maxspace}(${wardrobe 3:$freespace}) - Ward. 4: ${wardrobe 4:$usedspace}/${wardrobe 4:$maxspace}(${wardrobe 4:$freespace}) - Ward. 5: ${wardrobe 5:$usedspace}/${wardrobe 5:$maxspace}(${wardrobe 5:$freespace}) - Ward. 6: ${wardrobe 6:$usedspace}/${wardrobe 6:$maxspace}(${wardrobe 6:$freespace}) - Ward. 7: ${wardrobe 7:$usedspace}/${wardrobe 7:$maxspace}(${wardrobe 7:$freespace}) - Ward. 8: ${wardrobe 8:$usedspace}/${wardrobe 8:$maxspace}(${wardrobe 8:$freespace}) - Satc.: ${satchel:$usedspace}/${satchel:$maxspace}(${satchel:$freespace}) - Sack: ${sack:$usedspace}/${sack:$maxspace}(${sack:$freespace}) - Case: ${case:$usedspace}/${case:$maxspace}(${case:$freespace})</Track>
         <Tracker>
             <bg>
                 <alpha>255</alpha>
@@ -20,7 +20,7 @@
             </flags>
             <padding>0</padding>
             <pos>
-                <x>2</x>
+                <x>1</x>
                 <y>1063</y>
             </pos>
             <text>
@@ -43,4 +43,13 @@
             </text>
         </Tracker>
     </global>
+    <helyah>
+        <Track>Invent.: ${inventory:$usedspace}/${inventory:$maxspace}(${inventory:$freespace}) - Safe: ${safe:$usedspace}/${safe:$maxspace}(${safe:$freespace}) - Safe2: ${Safe 2:$usedspace}/${Safe 2:$maxspace}(${Safe 2:$freespace}) - Stor.: ${storage:$usedspace}/${storage:$maxspace}(${storage:$freespace}) - Lock.: ${locker:$usedspace}/${locker:$maxspace}(${locker:$freespace}) - Ward.: ${wardrobe:$usedspace}/${wardrobe:$maxspace}(${wardrobe:$freespace}) - Ward. 2: ${wardrobe 2:$usedspace}/${wardrobe 2:$maxspace}(${wardrobe 2:$freespace}) - Ward. 3: ${wardrobe 3:$usedspace}/${wardrobe 3:$maxspace}(${wardrobe 3:$freespace}) - Ward. 4: ${wardrobe 4:$usedspace}/${wardrobe 4:$maxspace}(${wardrobe 4:$freespace}) - Ward. 5: ${wardrobe 5:$usedspace}/${wardrobe 5:$maxspace}(${wardrobe 5:$freespace})- Satc.: ${satchel:$usedspace}/${satchel:$maxspace}(${satchel:$freespace}) - Sack: ${sack:$usedspace}/${sack:$maxspace}(${sack:$freespace}) - Case: ${case:$usedspace}/${case:$maxspace}(${case:$freespace})</Track>
+    </helyah>
+    <oasus>
+        <Track>Invent.: ${inventory:$usedspace}/${inventory:$maxspace}(${inventory:$freespace}) - Safe: ${safe:$usedspace}/${safe:$maxspace}(${safe:$freespace}) - Safe2: ${Safe 2:$usedspace}/${Safe 2:$maxspace}(${Safe 2:$freespace}) - Stor.: ${storage:$usedspace}/${storage:$maxspace}(${storage:$freespace}) - Lock.: ${locker:$usedspace}/${locker:$maxspace}(${locker:$freespace}) - Ward.: ${wardrobe:$usedspace}/${wardrobe:$maxspace}(${wardrobe:$freespace}) - Ward. 2: ${wardrobe 2:$usedspace}/${wardrobe 2:$maxspace}(${wardrobe 2:$freespace}) - Ward. 3: ${wardrobe 3:$usedspace}/${wardrobe 3:$maxspace}(${wardrobe 3:$freespace}) - Ward. 4: ${wardrobe 4:$usedspace}/${wardrobe 4:$maxspace}(${wardrobe 4:$freespace}) - Ward. 5: ${wardrobe 5:$usedspace}/${wardrobe 5:$maxspace}(${wardrobe 5:$freespace})- Satc.: ${satchel:$usedspace}/${satchel:$maxspace}(${satchel:$freespace}) - Sack: ${sack:$usedspace}/${sack:$maxspace}(${sack:$freespace}) - Case: ${case:$usedspace}/${case:$maxspace}(${case:$freespace})</Track>
+    </oasus>
+    <yerp>
+        <Track>Invent.: ${inventory:$usedspace}/${inventory:$maxspace}(${inventory:$freespace}) - Safe: ${safe:$usedspace}/${safe:$maxspace}(${safe:$freespace}) - Safe2: ${Safe 2:$usedspace}/${Safe 2:$maxspace}(${Safe 2:$freespace}) - Stor.: ${storage:$usedspace}/${storage:$maxspace}(${storage:$freespace}) - Lock.: ${locker:$usedspace}/${locker:$maxspace}(${locker:$freespace}) - Ward.: ${wardrobe:$usedspace}/${wardrobe:$maxspace}(${wardrobe:$freespace}) - Ward. 2: ${wardrobe 2:$usedspace}/${wardrobe 2:$maxspace}(${wardrobe 2:$freespace}) - Ward. 3: ${wardrobe 3:$usedspace}/${wardrobe 3:$maxspace}(${wardrobe 3:$freespace}) - Ward. 4: ${wardrobe 4:$usedspace}/${wardrobe 4:$maxspace}(${wardrobe 4:$freespace}) - Ward. 5: ${wardrobe 5:$usedspace}/${wardrobe 5:$maxspace}(${wardrobe 5:$freespace})- Satc.: ${satchel:$usedspace}/${satchel:$maxspace}(${satchel:$freespace}) - Sack: ${sack:$usedspace}/${sack:$maxspace}(${sack:$freespace}) - Case: ${case:$usedspace}/${case:$maxspace}(${case:$freespace})</Track>
+    </yerp>
 </settings>
