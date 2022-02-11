@@ -16,6 +16,12 @@
             <y>25</y>
         </pos>
     </global>
+    <almontay>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </almontay>
     <casanoova>
         <pos>
             <x>15</x>
@@ -28,6 +34,12 @@
             <y>50</y>
         </pos>
     </dasmir>
+    <dayanna>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </dayanna>
     <dela>
         <pos>
             <x>15</x>
@@ -40,12 +52,42 @@
             <y>50</y>
         </pos>
     </drecien>
+    <gonzaloo>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </gonzaloo>
     <helyah>
         <pos>
             <x>15</x>
             <y>50</y>
         </pos>
     </helyah>
+    <kavita>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </kavita>
+    <mehany>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </mehany>
+    <midnightclamm>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </midnightclamm>
+    <mostmost>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </mostmost>
     <oasus>
         <pos>
             <x>15</x>
@@ -58,6 +100,12 @@
             <y>50</y>
         </pos>
     </olymoly>
+    <ravindra>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </ravindra>
     <suede>
         <pos>
             <x>15</x>
