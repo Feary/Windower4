@@ -30,6 +30,6 @@ return {
     "Ark Tabar",
 	"Naegling",	
 	"Shining One",
-    "Kaja Axe",
+    "Dolichenus",
 	"Kaja Sword",
 }

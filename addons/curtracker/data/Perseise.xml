@@ -23,4 +23,10 @@
             <red>255</red>
         </value_color>
     </global>
+    <perseise>
+        <pos>
+            <x>1392</x>
+            <y>66</y>
+        </pos>
+    </perseise>
 </settings>

@@ -3,7 +3,7 @@
     <version>4.3.7757.25903</version>
   </launcher>
   <hook>
-    <version>4.3.6.9</version>
+    <version>4.3.6.10</version>
   </hook>
   <plugins>
     <plugin>
@@ -64,7 +64,7 @@
     </plugin>
     <plugin>
       <name>FFXIDB</name>
-      <version>0.9.2.13</version>
+      <version>1.0.0.0</version>
       <description>
         Displays an in-game minimap.
       </description>

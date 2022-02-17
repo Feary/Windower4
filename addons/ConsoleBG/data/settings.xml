@@ -16,6 +16,12 @@
             <y>25</y>
         </pos>
     </global>
+    <akilee>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </akilee>
     <almontay>
         <pos>
             <x>15</x>
@@ -46,12 +52,24 @@
             <y>50</y>
         </pos>
     </dela>
+    <deliah>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </deliah>
     <drecien>
         <pos>
             <x>15</x>
             <y>50</y>
         </pos>
     </drecien>
+    <fearyjunior>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </fearyjunior>
     <gonzaloo>
         <pos>
             <x>15</x>
@@ -82,6 +100,12 @@
             <y>50</y>
         </pos>
     </midnightclamm>
+    <molyoly>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </molyoly>
     <mostmost>
         <pos>
             <x>15</x>
@@ -100,6 +124,12 @@
             <y>50</y>
         </pos>
     </olymoly>
+    <perseise>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </perseise>
     <ravindra>
         <pos>
             <x>15</x>
@@ -112,6 +142,12 @@
             <y>50</y>
         </pos>
     </suede>
+    <symbio>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </symbio>
     <worldkiller>
         <pos>
             <x>15</x>
