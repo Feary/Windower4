@@ -567,7 +567,7 @@ end
 function handle_facemob(cmdParams)
 	local target
 	
-	if cmdParams[1] then
+	if cmdParams and cmdParams[1] then
 		if tonumber(cmdParams[1]) then
 			target = windower.ffxi.get_mob_by_id(tonumber(cmdParams[1]))
 		else

@@ -602,8 +602,8 @@ function set_macro_page(set,book)
             add_to_chat(123,'Error setting macro page: book is not a valid number ('..tostring(book)..').')
             return
         end
-        if book < 1 or book > 20 then
-            add_to_chat(123,'Error setting macro page: Macro book ('..tostring(book)..') must be between 1 and 20.')
+        if book < 1 or book > 40 then
+            add_to_chat(123,'Error setting macro page: Macro book ('..tostring(book)..') must be between 1 and 40.')
             return
         end
         send_command('@input /macro book '..tostring(book)..';wait .1;input /macro set '..tostring(set))
@@ -909,7 +909,7 @@ end
 -- Variables it sets: classes.Daytime, and classes.DuskToDawn.  They are set to true
 
 function item_available(item)
-	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] or player.satchel[item] then
+	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] or player.wardrobe5[item] or player.wardrobe6[item] or player.wardrobe7[item] or player.wardrobe8[item] or player.satchel[item] then
 		return true
 	else
 		return false
@@ -917,7 +917,7 @@ function item_available(item)
 end
 
 function item_owned(item)
-	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] or player.safe[item] or player.safe2[item] or player.storage[item] or player.locker[item] or player.satchel[item] or player.sack[item] or player.case[item] then
+	if player.inventory[item] or player.wardrobe[item] or player.wardrobe2[item] or player.wardrobe3[item] or player.wardrobe4[item] or player.wardrobe5[item] or player.wardrobe6[item] or player.wardrobe7[item] or player.wardrobe8[item] or player.safe[item] or player.safe2[item] or player.storage[item] or player.locker[item] or player.satchel[item] or player.sack[item] or player.case[item] then
 		return true
 	else
 		return false
@@ -1666,7 +1666,7 @@ function is_party_member(playerid)
 end
 
 function get_usable_item(name)--returns time that you can use the item again
-	for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","satchel"}) do
+	for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","wardrobe5","wardrobe6","wardrobe7","wardrobe8","satchel"}) do
         for _,v in pairs(gearswap.items[n]) do
             if type(v) == "table" and v.id ~= 0 and res.items[v.id].english:lower() == name:lower() then
                 return extdata.decode(v)
@@ -2013,8 +2013,12 @@ function ammo_left()
 	local Wardrobe2Ammo = ((player.wardrobe2[player.equipment.ammo] or {}).count or 0)
 	local Wardrobe3Ammo = ((player.wardrobe3[player.equipment.ammo] or {}).count or 0)
 	local Wardrobe4Ammo = ((player.wardrobe4[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe5Ammo = ((player.wardrobe5[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe6Ammo = ((player.wardrobe6[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe7Ammo = ((player.wardrobe7[player.equipment.ammo] or {}).count or 0)
+	local Wardrobe8Ammo = ((player.wardrobe8[player.equipment.ammo] or {}).count or 0)
 		
-	local AmmoLeft = InventoryAmmo + WardrobeAmmo + Wardrobe2Ammo + Wardrobe3Ammo + Wardrobe4Ammo 
+	local AmmoLeft = InventoryAmmo + WardrobeAmmo + Wardrobe2Ammo + Wardrobe3Ammo + Wardrobe4Ammo + Wardrobe5Ammo + Wardrobe6Ammo + Wardrobe7Ammo + Wardrobe8Ammo    
 		
 	return AmmoLeft	
 end
@@ -2165,7 +2169,7 @@ end
 function count_available_ammo(ammo_name)
 	local ammo_count = 0
 	
-    for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4",}) do
+    for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","wardrobe5","wardrobe6","wardrobe7","wardrobe8","satchel"}) do
 		if player[n][ammo_name] then
 			ammo_count = ammo_count + player[n][ammo_name].count
 		end
@@ -2177,7 +2181,7 @@ end
 function count_total_ammo(ammo_name)
 	local ammo_count = 0
 	
-    for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","satchel","sack","case"}) do
+    for _,n in pairs({"inventory","wardrobe","wardrobe2","wardrobe3","wardrobe4","wardrobe5","wardrobe6","wardrobe7","wardrobe8","satchel"}) do
 		if player[n][ammo_name] then
 			ammo_count = ammo_count + player[n][ammo_name].count
 		end
@@ -2248,10 +2252,10 @@ function check_ws_acc()
 end
 
 function is_dual_wielding()
-	if ((player.equipment.main and not (player.equipment.sub == 'empty' or player.equipment.sub:contains('Grip') or player.equipment.sub:contains('Strap') or res.items[item_name_to_id(player.equipment.sub)].shield_size))) then
-		return true
-	else
-		return false
+	if player.equipment.main and player.equipment.sub and player.equipment.sub ~= 'empty' then
+		if data.skills.one_handed_combat:contains(res.items[item_name_to_id(player.equipment.sub)].skill) then
+			return true
+		end
 	end
 end
 
@@ -2293,7 +2297,7 @@ function item_name_to_id(name)
 	if name == nil or name == 'empty' then
 		return 22299
 	else
-		return (player.inventory[name] or player.wardrobe[name] or player.wardrobe2[name] or player.wardrobe3[name] or player.wardrobe4[name] or {id=nil}).id
+		return (player.inventory[name] or player.wardrobe[name] or player.wardrobe2[name] or player.wardrobe3[name] or player.wardrobe4[name] or player.wardrobe5[name] or player.wardrobe6[name] or player.wardrobe7[name] or player.wardrobe8[name] or {id=nil}).id
 	end
 end
 
@@ -2389,7 +2393,7 @@ windower.raw_register_event('outgoing chunk',function(id,data,modified,is_inject
 			if sets.Kiting and not (player.status == 'Event' or (os.clock() < (next_cast + 1)) or pet_midaction() or (os.clock() < (petWillAct + 2))) then
 				send_command('gs c forceequip')
 			end
-			if state.RngHelper.value then
+			if state.RngHelper.value and not buffactive['Hover Shot'] then
 				send_command('gs rh clear')
 			end
 			if buffup~= '' then
