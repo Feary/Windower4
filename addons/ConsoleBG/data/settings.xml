@@ -52,12 +52,24 @@
             <y>50</y>
         </pos>
     </dela>
+    <deliah>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </deliah>
     <drecien>
         <pos>
             <x>15</x>
             <y>50</y>
         </pos>
     </drecien>
+    <fearyjunior>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </fearyjunior>
     <gonzaloo>
         <pos>
             <x>15</x>
@@ -88,6 +100,12 @@
             <y>50</y>
         </pos>
     </midnightclamm>
+    <molyoly>
+        <pos>
+            <x>15</x>
+            <y>50</y>
+        </pos>
+    </molyoly>
     <mostmost>
         <pos>
             <x>15</x>

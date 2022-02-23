@@ -340,7 +340,7 @@ function init_gear_sets()
 	
 	sets.defense.GeoLock = sets.midcast.Geomancy.Indi
 
-	sets.Kiting = {feet="Geomancy Sandals"} -- feet="Geo. Sandals +3"
+	sets.Kiting = {feet="Geo. Sandals +1"} -- feet="Geo. Sandals +3"
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}

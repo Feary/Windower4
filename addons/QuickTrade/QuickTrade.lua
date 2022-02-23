@@ -186,8 +186,8 @@ function quicktrade(arg)
 	}
 	
 	local spGobbieKeyIDs = {
-		{id = 8973, name = 'special gobbiedial key', count = 0, stacks = 0, stacksize = 99},
-		{id = 9217, name = 'Dial Key "#AB"', count = 0, stacks = 0, stacksize = 99},
+		{id = 9217, name = 'Dial Key "#Ab"', count = 0, stacks = 0, stacksize = 99},
+		{id = 8973, name = 'special gobbiedial key', count = 0, stacks = 0, stacksize = 99},		
 	}
 
 	local zincOreIDs = {
