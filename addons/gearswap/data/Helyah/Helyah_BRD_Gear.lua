@@ -231,7 +231,7 @@ function init_gear_sets()
 		head="Aoidos' Calot +1", neck="Moonbow Whistle +1",
 		-- body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Dark Ring",
 		body="Aoidos' Hngrln. +1", hands="Ad. Mnchtte +1", rring="Defending Ring",
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers"}
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	sets.midcast.SongEffect.DW = {range="Gjallarhorn",
 		main="Legato Dagger", sub="Genmei Shield",
@@ -239,7 +239,7 @@ function init_gear_sets()
 		head="Aoidos' Calot +1", neck="Moonbow Whistle +1",
 		-- body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Dark Ring",
 		body="Aoidos' Hngrln. +1", hands="Ad. Mnchtte +1", rring="Defending Ring",
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers"}
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	-- For song debuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {range="Gjallarhorn",		
@@ -249,7 +249,7 @@ function init_gear_sets()
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers"}
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
 	sets.midcast.ResistantSongDebuff = {range="Gjallarhorn",		
@@ -259,7 +259,7 @@ function init_gear_sets()
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	sets.midcast.SongDebuff.DW = {range="Gjallarhorn",		
 		main="Legato Dagger", 
@@ -268,7 +268,7 @@ function init_gear_sets()
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini Ring", rring="Stikini Ring",
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 	
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {
@@ -343,7 +343,7 @@ function init_gear_sets()
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini ring", rring="Stikini ring",
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"} 
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"} 
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Naegling",
 		--main="Oranyan", sub="Enki Strap",
@@ -352,7 +352,7 @@ function init_gear_sets()
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini ring", rring="Stikini ring",
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"} 
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"} 
 		
 	sets.midcast['Enhancing Magic'] = {main="Sangoma",
 		-- sub="Ammurapi Shield",
@@ -374,7 +374,7 @@ function init_gear_sets()
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini ring", rring="Stikini ring",
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"} 
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"} 
 	sets.midcast['Elemental Magic'].Resistant = {main="Naegling",
 		--main="Oranyan", sub="Enki Strap",
 		--head="Brioso Roundlet +3",  lear="Digni. Earring", rear="Regal Earring",
@@ -382,7 +382,7 @@ function init_gear_sets()
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini ring", rring="Stikini ring",
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
-		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"} 
+		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"} 
 		
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Fodder
