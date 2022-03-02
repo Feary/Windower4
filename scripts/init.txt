@@ -58,6 +58,7 @@ lua load curtracker
 lua load Valkyrie
 lua load petcharges
 //lua load DNC-hud
+lua load sheolhelper
 
 
 //Bind keys
