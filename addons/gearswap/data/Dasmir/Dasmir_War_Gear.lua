@@ -9,7 +9,7 @@ function user_setup()
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
 	state.Passive = M{['description'] = 'Passive Mode','None','Twilight'}
-	state.Weapons:options('Default','DualWeapons','Axe','Greatsword','Sword','DualSwords','H2H','Polearm','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcClub','ProcStaff')
+	state.Weapons:options('Default','DualWeapons','Axe','Greatsword','Sword','DualSwords','H2H','Polearm','Club','ProcKatana''ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcClub','ProcStaff')
 
 	gear.da_jse_back = {name="Cichol's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10'}}
 	gear.crit_jse_back = {name="Cichol's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10'}}
@@ -39,7 +39,7 @@ function init_gear_sets()
 		body="Souveran Cuirass",hands="Souv. Handschuhs", lring="Petrov Ring",
 		back=gear.Enmity_jse_back,waist="Goading Belt", legs="Souveran Diechlings",feet="Souveran Schuhs"}
 	sets.Knockback = {}
-	sets.passive.Reraise = {head="Twilight Helm",body="Twilight Mail"}
+	sets.passive.Reraise = {head="Twilight Helm", body="Twilight Mail"}
 	
 	-- Precast sets to enhance JAs
 	sets.precast.JA['Berserk'] = {body="Fighter's Lorica", back="Cichol's Mantle", feet="Warrior's Calligae"}
@@ -1340,24 +1340,28 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Default = {main="Aganoshe", sub="Utu Grip"} --
-	sets.weapons.DualWeapons = {main="Kaja Axe", sub="Naegling"} -- Kaja Axe
-	sets.weapons.Axe = {main="Kaja Axe", sub="Adapa Shield"}
+	sets.weapons.DualWeapons = {main="Dolichenus", sub="Naegling"} -- Kaja Axe
+	sets.weapons.Axe = {main="Dolichenus", sub="Adapa Shield"}
 	sets.weapons.Greatsword = {main="Montante", sub="Utu Grip"} 
 	sets.weapons.Sword = {main="Naegling", sub="Adapa Shield"}
-	sets.weapons.Dagger = {main="Naegling", sub="Adapa Shield"}
-	sets.weapons.DualSwords = {main="Naegling", sub="Kaja Axe"}
+	sets.weapons.Dagger = {main="Kustawi +1", sub="Adapa Shield"}
+	sets.weapons.DualSwords = {main="Naegling", sub="Kaja Sword"}
 	sets.weapons.H2H = {main="Karambit"}
 	sets.weapons.Polearm = {main="Shining One", sub="Utu Grip"}
+	sets.weapons.Club = {main="Loxotic Mace +1", sub="Adapa Shield"}
+	
 	-- Proc Weapons Sets 
-	sets.weapons.ProcDagger = {main="Kustawi +1", sub="Malevolence"}
+	sets.weapons.ProcDagger = {main="Kustawi +1", sub="Adapa Shield"}
 	sets.weapons.ProcSword = {main="Ibushi Shinai", sub="Adapa Shield"}
 	sets.weapons.ProcGreatSword = {main="Montante", sub="Utu Grip"}
 	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Utu Grip"}
-	sets.weapons.ProcPolearm = {main="Pitchfork", sub="Utu Grip"}
+	sets.weapons.ProcPolearm = {main="Sha Wujing's Lance", sub="Utu Grip"}
 	sets.weapons.ProcGreatKatana = {main="Zanmato", sub="Utu Grip"}
+	sets.weapons.ProcKatana = {main="Debahocho", sub="Adapa Shield"}
 	sets.weapons.ProcClub = {main="Rounsey Wand", sub="Adapa Shield"}
 	sets.weapons.ProcStaff = {main="Plenitas Virga", sub="Utu Grip"}
-
+	sets.weapons.ProcAxe = {main="Ark Tabar", sub="Utu Grip"}
+	sets.weapons.ProcH2H = {main="Karambit"}
 end
 	
 -- Select default macro book on initial load or subjob change.

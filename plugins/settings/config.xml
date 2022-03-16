@@ -17,36 +17,8 @@
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
     </global>
-    <Kavita>
+    <Yerp>
         <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
         <FrameRateDivisor>2</FrameRateDivisor>
-    </Kavita>
-    <Midnightclamm>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Midnightclamm>
-    <Dayanna>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Dayanna>
-    <Almontay>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Almontay>
-    <Perseise>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Perseise>
-    <Akilee>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Akilee>
-    <Molyoly>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Molyoly>
-    <Suede>
-        <!--2 for 30 FPS, 1 for 60 FPS, 0 for uncapped frame rates-->
-        <FrameRateDivisor>2</FrameRateDivisor>
-    </Suede>
+    </Yerp>
 </settings>

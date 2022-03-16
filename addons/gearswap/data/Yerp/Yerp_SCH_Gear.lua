@@ -11,12 +11,6 @@ function user_setup()
 	gear.Cure_jse_back = {	name="Lugh's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
 	gear.Macc_jse_back = {	name="Lugh's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
 	
-	gear.obi_cure_back = gear.Cure_jse_back
-	gear.obi_cure_waist = "Olympus Sash"
-
-	gear.obi_low_nuke_waist = "Cognition Belt"
-	gear.obi_high_nuke_waist = "Cognition Belt"
-	
 	-- Additional local binds 
 	-- * = ctrl
 	-- @ = windows
@@ -63,7 +57,7 @@ function init_gear_sets()
 		head="Merlinic Hood", ear1="Enchntr. Earring +1", ear2="Loquac. Earring",
         --body="Zendik Robe",
 		body="Merlinic Jubbah", hands=gear.helios_hands_FC,ring1="Prolix Ring",ring2="Defending Ring",
-        back=gear.FC_jse_back,waist="Witful Belt",legs="Gyve Trousers",feet="Peda Loafers"}
+        back=gear.FC_jse_back,waist="Witful Belt",legs="Gyve Trousers",feet="Peda. Loafers"}
 		
 	sets.precast.FC.Arts = {}--feet="Academic's Loafers +2"
 
@@ -101,7 +95,7 @@ function init_gear_sets()
 		--body="Zendik Robe", hands="Acad. Bracers +2", ring1="Kishar Ring",
 		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring2="Prolix Ring",
 		-- Psycloth Lappas
-		back=gear.FC_jse_back, waist="Witful Belt", legs="Give Trousers", feet="Peda Loafers"}
+		back=gear.FC_jse_back, waist="Witful Belt", legs="Give Trousers", feet="Peda. Loafers"}
 		
     sets.midcast.Cure = {main="Vadose Rod", sub="Sors Shield", ammo="Incanter Stone",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
@@ -475,13 +469,13 @@ function init_gear_sets()
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Ebullience'] = {head="Svnt. Bonnet +1"}
     sets.buff['Rapture'] = {head="Svnt. Bonnet +1"}
-    sets.buff['Perpetuance'] = {hands="Svnt. Bracers +1"}
-    sets.buff['Immanence'] = {hands="Svnt. Bracers +1"}
+    sets.buff['Perpetuance'] = {hands="Arbatel Bracers"}
+    sets.buff['Immanence'] = {hands="Arbatel Bracers"}
     sets.buff['Penury'] = {legs="Savant Pants +1"}
     sets.buff['Parsimony'] = {legs="Savant Pants +1"}
     sets.buff['Celerity'] = {feet="Peda. Loafers"}
     sets.buff['Alacrity'] = {feet="Peda. Loafers"}
-    sets.buff['Klimaform'] = {feet="Savant Loafers +1"}
+    sets.buff['Klimaform'] = {feet="Arbatel Loafers"}
 	
 	sets.HPDown = {
 		--ear1="Mendi. Earring", ear2="Evans Earring",

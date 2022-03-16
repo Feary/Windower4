@@ -109,4 +109,10 @@
             <y>1</y>
         </pos>
     </worldkiller>
+    <yerp>
+        <pos>
+            <x>1283</x>
+            <y>4</y>
+        </pos>
+    </yerp>
 </settings>

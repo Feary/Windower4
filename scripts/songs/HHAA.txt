@@ -1,0 +1,13 @@
+input /ja "Marcato";
+wait 1;
+input /ja "Nightingale";
+wait 2;
+input /ja "Troubadour";
+wait 3;
+input /ma "Victory March";
+wait 4;
+input /ma "Advancing March";
+wait 5;
+input /ma "Valor Minuet V";
+wait 6;
+input /ma "Valor Minuet IV";

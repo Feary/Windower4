@@ -72,7 +72,8 @@ local defaults = {
             height = 512
         },
         texture = {
-            fit = false
+            fit = false,
+            path = ''
         }
     }
 }

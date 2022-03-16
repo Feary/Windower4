@@ -1,5 +1,4 @@
 return {
-    "Ravager's Orb",
     "Ravager's Mask +2",
     "Rvg. Lorica +2",
     "Rvg. Mufflers +2",

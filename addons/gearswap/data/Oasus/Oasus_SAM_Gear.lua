@@ -420,6 +420,8 @@ function init_gear_sets()
 	sets.weapons.Polearm = {main="Eletta Lance",sub="Kaja Grip"}
 	sets.weapons.ProcWeapon = {main="Norifusa",sub="Kaja Grip"}
 	sets.weapons.Bow = {main="Norifusa",sub="Utu Grip",range="Cibitshavore",ammo="Eminent Arrow"}
+	sets.weapon.ProcKatana = {main="Sha Wujing's Lance", sub="Utu Grip"}
+	sets.weapon.ProcPolearm = {main="Sha Wujing's Lance", sub="Utu Grip"}
 	
 	-- Buff sets
 	sets.Cure_Received = {hands="Buremte Gloves",waist="Gishdubar Sash",legs="Flamma Dirs +1"}
