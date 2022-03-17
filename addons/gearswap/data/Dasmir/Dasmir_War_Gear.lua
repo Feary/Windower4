@@ -9,7 +9,7 @@ function user_setup()
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
 	state.Passive = M{['description'] = 'Passive Mode','None','Twilight'}
-	state.Weapons:options('Default','DualWeapons','Axe','Greatsword','Sword','DualSwords','H2H','Polearm','Club','ProcKatana''ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcClub','ProcStaff')
+	state.Weapons:options('Default','DualWeapons','Axe','Greatsword','Sword','DualSwords','H2H','Polearm','Club','ProcKatana','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcClub','ProcStaff')
 
 	gear.da_jse_back = {name="Cichol's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10'}}
 	gear.crit_jse_back = {name="Cichol's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10'}}
@@ -1355,7 +1355,7 @@ function init_gear_sets()
 	sets.weapons.ProcSword = {main="Ibushi Shinai", sub="Adapa Shield"}
 	sets.weapons.ProcGreatSword = {main="Montante", sub="Utu Grip"}
 	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Utu Grip"}
-	sets.weapons.ProcPolearm = {main="Sha Wujing's Lance", sub="Utu Grip"}
+	sets.weapons.ProcPolearm = {main="Pitchfork", sub="Utu Grip"}
 	sets.weapons.ProcGreatKatana = {main="Zanmato", sub="Utu Grip"}
 	sets.weapons.ProcKatana = {main="Debahocho", sub="Adapa Shield"}
 	sets.weapons.ProcClub = {main="Rounsey Wand", sub="Adapa Shield"}
