@@ -181,8 +181,13 @@
     </worldkiller>
     <yerp>
         <pos>
-            <x>1529</x>
-            <y>65</y>
+            <x>1342</x>
+            <y>122</y>
         </pos>
+        <text>
+            <fonts>
+
+            </fonts>
+        </text>
     </yerp>
 </settings>

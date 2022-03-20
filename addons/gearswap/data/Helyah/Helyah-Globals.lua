@@ -94,7 +94,7 @@ send_command('bind !t input /target <bt>') --Targets the battle target.
 send_command('bind @p gs equip sets.Sheltered') --Equip sheltered ring, for when being Pro/Shelled.
 send_command('bind !p gs equip sets.Cure_Received') --Equip Cure Potency Received set for when being cured.
 send_command('bind @m gs c mount Raptor')
---send_command('bind !@^m sa gs c mount Raptor')
+send_command('bind !@^m sa gs c mount Raptor')
 send_command('alias ambuseal input /item "Abdhaljs Seal" <me>')
 send_command('alias rads temps buy Radialens')
 send_command('alias molli temps buy Mollifier')

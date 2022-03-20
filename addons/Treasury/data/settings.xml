@@ -1,7 +1,7 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
-        <AutoDrop>true</AutoDrop>
+        <AutoDrop>false</AutoDrop>
         <AutoStack>true</AutoStack>
         <Delay>0</Delay>
         <Drop>Furia Visor,Furia Sollerets,Furia Tights,Furia Mitts,Furia Frock,Furia Wristbands,Furia Brayettes,Furia Hat,Furia Dastanas,Furia Helm,Furia Sabots,Furia Breastplate,Furia Galea,Furia Cuisses,Furia Spats,Furia Mail,Furia Mask,Furia Cuffs,Furia Vest,Furia Gants,Furia Leggings,Furia Tam,Furia Haubert,Furia Slops,Furia Gages,Furia Harness,Furia Greaves,Furia Celata,Furia Clogs,Furia Slacks,Furia Galoshes,Furia Gauntlets,Furia Breeches,Furia Boots,Furia Moufles,Furia Caubeen,Furia Talar,Furia Headgear,Furia Hose,Furia Coat,Furia Brais,Furia Gloves,Furia Socks,Furia Bracers,Furia Sabatons,Furia Jerkin,Furia Bliaut,Furia Braccae,Furia Beret,Furia Brogues,Furia Gaiters,Furia Cuirass,Furia Pigment,Furia Pants,Furia Armet,Furia Mufflers</Drop>
@@ -58,8 +58,5 @@
     <yerp>
         <Drop>Furia Visor,Furia Brogues,Honey,Hemlock,Goliath Worm,Furia Galea,Furia Spats,Furia Mail,Furia Mask,Furia Cuffs,Furia Gants,Furia Leggings,Furia Tam,Furia Gages,Furia Harness,Mermaid Body,Furia Vest,Furia Jerkin,Furia Moufles,Pixie Earring,Furia Hose,Furia Bracers,Furia Brais,Furia Breeches,Pelagos Lance,Furia Beret,Furia Gaiters,Furia Cuirass,Furia Pigment,Furia Pants,Mermaid Head,Furia Sollerets,Furia Tights,Furia Mitts,Mermaid Hands,Furia Brayettes,Furia Helm,Furia Hat,Furia Dastanas,Furia Wristbands,Furia Haubert,Furia Slops,Fairwth. Fetish,Mermaid Tail,Furia Sabots,Furia Slacks,Moko Grass,Flint Stone,Furia Breastplate,Furia Celata,Furia Frock,Vn. Bolt Quiver,Furia Mufflers,Furia Bliaut,Furia Gauntlets,Furia Coat,Furia Caubeen,Furia Greaves,Loagaeth Cuffs,Furia Socks,Furia Sabatons,Furia Boots,Furia Headgear,Furia Braccae,Goblin Doll,Furia Gloves,Furia Cuisses,Furia Talar,Furia Clogs,Furia Galoshes,Furia Armet,Goblin Mess Tin</Drop>
         <Pass>Nibiru Staff,Clr. Pantaln. +2,Clr. Pantaln. -1,Clr. Cap +2,Cleric&apos;s Pantaln.,Clr. Bliaut +2,Clr. Bliaut +1,Clr. Mitts +1,Clr. Duckbills +2,Cleric&apos;s Duckbills,Cleric&apos;s Mitts,Clr. Duckbills +1,Clr. Bliaut -1,Clr. Mitts -1,Cleric&apos;s Cap,Clr. Duckbills -1,Bone Chip,Clr. Cap +1,Clr. Mitts +2,Clr. Pantaln. +1,Cleric&apos;s Bliaut,Clr. Cap -1</Pass>
-    </yerp>
-</settings>
-r. Mitts +2,Clr. Pantaln. +1,Cleric&apos;s Bliaut,Clr. Cap -1</Pass>
     </yerp>
 </settings>
