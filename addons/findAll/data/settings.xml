@@ -43,4 +43,12 @@
             </text>
         </Tracker>
     </global>
+    <suede>
+        <Tracker>
+            <pos>
+                <x>-32</x>
+                <y>1062</y>
+            </pos>
+        </Tracker>
+    </suede>
 </settings>
