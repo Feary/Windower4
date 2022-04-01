@@ -82,18 +82,18 @@ function init_gear_sets()
 	--------------------------------------
 	--
 	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +2", feet="Hashi. Basmak +1"}
-	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk +1", feet="Luhlaza Charuqs +1"}
-	sets.buff.Convergence = {head="Luh. Keffiyeh +1"}
-	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
-	sets.buff.Enchainment = {body="Luhlaza Jubbah +1"}
-	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +1"}
+	sets.buff['Chain Affinity'] = {head="Hashishin Kavuk +1", feet="Luhlaza Charuqs"}
+	sets.buff.Convergence = {head="Luh. Keffiyeh"}
+	sets.buff.Diffusion = {feet="Luhlaza Charuqs"}
+	sets.buff.Enchainment = {body="Luhlaza Jubbah"}
+	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 
 	sets.HPDown = {}
 
 	-- Precast Sets
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Azure Lore'] = {hands="Luh. Bazubands +1"}
+	sets.precast.JA['Azure Lore'] = {hands="Luhlaza Bazubands"}
 
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {}--legs="Dashing Subligar"
@@ -110,7 +110,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	sets.precast.FC = {
 		-- ammo="Impatiens", 
-		-- neck="Orunmila's Torque", lear="Enchantr. Earring +1",
+		-- neck="Orunmila's Torque",
 		head="Amalric Coif", neck="Voltsurge Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
 		--body="Luhlaza Jubbah +1", 
 		body=gear.taeon_body_Fastcast, hands="Leyline Gloves", lring="Kishar Ring", rring="Prolix Ring",
@@ -124,20 +124,20 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
-		-- Epaminondas's Ring
-		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		-- 
+		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Luhlaza Shalwar +3 Herculean Boots WSD STR
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 	sets.precast.WS.Acc = {
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Epaminondas's Ring
-		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Luhlaza Shalwar +3 Herculean Boots WSD STR
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}	
 	sets.precast.WS.Fodder = {
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Epaminondas's Ring
-		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Luhlaza Shalwar +3 Herculean Boots WSD STR
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
@@ -181,21 +181,21 @@ function init_gear_sets()
 		-- hercu str +10 WSD +4 Mirage Stole +2 lear="Ishvara Earring",
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- 	body="Assim. Jubbah +2", Epaminondas's Ring 
-		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Luhlaza Shalwar +3 Herculean Boots WSD STR
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {--ammo="Floestone",
 		-- hercu str +10 WSD +4 Mirage Stole +2 lear="Ishvara Earring",
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Epaminondas's Ring
-		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Luhlaza Shalwar +3 Herculean Boots WSD STR
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 	sets.precast.WS['Savage Blade'].Fodder = set_combine(sets.precast.WS['Savage Blade'], {--ammo="Floestone",
 		-- hercu str +10 WSD +4 Mirage Stole +2 lear="Ishvara Earring",
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Epaminondas's Ring 
-		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Luhlaza Shalwar +3 Herculean Boots WSD STR
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 
@@ -207,7 +207,7 @@ function init_gear_sets()
 		-- hercu str +10 WSD +4 Mirage Stole +2 lear="Ishvara Earring",
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Epaminondas's Ring
-		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Luhlaza Shalwar +3 Herculean Boots WSD STR
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 
@@ -215,7 +215,7 @@ function init_gear_sets()
 		-- hercu str +10 WSD +4 Mirage Stole +2 lear="Ishvara Earring",
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Epaminondas's Ring
-		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Luhlaza Shalwar +3 Herculean Boots WSD STR
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 
@@ -223,7 +223,7 @@ function init_gear_sets()
 		-- hercu str +10 WSD +4 Mirage Stole +2 lear="Ishvara Earring",
 		head="Jhakri Coronal +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Epaminondas's Ring 
-		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Assim. Jubbah +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Luhlaza Shalwar +3 Herculean Boots WSD STR
 		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"})
 
@@ -250,7 +250,7 @@ function init_gear_sets()
 		
 	sets.precast.WS['Flash Nova'] = {
 		head="Jhakri Coronal +2", neck="Tjukurrpa Medal", lear="Brutal Earring", rear="Moonshade Earring",
-		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		back=gear.wsd_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
@@ -267,7 +267,7 @@ function init_gear_sets()
 		-- Luhlaza Keffiyeh +3 Caro Necklace Tati Earring +1 Tati Earring +1
 		head="Jhakri Coronal +2",
 		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Prosilio Belt +1 Luhlaza Charuqs +3
 		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
@@ -275,7 +275,7 @@ function init_gear_sets()
 		-- Luhlaza Keffiyeh +3 Caro Necklace Tati Earring +1 Tati Earring +1
 		head="Jhakri Coronal +2", 
 		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Prosilio Belt +1 Luhlaza Charuqs +3
 		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
@@ -283,7 +283,7 @@ function init_gear_sets()
 		-- Luhlaza Keffiyeh +3 Caro Necklace Tati Earring +1 Tati Earring +1
 		head="Jhakri Coronal +2",
 		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Prosilio Belt +1 Luhlaza Charuqs +3
 		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
@@ -291,7 +291,7 @@ function init_gear_sets()
 		-- Luhlaza Keffiyeh +3 Caro Necklace Tati Earring +1 Tati Earring +1
 		head="Jhakri Coronal +2", 
 		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
 		-- Prosilio Belt +1 Luhlaza Charuqs +3
 		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
@@ -398,15 +398,16 @@ function init_gear_sets()
 		-- Unmoving Collar +1
 		head="Carmine Mask", neck="Phalaina Locket", lear="Loquac. Earring", rear="Gifted Earring",
 		-- body="Pinga Tunic +1", lring="Kunaji Ring", 
-		body="Luhlaza Jubbah +1", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Asklepian Ring", 
-		-- back="Moonlight Cape", 	legs="Pinga Pants +1", feet="Carmine Greaves +1",
-		back=gear.ElementalCape, waist=gear.ElementalObi, legs="Gyve Trousers", feet="Medium's Sabots"}
+		body="Luhlaza Jubbah", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Asklepian Ring", 
+		-- back="Moonlight Cape", 	legs="Pinga Pants +1", 
+		back=gear.ElementalCape, waist=gear.ElementalObi, legs="Gyve Trousers", feet="Carmine Greaves +1"}
+	
 	sets.midcast['Blue Magic']['Healing Breeze'] = sets.midcast['Blue Magic']['White Wind']
 
 	sets.midcast['Blue Magic'].Healing = {
 		head="Carmine Mask", neck="Phalaina Locket", lear="Loquac. Earring", rear="Gifted Earring",
 		-- body="Vrikodara Jupon" lring="Kunaji Ring", 
-		body="Luhlaza Jubbah +1", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Luhlaza Jubbah", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		back=gear.ElementalCape, waist=gear.ElementalObi, legs="Gyve Trousers", feet="Medium's Sabots"}
 		
 	--Overwrite certain spells with these peices even if the day matches, because of resource inconsistancies.
@@ -414,16 +415,15 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
 		-- main="Iris",sub="Iris"
-		--head="Luhlaza Keffiyeh +1", neck="Incanter's Torque"
-		neck="Mavi Scarf", lear="Loquac. Earring", rear="Gifted Earring",
+		-- neck="Incanter's Torque",
+		head="Luhlaza Keffiyeh", neck="Mavi Scarf", lear="Loquac. Earring", rear="Gifted Earring",
 		-- body="Assim. Jubbah +2", hands="Rawhide Gloves"
 		lring="Stikini Ring", rring="Stikini Ring",
-		-- feet="Luhlaza Charuqs +1"
-		back="Cornflower Cape", waist="Witful Belt", legs="Mavi Tayt +1",}
+		back="Cornflower Cape", waist="Witful Belt", legs="Hashishin Tayt",feet="Luhlaza Charuqs"}
 
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
-		-- head="Luhlaza Keffiyeh +1", neck="Incanter's Torque"
-		lear="Loquac. Earring", rear="Gifted Earring",
+		-- neck="Incanter's Torque"
+		head="Luhlaza Keffiyeh", lear="Loquac. Earring", rear="Gifted Earring",
 		-- body="Assim. Jubbah +2", hands="Hashi. Bazu. +1",
 		 ring1="Kishar Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Lengo Pants",feet="Carmine Greaves +1"}
@@ -488,8 +488,8 @@ function init_gear_sets()
 	sets.midcast.Cure = {main="Nibiru Cudgel", sub="Nibiru Cudgel", 
 		--head="Carmine Mask", neck="Incanter's Torque", rear="Mendi. Earring", 
 		 neck="Phalaina Locket", lear="Regal Earring", rear="Gwati Earring", 
-		--body="Luhlaza Jubbah +1", Pinga Tunic +1
-		 hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
+		-- Pinga Tunic +1
+		body="Luhlaza Jubbah", hands=gear.telchine_hands_Cure, lring="Stikini Ring", rring="Stikini Ring",
 		back=gear.cure_jse_back, waist=gear.ElementalObi, legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
 
 	-- Sets to return to when not performing an action.
@@ -569,12 +569,12 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Default = {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.Sword =  {main="Naegling",sub="Genmei Shield"}
-	sets.weapons.Club =  {main="Kaja Rod",sub="Genmei Shield"}
+	sets.weapons.Club =  {main="Maxentius",sub="Genmei Shield"}
 	-- Dual
-	sets.weapons.DualMeleeClubs = {main="Kaja Rod", sub="Kaja Rod"}
-	sets.weapons.DualMagicWeapons = {main="Kaja Rod",sub="Naegling"} --Kaja Rod
-	sets.weapons.DualMaccWeapons = {main="Kaja Rod",sub="Kaja Rod"}
-	sets.weapons.DualHybridWeapons = {main="Vampirism",sub="Vampirism"}
+	sets.weapons.DualMeleeClubs = {main="Maxentius", sub="Kaja Rod"}
+	sets.weapons.DualMagicWeapons = {main="Maxentius",sub="Naegling"}
+	sets.weapons.DualMaccWeapons = {main="Maxentius",sub="Kaja Rod"}
+	sets.weapons.DualHybridWeapons = {main="Naegling",sub="Kaja Sword"}
 
 	-- Engaged sets
 	sets.engaged =  {main="Naegling", sub="Genmei Shield",
@@ -652,7 +652,7 @@ function init_gear_sets()
 	sets.Self_Healing = {lring=gear.DarkRing}
 	sets.Cure_Received = {lring=gear.DarkRing}
 	sets.Self_Refresh = {}
-	sets.MagicBurst = {hands="Amalric Gages", legs="Assim. Shalwar +2", ring1="Mujin Band"}
+	sets.MagicBurst = {neck="Mizu. Kubikazari", hands="Amalric Gages",  ring1="Mujin Band"} --legs="Assim. Shalwar +2",
 
 end
 

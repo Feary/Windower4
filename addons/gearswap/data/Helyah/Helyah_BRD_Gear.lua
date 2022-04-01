@@ -223,7 +223,7 @@ function init_gear_sets()
 	sets.midcast.Minne = {} -- legs="Mousai Seraweels"
 	sets.midcast.Threnody = {} -- body="Mousai Manteel"
 	sets.midcast.Mazurka = {range="Daurdabla"} 
-	sets.midcast.March = {}	--hands="Fili Manchettes +1"
+	sets.midcast.March = {hands="Fili Manchettes"}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March, {range="Marsyas"})	
 	sets.midcast.Minuet = {body="Fili Hongreline"}
 	sets.midcast.Carol = {} -- hands="Mousai Gages"
@@ -239,16 +239,16 @@ function init_gear_sets()
 		main="Kali", sub="Genmei Shield",
 		--lear="Genmei Earring", rear="Etiolation Earring",
 		head="Fili Calot", neck="Moonbow Whistle +1",
-		-- hands="Fili Manchettes +1", lring="Dark Ring",
-		body="Fili Hongreline", hands="Ad. Mnchtte +1", rring="Defending Ring",
+		-- lring="Dark Ring",
+		body="Fili Hongreline", hands="Fili Manchettes", rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	sets.midcast.SongEffect.DW = {range="Gjallarhorn",
 		main="Kali", sub="Genmei Shield",
 		-- lear="Genmei Earring", rear="Etiolation Earring",
 		head="Fili Calot", neck="Moonbow Whistle +1",
-		-- hands="Fili Manchettes +1", lring="Dark Ring",
-		body="Fili Hongreline", hands="Ad. Mnchtte +1", rring="Defending Ring",
+		-- lring="Dark Ring",
+		body="Fili Hongreline", hands="Fili Manchettes", rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	-- For song debuffs (duration primary, accuracy secondary)
@@ -406,7 +406,7 @@ function init_gear_sets()
 	sets.resting = {main="Sangoma", sub="Genmei Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", ring1="Inyanga Ring", ring2="Defending Ring",
-		-- legs="Assiduity Pants +1", feet="Fili Cothurnes +1"
+		-- legs="Assiduity Pants +1",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
 	
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
