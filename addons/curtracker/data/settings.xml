@@ -8,7 +8,7 @@
             <red>0</red>
             <visible>true</visible>
         </bg>
-        <curfields />
+        <curfields>voidstones,escha beads,mystical canteens,potpourri,silver a.m.a.n. vouchers stored,escha silt,login points</curfields>
         <curlines>2</curlines>
         <currefresh>60</currefresh>
         <curtracking>true</curtracking>
@@ -26,8 +26,8 @@
         </flags>
         <padding>0</padding>
         <pos>
-            <x>1515</x>
-            <y>57</y>
+            <x>1404</x>
+            <y>67</y>
         </pos>
         <text>
             <alpha>255</alpha>
@@ -53,136 +53,4 @@
             <red>255</red>
         </value_color>
     </global>
-    <akilee>
-        <pos>
-            <x>1439</x>
-            <y>45</y>
-        </pos>
-    </akilee>
-    <almontay>
-        <pos>
-            <x>1438</x>
-            <y>51</y>
-        </pos>
-    </almontay>
-    <dasmir>
-        <pos>
-            <x>1404</x>
-            <y>69</y>
-        </pos>
-    </dasmir>
-    <dayanna>
-        <pos>
-            <x>1442</x>
-            <y>48</y>
-        </pos>
-    </dayanna>
-    <deliah>
-        <pos>
-            <x>1396</x>
-            <y>66</y>
-        </pos>
-    </deliah>
-    <drecien>
-        <pos>
-            <x>1434</x>
-            <y>65</y>
-        </pos>
-    </drecien>
-    <fearyjunior>
-        <pos>
-            <x>1430</x>
-            <y>51</y>
-        </pos>
-    </fearyjunior>
-    <gonzaloo>
-        <pos>
-            <x>1449</x>
-            <y>47</y>
-        </pos>
-    </gonzaloo>
-    <helyah>
-        <pos>
-            <x>1464</x>
-            <y>56</y>
-        </pos>
-    </helyah>
-    <kavita>
-        <pos>
-            <x>1441</x>
-            <y>50</y>
-        </pos>
-    </kavita>
-    <mehany>
-        <pos>
-            <x>1437</x>
-            <y>50</y>
-        </pos>
-    </mehany>
-    <midnightclamm>
-        <pos>
-            <x>1437</x>
-            <y>50</y>
-        </pos>
-    </midnightclamm>
-    <molyoly>
-        <pos>
-            <x>1432</x>
-            <y>50</y>
-        </pos>
-    </molyoly>
-    <mostmost>
-        <pos>
-            <x>1430</x>
-            <y>51</y>
-        </pos>
-    </mostmost>
-    <oasus>
-        <pos>
-            <x>1404</x>
-            <y>67</y>
-        </pos>
-    </oasus>
-    <olymoly>
-        <pos>
-            <x>1499</x>
-            <y>49</y>
-        </pos>
-    </olymoly>
-    <perseise>
-        <pos>
-            <x>1392</x>
-            <y>66</y>
-        </pos>
-    </perseise>
-    <ravindra>
-        <pos>
-            <x>1443</x>
-            <y>49</y>
-        </pos>
-    </ravindra>
-    <suede>
-        <pos>
-            <x>1413</x>
-            <y>65</y>
-        </pos>
-    </suede>
-    <symbio>
-        <pos>
-            <x>1503</x>
-            <y>53</y>
-        </pos>
-    </symbio>
-    <worldkiller>
-        <pos>
-            <x>1389</x>
-            <y>66</y>
-        </pos>
-    </worldkiller>
-    <yerp>
-        <pos>
-            <x>1342</x>
-            <y>122</y>
-        </pos>
-    </yerp>
 </settings>

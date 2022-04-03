@@ -118,7 +118,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})--body="Passion Jacket"
 
-	sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Hashishin Mintan +1"})
+	sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Hashishin Mintan"})
 
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
@@ -258,9 +258,9 @@ function init_gear_sets()
 	sets.AccMaxTP = {lear="Bladeborn Earring", rear="Steelflash Earring",}
 
 	-- Midcast Sets
-	sets.midcast.FastRecast = set_combine(sets.precast.FC,{hands="Hashi. Bazu. +1"})
+	sets.midcast.FastRecast = set_combine(sets.precast.FC,{})
 
-	sets.midcast['Blue Magic'] = {}
+	sets.midcast['Blue Magic'] = {}--hands="Hashi. Bazu. +1"
 
 	-- Physical Spells --
 	sets.midcast['Blue Magic'].Physical = {-- ammo="Floestone",
@@ -652,7 +652,7 @@ function init_gear_sets()
 	sets.Self_Healing = {lring=gear.DarkRing}
 	sets.Cure_Received = {lring=gear.DarkRing}
 	sets.Self_Refresh = {}
-	sets.MagicBurst = {neck="Mizu. Kubikazari", hands="Amalric Gages",  ring1="Mujin Band"} --legs="Assim. Shalwar +2",
+	sets.MagicBurst = {neck="Mizu. Kubikazari", hands="Amalric Gages",  ring1="Mujin Band"} --legs="Assim. Shalwar +2",nnnn
 
 end
 

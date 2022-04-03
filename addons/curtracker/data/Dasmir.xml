@@ -1,7 +1,7 @@
 <?xml version="1.1" ?>
 <settings>
     <global>
-        <curfields>voidstones,escha beads,mystical canteens,potpourri,silver a.m.a.n. vouchers stored,login points,escha silt</curfields>
+        <curfields>voidstones,escha beads,mystical canteens,potpourri,silver a.m.a.n. vouchers stored,escha silt,login points</curfields>
         <curlines>2</curlines>
         <currefresh>60</currefresh>
         <curtracking>true</curtracking>
@@ -11,8 +11,8 @@
             <red>0</red>
         </field_color>
         <pos>
-            <x>0</x>
-            <y>0</y>
+            <x>1404</x>
+            <y>67</y>
         </pos>
         <text>
             <size>10</size>
@@ -25,7 +25,6 @@
     </global>
     <dasmir>
         <pos>
-            <x>1404</x>
             <y>69</y>
         </pos>
     </dasmir>

@@ -406,8 +406,7 @@ function init_gear_sets()
 	sets.resting = {main="Sangoma", sub="Genmei Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", ring1="Inyanga Ring", ring2="Defending Ring",
-		-- legs="Assiduity Pants +1",
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Assid. Panfs +1", feet="Inyan. Crackows +1"}
 	
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Sangoma", sub="Genmei Shield", range="Gjallarhorn",
@@ -415,7 +414,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1",  lear="Ethereal Earring", 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", ring1="Inyanga Ring", ring2="Defending Ring",
 		-- waist="Flume Belt",
-		back=gear.FC_jse_back,  legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back=gear.FC_jse_back,  legs="Assid. Panfs +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.idle.Weak = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
@@ -493,7 +492,7 @@ function job_setup()
 	state.Buff['Nightingale'] = buffactive['Nightingale'] or false
 	state.RecoverMode = M('35%', '60%', 'Always', 'Never')
 
-	autows = "Rudra's Storm"
+	autows = "Savage Blade"
 	autofood = 'Pear Crepe'
 	
 	state.AutoSongMode = M(false, 'Auto Song Mode')

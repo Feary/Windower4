@@ -55,11 +55,11 @@ function init_gear_sets()
     sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Achaq Grip", ammo="Incantor Stone",
 		-- neck="Voltsurge Torque", ear2="Malignance Earring",
 		head="Merlinic Hood", ear1="Enchntr. Earring +1", ear2="Loquac. Earring",
-        --body="Zendik Robe",
-		body="Merlinic Jubbah", hands=gear.helios_hands_FC,ring1="Prolix Ring",ring2="Defending Ring",
+        --body="Zendik Robe", rring="Kishr Ring"
+		body="Merlinic Jubbah", hands="Academic Bracers", ring1="Prolix Ring", ring2="Defending Ring",
         back=gear.FC_jse_back,waist="Witful Belt",legs="Gyve Trousers",feet="Peda. Loafers"}
 		
-	sets.precast.FC.Arts = {}--feet="Academic's Loafers +2"
+	sets.precast.FC.Arts = {feet="Academic's Loafers"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {})-- waist="Siegel Sash"
 
@@ -90,7 +90,7 @@ function init_gear_sets()
 	-- Midcast
     sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff, ammo="Incanter Stone",
 		--main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Hasty Pinion",
-		--head="Amalric Coif", ear2="Malignance Earring",  ear2="Etiolation Earring",
+		--head="Amalric Coif", ear2="Malignance Earring", 
 		 head="Merlinic Hood", neck="Voltsurge Torque", ear1="Enchntr. Earring +1", ear2="Loquac. Earring", 
 		--body="Zendik Robe", hands="Acad. Bracers +2", ring1="Kishar Ring",
 		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring2="Prolix Ring",
@@ -163,7 +163,7 @@ function init_gear_sets()
 	sets.midcast['Enfeebling Magic'] = {--  sub="Ammurapi Shield",
 		main="Maxentius",
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
-		head="Jhakri Coronal",lear="Enchntr. Earring +1",
+		head="Jhakri Coronal", lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" waist="Ovate Rope", legs="Chironic Hose"
 		back=gear.Macc_jse_back, waist="Casecade Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
@@ -348,7 +348,7 @@ function init_gear_sets()
 
      -- Resting sets
     sets.resting = {main="Boonwell Staff", --  sub="Kaja Grip", ammo="Homiliary", sub="Oneiros Grip",
-		--neck="Loricate Torque +1", , ear2="Etiolation Earring",
+		--neck="Loricate Torque +1", ear2="Etiolation Earring",
 		head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, Stikini Ring +1
 		body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring",ring2="Stikini Ring",
@@ -459,7 +459,7 @@ function init_gear_sets()
 
 	sets.engaged.PDT.DW = {main="Maxentius",
 		-- ammo="Homiliary", sub="Genmei Shield",ammo="Hasty Pinion", 
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
+		-- sub="Genmei Shield", neck="Loricate Torque +1", ear2="Etiolation Earring",
         head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
         body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
@@ -467,8 +467,8 @@ function init_gear_sets()
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Ebullience'] = {head="Svnt. Bonnet +1"}
-    sets.buff['Rapture'] = {head="Svnt. Bonnet +1"}
+    sets.buff['Ebullience'] = {head="Arbatel Bonnet"}
+    sets.buff['Rapture'] = {head="Arbatel Bonnet"}
     sets.buff['Perpetuance'] = {hands="Arbatel Bracers"}
     sets.buff['Immanence'] = {hands="Arbatel Bracers"}
     sets.buff['Penury'] = {legs="Arbatel Pants"}
