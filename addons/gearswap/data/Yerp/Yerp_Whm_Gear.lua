@@ -13,12 +13,7 @@ function user_setup()
 	gear.fastcast_jse_back = {name="Alaunus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
 	gear.Cure_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
 	gear.Macc_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
-	
-	gear.obi_cure_waist = "Austerity Belt"
-	gear.obi_cure_back = gear.Macc_jse_back
 
-	gear.obi_nuke_waist = "Sekhmet Corset"
-	gear.obi_nuke_back = gear.Macc_jse_back
 	
 	--[[Global binds you may want to change.
 	Bind special characters.
@@ -92,7 +87,7 @@ function init_gear_sets()
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
-		--head="Piety Cap +1", lear="Nourish. Earring", rear="Nourish. Earring +1",
+		-- lear="Nourish. Earring", rear="Nourish. Earring +1",
 		-- feet="Cure Clogs"
 		head="Piety Cap",
 		legs="Ebers Pantaloons",})
