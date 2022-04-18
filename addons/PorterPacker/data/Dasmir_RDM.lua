@@ -26,6 +26,7 @@ return {
     "Aya. Cosciales +2",
 	"Kaja Rod",
 	"Maxentius",
+	"Kaja Knife",
 	"Tauret",
 	"Naegling",
 	"Ullr",

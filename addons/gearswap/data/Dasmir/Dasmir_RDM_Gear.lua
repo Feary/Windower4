@@ -19,19 +19,9 @@ function user_setup()
 	
 	-- DEX +20/Accuracy +30/Attack +20/Dual Wield +10].
 	gear.dw_jse_back =		{name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
-	gear.stp_jse_back	=		{name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
-	gear.ws_jse_back 	= 		{name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	gear.stp_jse_back	=	{name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
+	gear.ws_jse_back 	= 	{name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 	
-	
-	-- Waist Replacements
-	gear.obi_cure_back = gear.Cure_jse_back
-	gear.obi_cure_waist = "Luminary Sash"
-
-	gear.obi_low_nuke_back = gear.nuke_jse_back
-	gear.obi_low_nuke_waist = "Luminary Sash"
-
-	gear.obi_high_nuke_back = gear.nuke_jse_back
-	gear.obi_high_nuke_waist = "Luminary Sash"
 	
 	-- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode')
@@ -105,9 +95,9 @@ function init_gear_sets()
 	sets.precast.WS['Chant Du Cygne'] = set_combine(sets.precast.WS, {
 		-- Taeon Chapeau 
 		head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Sherida Earring",
-		-- Taeon Tabard Taeon Gloves lring="Epaminodas's Ring", 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Ilabrat Ring",
-		--  Taeon Tights feet="Theroid Greaves"
+		-- Taeon Tabard Taeon Gloves 
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminodas's Ring",  rring="Ilabrat Ring",
+		--  Taeon Tights 
 		back=gear.ws_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Thereoid Greaves"})
 
 	sets.precast.WS['Savage Blade'] = {--ammo="Ginsen",
@@ -275,8 +265,8 @@ function init_gear_sets()
 		
 	--Red Mage enhancing sets are handled in a different way from most, layered on due to the way Composure works
 	--Don't set combine a full set with these spells, they should layer on Enhancing Set > Composure (If Applicable) > Spell
-	sets.midcast.Refresh = {head="Amalric Coif",body="Atrophy Tabard +2", hands="Atrophy Gloves +2",  legs="Leth. Fuseau +1"} --  back="Grapevine Cape",waist="Gishdubar Sash",
-	sets.midcast.Aquaveil = {head="Amalric Coif",} --  hands="Regal Cuffs",waist="Emphatikos Rope", legs="Shedir Seraweels"
+	sets.midcast.Refresh = {head="Amalric Coif +1",body="Atrophy Tabard +2", hands="Atrophy Gloves +2",  legs="Leth. Fuseau +1"} --  back="Grapevine Cape",waist="Gishdubar Sash",
+	sets.midcast.Aquaveil = {head="Amalric Coif +1",} --  hands="Regal Cuffs",waist="Emphatikos Rope", legs="Shedir Seraweels"
 	sets.midcast.BarElement = {} --legs="Shedir Seraweels"
 	sets.midcast.Stoneskin = {waist="Siegel Sash",} -- neck="Nodens Gorget",ear2="Earthcry Earring",legs="Shedir Seraweels"
 	sets.midcast.Protect = {ring2="Sheltered Ring"}
@@ -358,8 +348,8 @@ function init_gear_sets()
 	sets.midcast['Bio III'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter, {head="Viti. Chapeau +1"})
 
 
-	sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif", waist="Acuity Belt"})
-    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif", waist="Acuity Belt"}) 
+	sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif +1", waist="Acuity Belt"})
+    sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif +1", waist="Acuity Belt"}) 
     
 	-- Divine Magic 
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})

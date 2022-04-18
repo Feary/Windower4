@@ -97,23 +97,25 @@ function init_gear_sets()
 		-- Psycloth Lappas
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Give Trousers", feet="Peda. Loafers"}
 		
+		
+	-- Healing Magic	
     sets.midcast.Cure = {main="Vadose Rod", sub="Sors Shield", ammo="Incanter Stone",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Merlinic Hood", rear="Beatific Earring", 
-		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Give Trousers", feet="Skaoi Boots"}
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", ring2="Menelaus's Ring",
+		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Sifahir Slacks", feet="Skaoi Boots"}
 
     sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Achaq Grip", ammo="Incanter Stone",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Merlinic Hood", rear="Beatific Earring", 
-		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Give Trousers", feet="Skaoi Boots"}
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", ring2="Menelaus's Ring",
+		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Sifahir Slacks", feet="Skaoi Boots"}
 		
     sets.midcast.LightDayCure = {main="Iridal Staff", sub="Achaq Grip", ammo="Incanter Stone",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Merlinic Hood", rear="Beatific Earring", 
-		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Give Trousers", feet="Skaoi Boots"}	
+		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", ring2="Menelaus's Ring",
+		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Sifahir Slacks", feet="Skaoi Boots"}	
 
     sets.midcast.Curaga = sets.midcast.Cure
 
@@ -125,8 +127,9 @@ function init_gear_sets()
 		-- main="Oranyan",ammo="Hasty Pinion",
 		--sub="Clemency Grip",
 		--head="Amalric Coif +1",neck="Debilis Medallion",
-		--body="Zendik Robe", hands="Hieros Mittens",ring1="Haoma's Ring",ring2="Menelaus's Ring",
+		--body="Zendik Robe", hands="Hieros Mittens",ring1="Haoma's Ring",
 		--legs="Psycloth Lappas",feet="Vanya Clogs"
+		ring2="Menelaus's Ring",
 		back=gear.FC_jse_back,waist="Witful Belt",legs="Gyve Trousers"}
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})-- main="Oranyan", sub="Clemency Grip"
 

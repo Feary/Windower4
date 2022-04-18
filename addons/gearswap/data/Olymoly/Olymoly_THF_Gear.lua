@@ -481,14 +481,14 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Malignance Chapeau",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Genmei Earring",
-        body="Ashsera Harness",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
+        body="Ashera Harness",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
        	head="Malignance Chapeau", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		body="Turms Harness", hands="Turms Mittens +1", lring="Moonbeam Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
-
+		
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		-- Turms Harness +1

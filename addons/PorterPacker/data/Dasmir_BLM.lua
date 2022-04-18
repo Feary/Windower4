@@ -24,6 +24,7 @@ return {
     "Jhakri Cuffs +2",
 	"Jhakri Slops +2",
     "Jhakri Pigaches +2",   
-	"Kaja Grip",
+	"Khonsu",
 	"Kaja Rod",
+	"Maxentius",
 }

@@ -68,7 +68,7 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Precast sets to enhance JAs	
-	sets.precast.JA['Triple Shot'] = {body="Navarch's Frac +1"}-- hands="Lanun Gants +3",
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac", hands="Lanun Gants"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
@@ -77,18 +77,17 @@ function init_gear_sets()
     sets.precast.CorsairRoll = {--ammo="Compensator",
 		-- neck="Regal Necklace", lear="Etiolation Earring", rear="Odndowa Earring",
 		head="Lanun Tricorne",  
-		-- hands="Chasseur's Gants +1",
-		body="Meg. Cuirie", hands="Nvrch. Gants +1", lring="Barataria Ring", rring="Defending Ring",
+		body="Meg. Cuirie", hands="Chasseur's Gants", lring="Barataria Ring", rring="Defending Ring",
 		--  legs="Desultor Tassets" -dt feet
 		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses", feet="Meg. Jambeaux"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
-    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Nvrch. Culottes +1"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Navarch's Bottes +1"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Nvrch. Tricorne +1"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Navarch's Frac +1"})
-    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Nvrch. Gants +1"})
+    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chass. Culottes"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
+    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
     
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,

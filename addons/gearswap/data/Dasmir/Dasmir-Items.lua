@@ -140,9 +140,9 @@ gear.herculean_wsd_body = {name="Herculean Vest", augments={'INT+7','Pet: "Mag.A
 --gear.herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23','Rng.Acc.+14','Phalanx +1','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
 --gear.herculean_refresh_feet = {name="Herculean Boots",augments={'CHR+8','Rng.Acc.+7','"Refresh"+1','Mag. Acc.+17 "Mag.Atk.Bns."+17',}}
 
-gear.merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','INT+15','Mag. Acc.+3','"Mag.Atk.Bns."+13',}}
+gear.merlinic_nuke_head = "Merlinic Hood"
 --gear.merlinic_nuke_body = {name="Merlinic Jubbah",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Occult Acumen"+4','INT+10','Mag. Acc.+2','"Mag.Atk.Bns."+15',}}
-gear.merlinic_fastcast_body = {name="Merlinic Jubbah", augments={'Phys. dmg. taken -1%','Enmity+1','"Fast Cast"+4',}}
+gear.merlinic_fastcast_body = "Merlinic Jubbah"
 
 gear.merlinic_refresh_hands = {name="Merlinic Dastanas",augments={'MND+9','AGI+2','"Refresh"+2','Accuracy+14 Attack+14',}}
 gear.merlinic_magpact_hands = {name="Merlinic Dastanas",  augments={'Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8','Pet: INT+15',}}

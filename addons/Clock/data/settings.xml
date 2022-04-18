@@ -58,6 +58,15 @@
         </Clock>
         <TimeZones>PST,CST,GMT,AWST</TimeZones>
     </helyah>
+    <oasus>
+        <Clock>
+            <pos>
+                <x>1352</x>
+                <y>3</y>
+            </pos>
+        </Clock>
+        <TimeZones>PST,CST,GMT,AWST</TimeZones>
+    </oasus>
     <olymoly>
         <Clock>
             <pos>

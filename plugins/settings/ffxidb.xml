@@ -11,4 +11,8 @@
         <ShowTargetLine>true</ShowTargetLine>
         <Ranges></Ranges>
     </global>
+    <Yerp>
+        <X>1052</X>
+        <Y>37</Y>
+    </Yerp>
 </settings>
