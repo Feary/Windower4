@@ -368,10 +368,9 @@ function init_gear_sets()
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
     sets.idle.PDT = {main="Malignance Pole", sub="Khonsu",-- ammo="Staunch Tathlum",
-		-- sub="Oneiros Grip",
-        head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
-        body="Shamash Robe",hands="Jhakri Cuffs +2",ring1="Defending Ring",ring2=gear.DarkRing,
-	
+        head="Mall. Chapeau +2", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
+        
+		body="Shamash Robe",hands="Mallquis Cuffs +2",ring1="Defending Ring",ring2=gear.DarkRing,
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {})--feet="Hippo. Socks +1"
