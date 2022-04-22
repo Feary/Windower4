@@ -126,8 +126,8 @@ function init_gear_sets()
 
     sets.midcast.Curaga = sets.midcast.Cure
 
-	sets.Self_Healing = {neck="Phalaina Locket",ring2="Asklepian Ring",}--waist="Gishdubar Sash" ring1="Kunaji Ring",
-	sets.Cure_Received = {neck="Phalaina Locket",ring2="Asklepian Ring",}--waist="Gishdubar Sash" ring1="Kunaji Ring",
+	--sets.Self_Healing = {neck="Phalaina Locket",ring2="Asklepian Ring",}--waist="Gishdubar Sash" ring1="Kunaji Ring",
+	--sets.Cure_Received = {neck="Phalaina Locket",ring2="Asklepian Ring",}--waist="Gishdubar Sash" ring1="Kunaji Ring",
 	sets.Self_Refresh = {feet="Inspirited Boots"}-- back="Grapevine Cape"waist="Gishdubar Sash"
 	
 	sets.midcast.Cursna = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Hasty Pinion +1",
@@ -169,14 +169,16 @@ function init_gear_sets()
 
     -- Custom spell classes
 	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
-        head="Acad. Mortar. +2",neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
-		body="Acad. Gown +2",hands="Acad. Bracers +2",ring1="Stikini Ring",ring2="Stikini Ring",
-        back=gear.Cure_jse_back,waist="Luminary Sash",legs="Acad. Pants +2",feet="Acad. Loafers +2"}
+        -- Argute's Stole
+		head="Acad. Mortar. +2",neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
+		body="Acad. Gown +2",hands="Kaykaus Cuffs +1",ring1="Stikini Ring",ring2="Stikini Ring",
+        back=gear.Cure_jse_back,waist="Luminary Sash",legs=gear.chironic_macc_legs,feet="Acad. Loafers +2"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
-		head="Acad. Mortar. +2", neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
-		body="Acad. Gown +2",hands="Acad. Bracers +2",ring1="Stikini Ring",ring2="Stikini Ring",
-        back=gear.Cure_jse_back,waist="Luminary Sash",legs="Acad. Pants +2",feet="Acad. Loafers +2"}
+        -- Argute's Stole
+		head="Acad. Mortar. +2",neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
+		body="Acad. Gown +2",hands="Kaykaus Cuffs +1",ring1="Stikini Ring",ring2="Stikini Ring",
+        back=gear.Cure_jse_back,waist="Luminary Sash",legs=gear.chironic_macc_legs,feet="Acad. Loafers +2"}
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {back=gear.nuke_jse_back,})--waist="Acuity Belt +1"
     sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {back=gear.nuke_jse_back,})--waist="Acuity Belt +1"
@@ -203,31 +205,34 @@ function init_gear_sets()
         back=gear.Cure_jse_back,waist="Luminary Sash",legs="Acad. Pants +2",feet="Acad. Loafers +2"}
 
 	-- 300 INT
-    sets.midcast.Kaustra = {main="Daybreak",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+    sets.midcast.Kaustra = {main="Akademos",sub="Enki Strap", ammo="Pemphredo Tathlum",
+		-- Argute Stole +2
 		head="Pixie Hairpin +1", neck="Sanctity Necklace", ear1="Regal Earring", ear2="Malignance Earring",
-		-- ring2="Archon Ring",
+		-- Seidr Cotehardie ring2="Archon Ring",
         body="Shamash Robe",hands="Amalric Gages +1",ring1="Freke Ring", ring1="Jhakri Ring",
-		-- Yamabuki-no-Obi Acuity Belt +1
-        back=gear.nuke_jse_back,waist="Acuity Belt",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
+		-- Amalric Slops +1 
+        back=gear.nuke_jse_back,waist="Acuity Belt",legs="Mallquis Trews +2",feet="Jhakri Pigaches +2"}
 		
-    sets.midcast.Kaustra.Resistant = {main="Daybreak",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
-		--main="Akademos", sub="Niobid Strap",
-		head="Pixie Hairpin +1", neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
-		-- ring2="Archon Ring",
-        body="Mallquis Saio +2",hands="Amalric Gages +1",ring1="Freke Ring", ring1="Jhakri Ring",
-		-- Yamabuki-no-Obi Acuity Belt +1
-        back=gear.nuke_jse_back,waist="Acuity Belt",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
+    sets.midcast.Kaustra.Resistant = {main="Akademos",sub="Enki Strap", ammo="Pemphredo Tathlum",
+		-- Argute Stole +2
+		head="Pixie Hairpin +1", neck="Sanctity Necklace", ear1="Regal Earring", ear2="Malignance Earring",
+		-- Seidr Cotehardie ring2="Archon Ring",
+        body="Shamash Robe",hands="Amalric Gages +1",ring1="Freke Ring", ring1="Jhakri Ring",
+		-- Amalric Slops +1 
+        back=gear.nuke_jse_back,waist="Acuity Belt",legs="Mallquis Trews +2",feet="Jhakri Pigaches +2"}
 
     sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		head="Pixie Hairpin +1", neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
         -- ring1="Evanescence Ring" ring2="Archon Ring",
-		body="Mallquis Saio +2",hands="Mallquis Cuffs +2", ring1="Stikini Ring",  ring2="Stikini Ring",
-        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear.chironic_macc_legs,feet="Mallquis Clogs +2"}
+		body="Acad. Gown +2",hands="Mallquis Cuffs +2", ring1="Stikini Ring",  ring2="Stikini Ring",
+        back="Bookworm's Cape",waist="Fucho-no-obi",legs=gear.chironic_macc_legs,feet="Mallquis Clogs +2"}
 		
     sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+		-- lear="Hirudinea Earring" rear="Mani Earring"
 		head="Pixie Hairpin +1", neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
         -- ring1="Evanescence Ring" ring2="Archon Ring",
-		 body="Mallquis Saio +2",hands="Mallquis Cuffs +2", ring1="Stikini Ring",  ring2="Stikini Ring",
+		body="Acad. Gown +2",hands="Mallquis Cuffs +2", ring1="Stikini Ring",  ring2="Stikini Ring",
+		-- legs="Peda. Pants +3", feet="Agwu's Pigaches"
         back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear.chironic_macc_legs,feet="Mallquis Clogs +2"}
 
     sets.midcast.Aspir = sets.midcast.Drain
@@ -309,7 +314,7 @@ function init_gear_sets()
 		-- Amalric Slops +1 Amalric Nails +1
         back=gear.nuke_jse_back,waist="Orpheus Sash",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"})
 
-	sets.midcast.Helix = {main="Daybreak", sub="Ammurapi Shield",  ammo="Pemphredo Tathlum",
+	sets.midcast.Helix = {main="Daybreak", sub="Culmunus",  ammo="Pemphredo Tathlum",
 		-- Bunzi's Rod Ghastly Tathlum +1
 		-- Agwu's Cap Argute Stole +2
 		head="Mallquis Chapeau +2", neck="Mizu. Kubikazari",ear1="Regal Earring", ear2="Malignance Earring",
@@ -368,10 +373,12 @@ function init_gear_sets()
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Mallquis Clogs +2"}
 
     sets.idle.PDT = {main="Malignance Pole", sub="Khonsu",-- ammo="Staunch Tathlum",
-        head="Mall. Chapeau +2", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        
+		-- Acad. Mortar. +3 lear="Odnowa Earring +1"
+        head="Acad. Mortar. +2", neck="Warder's Charm +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
+        -- Acad. Bracers +2 Acad. Bracers +3
 		body="Shamash Robe",hands="Mallquis Cuffs +2",ring1="Defending Ring",ring2=gear.DarkRing,
-        back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
+		-- Acad. Pants +3 Acad. Loafers +3
+        back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Acad. Pants +2",feet="Acad. Loafers +2"}
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {})--feet="Hippo. Socks +1"
 
@@ -383,19 +390,27 @@ function init_gear_sets()
 		
     -- Defense sets
     sets.defense.PDT = {main="Malignance Pole", sub="Khonsu", --ammo="Staunch Tathlum",
-        head="Mall. Chapeau +2",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
-        body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring",ring2=gear.DarkRing,
+        -- Nyame Helm lear="Tuisto Earring", rear="Odnowa Earring +1"
+		head="Mall. Chapeau +2",neck="Warder's Charm +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
+        -- Nyame Mail Nyame Gauntlets  lring="Gelatinous Ring +1" rring="Eiwaz Ring"
+		body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring",ring2=gear.DarkRing,
+		-- Moonlight Cape Carrier's Sash Nyame Flanchard Nyame Sollerets
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 
     sets.defense.MDT = {main="Malignance Pole", sub="Khonsu", --ammo="Staunch Tathlum",
-        head="Mall. Chapeau +2",neck="Loricate Torque +1",ear1="Ethereal Earring", ear2="Etiolation Earring",
-        body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring",ring2=gear.DarkRing,
+        -- Nyame Helm lear="Tuisto Earring", rear="Odnowa Earring +1"
+		head="Mall. Chapeau +2",neck="Warder's Charm +1",ear1="Lugalbanda Earring", ear2="Etiolation Earring",
+        -- Nyame Mail Nyame Gauntlets  lring="Gelatinous Ring +1" rring="Eiwaz Ring"
+		body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring",ring2=gear.DarkRing,
+		-- Moonlight Cape Slipor Sash Nyame Flanchard Nyame Sollerets
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 		
     sets.defense.MEVA = {main="Malignance Pole", sub="Khonsu", --ammo="Staunch Tathlum",
-		--sub="Irenic Strap +1",
-        head="Mallquis Chapeau +2", neck="Warder's Charm +1", lear="Lugalbanda Earring", ear2="Sanare Earring",
-        body="Mallquis Saio +2",hands="Mallquis Cuffs +2", ring1="Defending Ring", ring2=gear.DarkRing,
+		-- Nyame Helm lear="Tuisto Earring", rear="Odnowa Earring +1" 
+		head="Mall. Chapeau +2",neck="Warder's Charm +1",ear1="Lugalbanda Earring", ear2="Etiolation Earring",
+        -- Nyame Mail Nyame Gauntlets  lring="Gelatinous Ring +1" rring="Eiwaz Ring"
+		body="Mallquis Saio +2",hands="Mallquis Cuffs +2",ring1="Defending Ring",ring2=gear.DarkRing,
+		-- Moonlight Cape Carrier's Sash Nyame Flanchard Nyame Sollerets
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Mallquis Trews +2",feet="Mallquis Clogs +2"}
 		
     sets.Kiting = {feet="Herald's Gaiters"}

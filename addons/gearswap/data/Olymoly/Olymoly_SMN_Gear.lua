@@ -289,8 +289,7 @@ function init_gear_sets()
     
     sets.idle.PDT = {main="Gridarvor",sub="Vox Grip",ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        -- Udug Jacket
-		body="Shomonjijoe +1",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
+		body="Udug Jacket",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back,waist="Regal Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
 	sets.idle.TPEat = set_combine(sets.idle, {}) -- neck="Chrys. Torque"
@@ -362,18 +361,18 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
-        -- Udug Jacket
-		body="Inyanga Jubbah +2",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
+        -- 
+		body="Udug Jacket",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back, waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.defense.MDT = {ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
-        body="Inyanga Jubbah +2",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
+        body="Udug Jacket",hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back, waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.defense.MEVA = {ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
-        body="Inyanga Jubbah +2", hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
+        body="Udug Jacket", hands="Inyanga Dastanas +2",ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back, waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 		
     sets.Kiting = {feet="Herald's Gaiters"}

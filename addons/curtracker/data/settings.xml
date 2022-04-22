@@ -8,7 +8,7 @@
             <red>0</red>
             <visible>true</visible>
         </bg>
-        <curfields>voidstones,escha beads,mystical canteens,potpourri,silver a.m.a.n. vouchers stored,login points,escha silt</curfields>
+        <curfields>voidstones,escha beads,mystical canteens,potpourri,silver a.m.a.n. vouchers stored,escha silt,login points</curfields>
         <curlines>2</curlines>
         <currefresh>60</currefresh>
         <curtracking>true</curtracking>
@@ -67,8 +67,8 @@
     </midnightclamm>
     <yerp>
         <pos>
-            <x>1310</x>
-            <y>71</y>
+            <x>1327</x>
+            <y>70</y>
         </pos>
     </yerp>
 </settings>

@@ -8,7 +8,7 @@ function user_setup()
 	state.PhysicalDefenseMode:options('PDT', 'NukeLock')
 	state.MagicalDefenseMode:options('MDT', 'NukeLock')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','Sword','Club','DualMagicWeapons','DualMaccWeapons')--'HybridWeapons'
+	state.Weapons:options('None','Sword','Club','DualMagicWeapons','DualSwords')--'HybridWeapons'
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'MP','SuppaBrutal', 'DWEarrings','DWMax'}
 
@@ -336,7 +336,7 @@ function init_gear_sets()
 		-- Baetyl Pendant 
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Gages +1 Shiva Ring +1 
-		body="Shamash Robe", hands="Amalric Gages", lring="Shiva Ring", rring="Mephitas Ring +1",
+		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring", rring="Mephitas Ring +1",
 		-- Yamabuki-no-obi Amalric Slops +1 Amalric Nails +1
 		back=gear.mab_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"}
 
@@ -344,7 +344,7 @@ function init_gear_sets()
 		-- Baetyl Pendant 
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Gages +1 Shiva Ring +1
-		body="Shamash Robe", hands="Amalric Gages", lring="Shiva Ring",  rring="Mephitas Ring +1",
+		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring",  rring="Mephitas Ring +1",
 		-- Yamabuki-no-obi Amalric Slops +1 Amalric Nails +1
 		back=gear.mab_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"})
 
@@ -352,7 +352,7 @@ function init_gear_sets()
 		-- Baetyl Pendant 
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		-- Amalric Doublet +1 Amalric Gages +1 Shiva Ring +1
-		body="Shamash Robe", hands="Amalric Gages", lring="Shiva Ring", rring="Mephitas Ring +1",
+		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring", rring="Mephitas Ring +1",
 		--  Amalric Slops +1 Amalric Nails +1
 		back=gear.mab_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"}
 
@@ -360,7 +360,7 @@ function init_gear_sets()
 		-- Baetyl Pendant 
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Gwati Earring",
 		-- Amalric Gages +1 Shiva Ring +1 
-		body="Shamash Robe", hands="Amalric Gages", lring="Stinkini Ring", rring="Stinkini Ring",
+		body="Shamash Robe", hands="Amalric Gages +1", lring="Stinkini Ring", rring="Stinkini Ring",
 		-- Yamabuki-no-obi Amalric Slops +1 Amalric Nails +1
 		back=gear.mab_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"})
 		
@@ -424,8 +424,8 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
 		-- neck="Incanter's Torque"
 		head="Luhlaza Keffiyeh", lear="Loquac. Earring", rear="Gifted Earring",
-		-- body="Assim. Jubbah +2", hands="Hashi. Bazu. +1",
-		 ring1="Kishar Ring", ring2="Defending Ring",
+		-- hands="Hashi. Bazu. +1",
+		body="Assim. Jubbah", ring1="Kishar Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Witful Belt",legs="Lengo Pants",feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic']['Battery Charge'] = set_combine(sets.midcast['Blue Magic'].Buff, {head="Amalric Coif"})--back="Grapevine Cape",waist="Gishdubar Sash"
@@ -467,17 +467,17 @@ function init_gear_sets()
 
 	sets.midcast['Divine Magic'] = {
 		head="Jhakri Coronal +2", neck="Erra Pendant",lear="Regal Earring", rear="Gwati Earring",
-		body="Jhakri Robe +2", hands="Amalric Gages", lring="Stinkini Ring", rring="Stinkini Ring",
+		body="Jhakri Robe +2", hands="Amalric Gages +1", lring="Stinkini Ring", rring="Stinkini Ring",
 		back=gear.mab_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"}
 		
 	sets.midcast['Elemental Magic'] = {
 		head="Jhakri Coronal +2", neck="Erra Pendant",lear="Regal Earring", rear="Gwati Earring",
-		body="Jhakri Robe +2", hands="Amalric Gages", lring="Stinkini Ring", rring="Stinkini Ring",
+		body="Jhakri Robe +2", hands="Amalric Gages +1", lring="Stinkini Ring", rring="Stinkini Ring",
 		back=gear.mab_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"}
 
 	sets.midcast['Elemental Magic'].Resistant = {
 		head="Jhakri Coronal +2", neck="Erra Pendant",lear="Regal Earring", rear="Gwati Earring",
-		body="Jhakri Robe +2", hands="Amalric Gages", lring="Stinkini Ring", rring="Stinkini Ring",
+		body="Jhakri Robe +2", hands="Amalric Gages +1", lring="Stinkini Ring", rring="Stinkini Ring",
 		back=gear.mab_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"}
 
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
@@ -499,7 +499,7 @@ function init_gear_sets()
 	sets.NightIdle = {}
 
 	-- Gear for learning spells: +skill and AF hands.
-	sets.Learning = {}-- hands="Assim. Bazu. +2"
+	sets.Learning = {hands="Assim. Bazu."}
 
 	-- Resting sets
 	sets.resting = {main="Naegling", sub="Genmei Shield",
@@ -563,7 +563,7 @@ function init_gear_sets()
 	sets.SuppaBrutal = {ear1="Brutal Earring", ear2="Suppanomimi"}
 	sets.DWEarrings = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket",waist="Reiki Yotai",legs="Carmine Cuisses +1"}
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {waist="Chaac Belt", legs="Volte Hose"})
 	sets.Assault = {}
 	
 	-- Weapons sets
@@ -572,9 +572,8 @@ function init_gear_sets()
 	sets.weapons.Club =  {main="Maxentius",sub="Genmei Shield"}
 	-- Dual
 	sets.weapons.DualMeleeClubs = {main="Maxentius", sub="Kaja Rod"}
-	sets.weapons.DualMagicWeapons = {main="Maxentius",sub="Naegling"}
-	sets.weapons.DualMaccWeapons = {main="Maxentius",sub="Kaja Rod"}
-	sets.weapons.DualHybridWeapons = {main="Naegling",sub="Kaja Sword"}
+	sets.weapons.DualMagicWeapons = {main="Maxentius",sub="Kaja Rod"}
+	sets.weapons.DualSword = {main="Naegling",sub="Kaja Sword"}
 
 	-- Engaged sets
 	sets.engaged =  {main="Naegling", sub="Genmei Shield",
@@ -652,7 +651,7 @@ function init_gear_sets()
 	sets.Self_Healing = {lring=gear.DarkRing}
 	sets.Cure_Received = {lring=gear.DarkRing}
 	sets.Self_Refresh = {}
-	sets.MagicBurst = {neck="Mizu. Kubikazari", hands="Amalric Gages",  ring1="Mujin Band"} --legs="Assim. Shalwar +2",nnnn
+	sets.MagicBurst = {neck="Mizu. Kubikazari", hands="Amalric Gages +1",  ring1="Mujin Band"} --legs="Assim. Shalwar +2",nnnn
 
 end
 

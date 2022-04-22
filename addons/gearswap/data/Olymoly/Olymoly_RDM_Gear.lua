@@ -22,16 +22,6 @@
 	gear.stp_jse_back	=	{name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	gear.ws_jse_back 	= 	{name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 	
-	-- Waist Replacements
-	gear.obi_cure_back = gear.Cure_jse_back
-	gear.obi_cure_waist = "Luminary Sash"
-
-	gear.obi_low_nuke_back = gear.nuke_jse_back
-	gear.obi_low_nuke_waist = "Eschan Stone"
-
-	gear.obi_high_nuke_back = gear.nuke_jse_back
-	gear.obi_high_nuke_waist = "Eschan Stone"
-
 		-- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode')
 	send_command('bind @` gs c cycle MagicBurstMode')
@@ -85,8 +75,8 @@ function init_gear_sets()
 	sets.precast.WS = {ammo="Ginsen", -- Aurgelmir Orb +1
 		-- Viti. Chapeau +3 Duelist Torque +2
 		head="Carmine Mask +1", neck="Caro Necklace", lear="Regal Earring", rear="Moonshade Earring",
-		-- Viti. Tabard +3 Atrophy Gloves +3 rring="Metamor. Ring +1"
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Rufescent Ring",
+		-- Viti. Tabard +3 Atrophy Gloves +3 
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Metamor. Ring +1",
 		-- Salifi Belt +1
 		back=gear.ws_jse_back, waist="Prosilio Belt +1", legs="Jhakri Slops +2", feet="Carmine Greaves +1"}
 
@@ -95,8 +85,8 @@ function init_gear_sets()
 	sets.precast.WS['Black Halo'] = {ammo="Ginsen", -- Aurgelmir Orb +1
 		-- Viti. Chapeau +3 Duelist Torque +2
 		head="Carmine Mask +1", neck="Caro Necklace", lear="Regal Earring", rear="Moonshade Earring",
-		-- Viti. Tabard +3 Atrophy Gloves +3 rring="Metamor. Ring +1"
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Rufescent Ring",
+		-- Viti. Tabard +3 Atrophy Gloves +3 
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Metamor. Ring +1",
 		-- Salifi Belt +1
 		back=gear.ws_jse_back, waist="Prosilio Belt +1", legs="Jhakri Slops +2", feet="Carmine Greaves +1"}
 	

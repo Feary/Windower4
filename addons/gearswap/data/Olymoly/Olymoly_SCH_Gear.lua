@@ -358,7 +358,7 @@ function init_gear_sets()
 		-- waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Amalric Nails +1"}
 
-    sets.idle.PDT = {main="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
+    sets.idle.PDT = {main="Malignance Pole", sub="Khonsu", ammo="Staunch Tathlum",
 		-- sub="Oneiros Grip",
         head="Vanya Hood",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Shamash Robe",hands="Volte Bracers",ring1="Defending Ring",ring2="Dark Ring",
@@ -367,7 +367,7 @@ function init_gear_sets()
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {feet="Hippomenes Socks"}}
 
-    sets.idle.Weak = {main="Malignance Pole", sub="Kaja Grip", ammo="Homiliary",
+    sets.idle.Weak = {main="Malignance Pole", sub="Khonsu", ammo="Homiliary",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		--hands=gear.merlinic_refresh_hands,
         body="Shamash Robe",hands="Volte Bracers",ring1="Defending Ring",ring2="Dark Ring",
@@ -377,18 +377,18 @@ function init_gear_sets()
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
     -- Defense sets
-    sets.defense.PDT = {main="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
+    sets.defense.PDT = {main="Malignance Pole", sub="Khonsu", ammo="Staunch Tathlum",
         head="Vanya Hood",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Shamash Robe",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 
-    sets.defense.MDT = {main="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
+    sets.defense.MDT = {main="Malignance Pole", sub="Khonsu", ammo="Staunch Tathlum",
 		--sub="Umbra Strap",
         head="Vanya Hood",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Mallquis Saio +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
         back=gear.FC_jse_back,waist="Fucho-no-obi",legs="Amalric Slops +1",feet="Amalric Nails +1"}
 		
-    sets.defense.MEVA = {main="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
+    sets.defense.MEVA = {main="Malignance Pole", sub="Khonsu", ammo="Staunch Tathlum",
 		--sub="Umbra Strap",
 		--ear2="Sanare Earring",
         head=gear.merlinic_nuke_head,neck="Warder's Charm +1",ear1="Etiolation Earring",
@@ -409,14 +409,14 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {main="Malignance Pole", sub="Kaja Grip", ammo="Homiliary",
+    sets.engaged = {main="Malignance Pole", sub="Khonsu", ammo="Homiliary",
         head="Chironic Hat",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Malignance Earring",
 		--hands=gear.merlinic_refresh_hands,
         body="Jhakri Robe +2",hands="Volte Bracers", ring1="Defending Ring",ring2="Dark Ring",
 		--waist="Flax Sash", feet=gear.chironic_refresh_feet
         back=gear.FC_jse_back, waist="Eschan Stone", legs="Assid. Pants +1",feet="Jhakri Pigaches +2"}
 		
-	sets.engaged.PDT = {mmain="Malignance Pole", sub="Kaja Grip", ammo="Staunch Tathlum",
+	sets.engaged.PDT = {mmain="Malignance Pole", sub="Khonsu", ammo="Staunch Tathlum",
 		-- sub="Oneiros Grip", 	
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		--hands=gear.merlinic_refresh_hands,
@@ -437,8 +437,8 @@ function init_gear_sets()
 	
 	sets.HPDown = {
 		head="Pixie Hairpin +1",ear1="Mendi. Earring",ear2="Evans Earring",
-		--body="Zendik Robe",hands="Hieros Mittens",,ring2="Mephitas's Ring",
-		ring1="Mephitas's Ring +1",
+		--body="Zendik Robe",hands="Hieros Mittens",
+		ring1="Mephitas's Ring +1", ring2="Mephitas's Ring",
 		--waist="Flax Sash",legs="Shedir Seraweels",feet=""
 		back=gear.FC_jse_back,}
 	
@@ -450,9 +450,9 @@ function init_gear_sets()
     sets.buff.PDTSublimation = {}
 	
 	-- Weapons sets
-	sets.weapons.None = {main="Malignance Pole", sub="Kaja Grip"}
+	sets.weapons.None = {main="Malignance Pole", sub="Khonsu"}
 	sets.weapons.Club = {main="Maxentius", sub="Genmei Shield"}
-	sets.weapons.Akademos = {}--main="Akademos",sub="Niobid Strap"
+	sets.weapons.Akademos = {main="Akademos",sub="Niobid Strap"}
 	sets.weapons.Khatvanga = {}--main="Khatvanga",sub="Bloodrain Strap"
 end
 
