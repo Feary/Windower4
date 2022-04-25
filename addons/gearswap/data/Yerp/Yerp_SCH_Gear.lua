@@ -318,7 +318,7 @@ function init_gear_sets()
 		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
 		
 	sets.midcast.Helix.Resistant = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
-		-- lear="Regal Earring", rear="Malignance Earring",
+	q	-- lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring 
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
@@ -420,7 +420,7 @@ function init_gear_sets()
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 		
-    sets.Kiting = {feet="Herald's Gaiters"}
+    sets.Kiting = {lring="Shneddick Ring"}
     sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}

@@ -569,11 +569,11 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Default = {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.Sword =  {main="Naegling",sub="Genmei Shield"}
-	sets.weapons.Club =  {main="Maxentius",sub="Genmei Shield"}
+	sets.weapons.Club =  {main="Loxoctic Mace +1",sub="Genmei Shield"}
 	-- Dual
-	sets.weapons.DualMeleeClubs = {main="Maxentius", sub="Kaja Rod"}
+	sets.weapons.DualMeleeClubs = {main="Loxoctic Mace +1", sub="Kaja Rod"}
 	sets.weapons.DualMagicWeapons = {main="Maxentius",sub="Kaja Rod"}
-	sets.weapons.DualSword = {main="Naegling",sub="Kaja Sword"}
+	sets.weapons.DualSwords = {main="Naegling",sub="Kaja Sword"}
 
 	-- Engaged sets
 	sets.engaged =  {main="Naegling", sub="Genmei Shield",

@@ -442,7 +442,7 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
-	sets.Kiting = {feet="Fili Cothurnes"}
+	sets.Kiting = {lring="Shneddick Ring"}
 
 	-- Engaged sets
 

@@ -171,7 +171,7 @@ function init_gear_sets()
     -- Sets to return to when not performing an action.
     
 	-- Others
-	sets.Kiting = {feet="Danzo Sune-ate"}
+	sets.Kiting = {lring="Shneddick Ring"}
 
     sets.Reraise = {}-- head="Twilight Helm",body="Twilight Mail"
 	

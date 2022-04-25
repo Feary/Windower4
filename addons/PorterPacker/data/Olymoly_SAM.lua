@@ -11,7 +11,7 @@ return {
     "Sakonji Sune-Ate +1",
     "Kasuga Kabuto +1",
     "Kasuga Domaru +1",
-    "Kasuga Kote",
+    "Kasuga Kote +1",
     "Kasuga Haidate +1",
     "Kas. Sune-Ate +1",
     "Hiza. Somen　+2",

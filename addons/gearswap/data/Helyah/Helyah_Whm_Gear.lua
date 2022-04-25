@@ -110,7 +110,7 @@ function init_gear_sets()
 
     -- Midcast Sets
 
-    sets.Kiting = {feet="Herald's Gaiters"}
+    sets.Kiting = {rring="Shneddick Ring"}
     sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}

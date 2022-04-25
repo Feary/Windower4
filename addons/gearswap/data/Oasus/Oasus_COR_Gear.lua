@@ -378,7 +378,7 @@ function init_gear_sets()
 		-- waist="Flume Belt", 
 		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Meg. Jambeaux"}
 			
-    sets.Kiting = {legs="Carmine Cuisses +1"}
+    sets.Kiting = {lring="Shneddick Ring"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	--Weapon Sets

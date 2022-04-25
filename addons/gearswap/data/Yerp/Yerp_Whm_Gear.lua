@@ -101,7 +101,7 @@ function init_gear_sets()
 	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 
     -- Precast sets to enhance JAs
-    sets.precast.JA.Benediction = {body="Piety Briault"}
+    sets.precast.JA.Benediction = {body="Piety Bliaut"}
 	sets.precast.JA.Devotion = {head="Piety Cap"}
 	sets.precast.JA.Martyr = {hands="Piety Mitts"}
 
@@ -111,7 +111,7 @@ function init_gear_sets()
 
     -- Midcast Sets
 
-    sets.Kiting = {feet="Herald's Gaiters"}
+    sets.Kiting = {lring="Shneddick Ring"}
     sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}
