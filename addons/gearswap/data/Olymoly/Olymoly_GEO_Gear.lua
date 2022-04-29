@@ -79,8 +79,8 @@ function init_gear_sets()
 
 	sets.precast.FC.Curaga = sets.precast.FC.Cure
 	
-	sets.Self_Healing = {ring1="Kunaji Ring",ring2="Asklepian Ring",}-- waist="Gishdubar Sash" neck="Phalaina Locket",
-	sets.Cure_Received = {ring1="Kunaji Ring",ring2="Asklepian Ring",}--waist="Gishdubar Sash" neck="Phalaina Locket",
+	sets.Self_Healing = {ring1="Kunaji Ring",ring2="Asklepian Ring"}-- waist="Gishdubar Sash" neck="Phalaina Locket",
+	sets.Cure_Received = {ring1="Kunaji Ring",ring2="Asklepian Ring"}--waist="Gishdubar Sash" neck="Phalaina Locket",
 	sets.Self_Refresh = {back="Grapevine Cape"}--waist="Gishdubar Sash",feet="Inspirited Boots"
 	
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
@@ -115,22 +115,28 @@ function init_gear_sets()
 	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {
 		back="Lifestream Cape",legs="Bagua Pants +1",feet="Azimuth Gaiters +1"})
 		
-    sets.midcast.Cure = {main="Tamaxchi",sub="Sors Shield",ammo="Hasty Pinion +1",
+    sets.midcast.Cure = {main="Daybreak",sub="Sors Shield",
 		-- Gada 
         head="Vanya Hood", neck="Incanter's Torque",ear1="Novia Earring", rear="Mendi. Earring",
-        body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, ring1="Stikini Ring",ring2="Sirona's Ring",
-        back="Tempered Cape +1", waist="Witful Belt", legs="Gyve Trousers", feet="Amalric Nails +1"}
+		-- Annoint. Kalasiris
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, ring1="Stikini Ring",ring2="Sirona's Ring",
+        --
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Vanya Slops", feet="Vanya Clogs"}
 		
-    sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Enki Strap", ammo="Hasty Pinion +1",
-        head="Nahtirah Hat",neck="Incanter's Torque",ear1="Novia Earring", rear="Mendi. Earring",
-        body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Stikini Ring",ring2="Sirona's Ring",
-        back="Tempered Cape +1", waist="Hachirin-no-Obi", legs="Gyve Trousers", feet="Regal Pumps +1"}
+    sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Enki Strap", 
+        head="Vanya Hood", neck="Incanter's Torque",ear1="Novia Earring", rear="Mendi. Earring",
+		-- Annoint. Kalasiris
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, ring1="Stikini Ring",ring2="Sirona's Ring",
+        --
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Vanya Slops", feet="Vanya Clogs"}
 		
-	--Cureset for if it's not light weather but is light day.
+	-- Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {main="Tamaxchi",sub="Sors Shield",ammo="Hasty Pinion +1",
-        head="Nahtirah Hat",neck="Incanter's Torque",ear1="Novia Earring", rear="Mendi. Earring",
-        body="Heka's Kalasiris",hands=gear.telchine_hands_Cure,ring1="Stikini Ring",ring2="Sirona's Ring",
-        back="Tempered Cape +1",waist="Hachirin-no-Obi", legs="Gyve Trousers", feet="Regal Pumps +1"}
+         head="Vanya Hood", neck="Incanter's Torque",ear1="Novia Earring", rear="Mendi. Earring",
+		-- Annoint. Kalasiris
+		body="Heka's Kalasiris", hands=gear.telchine_hands_Cure, ring1="Stikini Ring",ring2="Sirona's Ring",
+        --
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Vanya Slops", feet="Vanya Clogs"}
 
     sets.midcast.Curaga = sets.midcast.Cure
 
@@ -203,7 +209,7 @@ function init_gear_sets()
 		body="Twilight Cloak", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}		
 
-	sets.midcast['Enfeebling Magic'] = {main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'] = {main="Idris", sub="Ammurapi Shield",
 		-- Geo. Galero +3
 		head="Geo. Galero +2", neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
 		-- Geomancy Tunic +3
@@ -211,7 +217,7 @@ function init_gear_sets()
 		-- Geomancy Pants +2
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}		
 		
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Idris", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Idris", sub="Ammurapi Shield",
 		head="Geo. Galero +2", neck="Erra Pendant", ear1="Regal Earring", ear2="Malignance Earring",
 		body="Geomancy Tunic +2", hands="Geo. Mitaines +3", ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +3"}		

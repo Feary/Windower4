@@ -17,8 +17,8 @@
         </flags>
         <padding>0</padding>
         <pos>
-            <x>900</x>
-            <y>0</y>
+            <x>1081</x>
+            <y>65</y>
         </pos>
         <text>
             <alpha>255</alpha>
@@ -39,55 +39,4 @@
             </stroke>
         </text>
     </global>
-    <aniyah>
-        <pos>
-            <x>1249</x>
-            <y>3</y>
-        </pos>
-    </aniyah>
-    <dasmir>
-        <pos>
-            <x>1068</x>
-            <y>-2</y>
-        </pos>
-    </dasmir>
-    <deliah>
-        <pos>
-            <x>1243</x>
-        </pos>
-    </deliah>
-    <derion>
-        <pos>
-            <x>1027</x>
-            <y>-4</y>
-        </pos>
-    </derion>
-    <feary>
-        <pos>
-            <x>1174</x>
-            <y>-4</y>
-        </pos>
-    </feary>
-    <helyah>
-        <pos>
-            <x>1200</x>
-            <y>1</y>
-        </pos>
-    </helyah>
-    <oasus>
-        <pos>
-            <x>1058</x>
-            <y>-1</y>
-        </pos>
-    </oasus>
-    <olymoly>
-        <pos>
-            <x>1273</x>
-        </pos>
-    </olymoly>
-    <yerp>
-        <pos>
-            <x>949</x>
-        </pos>
-    </yerp>
 </settings>

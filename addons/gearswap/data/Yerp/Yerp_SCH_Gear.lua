@@ -1,8 +1,8 @@
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('Normal', 'Acc')
+    state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant','Proc','OccultAcumen')
-    state.IdleMode:options('Normal', 'PDT', 'MDT', 'MEVA', 'TPEat')
+    state.IdleMode:options('Normal', 'PDT', 'MDT', 'MEVA','TPEat')
 	state.HybridMode:options('Normal','PDT')
 	state.Weapons:options('None', 'Default')
 
@@ -318,7 +318,7 @@ function init_gear_sets()
 		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
 		
 	sets.midcast.Helix.Resistant = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
-	q	-- lear="Regal Earring", rear="Malignance Earring",
+		-- lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring 
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",

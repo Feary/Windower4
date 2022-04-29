@@ -18,7 +18,7 @@
             </flags>
             <padding>0</padding>
             <pos>
-                <x>1356</x>
+                <x>1444</x>
                 <y>1</y>
             </pos>
             <text>
@@ -30,7 +30,7 @@
                 </fonts>
                 <green>255</green>
                 <red>255</red>
-                <size>12</size>
+                <size>10</size>
                 <stroke>
                     <alpha>255</alpha>
                     <blue>0</blue>
@@ -44,46 +44,9 @@
             <awst>PST,CST,GMT,JST</awst>
         </Display>
         <Format><![CDATA[%H:%M:%S]]></Format>
-        <Separator>--</Separator>
+        <Separator>|</Separator>
         <ShowTimeZones>true</ShowTimeZones>
         <Sort><![CDATA[Time]]></Sort>
         <TimeZones>PST,CST,AWST,GMT</TimeZones>
     </global>
-    <helyah>
-        <Clock>
-            <pos>
-                <x>1342</x>
-                <y>0</y>
-            </pos>
-        </Clock>
-        <TimeZones>PST,CST,GMT,AWST</TimeZones>
-    </helyah>
-    <oasus>
-        <Clock>
-            <pos>
-                <x>1352</x>
-                <y>3</y>
-            </pos>
-        </Clock>
-        <TimeZones>PST,CST,GMT,AWST</TimeZones>
-    </oasus>
-    <olymoly>
-        <Clock>
-            <pos>
-                <x>1353</x>
-            </pos>
-        </Clock>
-        <TimeZones>PST,CST,GMT,AWST</TimeZones>
-    </olymoly>
-    <symbio>
-        <Clock>
-            <pos>
-                <x>1352</x>
-                <y>2</y>
-            </pos>
-        </Clock>
-        <Separator>\n</Separator>
-        <Sort><![CDATA[None]]></Sort>
-        <TimeZones>PST,CST,GMT,AWST</TimeZones>
-    </symbio>
 </settings>
