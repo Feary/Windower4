@@ -10,7 +10,7 @@ return {
     "Bhikku Crown",
 	"Bhikku Gloves +1",
     "Bhikku Hose +1",
-    "Bhikku Gaiters",
+    "Bhikku Gaiters +1",
     "Hesychast's Crown +1",
 	"Hesychast's Cyclas +1",
 	"Hesychast's Gloves +1",

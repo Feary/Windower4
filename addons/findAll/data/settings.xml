@@ -43,6 +43,13 @@
             </text>
         </Tracker>
     </global>
+    <dasmir>
+        <Tracker>
+            <pos>
+                <x>4</x>
+            </pos>
+        </Tracker>
+    </dasmir>
     <suede>
         <Tracker>
             <pos>
