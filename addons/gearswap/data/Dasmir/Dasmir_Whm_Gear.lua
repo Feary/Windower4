@@ -15,13 +15,7 @@ function user_setup()
 	gear.TP_jse_back 		= 	{name="Alaunus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}}
 	gear.WS_jse_back 		= 	{name="Alaunus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}}
 	
-	gear.obi_cure_waist = "Bishop's Sash"
-	gear.obi_cure_back = gear.Cure_jse_back 
-
-	gear.obi_nuke_waist = "Acuity Belt"
-	gear.obi_nuke_back = gear.Macc_jse_back
-
-		-- Additional local binds
+	-- Additional local binds
 	send_command('bind ^` input /ma "Arise" <t>')
 	send_command('bind !` input /ja "Penury" <me>')
 	send_command('bind @` gs c cycle MagicBurstMode')

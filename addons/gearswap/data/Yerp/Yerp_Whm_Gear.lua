@@ -1,8 +1,8 @@
 -- Setup vars that are user-dependent.  Can override this in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('Normal','Acc')
+    state.OffenseMode:options('None','Normal','Acc')
     state.CastingMode:options('Normal','Resistant')
-    state.IdleMode:options('Normal','PDT','MEVA')
+    state.IdleMode:options('Normal', 'PDT', 'MDT', 'MEVA', 'Refresh')
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -11,8 +11,8 @@ function user_setup()
 	-- Augmented Capes
 	--{name="Alaunus's Cape", augments={'"Fast Cast"+10',}}
 	gear.fastcast_jse_back = {name="Alaunus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
-	gear.Cure_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
-	gear.Macc_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
+	gear.Cure_jse_back =	 {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
+	gear.Macc_jse_back =	 {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
 
 	
 	--[[Global binds you may want to change.
@@ -124,7 +124,7 @@ function init_gear_sets()
 
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.	
 	sets.ConserveMP = {ammo="Clarus Stone",
-		waist="Austerity Belt", legs="Lengo Pants"}
+		waist="hands="Amalric Gages +1"", legs="Lengo Pants"}
 		
 	sets.midcast.Teleport = sets.ConserveMP
 	
@@ -141,64 +141,65 @@ function init_gear_sets()
 		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		--back=gear.Cure_jse_back, 
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Piety Duckbills"}
 	sets.midcast.CureSolace =  {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		--back=gear.Cure_jse_back,
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
 	sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring"
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		
 	sets.midcast.LightWeatherCureSolace = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 	
 	sets.midcast.LightDayCure =  {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}	
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}	
 	
 	sets.midcast.LightDayCureSolace = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
 	sets.midcast.Curaga =  {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		--back=gear.Cure_jse_back, 
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.LightWeatherCuraga = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		--back=gear.Cure_jse_back, 
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.LightDayCuraga = {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		--back=gear.Cure_jse_back, 
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.Cure.DT = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
 		--back=gear.Cure_jse_back, 
-		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
+		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
 	--Melee Curesets are used whenever your OffenseMode is set to anything but None.
 	sets.midcast.MeleeCure = set_combine(sets.midcast.Cure,{})
@@ -448,7 +449,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1",neck="Eidolon Pendant",
 		body="Shamash Robe",hands="Inyan. Dastanas +2", ring1="Inyanga Ring",ring2="Defending Ring",
 		--back=gear.fastcast_jse_back,
-		back="Felicitas Cape +1", waist="Austerity Belt",legs="Inyanga Shalwar +1",feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"",legs="Inyanga Shalwar +1",feet="Inyan. Crackows +1"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Mafic Cudgel", 
@@ -457,7 +458,7 @@ function init_gear_sets()
 		head="Befouled Crown",  lear="Ethereal Earring",
 		body="Shamash Robe", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Aya. Cosciales +2", feet="Inyan. Crackows +1"}
 
 	sets.idle.PDT = {main="Mafic Cudgel", 
 		-- sub="Genmei Shield", ammo="Homillary",
@@ -466,7 +467,7 @@ function init_gear_sets()
 		--body="Theo. Briault +3", 
 		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
 	sets.idle.MEVA = {main="Mafic Cudgel", 
 		-- main=gear.grioavolr_fc_staff, sub="Irenic Strap +1",
@@ -474,9 +475,9 @@ function init_gear_sets()
 		head="Inyanga Tiara +1", lear="Ethereal Earring", 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, 
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
-    sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
+    --sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
 	sets.idle.Weak = {main="Mafic Cudgel", 
 		-- sub="Genmei Shield", ammo="Homillary",
@@ -485,7 +486,7 @@ function init_gear_sets()
 		--body="Theo. Briault +3", 
 		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     -- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel", 
@@ -495,7 +496,7 @@ function init_gear_sets()
 		--body="Theo. Briault +3", 
 		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.defense.MDT ={main="Mafic Cudgel", 
 		-- main=gear.grioavolr_fc_staff, sub="Irenic Strap +1",
@@ -503,7 +504,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1",  lear="Ethereal Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, 
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
     sets.defense.MEVA = {main="Mafic Cudgel", 
 		-- main=gear.grioavolr_fc_staff, sub="Irenic Strap +1",
@@ -511,7 +512,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1", lear="Ethereal Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, 
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 		
 	-- Engaged sets
 
@@ -577,7 +578,19 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-	set_macro_page(1, 1)
+	if player.sub_job == 'SCH' then
+		set_macro_page(1, 1)
+	elseif player.sub_job == 'RDM' then
+		set_macro_page(1, 1)
+	elseif player.sub_job == 'BLM' then
+		set_macro_page(1, 1)
+	else
+		set_macro_page(1, 1)
+	end	
+end
+
+function user_job_self_command(commandArgs, eventArgs)
+	
 end
 
 buff_spell_lists = {
