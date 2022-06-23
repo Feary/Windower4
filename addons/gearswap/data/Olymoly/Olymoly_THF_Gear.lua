@@ -41,7 +41,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Plun. Armlets +3"})
+	sets.TreasureHunter = {hands="Plun. Armlets +3", back=gear.da_jse_back, legs="Plun. Culottes +3"}
     sets.ExtraRegen = {}
     sets.Kiting = {feet="Pill. Poulaines +3"}
 

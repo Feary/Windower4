@@ -26,7 +26,9 @@ return {
     "Meg. Jam. +2",
 	"Meghanada Visor +2",
 	"Naegling",
-	--"Kaja Knife",
+	"Kaja Knife",
+	"Kaja Sword",
 	"Tauret",
 	"Ullr",
+	"Karambit"
 }

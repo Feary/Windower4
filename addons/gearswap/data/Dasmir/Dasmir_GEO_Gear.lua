@@ -50,7 +50,7 @@ function init_gear_sets()
 	sets.precast.JA['Full Circle'] = {head="Azimuth Hood", hands="Bagua Mitaines"}
 	
 	-- Indi Duration in slots that would normally have skill here to make entrust more efficient.
-	sets.buff.Entrust = {legs="Bagua Pants", feet="Azimuth Gaiters"}
+	sets.buff.Entrust = {legs="Bagua Pants", feet="Azimuth Gaiters +1"}
 	
 	-- Relic hat for Blaze of Glory HP increase.
 	sets.buff['Blaze of Glory'] = {}
@@ -102,14 +102,14 @@ function init_gear_sets()
 		-- neck="Incantor's Torque", rear="Calamutious Earring",
 		head="Azimuth Hood", neck="Melic Torque",
 		body="Bagua Tunic", hands="Geo. Mitaines +1", lring="Stikini Ring", rring="Stikini Ring",
-		back="Lifestream Cape", waist="Austerity Belt", legs="Bagua Pants", feet="Azimuth Gaiters"}
+		back="Lifestream Cape", waist="Austerity Belt", legs="Bagua Pants", feet="Azimuth Gaiters +1"}
 
 	--Extra Indi duration on any slot you can't get skill on here.
 	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- neck="Incantor's Torque",
 		head="Azimuth Hood", neck="Melic Torque",
 		body="Bagua Tunic", hands="Geo. Mitaines +1", lring="Stikini Ring", rring="Stikini Ring",
-		back="Lifestream Cape", legs="Bagua Pants", feet="Azimuth Gaiters"})
+		back="Lifestream Cape", legs="Bagua Pants", feet="Azimuth Gaiters +1"})
 
     sets.midcast.Cure = {main="Daybreak", sub="Sors Shield", range="Dunna",
 		head="Vanya Hood", neck="Colossus's Torque", lear="Novia Earring", rear="Regal Earring",

@@ -84,8 +84,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {--ammo="Ginsen",
 		head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
-		-- lring="Epaminodas's Ring",
-		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Rufescent Ring", rring="Ilabrat Ring", 
+		body="Ayanmo Corazza +2", hands="Jhakri Cuffs +2", lring="Epaminodas's Ring", rring="Ilabrat Ring", 
 		back=gear.ws_jse_back, waist="Windbuffet Belt", legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -200,8 +199,8 @@ function init_gear_sets()
 		--neck="Debilis Medallion",
 		--hands="Hieros Mittens", 
 		body="Viti. Tabard +2", ring1="Ephera Ring",ring2="Menelaus's Ring", 
-		-- path b legs="Vanya Slops", feet="Vanya Clogs"
-		waist="Bishop's Sash"})
+		-- path b  feet="Vanya Clogs"
+		waist="Bishop's Sash",legs="Vanya Slops",})
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Grioavolr", sub="Clemency Grip"})--main="Oranyan",
 		
@@ -434,30 +433,30 @@ function init_gear_sets()
 	sets.resting = {main="Daybreak",sub="Genmei Shield", -- ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Dark Ring",ring2="Defending Ring",
-		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 	
 	-- Idle sets
 	sets.idle = {main="Daybreak",sub="Genmei Shield", -- ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
 		body="Shamash Robe",hands=gear.merlinic_refresh_hands,ring1="Dark Ring",ring2="Defending Ring",
-		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 		
 	sets.idle.PDT = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Shamash Robe",hands="Aya. Manopolas +2",ring1=gear.DarkRing,ring2="Defending Ring",
-		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 		
 	sets.idle.MDT = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		-- Sanare Earring
 		head="Aya. Zucchetto +2",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Shadow Ring",ring2="Defending Ring",
-		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 		
 	sets.idle.Weak = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Dark Ring",ring2="Defending Ring",
-		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
+		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
 	
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {back=gear.FC_jse_back,legs="Carmine Cuisses +1",})--feet="Hippo. Socks +1"
 	
@@ -520,13 +519,13 @@ function init_gear_sets()
 	--	back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
 
 	sets.engaged = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		head="Malignance Chapeau", neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Chirich Ring +1 Chirich Ring +1
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
 	sets.engaged.Acc = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
+		head="Malignance Chapeau", neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		-- Chirich Ring +1 Chirich Ring +1
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
@@ -540,17 +539,17 @@ function init_gear_sets()
 	sets.engaged.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Windbuffet Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+		back="Moonlight Cape",waist="Windbuffet Belt +1",legs="Hagondes Pants +1",feet="Malignance Boots"}
 		
 	sets.engaged.Acc.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Malignance Boots"}
 		
 	sets.engaged.FullAcc.DT = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Malignance Boots"}
 		
 	sets.engaged.EnspellOnly = {ammo="Ginsen", --ammo="Aurgelmir Orb +1",
 		-- Dls. Torque +2 ear2="Hollow Earring",

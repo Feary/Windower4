@@ -20,11 +20,11 @@ return {
     "Bagua Mitaines",    
     "Bagua Pants",
 	"Bagua Galero",
-	"Azimuth Gaiters",
+	"Azimuth Gaiters +1",
     "Azimuth Tights",
 	"Azimuth Hood",
 	"Rubeus Boots",
-	"Kaja Grip",
+	"Khonsu",
 	"Kaja Rod",
 	"Maxentius",
 }

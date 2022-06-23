@@ -75,8 +75,8 @@ function init_gear_sets()
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
     
     sets.precast.CorsairRoll = {--ammo="Compensator",
-		-- neck="Regal Necklace", lear="Etiolation Earring", rear="Odndowa Earring",
-		head="Lanun Tricorne",  
+		--  lear="Etiolation Earring", rear="Odndowa Earring +1",
+		head="Lanun Tricorne", neck="Regal Necklace",
 		body="Meg. Cuirie", hands="Chasseur's Gants", lring="Barataria Ring", rring="Defending Ring",
 		--  legs="Desultor Tassets" -dt feet
 		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses", feet="Meg. Jambeaux"}
@@ -343,7 +343,7 @@ function init_gear_sets()
 		-- lring="Dark Ring",
 		body="Meghanada Cuirie", hands="Meghanada Gloves", rring="Defending Ring",
 		-- waist="Flume Belt", 
-		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Meg. Jambeaux"}
+		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Malignance Boots"}
 		
     sets.idle.Refresh = {ammo=gear.RAbullet,
 		--  neck="Loricate Torque +1", lear="Etiolation Earring",  rear="Merman's Earring",
@@ -351,7 +351,7 @@ function init_gear_sets()
 		-- lring="Dark Ring",
 		body="Meghanada Cuirie", hands="Meghanada Gloves", rring="Defending Ring",
 		-- waist="Flume Belt", 
-		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Meg. Jambeaux"}
+		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Malignance Boots"}
 	
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
@@ -360,7 +360,7 @@ function init_gear_sets()
 		-- lring="Dark Ring",
 		body="Meghanada Cuirie", hands="Meghanada Gloves", rring="Defending Ring",
 		-- waist="Flume Belt", 
-		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Meg. Jambeaux"}
+		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo=gear.RAbullet,
 		--  neck="Loricate Torque +1", lear="Etiolation Earring",  rear="Merman's Earring",
@@ -368,7 +368,7 @@ function init_gear_sets()
 		-- lring="Dark Ring",
 		body="Meghanada Cuirie", hands="Meghanada Gloves", rring="Defending Ring",
 		-- waist="Flume Belt", 
-		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Meg. Jambeaux"}
+		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Malignance Boots"}
 	
     sets.defense.MEVA = {ammo=gear.RAbullet,
 		--  neck="Loricate Torque +1", lear="Etiolation Earring",  rear="Merman's Earring",
@@ -376,7 +376,7 @@ function init_gear_sets()
 		-- lring="Dark Ring",
 		body="Meghanada Cuirie", hands="Meghanada Gloves", rring="Defending Ring",
 		-- waist="Flume Belt", 
-		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Meg. Jambeaux"}
+		back=gear.tp_ranger_jse_back, legs="Meg. Chausses", feet="Malignance Boots"}
 			
     sets.Kiting = {lring="Shneddick Ring"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})

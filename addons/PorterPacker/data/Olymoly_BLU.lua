@@ -1,7 +1,6 @@
 return {
-    "Assim. Keffiyeh +1",
-    "Luh. Bazubands +1",
     "Mavi Tathlum",
+	"Luh. Bazubands +1",
     "Luhlaza Shalwar +1",
     "Luhlaza Jubbah +1",
     "Luhlaza Charuqs +1",
@@ -11,6 +10,7 @@ return {
     "Hashishin Kavuk +1",
     "Hashi. Basmak +1",
 	"Hashi. Bazu. +1",
+	"Assim. Keffiyeh +1",
     "Assim. Jubbah +1",
     "Assim. Shalwar +1",
     "Assim. Charuqs +1",

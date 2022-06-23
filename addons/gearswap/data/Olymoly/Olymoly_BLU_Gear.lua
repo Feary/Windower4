@@ -130,7 +130,7 @@ function init_gear_sets()
 		-- Assim. Jubbah +3 
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Epaminondas's Ring",
 		-- Luh. Shalwar +3
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Rawhide Boots"}
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Samnuha Tights", feet=gear.herculean_ta_feet}
 
 	sets.precast.WS.Acc = {ammo="Ginsen",
 		-- Lilith Headpiece  Mirage's Stole +2
@@ -138,7 +138,7 @@ function init_gear_sets()
 		-- Assim. Jubbah +3 
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Epaminondas's Ring",
 		-- Luh. Shalwar +3
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Rawhide Boots"}
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet=gear.herculean_ta_feet}
 
 	sets.precast.WS.Fodder = {ammo="Ginsen",
 		-- Lilith Headpiece  Mirage's Stole +2
@@ -146,7 +146,7 @@ function init_gear_sets()
 		-- Assim. Jubbah +3 
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Epaminondas's Ring",
 		-- Luh. Shalwar +3
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Rawhide Boots"}
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Malignance Boots"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {ammo="Ginsen",
@@ -203,30 +203,31 @@ function init_gear_sets()
 		-- Assim. Jubbah +3 
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Epaminondas's Ring",
 		-- Luh. Shalwar +3
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Rawhide Boots"})	
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Samnuha Tights", feet=gear.herculean_ta_feet})	
 	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Ginsen",
 		-- Lilith Headpiece  Mirage's Stole +2
 		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Assim. Jubbah +3 
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Epaminondas's Ring",
 		-- Luh. Shalwar +3
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Rawhide Boots"})
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet=gear.herculean_ta_feet})
 	sets.precast.WS['Savage Blade'].Fodder = set_combine(sets.precast.WS['Savage Blade'], {ammo="Ginsen",
 		-- Lilith Headpiece  Mirage's Stole +2
 		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Moonshade Earring", rear="Ishvara Earring",
-		-- Assim. Jubbah +3 
+		-- Assim. Jubbah +3  Beithir Ring
 		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Ifrit Ring +1", rring="Epaminondas's Ring",
-		-- Luh. Shalwar +3
-		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet="Rawhide Boots"})
+		-- Sailfi Belt +1 Luh. Shalwar +3
+		back=gear.wsd_jse_back, waist="Fotia Belt", legs="Carmine Cuisses +1", feet=gear.herculean_ta_feet})
 
-	sets.precast.WS['Vorpal Blade'] = set_combine(sets.precast.WS, {--ammo="Floestone",
+	sets.precast.WS['Vorpal Blade'] = set_combine(sets.precast.WS, {ammo="Ginsen", --ammo="Floestone", 
 		-- Lilith Headpiece  Mirage's Stole +2
 		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Assim. Jubbah +3 
 		body="Abnoba Kaftan", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Epona's Ring",
 		-- Luh. Shalwar +3
 		back=gear.crit_jse_back, waist="Fotia Belt", legs="Samnuha Tights", feet="Thereoid Greaves"})
-	sets.precast.WS['Vorpal Blade'].Acc = set_combine(sets.precast.WS.Acc, {-- Lilith Headpiece  Mirage's Stole +2
+	sets.precast.WS['Vorpal Blade'].Acc = set_combine(sets.precast.WS.Acc, {ammo="Ginsen",
+		-- Lilith Headpiece  Mirage's Stole +2
 		head="Adhemar Bonnet +1", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Assim. Jubbah +3 
 		body="Abnoba Kaftan", hands="Jhakri Cuffs +2", lring="Epaminondas's Ring", rring="Epona's Ring",

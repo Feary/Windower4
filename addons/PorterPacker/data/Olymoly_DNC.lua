@@ -14,8 +14,8 @@ return {
     "Maculele Tiara +1",
     "Maculele Casaque +1",
     "Maculele Bangles +1",
-    "Maculele Tights",
-    "Maculele Toeshoes",   
+    "Maculele Tights +1",
+    "Macu. Toe Shoes +1",   
 	"Mummu Kecks +2",
     "Mummu Wrists +2",
     "Mummu Jacket +2",    
@@ -26,5 +26,7 @@ return {
     "Meg. Gloves +2",
     "Meg. Chausses +2",
     "Meg. Jam. +2",
+	"Kaja Knife",
 	"Tauret",
+	"Karambit"
 }

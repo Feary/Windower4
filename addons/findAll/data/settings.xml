@@ -43,19 +43,4 @@
             </text>
         </Tracker>
     </global>
-    <dasmir>
-        <Tracker>
-            <pos>
-                <x>4</x>
-            </pos>
-        </Tracker>
-    </dasmir>
-    <suede>
-        <Tracker>
-            <pos>
-                <x>-32</x>
-                <y>1062</y>
-            </pos>
-        </Tracker>
-    </suede>
 </settings>

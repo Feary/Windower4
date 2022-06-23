@@ -4,7 +4,7 @@ sets.Sheltered = {ring2="Sheltered Ring"}
 sets.Capacity = {back={name="Mecisto. Mantle", augments={'Cap. Point+40%','HP+18','Rng.Atk.+4','DEF+13',}}}
 
 sets.buff.Doom = {}--waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"
-sets.TreasureHunter = {hands="Volte Bracers", waist="Chaac Belt"} --head="Wh. Rarab Cap +1", 
+sets.TreasureHunter = {body="Volte Jupon", hands="Volte Bracers", feet="Volte Boots"}
 
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}
