@@ -41,7 +41,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-	sets.TreasureHunter = {hands="Plun. Armlets +3", back=gear.da_jse_back, legs="Plun. Culottes +3"}
+	sets.TreasureHunter = {body="Volte Jupon", hands="Plun. Armlets +3", back=gear.da_jse_back, legs="Plun. Culottes +3"}
     sets.ExtraRegen = {}
     sets.Kiting = {feet="Pill. Poulaines +3"}
 
@@ -426,7 +426,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
 		-- Herculean Helm
         head="Haruspex Hat +1",neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
-        body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Moonbeam Ring",ring2="Defending Ring",
+        body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Moonlight Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Tempus Fugit",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     -- Specific spells
@@ -440,18 +440,18 @@ function init_gear_sets()
 
     -- Ranged gear
     sets.midcast.RA = {
-        head="Malignance Chapeau",neck="Erudit. Necklace",ear1="Telos Earring",ear2="Sherida Earring",
+        head="Malignance Chapeau",neck="Erudit. Necklace",ear1="Telos Earring", ear2="Sherida Earring",
 		-- Malignance Tabard  Malignance Gloves
-        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring",ring2="Ilabrat Ring",
+        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring", ring2="Ilabrat Ring",
 		-- Malignance Tights
-        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+        back=gear.da_jse_back,waist="Yemaya Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {
-        head="Malignance Chapeau",neck="Erudit. Necklace",ear1="Telos Earring",ear2="Sherida Earring",
+        head="Malignance Chapeau",neck="Erudit. Necklace",ear1="Telos Earring", ear2="Sherida Earring",
         -- Malignance Tabard  Malignance Gloves
-		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring",ring2="Ilabrat Ring",
+		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring", ring2="Ilabrat Ring",
 		-- Malignance Tights
-        back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+        back=gear.da_jse_back,waist="Yemaya Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
 	sets.midcast['Absorb-TP'] =  sets.midcast.RA
     --------------------------------------

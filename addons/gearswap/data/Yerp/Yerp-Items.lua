@@ -56,6 +56,8 @@ gear.helios_head_occult = { name="Helios Band", augments={'Pet: Attack+26 Pet: R
 -- name="Helios Band", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+7',}},
 gear.helios_head_BP = {name="Helios Band", augments={'Pet: Attack+26 Pet: Rng.Atk.+26','Pet: "Dbl. Atk."+8','Blood Pact Dmg.+6',}}
 
+--A_the_kid9
+
 -- Body 
 -- Occult Acumen
 gear.helios_body_occult = {name="Helios Jacket", augments={''}}

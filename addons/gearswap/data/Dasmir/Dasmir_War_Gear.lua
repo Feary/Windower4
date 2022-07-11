@@ -1351,16 +1351,16 @@ function init_gear_sets()
 	sets.weapons.Club = {main="Loxotic Mace +1", sub="Adapa Shield"}
 	
 	-- Proc Weapons Sets 
-	sets.weapons.ProcDagger = {main="Kustawi +1", sub="Adapa Shield"}
+	sets.weapons.ProcDagger = {main="Aern Dagger", sub="Adapa Shield"}
 	sets.weapons.ProcSword = {main="Ibushi Shinai", sub="Adapa Shield"}
 	sets.weapons.ProcGreatSword = {main="Montante", sub="Utu Grip"}
 	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Utu Grip"}
-	sets.weapons.ProcPolearm = {main="Pitchfork", sub="Utu Grip"}
+	sets.weapons.ProcPolearm = {main="Aern Spear", sub="Utu Grip"}
 	sets.weapons.ProcGreatKatana = {main="Zanmato", sub="Utu Grip"}
-	sets.weapons.ProcKatana = {main="Debahocho", sub="Adapa Shield"}
+	sets.weapons.ProcKatana = {main="Debahocho +1", sub="Adapa Shield"}
 	sets.weapons.ProcClub = {main="Rounsey Wand", sub="Adapa Shield"}
-	sets.weapons.ProcStaff = {main="Plenitas Virga", sub="Utu Grip"}
-	sets.weapons.ProcAxe = {main="Ark Tabar", sub="Utu Grip"}
+	sets.weapons.ProcStaff = {main="Aern Staff", sub="Utu Grip"}
+	sets.weapons.ProcAxe = {main="Aern Axe", sub="Aern Axe II"}
 	sets.weapons.ProcH2H = {main="Karambit"}
 end
 	

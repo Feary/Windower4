@@ -43,4 +43,19 @@
             </text>
         </Tracker>
     </global>
+    <mehany>
+        <Tracker>
+            <pos>
+                <x>110</x>
+                <y>1070</y>
+            </pos>
+        </Tracker>
+    </mehany>
+    <molyoly>
+        <Tracker>
+            <pos>
+                <x>18</x>
+            </pos>
+        </Tracker>
+    </molyoly>
 </settings>

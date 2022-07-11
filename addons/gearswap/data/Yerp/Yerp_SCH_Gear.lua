@@ -169,7 +169,7 @@ function init_gear_sets()
 		head="Jhakri Coronal", lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" waist="Ovate Rope", legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Casecade Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Casecade Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {--sub="Ammurapi Shield",
 		main="Maxentius",
@@ -177,7 +177,7 @@ function init_gear_sets()
 		head="Jhakri Coronal",lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" waist="Ovate Rope", legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Casecade Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Casecade Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {back=gear.nuke_jse_back,})--waist="Acuity Belt +1"
     sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {back=gear.nuke_jse_back,})--waist="Acuity Belt +1"
@@ -201,7 +201,7 @@ function init_gear_sets()
 		head="Jhakri Coronal",lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 
 	-- 300 INT
     sets.midcast.Kaustra = {main="Maxentius", --  sub="Ammurapi Shield",
@@ -209,28 +209,28 @@ function init_gear_sets()
 		head="Jhakri Coronal",lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 		
     sets.midcast.Kaustra.Resistant = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 
     sets.midcast.Drain = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal",lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash"  legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 		
     sets.midcast.Drain.Resistant = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal",lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
@@ -240,14 +240,14 @@ function init_gear_sets()
 		head="Jhakri Coronal",lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 
     sets.midcast.Stun.Resistant = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal",lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash"  legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Jhakri Slops", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 
     -- Elemental Magic sets are default for handling low-tier nukes.
     sets.midcast['Elemental Magic'] = {main="Maxentius", --  sub="Ammurapi Shield",
@@ -255,28 +255,28 @@ function init_gear_sets()
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 
     sets.midcast['Elemental Magic'].Resistant = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Jhakri Coronal +2  lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Jhakri Coronal +2  lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 		
     sets.midcast['Elemental Magic'].Proc = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Jhakri Coronal +2  lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 		
     sets.midcast['Elemental Magic'].OccultAcumen = set_combine(sets.midcast['Elemental Magic'],{
 		main="Maxentius", sub="Ammurapi Shield",
@@ -294,56 +294,56 @@ function init_gear_sets()
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"})
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {
 		main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
 		-- Jhakri Coronal +2  lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"})
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {
 		main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
 		-- lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring 
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"})
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"})
 
 	sets.midcast.Helix = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
 		-- lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring 
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 		
 	sets.midcast.Helix.Resistant = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
 		-- lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring 
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 	
 	sets.midcast.Helix.Burst = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
 		-- lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Mujin Ring Freke Ring 
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 		
 	sets.midcast.Helix.Proc = {main=empty, sub=empty,
 		-- lear="Regal Earring", rear="Malignance Earring",
 		head="Jhakri Coronal", neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring 
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 
 	sets.midcast.Impact = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
 		-- lear="Regal Earring", rear="Malignance Earring",
 		head=empty, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring 
 		body="Twilight Cloak", hands="Jhakri Cuffs", lring="Stikini Ring", rring="Stikini Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 		
     sets.midcast.Impact.OccultAcumen = set_combine(sets.midcast['Elemental Magic'].OccultAcumen, {head=empty,body="Twilight Cloak"})
 		

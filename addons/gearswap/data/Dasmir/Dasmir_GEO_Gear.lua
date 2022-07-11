@@ -63,7 +63,7 @@ function init_gear_sets()
 		--body="Zendik Robe", 
 		Body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring", 
 		-- legs="Geomancy Pants +2", 
-		back=gear.FC_jse_back, waist="Witful Belt", legs="Geo. Pants +1", feet="Amalric Nails"}
+		back=gear.FC_jse_back, waist="Witful Belt", legs="Geo. Pants +1", feet="Amalric Nails +1"}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {main="Idris", sub="Genmei Shield", range="Dunna",ammo=empty,})
 	
@@ -96,7 +96,7 @@ function init_gear_sets()
 		--body="Zendik Robe", 
 		Body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring", 
 		-- legs="Geomancy Pants +2", 
-		back=gear.FC_jse_back, waist="Witful Belt", legs="Geo. Pants +1", feet="Amalric Nails"})
+		back=gear.FC_jse_back, waist="Witful Belt", legs="Geo. Pants +1", feet="Amalric Nails +1"})
 
 	sets.midcast.Geomancy = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- neck="Incantor's Torque", rear="Calamutious Earring",
@@ -139,19 +139,19 @@ function init_gear_sets()
 		-- head=gear.merlinic_nuke_head,
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", lear="Regal Earring", rear="Malignance Earring",
 		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring", rring="Freke Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"}		
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails +1"}		
 
     sets.midcast['Elemental Magic'].Resistant = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		-- head=gear.merlinic_nuke_head,
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", lear="Regal Earring", rear="Malignance Earring",
 		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring", rring="Freke Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"}				
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails +1"}				
 
     sets.midcast['Elemental Magic'].Fodder = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		-- head=gear.merlinic_nuke_head,
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", lear="Regal Earring", rear="Malignance Earring",
 		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring", rring="Freke Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"}			
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails +1"}			
 	
 	-- Hight Tier Nuke
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
@@ -159,19 +159,19 @@ function init_gear_sets()
 		-- head=gear.merlinic_nuke_head,
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", lear="Regal Earring", rear="Malignance Earring",
 		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring", rring="Freke Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"})
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails +1"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {
 		main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		-- head=gear.merlinic_nuke_head,
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", lear="Regal Earring", rear="Malignance Earring",
 		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring", rring="Freke Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"})
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails +1"})
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {
 		main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		-- head=gear.merlinic_nuke_head,
 		head="Jhakri Coronal +2", neck="Saevus Pendant +1", lear="Regal Earring", rear="Malignance Earring",
 		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring", rring="Freke Ring",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails"})
+		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Jhakri Slops +2", feet="Amalric Nails +1"})
 	
     sets.midcast['Dark Magic'] = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		head="Bagua Galero", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
