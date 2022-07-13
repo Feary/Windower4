@@ -31,4 +31,6 @@ return {
 	"Naegling",
 	"Ullr",
 	"Kaja Sword",
+	"Aern Dagger",
+	"Aern Dagger II",
 }

@@ -18,7 +18,7 @@ return {
     "Mochi. Chainmail",
     "Mochizuki Tekko",
     "Mochi. Hakama +1",
-    "Mochizuki Kyahan",
+    "Mochi. Kyahan +1",
 	"Aern Staff",
 	"Aern Dagger",
 	"Aern Dagger II",

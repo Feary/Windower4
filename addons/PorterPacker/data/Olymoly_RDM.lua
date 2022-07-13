@@ -30,4 +30,6 @@ return {
 	"Naegling",
 	"Ullr",
     "Maxentius",
+	"Aern Sword",
+	"Aern Sword II"
 }

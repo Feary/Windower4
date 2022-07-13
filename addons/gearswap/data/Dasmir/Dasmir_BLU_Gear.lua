@@ -261,33 +261,33 @@ function init_gear_sets()
 	-- Physical Spells --
 	sets.midcast['Blue Magic'].Physical = {-- ammo="Floestone",
 		-- Luhlaza Keffiyeh +3 Caro Necklace Tati Earring +1 Tati Earring +1
-		head="Jhakri Coronal +2",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Mache Earring +1", rear="Mache Earring +1",
 		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
+		body="Jhakri Robe +2",  hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
 		-- Prosilio Belt +1 Luhlaza Charuqs +3
-		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
+		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].Physical.Resistant = {-- ammo="Floestone",
 		-- Luhlaza Keffiyeh +3 Caro Necklace Tati Earring +1 Tati Earring +1
-		head="Jhakri Coronal +2", 
-		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Mache Earring +1", rear="Mache Earring +1",
+		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring Ifrit Ring +1
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
 		-- Prosilio Belt +1 Luhlaza Charuqs +3
 		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].Physical.Fodder = {-- ammo="Floestone",
 		-- Luhlaza Keffiyeh +3 Caro Necklace Tati Earring +1 Tati Earring +1
-		head="Jhakri Coronal +2",
-		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring 
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
+		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Mache Earring +1", rear="Mache Earring +1",
+		-- Luhlaza Jubbah +3 Luh. Bazubands +3Shukuyu Ring Ifrit Ring +1
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
 		-- Prosilio Belt +1 Luhlaza Charuqs +3
 		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Blue Magic'].PhysicalAcc = {-- ammo="Floestone",
 		-- Luhlaza Keffiyeh +3 Caro Necklace Tati Earring +1 Tati Earring +1
 		head="Jhakri Coronal +2", 
-		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring
-		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Epaminondas's Ring",
+		-- Luhlaza Jubbah +3 Luh. Bazubands +3 Shukuyu Ring Ifrit Ring +1
+		body="Jhakri Robe +2", hands="Jhakri Cuffs +2", lring="Petrov Ring", rring="Rufescent Ring",
 		-- Prosilio Belt +1 Luhlaza Charuqs +3
 		back=gear.wsd_jse_back, waist="Prosilio Belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 

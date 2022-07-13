@@ -66,7 +66,7 @@ end
 function init_gear_sets()
 	-- PRECAST SETS
 	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm +1"}
-	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"} -- body="Mirke Wardecors",
+	sets.precast.JA['Bestial Loyalty'] = {body="Mirke Wardecors", hands="Ankusa Gloves +1", feet="Armada Sollerets"} 
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
 	sets.precast.JA.Familiar = {legs="Ankusa Trousers +1"}
 	sets.precast.JA.Tame = {head="Totemic Helm +1"}

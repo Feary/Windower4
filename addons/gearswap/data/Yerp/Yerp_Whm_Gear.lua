@@ -124,7 +124,7 @@ function init_gear_sets()
 
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.	
 	sets.ConserveMP = {ammo="Clarus Stone",
-		waist="hands="Amalric Gages +1"", legs="Lengo Pants"}
+		waist="Austerity Belt", legs="Lengo Pants"}
 		
 	sets.midcast.Teleport = sets.ConserveMP
 	
@@ -139,65 +139,65 @@ function init_gear_sets()
 	sets.midcast.Cure = {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Piety Duckbills"}
 	sets.midcast.CureSolace =  {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back,
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
 	sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
 	sets.midcast.LightWeatherCureSolace = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 	
 	sets.midcast.LightDayCure =  {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}	
 	
 	sets.midcast.LightDayCureSolace = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
 	sets.midcast.Curaga =  {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.LightWeatherCuraga = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.LightDayCuraga = {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.Cure.DT = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring",
+		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
@@ -244,7 +244,7 @@ function init_gear_sets()
 		-- main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		-- , neck="Incantor's Torque",  lear="Andoaa Earring", 
 		head=gear.telchine_head_Duration,
-		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- feet="Theophany Duckbills +3" 
 		back="Mending Cape", waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
@@ -252,7 +252,7 @@ function init_gear_sets()
 		-- main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		--  neck="Incantor's Torque",  lear="Andoaa Earring", 
 		head=gear.telchine_head_Duration,
-		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back="Mending Cape", feet="Theophany Duckbills +3"
 		waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 	
@@ -260,7 +260,7 @@ function init_gear_sets()
 		-- main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		-- neck="Incantor's Torque",  lear="Andoaa Earring", 
 		head=gear.telchine_head_Duration,
-		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back="Mending Cape", feet="Theophany Duckbills +3" 
 		waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 		
@@ -268,7 +268,7 @@ function init_gear_sets()
 		-- main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		-- neck="Incantor's Torque",  lear="Andoaa Earring", 
 		head=gear.telchine_head_Duration,
-		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back="Mending Cape", feet="Theophany Duckbills +3" 
 		waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
@@ -276,7 +276,7 @@ function init_gear_sets()
 		-- main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		-- neck="Incantor's Torque",  lear="Andoaa Earring", 
 		head=gear.telchine_head_Duration,
-		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back="Mending Cape", feet="Theophany Duckbills +3" 
 		waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
@@ -285,7 +285,7 @@ function init_gear_sets()
 		-- main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		-- neck="Incantor's Torque",  lear="Andoaa Earring", 
 		head=gear.telchine_head_Duration,
-		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back="Mending Cape", feet="Theophany Duckbills +3" 
 		waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
@@ -293,7 +293,7 @@ function init_gear_sets()
 	-- main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		-- neck="Incantor's Torque",  lear="Andoaa Earring", 
 		head=gear.telchine_head_Duration,
-		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring", rring="Stikini Ring",
+		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back="Mending Cape", feet="Theophany Duckbills +3" 
 		waist="Olympus Sash", legs=gear.telchine_legs_Duration, feet=gear.telchine_feet_Duration}
 
@@ -320,7 +320,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 		
@@ -330,7 +330,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
@@ -340,7 +340,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
@@ -350,7 +350,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", lear="Beatific Earring", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
@@ -360,7 +360,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
@@ -370,7 +370,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
@@ -380,7 +380,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
@@ -393,7 +393,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
@@ -403,7 +403,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
@@ -413,7 +413,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
@@ -423,7 +423,7 @@ function init_gear_sets()
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
 		--body="Theo. Briault +3", 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- back=gear.Macc_jse_back, Luminary Sash waist="Ovate Rope", Chironic Hose Theo. Duckbills +3
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 	
@@ -447,18 +447,18 @@ function init_gear_sets()
     -- Resting sets
 	sets.resting = {main="Boonwell Staff",
 		head="Inyanga Tiara +1",neck="Eidolon Pendant",
-		body="Shamash Robe",hands="Inyan. Dastanas +2", ring1="Inyanga Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		--back=gear.fastcast_jse_back,
-		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"",legs="Inyanga Shalwar +1",feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt",legs="Inyanga Shalwar +1",feet="Inyan. Crackows +1"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Mafic Cudgel", 
 		-- sub="Genmei Shield", ammo="Homillary",
 		-- neck="Loricate Torque +1", rear="Etiolation Earring",
 		head="Befouled Crown",  lear="Ethereal Earring",
-		body="Shamash Robe", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
+		body="Shamash Robe", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
-		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Aya. Cosciales +2", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Inyan. Crackows +1"}
 
 	sets.idle.PDT = {main="Mafic Cudgel", 
 		-- sub="Genmei Shield", ammo="Homillary",
@@ -467,7 +467,7 @@ function init_gear_sets()
 		--body="Theo. Briault +3", 
 		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
-		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
 	sets.idle.MEVA = {main="Mafic Cudgel", 
 		-- main=gear.grioavolr_fc_staff, sub="Irenic Strap +1",
@@ -475,7 +475,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1", lear="Ethereal Earring", 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, 
-		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
     --sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
@@ -484,9 +484,9 @@ function init_gear_sets()
 		-- neck="Loricate Torque +1", rear="Etiolation Earring",
 		head="Aya. Zucchetto +1", lear="Ethereal Earring", 
 		--body="Theo. Briault +3", 
-		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
+		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
-		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
     -- Defense sets
 	sets.defense.PDT = {main="Mafic Cudgel", 
@@ -496,7 +496,7 @@ function init_gear_sets()
 		--body="Theo. Briault +3", 
 		body="Shamash Robe", hands="Aya. Manopolas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
-		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 
 	sets.defense.MDT ={main="Mafic Cudgel", 
 		-- main=gear.grioavolr_fc_staff, sub="Irenic Strap +1",
@@ -504,7 +504,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1",  lear="Ethereal Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, 
-		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
     sets.defense.MEVA = {main="Mafic Cudgel", 
 		-- main=gear.grioavolr_fc_staff, sub="Irenic Strap +1",
@@ -512,7 +512,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1", lear="Ethereal Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, 
-		back="Felicitas Cape +1", waist="hands="Amalric Gages +1"", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 		
 	-- Engaged sets
 

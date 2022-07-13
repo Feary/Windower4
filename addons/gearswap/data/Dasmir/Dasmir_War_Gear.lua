@@ -213,7 +213,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {	
 		head="Sulevia's Mask +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Sulevia's Ring", rring="Defending Ring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring +1", rring="Defending Ring",
 		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
@@ -223,21 +223,21 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {
 		head="Sulevia's Mask +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Sulevia's Ring", rring="Defending Ring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring +1", rring="Defending Ring",
 		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = {
 		head="Sulevia's Mask +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Sulevia's Ring", rring="Defending Ring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring +1", rring="Defending Ring",
 		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
 		
 	sets.defense.MEVA = {
 		head="Sulevia's Mask +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Sulevia's Ring", rring="Defending Ring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring +1", rring="Defending Ring",
 		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.Kiting = {feet="Hermes' Sandals"}
@@ -1352,7 +1352,7 @@ function init_gear_sets()
 	
 	-- Proc Weapons Sets 
 	sets.weapons.ProcDagger = {main="Aern Dagger", sub="Adapa Shield"}
-	sets.weapons.ProcSword = {main="Ibushi Shinai", sub="Adapa Shield"}
+	sets.weapons.ProcSword = {main="Aern Sword", sub="Adapa Shield"}
 	sets.weapons.ProcGreatSword = {main="Montante", sub="Utu Grip"}
 	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Utu Grip"}
 	sets.weapons.ProcPolearm = {main="Aern Spear", sub="Utu Grip"}
