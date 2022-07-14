@@ -104,10 +104,10 @@ exec job_binds/brd_binds.txt
 exec job_binds/geo_binds.txt
 
 //whm
-//exec job_binds/whm_binds.txt
+exec job_binds/whm_binds.txt
 
 //sch
-exec job_binds/sch_binds.txt
+//exec job_binds/sch_binds.txt
 
 //cor
 exec job_binds/cor_binds.txt

@@ -515,6 +515,10 @@ function select_default_macro_book()
 	end
 end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 009')
+end
+
 function user_job_self_command(commandArgs, eventArgs)
 	
 end

@@ -124,7 +124,7 @@ gear.chironic_macc_legs = {name="Chironic Hose", augments={'Mag. Acc.+23 "Mag.At
 --gear.herculean_waltz_body = {name="Herculean Vest",augments={'Attack+26','"Waltz" potency +11%','AGI+4','Accuracy+5',}}
 gear.herculean_wsd_body = {name="Herculean Vest", augments={'INT+7','Pet: "Mag.Atk.Bns."+18','Weapon skill damage +5%','Accuracy+16 Attack+16','Mag. Acc.+4 "Mag.Atk.Bns."+4',}}
 
---gear.herculean_dt_hands = {name="Herculean Gloves",augments={'Attack+4','Damage taken-4%',}}
+--gear.herculean_dt_qat = {name="Herculean Gloves",augments={'Attack+4','Damage taken-4%',}}
 --gear.herculean_refresh_hands = {name="Herculean Gloves",augments={'Enmity+2','Pet: "Store TP"+4','"Refresh"+1',}}
 --gear.herculean_waltz_hands = {name="Herculean Gloves",augments={'Rng.Acc.+16','"Waltz" potency +11%','AGI+1',}}
 
@@ -140,7 +140,7 @@ gear.herculean_wsd_body = {name="Herculean Vest", augments={'INT+7','Pet: "Mag.A
 --gear.herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23','Rng.Acc.+14','Phalanx +1','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
 --gear.herculean_refresh_feet = {name="Herculean Boots",augments={'CHR+8','Rng.Acc.+7','"Refresh"+1','Mag. Acc.+17 "Mag.Atk.Bns."+17',}}
 
-gear.merlinic_nuke_head = "Merlinic Hood"
+gear.merlinic_nuke_head = {name="Merlinic Hood", augments={'"Mag.Atk.Bns."+27','Mag. Acc.+21','Magic burst dmg.+2%','Accuracy+4 Attack+4',}}
 --gear.merlinic_nuke_body = {name="Merlinic Jubbah",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Occult Acumen"+4','INT+10','Mag. Acc.+2','"Mag.Atk.Bns."+15',}}
 gear.merlinic_fastcast_body = "Merlinic Jubbah"
 
@@ -155,7 +155,7 @@ gear.merlinic_accpact_hands = {name="Merlinic Dastanas",  augments={'Pet: Accura
 --gear.merlinic_nuke_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Conserve MP"+1','INT+11','Mag. Acc.+3','"Mag.Atk.Bns."+15',}}
 --gear.merlinic_aspir_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +10','Mag. Acc.+15',}}
 --gear.merlinic_treasure_feet = {name="Merlinic Crackows",augments={'Accuracy+5','"Snapshot"+2','"Treasure Hunter"+2','Mag. Acc.+11 "Mag.Atk.Bns."+11',}}
---gear.merlinic_refresh_feet = {name="Merlinic Crackows", augments={'Pet: DEX+7','Pet: Mag. Acc.+7','"Refresh"+2','Accuracy+20 Attack+20',}}
+gear.merlinic_refresh_feet = {name="Merlinic Crackows", augments={'STR+12','MND+1','"Refresh"+2','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
 
 --gear.odyssean_wsd_hands = { name="Odyssean Gauntlets", augments={'Accuracy+26','Weapon skill damage +4%','STR+6','Attack+14',}}
 --gear.odyssean_stp_legs = {name="Odyssean Cuisses",augments={'Accuracy+28','"Store TP"+6','DEX+9',}}

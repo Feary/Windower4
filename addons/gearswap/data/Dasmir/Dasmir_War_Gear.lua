@@ -1352,7 +1352,7 @@ function init_gear_sets()
 	
 	-- Proc Weapons Sets 
 	sets.weapons.ProcDagger = {main="Aern Dagger", sub="Adapa Shield"}
-	sets.weapons.ProcSword = {main="Aern Sword", sub="Adapa Shield"}
+	sets.weapons.ProcSword = {main="Ibushi Shinai", sub="Adapa Shield"}
 	sets.weapons.ProcGreatSword = {main="Montante", sub="Utu Grip"}
 	sets.weapons.ProcScythe = {main="Ark Scythe", sub="Utu Grip"}
 	sets.weapons.ProcPolearm = {main="Aern Spear", sub="Utu Grip"}

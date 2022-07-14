@@ -433,13 +433,13 @@ function init_gear_sets()
 	sets.resting = {main="Daybreak",sub="Genmei Shield", -- ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
+		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet=gear.merlinic_refresh_feet}
 	
 	-- Idle sets
 	sets.idle = {main="Daybreak",sub="Genmei Shield", -- ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Shamash Robe",hands=gear.merlinic_refresh_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Malignance Boots"}
+		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet=gear.merlinic_refresh_feet}
 		
 	sets.idle.PDT = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
 		head="Aya. Zucchetto +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",

@@ -140,7 +140,7 @@ function init_gear_sets()
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
-		--back=gear.Cure_jse_back, 
+		--back=gear.Cure_jse_back, waist="Shinjutsu-no-obi +1"
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Piety Duckbills"}
 	sets.midcast.CureSolace =  {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
@@ -174,30 +174,34 @@ function init_gear_sets()
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
 	sets.midcast.Curaga =  {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
+		--head="Kaykaus Mitra +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring",  lear="Novia Earring",rear="Orison Earring",
+		-- body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1",
+		body="Annoint. Kalaris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.LightWeatherCuraga = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
+		--head="Kaykaus Mitra +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring",  lear="Novia Earring",rear="Orison Earring",
+		-- body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1",
+		body="Annoint. Kalaris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.LightDayCuraga = {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
+		--head="Kaykaus Mitra +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring",  lear="Novia Earring",rear="Orison Earring",
+		-- body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1",
+		body="Annoint. Kalaris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.Cure.DT = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
-		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
+		--head="Kaykaus Mitra +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring",  lear="Novia Earring",rear="Orison Earring",
+		-- body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1",
+		body="Annoint. Kalaris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Austerity Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
@@ -587,6 +591,10 @@ function select_default_macro_book()
 	else
 		set_macro_page(1, 1)
 	end	
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 001')
 end
 
 function user_job_self_command(commandArgs, eventArgs)

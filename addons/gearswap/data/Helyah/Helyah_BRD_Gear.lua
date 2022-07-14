@@ -482,6 +482,10 @@ function select_default_macro_book()
 	end
 end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 004')
+end
+
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
 

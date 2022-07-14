@@ -13,7 +13,7 @@ return {
     "Geomancy galero",
     "Geo. Pants +1",
     "Geo. Tunic +1",
-    "Geo. Sandals +1",
+    "Geo. Sandals +2",
     "Geo. Mitaines +1",
 	"Bagua Tunic",
     "Bagua Sandals",

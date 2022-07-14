@@ -272,7 +272,7 @@ function init_gear_sets()
 	sets.midcast.SongDebuff = {main="Carnwenhan", sub="Ammurapi Shield", range="Gjallarhorn",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Fili Hongreline +1", hands="Brioso Cuffs +3", lring="Stikini Ring", rring="Stikini Ring",
+		body="Fili Hongreline +1", hands="Brioso Cuffs +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- Acuity Belt +1
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 
@@ -280,14 +280,14 @@ function init_gear_sets()
 	sets.midcast.ResistantSongDebuff = {main="Carnwenhan", sub="Ammurapi Shield", range="Gjallarhorn",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- Acuity Belt +1
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 
 	sets.midcast.SongDebuff.DW = {main="Carnwenhan", sub="Ammurapi Shield", range="Gjallarhorn",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 	
 	-- Song-specific recast reduction
@@ -305,49 +305,49 @@ function init_gear_sets()
 	-- Other general spells and classes.
 	sets.midcast.Cure = {main="Daybreak", sub="Ammurapi Shield",
 		head="Kaykaus Mitra +1", neck="Reti Pendant", lear="Novia Earring", rear="Mendi. Earring",
-		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring",
+		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring +1",
 		--Shinjutsu-no-Obi +1
 		back="Aurist's Cape", waist="Bishop's Sash", legs="Kaykaus Tights +1", feet="Kaykaus Boots +1"}
 		
 	-- Weather/Day
 	sets.midcast.LightWeatherCure = {main="Daybreak", sub="Ammurapi Shield",
 		head="Kaykaus Mitra +1", neck="Reti Pendant", lear="Novia Earring", rear="Mendi. Earring",
-		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring",
+		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring +1",
 		--Shinjutsu-no-Obi +1
 		back="Aurist's Cape", waist="Bishop's Sash", legs="Kaykaus Tights +1", feet="Kaykaus Boots +1"}
 	sets.midcast.LightDayCure = {main="Daybreak", sub="Ammurapi Shield",
 		head="Kaykaus Mitra +1", neck="Reti Pendant", lear="Novia Earring", rear="Mendi. Earring",
-		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring",
+		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring +1",
 		--Shinjutsu-no-Obi +1
 		back="Aurist's Cape", waist="Bishop's Sash", legs="Kaykaus Tights +1", feet="Kaykaus Boots +1"}
 	
 	sets.midcast.Curaga = {main="Daybreak", sub="Ammurapi Shield",
 		head="Kaykaus Mitra +1", neck="Reti Pendant", lear="Novia Earring", rear="Mendi. Earring",
-		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring",
+		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring +1",
 		--Shinjutsu-no-Obi +1
 		back="Aurist's Cape", waist="Bishop's Sash", legs="Kaykaus Tights +1", feet="Kaykaus Boots +1"}
 
 	sets.midcast.LightWeatherCuraga = {main="Daybreak", sub="Ammurapi Shield",
 		head="Kaykaus Mitra +1", neck="Reti Pendant", lear="Novia Earring", rear="Mendi. Earring",
-		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring",
+		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring +1",
 		--Shinjutsu-no-Obi +1
 		back="Aurist's Cape", waist="Bishop's Sash", legs="Kaykaus Tights +1", feet="Kaykaus Boots +1"}
 
 	sets.midcast.LightDayCuraga = {main="Daybreak", sub="Ammurapi Shield",
 		head="Kaykaus Mitra +1", neck="Reti Pendant", lear="Novia Earring", rear="Mendi. Earring",
-		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring",
+		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring +1",
 		--Shinjutsu-no-Obi +1
 		back="Aurist's Cape", waist="Bishop's Sash", legs="Kaykaus Tights +1", feet="Kaykaus Boots +1"}
 	
 	sets.midcast.Cure.DT = {main="Daybreak", sub="Ammurapi Shield",
 		head="Kaykaus Mitra +1", neck="Reti Pendant", lear="Novia Earring", rear="Mendi. Earring",
-		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring",
+		body="Kaykaus Bliaut +1", hands="Kaykaus Cuffs +1", lring="Mephitas's Ring +1", rring="Stikini Ring +1",
 		--Shinjutsu-no-Obi +1
 		back="Aurist's Cape", waist="Bishop's Sash", legs="Kaykaus Tights +1", feet="Kaykaus Boots +1"}
 		
 	sets.Self_Healing = {}--waist="Gishdubar Sash"
 	sets.Cure_Received = {}--waist="Gishdubar Sash"
-	sets.Self_Refresh = {back="Grapevine Cape"}--,waist="Gishdubar Sash"
+	sets.Self_Refresh = {back="Grapevine Cape"}--,waist="Gishdubar Sash" feet="Inspirited Boots",
 	
 	sets.midcast.Cursna = {
 		--neck="Debilis Medallion", lear="Meili Earring"
@@ -355,27 +355,25 @@ function init_gear_sets()
 		--hands="Heiros Mittens", ring1="Haoma's Ring", ring2="Menelaus's Ring",
 		hands="Inyan. Dastanas +2", ring1="Sirona's Ring", ring2="Epherdra Ring",
 		-- Oretan. Cape +1
-		waist="Bishop's Sash", feet="Vanya Clogs"}
+		waist="Bishop's Sash", feet="Gende. Galosh. +1"}
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})--main="Marin Staff +1",sub="Clemency Grip"
 	
 	sets.midcast['Enfeebling Magic'] = {main="Daybreak", sub="Ammurapi Shield",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak", sub="Ammurapi Shield",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
-		--Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 		
 	sets.midcast['Enhancing Magic'] = {main="Oranyan",sub="Fulcio Grip",
 		-- Exemplar
 		-- Mimir Earring
 		head="Umuthi Hat", neck="Incantor's Torque", ear1="Loquacious Earring", ear2="Andoaa Earring",
-		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back="Fi Follet Cape +1",waist="Olympus Sash", legs="Shedir Seraweels", feet="Kaykaus Boofs +1"}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
@@ -388,12 +386,12 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'] = {main="Daybreak", sub="Ammurapi Shield",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 	sets.midcast['Elemental Magic'].Resistant = {main="Daybreak", sub="Ammurapi Shield",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		-- Stikini Ring +1 Stikini Ring +1
-		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini ring", rring="Stikini ring",
+		body="Brioso Justau. +3", hands="Brioso Cuffs +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.FC_jse_back, waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 		
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
@@ -465,8 +463,8 @@ function init_gear_sets()
 	sets.engaged = {main="Carnwenhan", sub="Genmei Shield", ranged=gear.Instrument_TP,
 		-- Bunzi's Hat Bard's Charm +2
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Telos Earring", rear="Cessance Earring",
-		-- Bunzi Gloves Chirich Ring +1 Chirich Ring +1
-		body="Ashera Harness", hands="Aya. Manopolas +2", lring="Rajas Ring", rring="Ilabrat Ring",
+		-- Bunzi Gloves 
+		body="Ashera Harness", hands="Aya. Manopolas +2", lring="Chirich Ring +1", rring="Chirich Ring +1",
 		-- Saifi Belt +1 Volte Tights Nyame Boots
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 	

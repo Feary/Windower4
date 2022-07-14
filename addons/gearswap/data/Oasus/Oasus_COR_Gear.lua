@@ -79,7 +79,7 @@ function init_gear_sets()
 		head="Lanun Tricorne", neck="Regal Necklace",
 		body="Meg. Cuirie", hands="Chasseur's Gants", lring="Barataria Ring", rring="Defending Ring",
 		--  legs="Desultor Tassets" -dt feet
-		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses", feet="Meg. Jambeaux"}
+		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
@@ -100,17 +100,17 @@ function init_gear_sets()
 	
 	-- STP 
     sets.precast.CorsairShot.STP = {ammo=gear.QDbullet,
-		-- neck="Combatant's Torque", lear="Dedition Earring", rear="Telos Earring",
+		--  lear="Dedition Earring", rear="Telos Earring",
 		head="Laksa. Tricorne +2", neck="Iskur Gorget", lear="Neritic Earring", rear="Enervating Earring",
-		-- body="Oshosi Vest +1", lring="Chirich Ring +1", rring="Chirich Ring +1",
-		body="Oshosi Vest", hands="Laksa. Gants +2", lring="Rajas Ring", rring="Chirich Ring",
+		-- body="Oshosi Vest +1", 
+		body="Oshosi Vest", hands="Laksa. Gants +2", lring="Chirich Ring +1", rring="Chirich Ring +1",
 		-- waist="Kwahu Kachina Belt", feet="Lanun Boots +2"
 		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Carmine Greaves +1"}
 	
 	-- Acc 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
-		-- neck="Combatant's Torque", lear="Diginitary Earring", 
-		head="Laksa. Tricorne +2", neck="Voltsurge Torque", rear="Gwati Earring",
+		--  lear="Diginitary Earring", 
+		head="Laksa. Tricorne +2", neck="Combatant's Torque", rear="Gwati Earring",
 		body="Mummu Jacket +2", hands="Laksa. Gants +2", lring="Rajas Ring", rring="Stikini Ring",
 		-- waist="Kwahu Kachina Belt",
 		back=gear.magic_QD_jse_back, waist="Yemaya Belt", legs="Mummu Kecks +2", feet="Laksa. Bottes  +2"}
@@ -173,13 +173,13 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		-- rring="Epaminondas's Ring", 
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
+		--
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epaminondas's Ring", 
 		back=gear.magic_wsd_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
     sets.precast.WS.Acc = {
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring",  rring="Epaminondas's Ring", 
 		back=gear.magic_wsd_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
     sets.precast.WS.Proc = {
@@ -198,8 +198,7 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
 		-- rear="Ishvara Earring",
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Steelflash Earring",
-		-- rring="Epaminondas's Ring",
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epaminondas's Ring", 
 		-- Herc legs str acc att wsd Lanun Boots +3
 		back=gear.str_wsd_jse_back, waist="Prosilio Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -215,8 +214,8 @@ function init_gear_sets()
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
 		-- head="Lanun Tricorne +3", rear="Ishvara Earring"
 		head="Meghanada Visor +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Enervating Earring",
-		-- lring="Epaminondas's Ring", 
-		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Dingir Ring", 
+		-- 
+		body="Laksa. Frac +3", hands="Meg. Gloves +2", lring="Epaminondas's Ring",  rring="Dingir Ring", 
 		-- feet="Lanun Boots +3"
 		back=gear.ranger_wsd_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -409,78 +408,83 @@ function init_gear_sets()
 	-- Single Weapon
     sets.engaged = {
 		-- head="Adhemar Bonnet +1"  rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Brutal Earring", rear="Suppanomimi",
-		-- body="Herculean Vest", hands="Adhemar Wrist. +1"
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
-		--  feet="Herculean Boots", TA
-		back=gear.tp_jse_back, waist="Windbuffet Belt", legs="Samnuha Tights", feet="Meg. Jam. +2"}
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Brutal Earring", rear="Mache Earring +1",
+		-- body="Ashera Harness", hands="Adhemar Wrist. +1" lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Salifi Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 
     sets.engaged.Acc = {
-		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Brutal Earring", rear="Suppanomimi",
-		-- body="Herculean Vest", hands="Adhemar Wrist. +1" rring="Chirich Ring +1",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
-		-- waist="Olseni Belt",
-		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
+		-- head="Adhemar Bonnet +1"  rear="Dedition Earring"
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Mache Earring +1", rear="Mache Earring +1",
+		-- body="Ashera Harness", hands="Adhemar Wrist. +1" lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Salifi Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 	
 	 sets.engaged.Low = {
-		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
-		-- body="Herculean Vest", hands="Adhemar Wrist. +1"  rring="Chirich Ring +1",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2",lring="Petrov Ring", rring="Epona's Ring",
-		-- waist="Olseni Belt", 
-		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
+		-- head="Adhemar Bonnet +1"  rear="Dedition Earring"
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Mache Earring +1", rear="Mache Earring +1",
+		-- body="Ashera Harness", hands="Adhemar Wrist. +1" lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Salifi Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 
 	sets.engaged.Mid = {
-		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
-		-- body="Herculean Vest", hands="Adhemar Wrist. +1" rring="Chirich Ring +1",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
-		-- waist="Olseni Belt", 
-		back=gear.tp_jse_back, waist="Kentarch Belt +1",legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
+		-- head="Adhemar Bonnet +1"  rear="Dedition Earring"
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Mache Earring +1", rear="Mache Earring +1",
+		-- body="Ashera Harness", hands="Adhemar Wrist. +1" lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Salifi Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 
 	sets.engaged.Max = {
-		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
-		-- body="Herculean Vest", hands="Adhemar Wrist. +1" rring="Chirich Ring +1",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
-		-- waist="Olseni Belt", 
-		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
+		-- head="Adhemar Bonnet +1"  rear="Dedition Earring"
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Mache Earring +1", rear="Mache Earring +1",
+		-- body="Ashera Harness", hands="Adhemar Wrist. +1" lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Salifi Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 
     sets.engaged.DW = {
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Heartseeker Earring", rear="Dudgeon Earring",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ramuh Ring",
-		back=gear.DW_jse_back, waist="Kentarch Belt +1", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		-- head="Adhemar Bonnet +1"  Path B neck="Iskur Gorget", rear="Dedition Earring"
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Suppanomimi", rear="Mache Earring +1",
+		-- body="Adhemar Jacket +1", Path A hands=gear.herculean_dt_qat, lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Windbuffet Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 
     sets.engaged.DW.Acc = {
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Heartseeker Earring", rear="Dudgeon Earring",
-		-- Adhemar Jacket +1
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Cacoethic Ring", rring="Ramuh Ring",
-		back=gear.DW_jse_back, waist="Kentarch Belt +1", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		-- head="Adhemar Bonnet +1"  Path B neck="Iskur Gorget", rear="Dedition Earring"
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Suppanomimi", rear="Mache Earring +1",
+		-- body="Adhemar Jacket +1", Path A hands=gear.herculean_dt_qat, lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Windbuffet Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 	
 	sets.engaged.DW.Low = {
-		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
-		-- body="Herculean Vest", hands="Adhemar Wrist. +1"  rring="Chirich Ring +1",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
-		-- waist="Olseni Belt", 
-		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
+		-- head="Adhemar Bonnet +1"  Path B neck="Iskur Gorget", rear="Dedition Earring"
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Suppanomimi", rear="Mache Earring +1",
+		-- body="Adhemar Jacket +1", Path A hands=gear.herculean_dt_qat, lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Windbuffet Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 
 	sets.engaged.DW.Mid = {
-		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
-		-- body="Herculean Vest", hands="Adhemar Wrist. +1" rring="Chirich Ring +1",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
-		-- waist="Olseni Belt", 
-		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
+		-- head="Adhemar Bonnet +1"  Path B neck="Iskur Gorget", rear="Dedition Earring"
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Suppanomimi", rear="Mache Earring +1",
+		-- body="Adhemar Jacket +1", Path A hands=gear.herculean_dt_qat, lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Windbuffet Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 
 	sets.engaged.DW.Max = {
-		-- head="Dampening Tam" neck="Combatant's Torque", lear="Mache Earring", rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Suppanomimi",
-		-- body="Herculean Vest", hands="Adhemar Wrist. +1" lring="Petrov Ring", rring="Chirich Ring +1",
-		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Epona's Ring",
-		-- waist="Olseni Belt", 
-		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Carmine Cuisses +1", feet="Meg. Jam. +2"}
+		-- head="Adhemar Bonnet +1"  Path B neck="Iskur Gorget", rear="Dedition Earring"
+		head="Meghanada Visor", neck="Combatant's Torque", lear="Suppanomimi", rear="Mache Earring +1",
+		-- body="Adhemar Jacket +1", Path A hands=gear.herculean_dt_qat, lring="Petrov Ring", rring="Epona's Ring",
+		body="Meghanada Cuirie", hands="Meghanada Gloves", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- waist="Windbuffet Belt +1", legs="Samnuha Tights",
+		back=gear.tp_jse_back, waist="Twilight Belt", legs="Meg. Chausses", feet="Malignance Boots"}
 end
 
 -- Select default macro book on initial load or subjob change.
@@ -496,4 +500,8 @@ function select_default_macro_book()
     else
         set_macro_page(1, 10)
     end   
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 010')
 end

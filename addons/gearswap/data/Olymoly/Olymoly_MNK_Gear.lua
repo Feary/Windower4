@@ -399,12 +399,12 @@ function init_gear_sets()
 	sets.weapons.Barehanded = {main=empty}
 	sets.weapons.Staff = {main="Malignance Pole", sub=empty}
 	sets.weapons.Club = {main="Mafic Cudgel",sub=empty}
-	sets.weapons.ProcStaff = {main="Chatoyant Staff"}
+	sets.weapons.ProcStaff = {main="Aern Staff"}
 	sets.weapons.ProcClub = {main="Rounsey Wand"}
-	sets.weapons.ProcSword = {main="Ibushi Shinai",sub=empty}
+	sets.weapons.ProcSword = {main="Aern Sword",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Lament",sub=empty}
 	sets.weapons.ProcScythe = {main="Ark Scythe",sub=empty}
-	sets.weapons.ProcPolearm = {main="Pitchfork",sub=empty}
+	sets.weapons.ProcPolearm = {main="Aern Spear",sub=empty}
 	sets.weapons.ProcGreatKatana = {main="Zanmato",sub=empty}
 end
 

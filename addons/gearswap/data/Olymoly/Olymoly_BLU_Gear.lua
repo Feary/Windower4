@@ -11,7 +11,6 @@ function user_setup()
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('None','Ambu','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons','DualAmbu','DualMagicWeapons','DualMeleeClubs','DualMaccWeapons','HybridWeapons')--'Tizalmace','Sequence','Almace',
 
-    
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'MP','SuppaBrutal', 'DWEarrings','DWMax'}
 	
 	-- 'DEX+20','Accuracy+20 Attack+20','"Dbl. Atk. +10',}}
@@ -24,8 +23,6 @@ function user_setup()
 	gear.FC_jse_back = 		{name="Rosmerta's Cape", augments={'"Fast Cast"+10',}}
 	gear.cure_jse_back =	{name="Rosmerta's Cape",augments={'MND+20','"Cure" potency +10%',}}
 	
-	gear.obi_cure_waist = "Chuq'aba Belt"
-	gear.obi_nuke_waist = "Eschan Stone"
 
 	-- Additional local binds
 	send_command('bind ^` input /ja "Chain Affinity" <me>')

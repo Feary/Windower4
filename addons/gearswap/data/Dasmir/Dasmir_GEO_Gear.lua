@@ -44,7 +44,7 @@ function init_gear_sets()
 
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Bolster = {body="Bagua Tunic"}
-	sets.precast.JA['Life Cycle'] = {body="Geom. Tunic +1", back=gear.idle_jse_back}
+	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic +1", back=gear.idle_jse_back}
 	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals"}
 	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants"}
 	sets.precast.JA['Full Circle'] = {head="Azimuth Hood", hands="Bagua Mitaines"}
@@ -62,8 +62,8 @@ function init_gear_sets()
 		head="Amalric Coif +1", neck="Voltsurge Torque", ear1="Enchntr. Earring +1", ear2="Malignance Earring",
 		--body="Zendik Robe", 
 		Body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring", 
-		-- legs="Geomancy Pants +2", 
-		back=gear.FC_jse_back, waist="Witful Belt", legs="Geo. Pants +1", feet="Amalric Nails +1"}
+		-- gear.FC_jse_backlegs="Geomancy Pants +2", 
+		back="Lifestream Cape", waist="Witful Belt", legs="Geo. Pants +1", feet="Amalric Nails +1"}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {main="Idris", sub="Genmei Shield", range="Dunna",ammo=empty,})
 	
@@ -83,7 +83,7 @@ function init_gear_sets()
 	
 	sets.Self_Healing = {neck="Phalaina Locket", ring2="Asklepian Ring"} --ring1="Kunaji Ring",waist="Gishdubar Sash"
 	sets.Cure_Received = {neck="Phalaina Locket", ring2="Asklepian Ring"} --ring1="Kunaji Ring",waist="Gishdubar Sash"
-	sets.Self_Refresh = {,feet="Inspirited Boots"} --back="Grapevine Cape",waist="Gishdubar Sash"
+	sets.Self_Refresh = {feet="Inspirited Boots"} --back="Grapevine Cape",waist="Gishdubar Sash"
 	
 	
 	--------------------------------------
@@ -100,9 +100,9 @@ function init_gear_sets()
 
 	sets.midcast.Geomancy = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- neck="Incantor's Torque", 
-		head="Azimuth Hood", neck="Melic Torque", rear="Calamutious Earring",
+		head="Azimuth Hood", neck="Melic Torque", rear="Calamitous Earring",
 		body="Bagua Tunic", hands="Geo. Mitaines +1", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		back="Lifestream Cape", waist="Austerity Belt", legs="Bagua Pants", feet="Azimuth Gaiters +1"}
+		back="Lifestream Cape", waist="Austerity Belt", legs="Vanya Slops", feet="Azimuth Gaiters +1"}
 
 	--Extra Indi duration on any slot you can't get skill on here.
 	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {main="Idris", sub="Ammurapi Shield", range="Dunna",
@@ -114,7 +114,8 @@ function init_gear_sets()
     sets.midcast.Cure = {main="Daybreak", sub="Sors Shield", range="Dunna",
 		head="Vanya Hood", neck="Colossus's Torque", lear="Novia Earring", rear="Regal Earring",
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
-		back=gear.Cure_jse_back, waist="olympus Sash", legs="Gyve Trousers", feet="Skaoi Boots"}
+		-- Vanya Boots
+		back=gear.Cure_jse_back, waist="olympus Sash", legs="Vanya Slops", feet="Skaoi Boots"}
 
     sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Kaja Grip", range="Dunna",
 		head="Vanya Hood", neck="Colossus's Torque", lear="Novia Earring", rear="Regal Earring",
@@ -280,7 +281,7 @@ function init_gear_sets()
 	sets.idle = {main="Idris", sub="Genmei Shield", range="Dunna",
 		head="Befouled Crown", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Shamash Robe", hands=gear.merlinic_refresh_hands, ring1="Stikini Ring +1", ring2="Stikini Ring +1",
-		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Mallquis Clogs +2"}
+		back=gear.FC_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet=gear.merlinic_refresh_feet}
 
 	sets.idle.PDT = {main="Idris", sub="Genmei Shield", range="Dunna",
 		-- Genmei Earring 
@@ -340,7 +341,7 @@ function init_gear_sets()
 	
 	sets.defense.GeoLock = sets.midcast.Geomancy.Indi
 
-	sets.Kiting = {feet="Geo. Sandals +1"} -- feet="Geo. Sandals +3"
+	sets.Kiting = {feet="Geo. Sandals +2"} -- feet="Geo. Sandals +3"
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}
@@ -429,6 +430,7 @@ function init_gear_sets()
 	-- Gear for Magic Burst mode.
     sets.MagicBurst = {neck="Mizu. Kubikazari", ring1="Mujin Band", feet="Jhakri Pigaches +2"}--body="Ea Houppelande",hands="Ea Cuffs",legs="Ea Slops",
 	sets.RecoverBurst = {neck="Mizu. Kubikazari", body="Seidr Cotehardie", ring1="Mujin Band", feet="Jhakri Pigaches +2"}--head="Ea Hat", hands="Ea Cuffs",legs="Ea Slops",
+	
 	-- Weapons sets
 	sets.weapons.SingleWeapon = {main="Daybreak", sub="Genmei Shield", ranged="Dunna"}
 	sets.weapons.DualWeapons = {main="Daybreak", sub="Maxentius", ranged="Dunna"}	

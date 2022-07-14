@@ -10,9 +10,9 @@ function user_setup()
 
 	-- Augmented Capes
 	--{name="Alaunus's Cape", augments={'"Fast Cast"+10',}}
-	gear.fastcast_jse_back = {name="Alaunus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
-	gear.Cure_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
-	gear.Macc_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
+	gear.fastcast_jse_back =	{name="Alaunus's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
+	gear.Cure_jse_back = 		{name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
+	gear.Macc_jse_back = 		{name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
 	
 	--[[Global binds you may want to change.
 	Bind special characters.
@@ -577,6 +577,10 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
 	set_macro_page(1, 1)
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 001')
 end
 
 buff_spell_lists = {

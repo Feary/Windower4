@@ -545,8 +545,7 @@ function init_gear_sets()
 	sets.engaged.DW.KC = {
 		-- rear="Odr Earring", 
 		head="Malignance Chapeau", neck="Iskur Gorget",  lear="Dedition Earring", rear="Suppanomimi",
-		-- Chirich Ring +1 Chirich Ring +1
-		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Ilabrat Ring",
+		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Chirich Ring +1", rring="Chirich Ring +1",
 		-- Olsen Belt 
 		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Meg. Chausses +2", feet="Malignance Boots"}
 
