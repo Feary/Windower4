@@ -23,8 +23,6 @@ return {
     "Flamma Ring",
 	"Aern Dagger",
 	"Aern Dagger II",
-	"Aern Sword",
-	"Aern Sword II",
 	"Aern Staff", 
 	"Aern Spear",
     "Zanmato",
@@ -35,6 +33,6 @@ return {
 	"Naegling",	
 	"Shining One",
     "Dolichenus",
-	"Kaja Sword",
+	"Kaja Sword"
 	--"Kaja Axe",
 }

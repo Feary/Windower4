@@ -103,7 +103,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 	sets.precast.FC = {main="Oranyan", sub="Clerisy Strap +1",
 		head="Vanya Hood", neck="Orunmila's Torque", lear="Loquac. Earring", rear="Enchntr. Earring +1",
-		body="Inyanga Jubbah +2", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
+		body="Zendik Robe", hands="Leyline Gloves", lring="Prolix Ring", rring="Kishar Ring",
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {

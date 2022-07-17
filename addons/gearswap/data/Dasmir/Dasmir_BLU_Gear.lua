@@ -657,6 +657,10 @@ function select_default_macro_book()
 	set_macro_page(10, 8)
 end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 008')
+end
+
 --Job Specific Trust Overwrite
 function check_trust()
 	if not moving then

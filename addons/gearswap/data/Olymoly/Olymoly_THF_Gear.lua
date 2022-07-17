@@ -74,13 +74,11 @@ function init_gear_sets()
 	sets.precast.Step = {ammo="Yamarang",
 		head="Malignance Chapeau", neck="Erudit. Necklace", lear="Sherida Earring", rear="Telos Earring",
 		body="Pillager's Vest +3", hands="Adhemar Wrist. +1", lring="Regal Ring", rring="Ilabrat Ring",
-		-- Herculean Boots 
 		back=gear.stp_jse_back, waist="Windbuffet Belt +1", legs="Pill. Culottes +3", feet="Malignance Boots"}
 	-- Macc
     sets.precast.JA['Violent Flourish'] = {ammo="Yamarang",  
 		head="Malignance Chapeau", neck="Erudit. Necklace", lear="Digni. Earring", rear="Sherida Earring",
 		body="Pillager's Vest +3", hands="Adhemar Wrist. +1", lring="Regal Ring", rring="Stikini Ring",
-		-- Herculean Boots 
 		back=gear.stp_jse_back, waist="Grunfeld Rope", legs="Pill. Culottes +3", feet="Malignance Boots"}
 
 	sets.precast.JA['Animated Flourish'] = sets.TreasureHunter
@@ -427,7 +425,7 @@ function init_gear_sets()
 		-- Herculean Helm
         head="Haruspex Hat +1",neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
         body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Moonlight Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Tempus Fugit",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+        back="Moonbeam Cape",waist="Tempus Fugit",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
     -- Specific spells
 	sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {})--back="Mujin Mantle"
@@ -615,6 +613,9 @@ function select_default_macro_book()
     end
 end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 005')
+end
 -- Dynamis Trust Overwrite
 function check_trust()
 	if not moving then
