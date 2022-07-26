@@ -1,0 +1,16 @@
+sets.exported={
+    main="Mafic Cudgel",
+    ammo="Incantor Stone",
+    head={ name="Merlinic Hood", augments={'Pet: Accuracy+29 Pet: Rng. Acc.+29','"Fast Cast"+1','Accuracy+4 Attack+4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+    body="Shamash Robe",
+    hands="Jhakri Cuffs",
+    legs="Jhakri Slops",
+    feet="Jhakri Pigaches",
+    neck="Saevus Pendant +1",
+    waist="Austerity Belt",
+    left_ear="Ethereal Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Shneddick Ring",
+    right_ring="Defending Ring",
+    back={ name="Lugh's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Mag. Evasion+15',}},
+}

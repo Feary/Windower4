@@ -44,7 +44,7 @@ function init_gear_sets()
 
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Bolster = {body="Bagua Tunic"}
-	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic +1", back=gear.idle_jse_back}
+	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic +2", back=gear.idle_jse_back}
 	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals"}
 	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants"}
 	sets.precast.JA['Full Circle'] = {head="Azimuth Hood", hands="Bagua Mitaines"}
@@ -62,8 +62,8 @@ function init_gear_sets()
 		head="Amalric Coif +1", neck="Voltsurge Torque", ear1="Enchntr. Earring +1", ear2="Malignance Earring",
 		--body="Zendik Robe", 
 		Body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring", 
-		-- gear.FC_jse_backlegs="Geomancy Pants +2", 
-		back="Lifestream Cape", waist="Witful Belt", legs="Geo. Pants +1", feet="Amalric Nails +1"}
+		-- gear.FC_jse_back 
+		back="Lifestream Cape", waist="Witful Belt", legs="Geomancy Pants +2", feet="Amalric Nails +1"}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {main="Idris", sub="Genmei Shield", range="Dunna",ammo=empty,})
 	
@@ -95,26 +95,25 @@ function init_gear_sets()
 		head="Amalric Coif +1", neck="Voltsurge Torque", ear1="Enchntr. Earring +1", ear2="Malignance Earring",
 		--body="Zendik Robe", 
 		Body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1="Kishar Ring", ring2="Prolix Ring", 
-		-- legs="Geomancy Pants +2", 
-		back=gear.FC_jse_back, waist="Witful Belt", legs="Geo. Pants +1", feet="Amalric Nails +1"})
+		back=gear.FC_jse_back, waist="Witful Belt", legs="Geomancy Pants +2", feet="Amalric Nails +1"})
 
 	sets.midcast.Geomancy = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- neck="Incantor's Torque", 
-		head="Azimuth Hood", neck="Melic Torque", rear="Calamitous Earring",
-		body="Bagua Tunic", hands="Geo. Mitaines +1", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		head="Azimuth Hood", neck="Melic Torque", lear="Ethereal Earring", rear="Calamitous Earring",
+		body="Bagua Tunic", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back="Lifestream Cape", waist="Austerity Belt", legs="Vanya Slops", feet="Azimuth Gaiters +1"}
 
 	--Extra Indi duration on any slot you can't get skill on here.
 	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- neck="Incantor's Torque",
 		head="Azimuth Hood", neck="Melic Torque",
-		body="Bagua Tunic", hands="Geo. Mitaines +1", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		body="Bagua Tunic", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back="Lifestream Cape", legs="Bagua Pants", feet="Azimuth Gaiters +1"})
 
     sets.midcast.Cure = {main="Daybreak", sub="Sors Shield", range="Dunna",
 		head="Vanya Hood", neck="Colossus's Torque", lear="Novia Earring", rear="Regal Earring",
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
-		-- Vanya Boots
+		-- Vanya Clogs
 		back=gear.Cure_jse_back, waist="olympus Sash", legs="Vanya Slops", feet="Skaoi Boots"}
 
     sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Kaja Grip", range="Dunna",
@@ -176,59 +175,49 @@ function init_gear_sets()
 	
     sets.midcast['Dark Magic'] = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		head="Bagua Galero", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
-		--body="Geomancy Tunic +2", hands="Geo. Mitaines +2", 
-		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- legs="Geomancy Pants +2", feet="Geo. Sandals +3"
-		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
+		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
 
     sets.midcast.Drain = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		head="Bagua Galero", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
-		--body="Geomancy Tunic +2", hands="Geo. Mitaines +2", 
-		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- legs="Geomancy Pants +2", feet="Geo. Sandals +3"
-		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
+		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
 
     sets.midcast.Aspir = sets.midcast.Drain
 		
 	sets.midcast.Stun = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		-- head="Geo. Galero +2", 
-		head="Mall. Chapeau +2", neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
-		--body="Geomancy Tunic +2", hands="Geo. Mitaines +2", 
-		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Kishar Ring", rring="Prolix Ring",
-		-- legs="Geomancy Pants +2", feet="Geo. Sandals +3"
-		back=gear.nuke_jse_back, waist="Witful Belt", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
+		head="Mall. Chapeau +2", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
+		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Witful Belt", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
 
+	sets.midcast.Impact = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
+		head=empty, neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
+		body="Twilight Cloak", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
+		
 	sets.midcast.Stun.Resistant = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		-- head="Geo. Galero +2", 
 		head="Mall. Chapeau +2", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
-		--body="Geomancy Tunic +2", hands="Geo. Mitaines +2", 
-		body="Mallquis Saio +2", hands="Mallquis Cuffs +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- legs="Geomancy Pants +2", feet="Geo. Sandals +3"
-		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
+		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
 
 	sets.midcast.Impact = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
-		-- head="Geo. Galero +2", 
 		head=empty, neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
-		-- hands="Geo. Mitaines +2", 
-		body="Twilight Cloak", hands="Amalric Gages +1", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- legs="Geomancy Pants +2", feet="Geo. Sandals +3"
-		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
+		body="Twilight Cloak", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
 
 	sets.midcast['Enfeebling Magic'] = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		-- head="Geo. Galero +2", 
 		head="Mall. Chapeau +2", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
-		--body="Geomancy Tunic +2", 
-		body="Mallquis Saio +2", hands="Regal Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- legs="Geomancy Pants +2", feet="Geo. Sandals +3"
-		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
+		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak", sub="Ammurapi Shield", range="Dunna",
 		-- head="Geo. Galero +2", 
-		head="Mall. Chapeua +2", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
-		--body="Geomancy Tunic +2", hands="Geo. Mitaines +2", 
-		body="Mallquis Saio +2", hands="Regal Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- legs="Geomancy Pants +2", feet="Geo. Sandals +3"
-		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Mallquis Trews +2", feet="Mallquis Clogs +2"}
+		head="Mall. Chapeau +2", neck="Erra Pendant", lear="Regal Earring", rear="Malignance Earring",
+		body="Geomancy Tunic +2", hands="Geo. Mitaines +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Luminary Sash", legs="Geomancy Pants +2", feet="Geo. Sandals +2"}
 
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {})
     sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {})

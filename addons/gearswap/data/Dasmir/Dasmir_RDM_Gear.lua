@@ -623,6 +623,9 @@ function user_job_self_command(commandArgs, eventArgs)
 
 end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 003')
+end
 
 buff_spell_lists = {
 	Auto = {

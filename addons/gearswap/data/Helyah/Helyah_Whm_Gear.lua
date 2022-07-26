@@ -136,65 +136,65 @@ function init_gear_sets()
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
 	sets.midcast.Cure = {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
+		--head="Gende. Caubeen +1", neck="Melic Torque", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring", lear="Novia Earring", rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 	sets.midcast.CureSolace =  {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
+		--head="Gende. Caubeen +1", neck="Melic Torque", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back,
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
 	sets.midcast.LightWeatherCure = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
+		--head="Gende. Caubeen +1", neck="Melic Torque", rear="Nourish. Earring",	
 		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 	sets.midcast.LightWeatherCureSolace = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
+		--head="Gende. Caubeen +1", neck="Melic Torque", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring", rear="Novia Earring", 
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 	
 	sets.midcast.LightDayCure =  {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
+		--head="Gende. Caubeen +1", neck="Melic Torque", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}	
 	
 	sets.midcast.LightDayCureSolace = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque",  rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring", lear="Novia Earring", rear="Orison Earring",
+		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 		
 	sets.midcast.Curaga =  {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
+		--head="Gende. Caubeen +1", neck="Melic Torque", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.LightWeatherCuraga = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring",  rear="Orison Earring",
+		--head="Gende. Caubeen +1", neck="Melic Torque", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Beatific Earring", rear="Orison Earring",
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.LightDayCuraga = {main="Vadose Rod", sub="Sors Shield", ammo="Psilomene",
-		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring",
+		--head="Gende. Caubeen +1", neck="Melic Torque", rear="Nourish. Earring",	
+		head="Ebers Cap", lear="Novia Earring", rear="Orison Earring", 
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}
 
 	sets.midcast.Cure.DT = {main="Iridal Staff", sub="Achaq Grip", ammo="Psilomene",
 		--head="Gende. Caubeen +1", neck="Melic Torque", lear="Novia Earring", rear="Nourish. Earring",	
-		head="Ebers Cap", lear="Beatific Earring",
+		head="Ebers Cap", lear="Novia Earring", rear="Orison Earring", 
 		body="Ebers Bliaut", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		--back=gear.Cure_jse_back, 
 		back="Tempered Cape +1", waist="Cascade Belt", legs="Ebers Pantaloons", feet="Skaoi Boots"}

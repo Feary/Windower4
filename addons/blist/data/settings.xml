@@ -1,0 +1,17 @@
+<?xml version="1.1" ?>
+<settings>
+    <global>
+        <bazaar>true</bazaar>
+        <emote>true</emote>
+        <examine>true</examine>
+        <linkshell>true</linkshell>
+        <linkshell2>true</linkshell2>
+        <mutedcolor>57</mutedcolor>
+        <party>true</party>
+        <say>true</say>
+        <shout>true</shout>
+        <tell>true</tell>
+        <useblist>true</useblist>
+        <yell>true</yell>
+    </global>
+</settings>

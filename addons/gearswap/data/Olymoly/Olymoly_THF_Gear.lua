@@ -464,13 +464,13 @@ function init_gear_sets()
 
     sets.idle = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum",
         head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
-        body="Ashera Harness",hands="Turms Mittens +1",ring1="Moonbeam Ring",ring2="Defending Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
+        body="Ashera Harness",hands="Turms Mittens +1",ring1="Moonlight Ring",ring2="Defending Ring",
+        back="Shadow Mantle",waist="Flume Belt",legs="Malignance Tights",feet="Turms Leggings +1"}
 		
 	sets.idle.Regen = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum",
         head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
-        body="Turms Harness",hands="Turms Mittens +1",ring1="Moonbeam Ring",ring2="Defending Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
+        body="Turms Harness",hands="Turms Mittens +1",ring1="Moonlight Ring",ring2="Defending Ring",
+        back="Shadow Mantle",waist="Flume Belt",legs="Malignance Tights",feet="Turms Leggings +1"}
 
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -479,20 +479,20 @@ function init_gear_sets()
     -- Defense sets
     sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Malignance Chapeau",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Genmei Earring",
-        body="Ashera Harness",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
+        body="Ashera Harness",hands="Meg. Gloves +2",ring1="Moonlight Ring",ring2="Defending Ring",
+        back="Shadow Mantle",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
        	head="Malignance Chapeau", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
-		body="Turms Harness", hands="Turms Mittens +1", lring="Moonbeam Ring", rring="Defending Ring",
-		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Malignance Boots"}
+		body="Turms Harness", hands="Turms Mittens +1", lring="Moonlight Ring", rring="Defending Ring",
+		back="Moonbeam Cape", waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		-- Turms Harness +1
-		body="Turms Harness", hands="Turms Mittens +1", lring="Moonbeam Ring", rring="Defending Ring",
+		body="Turms Harness", hands="Turms Mittens +1", lring="Moonlight Ring", rring="Defending Ring",
 		-- Turms Subligar +1 
-		back="Moonbeam Cape", waist="Flume Belt", legs="Mummu Kecks +2", feet="Turms Leggings +1"}
+		back="Moonbeam Cape", waist="Flume Belt", legs="Malignance Tights", feet="Turms Leggings +1"}
 	
 
     --------------------------------------
@@ -523,7 +523,7 @@ function init_gear_sets()
 		--neck="Assassin's Gorget +2",
         head="Plun. Bonnet +3",neck="Iskur Gorget",lear="Sherida Earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar Wristbands",ring1="Epona's Ring", rring="Regal Ring", 
-        back=gear.stp_jse_back,waist="Reiki Yotai", legs="Pill. Culottes +3",  feet="Plun. Poulaines +3"}
+        back=gear.stp_jse_back,waist="Reiki Yotai", legs="Malignance Tights",  feet="Malignance Boots"}
 	
 	sets.engaged.Fodder = {ammo="Ginsen",
 		--head="Adhemar Bonnet", Path A neck="Assassin's Gorget +2", 
@@ -534,68 +534,63 @@ function init_gear_sets()
     sets.engaged.PDT = {ammo="Staunch Tathlum",
         head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Defending Ring",
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +3"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}
 
     sets.engaged.SomeAcc.PDT = {ammo="Staunch Tathlum", 
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness", hands="Adhemar Wrist. +1", ring1="Epona's Ring", ring2="Defending Ring",
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +3"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}
 
     sets.engaged.Acc.PDT = {ammo="Staunch Tathlum",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness", hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Defending Ring",
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +3"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}
 
     sets.engaged.FullAcc.PDT = {ammo="Staunch Tathlum",
 		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness", hands="Adhemar Wrist. +1", ring1="Epona's Ring",ring2="Defending Ring",
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +3"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}
 
     sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness", hands="Adhemar Wrist. +1", ring1="Epona's Ring",ring2="Defending Ring",
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Plun. Poulaines +3"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}
 		
 	
     sets.engaged.Evasion = {ammo="Yamarang",
-		-- Malignance Chapeau Neck="Assassin Gorget +2", ear2="Balder Earring +1"
+		-- Neck="Assassin Gorget +2", ear2="Balder Earring +1"
         head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Malignance Tabard Malignance Gloves Gere Ring
         body="Ashera Harness",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
-		-- Malignance Tights
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.SomeAcc.Evasion = {ammo="Yamarang",
-		-- Malignance Chapeau Neck="Assassin Gorget +2", ear2="Balder Earring +1"
+		-- Neck="Assassin Gorget +2", ear2="Balder Earring +1"
         head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Malignance Tabard Malignance Gloves Gere Ring
         body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
-		-- Malignance Tights
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.Acc.Evasion = {ammo="Yamarang",
-		-- Malignance Chapeau Neck="Assassin Gorget +2", ear2="Balder Earring +1"
+		-- Neck="Assassin Gorget +2", ear2="Balder Earring +1"
         head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Malignance Tabard Malignance Gloves Gere Ring
         body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
-		-- Malignance Tights
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.FullAcc.Evasion ={ammo="Yamarang",
-		-- Malignance Chapeau Neck="Assassin Gorget +2", ear2="Balder Earring +1"
+		-- Neck="Assassin Gorget +2", ear2="Balder Earring +1"
         head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Malignance Tabard Malignance Gloves Gere Ring
         body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
-		-- Malignance Tights
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.Fodder.Evasion = {ammo="Yamarang",
 		-- Neck="Assassin Gorget +2", ear2="Balder Earring +1"
         head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
 		-- Malignance Tabard Malignance Gloves Gere Ring
         body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
-		-- Malignance Tights
-        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Malignance Boots"}
+        back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
 end
 
@@ -616,6 +611,7 @@ end
 function user_job_lockstyle()
 	windower.chat.input('/lockstyleset 005')
 end
+
 -- Dynamis Trust Overwrite
 function check_trust()
 	if not moving then
