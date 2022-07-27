@@ -92,8 +92,8 @@ function init_gear_sets()
 		--main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Hasty Pinion",
 		--head="Amalric Coif", ear2="Malignance Earring", 
 		 head="Merlinic Hood", neck="Voltsurge Torque", ear1="Enchntr. Earring +1", ear2="Loquac. Earring", 
-		--body="Zendik Robe", hands="Acad. Bracers +2", ring2="Kishar Ring",
-		body="Merlinic Jubbah", hands=gear.helios_hands_FC, ring1"Prolix Ring",
+		-- hands="Acad. Bracers +2", ring2="Kishar Ring",
+		body="Zendik Robe", hands=gear.helios_hands_FC, ring1="Prolix Ring",
 		-- Psycloth Lappas
 		back=gear.FC_jse_back, waist="Witful Belt", legs="Give Trousers", feet="Peda. Loafers"}
 		
