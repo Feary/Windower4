@@ -1,0 +1,398 @@
+[06:09:48] === Area: Port San d'Oria ===
+[06:09:48] *****DP Job Selection:WHM*****
+[06:09:48] Mode: Magic.
+[06:09:48]  White = Can not cast.
+[06:09:48]  Green = Casting Range
+[06:09:48] React: Loading File: react_WHM.lua
+[06:09:50] Size already 20.
+[06:09:50] ConsoleBG: Position changed! X: 15 Y: 50
+[06:09:56] <<< Welcome to Asura! >>>
+[06:09:56] Announcing the winning numbers for the 20th Vana'versary Nomad Mog Bonanza!
+[06:09:56] 
+[06:09:56]  
+[06:09:56] 
+[06:09:56] Rank 3 prize: "7" (last digit)-- 20,471 winners.
+[06:09:56] 
+[06:09:56] Rank 2 prize: "04" (last two digits)-- 2,010 winners.
+[06:09:56] 
+[06:09:56] Rank 1 prize: "854" (all three digits)-- 185 winners.
+[06:09:56] 
+[06:09:56] *The number of winners for each prize is a combined total from all worlds.
+[06:09:56] 
+[06:09:56]  
+[06:09:56] 
+[06:09:56] Collection period: On July 14, 2022 at 1:00 (PDT) / 8:00 (GMT) to July 31, at 7:59 (PDT) / 14:59 (GMT)
+[06:09:56] 
+[06:09:56] Details on the prize can be confirmed by speaking to a Bonanza Moogle at one of the following locations:
+[06:09:56] 
+[06:09:56] Port San d'Oria (I-9) / Port Bastok (L-8) / Port Windurst (F-6) / Chocobo Circuit (H-8)
+[06:09:57] You have undertaken the limited-time Records of Eminence challenge �ｲVanquish Undead.�ｳ
+[06:09:57] This area is currently affected by the Super Kupower: �ｲThrifty Transit�ｳ!
+[06:09:57] This area is currently affected by the Super Kupower: �ｲArtisan's Advantage�ｳ!
+[06:09:57] This area is currently affected by the Super Kupower: �ｲSwift Shoes�ｳ!
+[06:09:57] The July 2022 Login Campaign is currently underway!
+[06:09:57] 
+[06:09:57] In celebration of your most recent login (login no. 19), we have provided you with 100 points!
+[06:09:57] You currently have a total of 3800 points.
+[06:09:57] We hope you enjoy this complimentary little gift, courtesy of the citizens of Vana'diel!
+[06:09:57] Obtained: Special gobbiedial key.
+[06:10:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:10:07] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:10:08] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:10:18] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell
+[06:10:19] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:10:27] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:10:31] {Prentiss} 3
+[06:10:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:10:39] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:10:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:10:42] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:10:47] Nakitaru[LowJeuno]: Vagary 5/5 Clear Mind Sell?
+[06:10:58] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:11:10] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:11:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:11:20] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:11:22] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:11:29] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:11:30] Gargurty[PortJeuno]: Beitetsu, S. Astral Detritus, H-P Bayld Bazaar (F-8)
+[06:11:36] {Sylvie} There appears to be a unit separate from Naga Raja out there. Please head to Escha - Ru'Aun (H-9) and investigate.
+[06:11:41] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:11:45] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:11:48] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell
+[06:11:54] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:12:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:12:04] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:12:08] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:12:12] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:12:24] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:12:27] Victorbaia[NSandOria]: Rhapsodies of Vana'diel The Orb's Radiance Looking for members. Please assist. /tell
+[06:12:32] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:12:35] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:12:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:12:43] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:12:47] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:13:10] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:13:14] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:13:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:13:18] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell
+[06:13:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:13:26] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:13:33] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:13:37] {Sylvie} Uh-oh! He's here! That Naga Raja guy's showed up in Escha - Ru'Aun around H-9, and he seems super duper mad.
+[06:13:46] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:13:50] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:13:53] {Troyblake} /
+[06:14:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:14:04] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:14:10] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:14:11] {Troyblake} /
+[06:14:16] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:14:16] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:14:28] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:14:35] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:14:36] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:14:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:14:41] Dortwo[EastAdoulin]: any vagary mercs? price?
+[06:14:47] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:14:48] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 1/4
+[06:14:52] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:15:10] Victorbaia[NSandOria]: Rhapsodies of Vana'diel The Orb's Radiance Looking for members. Please assist. /tell
+[06:15:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:15:18] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:15:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:15:22] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:15:31] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:15:38] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:15:49] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:15:54] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:15:59] {Blacklace} /
+[06:16:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:16:11] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:16:15] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:16:19] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 1/4
+[06:16:20] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:16:28] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:16:33] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:16:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:16:41] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:16:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:16:51] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:16:56] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:17:14] {Sylvie} Oh wow, good job, everyone! That Naga Raja guy in Escha - Ru'Aun is all beaten up. I think we won! Yay!
+[06:17:14] {Sylvie} Currently, we have taken down 9072 monsters in a row, which gives us a not-so-shabby total of 116691 monsters defeated.
+[06:17:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:17:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:17:22] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:17:34] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:17:35] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:17:38] {Leonah} .
+[06:17:43] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:17:48] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 1/4
+[06:17:53] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:17:58] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:18:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:18:05] Victorbaia[NSandOria]: Rhapsodies of Vana'diel The Orb's Radiance Looking for members. Please assist. /tell
+[06:18:12] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:18:24] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:18:25] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:18:35] Dortwo[EastAdoulin]: Vagary clear Can I have it? /tell price
+[06:18:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:18:37] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:18:38] Lnkz[Rabao]: Odyssey C SEG Looking for members. Veteran R15 WAR DRK DRG SAM @5
+[06:18:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:18:41] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:18:45] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:18:55] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:19:01] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:19:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:19:18] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 1/4
+[06:19:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:19:26] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:19:40] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:19:46] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:19:47] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:19:57] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:20:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:20:03] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:20:14] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:20:28] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:20:35] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:20:35] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:20:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:20:42] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:20:43] Dortwo[EastAdoulin]: Vagary clear Can I have it? /tell price
+[06:20:48] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 1/4
+[06:20:50] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:20:52] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:21:00] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:21:03] Victorbaia[NSandOria]: Rhapsodies of Vana'diel The Orb's Radiance Looking for members. Please assist. /tell
+[06:21:05] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:21:08] Hirox[EastAdoulin]: Relic Mythic enpi interestありませんか。詳細Search Comment
+[06:21:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:21:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:21:30] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:21:44] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:21:52] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:21:59] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:22:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:22:01] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:22:07] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:22:15] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:22:18] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 1/4
+[06:22:32] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:22:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:22:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:22:45] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:22:47] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:22:54] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:23:03] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:23:04] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:23:10] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:23:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:23:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:23:34] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:23:48] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 1/4
+[06:23:49] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:23:56] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:24:00] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:24:05] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:24:11] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:24:12] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:24:16] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:24:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:24:37] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:24:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:24:51] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:24:54] Victorbaia[SSandOria]: Rhapsodies of Vana'diel The Orb's Radiance Looking for members. Please assist. /tell
+[06:24:55] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:24:59] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:25:07] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:25:14] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:25:17] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:25:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:25:18] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 2/4
+[06:25:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:25:38] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:25:54] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:26:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:26:01] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:26:09] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:26:17] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:26:18] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:26:22] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:26:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:26:40] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:26:41] Nakitaru[LowJeuno]: M boze Clear Mind Sell? 10m No money!
+[06:26:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:26:48] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 2/4
+[06:26:56] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:27:03] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:27:05] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:27:11] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:27:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:27:19] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:27:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:27:28] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:27:37] Gargurty[PortJeuno]: Beitetsu, S. Astral Detritus, H-P Bayld Bazaar (F-8)
+[06:27:43] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:27:58] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:28:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:28:05] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:28:13] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:28:18] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 2/4
+[06:28:19] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:28:21] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:28:32] Victorbaia[SSandOria]: Rhapsodies of Vana'diel The Orb's Radiance Looking for members. Please assist. /tell
+[06:28:35] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:28:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:28:40] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:28:44] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:29:00] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:29:08] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:29:15] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:29:16] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:29:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:29:20] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:29:23] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:29:40] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:29:47] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:29:48] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 2/4
+[06:30:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:30:03] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:30:10] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:30:18] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:30:21] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:30:25] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:30:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:30:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:30:46] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:30:48] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:31:05] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:31:12] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:31:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:31:19] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 2/4
+[06:31:19] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:31:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:31:24] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:31:28] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:31:51] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:31:52] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:32:00] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:32:07] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:32:15] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:32:15] Warbandi[SSandOria]: HTBF Divine Might II VD Do you need it? /tell
+[06:32:21] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:32:23] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:32:27] Victorbaia[SSandOria]: Rhapsodies of Vana'diel The Orb's Radiance Looking for members. Please assist. /tell
+[06:32:30] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:32:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:32:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:32:48] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 2/4
+[06:32:53] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:32:59] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:33:09] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:33:17] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:33:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:33:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:33:23] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:33:33] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:33:35] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:33:43] Warbandi[SSandOria]: HTBF Divine Might II VD Do you need it? /tell
+[06:33:50] Victorbaia[SSandOria]: Rhapsodies of Vana'diel The Orb's Radiance Looking for members. Please assist. /tell @2
+[06:33:54] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:33:56] Dragashh[Rabao]: Odyssey C warCluborPolearm +8 corVeteran whmCan I have it? 3/6
+[06:34:01] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:34:04] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:34:12] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:34:18] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 2/4
+[06:34:19] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:34:24] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:34:26] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:34:35] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:34:36] Blkuyfvd[BastokMine]: Sell abyssea empy Weapon Shop Item LV80 85 90 Do you need it? /tell
+[06:34:41] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:34:57] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:35:10] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:35:14] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:35:17] Warbandi[SSandOria]: HTBF Divine Might II VD Do you need it? /tell
+[06:35:17] Jocror[BastokMark]: Tinnin Sarameya Tyger win Item all 3 Do you need it? Buy? /tell Thank you.
+[06:35:21] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:35:21] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:35:27] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:35:32] Nakitaru[LowJeuno]: Mboze Clear Mind Sell? 10m No money!
+[06:35:37] Zatazma[PortBastok]: ZNM T4 Sarameya Tinnin Tyger Item win Do you need it? Buy? /tell
+[06:35:39] Dragashh[Rabao]: Odyssey C Veteran whmCan I have it? 5/6
+[06:35:45] Wukonk[Whitegate]: Tinnin Sarameya Tyger win Item all 3 Do you need it? /tell Thank you.
+[06:35:49] Kimfaeonic[PortBastok]: Aeonic/ioniッkuuェpon 3zone Clear Mind Do you need it? Buy? 50M /tell 2/4
+[06:35:59] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[06:36:00] Fczjse[PSandOria]: OmenFU Shulmanu Collar Niqmaddu Ring Middleboss Buy? tell
+[06:36:01] Executing logout in 30 seconds.
+[06:36:01] Cancel healing to remain logged in.
+[06:36:05] Executing logout in 25 seconds.
+[06:36:05] Cancel healing to remain logged in.
+[06:36:10] Executing logout in 20 seconds.
+[06:36:10] Cancel healing to remain logged in.
+[06:36:15] Executing logout in 15 seconds.
+[06:36:15] Cancel healing to remain logged in.
+[06:36:16] Shmilywowo[BastokMark]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1T2T3 ALL Item ABJ Telos Earring Reiki Yotai Do you need it? /tell Buy? 
+[06:36:17] Aoora[PortBastok]: Ambuscade V.1 VD Do you need it? 3m/run Buy?
+[06:36:19] Victorbaia[SSandOria]: Rhapsodies of Vana'diel The Orb's Radiance Looking for members. Please assist. /tell @2/?
+[06:36:20] Executing logout in 10 seconds.
+[06:36:20] Cancel healing to remain logged in.
+[06:36:24] Masxiaosan[LowJeuno]: Telos Earring Reiki Yotai Do you need it? /tell Buy?  
+[06:36:25] Executing logout in 5 seconds.
+[06:36:25] Cancel healing to remain logged in.
+[06:36:25] Odyeesnm[BastokMine]: Odyssey T4 Bumba T3 Ngai Mboze Xevioso Ongo Arebati Kalunag Clear Mind v0v1 Odyssey C SEG Buy?
+[06:36:29] Cooldogr[NSandOria]: Odysseyt1t2t3Arebati Kalunga Xevioso Ngai Mboze Ongo Bumba V0 Clear Mind Buy?
+[14:43:48] === Area: Port San d'Oria ===
+[14:43:48] *****DP Job Selection:WHM*****
+[14:43:48] Mode: Magic.
+[14:43:48]  White = Can not cast.
+[14:43:48]  Green = Casting Range
+[14:43:48] React: Loading File: react_WHM.lua
+[14:43:51] Size already 20.
+[14:43:51] ConsoleBG: Position changed! X: 15 Y: 50
+[14:43:55] <<< Welcome to Asura! >>>
+[14:43:55] Announcing the winning numbers for the 20th Vana'versary Nomad Mog Bonanza!
+[14:43:55] 
+[14:43:55]  
+[14:43:55] 
+[14:43:55] Rank 3 prize: "7" (last digit)-- 20,471 winners.
+[14:43:55] 
+[14:43:55] Rank 2 prize: "04" (last two digits)-- 2,010 winners.
+[14:43:55] 
+[14:43:55] Rank 1 prize: "854" (all three digits)-- 185 winners.
+[14:43:55] 
+[14:43:55] *The number of winners for each prize is a combined total from all worlds.
+[14:43:55] 
+[14:43:55]  
+[14:43:55] 
+[14:43:55] Collection period: On July 14, 2022 at 1:00 (PDT) / 8:00 (GMT) to July 31, at 7:59 (PDT) / 14:59 (GMT)
+[14:43:55] 
+[14:43:55] Details on the prize can be confirmed by speaking to a Bonanza Moogle at one of the following locations:
+[14:43:55] 
+[14:43:55] Port San d'Oria (I-9) / Port Bastok (L-8) / Port Windurst (F-6) / Chocobo Circuit (H-8)
+[14:43:56] You have undertaken the limited-time Records of Eminence challenge �ｲMagic Damage Kills.�ｳ
+[14:43:56] This area is currently affected by the Super Kupower: �ｲThrifty Transit�ｳ!
+[14:43:56] This area is currently affected by the Super Kupower: �ｲArtisan's Advantage�ｳ!
+[14:43:56] This area is currently affected by the Super Kupower: �ｲSwift Shoes�ｳ!
+[14:43:56] The maximum number of people are already participating in Unity chat. Please try again later.
+[14:43:56] The July 2022 Login Campaign is currently underway!
+[14:43:56] 
+[14:43:56] In celebration of your most recent login (login no. 20), we have provided you with 100 points!
+[14:43:56] You currently have a total of 3900 points.
+[14:43:56] We hope you enjoy this complimentary little gift, courtesy of the citizens of Vana'diel!
+[14:43:56] Obtained: Special gobbiedial key.
+[14:44:00] Westlind[WindWalls]: Dynamis - WindurstD +3 unlock Do you need it? /tell @6/18
+[14:44:16] Executing logout in 30 seconds.
+[14:44:16] Cancel healing to remain logged in.
+[14:44:20] Executing logout in 25 seconds.
+[14:44:20] Cancel healing to remain logged in.
+[14:44:25] Executing logout in 20 seconds.
+[14:44:25] Cancel healing to remain logged in.
+[14:44:30] Executing logout in 15 seconds.
+[14:44:30] Cancel healing to remain logged in.
+[14:44:35] Executing logout in 10 seconds.
+[14:44:35] Cancel healing to remain logged in.
+[14:44:40] Executing logout in 5 seconds.
+[14:44:40] Cancel healing to remain logged in.

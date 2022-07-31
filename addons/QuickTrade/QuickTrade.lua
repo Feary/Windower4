@@ -186,8 +186,8 @@ function quicktrade(arg)
 	}
 	
 	local spGobbieKeyIDs = {
-		--{id = 8973, name = 'special gobbiedial key', count = 0, stacks = 0, stacksize = 99},		
-		{id = 9217, name = 'Dial Key "#Ab"', count = 0, stacks = 0, stacksize = 99},
+		{id = 8973, name = 'special gobbiedial key', count = 0, stacks = 0, stacksize = 99},		
+		--{id = 9217, name = 'Dial Key "#Ab"', count = 0, stacks = 0, stacksize = 99},
 	}
 
 	local zincOreIDs = {
@@ -428,17 +428,17 @@ function quicktrade(arg)
 		{name = '???', idTable = mellidoptWingIDs, tableType = 'Mellidopt Wings', loopable = true, loopWait = 5},
 		{name = 'Mrohk Sahjuuli', idTable = salvagePlanIDs, tableType = 'Salvage Plans', loopable = true, loopWait = 5},
 		{name = 'Paparoon', idTable = alexandriteIDs, tableType = 'Alexandrite', loopable = true, loopWait = 5},
-		{name = 'Mystrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Habitox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Bountibox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Specilox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Arbitrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Funtrox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Priztrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Sweepstox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Wondrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Rewardox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
-		{name = 'Winrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 14},
+		{name = 'Mystrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Habitox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Bountibox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Specilox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Arbitrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Funtrox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Priztrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Sweepstox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Wondrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Rewardox', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
+		{name = 'Winrix', idTable = spGobbieKeyIDs, tableType = 'Special Gobbiedial Keys', loopable = true, loopWait = 17},
 		{name = 'Talib', idTable = zincOreIDs, tableType = 'Zinc Ore', loopable = true, loopWait = 3},
 		{name = 'Nanaa Mihgo', idTable = yagudoNecklaceIDs, tableType = 'Yagudo Necklaces', loopable = true, loopWait = 10},
 		{name = 'Yoran-Oran', idTable = mandragoraMadIDs, tableType = 'Mandragora Mad Items', loopable = true, loopWait = 8},

@@ -358,7 +358,7 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle = {main="Mafic Cudgel", sub="Sors Shield", -- ammo="Homiliary",
+    sets.idle = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
         head="Befouled Crown",  ear1="Ethereal Earring", 
 		--  hands=gear.merlinic_refresh_hands, 
@@ -366,7 +366,7 @@ function init_gear_sets()
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 
-    sets.idle.PDT = {main="Mafic Cudgel", -- ammo="Homiliary",
+    sets.idle.PDT = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1", ear2="Etiolation Earring",
         head="Befouled Crown",   ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
@@ -374,7 +374,7 @@ function init_gear_sets()
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 		
-	sets.idle.MEVA = {main="Mafic Cudgel", -- ammo="Homiliary",
+	sets.idle.MEVA = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
         head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
@@ -384,7 +384,7 @@ function init_gear_sets()
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {})--feet="Hippo. Socks +1"
 
-    sets.idle.Weak = {main="Mafic Cudgel", -- ammo="Homiliary",
+    sets.idle.Weak = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1", ear2="Etiolation Earring",
         head="Befouled Crown",  ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
@@ -395,7 +395,7 @@ function init_gear_sets()
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
     -- Defense sets
-    sets.defense.PDT = {main="Mafic Cudgel", -- ammo="Homiliary",
+    sets.defense.PDT = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
         head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
@@ -403,7 +403,7 @@ function init_gear_sets()
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 
-    sets.defense.MDT = {main="Mafic Cudgel", -- ammo="Homiliary",
+    sets.defense.MDT = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
         head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
@@ -411,7 +411,7 @@ function init_gear_sets()
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
 		
-    sets.defense.MEVA = {main="Mafic Cudgel", -- ammo="Homiliary",
+    sets.defense.MEVA = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
         head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 

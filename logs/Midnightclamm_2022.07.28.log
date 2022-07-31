@@ -1,0 +1,484 @@
+[18:14:44] === Area: Port San d'Oria ===
+[18:14:44] *****DP Job Selection:WHM*****
+[18:14:44] Mode: Magic.
+[18:14:44]  White = Can not cast.
+[18:14:44]  Green = Casting Range
+[18:14:44] React: Loading File: react_WHM.lua
+[18:14:46] Size already 20.
+[18:14:46] ConsoleBG: Position changed! X: 15 Y: 50
+[18:14:51] <<< Welcome to Asura! >>>
+[18:14:51] Announcing the winning numbers for the 20th Vana'versary Nomad Mog Bonanza!
+[18:14:51] 
+[18:14:51]  
+[18:14:51] 
+[18:14:51] Rank 3 prize: "7" (last digit)-- 20,471 winners.
+[18:14:51] 
+[18:14:51] Rank 2 prize: "04" (last two digits)-- 2,010 winners.
+[18:14:51] 
+[18:14:51] Rank 1 prize: "854" (all three digits)-- 185 winners.
+[18:14:51] 
+[18:14:51] *The number of winners for each prize is a combined total from all worlds.
+[18:14:51] 
+[18:14:51]  
+[18:14:51] 
+[18:14:51] Collection period: On July 14, 2022 at 1:00 (PDT) / 8:00 (GMT) to July 31, at 7:59 (PDT) / 14:59 (GMT)
+[18:14:51] 
+[18:14:51] Details on the prize can be confirmed by speaking to a Bonanza Moogle at one of the following locations:
+[18:14:51] 
+[18:14:51] Port San d'Oria (I-9) / Port Bastok (L-8) / Port Windurst (F-6) / Chocobo Circuit (H-8)
+[18:14:52] You have undertaken the limited-time Records of Eminence challenge �ｲVanquish Aquans.�ｳ
+[18:14:52] The July 2022 Login Campaign is currently underway!
+[18:14:52] 
+[18:14:52] In celebration of your most recent login (login no. 18), we have provided you with 100 points!
+[18:14:52] You currently have a total of 3700 points.
+[18:14:52] We hope you enjoy this complimentary little gift, courtesy of the citizens of Vana'diel!
+[18:14:52] Obtained: Special gobbiedial key.
+Habitox : Oho, ya feelin' lucky 'nough tah takes a stab at da myst'ry box?
+[18:14:58] Habitox : Oho, ya feelin' lucky 'nough tah takes a stab at da myst'ry box?
+[18:14:58] Habitox : Oho, ya feelin' lucky 'nough tah takes a stab at da myst'ry box?
+Habitox : Ya wanna open dat sucker up? Okay, but which dial ya be wantin'?
+[18:14:59] Habitox : Ya wanna open dat sucker up? Okay, but which dial ya be wantin'?
+[18:14:59] Habitox : Ya wanna open dat sucker up? Okay, but which dial ya be wantin'?
+[18:15:02] Bigyanga[LowJeuno]: Omen OU Do you need it? (Ring X earring X Gem X PLD hands X) /tell Job cor tank thf 
+Habitox : So ya be wantin' the special dial?Whoawhoawhoa! Get yer grubby hands offa that! Ya don't have enough daily tally, and I's not 'bout tah let ya cheat me!
+[18:15:02] Habitox : So ya be wantin' the special dial?
+[18:15:02] Habitox : So ya be wantin' the special dial?
+[18:15:04] 
+[18:15:04] 　Whoawhoawhoa! Get yer grubby hands offa that! Ya don't have enough daily tally, and I's not 'bout tah let ya cheat me!
+[18:15:04] 
+[18:15:04] 　Whoawhoawhoa! Get yer grubby hands offa that! Ya don't have enough daily tally, and I's not 'bout tah let ya cheat me!
+[18:15:10] QuickTrade: No Special Gobbiedial Keys in inventory
+[18:15:17] QuickTrade: No Special Gobbiedial Keys in inventory
+[18:15:21] Executing logout in 30 seconds.
+[18:15:21] Cancel healing to remain logged in.
+[18:15:23] Aindrea[Whitegate]: Tinnin Sarameya Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[18:15:25] Executing logout in 25 seconds.
+[18:15:25] Cancel healing to remain logged in.
+[18:15:30] Executing logout in 20 seconds.
+[18:15:30] Cancel healing to remain logged in.
+[18:15:35] Executing logout in 15 seconds.
+[18:15:35] Cancel healing to remain logged in.
+[18:15:39] Executing logout in 10 seconds.
+[18:15:39] Cancel healing to remain logged in.
+[18:15:42] Deneva[SSandOria]: Dynamis - San d'Oria D relic feet+3 unlock + RP 5K+ Buy? 2M starting 5min /tell
+[18:15:44] Executing logout in 5 seconds.
+[18:15:44] Cancel healing to remain logged in.
+[19:22:21] === Area: Port San d'Oria ===
+[19:22:21] *****DP Job Selection:WHM*****
+[19:22:21] Mode: Magic.
+[19:22:21]  White = Can not cast.
+[19:22:21]  Green = Casting Range
+[19:22:21] React: Loading File: react_WHM.lua
+[19:22:23] Size already 20.
+[19:22:23] ConsoleBG: Position changed! X: 15 Y: 50
+[19:22:28] <<< Welcome to Asura! >>>
+[19:22:28] Announcing the winning numbers for the 20th Vana'versary Nomad Mog Bonanza!
+[19:22:28] 
+[19:22:28]  
+[19:22:28] 
+[19:22:28] Rank 3 prize: "7" (last digit)-- 20,471 winners.
+[19:22:28] 
+[19:22:28] Rank 2 prize: "04" (last two digits)-- 2,010 winners.
+[19:22:28] 
+[19:22:28] Rank 1 prize: "854" (all three digits)-- 185 winners.
+[19:22:28] 
+[19:22:28] *The number of winners for each prize is a combined total from all worlds.
+[19:22:28] 
+[19:22:28]  
+[19:22:28] 
+[19:22:28] Collection period: On July 14, 2022 at 1:00 (PDT) / 8:00 (GMT) to July 31, at 7:59 (PDT) / 14:59 (GMT)
+[19:22:28] 
+[19:22:28] Details on the prize can be confirmed by speaking to a Bonanza Moogle at one of the following locations:
+[19:22:28] 
+[19:22:28] Port San d'Oria (I-9) / Port Bastok (L-8) / Port Windurst (F-6) / Chocobo Circuit (H-8)
+[19:22:29] You have undertaken the limited-time Records of Eminence challenge �ｲMagic Damage Kills.�ｳ
+[19:22:29] The maximum number of people are already participating in Unity chat. Please try again later.
+[19:22:37] Wukonk[Whitegate]: Sarameya Tinnin Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:22:56] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:22:58] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:23:03] Aindrea[Whitegate]: Tinnin Sarameya Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:24:02] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:24:05] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:24:42] Qynz[WindWoods]: Mars Orb Can I have it? Reward:3M
+[19:24:58] Asbrandrnkldd[NSandOria]:  ｆｆｘｉｐａｌ.ｃｏｍ, GET FAST DELIVERY!★REMA/SU5/Item/gil/Gil/  Discount ->"vip05"
+[19:25:08] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:25:10] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:25:15] Maximulian[PortJeuno]: Fu Shulmanu Collar Niqmaddu Ring Middle Boss Do you need it? Buy? tell
+[19:25:15] Qynz[WindWoods]: Mars Orb Can I have it? Reward:3M
+[19:25:17] Wukonk[Whitegate]: Sarameya Tinnin Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:25:23] Aindrea[Whitegate]: Tinnin Sarameya Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:25:54] QuickTrade: Trades Remaining: 16 Loop: 1/17
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:25:55] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:25:55] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:25:58] Habitox : Dis box is full o' myst'ries,♪
+[19:25:58] 　Dat span da realm's his'try,♪
+[19:25:58] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:25:58] Habitox : Dis box is full o' myst'ries,♪
+[19:25:58] 　Dat span da realm's his'try,♪
+[19:25:58] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:02] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:02] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:02] Qynz[WindWoods]: Mars Orb Can I have it? Reward:3M
+[19:26:05] Obtained: Iron chain.
+[19:26:11] QuickTrade: Trades Remaining: 15 Loop: 2/17
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:26:13] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:26:13] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:26:13] Maximulian[PortJeuno]: Fu Shulmanu Collar Niqmaddu Ring Middle Boss Do you need it? Buy? tell
+[19:26:14] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:26:15] Habitox : Dis box is full o' myst'ries,♪
+[19:26:15] 　Dat span da realm's his'try,♪
+[19:26:15] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:26:15] Habitox : Dis box is full o' myst'ries,♪
+[19:26:15] 　Dat span da realm's his'try,♪
+[19:26:15] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:26:16] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:20] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:20] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:23] Obtained: Vihuela.
+[19:26:29] QuickTrade: Trades Remaining: 14 Loop: 3/17
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:26:30] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:26:30] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:26:32] Habitox : Dis box is full o' myst'ries,♪
+[19:26:32] 　Dat span da realm's his'try,♪
+[19:26:32] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:26:32] Habitox : Dis box is full o' myst'ries,♪
+[19:26:32] 　Dat span da realm's his'try,♪
+[19:26:32] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:37] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:37] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:40] Obtained: Austere robe.
+[19:26:46] QuickTrade: Trades Remaining: 13 Loop: 4/17
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:26:47] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:26:47] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:26:50] Habitox : Dis box is full o' myst'ries,♪
+[19:26:50] 　Dat span da realm's his'try,♪
+[19:26:50] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:26:50] Habitox : Dis box is full o' myst'ries,♪
+[19:26:50] 　Dat span da realm's his'try,♪
+[19:26:50] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:55] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:55] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:26:58] Obtained: Chunk of darksteel ore.
+[19:27:10] Maximulian[PortJeuno]: Fu Shulmanu Collar Niqmaddu Ring Middle Boss Do you need it? Buy? tell
+[19:27:11] QuickTrade: Trades Remaining: 12 Loop: 1/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:27:13] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:27:13] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:27:15] Habitox : Dis box is full o' myst'ries,♪
+[19:27:15] 　Dat span da realm's his'try,♪
+[19:27:15] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:27:15] Habitox : Dis box is full o' myst'ries,♪
+[19:27:15] 　Dat span da realm's his'try,♪
+[19:27:15] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:27:20] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:27:20] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:27:20] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:27:22] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:27:24] Obtained: Lugra earring.
+[19:27:27] Soulsslayre[Mhaura]: Ambuscade V1 VD COR BRD Can I have it? 4/6
+[19:27:29] QuickTrade: Trades Remaining: 11 Loop: 2/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:27:30] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:27:30] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:27:33] Habitox : Dis box is full o' myst'ries,♪
+[19:27:33] 　Dat span da realm's his'try,♪
+[19:27:33] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:27:33] Habitox : Dis box is full o' myst'ries,♪
+[19:27:33] 　Dat span da realm's his'try,♪
+[19:27:33] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:27:37] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:27:37] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:27:39] Asbrandrnkldd[NSandOria]:  ｆｆｘｉｐａｌ.ｃｏｍ, GET FAST DELIVERY!★REMA/SU5/Item/gil/Gil/  Discount ->"vip05"
+[19:27:41] Obtained: Jupiter's ring.
+[19:27:43] Aindrea[Whitegate]: Tinnin Sarameya Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:27:46] QuickTrade: Trades Remaining: 10 Loop: 3/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:27:48] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:27:48] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:27:50] Habitox : Dis box is full o' myst'ries,♪
+[19:27:50] 　Dat span da realm's his'try,♪
+[19:27:50] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:27:50] Habitox : Dis box is full o' myst'ries,♪
+[19:27:50] 　Dat span da realm's his'try,♪
+[19:27:50] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:27:55] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:27:55] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:27:57] Wukonk[Whitegate]: Sarameya Tinnin Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:27:59] Obtained: Darksteel hexagun.
+[19:28:03] QuickTrade: Trades Remaining: 9 Loop: 4/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:28:05] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:28:05] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:28:07] Habitox : Dis box is full o' myst'ries,♪
+[19:28:07] 　Dat span da realm's his'try,♪
+[19:28:07] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:28:07] Habitox : Dis box is full o' myst'ries,♪
+[19:28:07] 　Dat span da realm's his'try,♪
+[19:28:07] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:28:11] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:28:11] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:28:13] Asbrandrnkldd[NSandOria]:  ｆｆｘｉｐａｌ.ｃｏｍ, GET FAST DELIVERY!★REMA/SU5/Item/gil/Gil/  Discount ->"vip05"
+[19:28:15] Obtained: Torsoshard: WAR.
+[19:28:21] QuickTrade: Trades Remaining: 8 Loop: 5/13
+[19:28:22] Maximulian[PortJeuno]: Fu Shulmanu Collar Niqmaddu Ring Middle Boss Do you need it? Buy? tell
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:28:23] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:28:23] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:28:25] Habitox : Dis box is full o' myst'ries,♪
+[19:28:25] 　Dat span da realm's his'try,♪
+[19:28:25] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:28:25] Habitox : Dis box is full o' myst'ries,♪
+[19:28:25] 　Dat span da realm's his'try,♪
+[19:28:25] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:28:26] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:28:26] Soulsslayre[Mhaura]: Ambuscade V1 VD COR BRD Can I have it? 4/6
+[19:28:28] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:28:30] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:28:30] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:28:33] Obtained: Handful of iron arrowheads.
+[19:28:38] QuickTrade: Trades Remaining: 7 Loop: 6/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:28:39] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:28:39] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:28:42] Habitox : Dis box is full o' myst'ries,♪
+[19:28:42] 　Dat span da realm's his'try,♪
+[19:28:42] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:28:42] Habitox : Dis box is full o' myst'ries,♪
+[19:28:42] 　Dat span da realm's his'try,♪
+[19:28:42] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:28:46] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:28:46] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:28:50] Obtained: Jug of shadowy broth.
+[19:28:55] QuickTrade: Trades Remaining: 6 Loop: 7/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:28:57] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:28:57] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:29:00] Habitox : Dis box is full o' myst'ries,♪
+[19:29:00] 　Dat span da realm's his'try,♪
+[19:29:00] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:29:00] Habitox : Dis box is full o' myst'ries,♪
+[19:29:00] 　Dat span da realm's his'try,♪
+[19:29:00] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:04] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:04] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:08] Obtained: Combat Caster's mitts +1.
+[19:29:13] QuickTrade: Trades Remaining: 5 Loop: 8/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:29:15] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:29:15] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:29:18] Habitox : Dis box is full o' myst'ries,♪
+[19:29:18] 　Dat span da realm's his'try,♪
+[19:29:18] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:29:18] Habitox : Dis box is full o' myst'ries,♪
+[19:29:18] 　Dat span da realm's his'try,♪
+[19:29:18] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:22] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:22] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:26] Obtained: Black silk neckerchief.
+[19:29:30] QuickTrade: Trades Remaining: 4 Loop: 9/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:29:32] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:29:32] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:29:32] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:29:34] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:29:35] Habitox : Dis box is full o' myst'ries,♪
+[19:29:35] 　Dat span da realm's his'try,♪
+[19:29:35] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:29:35] Habitox : Dis box is full o' myst'ries,♪
+[19:29:35] 　Dat span da realm's his'try,♪
+[19:29:35] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:29:38] Maximulian[PortJeuno]: Fu Shulmanu Collar Niqmaddu Ring Middle Boss Do you need it? Buy? tell
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:39] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:39] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:42] Obtained: Dark bronze ingot.
+[19:29:47] QuickTrade: Trades Remaining: 3 Loop: 10/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:29:49] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:29:49] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:29:52] Habitox : Dis box is full o' myst'ries,♪
+[19:29:52] 　Dat span da realm's his'try,♪
+[19:29:52] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:29:52] Habitox : Dis box is full o' myst'ries,♪
+[19:29:52] 　Dat span da realm's his'try,♪
+[19:29:52] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:56] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:29:56] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:00] Obtained: Book holder.
+[19:30:03] Aindrea[Whitegate]: Tinnin Sarameya Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:30:05] QuickTrade: Trades Remaining: 2 Loop: 11/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:30:07] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:30:07] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:30:09] Habitox : Dis box is full o' myst'ries,♪
+[19:30:09] 　Dat span da realm's his'try,♪
+[19:30:09] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:30:09] Habitox : Dis box is full o' myst'ries,♪
+[19:30:09] 　Dat span da realm's his'try,♪
+[19:30:09] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:14] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:14] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:18] Obtained: Noble's bed.
+[19:30:22] QuickTrade: Trades Remaining: 1 Loop: 12/13
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:30:24] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:30:24] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:30:26] Habitox : Dis box is full o' myst'ries,♪
+[19:30:26] 　Dat span da realm's his'try,♪
+[19:30:26] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:30:26] Habitox : Dis box is full o' myst'ries,♪
+[19:30:26] 　Dat span da realm's his'try,♪
+[19:30:26] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:31] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:31] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:34] Obtained: Cirdas visage III.
+[19:30:36] Asbrandrnkldd[NSandOria]:  ｆｆｘｉｐａｌ.ｃｏｍ, GET FAST DELIVERY!★REMA/SU5/Item/gil/Gil/  Discount ->"vip05"
+[19:30:37] Wukonk[Whitegate]: Sarameya Tinnin Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:30:38] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:30:40] QuickTrade: Trading Complete. Loop: 13/13
+[19:30:40] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:30:41] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+[19:30:41] Habitox : Oy, would ya get a look at yer special gobbiedial key! I guess I can let ya open the special dial whenever ya want fer not a single onz o' daily tally!
+Habitox : Dis box is full o' myst'ries,♪Dat span da realm's his'try,♪So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:30:43] Habitox : Dis box is full o' myst'ries,♪
+[19:30:43] 　Dat span da realm's his'try,♪
+[19:30:43] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:30:43] Habitox : Dis box is full o' myst'ries,♪
+[19:30:43] 　Dat span da realm's his'try,♪
+[19:30:43] 　So whatcha gonna get from da chest...o'...uh, fortunery?♪
+[19:30:47] Maximulian[PortJeuno]: Fu Shulmanu Collar Middle Boss Do you need it? Buy? tell
+Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:48] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:48] Habitox : Oooh, looks at what popped out! I hopes it makes yer adventures dat much more adventumarous!
+[19:30:52] Obtained: Black mitts.
+[19:31:31] Kaelius[BastokMark]: Valorous head body legs Can I have it? price?
+[19:31:39] Maximulian[PortJeuno]: Fu Shulmanu Collar Middle Boss Do you need it? Buy? tell
+[19:31:44] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:31:46] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:31:51] Cyberops[PortJeuno]: Pinga Tunic +1 25mil Moonbow Belt +1 31mil Do you need it? Bazaar
+[19:32:17] Killafoshizzle[Mhaura]: Cait Sith VD Do you need it? TANKorHEALS 5/6 Ring1/1 head1/1 ammo1/1 Club1/1 Earring0/1
+[19:32:23] Aindrea[Whitegate]: Tinnin Sarameya Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:32:27] Maximulian[PortJeuno]: Fu Shulmanu Collar Middle Boss Do you need it? Buy? tell
+[19:32:32] QuickTrade: No Special Gobbiedial Keys in inventory
+[19:32:48] Bigying[LowJeuno]: Omen OU (hands X Ring X Gem X Neck Synthesis Materials X) Do you have it? /tell Jobs Tank x1 
+[19:32:50] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:32:52] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:33:03] Maximulian[PortJeuno]: Fu Shulmanu Collar Middle Boss Do you need it? Buy? tell
+[19:33:17] Wukonk[Whitegate]: Sarameya Tinnin Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:33:23] Killafoshizzle[Mhaura]: Cait Sith VD Do you need it? TANKorHEALS 5/6 Ring1/1 head1/1 ammo1/1 Club1/1 Earring0/1
+[19:33:30] Bigying[LowJeuno]: Omen OU (hands X Ring X Gem X Neck Synthesis Materials X) Do you have it? /tell Jobs Tank Heal!
+[19:33:30] Asbrandrnkldd[NSandOria]:  ｆｆｘｉｐａｌ.ｃｏｍ, GET FAST DELIVERY!★REMA/SU5/Item/gil/Gil/  Discount ->"vip05"
+[19:33:47] Kloee[WestAdoulin]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1/T2/T3 Item and Clear Mind shop Buy? /tell Kloee
+[19:33:56] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:33:58] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:34:07] Bigying[LowJeuno]: Omen OU (hands X Ring X Gem X Neck Synthesis Materials X) Do you have it? /tell Jobs Tank Heal!
+[19:34:31] Kloee[WestAdoulin]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1/T2/T3 Item and Clear Mind shop Buy? /tell Kloee
+[19:34:43] Aindrea[Whitegate]: Tinnin Sarameya Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:34:51] Killafoshizzle[Selbina]: Cait Sith VD Do you need it? TANKorHEALS 5/6 Ring1/1 head1/1 ammo1/1 Club1/1 Earring0/1
+[19:35:00] Oasus wishes to trade with you.
+[19:35:02] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:35:04] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:35:08] Bigying[LowJeuno]: Omen OU (hands X Ring X Gem X Neck Synthesis Materials X) Do you have it? /tell Jobs Tank Heal!
+[19:35:22] Tekkai[Norg]: yWHM or DD lfg - Sheol C - PST!
+[19:35:27] Kloee[WestAdoulin]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1/T2/T3 Item and Clear Mind shop Buy? /tell Kloee
+[19:35:45] Bigying[LowJeuno]: Omen OU (hands X Ring X Gem X Neck Synthesis Materials X) Do you have it? /tell Jobs Tank Heal!
+[19:35:57] You have to pay a transaction fee of 401 gil.
+[19:35:57] Wukonk[Whitegate]: Sarameya Tinnin Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:35:59] Merchandise placed on auction.
+[19:35:59] If merchandise remains unsold after 30 weeks (Vana'diel time), it will be returned to your current residence.
+[19:35:59] If a successful bid is made, the proceeds from the sale will be delivered to your current residence.
+[19:35:59] Signed items will lose their signature after being purchased.
+[19:36:02] You have to pay a transaction fee of 101 gil.
+[19:36:03] Merchandise placed on auction.
+[19:36:03] If merchandise remains unsold after 30 weeks (Vana'diel time), it will be returned to your current residence.
+[19:36:03] If a successful bid is made, the proceeds from the sale will be delivered to your current residence.
+[19:36:03] Signed items will lose their signature after being purchased.
+[19:36:08] Kloee[WestAdoulin]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1/T2/T3 Item and Clear Mind shop Buy? /tell Kloee
+[19:36:08] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:36:11] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:36:11] Fusrodah[RuLudeGard]: Dynamis - Jeuno Divergence enter only (unlock +2/complete ROE) /tell 1/3
+[19:36:11] You have to pay a transaction fee of 401 gil.
+[19:36:13] Merchandise placed on auction.
+[19:36:13] If merchandise remains unsold after 30 weeks (Vana'diel time), it will be returned to your current residence.
+[19:36:13] If a successful bid is made, the proceeds from the sale will be delivered to your current residence.
+[19:36:13] Signed items will lose their signature after being purchased.
+[19:36:13] Killafoshizzle[Selbina]: Cait Sith VD Do you need it? TANKorHEALS 5/6 Ring1/1 head1/1 ammo1/1 Club1/1 Earring0/1
+[19:36:20] Asbrandrnkldd[NSandOria]:  ｆｆｘｉｐａｌ.ｃｏｍ, GET FAST DELIVERY!★REMA/SU5/Item/gil/Gil/  Discount ->"vip05"
+[19:36:27] You have to pay a transaction fee of 201 gil.
+[19:36:28] Merchandise placed on auction.
+[19:36:28] If merchandise remains unsold after 30 weeks (Vana'diel time), it will be returned to your current residence.
+[19:36:28] If a successful bid is made, the proceeds from the sale will be delivered to your current residence.
+[19:36:28] Signed items will lose their signature after being purchased.
+[19:36:43] Comittie : Now delivering parcels to rooms everywhere!
+[19:36:57] Bigying[LowJeuno]: Omen OU (hands X Ring X Gem X Neck Synthesis Materials X) Do you have it? /tell Jobs Tank Heal!
+[19:36:58] Killafoshizzle[Selbina]: Cait Sith VD Do you need it? TANKorHEALS 5/6 Ring1/1 head1/1 ammo1/1 Club1/1 Earring0/1
+[19:37:01] findAll: Searching: lugra
+[19:37:01] findAll: Midnightclamm/inventory: Lugra Earring
+[19:37:01] findAll: Dasmir/wardrobe: Lugra Earring
+[19:37:01] findAll: Olymoly/wardrobe4: Lugra Earring
+[19:37:01] findAll: Olymoly/wardrobe8: Lugra Cloak
+[19:37:01] findAll: Suede/wardrobe: Lugra Cloak
+[19:37:01] findAll: Total: 5
+[19:37:04] Aindrea[Whitegate]: Tinnin Sarameya Tyger win Item x3 Buy? Do you need it? /tell Thank you.
+[19:37:10] Fusrodah[RuLudeGard]: Dynamis - Jeuno Divergence enter only (unlock +2/complete ROE) /tell 1/3
+[19:37:13] QuickTrade: No Special Gobbiedial Keys in inventory
+[19:37:15] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:37:16] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:37:34] Bigying[LowJeuno]: Omen OU (hands X Ring X Gem X Neck XSynthesis Materials X) Do you have it? /tell Jobs Tank (PLD RUN PUP)
+[19:37:44] Fusrodah[RuLudeGard]: Dynamis - Jeuno Divergence enter only (unlock +2/complete ROE) /tell 2/3
+[19:37:44] Killafoshizzle[Selbina]: Cait Sith VD Do you need it? TANKorHEALS 5/6 Ring1/1 head1/1 ammo1/1 Club1/1 Earring0/1
+[19:38:01] Kloee[WestAdoulin]: Escha - Zi'Tah Escha - Ru'Aun Reisenjima T1/T2/T3 Item and Clear Mind shop Buy? /tell Kloee
+[19:38:03] Executing logout in 30 seconds.
+[19:38:03] Cancel healing to remain logged in.
+[19:38:07] Executing logout in 25 seconds.
+[19:38:07] Cancel healing to remain logged in.
+[19:38:10] Bigying[LowJeuno]: Omen OU (hands X Ring X Gem X Neck XSynthesis Materials X) Do you have it? /tell Jobs Tank (PLD RUN PUP)
+[19:38:11] Rafikii[Mhaura]: anyone want to fight a few Escha - Ru'Aun NM looking for bushin ABJ everything else free lot
+[19:38:12] Runnerbliss[Whitegate]: WTB Pulse weapon /tell
+[19:38:12] Executing logout in 20 seconds.
+[19:38:12] Cancel healing to remain logged in.
+[19:38:17] Executing logout in 15 seconds.
+[19:38:17] Cancel healing to remain logged in.
+[19:38:20] Eunnaa[PortBastok]: Ambuscade V.1 VD Do you need it? 3M Buy? /tell
+[19:38:22] Ksods[Mhaura]: Ambuscade V.1 VD Do you need it? 3M/runs Buy? /tell
+[19:38:22] Executing logout in 10 seconds.
+[19:38:22] Cancel healing to remain logged in.
+[19:38:27] Executing logout in 5 seconds.
+[19:38:27] Cancel healing to remain logged in.
+[19:38:31] Killafoshizzle[Selbina]: Cait Sith VD Do you need it? TANKorHEALS 5/6 Ring1/1 head1/1 ammo1/1 Club1/1 Earring0/1
