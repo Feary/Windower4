@@ -43,7 +43,7 @@ function init_gear_sets()
 	sets.precast.JA['Warcry'] = {}
 	sets.precast.JA['Defender'] = {}
 	sets.precast.JA['Aggressor'] = {}
-	sets.precast.JA['Mighty Strikes'] = {}
+	sets.precast.JA['Mighty Strikes'] = {hands="Agoge Mufflers +1"}
 	sets.precast.JA["Warrior's Charge"] = {}
 	sets.precast.JA['Tomahawk'] = {ammo="Thr. Tomahawk"}
 	sets.precast.JA['Retaliation'] = {}

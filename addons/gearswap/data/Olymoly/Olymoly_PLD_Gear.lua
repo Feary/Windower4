@@ -295,8 +295,8 @@ function init_gear_sets()
 		
 	sets.Self_Healing.DT = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-		-- ring2=Moonbeam Ring
-		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Defending Ring",
+		-- 
+		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 
 	sets.Cure_Received = {head="Souv. Schaller +1", hands="Souv. Handsch. +1",legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}

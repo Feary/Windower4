@@ -10,7 +10,7 @@ return {
     "Mallquis Cuffs +2",
     "Mallquis Saio +2",
     "Mallquis Trews +2",
-    "Geomancy galero",
+    "Geo. Galero +1",
     "Geomancy Pants +2",
     "Geo. Tunic +2",
     "Geo. Sandals +2",
