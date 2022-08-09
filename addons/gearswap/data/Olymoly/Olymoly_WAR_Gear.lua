@@ -9,7 +9,7 @@ function user_setup()
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
 	state.Passive = M{['description'] = 'Passive Mode','None','Twilight'}
-	state.Weapons:options('Chango','DualWeapons','Greatsword','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcClub','ProcStaff')
+	state.Weapons:options('Sword','Polearm','Chango','Bravura','DualWeapons','Apocalypse','Greatsword','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcClub','ProcStaff','ProcAxe')
 
 	gear.da_jse_back = {name="Cichol's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10'}}
 	gear.crit_jse_back = {name="Cichol's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10'}}
@@ -47,7 +47,7 @@ function init_gear_sets()
 	sets.precast.JA["Warrior's Charge"] = {}
 	sets.precast.JA['Tomahawk'] = {ammo="Thr. Tomahawk"}
 	sets.precast.JA['Retaliation'] = {}
-	sets.precast.JA['Restraint'] = {}
+	sets.precast.JA['Restraint'] = {hands="Boii Mufflers +1"}
 	sets.precast.JA['Blood Rage'] = {}
 	sets.precast.JA['Brazen Rush'] = {}
 	sets.precast.JA['Provoke'] = set_combine(sets.Enmity,{})
@@ -1236,17 +1236,22 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
-	sets.weapons.Chango = {main="Chango",sub="Utu Grip"}
-	sets.weapons.DualWeapons = {main="Firangi",sub="Reikiko"}
+	sets.weapons.Sword = {main="Naegling", sub=""}
+	sets.weapons.Polearm = {main="Shining One", sub="Utu Grip"}
+	sets.weapons.Chango = {main="Bravura",sub="Utu Grip"}
+	sets.weapons.Bravura = {main="Bravura",sub="Utu Grip"}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Kaja Sword"}
+	sets.weapons.Apocalypse = {main="Apocalypse",sub="Utu Grip"}
 	sets.weapons.Greatsword = {main="Montante +1",sub="Utu Grip"}
-	sets.weapons.ProcDagger = {main="Chicken Knife II",sub=empty}
-	sets.weapons.ProcSword = {main="Ark Sword",sub=empty}
+	sets.weapons.ProcDagger = {main="Aern Dagger",sub=empty}
+	sets.weapons.ProcSword = {main="Aern Sword",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Lament",sub=empty}
 	sets.weapons.ProcScythe = {main="Ark Scythe",sub=empty}
-	sets.weapons.ProcPolearm = {main="Pitchfork +1",sub=empty}
-	sets.weapons.ProcGreatKatana = {main="Hardwood Katana",sub=empty}
-	sets.weapons.ProcClub = {main="Dream Bell +1",sub=empty}
-	sets.weapons.ProcStaff = {main="Terra's Staff",sub=empty}
+	sets.weapons.ProcPolearm = {main="Aern Spear",sub=empty}
+	sets.weapons.ProcGreatKatana = {main="Zanmato",sub=empty}
+	sets.weapons.ProcClub = {main="Rounsey Wand",sub=empty}
+	sets.weapons.ProcStaff = {main="Aern Staff",sub=empty}
+	sets.weapons.ProcAxe = {main="Aern Axe",sub=emptykjjihj}
 
 end
 	
@@ -1254,12 +1259,16 @@ end
 function select_default_macro_book()
     -- Default macro set/book
     if player.sub_job == 'SAM' then
-        set_macro_page(3, 3)
+        set_macro_page(3, 11)
     elseif player.sub_job == 'DNC' then
-        set_macro_page(4, 3)
+        set_macro_page(4, 11)
     elseif player.sub_job == 'THF' then
-        set_macro_page(1, 3)
+        set_macro_page(1, 11)
     else
-        set_macro_page(5, 3)
+        set_macro_page(5, 11)
     end
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 011')
 end

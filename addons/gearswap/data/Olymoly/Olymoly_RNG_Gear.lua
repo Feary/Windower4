@@ -1,12 +1,17 @@
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
-function user_setup()
+function user_job_setup()
 	state.OffenseMode:options('Normal', 'Acc', 'HighAcc','KC')
+	state.HybridMode:options('Normal','DTLite','DT')
 	state.RangedMode:options('Normal', 'Acc', 'HighAcc', 'KC')
 	state.WeaponskillMode:options('Match','Normal','Acc','HighAcc')
 	state.IdleMode:options('Normal', 'PDT')
 	state.Weapons:options('Default','DualWeapons','DualMagicWeapons')
 	
+	--Ikenga_vest_bonus = 190  -- It is 190 at R20. Uncomment if you need to manually adjust because you are using below R20
+	
 	WeaponType =  {['Yoichinoyumi'] = "Bow",
+					['Gandiva'] = "Bow",
+					['Fail-Not'] = "Bow",
                    ['Fomalhaut'] = "Gun",
 				   ['Armageddon'] = "Gun",
                    }
@@ -76,14 +81,14 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Precast sets to enhance JAs
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Volte Bracers", waist="Chaac Belt"})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.precast.JA['Bounty Shot'] = set_combine(sets.TreasureHunter, {hands="Amini Glove. +1"})
 	sets.precast.JA['Camouflage'] = {body="Orion Jerkin +2"}
 	sets.precast.JA['Scavenge'] = {feet="Orion Socks +2"}
 	sets.precast.JA['Shadowbind'] = {hands="Orion Bracers +2"}
 	sets.precast.JA['Sharpshot'] = {legs="Orion Braccae +2"}
 	sets.precast.JA['Double Shot'] = {back=gear.tp_ranger_jse_back}
-	sets.precast.JA['Eagle Eye Shot'] = {legs="Arcadian Braccae +2"}
+	sets.precast.JA['Eagle Eye Shot'] = {legs="Arcadian Braccae +3"}
 	
 	-- Fast cast sets for spells
     sets.precast.FC = {
@@ -112,10 +117,10 @@ function init_gear_sets()
 	
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {
 		-- head="Orion Beret +3", neck="Scout's Gorget +2"
-		head="Arcadian Beret +2",
+		head="Arcadian Beret +3",
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
-		-- legs="Path D", feet="Arcadian Socks +3"
-		back=gear.snapshot_ranger_jse_back, waist="Impulse Belt", legs="Adhemar Kecks", feet="Pursuer's Gaiters"})
+		-- legs="Path D",
+		back=gear.snapshot_ranger_jse_back, waist="Impulse Belt", legs="Adhemar Kecks", feet="Arcadian Socks +3"})
 
 	sets.precast.RA.Gastraphetes = {
 		--neck="Scout's Gorget +2"
@@ -134,10 +139,10 @@ function init_gear_sets()
 	
 	sets.precast.RA.Gastraphetes.Flurry2 = set_combine(sets.precast.RA, {
 		-- head="Orion Beret +3", neck="Scout's Gorget +2"
-		head="Arcadian Beret +2",
+		head="Arcadian Beret +3",
 		body="Amini Caban +1", hands="Carmine Fin. Ga. +1",
-		-- legs="Adhemar Kecks +1", feet="Arcadian Socks +3"
-		back=gear.snapshot_ranger_jse_back, waist="Impulse Belt", legs="Adhemar Kecks", feet="Pursuer's Gaiters"})
+		-- legs="Adhemar Kecks +1", 
+		back=gear.snapshot_ranger_jse_back, waist="Impulse Belt", legs="Adhemar Kecks", feet="Arcadian Socks +3"})
 
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
@@ -159,7 +164,7 @@ function init_gear_sets()
 		-- gear.herculean_wsd_body
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminondas's Ring",
 		-- Salifi Belt +1 gear.herculean_wsd_feet
-		back=gear.ws_jse_back, waist="Fotia Belt", legs="Arc. Braccae +2", feet=gear.herculean_ta_feet}
+		back=gear.ws_jse_back, waist="Fotia Belt", legs="Arc. Braccae +3", feet=gear.herculean_ta_feet}
 	-- Axe
 	-- Decimation
 	sets.precast.WS['Decimation'] = {
@@ -175,7 +180,7 @@ function init_gear_sets()
 		-- gear.herculean_wsd_body
 		body="Meg. Cuirie +2", hands="Adhe. Wrists +1", lring="Regal Ring", ring2="Epona's Ring",
 		-- gear.herculean_wsd_legs
-		back=gear.tp_jse_back, waist="Fotia Belt", legs="Arc. Braccae +2", feet="Mummu Gamash. +2"}
+		back=gear.tp_jse_back, waist="Fotia Belt", legs="Arc. Braccae +3", feet="Mummu Gamash. +2"}
 	
 	-- Bow
 	-- Jishnu's Ridiance
@@ -216,26 +221,26 @@ function init_gear_sets()
 		head="Orion Beret +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Ishvara Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminondas's Ring",
 		-- gear.herculean_wsd_feetAGI/Ratk/WSD
-		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Arc. Braccae +2", feet="Meg. Jam. +2"}
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Arc. Braccae +3", feet="Meg. Jam. +2"}
 	sets.precast.RA['Last Stand'].Acc = {
 		-- Scout's Gorget +2
 		head="Orion Beret +2", neck="Fotia Gorget", lear="Moonshade Earring", rear="Ishvara Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminondas's Ring",
 		--  Herc. Boots AGI/Ratk/WSD
-		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Arc. Braccae +2", feet="Meg. Jam. +2"}
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Arc. Braccae +3", feet="Meg. Jam. +2"}
 	-- Coronach
 	sets.precast.RA['Coronach'] = {
 		-- Scout's Neck +2
 		head="Orion Beret +3", neck="Fotia Gorget", lear="Ishvara Earring", rear="Sherida Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminondas's Ring",
 		--  Herc. Boots AGI/Ratk/WSD
-		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Arc. Braccae +2", feet="Meg. Jam. +2"}
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Arc. Braccae +3", feet="Meg. Jam. +2"}
 	sets.precast.RA['Coronach'].Acc = {
 		-- Scout's Neck +2
 		head="Orion Beret +2", neck="Fotia Gorget", lear="Ishvara Earring", rear="Sherida Earring",
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", ring2="Epaminondas's Ring",
 		-- Herc. Boots AGI/Ratk/WSD
-		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Arc. Braccae +2", feet="Meg. Jam. +2"}
+		back=gear.wsd_ranger_jse_back, waist="Fotia Belt", legs="Arc. Braccae +3", feet="Meg. Jam. +2"}
 
 	-- Wildfire
     sets.precast.WS['Wildfire'] = {
@@ -265,8 +270,8 @@ function init_gear_sets()
 		back=gear.magic_wsd_jse_back, waist="Eschan Stone", legs=gear.herculean_nuke_legs, ffeet=gear.herculean_nuke_feet}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Telos Earring",ear2="Sherida Earring",}
-	sets.AccMaxTP = {ear1="Telos Earring",ear2="Enervating Earring",}
+	sets.MaxTP = {ear1="Telos Earring",ear2="Sherida Earring"}
+	sets.AccMaxTP = {ear1="Telos Earring",ear2="Enervating Earring"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 
@@ -283,7 +288,7 @@ function init_gear_sets()
 	-- Everything else
 	sets.midcast.RA = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -291,7 +296,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Acc = {
         -- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -299,7 +304,7 @@ function init_gear_sets()
 	
 	sets.midcast.RA.HighAcc = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enverating Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enverating Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -307,7 +312,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Yoichinoyumi = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -315,7 +320,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Yoichinoyumi.Acc = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -323,7 +328,7 @@ function init_gear_sets()
 	
 	sets.midcast.RA.Yoichinoyumi.HighAcc = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -331,7 +336,7 @@ function init_gear_sets()
 
 	sets.midcast.RA.Yoichinoyumi.AM = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -339,7 +344,7 @@ function init_gear_sets()
 
 	sets.midcast.RA.Gandiva = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring", ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring", ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring", ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -347,7 +352,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Gandiva.Acc = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -355,7 +360,7 @@ function init_gear_sets()
 	
 	sets.midcast.RA.Gandiva.HighAcc = {
        -- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enverating Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Enverating Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -370,7 +375,7 @@ function init_gear_sets()
 		
 	sets.midcast.RA.Annihilator = {		
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -378,7 +383,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Annihilator.Acc = {		
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -386,7 +391,7 @@ function init_gear_sets()
 	
 	 sets.midcast.RA.Annihilator.HighAcc = {		
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -394,7 +399,7 @@ function init_gear_sets()
 
 	sets.midcast.RA.Fomalhaut  = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -402,7 +407,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Fomalhaut.Acc = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -410,7 +415,7 @@ function init_gear_sets()
 	
 	sets.midcast.RA.Fomalhaut.HighAcc = {
 		-- Scout's Gorget +2
-        head="Arcadian Beret +2",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
+        head="Arcadian Beret +3",neck="Iskur Gorget",ear1="Telos Earring",ear2="Dedition Earring",
 		-- Malignance Gloves
         body="Nisroch Jerkin",hands="Adhemar Wrist. +1", ring1="Regal Ring",ring2="Ilabrat Ring",
 		-- K. Kachina Belt +1
@@ -429,7 +434,7 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Iskur Gorget", ear1="Telos Earring", ear2="Enervating Earring",
 		body="Meg. Cuirie +2", hands="Kobo Kote",ring1="Begrudging Ring", ring2="Ilabrat Ring",
 		-- feet="Oshosi Leggings +1"
-		back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Darraigner's Brais",}
+		back=gear.tp_ranger_jse_back,waist="Kwahu Kachina Belt",legs="Darraigner's Brais"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	
 	sets.Self_Healing = {ring2="Kunaji Ring",}--neck="Phalaina Locket",hands="Buremte Gloves", waist="Gishdubar Sash"
@@ -448,35 +453,34 @@ function init_gear_sets()
 	sets.resting = {
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Vengeful Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
     
 	-- Idle sets
     sets.idle = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Vengeful Ring",ring2="Defending Ring",
-        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
 		-- Malignance Tabard Malignance Gloves
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Vengeful Ring",ring2="Defending Ring",
-		-- Malignance Tights 
-        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
     
     sets.defense.MDT = {ammo=gear.RAbullet,
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         -- Malignance Tabard Malignance Gloves
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Vengeful Ring",ring2="Defending Ring",
 		-- Malignance Tights 
-        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
     
     sets.defense.MEVA = {ammo=gear.RAbullet,
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Etiolation Earring",
         -- Malignance Tabard Malignance Gloves
 		body="Meg. Cuirie +2",hands="Volte Bracers",ring1="Vengeful Ring",ring2="Defending Ring",
 		-- Malignance Tights 
-        back="Moonbeam Cape",waist="Flume Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+        back="Moonbeam Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
     
 	sets.Kiting = {feet="Jute Boots +1"}
 	sets.DayIdle = {}
@@ -509,19 +513,19 @@ function init_gear_sets()
 		-- neck="Combatant's Necklace", 
 		head="Malignance Chapeau", neck="Erudit. Necklace",  lear="Sherida Earring", rear="Suppanomimi",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Ilabrat Ring",
-		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Meg. Chausses +2", feet="Malignance Boots"}
+		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Malignance Tights", feet="Malignance Boots"}
 	sets.engaged.HighAcc = {
 		-- neck="Combatant's Necklace", 
 		head="Malignance Chapeau", neck="Erudit. Necklace",  lear="Sherida Earring", rear="Suppanomimi",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Ilabrat Ring",
-		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Meg. Chausses +2", feet="Malignance Boots"}
+		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Malignance Tights", feet="Malignance Boots"}
 	sets.engaged.KC = {
 		-- rear="Odr Earring", 
 		head="Malignance Chapeau", neck="Iskur Gorget",  lear="Dedition Earring", rear="Suppanomimi",
-		--Malignance Tabard Malignance Gloves Chirich Ring +1 Chirich Ring +1
-		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Regal Ring", rring="Ilabrat Ring",
-		-- Olsen Belt Malignance Tights
-		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Meg. Chausses +2", feet="Malignance Boots"}
+		--Malignance Tabard Malignance Gloves  
+		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		-- Olsen Belt 
+		back=gear.tp_jse_back, waist="Tempus Fugit", legs="Malignance Tights", feet="Malignance Boots"}
 
     sets.engaged.DW = {
 		-- neck="Combatant's Necklace", 
@@ -535,19 +539,19 @@ function init_gear_sets()
 		head="Malignance Chapeau", neck="Erudit. Necklace", lear="Sherida Earring", rear="Suppanomimi",
 		-- Floral Gauntlets
 		body="Adhemar Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ilabrat Ring",
-		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Carmine Cuisses +1", feet="Malignance Boots"}
+		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Malignance Tights", feet="Malignance Boots"}
 	sets.engaged.DW.HighAcc = {
 		-- neck="Combatant's Necklace", 
 		head="Malignance Chapeau", neck="Erudit. Necklace", lear="Sherida Earring", rear="Suppanomimi",
 		-- Floral Gauntlets
 		body="Adhemar Jacket +1", hands="Meg. Gloves +2", lring="Rajas Ring", rring="Ilabrat Ring",
-		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Carmine Cuisses +1", feet="Malignance Boots"}
+		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Malignance Tights", feet="Malignance Boots"}
 	sets.engaged.DW.KC = {
 		-- rear="Odr Earring", 
 		head="Malignance Chapeau", neck="Iskur Gorget",  lear="Dedition Earring", rear="Suppanomimi",
 		body="Meghanada Cuirie +2", hands="Meg. Gloves +2", lring="Chirich Ring +1", rring="Chirich Ring +1",
 		-- Olsen Belt 
-		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Meg. Chausses +2", feet="Malignance Boots"}
+		back=gear.DW_jse_back, waist="Tempus Fugit", legs="Malignance Tights", feet="Malignance Boots"}
 
 	--------------------------------------
 	-- Custom buff sets
@@ -556,7 +560,7 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-	if ranged_Bow:contains(player.equipment.range) then
+	if WeaponType == 'Bow' then
 		if player.sub_job == 'NIN' then
 			set_macro_page(1,13)
 		elseif player.sub_job == 'SAM' then
@@ -568,7 +572,7 @@ function select_default_macro_book()
 		else
 			set_macro_page(3,13)
 		end
-	elseif ranged_Gun:contains(player.equipment.range) then
+	elseif WeaponType == 'Gun' then
 		if player.sub_job == 'NIN' then
 			set_macro_page(5,13)
 		elseif player.sub_job == 'SAM' then
@@ -580,5 +584,13 @@ function select_default_macro_book()
 		else
 			set_macro_page(7,13)
 		end
+	end
+end 
+
+function user_job_lockstyle()
+	if WeaponType == 'Bow' then
+		windower.chat.input('/lockstyleset 013')
+	elseif WeaponType == 'Gun' then
+		windower.chat.input('/lockstyleset 026')
 	end
 end

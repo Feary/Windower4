@@ -57,4 +57,13 @@
         </Clock>
         <TimeZones>PST,CST,GMT,AWST</TimeZones>
     </mehany>
+    <yerp>
+        <Clock>
+            <pos>
+                <x>1443</x>
+                <y>2</y>
+            </pos>
+        </Clock>
+        <TimeZones>PST,CST,GMT,AWST</TimeZones>
+    </yerp>
 </settings>

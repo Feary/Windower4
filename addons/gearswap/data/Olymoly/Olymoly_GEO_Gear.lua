@@ -427,5 +427,5 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-	set_macro_page(7, 2)
+	set_macro_page(1, 22)
 end

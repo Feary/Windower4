@@ -276,55 +276,37 @@ function init_gear_sets()
 
     -- Elemental Magic sets    
 	-- Low Tier
-    sets.midcast['Elemental Magic'] = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
-		-- Arch. Petasos +3  
-        head="Amalric Coif +1",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
-        -- Arch. Coat +3 Arch. Gloves +3
-		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+    sets.midcast['Elemental Magic'] = {main="Lathi",sub="Niobid Strap",ammo="Pemphredo Tathlum",
+        head="Arch. Petasos +3",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
+		body="Arch. Coat +3",hands="Arch. Gloves +3",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Arch. Tonbon +3",feet="Arch. Sabots +3"}
 		
     sets.midcast['Elemental Magic'].Resistant = {main="Lathi",sub="Niobid Strap",ammo="Pemphredo Tathlum",
-		-- Arch. Petasos +3 
-        head="Amalric Coif +1",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
-        -- Arch. Coat +3 Arch. Gloves +3
-		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+        head="Arch. Petasos +3",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
+		body="Arch. Coat +3",hands="Arch. Gloves +3",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Arch. Tonbon +3",feet="Arch. Sabots +3"}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Lathi",sub="Niobid Strap",ammo="Pemphredo Tathlum",
-		-- Arch. Petasos +3 
-        head="Amalric Coif +1",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
-        -- Arch. Coat +3 Arch. Gloves +3
-		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"}
+        head="Arch. Petasos +3",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
+		body="Arch. Coat +3",hands="Arch. Gloves +3",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Arch. Tonbon +3",feet="Arch. Sabots +3"}
 
 	-- High Tier 
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
 		main="Lathi",sub="Niobid Strap",ammo="Pemphredo Tathlum",
-		-- Arch. Petasos +3 
-         head="Amalric Coif +1",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
-        -- Arch. Coat +3 Arch. Gloves +3
-		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"})
+        head="Arch. Petasos +3",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
+		body="Arch. Coat +3",hands="Arch. Gloves +3",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Arch. Tonbon +3",feet="Arch. Sabots +3"})
 	sets.midcast['Elemental Magic'].Resistant.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Resistant, {
 		main="Lathi",sub="Niobid Strap",ammo="Pemphredo Tathlum",
-		-- Arch. Petasos +3 
-        head="Amalric Coif +1",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
-        -- Arch. Coat +3 Arch. Gloves +3
-		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"})
+        head="Arch. Petasos +3",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
+		body="Arch. Coat +3",hands="Arch. Gloves +3",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Arch. Tonbon +3",feet="Arch. Sabots +3"})
 	sets.midcast['Elemental Magic'].Fodder.HighTierNuke = set_combine(sets.midcast['Elemental Magic'].Fodder, {
-		main="Lathi",sub="Enki Strap",ammo="Pemphredo Tathlum",
-		-- Arch. Petasos +3 
-        head="Amalric Coif +1",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
-        -- Arch. Coat +3 Arch. Gloves +3
-		body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		-- Arch. Tonbon +3 Arch. Sabots +3
-        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"})
+		main="Lathi",sub="Niobid Strap",ammo="Pemphredo Tathlum",
+        head="Arch. Petasos +3",neck="Saevus Pendant +1",ear1="Barkaro. Earring",ear2="Malignance Earring",
+		body="Arch. Coat +3",hands="Arch. Gloves +3",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Arch. Tonbon +3",feet="Arch. Sabots +3"})
 	
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Resistant
@@ -424,10 +406,10 @@ function init_gear_sets()
 	
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
 	
-	sets.HPDown = {}
-		--head="Pixie Hairpin +1",ear1="Genbu's Earring",ear2="Evans Earring",
-		--body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		--back="Swith Cape +1",legs="Shedir Seraweels",feet="Jhakri Pigaches +2"
+	sets.HPDown = {
+		head="Pixie Hairpin +1",ear1="Genbu's Earring",ear2="Evans Earring",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
+		back="Swith Cape +1",legs="Shedir Seraweels",feet="Jhakri Pigaches +2"}
 	sets.HPCure = {}
 		--main=gear.gada_healing_club,sub="Sors Shield",ammo="Hasty Pinion +1",
 		--head="Blistering Sallet +1",neck="Nodens Gorget",ear1="Etiolation Earring",ear2="Ethereal Earring",

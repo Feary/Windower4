@@ -563,3 +563,7 @@ function select_default_macro_book()
         set_macro_page(1, 10)
     end  
 end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 010')
+end

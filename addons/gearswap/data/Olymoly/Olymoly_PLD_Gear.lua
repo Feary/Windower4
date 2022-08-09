@@ -604,6 +604,14 @@ function select_default_macro_book()
     end
 end
 
+function select_default_macro_book()
+	set_macro_page(1, 16)
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 016')
+end
+
 buff_spell_lists = {
 	Auto = {	
 		{Name='Crusade',	Buff='Enmity Boost',	SpellID=476,	When='Always'},
