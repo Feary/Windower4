@@ -1,5 +1,4 @@
-function user_setup()
-
+function user_job_setup()
     -- Options: Override default values	
 	state.OffenseMode:options('Normal', 'Acc')
     state.HybridMode:options('Tank', 'DDTank', 'BreathTank', 'NoShellTank', 'Reraise', 'Normal')
@@ -73,26 +72,26 @@ function init_gear_sets()
 		back=gear.Enmity_jse_back, waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 
     -- Precast sets to enhance JAs
-    sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1"})
+    sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +3"})
     sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +2"})
-    sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +1"})
-    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +1"})
-    sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1"})
+    sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +3"})
+    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +3"})
+    sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +3"})
     sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +1"})
-    sets.precast.JA['Cover'] = set_combine(sets.Enmity, {head="Rev. Coronet +2", body="Cab. Surcoat +1"})
+    sets.precast.JA['Cover'] = set_combine(sets.Enmity, {head="Rev. Coronet +2", body="Cab. Surcoat +3"})
 	
-	sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +1"})
+	sets.precast.JA['Invincible'] = set_combine(sets.Enmity,{legs="Cab. Breeches +3"})
     sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity,{feet="Rev. Leggings +2"})
-    sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +1"})
-    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +1"})
-    sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1"})
+    sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings +3"})
+    sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet +3"})
+    sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +3"})
     sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +1"})
    	
     -- Add MND for Chivalry
     sets.precast.JA['Chivalry'] = {
 		--ear1="Nourish. Earring",
 		head="Carmine Mask +1",neck="Sacro Gorget", ear1="Odnowa Earring +1", ear2="Nourish. Earring +1", 
-		body="Cab. Surcoat +1",hands="Cab. Gauntlets +1",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Cab. Surcoat +3",hands="Cab. Gauntlets +1",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.enmity_jse_back,waist="Luminary Sash",legs="Mes'yohi Slacks",feet="Carmine Greaves +1"}
 
 	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {lear="Knightly Earring", hands="Cab. Gauntlets +1"})		
@@ -447,7 +446,7 @@ function init_gear_sets()
         head="Twilight Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",
         body="Twilight Mail", hands="Souv. Handsch. +1", ring1="Moonlight Ring", ring2="Defending Ring",
 		--
-		back="Reiki Cloak",waist="Flume Belt", legs="Souv. Diechlings +1", feet="Cab. Leggings +1"}
+		back="Reiki Cloak",waist="Flume Belt", legs="Souv. Diechlings +1", feet="Cab. Leggings +3"}
 
 	sets.defense.BDT = {ammo="Staunch Tathlum",
 		head="Souveran Schaller +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", ear2="Odnowa Earring",
@@ -495,7 +494,7 @@ function init_gear_sets()
 		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Shadow Ring", rring="Defending Ring",
 		-- Flax Sash 
-		back="Moonbeam Cape", waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Cab. Leggings +1"}
+		back="Moonbeam Cape", waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Cab. Leggings +3"}
 
     sets.defense.AegisMDT = {sub="Aegis", ammo="Staunch Tathlum",
 		-- Founder's Corona Spellbr. Earring  Sanare Earring
@@ -509,7 +508,7 @@ function init_gear_sets()
 		-- Lunette Ring +1
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Shadow Ring", rring="Defending Ring",
 		--  Flax Sash 
-		back="Moonbeam Cape", waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Cab. Leggings +1"}
+		back="Moonbeam Cape", waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Cab. Leggings +3"}
 
 	--------------------------------------
 	-- Engaged sets
@@ -583,7 +582,7 @@ function init_gear_sets()
 	--------------------------------------
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {neck="Vim Torque"}
-    sets.buff.Cover = {body="Cab. Surcoat +1"}
+    sets.buff.Cover = {body="Cab. Surcoat +3"}
 end
 
 -- Select default macro book on initial load or subjob change.
