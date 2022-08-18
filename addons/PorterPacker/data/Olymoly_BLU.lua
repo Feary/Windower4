@@ -27,4 +27,6 @@ return {
 	"Maxentius", 	
 	"Naegling",
 	"Kaja Sword",
+	"Aern Sword",
+	"Aern Sword II"
 }

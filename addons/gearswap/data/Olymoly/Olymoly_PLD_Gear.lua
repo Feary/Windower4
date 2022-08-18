@@ -91,10 +91,10 @@ function init_gear_sets()
     sets.precast.JA['Chivalry'] = {
 		--ear1="Nourish. Earring",
 		head="Carmine Mask +1",neck="Sacro Gorget", ear1="Odnowa Earring +1", ear2="Nourish. Earring +1", 
-		body="Cab. Surcoat +3",hands="Cab. Gauntlets +1",ring1="Stikini Ring",ring2="Stikini Ring",
+		body="Cab. Surcoat +3",hands="Cab. Gauntlets +3",ring1="Stikini Ring",ring2="Stikini Ring",
 		back=gear.enmity_jse_back,waist="Luminary Sash",legs="Mes'yohi Slacks",feet="Carmine Greaves +1"}
 
-	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {lear="Knightly Earring", hands="Cab. Gauntlets +1"})		
+	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {lear="Knightly Earring", hands="Cab. Gauntlets +3"})		
     sets.precast.JA['Provoke'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Warcry'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Palisade'] = set_combine(sets.Enmity, {})
@@ -103,7 +103,7 @@ function init_gear_sets()
 	sets.precast.JA['Berserk'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Aggressor'] = set_combine(sets.Enmity, {})
 	
-	sets.precast.JA['Shield Bash'].DT = set_combine(sets.Enmity.DT, {lear="Knightly Earring", hands="Cab. Gauntlets +1"})		
+	sets.precast.JA['Shield Bash'].DT = set_combine(sets.Enmity.DT, {lear="Knightly Earring", hands="Cab. Gauntlets +3"})		
     sets.precast.JA['Provoke'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Warcry'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Palisade'].DT = set_combine(sets.Enmity.DT, {})
@@ -115,8 +115,8 @@ function init_gear_sets()
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
 		head="Carmine Mask +1",
-		--body="Rev. Surcoat +3", ring2="Valseur's Ring",
-		ring1="Asklepian Ring",
+		-- ring2="Valseur's Ring",
+		body="Rev. Surcoat +3", ring1="Asklepian Ring",
 		waist="Chaac Belt",legs="Sulev. Cuisses +2"}
         
     -- Don't need any special gear for Healing Waltz.
@@ -370,8 +370,7 @@ function init_gear_sets()
 	sets.idle.KiteTank = {ammo="Staunch Tathlum",
 		head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Thureous Earring",
 		body="Tartarus Platemail",hands="Souv. Handsch. +1",ring1="Shadow Ring",ring2="Defending Ring",
-		-- feet="Hippo. Socks +1"
-		back="Shadow Mantle",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Hippomenes Socks"}
+		back="Shadow Mantle",waist="Flume Belt",legs="Carmine Cuisses +1", feet="Hippo. Socks +1"}
 		
     sets.idle.Reraise = {ammo="Staunch Tathlum",
 		head="Twilight Helm",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
@@ -380,7 +379,6 @@ function init_gear_sets()
 		
     sets.idle.Weak = {ammo="Staunch Tathlum",
 		head="Souveran Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Thureous Earring",
-		-- Moonbeam Ring
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
@@ -398,9 +396,12 @@ function init_gear_sets()
     -- Extra defense sets.  Apply these on top of melee or defense sets.
 	-- Weapon Set
 	sets.weapons.Default = {main="Burtgang",sub="Aegis"}
-	sets.weapons.DDWeapons = {main="Burtgang",sub="Aegis"}
+	sets.weapons.DDWeapons = {main="Naegling",sub="Aegis"}
+	sets.weapons.Almace = {main="Almace",sub="Aegis"}
+	sets.weapons.Excalibur = {main="Excalibur",sub="Aegis"}
+	sets.weapons.Dagger = {main="Malevolence",sub="Ochain"}
     sets.weapons.DualWeapons = {main="Burtgang",sub="Naegling"}
-	sets.weapons.Dagger = {main="Malevolence",sub=	"Ochain"}
+	sets.weapons.DualNaegling = {main="Naegling",sub="Kaja Sword"}
 	
 	sets.Knockback = {}
     sets.MP = {head="Chev. Armet +1",ear2="Ethereal Earring",waist="Flume Belt"} -- neck="Coatl Gorget +1",
@@ -430,7 +431,6 @@ function init_gear_sets()
 		
     sets.defense.MEVA_HP = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1", ear2="Etiolation Earring",
-        --body="Rev. Surcoat +3", 
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonlight Ring",  ring2="Moonlight Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		

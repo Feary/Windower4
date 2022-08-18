@@ -75,11 +75,11 @@ function init_gear_sets()
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
-		head="Piety Cap +1", legs="Ebers Pant. +1", feet="Theo. Duckbills +1"})
+		head="Piety Cap +3", legs="Ebers Pant. +1", feet="Theo. Duckbills +1"})
 
 	sets.precast.FC.Cure.DT =  set_combine(sets.precast.FC.Cure, {
 		main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
-		head="Piety Cap +1", neck="Loricate Torque +1",lear="Nourish. Earring +1", rear="Novia Earring",
+		head="Piety Cap +3", neck="Loricate Torque +1",lear="Nourish. Earring +1", rear="Novia Earring",
 		body="Inyanga Jubbah +2", hands="Fanatic Gloves",ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.Cure_jse_back, waist="Witful Belt", legs="Ebers Pant. +1", feet="Cure Clogs"})
 
@@ -90,7 +90,7 @@ function init_gear_sets()
 	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 
     -- Precast sets to enhance JAs
-    sets.precast.JA.Benediction = {body="Piety Bliaut +1"}
+    sets.precast.JA.Benediction = {body="Piety Bliaut +3"}
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {}
@@ -303,10 +303,10 @@ function init_gear_sets()
 		hands="Ebers Mitts +1", 
 		legs="Theo. Pant. +1",})
 	
-	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1"})
-	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1"})
-	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1"})
-	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1"})
+	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +3"})
+	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +3"})
+	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +3"})
+	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +3"})
 	
 	-- 438 Cap
 	sets.midcast.BarElement = {
@@ -321,7 +321,7 @@ function init_gear_sets()
 		head=gear.telchine_head_Duration, neck="Incanter's Torque", lear="Andoaa Earring", rear="Augment. Earring",
 		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		--  feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
+		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +3", feet="Ebers Duckbills +1"}
 	
 	--sets.midcast.BarStatus['Light Arts'] = {main={name="Beneficus", priority=2}, sub={name="Genmei Shield", priority=1},
 		--main=gear.gada_enhancing_club,sub="Ammurapi Shield",
@@ -335,9 +335,9 @@ function init_gear_sets()
 	sets.midcast.BoostStat = {
 		-- main={name="Gada", priority=2},
 		head="Befouled Crown", neck="Incanter's Torque", lear="Andoaa Earring", rear="Augment. Earring",
-		body="Anhur Robe", hands="Inyanga Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
+		body=gear.telchine_body_Duration, hands="Inyanga Dastanas +2", lring="Stikini Ring", rring="Stikini Ring",
 		-- Theo. Duckbills +3
-		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
+		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +3", feet="Ebers Duckbills +1"}
 			
 	sets.midcast.Impact = {main="Oranyan",sub="Enki Strap",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",

@@ -5,7 +5,7 @@ _addon.commands = {'fuckoff','fo'} --Won't do anything atm.
  
 packets = require('packets')
  
-local blackListedUsers = T{'Koohoo','Kooboo','TotallyABotThree','Fudu','Blackjacky','Wowee','Fudoii','Shmilydoittt','Fudoa','Dhozs','Borzukmklrytu','Sixgoda','Meiod','Shmilynono','Bikepeliikekg','Odyessnm','Kdgl','Zirow','Cpttn','Bostjanmdfteryn','Rsdgwrg'} -- Want to block all messages from X user then added there name(s) here.
+local blackListedUsers = T{'Koohoo','Kooboo','TotallyABotThree','Fudu','Blackjacky','Wowee','Fudoii','Shmilydoittt','Fudoa','Dhozs','Borzukmklrytu','Sixgoda','Meiod','Shmilynono','Bikepeliikekg','Odyessnm','Kdgl','Zirow','Cpttn','Bostjanmdfteryn','Rsdgwrg','Sixgodb','Shmilynuo',} -- Want to block all messages from X user then added there name(s) here.
      
 -- I could do a general digit check on JP instead of set 500/2100 values but atm I feel it's not needed. Will see if they change thier tactics.
 -- If you want to learn more about "Magical Characters" or Patterns in Lua: <a href="https://riptutorial.com/lua/example/20315/lua-pattern-matching" rel="nofollow">https://riptutorial.com/lua/example/20315/lua-pattern-matching</a>

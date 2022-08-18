@@ -3,10 +3,11 @@ return {
     "Jhakri Cuffs +2",
 	"Jhakri Pigaches +2",
     "Savant's Treatise",
-	"Peda. Gown +1",
-	"Peda. Bracers +1",
-    "Peda. Pants +1",
-    "Peda. Loafers +1",
+	"Peda. M.Board +3",
+	"Peda. Gown +3",
+	"Peda. Bracers +3",
+    "Peda. Pants +3",
+    "Peda. Loafers +3",
     "Mallquis Trews +2",
     "Mallquis Saio +2",
     "Mallquis Clogs +2",   
@@ -17,5 +18,8 @@ return {
     "Arbatel Bracers +1",
     "Arbatel Pants +1",	
 	"Arbatel Loafers +1",
+	"Khonso",
+	"Kaja Rod",
+	"Maxentius"
 }
 

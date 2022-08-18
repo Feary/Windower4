@@ -4,7 +4,7 @@ return {
     "Geo. Sandals +3",
     "Geo. Mitaines +3",
     "Geo. Galero +2",
-    "Bagua Tunic +2",
+    "Bagua Tunic +3",
     "Bagua Sandals +2",
     "Bagua Pants +3",
     "Bagua Mitaines +2",

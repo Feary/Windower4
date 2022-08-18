@@ -116,12 +116,12 @@ function init_gear_sets()
 		lear="Pratik Earring", rear="Guignol Earring",
 		-- gear.herculean_Repair_body gear.herculean_Repair_hands lring="Overbearing Ring",
 		-- Desultor Tassets
-		feet="Foire Babouches +1"}
+		feet="Foire Babouches +3"}
 	sets.precast.JA['Maintenance'] = {ammo="Automat. Oil +3"}
 
     sets.precast.JA.Maneuver = {main="Midnights",--Animator P +1
 		neck="Bfn. Collar +1",
-		body="Kara. Farsetto +1", hands="Foire Dastanas +1",
+		body="Kara. Farsetto +1", hands="Foire Dastanas +3",
 		back="Visucius's Mantle"} 
 
     -- Waltz set (chr and vit)
@@ -131,23 +131,23 @@ function init_gear_sets()
        
    sets.precast.WS = {
         head="Hiza. Somen　+2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-		-- Foire Tobe +3 Pitre Dastanas +3
-        body="Hiza. Haramaki +2",hands="Hizamaru Kote +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
+		--  Pitre Dastanas +3
+        body="Foire Tobe +3",hands="Hizamaru Kote +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
         back=gear.WS_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"}
 	sets.precast.WS.Acc = {
         head="Hiza. Somen　+2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-		-- Foire Tobe +3 Pitre Dastanas +3
-        body="Hiza. Haramaki +2",hands="Hizamaru Kote +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
+		-- Pitre Dastanas +3
+        body="Foire Tobe +3",hands="Hizamaru Kote +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
         back=gear.WS_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"}
 	sets.precast.WS.FullAcc = {
-        head="Hiza. Somen　+2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-		-- Foire Tobe +3 Pitre Dastanas +3
-        body="Hiza. Haramaki +2",hands="Hizamaru Kote +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
+        head="Foire Tobe +3",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
+		-- Pitre Dastanas +3
+        body="Foire Tobe +3",hands="Hizamaru Kote +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
         back=gear.WS_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"}
 	sets.precast.WS.Fodder = {
         head="Hiza. Somen　+2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-		-- Foire Tobe +3 Pitre Dastanas +3
-        body="Hiza. Haramaki +2",hands="Hizamaru Kote +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
+		-- Pitre Dastanas +3
+        body="Foire Tobe +3",hands="Hizamaru Kote +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
         back=gear.WS_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.

@@ -1,9 +1,9 @@
 return {
-    "Vitiation Boots +1",
-    "Viti. Tights +1",
-    "Viti. Gloves +1",
-    "Viti. Tabard +1",
-    "Viti. Chapeau +1",
+    "Vitiation Boots +3",
+    "Viti. Tights +3",
+    "Viti. Gloves +3",
+    "Viti. Tabard +3",
+    "Viti. Chapeau 3",
     "Leth. Houseaux +1",
 	"Leth. Fuseau +1",
     "Leth. Gantherots +1",
@@ -31,5 +31,7 @@ return {
 	"Ullr",
     "Maxentius",
 	"Aern Sword",
-	"Aern Sword II"
+	"Aern Sword II",
+	"Aern Dagger",
+	"Aern Dagger II"
 }

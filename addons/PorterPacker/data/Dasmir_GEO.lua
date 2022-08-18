@@ -17,7 +17,7 @@ return {
     "Geo. Mitaines +2",
 	"Bagua Tunic",
     "Bagua Sandals",
-    "Bagua Mitaines",    
+    "Bagua Mitaines +1",    
     "Bagua Pants",
 	"Bagua Galero",
 	"Azimuth Gaiters +1",
