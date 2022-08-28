@@ -22,4 +22,11 @@ return {
     "Tali'ah Manteel +2",
     "Tali'ah Gages +2",
     "Tali'ah Crackows +2",
+	"Inyanga Shalwar +2",
+    "Inyanga Jubbah +2",
+    "Inyan. Crackows +2",
+    "Inyanga Tiara +2",
+    "Inyan. Dastanas +2",
+    "Inyanga Ring",
+	"Khonsu",
 }

@@ -128,9 +128,14 @@
     </gonzaloo>
     <helyah>
         <pos>
-            <x>958</x>
-            <y>46</y>
+            <x>910</x>
+            <y>52</y>
         </pos>
+        <text>
+            <fonts>
+
+            </fonts>
+        </text>
     </helyah>
     <kavita>
         <pos>

@@ -19,7 +19,7 @@ return {
     "Piety Cap +1",
     "Piety Duckbills +1",
     "Piety Mitts",
-    "Piety Pantaln. +1",
+    "Piety Pantaln. +3",
     "Th. Pantaloons +2",
     "Theo. Bliaut +3",
     "Theo. Cap +1",

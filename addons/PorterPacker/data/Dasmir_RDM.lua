@@ -1,15 +1,14 @@
-return {
-   
+return {   
     "Atro. Chapeau +2",
     "Atrophy Tabard +2",
 	"Atrophy Gloves +2",
     "Atrophy Tights +2",
 	"Atro. Boots +2",    
-    "Viti. Chapeau +1",    
-    "Viti. Tabard +1",
-    "Viti. Gloves +1",
-    "Viti. Tights +1",
-    "Vitiation Boots +1",
+    "Viti. Chapeau +3",    
+    "Viti. Tabard +3",
+    "Viti. Gloves +3",
+    "Viti. Tights +3",
+    "Vitiation Boots +3",
 	"Jhakri Coronal +2",	
     "Jhakri Robe +2",    
 	"Jhakri Cuffs +2",

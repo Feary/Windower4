@@ -270,7 +270,7 @@ function init_gear_sets()
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
 		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonlight Ring", rring="Moonlight Ring",
 		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Odyssean Greaves"}
-	
+
 	 sets.midcast.Cure.SIRD = {ammo="Staunch Tathlum",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
 		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonlight Ring", rring="Moonlight Ring",
@@ -294,7 +294,6 @@ function init_gear_sets()
 		
 	sets.Self_Healing.DT = {ammo="Staunch Tathlum",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-		-- 
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 
@@ -319,17 +318,18 @@ function init_gear_sets()
 	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {ammo="Staunch Tathlum",
 		-- odyssean Helm Phalanx +5
 		head="Carmine Mask +1", neck="Incanter's Torque", lear="Odnowa Earring +1", rear="Knightly Earring",
-		-- body="Shabti Cuirass", Apeile Ring +1
+		-- body="Shabti Cuirass +1", Apeile Ring +1
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonlight Ring", rring="Apeile Ring",
 		back=gear.phalanx_jse_back, waist="Rumination Sash", legs=gear.valorous_phalanx_legs, feet="Souveran Schuhs +1"})
 		
 	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {ammo="Staunch Tathlum",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
-		-- body="Shabti Cuirass", Apeile Ring +1
+		-- body="Shabti Cuirass +1", Apeile Ring +1
 		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonlight Ring", rring="Apeile Ring",
 		-- back= Odyssean feet SIRD
 		back=gear.phalanx_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Souveran Schuhs +1"})
 
+ sets.midcast.['Divine Magic'] = {}
 	--------------------------------------
 	-- Idle/resting/defense/etc sets
 	--------------------------------------

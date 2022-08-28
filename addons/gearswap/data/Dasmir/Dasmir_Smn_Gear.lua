@@ -1,8 +1,8 @@
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
-function user_setup()
+function user_job_setup()
     state.OffenseMode:options('Normal', 'Acc')
     state.CastingMode:options('Normal', 'Resistant')
-    state.IdleMode:options('Normal', 'PDT', 'MDT', 'TPEat')
+    state.IdleMode:options('Normal', 'PDT')
 	state.Weapons:options('None','Nirvana','Gridarvor')
 
 	-- Avatar Ammo - 
@@ -337,8 +337,6 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
-	sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
-
     -- perp costs:
     -- spirits: 7
     -- carby: 11 (5 with mitts)
@@ -483,4 +481,8 @@ function select_default_macro_book(reset)
     
     -- Default macro set/book
     set_macro_page(1, 7)
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 007')
 end

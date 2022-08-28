@@ -55,6 +55,8 @@ gear.taeon_hands_pettp = { name="Taeon Boots", augments={'Pet: Accuracy+24 Pet: 
 gear.telchine_head_Duration = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +10',}}
 gear.telchine_head_Siphon = { name="Telchine Cap", augments={'"Elemental Siphon"+10','Enh. Mag. eff. dur. +10',}}
 gear.telchine_head_Pet = {name="Telchine Cap", augments={'Mag. Evasion+18','Pet: "Regen"+3','Pet: Damage taken -3%',}}
+-- HP CurePotency Recieved
+gear.telchine_legs_cure = {}
 
 -- Body 
 -- Leaforb
@@ -66,15 +68,20 @@ gear.telchine_body_Pet = { name="Telchine Chas.", augments={'Mag. Evasion+21','P
 --Hands 
 gear.telchine_hands_Cure = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
 gear.telchine_hands_Duration = { name="Telchine Gloves", augments={'"Cure" potency +8%','Enh. Mag. eff. dur. +10',}}
+
 -- Leaforb
 --gear.telchine_hands_Siphon = { name="Telchine Gloves", augments={'"Elemental Siphon"+10',}}
 gear.telchine_hands_Pet = { name="Telchine Gloves", augments={'Mag. Evasion+15','Pet: "Regen"+3','Pet: Damage taken -4%',}}
+-- HP CurePotency Recieved
+gear.telchine_hands_curerecieved = {}
 
 -- Legs 
 gear.telchine_legs_Duration = { name="Telchine Braconi", augments={'"Elemental Siphon"+5','Enh. Mag. eff. dur. +10',}}
 -- Leaforb
 gear.telchine_legs_Siphon = { name="Telchine Braconi", augments={'"Elemental Siphon"+5','Enh. Mag. eff. dur. +10',}}
 gear.telchine_legs_Pet = { name="Telchine Braconi", augments={'Mag. Evasion+24','Pet: "Regen"+3','Pet: Damage taken -3%',}}
+-- HP CurePotency Recieved
+gear.telchine_legs_curerecieved = {}
 
 -- Feet
 gear.telchine_feet_Song = { name="Telchine Pigaches", augments={'Mag. Acc.+20','Song spellcasting time -7%',}}
@@ -184,8 +191,7 @@ gear.herculean_nuke_head = {name="Herculean Helm", augments={'Mag. Acc.+16 "Mag.
 --gear.herculean_waltz_body = {name="Herculean Vest",augments={'Attack+26','"Waltz" potency +11%','AGI+4','Accuracy+5',}}
 --gear.herculean_wsd_body = {name="Herculean Vest",augments={'Accuracy+11','Weapon skill damage +5%','DEX+7',}}
 
---gear.herculean_dt_hands = {name="Herculean Gloves",augments={'Attack+4','Damage taken-4%',}}
---gear.herculean_refresh_hands = {name="Herculean Gloves",augments={'Enmity+2','Pet: "Store TP"+4','"Refresh"+1',}}
+gear.herculean_refresh_hands = {name="Herculean Gloves", augments={'STR+1','Pet: "Dbl. Atk."+3','"Refresh"+1','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
 --gear.herculean_waltz_hands = {name="Herculean Gloves",augments={'Rng.Acc.+16','"Waltz" potency +11%','AGI+1',}}
 
 --gear.herculean_dt_legs = {name="Herculean Trousers",augments={'Attack+15','Damage taken-4%','STR+3','Accuracy+12',}}

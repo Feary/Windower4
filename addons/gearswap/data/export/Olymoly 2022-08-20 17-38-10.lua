@@ -1,0 +1,17 @@
+sets.exported={
+    main="Bolelabunga",
+    sub="Genmei Shield",
+    ammo="Pemphredo Tathlum",
+    head="Malignance Chapeau",
+    body="Shamash Robe",
+    hands={ name="Herculean Gloves", augments={'STR+1','Pet: "Dbl. Atk."+3','"Refresh"+1','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Loricate Torque +1",
+    waist="Eschan Stone",
+    left_ear="Regal Earring",
+    right_ear="Digni. Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back="Cornflower Cape",
+}

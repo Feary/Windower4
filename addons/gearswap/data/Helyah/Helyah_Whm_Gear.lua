@@ -66,7 +66,7 @@ function init_gear_sets()
 		-- hands="Gende. Gages +1", lring="Kishar Ring",
 		body="Inyanga Jubbah +2", hands="Aya. Manopolas +1", lring="Prolix Ring", rring="Defending Ring",
 		-- back=gear.fastcast_jse_back, feet="Regal Pumps +1" 
-		back="Swith Cape", waist="Witful Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back="Swith Cape", waist="Witful Belt", legs="Aya. Cosciales +2", feet="Volte Gaiters"}
 
     sets.precast.FC.DT = {main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1", ammo="Incantor Stone",
 		-- main=gear.grioavolr_fc_staff, sub="Clerisy Strap +1",
@@ -75,7 +75,7 @@ function init_gear_sets()
 		-- hands="Gende. Gages +1", lring="Kishar Ring",
 		body="Inyanga Jubbah +2", hands="Aya. Manopolas +1", lring="Prolix Ring", rring="Defending Ring",
 		-- back=gear.fastcast_jse_back, feet="Regal Pumps +1" 
-		back="Swith Cape", waist="Witful Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		back="Swith Cape", waist="Witful Belt", legs="Aya. Cosciales +2", feet="Volte Gaiters"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {})-- waist="Siegel Sash"
 	
@@ -443,7 +443,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1",neck="Eidolon Pendant",
 		body="Theo. Bliaut",hands="Inyan. Dastanas +1", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		--back=gear.fastcast_jse_back,
-		back="Felicitas Cape +1", waist="Austerity Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt",legs="Inyanga Shalwar +2",feet="Volte Gaiters"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {main="Mafic Cudgel", 
@@ -453,7 +453,7 @@ function init_gear_sets()
 		-- Shamash Robe
 		body="Theo. Bliaut", hands="Inyan. Dastanas +1", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		--back=gear.fastcast_jse_back, legs="Assid. Pants +1",
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Aya. Cosciales +2", feet="Volte Gaiters"}
 
 	sets.idle.PDT = {main="Mafic Cudgel", 
 		-- sub="Genmei Shield", ammo="Homillary",
@@ -470,7 +470,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1", lear="Ethereal Earring", 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, 
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +2", feet="Volte Gaiters"}
 
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
@@ -499,7 +499,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1",  lear="Ethereal Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, 
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +2", feet="Volte Gaiters"}
 
     sets.defense.MEVA = {main="Mafic Cudgel", 
 		-- main=gear.grioavolr_fc_staff, sub="Irenic Strap +1",
@@ -507,7 +507,7 @@ function init_gear_sets()
 		head="Inyanga Tiara +1", lear="Ethereal Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Inyanga Ring", rring="Defending Ring",
 		--back=gear.fastcast_jse_back, 
-		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +1"}
+		back="Felicitas Cape +1", waist="Austerity Belt", legs="Inyanga Shalwar +2", feet="Volte Gaiters"}
 		
 	-- Engaged sets
 

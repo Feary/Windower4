@@ -107,8 +107,8 @@ function init_gear_sets()
 		head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Moonshade Earring",
 		-- Piety Bliaut +3	Piety Mitts +3 rring="Begrudging Ring"
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Ilabrat Ring", rring="Rufescent Ring",
-		-- Piety Pantaln +3 Piety Duckbills +3
-		back=gear.WS_jse_back, waist="Fotia Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		--  Piety Duckbills +3
+		back=gear.WS_jse_back, waist="Fotia Belt", legs="Piety Pantaln. +3", feet="Aya. Gambieras +2"}
 	
 	sets.precast.WS['Black Helo'] = {ammo=empty, -- Floestone
 		head="Aya. Zucchetto +2", neck="Fotia Gorget", lear="Brutal Earring", rear="Regal Earring",
@@ -144,7 +144,7 @@ function init_gear_sets()
 	--Situational sets: Gear that is equipped on certain targets
 	sets.Self_Healing = {neck="Phalaina Locket"}-- ring1="Kunaji Ring",ring2="Asklepian Ring",waist="Gishdubar Sash"
 	sets.Cure_Received = {neck="Phalaina Locket"}-- ring1="Kunaji Ring",ring2="Asklepian Ring",waist="Gishdubar Sash"
-	sets.Self_Refresh = {}-- back="Grapevine Cape",waist="Gishdubar Sash",feet="Inspirited Boots"
+	sets.Self_Refresh = {feet="Inspirited Boots"}-- back="Grapevine Cape",waist="Gishdubar Sash",
 
 	-- leave Mp set for spells that don't need anything else, for set_combine.	
 	sets.ConserveMP = {
@@ -152,8 +152,7 @@ function init_gear_sets()
 		head="Vanya Hood", lear="Gwati Earring", rear="Calamitous Earring",
 		-- hands="Skrieker's Cuffs", 
 		body="Witching Robe", hands="Fanatic Gloves",
-		--  legs="Vanya Slops",
-        back="Aurist's Cape", waist="Austerity Belt", legs="Lengo Pants", feet="Kaykaus Boots +1"}
+        back="Aurist's Cape", waist="Austerity Belt", legs="Vanya Slops", feet="Kaykaus Boots +1"}
 		
 	sets.midcast.Teleport = sets.ConserveMP
 	
@@ -163,7 +162,6 @@ function init_gear_sets()
     sets.midcast.FastRecast = set_combine(sets.precast.FC,{})
 		
     -- Cure sets
-
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
 	sets.midcast.Cure = {main=gear.gada_healing_club, sub="Sors Shield", ammo="Pemphredo Tathlum", 
@@ -181,7 +179,7 @@ function init_gear_sets()
 		-- Raetic Rod +1 sub="Sors Shield", 
 		-- Clr. Torque +2 lear="Glorious Earring"
 		head="Kaykaus Mitra +1", neck="Colossus's Torque", lear="Nourish. Earring +1", rear="Novia Earring",
-		-- Kaykaus Blauit +1
+		-- Ebers Bliaut +2
 		body="Ebers Bliaut +1", hands="Theophany Mitts +3", lring="Menelaus's Ring", rring="Mephitas's Ring +1",
 		-- Shinjutsu-no-Obi +1 Rank 15 
 		back=gear.Cure_jse_back, waist="Austerity Belt", legs="Ebers Pant. +1", feet="Kaykaus Boots +1"}
@@ -309,24 +307,24 @@ function init_gear_sets()
 
 	-- Set bonus
 	-- 500 Skill	
-	sets.midcast.BarElement = {main="Beneficus", sub="Ammurapi Shield",
+	sets.midcast.BarElement = {main="Bene//ficus", sub="Ammurapi Shield",
 		-- neck="Incantor's Torque", rear="Mimir Earring",
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Andoaa Earring",  rear="Augment. Earring",
 		body="Ebers Bliaut +1", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		--waist="Embla Sash",
-		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
+		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +3", feet="Ebers Duckbills +1"}
 	sets.midcast.BarElement['Light Arts'] = {main="Beneficus", sub="Ammurapi Shield",
 		-- neck="Incantor's Torque",  rear="Mimir Earring",
 		head="Ebers Cap +1", neck="Colossus's Torque", lear="Andoaa Earring", 
 		body="Ebers Bliaut +1", hands="Ebers Mitts +1", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
+		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +3", feet="Ebers Duckbills +1"}
 
 	sets.midcast.BarStatus = {main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		-- neck="Incantor's Torque",  rear="Mimir Earring",
 		head=gear.telchine_head_Duration, neck="Colossus's Torque", lear="Andoaa Earring",  rear="Augment. Earring",
 		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- waist="Embla Sash", feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1",}
+		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +3", feet="Ebers Duckbills +1"}
 	sets.midcast.BarStatus['Light Arts'] = {main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		-- neck="Incantor's Torque",  rear="Mimir Earring",
 		head=gear.telchine_head_Duration, neck="Colossus's Torque",  lear="Andoaa Earring",  rear="Augment. Earring",
@@ -340,14 +338,14 @@ function init_gear_sets()
 		head="Befouled Crown", neck="Colossus's Torque", lear="Andoaa Earring",  rear="Augment. Earring",
 		body=gear.telchine_body_Duration, hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		--  feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
+		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +3", feet="Ebers Duckbills +1"}
 
 	sets.midcast.BoostStat['Light Arts'] = {main=gear.gada_enhancing_club, sub="Ammurapi Shield",
 		-- neck="Incantor's Torque",   rear="Mimir Earring",
 		head="Befouled Crown", neck="Colossus's Torque", lear="Andoaa Earring", 
 		body=gear.telchine_body_Duration, hands=gear.telchine_hands_Duration, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		--  feet="Theophany Duckbills +3"
-		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +1", feet="Ebers Duckbills +1"}
+		back="Mending Cape", waist="Olympus Sash", legs="Piety Pantaln. +3", feet="Ebers Duckbills +1"}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})--neck="Nodens Gorget",ear2="Earthcry Earring",legs="Shedir Seraweels"
 
@@ -363,8 +361,8 @@ function init_gear_sets()
 	
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring"})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Piety Duckbills +1",ear1="Gifted Earring"})
-	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1",ear1="Gifted Earring"})
-	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1",ear1="Gifted Earring"})
+	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +3",ear1="Gifted Earring"})
+	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +3",ear1="Gifted Earring"})
 	
 	sets.midcast.Impact = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- Grioavolr 	

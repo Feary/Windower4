@@ -41,22 +41,22 @@ function init_gear_sets()
 	
 	-- Precast sets to enhance JAs on use
 	sets.precast.JA['Hundred Fists'] = {legs="Hesychast's Hose +1"}
-	sets.precast.JA['Boost'] = {hands="Anch. Gloves +1"}
-	sets.precast.JA['Boost'].OutOfCombat = {hands="Anch. Gloves +1"} 
-	sets.precast.JA['Dodge'] = {feet="Anch. Gaiters +1"}
-	sets.precast.JA['Focus'] = {head="Anchor. Crown +1"}
+	sets.precast.JA['Boost'] = {hands="Anch. Gloves +3"}
+	sets.precast.JA['Boost'].OutOfCombat = {hands="Anch. Gloves +3"} 
+	sets.precast.JA['Dodge'] = {feet="Anch. Gaiters +3"}
+	sets.precast.JA['Focus'] = {head="Anchor. Crown +3"}
 	sets.precast.JA['Footwork'] = {}-- feet="Shukuyu Sune-Ate"
-	sets.precast.JA['Counterstance'] = {feet="Hesychast's Gaiters"}
-	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas +1"}
-	sets.precast.JA['Mantra'] = {feet="Hesychast's Gaiters"} 
+	sets.precast.JA['Counterstance'] = {feet="Hes. Gaiters +1"}
+	sets.precast.JA['Formless Strikes'] = {body="Hes. Cyclas +1"}
+	sets.precast.JA['Mantra'] = {feet="Hes. Gaiters +1"} 
 
 	sets.precast.JA['Chi Blast'] = {}
 	
 	sets.precast.JA['Chakra'] = {
-		-- Genmei Kabuto Unmoving Collar +1 Handler's Earring +1 Tuisto Eaerring
+		-- Genmei Kabuto Unmoving Collar +1  rear="Tuisto Eaerring"
 		head="Hiza. Somen　+2", neck="Loricate Torque +1", lear="Handler's Earring +1", rear="Handler's Earring",
-		-- Anch. Cyclas +3 Hes. Gloves +3
-		body="Anchorite's Cyclas", hands="Hesychast's Gloves", ring1="Niqmaddu Ring", ring2="Regal Ring",
+		-- Hes. Gloves +3
+		body="Anch. Cyclas +3", hands="Hes. Gloves +1", ring1="Niqmaddu Ring", ring2="Regal Ring",
 		-- waist="Latria Sash",
 		back=gear.charka_jse_back, legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"}
 
@@ -68,19 +68,18 @@ function init_gear_sets()
 
 	sets.precast.Step = {ammo="Ginsen", 
 		-- Mnk. Nodowa +2 
-		head="Malignance Chapeau",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
-		--  Malignance Tabard Malignance Gloves 
-		body="Ashera Harness",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
-		-- Moonlight Belt  Malignance Tights 
-		back=gear.TP_jse_back,waist="Black Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}
+		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Sherida Earring",
+		-- Malignance Tabard  
+		body="Ashera Harness",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
+		-- Moonlight Belt  
+		back=gear.TP_jse_back,waist="Black Belt",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	sets.precast.Flourish1 = {ammo="Ginsen",
 		-- Mnk. Nodowa +2 
 		head="Malignance Chapeau",neck="Sanctity Necklace",ear1="Telos Earring",ear2="Sherida Earring",
-		-- Ashera Harness Malignance Tabard Malignance Gloves 
-		body="Ashera Harness",hands="Mummu Wrists +2",ring1="Defending Ring",ring2="Niqmaddu Ring",
-		-- Moonlight Belt  Malignance Tights 
-		back=gear.TP_jse_back,waist="Black Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}
+		body="Ashera Harness",hands="Malignance Gloves",ring1="Defending Ring",ring2="Niqmaddu Ring",
+		-- Moonlight Belt 
+		back=gear.TP_jse_back,waist="Black Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 
 	-- Fast cast sets for spells	
@@ -97,8 +96,8 @@ function init_gear_sets()
 	sets.precast.WS = {ammo="Knobkierrie",
 		-- Hes. Crown +3
 		head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
-		-- Ken. Samue +1 hands="Anchor. Gloves +3", ring2="Gere Ring",
-		body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
+		-- Ken. Samue +1 ring2="Gere Ring",
+		body="Mummu Jacket +2", hands="Anchor. Gloves +3",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Moonbow Belt +1 Ken. Hakama +1 Ken. Sune-Ate +1
 		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"}
 		
@@ -135,14 +134,14 @@ function init_gear_sets()
 		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS["Ascetic's Fury"]  = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-		-- Anch. Cyclas +3  Or Ken. Samue +1 Ryou Tekko +1 ring2="Gere Ring", 
-		body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
+		-- Ken. Samue +1 Ryou Tekko +1 ring2="Gere Ring", 
+		body="Anch. Cyclas +3",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Moonbow Belt +1 Ken. Hakama +1 Ken. Sune-Ate +1
 		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {ammo="Knobkierrie",
 		head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-		-- Anch. Cyclas +3  Or Ken. Samue +1 Ryou Tekko +1 ring2="Gere Ring", 
-		body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
+		-- Ken. Samue +1 Ryou Tekko +1 ring2="Gere Ring", 
+		body="Anch. Cyclas +3",hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- Moonbow Belt +1 Ken. Hakama +1 Ken. Sune-Ate +1
 		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {ammo="Knobkierrie",
@@ -174,12 +173,11 @@ function init_gear_sets()
 		-- Ken. Hakama +1 Ken. Sune-Ate +1
 		back=gear.ws_jse_back,waist="Fotia Belt",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS['Shell Crusher'] = set_combine(sets.precast.WS, {ammo="Knobkierrie",
-		-- Malignance Chapeau Moonlight Necklace 
-		head="Mummu Bonnet +2",neck="Sanctity Necklace", ear1="Digni. Earring", ear2="Ishvara Earring",
-		-- Malignance Tabard Malignance Gloves
-		body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Stikini Ring",ring2="Stikini Ring",
-		-- Malignance Tights Malignance Boots
-		back=gear.ws_jse_back,waist="Luminary Sash",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"})
+		-- Moonlight Necklace 
+		head="Malignance Chapeau",neck="Sanctity Necklace", ear1="Digni. Earring", ear2="Ishvara Earring",
+		-- Malignance Tabard 
+		body="Mummu Jacket +2",hands="Malignance Gloves",ring1="Stikini Ring",ring2="Stikini Ring",
+		back=gear.ws_jse_back,waist="Luminary Sash",legs="Malignance Tights",feet="Malignance Boots"})
 
 	sets.precast.WS["Raging Fists"].SomeAcc = set_combine(sets.precast.WS["Raging Fists"], sets.precast.WSSomeAcc)
 	sets.precast.WS["Howling Fist"].SomeAcc = set_combine(sets.precast.WS["Howling Fist"], sets.precast.WSSomeAcc)
@@ -218,9 +216,11 @@ function init_gear_sets()
 	sets.precast.WS["Tornado Kick"].Fodder = set_combine(sets.precast.WS["Tornado Kick"], sets.precast.WSFodder)
 
 
-	sets.precast.WS['Cataclysm'] = {ammo="Knobkierrie",
-		head="Pixie Hairpin +1", neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
-		body="Samnuha Coat", hands="Leyline Gloves", ring1="Shiva Ring +1", ring2="Shiva Ring +1",
+	sets.precast.WS['Cataclysm'] = {ammo="Pemphredo Tathlum",
+		-- Sybil Scarf
+		head="Pixie Hairpin +1", neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
+		-- Nyame Mail
+		body="Samnuha Coat", hands="Leyline Gloves", ring1="Metamor. Ring +1", ring2="Archon Ring",
 		back=gear.ws_jse_back, wasist="Eschan Stone", legs="Hiza. Hizayoroi +2", feet="Mummu Gamash. +2"}
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
@@ -395,12 +395,13 @@ function init_gear_sets()
 	sets.Skillchain = {}--legs="Ryuo Hakama"
 	
 	-- Weapons sets
-	sets.weapons.Kaja = {main="Kaja Knuckles"}
+	sets.weapons.Kaja = {main="Karambit"}
 	sets.weapons.Barehanded = {main=empty}
-	sets.weapons.Staff = {main="Malignance Pole", sub=empty}
-	sets.weapons.Club = {main="Mafic Cudgel",sub=empty}
+	sets.weapons.Staff = {main="Malignance Pole", sub="Flanged Grip"}
+	sets.weapons.Club = {main="Loxotic Mace",sub=empty}
 	sets.weapons.ProcStaff = {main="Aern Staff"}
 	sets.weapons.ProcClub = {main="Rounsey Wand"}
+	sets.weapons.ProcDagger = {main="Aerb Dagger"}
 	sets.weapons.ProcSword = {main="Aern Sword",sub=empty}
 	sets.weapons.ProcGreatSword = {main="Lament",sub=empty}
 	sets.weapons.ProcScythe = {main="Ark Scythe",sub=empty}

@@ -489,22 +489,21 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {main="Naegling", sub="Genmei Shield",
 		-- Herculean Head 
-		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Malignance Chapeau", neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Vest  Herculean Hands
 		body="Shamash Robe", hands="Aya. Manopolas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- Herculean Boots 
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Malignance Boots"}
 
 	-- Idle sets - Refresh
-	sets.idle =  {main="Naegling", sub="Genmei Shield",
-		-- Herculean Head 
-		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+	sets.idle =  {main="Bolelabunga", sub="Genmei Shield",
+		head="Malignance Chapeau",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Hands
 		body="Shamash Robe", hands="Aya. Manopolas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- Herculean Boots 
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
+		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Malignance Boots"}
 
-	sets.idle.PDT =  {main="Naegling", sub="Genmei Shield",
+	sets.idle.PDT =  {main="Bolelabunga", sub="Genmei Shield",
 		-- Herculean Head 
 		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Hands
@@ -515,7 +514,7 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT =  {main="Naegling", sub="Genmei Shield",
 		-- Herculean Head
-		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Malignance Chapeau",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Vest Herculean Hands
 		body="Shamash Robe", hands="Aya. Manopolas +2", lring=gear.DarkRing, rring="Defending Ring",
 		-- Herculean Boots 
@@ -523,7 +522,7 @@ function init_gear_sets()
 
 	sets.defense.MDT =  {main="Naegling", sub="Genmei Shield",
 		-- Herculean Head 
-		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Malignance Chapeau",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Vest  Herculean Hands
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=gear.DarkRing, rring="Defending Ring",
 		--  Herculean Boots 
@@ -531,7 +530,7 @@ function init_gear_sets()
 
     sets.defense.MEVA =  { 	main="Naegling", sub="Genmei Shield",	
 		-- Herculean Head
-		head="Aya. Zucchetto +2",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
+		head="Malignance Chapeau",  neck="Loricate Torque +1", lear="Merman's Earring", rear="Etiolation Earring",
 		-- Herculean Vest Herculean Hands
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring=gear.DarkRing, rring="Defending Ring",
 		--  Herculean Boots 
@@ -580,7 +579,7 @@ function init_gear_sets()
 		back=gear.da_jse_back, waist="Kentarch Belt +1", legs="Samnuha Tights", feet="Carmine Greaves +1"}
 
 	sets.engaged.DTLite = {
-		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
+		head="Malignance Chapeau", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		-- body="Adhemar Jacket", 
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Petrov Ring", rring="Epona's Ring",
 		back=gear.da_jse_back, waist="Kentarch Belt +1", legs="Samnuha Tights", feet="Malignance Boots"}
@@ -592,7 +591,6 @@ function init_gear_sets()
 	sets.engaged.Fodder.PDT = sets.engaged.DTLite
 	sets.engaged.MDT = sets.engaged.DTLite
 		
-
 	sets.engaged.Acc.MDT = {
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Bladeborn Earring", rear="Steelflash Earring",
 		-- body="Adhemar Jacket", 
@@ -608,7 +606,7 @@ function init_gear_sets()
 	sets.Self_Healing = {lring=gear.DarkRing}
 	sets.Cure_Received = {lring=gear.DarkRing}
 	sets.Self_Refresh = {}
-	sets.MagicBurst = {neck="Mizu. Kubikazari", hands="Amalric Gages +1",  ring1="Mujin Band"} --legs="Assim. Shalwar +2",nnnn
+	sets.MagicBurst = {neck="Mizu. Kubikazari", hands="Amalric Gages +1",  ring1="Mujin Band"} --legs="Assim. Shalwar +2",
 
 end
 

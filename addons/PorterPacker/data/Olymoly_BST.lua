@@ -4,11 +4,11 @@ return {
 	"Nukumi Quijotes +1",
     "Nukumi Manoplas +1",
 	"Nukumi Ocreae +1",
-    "Ankusa Jackcoat +1",  
-    "Ankusa Helm +1",   
-	"Ankusa Gloves +1",    
-    "Ankusa Trousers +1",    
-	"Ankusa Gaiters +1",
+    "An. Jackcoat +3",  
+    "Ankusa Helm +3",   
+	"Ankusa Gloves +3",    
+    "Ankusa Trousers +3",    
+	"Ankusa Gaiters +3",
     "Totemic Helm +2", 
 	"Tot. Trousers +2",
 	"Tot. Gaiters +2",
@@ -37,5 +37,5 @@ return {
 	--"Kaja Scythe",
 	--"Kaja Staff",
 	"Twilight Helm",
-	"Twilight Mail",
+	"Twilight Mail"
 }
