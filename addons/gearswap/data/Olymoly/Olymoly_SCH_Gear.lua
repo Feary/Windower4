@@ -9,12 +9,6 @@ function user_setup()
 	gear.nuke_jse_back = 	{	name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10'}}
 	gear.FC_jse_back = 		{	name="Lugh's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
 	gear.Cure_jse_back = 	{	name="Lugh's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
-
-	gear.obi_cure_back = gear.Cure_jse_back
-	gear.obi_cure_waist = "Witful Belt"
-
-	gear.obi_low_nuke_waist = "Yamabuki-no-Obi"
-	gear.obi_high_nuke_waist = "Yamabuki-no-Obi"
 	
 	-- Additional local binds 
 	-- * = ctrl
@@ -52,6 +46,7 @@ function user_setup()
 	send_command('alias pro input /ma "Accession" <me>;wait 1;input /ma "Shell V" <me>;wait 5;input /ma "Accession" <me>;wait 1;input /ma "Protect V" <me>;')
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- Define sets and vars used by this job file.

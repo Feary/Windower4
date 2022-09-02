@@ -69,6 +69,7 @@ function user_setup()
 
 	update_combat_form()
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 function init_gear_sets()

@@ -31,6 +31,7 @@ function user_job_setup()
 	--send_command('bind ^q gs c weapons Bow;gs c update')
 
     select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- Define sets and vars used by this job file.
@@ -594,6 +595,10 @@ function select_default_macro_book()
     end
 end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 017')
+end
+
 --Job Specific Trust Overwrite
 function check_trust()
 	if not moving then
@@ -629,8 +634,4 @@ function check_trust()
 		end
 	end
 	return false
-end
-
-function user_job_lockstyle()
-	windower.chat.input('/lockstyleset 017')
 end

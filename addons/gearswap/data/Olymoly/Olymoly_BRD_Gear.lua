@@ -74,6 +74,7 @@ function user_setup()
 	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 function init_gear_sets()
@@ -492,6 +493,10 @@ function select_default_macro_book()
 	else
 		set_macro_page(1, 4)
 	end
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 004')
 end
 
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.

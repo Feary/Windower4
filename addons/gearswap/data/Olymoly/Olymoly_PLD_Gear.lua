@@ -41,6 +41,7 @@ function user_job_setup()
 	send_command('bind ^@!` gs c cycle SkillchainMode')
 	
     select_default_macro_book()
+	user_job_lockstyle()
     update_defense_mode()
 end
 

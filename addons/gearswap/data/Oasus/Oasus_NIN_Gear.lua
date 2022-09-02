@@ -29,6 +29,7 @@ function user_job_setup()
 	utsusemi_ni_cancel_delay = .06
 
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- Define sets and vars used by this job file.

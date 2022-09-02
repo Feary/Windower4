@@ -71,7 +71,7 @@ function user_job_setup()
 	send_command('bind ^q gs c weapons SingleWeapon;gs c update')
 	
 	select_default_macro_book()
-
+	user_job_lockstyle()
 end
 
 -- Set up all gear sets.

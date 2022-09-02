@@ -1,0 +1,16 @@
+sets.exported={
+    main="Karambit",
+    ammo="Staunch Tathlum",
+    head={ name="Herculean Helm", augments={'CHR+2','Damage taken-3%','"Fast Cast"+7','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
+    body="Ashera Harness",
+    hands="Hizamaru Kote +2",
+    legs="Mummu Kecks +2",
+    feet="Herald's Gaiters",
+    neck="Loricate Torque +1",
+    waist="Black Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Odnowa Earring +1",
+    left_ring="Defending Ring",
+    right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+40%','HP+18','Rng.Atk.+4','DEF+13',}},
+}

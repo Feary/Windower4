@@ -55,6 +55,7 @@ function user_setup()
 	send_command('alias imp input /ja "Parsimony" <me>;wait 1;input /ma "Impact" <stnpc>')
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 function init_gear_sets()

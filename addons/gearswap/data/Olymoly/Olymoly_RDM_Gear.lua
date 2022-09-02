@@ -46,6 +46,7 @@ function user_job_setup()
 	send_command('bind !q gs c set skipprocweapons false;gs c set weapons DualProcDaggers;gs c set weaponskillmode proc')
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 function init_gear_sets()

@@ -52,7 +52,6 @@ lua load InfoReplacer;
 lua load instaLS;
 lua load itemizer;
 lua load JobChange;
-lua load Logger;
 lua load MountMuzzle;
 lua load NoCampaignMusic;
 lua load NyzulHelper;

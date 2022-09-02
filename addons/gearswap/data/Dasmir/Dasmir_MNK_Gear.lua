@@ -29,6 +29,7 @@ function user_job_setup()
 	send_command('bind @` gs c cycle SkillchainMode')
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 function init_gear_sets()

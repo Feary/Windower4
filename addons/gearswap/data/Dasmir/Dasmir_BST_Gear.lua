@@ -63,6 +63,7 @@ function user_setup()
 	ready_moves.default.ScissorlegXerin = 'Tegmina Buffet'
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- BST gearsets

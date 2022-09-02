@@ -63,9 +63,7 @@
             </size>
             <texture>
                 <fit>false</fit>
-                <path>
-
-                </path>
+                <path />
             </texture>
             <visible>true</visible>
         </map>
@@ -153,6 +151,28 @@
             </text>
         </seg_box>
     </global>
+    <helyah>
+        <disclaimer>
+            <bg>
+                <alpha>255</alpha>
+            </bg>
+            <pos>
+                <x>511.5</x>
+            </pos>
+            <show>false</show>
+            <text>
+                <alpha>255</alpha>
+            </text>
+        </disclaimer>
+        <map>
+            <texture>
+                <path>C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\/addons/sheolhelper/maps/1-7.png</path>
+            </texture>
+        </map>
+        <seg_box>
+            <disclaimer>false</disclaimer>
+        </seg_box>
+    </helyah>
     <suede>
         <disclaimer>
             <bg>

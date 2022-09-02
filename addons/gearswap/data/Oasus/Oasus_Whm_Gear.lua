@@ -49,6 +49,7 @@ function user_setup()
 	send_command('bind !\\\\ input /ma "Reraise III" <me>')
 	
     select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- Define sets and vars used by this job file.
@@ -533,7 +534,7 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-	set_macro_page(1, 1)
+	set_macro_page(1, 2)
 end
 
 buff_spell_lists = {

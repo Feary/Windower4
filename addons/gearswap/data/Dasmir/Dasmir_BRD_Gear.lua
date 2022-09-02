@@ -69,6 +69,7 @@ function user_setup()
 	send_command('alias p2 input /pcmd leave;wait 1;input /tell Bigtymer invite;')
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 function init_gear_sets()

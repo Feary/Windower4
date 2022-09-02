@@ -28,9 +28,8 @@ function user_setup()
 	gear.magic_QD_jse_back = {		name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
 	gear.FC_jse_back = {			name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','"Store TP"+10',}}
 	
-	
-	
-	send_command('alias das send Dasmir /targetnpc;wait 1;send Dasmir Horde Lullaby;wait 1;send dasmir /follow olymoly')
+	-- Additional local alias
+	--send_command('alias das send Dasmir /targetnpc;wait 1;send Dasmir Horde Lullaby;wait 1;send dasmir /follow olymoly')
 
     -- Additional local binds
 	send_command('bind !f11 gs c cycle ExtraMeleeMode')
@@ -54,6 +53,7 @@ function user_setup()
 	send_command('bind @pause roller roll')
 
     select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- Define sets and vars used by this job file.

@@ -24,6 +24,7 @@ function user_setup()
 	send_command('bind !r gs c weapons Greatsword;gs c update')
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- Define sets and vars used by this job file.

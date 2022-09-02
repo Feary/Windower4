@@ -35,6 +35,7 @@ function user_setup()
 	
 		
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- Define sets and vars used by this job file.

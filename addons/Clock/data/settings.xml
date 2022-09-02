@@ -57,6 +57,15 @@
         </Clock>
         <TimeZones>PST,CST,GMT,AWST</TimeZones>
     </mehany>
+    <molyoly>
+        <Clock>
+            <pos>
+                <x>1473</x>
+                <y>0</y>
+            </pos>
+        </Clock>
+        <TimeZones>PST,CST,GMT,AWST</TimeZones>
+    </molyoly>
     <yerp>
         <Clock>
             <pos>

@@ -38,6 +38,7 @@ function user_setup()
 	indi_duration = 275
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 function init_gear_sets()
@@ -428,4 +429,8 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
 	set_macro_page(1, 22)
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 024')
 end

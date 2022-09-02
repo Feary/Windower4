@@ -63,7 +63,6 @@
     <addon>Stubborn</addon>
     <addon>SubTarget</addon>
     <addon>blist</addon>
-    <addon>Logger</addon>
     <plugin>IME</plugin>
     <plugin>Sandbox</plugin>
     <plugin>Timers</plugin>

@@ -43,6 +43,7 @@ function user_setup()
 	send_command('bind !\\\\ input /ma "Reraise III" <me>')
 
     select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- Define sets and vars used by this job file.

@@ -67,6 +67,7 @@ function user_setup()
 	send_command('alias HHAA exec songs/HVAA')	
 		
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 function init_gear_sets()

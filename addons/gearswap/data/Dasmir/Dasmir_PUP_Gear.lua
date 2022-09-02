@@ -73,6 +73,7 @@ function user_job_setup()
 	deactivatehpp = 85
 	
     select_default_macro_book()
+	user_job_lockstyle()
 	
 	send_command('bind @` gs c cycle SkillchainMode')
 	send_command('bind @f8 gs c toggle AutoPuppetMode')

@@ -45,6 +45,7 @@ function user_job_setup()
 	--send_command('alias aoe input /targetnpc;send @all /ma "Thunderspark" <t>')
 	--send_command('alias stun input /targetnpc;send @all /ma "Thunderspark" <t>')
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 -- Define sets and vars used by this job file.

@@ -184,7 +184,7 @@ gear.chironic_cure_legs = {name="Chironic Hose", augments={'Mag. Acc.+24','"Cure
 --gear.chironic_nuke_feet = {name="Chironic Slippers",augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +10','CHR+6','"Mag.Atk.Bns."+15',}}
 --gear.chironic_refresh_feet = {name="Chironic Slippers",augments={'Pet: Mag. Acc.+18 Pet: "Mag.Atk.Bns."+18','Pet: Mag. Acc.+3','"Refresh"+1','Accuracy+13 Attack+13','Mag. Acc.+8 "Mag.Atk.Bns."+8',}}
 
---gear.herculean_fc_head = {name="Herculean Helm",augments={'"Fast Cast"+6','"Mag.Atk.Bns."+13',}}
+gear.herculean_fc_head = {name="Herculean Helm", augments={'CHR+2','Damage taken-3%','"Fast Cast"+7','Mag. Acc.+14 "Mag.Atk.Bns."+14',}}
 --Herc Helm AGI/Mab/wsd
 gear.herculean_nuke_head = {name="Herculean Helm", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','INT+10','Mag. Acc.+3','"Mag.Atk.Bns."+9',}}
 
@@ -194,11 +194,13 @@ gear.herculean_nuke_head = {name="Herculean Helm", augments={'Mag. Acc.+16 "Mag.
 gear.herculean_refresh_hands = {name="Herculean Gloves", augments={'STR+1','Pet: "Dbl. Atk."+3','"Refresh"+1','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
 --gear.herculean_waltz_hands = {name="Herculean Gloves",augments={'Rng.Acc.+16','"Waltz" potency +11%','AGI+1',}}
 
+--gear.herculean_fc_legs
 --gear.herculean_dt_legs = {name="Herculean Trousers",augments={'Attack+15','Damage taken-4%','STR+3','Accuracy+12',}}
 --gear.herculean_wsd_legs = {name="Herculean Trousers",augments={'Weapon skill damage +5%','DEX+8','Accuracy+13','Attack+14',}}
 --Herc Trousers AGI/Macc/MAB 
 gear.herculean_nuke_legs = {name="Herculean Trousers", augments={'"Snapshot"+4','Mag. Acc.+21','Accuracy+5 Attack+5','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
 
+--gear.herculean_fc_feet
 --gear.herculean_acc_feet = {name="Herculean Boots",augments={'Accuracy+25 Attack+25','Crit. hit damage +1%','DEX+10','Accuracy+14','Attack+1',}}
 gear.herculean_ta_feet = {name="Herculean Boots", augments={'Accuracy+28','"Triple Atk."+3','DEX+7',}}
 --gear.herculean_dt_feet = {name="Herculean Boots",augments={'Damage taken-4%','MND+7','Attack+6',}}

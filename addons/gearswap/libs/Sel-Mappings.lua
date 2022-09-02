@@ -699,7 +699,16 @@ data.areas.assault = S{
 }
 -- Proc weapon areas, where proc weapon sets in the weapon mode will not be skipped
 data.areas.proc = S{
-
+	"Abyssea - Tahrongi",
+	"Abyssea - Konschtat",
+	"Abyssea - La Theine",
+	"Abyssea - Altepa",
+	"Abyssea - Vunkerl",
+	"Abyssea - Misareaux",
+	"Abyssea - Attohwa",
+	"Abyssea - Uleguerand",
+	"Abyssea - Grauberg",
+	"Abyssea - Empyreal Paradox"
 }
 -- Laggy zones where latency will be increased.
 data.areas.laggy = S{

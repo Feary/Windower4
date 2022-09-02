@@ -42,6 +42,7 @@ function user_setup()
 	indi_duration = 275
 	
 	select_default_macro_book()
+	user_job_lockstyle()
 end
 
 function init_gear_sets()
