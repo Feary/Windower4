@@ -47,9 +47,9 @@ function init_gear_sets()
 	sets.precast.JA['Dodge'] = {feet="Anch. Gaiters +3"}
 	sets.precast.JA['Focus'] = {head="Anch. Crown +3"}
 	sets.precast.JA['Footwork'] = {}-- feet="Shukuyu Sune-Ate"
-	sets.precast.JA['Counterstance'] = {feet="Hes. Gaiters +1"}
-	sets.precast.JA['Formless Strikes'] = {body="Hes. Cyclas +1"}
-	sets.precast.JA['Mantra'] = {feet="Hes. Gaiters +1"} 
+	sets.precast.JA['Counterstance'] = {feet="Hes. Gaiters +3"}
+	sets.precast.JA['Formless Strikes'] = {body="Hes. Cyclas +3"}
+	sets.precast.JA['Mantra'] = {feet="Hes. Gaiters +3"} 
 
 	sets.precast.JA['Chi Blast'] = {}
 	
@@ -89,7 +89,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells	
 	sets.precast.FC = {ammo="Sapience Orb",
 		head=gear.herculean_fc_head, neck="Orunmila's Torque", ear1="Enchntr. Earring +1", ear2="Loquac. Earring",
-		-- body="Adhemaer Jacket +1", rring="Rabab Ring",
+		-- body="Adhemar Jacket +1", rring="Rabab Ring",
 		body=gear.taeon_body_Fastcast, hands="Leyline Gloves", ring1="Defending Ring", ring2="Prolix Ring",
 		-- gear.herculean_fc_legs gear.herculean_fc_feet
 		back=gear.FC_jse_back, waist="Black Belt", legs="Mummu Kecks +2", feet="Mummu Gamash. +2"}
@@ -228,7 +228,7 @@ function init_gear_sets()
 	sets.AccMaxTP = {ear1="Mache Earring +1", ear2="Telos Earring"}
 	
 	-- Midcast Sets
-	sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
+	sets.midcast.FastRecast = {ammo="Sapience Orb",
 		head=gear.herculean_fc_head,neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Defending Ring",ring2="Prolix Ring",
 		back=gear.FC_jse_back,waist="Black Belt",legs="Malignance Tights",feet="Malignance Boots"}
@@ -242,23 +242,23 @@ function init_gear_sets()
 	sets.resting = {}
 	
 	-- Idle sets
-	sets.idle = {ammo="Staunch Tathlum",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
-		body="Ashera Harness",hands="Hizamaru Kote +2",ring1="Defending Ring",ring2=gear.DarkRing,
-		back=gear.TP_jse_back,waist="Black Belt",legs="Malignance Tights",feet="Malignance Bsoots"}
-
-	sets.idle.Weak = {ammo="Staunch Tathlum",
+	sets.idle = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Ashera Harness",hands="Hizamaru Kote +2",ring1="Defending Ring",ring2=gear.DarkRing,
 		back=gear.TP_jse_back,waist="Black Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
-	sets.idle.PDT = {ammo="Staunch Tathlum",
+	sets.idle.Weak = {ammo="Staunch Tathlum +1",
+		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+		body="Ashera Harness",hands="Hizamaru Kote +2",ring1="Defending Ring",ring2=gear.DarkRing,
+		back=gear.TP_jse_back,waist="Black Belt",legs="Malignance Tights",feet="Malignance Boots"}
+
+	sets.idle.PDT = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Ashera Harness",hands="Hizamaru Kote +2",ring1="Defending Ring",ring2=gear.DarkRing,
 		back=gear.TP_jse_back,waist="Black Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 	-- Defense sets
-	sets.defense.PDT = {ammo="Staunch Tathlum",
+	sets.defense.PDT = {ammo="Staunch Tathlum +1",
 		-- Ken. Jinpachi +1 Sanare Earring Ebani Earring 
 		head="Mummu Bonnet +2",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		-- Ken. Samue +1 Ken. Tekko +1
@@ -266,7 +266,7 @@ function init_gear_sets()
 		-- Ken. Hakama +1 Ken. Sune-Ate +1
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 		
-	sets.defense.HP = {ammo="Staunch Tathlum",
+	sets.defense.HP = {ammo="Staunch Tathlum +1",
 		-- Ken. Jinpachi +1 Sanare Earring Ebani Earring 
 		head="Mummu Bonnet +2",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		-- Ken. Samue +1 Ken. Tekko +1 
@@ -274,7 +274,7 @@ function init_gear_sets()
 		-- Ken. Hakama +1 Ken. Sune-Ate +1
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
-	sets.defense.Counter = {ammo="Staunch Tathlum",
+	sets.defense.Counter = {ammo="Staunch Tathlum +1",
 		-- Ken. Jinpachi +1 Sanare Earring Ebani Earring 
 		head="Mummu Bonnet +2",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		-- Ken. Samue +1 Ken. Tekko +1 
@@ -282,7 +282,7 @@ function init_gear_sets()
 		-- Ken. Hakama +1 Ken. Sune-Ate +1
 		back=gear.TP_jse_back,waist="Black Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 		
-	sets.defense.MEVA = {ammo="Staunch Tathlum",
+	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		-- Ken. Jinpachi +1 Sanare Earring Ebani Earring 
 		head="Malignance Chapeau", neck="Warder's Charm +1", ear1="Etiolation Earring", ear2="Odnowa Earring +1",
 		-- Ken. Samue +1 Ken. Tekko +1 
@@ -304,7 +304,7 @@ function init_gear_sets()
 		-- Mnk Nodowa +2  
 		head="Adhemar Bonnet +1", neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 		--  Malignance Tabard Gere Ring
-		body="Mummu Jacket +2", hands="Adhemaer Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
+		body="Mummu Jacket +2", hands="Adhemar Wrist. +1",ring1="Niqmaddu Ring",ring2="Epona's Ring",
 		-- waist="Moonlight Belt +1",
 		back=gear.TP_jse_back,waist="Windbuffet Belt +1",legs="Hes. Hose +3",feet="Anch. Gaiters +3"}
 	sets.engaged.SomeAcc = {ammo="Ginsen",
@@ -397,7 +397,7 @@ function init_gear_sets()
 	sets.weapons.Karambit = {main="Karambit"}
 	sets.weapons.Spharai = {main="Spharai"}
 	sets.weapons.Vere = {main="Spharai"}
-	sets.weapons.Vere = {main="Spaharai"}
+	sets.weapons.Vere = {main="Spharai"}
 	sets.weapons.Barehanded = {main=empty}
 	sets.weapons.Staff = {main="Malignance Pole", sub="Flanged Grip"}
 	sets.weapons.Club = {main="Loxotic Mace", sub=empty}

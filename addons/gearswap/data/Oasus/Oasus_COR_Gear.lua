@@ -8,8 +8,8 @@ function user_setup()
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
 	state.Weapons:options('Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
 	
-    gear.RAbullet = "Eminent Bullet"
-    gear.WSbullet = "Eminent Bullet"
+    gear.RAbullet = "Bullet" -- Eminent Bullet
+    gear.WSbullet = "Bullet"
     gear.MAbullet = "Bullet" -- For MAB WS, do not put single-use bullets here.
     gear.QDbullet = "Animikii Bullet"
     options.ammo_warning_limit = 15
@@ -384,15 +384,15 @@ function init_gear_sets()
 	--Weapon Sets
 	-- 'Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
 	-- Fencer Last Stand Rostam
-	sets.weapons.Default = {main="Odium",sub="Nusku Shield",range="Nibiru Gun"}--range="Fomalhaut"
+	sets.weapons.Default = {main="Blurred Knife +1",sub="Nusku Shield",range="Gun of Trials"}--range="Fomalhaut"
 	-- Last Stand Dual Ranged
-	sets.weapons.DualRangedWeapons = {main="Kustawi +1",sub="Kaja Knife",range="Nibiru Gun"}
+	sets.weapons.DualRangedWeapons = {main="Blurred Sword +1",sub="Blurred Knife +1",range="Gun of Trials"}
 	-- Fencer Savage 
-	sets.weapons.SavageWeapons = {main="Naegling",sub="Nusku Shield", range="Nibiru Gun"}--range="Ataktos"
+	sets.weapons.SavageWeapons = {main="Blurred Sword +1",sub="Nusku Shield", range="Gun of Trials"}--range="Ataktos"
 	-- DW Savage
-	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Nibiru Gun"}--range="Ataktos"
+	sets.weapons.DualWeapons = {main="Blurred Sword +1",sub="Hepatizon Rapier",range="Gun of Trials"}--range="Ataktos"
 	-- Leaden/Wildfire  Rostam Path A
-	sets.weapons.LeadenWeapons = {main="Naegling",sub="Kaja Knife",range="Nibiru Gun"}--range="Fomalhaut"
+	sets.weapons.LeadenWeapons = {main="Blurred Sword +1",sub="Blurred Knife +1", range="Gun of Trials"}--range="Fomalhaut"
 	-- Rolling
 	sets.weapons.RollMeleeWeapons = {main="Naegling",sub="Blurred Knife +1",range="Compensator"}
 	sets.weapons.RollRangedWeapons = {main="Kustawi +1",sub="Nusku Shield", range="Compensator"}
@@ -490,19 +490,44 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-    if player.sub_job == 'NIN' then
+    -- Melee
+	if player.sub_job == 'NIN' then
         set_macro_page(2, 10)
     elseif player.sub_job == 'DNC' then
 		set_macro_page(1, 10)
     elseif player.sub_job == 'WAR' then
         set_macro_page(3, 10)
-	elseif player.sub_job == 'RNG' then
+	-- Ranged sets
+	elseif player.sub_job == 'NIN' then
         set_macro_page(4, 10)
-    else
+    --
+	else
         set_macro_page(1, 10)
     end   
 end
 
 function user_job_lockstyle()
 	windower.chat.input('/lockstyleset 010')
+end
+
+function job_setup()
+	-- Whether to use Compensator under a certain threshhold even when weapons are locked.
+	state.CompensatorMode = M{'Never','300','1000','Always'}
+	-- Whether to automatically generate bullets.
+	state.AutoAmmoMode = M(true,'Auto Ammo Mode')
+	state.UseDefaultAmmo = M(true,'Use Default Ammo')
+	state.Buff['Triple Shot'] = buffactive['Triple Shot'] or false
+
+	-- Whether to use Luzaf's Ring
+	state.LuzafRing = M(false, "Luzaf's Ring")
+    -- Whether a warning has been given for low ammo
+	
+	autows = 'Savage Blade'
+	rangedautows = 'Last Stand'
+	autofood = 'Maringna'
+	ammostock = 198
+
+    define_roll_values()
+	
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","RngHelper","AutoStunMode","AutoDefenseMode","LuzafRing",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","RangedMode","WeaponskillMode","ElementalMode","IdleMode","Passive","RuneElement","CompensatorMode","TreasureMode",})
 end

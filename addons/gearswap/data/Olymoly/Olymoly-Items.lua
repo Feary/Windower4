@@ -215,7 +215,8 @@ gear.merlinic_physpact_hands = {name="Merlinic Dastanas", augments={'Pet: Attack
 gear.merlinic_accpact_hands = {name="Merlinic Dastanas",augments={'Pet: Accuracy+21 Pet: Rng. Acc.+21','Blood Pact Dmg.+9','Pet: DEX+1','Pet: Mag. Acc.+10','Pet: "Mag.Atk.Bns."+6',}}
 
 --gear.merlinic_occult_hands = {}
-
+gear.merlinic_refresh_head = {}
+gear.merlinic_refresh_legs = {}
 --gear.merlinic_nuke_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Conserve MP"+1','INT+11','Mag. Acc.+3','"Mag.Atk.Bns."+15',}}
 --augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +10','Mag. Acc.+15',}}
 gear.merlinic_aspir_feet = {name="Merlinic Crackows", augments={'STR+7','Accuracy+24 Attack+24','"Fast Cast"+3','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}

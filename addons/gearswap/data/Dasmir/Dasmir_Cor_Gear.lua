@@ -490,3 +490,29 @@ function select_default_macro_book()
         set_macro_page(1, 10)
     end   
 end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 010')
+end
+
+function job_setup()
+	-- Whether to use Compensator under a certain threshhold even when weapons are locked.
+	state.CompensatorMode = M{'Never','300','1000','Always'}
+	-- Whether to automatically generate bullets.
+	state.AutoAmmoMode = M(true,'Auto Ammo Mode')
+	state.UseDefaultAmmo = M(true,'Use Default Ammo')
+	state.Buff['Triple Shot'] = buffactive['Triple Shot'] or false
+
+	-- Whether to use Luzaf's Ring
+	state.LuzafRing = M(true, "Luzaf's Ring")
+    -- Whether a warning has been given for low ammo
+	
+	autows = 'Savage Blade'
+	rangedautows = 'Leaden Salute'
+	autofood = 'Maringna'
+	ammostock = 198
+
+    define_roll_values()
+	
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","RngHelper","AutoStunMode","AutoDefenseMode","LuzafRing",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","RangedMode","WeaponskillMode","ElementalMode","IdleMode","Passive","RuneElement","CompensatorMode","TreasureMode",})
+end

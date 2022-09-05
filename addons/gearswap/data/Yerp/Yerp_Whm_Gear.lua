@@ -91,7 +91,7 @@ function init_gear_sets()
 		-- lear="Nourish. Earring", rear="Nourish. Earring +1",
 		-- feet="Cure Clogs"
 		head="Piety Cap",
-		legs="Ebers Pantaloons",})
+		legs="Ebers Pantaloons"})
 	
 	sets.precast.FC.Cure.DT = set_combine(sets.precast.FC.Cure, {})
 

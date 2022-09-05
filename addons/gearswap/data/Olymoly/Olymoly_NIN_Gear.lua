@@ -78,10 +78,10 @@ function init_gear_sets()
 		-- Rahab Ring
 		body=gear.taeon_body_Fastcast, hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Kishar Ring",
 		-- gear.herculean_fc_legs gear.herculean_fc_feet
-		back=gear.fc_jse_back, legs="Rawhide Trousers",feet="Mochi. Kyahan +1"}
+		back=gear.fc_jse_back, legs="Gyve Trousers", feet="Mochi. Kyahan +1"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Mochi. Chainmail",feet="Hattori Kyahan +1"})
-	sets.precast.FC.Shadows = set_combine(sets.precast.FC.Utsusemi, {ammo="Staunch Tathlum",ring1="Prolix Ring"})
+	sets.precast.FC.Shadows = set_combine(sets.precast.FC.Utsusemi, {ammo="Staunch Tathlum +1",ring1="Prolix Ring"})
 
     -- Snapshot for ranged
     sets.precast.RA = {legs="Nahtirah Trousers"}
@@ -223,28 +223,28 @@ function init_gear_sets()
     sets.resting = {}
 
     -- Idle sets
-    sets.idle = {ammo="Staunch Tathlum",
+    sets.idle = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         --body="Malignance Tabard",hands="Malignance Gloves",
          body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
-    sets.defense.PDT = {ammo="Staunch Tathlum",
+    sets.defense.PDT = {ammo="Staunch Tathlum +1",
 		--ear2="Sanare Earring",
 		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         --body="Malignance Tabard",hands="Malignance Gloves",
          body="Emet Harness +1", hands="Kurys Gloves", ring1="Defending Ring",ring2="Vengeful Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
 
-    sets.defense.MDT = {ammo="Staunch Tathlum",
+    sets.defense.MDT = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         --body="Malignance Tabard",hands="Malignance Gloves",
          body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
 		--
 		back="Moonbeam Cape",waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
 
-	sets.defense.MEVA = {ammo="Staunch Tathlum",
+	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau", neck="Warder's Charm +1",ear1="Genmei Earring",ear2="Sanare Earring",
         -- body="Malignance Tabard",hands="Malignance Gloves",
          body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",

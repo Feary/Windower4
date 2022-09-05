@@ -151,6 +151,28 @@
             </text>
         </seg_box>
     </global>
+    <dasmir>
+        <disclaimer>
+            <bg>
+                <alpha>255</alpha>
+            </bg>
+            <pos>
+                <x>698.5</x>
+            </pos>
+            <show>false</show>
+            <text>
+                <alpha>255</alpha>
+            </text>
+        </disclaimer>
+        <map>
+            <texture>
+                <path>C:\Users\dlest\OneDrive\Documents\GitHub\Windower4\/addons/sheolhelper/maps/3-4.png</path>
+            </texture>
+        </map>
+        <seg_box>
+            <disclaimer>false</disclaimer>
+        </seg_box>
+    </dasmir>
     <helyah>
         <disclaimer>
             <bg>

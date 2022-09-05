@@ -297,7 +297,7 @@ function init_gear_sets()
     sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {})--back="Mujin Mantle"
 	
     -- Ranged gear
-    sets.midcast.RA = {1
+    sets.midcast.RA = {
 		--neck="Sam. Nodowa +2", rear="Crep. Earring", 
 		head="Sakonji Kabuto",  lear="Telos Earring",
 		-- hands="Volte Mittens", lring="Regal Ring", rring="Crepuscular Ring", 
@@ -392,7 +392,7 @@ function init_gear_sets()
 		-- neck="Sam. Nodowa +2", ear1="Cessance Earring", 
 		head="Flam. Zucchetto +2", neck="Combatant's Torque", lear="Mache Earring +1", ear2="Telos Earring", 
 		-- body="Ken. Samue +1", hands="Wakido Kote +3", ring2="Niqmaddu Ring"
-		body="Flamma Korazin +1", hands="Flam. Manopolas +1", ring1="Flamma Ring", ring2="Chirich Ring +1",
+		body="Sakonji Domaru +3", hands="Flam. Manopolas +1", ring1="Flamma Ring", ring2="Chirich Ring +1",
 		-- waist="Windbuffet Belt +1", legs="Ken. Hakama +1", feet="Ryuo Sune-ate +1"
         back=gear.dbl_jse_back,waist="Ioskeha Belt",legs="Flamma Dirs +1",feet="Flam. Gambieras +2"}
     sets.engaged.SomeAcc = {ammo="Ginsen", -- ammo="Aurgelmir Orb +1",
