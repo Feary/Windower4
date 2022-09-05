@@ -153,7 +153,7 @@ function init_gear_sets()
 		head="Lustratio Cap +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
 		-- Nyame Mail Nyame Gauntlets 
 		body="Bihu Jstcorps. +3",hands="Lustr. Mittens +1",ring1="Epaminondas's Ring",ring2="Ilabrat Ring",
-		-- Fotia Belt Nyame Flanchard Nyame Sollerets
+		-- Fotia Belt Nyame Flanchard Nyame Solleretsw
 		back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"}
 	sets.precast.WS.Acc = {ranged=gear.Instrument_WSD,
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",

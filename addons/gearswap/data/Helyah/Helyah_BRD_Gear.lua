@@ -1,4 +1,4 @@
-function user_setup()
+function user_job_setup()
 	-- Options: Override default values
     state.OffenseMode:options('None', 'Normal')
     state.CastingMode:options('Normal', 'Resistant')
@@ -85,7 +85,7 @@ function init_gear_sets()
 	--sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
 	sets.weapons.Sword = {main="Naegling", sub="Genmei Shield"}
 	-- Dualwield
-	sets.weapons.DualDaggers = {main="Twashtar", sub="Mandau"}
+	sets.weapons.DualDaggers = {main="Sangoma", sub="Mandau"}
 	sets.weapons.DualSwords = {main="Naegling", sub="Blurred Knife +1"}
 	sets.weapons.DualNukeWeapons = {main="Malevolence",sub="Malevolence"}
 	
