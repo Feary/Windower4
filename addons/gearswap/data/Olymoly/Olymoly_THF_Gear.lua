@@ -463,12 +463,12 @@ function init_gear_sets()
 	
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum",
+    sets.idle = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum +1",
         head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
         body="Ashera Harness",hands="Turms Mittens +1",ring1="Moonlight Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Malignance Tights",feet="Turms Leggings +1"}
 		
-	sets.idle.Regen = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum",
+	sets.idle.Regen = {main="Twashtar", sub="Mandau", ammo="Staunch Tathlum +1",
         head="Turms Cap +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
         body="Turms Harness",hands="Turms Mittens +1",ring1="Moonlight Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Malignance Tights",feet="Turms Leggings +1"}
@@ -478,17 +478,17 @@ function init_gear_sets()
     sets.idle.Weak = set_combine(sets.idle, {})
 
     -- Defense sets
-    sets.defense.PDT = {ammo="Staunch Tathlum",
+    sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Genmei Earring",
         body="Ashera Harness",hands="Meg. Gloves +2",ring1="Moonlight Ring",ring2="Defending Ring",
         back="Shadow Mantle",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
-    sets.defense.MDT = {ammo="Staunch Tathlum",
+    sets.defense.MDT = {ammo="Staunch Tathlum +1",
        	head="Malignance Chapeau", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		body="Turms Harness", hands="Turms Mittens +1", lring="Moonlight Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
 		
-	sets.defense.MEVA = {ammo="Staunch Tathlum",
+	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		head="Turms Cap +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		-- Turms Harness +1
 		body="Turms Harness", hands="Turms Mittens +1", lring="Moonlight Ring", rring="Defending Ring",
@@ -532,27 +532,27 @@ function init_gear_sets()
         body="Pillager's Vest +3",hands="Adhemar Wrist. +1",ring1="Epona's Ring", rring="Hetairoi Ring", 
         back=gear.stp_jse_back,waist="Reiki Yotai", legs="Samnuha Tights", feet="Plun. Poulaines +3"}
 	
-    sets.engaged.PDT = {ammo="Staunch Tathlum",
+    sets.engaged.PDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Defending Ring",
         back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}
 
-    sets.engaged.SomeAcc.PDT = {ammo="Staunch Tathlum", 
+    sets.engaged.SomeAcc.PDT = {ammo="Staunch Tathlum +1", 
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness", hands="Adhemar Wrist. +1", ring1="Epona's Ring", ring2="Defending Ring",
         back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}
 
-    sets.engaged.Acc.PDT = {ammo="Staunch Tathlum",
+    sets.engaged.Acc.PDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness", hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Defending Ring",
         back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}
 
-    sets.engaged.FullAcc.PDT = {ammo="Staunch Tathlum",
+    sets.engaged.FullAcc.PDT = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness", hands="Adhemar Wrist. +1", ring1="Epona's Ring",ring2="Defending Ring",
         back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}
 
-    sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum",
+    sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Sherida Earring",ear2="Telos Earring",
         body="Ashera Harness", hands="Adhemar Wrist. +1", ring1="Epona's Ring",ring2="Defending Ring",
         back=gear.stp_jse_back, waist="Reiki Yotai",legs="Malignance Tights",feet="Plun. Poulaines +3"}

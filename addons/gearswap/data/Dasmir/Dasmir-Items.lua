@@ -4,7 +4,7 @@ sets.Sheltered = {ring2="Sheltered Ring"}
 sets.Capacity =  {back={name="Mecisto. Mantle", augments={'Cap. Point+30%','VIT+2','"Mag.Atk.Bns."+1','DEF+11',}}}
 
 sets.buff.Doom = {}--waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"
-sets.TreasureHunter = {waist="Chaac Belt", legs="Volte HoseE"}
+sets.TreasureHunter = {waist="Chaac Belt", legs="Volte Hose"}
 
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}
@@ -36,6 +36,7 @@ gear.taeon_hands_pettp = { name="Taeon Tights", augments={'Pet: Accuracy+23 Pet:
 -- leafdim fastcast duskdim
 gear.taeon_feet_Phalanx = {name="Taeon Boots", augments={'"Fast Cast"+5','Phalanx +3',}}
 gear.taeon_hands_pettp = { name="Taeon Boots", augments={'Pet: Accuracy+24 Pet: Rng. Acc.+24','Pet: "Dbl. Atk."+5','Pet: Damage taken -4%',}}
+--gear.taeon_feet_DW
 
 -- Telchine
 -- Head 1/1
@@ -120,6 +121,7 @@ gear.chironic_macc_legs = {name="Chironic Hose", augments={'Mag. Acc.+23 "Mag.At
 
 --gear.herculean_fc_head = {name="Herculean Helm",augments={'"Fast Cast"+6','"Mag.Atk.Bns."+13',}}
 --gear.herculean_nuke_head = {name="Herculean Helm",augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Enmity-3','INT+9','"Mag.Atk.Bns."+13',}}
+--gear.herculean_DW_head = {}
 
 --gear.herculean_waltz_body = {name="Herculean Vest",augments={'Attack+26','"Waltz" potency +11%','AGI+4','Accuracy+5',}}
 gear.herculean_wsd_body = {name="Herculean Vest", augments={'INT+7','Pet: "Mag.Atk.Bns."+18','Weapon skill damage +5%','Accuracy+16 Attack+16','Mag. Acc.+4 "Mag.Atk.Bns."+4',}}

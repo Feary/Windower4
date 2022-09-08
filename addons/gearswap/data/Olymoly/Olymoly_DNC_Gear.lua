@@ -342,13 +342,13 @@ function init_gear_sets()
     
 
     -- Idle sets
-    sets.idle = {ammo="Staunch Tathlum",
+    sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard  Malignance Gloves 
 		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
 		-- Malignance Tights
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
-	 sets.idle.Evasion = {ammo="Staunch Tathlum",
+	 sets.idle.Evasion = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
         -- Malignance Tabard Malignance Gloves 
 		body="Turms Harness",hands="Turms Mittens +1",ring1="Moonbeam Ring",ring2="Moonbeam Ring",
@@ -358,14 +358,14 @@ function init_gear_sets()
     
     -- Defense sets
 
-    sets.defense.PDT = {ammo="Staunch Tathlum",
+    sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Odnowa Earring",
         -- Malignance Tabard Malignance Gloves 
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", ring1="Defending Ring", ring2="Moonbeam Ring",
 		-- Malignance Tights 
         back="Moonbeam Cape",waist="Flume Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
-    sets.defense.MDT = {ammo="Staunch Tathlum",
+    sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Odnowa Earring",
 		-- Turms Harness +1
 		body="Turms Harness",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Purity Ring",
@@ -483,4 +483,8 @@ function select_default_macro_book()
     else
         set_macro_page(2, 18)
     end
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 018')
 end

@@ -52,7 +52,7 @@ end
 
 function init_gear_sets()
 
-    sets.Enmity = {ammo="Staunch Tathlum", -- Sapience Orb
+    sets.Enmity = {ammo="Staunch Tathlum +1", -- Sapience Orb
 		 -- Halitus Helm Futhark Torque +2 Moonlight Necklace Trux Earring
 	     head="Fu. Bandeau +3",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
 	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonlight Ring",
@@ -60,7 +60,7 @@ function init_gear_sets()
 		 back=gear.enmity_jse_back,waist="Goading Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 	
 	-- 102 cap
-    sets.Enmity.SIRD = {ammo="Staunch Tathlum",
+    sets.Enmity.SIRD = {ammo="Staunch Tathlum +1",
 		-- Halaz Earring
 	     head="Fu. Bandeau +3",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
 		 --  Rawhide Gloves
@@ -68,7 +68,7 @@ function init_gear_sets()
 		 -- Audumbla Sash
 		 back=gear.enmity_jse_back,waist="Rumination Sash",legs="Carmine Cuisses +1",feet="Erilaz Greaves +1"}
 
-    sets.Enmity.DT = {ammo="Staunch Tathlum",
+    sets.Enmity.DT = {ammo="Staunch Tathlum +1",
 		 -- Halitus Helm
 	     head="Fu. Bandeau +3",neck="Moonbeam Necklace",ear1="Genmei Earring",ear2="Cryptic Earring",
 	     body="Futhark Coat +3",hands="Kurys Gloves",ring1="Defending Ring",ring2="Moonlight Ring",
@@ -163,12 +163,12 @@ function init_gear_sets()
 		body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Kishar Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Carmine Greaves +1"}
 			
-	sets.precast.FC.DT = {ammo="Staunch Tathlum",
+	sets.precast.FC.DT = {ammo="Staunch Tathlum +1",
         head="Rune. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
         body="Runeist's Coat +3",hands="Leyline Gloves",ring1="Defending Ring",ring2="Moonlight Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 	
-	sets.precast.FC.SIRD = {ammo="Staunch Tathlum",
+	sets.precast.FC.SIRD = {ammo="Staunch Tathlum +1",
         head="Rune. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
         body="Runeist's Coat +3",hands="Leyline Gloves",ring1="Defending Ring",ring2="Moonlight Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
@@ -221,7 +221,7 @@ function init_gear_sets()
 		body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Kishar Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Carmine Greaves +1"}
 		
-	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum",
+	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum +1",
         head="Rune. Bandeau +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
         body="Runeist's Coat +3",hands="Leyline Gloves",ring1="Defending Ring",ring2="Moonlight Ring",
         back="Moonbeam Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
@@ -244,7 +244,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].SIRD = set_combine(sets.Enmity.SIRD, {})
 	sets.midcast.Cocoon = set_combine(sets.Enmity.SIRD, {})
 
-    sets.midcast.Cure = {ammo="Staunch Tathlum",
+    sets.midcast.Cure = {ammo="Staunch Tathlum +1",
         head="Rune. Bandeau +1",neck="Sacro Gorget",ear1="Mendi. Earring",ear2="Roundel Earring",
         --body="Vrikodara Jupon",hands="Buremte Gloves",ring2="Janniston Ring",
 		body="Erilaz Surcoat +1", hands="Kurys Gloves", ring1="Lebeche Ring", ring2="Moonlight Ring",
@@ -274,12 +274,12 @@ function init_gear_sets()
 		
     sets.idle.Sphere = set_combine(sets.idle,{body="Mekosu. Harness"})
 			
-	sets.idle.Tank = {ammo="Staunch Tathlum",
+	sets.idle.Tank = {ammo="Staunch Tathlum +1",
 		head="Fu. Bandeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
 		back=gear.hp_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
-	sets.idle.KiteTank = {ammo="Staunch Tathlum",
+	sets.idle.KiteTank = {ammo="Staunch Tathlum +1",
 		head="Fu. Bandeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
@@ -305,11 +305,11 @@ function init_gear_sets()
 	sets.weapons.DualWeapons = {main="Naegling",sub="Reikiko"}
 	
 	-- Defense Sets	
-	sets.defense.PDT = {ammo="Staunch Tathlum",
+	sets.defense.PDT = {ammo="Staunch Tathlum +1",
 			head="Fu. Bandeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 			body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
             back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
-	sets.defense.PDT_HP = {ammo="Staunch Tathlum",
+	sets.defense.PDT_HP = {ammo="Staunch Tathlum +1",
 			head="Fu. Bandeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 			body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
             back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
@@ -319,48 +319,48 @@ function init_gear_sets()
        		body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
             back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
-	sets.defense.MDT_HP = {ammo="Staunch Tathlum",
+	sets.defense.MDT_HP = {ammo="Staunch Tathlum +1",
 			head="Fu. Bandeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 			body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
             back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
-	sets.defense.BDT = {ammo="Staunch Tathlum",
+	sets.defense.BDT = {ammo="Staunch Tathlum +1",
 			head="Fu. Bandeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 			body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
             back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
-	sets.defense.BDT_HP = {ammo="Staunch Tathlum",
+	sets.defense.BDT_HP = {ammo="Staunch Tathlum +1",
 			head="Fu. Bandeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 			body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
             back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Turms Leggings +1"}
 	
 	
-	sets.defense.MEVA = {ammo="Staunch Tathlum",
+	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		-- Futhark Torque
 		head="Turms Cap +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Hearty Earring",
 		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
 		-- Engraved Belt
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
-	sets.defense.MEVA_HP = {ammo="Staunch Tathlum",
+	sets.defense.MEVA_HP = {ammo="Staunch Tathlum +1",
 		-- Futhark Torque
 		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
-	sets.defense.Death = {ammo="Staunch Tathlum",
+	sets.defense.Death = {ammo="Staunch Tathlum +1",
        	-- Futhark Torque
 		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
-	sets.defense.DTCharm = {ammo="Staunch Tathlum",
+	sets.defense.DTCharm = {ammo="Staunch Tathlum +1",
        	--  Futhark Torque
 		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
 		back=gear.enmity_jse_back,waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
-	sets.defense.Charm = {ammo="Staunch Tathlum",
+	sets.defense.Charm = {ammo="Staunch Tathlum +1",
       	--  Futhark Torque
 		head="Turms Cap +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Runeist's Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
@@ -383,16 +383,16 @@ function init_gear_sets()
             body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Ilabrat Ring",
             back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 	-- Hybrid
-	sets.engaged.DTLite = {ammo="Staunch Tathlum",
+	sets.engaged.DTLite = {ammo="Staunch Tathlum +1",
             head="Fu. Bandeau +3",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
 			body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
             back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Meg. Chausses +2",feet="Turms Leggings +1"}
-    sets.engaged.Acc.DTLite = {ammo="Staunch Tathlum",
+    sets.engaged.Acc.DTLite = {ammo="Staunch Tathlum +1",
 			head="Fu. Bandeau +3",neck="Anu Torque",ear1="Telos Earring",ear2="Sherida Earring",
             body="Futhark Coat +3",hands="Turms Mittens +1",ring1="Defending Ring",ring2="Moonlight Ring",
             back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Meg. Chausses +2",feet="Turms Leggings +1"}
 	-- Tank
-    sets.engaged.Tank = {ammo="Staunch Tathlum",
+    sets.engaged.Tank = {ammo="Staunch Tathlum +1",
 			-- Futhark Bandeau +3
             head="Fu. Bandeau +3", neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 			-- Futhark Coat +3

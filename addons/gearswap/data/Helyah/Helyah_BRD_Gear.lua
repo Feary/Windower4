@@ -1,9 +1,12 @@
 function user_job_setup()
 	-- Options: Override default values
-    state.OffenseMode:options('None', 'Normal')
-    state.CastingMode:options('Normal', 'Resistant')
-    state.IdleMode:options('Normal', 'PDT', 'MDT')
+    state.OffenseMode:options('Normal','Acc')
+	state.HybridMode:options('Normal','DT')
+    state.CastingMode:options('Normal','Resistant','AoE')
+    state.IdleMode:options('Normal','NoRefresh','DT')
 	state.Weapons:options('None', 'Dagger', 'Sword','DualDaggers','DualSwords')--'Aeneas', Carn','Twashtar','Mandau',
+	-- Whether to use Carn (or song daggers in general) under a certain threshhold even when weapons are locked.
+	state.CarnMode = M{'Always','300','1000','Never'}
 	
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = "Daurdabla"
@@ -236,16 +239,14 @@ function init_gear_sets()
 	sets.midcast.Sirvente = {}
 	
 	-- For song buffs (Full Duration, AF3 set bonus, DT)
-	sets.midcast.SongEffect = {range="Gjallarhorn",
-		main="Kali", sub="Genmei Shield",
+	sets.midcast.SongEffect = {main="Kali", sub="Genmei Shield",
 		--lear="Genmei Earring", rear="Etiolation Earring",
 		head="Fili Calot", neck="Moonbow Whistle +1",
 		-- lring="Dark Ring",
 		body="Fili Hongreline", hands="Fili Manchettes", rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
-	sets.midcast.SongEffect.DW = {range="Gjallarhorn",
-		main="Kali", sub="Genmei Shield",
+	sets.midcast.SongEffect.DW = {main="Kali", sub="Genmei Shield",
 		-- lear="Genmei Earring", rear="Etiolation Earring",
 		head="Fili Calot", neck="Moonbow Whistle +1",
 		-- lring="Dark Ring",
@@ -253,8 +254,7 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	-- For song debuffs (duration primary, accuracy secondary)
-	sets.midcast.SongDebuff = {range="Gjallarhorn",		
-		main="Kali", sub="Ammurapi Shield",
+	sets.midcast.SongDebuff = {main="Kali", sub="Ammurapi Shield",
 		-- head="Brioso Roundlet +3", lear="Digni. Earring", rear="Regal Earring",
 		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
@@ -263,8 +263,7 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
-	sets.midcast.ResistantSongDebuff = {range="Gjallarhorn",		
-		main="Naegling", sub="Ammurapi Shield",
+	sets.midcast.ResistantSongDebuff = {main="Naegling", sub="Ammurapi Shield",
 		-- head="Brioso Roundlet +3",  lear="Digni. Earring", rear="Regal Earring",
 		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
 		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
@@ -272,7 +271,7 @@ function init_gear_sets()
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
 		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
-	sets.midcast.SongDebuff.DW = {range="Gjallarhorn",		
+	sets.midcast.SongDebuff.DW = {	
 		main="Kali", sub="Ammurapi Shield",
 		-- head="Brioso Roundlet +3", lear="Digni. Earring", rear="Regal Earring",
 		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
@@ -422,12 +421,12 @@ function init_gear_sets()
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Volte Gaiters"}
 	
-	sets.idle.PDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
+	sets.idle.NoRefresh = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +1", neck="Loricate Torque +1",  lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
 	
-	sets.idle.MDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
+	sets.idle.DT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +1",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2", feet="Volte Gaiters"}

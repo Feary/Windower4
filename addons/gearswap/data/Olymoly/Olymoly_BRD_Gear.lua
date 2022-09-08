@@ -1,9 +1,12 @@
-function user_setup()
+function user_job_setup()
 	-- Options: Override default values
-    state.OffenseMode:options('None', 'Acc')
-    state.CastingMode:options('Normal', 'Resistant')
-    state.IdleMode:options('Normal', 'Refresh', 'PDT', 'MDT')
+    state.OffenseMode:options('Normal','Acc')
+	state.HybridMode:options('Normal','DT')
+    state.CastingMode:options('Normal','Resistant','AoE')
+    state.IdleMode:options('Normal','NoRefresh','DT')
 	state.Weapons:options('None','Carn','Twashtar','Mandau','Tauret','AE','Sword','DualDaggers','DualAE','DualCarn','DualMandau','DualTauret','DualSwords')--'Aeneas',
+	-- Whether to use Carn (or song daggers in general) under a certain threshhold even when weapons are locked.
+	state.CarnMode = M{'Always','300','1000','Never'}
 	
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = "Daurdabla"
@@ -261,19 +264,19 @@ function init_gear_sets()
 	sets.midcast.Sirvente = {}
 	
 	-- For song buffs (Full Duration, AF3 set bonus, DT)
-	sets.midcast.SongEffect = {main="Carnwenhan", sub="Genmei Shield", range="Gjallarhorn",
+	sets.midcast.SongEffect = {main="Carnwenhan", sub="Genmei Shield",
 		head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Genmei Earring", rear="Etiolation Earring",
 		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Dark Ring", rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"}
 
-	sets.midcast.SongEffect.DW = {main="Carnwenhan", sub="Kali", range="Gjallarhorn",
+	sets.midcast.SongEffect.DW = {main="Carnwenhan", sub="Kali",
 		head="Fili Calot +1", neck="Moonbow Whistle +1", lear="Genmei Earring", rear="Etiolation Earring",
 		body="Fili Hongreline +1", hands="Fili Manchettes +1", lring="Dark Ring", rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +3"}
 
 	-- Debuff
 	-- For song debuffs (duration primary, accuracy secondary)
-	sets.midcast.SongDebuff = {main="Carnwenhan", sub="Ammurapi Shield", range="Gjallarhorn",
+	sets.midcast.SongDebuff = {main="Carnwenhan", sub="Ammurapi Shield",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		body="Fili Hongreline +1", hands="Brioso Cuffs +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.FC_jse_back, waist="Acuity Belt +1", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
@@ -284,7 +287,7 @@ function init_gear_sets()
 		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.FC_jse_back, waist="Acuity Belt +1", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 
-	sets.midcast.SongDebuff.DW = {main="Carnwenhan", sub="Ammurapi Shield", range="Gjallarhorn",
+	sets.midcast.SongDebuff.DW = {main="Carnwenhan", sub="Ammurapi Shield",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.FC_jse_back, waist="Acuity Belt +1", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
@@ -412,14 +415,14 @@ function init_gear_sets()
 		-- Flume Belt +1
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
 	
-	sets.idle.PDT = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
+	sets.idle.NoRefresh = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
 		-- Linos
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ashera Harness", hands="Volte Bracers", ring1="Inyanga Ring", ring2="Defending Ring",
 		-- Flume Belt +1
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
 	
-	sets.idle.MDT = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
+	sets.idle.DT = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
 		-- Linos
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ashera Harness", hands="Volte Bracers", ring1="Inyanga Ring", ring2="Defending Ring",

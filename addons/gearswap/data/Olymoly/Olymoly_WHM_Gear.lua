@@ -457,7 +457,7 @@ function init_gear_sets()
 		body="Shamash Robe", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Inyan. Crackows +2"}
 
-	sets.idle.PDT = {main="Malignance Pole", sub="Irenic Strap +1", ammo="Staunch Tathlum",
+	sets.idle.PDT = {main="Malignance Pole", sub="Irenic Strap +1", ammo="Staunch Tathlum +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Genmei Earring",
 		-- Chironic Gloves DT
 		body="Shamash Robe", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
@@ -466,7 +466,7 @@ function init_gear_sets()
 
     sets.idle.TPEat = set_combine(sets.idle, {neck="Chrys. Torque"})
 
-	sets.idle.Weak = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum",
+	sets.idle.Weak = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		-- Chironic Gloves DT
 		body="Shamash Robe", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
@@ -474,19 +474,19 @@ function init_gear_sets()
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Assid. Pants +1", feet="Aya. Gambieras +2"}
 
     -- Defense sets
-	sets.defense.PDT = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum",
+	sets.defense.PDT = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Genmei Earring",
 		-- Chironic Gloves DT
 		body="Shamash Robe", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		-- Chironic Slippers DT
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
-	sets.defense.MDT = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum",
+	sets.defense.MDT = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum +1",
 		head="Aya. Zucchetto +2", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
-    sets.defense.MEVA = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum",
+    sets.defense.MEVA = {main="Malignance Pole",sub="Irenic Strap +1", ammo="Staunch Tathlum +1",
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.fastcast_jse_back,waist="Fucho-no-obi",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
@@ -499,7 +499,7 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Basic set for if no TP weapon is defined.
-	sets.engaged = {ammo="Staunch Tathlum",
+	sets.engaged = {ammo="Staunch Tathlum +1",
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Witful Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
@@ -509,7 +509,7 @@ function init_gear_sets()
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 		
-    sets.engaged.DW = {ammo="Staunch Tathlum",
+    sets.engaged.DW = {ammo="Staunch Tathlum +1",
 		head="Aya. Zucchetto +2", neck="Sanctity Necklace", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +2", lring="Dark Ring", rring="Defending Ring",
 		back=gear.fastcast_jse_back, waist="Fucho-no-Obi", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}

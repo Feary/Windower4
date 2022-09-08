@@ -72,7 +72,7 @@ function job_setup()
 	state.LuzafRing = M(true, "Luzaf's Ring")
     -- Whether a warning has been given for low ammo
 	
-	autows = 'Leaden Salute'
+	autows = 'Savage Blade'
 	rangedautows = 'Last Stand'
 	autofood = 'Sublime Sushi'
 	ammostock = 198

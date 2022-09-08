@@ -59,7 +59,7 @@ function init_gear_sets()
 		-- Obyssean Cuisses Eschite Greaves path A
 		back=gear.Enmity_jse_back, waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 	
-	sets.Enmity.SIRD = {ammo="Staunch Tathlum", -- Impatiens
+	sets.Enmity.SIRD = {ammo="Staunch Tathlum +1", -- Impatiens
 		head="Souveran Schaller +1",neck="Moonbeam Necklace",ear1="Knightly Earring",ear2="Cryptic Earring",
 		body="Souv. Cuirass +1",hands="Regal Gauntlets",ring1="Defending Ring",ring2="Moonbeam Ring",
 		back=gear.Enmity_jse_back,waist="Rumination Sash",legs="Founder's Hose",feet="Odyssean Greaves"}
@@ -139,12 +139,12 @@ function init_gear_sets()
 	sets.precast.JA['Animated Flourish'] = set_combine(sets.Enmity, {})
 
     -- Fast cast sets for spells    
-    sets.precast.FC = {ammo="Staunch tathlum",
+    sets.precast.FC = {ammo="Staunch Tathlum +1",
 		head="Carmine Mask +1", neck="Orunmila's Torque", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
 		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Carmine Greaves +1"}
 
-    sets.precast.FC.DT = {ammo="Staunch tathlum",
+    sets.precast.FC.DT = {ammo="Staunch Tathlum +1",
 		head="Carmine Mask +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Moonbeam Ring",
 		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Carmine Greaves +1"}
@@ -160,7 +160,7 @@ function init_gear_sets()
 		body="Lustr. Harness +1", hands="Lustr. Mittens +1", lring="Regal Ring", rring="Epaminondas's Ring",
 		back=gear.WS_jse_back, waist="Fotia Belt", legs="Lustr. Subligar +1", feet="Lustra. Leggings +1"}
 	
-    sets.precast.WS.DT = {ammo="Staunch Tathlum",
+    sets.precast.WS.DT = {ammo="Staunch Tathlum +1",
 		head="Souveran Schaller +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Moonbeam Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
@@ -258,7 +258,7 @@ function init_gear_sets()
 		--legs=gear.odyssean_fc_legs, 
         back=gear.fastcast_jse_back, waist="Tempus Fugit", legs="Carmine Cuisses +1", feet="Odyssean Greaves"}		
 		
-	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum",
+	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum +1",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
@@ -267,33 +267,33 @@ function init_gear_sets()
     sets.midcast.Stun = set_combine(sets.Enmity, {})
 	sets.midcast['Blue Magic'] = set_combine(sets.Enmity, {})
 
-    sets.midcast.Cure = {ammo="Staunch Tathlum",
+    sets.midcast.Cure = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
 		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonlight Ring", rring="Moonlight Ring",
 		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Odyssean Greaves"}
 
-	 sets.midcast.Cure.SIRD = {ammo="Staunch Tathlum",
+	 sets.midcast.Cure.SIRD = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
 		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonlight Ring", rring="Moonlight Ring",
 		-- waist="Audumbla Sash"
 		back=gear.fastcast_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Odyssean Greaves"}
 
-    sets.midcast.Cure.DT = {ammo="Staunch Tathlum",
+    sets.midcast.Cure.DT = {ammo="Staunch Tathlum +1",
         head="Souv. Schaller +1", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Odnowa Earring", 
 		body="Souv. Cuirass +1", hands="Regal Gauntlets ", ring1="Moonlight Ring", rring="Moonlight Ring",
         back=gear.fastcast_jse_back,waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
-    sets.midcast.Reprisal = {ammo="Staunch Tathlum",
+    sets.midcast.Reprisal = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonlight Ring", rring="Moonlight Ring",
 		back="Reiki Cloak", waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 
-	sets.Self_Healing = {ammo="Staunch Tathlum",
+	sets.Self_Healing = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Nourish. Earring +1", rear="Knightly Earring",
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonlight Ring", rring="Moonlight Ring",
 		back=gear.Enmity_jse_back, waist="Rumination Sash", legs="Founder's Hose", feet="Odyssean Greaves"}
 		
-	sets.Self_Healing.DT = {ammo="Staunch Tathlum",
+	sets.Self_Healing.DT = {ammo="Staunch Tathlum +1",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Moonbeam Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
@@ -301,12 +301,12 @@ function init_gear_sets()
 	sets.Cure_Received = {head="Souv. Schaller +1", hands="Souv. Handsch. +1",legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 	sets.Self_Refresh = {}--waist="Gishdubar Sash", feet="Shab. Sabatons +1"
 
-    sets.midcast['Enhancing Magic'] = {ammo="Staunch Tathlum",
+    sets.midcast['Enhancing Magic'] = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Incanter's Torque", lear="Augment. Earring", rear="Andoaa Earring",
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1",	lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back="Moonbeam Cape", waist="Olympus Sash", legs="Carmine Cuisses +1", feet="Souveran Schuhs +1"}
 	
-    sets.midcast['Enhancing Magic'].SIRD = {ammo="Staunch Tathlum",
+    sets.midcast['Enhancing Magic'].SIRD = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Knightly Earring", rear="Andoaa Earring",
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1",	lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back="Moonbeam Cape", waist="Olympus Sash", legs="Founder's Hose", feet="Souveran Schuhs +1"}
@@ -316,14 +316,14 @@ function init_gear_sets()
     sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
     sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 	
-	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {ammo="Staunch Tathlum",
+	sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {ammo="Staunch Tathlum +1",
 		-- odyssean Helm Phalanx +5
 		head="Carmine Mask +1", neck="Incanter's Torque", lear="Odnowa Earring +1", rear="Knightly Earring",
 		-- body="Shabti Cuirass +1", Apeile Ring +1
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonlight Ring", rring="Apeile Ring",
 		back=gear.phalanx_jse_back, waist="Rumination Sash", legs=gear.valorous_phalanx_legs, feet="Souveran Schuhs +1"})
 		
-	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {ammo="Staunch Tathlum",
+	sets.midcast.Phalanx.SIRD = set_combine(sets.midcast['Enhancing Magic'].SIRD, {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Moonbeam Necklace", lear="Odnowa Earring +1", rear="Knightly Earring",
 		-- body="Shabti Cuirass +1", Apeile Ring +1
 		body="Souv. Cuirass +1", hands="Regal Gauntlets", lring="Moonlight Ring", rring="Apeile Ring",
@@ -344,13 +344,13 @@ function init_gear_sets()
 		body="Souveran Cuirass +1",hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Souveran Schuhs +1"}
 		
-    sets.idle.PDT = {ammo="Staunch Tathlum",
+    sets.idle.PDT = {ammo="Staunch Tathlum +1",
 		-- Combatant's Torque
 		head="Souveran Schaller +1", neck="Loricate Torque +1", ear1="Ethereal Earring",ear2="Thureous Earring",
 		body="Souv. Cuirass +1", hands="Chev. Gauntlets +1", lring="Moonlight Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Flume Belt", legs="Chev. Cuisses +1", feet="Souveran Schuhs +1"}
 
-    sets.idle.MDT = {ammo="Staunch Tathlum",
+    sets.idle.MDT = {ammo="Staunch Tathlum +1",
 		-- ear2="Sanare Earring",
 		head="Jumalik Helm", neck="Warder's Charm +1", ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Tartarus Platemail",hands="Souv. Handsch. +1",ring1="Shadow Ring",ring2="Defending Ring",
@@ -362,23 +362,23 @@ function init_gear_sets()
 		body="Jumalik Mail",hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 
-	sets.idle.Tank = {ammo="Staunch Tathlum",
+	sets.idle.Tank = {ammo="Staunch Tathlum +1",
 		-- ear1="Creed Earring", 
 		head="Chev. Armet +1",neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Odnowa Earring",
 		body="Souv. Cuirass +1",hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Chev. Cuisses +1",feet="Souveran Schuhs +1"}
 		
-	sets.idle.KiteTank = {ammo="Staunch Tathlum",
+	sets.idle.KiteTank = {ammo="Staunch Tathlum +1",
 		head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Thureous Earring",
 		body="Tartarus Platemail",hands="Souv. Handsch. +1",ring1="Shadow Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Flume Belt",legs="Carmine Cuisses +1", feet="Hippo. Socks +1"}
 		
-    sets.idle.Reraise = {ammo="Staunch Tathlum",
+    sets.idle.Reraise = {ammo="Staunch Tathlum +1",
 		head="Twilight Helm",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
 		body="Twilight Mail",hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Souveran Schuhs +1"}
 		
-    sets.idle.Weak = {ammo="Staunch Tathlum",
+    sets.idle.Weak = {ammo="Staunch Tathlum +1",
 		head="Souveran Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1",ear2="Thureous Earring",
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Defending Ring",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
@@ -415,59 +415,59 @@ function init_gear_sets()
     sets.PhysicalShield = {sub="Ochain"}
     sets.MagicalShield = {sub="Aegis"}
 	
-    sets.defense.PDT = {ammo="Staunch Tathlum",
+    sets.defense.PDT = {ammo="Staunch Tathlum +1",
 		head="Chev. Armet +1", neck="Loricate Torque +1", ear1="Odnowa Earring +1", ear2="Thureous Earring",
 		body="Tartarus Platemail",hands="Souv. Handsch. +1",ring1="Moonlight Ring",ring2="Defending Ring",
 		back="Shadow Mantle",waist="Flume Belt",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
-    sets.defense.PDT_HP = {ammo="Staunch Tathlum",
+    sets.defense.PDT_HP = {ammo="Staunch Tathlum +1",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1", ear2="Odnowa Earring",
 		body="Rev. Surcoat +3",  hands="Souv. Handsch. +1",ring1="Moonlight Ring", ring2="Moonlight Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
-    sets.defense.MDT_HP = {ammo="Staunch Tathlum",
+    sets.defense.MDT_HP = {ammo="Staunch Tathlum +1",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1", ear2="Odnowa Earring",
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonlight Ring", ring2="Moonlight Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 		
-    sets.defense.MEVA_HP = {ammo="Staunch Tathlum",
+    sets.defense.MEVA_HP = {ammo="Staunch Tathlum +1",
         head="Souv. Schaller +1",neck="Loricate Torque +1",ear1="Odnowa Earring +1", ear2="Etiolation Earring",
 		body="Rev. Surcoat +3", hands="Souv. Handsch. +1",ring1="Moonlight Ring",  ring2="Moonlight Ring",
         back="Moonbeam Cape",waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
-    sets.defense.PDT_Reraise = {ammo="Staunch Tathlum",
+    sets.defense.PDT_Reraise = {ammo="Staunch Tathlum +1",
         head="Twilight Helm",neck="Loricate Torque +1", ear1="Odnowa Earring +1", ear2="Thureous Earring",
 		-- hands="Macabre Gaunt. +1",
         body="Twilight Mail", hands="Souv. Handsch. +1", ring1="Moonlight Ring", ring2="Defending Ring",
 		-- legs="Arke Cosciales",
 		back="Moonbeam Cape",waist="Flume Belt",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
-    sets.defense.MDT_Reraise = {ammo="Staunch Tathlum",
+    sets.defense.MDT_Reraise = {ammo="Staunch Tathlum +1",
 		-- ear2="Sanare Earring",
         head="Twilight Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",
         body="Twilight Mail", hands="Souv. Handsch. +1", ring1="Moonlight Ring", ring2="Defending Ring",
 		--
 		back="Reiki Cloak",waist="Flume Belt", legs="Souv. Diechlings +1", feet="Cab. Leggings +3"}
 
-	sets.defense.BDT = {ammo="Staunch Tathlum",
+	sets.defense.BDT = {ammo="Staunch Tathlum +1",
 		head="Souveran Schaller +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", ear2="Odnowa Earring",
 		body="Souv. Cuirass +1", hands="Souv. Handsch. +1", lring="Moonlight Ring", rring="Defending Ring",
 		back="Moonbeam Cape", waist="Nierenschutz", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}			
 	
-	sets.defense.Tank = {ammo="Staunch Tathlum",
+	sets.defense.Tank = {ammo="Staunch Tathlum +1",
 		-- ear1="Creed Earring", 
 		head="Souv. Schaller +1",neck="Loricate Torque +1", lear="Odnowa Earring +1", ear2="Thureous Earring",
 		body="Tartarus Platemail",hands="Souv. Handsch. +1", ring1="Shadow Ring", ring2="Defending Ring",
 		back="Shadow Mantle",waist="Flume Belt",legs="Chev. Cuisses +1",feet="Souveran Schuhs +1"}
 		
-	sets.defense.MEVA = {ammo="Staunch Tathlum",
+	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		--Founder's Corona  ear2="Sanare Earring",
         head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", ear2="Etiolation Earring",
 		body="Tartarus Platemail",hands="Leyline Gloves",ring1="Supershear Ring", ring2="Purity Ring",
 		--waist="Asklepian Belt",
         back="Reiki Cloak",waist="Flume Belt",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
-	sets.defense.Death = {ammo="Staunch Tathlum",
+	sets.defense.Death = {ammo="Staunch Tathlum +1",
 		-- Founder's Corona  ear2="Sanare Earring",
         head="Souv. Schaller +1",neck="Warder's Charm +1",lear="Odnowa Earring +1",ear2="Etiolation Earring",
 		-- ring1="Warden's Ring",
@@ -475,7 +475,7 @@ function init_gear_sets()
 		-- waist="Asklepian Belt", legs=gear.odyssean_fc_legs,
         back=gear.fastcast_jse_back,waist="Creed Baudrier",legs="Souv. Diechlings +1",feet="Souveran Schuhs +1"}
 		
-	sets.defense.Charm = {ammo="Staunch Tathlum",
+	sets.defense.Charm = {ammo="Staunch Tathlum +1",
 		-- Founder's Corona  neck="Unmoving Collar +1", ear2="Sanare Earring",
         head="Souv. Schaller +1",neck="Moonbeam Necklace",lear="Odnowa Earring +1", ear2="Etiolation Earring",
 		body="Tartarus Platemail",hands="Leyline Gloves",ring1="Supershear Ring",ring2="Purity Ring",
@@ -484,26 +484,26 @@ function init_gear_sets()
 		
 	-- To cap MDT with Shell IV (52/256), need 76/256 in gear.
     -- Shellra V can provide 75/256, which would need another 53/256 in gear.
-    sets.defense.OchainMDT = {sub="Aegis", ammo="Staunch Tathlum",
+    sets.defense.OchainMDT = {sub="Aegis", ammo="Staunch Tathlum +1",
 		-- Spellbr. Earring  Sanare Earring
 		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Shadow Ring", rring="Defending Ring",				
 		back="Reiki Cloak", waist="Creed Baudrier", legs="Mes'yohi Slacks", feet="Sulev. Leggings +2"}
 
-    sets.defense.OchainNoShellMDT = {sub="Aegis", ammo="Staunch Tathlum",
+    sets.defense.OchainNoShellMDT = {sub="Aegis", ammo="Staunch Tathlum +1",
 		-- Founder's Corona  Sanare Earring Spellbound. Earring 
 		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Shadow Ring", rring="Defending Ring",
 		-- Flax Sash 
 		back="Moonbeam Cape", waist="Creed Baudrier", legs="Souv. Diechlings +1", feet="Cab. Leggings +3"}
 
-    sets.defense.AegisMDT = {sub="Aegis", ammo="Staunch Tathlum",
+    sets.defense.AegisMDT = {sub="Aegis", ammo="Staunch Tathlum +1",
 		-- Founder's Corona Spellbr. Earring  Sanare Earring
 		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		body="Tartarus Platemail", hands="Souv. Handsch. +1", lring="Shadow Ring", rring="Defending Ring",				
 		back="Reiki Cloak", waist="Creed Baudrier", legs="Mes'yohi Slacks", feet="Sulev. Leggings +2"}
 
-    sets.defense.AegisNoShellMDT = {sub="Aegis", ammo="Staunch Tathlum",
+    sets.defense.AegisNoShellMDT = {sub="Aegis", ammo="Staunch Tathlum +1",
 		-- Founder's Corona  Sanare Earring Spellbound. Earring 
 		head="Souv. Schaller +1", neck="Warder's Charm +1", lear="Odnowa Earring +1", rear="Etiolation Earring",
 		-- Lunette Ring +1
@@ -535,17 +535,17 @@ function init_gear_sets()
 		body="Souveran Cuirass +1", hands="Souv. Handsch. +1", lring="Regal Ring", rring="Moonlight Ring",
 		back=gear.TP_jse_back, waist="Windbuffet Belt +1", legs="Carmine Cuisses +1", feet="Carmine Greaves +1"}
 
-	sets.engaged.Tank = {ammo="Staunch Tathlum",
+	sets.engaged.Tank = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		body="Souveran Cuirass +1", hands="Souv. Handsch. +1", lring="Moonlight Ring", rring="Defending Ring",
 		back=gear.TP_jse_back, waist="Nierenschutz", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 
-	sets.engaged.BreathTank = {ammo="Staunch Tathlum",
+	sets.engaged.BreathTank = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		body="Souveran Cuirass +1", hands="Souv. Handsch. +1", lring="Moonlight Ring", rring="Defending Ring",
 		back=gear.TP_jse_back, waist="Nierenschutz", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 
-	sets.engaged.Acc.BreathTank = {ammo="Staunch Tathlum",
+	sets.engaged.Acc.BreathTank = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		body="Souveran Cuirass +1", hands="Souv. Handsch. +1", lring="Moonlight Ring", rring="Defending Ring",
 		back=gear.TP_jse_back, waist="Nierenschutz", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
@@ -560,7 +560,7 @@ function init_gear_sets()
 		body="Souveran Cuirass +1", hands="Souv. Handsch. +1", lring="Moonlight Ring", rring="Defending Ring",
 		back=gear.TP_jse_back, waist="Nierenschutz", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
 
-	sets.engaged.NoShellTank = {ammo="Staunch Tathlum",
+	sets.engaged.NoShellTank = {ammo="Staunch Tathlum +1",
 		head="Souv. Schaller +1", neck="Loricate Torque +1", lear="Odnowa Earring +1", rear="Odnowa Earring",
 		body="Souveran Cuirass +1", hands="Souv. Handsch. +1", lring="Moonlight Ring", rring="Defending Ring",
 		back=gear.TP_jse_back, waist="Nierenschutz", legs="Souv. Diechlings +1", feet="Souveran Schuhs +1"}
