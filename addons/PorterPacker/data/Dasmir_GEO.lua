@@ -16,7 +16,7 @@ return {
     "Geo. Sandals +2",
     "Geo. Mitaines +2",
 	"Bagua Tunic",
-    "Bagua Sandals",
+    "Bagua Sandals +3",
     "Bagua Mitaines +3",    
     "Bagua Pants +3",
 	"Bagua Galero",

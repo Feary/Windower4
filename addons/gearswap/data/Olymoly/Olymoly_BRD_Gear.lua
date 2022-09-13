@@ -258,6 +258,7 @@ function init_gear_sets()
 	sets.midcast.Carol = {} -- hands="Mousai Gages +1"
 	sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +1"}
 	sets.midcast['Magic Finale'] = {range="Gjallarhorn"}
+	sets.midcast.Requiem = {range="Gjallarhorn"}
 	
 	-- Merited Songs
 	sets.midcast.Dirge = {}
@@ -282,7 +283,7 @@ function init_gear_sets()
 		back=gear.FC_jse_back, waist="Acuity Belt +1", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
 
 	-- For song debuffs (accuracy primary, duration secondary)
-	sets.midcast.ResistantSongDebuff = {main="Carnwenhan", sub="Ammurapi Shield", range="Gjallarhorn",
+	sets.midcast.ResistantSongDebuff = {main="Carnwenhan", sub="Ammurapi Shield",
 		head="Brioso Roundlet +3", neck="Moonbow Whistle +1", lear="Digni. Earring", rear="Regal Earring",
 		body="Brioso Justau. +3", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.FC_jse_back, waist="Acuity Belt +1", legs="Brioso Cannions +3", feet="Brioso Slippers +3"}
@@ -405,8 +406,7 @@ function init_gear_sets()
 		-- Linos Ebani Earring
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ashera Harness", hands="Volte Bracers", ring1="Inyanga Ring", ring2="Defending Ring",
-		-- Carrier Sash
-		back=gear.FC_jse_back, waist="Flume Belt", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
+		back=gear.FC_jse_back, waist="Carrier's Sash", legs="Brioso Cannions +3", feet="Inyanga Crackows +2"}
 
 	sets.idle.Weak = {main="Daybreak", sub="Genmei Shield", range="Gjallarhorn",
 		-- Linos

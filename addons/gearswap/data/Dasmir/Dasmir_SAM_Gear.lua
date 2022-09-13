@@ -480,6 +480,30 @@ function select_default_macro_book()
     end
 end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 017')
+end
+
+-- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
+function job_setup()
+
+    state.Buff.Sekkanoki = buffactive.Sekkanoki or false
+    state.Buff.Sengikori = buffactive.Sengikori or false
+    state.Buff['Meikyo Shisui'] = buffactive['Meikyo Shisui'] or false
+	state.Buff['Aftermath: Lv.3'] = buffactive['Aftermath: Lv.3'] or false
+	state.Buff['Third Eye'] = buffactive['Third Eye'] or false
+    state.Buff.Hasso = buffactive.Hasso or false
+    state.Buff.Seigan = buffactive.Seigan or false
+	state.Stance = M{['description']='Stance','Hasso','Seigan','None'}
+
+	autows = 'Tachi: Fudo'
+	rangedautows = "Apex Arrow"
+	autofood = 'Soy Ramen'
+
+	update_melee_groups()
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoStunMode","AutoDefenseMode",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","TreasureMode",})
+end
+
 --Job Specific Trust Overwrite
 function check_trust()
 	if not moving then

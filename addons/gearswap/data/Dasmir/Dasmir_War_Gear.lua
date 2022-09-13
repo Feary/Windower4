@@ -1,4 +1,4 @@
-function user_setup()
+function user_job_setup()
 	-- Options: Override default values
     state.OffenseMode:options('Normal','SomeAcc','Acc','FullAcc','Fodder')
     state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','FullAcc','Fodder')
@@ -214,7 +214,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {	
 		head="Sulevia's Mask +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring +1", rring="Defending Ring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring", rring="Defending Ring",
 		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.idle.Weak = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
@@ -224,21 +224,21 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {
 		head="Sulevia's Mask +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring +1", rring="Defending Ring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring", rring="Defending Ring",
 		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = {
 		head="Sulevia's Mask +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring +1", rring="Defending Ring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring", rring="Defending Ring",
 		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, {head="Twilight Helm",body="Twilight Mail"})
 		
 	sets.defense.MEVA = {
 		head="Sulevia's Mask +2", neck="Loricate Torque +1", lear="Etiolation Earring", rear="Merman's Earring",
-		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring +1", rring="Defending Ring",
+		body="Souveran Cuirass", hands="Sulev. Gauntlets +2", lring="Moonlight Ring", rring="Defending Ring",
 		back=gear.Enmity_jse_back, waist="Nierenschutz", legs="Souveran Diechlings", feet="Souveran Schuhs"}
 
 	sets.Kiting = {feet="Hermes' Sandals"}
@@ -1340,7 +1340,7 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {legs="Volte Hose", waist="Chaac Belt"})
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Aganoshe", sub="Utu Grip"} --
+	sets.weapons.Default = {main="Pick of Trials", sub="Adapa Shield"} --
 	sets.weapons.DualWeapons = {main="Dolichenus", sub="Naegling"} -- Kaja Axe
 	sets.weapons.Axe = {main="Dolichenus", sub="Adapa Shield"}
 	sets.weapons.Greatsword = {main="Montante", sub="Utu Grip"} 
@@ -1370,13 +1370,38 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
     -- Default macro set/book
-    if player.sub_job == 'SAM' then
+	if player.sub_job == 'NIN' then
+        set_macro_page(1, 11)
+    if player.sub_job == 'DNC' then
         set_macro_page(2, 11)
-    elseif player.sub_job == 'DNC' then
-        set_macro_page(3, 11)
+    elseif player.sub_job == 'SAM' then
+        set_macro_page(2, 11)
     elseif player.sub_job == 'THF' then
         set_macro_page(4, 11)
     else
         set_macro_page(1, 11)
     end
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 011')
+end
+
+function job_setup()
+
+	state.Buff['Brazen Rush'] = buffactive['Brazen Rush'] or false
+	state.Buff["Warrior's Charge"] = buffactive["Warrior's Charge"] or false
+	state.Buff['Mighty Strikes'] = buffactive['Mighty Strikes']  or false
+	state.Buff.Retaliation = buffactive['Retaliation'] or false
+	state.Buff.Restraint = buffactive['Restraint'] or false
+    state.Buff['Aftermath'] = buffactive['Aftermath'] or false
+	state.Buff['Aftermath: Lv.3'] = buffactive['Aftermath: Lv.3'] or false
+    state.Buff.Hasso = buffactive.Hasso or false
+    state.Buff.Seigan = buffactive.Seigan or false
+	state.Stance = M{['description']='Stance','Hasso','Seigan','None'}
+
+	autows = "Ukko's Fury"
+	autofood = 'Soy Ramen'
+	
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoStunMode","AutoDefenseMode",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","TreasureMode",})
 end

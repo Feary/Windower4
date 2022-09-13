@@ -28,23 +28,22 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 return {
     name = 'Ironclad Triturator',
-    collectable = 3293, -- Iron Plate
+    collectable = 3293, --Iron Plate
     collectable_target_count = 50,
     pops = { {
-        id = 3245, -- Bevel Gear 
+        id = 3245, --Bevel Gear
         type = 'item',
         dropped_from = {
-            name = 'Koghatu, Forced (???)',
+            name = 'Koghatu, Forced (G-8)',
             pops = { {
-                id = 3250, -- Helical Gear
+                id = 3250, --Helical Gear
                 type = 'item',
-                dropped_from = { name = 'Mechanical Menace, Spawns Around (G-8)/(H-8)' }
+                dropped_from = { name = 'Mechanical Menace, (G-8/H-8)' }
             } }
         }
     }, {
-         id = 3251, -- Gear Fluid
+        id = 3251, --Gear Fluid
         type = 'item',
-        dropped_from = { name = 'Sub-zero Gear, Spawns around (F-8)/(F-9)' }
-        }
-    } 
+        dropped_from = { name = 'Sub-zero Gear, (F-8/F-9)' }
+    } }
 }

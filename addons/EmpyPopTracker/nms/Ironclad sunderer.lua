@@ -28,23 +28,22 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 return {
     name = 'Ironclad Sunderer',
-    collectable = 3293, -- Iron Plate
+    collectable = 3293, --Iron Plate
     collectable_target_count = 50,
     pops = { {
-        id = 3260, -- Teekesselchen Fragment 
+        id = 3260, --Teekesselchen Fragment
         type = 'item',
         dropped_from = {
-            name = 'Teekesselchen, Forced (???)',
+            name = 'Teekesselchen, Forced (I-5)',
             pops = { {
-                id = 3265, -- Bubbling Oil
+                id = 3265, --Bubbling Oil
                 type = 'item',
-                dropped_from = { name = 'Sinister Seidel, Spawns Around (???)' }
+                dropped_from = { name = 'Sinister Seidel, (J-5)' }
             } }
         }
     }, {
-         id = 3266, --Darkflame Arm
+        id = 3266, --Darkflame Arm
         type = 'item',
-        dropped_from = { name = 'Stygian Djinn, Spawns around (???)' }
-        }
-    } 
+        dropped_from = { name = 'Stygian Djinn, (K-7)' }
+    } }
 }

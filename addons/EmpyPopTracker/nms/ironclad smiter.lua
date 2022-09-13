@@ -28,23 +28,22 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 return {
     name = 'Ironclad Smiter',
-    collectable = 3293, -- Iron Plate
+    collectable = 3293, --Iron Plate
     collectable_target_count = 50,
     pops = { {
-        id = 3230, -- Tablilla Mercury 
+        id = 3230, --Tablilla Mercury
         type = 'item',
         dropped_from = {
             name = 'Tablilla, Forced (C-11)',
             pops = { {
                 id = 3235, --Sandy Shard
                 type = 'item',
-                dropped_from = { name = 'Sand Sweeper, Spawns Around (D-10)' }
+                dropped_from = { name = 'Sand Sweeper, (D-10)' }
             } }
         }
     }, {
-         id = 3236, --Smouldering Arm
+        id = 3236, --Smoldering Arm
         type = 'item',
-        dropped_from = { name = 'Bonfire, Spawns around (D-11)/(E-11)' }
-        }
-    } 
+        dropped_from = { name = 'Bonfire, (D-11/E-11)' }
+    } }
 }

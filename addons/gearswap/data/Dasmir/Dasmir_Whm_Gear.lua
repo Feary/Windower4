@@ -576,6 +576,11 @@ function select_default_macro_book()
 	end	
 end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 001')
+end
+
+
 buff_spell_lists = {
 	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
 		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	When='Always'},

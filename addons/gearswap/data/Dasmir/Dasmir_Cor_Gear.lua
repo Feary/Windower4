@@ -8,8 +8,8 @@ function user_setup()
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
 	state.Weapons:options('Default','DualRangedWeapons', 'SavageWeapons', 'DualWeapons', 'LeadenWeapons', 'RollMeleeWeapons', 'RollRangedWeapons', 'None')
 	
-    gear.RAbullet = "Bullet"
-    gear.WSbullet = "Bullet"
+    gear.RAbullet = "Eminent Bullet"
+    gear.WSbullet = "Eminent Bullet"
     gear.MAbullet = "Bullet" -- For MAB WS, do not put single-use bullets here.
     gear.QDbullet = "Animikii Bullet"
     options.ammo_warning_limit = 15
@@ -434,7 +434,7 @@ function init_gear_sets()
 	-- Fencer Savage 
 	sets.weapons.SavageWeapons = {main="Naegling",sub="Nusku Shield", range="Holliday"}--range="Ataktos"
 	-- DW Savage
-	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}--range="Ataktos"
+	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Gun of Trials"}--range="Ataktos"
 	sets.weapons.DualDaggers = {main="Tauret", sub="Blurred Knife +1", range="Ataktos"}
 	-- Rostam Path B Tauret
 	sets.weapons.AeolianEdge = {main="Tauret",sub="Naegling", range="Ataktos"}
@@ -455,19 +455,19 @@ function init_gear_sets()
 	-- Single Weapon
     sets.engaged = {
 		-- head="Adhemar Bonnet +1"  rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Brutal Earring", rear="Mache Earring +1",
+		head="Malignance Chapeau", neck="Iskur Gorget", lear="Brutal Earring", rear="Mache Earring +1",
 		-- body="Herculean Vest", TA hands="Adhemar Wrist. +1"
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
 		--  feet="Herculean Boots", TA
-		back=gear.tp_jse_back, waist="Windbuffet Belt", legs="Samnuha Tights", feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back, waist="Windbuffet Belt", legs="Samnuha Tights", feet="Malignance Boots"}
 
     sets.engaged.Acc = {
-		-- head="Adhemar Bonnet +1"  rear="Cessance Earring"
-		head="Meghanada Visor +2", neck="Iskur Gorget", lear="Brutal Earring", rear="Mache Earring +1",
+		-- head="Adhemar Bonnet +1" rear="Cessance Earring"
+		head="Malignance Chapeau", neck="Iskur Gorget", lear="Brutal Earring", rear="Mache Earring +1",
 		-- body="Herculean Vest", TA hands="Adhemar Wrist. +1"
 		body="Meg. Cuirie +2", hands="Meg. Gloves +2", lring="Petrov Ring", rring="Epona's Ring",
 		--  feet="Herculean Boots", TA
-		back=gear.tp_jse_back, waist="Windbuffet Belt", legs="Samnuha Tights", feet="Meg. Jam. +2"}
+		back=gear.tp_jse_back, waist="Windbuffet Belt", legs="Samnuha Tights", feet="Malignance Boots"}
 	
 	sets.engaged.Low = sets.engaged.Acc
 

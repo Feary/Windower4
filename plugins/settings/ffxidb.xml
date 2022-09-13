@@ -10,6 +10,7 @@
         <ShowMarker>true</ShowMarker>
         <ShowTargetLine>true</ShowTargetLine>
         <Ranges />
+        <Scale>1</Scale>
     </global>
     <Yerp>
         <X>1085</X>

@@ -80,17 +80,19 @@ function init_gear_sets()
 	--------------------------------------
 	-- Single 
 	sets.weapons.Default = {main="Sangoma", sub="Genmei Shield"}
+	
 	sets.weapons.Dagger = {main="Sangoma", sub="Genmei Shield"}
-	--sets.weapons.Aeneas = {main="Aeneas", sub="Genmei Shield"}
+	sets.weapons.Aeneas = {main="Aeneas", sub="Genmei Shield"}
 	sets.weapons.Carn = {main="Kali", sub="Genmei Shield"}
 	sets.weapons.Twashtar = {main="Twashtar", sub="Genmei Shield"}
 	sets.weapons.Mandau = {main="Mandau", sub="Genmei Shield"}
-	--sets.weapons.Aeneas = {main="Aeneas",sub="Genmei Shield"}
+	
 	sets.weapons.Sword = {main="Naegling", sub="Genmei Shield"}
+	
 	-- Dualwield
-	sets.weapons.DualDaggers = {main="Sangoma", sub="Mandau"}
+	sets.weapons.DualDaggers = {main="Sangoma", sub="Blurred Knife +1"}
 	sets.weapons.DualSwords = {main="Naegling", sub="Blurred Knife +1"}
-	sets.weapons.DualNukeWeapons = {main="Malevolence",sub="Malevolence"}
+	sets.weapons.DualNukeWeapons = {main="Tauret",sub="Kaja Knife"}
 	
 	-- Precast Sets
 
@@ -148,6 +150,7 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ranged=gear.Instrument_WSD,
+		-- Nyame
 		head="Lustratio Cap +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
 		body="Bihu Jstcorps. +3",hands="Lustr. Mittens +1",ring1="Epaminondas's Ring",ring2="Ilabrat Ring",
 		back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"}
@@ -275,14 +278,14 @@ function init_gear_sets()
 		main="Kali", sub="Ammurapi Shield",
 		-- head="Brioso Roundlet +3", lear="Digni. Earring", rear="Regal Earring",
 		head="Inyanga Tiara +1", neck="Moonbow Whistle +1",
-		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", Stikini Ring +1 Stikini Ring +1
+		-- body="Brioso Justau. +3", hands="Brioso Cuffs +3", 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Stikini ring +1", rring="Stikini ring +1",
 		--  waist="Luminary Sash", legs="Brioso Cannions +3", feet="Brioso Slippers +3"
 		back=gear.FC_jse_back, waist="Ovate Rope", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 	
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {
-		--  neck="Voltsurge Torque",  rear="Enchntr. Earring +1",
+		--  neck="Voltsurge Torque", rear="Enchntr. Earring +1",
 		head="Nahtirah Hat", lear="Loquac. Earring",
 		-- Leyline Gloves rring="Kishar Ring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", lring="Prolix Ring", 
