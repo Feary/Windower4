@@ -16,7 +16,7 @@ return {
     "Wakido Kabuto +1",
     "Wakido Domaru +2",
     "Wakido Haidate +2",
-	"Wakido Sune-Ate",
+	"Wak. Sune-Ate +1",
     "Sakonji Kote +1",
     "Sakonji Haidate +1",    
     "Sakonji Domaru +1",
@@ -24,4 +24,5 @@ return {
 	"Sakonji Sune-Ate",
 	"Kaja Grip",
 	"Shining One",
+	"Khonsu"
 }

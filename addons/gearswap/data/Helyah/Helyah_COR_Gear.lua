@@ -70,27 +70,27 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 	
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1", hands="Lanun Gants +1"}
-    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +1"}
-    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +1"}
-    sets.precast.JA['Random Deal'] = {body="Lanun Frac +1"}
-    sets.precast.FoldDoubleBust = {hands="Lanun Gants +1"}
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac", hands="Lanun Gants"}
+    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
+    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes"}
+    sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
+    sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
     
     sets.precast.CorsairRoll = {ammo="Compensator",
 		-- Odndowa Earring 
 		head="Lanun Tricorne +1", neck="Regal Necklace", lear="Etiolation Earring", rear="Merman's Earring",
 		-- dt herc?
-		body="Meg. Cuirie +2", hands="Chasseur's Gants +1", lring="Dark Ring", rring="Defending Ring",
+		body="Meg. Cuirie +2", hands="Chasseur's Gants +1", lring="Barataria Ring", rring="Defending Ring",
 		--  legs="Desultor Tassets" -dt feet
 		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
-    sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
+    sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     
-    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes +1"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
-    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
+    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
+    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
     
 	-- Quick Draw
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
@@ -489,4 +489,30 @@ function select_default_macro_book()
     else
         set_macro_page(1, 10)
     end   
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 010')
+end
+
+function job_setup()
+	-- Whether to use Compensator under a certain threshhold even when weapons are locked.
+	state.CompensatorMode = M{'Never','300','1000','Always'}
+	-- Whether to automatically generate bullets.
+	state.AutoAmmoMode = M(true,'Auto Ammo Mode')
+	state.UseDefaultAmmo = M(true,'Use Default Ammo')
+	state.Buff['Triple Shot'] = buffactive['Triple Shot'] or false
+
+	-- Whether to use Luzaf's Ring
+	state.LuzafRing = M(false, "Luzaf's Ring")
+    -- Whether a warning has been given for low ammo
+	
+	autows = 'Savage Blade'
+	rangedautows = 'Last Stand'
+	autofood = 'Maringna'
+	ammostock = 198
+
+    define_roll_values()
+	
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","RngHelper","AutoStunMode","AutoDefenseMode","LuzafRing",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","RangedMode","WeaponskillMode","ElementalMode","IdleMode","Passive","RuneElement","CompensatorMode","TreasureMode",})
 end

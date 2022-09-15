@@ -124,6 +124,7 @@ function init_gear_sets()
 
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.	
 	sets.ConserveMP = {ammo="Clarus Stone",
+		-- Metamor. Ring +1
 		waist="Austerity Belt", legs="Lengo Pants"}
 		
 	sets.midcast.Teleport = sets.ConserveMP

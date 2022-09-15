@@ -21,7 +21,7 @@ return {
 	"Luhlaza Shalwar",
 	"Luhlaza Charuqs",
 	"Assim. Keffiyeh",
-    "Assim. Jubbah +1",
+    "Assim. Jubbah +2",
     "Assim. Shalwar",
     "Assim. Charuqs",
     "Assim. Bazu.",

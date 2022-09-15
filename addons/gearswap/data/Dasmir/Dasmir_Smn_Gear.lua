@@ -2,7 +2,7 @@
 function user_job_setup()
     state.OffenseMode:options('Normal', 'Acc')
     state.CastingMode:options('Normal', 'Resistant')
-    state.IdleMode:options('Normal', 'PDT')
+    state.IdleMode:options('Normal', 'PDT', 'TPEat')
 	state.Weapons:options('None','Nirvana','Gridarvor')
 
 	-- Avatar Ammo - 
@@ -21,6 +21,7 @@ function user_job_setup()
 	gear.phys_jse_back 	=	{name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','System: 1 ID: 1247 Val: 4',}}
 	gear.FC_jse_back 	=	{name="Campestres's Cape", augments={'MP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Damage taken-5%',}}
 	gear.Cure_jse_back 	= 	{name="Campestres's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%',}}
+	gear.ws_jse_back = 		{name="Campestres's Cape",augments={'"Fast Cast"+10',}}
 	
 	gear.phys_BP_feet 	= 	{name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}}
 	gear.magic_BP_feet 	= 	{name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}}
@@ -313,26 +314,26 @@ function init_gear_sets()
     --------------------------------------
     
     -- Resting sets
-    sets.resting = {main="Boonwell Staff", sub="Kaja Grip",  ammo=gear.avatar_ammo,
+    sets.resting = {main="Boonwell Staff", sub="Khonsu",  ammo=gear.avatar_ammo,
         head="Beckoner's Horn +1", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
         body="Shomonjijoe +1", hands=gear.merlinic_refresh_hands, ring1="Inyanga Ring", ring2="Defending Ring",
 		--  feet="Baayami Sabots"
         back=gear.FC_jse_back, waist="Austerity Belt", legs="Assid. Pants +1", feet="Inyan. Crackows +2"}
     
     -- Idle sets
-    sets.idle = {main=gear.grioavolr_refresh_staff, sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.idle = {main=gear.grioavolr_refresh_staff, sub="Khonsu", ammo=gear.avatar_ammo,
         head="Convoker's Horn +3", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
 		body="Shomonjijoe +1", hands=gear.merlinic_refresh_hands, ring1="Inyanga Ring", ring2="Defending Ring",
 		-- feet="Baayami Sabots"
         back=gear.FC_jse_back, waist="Regal Belt", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 
-    sets.idle.PDT = {main="Earth Staff", sub="Kaja Grip",  ammo=gear.avatar_ammo,
+    sets.idle.PDT = {main="Earth Staff", sub="Khonsu",  ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
         -- body="Udug Jacket",
 		body="Inyanga Jubbah +2", hands="Asteria Mitts +1", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 	
-	sets.idle.MDT = {main="Earth Staff", sub="Kaja Grip",  ammo=gear.avatar_ammo,
+	sets.idle.MDT = {main="Earth Staff", sub="Khonsu",  ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
         -- body="Udug Jacket",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring", ring2="Defending Ring",
@@ -365,7 +366,7 @@ function init_gear_sets()
         body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
         back="Conveyance Cape", waist="Fucho-no-obi", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 		
-    sets.idle.PDT.Avatar = {main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.idle.PDT.Avatar = {main="Nirvana", sub="Khonsu", ammo=gear.avatar_ammo,
 		-- Oneiros Grip 
 		-- ear1="Rimeice Earring",
         head="Convoker's Horn +3",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Evans Earring",
@@ -373,19 +374,19 @@ function init_gear_sets()
         body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
         back=gear.FC_jse_back, waist="Regal Belt", legs="Assid. Pants +1", feet="Convo. Pigaches +3"}
 
-    sets.idle.Spirit = {main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.idle.Spirit = {main="Nirvana", sub="Khonsu", ammo=gear.avatar_ammo,
         head="Convoker's Horn +3",neck="Caller's Pendant",ear1="Ethereal Earring",ear2="Evans Earring",
 		--  ring1="Evoker's Ring",
         body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring", ring2="Defending Ring",
         back="Conveyance Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
-    sets.idle.PDT.Spirit = {main="Nirvana",sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.idle.PDT.Spirit = {main="Nirvana",sub="Khonsu", ammo=gear.avatar_ammo,
 		-- sub="Oneiros Grip"
         head="Convoker's Horn +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Evans Earring",
         body="Apo. Dalmatica +1", hands=gear.merlinic_refresh_hands, ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back,waist="Regal Belt",legs="Assid. Pants +1",feet="Convo. Pigaches +3"}
 		
-	sets.idle.TPEat.Avatar = set_combine(sets.idle.Avatar, {})--neck="Chrys. Torque"
+	--sets.idle.TPEat.Avatar = set_combine(sets.idle.Avatar, {})--neck="Chrys. Torque"
 		
 	--Favor always up and head is best in slot idle so no specific items here at the moment.
     sets.idle.Avatar.Favor = {head="Beckoner's Horn +1"}
@@ -404,21 +405,21 @@ function init_gear_sets()
 	
 	sets.perp.Carbuncle = {hands="Asteria Mitts +1"}
     sets.perp.Diabolos = {}
-	sets.perp['Cait Sith'] = {}--hands="Lamassu Mitts"
+	--sets.perp.['Cait Sith'] = {}--hands="Lamassu Mitts"
     sets.perp.Alexander = sets.midcast.Pet.BloodPactWard
 
 	-- Not really used anymore, was for the days of specific staves for specific avatars.
     sets.perp.staff_and_grip = {}
     
     -- Defense sets
-    sets.defense.PDT = {main="Earth Staff", sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.defense.PDT = {main="Earth Staff", sub="Khonsu", ammo=gear.avatar_ammo,
 		--ear1="Handler's Earring +1",
 		head="Inyanga Tiara +2", neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Enmerkar Earring",
         -- Udug Jacket 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back, waist="Regal Belt", legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
-    sets.defense.MDT = {main="Earth Staff", sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.defense.MDT = {main="Earth Staff", sub="Khonsu", ammo=gear.avatar_ammo,
         head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Enmerkar Earring",
         body="Inyanga Jubbah +2",hands="Inyan. Dastanas +2", ring1="Dark Ring",ring2="Defending Ring",
         back=gear.FC_jse_back,waist="Regal Belt",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
@@ -450,21 +451,21 @@ function init_gear_sets()
     -- Weapons Sets
     --------------------------------------
 	
-	sets.weapons.Nirvana = 		{main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo}
-	sets.weapons.Gridarvor =	{main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo}
+	sets.weapons.Nirvana = 		{main="Nirvana", sub="Khonsu", ammo=gear.avatar_ammo}
+	sets.weapons.Gridarvor =	{main="Nirvana", sub="Khonsu", ammo=gear.avatar_ammo}
     
 	--------------------------------------
     -- Engaged sets
     --------------------------------------
     
     -- Normal melee group
-    sets.engaged = {main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo,
+    sets.engaged = {main="Nirvana", sub="Khonsu", ammo=gear.avatar_ammo,
 		-- ear1="Digni. Earring", ear2="Telos Earring", 
         head="Convoker's Horn +3", neck="Shulmanu Collar", lear="Brutal Earring", rear="Zennanroi Earring",
         body="Con. Doublet +3", hands="Convo. Bracers +2", ring1="Varar Ring +1", ring2="Varar Ring +1",
 		-- waist="Olseni Belt", 
         back=gear.phys_jse_back, waist="Regal Belt", legs="Convo. Spats +3", feet="Convo. Pigaches +3"}
-	sets.engaged.Acc = {main="Nirvana", sub="Kaja Grip", ammo=gear.avatar_ammo,
+	sets.engaged.Acc = {main="Nirvana", sub="Khonsu", ammo=gear.avatar_ammo,
 		-- ear1="Digni. Earring", ear2="Telos Earring", 
         head="Convoker's Horn +3", neck="Shulmanu Collar",  lear="Brutal Earring", rear="Zennanroi Earring",
         body="Con. Doublet +3", hands="Convo. Bracers +2", ring1="Varar Ring +1", ring2="Varar Ring +1",

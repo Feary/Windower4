@@ -14,12 +14,6 @@ function user_setup()
 	gear.Cure_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
 	gear.Macc_jse_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}}
 	
-	gear.obi_cure_waist = "Austerity Belt"
-	gear.obi_cure_back = gear.Macc_jse_back
-
-	gear.obi_nuke_waist = "Sekhmet Corset"
-	gear.obi_nuke_back = gear.Macc_jse_back
-	
 	--[[Global binds you may want to change.
 	Bind special characters.
 	@ = Windows Key
@@ -522,7 +516,7 @@ function init_gear_sets()
 		back=gear.fastcast_jse_back, waist="Windbuffet Belt", legs="Aya. Cosciales +2", feet="Aya. Gambieras +2"}
 
 	-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Divine Caress'] = {hands="Ebers Mitts +1",back="Mending Cape"}
+    sets.buff['Divine Caress'] = {hands="Ebers Mitts",back="Mending Cape"}
 	
 	sets.HPDown = {}
 		
@@ -535,6 +529,10 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
 	set_macro_page(1, 2)
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 001')
 end
 
 buff_spell_lists = {

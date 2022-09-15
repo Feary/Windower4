@@ -16,6 +16,7 @@ function user_job_setup()
 	gear.magic_BP_Staff = 	{name="Nirvana"}
 	gear.macc_BP_Staff = 	{name="Espiritus", augments={'Summoning magic skill +15','Pet: Mag. Acc.+30','Pet: Damage taken -4%',}}
 
+	-- Ambuscade Cape
 	gear.magic_jse_back = 	{name="Campestres's Cape",augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: "Regen"+10','Pet: "Regen"+5',}}
 	gear.phys_jse_back = 	{name="Campestres's Cape",augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Haste+10','Pet: Damage taken -5%',}}
 	gear.FC_jse_back = 		{name="Campestres's Cape",augments={'"Fast Cast"+10',}}
