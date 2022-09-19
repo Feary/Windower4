@@ -1,9 +1,9 @@
 return {
     "Karambit",
-	"Anch. Crown +2",
-	"Anch. Cyclas +2",
-    "Anchor. Gloves +2",
-    "Anch. Hose +2",
+	"Anch. Crown +3",
+	"Anch. Cyclas +3",
+    "Anchor. Gloves +3",
+    "Anch. Hose +3",
 	"Anch. Gaiters +3",   
     "Bhikku Cyclas +1",
     "Bhikku Crown",

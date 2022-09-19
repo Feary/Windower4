@@ -1,6 +1,4 @@
 return {
-	"Tokko Knife",
-	"Naegling",
 	"Meg. Chausses +2",
 	"Meg. Cuirie +2",
 	"Meg. Gloves +2",
@@ -14,8 +12,9 @@ return {
 	"Mummu Wrists +2",
 	"Pill. Bonnet +2",
 	"Pill. Culottes +3",
-	"Pill. Poulaines +2",
+	"Pill. Poulaines +3",
 	"Pillager's Vest +2",
+	"Pill. Armlets +3",
 	"Plun. Armlets +1",
 	"Plun. Bonnet +1",
 	"Plun. Culottes +1",
@@ -26,7 +25,11 @@ return {
 	"Skulk. Poulaines +1",
 	"Skulker's Bonnet +1",
 	"Skulker's Vest",
+	"Skulker's Armlets",
 	"Tauret",
+	"Tokko Knife",
+	"Kaja Sword",
+	"Naegling",
 	"Ullr",
 	"Karambit"
 }

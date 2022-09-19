@@ -226,7 +226,7 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         --body="Malignance Tabard",hands="Malignance Gloves",
-        body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
+        body="Ashera Harness", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -234,19 +234,19 @@ function init_gear_sets()
 		--ear2="Sanare Earring",
 		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         --body="Malignance Tabard",hands="Malignance Gloves",
-        body="Emet Harness +1", hands="Kurys Gloves", ring1="Defending Ring",ring2="Vengeful Ring",
+        body="Ashera Harness", hands="Kurys Gloves", ring1="Defending Ring",ring2="Vengeful Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau", neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         --body="Malignance Tabard",hands="Malignance Gloves",
-        body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
+        body="Ashera Harness", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau", neck="Warder's Charm +1",ear1="Genmei Earring",ear2="Sanare Earring",
         -- body="Malignance Tabard",hands="Malignance Gloves",
-         body="Emet Harness +1", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
+         body="Ashera Harness", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
 
 

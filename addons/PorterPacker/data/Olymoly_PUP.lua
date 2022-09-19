@@ -8,7 +8,7 @@ return {
 	"Pitre Tobe +1",
 	"Pitre Dastanas +1",	
 	"Pitre Churidars +1",
-	"Pitre Babouches +1",
+	"Pitre Babouches +3",
 	"Foire Taj +2",
 	"Foire Tobe +3",
 	"Foire Dastanas +3",	

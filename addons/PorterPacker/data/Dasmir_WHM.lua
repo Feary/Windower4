@@ -22,7 +22,7 @@ return {
     "Piety Pantaln. +3",
     "Th. Pantaloons +2",
     "Theo. Bliaut +3",
-    "Theo. Cap +1",
+    "Theo. Cap +2",
     "Theo. Duckbills +2",
     "Theophany Mitts +3",
 	"Kaja Rod",

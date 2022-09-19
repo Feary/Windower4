@@ -1,8 +1,8 @@
 return {   
     "Atro. Chapeau +2",
-    "Atrophy Tabard +2",
-	"Atrophy Gloves +2",
-    "Atrophy Tights +2",
+    "Atrophy Tabard +3",
+	"Atrophy Gloves +3",
+    "Atrophy Tights +3",
 	"Atro. Boots +2",    
     "Viti. Chapeau +3",    
     "Viti. Tabard +3",

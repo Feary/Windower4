@@ -73,7 +73,7 @@ function init_gear_sets()
 	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"} -- body="Mirke Wardecors",
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
 	sets.precast.JA.Familiar = {legs="Ankusa Trousers +1"}
-	sets.precast.JA.Tame = {head="Totemic Helm +2"}
+	sets.precast.JA.Tame = {head="Totemic Helm +3"}
 	sets.precast.JA.Spur = {back="Artio's Mantle",feet="Nukumi Ocreae"}
 	sets.SpurAxe = {main="Skullrender"}
 	sets.SpurAxesDW = {main="Skullrender",sub="Skullrender"}
@@ -92,7 +92,7 @@ function init_gear_sets()
 		-- head="Stout Bonnet"   ear2="Domesticator's Earring",
 		head="Meghanada Visor +2", neck="Phalaina Locket", ear1="Lifestorm Earring", 
 		-- Malignance Gloves
-		body="Totemic Jackcoat +1", hands="Meg. Gloves +2", ring1="Stikini Ring +1", ring2="Stikini Ring +1",
+		body="Tot. Jackcoat +3", hands="Meg. Gloves +2", ring1="Stikini Ring +1", ring2="Stikini Ring +1",
 		-- waist="Klouskap Sash", legs="Ankusa Trousers +3",
 		back=gear.FC_jse_back, legs="Tot. Trousers +2", feet="Ankusa Gaiters +1"}
 
@@ -102,9 +102,9 @@ function init_gear_sets()
 
 	-- Charm = CHR
 	sets.precast.JA.Charm = {
-		-- neck=Unmoving Collar +1", rear="Enchanter's Earring
-		head="Totemic Helm +2", neck="Sanctity Necklace", lear="Enchntr. Earring +1",
-		-- Carb. Ring +1
+		-- neck="Unmoving Collar +1", rear="Enchanter's Earring
+		head="Totemic Helm +3", neck="Sanctity Necklace", lear="Enchntr. Earring +1",
+		-- Carb. Ring +1 Metamor. Ring +1
 		body="Ankusa Jackcoat +1", hands="Ankusa Gloves +1",
 		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers +1", feet="Ankusa Gaiters +1"}
 
@@ -182,7 +182,7 @@ function init_gear_sets()
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +1 +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +2", lring="Regal Ring", rring="Petrov Ring",
+		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -190,7 +190,7 @@ function init_gear_sets()
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +2", lring="Regal Ring", rring="Petrov Ring",
+		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -198,7 +198,7 @@ function init_gear_sets()
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +1 +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +2", lring="Regal Ring", rring="Petrov Ring",
+		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -206,7 +206,7 @@ function init_gear_sets()
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +1 +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +2", lring="Regal Ring", rring="Petrov Ring",
+		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -214,7 +214,7 @@ function init_gear_sets()
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +2", lring="Regal Ring", rring="Petrov Ring",
+		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -252,7 +252,7 @@ function init_gear_sets()
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +2", lring="Regal Ring", rring="Petrov Ring",
+		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
@@ -260,14 +260,14 @@ function init_gear_sets()
 		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
 		-- Ankusa Jackcoat +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +2", lring="Regal Ring", rring="Petrov Ring",
+		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
 		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 	
 	sets.precast.WS['Onslaught'] = {--ammo="Ginsen", 
 		-- Ankusa Helm +3 neck="Bst. Collar +2", Thud Earring  Cessance Earring
 		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Sherida Earring",
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +2", lring="Petrov Ring", rring="Ilabrat Ring",
+		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Petrov Ring", rring="Ilabrat Ring",
 		-- legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
 		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 		
@@ -314,7 +314,7 @@ function init_gear_sets()
 
 	sets.midcast.Pet.ReadyRecast = {}-- legs="Desultor Tassets"
 	sets.midcast.Pet.ReadyRecastDW = {} -- legs="Desultor Tassets"
-	sets.midcast.Pet.Neutral = {head="Totemic Helm +2"}
+	sets.midcast.Pet.Neutral = {head="Totemic Helm +3"}
 	sets.midcast.Pet.Favorable = {head="Nuk. Cabasset +1"}
 	sets.midcast.Pet.TPBonus = {hands="Nukumi Manoplas +1"}
 
@@ -475,11 +475,11 @@ function init_gear_sets()
 		back=gear.tp_jse_back,waist="Patentia Sash",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
 	sets.engaged.DW.SomeAcc = {--ammo="Ginsen",
-		-- Malignance Chapeau  lear="Ebani Earring", rear="Sherida Earring",
+		--  lear="Ebani Earring", rear="Sherida Earring",
 		head="Malignance Chapeau", neck="Anu Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		-- Malignance Gloves Gere Ring
 		body="Tali'ah Manteel +2",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
-		-- Malignance Tights Malignance Boots
+		-- Malignance Tights 
 		back=gear.tp_jse_back,waist="Patentia Sash",legs="Meg. Chausses +2",feet="Malignance Boots"}
 
 	sets.engaged.DW.Acc = {--ammo="Ginsen",
