@@ -12,12 +12,12 @@ function user_job_setup()
 	state.Weapons:options('Katana','Kikoku','Sword','Dagger','MagicWeapons','ProcDagger','ProcSword','ProcGreatSword','ProcScythe','ProcPolearm','ProcGreatKatana','ProcKatana','ProcClub','ProcStaff')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None','SuppaBrutal','DWEarrings','DWMax'}
 
-	gear.wsd_jse_back = {name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	gear.wsd_jse_back 		= {name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 	-- DEX+20, Accuracy/Attack +30, DA+10 TP and Blade: Shun
-	gear.da_jse_back = {name="Andartia's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	gear.da_jse_back		= {name="Andartia's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 	-- INT+20, MAttkBonus +10, MAcc/MDmg +20, MAcc+10
-	gear.Nuke_jse_back = "Andartia's Mantle"
-	gear.fc_jse_back =  "Andartia's Mantle"
+	gear.Nuke_jse_back 		= {name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	gear.fc_jse_back 		=  "Andartia's Mantle"
 	
 	send_command('bind ^` input /ja "Innin" <me>')
 	send_command('bind !` input /ja "Yonin" <me>')
@@ -54,7 +54,7 @@ function init_gear_sets()
     sets.precast.Waltz = {ammo="Yamarang",
         head="Mummu Bonnet +2",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
         --body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands ring2="Valseur's Ring",
-		body="Mummu Jacket +2", hands="Mummu Wrists. +2", ring1="Metamor. Ring +1", ring2="Metamorph Ring",
+		body="Mummu Jacket +2", hands="Mummu Wrists +2", ring1="Metamor. Ring +1", ring2="Metamorph Ring",
         back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet="Rawhide Boots"}
 
     -- Don't need any special gear for Healing Waltz.
@@ -69,7 +69,7 @@ function init_gear_sets()
     sets.precast.Flourish1 = {ammo="Yamarang",
         head="Malignance Chapeau",neck="Moonbeam Nodowa",ear1="Gwati Earring",ear2="Digni. Earring",
         body="Mekosu. Harness",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back=gear.da_jse_back,waist="Olseni Belt",legs="Hattori Hakama +1",feet="Malignance Boots"}
+        back=gear.da_jse_back,waist="Olseni Belt",legs="Hattori Hakama",feet="Malignance Boots"}
 
     -- Fast cast sets for spells
 
@@ -84,67 +84,107 @@ function init_gear_sets()
 	sets.precast.FC.Shadows = set_combine(sets.precast.FC.Utsusemi, {ammo="Staunch Tathlum +1",ring1="Prolix Ring"})
 
     -- Snapshot for ranged
-    sets.precast.RA = {legs="Nahtirah Trousers"}
+    sets.precast.RA = {}
+	
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Seeth. Bomblet +1",
         head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Ilabrat Ring",ring2="Regal Ring",
         back=gear.da_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_wsd_feet}
-    sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {head="Dampening Tam",body="Ken. Samue",legs="Hiza. Hizayoroi +2",ear2="Telos Earring"})
-    sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="C. Palug Stone",head="Ynglinga Sallet",neck="Combatant's Torque",ear2="Telos Earring",body="Ken. Samue",hands="Mummu Wrists +2",waist="Olseni Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"})
-	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {ammo="C. Palug Stone",head="Ynglinga Sallet",neck="Moonbeam Nodowa",ear1="Mache Earring +1",ear2="Telos Earring",body="Mummu Jacket +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",waist="Olseni Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"})
-	sets.precast.WS.Proc = {ammo="Yamarang",
-        head="Ynglinga Sallet",neck="Moonbeam Nodowa",ear1="Mache Earring +1",ear2="Telos Earring",
-        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-        back=gear.da_jse_back,waist="Olseni Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+    sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {})
+    sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
+	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {})
+
+	sets.precast.WS.Proc = {}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Blade: Jin'] = set_combine(sets.precast.WS, {ammo="Yetshila +1",head="Adhemar Bonnet +1",ammo="Yetshila +1",head="Adhemar Bonnet +1",body="Abnoba Kaftan",hands="Ryuo Tekko",ring1="Begrudging Ring",waist="Grunfeld Rope",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
-    sets.precast.WS['Blade: Jin'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="Yetshila +1",head="Mummu Bonnet +2",ammo="Yetshila +1",head="Mummu Bonnet +2",body="Abnoba Kaftan",hands="Ryuo Tekko",waist="Grunfeld Rope",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
-    sets.precast.WS['Blade: Jin'].Acc = set_combine(sets.precast.WS.Acc, {head="Mummu Bonnet +2",body="Sayadio's Kaftan",hands="Ryuo Tekko",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
-    sets.precast.WS['Blade: Jin'].FullAcc = set_combine(sets.precast.WS.FullAcc, {body="Mummu Jacket +2",hands="Ryuo Tekko",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
-    sets.precast.WS['Blade: Jin'].Fodder = set_combine(sets.precast.WS['Blade: Jin'], {head="Adhemar Bonnet +1"})
+    sets.precast.WS['Blade: Jin'] = set_combine(sets.precast.WS, {ammo="Yetshila +1",
+		head="Adhemar Bonnet +1",
+		body="Abnoba Kaftan", hands="Ryuo Tekko", ring1="Begrudging Ring",
+		waist="Grunfeld Rope", legs="Mummu Kecks +2", feet="Mummu Gamash. +2"})
+    sets.precast.WS['Blade: Jin'].SomeAcc = set_combine(sets.precast.WS['Blade: Jin'], {})
+    sets.precast.WS['Blade: Jin'].Acc = set_combine(sets.precast.WS['Blade: Jin'], {})
+    sets.precast.WS['Blade: Jin'].FullAcc = set_combine(sets.precast.WS['Blade: Jin'], {})
+    sets.precast.WS['Blade: Jin'].Fodder = set_combine(sets.precast.WS['Blade: Jin'], {})
 
-	sets.precast.WS['Blade: Hi'] = set_combine(sets.precast.WS, {ammo="Yetshila +1",head="Adhemar Bonnet +1",ear1="Moonshade Earring",ear2="Brutal Earring",body="Abnoba Kaftan",hands="Ryuo Tekko",ring1="Begrudging Ring",back=gear.wsd_jse_back,legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
-    sets.precast.WS['Blade: Hi'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="Yetshila +1",head="Mummu Bonnet +2",ear1="Moonshade Earring",ear2="Trux Earring",body="Abnoba Kaftan",hands="Ryuo Tekko",ring1="Begrudging Ring",back=gear.wsd_jse_back,legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
-    sets.precast.WS['Blade: Hi'].Acc = set_combine(sets.precast.WS.Acc, {head="Mummu Bonnet +2",ear1="Moonshade Earring",ear2="Telos Earring",body="Sayadio's Kaftan",hands="Ryuo Tekko",legs="Hiza. Hizayoroi +2",feet="Mummu Gamash. +2"})
-    sets.precast.WS['Blade: Hi'].FullAcc = set_combine(sets.precast.WS.FullAcc, {hands="Ryuo Tekko",legs="Hiza. Hizayoroi +2"})
+	sets.precast.WS['Blade: Hi'] = set_combine(sets.precast.WS, {ammo="Yetshila +1",
+		-- neck="Ninja Nodowa +2", Lugra Earring +1 Odr Earring
+		head="Adhemar Bonnet +1", neck="Caro Necklace",  ear1="Lugra Earring", ear2="Ishavara Earring",
+		-- Ken. Samue +1 hands="Ryuo Tekko +1 ", Path D
+		body="Abnoba Kaftan", ring1="Gere Ring", ring2="Regal Ring",
+		-- Salifi Belt +1 Mochi. Hakama +3
+		back=gear.wsd_jse_back, waist="Kentarch Belt +1", legs="Hiza. Hizayoroi +2", feet="Mummu Gamash. +2"})
+    sets.precast.WS['Blade: Hi'].SomeAcc = set_combine(sets.precast.WS['Blade: Hi'], {})
+    sets.precast.WS['Blade: Hi'].Acc = set_combine(sets.precast.WS['Blade: Hi'], {})
+    sets.precast.WS['Blade: Hi'].FullAcc = set_combine(sets.precast.WS['Blade: Hi'], {})
     sets.precast.WS['Blade: Hi'].Fodder = set_combine(sets.precast.WS['Blade: Hi'], {})
 
-    sets.precast.WS['Blade: Shun'] = set_combine(sets.precast.WS, {ammo="C. Palug Stone",ear1="Lugra Earring",ear2="Lugra Earring +1",legs="Jokushu Haidate"})
-    sets.precast.WS['Blade: Shun'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="C. Palug Stone",ear1="Lugra Earring",ear2="Lugra Earring +1",legs="Jokushu Haidate",feet="Malignance Boots"})
+    sets.precast.WS['Blade: Shun'] = set_combine(sets.precast.WS, {ammo="C. Palug Stone",
+		ear1="Lugra Earring",ear2="Lugra Earring +1",
+		legs="Jokushu Haidate"})
+    sets.precast.WS['Blade: Shun'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="C. Palug Stone",
+		ear1="Lugra Earring",ear2="Lugra Earring +1",
+		legs="Jokushu Haidate",feet="Malignance Boots"})
     sets.precast.WS['Blade: Shun'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Blade: Shun'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.precast.WS['Blade: Shun'].Fodder = set_combine(sets.precast.WS['Blade: Shun'], {})
 
-    sets.precast.WS['Blade: Ten'] = set_combine(sets.precast.WS, {ammo="C. Palug Stone",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Lugra Earring +1",body=gear.herculean_wsd_body,back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Hiza. Hizayoroi +2",feet=gear.herculean_wsd_feet})
-    sets.precast.WS['Blade: Ten'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="C. Palug Stone",neck="Caro Necklace",ear1="Moonshade Earring",body=gear.herculean_wsd_body,back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Hiza. Hizayoroi +2",feet=gear.herculean_wsd_feet})
-    sets.precast.WS['Blade: Ten'].Acc = set_combine(sets.precast.WS.Acc, {back=gear.wsd_jse_back})
-    sets.precast.WS['Blade: Ten'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
+    sets.precast.WS['Blade: Ten'] = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
+		-- head="Hachi. Hatsu. +3", neck="Ninja Nodowa +2",
+		head="Malignance Chapeau", neck="Caro Necklace", ear1="Moonshade Earring",ear2="Lugra Earring +1",
+		-- Nyame Mail lring="Gere Ring"
+		body=gear.herculean_wsd_body, hands="Mochi. Tekko +3", lring="Epaminondas's Ring", rring="Regal Ring",
+		-- Salifi Belt +1 legs="Mochi. Hakama +3", feet="Mochi. Kyahan +3"
+		back=gear.wsd_jse_back, waist="Kentarch Belt +1", legs="Malignance Tights", feet="Malignance Boots"})
+    sets.precast.WS['Blade: Ten'].SomeAcc = set_combine(sets.precast.WS['Blade: Ten'], {})
+    sets.precast.WS['Blade: Ten'].Acc = set_combine(sets.precast.WS['Blade: Ten'], {})
+    sets.precast.WS['Blade: Ten'].FullAcc = set_combine(sets.precast.WS['Blade: Ten'], {})
     sets.precast.WS['Blade: Ten'].Fodder = set_combine(sets.precast.WS['Blade: Ten'], {})
+	
+	sets.precast.WS['Blade: Teki'] = {ammo="Seeth. Bomblet +1",
+		-- Nyame Helm neck="Ninja Nodowa +2", lear="Lugra Earring +1",
+		head="Mochi. Hatsu +1", neck="Sanctity Necklace", lear="Friomisi Earring", rear="Moonshade Earring",
+		-- Nyame Mail Nyame Gauntlets lring="Gere Ring",
+		body="Gyve Doublet", hands="Volte Bracers", lring="Dingir Ring", rring="Epaminondas's Ring",
+		-- Nyame flanchard Nyame Sollerets 
+		back=gear.Nuke_jse_back, waist="Orpheus's Sash", legs="Gyve Trousers", feet="Malignance Boots"}
+	
+	--sets.precast.WS['Blade: To'] =  sets.precast.WS['Blade: Teki']
+	
+	--sets.precast.WS['Blade: Chi'] = sets.precast.WS['Blade: Teki']
 
+	--sets.precast.WS['Blade: Ku'] = {}
+	
+	sets.precast.WS['Blade: Kamu'] = {ammo="Seething Bomblet +1",
+		-- head="Hachi. Hatsu. +3", lear="Lugra Earring +1" , rear="Balder Earring +1"
+		head="Adhemar Bonnet +1", neck="Ninja Nodowa +2", lear="Lugra Earring", rear="Cessance Earring",
+		-- Tatena. Haramaki +1 lring="Gere Ring",
+		body="Adhemar Jacket +1", hands="Tatena. Gote +1", lring="Epaminondas's Ring", rring="Epona's Ring",
+		-- Salifi Belt +1 Tatena. Haidate +1 Tatena. Sune. +1
+		back=gear.wsd_jse_back, waist="Kentarch Belt +1", legs="Samnuha Tights", feet=gear.herculean_ta_feet}
+	
 	-- Sword
 	sets.precast.WS['Savage Blade'] = {ammo="Seething Bomblet +1",
-        -- neck="Rep. Plat. Medal"
-		head="Hachiya Hatsu. +1",neck="Baetyl Pendant",ear1="Lugra Earring",ear2="Moonshade Earring",
-        -- body="Nyame Mail", hands="Nyame Gauntlets", lring="Srode Ring",
+        -- neck="Rep. Plat. Medal" neck="Baetyl Pendant"
+		head="Hachi. Hatsu. +1",neck="Caro Necklace",ear1="Lugra Earring",ear2="Moonshade Earring",
+        -- body="Nyame Mail", hands="Nyame Gauntlets", lring="Sroda Ring",
 		body="Ashera Harness",hands="Adhemar Wrists. +1",ring1="Regal Ring",ring2="Epaminondas's Ring",
         -- waist="Salifi Belt +1", legs="Nyame Flanchard", feet="Nyame Sollerets"
-		back=gear.Nuke_jse_back, waist="Orpheus's Sash", legs="",feet="Malignance Boots"}
+		back=gear.Nuke_jse_back, waist="Kentarch Belt +1", legs="Malignance Tights",feet="Malignance Boots"}
 	
 	-- Dagger
-	sets.precast.WS['Evisceration'] = {ammo="Yetshila",
+	sets.precast.WS['Evisceration'] = {ammo="Yetshila +1",
 		-- head="Blistering Sallet +1", neck="Ninja Nodowa +2", lear="Odr Earring",
         head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Ishvara Earring",ear2="Moonshade Earring",
         -- Ken. Samue +1 body="Mpaca's Doublet", hands="Ryou Tekko +1", ring2="Gere Ring"
-		body="Tatena Haramaki", hands="Adhemar Wrist. +1",ring1="Regal Ring",ring2="Ilabrat Ring",
+		body="Abnoba Kaftan", hands="Adhemar Wrist. +1",ring1="Regal Ring",ring2="Ilabrat Ring",
         -- legs="Mpaca's Hose", feet="Ken. Sune-Ate +1"
 		back=gear.Nuke_jse_back, waist="Fotia Belt", legs="Mummu Kecks +2",feet="Malignance Boots"}
 	
-    sets.precast.WS['Aeolian Edge'] = {ammo="Ghastly Tathlum +1",
+    sets.precast.WS['Aeolian Edge'] = {--ammo="Ghastly Tathlum +1",
 		-- neck="Sybil Scarf",
-        head="Mochi. Hatsuburi +1",neck="Baetyl Pendant",ear1="Friomisi Earring",ear2="Moonshade Earring",
+        head="Mochi. Hatsuburi +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
         -- body="Nyame Mail", hands="Nyame Gauntlets",
 		body="Gyve Doublet",hands="Volte Bracers",ring1="Shiva Ring +1",ring2="Metamor. Ring +1",
         -- legs="Nyame Flanchard", feet="Nyame Sollerets"
@@ -170,20 +210,20 @@ function init_gear_sets()
 
 	 sets.midcast.NinjutsuDebuff = {ammo="Yamarang",
 		-- lear="Hnoss Earring"
-        head="Hachiya. Hatsu. +1",neck="Sanctity Necklace",ear1="Enchntr. Earring +1",ear2="Digni. Earring",
+        head="Hachi. Hatsu. +1",neck="Sanctity Necklace",ear1="Enchntr. Earring +1",ear2="Digni. Earring",
 		-- Malignance Tabard Malignance Gloves 
         body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.Nuke_jse_back,waist="Eschan Stone",legs="Malignance Tights",feet="Mochi. Kyahan +1"}
 
-    sets.midcast.ElementalNinjutsu = {ammo="Ghastly Tathlum",
+    sets.midcast.ElementalNinjutsu = {--ammo="Ghastly Tathlum +1",
 		-- neck="Baetyl Pendant", neck="Sybil Scarf",
         head="Mochi. Hatsuburi +1", neck="Sanctity Necklace", ear1="Crematio Earring",ear2="Friomisi Earring",
-        --   hands="Nyame Gauntlets"
+        -- hands="Nyame Gauntlets"
 		body="Gyve Doublet",hands="Hattori Tekko",ring1="Shiva Ring +1",ring2="Metamor. Ring +1",
 		-- waist="Skrymir Cord +1" legs=gear.herculean_nuke_legs
         back=gear.Nuke_jse_back,waist="Orpheus's Sash",legs="Gyve Trousers",feet="Mochi. Kyahan +1"}
 		
-	sets.MagicBurst = {ammo="Ghastly Tathlum",
+	sets.MagicBurst = {--ammo="Ghastly Tathlum +1",
 		-- neck="Warden's Charm +1",
         head="Mochi. Hatsuburi +1", neck="Sanctity Necklace", ear1="Crematio Earring",ear2="Friomisi Earring",
         --   body="Nyame Mail", hands="Nyame Gauntlets"
@@ -195,7 +235,7 @@ function init_gear_sets()
 
     sets.midcast.ElementalNinjutsu.Resistant = set_combine(sets.midcast.ElementalNinjutsu, {body="Nyame Mail", legs="Nyame Flanchard"})
 
-    sets.midcast.NinjutsuBuff = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})
+    sets.midcast.NinjutsuBuff = set_combine(sets.midcast.FastRecast, {}) --back="Mujin Mantle"
 
     sets.midcast.Utsusemi = set_combine(sets.midcast.NinjutsuBuff, {ammo="Sapience Orb",
 		head=gear.herculean_fc_head, neck="Orunmila's Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
@@ -208,7 +248,7 @@ function init_gear_sets()
         head="Malignance Chapeau",neck="Combatant's Torque",ear1="Clearview Earring",
 		-- Malignance Tabard Malignance Gloves 
         body="Mekosu. Harness",hands="Buremte Gloves",ring1="Ilabrat Ring",ring2="Regal Ring",
-        back="Andartia's Mantle",waist="Chaac Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        back="Andartia's Mantle",waist="Yemaya Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {
         head="Dampening Tam",neck="Combatant's Torque",ear1="Clearview Earring",
@@ -246,7 +286,7 @@ function init_gear_sets()
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau", neck="Warder's Charm +1",ear1="Genmei Earring",ear2="Sanare Earring",
         -- body="Malignance Tabard",hands="Malignance Gloves",
-         body="Ashera Harness", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
+        body="Ashera Harness", hands="Kurys Gloves" ,ring1="Defending Ring",ring2="Vengeful Ring",
 		back="Moonbeam Cape",waist="Flume Belt", legs="Malignance Tights", feet="Malignance Boots"}
 
 
@@ -380,4 +420,25 @@ end
 
 function user_job_lockstyle()
 	windower.chat.input('/lockstyleset 020')
+end
+
+function job_setup()
+
+	state.Buff['Aftermath: Lv.3'] = buffactive['Aftermath: Lv.3'] or false
+    state.Buff.Migawari = buffactive.Migawari or false
+    state.Buff.Yonin = buffactive.Yonin or false
+    state.Buff.Innin = buffactive.Innin or false
+    state.Buff.Futae = buffactive.Futae or false
+	
+	state.Stance = M{['description']='Stance','Innin','Yonin','None'}
+
+	autows = "Blade: Shun"
+	autofood = 'Soy Ramen'
+	
+	utsusemi_ni_cancel_delay = .1
+	
+	state.ElementalMode = M{['description'] = 'Elemental Mode','Fire','Water','Lightning','Earth','Wind','Ice','Light','Dark',}
+	
+	update_melee_groups()
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode","ElementalWheel",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","ElementalMode","CastingMode","TreasureMode",})
 end

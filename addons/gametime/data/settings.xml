@@ -14,7 +14,7 @@
             <flags>
                 <bold>false</bold>
                 <bottom>false</bottom>
-                <draggable>true</draggable>
+                <draggable>false</draggable>
                 <italic>false</italic>
                 <right>false</right>
             </flags>

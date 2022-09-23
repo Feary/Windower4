@@ -48,6 +48,13 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Precast sets to enhance JAs
+	-- enmity down
+	sets.enmity = {main="Malignance Pole",--sub="Khonsu", ammo="Staunch Tathlum +1",
+		--head="Acad. Mortar. +3", neck="Warder's Charm +1", lear="Etiolation Earring", rear="Odowowa Earring +1",
+		--body="Mallquis Saio +2", hands="Acad. Bracers +3",  rring="Warden's Ring",
+		lring="Defending Ring",
+		--back="Moonlight Cape", waist="Slipor Sash", legs="Acad. Pants +3", feet="Acad. Loafers +3"
+		}
 
     sets.precast.JA['Tabula Rasa'] = {legs="Pedagogy Pants"}
 	sets.precast.JA['Enlightenment'] = {body="Pedagogy Gown"} 
@@ -55,7 +62,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {main=gear.grioavolr_fc_staff, sub="Achaq Grip", ammo="Incantor Stone",
 		-- neck="Voltsurge Torque", ear2="Malignance Earring",
-		head="Merlinic Hood", ear1="Enchntr. Earring +1", ear2="Loquac. Earring",
+		head=gear.merlinic_fc_head, ear1="Enchntr. Earring +1", ear2="Loquac. Earring",
         -- rring="Kishr Ring"
 		body="Zendik Robe", hands=gear.helios_hands_FC, ring1="Prolix Ring", ring2="Defending Ring",
         back=gear.FC_jse_back,waist="Witful Belt",legs="Gyve Trousers",feet="Peda. Loafers +3"}
@@ -83,7 +90,7 @@ function init_gear_sets()
 	sets.RecoverMP = {}--body="Seidr Cotehardie"
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {ring2="Locus Ring"} --main="Akademos", neck="Mizu. Kubikazari", hands="Amalric Gages", ring1="Mujin Band", feet="Jhakri Pigaches +2"
+    sets.MagicBurst = {} --main="Akademos", neck="Mizu. Kubikazari", hands="Amalric Gages", ring1="Mujin Band", feet="Jhakri Pigaches +2"
 	
 	-- Gear for specific elemental nukes.
 	sets.element.Dark = {} -- head="Pixie Hairpin +1", ring2="Archon Ring"
@@ -153,7 +160,7 @@ function init_gear_sets()
 	
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})--legs="Shedir Seraweels"
 
-    sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {feet="Peda. Loafers"})
+    sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {feet="Peda. Loafers +3"})
 
     sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
     sets.midcast.Protectra = sets.midcast.Protect
@@ -167,17 +174,17 @@ function init_gear_sets()
 		main="Maxentius",
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head=gear.merlinic_nuke_head, lear="Enchntr. Earring +1",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- waist="Luminary Sash"  legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Casecade Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		-- waist="Acuity Belt +1"  legs="Chironic Hose"
+		back=gear.Macc_jse_back, waist="Cascade Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {--sub="Ammurapi Shield",
 		main="Maxentius",
-		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
-		head=gear.merlinic_nuke_head,lear="Enchntr. Earring +1",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- waist="Luminary Sash" waist="Ovate Rope", legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Casecade Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
+		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
+		head=gear.merlinic_nuke_head, lear="Enchntr. Earring +1",
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		-- waist="Acuity Belt +1" waist="Ovate Rope", legs="Chironic Hose"
+		back=gear.Macc_jse_back, waist="Cascade Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {back=gear.nuke_jse_back,})--waist="Acuity Belt +1"
     sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {back=gear.nuke_jse_back,})--waist="Acuity Belt +1"
@@ -199,38 +206,38 @@ function init_gear_sets()
     sets.midcast['Dark Magic'] = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		head=gear.merlinic_nuke_head,lear="Enchntr. Earring +1",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 
 	-- 300 INT
     sets.midcast.Kaustra = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		head=gear.merlinic_nuke_head,lear="Enchntr. Earring +1",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- waist="Acuity Belt +1" legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
     sets.midcast.Kaustra.Resistant = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		head=gear.merlinic_nuke_head, lear="Enchntr. Earring +1",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 
     sets.midcast.Drain = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		head=gear.merlinic_nuke_head,lear="Enchntr. Earring +1",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- waist="Luminary Sash"  legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
     sets.midcast.Drain.Resistant = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Chironic Hat, neck="Voltsurge Torque", lear="Regal Earring", rear="Malignance Earring",
 		head=gear.merlinic_nuke_head,lear="Enchntr. Earring +1",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Skaoi Boots"}
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		-- waist="Acuity Belt +1" legs="Chironic Hose"
+		back=gear.Macc_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
@@ -250,33 +257,39 @@ function init_gear_sets()
 		back=gear.Macc_jse_back, waist="Witful Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 
     -- Elemental Magic sets are default for handling low-tier nukes.
-    sets.midcast['Elemental Magic'] = {main="Maxentius", sub="Sors Shield", --  sub="Ammurapi Shield",
-		-- lear="Regal Earring", 
+    sets.midcast['Elemental Magic'] = {main="Maxentius", sub="Sors Shield",  ammo="Clarus Stone", 
+		-- sub="Ammurapi Shield", ammo="Ghastly Tathlum +1",
+		-- lear="Regal Earring", rear="Malignance Earring",
 		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Novio Earring", rear="Friomisi Earring",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Shiva Ring", rring="Shiva Ring +1",
-		-- 
+		-- Freke Ring Metamor. Ring +1
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Shiva Ring", rring="Shiva Ring +1",
+		-- Acuity Belt +1
 		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 
-    sets.midcast['Elemental Magic'].Resistant = {main="Maxentius", --  sub="Ammurapi Shield",
-		-- Jhakri Coronal +2  lear="Regal Earring", rear="Malignance Earring",
-		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1",  lear="Novio Earring", rear="Friomisi Earring",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- 
+    sets.midcast['Elemental Magic'].Resistant = {main="Maxentius", sub="Sors Shield",  ammo="Clarus Stone", 
+		-- sub="Ammurapi Shield", ammo="Ghastly Tathlum +1",
+		-- lear="Regal Earring", rear="Malignance Earring",
+		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Novio Earring", rear="Friomisi Earring",
+		-- Freke Ring Metamor. Ring +1
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Shiva Ring", rring="Shiva Ring +1",
+		-- Acuity Belt +1
 		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
-    sets.midcast['Elemental Magic'].Fodder = {main="Maxentius", --  sub="Ammurapi Shield",
-		-- Jhakri Coronal +2  lear="Regal Earring", rear="Malignance Earring",
-		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Peda. Loafers +3"}
+    sets.midcast['Elemental Magic'].Fodder = {main="Maxentius", sub="Sors Shield",  ammo="Clarus Stone", 
+		-- sub="Ammurapi Shield", ammo="Ghastly Tathlum +1",
+		-- lear="Regal Earring", rear="Malignance Earring",
+		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Novio Earring", rear="Friomisi Earring",
+		-- Freke Ring Metamor. Ring +1
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Shiva Ring", rring="Shiva Ring +1",
+		-- Acuity Belt +1
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
     sets.midcast['Elemental Magic'].Proc = {main="Maxentius", --  sub="Ammurapi Shield",
 		-- Jhakri Coronal +2  lear="Regal Earring", rear="Malignance Earring",
 		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Peda. Loafers +3"}
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
     sets.midcast['Elemental Magic'].OccultAcumen = set_combine(sets.midcast['Elemental Magic'],{
 		main="Maxentius", sub="Ammurapi Shield",
@@ -289,61 +302,73 @@ function init_gear_sets()
 		
     -- Custom refinements for certain nuke tiers
 	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {
-		main="Maxentius", --  sub="Ammurapi Shield",
+		main="Maxentius", sub="Sors Shield",  ammo="Clarus Stone", 
+		-- sub="Ammurapi Shield", ammo="Ghastly Tathlum +1",
 		-- lear="Regal Earring", rear="Malignance Earring",
-		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
-		-- Freke Ring
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Peda. Loafers +3"})
+		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Novio Earring", rear="Friomisi Earring",
+		-- Freke Ring Metamor. Ring +1
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Shiva Ring", rring="Shiva Ring +1",
+		-- Acuity Belt +1
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {
-		main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
-		-- Jhakri Coronal +2  lear="Regal Earring", rear="Malignance Earring",
-		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- waist="Luminary Sash" legs="Chironic Hose"
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Peda. Loafers +3"})
+		main="Maxentius", sub="Sors Shield",  ammo="Clarus Stone", 
+		-- sub="Ammurapi Shield", ammo="Ghastly Tathlum +1",
+		-- lear="Regal Earring", rear="Malignance Earring",
+		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Novio Earring", rear="Friomisi Earring",
+		-- Freke Ring Metamor. Ring +1
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Shiva Ring", rring="Shiva Ring +1",
+		-- Acuity Belt +1
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {
-		main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
+		main="Maxentius", sub="Sors Shield",  ammo="Clarus Stone", 
+		-- sub="Ammurapi Shield", ammo="Ghastly Tathlum +1",
 		-- lear="Regal Earring", rear="Malignance Earring",
-		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
-		-- Freke Ring 
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Peda. Loafers +3"})
+		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Novio Earring", rear="Friomisi Earring",
+		-- Freke Ring Metamor. Ring +1
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Shiva Ring", rring="Shiva Ring +1",
+		-- Acuity Belt +1
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"})
 
-	sets.midcast.Helix = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
+	sets.midcast.Helix = {main="Maxentius", sub="Sors Shield",  ammo="Clarus Stone", 
+		-- sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- lear="Regal Earring", rear="Malignance Earring",
-		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
-		-- Freke Ring 
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Peda. Loafers +3"}
+		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Novio Earring", rear="Friomisi Earring",
+		-- Freke Ring Metamor. Ring +1
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Shiva Ring", rring="Shiva Ring +1",
+		-- Acuity Belt +1
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
-	sets.midcast.Helix.Resistant = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
+	sets.midcast.Helix.Resistant = {main="Maxentius", sub="Sors Shield",  ammo="Clarus Stone", 
+		-- sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- lear="Regal Earring", rear="Malignance Earring",
-		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
-		-- Freke Ring 
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Peda. Loafers +3"}
+		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Novio Earring", rear="Friomisi Earring",
+		-- Freke Ring Metamor. Ring +1
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Shiva Ring", rring="Shiva Ring +1",
+		-- Acuity Belt +1
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 	
-	sets.midcast.Helix.Burst = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
+	sets.midcast.Helix.Burst = {main="Maxentius", sub="Sors Shield",  ammo="Clarus Stone", 
+		-- sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- lear="Regal Earring", rear="Malignance Earring",
-		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
-		-- Mujin Ring Freke Ring 
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Peda. Loafers +3"}
+		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Novio Earring", rear="Friomisi Earring",
+		-- Freke Ring Metamor. Ring +1
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Shiva Ring", rring="Shiva Ring +1",
+		-- Acuity Belt +1
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
 	sets.midcast.Helix.Proc = {main=empty, sub=empty,
 		-- lear="Regal Earring", rear="Malignance Earring",
 		head=gear.merlinic_nuke_head, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring 
-		body="Shamash Robe", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Peda. Loafers +3"}
+		body="Shamash Robe", hands="Peda. Bracers +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 
 	sets.midcast.Impact = {main="Maxentius", --  sub="Ammurapi Shield", --ammo="Pemphredo Tathlum",
 		-- lear="Regal Earring", rear="Malignance Earring",
 		head=empty, neck="Saevus Pendant +1", lear="Enchntr. Earring +1",
 		-- Freke Ring 
-		body="Twilight Cloak", hands="Jhakri Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		back=gear.nuke_jse_back, waist=gear.ElementalObi, legs="Amalric Slops +1", feet="Jhakri Pigaches"}
+		body="Twilight Cloak", hands="Peda. Bracers +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		back=gear.nuke_jse_back, waist="Cognition Belt", legs="Amalric Slops +1", feet="Jhakri Pigaches"}
 		
     sets.midcast.Impact.OccultAcumen = set_combine(sets.midcast['Elemental Magic'].OccultAcumen, {head=empty,body="Twilight Cloak"})
 		
@@ -354,7 +379,7 @@ function init_gear_sets()
 		--neck="Loricate Torque +1", ear2="Etiolation Earring",
 		head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands,
-		body="Shamash Robe", hands="Jhakri Cuffs", ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+		body="Shamash Robe", hands="Peda. Bracers +3", ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		-- feet=gear.merlinic_refresh_feet
 		back="Felicitas Cape +1", waist="Austerity Belt",legs="Assid. Pants +1",feet="Peda. Loafers +3"}
 
@@ -364,25 +389,25 @@ function init_gear_sets()
 		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
         head="Befouled Crown",  ear1="Ethereal Earring", 
 		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+        body="Shamash Robe", hands="Peda. Bracers +3", ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet=gear.merlinic_refresh_feet
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Peda. Loafers +3"}
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 
     sets.idle.PDT = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1", ear2="Etiolation Earring",
-        head="Befouled Crown",   ear1="Ethereal Earring",
+        head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
+        body="Shamash Robe", hands="Peda. Bracers +3", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
 	sets.idle.MEVA = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
 		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
         head="Befouled Crown", ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
+        body="Shamash Robe", hands="Peda. Bracers +3", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {})--feet="Hippo. Socks +1"
 
@@ -390,36 +415,36 @@ function init_gear_sets()
 		-- sub="Genmei Shield", neck="Loricate Torque +1", ear2="Etiolation Earring",
         head="Befouled Crown",  ear1="Ethereal Earring",
 		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
+        body="Shamash Robe",  hands="Peda. Bracers +3", ring1="Defending Ring", ring2="Jhakri Ring",
 		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Peda. Loafers +3"}
 		
     sets.idle.TPEat = set_combine(sets.idle, {})--neck="Chrys. Torque"
 
     -- Defense sets
-    sets.defense.PDT = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
+    sets.defense.PDT = {main="Malignance Pole", sub="Achaq Grip", -- sub="Khonsu, ammo="Staunch Tahtlum +1",
+		-- head="Nyame Helm", neck="Unmoving Collar +1", ear1="Tuisti Earring", ear2="Odowowa Earring +1",
         head="Befouled Crown", ear1="Ethereal Earring",
-		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
-		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		-- Nyame Mail Nyame Gauntlets Gelatinous Ring +1 Eiwaz Ring 
+        body="Shamash Robe",  hands="Peda. Bracers +3", ring1="Defending Ring", ring2="Jhakri Ring",
+		-- Moonlight Cape waist="Carrier's Sash", Nyame Flanchard Nyame Sollerets
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 
-    sets.defense.MDT = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
+    sets.defense.MDT = {main="Malignance Pole", sub="Achaq Grip", -- sub="Khonsu, ammo="Staunch Tahtlum +1",
+		-- head="Pinga Crown +1", neck="Warder's Charm +1", ear1="Lugalbanda Earring", ear2="Etiolation Earring",
         head="Befouled Crown", ear1="Ethereal Earring",
-		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
-		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		-- Pinga Tunic +1 Pinga Mittens +1 Purity Ring  Shadow Ring
+        body="Shamash Robe",  hands="Peda. Bracers +3", ring1="Defending Ring", ring2="Jhakri Ring",
+		-- Moonlight Cape waist="Slipor Sash", Nyame Flanchard Nyame Sollerets
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
-    sets.defense.MEVA = {main="Malignance Pole", sub="Achaq Grip", -- ammo="Homiliary",
-		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
+    sets.defense.MEVA = {main="Malignance Pole", sub="Achaq Grip", -- sub="Khonsu, ammo="Staunch Tahtlum +1",
+		-- head="Pinga Crown +1", neck="Warder's Charm +1", ear1="Lugalbanda Earring", ear2="Etiolation Earring",
         head="Befouled Crown", ear1="Ethereal Earring",
-		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
-		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+		-- Pinga Tunic +1 Pinga Mittens +1 Purity Ring  Shadow Ring
+        body="Shamash Robe",  hands="Peda. Bracers +3", ring1="Defending Ring", ring2="Jhakri Ring",
+		-- Moonlight Cape waist="Slipor Sash", Nyame Flanchard Nyame Sollerets
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Amalric Slops +1", feet="Peda. Loafers +3"}
 		
     sets.Kiting = {lring="Shneddick Ring"}
     sets.latent_refresh = {waist="Fucho-no-obi"}
@@ -434,41 +459,37 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {main="Maxentius",
-		-- ammo="Homiliary", sub="Genmei Shield",ammo="Hasty Pinion", 
-		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
-        head="Befouled Crown",  ear1="Ethereal Earring",
-		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
-		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+    sets.engaged = {main="Maxentius", sub="Genbu's Shield",
+		-- head="Nyame Helm", neck="Loricate Torque +1",  
+        head="Jhakri Coronal", ear1="Mache Earring +1", ear2="Mache Earring +1", 
+		-- Nyame Mail Nyame Gauntlets 
+        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Chirich Ring +1", ring2="Chirich Ring +1",
+		-- waist="Olseni Belt", Nyame Flanchard Nyame Sollerets
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops",  feet="Peda. Loafers +3"}
 	
-	sets.engaged.DW = {main="Maxentius",
-		-- ammo="Homiliary", sub="Genmei Shield",ammo="Hasty Pinion", 
-		-- sub="Genmei Shield", neck="Loricate Torque +1",  ear2="Etiolation Earring",
-        head="Befouled Crown", ear1="Ethereal Earring", ear1="Ethereal Earring",
-		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
-		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+	sets.engaged.DW = {main="Maxentius", sub="Genbu's Shield",
+		-- head="Nyame Helm", neck="Loricate Torque +1",  
+        head="Jhakri Coronal", ear1="Mache Earring +1", ear2="Mache Earring +1", 
+		-- Nyame Mail Nyame Gauntlets 
+        body="Shamash Robe",  hands="Peda. Bracers +3", ring1="Chirich Ring +1", ring2="Chirich Ring +1",
+		-- waist="Olseni Belt", Nyame Flanchard Nyame Sollerets
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Peda. Loafers +3"}
 	
-	sets.engaged.PDT = {main="Maxentius",
-		-- ammo="Homiliary", sub="Genmei Shield",ammo="Hasty Pinion", 
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear1="Ethereal Earring", ear2="Etiolation Earring",
-        head="Befouled Crown", ear1="Ethereal Earring",
-		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
-		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+	sets.engaged.PDT = {main="Maxentius", sub="Genbu's Shield",
+		-- head="Nyame Helm", neck="Loricate Torque +1",  
+        head="Jhakri Coronal", ear1="Mache Earring +1", ear2="Mache Earring +1", 
+		-- Nyame Mail Nyame Gauntlets 
+        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Chirich Ring +1", ring2="Chirich Ring +1",
+		-- waist="Olseni Belt", Nyame Flanchard Nyame Sollerets
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Peda. Loafers +3"}
 
-	sets.engaged.PDT.DW = {main="Maxentius",
-		-- ammo="Homiliary", sub="Genmei Shield",ammo="Hasty Pinion", 
-		-- sub="Genmei Shield", neck="Loricate Torque +1", ear2="Etiolation Earring",
-        head="Befouled Crown", ear1="Ethereal Earring",
-		--  hands=gear.merlinic_refresh_hands, 
-        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Defending Ring", ring2="Jhakri Ring",
-		-- waist="Flax Sash",  legs="Assid. Pants +1", feet="Mallquis Clogs +2"
-        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Jhakri Pigaches"}
+	sets.engaged.PDT.DW = {main="Maxentius", sub="Genbu's Shield",
+		-- head="Nyame Helm", neck="Loricate Torque +1",  
+        head="Jhakri Coronal", ear1="Mache Earring +1", ear2="Mache Earring +1", 
+		-- Nyame Mail Nyame Gauntlets 
+        body="Shamash Robe", hands="Jhakri Cuffs", ring1="Chirich Ring +1", ring2="Chirich Ring +1",
+		-- waist="Olseni Belt", Nyame Flanchard Nyame Sollerets
+        back=gear.FC_jse_back, waist="Austerity Belt", legs="Jhakri Slops", feet="Peda. Loafers +3"}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Ebullience'] = {head="Arbatel Bonnet"}
@@ -477,8 +498,8 @@ function init_gear_sets()
     sets.buff['Immanence'] = {hands="Arbatel Bracers"}
     sets.buff['Penury'] = {legs="Arbatel Pants"}
     sets.buff['Parsimony'] = {legs="Arbatel Pants"}
-    sets.buff['Celerity'] = {feet="Peda. Loafers"}
-    sets.buff['Alacrity'] = {feet="Peda. Loafers"}
+    sets.buff['Celerity'] = {feet="Peda. Loafers +3"}
+    sets.buff['Alacrity'] = {feet="Peda. Loafers +3"}
     sets.buff['Klimaform'] = {feet="Arbatel Loafers"}
 	
 	sets.HPDown = {
@@ -496,7 +517,7 @@ function init_gear_sets()
     sets.buff.PDTSublimation = {}
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Maxentius", sub="Sors Shield"}
+	sets.weapons.Default = {main="Maxentius", sub="Genbu's Shield"}
 	sets.weapons.DualClub = {main="Maxentius", sub="Kaja Rod"}
 	sets.weapons.Akademos = {}--main="Akademos",sub="Niobid Strap"
 	sets.weapons.Khatvanga = {}--main="Khatvanga",sub="Bloodrain Strap"

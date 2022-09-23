@@ -79,15 +79,15 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 	-- Single 
-	sets.weapons.Default = {main="Sangoma", sub="Genmei Shield"}
+	sets.weapons.Default = {main="Sangoma", sub="Genbu's Shield"}
 	
-	sets.weapons.Dagger = {main="Sangoma", sub="Genmei Shield"}
-	sets.weapons.Aeneas = {main="Aeneas", sub="Genmei Shield"}
-	sets.weapons.Carn = {main="Kali", sub="Genmei Shield"}
-	sets.weapons.Twashtar = {main="Twashtar", sub="Genmei Shield"}
-	sets.weapons.Mandau = {main="Mandau", sub="Genmei Shield"}
+	sets.weapons.Dagger = {main="Sangoma", sub="Genbu's Shield"}
+	sets.weapons.Aeneas = {main="Aeneas", sub="Genbu's Shield"}
+	sets.weapons.Carn = {main="Kali", sub="Genbu's Shield"}
+	sets.weapons.Twashtar = {main="Twashtar", sub="Genbu's Shield"}
+	sets.weapons.Mandau = {main="Mandau", sub="Genbu's Shield"}
 	
-	sets.weapons.Sword = {main="Naegling", sub="Genmei Shield"}
+	sets.weapons.Sword = {main="Naegling", sub="Genbu's Shield"}
 	
 	-- Dualwield
 	sets.weapons.DualDaggers = {main="Sangoma", sub="Blurred Knife +1"}
@@ -242,15 +242,15 @@ function init_gear_sets()
 	sets.midcast.Sirvente = {}
 	
 	-- For song buffs (Full Duration, AF3 set bonus, DT)
-	sets.midcast.SongEffect = {main="Kali", sub="Genmei Shield",
-		--lear="Genmei Earring", rear="Etiolation Earring",
+	sets.midcast.SongEffect = {main="Kali", sub="Genbu's Shield",
+		--lear="Genbu's Earring", rear="Etiolation Earring",
 		head="Fili Calot", neck="Moonbow Whistle +1",
 		-- lring="Dark Ring",
 		body="Fili Hongreline", hands="Fili Manchettes", rring="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Inyanga Shalwar +2", feet="Brioso Slippers +2"}
 
-	sets.midcast.SongEffect.DW = {main="Kali", sub="Genmei Shield",
-		-- lear="Genmei Earring", rear="Etiolation Earring",
+	sets.midcast.SongEffect.DW = {main="Kali", sub="Genbu's Shield",
+		-- lear="Genbu's Earring", rear="Etiolation Earring",
 		head="Fili Calot", neck="Moonbow Whistle +1",
 		-- lring="Dark Ring",
 		body="Fili Hongreline", hands="Fili Manchettes", rring="Defending Ring",
@@ -406,41 +406,41 @@ function init_gear_sets()
 	sets.RREar = {ear2="Reraise Earring"}
 	
 	-- Resting sets
-	sets.resting = {main="Sangoma", sub="Genmei Shield", range="Gjallarhorn",
+	sets.resting = {main="Sangoma", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Assid. Panfs +1", feet="Bihu Slippers +3"}
 	
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {main="Sangoma", sub="Genmei Shield", range="Gjallarhorn",
+	sets.idle = {main="Sangoma", sub="Genbu's Shield", range="Gjallarhorn",
 		-- neck="Loricate Torque +1", rear="Etiolation Earring",
 		head="Inyanga Tiara +1",  lear="Ethereal Earring", 
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", ring1="Inyanga Ring", ring2="Defending Ring",
 		-- waist="Flume Belt",
 		back=gear.FC_jse_back,  legs="Assid. Panfs +1", legs="Aya. Cosciales +2", feet="Volte Gaiters"}
 
-	sets.idle.Weak = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
+	sets.idle.Weak = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back, waist="Flume Belt", legs="Aya. Cosciales +2", feet="Volte Gaiters"}
 	
-	sets.idle.NoRefresh = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
+	sets.idle.NoRefresh = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +1", neck="Loricate Torque +1",  lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Dark Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
 	
-	sets.idle.DT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
+	sets.idle.DT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +1",neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2", feet="Volte Gaiters"}
 	
 	-- Defense sets
-	sets.defense.PDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
+	sets.defense.PDT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Aya. Zucchetto +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", ring1="Inyanga Ring", ring2="Defending Ring",
 		back="Shadow Mantle", waist="Flume Belt", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
 	
-	sets.defense.MDT = {main="Mafic Cudgel", sub="Genmei Shield", range="Gjallarhorn",
+	sets.defense.MDT = {main="Mafic Cudgel", sub="Genbu's Shield", range="Gjallarhorn",
 		head="Inyanga Tiara +1", neck="Loricate Torque +1", lear="Ethereal Earring", rear="Etiolation Earring",
 		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +1", ring1="Inyanga Ring", ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Inyanga Shalwar +2",feet="Volte Gaiters"}
@@ -454,12 +454,12 @@ function init_gear_sets()
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
-	sets.engaged = {main="Naegling", sub="Genmei Shield", ranged=gear.Instrument_TP,
+	sets.engaged = {main="Naegling", sub="Genbu's Shield", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +1", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}
 	
-	sets.engaged.Acc = {main="Naegling",sub="Genmei Shield", ranged=gear.Instrument_TP,
+	sets.engaged.Acc = {main="Naegling",sub="Genbu's Shield", ranged=gear.Instrument_TP,
 		head="Aya. Zucchetto +1", neck="Sanctity Necklace", lear="Telos Earring", rear="Suppanomimi",
 		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Rajas Ring", rring="Ilabrat Ring",
 		back=gear.tp_jse_back, waist="Kentarch Belt +1", legs="Aya. Cosciales +2", feet="Bihu Slippers +3"}

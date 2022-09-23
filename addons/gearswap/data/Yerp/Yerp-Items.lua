@@ -4,7 +4,8 @@ sets.Sheltered = {ring2="Sheltered Ring"}
 sets.Capacity = {back="Aptitude Mantle +1"}
 
 sets.buff.Doom = {waist="Gishdubar Sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"}
-sets.TreasureHunter = {head="Wh. Rarab Cap +1", waist="Chaac Belt"}
+-- TH+ Caps at 4
+sets.TreasureHunter = {waist="Chaac Belt"}
 
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {}
@@ -113,6 +114,8 @@ gear.herculean_wsd_body = {name="Herculean Vest", augments={'INT+7','Pet: "Mag.A
 --gear.herculean_refresh_feet = {name="Herculean Boots",augments={'CHR+8','Rng.Acc.+7','"Refresh"+1','Mag. Acc.+17 "Mag.Atk.Bns."+17',}}
 
 gear.merlinic_nuke_head = {name="Merlinic Hood",augments={'Pet: Accuracy+29 Pet: Rng. Acc.+29','"Fast Cast"+1','Accuracy+4 Attack+4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
+gear.merlinic_fc_head = {name="Merlinic Hood",augments={'Pet: Accuracy+29 Pet: Rng. Acc.+29','"Fast Cast"+1','Accuracy+4 Attack+4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
+
 --gear.merlinic_nuke_body = {name="Merlinic Jubbah",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Occult Acumen"+4','INT+10','Mag. Acc.+2','"Mag.Atk.Bns."+15',}}
 gear.merlinic_fastcast_body = {name="Merlinic Jubbah", augments={'Phys. dmg. taken -1%','Enmity+1','"Fast Cast"+4',}}
 

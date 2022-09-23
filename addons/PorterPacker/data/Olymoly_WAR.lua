@@ -1,5 +1,5 @@
 return {
-    "Boii Mask",
+    "Boii Mask +1",
     "Boii Lorica",
     "Boii Mufflers +1",
     "Boii Cuisses",

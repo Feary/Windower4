@@ -407,14 +407,13 @@ function init_gear_sets()
 	-- Resting sets
 	sets.resting = {main="Daybreak",sub="Genmei Shield", -- ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands=gear.merlinic_refresh_hands,ring1="Dark Ring",ring2="Defending Ring",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 	
 	-- Idle sets
 	sets.idle = {main="Daybreak",sub="Genmei Shield", -- ammo="Homiliary",
 		head="Viti. Chapeau +1",neck="Loricate Torque +1",ear1="Ethereal Earring",ear2="Etiolation Earring",
-		-- Stikini Ring +1 Stikini Ring +1
-		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Dark Ring",ring2="Defending Ring",
+		body="Shamash Robe",hands=gear.merlinic_refresh_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back=gear.FC_jse_back,waist="Flume Belt",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 		
 	sets.idle.PDT = {main="Daybreak",sub="Genmei Shield", -- ammo="Staunch Tathlum",
@@ -599,6 +598,9 @@ function user_job_self_command(commandArgs, eventArgs)
 
 end
 
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 003')
+end
 
 buff_spell_lists = {
 	Auto = {

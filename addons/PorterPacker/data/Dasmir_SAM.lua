@@ -16,7 +16,7 @@ return {
     "Wakido Kabuto +2",
     "Wakido Domaru +2",
     "Wakido Haidate +2",
-	"Waki. Sune-Ate +1",
+	"Wakido Sune. +2",
     "Sakonji Kote +1",
     "Sakonji Haidate +1",    
     "Sakonji Domaru +1",

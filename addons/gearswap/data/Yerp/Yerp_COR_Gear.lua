@@ -78,8 +78,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll = {--ammo="Compensator",
 		-- neck="Regal Necklace", lear="Etiolation Earring", rear="Odndowa Earring",
 		head="Lanun Tricorne",  
-		-- hands="Chasseur's Gants +1",
-		body="Meg. Cuirie", hands="Meghanada Gloves", lring="Barataria Ring", rring="Defending Ring",
+		body="Meg. Cuirie", hands="Chasseur's Gants", lring="Barataria Ring", rring="Defending Ring",
 		--  legs="Desultor Tassets" -dt feet
 		back=gear.tp_jse_back, waist="Flume Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
 
@@ -371,7 +370,7 @@ function init_gear_sets()
 		--
 		back=gear.tp_ranger_jse_back,  waist="Flume Belt", legs="Mummu Kecks +2", feet="Meg. Jam. +2"}
 			
-    sets.Kiting = {legs="Carmine Cuisses +1"}
+    sets.Kiting = {lring="Shneddick Ring"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	--Weapon Sets
@@ -490,3 +489,30 @@ function select_default_macro_book()
         set_macro_page(1, 10)
     end   
 end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 010')
+end
+
+function job_setup()
+	-- Whether to use Compensator under a certain threshhold even when weapons are locked.
+	state.CompensatorMode = M{'Never','300','1000','Always'}
+	-- Whether to automatically generate bullets.
+	state.AutoAmmoMode = M(true,'Auto Ammo Mode')
+	state.UseDefaultAmmo = M(true,'Use Default Ammo')
+	state.Buff['Triple Shot'] = buffactive['Triple Shot'] or false
+
+	-- Whether to use Luzaf's Ring
+	state.LuzafRing = M(false, "Luzaf's Ring")
+    -- Whether a warning has been given for low ammo
+	
+	autows = 'Savage Blade'
+	rangedautows = 'Last Stand'
+	autofood = 'Sublime Sushi'
+	ammostock = 198
+
+    define_roll_values()
+	
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","RngHelper","AutoStunMode","AutoDefenseMode","LuzafRing",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","RangedMode","WeaponskillMode","ElementalMode","IdleMode","Passive","RuneElement","CompensatorMode","TreasureMode",})
+end
+

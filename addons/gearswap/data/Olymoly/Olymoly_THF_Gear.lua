@@ -14,11 +14,12 @@ function user_job_setup()
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 	state.AmbushMode = M(false, 'Ambush Mode')
 	
-	gear.stp_jse_back = 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Phys. dmg. taken-10%',}}
-	gear.da_jse_back =	 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	gear.crit_jse_back = 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
-	gear.wsd_jse_back = 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
-
+	gear.stp_jse_back 	= 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Phys. dmg. taken-10%',}}
+	gear.da_jse_back 	=	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	gear.crit_jse_back	= 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}}
+	gear.wsd_jse_back	= 	{name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
+	gear.fc_jse_back	=   {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Phys. dmg. taken-10%',}}
+	
     -- Additional local binds
     send_command('bind ^` input /ja "Flee" <me>')
     send_command('bind !` input /ra <t>')
@@ -118,11 +119,12 @@ function init_gear_sets()
     sets.precast.Waltz['Healing Waltz'] = {}
 
     -- Fast cast sets for spells
-    sets.precast.FC = {ammo="Impatiens",
-		head="Haruspex Hat +1",neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
+    sets.precast.FC = {ammo="Sapience Orb",
+		head=gear.herculean_fc_head,neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
+		-- Kishar Ring
 		body="Taeon Tabard",hands="Leyline Gloves", ring1="Lebeche Ring", ring2="Prolix Ring",
-		--legs="Rawhide Trousers"
-		}
+		-- gear.herculean_fc_feet
+		back=gear.fc_jse_back,legs="Rawhide Trousers"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads"})--body="Passion Jacket"
 
@@ -423,8 +425,7 @@ function init_gear_sets()
     -- Midcast sets
     --------------------------------------
     sets.midcast.FastRecast = {
-		-- Herculean Helm
-        head="Haruspex Hat +1",neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
+        head=gear.herculean_fc_head,neck="Orunmila's Torque",ear1="Loquacious Earring",ear2="Enchntr. Earring +1",
         body=gear.taeon_body_Fastcast,hands="Leyline Gloves",ring1="Moonlight Ring",ring2="Defending Ring",
         back="Moonbeam Cape",waist="Tempus Fugit",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
@@ -442,15 +443,13 @@ function init_gear_sets()
         head="Malignance Chapeau",neck="Erudit. Necklace",ear1="Telos Earring", ear2="Sherida Earring",
 		-- Malignance Tabard  Malignance Gloves
         body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring", ring2="Ilabrat Ring",
-		-- Malignance Tights
-        back=gear.da_jse_back,waist="Yemaya Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+        back=gear.da_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {
         head="Malignance Chapeau",neck="Erudit. Necklace",ear1="Telos Earring", ear2="Sherida Earring",
         -- Malignance Tabard  Malignance Gloves
 		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Regal Ring", ring2="Ilabrat Ring",
-		-- Malignance Tights
-        back=gear.da_jse_back,waist="Yemaya Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+        back=gear.da_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.midcast['Absorb-TP'] =  sets.midcast.RA
     --------------------------------------

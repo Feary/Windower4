@@ -41,10 +41,10 @@ function init_gear_sets()
 	
 	-- Precast sets to enhance JAs on use
 	sets.precast.JA['Hundred Fists'] = {legs="Hesychast's Hose +1"}
-	sets.precast.JA['Boost'] = {hands="Anchorite's Gloves +1"}
-	sets.precast.JA['Boost'].OutOfCombat = {hands="Anchorite's Gloves +1"} 
-	sets.precast.JA['Dodge'] = {feet="Anch. Gaiters +2"}
-	sets.precast.JA['Focus'] = {head="Anchorite's Crown +1"}
+	sets.precast.JA['Boost'] = {hands="Anchor. Gloves +3"}
+	sets.precast.JA['Boost'].OutOfCombat = {hands="Anchor. Gloves +3"} 
+	sets.precast.JA['Dodge'] = {feet="Anch. Gaiters +3"}
+	sets.precast.JA['Focus'] = {head="Anchor. Crown +3"}
 	sets.precast.JA['Footwork'] = {}-- feet="Shukuyu Sune-Ate"
 	sets.precast.JA['Counterstance'] = {feet="Hesychast's Gaiters +1"}
 	sets.precast.JA['Formless Strikes'] = {body="Hesychast's Cyclas +1"}
@@ -55,10 +55,10 @@ function init_gear_sets()
 	sets.precast.JA['Chakra'] = {
 		-- Genmei Kabuto Unmoving Collar +1 Handler's Earring +1 Tuisto Eaerring
 		head="Hiza. Somen　+2", neck="Loricate Torque +1",
-		-- Anch. Cyclas +3 Hes. Gloves +3
-		body="Anch. Cyclas +1", hands="Hesychast's Gloves +1", ring1="Niqmaddu Ring", ring2="Regal Ring",
+		--  Hes. Gloves +3
+		body="Anch. Cyclas +3", hands="Hesychast's Gloves +1", ring1="Niqmaddu Ring", ring2="Regal Ring",
 		-- waist="Latria Sash",
-		back=gear.charka_jse_back,  legs="Hiza. Hizayoroi +2",feet="Hiza. Sune-Ate +2"}
+		back=gear.charka_jse_back, legs="Hiza. Hizayoroi +2", feet="Hiza. Sune-Ate +2"}
 
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {}
