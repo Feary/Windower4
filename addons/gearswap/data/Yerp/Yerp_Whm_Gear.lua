@@ -413,7 +413,7 @@ function init_gear_sets()
 		back="Felicitas Cape +1", legs="Inyanga Shalwar +1", feet="Inyan. Crackows +1"}
 
 	sets.midcast['Enfeebling Magic'] = {-- Grioavolr Pemphredo Tathlum
-		--  sub="Ammurapi Shield",
+		-- sub="Ammurapi Shield",
 		main="Maxentius",
 		-- Chironic Hat, neck="Voltsurge Torque",lear="Regal Earring", rear="Malignance Earring",
 		head="Inyanga Tiara +1", rear="Enchntr. Earring +1",
@@ -527,25 +527,25 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Basic set for if no TP weapon is defined.
-    sets.engaged = {	
-		head="Aya. Zucchetto +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", 
+    sets.engaged = {
+		head="Aya. Zucchetto +1", lear="Mache Earring +1", rear="Mache Earring +1",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Chirich Ring +1", rring="Chirich Ring +1",
 		legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
-    sets.engaged.Acc = {	
-		head="Aya. Zucchetto +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", 
+    sets.engaged.Acc = {
+		head="Aya. Zucchetto +1", lear="Mache Earring +1", rear="Mache Earring +1",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Chirich Ring +1", rring="Chirich Ring +1",
 		legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
 		
     sets.engaged.DW = {
-		head="Aya. Zucchetto +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", 
-		legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		head="Aya. Zucchetto +1", lear="Mache Earring +1", rear="Mache Earring +1",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"
 		
     sets.engaged.DW.Acc = {
-		head="Aya. Zucchetto +1",
-		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", 
-		legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"}
+		head="Aya. Zucchetto +1", lear="Mache Earring +1", rear="Mache Earring +1",
+		body="Ayanmo Corazza +2", hands="Aya. Manopolas +1", lring="Chirich Ring +1", rring="Chirich Ring +1",
+		legs="Aya. Cosciales +2", feet="Aya. Gambieras +1"
 
 	-- Weaponskill sets
 
@@ -600,6 +600,123 @@ end
 
 function user_job_self_command(commandArgs, eventArgs)
 	
+end
+
+-- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
+function job_setup()
+
+    state.Buff['Afflatus Solace'] = buffactive['Afflatus Solace'] or false
+    state.Buff['Afflatus Misery'] = buffactive['Afflatus Misery'] or false
+	state.Buff['Divine Caress'] = buffactive['Divine Carness'] or false
+	
+	state.AutoCaress = M(false, 'Auto Caress Mode')
+	state.Gambanteinn = M(false, 'Gambanteinn Cursna Mode')
+	state.BlockLowDevotion = M(true, 'Block Low Devotion')
+	
+	autows = 'Mystic Boon'
+	autofood = 'Miso Ramen'
+	
+	state.ElementalMode = M{['description'] = 'Elemental Mode','Light','Dark','Fire','Ice','Wind','Earth','Lightning','Water',}
+
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoNukeMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoStunMode","AutoDefenseMode"},{"AutoBuffMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","ElementalMode","CastingMode","TreasureMode",})
+	
+	function handle_smartcure(cmdParams)
+		if cmdParams[2] then
+			if tonumber(cmdParams[2]) then
+				cureTarget = windower.ffxi.get_mob_by_id(tonumber(cmdParams[2]))
+			else
+				cureTarget = table.concat(cmdParams, ' ', 2)
+				cureTarget = get_closest_mob_by_name(cureTarget) 
+				if not cureTarget.name then cureTarget = player.target end
+				if not cureTarget.name then cureTarget = player end
+			end
+		elseif player.target.type == "SELF" or player.target.type == 'MONSTER' or player.target.type == 'NONE' then
+			cureTarget = player
+		else
+			cureTarget = player.target
+		end
+
+		if cureTarget.status == 2 or cureTarget.status == 3 then
+			windower.chat.input('/ma "Arise" '..cureTarget..'')
+			return
+		end
+		
+		local missingHP
+		local spell_recasts = windower.ffxi.get_spell_recasts()
+
+		if cureTarget.type == 'MONSTER' then
+			if silent_can_use(4) and spell_recasts[4] < spell_latency then
+				windower.chat.input('/ma "Cure IV" '..cureTarget.id..'')
+			elseif spell_recasts[3] < spell_latency then
+				windower.chat.input('/ma "Cure III" '..cureTarget.id..'')
+			elseif spell_recasts[2] < spell_latency then
+				windower.chat.input('/ma "Cure II" '..cureTarget.id..'')
+			else
+				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
+			end
+		elseif cureTarget.in_alliance then
+			cureTarget.hp = find_player_in_alliance(cureTarget.name).hp
+			local est_max_hp = cureTarget.hp / (cureTarget.hpp/100)
+			missingHP = math.floor(est_max_hp - cureTarget.hp)
+		else
+			local est_current_hp = 1800 * (cureTarget.hpp/100)
+			missingHP = math.floor(1800 - est_current_hp)
+		end
+
+		if missingHP < 250 then
+			if spell_recasts[1] < spell_latency then
+				windower.chat.input('/ma "Cure" '..cureTarget.id..'')
+			elseif spell_recasts[2] < spell_latency then
+				windower.chat.input('/ma "Cure II" '..cureTarget.id..'')
+			else
+				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
+			end
+		elseif missingHP < 400 then
+			if spell_recasts[2] < spell_latency then
+				windower.chat.input('/ma "Cure II" '..cureTarget.id..'')
+			elseif spell_recasts[3] < spell_latency then
+				windower.chat.input('/ma "Cure III" '..cureTarget.id..'')
+			elseif spell_recasts[1] < spell_latency then
+				windower.chat.input('/ma "Cure" '..cureTarget.id..'')
+			else
+				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
+			end
+		elseif missingHP < 900 then
+			if spell_recasts[3] < spell_latency then
+				windower.chat.input('/ma "Cure III" '..cureTarget.id..'')
+			elseif spell_recasts[4] < spell_latency then
+				windower.chat.input('/ma "Cure IV" '..cureTarget.id..'')
+			elseif spell_recasts[5] < spell_latency then
+				windower.chat.input('/ma "Cure V" '..cureTarget.id..'')
+			else
+				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
+			end
+		elseif missingHP < 1400 then
+			if spell_recasts[5] < spell_latency then
+				windower.chat.input('/ma "Cure V" '..cureTarget.id..'')
+			elseif spell_recasts[4] < spell_latency then
+				windower.chat.input('/ma "Cure IV" '..cureTarget.id..'')
+			elseif spell_recasts[6] < spell_latency then
+				windower.chat.input('/ma "Cure VI" '..cureTarget.id..'')
+			elseif spell_recasts[3] < spell_latency then
+				windower.chat.input('/ma "Cure III" '..cureTarget.id..'')
+			else
+				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
+			end
+		else
+			if spell_recasts[6] < spell_latency then
+				windower.chat.input('/ma "Cure VI" '..cureTarget.id..'')
+			elseif spell_recasts[5] < spell_latency then
+				windower.chat.input('/ma "Cure V" '..cureTarget.id..'')
+			elseif spell_recasts[4] < spell_latency then
+				windower.chat.input('/ma "Cure IV" '..cureTarget.id..'')
+			elseif spell_recasts[3] < spell_latency then
+				windower.chat.input('/ma "Cure III" '..cureTarget.id..'')
+			else
+				add_to_chat(123,'Abort: Appropriate cures are on cooldown.')
+			end
+		end
+	end
 end
 
 buff_spell_lists = {

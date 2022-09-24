@@ -69,10 +69,10 @@ end
 -- BST gearsets
 function init_gear_sets()
 	-- PRECAST SETS
-	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm +1"} 
-	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"} -- body="Mirke Wardecors",
+	sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm +3"} 
+	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +3"} -- body="Mirke Wardecors",
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
-	sets.precast.JA.Familiar = {legs="Ankusa Trousers +1"}
+	sets.precast.JA.Familiar = {legs="Ankusa Trousers +3"}
 	sets.precast.JA.Tame = {head="Totemic Helm +3"}
 	sets.precast.JA.Spur = {back="Artio's Mantle",feet="Nukumi Ocreae"}
 	sets.SpurAxe = {main="Skullrender"}
@@ -82,8 +82,8 @@ function init_gear_sets()
 	sets.precast.JA['Feral Howl'] = {ammo="Pemphredo Tathlum",
 		-- neck="Bst. Collar +2",  lear="Digni. Earring", 
 		head="Malignance Chapeau", neck="Sanctity Necklace", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		-- Ankusa Jackcoat +1 +1 Malignance Gloves
-		body="Tali'ah Manteel +2", hands="Tali'ah Gages +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		--  Malignance Gloves
+		body="An. Jackcoat +3", hands="Tali'ah Gages +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- Malignance Trousers waist="Eschan Stone",  
 		back=gear.FC_jse_back, legs="Tali'ah Seraweels +2", feet="Malignance Boots"}
 		
@@ -93,8 +93,8 @@ function init_gear_sets()
 		head="Meghanada Visor +2", neck="Phalaina Locket", ear1="Lifestorm Earring", 
 		-- Malignance Gloves
 		body="Tot. Jackcoat +3", hands="Meg. Gloves +2", ring1="Stikini Ring +1", ring2="Stikini Ring +1",
-		-- waist="Klouskap Sash", legs="Ankusa Trousers +3",
-		back=gear.FC_jse_back, legs="Tot. Trousers +2", feet="Ankusa Gaiters +1"}
+		-- waist="Klouskap Sash",
+		back=gear.FC_jse_back, legs="Ankusa Trousers +3", feet="Ankusa Gaiters +3"}
 
 	sets.precast.JA.Reward.Theta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Theta"})
 	sets.precast.JA.Reward.Zeta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Zeta"})
@@ -105,8 +105,8 @@ function init_gear_sets()
 		-- neck="Unmoving Collar +1", rear="Enchanter's Earring
 		head="Totemic Helm +3", neck="Sanctity Necklace", lear="Enchntr. Earring +1",
 		-- Carb. Ring +1 Metamor. Ring +1
-		body="Ankusa Jackcoat +1", hands="Ankusa Gloves +1",
-		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers +1", feet="Ankusa Gaiters +1"}
+		body="An. Jackcoat +3", hands="Ankusa Gloves +3",
+		back=gear.Charm_jse_back, waist="Chaac Belt", legs="Ankusa Trousers +3", feet="Ankusa Gaiters +3"}
 
 	-- CURING WALTZ - CHR
 	sets.precast.Waltz = {}
@@ -121,15 +121,15 @@ function init_gear_sets()
 	sets.precast.Flourish1 = {ammo="Pemphredo Tathlum",
 		-- neck="Bst. Collar +2", 
 		head="Malignance Chapeau", neck="Sanctity Necklace", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		-- Ankusa Jackcoat +1 Malignance Gloves
-		body="Tali'ah Manteel +2", hands="Tali'ah Gages +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		--  Malignance Gloves
+		body="An. Jackcoat +3", hands="Tali'ah Gages +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- Malignance Trousers  waist="Eschan Stone",
 		back=gear.magic_ws_jse_back,  legs="Tali'ah Seraweels +2", feet="Tali'ah"}
 	sets.precast.Flourish1['Violent Flourish'] = {ammo="Pemphredo Tathlum",
 		-- neck="Bst. Collar +2", rear="Digni. Earring",
 		head="Malignance Chapeau", neck="Sanctity Necklace", lear="Gwati Earring", rear="Enchntr. Earring +1",
-		-- Ankusa Jackcoat +1 Malignance Gloves
-		body="Tali'ah Manteel +2", hands="Tali'ah Gages +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		-- An. Jackcoat +3 Malignance Gloves
+		body="An. Jackcoat +3", hands="Tali'ah Gages +2", lring="Stikini Ring +1", rring="Stikini Ring +1",
 		-- Malignance Trousers waist="Eschan Stone", Malignance Boots
 		back=gear.magic_ws_jse_back,  legs="Tali'ah Seraweels +2", feet="Tali'ah Crackows +2"}
 
@@ -179,44 +179,39 @@ function init_gear_sets()
 	-- WEAPONSKILLS
 	-- Default weaponskill sets.
 	sets.precast.WS = {--ammo="Ginsen", 
-		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
-		-- Ankusa Jackcoat +1 +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
-		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		--  neck="Bst. Collar +2", rear="Thud Earring"
+		head="Ankusa Helm +3", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
+		body="An. Jackcoat +3", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
+		-- waist="Metalsinger Belt",  
+		back=gear.ws_jse_back, waist="Wanion Belt", legs="Ankusa Trousers +3", feet="Ankusa Gaiters +3"}
 
 	sets.precast.WS.SomeAcc = {--ammo="Ginsen", 
-		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
-		-- Ankusa Jackcoat +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
-		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		-- neck="Bst. Collar +2", rear="Thud Earring"
+		head="Ankusa Helm +3", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
+		body="An. Jackcoat +3", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
+		-- waist="Metalsinger Belt",
+		back=gear.ws_jse_back, waist="Wanion Belt", legs="Ankusa Trousers +3", feet="Ankusa Gaiters +3"}
 
 	sets.precast.WS.Acc = {--ammo="Ginsen", 
-		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
-		-- Ankusa Jackcoat +1 +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
-		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		-- neck="Bst. Collar +2", rear="Thud Earring"
+		head="Ankusa Helm +3", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
+		body="An. Jackcoat +3", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
+		-- waist="Metalsinger Belt",
+		back=gear.ws_jse_back, waist="Wanion Belt", legs="Ankusa Trousers +3", feet="Ankusa Gaiters +3"}
 
 	sets.precast.WS.FullAcc = {--ammo="Ginsen", 
-		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
-		-- Ankusa Jackcoat +1 +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +1 +3"
-		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		-- neck="Bst. Collar +2", rear="Thud Earring"
+		head="Ankusa Helm +3", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
+		body="An. Jackcoat +3", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
+		-- waist="Metalsinger Belt",
+		back=gear.ws_jse_back, waist="Wanion Belt", legs="Ankusa Trousers +3", feet="Ankusa Gaiters +3"}
 
 	sets.precast.WS.Fodder = {--ammo="Ginsen", 
-		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
-		-- Ankusa Jackcoat +3
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
-		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		-- neck="Bst. Collar +2", rear="Thud Earring"
+		head="Ankusa Helm +3", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
+		body="An. Jackcoat +3", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
+		-- waist="Metalsinger Belt",
+		back=gear.ws_jse_back, waist="Wanion Belt", legs="Ankusa Trousers +3", feet="Ankusa Gaiters +3"}
 
 	-- Specific weaponskill sets.
 	sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {--ammo="Focal Orb",
@@ -249,27 +244,24 @@ function init_gear_sets()
 		back=gear.ws_jse_back, waist="Fotia Belt", legs="Meg. Chausses +2", feet="Thereoid Greaves"}
 		
 	sets.precast.WS['Mistral Axe'] = {--ammo="Ginsen", 
-		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
-		-- Ankusa Jackcoat +3
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
-		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		--  neck="Bst. Collar +2", rear="Thud Earring"
+		head="Ankusa Helm +3", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
+		body="An. Jackcoat +3", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
+		-- waist="Metalsinger Belt",  
+		back=gear.ws_jse_back, waist="Wanion Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"}
 	
 	sets.precast.WS['Calamity'] = {--ammo="Ginsen", 
-		-- Ankusa Helm +3 neck="Bst. Collar +2", rear="Thud Earring"
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
-		-- Ankusa Jackcoat +3 
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
-		-- waist="Metalsinger Belt", legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
-		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		--neck="Bst. Collar +2", rear="Thud Earring"
+		head="Ankusa Helm +3", neck="Sanctity Necklace", lear="Moonshade Earring", rear="Ishvara Earring",
+		body="An. Jackcoat +3", hands="Totemic Gloves +3", lring="Regal Ring", rring="Petrov Ring",
+		-- waist="Metalsinger Belt", 
+		back=gear.ws_jse_back, waist="Wanion Belt", legs="Ankusa Trousers +3", feet="Ankusa Gaiters +3"}
 	
 	sets.precast.WS['Onslaught'] = {--ammo="Ginsen", 
-		-- Ankusa Helm +3 neck="Bst. Collar +2", Thud Earring  Cessance Earring
-		head="Meghanada Visor +2", neck="Sanctity Necklace", lear="Brutal Earring", rear="Sherida Earring",
-		body="Tali'ah Manteel +2", hands="Totemic Gloves +3", lring="Petrov Ring", rring="Ilabrat Ring",
-		-- legs="Ankusa Trousers +3" feet="Ankusa Gaiters +3"
-		back=gear.ws_jse_back, waist="Wanion Belt", legs="Meg. Chausses +2", feet="Meg. Jam. +2"}
+		--  neck="Bst. Collar +2", Thud Earring  Cessance Earring
+		head="Ankusa Helm +3", neck="Sanctity Necklace", lear="Brutal Earring", rear="Sherida Earring",
+		body="An. Jackcoat +3", hands="Totemic Gloves +3", lring="Petrov Ring", rring="Ilabrat Ring",
+		back=gear.ws_jse_back, waist="Wanion Belt", legs="Ankusa Trousers +3", feet="Ankusa Gaiters +3"}
 		
 	sets.precast.WS['Onslaught'].SomeAcc = set_combine(sets.precast.WS, {})
 	sets.precast.WS['Onslaught'].Acc = set_combine(sets.precast.SomeAcc, {})
@@ -277,14 +269,14 @@ function init_gear_sets()
 	sets.precast.WS['Onslaught'].Fodder = set_combine(sets.precast.WS.Fodder, {})
 	
 	sets.precast.WS['Primal Rend'] = {ammo="Pemphredo Tathlum",
-		-- Ankusa Helm +3 Bst. Collar +2
-		head="Ankusa Helm +1",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Sherida Earring",
+		-- Bst. Collar +2
+		head="Ankusa Helm +3",neck="Baetyl Pendant",ear1="Moonshade Earring",ear2="Sherida Earring",
 		-- Sacro Breastplate 
 		body="Tali'ah Manteel +2",hands="Leyline Gloves",ring1="Regal Ring",ring2="Petrov Ring",
 		back=gear.magic_ws_jse_back,waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
 
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {mmo="Pemphredo Tathlum",
-		head="Ankusa Helm +1", neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
+		head="Ankusa Helm +3", neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
 		body="Tali'ah Manteel +2",hands="Leyline Gloves",ring1="Regal Ring",ring2="Petrov Ring",
 		back=gear.magic_ws_jse_back,waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"})
 
@@ -324,7 +316,7 @@ function init_gear_sets()
 	-- RESTING
 	sets.resting = {}
 
-	sets.idle = {main="Skullrender",sub=gear.PDTMABKumbha, --ammo="Staunch Tathlum",
+	sets.idle = {main="Skullrender",sub=gear.PDTMABKumbha, --ammo="Staunch Tathlum +1",
 		-- Bathy Collar +1 Infused Earring Dawn Earring
 		head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Merman's Earring",
 		-- Sacro Breastplate Paguroidea Ring
@@ -338,17 +330,17 @@ function init_gear_sets()
 	sets.idle.Pet = {main="Skullrender",sub=gear.PDTMABKumbha, --ammo="Demonry Core",
 		-- head="Anwig Salade",
 		head="Meghanada Visor +2", neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Tot. Jackcoat +1",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Moonbeam Ring",
-		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +1"}
+		body="Tot. Jackcoat +1",hands="Ankusa Gloves +3",ring1="Defending Ring",ring2="Moonbeam Ring",
+		back=gear.Pet_regen_jse_back,waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
 
 	-- Pet Engaged Only - Path C
 	sets.idle.Pet.Engaged = {main="Skullrender", sub=PDTMABKumbha, --Ammo="Voluspa Tathlum",
 		-- neck="Beast Collar +2", ear2="Domesticator Earring",  ear2="Handler's Earring +1",
 		head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Enmerkar Earring",
-		-- body="An. Jackcoat +3", hands="Emicho Gauntlets +1" Path C
-		body="Tali'ah Manteel +2",hands="Tali'ah Gages +2",ring1="Varar Ring +1",ring2="Varar Ring +1",
-		-- legs="Ankusa Trousers +3", feet Valorous Greaves Pet DA Fern stone
-		back=gear.Pet_acc_jse_back,waist="Incarnation Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+		--  hands="Emicho Gauntlets +1" Path C
+		body="An. Jackcoat +3", hands="Tali'ah Gages +2",ring1="Varar Ring +1",ring2="Varar Ring +1",
+		--  feet Valorous Greaves Pet DA Fern stone
+		back=gear.Pet_acc_jse_back,waist="Incarnation Sash",legs="Ankusa Trousers +3",feet="Tali'ah Crackows +2"}
 
 	-- DEFENSE SETS
 	sets.defense.PDT = {--ammo="Staunch Tathlum",
@@ -375,7 +367,7 @@ function init_gear_sets()
 	sets.defense.PKiller = set_combine(sets.defense.PDT, {body="Nukumi Gausape +1"})
 	sets.defense.Reraise = set_combine(sets.defense.PDT, {head="Twilight Helm", body="Twilight Mail"})
 
-	sets.defense.MDT = {--ammo="Staunch Tathlum",
+	sets.defense.MDT = {--ammo="Staunch Tathlum +1",
 		-- ear2="Handler's Earring +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Enmerkar Earring",
 		body="Meg. Cuirie +2",hands="Tali'ah Gages +2",ring1="Defending Ring",ring2="Moonbeam Ring",

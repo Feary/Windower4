@@ -331,11 +331,11 @@ function init_gear_sets()
 
 	-- Magical Spells --
 	sets.midcast['Blue Magic'].Magical = {main="Maxentius", sub="Kaja Rod", ammo="Pemphredo Tathlum",
-	--Bunzi's Rod Ghastly Tathlum +1
+		--	Bunzi's Rod Ghastly Tathlum +1
 		-- head=empty Sybil Scarf
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
-		-- Cohort Cloak +1 hands="Hashi. Bazu. +2" Metamor. Ring +1
-		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
+		-- Cohort Cloak +1 hands="Hashi. Bazu. +2" 
+		body="Shamash Robe", hands="Amalric Gages +1", lring="Metamor. Ring +1", rring="Shiva Ring +1",
 		-- Hashi. Basmak +2
 		back=gear.mab_jse_back, waist="Orpheus's Sash", legs="Luh. Shalwar +3", feet="Amalric Nails +1"}
 
@@ -343,18 +343,16 @@ function init_gear_sets()
 		main="Maxentius", sub="Kaja Rod", ammo="Pemphredo Tathlum",
 		-- Baetyl Pendant
 		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
-		-- Metamor. Ring +1
-		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
+		body="Shamash Robe", hands="Amalric Gages +1", lring="Metamor. Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Orpheus's Sash", legs="Luh. Shalwar +3", feet="Amalric Nails +1"})
 
 	sets.midcast['Blue Magic'].Magical.Fodder = {main="Maxentius", sub="Kaja Rod", ammo="Pemphredo Tathlum",
 		-- Baetyl Pendant
 		head=gear.herculean_nuke_head, neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
-		-- Metamor. Ring +1
-		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
+		body="Shamash Robe", hands="Amalric Gages +1", lring="Metamor. Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Orpheus's Sash", legs="Luh. Shalwar +3", feet="Amalric Nails +1"}
 
-	sets.midcast['Blue Magic'].MagicalMnd = set_combine(sets.midcast['Blue Magic'].Magical, {ring1="Stikini Ring +1",ring2="Stikini Ring +1",waist="Luminary Sash"})
+	sets.midcast['Blue Magic'].MagicalMnd = set_combine(sets.midcast['Blue Magic'].Magical, {ring1="Stikini Ring +1"})
 	sets.midcast['Blue Magic'].MagicalChr = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalVit = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
@@ -362,17 +360,17 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].MagicAccuracy = {main="Maxentius", sub="Kaja Rod",ammo="Pemphredo Tathlum",
 		-- Sakpata's Sword
 		head="Assim. Keffiyeh +3", neck="Erra Pendant", lear="Regal Earring", rear="Digni. Earring",
-		-- Hashi. Mintan +2 Hashi. Bazu. +2 Metamor. Ring +1 
-		body="Shamash Robe", hands="Regal Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- Aurist's Cape +1 Acuity Belt +1 Hashi. Tayt +2 Hashi. Basmak +2
-		back="Cornflower Cape", waist="Eschan Stone", legs="Malignance Tights", feet="Malignance Boots"}
+		-- Hashi. Mintan +2 Hashi. Bazu. +2 
+		body="Shamash Robe", hands="Regal Cuffs", lring="Metamor. Ring +1", rring="Stikini Ring +1",
+		-- Aurist's Cape +1  Hashi. Tayt +2 Hashi. Basmak +2
+		back="Cornflower Cape", waist="Acuity Belt +1", legs="Malignance Tights", feet="Malignance Boots"}
 	sets.midcast['Blue Magic'].MagicAccuracy.DT = {main="Maxentius", sub="Kaja Rod",ammo="Staunch Tathlum +1",
 		-- Mavi Stole +2 Hashi. Earring +2
 		head="Malignance Chapeau", neck="Erra Pendant", lear="Regal Earring", rear="Digni. Earring",
-		-- Hashi. Mintan +2 Hashi. Bazu. +2  Malignance Tabard Malignance Gloves Metamor. Ring +1
-		body="Shamash Robe", hands="Assim. Bazu. +3", lring="Stikini Ring +1", rring="Stikini Ring +1",
-		-- Aurist's Cape +1 Acuity Belt +1 Hashi. Tayt +2
-		back="Cornflower Cape", waist="Eschan Stone", legs="Malignance Tights", feet="Malignance Boots"}
+		-- Hashi. Mintan +2 Hashi. Bazu. +2  Malignance Tabard Malignance Gloves 
+		body="Shamash Robe", hands="Assim. Bazu. +3", lring="Metamor. Ring +1", rring="Stikini Ring +1",
+		-- Aurist's Cape +1 Hashi. Tayt +2
+		back="Cornflower Cape", waist="Acuity Belt +1", legs="Malignance Tights", feet="Malignance Boots"}
 
 	sets.midcast['Blue Magic']['Dream Flower'] = sets.midcast['Blue Magic'].MagicAccuracy.DT
 	
@@ -380,18 +378,17 @@ function init_gear_sets()
 		-- Sakpata Sword
 		-- Mavi Stole +2
 		head="Carmine Mask +1", neck="Erra Pendant", lear="Loquac. Earring", rear="Digni. Earring",
-		-- Hash. Bazu. +2 lring="Metamor. Ring +1"
-		body="Luz. Luhlaza +3", hands="Regal Cuffs", lring="Stikini Ring +1", rring="Kishar Ring",
-		-- Aurist's Cape +1 Acuity Belt +1 Hashi. Basmak +2
-		back="Cornflower Cape", waist="Eschan Stone", legs="Aya. Cosciales +2", feet="Malignance Boots"}
+		-- Hash. Bazu. +2 
+		body="Luz. Luhlaza +3", hands="Regal Cuffs", lring="Metamor. Ring +1", rring="Kishar Ring",
+		-- Aurist's Cape +1  Hashi. Basmak +2
+		back="Cornflower Cape", waist="Acuity Belt +1", legs="Aya. Cosciales +2", feet="Malignance Boots"}
 	sets.midcast['Blue Magic']['Feather Tickle'] = sets.midcast['Blue Magic']['Reaving Wind']
 
 	-- Breath Spells --
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
-		--  Hermetic Earring
+		-- Hermetic Earring
 		head="Assim. Keffiyeh +3", neck="Sanctity Necklace", lear="Regal Earring",rear="Digni. Earring",
-		-- Metamor. Ring +1
-		body="Amalric Doublet +1", hands="Regal Cuffs", lring="Stikini Ring +1", rring="Stikini Ring +1",
+		body="Amalric Doublet +1", hands="Regal Cuffs", lring="Metamor. Ring +1", rring="Stikini Ring +1",
 		back=gear.mab_jse_back, waist="Eschan Stone", legs="Assim. Shalwar +3", feet="Amalric Nails +1"}
 
 	-- Physical Added Effect Spells most notably "Stun" spells --
@@ -416,14 +413,13 @@ function init_gear_sets()
 		-- Pinga Tunic +1 hands=gear.telchine_hands_curerecieved
 		body="Assim. Jubbah +3", hands=gear.telchine_hands_Cure, lring="Ilabrat Ring", rring="Supershear Ring",
 		-- Gold Mog Belt Oneiros Belt   Pinga Pants +1
-		back="Moonbeam Cape", waist=gear.ElementalObi, legs="Gyve Trousers", feet="Carmine Greaves "}
+		back="Moonbeam Cape", legs="Gyve Trousers", feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic']['Healing Breeze'] = sets.midcast['Blue Magic']['White Wind']
 
 	sets.midcast['Blue Magic'].Healing = {ammo="Staunch Tathlum +1", 
 		sub="Nibiru Cudgel",
 		head="Carmine Mask +1", neck="Phalaina Locket", lear="Regal Earring", rear="Enchntr. Earring +1",
-		-- 
 		body="Vrikodara Jupon",hands=gear.telchine_hands_Cure, lring="Stikini Ring +1", rring="Stikini Ring +1",
 		back=gear.cure_jse_back, waist="Luminary Sash", legs="Gyve Trousers", feet="Skaoi Boots"}
 
@@ -487,25 +483,20 @@ function init_gear_sets()
 	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
 
-	sets.midcast['Divine Magic'] = {ammo="Pemphredo Tathlum",
-		main="Maxentius", sub="Naegling",
+	sets.midcast['Divine Magic'] = {main="Maxentius", sub="Naegling", ammo="Pemphredo Tathlum",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
 		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Orpheus's Sash", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
-	sets.midcast['Elemental Magic'] = {ammo="Pemphredo Tathlum",
-		main="Maxentius", sub="Naegling",
+	sets.midcast['Elemental Magic'] = {main="Maxentius", sub="Naegling", ammo="Pemphredo Tathlum",
 		--Mavi Stole +2
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Friomisi Earring",
-		-- Metamor. Ring +1
-		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
+		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Metamor. Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Orpheus's Sash", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
-	sets.midcast['Elemental Magic'].Resistant = {ammo="Pemphredo Tathlum",
-		main="Maxentius", sub="Naegling",
+	sets.midcast['Elemental Magic'].Resistant = {main="Maxentius", sub="Naegling", ammo="Pemphredo Tathlum",
 		head="Amalric Coif +1", neck="Sanctity Necklace", lear="Regal Earring", rear="Digni. Earring",
-		-- Metamor. Ring +1
-		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Shiva Ring +1",
+		body="Amalric Doublet +1", hands="Amalric Gages +1", lring="Metamor. Ring +1", rring="Shiva Ring +1",
 		back=gear.mab_jse_back, waist="Orpheus's Sash", legs="Amalric Slops +1", feet="Amalric Nails +1"}
 
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
@@ -769,3 +760,184 @@ buff_spell_lists = {
 		{Name='Mighty Guard',		Buff='Mighty Guard',	SpellID=750,	When='Combat'},
 	},
 }
+
+function job_setup()
+
+    state.Buff['Burst Affinity'] = buffactive['Burst Affinity'] or false
+    state.Buff['Chain Affinity'] = buffactive['Chain Affinity'] or false
+	state.Buff['Azure Lore'] = buffactive['Azure Lore'] or false
+    state.Buff.Convergence = buffactive.Convergence or false
+    state.Buff.Diffusion = buffactive.Diffusion or false
+    state.Buff.Efflux = buffactive.Efflux or false
+    state.Buff['Aftermath: Lv.3'] = buffactive['Aftermath: Lv.3'] or false
+    state.Buff['Unbridled Learning'] = buffactive['Unbridled Learning'] or false
+	state.Buff['Unbridled Wisdom'] = buffactive['Unbridled Wisdom'] or false
+	
+	state.LearningMode = M(false, 'Learning Mode')
+	state.AutoUnbridled = M(false, 'Auto Unbridled Mode')
+	autows = 'Chant Du Cygne'
+	autofood = 'Soy Ramen'
+	
+    blue_magic_maps = {}
+    
+    -- Mappings for gear sets to use for various blue magic spells.
+    -- While Str isn't listed for each, it's generally assumed as being at least
+    -- moderately signficant, even for spells with other mods, if only for pDif.
+    
+    -- Physical Spells --
+    
+    -- Physical spells with no particular (or known) stat mods
+    blue_magic_maps.Physical = S{
+        'Bilgestorm'
+    }
+
+    -- Spells with heavy accuracy penalties, that need to prioritize accuracy.
+    blue_magic_maps.PhysicalAcc = S{
+        'Heavy Strike',
+    }
+
+    -- Physical spells with Str stat mod
+    blue_magic_maps.PhysicalStr = S{
+        'Bloodrake','Death Scissors','Dimensional Death',
+        'Empty Thrash','Quadrastrike','Sinker Drill','Spinal Cleave',
+        'Uppercut','Vertical Cleave',
+    }
+        
+    -- Physical spells with Dex stat mod
+    blue_magic_maps.PhysicalDex = S{
+        'Amorphic Spikes','Asuran Claws','Claw Cyclone','Disseverment',
+        'Foot Kick','Frenetic Rip','Goblin Rush','Hysteric Barrage','Paralyzing Triad',
+        'Sickle Slash','Smite of Rage','Thrashing Assault','Vanity Dive',
+    }
+        
+    -- Physical spells with Vit stat mod
+    blue_magic_maps.PhysicalVit = S{
+        'Body Slam','Cannonball','Delta Thrust','Glutinous Dart','Grand Slam',
+        'Power Attack','Quad. Continuum',
+    }
+        
+    -- Physical spells with Agi stat mod
+    blue_magic_maps.PhysicalAgi = S{
+        'Helldive','Jet Stream',
+    }
+
+    -- Physical spells with Int stat mod
+    blue_magic_maps.PhysicalInt = S{
+        'Mandibular Bite',
+    }
+
+    -- Physical spells with Mnd stat mod
+    blue_magic_maps.PhysicalMnd = S{
+        'Ram Charge','Screwdriver','Tourbillion'
+    }
+
+    -- Physical spells with Chr stat mod
+    blue_magic_maps.PhysicalChr = S{
+        'Bludgeon'
+    }
+
+    -- Physical spells with HP stat mod
+    blue_magic_maps.PhysicalHP = S{
+        'Final Sting'
+    }
+
+    -- Magical Spells --
+
+    -- Magical spells with the typical Int mod
+    blue_magic_maps.Magical = S{
+        'Blastbomb','Blazing Bound','Bomb Toss','Cursed Sphere','Dark Orb','Death Ray',
+        'Diffusion Ray','Droning Whirlwind','Embalming Earth','Firespit','Foul Waters',
+        'Ice Break','Leafstorm','Maelstrom','Rail Cannon','Regurgitation','Rending Deluge',
+        'Retinal Glare','Subduction','Tearing Gust','Tem. Upheaval','Water Bomb','Molting Plumage',
+		'Nectarous Deluge','Searing Tempest','Blinding Fulgor','Spectral Floe','Scouring Spate',
+		'Anvil Lightning','Silent Storm','Entomb','Tenebral Crush','Palling Salvo'
+    }
+
+    -- Magical spells with a primary Mnd mod 
+    blue_magic_maps.MagicalMnd = S{
+        'Acrid Stream','Evryone. Grudge','Magic Hammer','Mind Blast'
+    }
+
+    -- Magical spells with a primary Chr mod
+    blue_magic_maps.MagicalChr = S{
+        'Eyes On Me','Mysterious Light'
+    }
+
+    -- Magical spells with a Vit stat mod
+    blue_magic_maps.MagicalVit = S{
+        'Thermal Pulse'
+    }
+
+    -- Magical spells with a Dex stat mod (on top of Int)
+    blue_magic_maps.MagicalDex = S{
+        'Charged Whisker','Gates of Hades'
+    }
+
+    -- Magical spells with an Agi stat mod
+    blue_magic_maps.MagicalAgi = S{
+        'Crashing Thunder'
+    }
+
+    -- Magical spells (generally debuffs) that we want to focus on magic accuracy over damage.
+    -- Add Int for damage where available, though.
+    blue_magic_maps.MagicAccuracy = S{
+        '1000 Needles','Absolute Terror','Actinic Burst','Auroral Drape','Awful Eye',
+        'Bad Breath', 'Blank Gaze','Blistering Roar','Blitzstrahl','Blood Drain','Blood Saber','Cesspool','Chaotic Eye',
+        'Cimicine Discharge','Cold Wave','Corrosive Ooze','Cruel Joke','Demoralizing Roar','Digest',
+        'Dream Flower','Enervation','Feather Tickle','Filamented Hold','Frightful Roar',
+        'Frost Breath','Geist Wall','Hecatomb Wave','Infrasonics','Jettatura','Light of Penance',
+        'Lowing','Mind Blast','Mortal Ray','MP Drainkiss','Osmosis','Radiant Breath','Reaving Wind',
+        'Sandspin','Sandspray','Sheep Song','Soporific','Sound Blast','Stinking Gas',
+        'Sub-zero Smash','Temporal Shift','Thunderbolt','Venom Shell','Voracious Trunk',
+		'Yawn', 'Atra. Libations'
+    }
+        
+    -- Breath-based spells that we don't care about the added effect of.
+    blue_magic_maps.Breath = S{
+        'Flying Hip Press','Heat Breath',
+        'Hecatomb Wave','Magnetite Cloud','Poison Breath','Self-Destruct',
+        'Thunder Breath','Vapor Spray','Wind Breath'
+    }
+
+    -- Physical stun spells and physical added effect spells.
+    blue_magic_maps.Stun = S{
+        'Barbed Crescent','Battle Dance','Benthic Typhoon','Bilgestorm',
+		'Feather Storm','Frypan','Head Butt','Hydro Shot','Pinecone Bomb','Queasyshroom',
+		'Saurian Slide','Seedspray','Spiral Spin','Sprout Smack','Sub-zero Smash',
+		'Sudden Lunge','Sweeping Gouge','Tail Slap','Terror Touch','Wild Oats','Whirl of Rage',
+    }
+        
+    -- Healing spells
+    blue_magic_maps.Healing = S{
+        'Exuviation','Healing Breeze','Magic Fruit','Plenilune Embrace',
+		'Pollen','Restoral','White Wind','Wild Carrot'
+    }
+    
+    -- Buffs that depend on blue magic skill that don't cap very low.
+    blue_magic_maps.SkillBasedBuff = S{
+        'Diamondhide','Magic Barrier','Occultation','Plasma Charge','Reactor Cool',
+    }
+
+    -- Other general buffs
+    blue_magic_maps.Buff = S{
+        'Amplification','Animating Wail','Barrier Tusk','Battery Charge','Carcharian Verve','Cocoon',
+        'Erratic Flutter','Fantod','Feather Barrier','Harden Shell','Memento Mori','Metallic Body',
+		'Mighty Guard','Nat. Meditation','Orcish Counterstance','Pyric Bulwark',
+		'Refueling','Regeneration','Saline Coat','Triumphant Roar','Warm-Up','Winds of Promy.',
+        'Zephyr Mantle'
+    }
+    
+    aoe_blue_magic_healing = S{
+        'Healing Breeze','White Wind'
+    }
+    
+    -- Spells that require Unbridled Learning to cast.
+    unbridled_spells = S{
+        'Absolute Terror','Blistering Roar','Bloodrake','Carcharian Verve','Cesspool',
+        'Crashing Thunder','Cruel Joke','Droning Whirlwind','Gates of Hades','Harden Shell','Mighty Guard','Polar Roar',
+        'Pyric Bulwark','Tearing Gust','Thunderbolt','Tourbillion','Uproot'
+    }
+
+	update_melee_groups()
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoNukeMode","AutoStunMode","AutoDefenseMode",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","IdleMode","Passive","RuneElement","LearningMode","CastingMode","TreasureMode"})
+end

@@ -51,8 +51,8 @@ function init_gear_sets()
 	-- enmity down
 	sets.enmity = {main="Malignance Pole",--sub="Khonsu", ammo="Staunch Tathlum +1",
 		--head="Acad. Mortar. +3", neck="Warder's Charm +1", lear="Etiolation Earring", rear="Odowowa Earring +1",
-		--body="Mallquis Saio +2", hands="Acad. Bracers +3",  rring="Warden's Ring",
-		lring="Defending Ring",
+		-- hands="Acad. Bracers +3",  rring="Warden's Ring",
+		body="Shamash Robe", lring="Defending Ring",
 		--back="Moonlight Cape", waist="Slipor Sash", legs="Acad. Pants +3", feet="Acad. Loafers +3"
 		}
 
