@@ -379,7 +379,7 @@ function init_gear_sets()
 		-- Mavi Stole +2
 		head="Carmine Mask +1", neck="Erra Pendant", lear="Loquac. Earring", rear="Digni. Earring",
 		-- Hash. Bazu. +2 
-		body="Luz. Luhlaza +3", hands="Regal Cuffs", lring="Metamor. Ring +1", rring="Kishar Ring",
+		body="Luhlaza Jubbah +3", hands="Regal Cuffs", lring="Metamor. Ring +1", rring="Kishar Ring",
 		-- Aurist's Cape +1  Hashi. Basmak +2
 		back="Cornflower Cape", waist="Acuity Belt +1", legs="Aya. Cosciales +2", feet="Malignance Boots"}
 	sets.midcast['Blue Magic']['Feather Tickle'] = sets.midcast['Blue Magic']['Reaving Wind']

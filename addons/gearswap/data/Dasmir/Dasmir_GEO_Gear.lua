@@ -45,7 +45,7 @@ function init_gear_sets()
 
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Bolster = {body="Bagua Tunic"}
-	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic +2", back=gear.idle_jse_back}
+	sets.precast.JA['Life Cycle'] = {body="Geomancy Tunic +2", back=gear.idle_jse_back}
 	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +3"}
 	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +3"}
 	sets.precast.JA['Full Circle'] = {head="Azimuth Hood", hands="Bagua Mitaines +3"}
@@ -121,12 +121,12 @@ function init_gear_sets()
 		-- Vanya Clogs
 		back=gear.Cure_jse_back, waist="olympus Sash", legs="Vanya Slops", feet="Skaoi Boots"}
 
-    sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Kaja Grip", range="Dunna",
+    sets.midcast.LightWeatherCure = {main="Chatoyant Staff", sub="Khonsu", range="Dunna",
 		head="Vanya Hood", neck="Colossus's Torque", lear="Novia Earring", rear="Regal Earring",
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		back=gear.Cure_jse_back, waist="Olympus Sash", legs="Vanya Slops", feet="Skaoi Boots"}
 
-    sets.midcast.LightDayCure = {main="Chatoyant Staff", sub="Kaja Grip", range="Dunna",
+    sets.midcast.LightDayCure = {main="Chatoyant Staff", sub="Khonsu", range="Dunna",
 		head="Vanya Hood", neck="Colossus's Torque", lear="Novia Earring", rear="Regal Earring", 
 		body="Annoint. Kalasiris", hands=gear.telchine_hands_Cure, lring="Sirona's Ring", rring="Stikini Ring +1",
 		back=gear.Cure_jse_back, waist="Olympus Sash", legs="Vanya Slops", feet="Skaoi Boots"}
@@ -147,13 +147,15 @@ function init_gear_sets()
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Malignance Earring",
 		-- Metamor. Ring +1
 		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Freke Ring",
-		back=gear.nuke_jse_back, waist="Orpheus's Sash", legs="Bagua Pants +3", feet="Bagua Sandals +3"}		
+		--back=gear.nuke_jse_back, 
+		back="Aurist's Cape +1", waist="Orpheus's Sash", legs="Bagua Pants +3", feet="Bagua Sandals +3"}		
 
     sets.midcast['Elemental Magic'].Resistant = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- head="Bagua Galero +3",
 		head="Jhakri Coronal +2", neck="Sanctity Necklace", lear="Regal Earring", rear="Malignance Earring",
 		body="Shamash Robe", hands="Amalric Gages +1", lring="Shiva Ring +1", rring="Freke Ring",
-		back=gear.nuke_jse_back, waist="Orpheus's Sash", legs="Bagua Pants +3", feet="Bagua Sandal +3"}				
+		--back=gear.nuke_jse_back, 
+		back="Aurist's Cape +1", waist="Orpheus's Sash", legs="Bagua Pants +3", feet="Bagua Sandals +3"}		
 
     sets.midcast['Elemental Magic'].Fodder = {main="Idris", sub="Ammurapi Shield", range="Dunna",
 		-- head="Bagua Galero +3",
@@ -393,7 +395,7 @@ function init_gear_sets()
 		-- Bagua Tunic +2 
 		body="Jhakri Robe +2", hands="Bagua Mitaines +3", lring="Rufescent Ring",  rring="Petrov Ring",
 		-- WS Cape
-		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Bagua Pants +2", feet="Bagua Sandals +3"}
+		back=gear.nuke_jse_back, waist="Fotia Belt", legs="Bagua pants +3", feet="Bagua Sandals +3"}
 	sets.precast.WS['Realmrazer']= {
 		-- lear="Telos Earring", rear="Cessance Earring",
 		head="Jhakri Coronal +2", neck="Fotia Gorget",  lear="Zennaroi Earring", rear="Regal Earring",

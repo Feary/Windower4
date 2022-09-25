@@ -64,11 +64,11 @@ gear.telchine_hands_Duration = { name="Telchine Gloves",augments={'"Cure" potenc
 gear.telchine_hands_Pet = { name="Telchine Gloves", augments={'Mag. Evasion+15','Pet: "Regen"+3','Pet: Damage taken -4%',}}
 
 -- Legs 
-gear.telchine_legs_Duration = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_legs_Duration = { name="Telchine Braconi", augments={'"Elemental Siphon"+35','Enh. Mag. eff. dur. +10',}}
 -- leaf orb
-gear.telchine_legs_Siphon = { name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}}
+gear.telchine_legs_Siphon = { name="Telchine Braconi", augments={'"Elemental Siphon"+35','Enh. Mag. eff. dur. +10',}}
 -- snowdim leaforb duskorb
-gear.telchine_legs_Pet = { name="Telchine Braconi", augments={'Mag. Evasion+24','Pet: "Regen"+3','Pet: Damage taken -3%',}}
+gear.telchine_legs_Pet = { name="Telchine Braconi", augments={'Mag. Evasion+25','Pet: "Regen"+3','Pet: Damage taken -4%',}}
 
 -- Feet 
 gear.telchine_feet_Duration = { name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}}

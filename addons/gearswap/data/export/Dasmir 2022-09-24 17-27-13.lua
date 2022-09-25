@@ -1,0 +1,16 @@
+sets.exported={
+    main="Idris",
+    sub="Genmei Shield",
+    range="Dunna",
+    head="Befouled Crown",
+    body="Shamash Robe",
+    hands={ name="Bagua Mitaines +3", augments={'Enhances "Curative Recantation" effect',}},
+    legs={ name="Telchine Braconi", augments={'Mag. Evasion+25','Pet: "Regen"+3','Pet: Damage taken -4%',}},
+    feet="Geo. Sandals +3",
+    neck="Loricate Torque +1",
+    waist="Fucho-no-Obi",
+    left_ear="Ethereal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+}

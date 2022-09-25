@@ -122,9 +122,9 @@ function init_gear_sets()
 		body="Ashera Harness", hands="Adhemar Wrist. +1", ring1="Ilabrat Ring", rring="Regal Ring", 
 		--legs="Ryou Haidate +1", 
 		back=gear.da_jse_back, waist="Fotia Belt", legs="Samnuha Tights", feet="Mochi. Kyahan +3"})
-    sets.precast.WS['Blade: Shun'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
-    sets.precast.WS['Blade: Shun'].Acc = set_combine(sets.precast.WS.Acc, {})
-    sets.precast.WS['Blade: Shun'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
+    sets.precast.WS['Blade: Shun'].SomeAcc = set_combine(sets.precast.WS['Blade: Shun'], {})
+    sets.precast.WS['Blade: Shun'].Acc = set_combine(sets.precast.WS['Blade: Shun'], {})
+    sets.precast.WS['Blade: Shun'].FullAcc = set_combine(sets.precast.WS['Blade: Shun'], {})
     sets.precast.WS['Blade: Shun'].Fodder = set_combine(sets.precast.WS['Blade: Shun'], {})
 
     sets.precast.WS['Blade: Ten'] = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
@@ -139,7 +139,7 @@ function init_gear_sets()
     sets.precast.WS['Blade: Ten'].FullAcc = set_combine(sets.precast.WS['Blade: Ten'], {})
     sets.precast.WS['Blade: Ten'].Fodder = set_combine(sets.precast.WS['Blade: Ten'], {})
 	
-	sets.precast.WS['Blade: Metsu'] = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",-- ammo="Aurgelmir Orb +1",
+	sets.precast.WS['Blade: Metsu'] = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1", -- ammo="Aurgelmir Orb +1",
 		-- head="Hachi. Hatsu. +3", neck="Ninja Nodowa +2",
 		head="Malignance Chapeau", neck="Caro Necklace", ear1="Moonshade Earring",ear2="Lugra Earring +1",
 		-- Nyame Mail lring="Gere Ring"
