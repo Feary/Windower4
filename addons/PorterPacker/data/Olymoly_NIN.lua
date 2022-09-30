@@ -20,7 +20,7 @@ return {
     "Mochi. Hakama +1",
     "Mochi. Kyahan +1",
 	"Ark Scythe",
-	--"Lament",
+	"Lament",
 	"Aern Staff",
 	"Aern Dagger",
 	"Aern Dagger II",

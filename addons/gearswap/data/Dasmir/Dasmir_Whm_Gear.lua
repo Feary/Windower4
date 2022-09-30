@@ -369,22 +369,22 @@ function init_gear_sets()
 		-- Grioavolr 	
 		head=empty, neck="Erra Pendant", lear="Regal Earring", rear="Enchntr. Earring +1",
 		body="Twilight Cloak", hands="Inyan. Dastanas +2", lring="Stikini Ring +1", rring="Stikini Ring +1",		
-		--  Chironic Hose Theo. Duckbills +3
+		-- Chironic Hose Theo. Duckbills +3
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Elemental Magic'] = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
 		-- Chironic Hat Digni. Earring 
 		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Novio Earring", rear="Regal Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Freke Ring",
 		-- Chironic Hose Chironic Slippers 
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
 	sets.midcast['Elemental Magic'].Resistant = {main="Maxentius", sub="Ammurapi Shield", ammo="Pemphredo Tathlum",
-		-- Chironic Hat   Digni. Earring 
+		-- Chironic Hat  Digni. Earring 
 		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Novio Earring", rear="Regal Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Freke Ring",
 		-- Chironic Hose Chironic Slippers 
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 
@@ -392,7 +392,7 @@ function init_gear_sets()
 		-- Chironic Hat Digni. Earring
 		head="Inyanga Tiara +2", neck="Sanctity Necklace", lear="Novio Earring", rear="Regal Earring",
 		-- Chironic Doublet Chironic Gloves Fenrir Ring +1 Fenrir Ring +1 
-		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Shiva Ring",
+		body="Inyanga Jubbah +2", hands="Inyan. Dastanas +2", lring="Shiva Ring", rring="Freke Ring",
 		-- Chironic Hose Chironic Slippers 
 		back=gear.Macc_jse_back, waist="Luminary Sash", legs="Inyanga Shalwar +2", feet="Inyan. Crackows +2"}
 

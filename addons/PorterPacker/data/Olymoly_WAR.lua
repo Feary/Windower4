@@ -32,6 +32,7 @@ return {
 	"Aern Dagger II",
 	"Aern Staff", 
 	"Aern Spear",
+	"Lament",
     "Zanmato",
     "Rounsey Wand",
     "Karambit",
